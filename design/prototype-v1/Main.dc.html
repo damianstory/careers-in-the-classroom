@@ -1,0 +1,1010 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Careers in the Classroom prototype</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+.mono{font-family:"Geist Mono",ui-monospace,monospace}
+.app [role=dialog]:focus{outline:none}
+.hdr.abs{position:absolute;top:32px;left:0;right:0;z-index:2;transition:background 150ms cubic-bezier(.4,0,.2,1)}
+.hdr.over{background:transparent!important;border-bottom-color:transparent!important}
+.hdr.over .navbtn,.hdr.over .brandname{color:#FFFFFF!important}
+.hdr.over .brandsub{color:#C5E5C3!important}
+.hdr.over .navbtn:hover,.hdr.over .navbtn.on{background:rgba(255,255,255,.14);color:#FFFFFF}
+.hdr.over .btn-out{background:transparent;color:#FFFFFF;border-color:rgba(255,255,255,.5)}
+.hdr.over .btn-out:hover{background:rgba(255,255,255,.14)}
+.sent{font:500 18px/1 var(--fu);color:#514D4E;white-space:nowrap}
+.sel{height:52px;border:1px solid #CFE3CC;border-radius:10px;padding:0 12px;font:600 17px/1 var(--fu);color:#231F20;background:#FFFFFF;cursor:pointer}
+.sel:hover{border-color:#8BCA88}
+body{margin:0;background:#FAF9F7}
+.app{--fd:"PP Neue Montreal","Helvetica Neue",Arial,sans-serif;--fu:"Geist","PP Neue Montreal","Helvetica Neue",Arial,sans-serif;font-family:var(--fu);color:#231F20;font-size:16px;line-height:24px}
+.app *{box-sizing:border-box}
+.app p{margin:0}
+.app a{color:#367533}
+.app a:hover{color:#295826}
+.app :focus-visible{outline:3px solid #51B04C;outline-offset:2px}
+.i{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.i-sm{width:14px;height:14px}
+.navbtn{background:none;border:0;padding:0 14px;min-height:44px;border-radius:12px;font:500 15px/1 var(--fu);color:#514D4E;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:background 150ms cubic-bezier(.4,0,.2,1)}
+.navbtn:hover{background:#F2F8F1;color:#231F20}
+.navbtn.on{background:#E8F5E7;color:#231F20}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 20px;border-radius:12px;font:600 15px/1 var(--fu);cursor:pointer;border:1px solid transparent;text-decoration:none;transition:background 150ms cubic-bezier(.4,0,.2,1),border-color 150ms}
+.btn-ink{background:#231F20;color:#fff}
+.btn-ink:hover{background:#1B3B19}
+.btn-out{background:#fff;color:#231F20;border-color:#E4E2E2}
+.btn-out:hover{border-color:#8BCA88;background:#F2F8F1}
+.btn-light{background:#fff;color:#1B3B19}
+.btn-light:hover{background:#E8F5E7}
+.linkbtn{background:none;border:0;padding:0;min-height:44px;font:600 15px/1 var(--fu);color:#367533;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+.linkbtn:hover{color:#295826;text-decoration:underline}
+.chip{min-height:44px;padding:12px 16px;border-radius:22px;border:1px solid #E4E2E2;background:#fff;font:500 14px/20px var(--fu);color:#231F20;cursor:pointer;display:inline-block;text-align:left;transition:background 150ms,border-color 150ms}
+.chip:hover{border-color:#8BCA88;background:#F2F8F1}
+.chip .m{color:#7C7879}
+.chip.on{background:#231F20;color:#fff;border-color:#231F20}
+.tag{display:inline-flex;align-items:center;gap:6px;min-height:26px;padding:4px 10px;border-radius:9999px;background:#E8F5E7;color:#367533;font:500 12px/16px var(--fu)}
+.tag-n{background:#fff;color:#514D4E;border:1px solid #E4E2E2}
+.tag-w{background:#FAF9F7;color:#514D4E;border:1px dashed #7C7879}
+.eyebrow{font:600 12px/16px var(--fu);letter-spacing:.08em;text-transform:uppercase;color:#367533}
+.cap{font:500 13px/18px var(--fu);color:#7C7879}
+.body{color:#514D4E}
+.card{background:#fff;border:1px solid #E4E2E2;border-radius:16px;padding:28px}
+.wash{background:#F2F8F1;border:1px solid #CFE3CC;border-radius:16px;padding:20px 24px}
+.lbl{display:block;font:500 14px/20px var(--fu);color:#231F20;margin-bottom:6px}
+.inp{width:100%;height:48px;border:1px solid #CFE3CC;border-radius:8px;padding:0 14px;font:400 16px/1 var(--fu);color:#231F20;background:#fff}
+.inp:hover{border-color:#8BCA88}
+textarea.inp{height:88px;padding:12px 14px;line-height:22px;resize:vertical}
+.opt{display:flex;align-items:center;gap:10px;min-height:44px;padding:0 14px;border:1px solid #E4E2E2;border-radius:12px;cursor:pointer;font:500 14px/1 var(--fu)}
+.opt:hover{border-color:#8BCA88;background:#F2F8F1}
+.opt input{accent-color:#367533;width:18px;height:18px;margin:0}
+.backdrop{position:absolute;inset:0;border:0;padding:0;background:rgba(35,31,32,.34);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);cursor:pointer}
+.src a{display:inline-flex;align-items:center;gap:6px}
+@media (prefers-reduced-motion:reduce){.app *{transition:none!important}}
+</style>
+</helmet>
+<div class="app" style="width: 1440px; height: 900px; position: relative; display: flex; flex-direction: column; overflow: hidden; background: #FAF9F7">
+
+<div style="flex: none; height: 32px; background: #1B3B19; color: #E8F5E7; display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 13px; font-weight: 500">
+<svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+<span>Prototype for educator conversations. Examples are prepared and sourced. Nothing you type here is saved or sent.</span>
+</div>
+
+<header class="hdr {{ hdrCls }}" style="flex: none; height: 72px; background: #FFFFFF; border-bottom: 1px solid #E4E2E2; display: flex; align-items: center; gap: 40px; padding: 0 48px">
+<button class="navbtn" onClick="{{ goHome }}" style="padding: 0; background: none; flex-direction: column; align-items: flex-start; gap: 4px" aria-label="Careers in the Classroom, home">
+<span class="brandname" style="font-family: var(--fd); font-size: 20px; font-weight: 600; line-height: 20px; color: #231F20; letter-spacing: -0.01em">Careers in the Classroom</span>
+<span class="brandsub" style="font-size: 12px; line-height: 14px; font-weight: 500; color: #7C7879">Supported by TKS · working name</span>
+</button>
+<nav aria-label="Main" style="display: flex; gap: 4px; flex-grow: 1">
+<button class="navbtn {{ navSearch }}" onClick="{{ goHome }}">Search</button>
+<button class="navbtn {{ navExplore }}" onClick="{{ goExplore }}">Explore Calgary</button>
+<button class="navbtn {{ navInvolved }}" onClick="{{ goInvolved }}">Get involved</button>
+</nav>
+<div style="display: flex; align-items: center; gap: 8px">
+<button class="navbtn" onClick="{{ openSpeakerSite }}">
+<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg>
+Request a speaker
+</button>
+<sc-if value="{{ notSignedUp }}" hint-placeholder-val="{{ true }}">
+<button class="btn btn-out" onClick="{{ openSignup }}">Sign up free</button>
+</sc-if>
+<sc-if value="{{ signedUp }}" hint-placeholder-val="{{ false }}">
+<span class="tag"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Signed up (demo)</span>
+</sc-if>
+</div>
+</header>
+
+<main ref="{{ scrollRef }}" onScroll="{{ onScroll }}" style="flex-grow: 1; overflow-y: auto">
+
+<!-- HOME -->
+<sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+<section style="position: relative; height: 868px; overflow: hidden; background: #1B3B19; color: #FFFFFF">
+<sc-if value="{{ hasHeroImg }}" hint-placeholder-val="{{ false }}">
+<img src="{{ heroImage }}" alt="{{ heroAlt }}" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<div style="position: absolute; inset: 0; background: rgba(27, 59, 25, 0.6)"></div>
+</sc-if>
+<sc-if value="{{ noHeroImg }}" hint-placeholder-val="{{ true }}">
+<svg viewBox="0 0 1440 868" width="1440" height="868" preserveAspectRatio="none" aria-hidden="true" style="position: absolute; inset: 0">
+<rect width="1440" height="868" fill="#1B3B19"></rect>
+<circle cx="1110" cy="400" r="84" fill="#295826"></circle>
+<path d="M0 540 C 220 500, 420 520, 640 488 S 1080 452, 1440 500 L1440 868 L0 868 Z" fill="#295826"></path>
+<path d="M0 630 C 260 592, 520 620, 780 590 S 1200 572, 1440 604 L1440 868 L0 868 Z" fill="#367533"></path>
+<path d="M0 720 C 300 690, 640 712, 960 686 S 1300 680, 1440 694 L1440 868 L0 868 Z" fill="#1B3B19"></path>
+</svg>
+<span class="mono" style="position: absolute; right: 64px; top: 128px; font-size: 12px; letter-spacing: .06em; color: #A8D8A6">PHOTO PLACEHOLDER · ADD A LICENSED IMAGE IN TWEAKS</span>
+</sc-if>
+
+<div style="position: absolute; left: 64px; top: 168px; width: 940px; display: flex; flex-direction: column; gap: 28px">
+<span class="mono" style="font-size: 13px; letter-spacing: .06em; color: #C5E5C3">51.05° N · 114.07° W · CALGARY</span>
+<h1 style="margin: 0; font-family: var(--fd); font-weight: 500; font-size: 84px; line-height: 84px; letter-spacing: -0.03em">The science you teach is happening down the road.</h1>
+<p style="max-width: 580px; font-size: 19px; line-height: 30px; color: #E8F5E7">Real Calgary organizations, the problems they’re working on, and the people doing the work. Matched to your course and unit.</p>
+</div>
+
+<form onSubmit="{{ submit }}" style="position: absolute; left: 64px; right: 64px; bottom: 88px; background: #FAF9F7; border-radius: 22px; padding: 12px 12px 12px 28px; display: flex; align-items: center; gap: 14px; color: #231F20">
+<span class="sent">I teach</span>
+<label for="course" style="position: absolute; left: -9999px">Course</label>
+<select id="course" class="sel" value="{{ course }}" onChange="{{ onCourse }}" style="width: 170px">
+<sc-for list="{{ courses }}" as="c" hint-placeholder-count="9"><option value="{{ c }}">{{ c }}</option></sc-for>
+</select>
+<span class="sent">and we’re on</span>
+<label for="unit" style="position: absolute; left: -9999px">Unit</label>
+<select id="unit" class="sel" value="{{ unit }}" onChange="{{ onUnit }}" style="flex-grow: 1; min-width: 0">
+<option value="">Choose a unit</option>
+<sc-for list="{{ unitOpts }}" as="u" hint-placeholder-count="4"><option value="{{ u.id }}">{{ u.label }}</option></sc-for>
+<option value="__other">Something else (type a topic)</option>
+</select>
+<sc-if value="{{ isOther }}" hint-placeholder-val="{{ false }}">
+<label for="topic" style="position: absolute; left: -9999px">Topic or question</label>
+<input id="topic" class="inp" type="text" value="{{ topic }}" onChange="{{ onTopic }}" placeholder="Your topic or question" autocomplete="off" style="width: 300px; height: 52px">
+</sc-if>
+<button type="submit" class="btn btn-ink" style="height: 56px; padding: 0 26px; font-size: 16px; border-radius: 14px">Find the work</button>
+</form>
+
+<div style="position: absolute; left: 64px; right: 64px; bottom: 28px; display: flex; justify-content: space-between; align-items: center; gap: 24px; font-size: 14px; line-height: 20px; color: #E8F5E7">
+<sc-if value="{{ needUnit }}" hint-placeholder-val="{{ false }}"><span style="color: #FFFFFF; font-weight: 600">Choose a unit first, or pick “Something else” to type a topic.</span></sc-if>
+<sc-if value="{{ noNeedUnit }}" hint-placeholder-val="{{ true }}"><span>Units from Alberta Education programs of studies. You pick yours. We don’t guess where you are in the year.</span></sc-if>
+<div style="display: flex; align-items: center; gap: 20px">
+<sc-if value="{{ hasHeroCredit }}" hint-placeholder-val="{{ false }}"><span class="mono" style="font-size: 12px; color: #C5E5C3">{{ heroCredit }}</span></sc-if>
+<button class="linkbtn" onClick="{{ goExplore }}" style="color: #FFFFFF; min-height: 32px">Or explore Calgary<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>
+</div>
+</div>
+</section>
+
+<div style="max-width: 1200px; margin: 0 auto; padding: 64px 48px 48px">
+<section style="background: #1B3B19; color: #FFFFFF; border-radius: 22px; padding: 48px; display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 16px; align-items: flex-start">
+<p style="font: 600 12px/16px var(--fu); letter-spacing: .08em; text-transform: uppercase; color: #C5E5C3">Not sure what to search for?</p>
+<h2 style="margin: 0; font-family: var(--fd); font-size: 40px; line-height: 40px; font-weight: 500; letter-spacing: -0.01em">Explore Calgary</h2>
+<p style="color: #E8F5E7; max-width: 380px">Browse real problems local organizations are working on. Then see where each one fits your courses.</p>
+<button class="btn btn-light" onClick="{{ goExplore }}" style="margin-top: 8px">Explore Calgary<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>
+</div>
+<div style="display: flex; flex-direction: column">
+<sc-for list="{{ teasers }}" as="t" hint-placeholder-count="3">
+<button onClick="{{ t.open }}" style="background: none; border: 0; border-radius: 0; color: inherit; font: inherit; text-align: left; width: 100%; cursor: pointer; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px; align-items: center; padding: 20px 0; border-top: 1px solid #295826">
+<span style="display: flex; flex-direction: column; gap: 6px">
+<span style="font-family: var(--fd); font-size: 24px; line-height: 30px; font-weight: 500">{{ t.question }}</span>
+<span style="font-size: 14px; line-height: 20px; color: #C5E5C3">{{ t.org }} · {{ t.discipline }}</span>
+</span>
+<svg class="i" viewBox="0 0 24 24" aria-hidden="true" style="color: #A8D8A6"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+</button>
+</sc-for>
+</div>
+</section>
+<p class="cap" style="margin-top: 20px; max-width: 760px">This prototype holds three researched Calgary examples and two recent developments, checked 24 September 2026. Units without a prepared example show honestly what isn’t covered yet.</p>
+</div>
+</sc-if>
+
+<!-- RESULTS -->
+<sc-if value="{{ isResults }}" hint-placeholder-val="{{ false }}">
+<div style="background: #FFFFFF; border-bottom: 1px solid #E4E2E2">
+<form onSubmit="{{ submit }}" style="max-width: 1200px; margin: 0 auto; padding: 20px 48px; display: grid; grid-template-columns: 150px 200px minmax(0, 1fr) auto; gap: 12px; align-items: end">
+<div><label class="lbl" for="loc2">Where</label><select id="loc2" class="inp"><option>Calgary</option></select></div>
+<div><label class="lbl" for="course2">Course</label>
+<select id="course2" class="inp" value="{{ course }}" onChange="{{ onCourse }}"><sc-for list="{{ courses }}" as="c" hint-placeholder-count="9"><option value="{{ c }}">{{ c }}</option></sc-for></select></div>
+<div style="display: flex; gap: 12px; align-items: end">
+<div style="flex-grow: 1; min-width: 0"><label class="lbl" for="unit2">Unit</label>
+<select id="unit2" class="inp" value="{{ unit }}" onChange="{{ onUnit }}"><option value="">Choose a unit</option><sc-for list="{{ unitOpts }}" as="u" hint-placeholder-count="4"><option value="{{ u.id }}">{{ u.label }}</option></sc-for><option value="__other">Something else (type a topic)</option></select></div>
+<sc-if value="{{ isOther }}" hint-placeholder-val="{{ false }}"><div style="width: 260px"><label class="lbl" for="topic2">Topic or question</label><input id="topic2" class="inp" type="text" value="{{ topic }}" onChange="{{ onTopic }}" autocomplete="off"></div></sc-if>
+</div>
+<button type="submit" class="btn btn-out" style="height: 48px">Update results</button>
+</form>
+</div>
+<div style="max-width: 1200px; margin: 0 auto; padding: 40px 48px 48px; display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 48px; align-items: start">
+<div style="display: flex; flex-direction: column; gap: 20px">
+<div>
+<p class="eyebrow">Calgary · {{ q.course }}</p>
+<h1 style="margin: 12px 0 0; font-family: var(--fd); font-size: 36px; line-height: 44px; font-weight: 600; letter-spacing: -0.01em">{{ resultLabel }}</h1>
+</div>
+<sc-if value="{{ q.hasNote }}" hint-placeholder-val="{{ false }}">
+<div class="wash" style="color: #231F20">{{ q.note }}</div>
+</sc-if>
+<sc-if value="{{ justUnlocked }}" hint-placeholder-val="{{ false }}">
+<div class="wash" style="display: flex; gap: 10px; align-items: center"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" style="color: #367533"><path d="M20 6 9 17l-5-5"></path></svg><span>Signed up (demo). Every prepared result for this search is now open.</span></div>
+</sc-if>
+
+<sc-for list="{{ cards }}" as="c" hint-placeholder-count="2">
+<sc-if value="{{ c.isEx }}" hint-placeholder-val="{{ true }}">
+<article class="card" style="display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; gap: 8px; flex-wrap: wrap">
+<span class="tag">{{ c.badge }}</span>
+<span class="tag tag-n">{{ c.discipline }}</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<h2 style="margin: 0; font-family: var(--fd); font-size: 30px; line-height: 36px; font-weight: 500; letter-spacing: -0.01em">{{ c.question }}</h2>
+<p style="font-weight: 600">{{ c.org }}</p>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; padding-top: 20px; border-top: 1px solid #E4E2E2">
+<div><p class="eyebrow" style="color: #514D4E">Why it matches</p><p class="body" style="margin-top: 8px">{{ c.why }}</p></div>
+<div><p class="eyebrow" style="color: #514D4E">Local connection</p><p class="body" style="margin-top: 8px">{{ c.localShort }}</p></div>
+</div>
+<div><button class="btn btn-ink" onClick="{{ c.open }}">Open the full example<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button></div>
+</article>
+</sc-if>
+<sc-if value="{{ c.isNews }}" hint-placeholder-val="{{ false }}">
+<sc-if value="{{ c.locked }}" hint-placeholder-val="{{ true }}">
+<article class="card" style="background: #FAF9F7; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; gap: 8px; flex-wrap: wrap">
+<span class="tag tag-n">Recent development</span>
+<span class="tag tag-n"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>Free with signup</span>
+</div>
+<h2 style="margin: 0; font-family: var(--fd); font-size: 24px; line-height: 30px; font-weight: 500">{{ c.title }}</h2>
+<p class="cap">Published {{ c.published }} · {{ c.statusShort }}</p>
+<p class="body">{{ c.why }} Sign up free to see the classroom write-up, a question to ask students, and the source.</p>
+<div><button class="btn btn-out" onClick="{{ openSignup }}">Sign up free to open</button></div>
+</article>
+</sc-if>
+<sc-if value="{{ c.unlocked }}" hint-placeholder-val="{{ false }}">
+<article class="card" style="display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; gap: 8px; flex-wrap: wrap">
+<span class="tag">{{ c.badge }}</span>
+<span class="tag tag-w">{{ c.status }}</span>
+</div>
+<h2 style="margin: 0; font-family: var(--fd); font-size: 24px; line-height: 30px; font-weight: 500">{{ c.title }}</h2>
+<p class="cap">Published {{ c.published }} · {{ c.location }}</p>
+<p class="body"><strong style="color: #231F20">Why it matches.</strong> {{ c.why }}</p>
+<p class="body">{{ c.summary }}</p>
+<div class="wash"><p class="eyebrow">Ask students</p><p style="margin-top: 8px; font-family: var(--fd); font-size: 20px; line-height: 28px">{{ c.ask }}</p></div>
+<sc-if value="{{ c.hasCaution }}" hint-placeholder-val="{{ false }}"><p class="body" style="font-size: 14px; line-height: 20px">{{ c.caution }}</p></sc-if>
+<p class="src" style="font-size: 14px"><a href="{{ c.url }}" target="_blank" rel="noopener">{{ c.srcLabel }}<svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a></p>
+</article>
+</sc-if>
+</sc-if>
+</sc-for>
+<p class="cap">That’s everything prepared for this search. We don’t hide extra results.</p>
+</div>
+
+<aside style="display: flex; flex-direction: column; gap: 16px; position: sticky; top: 24px">
+<sc-if value="{{ notSignedUp }}" hint-placeholder-val="{{ true }}">
+<div class="card" style="padding: 24px; display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-size: 18px; line-height: 28px; font-weight: 600">Save this search</h3>
+<p class="body" style="font-size: 14px; line-height: 20px">Free signup opens every prepared result and sends one email a month with new Calgary examples for your topics.</p>
+<div><button class="btn btn-out" onClick="{{ openSignup }}">Sign up free</button></div>
+</div>
+</sc-if>
+<div class="card" style="padding: 24px; display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-size: 18px; line-height: 28px; font-weight: 600">Want someone from this field in class?</h3>
+<p class="body" style="font-size: 14px; line-height: 20px">Tell us your topic and timing. We look for a suitable practitioner before anything is arranged.</p>
+<div><button class="linkbtn" onClick="{{ openSpeakerQ }}">Request a practitioner conversation<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button></div>
+</div>
+<div style="padding: 8px 4px; display: flex; flex-direction: column; gap: 10px">
+<p class="cap">Refine: related prepared searches</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<sc-for list="{{ related }}" as="p" hint-placeholder-count="3">
+<button class="chip" onClick="{{ p.run }}"><span>{{ p.course }}</span><span class="m">· {{ p.label }}</span></button>
+</sc-for>
+</div>
+</div>
+</aside>
+</div>
+</sc-if>
+
+<!-- NO MATCH -->
+<sc-if value="{{ isNomatch }}" hint-placeholder-val="{{ false }}">
+<div style="max-width: 880px; margin: 0 auto; padding: 72px 48px 48px; display: flex; flex-direction: column; gap: 24px">
+<p class="eyebrow">No prepared match</p>
+<h1 style="margin: 0; font-family: var(--fd); font-size: 40px; line-height: 44px; font-weight: 500; letter-spacing: -0.01em">We don’t have a prepared example for “{{ missTopic }}” in {{ missCourse }} yet.</h1>
+<p class="body" style="font-size: 18px; line-height: 28px; max-width: 680px">This prototype holds three researched Calgary examples. It can’t research new topics live. A search like yours tells us what teachers actually need next.</p>
+<div class="card" style="display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-size: 20px; line-height: 28px; font-weight: 600">Want this topic covered?</h2>
+<p class="body">In the planned service, we would research this topic, review what we find, and email you when an example is ready.</p>
+<sc-if value="{{ notNoted }}" hint-placeholder-val="{{ true }}">
+<div><button class="btn btn-ink" onClick="{{ noteTopic }}">Note this topic for follow-up</button></div>
+</sc-if>
+<sc-if value="{{ noted }}" hint-placeholder-val="{{ false }}">
+<div class="wash" style="display: flex; gap: 10px; align-items: center"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" style="color: #367533"><path d="M20 6 9 17l-5-5"></path></svg><span>Noted for this session only. Nothing was saved or sent.</span></div>
+</sc-if>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<p class="cap">Prepared searches that work now</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<sc-for list="{{ presets }}" as="p" hint-placeholder-count="5">
+<button class="chip" onClick="{{ p.run }}"><span>{{ p.course }}</span><span class="m">· {{ p.label }}</span></button>
+</sc-for>
+</div>
+</div>
+<div style="display: flex; gap: 32px; flex-wrap: wrap"><button class="linkbtn" onClick="{{ goHome }}"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>Change my course or unit</button><button class="linkbtn" onClick="{{ goExplore }}">Or explore what’s in Calgary<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button></div>
+<div style="border-top: 1px solid #E4E2E2; padding-top: 20px">
+<p class="cap">Searches without a match this session (for interview notes)</p>
+<ul style="margin: 8px 0 0; padding-left: 20px; color: #514D4E; font-size: 14px; line-height: 22px">
+<sc-for list="{{ misses }}" as="m" hint-placeholder-count="1"><li>{{ m.course }} · {{ m.topic }}</li></sc-for>
+</ul>
+</div>
+</div>
+</sc-if>
+
+<!-- EXPLORE -->
+<sc-if value="{{ isExplore }}" hint-placeholder-val="{{ false }}">
+<div style="max-width: 1200px; margin: 0 auto; padding: 64px 48px 48px">
+<p class="eyebrow">Explore Calgary</p>
+<h1 style="margin: 16px 0 0; font-family: var(--fd); font-size: 56px; line-height: 56px; font-weight: 500; letter-spacing: -0.02em; max-width: 820px">Problems Calgary organizations are working on.</h1>
+<p class="body" style="margin-top: 20px; max-width: 640px; font-size: 18px; line-height: 28px">Start with the problem. Each example shows the real work, who does it, and where it fits Alberta science courses. Three researched examples so far, checked 24 September 2026.</p>
+<div role="group" aria-label="Filter by discipline" style="margin-top: 32px; display: flex; gap: 8px; flex-wrap: wrap">
+<sc-for list="{{ filters }}" as="f" hint-placeholder-count="4">
+<button class="chip {{ f.cls }}" aria-pressed="{{ f.pressed }}" onClick="{{ f.pick }}">{{ f.label }}</button>
+</sc-for>
+</div>
+<div style="margin-top: 28px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px">
+<sc-for list="{{ exploreCards }}" as="c" hint-placeholder-count="3">
+<article class="card" style="display: flex; flex-direction: column; gap: 16px">
+<span class="tag tag-n" style="align-self: flex-start">{{ c.discipline }}</span>
+<h2 style="margin: 0; font-family: var(--fd); font-size: 26px; line-height: 32px; font-weight: 500; letter-spacing: -0.01em">{{ c.question }}</h2>
+<p style="font-weight: 600">{{ c.org }}</p>
+<p class="body" style="font-size: 14px; line-height: 20px; display: flex; gap: 8px"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" style="color: #367533; margin-top: 1px"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg><span>{{ c.localShort }}</span></p>
+<div style="display: flex; flex-wrap: wrap; gap: 6px; flex-grow: 1; align-content: flex-start">
+<sc-for list="{{ c.courses }}" as="k" hint-placeholder-count="2"><span class="tag">{{ k.name }}</span></sc-for>
+</div>
+<div><button class="btn btn-out" onClick="{{ c.open }}">Open example</button></div>
+</article>
+</sc-for>
+</div>
+</div>
+</sc-if>
+
+<!-- EXAMPLE -->
+<sc-if value="{{ isExample }}" hint-placeholder-val="{{ false }}">
+<div style="max-width: 1200px; margin: 0 auto; padding: 24px 48px 48px">
+<button class="linkbtn" onClick="{{ back }}"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>{{ backLabel }}</button>
+<div style="margin-top: 16px; display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 56px; align-items: start">
+<article style="display: flex; flex-direction: column; gap: 40px; min-width: 0">
+<header style="display: flex; flex-direction: column; gap: 16px">
+<p class="eyebrow">{{ ex.org }} · {{ ex.discipline }}</p>
+<h1 style="margin: 0; font-family: var(--fd); font-size: 56px; line-height: 56px; font-weight: 500; letter-spacing: -0.02em">{{ ex.question }}</h1>
+<p style="font-size: 18px; line-height: 28px; color: #514D4E; max-width: 720px">{{ ex.work }}</p>
+</header>
+
+<sc-if value="{{ hasWhy }}" hint-placeholder-val="{{ false }}">
+<div class="wash">
+<p class="eyebrow">Why this matches {{ whyLabel }}</p>
+<p style="margin-top: 8px">{{ whyText }}</p>
+</div>
+</sc-if>
+
+<section style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px">
+<div class="card" style="padding: 24px">
+<p class="eyebrow" style="color: #514D4E">Calgary connection</p>
+<p style="margin-top: 8px">{{ ex.calgary }}</p>
+</div>
+<div class="card" style="padding: 24px">
+<p class="eyebrow" style="color: #514D4E">Where the work happens</p>
+<p style="margin-top: 8px">{{ ex.site }}</p>
+</div>
+<sc-if value="{{ ex.hasStatus }}" hint-placeholder-val="{{ false }}">
+<div class="card" style="padding: 24px; grid-column: 1 / -1; background: #FAF9F7">
+<p class="eyebrow" style="color: #514D4E">Status today</p>
+<p style="margin-top: 8px">{{ ex.status }}</p>
+</div>
+</sc-if>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px">
+<h2 style="margin: 0; font-family: var(--fd); font-size: 30px; line-height: 36px; font-weight: 500">What we know, and how</h2>
+<span class="mono" style="font-size: 12px; color: #7C7879">checked 2026-09-24</span>
+</div>
+<div class="card" style="padding: 0; overflow: hidden">
+<div style="display: grid; grid-template-columns: 130px minmax(0, 1fr) 230px; gap: 16px; padding: 10px 24px; background: #FAF9F7; border-bottom: 1px solid #E4E2E2">
+<span class="mono" style="font-size: 11px; color: #7C7879">type</span><span class="mono" style="font-size: 11px; color: #7C7879">claim</span><span class="mono" style="font-size: 11px; color: #7C7879">how we know</span>
+</div>
+<sc-for list="{{ ex.ledger }}" as="l" hint-placeholder-count="5">
+<div style="display: grid; grid-template-columns: 130px minmax(0, 1fr) 230px; gap: 16px; padding: 14px 24px; border-bottom: 1px solid #E4E2E2; align-items: start">
+<span class="mono" style="font-size: 12px; line-height: 22px; color: #514D4E">{{ l.type }}</span>
+<span style="font-size: 15px; line-height: 22px">{{ l.claim }}</span>
+<span class="{{ l.cls }}" style="justify-self: start">{{ l.status }}</span>
+</div>
+</sc-for>
+<p style="padding: 14px 24px; font-size: 13px; line-height: 18px; color: #514D4E; background: #FAF9F7">Solid green: the organization states it. Outlined: seen in a dated source. Dashed: our interpretation, or announced but not yet real.</p>
+</div>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-family: var(--fd); font-size: 30px; line-height: 36px; font-weight: 500">For your class</h2>
+<div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px">
+<div class="card" style="padding: 24px">
+<p class="eyebrow" style="color: #514D4E">Explain it to students</p>
+<p style="margin-top: 10px">{{ ex.explain }}</p>
+</div>
+<div class="card" style="padding: 24px; background: #F2F8F1; border-color: #CFE3CC">
+<p class="eyebrow">Discussion prompt</p>
+<p style="margin-top: 10px; font-family: var(--fd); font-size: 20px; line-height: 28px">{{ ex.prompt }}</p>
+</div>
+</div>
+<p class="body" style="font-size: 14px; line-height: 20px"><strong style="color: #231F20">Mindset it shows:</strong> {{ ex.mindset }}</p>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-family: var(--fd); font-size: 30px; line-height: 36px; font-weight: 500">People doing this work</h2>
+<div class="card" style="padding: 0">
+<sc-for list="{{ ex.roles }}" as="r" hint-placeholder-count="3">
+<div style="display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px; padding: 20px 24px; border-bottom: 1px solid #E4E2E2">
+<div><p style="font-weight: 600">{{ r.title }}</p><p class="body" style="margin-top: 4px; font-size: 14px; line-height: 20px">{{ r.note }}</p></div>
+<span class="tag tag-n" style="align-self: start; white-space: nowrap">{{ r.evidence }}</span>
+</div>
+</sc-for>
+<p class="body" style="padding: 16px 24px; font-size: 14px; line-height: 20px; background: #FAF9F7; border-radius: 0 0 16px 16px">{{ ex.rolesNote }}</p>
+</div>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-family: var(--fd); font-size: 30px; line-height: 36px; font-weight: 500">Pathways to explore</h2>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<sc-for list="{{ ex.pathways }}" as="p" hint-placeholder-count="2">
+<div class="card" style="padding: 20px 24px; display: flex; flex-direction: column; gap: 8px">
+<span class="{{ p.cls }}" style="align-self: flex-start">{{ p.kind }}</span>
+<p style="font-weight: 600">{{ p.label }}</p>
+<p class="body" style="font-size: 14px; line-height: 20px">{{ p.note }}</p>
+</div>
+</sc-for>
+</div>
+</section>
+
+<section class="card" style="display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px; align-items: center">
+<div>
+<p class="eyebrow" style="color: #514D4E">A question to ask someone doing this work</p>
+<p style="margin-top: 10px; font-family: var(--fd); font-size: 22px; line-height: 30px">“{{ ex.conversation }}”</p>
+</div>
+<button class="btn btn-out" onClick="{{ openSpeakerEx }}"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg>Request a conversation</button>
+</section>
+
+<sc-if value="{{ hasNews }}" hint-placeholder-val="{{ false }}">
+<section style="display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-family: var(--fd); font-size: 30px; line-height: 36px; font-weight: 500">Recent development</h2>
+<sc-if value="{{ news.locked }}" hint-placeholder-val="{{ true }}">
+<div class="card" style="background: #FAF9F7; display: flex; flex-direction: column; gap: 12px">
+<span class="tag tag-n" style="align-self: flex-start"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>Free with signup</span>
+<p style="font-weight: 600; font-size: 18px; line-height: 28px">{{ news.title }}</p>
+<p class="cap">Published {{ news.published }} · {{ news.statusShort }}</p>
+<div><button class="btn btn-out" onClick="{{ openSignup }}">Sign up free to open</button></div>
+</div>
+</sc-if>
+<sc-if value="{{ news.unlocked }}" hint-placeholder-val="{{ false }}">
+<div class="card" style="display: flex; flex-direction: column; gap: 12px">
+<span class="tag tag-w" style="align-self: flex-start">{{ news.status }}</span>
+<p style="font-weight: 600; font-size: 18px; line-height: 28px">{{ news.title }}</p>
+<p class="cap">Published {{ news.published }}</p>
+<p class="body">{{ news.summary }}</p>
+<div class="wash"><p class="eyebrow">Ask students</p><p style="margin-top: 8px; font-family: var(--fd); font-size: 20px; line-height: 28px">{{ news.ask }}</p></div>
+<p class="src" style="font-size: 14px"><a href="{{ news.url }}" target="_blank" rel="noopener">{{ news.srcLabel }}<svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a></p>
+</div>
+</sc-if>
+</section>
+</sc-if>
+
+<section id="sources" style="display: flex; flex-direction: column; gap: 16px; padding-top: 32px; border-top: 1px solid #E4E2E2">
+<h2 style="margin: 0; font-family: var(--fd); font-size: 30px; line-height: 36px; font-weight: 500">Sources and course fit</h2>
+<div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px">
+<div>
+<p class="eyebrow" style="color: #514D4E">Where it fits</p>
+<ul style="margin: 12px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px">
+<sc-for list="{{ ex.courses }}" as="k" hint-placeholder-count="2"><li><strong>{{ k.name }}</strong><span class="body"> · {{ k.topic }}</span></li></sc-for>
+</ul>
+<p class="cap" style="margin-top: 12px">Editorial mapping to published CBE course topics. Pending educator review. No outcome-code alignment is claimed.</p>
+</div>
+<div>
+<p class="eyebrow" style="color: #514D4E">Sources · checked 24 Sep 2026</p>
+<ul class="src" style="margin: 12px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 15px">
+<sc-for list="{{ ex.sources }}" as="s" hint-placeholder-count="4"><li><a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.label }}<svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a></li></sc-for>
+</ul>
+<p class="cap" style="margin-top: 12px">Organization claims are reported as the organization states them. {{ ex.org }} has not reviewed or endorsed this page.</p>
+</div>
+</div>
+</section>
+</article>
+
+<aside style="position: sticky; top: 24px; display: flex; flex-direction: column; gap: 16px">
+<div class="card" style="padding: 24px; display: flex; flex-direction: column; gap: 16px">
+<p class="eyebrow" style="color: #514D4E">At a glance</p>
+<div><p class="cap">Organization</p><p style="font-weight: 600; margin-top: 2px">{{ ex.org }}</p></div>
+<div style="display: flex; gap: 8px"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" style="color: #367533; margin-top: 3px"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg><p class="body" style="font-size: 14px; line-height: 20px">{{ ex.localShort }}</p></div>
+<div><p class="cap">Fits</p><div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px"><sc-for list="{{ ex.courses }}" as="k" hint-placeholder-count="2"><span class="tag">{{ k.name }}</span></sc-for></div></div>
+<div><p class="cap">Evidence checked</p><p style="margin-top: 2px">24 September 2026 · <a href="#sources">{{ ex.sourceCount }} sources</a></p></div>
+</div>
+<div class="card" style="padding: 24px; display: flex; flex-direction: column; gap: 12px">
+<p style="font-weight: 600">Bring this work into class</p>
+<p class="body" style="font-size: 14px; line-height: 20px">Ask for a practitioner conversation. We check who might be suitable before anything is arranged.</p>
+<button class="btn btn-out" onClick="{{ openSpeakerEx }}">Request a conversation</button>
+</div>
+<sc-if value="{{ notSignedUp }}" hint-placeholder-val="{{ true }}">
+<div style="padding: 4px 8px"><p class="body" style="font-size: 14px; line-height: 20px">Teaching this topic again? <button class="linkbtn" onClick="{{ openSignup }}" style="min-height: 32px; font-size: 14px">Save it with a free account</button></p></div>
+</sc-if>
+</aside>
+</div>
+</div>
+</sc-if>
+
+<!-- GET INVOLVED -->
+<sc-if value="{{ isInvolved }}" hint-placeholder-val="{{ false }}">
+<div style="max-width: 1200px; margin: 0 auto; padding: 64px 48px 48px; display: flex; flex-direction: column; gap: 40px">
+<div>
+<p class="eyebrow">Get involved</p>
+<h1 style="margin: 16px 0 0; font-family: var(--fd); font-size: 56px; line-height: 56px; font-weight: 500; letter-spacing: -0.02em; max-width: 860px">Help students see the science work happening around them.</h1>
+<p class="body" style="margin-top: 20px; max-width: 660px; font-size: 18px; line-height: 28px">Careers in the Classroom connects teachers with real organizations and the people inside them. If your work belongs in a science class, here is how to take part.</p>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px">
+<div class="card" style="display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-size: 20px; line-height: 28px; font-weight: 600">Calgary organizations</h2>
+<ul style="margin: 0; padding-left: 20px; color: #514D4E; display: flex; flex-direction: column; gap: 8px">
+<li>Correct or update what we’ve written about your work</li>
+<li>Suggest a practitioner who could talk with a class</li>
+<li>Share a resource teachers could use</li>
+<li>Talk with us about supporting the service</li>
+</ul>
+</div>
+<div class="card" style="display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-size: 20px; line-height: 28px; font-weight: 600">Provincial and national networks</h2>
+<ul style="margin: 0; padding-left: 20px; color: #514D4E; display: flex; flex-direction: column; gap: 8px">
+<li>Point us to member organizations doing classroom-ready work</li>
+<li>Share practitioner offers across your members</li>
+<li>Help us reach classrooms beyond Calgary later</li>
+</ul>
+</div>
+</div>
+<div class="wash" style="display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 32px; align-items: center; padding: 28px 32px">
+<div>
+<p style="font-weight: 600">How we keep it fair</p>
+<p class="body" style="margin-top: 6px">Results are ranked by educational relevance. Support is always disclosed and never buys placement. Submissions are checked against sources before they change anything. No organization shown in this prototype has agreed to take part.</p>
+</div>
+<button class="btn btn-ink" onClick="{{ startInvolved }}">Start a conversation</button>
+</div>
+<sc-if value="{{ involved }}" hint-placeholder-val="{{ false }}">
+<div class="card" style="display: flex; gap: 10px; align-items: center"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" style="color: #367533"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg><span>Prototype only. The real service would open a short form that the TKS team reviews. Nothing was sent.</span></div>
+</sc-if>
+</div>
+</sc-if>
+
+<footer style="max-width: 1200px; margin: 0 auto; padding: 32px 48px 48px; border-top: 1px solid #E4E2E2; display: flex; justify-content: space-between; gap: 24px">
+<p class="cap">Careers in the Classroom is a working name. Supported by TKS (The Knowledge Society). Not a launched service.</p>
+<button class="linkbtn" onClick="{{ goInvolved }}" style="min-height: 24px; font-size: 13px">Organizations: get involved</button>
+</footer>
+</main>
+
+<!-- SIGNUP DIALOG -->
+<sc-if value="{{ modalSignup }}" hint-placeholder-val="{{ false }}">
+<div onKeyDown="{{ onModalKey }}" style="position: absolute; inset: 0; z-index: 10; display: flex; align-items: center; justify-content: center">
+<button class="backdrop" tabindex="-1" aria-label="Close" onClick="{{ closeModal }}"></button>
+<div role="dialog" aria-modal="true" aria-labelledby="su-t" tabindex="-1" style="position: relative; width: 600px; max-height: 820px; overflow-y: auto; background: #FFFFFF; border-radius: 28px; padding: 40px; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; justify-content: space-between; gap: 16px; align-items: start">
+<h2 id="su-t" style="margin: 0; font-family: var(--fd); font-size: 30px; line-height: 36px; font-weight: 500">Save your search. Get Calgary examples monthly.</h2>
+<button class="navbtn" onClick="{{ closeModal }}" aria-label="Close" style="padding: 0 10px"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button>
+</div>
+<ul style="margin: 0; padding-left: 20px; color: #514D4E; display: flex; flex-direction: column; gap: 6px">
+<li>See every prepared result for your topics</li>
+<li>Keep your searches for when the unit comes around again</li>
+<li>One email a month: local examples and verified student opportunities</li>
+<li>Change topics any time as your class moves on</li>
+</ul>
+<div class="wash" style="padding: 14px 18px; display: flex; gap: 10px; align-items: center; flex-wrap: wrap"><span class="cap" style="color: #514D4E">We’ll keep</span><span class="tag" style="background: #FFFFFF">{{ contextLabel }}</span></div>
+<form onSubmit="{{ submitSignup }}" style="display: flex; flex-direction: column; gap: 16px">
+<div><label class="lbl" for="su-e">Email</label><input id="su-e" class="inp" type="text" placeholder="name@school.ca" autocomplete="off"><p class="cap" style="margin-top: 6px">A school email helps us confirm you teach. A personal email works too.</p></div>
+<div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px">
+<div><label class="lbl" for="su-s">School</label><input id="su-s" class="inp" type="text" placeholder="Your school" autocomplete="off"></div>
+<div><label class="lbl" for="su-b">School board or authority</label>
+<select id="su-b" class="inp"><option>Choose one</option><option>Calgary Board of Education</option><option>Calgary Catholic School District</option><option>Independent or charter school</option><option>Another board or authority</option></select></div>
+</div>
+<p class="cap">Demo only. Nothing is saved or sent. Placeholder text is fine.</p>
+<div><button type="submit" class="btn btn-ink">Create free account (demo)</button></div>
+</form>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ modalSignupDone }}" hint-placeholder-val="{{ false }}">
+<div onKeyDown="{{ onModalKey }}" style="position: absolute; inset: 0; z-index: 10; display: flex; align-items: center; justify-content: center">
+<button class="backdrop" tabindex="-1" aria-label="Close" onClick="{{ closeModal }}"></button>
+<div role="dialog" aria-modal="true" aria-labelledby="sd-t" tabindex="-1" style="position: relative; width: 520px; background: #FFFFFF; border-radius: 28px; padding: 40px; display: flex; flex-direction: column; gap: 16px">
+<span class="tag" style="align-self: flex-start"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Demo complete</span>
+<h2 id="sd-t" style="margin: 0; font-family: var(--fd); font-size: 30px; line-height: 36px; font-weight: 500">You’re signed up, for this demo.</h2>
+<p class="body">Locked results are now open. In the real service you would also get a confirmation email and your first monthly edition. Nothing was saved or sent.</p>
+<div><button class="btn btn-ink" onClick="{{ closeModal }}">Back to your results</button></div>
+</div>
+</div>
+</sc-if>
+
+<!-- SPEAKER DIALOG -->
+<sc-if value="{{ modalSpeaker }}" hint-placeholder-val="{{ false }}">
+<div onKeyDown="{{ onModalKey }}" style="position: absolute; inset: 0; z-index: 10; display: flex; align-items: center; justify-content: center">
+<button class="backdrop" tabindex="-1" aria-label="Close" onClick="{{ closeModal }}"></button>
+<div role="dialog" aria-modal="true" aria-labelledby="sp-t" tabindex="-1" style="position: relative; width: 600px; max-height: 820px; overflow-y: auto; background: #FFFFFF; border-radius: 28px; padding: 40px; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; justify-content: space-between; gap: 16px; align-items: start">
+<h2 id="sp-t" style="margin: 0; font-family: var(--fd); font-size: 30px; line-height: 36px; font-weight: 500">Request a practitioner conversation</h2>
+<button class="navbtn" onClick="{{ closeModal }}" aria-label="Close" style="padding: 0 10px"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button>
+</div>
+<p class="body">Tell us what you’re teaching and when. We look for someone suitable and check with you before anything is arranged. A listed organization doesn’t mean its people are available.</p>
+<form onSubmit="{{ submitSpeaker }}" style="display: flex; flex-direction: column; gap: 18px">
+<div><label class="lbl" for="sp-topic">Topic</label><input id="sp-topic" class="inp" type="text" value="{{ spTopic }}" onChange="{{ onSpTopic }}" placeholder="What your class is studying" autocomplete="off"></div>
+<sc-if value="{{ hasSpOrg }}" hint-placeholder-val="{{ false }}">
+<div class="wash" style="padding: 12px 16px; font-size: 14px; line-height: 20px">Related example: <strong>{{ spOrg }}</strong>. We may suggest someone from a different organization.</div>
+</sc-if>
+<fieldset style="border: 0; margin: 0; padding: 0">
+<legend class="lbl">Preferred timing</legend>
+<div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px">
+<label class="opt"><input type="radio" name="timing" value="In the next 2 weeks">In the next 2 weeks</label>
+<label class="opt"><input type="radio" name="timing" value="Later this month">Later this month</label>
+<label class="opt"><input type="radio" name="timing" value="Later this term">Later this term</label>
+<label class="opt"><input type="radio" name="timing" value="Flexible">Flexible</label>
+</div>
+</fieldset>
+<fieldset style="border: 0; margin: 0; padding: 0">
+<legend class="lbl">Format</legend>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+<label class="opt"><input type="radio" name="format" value="In class">In class</label>
+<label class="opt"><input type="radio" name="format" value="Video call">Video call</label>
+<label class="opt"><input type="radio" name="format" value="Either">Either</label>
+</div>
+</fieldset>
+<div><label class="lbl" for="sp-note">What should students get from it? <span class="cap">Optional</span></label><textarea id="sp-note" class="inp" name="note"></textarea></div>
+<p class="cap">Demo only. No one is contacted and nothing is booked.</p>
+<div><button type="submit" class="btn btn-ink">Send request (demo)</button></div>
+</form>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ modalSpeakerDone }}" hint-placeholder-val="{{ false }}">
+<div onKeyDown="{{ onModalKey }}" style="position: absolute; inset: 0; z-index: 10; display: flex; align-items: center; justify-content: center">
+<button class="backdrop" tabindex="-1" aria-label="Close" onClick="{{ closeModal }}"></button>
+<div role="dialog" aria-modal="true" aria-labelledby="spd-t" tabindex="-1" style="position: relative; width: 540px; background: #FFFFFF; border-radius: 28px; padding: 40px; display: flex; flex-direction: column; gap: 16px">
+<span class="tag tag-n" style="align-self: flex-start">Request recorded for this demo</span>
+<h2 id="spd-t" style="margin: 0; font-family: var(--fd); font-size: 30px; line-height: 36px; font-weight: 500">Here’s what would happen next</h2>
+<div class="wash" style="font-size: 14px; line-height: 22px"><strong>{{ spSummary }}</strong></div>
+<ol style="margin: 0; padding-left: 20px; color: #514D4E; display: flex; flex-direction: column; gap: 8px">
+<li>The TKS team looks for practitioners who fit your topic.</li>
+<li>We reach out to them and confirm they are willing.</li>
+<li>We come back to you with options before anything is booked.</li>
+</ol>
+<p class="cap">Nothing was sent. No one was contacted. This is not a booking.</p>
+<div><button class="btn btn-ink" onClick="{{ closeModal }}">Done</button></div>
+</div>
+</div>
+</sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"heroImage":{"editor":"text","default":"/_blob/1bbaf0fffc9f91ee169a6a112b3fc7ac","section":"Hero photo"},"heroAlt":{"editor":"text","default":"Downtown Calgary beside the Bow River, seen from above","section":"Hero photo"},"heroCredit":{"editor":"text","default":"Photo: Mahesh Gupta / Unsplash","section":"Hero photo"},"$preview":{"width":1440,"height":900}}'>
+var CBE_BIO = "https://eps.cbe.ab.ca/biology-20-30.aspx";
+var CBE_CHEM = "https://eps.cbe.ab.ca/chemistry-20-30.aspx";
+var CBE_PHYS = "https://eps.cbe.ab.ca/physics-20-30.aspx";
+var CBE_SCI = "https://eps.cbe.ab.ca/science-10-20-30.aspx";
+
+var EX = {
+  wilder: {
+    id: "wilder", org: "Wilder Institute", discipline: "Biology",
+    question: "Can helping individual owls help a population recover?",
+    localShort: "Connected to the Calgary Zoo. Field program in southeastern Alberta.",
+    calgary: "Wilder Institute is connected to the Calgary Zoo.",
+    site: "Its burrowing owl field program works in southeastern Alberta, not in Calgary itself.",
+    hasStatus: false, status: "",
+    work: "The program cares for vulnerable young burrowing owls through their first winter, then releases adult pairs and monitors them. It uses an intervention at one life stage to support a whole population’s recovery.",
+    explain: "Saving animals and restoring a population are connected but different goals. Scientists need evidence about what happens after release, not just a count of animals cared for.",
+    prompt: "What would you measure over several years to decide whether this intervention is helping? What comparison would make your conclusion more convincing?",
+    conversation: "How do you decide what to measure, and how do field observations change the intervention?",
+    mindset: "Evaluate outcomes beyond the most visible success metric.",
+    courses: [{ name: "Biology 20", topic: "Ecosystems and population change" }, { name: "Biology 30", topic: "Population and community dynamics" }],
+    roles: [
+      { title: "Conservation research population ecologist", note: "Leads the burrowing owl program.", evidence: "Observed · Jul 2025 interview" },
+      { title: "Animal care technicians", note: "Support the owls while they are in care.", evidence: "Observed · 2023 account" },
+      { title: "Veterinarians", note: "Support the owls while they are in care.", evidence: "Observed · 2023 account" }
+    ],
+    rolesNote: "Dated observations from Wilder’s own publications. Not a current staff roster, open jobs, or speaker availability.",
+    pathways: [
+      { kind: "Possible direction", label: "Ecology, zoology or environmental science", note: "Relevant study areas, listed among UCalgary’s science programs. Not confirmed hiring requirements at Wilder." },
+      { kind: "Not yet researched", label: "Animal care and veterinary routes", note: "These need their own research. One qualification does not fit every role." }
+    ],
+    sources: [
+      { label: "Wilder Institute", url: "https://wilderinstitute.org/" },
+      { label: "Burrowing owl program", url: "https://wilderinstitute.org/program/burrowing-owl-program/" },
+      { label: "Researcher interview, Jul 2025", url: "https://wilderinstitute.org/2025/07/21/head-starting-burrowing-owls-for-a-wild-future/" },
+      { label: "Care team account, 2023", url: "https://wilderinstitute.org/blog/100th-owl-returns-to-the-prairies/" },
+      { label: "CBE Biology 20–30 topics", url: CBE_BIO },
+      { label: "UCalgary science program guides", url: "https://science.ucalgary.ca/current-students/undergraduate/program-guides" }
+    ],
+    news: null
+  },
+  e3: {
+    id: "e3", org: "E3 Lithium", discipline: "Chemistry",
+    question: "How do you separate something valuable from a complex liquid?",
+    localShort: "Calgary-based company. Clearwater project between Calgary and Red Deer.",
+    calgary: "E3 Lithium is a Calgary-based company.",
+    site: "Its Clearwater project is between Calgary and Red Deer. A Calgary address does not mean the extraction site is in the city.",
+    hasStatus: true, status: "Development and scale-up. The planned commercial facility is not operating yet.",
+    work: "E3 is developing direct lithium extraction from underground brine. A published process role connects laboratory and demonstration systems to plant design.",
+    explain: "Separating a useful substance is only part of the challenge. A process also has to work repeatedly, at a useful scale, with acceptable resource use and cost.",
+    prompt: "If two separation methods recover different amounts of lithium but use different amounts of water and energy, what would you need to compare before choosing one?",
+    conversation: "What changes when a process moves from a lab to a larger facility?",
+    mindset: "Optimize across competing constraints rather than one number.",
+    courses: [{ name: "Chemistry 20", topic: "Solutions and quantitative chemical change" }, { name: "Chemistry 30", topic: "Electrochemistry, as a wider battery connection only" }],
+    roles: [
+      { title: "Water process engineer / process chemist", note: "Process design, testing, equipment evaluation and optimization, tied to extraction development.", evidence: "Employer job posting" }
+    ],
+    rolesNote: "A posting shows work the employer sought. It does not show that someone holds the role today or that it is open now.",
+    pathways: [
+      { kind: "Employer requirement", label: "Degree in chemical engineering or process chemistry, plus substantial experience", note: "Stated in the posting. A later-career example, not a first job after school." },
+      { kind: "One actual route", label: "Chemistry and chemical engineering degrees", note: "From the process and technology director’s company biography. One person’s route, not a rule." }
+    ],
+    sources: [
+      { label: "E3 Lithium", url: "https://www.e3lithium.ca/" },
+      { label: "Process role description (PDF)", url: "https://e3lithium.ca/_resources/careers/Intermediate-Water-Process-Engineer_JobDescription.pdf?v=021812" },
+      { label: "Management biographies", url: "https://www.e3lithium.ca/corporate/management/" },
+      { label: "CBE Chemistry 20–30 topics", url: CBE_CHEM }
+    ],
+    news: null
+  },
+  ghgsat: {
+    id: "ghgsat", org: "GHGSat", discipline: "Physics",
+    question: "How can you find an invisible gas from space?",
+    localShort: "Lists a Calgary office. Headquarters in Montreal.",
+    calgary: "GHGSat lists a Calgary office.",
+    site: "Headquarters is in Montreal. The roles below describe the whole company. We have not confirmed which are in Calgary.",
+    hasStatus: false, status: "",
+    work: "GHGSat’s satellite instruments measure methane. The company describes a spectrometer at the heart of its satellites. It links measurement, electromagnetic radiation and environmental decisions.",
+    explain: "Detecting a gas, estimating how much is escaping, and deciding what to do are different tasks. Instruments, analysis and the people interpreting results all contribute.",
+    prompt: "If a sensor detects no methane, does that prove none is present? What would you want to know about the instrument and the observation conditions?",
+    conversation: "How do you turn an instrument reading into a conclusion someone can act on?",
+    mindset: "Understand measurement limits before drawing conclusions.",
+    courses: [{ name: "Physics 30", topic: "Electromagnetic radiation" }, { name: "Science 30", topic: "Electromagnetic energy and environmental topics" }, { name: "Science 10", topic: "Global energy systems, as a broader introduction" }],
+    roles: [
+      { title: "Satellite engineering", note: "Team area named by the company.", evidence: "Company-listed team area" },
+      { title: "Atmospheric science", note: "Team area named by the company.", evidence: "Company-listed team area" },
+      { title: "Software development and data science", note: "Team areas named by the company.", evidence: "Company-listed team area" },
+      { title: "Commercial work", note: "Team area named by the company.", evidence: "Company-listed team area" }
+    ],
+    rolesNote: "Role families from the company’s own site. Not verified vacancies or project assignments, and not confirmed as Calgary-based.",
+    pathways: [
+      { kind: "Possible direction", label: "Physics, engineering, or computing and data study", note: "Plausible for different parts of this work. Not confirmed GHGSat hiring requirements." },
+      { kind: "Example program", label: "UCalgary engineering physics", note: "Combines physics and engineering. Its overview names space physics among application areas." }
+    ],
+    sources: [
+      { label: "GHGSat offices and work areas", url: "https://www.ghgsat.com/contact/" },
+      { label: "Satellite technology", url: "https://www.ghgsat.com/technology/satellite-constellation/" },
+      { label: "CBE Physics 20–30 topics", url: CBE_PHYS },
+      { label: "CBE Science 10–30 topics", url: CBE_SCI },
+      { label: "UCalgary engineering physics", url: "https://schulich.ucalgary.ca/departments-centres/departments-and-programs-overview/engineering-physics" },
+      { label: "UCalgary engineering programs", url: "https://schulich.ucalgary.ca/future-students/undergraduate/programs/majors" }
+    ],
+    news: "newsA"
+  }
+};
+
+var NEWS = {
+  newsA: {
+    id: "newsA", title: "GHGSat plans a second-generation satellite for early 2028",
+    published: "21 Sep 2026", status: "Company announcement · projected, not operating", statusShort: "Company announcement",
+    location: "Organization with a Calgary office",
+    summary: "GHGSat announced a second-generation satellite planned for early 2028, with improved sensitivity and coverage. These are projected capabilities, not results.",
+    ask: "How would a lower detection threshold change which emissions events become visible?",
+    caution: "", url: "https://www.ghgsat.com/resources/ghgsat-unveils-plans-for-second-generation-satellite-setting-a-new-standard-for-methane-detection-from-space/",
+    srcLabel: "GHGSat announcement"
+  },
+  newsB: {
+    id: "newsB", title: "AI-assisted analysis points to an enzyme system with an unknown function",
+    published: "23 Sep 2026", status: "Early research · organization-reported", statusShort: "Early research",
+    location: "Bay Area lab · no Calgary connection",
+    summary: "Anthropic announced a life sciences lab and reported finding an enzyme system through AI-assisted analysis, followed by human lab work. The organization says the system’s function is still unknown. A preprint is linked. Peer review and replication are not verified here.",
+    ask: "What is the difference between noticing an unusual pattern, proposing a function, and demonstrating that function?",
+    caution: "Not a proven gene-editing tool or treatment.",
+    url: "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system", srcLabel: "Research announcement"
+  }
+};
+
+var QUERIES = [
+  { id: "phys30", course: "Physics 30", label: "Electromagnetic radiation", kw: ["electromagnetic", "radiation", "spectr", "light", "wave", "satellite", "methane", "emr"],
+    results: [
+      { ex: "ghgsat", why: "A satellite spectrometer measuring methane puts electromagnetic radiation to work on a real environmental question." },
+      { news: "newsA", why: "A new announcement about detection sensitivity. Good for a question about measurement limits." }
+    ] },
+  { id: "sci30", course: "Science 30", label: "Electromagnetic energy", kw: ["electromagnetic", "energy", "radiation", "environment", "methane", "climate", "emission"],
+    results: [
+      { ex: "ghgsat", why: "Connects electromagnetic energy to an environmental decision: finding methane emissions." },
+      { news: "newsA", why: "A new announcement about detection sensitivity. Good for a question about measurement limits." }
+    ] },
+  { id: "sci10", course: "Science 10", label: "Energy flow in global systems", kw: ["energy", "global", "system", "methane", "climate", "emission"],
+    results: [{ ex: "ghgsat", why: "A broader introductory connection: monitoring emissions from energy systems." }] },
+  { id: "bio20", course: "Biology 20", label: "Ecosystems and population change", kw: ["population", "ecosystem", "conservation", "owl", "species", "recover", "endanger", "wildlife"],
+    results: [{ ex: "wilder", why: "An intervention at one life stage, young owls in their first winter, used to try to help a whole population recover." }] },
+  { id: "bio30pop", course: "Biology 30", label: "Population and community dynamics", kw: ["population", "community", "dynamic", "ecology", "owl", "conservation", "species"],
+    results: [{ ex: "wilder", why: "Monitoring released owls turns population dynamics into a real measurement problem." }] },
+  { id: "bio30dna", course: "Biology 30", label: "Cell division, genetics and molecular biology", kw: ["dna", "protein", "gene", "genetic", "enzyme", "molecular", "inquiry"],
+    note: "No Calgary example is prepared for this topic yet. One recent development from outside Calgary is relevant.",
+    results: [{ news: "newsB", why: "Connects DNA, proteins and scientific inquiry, with the uncertainty kept visible." }] },
+  { id: "chem20", course: "Chemistry 20", label: "Matter as solutions, acids and bases", kw: ["solution", "separat", "mixture", "concentration", "quantitative", "lithium", "brine", "stoichiometr"],
+    results: [{ ex: "e3", why: "Separating lithium from brine makes solutions and quantitative change a real engineering problem." }] },
+  { id: "chem30", course: "Chemistry 30", label: "Electrochemical changes", kw: ["electrochem", "battery", "batteries", "lithium", "redox", "cell"],
+    results: [{ ex: "e3", why: "A wider battery connection only. We are not claiming E3’s extraction process uses electrochemistry." }] }
+];
+
+var COURSES = ["Science 10", "Science 20", "Science 30", "Biology 20", "Biology 30", "Chemistry 20", "Chemistry 30", "Physics 20", "Physics 30"];
+var PRESETS = [["Physics 30", "p30c"], ["Biology 20", "b20b"], ["Chemistry 20", "c20c"], ["Biology 30", "b30c"], ["Science 30", "s30c"]];
+
+// Unit names from Alberta Education programs of studies (to confirm against current curriculum). q = prepared query.
+var UNITS = {
+  "Science 10": [{ id: "s10a", name: "Energy and matter in chemical change" }, { id: "s10b", name: "Energy flow in technological systems" }, { id: "s10c", name: "Cycling of matter in living systems" }, { id: "s10d", name: "Energy flow in global systems", q: "sci10" }],
+  "Science 20": [{ id: "s20a", name: "Chemical changes" }, { id: "s20b", name: "Changes in motion" }, { id: "s20c", name: "The changing Earth" }, { id: "s20d", name: "Changes in living systems" }],
+  "Science 30": [{ id: "s30a", name: "Living systems respond to their environment" }, { id: "s30b", name: "Chemistry and the environment" }, { id: "s30c", name: "Electromagnetic energy", q: "sci30" }, { id: "s30d", name: "Energy and the environment" }],
+  "Biology 20": [{ id: "b20a", name: "Energy and matter exchange in the biosphere" }, { id: "b20b", name: "Ecosystems and population change", q: "bio20" }, { id: "b20c", name: "Photosynthesis and cellular respiration" }, { id: "b20d", name: "Human systems" }],
+  "Biology 30": [{ id: "b30a", name: "Nervous and endocrine systems" }, { id: "b30b", name: "Reproduction and development" }, { id: "b30c", name: "Cell division, genetics and molecular biology", q: "bio30dna" }, { id: "b30d", name: "Population and community dynamics", q: "bio30pop" }],
+  "Chemistry 20": [{ id: "c20a", name: "The diversity of matter and chemical bonding" }, { id: "c20b", name: "Forms of matter: gases" }, { id: "c20c", name: "Matter as solutions, acids and bases", q: "chem20" }, { id: "c20d", name: "Quantitative relationships in chemical changes", q: "chem20" }],
+  "Chemistry 30": [{ id: "c30a", name: "Thermochemical changes" }, { id: "c30b", name: "Electrochemical changes", q: "chem30" }, { id: "c30c", name: "Chemical changes of organic compounds" }, { id: "c30d", name: "Chemical equilibrium focusing on acid–base systems" }],
+  "Physics 20": [{ id: "p20a", name: "Kinematics" }, { id: "p20b", name: "Dynamics" }, { id: "p20c", name: "Circular motion, work and energy" }, { id: "p20d", name: "Oscillatory motion and mechanical waves" }],
+  "Physics 30": [{ id: "p30a", name: "Momentum and impulse" }, { id: "p30b", name: "Forces and fields" }, { id: "p30c", name: "Electromagnetic radiation", q: "phys30" }, { id: "p30d", name: "Atomic physics" }]
+};
+function unitFor(qid) { for (var c in UNITS) { for (var i = 0; i < UNITS[c].length; i++) { if (UNITS[c][i].q === qid) return [c, UNITS[c][i].id]; } } return null; }
+
+// Evidence labels. k: s = organization states it, o = seen in a dated source, i = interpretation or not yet real.
+EX.wilder.ledger = [
+  { type: "work", claim: "Cares for young owls through their first winter, then releases and monitors adult pairs.", status: "Organization-stated", k: "s" },
+  { type: "roles", claim: "Population ecologist leads the program. Animal care technicians and vets support it.", status: "Observed · 2025 and 2023", k: "o" },
+  { type: "pathways", claim: "Ecology, zoology, environmental science.", status: "Inferred direction", k: "i" },
+  { type: "course fit", claim: "Biology 20 and Biology 30 population units.", status: "Editorial · pending review", k: "i" }
+];
+EX.e3.ledger = [
+  { type: "work", claim: "Developing direct lithium extraction from brine.", status: "Company-stated", k: "s" },
+  { type: "status", claim: "The commercial facility is planned, not operating.", status: "Not yet operating", k: "i" },
+  { type: "roles", claim: "A water process engineer / process chemist was sought.", status: "Employer posting · not proof it’s filled", k: "o" },
+  { type: "pathways", claim: "Chemical engineering or process chemistry degree, plus experience.", status: "Employer requirement", k: "s" },
+  { type: "pathways", claim: "Director’s chemistry and chemical engineering degrees.", status: "One actual route", k: "o" },
+  { type: "course fit", claim: "Chemistry 20 solutions. Chemistry 30 battery context only.", status: "Editorial · pending review", k: "i" }
+];
+EX.ghgsat.ledger = [
+  { type: "work", claim: "Satellite instruments measure methane, with a spectrometer at their heart.", status: "Company-stated", k: "s" },
+  { type: "roles", claim: "Satellite engineering, atmospheric science, software, data science, commercial.", status: "Observed · not vacancies", k: "o" },
+  { type: "pathways", claim: "Physics, engineering, computing and data study.", status: "Inferred direction", k: "i" },
+  { type: "news", claim: "A second-generation satellite is planned for early 2028.", status: "Projected · not operating", k: "i" },
+  { type: "course fit", claim: "Physics 30, Science 30, Science 10.", status: "Editorial · pending review", k: "i" }
+];
+
+function qById(id) { for (var i = 0; i < QUERIES.length; i++) { if (QUERIES[i].id === id) return QUERIES[i]; } return null; }
+
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { screen: "home", course: "Physics 30", unit: "", topic: "", resultLabel: "", needUnit: false, scrolled: false, qid: null, exId: null, from: "home", modal: null, signedUp: false, justUnlocked: false, filter: "All", misses: [], noted: false, involved: false, missCourse: "", missTopic: "", spTopic: "", spOrg: "", spSummary: "" };
+    this.scrollEl = null;
+    this.scrollRef = (el) => { this.scrollEl = el; };
+  }
+  componentDidUpdate(pp, ps) {
+    var s = this.state;
+    if (ps.screen !== s.screen || ps.exId !== s.exId || ps.qid !== s.qid) this.toTop();
+    if (s.modal && s.modal !== ps.modal) this.focusDialog();
+  }
+  scroller() { return this.scrollEl || document.querySelector("main"); }
+  toTop() { setTimeout(() => { var el = this.scroller(); if (el) el.scrollTop = 0; }, 0); }
+  focusDialog() { setTimeout(() => { var d = document.querySelector("[role=dialog]"); if (d) d.focus(); }, 0); }
+  setModal(m) {
+    if (m && !this.state.modal) this.lastFocus = document.activeElement;
+    this.setState({ modal: m });
+    if (m) this.focusDialog();
+    else setTimeout(() => { if (this.lastFocus && this.lastFocus.isConnected) this.lastFocus.focus(); }, 0);
+  }
+  find(course, topic) {
+    var t = (topic || "").trim().toLowerCase();
+    var qs = QUERIES.filter(function (q) { return q.course === course; });
+    if (!qs.length) return null;
+    if (!t) return qs[0];
+    return qs.find(function (q) { return q.label.toLowerCase() === t || q.kw.some(function (k) { return t.indexOf(k) !== -1; }); }) || null;
+  }
+  run(course, unitId, topic) {
+    if (!unitId) { this.setState({ needUnit: true }); return; }
+    var q = null, label = "";
+    if (unitId === "__other") {
+      q = this.find(course, topic);
+      label = (topic || "").trim() || "any topic";
+    } else {
+      var u = (UNITS[course] || []).find(function (x) { return x.id === unitId; });
+      q = u && u.q ? qById(u.q) : null;
+      label = u ? u.name : "";
+    }
+    var base = { course: course, unit: unitId, topic: topic || "", needUnit: false };
+    if (q) {
+      this.setState(Object.assign(base, { screen: "results", qid: q.id, resultLabel: label, justUnlocked: false }));
+      this.toTop();
+    } else {
+      var miss = { course: course, topic: label };
+      this.setState(Object.assign(base, { screen: "nomatch", missCourse: course, missTopic: label, misses: this.state.misses.concat([miss]), noted: false }));
+      this.toTop();
+    }
+  }
+  presetItem(course, unitId) {
+    var u = UNITS[course].find(function (x) { return x.id === unitId; });
+    return { course: course, label: u.name, run: () => this.run(course, unitId, "") };
+  }
+  openEx(id, from) { this.setState({ screen: "example", exId: id, from: from }); this.toTop(); }
+  openSpeaker(topic, org) { this.setState({ spTopic: topic || "", spOrg: org || "" }); this.setModal("speaker"); }
+  renderVals() {
+    var s = this.state;
+    var q = s.qid ? qById(s.qid) : null;
+    var self = this;
+    var cards = [];
+    if (q) {
+      cards = q.results.map(function (r, i) {
+        var free = i === 0;
+        if (r.ex) {
+          var ex = EX[r.ex];
+          return Object.assign({}, ex, { isEx: true, isNews: false, why: r.why, badge: free ? "Complete example · free preview" : "Complete example", open: function () { self.openEx(ex.id, "results"); } });
+        }
+        var n = NEWS[r.news];
+        var locked = !free && !s.signedUp;
+        return Object.assign({}, n, { isEx: false, isNews: true, why: r.why, locked: locked, unlocked: !locked, hasCaution: !!n.caution, badge: free ? "Recent development · free preview" : "Recent development" });
+      });
+    }
+    var related = [];
+    if (q) {
+      var keys = q.results.map(function (r) { return r.ex || r.news; });
+      QUERIES.forEach(function (o) {
+        if (o.id !== q.id && o.results.some(function (r) { return keys.indexOf(r.ex || r.news) !== -1; })) related.push(o.id);
+      });
+      PRESETS.forEach(function (pr) { var uq = UNITS[pr[0]].find(function (x) { return x.id === pr[1]; }).q; if (uq !== q.id && related.indexOf(uq) === -1) related.push(uq); });
+      related = related.slice(0, 4).map(function (id) { return Array.isArray(id) ? id : unitFor(id); }).filter(function (x) { return x && !(x[0] === s.course && x[1] === s.unit); });
+    }
+    var ex = s.exId ? EX[s.exId] : EX.ghgsat;
+    var exV = Object.assign({}, ex, {
+      sourceCount: ex.sources.length,
+      ledger: ex.ledger.map(function (l) { return Object.assign({}, l, { cls: l.k === "s" ? "tag" : (l.k === "o" ? "tag tag-n" : "tag tag-w") }); }),
+      pathways: ex.pathways.map(function (p) { var k = { "Employer requirement": "tag", "One actual route": "tag tag-n", "Example program": "tag tag-n" }[p.kind] || "tag tag-w"; return Object.assign({}, p, { cls: k }); })
+    });
+    var whyR = (q && s.from === "results") ? q.results.find(function (r) { return r.ex === ex.id; }) : null;
+    var news = ex.news ? Object.assign({}, NEWS[ex.news], { locked: !s.signedUp, unlocked: s.signedUp }) : Object.assign({}, NEWS.newsA, { locked: true, unlocked: false });
+    var screen = s.screen;
+    var heroImg = this.props.heroImage ?? "/_blob/1bbaf0fffc9f91ee169a6a112b3fc7ac";
+    var heroCredit = this.props.heroCredit ?? "Photo: Mahesh Gupta / Unsplash";
+    var ctx = q ? (q.course + " · " + s.resultLabel) : (s.exId ? EX[s.exId].org + " example" : "Calgary · " + s.course);
+    return {
+      courses: COURSES, course: s.course, topic: s.topic, unit: s.unit,
+      unitOpts: (UNITS[s.course] || []).map(function (u) { return { id: u.id, label: u.name + (u.q ? "  · example ready" : "") }; }),
+      isOther: s.unit === "__other", needUnit: s.needUnit, noNeedUnit: !s.needUnit,
+      onCourse: (e) => this.setState({ course: e.target.value, unit: "", needUnit: false }),
+      onUnit: (e) => this.setState({ unit: e.target.value, needUnit: false }),
+      onTopic: (e) => this.setState({ topic: e.target.value }),
+      submit: (e) => { if (e && e.preventDefault) e.preventDefault(); this.run(this.state.course, this.state.unit, this.state.topic); },
+      presets: PRESETS.map((pr) => this.presetItem(pr[0], pr[1])),
+      related: related.map((pr) => this.presetItem(pr[0], pr[1])),
+      resultLabel: s.resultLabel,
+      onScroll: (e) => { var sc = e.target.scrollTop > 700; if (sc !== this.state.scrolled) this.setState({ scrolled: sc }); },
+      hdrCls: screen === "home" ? (s.scrolled ? "abs" : "abs over") : "",
+      heroImage: heroImg, heroAlt: this.props.heroAlt ?? "Downtown Calgary beside the Bow River, seen from above", heroCredit: heroCredit,
+      hasHeroImg: !!heroImg, noHeroImg: !heroImg, hasHeroCredit: !!heroCredit,
+      teasers: ["ghgsat", "wilder", "e3"].map((id) => Object.assign({}, EX[id], { open: () => this.openEx(id, "explore") })),
+      isHome: screen === "home", isResults: screen === "results", isNomatch: screen === "nomatch", isExplore: screen === "explore", isExample: screen === "example", isInvolved: screen === "involved",
+      navSearch: (screen === "home" || screen === "results" || screen === "nomatch") ? "on" : "",
+      navExplore: screen === "explore" ? "on" : "", navInvolved: screen === "involved" ? "on" : "",
+      goHome: () => { this.setState({ screen: "home", scrolled: false }); this.toTop(); },
+      goExplore: () => { this.setState({ screen: "explore" }); this.toTop(); },
+      goInvolved: () => { this.setState({ screen: "involved", involved: false }); this.toTop(); },
+      q: q ? Object.assign({}, q, { hasNote: !!q.note }) : { course: "", label: "", hasNote: false, note: "" },
+      cards: cards, justUnlocked: s.justUnlocked && screen === "results",
+      signedUp: s.signedUp, notSignedUp: !s.signedUp,
+      missCourse: s.missCourse, missTopic: s.missTopic, misses: s.misses,
+      noted: s.noted, notNoted: !s.noted, noteTopic: () => this.setState({ noted: true }),
+      filters: ["All", "Biology", "Chemistry", "Physics"].map((f) => ({ label: f, cls: s.filter === f ? "on" : "", pressed: s.filter === f ? "true" : "false", pick: () => this.setState({ filter: f }) })),
+      exploreCards: ["wilder", "e3", "ghgsat"].filter((id) => s.filter === "All" || EX[id].discipline === s.filter).map((id) => Object.assign({}, EX[id], { open: () => this.openEx(id, "explore") })),
+      ex: exV, hasWhy: !!whyR, whyText: whyR ? whyR.why : "", whyLabel: q ? q.course + " · " + s.resultLabel : "",
+      hasNews: !!ex.news, news: news,
+      back: () => { this.setState({ screen: s.from === "results" ? "results" : "explore" }); this.toTop(); },
+      backLabel: s.from === "results" ? "Back to results" : "Back to Explore Calgary",
+      involved: s.involved, startInvolved: () => this.setState({ involved: true }),
+      modalSignup: s.modal === "signup", modalSignupDone: s.modal === "signupDone", modalSpeaker: s.modal === "speaker", modalSpeakerDone: s.modal === "speakerDone",
+      openSignup: () => this.setModal("signup"),
+      closeModal: () => this.setModal(null),
+      onModalKey: (e) => { if (e.key === "Escape") this.setModal(null); },
+      contextLabel: ctx,
+      submitSignup: (e) => { e.preventDefault(); this.setState({ signedUp: true, justUnlocked: true }); this.setModal("signupDone"); },
+      openSpeakerSite: () => this.openSpeaker(q ? q.course + " · " + s.resultLabel : "", ""),
+      openSpeakerQ: () => this.openSpeaker(q ? q.course + " · " + s.resultLabel : "", ""),
+      openSpeakerEx: () => this.openSpeaker(q && s.from === "results" ? q.course + " · " + s.resultLabel : ex.courses[0].name + " · " + ex.courses[0].topic, ex.org),
+      spTopic: s.spTopic, onSpTopic: (e) => this.setState({ spTopic: e.target.value }),
+      hasSpOrg: !!s.spOrg, spOrg: s.spOrg, spSummary: s.spSummary,
+      submitSpeaker: (e) => {
+        e.preventDefault();
+        var f = e.target; var t = f.elements.timing ? f.elements.timing.value : ""; var fm = f.elements.format ? f.elements.format.value : "";
+        var parts = [this.state.spTopic || "Topic not given", t || "timing not given", fm || "format not given"];
+        this.setState({ spSummary: parts.join(" · ") }); this.setModal("speakerDone");
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>

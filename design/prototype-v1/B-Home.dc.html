@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Variant B home: Monument</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@500&amp;family=Instrument+Serif:ital@1&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#231F20}
+a{color:#FAF9F7}a:hover{color:#8BCA88}
+</style>
+</helmet>
+<div style="width: 1440px; height: 900px; box-sizing: border-box; background: #231F20; color: #FAF9F7; font-family: Geist, 'Helvetica Neue', Arial, sans-serif; padding: 36px 64px 56px; display: flex; flex-direction: column">
+
+<header style="display: flex; justify-content: space-between; align-items: center; font-family: 'Geist Mono', monospace; font-size: 12px; letter-spacing: .08em">
+<span>CAREERS IN THE CLASSROOM <span style="color: #7C7879">/ CALGARY / SUPPORTED BY TKS</span></span>
+<nav style="display: flex; gap: 28px">
+<a href="#" style="text-decoration: none">EXPLORE</a>
+<a href="#" style="text-decoration: none">REQUEST A SPEAKER</a>
+<a href="#" style="text-decoration: none">GET INVOLVED</a>
+<a href="#" style="text-decoration: none; color: #51B04C">SIGN UP FREE</a>
+</nav>
+</header>
+
+<h1 style="margin: 88px 0 0; font-family: 'PP Neue Montreal', 'Helvetica Neue', Arial, sans-serif; font-weight: 500; font-size: 148px; line-height: 136px; letter-spacing: -0.045em">Find the <span style="font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 400; letter-spacing: -0.02em; color: #8BCA88">work</span><br>behind the lesson.</h1>
+
+<form style="margin-top: 64px; font-family: 'PP Neue Montreal', 'Helvetica Neue', Arial, sans-serif; font-size: 40px; line-height: 56px; font-weight: 500; letter-spacing: -0.01em; color: #B8BCBA; display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 16px">
+<span>I teach</span>
+<label for="b-course" style="position: absolute; left: -9999px">Course</label>
+<select id="b-course" style="font: inherit; color: #FAF9F7; background: transparent; border: 0; border-bottom: 2px solid #51B04C; padding: 0 4px; height: 60px"><option style="color: #231F20">Physics 30</option></select>
+<span>and next we’re on</span>
+<label for="b-topic" style="position: absolute; left: -9999px">Topic</label>
+<input id="b-topic" type="text" value="electromagnetic radiation" style="font: inherit; color: #FAF9F7; background: transparent; border: 0; border-bottom: 2px solid #51B04C; padding: 0 4px; width: 460px; height: 60px">
+<button type="button" style="align-self: center; margin-left: 12px; height: 56px; padding: 0 28px; border-radius: 9999px; border: 0; background: #FAF9F7; color: #231F20; font: 600 16px Geist, Arial, sans-serif">Show me →</button>
+</form>
+
+<div style="margin-top: auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; border-top: 1px solid #514D4E; padding-top: 24px">
+<a href="#" style="text-decoration: none; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Geist Mono', monospace; font-size: 12px; color: #51B04C">01 / PHYSICS</span><span style="font-size: 22px; line-height: 28px; font-weight: 500">How can you find an invisible gas from space?</span><span style="font-size: 14px; color: #B8BCBA">GHGSat</span></a>
+<a href="#" style="text-decoration: none; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Geist Mono', monospace; font-size: 12px; color: #51B04C">02 / BIOLOGY</span><span style="font-size: 22px; line-height: 28px; font-weight: 500">Can helping individual owls help a population recover?</span><span style="font-size: 14px; color: #B8BCBA">Wilder Institute</span></a>
+<a href="#" style="text-decoration: none; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Geist Mono', monospace; font-size: 12px; color: #51B04C">03 / CHEMISTRY</span><span style="font-size: 22px; line-height: 28px; font-weight: 500">How do you separate something valuable from a complex liquid?</span><span style="font-size: 14px; color: #B8BCBA">E3 Lithium</span></a>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic { renderVals() { return {}; } }
+</script>
+</body>
+</html>

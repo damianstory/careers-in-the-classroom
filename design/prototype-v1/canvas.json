@@ -1,0 +1,139 @@
+{
+  "v": 3,
+  "attachments": {},
+  "boards": {
+    "Digest.dc.html": {
+      "h": 2160,
+      "title": "Monthly email mockup",
+      "w": 760,
+      "x": 1520,
+      "y": 0
+    },
+    "Main.dc.html": {
+      "h": 900,
+      "is_interactive": true,
+      "title": "Clickable prototype v2 (desktop): A home + C evidence labels",
+      "w": 1440,
+      "x": 0,
+      "y": 0
+    },
+    "MobileExample.dc.html": {
+      "h": 2560,
+      "title": "Phone: full example",
+      "w": 390,
+      "x": 470,
+      "y": 1020
+    },
+    "MobileSearch.dc.html": {
+      "h": 844,
+      "title": "Phone: search",
+      "w": 390,
+      "x": 0,
+      "y": 1020
+    },
+    "A-Home.dc.html": {
+      "h": 900,
+      "title": "A · Field notes: home",
+      "w": 1440,
+      "x": 0,
+      "y": 3700
+    },
+    "A-Example.dc.html": {
+      "h": 2480,
+      "title": "A · Field notes: example (Wilder)",
+      "w": 1440,
+      "x": 1520,
+      "y": 3700
+    },
+    "B-Home.dc.html": {
+      "h": 900,
+      "title": "B · Monument: home",
+      "w": 1440,
+      "x": 0,
+      "y": 6720
+    },
+    "B-Example.dc.html": {
+      "h": 2300,
+      "title": "B · Monument: example (GHGSat)",
+      "w": 1440,
+      "x": 1520,
+      "y": 6720
+    },
+    "C-Home.dc.html": {
+      "h": 900,
+      "title": "C · Evidence system: home",
+      "w": 1440,
+      "x": 0,
+      "y": 9560
+    },
+    "C-Example.dc.html": {
+      "h": 1720,
+      "title": "C · Evidence system: example (E3)",
+      "w": 1440,
+      "x": 1520,
+      "y": 9560
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-09-24T12:01:11Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "notes": {
+    "guide": {
+      "fill": "green",
+      "maxH": 900,
+      "size": 24,
+      "text": "How to demo\n\n1. Press Play on the desktop board.\n2. Ask about a real upcoming lesson first.\n3. Let them pick a course and unit. Units marked 'example ready': Physics 30 EM radiation, Science 30 EM energy, Science 10 global systems, Biology 20 population change, Biology 30 genetics and population dynamics, Chemistry 20 solutions and quantitative, Chemistry 30 electrochemistry.\n4. Other units, or 'Something else', show the honest no-match screen and log the search for your notes.\n5. Physics 30 shows the signup gate (a locked recent development).\n6. Request a speaker, Sign up, and Get involved are demos. Nothing is sent.\n7. Show the monthly email board last.\n\nHero photo: select the board, open Tweaks, paste a licensed image URL, alt text and credit.",
+      "w": 480,
+      "x": 940,
+      "y": 1020
+    },
+    "title": {
+      "kind": "title1",
+      "maxW": 2280,
+      "text": "Careers in the Classroom · prototype v1",
+      "w": 240,
+      "x": 0,
+      "y": -300
+    },
+    "titleA": {
+      "kind": "title1",
+      "maxW": 2960,
+      "text": "Variant A · Field notes (vast, quiet, cinematic)",
+      "x": 0,
+      "y": 3400
+    },
+    "titleB": {
+      "kind": "title1",
+      "maxW": 2960,
+      "text": "Variant B · Monument (giant type on ink)",
+      "x": 0,
+      "y": 6420
+    },
+    "titleC": {
+      "kind": "title1",
+      "maxW": 2960,
+      "text": "Variant C · Evidence system (the product as hero)",
+      "x": 0,
+      "y": 9260
+    }
+  },
+  "order": [
+    "Main.dc.html",
+    "Digest.dc.html",
+    "MobileSearch.dc.html",
+    "MobileExample.dc.html",
+    "A-Home.dc.html",
+    "A-Example.dc.html",
+    "B-Home.dc.html",
+    "B-Example.dc.html",
+    "C-Home.dc.html",
+    "C-Example.dc.html"
+  ],
+  "pages": [],
+  "title": "Careers in the Classroom — prototype v1"
+}

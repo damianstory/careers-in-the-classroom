@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Variant A home: Field notes</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#1B3B19}
+a{color:#C5E5C3}a:hover{color:#FFFFFF}
+</style>
+</helmet>
+<div style="width: 1440px; height: 900px; position: relative; overflow: hidden; background: #1B3B19; font-family: Geist, 'Helvetica Neue', Arial, sans-serif; color: #FFFFFF">
+
+<svg viewBox="0 0 1440 900" width="1440" height="900" preserveAspectRatio="none" aria-hidden="true" style="position: absolute; inset: 0">
+<rect width="1440" height="900" fill="#1B3B19"></rect>
+<circle cx="1080" cy="430" r="92" fill="#295826"></circle>
+<path d="M0 560 C 220 520, 420 540, 640 505 S 1080 470, 1440 520 L1440 900 L0 900 Z" fill="#295826"></path>
+<path d="M0 640 C 260 600, 520 630, 780 598 S 1200 580, 1440 612 L1440 900 L0 900 Z" fill="#367533"></path>
+<path d="M0 730 C 300 700, 640 720, 960 695 S 1300 690, 1440 705 L1440 900 L0 900 Z" fill="#44933F"></path>
+<path d="M0 810 C 360 790, 760 805, 1100 788 S 1360 790, 1440 796 L1440 900 L0 900 Z" fill="#51B04C"></path>
+</svg>
+
+<header style="position: absolute; top: 0; left: 0; right: 0; height: 88px; padding: 0 64px; display: flex; align-items: center; justify-content: space-between">
+<div style="display: flex; align-items: baseline; gap: 14px">
+<span style="font-family: 'PP Neue Montreal', 'Helvetica Neue', Arial, sans-serif; font-size: 20px; font-weight: 600">Careers in the Classroom</span>
+<span style="font-size: 13px; color: #C5E5C3">Supported by TKS</span>
+</div>
+<nav style="display: flex; gap: 32px; font-size: 15px; font-weight: 500">
+<a href="#" style="text-decoration: none">Explore Calgary</a>
+<a href="#" style="text-decoration: none">Request a speaker</a>
+<a href="#" style="text-decoration: none">Get involved</a>
+<a href="#" style="text-decoration: none; color: #FFFFFF">Sign up free</a>
+</nav>
+</header>
+
+<div style="position: absolute; left: 64px; top: 176px; width: 900px; display: flex; flex-direction: column; gap: 28px">
+<span style="font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: .06em; color: #A8D8A6">51.05° N · 114.07° W · CALGARY</span>
+<h1 style="margin: 0; font-family: 'PP Neue Montreal', 'Helvetica Neue', Arial, sans-serif; font-weight: 500; font-size: 88px; line-height: 88px; letter-spacing: -0.03em">The science you teach is happening down the road.</h1>
+<p style="margin: 0; max-width: 560px; font-size: 19px; line-height: 30px; color: #E8F5E7">Real Calgary organizations, the problems they’re working on, and the people doing the work. Chosen for your course and topic.</p>
+</div>
+
+<form style="position: absolute; left: 64px; bottom: 64px; width: 1000px; height: 76px; background: #FAF9F7; border-radius: 22px; display: flex; align-items: center; padding: 0 10px 0 28px; gap: 16px; color: #231F20">
+<span style="font-size: 17px; color: #514D4E">I teach</span>
+<label for="a-course" style="position: absolute; left: -9999px">Course</label>
+<select id="a-course" style="height: 48px; border: 1px solid #CFE3CC; border-radius: 8px; padding: 0 12px; font: 600 17px Geist, Arial, sans-serif; color: #231F20; background: #FFFFFF"><option>Physics 30</option></select>
+<span style="font-size: 17px; color: #514D4E">and next we’re on</span>
+<label for="a-topic" style="position: absolute; left: -9999px">Topic</label>
+<input id="a-topic" type="text" placeholder="a topic or question" style="flex-grow: 1; height: 48px; border: 0; border-bottom: 2px solid #8BCA88; font: 500 17px Geist, Arial, sans-serif; color: #231F20; background: transparent; padding: 0 4px">
+<button type="button" style="height: 56px; padding: 0 26px; border: 0; border-radius: 14px; background: #231F20; color: #FFFFFF; font: 600 16px Geist, Arial, sans-serif">Find the work</button>
+</form>
+
+<div style="position: absolute; right: 64px; bottom: 76px; width: 260px; display: flex; flex-direction: column; gap: 10px; color: #1B3B19">
+<span style="font-family: 'Geist Mono', monospace; font-size: 12px; letter-spacing: .06em">OR WANDER</span>
+<a href="#" style="color: #1B3B19; font-family: 'PP Neue Montreal', 'Helvetica Neue', Arial, sans-serif; font-size: 26px; line-height: 30px; font-weight: 500">Explore Calgary →</a>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic { renderVals() { return {}; } }
+</script>
+</body>
+</html>

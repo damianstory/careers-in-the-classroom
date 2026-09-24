@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Search on a phone</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#1B3B19}
+a{color:#FFFFFF}a:hover{color:#C5E5C3}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #1B3B19; font-family: Geist, 'Helvetica Neue', Arial, sans-serif; color: #FFFFFF; font-size: 16px; line-height: 24px">
+<img src="/_blob/1bbaf0fffc9f91ee169a6a112b3fc7ac" alt="Downtown Calgary beside the Bow River, seen from above" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 38% center">
+<div style="position: absolute; inset: 0; background: rgba(27, 59, 25, 0.62)"></div>
+
+<div style="position: relative; display: flex; flex-direction: column; height: 100%">
+<div style="background: #1B3B19; color: #E8F5E7; font-size: 12px; line-height: 16px; font-weight: 500; padding: 8px 16px; text-align: center">Prototype. Nothing you type is saved or sent.</div>
+<div style="height: 60px; padding: 0 16px; display: flex; align-items: center; justify-content: space-between">
+<div style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-family: 'PP Neue Montreal', 'Helvetica Neue', Arial, sans-serif; font-size: 17px; font-weight: 600; line-height: 20px">Careers in the Classroom</span>
+<span style="font-size: 11px; line-height: 14px; color: #C5E5C3; font-weight: 500">Supported by TKS</span>
+</div>
+<button aria-label="Menu" style="width: 44px; height: 44px; border: 1px solid rgba(255, 255, 255, 0.5); background: transparent; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #FFFFFF"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16"></path><path d="M4 12h16"></path><path d="M4 18h16"></path></svg></button>
+</div>
+
+<div style="padding: 36px 16px 0; display: flex; flex-direction: column; gap: 16px">
+<span style="font-family: 'Geist Mono', monospace; font-size: 11px; letter-spacing: .06em; color: #C5E5C3">51.05° N · 114.07° W · CALGARY</span>
+<h1 style="margin: 0; font-family: 'PP Neue Montreal', 'Helvetica Neue', Arial, sans-serif; font-weight: 500; font-size: 42px; line-height: 42px; letter-spacing: -0.03em">The science you teach is happening down the road.</h1>
+<p style="margin: 0; font-size: 16px; line-height: 24px; color: #E8F5E7">Real Calgary organizations, their problems, and the people doing the work. Matched to your course and unit.</p>
+</div>
+
+<form style="margin: auto 16px 0; background: #FAF9F7; border-radius: 22px; padding: 16px; display: flex; flex-direction: column; gap: 10px; color: #231F20">
+<label for="m-course" style="font-size: 15px; color: #514D4E">I teach</label>
+<select id="m-course" style="width: 100%; height: 48px; border: 1px solid #CFE3CC; border-radius: 10px; padding: 0 12px; font: 600 16px Geist, Arial, sans-serif; background: #FFFFFF; color: #231F20"><option>Physics 30</option></select>
+<label for="m-unit" style="font-size: 15px; color: #514D4E">and we’re on</label>
+<select id="m-unit" style="width: 100%; height: 48px; border: 1px solid #CFE3CC; border-radius: 10px; padding: 0 12px; font: 600 16px Geist, Arial, sans-serif; background: #FFFFFF; color: #231F20"><option>Electromagnetic radiation · example ready</option></select>
+<button type="button" style="margin-top: 4px; height: 52px; border: 0; border-radius: 14px; background: #231F20; color: #FFFFFF; font: 600 16px/1 Geist, 'Helvetica Neue', Arial, sans-serif">Find the work</button>
+</form>
+
+<div style="padding: 14px 16px 20px; display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-family: 'Geist Mono', monospace; font-size: 11px; color: #C5E5C3">Photo: Mahesh Gupta / Unsplash</span>
+<a href="#" style="font-size: 14px; font-weight: 600; text-decoration: none; min-height: 44px; display: inline-flex; align-items: center">Explore Calgary →</a>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
