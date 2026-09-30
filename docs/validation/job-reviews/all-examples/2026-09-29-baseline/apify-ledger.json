@@ -1,0 +1,89 @@
+{
+  "budget_usd": 1.0,
+  "run_kind": "authorized manual baseline",
+  "runs": [
+    {
+      "name": "e3-company",
+      "actor": "fantastic-jobs~career-site-job-listing-api",
+      "input": {
+        "timeRange": "6m",
+        "descriptionType": "text",
+        "organizationSearch": [
+          "E3 Lithium"
+        ],
+        "limit": 10
+      },
+      "cap_usd": 0.25,
+      "reserved_usd": 0,
+      "status": "SUCCEEDED",
+      "run_id": "13h5UTNt5qBW67m4Z",
+      "dataset_id": "LdFlzOgWpKVgAFuF3",
+      "usage_total_usd": 0.01,
+      "charged_event_counts": {
+        "apify-default-dataset-item": 0,
+        "apify-actor-start": 1
+      },
+      "item_count": 0,
+      "billing_status": "settled",
+      "billing_checked_at": "2026-09-29T23:56:53.670824+00:00",
+      "finished_at": "2026-09-29T23:54:05.266Z"
+    },
+    {
+      "name": "calgary-process-engineering",
+      "actor": "fantastic-jobs~career-site-job-listing-api",
+      "input": {
+        "timeRange": "6m",
+        "descriptionType": "text",
+        "titleSearch": [
+          "Process Engineer"
+        ],
+        "locationSearch": [
+          "Calgary, Alberta, Canada"
+        ],
+        "limit": 15
+      },
+      "cap_usd": 0.25,
+      "reserved_usd": 0,
+      "status": "SUCCEEDED",
+      "run_id": "8DLSrldsjtIIY5rc2",
+      "dataset_id": "5unh7Lr2rybPdAgvq",
+      "usage_total_usd": 0.19,
+      "charged_event_counts": {
+        "apify-default-dataset-item": 15,
+        "apify-actor-start": 1
+      },
+      "item_count": 15,
+      "billing_status": "settled",
+      "billing_checked_at": "2026-09-29T23:56:53.772572+00:00",
+      "finished_at": "2026-09-29T23:54:13.588Z"
+    },
+    {
+      "name": "wilder-company",
+      "actor": "fantastic-jobs~career-site-job-listing-api",
+      "input": {
+        "timeRange": "6m",
+        "descriptionType": "text",
+        "organizationSearch": [
+          "Wilder Institute",
+          "Calgary Zoo"
+        ],
+        "limit": 10
+      },
+      "cap_usd": 0.25,
+      "reserved_usd": 0,
+      "status": "SUCCEEDED",
+      "run_id": "Senp3BXUQzEEcj78k",
+      "dataset_id": "QwyzH5lnN4729NITp",
+      "usage_total_usd": 0.13,
+      "charged_event_counts": {
+        "apify-default-dataset-item": 10,
+        "apify-actor-start": 1
+      },
+      "item_count": 10,
+      "billing_status": "settled",
+      "billing_checked_at": "2026-09-29T23:56:53.882260+00:00",
+      "finished_at": "2026-09-29T23:54:16.175Z"
+    }
+  ],
+  "total_usage_usd": 0.33
+}

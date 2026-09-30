@@ -8,3 +8,11 @@ test-results/
 *.tsbuildinfo
 next-env.d.ts
 .env*
+*.pem
+.vercel
+npm-debug.log*
+/build
+
+# Saved third-party page copies (research evidence): kept local, not published.
+docs/validation/evidence/
+docs/validation/job-reviews/**/evidence/

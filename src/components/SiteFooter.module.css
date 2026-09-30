@@ -1,0 +1,85 @@
+/* Dark green instrument footer: dot grid, a ruler along the top edge, and a faint dither
+   echo rising from the bottom edge (public/images/footer-dither.png, 1:1, repeat-x). */
+.footer {
+  position: relative;
+  isolation: isolate;
+  padding: 56px var(--gutter) 86px;
+  border-top: 1px solid var(--hairline-dark);
+  background: var(--dot-grid-dark), var(--surface-dark);
+  color: var(--on-dark);
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: url("/images/footer-dither.png") left bottom / 320px 400px repeat-x;
+  image-rendering: pixelated;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.ruler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 14px;
+  background-image:
+    repeating-linear-gradient(90deg, #ffffff66 0 1px, transparent 1px 40px),
+    repeating-linear-gradient(90deg, #ffffff2e 0 1px, transparent 1px 8px);
+  background-size: 100% 14px, 100% 7px;
+  background-repeat: no-repeat;
+}
+
+.place {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font: 500 12px/16px var(--font-mono);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--on-dark-2);
+}
+
+.mark {
+  width: 8px;
+  height: 8px;
+  flex: none;
+  background: var(--signal);
+}
+
+.row {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px 40px;
+}
+
+.wordmark {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 4.45vw, 64px);
+  line-height: 0.95;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding-top: 44px;
+    padding-bottom: 56px;
+  }
+
+  .row {
+    margin-top: 24px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .wordmark {
+    line-height: 1;
+  }
+}

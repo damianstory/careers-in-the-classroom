@@ -1,0 +1,225 @@
+/* Dark green instrument bar. Selectors that must beat globals.css (loaded after this
+   module) on equal specificity are scoped under .header. */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--surface-dark);
+  border-bottom: 1px solid var(--hairline-dark);
+  color: var(--on-dark);
+  /* No background transition: when the phone menu opens over the home hero, the bar grows
+     past the hero's top edge and a fade from transparent would flash the page background. */
+}
+
+.row {
+  /* The bar, border included, is exactly --header-h tall, so sticky offsets line up. */
+  height: calc(var(--header-h) - 1px);
+  padding: 0 var(--gutter);
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  text-decoration: none;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--on-dark);
+}
+
+.nav {
+  display: flex;
+  gap: 28px;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+.navlink {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  padding-top: 2px;
+  border-bottom: 2px solid transparent;
+  color: var(--on-dark-muted);
+  font: 500 14px/20px var(--font-ui);
+  text-decoration: none;
+  transition: color var(--duration-fast), border-color var(--duration-fast);
+}
+
+.header .navlink:hover {
+  color: var(--on-dark);
+}
+
+.header .navlink[aria-current="page"] {
+  color: var(--on-dark);
+  border-bottom-color: var(--signal);
+}
+
+.actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* "Request a speaker": a hairline ghost button. */
+.ghost {
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 36px;
+  padding: 0 14px;
+  border: 1px solid var(--hairline-dark);
+  border-radius: var(--radius-control);
+  background: transparent;
+  color: var(--on-dark);
+  font: 500 14px/1 var(--font-ui);
+  cursor: pointer;
+  transition: background var(--duration-fast), border-color var(--duration-fast);
+}
+
+.ghost:hover {
+  background: rgb(255 255 255 / 0.08);
+  border-color: rgb(255 255 255 / 0.4);
+}
+
+/* "Sign up free": signal green with ink text (7:1). */
+.signup {
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: var(--radius-control);
+  background: var(--signal);
+  color: var(--ink);
+  font: 600 14px/1 var(--font-ui);
+  cursor: pointer;
+  transition: background var(--duration-fast);
+}
+
+.signup:hover {
+  background: var(--green-tint-3);
+}
+
+.signedUp {
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 36px;
+  padding: 0 12px;
+  border: 1px solid var(--hairline-dark);
+  border-radius: var(--radius-control);
+  color: var(--on-dark-2);
+  font: 500 13px/1 var(--font-ui);
+}
+
+.menuButton {
+  display: none;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: var(--radius-control);
+  background: transparent;
+  color: var(--on-dark);
+  cursor: pointer;
+}
+
+.menuButton:hover {
+  background: rgb(255 255 255 / 0.08);
+}
+
+.menuButton .menuIcon {
+  width: 22px;
+  height: 22px;
+  stroke-width: 1.75;
+}
+
+.menu {
+  padding: 8px var(--gutter) 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-top: 1px solid var(--hairline-dark);
+  background: var(--surface-dark);
+}
+
+.menuNav {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6px;
+}
+
+.menuLink {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--hairline-dark);
+  color: var(--on-dark-muted);
+  font: 500 16px/22px var(--font-ui);
+  text-decoration: none;
+}
+
+.header .menuLink:hover {
+  color: var(--on-dark);
+}
+
+.header .menuLink[aria-current="page"] {
+  color: var(--on-dark);
+  text-decoration: underline 2px var(--signal);
+  text-underline-offset: 8px;
+}
+
+.menuAction {
+  width: 100%;
+  height: 44px;
+  font-size: 15px;
+}
+
+/* Transparent over the home hero until the page scrolls; text stays white on the dark hero. */
+.over {
+  background: transparent;
+  border-bottom-color: transparent;
+}
+
+.over .ghost {
+  border-color: rgb(255 255 255 / 0.5);
+}
+
+@media (max-width: 1120px) {
+  .nav,
+  .actions {
+    display: none;
+  }
+
+  .menuButton {
+    display: inline-flex;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .row {
+    padding-right: 6px;
+  }
+
+  .name {
+    font-size: 17px;
+  }
+}

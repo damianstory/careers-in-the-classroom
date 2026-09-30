@@ -1,0 +1,65 @@
+{
+  "minimalMaxTotalChargeUsd": null,
+  "pricingModel": "PAY_PER_EVENT",
+  "isPriceChangeNotificationSuppressed": false,
+  "reasonForChange": "Dear Users, due to some abusive actions of bad actors, we have to introduce a very small Actor Start price. For free users, this now means that you're limited to 500 runs per month. For paying users, we set the price very low.",
+  "pricingPerEvent": {
+    "actorChargeEvents": {
+      "apify-default-dataset-item": {
+        "eventTitle": "job",
+        "eventDescription": "Single job in the default dataset.",
+        "isOneTimeEvent": false,
+        "eventTieredPricingUsd": {
+          "FREE": {
+            "tieredEventPriceUsd": 0.012
+          },
+          "BRONZE": {
+            "tieredEventPriceUsd": 0.012
+          },
+          "SILVER": {
+            "tieredEventPriceUsd": 0.006
+          },
+          "GOLD": {
+            "tieredEventPriceUsd": 0.004
+          },
+          "PLATINUM": {
+            "tieredEventPriceUsd": 0.004
+          },
+          "DIAMOND": {
+            "tieredEventPriceUsd": 0.004
+          }
+        },
+        "isPrimaryEvent": true
+      },
+      "apify-actor-start": {
+        "eventTitle": "Actor Start",
+        "eventDescription": "Charged when the Actor starts running. Number of events charged depends on Actor memory (one event per GB, minimum one event).",
+        "isOneTimeEvent": true,
+        "eventTieredPricingUsd": {
+          "FREE": {
+            "tieredEventPriceUsd": 0.01
+          },
+          "BRONZE": {
+            "tieredEventPriceUsd": 0.0001
+          },
+          "SILVER": {
+            "tieredEventPriceUsd": 0.0001
+          },
+          "GOLD": {
+            "tieredEventPriceUsd": 0.0001
+          },
+          "PLATINUM": {
+            "tieredEventPriceUsd": 0.0001
+          },
+          "DIAMOND": {
+            "tieredEventPriceUsd": 0.0001
+          }
+        }
+      }
+    }
+  },
+  "startedAt": "2026-03-26T10:20:02.070Z",
+  "createdAt": "2026-03-12T10:20:02.672Z",
+  "apifyMarginPercentage": 0.2,
+  "notifiedAboutFutureChangeAt": "2026-03-12T10:20:27.268Z"
+}

@@ -1,0 +1,225 @@
+/* An instrument screen on top (dark green, dot grid, schematic), a light reading panel below. */
+.card {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-panel);
+  transition: border-color var(--duration-fast) var(--ease-standard);
+}
+
+.card:hover,
+.card:focus-within {
+  border-color: var(--green-tint-3);
+}
+
+/* Instrument screen. The schematic's colours are set here (see ExampleCardDiagram). */
+.screen {
+  --dg-line: var(--on-dark);
+  --dg-signal: var(--signal);
+  --dg-fill: var(--surface-dark);
+  --dg-text: var(--on-dark);
+  --dg-text-2: var(--on-dark-2);
+  --dg-on-mark: var(--ink);
+  --dg-hair: rgb(255 255 255 / 0.2);
+  --dg-hair-strong: rgb(255 255 255 / 0.25);
+  --dg-axis: rgb(255 255 255 / 0.5);
+  --dg-wash: rgb(255 255 255 / 0.06);
+  --dg-signal-wash: rgb(110 189 106 / 0.25);
+
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface-dark);
+  background-image: radial-gradient(rgb(255 255 255 / 0.12) 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-position: 12px 12px;
+  color: var(--on-dark);
+}
+
+.screenBar {
+  height: 40px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid rgb(255 255 255 / 0.12);
+  font: 500 11px/16px var(--font-mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--on-dark-2);
+}
+
+.screenLabel {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Every schematic is drawn at 16:10, so screens line up across a row. */
+.plot {
+  aspect-ratio: 16 / 10;
+}
+
+.plot svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.field {
+  display: flex;
+  align-items: flex-end;
+  padding: 20px 24px;
+}
+
+.fieldOrg {
+  font: 600 32px/34px var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+.caption {
+  margin-top: auto;
+  padding: 12px 16px;
+  border-top: 1px solid rgb(255 255 255 / 0.12);
+  font: 400 11px/16px var(--font-mono);
+  color: var(--on-dark-muted);
+}
+
+/* Reading panel */
+.body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font: 500 12px/16px var(--font-mono);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-body);
+}
+
+.square {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  background: var(--green);
+}
+
+.q {
+  margin-top: 12px;
+  font: 600 24px/29px var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+.link {
+  color: var(--ink);
+  text-decoration: none;
+  transition: color var(--duration-fast);
+}
+
+.card:hover .link {
+  color: var(--text-accent);
+}
+
+/* Stretches the heading's link over the whole card. */
+.link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-panel);
+}
+
+.link:focus-visible {
+  outline: none;
+}
+
+.link:focus-visible::after {
+  outline: 3px solid var(--green);
+  outline-offset: 2px;
+}
+
+.why {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--ink);
+}
+
+.local {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--text-body);
+}
+
+.tags {
+  list-style: none;
+  margin: 16px 0 20px; /* the bottom margin keeps the meta rule clear when the card is not stretched */
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* Scoped so these outrank the global .tag rules in any CSS order. */
+.tags > li {
+  min-height: 0;
+  padding: 4px 8px;
+  font: 500 12px/16px var(--font-mono);
+  letter-spacing: 0;
+  color: var(--ink);
+}
+
+.meta {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 14px;
+  border-top: 1px dotted #bdb9ba;
+  font: 500 12px/16px var(--font-mono);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.metaAccent {
+  color: var(--text-accent);
+}
+
+.arrow {
+  color: var(--text-accent);
+  transition: transform var(--duration-fast) var(--ease-standard);
+}
+
+.card:hover .arrow {
+  transform: translateX(3px);
+}
+
+@media (max-width: 640px) {
+  .body {
+    padding: 20px;
+  }
+
+  .q {
+    margin-top: 10px;
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  .tags {
+    margin-top: 14px;
+  }
+}

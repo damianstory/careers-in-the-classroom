@@ -1,0 +1,62 @@
+{
+  "packet_id": "wilder-2026-09-28-pilot-review",
+  "example": "Wilder burrowing-owl story",
+  "target_city": "Calgary",
+  "additional_apify_spend_usd": 0,
+  "candidates": [
+    {
+      "id": "C1",
+      "copy_version": 1,
+      "title": "Senior Wildlife Biologist",
+      "employer": "Canacre",
+      "source_url": "https://canacre.applytojob.com/apply/DJX45aEs66/Senior-Wildlife-Biologist",
+      "source_checked_on": "2026-09-28",
+      "verification_basis": "existing Apify pilot source checks; not refreshed for this packet",
+      "snapshot_path": null,
+      "evidence_gate": "pass_for_review",
+      "tier": "related_same_city",
+      "location": "Calgary, Alberta, Canada",
+      "score": {
+        "story_connection": 3,
+        "concrete_work": 3,
+        "added_value": 3,
+        "total": 9
+      },
+      "recommendation": "recommend",
+      "user_decision": "pending",
+      "reviewer": null,
+      "decision_at": null,
+      "decision_instruction": null,
+      "implementation_status": "not_implemented",
+      "publication_status": "not_published",
+      "proposed_copy_path": "review.md"
+    },
+    {
+      "id": "C2",
+      "copy_version": 1,
+      "title": "Intermediate to Senior Vegetation & Wetland Ecologist",
+      "employer": "Klohn Crippen Berger",
+      "source_url": "https://careers.klohn.com/jobs/8249859-intermediate-to-senior-vegetation-wetland-ecologist",
+      "source_checked_on": "2026-09-28",
+      "verification_basis": "existing Apify pilot source checks; not refreshed for this packet",
+      "snapshot_path": null,
+      "evidence_gate": "pass_for_review",
+      "tier": "related_same_city",
+      "location": "Calgary, Alberta, Canada",
+      "score": {
+        "story_connection": 2,
+        "concrete_work": 3,
+        "added_value": 3,
+        "total": 8
+      },
+      "recommendation": "recommend",
+      "user_decision": "pending",
+      "reviewer": null,
+      "decision_at": null,
+      "decision_instruction": null,
+      "implementation_status": "not_implemented",
+      "publication_status": "not_published",
+      "proposed_copy_path": "review.md"
+    }
+  ]
+}

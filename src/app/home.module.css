@@ -1,0 +1,610 @@
+/* Home: a dark green hero with the dithered photo, the search console on its bottom edge, then the
+   library on white. The console is outside the hero so it can dock under the header while the
+   library scrolls; the hero keeps --console-h + --console-gap free at its bottom for it.
+   --console-h mirrors the console's rendered height (SearchForm.module.css). */
+.home {
+  --console-h: 120px;
+  --console-gap: 48px;
+  --hero-top: clamp(48px, 12vh, 112px);
+}
+
+/* Filtered: the console adds its status line. */
+.home[data-filtered] {
+  --console-h: 167px;
+}
+
+/* Wide content frame: the artboards run to 48px gutters at 1440. */
+.frame {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+
+/* Hero. It slides under the site header, which stays transparent over it until the page scrolls
+   (SiteHeader); the scrim keeps the top edge solid green, so the two read as one surface. */
+.hero {
+  position: relative;
+  display: flex;
+  margin-top: calc(-1 * var(--header-h));
+  min-height: clamp(calc(640px + var(--header-h)), 100svh, calc(860px + var(--header-h)));
+  overflow: hidden;
+  background: var(--surface-dark);
+  color: var(--on-dark);
+}
+
+.photo {
+  object-fit: cover;
+  object-position: 50% 62%;
+}
+
+/* Keeps the headline and lede on near-solid green while the photo shows lower right. */
+.scrim {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(0deg, rgb(27 59 25 / 0.9) 0, rgb(27 59 25 / 0.5) 126px, rgb(27 59 25 / 0) 280px),
+    /* Measured from the content frame's left edge, so wide screens keep the lede on dark ground. */
+    linear-gradient(
+      90deg,
+      rgb(27 59 25 / 0.85) calc(max(0px, 50% - 720px)),
+      rgb(27 59 25 / 0.45) calc(max(0px, 50% - 720px) + min(36%, 518px)),
+      rgb(27 59 25 / 0) calc(max(0px, 50% - 720px) + min(58%, 835px))
+    ),
+    linear-gradient(180deg, var(--surface-dark) 0%, rgb(27 59 25 / 0.95) 26%, rgb(27 59 25 / 0.65) 46%, rgb(27 59 25 / 0) 64%);
+}
+
+.heroInner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: calc(var(--header-h) + var(--hero-top));
+  padding-bottom: calc(var(--console-h) + var(--console-gap) + 48px);
+  padding-left: calc(var(--gutter) + 96px);
+}
+
+/* A vertical scale in the left gutter, with one signal mark. */
+.ruler {
+  position: absolute;
+  left: var(--gutter);
+  top: calc(var(--header-h) + var(--hero-top) - 32px);
+  bottom: calc(var(--console-h) + var(--console-gap) + 13px);
+  width: 14px;
+  border-left: 1px solid rgb(255 255 255 / 0.25);
+  background-image:
+    repeating-linear-gradient(180deg, rgb(255 255 255 / 0.5) 0 1px, transparent 1px 40px),
+    repeating-linear-gradient(180deg, rgb(255 255 255 / 0.25) 0 1px, transparent 1px 8px);
+  background-size: 14px 100%, 7px 100%;
+  background-repeat: no-repeat;
+}
+
+.ruler::after {
+  content: "";
+  position: absolute;
+  left: -1px;
+  bottom: 80px;
+  width: 22px;
+  height: 3px;
+  background: var(--signal);
+}
+
+.title {
+  max-width: 1000px;
+  font-family: var(--font-display);
+  font-size: clamp(44px, min(7.2vw, 11.5vh), 104px);
+  line-height: 0.95;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  color: var(--on-dark);
+}
+
+/* The one entrance motion: each line rises out of its own mask. Reduced motion shows it at rest
+   (the global prefers-reduced-motion rule removes the animation). */
+.line {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.1em;
+  margin-bottom: -0.1em;
+}
+
+.rise {
+  display: block;
+  animation: rise 700ms cubic-bezier(0.2, 0.7, 0.1, 1) 150ms both;
+}
+
+.line:nth-child(2) .rise {
+  animation-delay: 240ms;
+}
+
+.line:nth-child(3) .rise {
+  animation-delay: 330ms;
+}
+
+@keyframes rise {
+  from {
+    transform: translateY(105%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.lead {
+  margin-top: clamp(24px, 5vh, 52px);
+  max-width: 540px;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgb(255 255 255 / 0.8);
+}
+
+.credit {
+  position: absolute;
+  right: max(var(--gutter), calc((100% - 1440px) / 2 + var(--gutter)));
+  bottom: 16px;
+  font: 400 11px/16px var(--font-mono);
+  letter-spacing: 0.04em;
+  color: var(--on-dark-muted);
+}
+
+/* Library. flow-root stops the console's negative margin collapsing through, so the white
+   ground starts at the hero's bottom edge and never paints over it. Links to #library land with
+   the console just docked under the header and the results clear below it. */
+.library {
+  display: flow-root;
+  scroll-margin-top: calc(var(--header-h) + var(--console-h) + var(--console-gap));
+  background: var(--bg);
+}
+
+.dock {
+  position: sticky;
+  top: var(--header-h);
+  z-index: 10;
+  margin-top: calc(-1 * (var(--console-h) + var(--console-gap)));
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding-top: calc(var(--console-gap) + 112px);
+  padding-bottom: 112px;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 32px;
+  padding: 20px 24px;
+  border: 1px dashed #bdb9ba;
+  border-radius: var(--radius-panel);
+  background: var(--bg-warm);
+}
+
+.bannerText {
+  min-width: 0;
+}
+
+.bannerTitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
+.bannerNote {
+  margin-top: 4px;
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--text-body);
+}
+
+.noted {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: var(--text-accent);
+}
+
+.sectionHead {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px 48px;
+}
+
+.sectionTitles {
+  min-width: 0;
+  max-width: 820px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sectionTitle {
+  font-family: var(--font-display);
+  font-size: 48px;
+  line-height: 1.02;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  overflow-wrap: anywhere;
+}
+
+.sectionTitleSmall {
+  font-family: var(--font-display);
+  font-size: 32px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  overflow-wrap: anywhere;
+}
+
+.sectionNote {
+  max-width: 720px;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--text-body);
+}
+
+/* A small instrument readout beside the heading. */
+.readout {
+  flex: none;
+  width: 360px;
+  margin: 0;
+  border-bottom: 1px dotted #bdb9ba;
+  font: 500 12px/16px var(--font-mono);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.readout > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 8px 0;
+  border-top: 1px dotted #bdb9ba;
+}
+
+.readout dt {
+  color: var(--text-body);
+}
+
+.readout dd {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ink);
+}
+
+.square {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  background: var(--green);
+}
+
+.readout .square {
+  width: 6px;
+  height: 6px;
+}
+
+.grid {
+  list-style: none;
+  margin: 56px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.more {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Sits 40px under the last grid (the column gap is 80px). */
+.footnote {
+  margin-top: -40px;
+  max-width: 780px;
+  display: flex;
+  gap: 12px;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--text-body);
+}
+
+.footnote .square {
+  margin-top: 8px;
+}
+
+.notes {
+  border-top: 1px solid var(--border);
+  padding-top: 20px;
+}
+
+.notes ul {
+  margin-top: 8px;
+  padding-left: 20px;
+  line-height: 22px;
+}
+
+/* Recent developments share the example cards' shell: a dark label bar over a light panel. */
+.news {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-panel);
+}
+
+.newsBar {
+  flex: none;
+  height: 40px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--surface-dark);
+  background-image: radial-gradient(rgb(255 255 255 / 0.12) 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-position: 12px 12px;
+  font: 500 11px/16px var(--font-mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--on-dark-2);
+}
+
+.newsBody {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+}
+
+.newsLocked .newsBody {
+  background: var(--bg-warm);
+}
+
+.newsTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.newsTitle {
+  font-family: var(--font-display);
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.newsMeta {
+  font: 500 12px/16px var(--font-mono);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-body);
+}
+
+.newsText {
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--text-body);
+}
+
+.strong {
+  color: var(--ink);
+}
+
+.ask {
+  margin-top: 8px;
+  font-family: var(--font-display);
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.newsSmall {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--text-body);
+}
+
+.newsAction {
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+/* The one signup prompt: a dark strip after the matching examples. */
+.signup {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 32px;
+  padding: 20px 24px;
+  border-radius: var(--radius-panel);
+  background: var(--surface-dark);
+  background-image: radial-gradient(rgb(255 255 255 / 0.12) 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: var(--on-dark-2);
+}
+
+.signup strong {
+  color: var(--on-dark);
+}
+
+@media (max-width: 1100px) {
+  .readout {
+    width: 300px;
+  }
+}
+
+@media (max-width: 960px) {
+  /* The console's fields wrap to two rows. */
+  .home {
+    --console-h: 212px;
+  }
+
+  .home[data-filtered] {
+    --console-h: 259px;
+  }
+
+  .heroInner {
+    padding-left: var(--gutter);
+  }
+
+  .ruler {
+    display: none;
+  }
+
+  .sectionHead {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .readout {
+    width: 100%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .banner,
+  .signup {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Phones: the photo sits behind the headline, the form follows on the same dark ground
+   (SearchForm's console wrapper) and scrolls away; a one-row summary in SearchForm stays instead. */
+@media (max-width: 640px) {
+  .hero {
+    min-height: 0;
+  }
+
+  .photo {
+    object-position: 58% 60%;
+  }
+
+  .scrim {
+    background: linear-gradient(
+      180deg,
+      var(--surface-dark) 0,
+      var(--surface-dark) var(--header-h),
+      rgb(27 59 25 / 0.96) calc(var(--header-h) + 240px),
+      rgb(27 59 25 / 0.65) calc(var(--header-h) + 336px),
+      rgb(27 59 25 / 0) calc(var(--header-h) + 420px),
+      rgb(27 59 25 / 0) calc(var(--header-h) + 470px),
+      var(--surface-dark) 100%
+    );
+  }
+
+  .heroInner {
+    padding-top: calc(var(--header-h) + 40px);
+    padding-bottom: 182px;
+  }
+
+  .ruler {
+    display: block;
+    left: auto;
+    right: 0;
+    top: calc(var(--header-h) + 24px);
+    bottom: auto;
+    height: 497px;
+    width: 12px;
+    border-left: 0;
+    border-right: 1px solid rgb(255 255 255 / 0.25);
+    background-size: 12px 100%, 6px 100%;
+    background-position: right top, right top;
+  }
+
+  .ruler::after {
+    display: none;
+  }
+
+  .title {
+    max-width: 330px;
+    text-wrap: balance;
+    animation: rise-soft 700ms cubic-bezier(0.2, 0.7, 0.1, 1) 150ms both;
+  }
+
+  /* Phones wrap the headline naturally, so it rises as one block. */
+  .line,
+  .rise {
+    display: inline;
+    overflow: visible;
+    padding: 0;
+    margin: 0;
+    animation: none;
+  }
+
+  .lead {
+    margin-top: 20px;
+    max-width: 320px;
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .credit {
+    right: auto;
+    left: var(--gutter);
+  }
+
+  .library {
+    scroll-margin-top: var(--header-h);
+  }
+
+  .dock {
+    display: contents;
+  }
+
+  .results {
+    gap: 48px;
+    padding-top: 64px;
+    padding-bottom: 56px;
+  }
+
+  .sectionTitle {
+    font-size: 32px;
+    line-height: 1.05;
+  }
+
+  .sectionTitleSmall {
+    font-size: 26px;
+  }
+
+  .grid {
+    margin-top: 32px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .footnote {
+    margin-top: -16px;
+  }
+}
+
+/* Transform only: a fade would leave the headline below contrast mid-animation. */
+@keyframes rise-soft {
+  from {
+    transform: translateY(0.4em);
+  }
+  to {
+    transform: none;
+  }
+}

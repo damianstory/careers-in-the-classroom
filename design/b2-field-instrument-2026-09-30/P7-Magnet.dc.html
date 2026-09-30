@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>B2 dither · magnetic dots</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+body{margin:0;background:#ffffff}
+a{color:inherit;text-underline-offset:3px}a:hover{color:#367533}
+.dk a:hover{color:#c5e5c3}
+button{font-family:inherit;cursor:pointer}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@keyframes m-flow{from{stroke-dashoffset:0}to{stroke-dashoffset:-96}}
+.m-flow{stroke-dasharray:12 12;animation:m-flow 2.4s linear infinite}
+@keyframes m-draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+.m-draw{stroke-dasharray:1;animation:m-draw 1.8s cubic-bezier(.6,0,.2,1) .6s both}
+@keyframes m-rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.m-rise{animation:m-rise .7s cubic-bezier(.2,.7,.1,1) both}
+.dither-foot{background-image:url(/_blob/a929cdca447e63a4c9329a80dcdba234);background-repeat:repeat-x;background-position:left bottom;background-size:320px 1600px}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+</style>
+</helmet>
+<div style="width: 1440px; height: 4460px; box-sizing: border-box; font-family: 'IBM Plex Sans', sans-serif; color: #231f20; background: #ffffff; position: relative; overflow: hidden; display: flex; flex-direction: column">
+
+  <header class="dk" style="flex: none; height: 64px; box-sizing: border-box; padding: 0 48px; display: flex; align-items: center; gap: 48px; background: #1b3b19; border-bottom: 1px solid #ffffff1f; color: #ffffff">
+    <a href="#" style="font-size: 18px; font-weight: 600; letter-spacing: -0.01em; color: #ffffff; text-decoration: none">Careers in the Classroom</a>
+    <nav aria-label="Primary" style="display: flex; gap: 28px; align-self: stretch">
+      <a href="#" aria-current="page" style="display: flex; align-items: center; box-sizing: border-box; padding-top: 2px; border-bottom: 2px solid #6ebd6a; font-size: 14px; font-weight: 500; color: #ffffff; text-decoration: none">Examples</a>
+      <a href="#" style="display: flex; align-items: center; box-sizing: border-box; padding-top: 2px; border-bottom: 2px solid transparent; font-size: 14px; font-weight: 500; color: #ffffffb3; text-decoration: none">List your company</a>
+    </nav>
+    <div style="margin-left: auto; display: flex; align-items: center; gap: 12px">
+      <button type="button" style="height: 36px; padding: 0 14px; display: inline-flex; align-items: center; gap: 8px; background: transparent; border: 1px solid #ffffff24; border-radius: 4px; color: #ffffff; font-size: 14px; font-weight: 500"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"></path></svg>Request a speaker</button>
+      <button type="button" style="height: 36px; padding: 0 16px; display: inline-flex; align-items: center; background: #6ebd6a; border: 0; border-radius: 4px; color: #231f20; font-size: 14px; font-weight: 600">Sign up free</button>
+    </div>
+  </header>
+
+  <div style="flex: 1 1 auto; display: flex">
+
+    <aside class="dk" aria-label="Classroom example" onMouseMove="{{ onMove }}" onMouseLeave="{{ onLeave }}" style="width: 280px; flex: none; box-sizing: border-box; position: relative; isolation: isolate; padding: 32px 0 48px; background-color: #1b3b19; color: #ffffff">
+      <canvas aria-hidden="true" data-magnet="rail" ref="{{ canvasRef }}" style="position: absolute; z-index: -1; left: 0; top: 0; width: 100%; height: 100%; display: block; opacity: .6; pointer-events: none"></canvas>
+      <div aria-hidden="true" style="position: absolute; top: 0; bottom: 0; right: 0; width: 12px; border-left: 1px solid #ffffff1f; background-image: repeating-linear-gradient(180deg, #ffffff59 0 1px, transparent 1px 40px), repeating-linear-gradient(180deg, #ffffff26 0 1px, transparent 1px 8px); background-size: 12px 100%, 6px 100%; background-repeat: no-repeat; background-position: left top, left top"></div>
+      <div style="padding: 0 32px">
+        <a href="#" style="height: 32px; display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; color: #ffffffb3; text-decoration: none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg>All examples</a>
+        <p style="margin: 40px 0 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; color: #c5e5c3">Classroom example</p>
+        <p style="margin: 8px 0 0; font-size: 28px; line-height: 32px; font-weight: 600; letter-spacing: -0.02em">GHGSat</p>
+      </div>
+      <nav aria-label="Example views" style="position: sticky; top: 24px; margin-top: 32px; border-top: 1px solid #ffffff1f; margin-right: 13px; background: #1b3b19">
+        <a href="#" aria-current="page" style="display: flex; align-items: center; gap: 16px; height: 52px; box-sizing: border-box; padding: 0 32px 0 30px; border-left: 2px solid #6ebd6a; border-bottom: 1px solid #ffffff1f; background: #ffffff0f; font-size: 15px; font-weight: 600; color: #ffffff; text-decoration: none"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .04em; color: #6ebd6a">01</span>Classroom story</a>
+        <a href="#" style="display: flex; align-items: center; gap: 16px; height: 52px; box-sizing: border-box; padding: 0 32px; border-bottom: 1px solid #ffffff1f; font-size: 15px; font-weight: 500; color: #ffffffb3; text-decoration: none"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .04em; color: #ffffff99">02</span>Company</a>
+        <a href="#" style="display: flex; align-items: center; gap: 16px; height: 52px; box-sizing: border-box; padding: 0 32px; border-bottom: 1px solid #ffffff1f; font-size: 15px; font-weight: 500; color: #ffffffb3; text-decoration: none"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .04em; color: #ffffff99">03</span>Roles</a>
+        <a href="#" style="display: flex; align-items: center; gap: 16px; height: 52px; box-sizing: border-box; padding: 0 32px; border-bottom: 1px solid #ffffff1f; font-size: 15px; font-weight: 500; color: #ffffffb3; text-decoration: none"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .04em; color: #ffffff99">04</span>Pathways</a>
+      </nav>
+    </aside>
+
+    <main style="flex: 1 1 auto; min-width: 0; background: #ffffff">
+
+      <section style="padding: 56px 64px 56px">
+        <h1 class="m-rise" style="margin: 0; max-width: 1000px; font-size: 64px; line-height: .95; font-weight: 600; letter-spacing: -0.035em">How can you find an invisible gas from space?</h1>
+        <div style="margin-top: 36px; display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 48px; align-items: start">
+          <p style="margin: 0; font-size: 20px; line-height: 32px; color: #514d4e"><span style="font-weight: 600; color: #231f20">GHGSat</span> · Lists a Calgary office. Headquarters in Montreal.</p>
+          <div style="border: 1px solid #e4e2e2; border-radius: 6px">
+            <div style="height: 44px; box-sizing: border-box; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #e4e2e2">
+              <p style="margin: 0; display: flex; align-items: center; gap: 10px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; color: #514d4e"><span aria-hidden="true" style="width: 8px; height: 8px; background: #51b04c"></span>Where it fits</p>
+              <a href="#" style="display: inline-flex; align-items: center; gap: 6px; font-size: 14px; line-height: 20px; font-weight: 500; color: #367533">Pick your class<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></a>
+            </div>
+            <div style="display: grid; grid-template-columns: 132px minmax(0, 1fr); padding: 12px 20px; border-bottom: 1px dotted #bdb9ba; font-size: 15px; line-height: 24px"><span style="font-weight: 600">Physics 30</span><span style="color: #514d4e">Electromagnetic radiation</span></div>
+            <div style="display: grid; grid-template-columns: 132px minmax(0, 1fr); padding: 12px 20px; border-bottom: 1px dotted #bdb9ba; font-size: 15px; line-height: 24px"><span style="font-weight: 600">Science 30</span><span style="color: #514d4e">Electromagnetic energy and environmental topics</span></div>
+            <div style="display: grid; grid-template-columns: 132px minmax(0, 1fr); padding: 12px 20px; font-size: 15px; line-height: 24px"><span style="font-weight: 600">Science 10</span><span style="color: #514d4e">Global energy systems, as a broader introduction</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="use-h" style="padding: 56px 64px 56px; background: #f9fafb; border-top: 1px dotted #bdb9ba">
+        <h2 id="use-h" style="margin: 0; font-size: 32px; line-height: 38px; font-weight: 600; letter-spacing: -0.025em">Use it in class</h2>
+        <div style="margin-top: 24px; padding: 36px; background: #ffffff; border: 1px solid #e4e2e2; border-radius: 6px">
+          <p style="margin: 0; display: flex; align-items: center; gap: 10px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; color: #367533"><span aria-hidden="true" style="width: 8px; height: 8px; background: #51b04c"></span>Ask the class</p>
+          <p style="margin: 14px 0 0; max-width: 880px; font-size: 30px; line-height: 40px; font-weight: 500; letter-spacing: -0.015em; color: #231f20">If a sensor detects no methane, does that prove none is present? What would you want to know about the instrument and the observation conditions?</p>
+          <div style="margin-top: 32px; padding-top: 28px; border-top: 1px dotted #bdb9ba; display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 48px; align-items: start">
+            <p style="margin: 0; font-size: 17px; line-height: 28px; color: #514d4e">Detecting a gas, estimating how much is escaping, and deciding what to do are different tasks. Instruments, analysis and the people interpreting results all contribute.</p>
+            <div style="padding: 18px 20px; background: #f2f8f1; border: 1px solid #cfe3cc; border-radius: 6px">
+              <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; color: #295826">Mindset it shows</p>
+              <p style="margin: 8px 0 0; font-size: 17px; line-height: 26px; font-weight: 600; color: #231f20">Understand measurement limits before drawing conclusions.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="sch-h" style="padding: 56px 64px 0">
+        <figure style="margin: 0">
+          <div class="dk" style="border-radius: 6px; overflow: hidden; background-color: #1b3b19; background-image: radial-gradient(#ffffff1f 1px, transparent 1px); background-size: 24px 24px; background-position: 12px 12px; color: #ffffff">
+            <div style="height: 44px; box-sizing: border-box; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #ffffff1f; font-family: 'IBM Plex Mono', monospace; font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; color: #c5e5c3">
+              <h2 id="sch-h" style="margin: 0; font-size: 12px; line-height: 16px; font-weight: 500; display: flex; align-items: center; gap: 10px"><span aria-hidden="true" style="width: 8px; height: 8px; background: #6ebd6a"></span>Schematic · Measuring methane with reflected sunlight</h2>
+              <span style="display: flex; align-items: center; gap: 12px">Not to scale<svg width="57" height="10" viewBox="0 0 57 10" aria-hidden="true"><path d="M.5 10V0M8.5 10V6M16.5 10V6M24.5 10V6M32.5 10V2M40.5 10V6M48.5 10V6M56.5 10V0" stroke="#ffffff59"></path></svg></span>
+            </div>
+            <svg viewBox="0 0 1032 440" role="img" aria-label="Schematic: sunlight with many wavelengths travels down to the ground; reflected sunlight passes back up through an invisible methane plume to a satellite; its spectrometer splits the light by wavelength. The spectrum plot shows light received near 1.65 micrometres, with dips inside the band from about 1,630 to 1,675 nanometres that are dimmer, not dark." style="display: block; width: 100%; height: auto">
+              <defs>
+                <marker id="s-aw" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" fill="#ffffff"></path></marker>
+                <marker id="s-ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" fill="#6ebd6a"></path></marker>
+              </defs>
+              <rect x="0" y="360" width="652" height="80" fill="#ffffff0a"></rect>
+              <path d="M0 360H652" stroke="#ffffff4d"></path>
+              <path d="M20 360v8M40 360v4M60 360v4M80 360v4M100 360v8M120 360v4M140 360v4M160 360v4M180 360v4M200 360v8M220 360v4M240 360v4M260 360v4M280 360v4M300 360v8M320 360v4M340 360v4M360 360v4M380 360v4M400 360v8M420 360v4M440 360v4M460 360v4M480 360v4M500 360v8M520 360v4M540 360v4M560 360v4M580 360v4M600 360v8M620 360v4" stroke="#ffffff40"></path>
+              <g stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round">
+                <circle cx="84" cy="92" r="26" fill="#1b3b19"></circle>
+                <path d="M84 52v-12M84 144v-12M44 92H32M136 92h-12M56 64l-8-8M120 128l-8-8M56 120l-8 8M120 56l-8 8"></path>
+              </g>
+              <line class="m-flow" x1="110" y1="120" x2="330" y2="352" stroke="#ffffff" stroke-width="2.5" marker-end="url(#s-aw)"></line>
+              <g stroke="#ffffff" stroke-width="1.5" fill="#1b3b19">
+                <rect x="304" y="332" width="48" height="28"></rect>
+                <rect x="358" y="340" width="30" height="20"></rect>
+                <line x1="320" y1="332" x2="320" y2="312"></line>
+              </g>
+              <ellipse cx="362" cy="304" rx="78" ry="34" fill="#6ebd6a0d" stroke="#6ebd6a" stroke-width="2" stroke-dasharray="6 5"></ellipse>
+              <line class="m-flow" x1="344" y1="352" x2="500" y2="118" stroke="#6ebd6a" stroke-width="2.5" marker-end="url(#s-ag)"></line>
+              <g stroke="#ffffff" stroke-width="1.5">
+                <rect x="486" y="74" width="40" height="34" fill="#1b3b19"></rect>
+                <rect x="498" y="108" width="16" height="6" fill="#1b3b19"></rect>
+                <rect x="438" y="83" width="44" height="16" fill="#6ebd6a40"></rect>
+                <rect x="530" y="83" width="44" height="16" fill="#6ebd6a40"></rect>
+                <path d="M482 91h4M526 91h4"></path>
+              </g>
+              <g font-family="IBM Plex Sans, sans-serif" font-size="15" font-weight="500">
+                <circle cx="273" cy="292" r="13" fill="#ffffff"></circle>
+                <text x="273" y="297" fill="#231f20" text-anchor="middle" font-weight="700" font-size="14">1</text>
+                <text x="24" y="298" fill="#ffffff">Sunlight: many wavelengths,</text>
+                <text x="24" y="318" fill="#ffffff">including infrared we can’t see</text>
+                <circle cx="422" cy="234" r="13" fill="#6ebd6a"></circle>
+                <text x="422" y="239" fill="#231f20" text-anchor="middle" font-weight="700" font-size="14">2</text>
+                <text x="444" y="240" fill="#ffffff">Reflected sunlight passes</text>
+                <text x="444" y="260" fill="#ffffff">back up through the air</text>
+                <circle cx="230" cy="56" r="13" fill="#ffffff"></circle>
+                <text x="230" y="61" fill="#231f20" text-anchor="middle" font-weight="700" font-size="14">3</text>
+                <text x="252" y="61" fill="#ffffff">A spectrometer splits the light</text>
+                <text x="252" y="81" fill="#ffffff">by wavelength</text>
+                <text x="326" y="404" text-anchor="middle" font-size="14" font-weight="400" fill="#c5e5c3">Methane is invisible: the dashed outline only marks where it is</text>
+              </g>
+              <path d="M668 24V416" stroke="#ffffff33" stroke-dasharray="2 4"></path>
+              <g font-family="IBM Plex Mono, monospace">
+                <rect x="781" y="64" width="183" height="280" fill="#6ebd6a14"></rect>
+                <path d="M781 86v-6h183v6" stroke="#6ebd6a" fill="none"></path>
+                <text x="872" y="72" text-anchor="middle" font-size="11" fill="#c5e5c3">≈ 1,630–1,675 nm</text>
+                <path d="M724 64V344H1004" stroke="#ffffff99" fill="none"></path>
+                <path d="M718 64h6M718 134h6M718 204h6M718 274h6" stroke="#ffffff99"></path>
+                <path d="M740 344v6M780.7 344v6M821.3 344v6M862 344v6M902.7 344v6M943.3 344v6M984 344v6" stroke="#ffffff99"></path>
+                <g font-size="11" fill="#c5e5c3" text-anchor="middle">
+                  <text x="740" y="366">1.62</text><text x="780.7" y="366">1.63</text><text x="821.3" y="366">1.64</text><text x="862" y="366">1.65</text><text x="902.7" y="366">1.66</text><text x="943.3" y="366">1.67</text><text x="984" y="366">1.68</text>
+                </g>
+                <text x="862" y="398" text-anchor="middle" font-size="12" fill="#ffffff">wavelength, near 1.65 µm →</text>
+                <text x="702" y="204" text-anchor="middle" font-size="12" fill="#ffffff" transform="rotate(-90 702 204)">light received</text>
+                <path d="M724 120H1004" stroke="#ffffff26" stroke-dasharray="3 5"></path>
+                <path class="m-draw" pathLength="1" d="M724 120 L812 120 C817 120 818 170 821 170 C824 170 825 120 830 120 L852 120 C857 120 858 222 862 222 C866 222 867 120 872 120 L893 120 C898 120 899 176 903 176 C907 176 908 120 913 120 L1004 120" fill="none" stroke="#6ebd6a" stroke-width="2.5" stroke-linejoin="round"></path>
+                <path d="M862 104v8" stroke="#ffffff"></path>
+                <text x="862" y="98" text-anchor="middle" font-size="11" fill="#ffffff">1.65 µm</text>
+                <path d="M856 228h12M862 228v22M862 272v66M856 338h12" stroke="#ffffffb3"></path>
+                <text x="862" y="265" text-anchor="middle" font-size="12" fill="#ffffff">dips: dimmer, not dark</text>
+              </g>
+            </svg>
+            <dl style="margin: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid #ffffff1f">
+              <div style="padding: 16px 20px"><dt style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; line-height: 16px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: #c5e5c3">Band</dt><dd style="margin: 6px 0 0; font-size: 15px; line-height: 22px; color: #ffffff">About 1,630–1,675 nanometres</dd></div>
+              <div style="padding: 16px 20px; border-left: 1px solid #ffffff1f"><dt style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; line-height: 16px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: #c5e5c3">Instrument</dt><dd style="margin: 6px 0 0; font-size: 15px; line-height: 22px; color: #ffffff">Spectrometer · sends out no light of its own</dd></div>
+              <div style="padding: 16px 20px; border-left: 1px solid #ffffff1f"><dt style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; line-height: 16px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: #c5e5c3">Altitude</dt><dd style="margin: 6px 0 0; font-size: 15px; line-height: 22px; color: #ffffff">About 500 km up</dd></div>
+            </dl>
+          </div>
+          <figcaption style="margin-top: 20px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 6px">
+            <span style="font-size: 16px; line-height: 26px; color: #231f20">An illustrative connection between this unit and real work. Use it to support your classroom discussion.</span>
+            <span style="font-size: 14px; line-height: 22px; color: #514d4e">Schematic drawn for this page and checked against GHGSat’s technology description and Jervis et al. (2021). Not to scale. Not a GHGSat image.</span>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section aria-labelledby="les-h" style="margin-top: 64px; padding: 64px 64px 64px; border-top: 1px dotted #bdb9ba">
+        <div style="display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: 48px; align-items: start">
+          <div>
+            <h2 id="les-h" style="margin: 0; font-size: 32px; line-height: 38px; font-weight: 600; letter-spacing: -0.025em">The lesson, in the real world</h2>
+            <p style="margin: 16px 0 0; font-size: 22px; line-height: 34px; color: #231f20">The physics of light lets a satellite about 500 km up measure a gas no one can see.</p>
+          </div>
+          <div>
+            <ol style="list-style: none; margin: 0; padding: 0; position: relative">
+              <li style="position: relative; display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 24px; padding: 20px 0; border-top: 1px dotted #bdb9ba">
+                <span aria-hidden="true" style="position: absolute; left: 19px; top: 56px; bottom: -20px; width: 1px; background: #cfe3cc"></span>
+                <span style="position: relative; width: 36px; height: 36px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 1px solid #231f20; border-radius: 4px; background: #ffffff; font-family: 'IBM Plex Mono', monospace; font-size: 15px; font-weight: 500">1</span>
+                <p style="margin: 4px 0 0; font-size: 17px; line-height: 28px">Sunlight contains many wavelengths, including shortwave infrared light our eyes can’t see.</p>
+              </li>
+              <li style="position: relative; display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 24px; padding: 20px 0; border-top: 1px dotted #bdb9ba">
+                <span aria-hidden="true" style="position: absolute; left: 19px; top: 56px; bottom: -20px; width: 1px; background: #cfe3cc"></span>
+                <span style="position: relative; width: 36px; height: 36px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 1px solid #231f20; border-radius: 4px; background: #ffffff; font-family: 'IBM Plex Mono', monospace; font-size: 15px; font-weight: 500">2</span>
+                <p style="margin: 4px 0 0; font-size: 17px; line-height: 28px">Methane absorbs some of that light at particular wavelengths, between about 1,630 and 1,675 nanometres.</p>
+              </li>
+              <li style="position: relative; display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 24px; padding: 20px 0; border-top: 1px dotted #bdb9ba">
+                <span aria-hidden="true" style="position: absolute; left: 19px; top: 56px; bottom: -20px; width: 1px; background: #cfe3cc"></span>
+                <span style="position: relative; width: 36px; height: 36px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 1px solid #231f20; border-radius: 4px; background: #ffffff; font-family: 'IBM Plex Mono', monospace; font-size: 15px; font-weight: 500">3</span>
+                <p style="margin: 4px 0 0; font-size: 17px; line-height: 28px">The satellite’s spectrometer measures sunlight scattered back up from the ground. It sends out no light of its own.</p>
+              </li>
+              <li style="position: relative; display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 24px; padding: 20px 0; border-top: 1px dotted #bdb9ba; border-bottom: 1px dotted #bdb9ba">
+                <span style="position: relative; width: 36px; height: 36px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: #1b3b19; color: #6ebd6a; font-family: 'IBM Plex Mono', monospace; font-size: 15px; font-weight: 500">4</span>
+                <p style="margin: 4px 0 0; font-size: 17px; line-height: 28px">Where methane is present, a little less light arrives at those wavelengths. Analysts combine that dip with wind data to estimate how fast gas is escaping.</p>
+              </li>
+            </ol>
+            <p style="margin: 20px 0 0; font-size: 14px; line-height: 22px; color: #514d4e"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; color: #231f20">Our explanation</span> · Source: <a href="#" style="color: #367533">GHGSat: Technology<span class="vh"> (opens in a new tab)</span></a>; Jervis et al. 2021, The GHGSat-D imaging spectrometer (Atmos. Meas. Tech.)</p>
+          </div>
+        </div>
+      </section>
+
+      <section aria-label="Company and work" style="padding: 64px 64px 64px; background: #f9fafb; border-top: 1px dotted #bdb9ba">
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px">
+          <div style="display: flex; flex-direction: column; padding: 32px; background: #ffffff; border: 1px solid #e4e2e2; border-radius: 6px">
+            <h2 style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; color: #514d4e">Meet the company</h2>
+            <p style="margin: 20px 0 0; font-size: 48px; line-height: 1; font-weight: 600; letter-spacing: -0.035em">GHGSat</p>
+            <p style="margin: 16px 0 0; font-size: 20px; line-height: 30px; color: #514d4e">Measuring methane emissions from space, and from aircraft.</p>
+            <p style="margin: auto 0 0; padding-top: 28px"><a href="#" style="display: inline-flex; align-items: center; gap: 8px; font-size: 15px; line-height: 22px; font-weight: 600; color: #367533">Meet GHGSat<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></p>
+          </div>
+          <div style="padding: 32px; background: #ffffff; border: 1px solid #e4e2e2; border-radius: 6px">
+            <h2 style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; color: #514d4e">Who does this work?</h2>
+            <ul style="list-style: none; margin: 16px 0 0; padding: 0; border-bottom: 1px dotted #bdb9ba; font-size: 18px; line-height: 26px; font-weight: 500">
+              <li style="display: flex; align-items: center; gap: 12px; padding: 13px 0; border-top: 1px dotted #bdb9ba"><span aria-hidden="true" style="width: 6px; height: 6px; flex: none; background: #51b04c"></span>Atmospheric science and remote sensing</li>
+              <li style="display: flex; align-items: center; gap: 12px; padding: 13px 0; border-top: 1px dotted #bdb9ba"><span aria-hidden="true" style="width: 6px; height: 6px; flex: none; background: #51b04c"></span>Satellite and instrument engineering</li>
+              <li style="display: flex; align-items: center; gap: 12px; padding: 13px 0; border-top: 1px dotted #bdb9ba"><span aria-hidden="true" style="width: 6px; height: 6px; flex: none; background: #51b04c"></span>Software and data</li>
+              <li style="display: flex; align-items: center; gap: 12px; padding: 13px 0; border-top: 1px dotted #bdb9ba"><span aria-hidden="true" style="width: 6px; height: 6px; flex: none; background: #51b04c"></span>Business development and partnerships</li>
+            </ul>
+            <p style="margin: 24px 0 0"><a href="#" style="display: inline-flex; align-items: center; gap: 8px; font-size: 15px; line-height: 22px; font-weight: 600; color: #367533">See the roles<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></p>
+          </div>
+        </div>
+
+        <div class="dk" style="margin-top: 24px; position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 260px auto; gap: 40px; align-items: center; padding: 32px; border-radius: 6px; background-color: #1b3b19; background-image: radial-gradient(#ffffff1f 1px, transparent 1px); background-size: 24px 24px; color: #ffffff">
+          <div>
+            <p style="margin: 0; display: flex; align-items: center; gap: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; color: #c5e5c3">Recent development<span style="display: inline-flex; align-items: center; gap: 6px; padding: 3px 8px; border: 1px solid #6ebd6a; border-radius: 4px; color: #6ebd6a"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="1"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg>Free with signup</span></p>
+            <h2 style="margin: 14px 0 0; font-size: 26px; line-height: 32px; font-weight: 600; letter-spacing: -0.02em">GHGSat plans a second-generation satellite for early 2028</h2>
+            <p style="margin: 10px 0 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; color: #ffffffb3">Published 21 Sep 2026 · Company announcement</p>
+          </div>
+          <div aria-hidden="true" style="display: flex; flex-direction: column; gap: 10px">
+            <span style="height: 8px; width: 100%; border-radius: 2px; background: #ffffff1f"></span>
+            <span style="height: 8px; width: 86%; border-radius: 2px; background: #ffffff1f"></span>
+            <span style="height: 8px; width: 94%; border-radius: 2px; background: #ffffff1f"></span>
+            <span style="height: 8px; width: 58%; border-radius: 2px; background: #ffffff1f"></span>
+          </div>
+          <button type="button" style="height: 44px; padding: 0 20px; display: inline-flex; align-items: center; gap: 8px; background: #6ebd6a; border: 0; border-radius: 4px; color: #231f20; font-size: 15px; font-weight: 600"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="1"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg>Sign up free to open</button>
+        </div>
+      </section>
+
+      <section aria-labelledby="src-h" style="padding: 64px 64px 56px; background: #ffffff; border-top: 1px dotted #bdb9ba">
+        <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 24px">
+          <h2 id="src-h" style="margin: 0; font-size: 32px; line-height: 38px; font-weight: 600; letter-spacing: -0.025em">Sources and course fit</h2>
+          <p style="margin: 0; display: flex; align-items: center; gap: 10px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; color: #514d4e"><span aria-hidden="true" style="width: 8px; height: 8px; background: #51b04c"></span>Sources checked 24–29 Sep 2026</p>
+        </div>
+        <div style="margin-top: 36px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px">
+          <div>
+            <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; color: #514d4e">Where it fits</p>
+            <div style="margin-top: 12px; border-bottom: 1px solid #e4e2e2">
+              <div style="display: grid; grid-template-columns: 132px minmax(0, 1fr); padding: 14px 0; border-top: 1px solid #e4e2e2; font-size: 15px; line-height: 24px"><span style="font-weight: 600">Physics 30</span><span style="color: #514d4e">Electromagnetic radiation</span></div>
+              <div style="display: grid; grid-template-columns: 132px minmax(0, 1fr); padding: 14px 0; border-top: 1px solid #e4e2e2; font-size: 15px; line-height: 24px"><span style="font-weight: 600">Science 30</span><span style="color: #514d4e">Electromagnetic energy and environmental topics</span></div>
+              <div style="display: grid; grid-template-columns: 132px minmax(0, 1fr); padding: 14px 0; border-top: 1px solid #e4e2e2; font-size: 15px; line-height: 24px"><span style="font-weight: 600">Science 10</span><span style="color: #514d4e">Global energy systems, as a broader introduction</span></div>
+            </div>
+            <p style="margin: 16px 0 0; font-size: 14px; line-height: 22px; color: #514d4e">Editorial mapping to published CBE course topics. Pending educator review. No outcome-code alignment is claimed.</p>
+          </div>
+          <div>
+            <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; color: #514d4e">Sources</p>
+            <ul style="list-style: none; margin: 12px 0 0; padding: 0; border-bottom: 1px solid #e4e2e2; font-size: 15px; line-height: 22px">
+              <li style="padding: 11px 0; border-top: 1px solid #e4e2e2"><a href="#" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; color: #231f20">GHGSat offices and work areas<span class="vh"> (opens in a new tab)</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#367533" stroke-width="1.75" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"></path></svg></a></li>
+              <li style="padding: 11px 0; border-top: 1px solid #e4e2e2"><a href="#" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; color: #231f20">Satellite technology<span class="vh"> (opens in a new tab)</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#367533" stroke-width="1.75" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"></path></svg></a></li>
+              <li style="padding: 11px 0; border-top: 1px solid #e4e2e2"><a href="#" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; color: #231f20">Second-generation satellite announcement, 21 Sep 2026<span class="vh"> (opens in a new tab)</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#367533" stroke-width="1.75" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"></path></svg></a></li>
+              <li style="padding: 11px 0; border-top: 1px solid #e4e2e2"><a href="#" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; color: #231f20">CBE Physics 20–30 topics<span class="vh"> (opens in a new tab)</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#367533" stroke-width="1.75" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"></path></svg></a></li>
+              <li style="padding: 11px 0; border-top: 1px solid #e4e2e2"><a href="#" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; color: #231f20">CBE Science 10–30 topics<span class="vh"> (opens in a new tab)</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#367533" stroke-width="1.75" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"></path></svg></a></li>
+              <li style="padding: 11px 0; border-top: 1px solid #e4e2e2"><a href="#" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; color: #231f20">UCalgary engineering physics<span class="vh"> (opens in a new tab)</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#367533" stroke-width="1.75" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"></path></svg></a></li>
+              <li style="padding: 11px 0; border-top: 1px solid #e4e2e2"><a href="#" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; color: #231f20">UCalgary engineering programs<span class="vh"> (opens in a new tab)</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#367533" stroke-width="1.75" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"></path></svg></a></li>
+            </ul>
+          </div>
+        </div>
+        <div style="margin-top: 32px; padding-top: 20px; border-top: 1px solid #e4e2e2; display: flex; align-items: flex-start; justify-content: space-between; gap: 40px">
+          <p style="margin: 0; max-width: 640px; font-size: 14px; line-height: 22px; color: #514d4e">Organization claims are reported as the organization states them. GHGSat has not reviewed or endorsed this page.</p>
+          <a href="#" style="flex: none; font-size: 15px; line-height: 22px; font-weight: 500; color: #367533">What we know, and how</a>
+        </div>
+      </section>
+
+      <section aria-labelledby="cta-h" style="padding: 0 64px 64px">
+        <div class="dk" style="position: relative; display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 48px; padding: 48px; border-radius: 6px; background-color: #1b3b19; background-image: radial-gradient(#ffffff1f 1px, transparent 1px); background-size: 24px 24px; color: #ffffff">
+          <span aria-hidden="true" style="position: absolute; left: 12px; top: 12px; width: 14px; height: 14px; border-left: 1px solid #6ebd6a; border-top: 1px solid #6ebd6a"></span>
+          <span aria-hidden="true" style="position: absolute; right: 12px; top: 12px; width: 14px; height: 14px; border-right: 1px solid #6ebd6a; border-top: 1px solid #6ebd6a"></span>
+          <span aria-hidden="true" style="position: absolute; left: 12px; bottom: 12px; width: 14px; height: 14px; border-left: 1px solid #6ebd6a; border-bottom: 1px solid #6ebd6a"></span>
+          <span aria-hidden="true" style="position: absolute; right: 12px; bottom: 12px; width: 14px; height: 14px; border-right: 1px solid #6ebd6a; border-bottom: 1px solid #6ebd6a"></span>
+          <div>
+            <h2 id="cta-h" style="margin: 0; font-size: 36px; line-height: 40px; font-weight: 600; letter-spacing: -0.03em">Bring this work into class</h2>
+            <p style="margin: 16px 0 0; font-size: 17px; line-height: 28px; color: #c5e5c3">Ask for a practitioner conversation. We check who might be suitable before anything is arranged.</p>
+            <button type="button" style="margin-top: 32px; height: 44px; padding: 0 20px; background: #6ebd6a; border: 0; border-radius: 4px; color: #231f20; font-size: 15px; font-weight: 600">Request a conversation</button>
+            <p style="margin: 16px 0 0; font-size: 15px; line-height: 22px"><a href="#" style="color: #c5e5c3">Teaching this topic again? Save it with a free account</a></p>
+          </div>
+          <div style="align-self: start; padding: 24px; border: 1px solid #ffffff24; border-radius: 6px; background: #1b3b19">
+            <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; color: #6ebd6a">A question to ask</p>
+            <p style="margin: 12px 0 0; font-size: 22px; line-height: 32px; font-weight: 500; letter-spacing: -0.01em; color: #ffffff">“How do you turn an instrument reading into a conclusion someone can act on?”</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="dk" style="flex: none; height: 248px; box-sizing: border-box; position: relative; isolation: isolate; padding: 56px 48px 0; border-top: 1px solid #ffffff24; background-color: #1b3b19; color: #ffffff">
+    <div aria-hidden="true" class="dither-foot" style="position: absolute; z-index: -1; inset: 0; opacity: .35; transform: scaleY(-1); -webkit-mask-image: linear-gradient(to top, #000 0%, transparent 85%); mask-image: linear-gradient(to top, #000 0%, transparent 85%)"></div>
+    <div aria-hidden="true" style="position: absolute; left: 0; right: 0; top: 0; height: 14px; background-image: repeating-linear-gradient(90deg, #ffffff66 0 1px, transparent 1px 40px), repeating-linear-gradient(90deg, #ffffff2e 0 1px, transparent 1px 8px); background-size: 100% 14px, 100% 7px; background-repeat: no-repeat"></div>
+    <p style="margin: 0; display: flex; align-items: center; gap: 10px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; color: #c5e5c3"><span aria-hidden="true" style="width: 8px; height: 8px; background: #6ebd6a"></span>51.05° N · 114.07° W · Calgary, Alberta</p>
+    <div style="margin-top: 28px; display: flex; align-items: flex-end; justify-content: space-between; gap: 40px">
+      <p style="margin: 0; font-size: 64px; line-height: .95; font-weight: 600; letter-spacing: -0.035em">Careers in the Classroom</p>
+      <nav aria-label="Footer" style="display: flex; gap: 32px; padding-bottom: 6px; font-size: 15px; line-height: 22px; font-weight: 500">
+        <a href="#" style="color: #ffffff">Monthly email sample</a>
+        <a href="#" style="color: #ffffff">List your company</a>
+      </nav>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":4460}}'>
+class Component extends DCLogic {
+constructor(...args) {
+  super(...args);
+  this._cv = null;
+  this._ctx = null;
+  this._off = null;
+  this._raf = 0;
+  this._ro = null;
+  this._ptr = null;
+  this._ptrMoved = false;
+  this._rail = null;
+  this._client = null;
+  this._list = [];
+  this._prev = null;
+  this.canvasRef = (el) => {
+    if (el === this._cv) return;
+    this._teardown();
+    this._cv = el;
+    if (el) this._setup();
+  };
+  this._onMove = (e) => {
+    const ne = e.nativeEvent || e;
+    if (ne.sourceCapabilities && ne.sourceCapabilities.firesTouchEvents) return;
+    const el = e.currentTarget;
+    this._rail = el;
+    this._client = { x: e.clientX, y: e.clientY };
+    if (!this._cv && el.querySelector) {
+      const c = el.querySelector('canvas[data-magnet]');
+      if (c) this.canvasRef(c);
+    }
+    this._updatePointer();
+  };
+  this._onLeave = () => {
+    this._client = null;
+    this._setPointer(null);
+  };
+  this._tick = () => {
+    this._raf = 0;
+    if (!this._ctx) return;
+    const keep = this._step();
+    this._draw();
+    if (keep) this._raf = requestAnimationFrame(this._tick);
+  };
+}
+componentDidMount() {
+  if (this._cv && !this._ctx) this._setup();
+}
+componentWillUnmount() {
+  this._teardown();
+  this._cv = null;
+  this._ctx = null;
+  this._off = null;
+}
+_setup() {
+  this._reduced = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  this._build();
+  if (typeof ResizeObserver !== 'undefined' && !this._ro) {
+    this._ro = new ResizeObserver(() => {
+      const cv = this._cv;
+      if (cv && (cv.offsetWidth !== this._w || cv.offsetHeight !== this._h)) this._build();
+    });
+    this._ro.observe(this._cv);
+  }
+}
+_teardown() {
+  if (this._raf) cancelAnimationFrame(this._raf);
+  this._raf = 0;
+  if (this._ro) { this._ro.disconnect(); this._ro = null; }
+}
+_updatePointer() {
+  const el = this._rail, c = this._client;
+  if (!el || !c) return;
+  const r = el.getBoundingClientRect();
+  if (!r.width) return;
+  const k = el.offsetWidth / r.width;
+  this._setPointer({ x: (c.x - r.left) * k, y: (c.y - r.top) * k });
+}
+_setPointer(p) {
+  this._ptr = p;
+  this._ptrMoved = true;
+  if (this._reduced || !this._ctx || this._raf) return;
+  this._raf = requestAnimationFrame(this._tick);
+}
+_build() {
+  const cv = this._cv;
+  if (!cv) return;
+  const w = cv.offsetWidth, h = cv.offsetHeight;
+  this._w = w; this._h = h;
+  if (this._raf) { cancelAnimationFrame(this._raf); this._raf = 0; }
+  this._ctx = null;
+  if (!w || !h) return;
+  let dpr = Math.min(window.devicePixelRatio || 1, 2);
+  if (w * h * dpr * dpr > 16000000) dpr = 1;
+  this._dpr = dpr;
+  cv.width = Math.round(w * dpr);
+  cv.height = Math.round(h * dpr);
+
+  // Ordered 8x8 Bayer dither, 2px cells, 2x2 dots (touching at full density).
+  // Three equal bands like P1: fade in, mirrored, fade in.
+  const B = [0,32,8,40,2,34,10,42, 48,16,56,24,50,18,58,26, 12,44,4,36,14,46,6,38, 60,28,52,20,62,30,54,22, 3,35,11,43,1,33,9,41, 51,19,59,27,49,17,57,25, 15,47,7,39,13,45,5,37, 63,31,55,23,61,29,53,21];
+  const C = 2, cols = Math.ceil(w / C), rows = Math.ceil(h / C);
+  const bandH = h / 3;
+  const xs = [], ys = [];
+  for (let j = 0; j < rows; j++) {
+    const y = j * C + 1;
+    const band = Math.min(2, Math.floor(y / bandH));
+    const local = Math.min(1, (y - band * bandH) / bandH);
+    const t = band === 1 ? 1 - local : local;
+    const ty = t * bandH;
+    const brow = (Math.floor(ty / C) & 7) * 8;
+    const base = 0.42 * Math.pow(t, 1.6);
+    for (let i = 0; i < cols; i++) {
+      const x = i * C;
+      const d = base + 0.03 * Math.sin(x / 9 + ty / 23);
+      if (d > (B[brow + (i & 7)] + 0.5) / 64) { xs.push(x + 1); ys.push(j * C + 1); }
+    }
+  }
+  const n = xs.length;
+  this._n = n;
+  this._hx = Float32Array.from(xs); this._hy = Float32Array.from(ys);
+  this._px = Float32Array.from(xs); this._py = Float32Array.from(ys);
+  this._vx = new Float32Array(n); this._vy = new Float32Array(n);
+  this._act = new Uint8Array(n);
+  this._list = [];
+  this._prev = null;
+
+  // Coarse grid buckets (CSR layout) for pointer lookup
+  const G = 32, gc = Math.ceil(w / G), gr = Math.ceil(h / G), nb = gc * gr;
+  const start = new Int32Array(nb + 1), bi = new Int32Array(n), idx = new Int32Array(n);
+  for (let k = 0; k < n; k++) {
+    const b = Math.min(gr - 1, (ys[k] / G) | 0) * gc + Math.min(gc - 1, (xs[k] / G) | 0);
+    bi[k] = b; start[b + 1]++;
+  }
+  for (let b = 0; b < nb; b++) start[b + 1] += start[b];
+  const fill = start.slice(0, nb);
+  for (let k = 0; k < n; k++) idx[fill[bi[k]]++] = k;
+  this._G = G; this._gc = gc; this._gr = gr; this._bStart = start; this._bIdx = idx;
+
+  // Static field, drawn once offscreen
+  const off = typeof OffscreenCanvas !== 'undefined' ? new OffscreenCanvas(cv.width, cv.height) : document.createElement('canvas');
+  off.width = cv.width; off.height = cv.height;
+  const o = off.getContext('2d');
+  o.setTransform(dpr, 0, 0, dpr, 0, 0);
+  o.fillStyle = '#6ebd6a';
+  o.beginPath();
+  for (let k = 0; k < n; k++) o.rect(xs[k] - 1, ys[k] - 1, 2, 2);
+  o.fill();
+  this._off = off;
+
+  const ctx = cv.getContext('2d');
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
+  ctx.clearRect(0, 0, cv.width, cv.height);
+  ctx.drawImage(off, 0, 0);
+  this._ctx = ctx;
+  if (this._ptr) this._setPointer(this._ptr);
+}
+_step() {
+  const R = 90, R2 = R * R, S = 2.4, K = 0.08, D = 0.82, M = 32;
+  const hx = this._hx, hy = this._hy, px = this._px, py = this._py, vx = this._vx, vy = this._vy, act = this._act, list = this._list;
+  const p = this._ptr;
+  const moved = this._ptrMoved;
+  this._ptrMoved = false;
+  if (p) {
+    const G = this._G, start = this._bStart, idx = this._bIdx;
+    const c0 = Math.max(0, Math.floor((p.x - R - M) / G)), c1 = Math.min(this._gc - 1, Math.floor((p.x + R + M) / G));
+    const r0 = Math.max(0, Math.floor((p.y - R - M) / G)), r1 = Math.min(this._gr - 1, Math.floor((p.y + R + M) / G));
+    for (let r = r0; r <= r1; r++) {
+      for (let c = c0; c <= c1; c++) {
+        const b = r * this._gc + c;
+        for (let q = start[b], e = start[b + 1]; q < e; q++) {
+          const k = idx[q];
+          let dx = px[k] - p.x, dy = py[k] - p.y;
+          const d2 = dx * dx + dy * dy;
+          if (d2 >= R2) continue;
+          let d = Math.sqrt(d2);
+          if (d < 0.001) { dx = hx[k] - p.x || 0.5; dy = hy[k] - p.y || 0.5; d = Math.hypot(dx, dy); }
+          const f = 1 - d / R;
+          const push = S * f * f / d;
+          vx[k] += dx * push; vy[k] += dy * push;
+          if (!act[k]) { act[k] = 1; list.push(k); }
+        }
+      }
+    }
+  }
+  let moving = false, w = 0;
+  for (let a = 0; a < list.length; a++) {
+    const k = list[a];
+    const nvx = (vx[k] + (hx[k] - px[k]) * K) * D;
+    const nvy = (vy[k] + (hy[k] - py[k]) * K) * D;
+    vx[k] = nvx; vy[k] = nvy;
+    px[k] += nvx; py[k] += nvy;
+    const ex = px[k] - hx[k], ey = py[k] - hy[k];
+    const sp = nvx * nvx + nvy * nvy;
+    if (ex * ex + ey * ey < 0.0025 && sp < 0.0025) {
+      px[k] = hx[k]; py[k] = hy[k]; vx[k] = 0; vy[k] = 0; act[k] = 0;
+      continue;
+    }
+    if (sp > 0.00001) moving = true;
+    list[w++] = k;
+  }
+  list.length = w;
+  return w > 0 && (!p || moving || moved);
+}
+_draw() {
+  const ctx = this._ctx, dpr = this._dpr, cv = this._cv, list = this._list;
+  const hx = this._hx, hy = this._hy, px = this._px, py = this._py;
+  let cur = null;
+  if (list.length) {
+    let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+    for (let a = 0; a < list.length; a++) {
+      const k = list[a];
+      const ax = Math.min(hx[k], px[k]), bx = Math.max(hx[k], px[k]);
+      const ay = Math.min(hy[k], py[k]), by = Math.max(hy[k], py[k]);
+      if (ax < x0) x0 = ax; if (bx > x1) x1 = bx;
+      if (ay < y0) y0 = ay; if (by > y1) y1 = by;
+    }
+    cur = { x0: x0 - 3, y0: y0 - 3, x1: x1 + 3, y1: y1 + 3 };
+  }
+  const prev = this._prev;
+  this._prev = cur;
+  const r = cur && prev ? { x0: Math.min(cur.x0, prev.x0), y0: Math.min(cur.y0, prev.y0), x1: Math.max(cur.x1, prev.x1), y1: Math.max(cur.y1, prev.y1) } : (cur || prev);
+  if (!r) return;
+  const sx = Math.max(0, Math.floor(r.x0 * dpr)), sy = Math.max(0, Math.floor(r.y0 * dpr));
+  const ex = Math.min(cv.width, Math.ceil(r.x1 * dpr)), ey = Math.min(cv.height, Math.ceil(r.y1 * dpr));
+  if (ex <= sx || ey <= sy) return;
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
+  ctx.clearRect(sx, sy, ex - sx, ey - sy);
+  ctx.drawImage(this._off, sx, sy, ex - sx, ey - sy, sx, sy, ex - sx, ey - sy);
+  if (!list.length) return;
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  for (let a = 0; a < list.length; a++) {
+    const k = list[a];
+    ctx.clearRect(hx[k] - 1, hy[k] - 1, 2, 2);
+  }
+  ctx.fillStyle = '#6ebd6a';
+  ctx.beginPath();
+  for (let a = 0; a < list.length; a++) {
+    const k = list[a];
+    ctx.rect(Math.round(px[k] * dpr) / dpr - 1, Math.round(py[k] * dpr) / dpr - 1, 2, 2);
+  }
+  ctx.fill();
+}
+renderVals() {
+  return {
+    canvasRef: this.canvasRef,
+    onMove: this._onMove,
+    onLeave: this._onLeave
+  };
+}
+}
+</script>
+</body>
+</html>

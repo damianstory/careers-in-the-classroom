@@ -1,0 +1,155 @@
+import type { Example } from "./types";
+
+// Ported from design/prototype-v1/Main.dc.html. Claim-level sources follow
+// docs/validation/calgary-examples.md. Evidence checked 24 September 2026.
+
+const CBE_BIO = { id: "cbe-bio", label: "CBE Biology 20–30 topics", url: "https://eps.cbe.ab.ca/biology-20-30.aspx" };
+const CBE_CHEM = { id: "cbe-chem", label: "CBE Chemistry 20–30 topics", url: "https://eps.cbe.ab.ca/chemistry-20-30.aspx" };
+const CBE_PHYS = { id: "cbe-phys", label: "CBE Physics 20–30 topics", url: "https://eps.cbe.ab.ca/physics-20-30.aspx" };
+const CBE_SCI = { id: "cbe-sci", label: "CBE Science 10–30 topics", url: "https://eps.cbe.ab.ca/science-10-20-30.aspx" };
+
+export const examples: Example[] = [
+  {
+    slug: "wilder-institute",
+    detailsId: "wilder-details",
+    org: "Wilder Institute",
+    discipline: "Biology",
+    question: "Can helping individual owls help a population recover?",
+    work: "The program cares for vulnerable young burrowing owls through their first winter, then releases adult pairs and monitors them. It uses an intervention at one life stage to support a whole population’s recovery.",
+    localShort: "Connected to the Calgary Zoo. Field program in southeastern Alberta.",
+    calgary: "Wilder Institute is connected to the Calgary Zoo.",
+    site: "Its burrowing owl field program works in southeastern Alberta, not in Calgary itself.",
+    localSourceIds: ["institute", "program"],
+    explain: "Saving animals and restoring a population are connected but different goals. Scientists need evidence about what happens after release, not just a count of animals cared for.",
+    prompt: "What would you measure over several years to decide whether this intervention is helping? What comparison would make your conclusion more convincing?",
+    conversation: "How do you decide what to measure, and how do field observations change the intervention?",
+    mindset: "Evaluate outcomes beyond the most visible success metric.",
+    courses: [
+      { course: "Biology 20", topic: "Ecosystems and population change" },
+      { course: "Biology 30", topic: "Population and community dynamics" },
+    ],
+    courseFitSourceIds: ["cbe-bio"],
+    roles: [
+      { title: "Conservation research population ecologist", note: "Leads the burrowing owl program.", evidence: "Observed · Jul 2025 interview", kind: "observed", sourceIds: ["interview"] },
+      { title: "Animal care technicians", note: "Support the owls while they are in care.", evidence: "Observed · 2023 account", kind: "observed", sourceIds: ["care-team"] },
+      { title: "Veterinarians", note: "Support the owls while they are in care.", evidence: "Observed · 2023 account", kind: "observed", sourceIds: ["care-team"] },
+    ],
+    rolesNote: "Dated observations from Wilder’s own publications. Not a current staff roster, open jobs, or speaker availability.",
+    pathways: [
+      { kindLabel: "Possible direction", label: "Ecology, zoology or environmental science", note: "Relevant study areas, listed among UCalgary’s science programs. Not confirmed hiring requirements at Wilder.", kind: "interpreted", sourceIds: ["ucalgary-guides"] },
+      { kindLabel: "Example program", label: "Veterinary Technical Assistant certificate", note: "Olds College offers a four-month introduction to animal-care support. This is distinct from veterinary technology and a veterinarian qualification.", kind: "stated", sourceIds: ["wilder-assistant-program"] },
+    ],
+    ledger: [
+      { type: "work", claim: "Cares for young owls through their first winter, then releases and monitors adult pairs.", status: "Organization-stated", kind: "stated", sourceIds: ["program"] },
+      { type: "roles", claim: "Population ecologist leads the program. Animal care technicians and vets support it.", status: "Observed · 2025 and 2023", kind: "observed", sourceIds: ["interview", "care-team"] },
+      { type: "pathways", claim: "Ecology, zoology, environmental science.", status: "Inferred direction", kind: "interpreted", sourceIds: ["ucalgary-guides"] },
+      { type: "course fit", claim: "Biology 20 and Biology 30 population units.", status: "Editorial · pending review", kind: "interpreted", sourceIds: ["cbe-bio"] },
+    ],
+    sources: [
+      { id: "wilder-assistant-program", label: "Olds College Veterinary Technical Assistant", url: "https://www.oldscollege.ca/programs/areas-of-interest/animal-health/veterinary-technical-assistant-certificate.html" },
+      { id: "institute", label: "Wilder Institute", url: "https://wilderinstitute.org/" },
+      { id: "program", label: "Burrowing owl program", url: "https://wilderinstitute.org/program/burrowing-owl-program/" },
+      { id: "interview", label: "Researcher interview, Jul 2025", url: "https://wilderinstitute.org/2025/07/21/head-starting-burrowing-owls-for-a-wild-future/" },
+      { id: "care-team", label: "Care team account, 2023", url: "https://wilderinstitute.org/blog/100th-owl-returns-to-the-prairies/" },
+      CBE_BIO,
+      { id: "ucalgary-guides", label: "UCalgary science program guides", url: "https://science.ucalgary.ca/current-students/undergraduate/program-guides" },
+    ],
+    checkedOn: "2026-09-24",
+  },
+  {
+    slug: "e3-lithium",
+    detailsId: "e3-lithium-details",
+    org: "E3 Lithium",
+    discipline: "Chemistry",
+    question: "How do you separate something valuable from a complex liquid?",
+    work: "E3 is developing direct lithium extraction from underground brine. A published process role connects laboratory and demonstration systems to plant design.",
+    localShort: "Calgary-based company. Clearwater project between Calgary and Red Deer.",
+    calgary: "E3 Lithium is a Calgary-based company.",
+    site: "Its Clearwater project is between Calgary and Red Deer. A Calgary address does not mean the extraction site is in the city.",
+    localSourceIds: ["company"],
+    status: "Development and scale-up. The planned commercial facility is not operating yet.",
+    explain: "Separating a useful substance is only part of the challenge. A process also has to work repeatedly, at a useful scale, with acceptable resource use and cost.",
+    prompt: "If two separation methods recover different amounts of lithium but use different amounts of water and energy, what would you need to compare before choosing one?",
+    conversation: "What changes when a process moves from a lab to a larger facility?",
+    mindset: "Optimize across competing constraints rather than one number.",
+    courses: [
+      { course: "Chemistry 20", topic: "Solutions and quantitative chemical change" },
+      { course: "Chemistry 30", topic: "Electrochemistry, as a wider battery connection only" },
+    ],
+    courseFitSourceIds: ["cbe-chem"],
+    roles: [
+      { title: "Water process engineer / process chemist", note: "Process design, testing, equipment evaluation and optimization, tied to extraction development.", evidence: "Employer job posting", kind: "observed", sourceIds: ["role"] },
+    ],
+    rolesNote: "A posting shows work the employer sought. It does not show that someone holds the role today or that it is open now.",
+    pathways: [
+      { kindLabel: "Employer requirement", label: "Degree in chemical engineering or process chemistry, plus substantial experience", note: "Stated in the posting. A later-career example, not a first job after school.", kind: "stated", sourceIds: ["role"] },
+      { kindLabel: "One actual route", label: "Chemistry and chemical engineering degrees", note: "From the process and technology director’s company biography. One person’s route, not a rule.", kind: "observed", sourceIds: ["management"] },
+    ],
+    ledger: [
+      { type: "work", claim: "Developing direct lithium extraction from brine.", status: "Company-stated", kind: "stated", sourceIds: ["company", "role"] },
+      { type: "status", claim: "The commercial facility is planned, not operating.", status: "Not yet operating", kind: "interpreted", sourceIds: ["role"] },
+      { type: "roles", claim: "A water process engineer / process chemist was sought.", status: "Employer posting · not proof it’s filled", kind: "observed", sourceIds: ["role"] },
+      { type: "pathways", claim: "Chemical engineering or process chemistry degree, plus experience.", status: "Employer requirement", kind: "stated", sourceIds: ["role"] },
+      { type: "pathways", claim: "Director’s chemistry and chemical engineering degrees.", status: "One actual route", kind: "observed", sourceIds: ["management"] },
+      { type: "course fit", claim: "Chemistry 20 solutions. Chemistry 30 battery context only.", status: "Editorial · pending review", kind: "interpreted", sourceIds: ["cbe-chem"] },
+    ],
+    sources: [
+      { id: "company", label: "E3 Lithium", url: "https://www.e3lithium.ca/" },
+      { id: "role", label: "Process role description (PDF)", url: "https://e3lithium.ca/_resources/careers/Intermediate-Water-Process-Engineer_JobDescription.pdf?v=021812" },
+      { id: "management", label: "Management biographies", url: "https://www.e3lithium.ca/corporate/management/" },
+      CBE_CHEM,
+    ],
+    checkedOn: "2026-09-24",
+  },
+  {
+    slug: "ghgsat",
+    org: "GHGSat",
+    discipline: "Physics",
+    question: "How can you find an invisible gas from space?",
+    work: "GHGSat’s satellite instruments measure methane. The company describes a spectrometer at the heart of its satellites. It links measurement, electromagnetic radiation and environmental decisions.",
+    localShort: "Lists a Calgary office. Headquarters in Montreal.",
+    calgary: "GHGSat lists a Calgary office.",
+    site: "Headquarters is in Montreal. The roles below describe the whole company. We have not confirmed which are in Calgary.",
+    localSourceIds: ["contact"],
+    explain: "Detecting a gas, estimating how much is escaping, and deciding what to do are different tasks. Instruments, analysis and the people interpreting results all contribute.",
+    prompt: "If a sensor detects no methane, does that prove none is present? What would you want to know about the instrument and the observation conditions?",
+    conversation: "How do you turn an instrument reading into a conclusion someone can act on?",
+    mindset: "Understand measurement limits before drawing conclusions.",
+    courses: [
+      { course: "Physics 30", topic: "Electromagnetic radiation" },
+      { course: "Science 30", topic: "Electromagnetic energy and environmental topics" },
+      { course: "Science 10", topic: "Global energy systems, as a broader introduction" },
+    ],
+    courseFitSourceIds: ["cbe-phys", "cbe-sci"],
+    roles: [
+      { title: "Satellite engineering", note: "Team area named by the company.", evidence: "Company-listed team area", kind: "observed", sourceIds: ["contact"] },
+      { title: "Atmospheric science", note: "Team area named by the company.", evidence: "Company-listed team area", kind: "observed", sourceIds: ["contact"] },
+      { title: "Software development and data science", note: "Team areas named by the company.", evidence: "Company-listed team area", kind: "observed", sourceIds: ["contact"] },
+      { title: "Commercial work", note: "Team area named by the company.", evidence: "Company-listed team area", kind: "observed", sourceIds: ["contact"] },
+    ],
+    rolesNote: "Role families from the company’s own site. Not verified vacancies or project assignments, and not confirmed as Calgary-based.",
+    pathways: [
+      { kindLabel: "Possible direction", label: "Physics, engineering, or computing and data study", note: "Plausible for different parts of this work. Not confirmed GHGSat hiring requirements.", kind: "interpreted", sourceIds: ["eng-physics"] },
+      { kindLabel: "Example program", label: "UCalgary engineering physics", note: "Combines physics and engineering. Its overview names space physics among application areas.", kind: "observed", sourceIds: ["eng-physics", "eng-programs"] },
+    ],
+    ledger: [
+      { type: "work", claim: "Satellite instruments measure methane, with a spectrometer at their heart.", status: "Company-stated", kind: "stated", sourceIds: ["technology"] },
+      { type: "roles", claim: "Satellite engineering, atmospheric science, software, data science, commercial.", status: "Observed · not vacancies", kind: "observed", sourceIds: ["contact"] },
+      { type: "pathways", claim: "Physics, engineering, computing and data study.", status: "Inferred direction", kind: "interpreted", sourceIds: ["eng-physics"] },
+      { type: "news", claim: "A second-generation satellite is planned for early 2028.", status: "Projected · not operating", kind: "interpreted", sourceIds: ["announcement"] },
+      { type: "course fit", claim: "Physics 30, Science 30, Science 10.", status: "Editorial · pending review", kind: "interpreted", sourceIds: ["cbe-phys", "cbe-sci"] },
+    ],
+    sources: [
+      { id: "contact", label: "GHGSat offices and work areas", url: "https://www.ghgsat.com/contact/" },
+      { id: "technology", label: "Satellite technology", url: "https://www.ghgsat.com/technology/satellite-constellation/" },
+      { id: "announcement", label: "Second-generation satellite announcement, 21 Sep 2026", url: "https://www.ghgsat.com/resources/ghgsat-unveils-plans-for-second-generation-satellite-setting-a-new-standard-for-methane-detection-from-space/" },
+      CBE_PHYS,
+      CBE_SCI,
+      { id: "eng-physics", label: "UCalgary engineering physics", url: "https://schulich.ucalgary.ca/departments-centres/departments-and-programs-overview/engineering-physics" },
+      { id: "eng-programs", label: "UCalgary engineering programs", url: "https://schulich.ucalgary.ca/future-students/undergraduate/programs/majors" },
+    ],
+    newsId: "ghgsat-second-generation",
+    checkedOn: "2026-09-24",
+    detailsId: "ghgsat-details",
+  },
+];

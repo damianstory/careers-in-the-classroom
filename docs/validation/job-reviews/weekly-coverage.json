@@ -1,0 +1,39 @@
+{
+  "updated_on": "2026-09-29",
+  "source_collection": "src/content/examples.ts",
+  "examples": [
+    {
+      "example_slug": "e3-lithium",
+      "featured_company": "E3 Lithium",
+      "first_discovered_on": "2026-09-29",
+      "active": true,
+      "last_attempted_on": "2026-09-29",
+      "last_completed_on": "2026-09-29",
+      "scope": "bounded featured-employer and local-gap baseline",
+      "deferred_reason": null,
+      "last_review_packet": "all-examples/2026-09-29-baseline/review.md"
+    },
+    {
+      "example_slug": "ghgsat",
+      "featured_company": "GHGSat",
+      "first_discovered_on": "2026-09-29",
+      "active": true,
+      "last_attempted_on": "2026-09-29",
+      "last_completed_on": "2026-09-29",
+      "scope": "bounded featured-employer and local-gap baseline",
+      "deferred_reason": null,
+      "last_review_packet": "all-examples/2026-09-29-baseline/review.md"
+    },
+    {
+      "example_slug": "wilder-institute",
+      "featured_company": "Wilder Institute",
+      "first_discovered_on": "2026-09-29",
+      "active": true,
+      "last_attempted_on": "2026-09-29",
+      "last_completed_on": "2026-09-29",
+      "scope": "bounded featured-employer and local-gap baseline",
+      "deferred_reason": null,
+      "last_review_packet": "all-examples/2026-09-29-baseline/review.md"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CitC · Connected classroom journey</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#faf9f7;color:#231f20;font-family:Arial,Helvetica,sans-serif}header{padding:28px 36px 20px;border-bottom:1px solid #e4e2e2;background:#fff}h1{margin:8px 0 10px;font-size:clamp(24px,3vw,36px);letter-spacing:-1px}.eyebrow{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#367533;font-weight:bold}p{line-height:1.55;margin:0;color:#514d4e;max-width:1000px}.toolbar{padding:18px 36px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;position:sticky;top:0;background:#faf9f7;z-index:2;border-bottom:1px solid #e4e2e2}button,a.action{font:inherit;font-size:14px;cursor:pointer;border:1px solid #d4d7d2;border-radius:8px;background:#fff;color:#231f20;padding:11px 16px;text-decoration:none}button[aria-pressed="true"]{background:#295826;color:#fff;border-color:#295826}button:focus-visible,a:focus-visible{outline:3px solid #51b04c;outline-offset:3px}#compare{margin-left:auto}main{padding:24px 36px 44px}.caption{display:flex;justify-content:space-between;gap:24px;align-items:center;margin:0 0 18px}h2{margin:0 0 7px;font-size:22px}.caption p{font-size:15px}#stage{display:block;width:100%;height:auto;border:1px solid #e4e2e2;border-radius:10px;background:white}#grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}#grid[hidden],#single[hidden]{display:none}figure{margin:0}figure button{display:block;padding:0;border-radius:8px;overflow:hidden;width:100%}figure img{width:100%;display:block}figcaption{font-size:15px;margin-top:10px;font-weight:bold}.pager{display:flex;gap:10px;justify-content:center;padding-top:22px}.fine{font-size:12px;margin-top:24px;color:#6b6869}.fine a{color:#367533}@media(max-width:760px){header,.toolbar,main{padding-left:16px;padding-right:16px}#grid{grid-template-columns:1fr}.caption{align-items:start;flex-direction:column;gap:12px}#compare{margin-left:0}}
+</style>
+</head>
+<body>
+<header><div class="eyebrow">Careers in the Classroom · Design exploration</div><h1>One lesson. Room to explore.</h1><p>Four image mockups of one connected journey. The course and classroom example stay visible as a teacher explores the company, the roles, and possible next steps.</p></header>
+<nav class="toolbar" aria-label="Mockup views">
+<button data-view="0" aria-pressed="true">1 · Classroom story</button>
+<button data-view="1" aria-pressed="false">2 · Company panel</button>
+<button data-view="2" aria-pressed="false">3 · Explore a role</button>
+<button data-view="3" aria-pressed="false">4 · Pathways & jobs</button>
+<button id="compare" aria-pressed="false">Compare all four</button>
+</nav>
+<main>
+<section id="single"><div class="caption"><div aria-live="polite"><h2 id="title">Start with the classroom story</h2><p id="description">A visual explanation and discussion prompt, with natural entry points into the company and its work.</p></div><a id="full" class="action" href="01-classroom-story.png" target="_blank" rel="noopener">Open full image ↗</a></div><img id="stage" src="01-classroom-story.png" alt="Classroom story mockup with persistent course context, a satellite illustration, and company and role exploration links"><div class="pager"><button id="previous" aria-label="Previous mockup">← Previous</button><button id="next" aria-label="Next mockup">Next →</button></div></section>
+<section id="grid" hidden aria-label="All four mockups"></section>
+<p class="fine">Made with ChatGPT Images. These are visual concepts; controls inside the images are not functional. Photography, diagrams, and job examples are illustrative. <a href="image-prompts.md">Generation prompts</a> · <a href="refinement-prompt.md">Illustration refinement</a></p>
+</main>
+<script>
+const views=[
+{image:"01-classroom-story.png",title:"Start with the classroom story",description:"A visual explanation and discussion prompt, with natural entry points into the company and its work.",alt:"Classroom story mockup with persistent course context, a satellite illustration, and company and role exploration links"},
+{image:"02-company-panel.png",title:"Open the company beside the lesson",description:"A wide detail panel keeps the teaching story in view. Close it to return directly to the classroom conversation.",alt:"GHGSat company panel beside the visible classroom story"},
+{image:"03-role-exploration.png",title:"Follow curiosity into a role",description:"The same course and lesson navigation remain. The role explains the work and connects it back to the science.",alt:"Atmospheric science role explanation within the persistent lesson navigation"},
+{image:"04-pathways-job-examples.png",title:"Explore possible next steps",description:"Pathways and dated job examples extend the role exploration, with local and broader options in the same context.",alt:"Job example collection and learning pathway within the connected classroom journey"}
+];let selected=0;
+const single=document.getElementById("single"),grid=document.getElementById("grid"),compare=document.getElementById("compare");
+function show(index){selected=(index+views.length)%views.length;const view=views[selected];single.hidden=false;grid.hidden=true;compare.setAttribute("aria-pressed","false");document.getElementById("title").textContent=view.title;document.getElementById("description").textContent=view.description;document.getElementById("stage").src=view.image;document.getElementById("stage").alt=view.alt;document.getElementById("full").href=view.image;document.querySelectorAll("[data-view]").forEach(b=>b.setAttribute("aria-pressed",String(Number(b.dataset.view)===selected)));}
+document.querySelectorAll("[data-view]").forEach(b=>b.addEventListener("click",()=>show(Number(b.dataset.view))));
+views.forEach((v,i)=>{const figure=document.createElement("figure"),button=document.createElement("button"),img=document.createElement("img"),caption=document.createElement("figcaption");img.src=v.image;img.alt=v.alt;button.setAttribute("aria-label","Open mockup "+(i+1)+": "+v.title);button.append(img);button.addEventListener("click",()=>show(i));caption.textContent=(i+1)+" · "+v.title;figure.append(button,caption);grid.append(figure)});
+compare.addEventListener("click",()=>{if(!grid.hidden){show(selected);return}single.hidden=true;grid.hidden=false;compare.setAttribute("aria-pressed","true");document.querySelectorAll("[data-view]").forEach(b=>b.setAttribute("aria-pressed","false"))});
+document.getElementById("previous").addEventListener("click",()=>show(selected-1));document.getElementById("next").addEventListener("click",()=>show(selected+1));document.addEventListener("keydown",e=>{if(e.key==="ArrowRight")show(selected+1);if(e.key==="ArrowLeft")show(selected-1)});
+</script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+/* Design tokens. The palette is the green ramp plus ink; the B2 "Field Instrument"
+   chrome adds the dark-surface semantic tokens below. Flat, no shadows. */
+
+:root {
+  /* Green ramp */
+  --green-tint-1: #c5e5c3;
+  --green-tint-2: #a8d8a6;
+  --green-tint-3: #8bca88;
+  --green-tint-4: #6ebd6a;
+  --green: #51b04c;
+  --green-shade-1: #44933f;
+  --green-shade-2: #367533;
+  --green-shade-3: #295826;
+  --green-shade-4: #1b3b19;
+
+  /* Neutrals */
+  --ink: #231f20;
+  --white: #ffffff;
+
+  /* Surfaces */
+  --bg: #ffffff;
+  --bg-warm: #faf9f7;
+  --bg-subtle: #f9fafb;
+  --bg-accent: #f2f8f1;
+  --bg-accent-strong: #e8f5e7;
+  --border: #e4e2e2;
+  --border-green: #cfe3cc;
+
+  /* Text */
+  --text: #231f20;
+  --text-body: #514d4e;
+  --text-muted: #7c7879; /* 4.35:1 on white: non-text use only (borders, icons); small text uses --text-body */
+  --text-subtle: #b8bcba;
+  --text-accent: #367533;
+
+  /* Semantic */
+  --destructive: #dc2626;
+
+  /* Dark instrument surfaces (header, footer, rail, hero) */
+  --surface-dark: #1b3b19;
+  --on-dark: #ffffff;
+  --on-dark-2: #c5e5c3;
+  --on-dark-muted: #ffffffb3;
+  --signal: #6ebd6a;
+  --hairline-dark: #ffffff24;
+  --dot-grid-dark: radial-gradient(#ffffff1f 1px, transparent 1px) 0 0 / 24px 24px;
+
+  /* Type (IBM Plex, self-hosted by next/font in src/app/layout.tsx) */
+  --font-display: var(--font-plex-sans), "Helvetica Neue", Arial, sans-serif;
+  --font-ui: var(--font-plex-sans), "Helvetica Neue", Arial, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+
+  /* Spacing (8px rhythm, 4px adjustments) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-14: 56px;
+  --space-16: 64px;
+  --space-20: 80px;
+
+  /* Shape. B2 is nearly square: 4px for controls (buttons, inputs, tags), 6px for panels.
+     The larger rounded-card radii below are legacy; remove them once no module uses them. */
+  --radius-control: 4px;
+  --radius-panel: 6px;
+
+  /* Motion */
+  --duration-fast: 150ms;
+  --duration-slow: 500ms;
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Layout */
+  --spine: 1200px;
+  --gutter: 48px;
+  --header-h: 64px;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --gutter: 16px;
+    --header-h: 56px;
+  }
+}

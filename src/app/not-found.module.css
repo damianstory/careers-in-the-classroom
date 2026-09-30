@@ -1,0 +1,102 @@
+/* Not found: the light dotted ground of the digest page with the hero ruler, so it
+   never runs into the dark green footer. */
+.band {
+  min-height: 60vh;
+  background:
+    radial-gradient(#231f2014 1px, transparent 1px) 0 0 / 24px 24px,
+    var(--bg-subtle);
+  color: var(--ink);
+}
+
+.inner {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 88px var(--gutter) 104px calc(var(--gutter) + 96px);
+}
+
+.ruler {
+  position: absolute;
+  left: var(--gutter);
+  top: 64px;
+  bottom: 64px;
+  width: 14px;
+  border-left: 1px solid #bdb9ba;
+  background-image:
+    repeating-linear-gradient(180deg, #8a8586 0 1px, transparent 1px 40px),
+    repeating-linear-gradient(180deg, #bdb9ba 0 1px, transparent 1px 8px);
+  background-size: 14px 100%, 7px 100%;
+  background-repeat: no-repeat;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font: 500 12px/16px var(--font-mono);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-accent);
+}
+
+.mark {
+  width: 8px;
+  height: 8px;
+  flex: none;
+  background: var(--green);
+}
+
+.inner .title {
+  margin-top: 24px;
+  max-width: 760px;
+  font-size: clamp(40px, 4.45vw, 64px);
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+}
+
+.text {
+  margin-top: 24px;
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--text-body);
+}
+
+.actions {
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+@media (max-width: 960px) {
+  .inner {
+    padding-left: var(--gutter);
+  }
+
+  .ruler {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .inner {
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+
+  .inner .title {
+    margin-top: 16px;
+    font-size: 40px;
+    line-height: 1;
+  }
+
+  .text {
+    margin-top: 16px;
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  .actions {
+    margin-top: 24px;
+  }
+}

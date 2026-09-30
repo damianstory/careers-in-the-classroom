@@ -1,0 +1,391 @@
+/* Example pages: the page wrapper, the band system every view is built from, shared type,
+   the dark instrument panel, and the shared "Sources and course fit" footer.
+   Band padding comes from variables set on the explorer shell (explore.module.css). */
+
+.page {
+  min-width: 0;
+}
+
+/* Bands: full-width rows of the content column, content centred to a fixed measure. */
+.band {
+  padding: var(--band-y) var(--band-r) var(--band-y) var(--band-l);
+}
+
+.hero {
+  padding-bottom: calc(var(--band-y) - 8px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tint {
+  background: var(--bg-subtle);
+}
+
+.rule {
+  border-top: 1px dotted var(--rule-dotted);
+}
+
+.flush {
+  padding-top: 0;
+}
+
+.last {
+  padding-bottom: calc(var(--band-y) + 8px);
+}
+
+.title {
+  margin-top: 20px;
+  max-width: 940px;
+  font-size: 64px;
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+.hero > .title:first-child {
+  margin-top: 0;
+}
+
+.lede {
+  margin-top: 24px;
+  max-width: 720px;
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--text-body);
+}
+
+.h2 {
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: -0.025em;
+}
+
+/* A small solid square before a mono label, as on the instrument panels. */
+.marked {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.marked::before {
+  content: "";
+  flex: none;
+  width: 8px;
+  height: 8px;
+  background: var(--green);
+  align-self: center;
+}
+
+/* Dark green instrument panel: dot grid, 6px corners, registration marks via .corner. */
+.darkPanel {
+  position: relative;
+  border-radius: var(--radius-panel);
+  background: var(--dot-grid-dark), var(--surface-dark);
+  color: var(--on-dark);
+}
+
+.darkPanel :global(.eyebrow) {
+  color: var(--signal);
+}
+
+.darkPanel .marked::before {
+  background: var(--signal);
+}
+
+.darkPanel a {
+  color: var(--on-dark-2);
+}
+
+.darkPanel a:hover {
+  color: var(--on-dark);
+}
+
+.corner {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 0 solid var(--signal);
+  pointer-events: none;
+}
+
+.cornerTl {
+  left: 12px;
+  top: 12px;
+  border-left-width: 1px;
+  border-top-width: 1px;
+}
+
+.cornerTr {
+  right: 12px;
+  top: 12px;
+  border-right-width: 1px;
+  border-top-width: 1px;
+}
+
+.cornerBl {
+  left: 12px;
+  bottom: 12px;
+  border-left-width: 1px;
+  border-bottom-width: 1px;
+}
+
+.cornerBr {
+  right: 12px;
+  bottom: 12px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+}
+
+/* Sources and course fit */
+.sources {
+  padding-top: calc(var(--band-y) + 8px);
+}
+
+.sourcesHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px 24px;
+}
+
+.checked {
+  font: 500 12px/16px var(--font-mono);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-body);
+}
+
+.twoCols {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px;
+}
+
+.colLabel {
+  font: 500 12px/16px var(--font-mono);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-body);
+}
+
+.fitList,
+.sourceList {
+  list-style: none;
+  margin-top: 12px;
+  padding: 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.fitList li {
+  display: grid;
+  grid-template-columns: 132px minmax(0, 1fr);
+  gap: 12px;
+  padding: 14px 0;
+  border-top: 1px solid var(--border);
+}
+
+.fitList li > span {
+  color: var(--text-body);
+}
+
+.sourceList li {
+  padding: 11px 0;
+  border-top: 1px solid var(--border);
+  line-height: 22px;
+}
+
+.sourceList a {
+  color: var(--ink);
+}
+
+.sourceList a:hover {
+  color: var(--text-accent);
+}
+
+.sourceList a :global(.icon) {
+  color: var(--text-accent);
+}
+
+.note {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--text-body);
+}
+
+.sourcesFoot {
+  margin-top: 32px;
+  padding-top: 20px;
+  max-width: none;
+  border-top: 1px solid var(--border);
+}
+
+.evidence {
+  margin-top: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-panel);
+  background: var(--bg);
+  overflow: hidden;
+}
+
+.evidence > summary {
+  min-height: 48px;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500;
+  color: var(--text-accent);
+  cursor: pointer;
+}
+
+.evidence > summary:hover {
+  color: var(--green-shade-3);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.evidence[open] > summary {
+  border-bottom: 1px solid var(--border);
+}
+
+.ledger {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ledger th {
+  padding: 10px 20px;
+  background: var(--bg-subtle);
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  font: 500 11px/16px var(--font-mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-body);
+}
+
+.ledger td {
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.ledger td:first-child {
+  width: 130px;
+  font-size: 12px;
+  color: var(--text-body);
+}
+
+.ledger td:last-child {
+  width: 250px;
+}
+
+.cites {
+  display: block;
+  margin-top: 4px;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--text-body);
+}
+
+.legend {
+  padding: 14px 20px;
+  background: var(--bg-subtle);
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--text-body);
+}
+
+@media (max-width: 960px) {
+  .title {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 640px) {
+  .title {
+    margin-top: 16px;
+    font-size: 40px;
+    line-height: 1;
+  }
+
+  .lede {
+    margin-top: 16px;
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  .h2 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .twoCols {
+    margin-top: 24px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+
+  .fitList li {
+    grid-template-columns: 104px minmax(0, 1fr);
+  }
+
+  .corner {
+    width: 12px;
+    height: 12px;
+  }
+
+  .cornerTl,
+  .cornerBl {
+    left: 10px;
+  }
+
+  .cornerTr,
+  .cornerBr {
+    right: 10px;
+  }
+
+  .cornerTl,
+  .cornerTr {
+    top: 10px;
+  }
+
+  .cornerBl,
+  .cornerBr {
+    bottom: 10px;
+  }
+
+  /* The ledger becomes stacked rows on phones. */
+  .ledger thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+  }
+
+  .ledger tr {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .ledger td,
+  .ledger td:first-child,
+  .ledger td:last-child {
+    width: auto;
+    padding: 0;
+    border: 0;
+  }
+}

@@ -1,0 +1,391 @@
+/* "List your company": dark green hero band, two audience cards, and the fairness block.
+   Content sits 96px in from the gutter on wide screens, leaving room for the hero ruler. */
+
+.inner,
+.heroInner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: calc(var(--gutter) + 96px);
+  padding-right: var(--gutter);
+}
+
+/* Hero */
+.hero {
+  background: var(--dot-grid-dark), var(--surface-dark);
+  color: var(--on-dark);
+  overflow: hidden;
+}
+
+.heroInner {
+  position: relative;
+  min-height: 480px;
+  padding-top: 88px;
+  padding-bottom: 64px;
+}
+
+.ruler {
+  position: absolute;
+  left: var(--gutter);
+  top: 64px;
+  width: 14px;
+  height: 352px;
+  border-left: 1px solid #ffffff40;
+  background-image:
+    repeating-linear-gradient(180deg, #ffffff80 0 1px, transparent 1px 40px),
+    repeating-linear-gradient(180deg, #ffffff40 0 1px, transparent 1px 8px);
+  background-size: 14px 100%, 7px 100%;
+  background-repeat: no-repeat;
+}
+
+.heroText {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font: 500 12px/16px var(--font-mono);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--on-dark-2);
+}
+
+.mark {
+  width: 8px;
+  height: 8px;
+  flex: none;
+  background: var(--signal);
+}
+
+.heroText .title {
+  margin-top: 24px;
+  font-size: clamp(40px, 4.45vw, 64px);
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+  animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.1, 1) both;
+}
+
+.lede {
+  margin-top: 28px;
+  max-width: 640px;
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffffcc;
+}
+
+.targetWide {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.targetCompact {
+  display: none;
+  width: 100%;
+  max-width: 358px;
+  height: auto;
+  margin-top: 24px;
+}
+
+.targetLabels {
+  font-family: var(--font-mono);
+  font-weight: 500;
+}
+
+/* Audience cards */
+.ways {
+  background: var(--bg);
+}
+
+.cards {
+  padding-top: 88px;
+  padding-bottom: 88px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  align-items: start;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-panel);
+  background: var(--bg);
+  overflow: hidden;
+  animation: rise-card 0.6s cubic-bezier(0.2, 0.7, 0.1, 1) both;
+}
+
+.card + .card {
+  animation-delay: 60ms;
+}
+
+.cardHead {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 24px 28px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-subtle);
+}
+
+.cardIcon {
+  width: 30px;
+  height: 30px;
+  flex: none;
+}
+
+.cardHead .cardTitle {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.list {
+  list-style: none;
+  padding: 0 28px 8px;
+  font-size: 17px;
+  line-height: 26px;
+}
+
+.list li,
+.rules li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.list li {
+  min-height: 60px;
+  padding: 17px 0;
+}
+
+.list li + li {
+  border-top: 1px solid var(--border);
+}
+
+.bullet {
+  width: 8px;
+  height: 8px;
+  flex: none;
+  background: var(--green);
+}
+
+/* How we keep it fair */
+.fair {
+  background: var(--bg-subtle);
+  border-top: 1px dotted #bdb9ba;
+}
+
+.fairGrid {
+  padding-top: 96px;
+  padding-bottom: 104px;
+  display: grid;
+  grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
+  gap: 48px;
+}
+
+.fairGrid .fairTitle {
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: -0.03em;
+}
+
+.rules {
+  list-style: none;
+  padding: 0;
+  border-bottom: 1px solid var(--border);
+  font: 500 20px/30px var(--font-ui);
+  letter-spacing: -0.005em;
+  color: var(--ink);
+}
+
+.rules li {
+  gap: 16px;
+  padding: 20px 0;
+  border-top: 1px solid var(--border);
+}
+
+.rules li:first-child {
+  border-top-color: var(--ink);
+}
+
+.action {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 24px;
+}
+
+.action .actionButton {
+  min-height: 48px;
+  padding: 0 24px;
+  font-size: 16px;
+}
+
+.status {
+  flex: 1 1 280px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--text-body);
+}
+
+.statusMark {
+  width: 6px;
+  height: 6px;
+  flex: none;
+  background: var(--green);
+}
+
+@keyframes rise {
+  /* Transform only: a fade would leave text below contrast mid-animation. */
+  from {
+    transform: translateY(24px);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@keyframes rise-card {
+  from {
+    transform: translateY(14px);
+  }
+  to {
+    transform: none;
+  }
+}
+
+/* The wide diagram needs the space to the right of the text column. */
+@media (max-width: 1199px) {
+  .targetWide {
+    display: none;
+  }
+
+  .targetCompact {
+    display: block;
+  }
+
+  .heroInner {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 960px) {
+  .inner,
+  .heroInner {
+    padding-left: var(--gutter);
+  }
+
+  .ruler {
+    display: none;
+  }
+
+  .cards {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .fairGrid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .heroInner {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .heroText .title {
+    margin-top: 16px;
+    font-size: 40px;
+    line-height: 1;
+  }
+
+  .lede {
+    margin-top: 16px;
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  .cards {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .cardHead {
+    gap: 12px;
+    padding: 20px;
+  }
+
+  .cardIcon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .cardHead .cardTitle {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .list {
+    padding: 0 20px 4px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .list li {
+    gap: 12px;
+    min-height: 52px;
+    padding: 14px 0;
+  }
+
+  .fairGrid {
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+
+  .fairGrid .fairTitle {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .rules {
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: 0;
+  }
+
+  .rules li {
+    align-items: flex-start;
+    gap: 14px;
+    padding: 16px 0;
+  }
+
+  .rules .bullet {
+    margin-top: 9px;
+  }
+
+  .action {
+    margin-top: 28px;
+    gap: 12px;
+  }
+
+  .action .actionButton {
+    width: 100%;
+  }
+
+  .status {
+    align-items: flex-start;
+  }
+
+  .statusMark {
+    margin-top: 8px;
+  }
+}
