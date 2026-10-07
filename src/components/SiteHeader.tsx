@@ -10,6 +10,7 @@ import styles from "./SiteHeader.module.css";
 
 const nav = [
   { href: "/", label: "Examples", match: (p: string) => p === "/" || p.startsWith("/examples") },
+  { href: "/discover", label: "Discover", match: (p: string) => p.startsWith("/discover") },
   { href: "/get-involved", label: "List your company", match: (p: string) => p.startsWith("/get-involved") },
 ];
 

@@ -210,3 +210,13 @@ npx playwright test
 ## 7. Delivery
 
 The builder edits only the files in 4.1. It does not commit. The host reviews the diff, runs the host proof, and has a fresh Claude Opus 5.5 session inspect the change before anything is committed.
+
+## 8. Changes after approval (as built, accepted by the host on 7 October 2026)
+
+These supersede the sections named. Each came from the fresh Claude inspections; details are in `PLAN-discover-REVIEW-LOG.md`.
+
+- **4.6 URL format.** `role` and `found` hold the card's two-digit number (`role=05`, `found=02,05`), not the role id, so the address bar never shows a job name. `role` and `step` are written on every reveal step, including Guess. A parsed role is always counted as found. Role ids are not accepted in `/discover` URLs. Links into example pages still use role ids. Section 6 deep links read `/discover?role=05&step=5` (animal care) and `/discover?role=06&step=6` (wildlife veterinary).
+- **4.5 Space handling.** A Space key-up that follows a handled Space key-down is cancelled, so one press performs one action.
+- **4.7 Flashing frame.** The flashing and Guess frame is 310×538.667 at x 485, y 104 (inner picture still 9:16), so the caption and controls have their own rows.
+- **4.7 Reveal heading.** Steps 1–6 render a visually hidden `h1` "Discover".
+- **11 Reduced motion.** Animations and transitions are off; static tilts and the start fan stay.

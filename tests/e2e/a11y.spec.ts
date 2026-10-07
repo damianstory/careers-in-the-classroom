@@ -2,6 +2,8 @@ import AxeBuilder from "@axe-core/playwright";
 import { expect, test } from "./fixtures";
 
 const routes = [
+  "/discover",
+  "/discover?role=05&step=5",
   "/",
   "/?course=physics-30&unit=p30c",
   "/?course=physics-20&unit=p20a",

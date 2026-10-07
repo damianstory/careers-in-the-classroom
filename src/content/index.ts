@@ -28,3 +28,6 @@ export const getJob = (id: string) => jobExamples.find((j) => j.id === id);
 export const getRegistrySource = (id: string) => registry.find((s) => s.id === id);
 export const getOrganizationRole = (organizationId: string, roleId: string) =>
   organizationRoles.find((l) => l.organizationId === organizationId && l.roleId === roleId);
+
+export { discoverImages } from "./discover";
+export type { DiscoverImage } from "./discover";
