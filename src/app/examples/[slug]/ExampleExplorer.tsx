@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { EvidenceTag } from "@/components/EvidenceTag";
+import { ExampleIllustration } from "@/components/ExampleIllustration";
 import { Icon } from "@/components/Icon";
 import { SourceLink } from "@/components/SourceLink";
 import {
@@ -217,7 +218,7 @@ function Eyebrow({ children }: { children: React.ReactNode }) {
   return <p className={`eyebrow ${base.marked}`}>{children}</p>;
 }
 
-// The organization's own logo, top-right of the story hero (under the org line on phones). A white
+// The organization's own logo in the story's course-fit column. A white
 // logo sits on the dark plate; a coloured one on a white plate with a hairline.
 function OrgLogo({ logo }: { logo: OrganizationLogo }) {
   return (
@@ -294,7 +295,7 @@ function StoryView({
 
   return (
     <>
-      <header className={`${base.band} ${base.hero} ${styles.storyHero}`} data-has-logo={org?.logo ? "" : undefined}>
+      <header className={`${base.band} ${base.hero} ${styles.storyHero}`}>
         <Heading id="story-title" level={1}>
           {e.question}
         </Heading>
@@ -303,9 +304,12 @@ function StoryView({
             <p className={styles.orgLine}>
               <strong>{e.org}</strong> · {e.localShort}
             </p>
-            {org?.logo && <OrgLogo logo={org.logo} />}
+            <ExampleIllustration slug={e.slug} variant="story" />
           </div>
-          <FitsPanel e={e} ctx={ctx} />
+          <div className={styles.storyDetails}>
+            {org?.logo && <OrgLogo logo={org.logo} />}
+            <FitsPanel e={e} ctx={ctx} />
+          </div>
         </div>
       </header>
 

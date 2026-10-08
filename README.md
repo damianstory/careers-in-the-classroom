@@ -36,7 +36,8 @@ npm run test:privacy-dev   # starts the dev server and proves a typed topic is n
 ## Content and design sources
 
 - Content: `src/content/` (ported from `design/prototype-v1/Main.dc.html`; sources from `docs/validation/calgary-examples.md`). Exploration records (`organizations.ts`, `roles.ts`, `pathways.ts`, `job-examples.ts`, `example-details.ts`) cite the shared registry in `sources.ts`.
-- The GHGSat classroom diagram is a schematic drawn in code (`MethaneDiagram.tsx`), not a company image.
+- Classroom teaching diagrams use static graphic-novel illustrations with explicit directional arrows and live numbered explanations (`StoryDiagram.tsx`). They are conceptual schematics, not company imagery or measured results. Full prompts and visual reviews: `design/story-diagrams-2026-10-07/`.
+- Editorial illustrations follow the approved Discover graphic-novel / screenprint direction, selected 7 October 2026. See `docs/design/image-direction.md` for prompts, reference assets and review requirements. Example illustrations show fictional people and generic equipment; teaching schematics remain separate.
 - Organization logos (`public/images/logos/`) are each organization's own header logo, shown on its example for identification only, with that caption. None of the three publishes logo terms, and none has reviewed or endorsed the pages. Downloaded 30 September 2026 (recorded per logo in `src/content/organizations.ts`):
   - `ghgsat.svg`: https://www.ghgsat.com/wp-content/themes/ghgsat/assets/images/logo-ghgsat-color.svg
   - `e3-lithium.svg`: https://www.e3lithium.ca/_templates/1/source/img/logo.svg

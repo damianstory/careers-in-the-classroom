@@ -1,0 +1,21 @@
+.figure {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.story {
+  max-width: 680px;
+  margin-top: 24px;
+  border-radius: var(--radius-panel);
+}
+
+.card {
+  flex: none;
+}

@@ -451,23 +451,16 @@
 
 /* ---- Classroom story ---- */
 
-/* The organization's logo sits top-right of the hero; the question keeps clear of it. */
+/* A shared heading, then the story artwork beside its organization and course context. */
 .storyHero {
-  position: relative;
-}
-
-.storyHero[data-has-logo] > .heading {
-  max-width: min(940px, calc(100% - 208px));
+  width: 100%;
 }
 
 .logo {
-  position: absolute;
-  top: var(--band-y);
-  right: var(--band-r);
   margin: 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   gap: 8px;
 }
 
@@ -502,12 +495,22 @@
 }
 
 .storyIntro {
-  margin-top: 36px;
+  margin-top: 32px;
   width: 100%;
   display: grid;
-  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
-  gap: 48px;
+  grid-template-columns: minmax(0, 8fr) minmax(0, 5fr);
+  gap: 32px;
   align-items: start;
+}
+
+.storyIntro > div {
+  min-width: 0;
+}
+
+.storyDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .orgLine {
@@ -561,7 +564,7 @@
 
 .fitsRows li {
   display: grid;
-  grid-template-columns: 132px minmax(0, 1fr);
+  grid-template-columns: 96px minmax(0, 1fr);
   gap: 12px;
   padding: 12px 20px;
   font-size: 15px;
@@ -1819,7 +1822,6 @@
 /* ---- Narrower content columns ---- */
 
 @media (max-width: 1199px) {
-  .storyIntro,
   .useSplit,
   .lessonSplit,
   .nextSteps,
@@ -1875,20 +1877,21 @@
   }
 }
 
+@media (min-width: 961px) and (max-width: 1199px), (max-width: 820px) {
+  .storyIntro {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+}
+
 @media (max-width: 640px) {
   .storyIntro {
     margin-top: 16px;
     gap: 20px;
   }
 
-  .storyHero[data-has-logo] > .heading {
-    max-width: none;
-  }
-
-  .logo {
-    position: static;
-    margin-top: 12px;
-    align-items: flex-start;
+  .storyDetails {
+    gap: 20px;
   }
 
   .orgLine {

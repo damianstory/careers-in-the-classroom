@@ -1,0 +1,22 @@
+{
+  "images": [
+    {
+      "kind": "methane",
+      "jobId": "8a906f38-af49-4df0-8106-271ca2ba53cd",
+      "status": "completed",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3IBqDHh04sLGQLZaTZ5ySdnPExH/hf_20261008_002729_8a906f38-af49-4df0-8106-271ca2ba53cd.png"
+    },
+    {
+      "kind": "owl-recovery",
+      "jobId": "945d8ef0-e875-40de-8b6e-20eb31c3d968",
+      "status": "completed",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3IBqDHh04sLGQLZaTZ5ySdnPExH/hf_20261008_002736_945d8ef0-e875-40de-8b6e-20eb31c3d968.png"
+    },
+    {
+      "kind": "lithium-separation",
+      "jobId": "62f76a26-2938-4a2b-8110-89ff5b932846",
+      "status": "completed",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3IBqDHh04sLGQLZaTZ5ySdnPExH/hf_20261008_002747_62f76a26-2938-4a2b-8110-89ff5b932846.png"
+    }
+  ]
+}

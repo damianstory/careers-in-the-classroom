@@ -1,14 +1,17 @@
 import Link from "next/link";
 import { getDetails, type Example } from "@/content";
+import { exampleImages } from "@/content/example-images";
+import { ExampleIllustration } from "./ExampleIllustration";
 import { Icon } from "./Icon";
 import { ExampleCardDiagram, RulerTicks, cardDiagramText } from "./ExampleCardDiagram";
 import styles from "./ExampleCard.module.css";
 
 const MAX_TAGS = 3;
 
-// The card's top half is an instrument screen: the story schematic where there is one, with a
-// type-only fallback for future examples. Decorative: the heading link carries the card's name.
+// Approved editorial artwork; future examples retain the schematic/type fallback.
+// Decorative: the heading link carries the card's name.
 function Screen({ e }: { e: Example }) {
+  if (exampleImages[e.slug]) return <ExampleIllustration slug={e.slug} variant="card" />;
   const kind = e.detailsId ? getDetails(e.detailsId)?.story.diagramKind : undefined;
   const text = kind ? cardDiagramText[kind] : undefined;
   return (

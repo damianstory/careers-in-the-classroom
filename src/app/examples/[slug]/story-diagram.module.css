@@ -1,483 +1,89 @@
-/* Classroom-story schematics. Bands use the padding variables set on the explorer shell
-   (--band-y, --band-l, --band-r in explore.module.css). */
+.band {
+  padding: 32px var(--band-r) 32px var(--band-l);
+}
 
-/* ---- GHGSat: methane instrument panel ---- */
+.content {
+  max-width: 680px;
+  margin-inline: auto;
+}
 
-.instrumentBand {
-  padding: var(--band-y) var(--band-r) 0 var(--band-l);
+.eyebrow {
+  font: 500 11px/16px var(--font-mono);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-body);
+}
+
+.heading {
+  margin-top: 8px;
+  font: 600 28px/34px var(--font-display);
+  letter-spacing: -0.02em;
 }
 
 .figure {
-  margin: 0;
-}
-
-.panel {
+  margin: 20px 0 0;
   overflow: hidden;
   border-radius: var(--radius-panel);
-  background: var(--dot-grid-dark), var(--surface-dark);
-  background-position: 12px 12px, 0 0;
-  color: var(--on-dark);
 }
 
-.panelHead {
-  min-height: 44px;
-  padding: 12px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  border-bottom: 1px solid #ffffff1f;
-  font: 500 12px/16px var(--font-mono);
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--on-dark-2);
-}
-
-.panelTitle {
-  margin: 0;
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  font: 500 12px/16px var(--font-mono);
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.panelTitle::before {
-  content: "";
-  flex: none;
-  width: 8px;
-  height: 8px;
-  margin-top: 4px;
-  background: var(--signal);
-}
-
-.scale {
-  flex: none;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.methane {
+.image {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.narrow {
-  display: none;
-}
-
-.legend {
+.key {
   list-style: none;
-  margin: 0;
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  border-top: 1px solid #ffffff1f;
-  border-bottom: 1px solid #ffffff1f;
-  font-size: 15px;
-  line-height: 22px;
-}
-
-.legend li {
+  margin: 20px 0 0;
+  padding: 0;
   display: grid;
-  grid-template-columns: 24px minmax(0, 1fr);
-  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px 24px;
 }
 
-.legend span {
+.key li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 15px;
+  line-height: 23px;
+  color: var(--text-body);
+}
+
+.number {
+  flex: none;
   width: 24px;
   height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 12px;
-  background: var(--on-dark);
-  color: var(--ink);
-  font-size: 13px;
-  font-weight: 700;
-}
-
-.legend .legendSignal {
-  background: var(--signal);
-}
-
-.readout {
-  margin: 0;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  border-top: 1px solid #ffffff1f;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--surface-dark);
+  color: var(--on-dark);
+  font: 600 13px/1 var(--font-ui);
 }
 
-.readout > div {
-  padding: 16px 20px;
-}
-
-.readout > div + div {
-  border-left: 1px solid #ffffff1f;
-}
-
-.readout dt {
-  font: 500 11px/16px var(--font-mono);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--on-dark-2);
-}
-
-.readout dd {
-  margin: 6px 0 0;
-  font-size: 15px;
-  line-height: 22px;
-}
-
-.caption {
+.note {
   margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--text-body);
 }
 
-.provenance {
+.detail {
+  margin-top: 8px;
   font-size: 14px;
   line-height: 22px;
   color: var(--text-body);
 }
 
-/* Light flows (it is ongoing); the spectrum dip draws once. Reduced motion stops both (globals.css). */
-.flow {
-  stroke-dasharray: 12 12;
-  animation: ray-flow 2.4s linear infinite;
-}
-
-.draw {
-  stroke-dasharray: 1;
-  animation: dip-draw 1.8s cubic-bezier(0.6, 0, 0.2, 1) 0.6s both;
-}
-
-@keyframes ray-flow {
-  to {
-    stroke-dashoffset: -96;
-  }
-}
-
-@keyframes dip-draw {
-  from {
-    stroke-dashoffset: 1;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
 @media (max-width: 640px) {
-  .wide {
-    display: none;
-  }
-
-  .narrow {
-    display: block;
-  }
-
-  .panelHead {
-    padding: 12px 16px;
-  }
-
-  .scale {
-    display: none;
-  }
-
-  .readout {
+  .key {
     grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
   }
 
-  .readout > div {
-    padding: 14px 16px;
-  }
-
-  .readout > div + div {
-    border-left: 0;
-    border-top: 1px solid #ffffff1f;
-  }
-
-  .caption {
-    margin-top: 16px;
-  }
-}
-
-/* ---- Wilder and E3: a dark green flow with a loop back to the start ---- */
-
-.flowBand {
-  position: relative;
-  background: var(--dot-grid-dark), var(--surface-dark);
-  color: var(--on-dark);
-}
-
-.flowHead {
-  min-height: 52px;
-  padding: 12px var(--band-r) 12px var(--band-l);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  border-bottom: 1px solid #ffffff1f;
-  color: var(--signal);
-}
-
-.flowHead .panelTitle {
-  color: var(--on-dark);
-}
-
-.flowFigure {
-  position: relative;
-  margin: 0;
-}
-
-/* The instrument ruler down the band's left edge. */
-.flowFigure::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 12px;
-  border-right: 1px solid #ffffff1f;
-  background-image:
-    repeating-linear-gradient(180deg, #ffffff59 0 1px, transparent 1px 40px),
-    repeating-linear-gradient(180deg, #ffffff26 0 1px, transparent 1px 8px);
-  background-size: 12px 100%, 6px 100%;
-  background-repeat: no-repeat;
-  pointer-events: none;
-}
-
-.flowBody {
-  padding: 48px var(--band-r) 40px var(--band-l);
-}
-
-.loopArea {
-  position: relative;
-}
-
-.stages {
-  display: grid;
-  grid-template-columns: repeat(var(--cols), minmax(0, 1fr));
-  gap: 24px;
-}
-
-.column {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-/* A tick from each column down to its marker on the loop. */
-.column::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 100%;
-  height: 30px;
-  border-left: 1px solid #ffffff40;
-}
-
-.column::before {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  left: calc(50% - 5px);
-  top: calc(100% + 25px);
-  width: 10px;
-  height: 10px;
-  background: var(--signal);
-}
-
-.stage {
-  flex: 1 1 auto;
-  padding: 16px;
-  background: var(--surface-dark);
-  border: 1px solid var(--hairline-dark);
-  border-radius: var(--radius-panel);
-}
-
-.stageStrong {
-  border-color: var(--signal);
-}
-
-.stageTag {
-  font: 500 12px/16px var(--font-mono);
-  letter-spacing: 0.04em;
-  color: var(--signal);
-}
-
-.stageTitle {
-  margin-top: 8px;
-  font-size: 19px;
-  line-height: 26px;
-  font-weight: 600;
-}
-
-.stageText {
-  margin-top: 6px;
-  font-size: 15px;
-  line-height: 22px;
-  color: var(--on-dark-2);
-}
-
-/* The loop runs from the first column's centre to the last's, 30px below the stages. */
-.loop {
-  position: relative;
-  height: 120px;
-  margin: 30px calc((100% - (var(--cols) - 1) * 24px) / (2 * var(--cols))) 0;
-}
-
-.loopSvg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
-}
-
-.loopTrack {
-  x: 1px;
-  y: 1px;
-  width: calc(100% - 2px);
-  height: calc(100% - 2px);
-  rx: 28px;
-  fill: none;
-  stroke: #ffffff33;
-  stroke-width: 1;
-}
-
-.loopFlow {
-  stroke: var(--signal);
-  stroke-width: 2;
-  stroke-dasharray: 6 10;
-  animation: loop-flow 6s linear infinite;
-}
-
-@keyframes loop-flow {
-  to {
-    stroke-dashoffset: -1600;
-  }
-}
-
-.feedback {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translate(-50%, 50%);
-  min-height: 30px;
-  max-width: calc(100% - 64px);
-  padding: 4px 14px;
-  display: flex;
-  align-items: center;
-  background: var(--surface-dark);
-  border: 1px solid var(--hairline-dark);
-  border-radius: var(--radius-control);
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 500;
-  text-align: center;
-}
-
-.note {
-  margin-top: 36px;
-  font-size: 26px;
-  line-height: 32px;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-}
-
-.flowCaption {
-  padding: 20px var(--band-r) 20px var(--band-l);
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 40px;
-  border-top: 1px solid #ffffff1f;
-  font-size: 15px;
-  line-height: 24px;
-}
-
-.flowProvenance {
-  font-size: 13px;
-  line-height: 20px;
-  color: var(--on-dark-2);
-}
-
-/* Narrow: stages stack inside the loop, markers on its left edge. */
-@media (max-width: 760px) {
-  .flowBody {
-    padding-top: 24px;
-    padding-bottom: 32px;
-  }
-
-  .loopArea {
-    padding: 24px 20px 48px 32px;
-  }
-
-  .stages {
-    position: relative;
-    z-index: 1;
-    grid-template-columns: minmax(0, 1fr);
-    gap: 16px;
-  }
-
-  .column::after {
-    left: -20px;
-    top: 50%;
-    width: 16px;
-    height: 0;
-    border-left: 0;
-    border-top: 1px solid #ffffff40;
-  }
-
-  .column::before {
-    left: -25px;
-    top: calc(50% - 5px);
-  }
-
-  .loop {
-    position: absolute;
-    inset: 0 0 15px;
-    height: auto;
-    margin: 0;
-  }
-
-  .stage {
-    padding: 14px 16px;
-  }
-
-  .stageTitle {
-    margin-top: 6px;
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .stageText {
-    margin-top: 4px;
-    font-size: 14px;
-    line-height: 20px;
-  }
-
-  .feedback {
-    font-size: 13px;
-    padding: 4px 12px;
-  }
-
-  .note {
-    margin-top: 28px;
-    font-size: 22px;
-    line-height: 28px;
-  }
-
-  .flowCaption {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 10px;
+  .heading {
+    font-size: 24px;
+    line-height: 30px;
   }
 }

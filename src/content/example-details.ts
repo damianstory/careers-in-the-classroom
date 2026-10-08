@@ -36,7 +36,7 @@ export const exampleDetails: ExampleDetails[] = [
       diagramAlt:
         "Sunlight travels down to the ground near an industrial site, reflects, and travels back up through an invisible methane cloud to a satellite. The satellite’s spectrometer splits the light by wavelength. A small graph shows the light received dipping slightly, but not to zero, at the wavelengths methane absorbs.",
       diagramProvenance:
-        "Schematic drawn for this page and checked against GHGSat’s technology description and Jervis et al. (2021). Not to scale. Not a GHGSat image.",
+        "Graphic-novel teaching illustration generated for this page from GHGSat’s technology description and Jervis et al. (2021). Directional arrows and nonzero absorption dips visually reviewed. Not to scale; not a GHGSat image or measured spectrum.",
       discussion:
         "If a sensor detects no methane, does that prove none is present? What would you want to know about the instrument and the observation conditions?",
     },
@@ -84,7 +84,7 @@ export const exampleDetails: ExampleDetails[] = [
         }
       ],
       "diagramAlt": "A four-stage conservation sequence: vulnerable young owls, winter care, spring release in pairs, then monitoring survival and breeding. A feedback arrow returns evidence to future care and release decisions. Release is not the same as population recovery.",
-      "diagramProvenance": "Illustrative process schematic created for this page from Wilder’s program and care-team descriptions. It shows no measured outcomes or guaranteed recovery.",
+      "diagramProvenance": "Graphic-novel teaching illustration generated for this page from Wilder’s program and care-team descriptions. Stage order and feedback arrows visually reviewed. It shows no measured outcomes or guaranteed recovery.",
       "discussion": "What would you measure over several years to decide whether this intervention is helping? What comparison would make your conclusion more convincing?"
     },
     "roleIds": [
@@ -145,7 +145,7 @@ export const exampleDetails: ExampleDetails[] = [
         }
       ],
       "diagramAlt": "A conceptual process flow: mixed brine enters a separation stage; a lithium-rich stream continues to purification and conversion while other material follows a separate outlet. Test results feed back into design. The diagram does not specify E3’s equipment or measured recovery.",
-      "diagramProvenance": "Conceptual schematic created for this page from E3’s process role and project update. Not a plant design, chemical reaction or measured material balance; commercial production remains planned.",
+      "diagramProvenance": "Graphic-novel teaching illustration generated for this page from E3’s process role and project update. Separate output streams and design-feedback arrows visually reviewed. Not a plant design, chemical reaction or measured material balance; commercial production remains planned.",
       "discussion": "If two separation methods recover different amounts of lithium but use different amounts of water and energy, what would you need to compare before choosing one?"
     },
     "roleIds": [
