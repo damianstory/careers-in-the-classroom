@@ -1,0 +1,174 @@
+{
+  "packet_id": "all-examples-2026-10-05-weekly",
+  "occurrence_id": "weekly-citc-job-example-review:2026-10-05",
+  "budget_usd": 1,
+  "actual_apify_usage_usd": 0,
+  "candidates": [
+    {
+      "id": "OCT05-E1",
+      "example_slug": "e3-lithium",
+      "title": "Laboratory Technician C - Water Lab",
+      "employer": "AGAT Laboratories",
+      "employer_note": "A separate analytical laboratory; this is not an E3 Lithium position.",
+      "location": "Calgary, Alberta, Canada",
+      "arrangement": "Full-time; remote-work arrangement not stated.",
+      "level": "Entry level. Chemical degree/diploma or equivalent experience; previous laboratory experience is an asset and training is provided.",
+      "summary": "Prepare and test water samples to produce reliable analytical results.",
+      "duties": [
+        "Prepare samples, reagents, standards and calibration solutions.",
+        "Use IC and ICP instruments under senior staff guidance.",
+        "Record test results and assist with instrument calibration and maintenance."
+      ],
+      "skills": [
+        "Sample preparation",
+        "Analytical instruments",
+        "Quality assurance",
+        "Laboratory safety"
+      ],
+      "connection": "Editorial interpretation: separation work also needs trustworthy measurements. This adds a local technical route for testing liquids alongside the existing engineering and plant-operation examples.",
+      "limit": "No evidence of lithium testing or a relationship with E3. A laboratory role profile and story link would need to be created during a separately authorized implementation.",
+      "role_ids": [],
+      "source_url": "https://agatlaboratories.applytojob.com/apply/lnOX39GFbP/Laboratory-Technician-C-Water-Lab",
+      "snapshot": "evidence/agat-water.txt",
+      "status_kind": "open",
+      "status_note": "Employer-hosted description included an empty application form and Submit Application control in the retrieved HTML. No applicant data entered or sent; submission not tested.",
+      "score": {
+        "story_connection": 3,
+        "concrete_work": 3,
+        "added_value": 3,
+        "total": 9
+      },
+      "score_why": [
+        "Shares sample analysis and reliable measurement methods.",
+        "Preparation, instruments and quality procedures are explicit.",
+        "Adds a Calgary entry-level diploma-or-equivalent technical route."
+      ],
+      "copy_version": 1,
+      "source_checked_on": "2026-10-05",
+      "captured_on": "2026-10-05",
+      "published_on": null,
+      "deadline": null,
+      "tier": "related_same_city",
+      "evidence_gate": "pass",
+      "recommendation": "recommend",
+      "user_decision": "approved",
+      "reviewer": "Damian Matheson",
+      "decision_at": null,
+      "displayed_status": "Accepting applications when checked 5 Oct 2026.",
+      "implementation_status": "implemented_locally",
+      "publication_status": "not_published",
+      "decision_on": "2026-10-06",
+      "decision_instruction": "approved",
+      "implemented_on": "2026-10-07",
+      "app_job_id": "agat-water-lab-technician"
+    },
+    {
+      "id": "OCT05-W1",
+      "example_slug": "wilder-institute",
+      "title": "Environmental Technician",
+      "employer": "Enmas",
+      "employer_note": "A separate environmental employer; this is not a Wilder Institute position.",
+      "location": "Calgary, Alberta, with travel for fieldwork.",
+      "arrangement": "Permanent full-time; approximately 70% fieldwork and 30% office support.",
+      "level": "Experience with surveys and reporting is sought, but the posting says exact experience is not required. No numeric experience minimum or specific credential is stated; professional-registration eligibility is requested.",
+      "summary": "Collect field evidence about wildlife and habitats to inform environmental decisions.",
+      "duties": [
+        "Perform wildlife sweeps, nest searches and targeted species surveys.",
+        "Assess wetlands and other biological features.",
+        "Analyze field observations and prepare technical reports and mitigation recommendations."
+      ],
+      "skills": [
+        "Species identification",
+        "Field data collection",
+        "Habitat assessment",
+        "Technical reporting"
+      ],
+      "connection": "Editorial interpretation: offers a Calgary comparison for observing animals and habitats outside a conservation-breeding programme.",
+      "limit": "Not evidence of owl head-starting or a Wilder partnership. Page heading says Environmental Technician; body says Environmental Field Technician. Do not label it a student job.",
+      "role_ids": [
+        "conservation-research"
+      ],
+      "source_url": "https://www.enmas.ca/job-detail.php?id=1",
+      "snapshot": "evidence/enmas-field.txt",
+      "status_kind": "open",
+      "status_note": "Original employer description explicitly invites applications by email. No email sent; posting publication date and deadline absent.",
+      "score": {
+        "story_connection": 3,
+        "concrete_work": 3,
+        "added_value": 2,
+        "total": 8
+      },
+      "score_why": [
+        "Shares wildlife observation and habitat assessment methods.",
+        "Surveys, field analysis and reports are explicit.",
+        "Adds technician-level fieldwork; some overlap with the earlier pending senior consultancy candidates."
+      ],
+      "copy_version": 1,
+      "source_checked_on": "2026-10-05",
+      "captured_on": "2026-10-05",
+      "published_on": null,
+      "deadline": null,
+      "tier": "related_same_city",
+      "evidence_gate": "pass",
+      "recommendation": "recommend",
+      "user_decision": "approved",
+      "reviewer": "Damian Matheson",
+      "decision_at": null,
+      "displayed_status": "Accepting applications when checked 5 Oct 2026.",
+      "implementation_status": "implemented_locally",
+      "publication_status": "not_published",
+      "decision_on": "2026-10-06",
+      "decision_instruction": "approved",
+      "implemented_on": "2026-10-07",
+      "app_job_id": "enmas-environmental-technician"
+    }
+  ],
+  "material_changes": [
+    {
+      "id": "OCT05-M1",
+      "copy_version": 1,
+      "app_job_id": "ghgsat-full-stack-developer",
+      "recommendation": "retain historical work example; correct vacancy status",
+      "user_decision": "approved",
+      "source_url": "https://apply.workable.com/ghgsat/j/703FE3851D/",
+      "checked_on": "2026-10-05",
+      "snapshot": "evidence/workable-followup.txt",
+      "proposed_status": {
+        "kind": "closed",
+        "checkedOn": "2026-10-05",
+        "note": "The original Workable posting explicitly says this job is no longer available."
+      },
+      "exact_displayed_copy": "Closed when checked 5 Oct 2026 · historical job example",
+      "qualification": "This establishes the source posting is unavailable, not when hiring ended or whether an equivalent role exists elsewhere. Preserve original capture and publication dates.",
+      "reviewer": "Damian Matheson",
+      "decision_on": "2026-10-06",
+      "decision_instruction": "approved",
+      "implementation_status": "implemented_locally",
+      "implemented_on": "2026-10-07",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "OCT05-M2",
+      "copy_version": 1,
+      "app_job_id": "ghgsat-backend-developer",
+      "recommendation": "review current source replacement, not a new card",
+      "user_decision": "approved",
+      "source_url": "https://ghgsat.bamboohr.com/careers/205",
+      "checked_on": "2026-10-05",
+      "snapshot": "evidence/ghg-followup.txt",
+      "proposed_status": {
+        "kind": "open",
+        "checkedOn": "2026-10-05",
+        "note": "BambooHR description and empty application form inspected; nothing submitted."
+      },
+      "exact_displayed_copy": "Accepting applications when checked 5 Oct 2026.",
+      "qualification": "Same employer, title, city and strongly overlapping duties; treat as likely replacement source, not a proven identical requisition. Preserve archived Workable evidence and its old publication date separately; do not transfer that date to BambooHR. Senior title versus Mid-level sidebar is a source discrepancy; retain experienced-role framing.",
+      "reviewer": "Damian Matheson",
+      "decision_on": "2026-10-06",
+      "decision_instruction": "approved",
+      "implementation_status": "implemented_locally",
+      "implemented_on": "2026-10-07",
+      "publication_status": "not_published"
+    }
+  ]
+}

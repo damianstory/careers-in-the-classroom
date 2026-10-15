@@ -106,7 +106,9 @@ describe("connected exploration content", () => {
       expect(getOrganization(d.organizationId)).toBeDefined();
       for (const id of d.roleIds) {
         expect(getRoleProfile(id), id).toBeDefined();
-        expect(getOrganizationRole(d.organizationId, id), `evidence for ${id} at ${d.organizationId}`).toBeDefined();
+        const documented = getOrganizationRole(d.organizationId, id);
+        const relatedJob = d.jobIds.map(getJob).some((j) => j?.roleIds.includes(id));
+        expect(Boolean(documented) || relatedJob, `evidence for ${id} in ${d.exampleSlug}`).toBe(true);
       }
       for (const id of d.pathwayIds) expect(getPathway(id), id).toBeDefined();
       for (const id of d.jobIds) expect(getJob(id), id).toBeDefined();

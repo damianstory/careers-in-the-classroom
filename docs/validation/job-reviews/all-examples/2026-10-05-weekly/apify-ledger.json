@@ -1,0 +1,9 @@
+{
+  "occurrence_id": "weekly-citc-job-example-review:2026-10-05",
+  "cap_usd": 1,
+  "settled_usd": 0,
+  "outstanding_reservations_usd": 0,
+  "runs": [],
+  "credential_status": "No APIFY environment credential or project env file found; no paid start attempted",
+  "pricing_check": "Not applicable; no paid actor selected"
+}

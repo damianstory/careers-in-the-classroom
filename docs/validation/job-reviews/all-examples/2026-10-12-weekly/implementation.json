@@ -1,0 +1,20 @@
+{
+  "implemented_on": "2026-10-12",
+  "candidate_versions": [
+    "OCT12-W1:v1",
+    "OCT12-G1:v1"
+  ],
+  "app_job_ids": [
+    "calgary-wildlife-rehabilitator",
+    "arolytics-data-scientist"
+  ],
+  "unit_tests": {
+    "passed": 81,
+    "failed": 0
+  },
+  "typecheck": "passed",
+  "approved_copy_and_links": "passed",
+  "visual_qa": "not performed; localhost:3311 unavailable",
+  "publication_status": "not_published",
+  "apify_cost_usd": 0
+}

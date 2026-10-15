@@ -206,4 +206,30 @@ export const roleProfiles: RoleProfile[] = [
     ],
     "classroomConnection": "A measurement becomes useful when its capabilities and limitations are communicated clearly to someone making a decision."
   },
+  {
+    "id": "laboratory-analysis",
+    "title": "Laboratory analysis and quality control",
+    "summary": "Prepare samples and check that analytical measurements can be trusted.",
+    "explanation": "Laboratory technicians follow procedures to prepare samples, use analytical instruments and record results. Calibration and quality checks help them identify unreliable readings before others use the data.",
+    "tasks": [
+      {
+        "title": "Prepare the test",
+        "detail": "Prepare samples, reagents and standards according to a procedure."
+      },
+      {
+        "title": "Measure carefully",
+        "detail": "Use analytical instruments with appropriate supervision and calibration."
+      },
+      {
+        "title": "Check and record",
+        "detail": "Record results and follow quality and safety procedures."
+      }
+    ],
+    "collaborators": [
+      "Senior laboratory staff",
+      "Analysts",
+      "Instrument technicians"
+    ],
+    "classroomConnection": "Solution preparation, calibration and measurement quality connect classroom chemistry to testing real liquids."
+  },
 ];

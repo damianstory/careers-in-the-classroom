@@ -1,5 +1,5 @@
 {
-  "updated_on": "2026-09-29",
+  "updated_on": "2026-10-12",
   "source_collection": "src/content/examples.ts",
   "examples": [
     {
@@ -7,33 +7,94 @@
       "featured_company": "E3 Lithium",
       "first_discovered_on": "2026-09-29",
       "active": true,
-      "last_attempted_on": "2026-09-29",
-      "last_completed_on": "2026-09-29",
-      "scope": "bounded featured-employer and local-gap baseline",
+      "last_attempted_on": "2026-10-12",
+      "last_completed_on": "2026-10-12",
+      "scope": "bounded featured-employer boards and related Calgary gap search; not all existing external cards reverified",
       "deferred_reason": null,
-      "last_review_packet": "all-examples/2026-09-29-baseline/review.md"
+      "last_review_packet": "all-examples/2026-10-12-weekly/review.md",
+      "research_history": [
+        {
+          "last_attempted_on": "2026-09-29",
+          "last_completed_on": "2026-09-29",
+          "scope": "bounded featured-employer and local-gap baseline",
+          "deferred_reason": null,
+          "last_review_packet": "all-examples/2026-09-29-baseline/review.md"
+        },
+        {
+          "last_attempted_on": "2026-10-05",
+          "last_completed_on": "2026-10-05",
+          "scope": "bounded featured-employer boards and related Calgary gap search; not all existing external cards reverified",
+          "deferred_reason": null,
+          "last_review_packet": "all-examples/2026-10-05-weekly/review.md"
+        }
+      ]
     },
     {
       "example_slug": "ghgsat",
       "featured_company": "GHGSat",
       "first_discovered_on": "2026-09-29",
       "active": true,
-      "last_attempted_on": "2026-09-29",
-      "last_completed_on": "2026-09-29",
-      "scope": "bounded featured-employer and local-gap baseline",
+      "last_attempted_on": "2026-10-12",
+      "last_completed_on": "2026-10-12",
+      "scope": "bounded featured-employer boards and related Calgary gap search; not all existing external cards reverified",
       "deferred_reason": null,
-      "last_review_packet": "all-examples/2026-09-29-baseline/review.md"
+      "last_review_packet": "all-examples/2026-10-12-weekly/review.md",
+      "research_history": [
+        {
+          "last_attempted_on": "2026-09-29",
+          "last_completed_on": "2026-09-29",
+          "scope": "bounded featured-employer and local-gap baseline",
+          "deferred_reason": null,
+          "last_review_packet": "all-examples/2026-09-29-baseline/review.md"
+        },
+        {
+          "last_attempted_on": "2026-10-05",
+          "last_completed_on": "2026-10-05",
+          "scope": "bounded featured-employer boards and related Calgary gap search; not all existing external cards reverified",
+          "deferred_reason": null,
+          "last_review_packet": "all-examples/2026-10-05-weekly/review.md"
+        }
+      ]
     },
     {
       "example_slug": "wilder-institute",
       "featured_company": "Wilder Institute",
       "first_discovered_on": "2026-09-29",
       "active": true,
-      "last_attempted_on": "2026-09-29",
-      "last_completed_on": "2026-09-29",
-      "scope": "bounded featured-employer and local-gap baseline",
+      "last_attempted_on": "2026-10-12",
+      "last_completed_on": "2026-10-12",
+      "scope": "bounded featured-employer boards and related Calgary gap search; not all existing external cards reverified",
       "deferred_reason": null,
-      "last_review_packet": "all-examples/2026-09-29-baseline/review.md"
+      "last_review_packet": "all-examples/2026-10-12-weekly/review.md",
+      "research_history": [
+        {
+          "last_attempted_on": "2026-09-29",
+          "last_completed_on": "2026-09-29",
+          "scope": "bounded featured-employer and local-gap baseline",
+          "deferred_reason": null,
+          "last_review_packet": "all-examples/2026-09-29-baseline/review.md"
+        },
+        {
+          "last_attempted_on": "2026-10-05",
+          "last_completed_on": "2026-10-05",
+          "scope": "bounded featured-employer boards and related Calgary gap search; not all existing external cards reverified",
+          "deferred_reason": null,
+          "last_review_packet": "all-examples/2026-10-05-weekly/review.md"
+        }
+      ]
     }
-  ]
+  ],
+  "last_occurrence_id": "weekly-citc-job-example-review:2026-10-12",
+  "configuration_notes": {
+    "apify_credential": "Unavailable in checked environment/project configuration; free research continued",
+    "previously_reported_in": "all-examples/2026-09-29-baseline/review.md",
+    "repeat_alert_suppressed_on": "2026-10-12"
+  },
+  "notifications": {
+    "last_actionable_packet": "all-examples/2026-10-12-weekly/review.md",
+    "candidate_versions": [
+      "OCT12-W1:v1",
+      "OCT12-G1:v1"
+    ]
+  }
 }

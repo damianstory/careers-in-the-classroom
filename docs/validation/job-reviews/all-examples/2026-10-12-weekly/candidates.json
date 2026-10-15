@@ -1,0 +1,128 @@
+{
+  "packet_id": "all-examples-2026-10-12-weekly",
+  "occurrence_id": "weekly-citc-job-example-review:2026-10-12",
+  "budget_usd": 1,
+  "actual_apify_usage_usd": 0,
+  "outstanding_reservations_usd": 0,
+  "candidates": [
+    {
+      "copy_version": 1,
+      "source_checked_on": "2026-10-12",
+      "captured_on": "2026-10-12",
+      "tier": "related_same_city",
+      "evidence_gate": "pass",
+      "recommendation": "recommend",
+      "user_decision": "approved",
+      "reviewer": "Damian Matheson",
+      "decision_on": "2026-10-12",
+      "decision_instruction": "Approve both and go ahead and implement them.",
+      "implementation_status": "implemented_locally",
+      "publication_status": "not_published",
+      "id": "OCT12-W1",
+      "example_slug": "wilder-institute",
+      "title": "Wildlife Rehabilitator",
+      "employer": "Calgary Wildlife",
+      "employer_note": "Related work at another employer; this is not a Wilder Institute position.",
+      "location": "Calgary, Alberta",
+      "arrangement": "Full-time; days, evenings and weekends, including some holidays.",
+      "level": "Animal-care or rehabilitation experience required, plus relevant work experience or schooling. No numeric experience minimum stated.",
+      "summary": "Care for injured, sick or orphaned wildlife during rehabilitation.",
+      "duties": [
+        "Prepare food, clean enclosures and provide daily husbandry.",
+        "Assist with examinations, treatments and lab work under senior staff and veterinary supervision.",
+        "Keep records and coordinate animal transfers and rescues with clinics, the public and volunteers."
+      ],
+      "skills": [
+        "Animal observation",
+        "Safe handling",
+        "Recordkeeping",
+        "Communication"
+      ],
+      "connection": "Editorial interpretation: compares daily animal care with Wilder’s conservation work, while showing a separate rehabilitation setting.",
+      "limit": "Individual rehabilitation does not establish population recovery. No evidence of a Wilder partnership or assignment to its owl programme; not a no-experience student role.",
+      "role_ids": [
+        "animal-care"
+      ],
+      "source_url": "https://www.calgarywildlife.org/jobs",
+      "snapshot": "evidence/calgary-wildlife.txt",
+      "status_kind": "open",
+      "status_note": "Original employer description invites email applications and says the listing remains open until a suitable candidate is found. No email sent; actual hiring outcome unknown.",
+      "published_on": null,
+      "deadline": null,
+      "displayed_status": "Accepting applications when checked 12 Oct 2026",
+      "score": {
+        "story_connection": 3,
+        "concrete_work": 3,
+        "added_value": 2,
+        "total": 8
+      },
+      "score_why": [
+        "Shares animal observation and husbandry methods.",
+        "Care, supervised treatment and recordkeeping are explicit.",
+        "Adds a Calgary rehabilitation and rescue comparison, with some overlap with existing animal-care content."
+      ],
+      "app_job_id": "calgary-wildlife-rehabilitator",
+      "implemented_on": "2026-10-12"
+    },
+    {
+      "copy_version": 1,
+      "source_checked_on": "2026-10-12",
+      "captured_on": "2026-10-12",
+      "tier": "related_same_city",
+      "evidence_gate": "pass",
+      "recommendation": "recommend",
+      "user_decision": "approved",
+      "reviewer": "Damian Matheson",
+      "decision_on": "2026-10-12",
+      "decision_instruction": "Approve both and go ahead and implement them.",
+      "implementation_status": "implemented_locally",
+      "publication_status": "not_published",
+      "id": "OCT12-G1",
+      "example_slug": "ghgsat",
+      "title": "Data Scientist",
+      "employer": "Arolytics",
+      "employer_note": "Related work at another employer; this is not a GHGSat position.",
+      "location": "Calgary, Alberta; preference for Calgary-area candidates.",
+      "arrangement": "Full-time; downtown office or fully remote. Remote eligibility beyond this location is not specified.",
+      "level": "Engineering BSc or MSc and 1–3 years in data science, analytics or research; graduate research counts.",
+      "summary": "Turn industrial sensor readings into evidence about emissions.",
+      "duties": [
+        "Clean noisy or incomplete pressure, temperature and flow data.",
+        "Find patterns and check whether model results fit physical principles.",
+        "Support models that detect emission events and estimate their duration and volume."
+      ],
+      "skills": [
+        "Python",
+        "Time-series analysis",
+        "Statistics",
+        "Physical modelling"
+      ],
+      "connection": "Editorial interpretation: compares emissions measurement using ground-level process sensors with GHGSat’s satellite observations.",
+      "limit": "SCADA process data is not satellite data. No evidence of a GHGSat partnership. This is a historical example, not a current vacancy or a job requiring no prior preparation.",
+      "role_ids": [
+        "software-data"
+      ],
+      "source_url": "https://arolytics.com/post/Data-Scientist-Full-Time-Calgary-Based-hybrid-remote",
+      "snapshot": "evidence/arolytics-data-scientist.txt",
+      "status_kind": "unknown",
+      "status_note": "Employer page remains accessible but explicitly gives an April 20, 2026 deadline. Deadline overrides the email application invitation; no current vacancy or actual hire/closure date inferred.",
+      "published_on": "2026-04-01",
+      "deadline": "2026-04-20",
+      "displayed_status": "Application deadline passed (20 Apr 2026) · historical job example",
+      "score": {
+        "story_connection": 3,
+        "concrete_work": 3,
+        "added_value": 3,
+        "total": 9
+      },
+      "score_why": [
+        "Shares the problem of making defensible emissions estimates.",
+        "Names data cleaning, physical validation and modelling outputs.",
+        "Adds a Calgary early-career engineering/data route and a ground-sensor comparison."
+      ],
+      "app_job_id": "arolytics-data-scientist",
+      "implemented_on": "2026-10-12"
+    }
+  ],
+  "material_changes": []
+}

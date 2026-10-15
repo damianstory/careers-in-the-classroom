@@ -1,13 +1,14 @@
 import { existsSync } from "node:fs";
 import { describe, expect, it } from "vitest";
-import { discoverImages, exampleDetails, roleProfiles } from "@/content";
+import { discoverImages, exampleDetails, roleProfiles, organizationRoles } from "@/content";
 import { buildDiscoverCards, parseDiscoverState, roundOrder, serializeDiscoverState, subjectCounts } from "@/lib/discover";
 
+const featuredRoles = roleProfiles.filter((r) => organizationRoles.some((link) => link.roleId === r.id));
 const cards = buildDiscoverCards("2026-10-06");
 describe("Discover content", () => {
   it("has one existing picture and one owning example per role", () => {
-    expect(discoverImages).toHaveLength(roleProfiles.length);
-    for (const role of roleProfiles) {
+    expect(discoverImages).toHaveLength(featuredRoles.length);
+    for (const role of featuredRoles) {
       const images = discoverImages.filter((image) => image.roleId === role.id);
       expect(images).toHaveLength(1);
       expect(existsSync(`public${images[0].src}`)).toBe(true);
@@ -17,7 +18,7 @@ describe("Discover content", () => {
     }
   });
   it("derives complete cards and preserves optional saved jobs", () => {
-    expect(cards).toHaveLength(roleProfiles.length);
+    expect(cards).toHaveLength(featuredRoles.length);
     for (const c of cards) {
       expect(c.example.detailsId).toBeTruthy();
       expect(c.organization.name).toBeTruthy();

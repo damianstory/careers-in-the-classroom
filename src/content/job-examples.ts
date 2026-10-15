@@ -51,9 +51,9 @@ export const jobExamples: JobExample[] = [
     arrangement: "Hybrid, full-time",
     level: "Senior, experienced role",
     relevance: "broader",
-    postingSourceId: "job-ghgsat-backend",
-    capturedOn: "2026-09-25",
-    publishedOn: "2026-08-27",
+    postingSourceId: "job-ghgsat-backend-bamboohr",
+    capturedOn: "2026-10-05",
+    limitation: "Current source: BambooHR. The earlier Workable capture was saved 25 Sep 2026 and reported a publication date of 27 Aug 2026; that date does not apply to this replacement source. The title says Senior while the sidebar says Mid-level.",
     summary: "Build the back-end services behind GHGSat’s data platform.",
     duties: [
       "Lead features from design through testing and release.",
@@ -63,11 +63,11 @@ export const jobExamples: JobExample[] = [
     ],
     skills: ["Python", "Cloud services (AWS)", "Containers (Docker, Kubernetes)", "Shipping web applications at scale"],
     kind: "observed",
-    sourceIds: ["job-ghgsat-backend"],
+    sourceIds: ["job-ghgsat-backend", "job-ghgsat-backend-bamboohr"],
     status: {
       kind: "open",
-      checkedOn: "2026-09-25",
-      note: "Listed as published on GHGSat’s own careers board when checked.",
+      checkedOn: "2026-10-07",
+      note: "BambooHR description and application entry inspected. Nothing entered or submitted.",
     },
   },
   {
@@ -98,9 +98,9 @@ export const jobExamples: JobExample[] = [
     kind: "observed",
     sourceIds: ["job-ghgsat-fullstack"],
     status: {
-      kind: "open",
-      checkedOn: "2026-09-25",
-      note: "Listed as published on GHGSat’s own careers board when checked.",
+      kind: "closed",
+      checkedOn: "2026-10-05",
+      note: "The original Workable posting explicitly says this job is no longer available.",
     },
   },
   {
@@ -382,5 +382,203 @@ export const jobExamples: JobExample[] = [
       "note": "Employer ADP job description, requisition 1178, deadline, and application entry form inspected. No information entered."
     },
     "applicationDeadline": "2026-10-09"
+  },
+  {
+    "title": "Laboratory Technician C - Water Lab",
+    "employer": "AGAT Laboratories",
+    "location": "Calgary, Alberta, Canada",
+    "arrangement": "Full-time; remote-work arrangement not stated.",
+    "level": "Entry level. Chemical degree/diploma or equivalent experience; previous laboratory experience is an asset and training is provided.",
+    "summary": "Prepare and test water samples to produce reliable analytical results.",
+    "duties": [
+      "Prepare samples, reagents, standards and calibration solutions.",
+      "Use IC and ICP instruments under senior staff guidance.",
+      "Record test results and assist with instrument calibration and maintenance."
+    ],
+    "skills": [
+      "Sample preparation",
+      "Analytical instruments",
+      "Quality assurance",
+      "Laboratory safety"
+    ],
+    "id": "agat-water-lab-technician",
+    "employerNote": {
+      "text": "A separate analytical laboratory; this is not an E3 Lithium position.",
+      "kind": "interpreted",
+      "sourceIds": [
+        "weekly-oct05-e1"
+      ]
+    },
+    "roleIds": [
+      "laboratory-analysis"
+    ],
+    "relevance": "local",
+    "postingSourceId": "weekly-oct05-e1",
+    "capturedOn": "2026-10-05",
+    "kind": "observed",
+    "sourceIds": [
+      "weekly-oct05-e1"
+    ],
+    "classroomConnection": "Editorial interpretation: separation work also needs trustworthy measurements. This adds a local technical route for testing liquids alongside the existing engineering and plant-operation examples.",
+    "limitation": "No evidence of lithium testing or a relationship with E3.",
+    "approval": {
+      "packetId": "all-examples-2026-10-05-weekly",
+      "candidateId": "OCT05-E1",
+      "copyVersion": 1
+    },
+    "status": {
+      "kind": "unknown",
+      "checkedOn": "2026-10-07",
+      "note": "Original employer URL returned HTTP 410 on recheck. Closure date is unknown; saved 5 October description remains historical work evidence."
+    }
+  },
+  {
+    "title": "Environmental Technician",
+    "employer": "Enmas",
+    "location": "Calgary, Alberta, with travel for fieldwork.",
+    "arrangement": "Permanent full-time; approximately 70% fieldwork and 30% office support.",
+    "level": "Experience with surveys and reporting is sought, but the posting says exact experience is not required. No numeric experience minimum or specific credential is stated; professional-registration eligibility is requested.",
+    "summary": "Collect field evidence about wildlife and habitats to inform environmental decisions.",
+    "duties": [
+      "Perform wildlife sweeps, nest searches and targeted species surveys.",
+      "Assess wetlands and other biological features.",
+      "Analyze field observations and prepare technical reports and mitigation recommendations."
+    ],
+    "skills": [
+      "Species identification",
+      "Field data collection",
+      "Habitat assessment",
+      "Technical reporting"
+    ],
+    "id": "enmas-environmental-technician",
+    "employerNote": {
+      "text": "A separate environmental employer; this is not a Wilder Institute position.",
+      "kind": "interpreted",
+      "sourceIds": [
+        "weekly-oct05-w1"
+      ]
+    },
+    "roleIds": [
+      "conservation-research"
+    ],
+    "relevance": "local",
+    "postingSourceId": "weekly-oct05-w1",
+    "capturedOn": "2026-10-05",
+    "kind": "observed",
+    "sourceIds": [
+      "weekly-oct05-w1"
+    ],
+    "classroomConnection": "Editorial interpretation: offers a Calgary comparison for observing animals and habitats outside a conservation-breeding programme.",
+    "limitation": "Not evidence of owl head-starting or a Wilder partnership. Page heading says Environmental Technician; body says Environmental Field Technician. Do not label it a student job.",
+    "approval": {
+      "packetId": "all-examples-2026-10-05-weekly",
+      "candidateId": "OCT05-W1",
+      "copyVersion": 1
+    },
+    "status": {
+      "kind": "open",
+      "checkedOn": "2026-10-07",
+      "note": "Original employer description still invites applications by email. No email sent."
+    }
+  },
+  {
+    "title": "Wildlife Rehabilitator",
+    "employer": "Calgary Wildlife",
+    "location": "Calgary, Alberta",
+    "arrangement": "Full-time; days, evenings and weekends, including some holidays.",
+    "level": "Animal-care or rehabilitation experience required, plus relevant work experience or schooling. No numeric experience minimum stated.",
+    "summary": "Care for injured, sick or orphaned wildlife during rehabilitation.",
+    "duties": [
+      "Prepare food, clean enclosures and provide daily husbandry.",
+      "Assist with examinations, treatments and lab work under senior staff and veterinary supervision.",
+      "Keep records and coordinate animal transfers and rescues with clinics, the public and volunteers."
+    ],
+    "skills": [
+      "Animal observation",
+      "Safe handling",
+      "Recordkeeping",
+      "Communication"
+    ],
+    "id": "calgary-wildlife-rehabilitator",
+    "employerNote": {
+      "text": "Related work at another employer; this is not a Wilder Institute position.",
+      "kind": "interpreted",
+      "sourceIds": [
+        "weekly-oct12-w1"
+      ]
+    },
+    "roleIds": [
+      "animal-care"
+    ],
+    "relevance": "local",
+    "postingSourceId": "weekly-oct12-w1",
+    "capturedOn": "2026-10-12",
+    "kind": "observed",
+    "sourceIds": [
+      "weekly-oct12-w1"
+    ],
+    "classroomConnection": "Editorial interpretation: compares daily animal care with Wilder’s conservation work, while showing a separate rehabilitation setting.",
+    "limitation": "Individual rehabilitation does not establish population recovery. No evidence of a Wilder partnership or assignment to its owl programme; not a no-experience student role.",
+    "approval": {
+      "packetId": "all-examples-2026-10-12-weekly",
+      "candidateId": "OCT12-W1",
+      "copyVersion": 1
+    },
+    "status": {
+      "kind": "open",
+      "checkedOn": "2026-10-12",
+      "note": "Original employer description invites email applications and says the listing remains open until a suitable candidate is found. No email sent; actual hiring outcome unknown."
+    }
+  },
+  {
+    "title": "Data Scientist",
+    "employer": "Arolytics",
+    "location": "Calgary, Alberta; preference for Calgary-area candidates.",
+    "arrangement": "Full-time; downtown office or fully remote. Remote eligibility beyond this location is not specified.",
+    "level": "Engineering BSc or MSc and 1–3 years in data science, analytics or research; graduate research counts.",
+    "summary": "Turn industrial sensor readings into evidence about emissions.",
+    "duties": [
+      "Clean noisy or incomplete pressure, temperature and flow data.",
+      "Find patterns and check whether model results fit physical principles.",
+      "Support models that detect emission events and estimate their duration and volume."
+    ],
+    "skills": [
+      "Python",
+      "Time-series analysis",
+      "Statistics",
+      "Physical modelling"
+    ],
+    "id": "arolytics-data-scientist",
+    "employerNote": {
+      "text": "Related work at another employer; this is not a GHGSat position.",
+      "kind": "interpreted",
+      "sourceIds": [
+        "weekly-oct12-g1"
+      ]
+    },
+    "roleIds": [
+      "software-data"
+    ],
+    "relevance": "local",
+    "postingSourceId": "weekly-oct12-g1",
+    "capturedOn": "2026-10-12",
+    "kind": "observed",
+    "sourceIds": [
+      "weekly-oct12-g1"
+    ],
+    "classroomConnection": "Editorial interpretation: compares emissions measurement using ground-level process sensors with GHGSat’s satellite observations.",
+    "limitation": "SCADA process data is not satellite data. No evidence of a GHGSat partnership. This is a historical example, not a current vacancy or a job requiring no prior preparation.",
+    "approval": {
+      "packetId": "all-examples-2026-10-12-weekly",
+      "candidateId": "OCT12-G1",
+      "copyVersion": 1
+    },
+    "status": {
+      "kind": "unknown",
+      "checkedOn": "2026-10-12",
+      "note": "Employer page remains accessible but explicitly gives an April 20, 2026 deadline. Deadline overrides the email application invitation; no current vacancy or actual hire/closure date inferred."
+    },
+    "publishedOn": "2026-04-01",
+    "applicationDeadline": "2026-04-20"
   },
 ];

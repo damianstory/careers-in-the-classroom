@@ -1,0 +1,20 @@
+{
+  "checked_on": "2026-10-07",
+  "checks": [
+    {
+      "candidate_id": "OCT05-E1",
+      "url": "https://agatlaboratories.applytojob.com/apply/lnOX39GFbP/Laboratory-Technician-C-Water-Lab",
+      "result": "HTTP 410 via web and direct employer fetch; status unknown, displayed historical. Approved duties and first capture preserved. Prior open label superseded by verification, without inferring a closure date."
+    },
+    {
+      "candidate_id": "OCT05-W1",
+      "url": "https://www.enmas.ca/job-detail.php?id=1",
+      "result": "HTTP 200; full duties and email application invitation remain present. No email sent."
+    },
+    {
+      "candidate_id": "OCT05-M2",
+      "url": "https://ghgsat.bamboohr.com/careers/205",
+      "result": "Rendered description and loaded empty application form inspected. No data entered or submitted. Old source remains in registry; old published date retained in provenance note, not attributed to replacement."
+    }
+  ]
+}

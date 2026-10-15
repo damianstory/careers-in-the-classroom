@@ -12,7 +12,11 @@ export const subjectLabels: Record<Subject, string> = {
 export const steps = ["Guess", "Job", "Work", "Why", "Team", "Route", "Deeper"] as const;
 
 export function buildDiscoverCards(today: string) {
-  return roleProfiles.map((role, index) => {
+  // Discover presents documented work at the featured organization. Related-employer
+  // roles remain available in the example, without implying a company affiliation.
+  return roleProfiles.filter((role) => exampleDetails.some((d) =>
+    d.roleIds.includes(role.id) && getOrganizationRole(d.organizationId, role.id),
+  )).map((role, index) => {
     const details = exampleDetails.find((d) => d.roleIds.includes(role.id))!;
     const example = examples.find((e) => e.detailsId === details.id)!;
     const organization = getOrganization(details.organizationId)!;

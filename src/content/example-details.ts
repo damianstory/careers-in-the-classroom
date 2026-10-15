@@ -42,7 +42,7 @@ export const exampleDetails: ExampleDetails[] = [
     },
     roleIds: ["atmospheric-science", "satellite-engineering", "software-data", "commercial-partnerships"],
     pathwayIds: ["ucalgary-engineering-physics", "ualberta-earth-sciences", "ucalgary-geomatics", "sait-geomatics", "sait-marketing"],
-    jobIds: ["ghgsat-emissions-scientist", "muon-calibration-scientist", "ghgsat-backend-developer", "ghgsat-full-stack-developer", "ghgsat-government-business"],
+    jobIds: ["ghgsat-emissions-scientist", "muon-calibration-scientist", "ghgsat-backend-developer", "ghgsat-full-stack-developer", "ghgsat-government-business", "arolytics-data-scientist"],
     checkedOn: "2026-09-25",
   },
   {
@@ -100,7 +100,9 @@ export const exampleDetails: ExampleDetails[] = [
       "ucalgary-dvm"
     ],
     "jobIds": [
-      "wilder-animal-care"
+      "wilder-animal-care",
+      "enmas-environmental-technician",
+      "calgary-wildlife-rehabilitator"
     ],
     "checkedOn": "2026-09-29"
   },
@@ -150,7 +152,8 @@ export const exampleDetails: ExampleDetails[] = [
     },
     "roleIds": [
       "process-engineering",
-      "process-operations"
+      "process-operations",
+      "laboratory-analysis"
     ],
     "pathwayIds": [
       "ucalgary-chemical",
@@ -160,7 +163,8 @@ export const exampleDetails: ExampleDetails[] = [
     "jobIds": [
       "e3-shift-operator",
       "e3-process-engineer",
-      "stantec-water-eit"
+      "stantec-water-eit",
+      "agat-water-lab-technician"
     ],
     "checkedOn": "2026-09-29"
   },

@@ -42,3 +42,16 @@ test("GHGSat's approved government posting has a commercial role and a preparati
   await expect(page.getByRole("region", { name: "How to prepare" }).getByText("Business Administration – Marketing", { exact: true })).toBeVisible();
   await expect(page.getByRole("region", { name: "Ways to prepare for this work" }).getByText("Business Administration – Marketing", { exact: true })).toBeVisible();
 });
+
+test("approved related postings are reachable without implying featured-employer affiliation", async ({ page, requests }) => {
+  void requests;
+  await page.goto("/examples/e3-lithium?role=laboratory-analysis&job=agat-water-lab-technician#roles");
+  const lab = page.getByRole("article", { name: "Laboratory Technician C - Water Lab" });
+  await expect(lab).toBeVisible();
+  await expect(lab.getByText("Historical job example — not a current vacancy", { exact: true })).toBeVisible();
+  await expect(page.getByRole("region", { name: "E3 Lithium", exact: true }).getByRole("link", { name: "Laboratory analysis and quality control", exact: true })).toHaveCount(0);
+  await page.reload();
+  await expect(lab).toBeVisible();
+  await page.goto("/examples/wilder-institute?role=conservation-research&job=enmas-environmental-technician#roles");
+  await expect(page.getByRole("article", { name: "Environmental Technician", exact: true })).toBeVisible();
+});

@@ -159,4 +159,34 @@ export const registry: DatedSource[] = [
     "url": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=21776daf-f5d6-445a-8284-be1d53c78d12&jobId=24852",
     "checkedOn": "2026-09-29"
   },
+  {
+    "id": "weekly-oct05-e1",
+    "label": "AGAT Laboratories: Laboratory Technician C - Water Lab",
+    "url": "https://agatlaboratories.applytojob.com/apply/lnOX39GFbP/Laboratory-Technician-C-Water-Lab",
+    "checkedOn": "2026-10-07"
+  },
+  {
+    "id": "weekly-oct05-w1",
+    "label": "Enmas: Environmental Technician",
+    "url": "https://www.enmas.ca/job-detail.php?id=1",
+    "checkedOn": "2026-10-07"
+  },
+  {
+    "id": "job-ghgsat-backend-bamboohr",
+    "label": "GHGSat: Senior Backend Developer - Spectra (current BambooHR source)",
+    "url": "https://ghgsat.bamboohr.com/careers/205",
+    "checkedOn": "2026-10-07"
+  },
+  {
+    "id": "weekly-oct12-w1",
+    "label": "Calgary Wildlife: Wildlife Rehabilitator",
+    "url": "https://www.calgarywildlife.org/jobs",
+    "checkedOn": "2026-10-12"
+  },
+  {
+    "id": "weekly-oct12-g1",
+    "label": "Arolytics: Data Scientist",
+    "url": "https://arolytics.com/post/Data-Scientist-Full-Time-Calgary-Based-hybrid-remote",
+    "checkedOn": "2026-10-12"
+  },
 ];

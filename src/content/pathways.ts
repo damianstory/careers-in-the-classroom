@@ -229,6 +229,7 @@ export const learningPathways: LearningPathway[] = [
     "relevance": "local",
     "learns": "Practical work in unit operations, process simulation, equipment design and safe operation of processing units.",
     "roleRationale": [
+      { "roleId": "laboratory-analysis", "why": "Analytical Instrumentation covers chemical analysis and QA/QC in laboratory settings. This is a preparation route, not a guarantee of meeting an employer’s requirements." },
       {
         "roleId": "process-engineering",
         "why": "Process calculations and simulation support technical work alongside engineers."

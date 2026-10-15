@@ -12,6 +12,21 @@
       "autoPort": true
     },
     {
+      "name": "citc-discover-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "../CitC-discover",
+        "run",
+        "dev",
+        "--",
+        "-p",
+        "3120"
+      ],
+      "port": 3120,
+      "autoPort": false
+    },
+    {
       "name": "citc-demo",
       "runtimeExecutable": "npm",
       "runtimeArgs": [

@@ -558,7 +558,7 @@ function CompanyView({ e, details, roles, href }: { e: Example; details: Example
           People behind the work
         </h3>
         <ul className={styles.cardGrid}>
-          {roles.map((r) => {
+          {roles.filter((r) => getOrganizationRole(org.id, r.id)).map((r) => {
             const link = getOrganizationRole(org.id, r.id);
             return (
               <li key={r.id} className={styles.card}>
@@ -643,7 +643,7 @@ function RolesView({
       <>
         <header className={`${base.band} ${base.hero}`}>
           <Eyebrow>For your students</Eyebrow>
-          <Heading id="roles-title">Roles documented at {org.name}</Heading>
+          <Heading id="roles-title">{roles.some((r) => !getOrganizationRole(org.id, r.id)) ? `Roles connected to this example` : `Roles documented at ${org.name}`}</Heading>
           <p className={base.lede}>What this kind of work involves, with real job examples and ways to prepare for each.</p>
         </header>
         <div className={`${base.band} ${base.tint} ${base.rule}`}>
@@ -652,11 +652,9 @@ function RolesView({
               const link = getOrganizationRole(org.id, r.id);
               return (
                 <li key={r.id} className={styles.card}>
-                  {link && (
-                    <div className={styles.cardStrip}>
-                      <EvidenceTag kind={link.kind}>{link.label}</EvidenceTag>
-                    </div>
-                  )}
+                  <div className={styles.cardStrip}>
+                    {link ? <EvidenceTag kind={link.kind}>{link.label}</EvidenceTag> : <EvidenceTag kind="interpreted">Related work at another employer</EvidenceTag>}
+                  </div>
                   <div className={styles.cardBody}>
                     <h3 className={`${styles.cardTitle} ${styles.cardTitleLg}`}>
                       <SelectionLink section="roles" href={href({ section: "roles", role: r.id })} className={styles.cardLink}>
@@ -671,7 +669,7 @@ function RolesView({
             })}
           </ul>
           <p className={`${styles.markedNote} ${base.marked}`}>
-            Each card says how this work is documented at {e.org}. Dated accounts and postings are not a current staff roster or a promise of a vacancy.
+            Cards distinguish work documented at {e.org} from related work at other employers. Dated accounts and postings are not a current staff roster or a promise of a vacancy.
           </p>
         </div>
       </>
@@ -686,13 +684,13 @@ function RolesView({
       <header className={`${base.band} ${base.hero}`}>
         <SelectionLink section="roles" href={href({ section: "roles" })} className={styles.upLink}>
           <Icon name="arrowLeft" small />
-          All roles at {org.name}
+          All roles in this example
         </SelectionLink>
         <Eyebrow>Role</Eyebrow>
         <Heading id="roles-title">{role.title}</Heading>
         <p className={base.lede}>{role.summary}</p>
         <div className={styles.roleTags}>
-          {link && <EvidenceTag kind={link.kind}>{link.label}</EvidenceTag>}
+          {link ? <EvidenceTag kind={link.kind}>{link.label}</EvidenceTag> : <EvidenceTag kind="interpreted">Related work at another employer</EvidenceTag>}
           <EvidenceTag kind="interpreted">General explanation, written by us</EvidenceTag>
           {link && <Cite ids={link.sourceIds} className={styles.claimCite} />}
         </div>
