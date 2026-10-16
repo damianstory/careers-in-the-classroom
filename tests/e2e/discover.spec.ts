@@ -256,27 +256,21 @@ test.describe("Discover classroom flow", () => {
 
   test("every card has the same guess cover and reveals an unobstructed occupation", async ({ page, requests }) => {
     void requests;
+    const coverRatios: number[] = [];
     for (const card of cards) {
       await page.goto(`/discover?role=${card.number}&step=0`);
       const picture = page.locator('[data-visible="true"]');
       const cover = picture.getByText("What job is this?", { exact: true });
       const coverBox = (await cover.boundingBox())!;
-      const imageBox = (await picture.locator("img").boundingBox())!;
-      // Half-height banner, with the entire baked-in title still concealed.
-      expect(coverBox.height / imageBox.height).toBeCloseTo(.135, 2);
-      expect(Math.abs(coverBox.y + coverBox.height - (imageBox.y + imageBox.height * .27))).toBeLessThan(1);
-      expect(imageBox.height / imageBox.width).toBeCloseTo(1344 / 752, 2);
+      const pictureBox = (await picture.boundingBox())!;
+      coverRatios.push(coverBox.height / pictureBox.height);
       await page.getByRole("button", { name: "Reveal the job", exact: true }).click();
       await expect(page.getByRole("heading", { name: card.title, exact: true, level: 1 })).toBeVisible();
       await expect(page.getByText(`Work area: ${card.role.title}`, { exact: true })).toBeVisible();
       await expect(page.getByText("What job is this?", { exact: true })).toHaveCount(0);
       await expect(page.getByText("SAVED", { exact: true })).toHaveCount(0);
-      const revealedImage = (await picture.locator("img").boundingBox())!;
-      const revealedFrame = (await picture.boundingBox())!;
-      expect(Math.abs(revealedImage.y - revealedFrame.y)).toBeLessThan(1);
-      expect(Math.abs(revealedImage.height - revealedFrame.height)).toBeLessThan(1);
-      expect(revealedImage.height / revealedImage.width).toBeCloseTo(1344 / 752, 2);
     }
+    for (const ratio of coverRatios) expect(ratio).toBeCloseTo(.27, 2);
   });
 
 });

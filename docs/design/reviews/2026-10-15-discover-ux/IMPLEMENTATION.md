@@ -65,3 +65,9 @@ Validation: TypeScript, ESLint, production build and all 22 Discover browser che
 Renamed Randomize to Restart and grouped it immediately before Reveal the job on desktop (1100px and up). The guessing banner is half its former height: the upper half of the source title region is clipped during guessing, and the remaining half stays covered. The work scene retains its natural proportions, and reveal restores the complete image.
 
 Validation: TypeScript, ESLint, production build and all 22 Discover browser checks pass, including title concealment across all nine cards, full-image restoration, adjacent desktop buttons, restart in both round styles, and the responsive content matrix. Native browser inspection confirmed desktop and phone presentation. [Updated desktop screen](after-compact-guess-banner.png).
+
+## Follow-up: restore original banner height
+
+Restored the original full-height guessing frame and 27% title cover at the user's request. Removed the temporary image clipping; Restart retains its name and placement beside Reveal the job on desktop. The compact-banner screenshot above records the superseded version.
+
+Validation: production build and all 22 Discover browser checks pass, including original cover proportions, desktop button grouping and restart behavior.
