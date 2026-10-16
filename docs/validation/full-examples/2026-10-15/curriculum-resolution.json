@@ -1,0 +1,314 @@
+{
+  "sources": {
+    "chem": [
+      "Alberta Chemistry 20–30 program of studies (updated 2014)",
+      "https://education.alberta.ca/media/159730/chem2030_07.pdf"
+    ],
+    "phys": [
+      "Alberta Physics 20–30 performance standards",
+      "https://www.alberta.ca/system/files/custom_downloaded_images/edc-physics20-30-performance-standards.pdf"
+    ],
+    "bio": [
+      "Calgary Board of Education: Biology 20/30 course topics",
+      "https://eps.cbe.ab.ca/biology-20-30.aspx"
+    ],
+    "sci": [
+      "Calgary Board of Education: Science 10/20/30 course topics",
+      "https://eps.cbe.ab.ca/science-10-20-30.aspx"
+    ],
+    "inquiry": [
+      "Alberta Science 10 program (government-hosted copy): inquiry skills, pp. 8–10",
+      "https://www.gov.nu.ca/sites/default/files/documents/2024-10/Science_10__Alberta_2005_.pdf"
+    ]
+  },
+  "mapping": {
+    "botaneco": [
+      "Chemistry",
+      [
+        [
+          "Chemistry 20",
+          "Mixtures, solubility and properties",
+          "c20c"
+        ]
+      ],
+      "Compare separated fractions and test their properties; proteins and oleosomes are application context, not required terminology."
+    ],
+    "nanalysis": [
+      "Physics",
+      [
+        [
+          "Physics 30",
+          "Fields and electromagnetic radiation: an NMR extension",
+          "p30b"
+        ]
+      ],
+      "Apply fields and electromagnetic-radiation ideas to measurement. Nuclear spin and Fourier transforms are extension material, not required high-school outcomes."
+    ],
+    "exergy-solutions": [
+      "Physics",
+      [
+        [
+          "Physics 20",
+          "Forces, work and design constraints",
+          "p20b"
+        ]
+      ],
+      "Compare the load a bracket must carry with the material and geometry used; printing is an engineering context rather than a required manufacturing topic."
+    ],
+    "livestock-water-recycling": [
+      "Chemistry",
+      [
+        [
+          "Chemistry 20",
+          "Mixtures and solution concentration",
+          "c20c"
+        ],
+        [
+          "Science 30",
+          "Chemistry and the environment",
+          "s30b"
+        ]
+      ],
+      "Compare what remains in different output streams. Clearer water is not automatically safe drinking water."
+    ],
+    "avmax": [
+      "Physics",
+      [
+        [
+          "Physics 20",
+          "Forces and evidence from mechanical tests",
+          "p20b"
+        ]
+      ],
+      "Use forces and measured deformation to discuss inspection evidence. Students are evaluating evidence, not making airworthiness decisions."
+    ],
+    "northern-rna": [
+      "Biology",
+      [
+        [
+          "Biology 30",
+          "Molecular biology and controlled comparisons",
+          "b30c"
+        ]
+      ],
+      "Connect nucleic acids to biological production, then compare batch evidence. Industrial quality systems are an application, not a required molecular-biology outcome."
+    ],
+    "aerium-analytics": [
+      "Biology",
+      [
+        [
+          "Biology 20",
+          "Ecosystems, populations and observation",
+          "b20b"
+        ]
+      ],
+      "Compare bird observations before and after intervention, with season and weather as competing explanations. A behavioural response alone does not prove population change."
+    ],
+    "geologicai": [
+      "Physics",
+      [
+        [
+          "Science 20",
+          "Earth materials and evidence",
+          "s20c"
+        ],
+        [
+          "Physics 30",
+          "Electromagnetic radiation and measurement",
+          "p30c"
+        ]
+      ],
+      "Combine geological observations with sensor evidence. X-ray and hyperspectral methods extend electromagnetic-radiation ideas; a scan does not establish an entire deposit."
+    ],
+    "tangent-design-engineering": [
+      "Chemistry",
+      [
+        [
+          "Chemistry 20",
+          "Quantitative relationships and process scale",
+          "c20d"
+        ]
+      ],
+      "Track material inputs and outputs as throughput grows; engineering layout and controls extend the chemistry rather than replacing quantitative relationships."
+    ],
+    "foremost": [
+      "Physics",
+      [
+        [
+          "Physics 20",
+          "Forces and contact with the ground",
+          "p20b"
+        ]
+      ],
+      "Start with weight and support forces, then extend to pressure as force divided by area. Soft-soil behaviour and tracked-vehicle design go beyond the course model."
+    ],
+    "carbonova": [
+      "Chemistry",
+      [
+        [
+          "Chemistry 20",
+          "Matter conservation and chemical changes",
+          "c20d"
+        ],
+        [
+          "Science 30",
+          "Chemistry and the environment",
+          "s30b"
+        ]
+      ],
+      "Track carbon atoms into new materials and identify missing inputs and outputs. A carbon-containing product alone does not prove a net climate benefit."
+    ],
+    "summit-lithium-technologies": [
+      "Chemistry",
+      [
+        [
+          "Chemistry 20",
+          "Mixtures, ions and concentration",
+          "c20c"
+        ]
+      ],
+      "Compare capture, release and repeated-cycle measurements. Selective sorbents are an application; the proprietary chemistry is not claimed to be known."
+    ],
+    "veerum": [
+      "Physics",
+      [
+        [
+          "Science 10",
+          "Scientific inquiry: measurement and model checking",
+          null
+        ]
+      ],
+      "A cross-unit inquiry-skills connection: compare a model with observations, identify gaps and judge whether data are fit for a decision. No specific physics unit or digital-twin outcome is claimed."
+    ],
+    "eguana-technologies": [
+      "Physics",
+      [
+        [
+          "Science 10",
+          "Energy transformations in technological systems",
+          "s10b"
+        ],
+        [
+          "Science 30",
+          "Energy and the environment",
+          "s30d"
+        ]
+      ],
+      "Distinguish stored energy from the rate of transfer. Capacity divided by load is an idealized runtime; actual losses and operating limits change it."
+    ],
+    "ftg-aerospace-calgary": [
+      "Physics",
+      [
+        [
+          "Science 10",
+          "Atmospheric observations and global systems",
+          "s10d"
+        ],
+        [
+          "Science 30",
+          "Electromagnetic energy and communication",
+          "s30c"
+        ]
+      ],
+      "Separate atmospheric measurements, transmission and interpretation. Aircraft observations sample particular routes and times; they do not provide complete atmospheric coverage."
+    ]
+  },
+  "unitLinks": [
+    {
+      "slug": "botaneco",
+      "unitId": "c20c",
+      "why": "Compare separated fractions and test their properties; proteins and oleosomes are application context, not required terminology."
+    },
+    {
+      "slug": "nanalysis",
+      "unitId": "p30b",
+      "why": "Apply fields and electromagnetic-radiation ideas to measurement. Nuclear spin and Fourier transforms are extension material, not required high-school outcomes."
+    },
+    {
+      "slug": "exergy-solutions",
+      "unitId": "p20b",
+      "why": "Compare the load a bracket must carry with the material and geometry used; printing is an engineering context rather than a required manufacturing topic."
+    },
+    {
+      "slug": "livestock-water-recycling",
+      "unitId": "c20c",
+      "why": "Compare what remains in different output streams. Clearer water is not automatically safe drinking water."
+    },
+    {
+      "slug": "livestock-water-recycling",
+      "unitId": "s30b",
+      "why": "Compare what remains in different output streams. Clearer water is not automatically safe drinking water."
+    },
+    {
+      "slug": "avmax",
+      "unitId": "p20b",
+      "why": "Use forces and measured deformation to discuss inspection evidence. Students are evaluating evidence, not making airworthiness decisions."
+    },
+    {
+      "slug": "northern-rna",
+      "unitId": "b30c",
+      "why": "Connect nucleic acids to biological production, then compare batch evidence. Industrial quality systems are an application, not a required molecular-biology outcome."
+    },
+    {
+      "slug": "aerium-analytics",
+      "unitId": "b20b",
+      "why": "Compare bird observations before and after intervention, with season and weather as competing explanations. A behavioural response alone does not prove population change."
+    },
+    {
+      "slug": "geologicai",
+      "unitId": "s20c",
+      "why": "Combine geological observations with sensor evidence. X-ray and hyperspectral methods extend electromagnetic-radiation ideas; a scan does not establish an entire deposit."
+    },
+    {
+      "slug": "geologicai",
+      "unitId": "p30c",
+      "why": "Combine geological observations with sensor evidence. X-ray and hyperspectral methods extend electromagnetic-radiation ideas; a scan does not establish an entire deposit."
+    },
+    {
+      "slug": "tangent-design-engineering",
+      "unitId": "c20d",
+      "why": "Track material inputs and outputs as throughput grows; engineering layout and controls extend the chemistry rather than replacing quantitative relationships."
+    },
+    {
+      "slug": "foremost",
+      "unitId": "p20b",
+      "why": "Start with weight and support forces, then extend to pressure as force divided by area. Soft-soil behaviour and tracked-vehicle design go beyond the course model."
+    },
+    {
+      "slug": "carbonova",
+      "unitId": "c20d",
+      "why": "Track carbon atoms into new materials and identify missing inputs and outputs. A carbon-containing product alone does not prove a net climate benefit."
+    },
+    {
+      "slug": "carbonova",
+      "unitId": "s30b",
+      "why": "Track carbon atoms into new materials and identify missing inputs and outputs. A carbon-containing product alone does not prove a net climate benefit."
+    },
+    {
+      "slug": "summit-lithium-technologies",
+      "unitId": "c20c",
+      "why": "Compare capture, release and repeated-cycle measurements. Selective sorbents are an application; the proprietary chemistry is not claimed to be known."
+    },
+    {
+      "slug": "eguana-technologies",
+      "unitId": "s10b",
+      "why": "Distinguish stored energy from the rate of transfer. Capacity divided by load is an idealized runtime; actual losses and operating limits change it."
+    },
+    {
+      "slug": "eguana-technologies",
+      "unitId": "s30d",
+      "why": "Distinguish stored energy from the rate of transfer. Capacity divided by load is an idealized runtime; actual losses and operating limits change it."
+    },
+    {
+      "slug": "ftg-aerospace-calgary",
+      "unitId": "s10d",
+      "why": "Separate atmospheric measurements, transmission and interpretation. Aircraft observations sample particular routes and times; they do not provide complete atmospheric coverage."
+    },
+    {
+      "slug": "ftg-aerospace-calgary",
+      "unitId": "s30c",
+      "why": "Separate atmospheric measurements, transmission and interpretation. Aircraft observations sample particular routes and times; they do not provide complete atmospheric coverage."
+    }
+  ],
+  "foremost": "Rendered facility source confirms off-road vehicle engineering at Calgary North."
+}

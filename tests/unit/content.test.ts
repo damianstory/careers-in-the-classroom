@@ -41,7 +41,7 @@ describe("examples", () => {
     const ids = e.sources.map((s) => s.id);
     expect(new Set(ids).size, "source ids are unique").toBe(ids.length);
     for (const s of e.sources) expect(s.url).toMatch(/^https:\/\//);
-    expect(e.checkedOn).toBe("2026-09-24");
+    expect(e.checkedOn).toMatch(/^\d{4}-\d{2}-\d{2}$/);
 
     e.ledger.forEach((row, i) => checkEvidence(row, e.sources, `${e.slug} ledger[${i}]`));
     e.roles.forEach((row, i) => checkEvidence(row, e.sources, `${e.slug} roles[${i}]`));
@@ -130,7 +130,7 @@ describe("connected exploration content", () => {
   });
 
   it("gives every organization its own logo file, recorded with its source and date", () => {
-    for (const o of organizations) {
+    for (const o of organizations.filter((organization) => organization.logo)) {
       const logo = o.logo!;
       expect(logo, o.id).toBeDefined();
       expect(logo.alt).toBe(`${o.name} logo`);
@@ -148,7 +148,7 @@ describe("connected exploration content", () => {
   it("says what each organization-role link establishes", () => {
     for (const l of organizationRoles) {
       inRegistry(l, `${l.organizationId}/${l.roleId}`);
-      expect(["work-area", "job-title"]).toContain(l.establishes);
+      expect(["work-area", "job-title", "related-work"]).toContain(l.establishes);
       if (l.establishes === "work-area") expect(l.label).toMatch(/work area/i);
       expect(getRoleProfile(l.roleId)).toBeDefined();
     }

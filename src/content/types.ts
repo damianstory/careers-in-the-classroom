@@ -177,7 +177,7 @@ export interface OrganizationRole extends Evidenced {
   organizationId: string;
   roleId: string;
   /** "work-area": the source names a team or area only. "job-title": the source shows an actual position title. */
-  establishes: "work-area" | "job-title";
+  establishes: "work-area" | "job-title" | "related-work";
   label: string;
   location?: string;
   checkedOn: string;
@@ -228,7 +228,8 @@ export interface JobExample extends Evidenced {
 }
 
 export interface ClassroomStory {
-  diagramKind: "methane" | "owl-recovery" | "lithium-separation";
+  diagramKind: "methane" | "owl-recovery" | "lithium-separation" | "research";
+  illustrationSlug?: string;
   subtitle: string;
   caption: string;
   steps: Claim[];

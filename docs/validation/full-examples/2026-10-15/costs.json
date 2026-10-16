@@ -1,0 +1,14 @@
+{
+  "checked_on": "2026-10-15",
+  "looot_actual_usd": 0.025,
+  "direct_apify_usd": 0,
+  "weekly_cap_usd": 10,
+  "weekly_settled_usd": 0.025,
+  "outstanding_usd": 0.0,
+  "wallet_before_usd": 19.1178,
+  "wallet_after_usd": 19.0928,
+  "reconciled": true,
+  "paid_attempts": 6,
+  "paid_retries": 0,
+  "separate_pilot_excluded_usd": 0.8822
+}

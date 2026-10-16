@@ -4,6 +4,7 @@ export type CardDiagramKind = ClassroomStory["diagramKind"];
 
 // The mono label above each schematic and the honesty note below it.
 export const cardDiagramText: Record<CardDiagramKind, { label: string; caption: string }> = {
+  research: { label: "Explore the work", caption: "A sourced classroom example" },
   methane: { label: "Measuring methane with reflected sunlight", caption: "Not to scale. Not a GHGSat image." },
   "owl-recovery": { label: "From care to population recovery", caption: "Releasing animals is a step. Recovery needs evidence." },
   "lithium-separation": {

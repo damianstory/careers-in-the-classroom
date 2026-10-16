@@ -1,3 +1,4 @@
+import { expansionUnitLinks } from "./expansion-unit-links";
 import type { Course, PreparedSearch, Unit } from "./types";
 
 export const courses: Course[] = [
@@ -88,7 +89,7 @@ export const preparedSearches: PreparedSearch[] = [
   {
     id: "bio30dna", courseId: "biology-30", label: "Cell division, genetics and molecular biology",
     keywords: ["dna", "protein", "gene", "genetic", "enzyme", "molecular", "inquiry"],
-    note: "No Calgary example is prepared for this topic yet. One recent development from outside Calgary is relevant.",
+    note: "This recent development is research from outside Calgary. Related Calgary company examples appear separately where their course connection is supported.",
     results: [{ newsId: "enzyme-system-early-research", why: "Connects DNA, proteins and scientific inquiry, with the uncertainty kept visible." }],
   },
   {
@@ -111,3 +112,22 @@ export const presets: [string, string][] = [
   ["biology-30", "b30c"],
   ["science-30", "s30c"],
 ];
+
+// Each expanded unit gets its own results, so one unit's additions never leak into another.
+for (const unit of units) {
+  const additions = expansionUnitLinks.filter((link) => link.unitId === unit.id);
+  if (!additions.length) continue;
+  const original = preparedSearches.find((search) => search.id === unit.preparedSearchId);
+  const id = `expanded-${unit.id}`;
+  preparedSearches.push({
+    id,
+    courseId: unit.courseId,
+    label: unit.name,
+    keywords: [],
+    results: [
+      ...(original?.results ?? []),
+      ...additions.map((link) => ({ exampleSlug: link.slug, why: link.why })),
+    ],
+  });
+  unit.preparedSearchId = id;
+}

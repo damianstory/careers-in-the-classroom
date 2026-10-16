@@ -1,0 +1,24 @@
+{
+  "checked_on": "2026-10-15",
+  "draft_count": 15,
+  "draft_ids_unique": true,
+  "all_full_copy_pending": true,
+  "discovery_approvals_preserved": true,
+  "roles_per_draft": 3,
+  "pathways_per_draft": 3,
+  "job_cards": 2,
+  "job_cards_marked_open": 0,
+  "local_review_links_resolve": true,
+  "cost_receipts_reconciled": true,
+  "app_tests": "Not run; research artifacts only",
+  "remaining_gates": [
+    "User full-copy review",
+    "Exact curriculum outcome validation",
+    "Foremost product-to-Calgary-facility detail if that claim is desired",
+    "Artwork generation and visual review",
+    "Implementation only on user instruction"
+  ],
+  "source_urls_inventoried": 65,
+  "source_capture_attempts": 70,
+  "headline_scope_alignment_checked": true
+}

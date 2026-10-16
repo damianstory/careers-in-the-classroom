@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "runs": [
+    {
+      "occurrence": "2026-10-15",
+      "trigger": "manual first daily pass",
+      "status": "completed",
+      "new_candidates_screened": 20,
+      "proposal_gates_passed": 18,
+      "held": 2,
+      "recommended": 5,
+      "decisions_pending": 0,
+      "new_candidate_duplicates": 0,
+      "known_sample_excluded": 20,
+      "sources": [
+        "original employer product/company pages",
+        "employer careers pages",
+        "Calgary Economic Development",
+        "Alberta Innovates research/project reports",
+        "industry association PTAC context"
+      ],
+      "sectors": [
+        "Advanced materials",
+        "Aviation and environment",
+        "Aviation and trades",
+        "Aviation sensing",
+        "Behavioural science and software",
+        "Biomanufacturing",
+        "Biotechnology",
+        "Digital construction",
+        "Energy storage",
+        "Engineering and prototyping",
+        "Environmental data",
+        "Financial technology",
+        "Food and agriculture",
+        "Geoscience and sensing",
+        "Heavy manufacturing",
+        "Industrial emissions",
+        "Manufacturing and trades",
+        "Mineral processing",
+        "Scientific instruments",
+        "Water and agriculture"
+      ],
+      "looot_actual_usd": 0,
+      "apify_direct_usd": 0,
+      "budget_deferrals": [],
+      "saturation": "insufficient history; first run",
+      "packet": "company-discovery/2026-10-15/review.md",
+      "proposals_approved": 15,
+      "proposals_deferred": 5,
+      "full_research_not_started": 0,
+      "reviewed_on": "2026-10-15",
+      "full_drafts_prepared": 15,
+      "full_copy_decisions_pending": 15,
+      "full_example_packet": "docs/validation/full-examples/2026-10-15/review.md"
+    }
+  ]
+}

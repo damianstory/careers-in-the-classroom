@@ -1,0 +1,1634 @@
+{
+  "schema_version": 1,
+  "companies": [
+    {
+      "id": "CGY-001",
+      "version": 1,
+      "company": "Botaneco",
+      "canonical_domain": "botaneco.com",
+      "aliases": [],
+      "sector": "Food and agriculture",
+      "calgary_evidence": "Calgary headquarters and R&D team",
+      "work": "Oilseed processing for food, feed and personal-care ingredients",
+      "proposed_question": "How can one seed become several useful ingredients?",
+      "sources": [
+        "https://botaneco.com/about/"
+      ],
+      "recommendation": "recommend",
+      "workflow_state": "approved",
+      "decision": "approved",
+      "first_discovered": "2026-10-15",
+      "last_attempted": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "evidence_gate": "pass at proposal level",
+      "concepts": "Biochemistry; mixtures; material properties",
+      "role_leads": "Biochemist, food scientist, technician (company-listed disciplines)",
+      "role_status": "Work areas/research leads, not verified open vacancies or project assignments",
+      "gaps": "Verify one specific separation process and product example.",
+      "score_dimensions": [
+        4,
+        3,
+        3
+      ],
+      "score": 10,
+      "curriculum_status": "Source-checked unit or cross-unit inquiry fit; editorial connection, not formal outcome endorsement",
+      "full_example_status": "approved and implemented locally",
+      "implementation_status": "implemented locally",
+      "publication_status": "not deployed",
+      "pathway_leads": [
+        {
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+          "status": "Official programme exists; relevance interpreted; employer requirement and admission details not verified"
+        }
+      ],
+      "planned_buildout": "Company: Calgary oilseed R&D. Roles: distinguish the company-listed scientists, engineers and technicians. Pathways: investigate laboratory, food-science and engineering routes. Classroom story: follow a seed into different useful fractions; propose an accurate separation diagram.",
+      "added_value": "Adds food and ingredient science, plus technician work, to a collection currently centred on conservation, lithium and methane.",
+      "score_rationale": {
+        "connection": "A concrete student-facing question directly explains the sourced process or service.",
+        "work": "Original company sources identify specific processes/services; detailed individual job duties remain to be researched.",
+        "added_value": "Adds food and ingredient science, plus technician work, to a collection currently centred on conservation, lithium and methane."
+      },
+      "reviewer": "user",
+      "decision_date": "2026-10-15",
+      "decision_scope": "company/story proposal for full research only",
+      "decision_instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future.",
+      "decision_reason": "User approved reviewed candidates scoring 8 or higher.",
+      "decision_history": [
+        {
+          "version": 1,
+          "previous_decision": "pending",
+          "decision": "approved",
+          "reviewer": "user",
+          "date": "2026-10-15",
+          "instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future."
+        }
+      ],
+      "full_example_review": {
+        "draft_id": "CGY-001-FULL",
+        "version": 1,
+        "decision": "approved",
+        "packet": "docs/validation/full-examples/2026-10-15/cgy-001-botaneco.md",
+        "research_completed_on": "2026-10-15",
+        "implementation_status": "implemented locally",
+        "publication_status": "not deployed",
+        "gates_remaining": [],
+        "approval": {
+          "reviewer": "Damian",
+          "date": "2026-10-15",
+          "instruction": "Approve all 15; resolve curriculum and Calgary connection gaps, then implement with illustrations.",
+          "version": 1
+        },
+        "implemented_on": "2026-10-15",
+        "verification_packet": "docs/validation/full-examples/2026-10-15/implementation.md"
+      }
+    },
+    {
+      "id": "CGY-002",
+      "version": 1,
+      "company": "Nanalysis",
+      "canonical_domain": "nanalysis.com",
+      "aliases": [],
+      "sector": "Scientific instruments",
+      "calgary_evidence": "Calgary headquarters; develops and manufactures benchtop instruments",
+      "work": "Compact nuclear magnetic resonance instruments for chemical analysis",
+      "proposed_question": "How can magnets help identify what is in a sample?",
+      "sources": [
+        "https://www.nanalysis.com/"
+      ],
+      "recommendation": "recommend",
+      "workflow_state": "approved",
+      "decision": "approved",
+      "first_discovered": "2026-10-15",
+      "last_attempted": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "evidence_gate": "pass at proposal level",
+      "concepts": "Chemistry; measurement; magnetic fields",
+      "role_leads": "Instrument technician and applications scientist (research leads)",
+      "role_status": "Work areas/research leads, not verified open vacancies or project assignments",
+      "gaps": "Explain NMR accurately at school level; distinguish spectroscopy from MRI.",
+      "score_dimensions": [
+        4,
+        3,
+        3
+      ],
+      "score": 10,
+      "curriculum_status": "Source-checked unit or cross-unit inquiry fit; editorial connection, not formal outcome endorsement",
+      "full_example_status": "approved and implemented locally",
+      "implementation_status": "implemented locally",
+      "publication_status": "not deployed",
+      "pathway_leads": [
+        {
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+          "status": "Official programme exists; relevance interpreted; employer requirement and admission details not verified"
+        }
+      ],
+      "planned_buildout": "Company: instrument design/manufacture. Roles: investigate instrument assembly, testing and applications work. Pathways: investigate laboratory technology and electronics/physics routes. Classroom story: compare chemical-identification evidence; propose a simplified, technically reviewed instrument diagram.",
+      "added_value": "Adds laboratory measurement and scientific-instrument manufacturing; it complements rather than repeats satellite sensing.",
+      "score_rationale": {
+        "connection": "A concrete student-facing question directly explains the sourced process or service.",
+        "work": "Original company sources identify specific processes/services; detailed individual job duties remain to be researched.",
+        "added_value": "Adds laboratory measurement and scientific-instrument manufacturing; it complements rather than repeats satellite sensing."
+      },
+      "reviewer": "user",
+      "decision_date": "2026-10-15",
+      "decision_scope": "company/story proposal for full research only",
+      "decision_instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future.",
+      "decision_reason": "User approved reviewed candidates scoring 8 or higher.",
+      "decision_history": [
+        {
+          "version": 1,
+          "previous_decision": "pending",
+          "decision": "approved",
+          "reviewer": "user",
+          "date": "2026-10-15",
+          "instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future."
+        }
+      ],
+      "full_example_review": {
+        "draft_id": "CGY-002-FULL",
+        "version": 1,
+        "decision": "approved",
+        "packet": "docs/validation/full-examples/2026-10-15/cgy-002-nanalysis.md",
+        "research_completed_on": "2026-10-15",
+        "implementation_status": "implemented locally",
+        "publication_status": "not deployed",
+        "gates_remaining": [],
+        "approval": {
+          "reviewer": "Damian",
+          "date": "2026-10-15",
+          "instruction": "Approve all 15; resolve curriculum and Calgary connection gaps, then implement with illustrations.",
+          "version": 1
+        },
+        "implemented_on": "2026-10-15",
+        "verification_packet": "docs/validation/full-examples/2026-10-15/implementation.md"
+      }
+    },
+    {
+      "id": "CGY-003",
+      "version": 1,
+      "company": "Exergy Solutions",
+      "canonical_domain": "exergysolutions.com",
+      "aliases": [],
+      "sector": "Manufacturing and trades",
+      "calgary_evidence": "Nexus manufacturing facility in Calgary",
+      "work": "Metal 3D printing, reverse engineering, machining and prototypes",
+      "proposed_question": "When should you print a metal part instead of machining it?",
+      "sources": [
+        "https://exergysolutions.com/services/manufacturing/"
+      ],
+      "recommendation": "recommend",
+      "workflow_state": "approved",
+      "decision": "approved",
+      "first_discovered": "2026-10-15",
+      "last_attempted": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "evidence_gate": "pass at proposal level",
+      "concepts": "Materials; geometry; design constraints",
+      "role_leads": "Machinist, mechanical technologist, manufacturing engineer (research leads)",
+      "role_status": "Work areas/research leads, not verified open vacancies or project assignments",
+      "gaps": "Choose a documented component and verify actual role tasks.",
+      "score_dimensions": [
+        4,
+        3,
+        3
+      ],
+      "score": 10,
+      "curriculum_status": "Source-checked unit or cross-unit inquiry fit; editorial connection, not formal outcome endorsement",
+      "full_example_status": "approved and implemented locally",
+      "implementation_status": "implemented locally",
+      "publication_status": "not deployed",
+      "pathway_leads": [
+        {
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology",
+          "status": "Official programme exists; relevance interpreted; employer requirement and admission details not verified"
+        }
+      ],
+      "planned_buildout": "Company: the Calgary Nexus facility. Roles: machining, design and testing, verified against actual local evidence. Pathways: explore technology diplomas and machining apprenticeships. Classroom story: compare two ways of making one part; show material removed versus material added.",
+      "added_value": "Adds hands-on fabrication, technical pathways and a clear engineering trade-off.",
+      "score_rationale": {
+        "connection": "A concrete student-facing question directly explains the sourced process or service.",
+        "work": "Original company sources identify specific processes/services; detailed individual job duties remain to be researched.",
+        "added_value": "Adds hands-on fabrication, technical pathways and a clear engineering trade-off."
+      },
+      "reviewer": "user",
+      "decision_date": "2026-10-15",
+      "decision_scope": "company/story proposal for full research only",
+      "decision_instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future.",
+      "decision_reason": "User approved reviewed candidates scoring 8 or higher.",
+      "decision_history": [
+        {
+          "version": 1,
+          "previous_decision": "pending",
+          "decision": "approved",
+          "reviewer": "user",
+          "date": "2026-10-15",
+          "instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future."
+        }
+      ],
+      "full_example_review": {
+        "draft_id": "CGY-003-FULL",
+        "version": 1,
+        "decision": "approved",
+        "packet": "docs/validation/full-examples/2026-10-15/cgy-003-exergy-solutions.md",
+        "research_completed_on": "2026-10-15",
+        "implementation_status": "implemented locally",
+        "publication_status": "not deployed",
+        "gates_remaining": [],
+        "approval": {
+          "reviewer": "Damian",
+          "date": "2026-10-15",
+          "instruction": "Approve all 15; resolve curriculum and Calgary connection gaps, then implement with illustrations.",
+          "version": 1
+        },
+        "implemented_on": "2026-10-15",
+        "verification_packet": "docs/validation/full-examples/2026-10-15/implementation.md"
+      }
+    },
+    {
+      "id": "CGY-004",
+      "version": 1,
+      "company": "Livestock Water Recycling",
+      "canonical_domain": "livestockwaterrecycling.com",
+      "aliases": [],
+      "sector": "Water and agriculture",
+      "calgary_evidence": "Calgary innovation centre and manufacturing plant",
+      "work": "Manure treatment separates nutrients and recovers water",
+      "proposed_question": "Can we recover useful water and nutrients from manure?",
+      "sources": [
+        "https://www.livestockwaterrecycling.com/",
+        "https://www.livestockwaterrecycling.com/contact/contact-us/"
+      ],
+      "recommendation": "recommend",
+      "workflow_state": "approved",
+      "decision": "approved",
+      "first_discovered": "2026-10-15",
+      "last_attempted": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "evidence_gate": "pass at proposal level",
+      "concepts": "Nutrient cycles; mixtures; mass balance",
+      "role_leads": "Process technician, laboratory testing and equipment design (research leads)",
+      "role_status": "Work areas/research leads, not verified open vacancies or project assignments",
+      "gaps": "Verify water quality and end use; do not imply drinking-water safety.",
+      "score_dimensions": [
+        4,
+        3,
+        2
+      ],
+      "score": 9,
+      "curriculum_status": "Source-checked unit or cross-unit inquiry fit; editorial connection, not formal outcome endorsement",
+      "full_example_status": "approved and implemented locally",
+      "implementation_status": "implemented locally",
+      "publication_status": "not deployed",
+      "pathway_leads": [
+        {
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+          "status": "Official programme exists; relevance interpreted; employer requirement and admission details not verified"
+        }
+      ],
+      "planned_buildout": "Company: Calgary innovation and manufacturing work. Roles: investigate treatment-system design, operation and sample testing. Pathways: explore laboratory, process and mechanical routes. Classroom story: trace water, solids and nutrients through a system; show a mass-balance diagram.",
+      "added_value": "Adds agriculture and nutrient cycles, with a concrete engineering/biology connection beyond wildlife conservation.",
+      "score_rationale": {
+        "connection": "A concrete student-facing question directly explains the sourced process or service.",
+        "work": "Original company sources identify specific processes/services; detailed individual job duties remain to be researched.",
+        "added_value": "Adds agriculture and nutrient cycles, with a concrete engineering/biology connection beyond wildlife conservation."
+      },
+      "reviewer": "user",
+      "decision_date": "2026-10-15",
+      "decision_scope": "company/story proposal for full research only",
+      "decision_instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future.",
+      "decision_reason": "User approved reviewed candidates scoring 8 or higher.",
+      "decision_history": [
+        {
+          "version": 1,
+          "previous_decision": "pending",
+          "decision": "approved",
+          "reviewer": "user",
+          "date": "2026-10-15",
+          "instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future."
+        }
+      ],
+      "full_example_review": {
+        "draft_id": "CGY-004-FULL",
+        "version": 1,
+        "decision": "approved",
+        "packet": "docs/validation/full-examples/2026-10-15/cgy-004-livestock-water-recycling.md",
+        "research_completed_on": "2026-10-15",
+        "implementation_status": "implemented locally",
+        "publication_status": "not deployed",
+        "gates_remaining": [],
+        "approval": {
+          "reviewer": "Damian",
+          "date": "2026-10-15",
+          "instruction": "Approve all 15; resolve curriculum and Calgary connection gaps, then implement with illustrations.",
+          "version": 1
+        },
+        "implemented_on": "2026-10-15",
+        "verification_packet": "docs/validation/full-examples/2026-10-15/implementation.md"
+      }
+    },
+    {
+      "id": "CGY-005",
+      "version": 1,
+      "company": "Avmax",
+      "canonical_domain": "avmax.com",
+      "aliases": [],
+      "sector": "Aviation and trades",
+      "calgary_evidence": "Calgary head office and documented aircraft maintenance operation",
+      "work": "Aircraft maintenance, component repairs and engineering",
+      "proposed_question": "How do you decide whether an aircraft part is safe to keep using?",
+      "sources": [
+        "https://www.avmax.com/companyoverview",
+        "https://www.avmax.com/_files/ugd/82b8f8_daa3d66eeca64c949b6935077d0736d4.pdf"
+      ],
+      "recommendation": "recommend",
+      "workflow_state": "approved",
+      "decision": "approved",
+      "first_discovered": "2026-10-15",
+      "last_attempted": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "evidence_gate": "pass at proposal level",
+      "concepts": "Forces; materials; measurement; safety",
+      "role_leads": "Aircraft maintenance, avionics and component repair (documented service areas)",
+      "role_status": "Work areas/research leads, not verified open vacancies or project assignments",
+      "gaps": "Select an inspection example; verify current local duties and licensing routes.",
+      "score_dimensions": [
+        4,
+        3,
+        3
+      ],
+      "score": 10,
+      "curriculum_status": "Source-checked unit or cross-unit inquiry fit; editorial connection, not formal outcome endorsement",
+      "full_example_status": "approved and implemented locally",
+      "implementation_status": "implemented locally",
+      "publication_status": "not deployed",
+      "pathway_leads": [
+        {
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/aircraft-maintenance-engineers-technology",
+          "status": "Official programme exists; relevance interpreted; employer requirement and admission details not verified"
+        }
+      ],
+      "planned_buildout": "Company: Calgary aircraft support and repair. Roles: investigate maintenance, avionics and inspection tasks. Pathways: verify SAIT training and the separate licensing requirements. Classroom story: evaluate inspection evidence for a component; illustrate a sourced maintenance task.",
+      "added_value": "Adds aircraft safety, materials and a practical technical training route.",
+      "score_rationale": {
+        "connection": "A concrete student-facing question directly explains the sourced process or service.",
+        "work": "Original company sources identify specific processes/services; detailed individual job duties remain to be researched.",
+        "added_value": "Adds aircraft safety, materials and a practical technical training route."
+      },
+      "reviewer": "user",
+      "decision_date": "2026-10-15",
+      "decision_scope": "company/story proposal for full research only",
+      "decision_instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future.",
+      "decision_reason": "User approved reviewed candidates scoring 8 or higher.",
+      "decision_history": [
+        {
+          "version": 1,
+          "previous_decision": "pending",
+          "decision": "approved",
+          "reviewer": "user",
+          "date": "2026-10-15",
+          "instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future."
+        }
+      ],
+      "full_example_review": {
+        "draft_id": "CGY-005-FULL",
+        "version": 1,
+        "decision": "approved",
+        "packet": "docs/validation/full-examples/2026-10-15/cgy-005-avmax.md",
+        "research_completed_on": "2026-10-15",
+        "implementation_status": "implemented locally",
+        "publication_status": "not deployed",
+        "gates_remaining": [],
+        "approval": {
+          "reviewer": "Damian",
+          "date": "2026-10-15",
+          "instruction": "Approve all 15; resolve curriculum and Calgary connection gaps, then implement with illustrations.",
+          "version": 1
+        },
+        "implemented_on": "2026-10-15",
+        "verification_packet": "docs/validation/full-examples/2026-10-15/implementation.md"
+      }
+    },
+    {
+      "id": "CGY-006",
+      "version": 1,
+      "company": "Northern RNA",
+      "canonical_domain": "northernrna.com",
+      "aliases": [],
+      "sector": "Biomanufacturing",
+      "calgary_evidence": "Calgary office and bioprocessing/manufacturing business",
+      "work": "RNA/DNA production and analytical testing services",
+      "proposed_question": "How do you make biological material consistently from batch to batch?",
+      "sources": [
+        "https://northernrna.com/about-our-company/",
+        "https://northernrna.com/"
+      ],
+      "recommendation": "reserve",
+      "workflow_state": "approved",
+      "decision": "approved",
+      "first_discovered": "2026-10-15",
+      "last_attempted": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "evidence_gate": "pass at proposal level",
+      "concepts": "Genetics; enzymes; quality control",
+      "role_leads": "Bioprocess technician and analytical scientist (research leads)",
+      "role_status": "Work areas/research leads, not verified open vacancies or project assignments",
+      "gaps": "Verify which production steps occur in Calgary; avoid clinical efficacy claims.",
+      "score_dimensions": [
+        3,
+        3,
+        3
+      ],
+      "score": 9,
+      "curriculum_status": "Source-checked unit or cross-unit inquiry fit; editorial connection, not formal outcome endorsement",
+      "full_example_status": "approved and implemented locally",
+      "implementation_status": "implemented locally",
+      "publication_status": "not deployed",
+      "reviewer": "user",
+      "decision_date": "2026-10-15",
+      "decision_scope": "company/story proposal for full research only",
+      "decision_instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future.",
+      "decision_reason": "User approved reviewed candidates scoring 8 or higher.",
+      "decision_history": [
+        {
+          "version": 1,
+          "previous_decision": "pending",
+          "decision": "approved",
+          "reviewer": "user",
+          "date": "2026-10-15",
+          "instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future."
+        }
+      ],
+      "full_example_review": {
+        "draft_id": "CGY-006-FULL",
+        "version": 1,
+        "decision": "approved",
+        "packet": "docs/validation/full-examples/2026-10-15/cgy-006-northern-rna.md",
+        "research_completed_on": "2026-10-15",
+        "implementation_status": "implemented locally",
+        "publication_status": "not deployed",
+        "gates_remaining": [],
+        "approval": {
+          "reviewer": "Damian",
+          "date": "2026-10-15",
+          "instruction": "Approve all 15; resolve curriculum and Calgary connection gaps, then implement with illustrations.",
+          "version": 1
+        },
+        "implemented_on": "2026-10-15",
+        "verification_packet": "docs/validation/full-examples/2026-10-15/implementation.md"
+      }
+    },
+    {
+      "id": "CGY-007",
+      "version": 1,
+      "company": "AERIUM Analytics",
+      "canonical_domain": "aeriumanalytics.com",
+      "aliases": [],
+      "sector": "Aviation and environment",
+      "calgary_evidence": "Calgary head office; deployments across regions",
+      "work": "Drone-based wildlife management and environmental/infrastructure services",
+      "proposed_question": "Can a bird-shaped drone help reduce airport wildlife hazards?",
+      "sources": [
+        "https://www.aeriumanalytics.com/",
+        "https://www.aeriumanalytics.com/contact-us/"
+      ],
+      "recommendation": "reserve",
+      "workflow_state": "approved",
+      "decision": "approved",
+      "first_discovered": "2026-10-15",
+      "last_attempted": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "evidence_gate": "pass at proposal level",
+      "concepts": "Animal behaviour; flight; evidence evaluation",
+      "role_leads": "Drone operator, GIS analyst and wildlife specialist (research leads)",
+      "role_status": "Work areas/research leads, not verified open vacancies or project assignments",
+      "gaps": "Verify an actual airport case and outcomes, not marketing claims.",
+      "score_dimensions": [
+        4,
+        3,
+        2
+      ],
+      "score": 9,
+      "curriculum_status": "Source-checked unit or cross-unit inquiry fit; editorial connection, not formal outcome endorsement",
+      "full_example_status": "approved and implemented locally",
+      "implementation_status": "implemented locally",
+      "publication_status": "not deployed",
+      "reviewer": "user",
+      "decision_date": "2026-10-15",
+      "decision_scope": "company/story proposal for full research only",
+      "decision_instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future.",
+      "decision_reason": "User approved reviewed candidates scoring 8 or higher.",
+      "decision_history": [
+        {
+          "version": 1,
+          "previous_decision": "pending",
+          "decision": "approved",
+          "reviewer": "user",
+          "date": "2026-10-15",
+          "instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future."
+        }
+      ],
+      "full_example_review": {
+        "draft_id": "CGY-007-FULL",
+        "version": 1,
+        "decision": "approved",
+        "packet": "docs/validation/full-examples/2026-10-15/cgy-007-aerium-analytics.md",
+        "research_completed_on": "2026-10-15",
+        "implementation_status": "implemented locally",
+        "publication_status": "not deployed",
+        "gates_remaining": [],
+        "approval": {
+          "reviewer": "Damian",
+          "date": "2026-10-15",
+          "instruction": "Approve all 15; resolve curriculum and Calgary connection gaps, then implement with illustrations.",
+          "version": 1
+        },
+        "implemented_on": "2026-10-15",
+        "verification_packet": "docs/validation/full-examples/2026-10-15/implementation.md"
+      }
+    },
+    {
+      "id": "CGY-008",
+      "version": 1,
+      "company": "GeologicAI",
+      "canonical_domain": "geologicai.com",
+      "aliases": [],
+      "sector": "Geoscience and sensing",
+      "calgary_evidence": "Calgary office and core-scanning team",
+      "work": "Multi-sensor analysis of drill core",
+      "proposed_question": "What can a rock scan tell us that our eyes cannot?",
+      "sources": [
+        "https://www.geologicai.com/"
+      ],
+      "recommendation": "reserve",
+      "workflow_state": "approved",
+      "decision": "approved",
+      "first_discovered": "2026-10-15",
+      "last_attempted": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "evidence_gate": "pass at proposal level",
+      "concepts": "Geology; spectra; measurement; data",
+      "role_leads": "Scanner operator and geoscientist (source-supported work areas)",
+      "role_status": "Work areas/research leads, not verified open vacancies or project assignments",
+      "gaps": "Select a specific mineral/sample and distinguish model predictions from ground truth.",
+      "score_dimensions": [
+        4,
+        3,
+        2
+      ],
+      "score": 9,
+      "curriculum_status": "Source-checked unit or cross-unit inquiry fit; editorial connection, not formal outcome endorsement",
+      "full_example_status": "approved and implemented locally",
+      "implementation_status": "implemented locally",
+      "publication_status": "not deployed",
+      "reviewer": "user",
+      "decision_date": "2026-10-15",
+      "decision_scope": "company/story proposal for full research only",
+      "decision_instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future.",
+      "decision_reason": "User approved reviewed candidates scoring 8 or higher.",
+      "decision_history": [
+        {
+          "version": 1,
+          "previous_decision": "pending",
+          "decision": "approved",
+          "reviewer": "user",
+          "date": "2026-10-15",
+          "instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future."
+        }
+      ],
+      "full_example_review": {
+        "draft_id": "CGY-008-FULL",
+        "version": 1,
+        "decision": "approved",
+        "packet": "docs/validation/full-examples/2026-10-15/cgy-008-geologicai.md",
+        "research_completed_on": "2026-10-15",
+        "implementation_status": "implemented locally",
+        "publication_status": "not deployed",
+        "gates_remaining": [],
+        "approval": {
+          "reviewer": "Damian",
+          "date": "2026-10-15",
+          "instruction": "Approve all 15; resolve curriculum and Calgary connection gaps, then implement with illustrations.",
+          "version": 1
+        },
+        "implemented_on": "2026-10-15",
+        "verification_packet": "docs/validation/full-examples/2026-10-15/implementation.md"
+      }
+    },
+    {
+      "id": "CGY-009",
+      "version": 1,
+      "company": "Tangent Design Engineering",
+      "canonical_domain": "tangentservices.com",
+      "aliases": [],
+      "sector": "Engineering and prototyping",
+      "calgary_evidence": "Calgary engineering shop; documented local prototype build",
+      "work": "Design and fabrication of a transportable process-demonstration skid",
+      "proposed_question": "Why does a process that works in a lab need a new design at larger scale?",
+      "sources": [
+        "https://www.tangentservices.com/projects/katal"
+      ],
+      "recommendation": "reserve",
+      "workflow_state": "approved",
+      "decision": "approved",
+      "first_discovered": "2026-10-15",
+      "last_attempted": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "evidence_gate": "pass at proposal level",
+      "concepts": "Scaling; flow; systems design",
+      "role_leads": "Mechanical/electrical design and millwright work (case-study evidence)",
+      "role_status": "Work areas/research leads, not verified open vacancies or project assignments",
+      "gaps": "Case study is undated; do not repeat unverified emissions-performance claims.",
+      "score_dimensions": [
+        3,
+        3,
+        2
+      ],
+      "score": 8,
+      "curriculum_status": "Source-checked unit or cross-unit inquiry fit; editorial connection, not formal outcome endorsement",
+      "full_example_status": "approved and implemented locally",
+      "implementation_status": "implemented locally",
+      "publication_status": "not deployed",
+      "reviewer": "user",
+      "decision_date": "2026-10-15",
+      "decision_scope": "company/story proposal for full research only",
+      "decision_instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future.",
+      "decision_reason": "User approved reviewed candidates scoring 8 or higher.",
+      "decision_history": [
+        {
+          "version": 1,
+          "previous_decision": "pending",
+          "decision": "approved",
+          "reviewer": "user",
+          "date": "2026-10-15",
+          "instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future."
+        }
+      ],
+      "full_example_review": {
+        "draft_id": "CGY-009-FULL",
+        "version": 1,
+        "decision": "approved",
+        "packet": "docs/validation/full-examples/2026-10-15/cgy-009-tangent-design-engineering.md",
+        "research_completed_on": "2026-10-15",
+        "implementation_status": "implemented locally",
+        "publication_status": "not deployed",
+        "gates_remaining": [],
+        "approval": {
+          "reviewer": "Damian",
+          "date": "2026-10-15",
+          "instruction": "Approve all 15; resolve curriculum and Calgary connection gaps, then implement with illustrations.",
+          "version": 1
+        },
+        "implemented_on": "2026-10-15",
+        "verification_packet": "docs/validation/full-examples/2026-10-15/implementation.md"
+      }
+    },
+    {
+      "id": "CGY-010",
+      "version": 1,
+      "company": "Foremost",
+      "canonical_domain": "foremost.ca",
+      "aliases": [],
+      "sector": "Heavy manufacturing",
+      "calgary_evidence": "Calgary location in employer manufacturing/careers sources",
+      "work": "Off-road equipment and industrial manufacturing",
+      "proposed_question": "How can a heavy vehicle travel over soft ground without sinking?",
+      "sources": [
+        "https://www.foremost.ca/careers"
+      ],
+      "recommendation": "reserve",
+      "workflow_state": "approved",
+      "decision": "approved",
+      "first_discovered": "2026-10-15",
+      "last_attempted": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "evidence_gate": "pass at proposal level",
+      "concepts": "Pressure; forces; mechanisms",
+      "role_leads": "Welding, assembly, hydraulics and apprenticeship leads (careers source)",
+      "role_status": "Work areas/research leads, not verified open vacancies or project assignments",
+      "gaps": "Confirm chosen vehicle work at Calgary facility; vacancy status not checked.",
+      "score_dimensions": [
+        4,
+        2,
+        3
+      ],
+      "score": 9,
+      "curriculum_status": "Source-checked unit or cross-unit inquiry fit; editorial connection, not formal outcome endorsement",
+      "full_example_status": "approved and implemented locally",
+      "implementation_status": "implemented locally",
+      "publication_status": "not deployed",
+      "reviewer": "user",
+      "decision_date": "2026-10-15",
+      "decision_scope": "company/story proposal for full research only",
+      "decision_instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future.",
+      "decision_reason": "User approved reviewed candidates scoring 8 or higher.",
+      "decision_history": [
+        {
+          "version": 1,
+          "previous_decision": "pending",
+          "decision": "approved",
+          "reviewer": "user",
+          "date": "2026-10-15",
+          "instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future."
+        }
+      ],
+      "full_example_review": {
+        "draft_id": "CGY-010-FULL",
+        "version": 1,
+        "decision": "approved",
+        "packet": "docs/validation/full-examples/2026-10-15/cgy-010-foremost.md",
+        "research_completed_on": "2026-10-15",
+        "implementation_status": "implemented locally",
+        "publication_status": "not deployed",
+        "gates_remaining": [],
+        "approval": {
+          "reviewer": "Damian",
+          "date": "2026-10-15",
+          "instruction": "Approve all 15; resolve curriculum and Calgary connection gaps, then implement with illustrations.",
+          "version": 1
+        },
+        "implemented_on": "2026-10-15",
+        "verification_packet": "docs/validation/full-examples/2026-10-15/implementation.md"
+      }
+    },
+    {
+      "id": "CGY-011",
+      "version": 1,
+      "company": "Carbonova",
+      "canonical_domain": "carbonova.com",
+      "aliases": [],
+      "sector": "Advanced materials",
+      "calgary_evidence": "Company reports Calgary demonstration-unit development",
+      "work": "Conversion of greenhouse-gas inputs into carbon nanofibres",
+      "proposed_question": "How can carbon-containing gases become useful solid materials?",
+      "sources": [
+        "https://carbonova.com/"
+      ],
+      "recommendation": "reserve",
+      "workflow_state": "approved",
+      "decision": "approved",
+      "first_discovered": "2026-10-15",
+      "last_attempted": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "evidence_gate": "pass at proposal level",
+      "concepts": "Chemical change; carbon; material properties",
+      "role_leads": "Chemical-process and materials research (research leads)",
+      "role_status": "Work areas/research leads, not verified open vacancies or project assignments",
+      "gaps": "2025 announcement is development evidence, not proof plant is operating now.",
+      "score_dimensions": [
+        4,
+        2,
+        2
+      ],
+      "score": 8,
+      "curriculum_status": "Source-checked unit or cross-unit inquiry fit; editorial connection, not formal outcome endorsement",
+      "full_example_status": "approved and implemented locally",
+      "implementation_status": "implemented locally",
+      "publication_status": "not deployed",
+      "reviewer": "user",
+      "decision_date": "2026-10-15",
+      "decision_scope": "company/story proposal for full research only",
+      "decision_instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future.",
+      "decision_reason": "User approved reviewed candidates scoring 8 or higher.",
+      "decision_history": [
+        {
+          "version": 1,
+          "previous_decision": "pending",
+          "decision": "approved",
+          "reviewer": "user",
+          "date": "2026-10-15",
+          "instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future."
+        }
+      ],
+      "full_example_review": {
+        "draft_id": "CGY-011-FULL",
+        "version": 1,
+        "decision": "approved",
+        "packet": "docs/validation/full-examples/2026-10-15/cgy-011-carbonova.md",
+        "research_completed_on": "2026-10-15",
+        "implementation_status": "implemented locally",
+        "publication_status": "not deployed",
+        "gates_remaining": [],
+        "approval": {
+          "reviewer": "Damian",
+          "date": "2026-10-15",
+          "instruction": "Approve all 15; resolve curriculum and Calgary connection gaps, then implement with illustrations.",
+          "version": 1
+        },
+        "implemented_on": "2026-10-15",
+        "verification_packet": "docs/validation/full-examples/2026-10-15/implementation.md"
+      }
+    },
+    {
+      "id": "CGY-012",
+      "version": 1,
+      "company": "Summit Lithium Technologies",
+      "canonical_domain": "summitlithium.tech",
+      "aliases": [
+        "Summit Nanotech"
+      ],
+      "sector": "Mineral processing",
+      "calgary_evidence": "Calgary HQ, engineering, sorbent R&D and pilot manufacturing",
+      "work": "Direct lithium extraction and sorbent development",
+      "proposed_question": "What makes a material selective for lithium in a mixture?",
+      "sources": [
+        "https://summitlithium.tech/contact"
+      ],
+      "recommendation": "reserve",
+      "workflow_state": "approved",
+      "decision": "approved",
+      "first_discovered": "2026-10-15",
+      "last_attempted": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "evidence_gate": "pass at proposal level",
+      "concepts": "Solutions; selectivity; materials",
+      "role_leads": "Mechanical engineering and sorbent R&D (company-listed local functions)",
+      "role_status": "Work areas/research leads, not verified open vacancies or project assignments",
+      "gaps": "Former Summit Nanotech domain redirects here; substantial overlap with E3 story.",
+      "score_dimensions": [
+        4,
+        3,
+        1
+      ],
+      "score": 8,
+      "curriculum_status": "Source-checked unit or cross-unit inquiry fit; editorial connection, not formal outcome endorsement",
+      "full_example_status": "approved and implemented locally",
+      "implementation_status": "implemented locally",
+      "publication_status": "not deployed",
+      "reviewer": "user",
+      "decision_date": "2026-10-15",
+      "decision_scope": "company/story proposal for full research only",
+      "decision_instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future.",
+      "decision_reason": "User approved reviewed candidates scoring 8 or higher.",
+      "decision_history": [
+        {
+          "version": 1,
+          "previous_decision": "pending",
+          "decision": "approved",
+          "reviewer": "user",
+          "date": "2026-10-15",
+          "instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future."
+        }
+      ],
+      "full_example_review": {
+        "draft_id": "CGY-012-FULL",
+        "version": 1,
+        "decision": "approved",
+        "packet": "docs/validation/full-examples/2026-10-15/cgy-012-summit-lithium-technologies.md",
+        "research_completed_on": "2026-10-15",
+        "implementation_status": "implemented locally",
+        "publication_status": "not deployed",
+        "gates_remaining": [],
+        "approval": {
+          "reviewer": "Damian",
+          "date": "2026-10-15",
+          "instruction": "Approve all 15; resolve curriculum and Calgary connection gaps, then implement with illustrations.",
+          "version": 1
+        },
+        "implemented_on": "2026-10-15",
+        "verification_packet": "docs/validation/full-examples/2026-10-15/implementation.md"
+      }
+    },
+    {
+      "id": "CGY-013",
+      "version": 1,
+      "company": "Kathairos Solutions",
+      "canonical_domain": "kathairos.com",
+      "aliases": [],
+      "sector": "Industrial emissions",
+      "calgary_evidence": "Calgary corporate office; field operations elsewhere",
+      "work": "Liquid-nitrogen supply for pneumatic equipment",
+      "proposed_question": "How could changing the gas that powers a controller reduce emissions?",
+      "sources": [
+        "https://www.kathairos.com/solutions/regions"
+      ],
+      "recommendation": "reserve",
+      "workflow_state": "screened",
+      "decision": "deferred",
+      "first_discovered": "2026-10-15",
+      "last_attempted": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "evidence_gate": "pass at proposal level",
+      "concepts": "Gas pressure; phase changes; emissions",
+      "role_leads": "Field service, instrumentation and operations analysis (research leads)",
+      "role_status": "Work areas/research leads, not verified open vacancies or project assignments",
+      "gaps": "Distinguish Calgary corporate work from field work; avoid blanket zero-emissions claims.",
+      "score_dimensions": [
+        3,
+        3,
+        1
+      ],
+      "score": 7,
+      "curriculum_status": "Editorial concept connections; precise Alberta outcomes not verified",
+      "full_example_status": "not started",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "reviewer": "user",
+      "decision_date": "2026-10-15",
+      "decision_scope": "company/story proposal for full research only",
+      "decision_instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future.",
+      "decision_reason": "User requested future reconsideration of candidates scoring 7 or lower or on hold.",
+      "decision_history": [
+        {
+          "version": 1,
+          "previous_decision": "pending",
+          "decision": "deferred",
+          "reviewer": "user",
+          "date": "2026-10-15",
+          "instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future."
+        }
+      ],
+      "revisit_note": "Reassess in a future review when stronger story evidence or clarified Calgary operations is available. Preserve this candidate; do not count it as new discovery."
+    },
+    {
+      "id": "CGY-014",
+      "version": 1,
+      "company": "VEERUM",
+      "canonical_domain": "veerum.com",
+      "aliases": [],
+      "sector": "Digital construction",
+      "calgary_evidence": "Calgary corporate office; local-company evidence from CED",
+      "work": "3D industrial-site visualization and connected asset information",
+      "proposed_question": "How can a digital model reveal a problem before construction?",
+      "sources": [
+        "https://veerum.com/",
+        "https://veerum.com/corporate-contact/",
+        "https://www.calgaryeconomicdevelopment.com/newsroom/veerum-digital-twin-technology/"
+      ],
+      "recommendation": "reserve",
+      "workflow_state": "approved",
+      "decision": "approved",
+      "first_discovered": "2026-10-15",
+      "last_attempted": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "evidence_gate": "pass at proposal level",
+      "concepts": "Geometry; coordinates; measurement uncertainty",
+      "role_leads": "Reality-capture, software and asset-data work (research leads)",
+      "role_status": "Work areas/research leads, not verified open vacancies or project assignments",
+      "gaps": "Verify a concrete case; models are not automatically current ground truth.",
+      "score_dimensions": [
+        4,
+        2,
+        2
+      ],
+      "score": 8,
+      "curriculum_status": "Source-checked unit or cross-unit inquiry fit; editorial connection, not formal outcome endorsement",
+      "full_example_status": "approved and implemented locally",
+      "implementation_status": "implemented locally",
+      "publication_status": "not deployed",
+      "reviewer": "user",
+      "decision_date": "2026-10-15",
+      "decision_scope": "company/story proposal for full research only",
+      "decision_instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future.",
+      "decision_reason": "User approved reviewed candidates scoring 8 or higher.",
+      "decision_history": [
+        {
+          "version": 1,
+          "previous_decision": "pending",
+          "decision": "approved",
+          "reviewer": "user",
+          "date": "2026-10-15",
+          "instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future."
+        }
+      ],
+      "full_example_review": {
+        "draft_id": "CGY-014-FULL",
+        "version": 1,
+        "decision": "approved",
+        "packet": "docs/validation/full-examples/2026-10-15/cgy-014-veerum.md",
+        "research_completed_on": "2026-10-15",
+        "implementation_status": "implemented locally",
+        "publication_status": "not deployed",
+        "gates_remaining": [],
+        "approval": {
+          "reviewer": "Damian",
+          "date": "2026-10-15",
+          "instruction": "Approve all 15; resolve curriculum and Calgary connection gaps, then implement with illustrations.",
+          "version": 1
+        },
+        "implemented_on": "2026-10-15",
+        "verification_packet": "docs/validation/full-examples/2026-10-15/implementation.md"
+      }
+    },
+    {
+      "id": "CGY-015",
+      "version": 1,
+      "company": "Eguana Technologies",
+      "canonical_domain": "eguanatech.com",
+      "aliases": [],
+      "sector": "Energy storage",
+      "calgary_evidence": "Calgary headquarters/contact; energy-storage design business",
+      "work": "Distributed energy storage systems",
+      "proposed_question": "How can many small batteries help balance electricity demand?",
+      "sources": [
+        "https://eguanatech.com/products/energy-storage-systems/",
+        "https://eguanatech.com/contact/contact-us/"
+      ],
+      "recommendation": "reserve",
+      "workflow_state": "approved",
+      "decision": "approved",
+      "first_discovered": "2026-10-15",
+      "last_attempted": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "evidence_gate": "pass at proposal level",
+      "concepts": "Energy; power; electricity; systems",
+      "role_leads": "Power-electronics and controls work (research leads)",
+      "role_status": "Work areas/research leads, not verified open vacancies or project assignments",
+      "gaps": "Confirm current local functions and deployments; do not infer local manufacturing.",
+      "score_dimensions": [
+        4,
+        2,
+        2
+      ],
+      "score": 8,
+      "curriculum_status": "Source-checked unit or cross-unit inquiry fit; editorial connection, not formal outcome endorsement",
+      "full_example_status": "approved and implemented locally",
+      "implementation_status": "implemented locally",
+      "publication_status": "not deployed",
+      "reviewer": "user",
+      "decision_date": "2026-10-15",
+      "decision_scope": "company/story proposal for full research only",
+      "decision_instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future.",
+      "decision_reason": "User approved reviewed candidates scoring 8 or higher.",
+      "decision_history": [
+        {
+          "version": 1,
+          "previous_decision": "pending",
+          "decision": "approved",
+          "reviewer": "user",
+          "date": "2026-10-15",
+          "instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future."
+        }
+      ],
+      "full_example_review": {
+        "draft_id": "CGY-015-FULL",
+        "version": 1,
+        "decision": "approved",
+        "packet": "docs/validation/full-examples/2026-10-15/cgy-015-eguana-technologies.md",
+        "research_completed_on": "2026-10-15",
+        "implementation_status": "implemented locally",
+        "publication_status": "not deployed",
+        "gates_remaining": [],
+        "approval": {
+          "reviewer": "Damian",
+          "date": "2026-10-15",
+          "instruction": "Approve all 15; resolve curriculum and Calgary connection gaps, then implement with illustrations.",
+          "version": 1
+        },
+        "implemented_on": "2026-10-15",
+        "verification_packet": "docs/validation/full-examples/2026-10-15/implementation.md"
+      }
+    },
+    {
+      "id": "CGY-016",
+      "version": 1,
+      "company": "FLYHT / FTG Aerospace Calgary",
+      "canonical_domain": "flyht.com",
+      "aliases": [
+        "FLYHT Aerospace Solutions"
+      ],
+      "sector": "Aviation sensing",
+      "calgary_evidence": "FTG Aerospace Calgary site; FLYHT is an FTG company",
+      "work": "Aircraft communications and atmospheric humidity measurements",
+      "proposed_question": "How can passenger aircraft help us understand the atmosphere?",
+      "sources": [
+        "https://flyht.com/",
+        "https://flyht.com/about/"
+      ],
+      "recommendation": "reserve",
+      "workflow_state": "approved",
+      "decision": "approved",
+      "first_discovered": "2026-10-15",
+      "last_attempted": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "evidence_gate": "pass at proposal level",
+      "concepts": "Weather; humidity; sensing; data",
+      "role_leads": "Avionics, atmospheric measurement and software (research leads)",
+      "role_status": "Work areas/research leads, not verified open vacancies or project assignments",
+      "gaps": "Preserve FTG ownership; verify a concrete sensor deployment and outcomes.",
+      "score_dimensions": [
+        4,
+        3,
+        2
+      ],
+      "score": 9,
+      "curriculum_status": "Source-checked unit or cross-unit inquiry fit; editorial connection, not formal outcome endorsement",
+      "full_example_status": "approved and implemented locally",
+      "implementation_status": "implemented locally",
+      "publication_status": "not deployed",
+      "reviewer": "user",
+      "decision_date": "2026-10-15",
+      "decision_scope": "company/story proposal for full research only",
+      "decision_instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future.",
+      "decision_reason": "User approved reviewed candidates scoring 8 or higher.",
+      "decision_history": [
+        {
+          "version": 1,
+          "previous_decision": "pending",
+          "decision": "approved",
+          "reviewer": "user",
+          "date": "2026-10-15",
+          "instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future."
+        }
+      ],
+      "full_example_review": {
+        "draft_id": "CGY-016-FULL",
+        "version": 1,
+        "decision": "approved",
+        "packet": "docs/validation/full-examples/2026-10-15/cgy-016-ftg-aerospace-calgary.md",
+        "research_completed_on": "2026-10-15",
+        "implementation_status": "implemented locally",
+        "publication_status": "not deployed",
+        "gates_remaining": [],
+        "approval": {
+          "reviewer": "Damian",
+          "date": "2026-10-15",
+          "instruction": "Approve all 15; resolve curriculum and Calgary connection gaps, then implement with illustrations.",
+          "version": 1
+        },
+        "implemented_on": "2026-10-15",
+        "verification_packet": "docs/validation/full-examples/2026-10-15/implementation.md"
+      }
+    },
+    {
+      "id": "CGY-017",
+      "version": 1,
+      "company": "Symend",
+      "canonical_domain": "symend.com",
+      "aliases": [],
+      "sector": "Behavioural science and software",
+      "calgary_evidence": "Company identifies Calgary headquarters",
+      "work": "Behaviour-informed digital customer communications",
+      "proposed_question": "How would you test whether a message helps someone take action?",
+      "sources": [
+        "https://www.symend.com/news/symend-appoints-joe-daee-as-vp-of-sales"
+      ],
+      "recommendation": "reserve",
+      "workflow_state": "screened",
+      "decision": "deferred",
+      "first_discovered": "2026-10-15",
+      "last_attempted": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "evidence_gate": "pass at proposal level",
+      "concepts": "Experimental design; statistics; ethics",
+      "role_leads": "Behavioural/data science and product design (research leads)",
+      "role_status": "Work areas/research leads, not verified open vacancies or project assignments",
+      "gaps": "Subject breadth beyond current science collection; avoid endorsing debt-collection outcomes.",
+      "score_dimensions": [
+        3,
+        2,
+        2
+      ],
+      "score": 7,
+      "curriculum_status": "Editorial concept connections; precise Alberta outcomes not verified",
+      "full_example_status": "not started",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "reviewer": "user",
+      "decision_date": "2026-10-15",
+      "decision_scope": "company/story proposal for full research only",
+      "decision_instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future.",
+      "decision_reason": "User requested future reconsideration of candidates scoring 7 or lower or on hold.",
+      "decision_history": [
+        {
+          "version": 1,
+          "previous_decision": "pending",
+          "decision": "deferred",
+          "reviewer": "user",
+          "date": "2026-10-15",
+          "instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future."
+        }
+      ],
+      "revisit_note": "Reassess in a future review when stronger story evidence or clarified Calgary operations is available. Preserve this candidate; do not count it as new discovery."
+    },
+    {
+      "id": "CGY-018",
+      "version": 1,
+      "company": "Neo Financial",
+      "canonical_domain": "neofinancial.com",
+      "aliases": [],
+      "sector": "Financial technology",
+      "calgary_evidence": "Official careers source identifies Calgary work community; city kiosks documented",
+      "work": "Digital financial products and customer experience",
+      "proposed_question": "How can a financial app make costs easier to understand?",
+      "sources": [
+        "https://www.neofinancial.com/company/careers?lang=en-US",
+        "https://www.neofinancial.com/company/kiosks"
+      ],
+      "recommendation": "reserve",
+      "workflow_state": "screened",
+      "decision": "deferred",
+      "first_discovered": "2026-10-15",
+      "last_attempted": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "evidence_gate": "pass at proposal level",
+      "concepts": "Percentages; data literacy; interface design",
+      "role_leads": "Software, design and risk analysis (research leads)",
+      "role_status": "Work areas/research leads, not verified open vacancies or project assignments",
+      "gaps": "Select a sourced product-design problem; no financial-product recommendation.",
+      "score_dimensions": [
+        3,
+        2,
+        2
+      ],
+      "score": 7,
+      "curriculum_status": "Editorial concept connections; precise Alberta outcomes not verified",
+      "full_example_status": "not started",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "reviewer": "user",
+      "decision_date": "2026-10-15",
+      "decision_scope": "company/story proposal for full research only",
+      "decision_instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future.",
+      "decision_reason": "User requested future reconsideration of candidates scoring 7 or lower or on hold.",
+      "decision_history": [
+        {
+          "version": 1,
+          "previous_decision": "pending",
+          "decision": "deferred",
+          "reviewer": "user",
+          "date": "2026-10-15",
+          "instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future."
+        }
+      ],
+      "revisit_note": "Reassess in a future review when stronger story evidence or clarified Calgary operations is available. Preserve this candidate; do not count it as new discovery."
+    },
+    {
+      "id": "CGY-019",
+      "version": 1,
+      "company": "Oncolytics Biotech",
+      "canonical_domain": "oncolyticsbiotech.com",
+      "aliases": [],
+      "sector": "Biotechnology",
+      "calgary_evidence": "Canadian office in Calgary; headquarters now San Diego",
+      "work": "Cancer-treatment research involving pelareorep",
+      "proposed_question": "How do researchers test whether a treatment changes an immune response?",
+      "sources": [
+        "https://oncolyticsbiotech.com/contact/",
+        "https://oncolyticsbiotech.com/"
+      ],
+      "recommendation": "hold",
+      "workflow_state": "held",
+      "decision": "deferred",
+      "first_discovered": "2026-10-15",
+      "last_attempted": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "evidence_gate": "hold",
+      "concepts": "Immunity; experimental controls; statistics",
+      "role_leads": "Clinical research and biostatistics (research leads)",
+      "role_status": "Work areas/research leads, not verified open vacancies or project assignments",
+      "gaps": "Office confirmed but substantive local research/team function unresolved; clinical claims need specialist sources.",
+      "score_dimensions": null,
+      "score": null,
+      "curriculum_status": "Editorial concept connections; precise Alberta outcomes not verified",
+      "full_example_status": "not started",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "reviewer": "user",
+      "decision_date": "2026-10-15",
+      "decision_scope": "company/story proposal for full research only",
+      "decision_instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future.",
+      "decision_reason": "User requested future reconsideration of candidates scoring 7 or lower or on hold.",
+      "decision_history": [
+        {
+          "version": 1,
+          "previous_decision": "pending",
+          "decision": "deferred",
+          "reviewer": "user",
+          "date": "2026-10-15",
+          "instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future."
+        }
+      ],
+      "revisit_note": "Reassess in a future review when stronger story evidence or clarified Calgary operations is available. Preserve this candidate; do not count it as new discovery."
+    },
+    {
+      "id": "CGY-020",
+      "version": 1,
+      "company": "SensorUp",
+      "canonical_domain": "sensorup.com",
+      "aliases": [],
+      "sector": "Environmental data",
+      "calgary_evidence": "Historical Calgary evidence; current contact page lacks worksite detail",
+      "work": "Reconciliation of multiple methane measurement sources",
+      "proposed_question": "What should we do when several sensors disagree?",
+      "sources": [
+        "https://www.sensorup.com/solutions/methane/",
+        "https://www.sensorup.com/contact/",
+        "https://ptac.org/wp-content/uploads/2024/06/Updated-Canadian-Methane-Emission-Reduction-FINAL-2023.pdf"
+      ],
+      "recommendation": "hold",
+      "workflow_state": "held",
+      "decision": "deferred",
+      "first_discovered": "2026-10-15",
+      "last_attempted": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "evidence_gate": "hold",
+      "concepts": "Uncertainty; sampling; data integration",
+      "role_leads": "Data engineering and emissions analysis (research leads)",
+      "role_status": "Work areas/research leads, not verified open vacancies or project assignments",
+      "gaps": "Current substantive Calgary operations not established; overlap with GHGSat.",
+      "score_dimensions": null,
+      "score": null,
+      "curriculum_status": "Editorial concept connections; precise Alberta outcomes not verified",
+      "full_example_status": "not started",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "reviewer": "user",
+      "decision_date": "2026-10-15",
+      "decision_scope": "company/story proposal for full research only",
+      "decision_instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future.",
+      "decision_reason": "User requested future reconsideration of candidates scoring 7 or lower or on hold.",
+      "decision_history": [
+        {
+          "version": 1,
+          "previous_decision": "pending",
+          "decision": "deferred",
+          "reviewer": "user",
+          "date": "2026-10-15",
+          "instruction": "I think we should approve anything that's 8 or higher. And for anything that's a 7 or lower, or a 7 or hold, we'll make a note to come back to it again in the future."
+        }
+      ],
+      "revisit_note": "Reassess in a future review when stronger story evidence or clarified Calgary operations is available. Preserve this candidate; do not count it as new discovery."
+    },
+    {
+      "company": "Attabotics",
+      "canonical_domain": "attabotics.com",
+      "workflow_state": "previously_researched",
+      "decision": "pending",
+      "first_discovered": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "sources": [
+        "https://attabotics.com/",
+        "https://attabotics.com/about/"
+      ],
+      "prior_packet": "docs/validation/source-comparison/2026-10-15-calgary-20/paid-findings.md",
+      "counts_as_new_today": false
+    },
+    {
+      "company": "Eavor",
+      "canonical_domain": "eavor.com",
+      "workflow_state": "previously_researched",
+      "decision": "pending",
+      "first_discovered": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "sources": [
+        "https://eavor.com/",
+        "https://eavor.com/contact-new/"
+      ],
+      "prior_packet": "docs/validation/source-comparison/2026-10-15-calgary-20/paid-findings.md",
+      "counts_as_new_today": false
+    },
+    {
+      "company": "Carbon Upcycling",
+      "canonical_domain": "carbonupcycling.com",
+      "workflow_state": "previously_researched",
+      "decision": "pending",
+      "first_discovered": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "sources": [
+        "https://carbonupcycling.com/",
+        "https://carbonupcycling.com/company/"
+      ],
+      "prior_packet": "docs/validation/source-comparison/2026-10-15-calgary-20/paid-findings.md",
+      "counts_as_new_today": false
+    },
+    {
+      "company": "Ayrton Energy",
+      "canonical_domain": "ayrtonenergy.com",
+      "workflow_state": "previously_researched",
+      "decision": "pending",
+      "first_discovered": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "sources": [
+        "https://ayrtonenergy.com/",
+        "https://ayrtonenergy.com/contact"
+      ],
+      "prior_packet": "docs/validation/source-comparison/2026-10-15-calgary-20/paid-findings.md",
+      "counts_as_new_today": false
+    },
+    {
+      "company": "Kent Imaging",
+      "canonical_domain": "kentimaging.com",
+      "workflow_state": "previously_researched",
+      "decision": "pending",
+      "first_discovered": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "sources": [
+        "https://www.kentimaging.com/",
+        "https://www.kentimaging.com/overview"
+      ],
+      "prior_packet": "docs/validation/source-comparison/2026-10-15-calgary-20/paid-findings.md",
+      "counts_as_new_today": false
+    },
+    {
+      "company": "Circle CVI",
+      "canonical_domain": "circlecvi.com",
+      "workflow_state": "previously_researched",
+      "decision": "pending",
+      "first_discovered": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "sources": [
+        "https://www.circlecvi.com/",
+        "https://www.circlecvi.com/resources"
+      ],
+      "prior_packet": "docs/validation/source-comparison/2026-10-15-calgary-20/paid-findings.md",
+      "counts_as_new_today": false
+    },
+    {
+      "company": "NovAtel",
+      "canonical_domain": "novatel.com",
+      "workflow_state": "previously_researched",
+      "decision": "pending",
+      "first_discovered": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "sources": [
+        "https://novatel.com/",
+        "https://novatel.com/contact-us"
+      ],
+      "prior_packet": "docs/validation/source-comparison/2026-10-15-calgary-20/paid-findings.md",
+      "counts_as_new_today": false
+    },
+    {
+      "company": "CoolIT Systems",
+      "canonical_domain": "coolitsystems.com",
+      "workflow_state": "previously_researched",
+      "decision": "pending",
+      "first_discovered": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "sources": [
+        "https://www.coolitsystems.com/",
+        "https://www.coolitsystems.com/contact/contact/"
+      ],
+      "prior_packet": "docs/validation/source-comparison/2026-10-15-calgary-20/paid-findings.md",
+      "counts_as_new_today": false
+    },
+    {
+      "company": "DIRTT",
+      "canonical_domain": "dirtt.com",
+      "workflow_state": "previously_researched",
+      "decision": "pending",
+      "first_discovered": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "sources": [
+        "https://www.dirtt.com/",
+        "https://www.dirtt.com/contact-us/"
+      ],
+      "prior_packet": "docs/validation/source-comparison/2026-10-15-calgary-20/paid-findings.md",
+      "counts_as_new_today": false
+    },
+    {
+      "company": "Helcim",
+      "canonical_domain": "helcim.com",
+      "workflow_state": "previously_researched",
+      "decision": "pending",
+      "first_discovered": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "sources": [
+        "https://www.helcim.com/",
+        "https://www.helcim.com/about-us/"
+      ],
+      "prior_packet": "docs/validation/source-comparison/2026-10-15-calgary-20/paid-findings.md",
+      "counts_as_new_today": false
+    },
+    {
+      "company": "GoodLeaf Farms",
+      "canonical_domain": "goodleaffarms.com",
+      "workflow_state": "previously_researched",
+      "decision": "pending",
+      "first_discovered": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "sources": [
+        "https://www.goodleaffarms.com/",
+        "https://www.goodleaffarms.com/careers"
+      ],
+      "prior_packet": "docs/validation/source-comparison/2026-10-15-calgary-20/paid-findings.md",
+      "counts_as_new_today": false
+    },
+    {
+      "company": "SMART Technologies",
+      "canonical_domain": "smarttech.com",
+      "workflow_state": "previously_researched",
+      "decision": "pending",
+      "first_discovered": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "sources": [
+        "https://www.smarttech.com/",
+        "https://www.smarttech.com/contact"
+      ],
+      "prior_packet": "docs/validation/source-comparison/2026-10-15-calgary-20/paid-findings.md",
+      "counts_as_new_today": false
+    },
+    {
+      "company": "PureWeb",
+      "canonical_domain": "pureweb.com",
+      "workflow_state": "previously_researched",
+      "decision": "pending",
+      "first_discovered": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "sources": [
+        "https://www.pureweb.com/",
+        "https://www.pureweb.com/get-in-touch/"
+      ],
+      "prior_packet": "docs/validation/source-comparison/2026-10-15-calgary-20/paid-findings.md",
+      "counts_as_new_today": false
+    },
+    {
+      "company": "Benevity",
+      "canonical_domain": "benevity.com",
+      "workflow_state": "previously_researched",
+      "decision": "pending",
+      "first_discovered": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "sources": [
+        "https://benevity.com/",
+        "https://benevity.com/legal/privacy-notice"
+      ],
+      "prior_packet": "docs/validation/source-comparison/2026-10-15-calgary-20/paid-findings.md",
+      "counts_as_new_today": false
+    },
+    {
+      "company": "ZayZoon",
+      "canonical_domain": "zayzoon.com",
+      "workflow_state": "previously_researched",
+      "decision": "pending",
+      "first_discovered": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "sources": [
+        "https://ca.zayzoon.com/",
+        "https://ca.zayzoon.com/"
+      ],
+      "prior_packet": "docs/validation/source-comparison/2026-10-15-calgary-20/paid-findings.md",
+      "counts_as_new_today": false
+    },
+    {
+      "company": "Big Rock Brewery",
+      "canonical_domain": "bigrockbeer.com",
+      "workflow_state": "previously_researched",
+      "decision": "pending",
+      "first_discovered": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "sources": [
+        "https://bigrockbeer.com/",
+        "https://bigrockbeer.com/investors/investors-corporate/"
+      ],
+      "prior_packet": "docs/validation/source-comparison/2026-10-15-calgary-20/paid-findings.md",
+      "counts_as_new_today": false
+    },
+    {
+      "company": "Blackline Safety",
+      "canonical_domain": "blacklinesafety.com",
+      "workflow_state": "previously_researched",
+      "decision": "pending",
+      "first_discovered": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "sources": [
+        "https://www.blacklinesafety.com/",
+        "https://www.blacklinesafety.com/about"
+      ],
+      "prior_packet": "docs/validation/source-comparison/2026-10-15-calgary-20/paid-findings.md",
+      "counts_as_new_today": false
+    },
+    {
+      "company": "Engineered Air",
+      "canonical_domain": "engineeredair.com",
+      "workflow_state": "previously_researched",
+      "decision": "pending",
+      "first_discovered": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "sources": [
+        "https://www.engineeredair.com/",
+        "https://www.engineeredair.com/canada/"
+      ],
+      "prior_packet": "docs/validation/source-comparison/2026-10-15-calgary-20/paid-findings.md",
+      "counts_as_new_today": false
+    },
+    {
+      "company": "Pason",
+      "canonical_domain": "pason.com",
+      "workflow_state": "previously_researched",
+      "decision": "pending",
+      "first_discovered": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "sources": [
+        "https://pason.com/",
+        "https://pason.com/careers/careers-at-pason"
+      ],
+      "prior_packet": "docs/validation/source-comparison/2026-10-15-calgary-20/paid-findings.md",
+      "counts_as_new_today": false
+    },
+    {
+      "company": "Evans",
+      "canonical_domain": "evansonline.com",
+      "workflow_state": "previously_researched",
+      "decision": "pending",
+      "first_discovered": "2026-10-15",
+      "last_researched": "2026-10-15",
+      "sources": [
+        "https://www.evansonline.com/",
+        "https://www.evansonline.com/experience-centers"
+      ],
+      "prior_packet": "docs/validation/source-comparison/2026-10-15-calgary-20/paid-findings.md",
+      "counts_as_new_today": false
+    }
+  ],
+  "updated_on": "2026-10-15"
+}

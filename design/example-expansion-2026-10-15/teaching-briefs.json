@@ -1,0 +1,182 @@
+[
+  {
+    "slug": "botaneco",
+    "heading": "From seed to useful fractions",
+    "brief": "1 oilseed seeds and ground mixture; arrow to 2 a simple water-filled separation vessel; two branching arrows from 2 to 3 two distinct collection jars, one creamy protein fraction and one pale oil fraction; arrow from 3 to 4 test samples and a comparison chart",
+    "steps": [
+      "Begin with an oilseed mixture.",
+      "Use a water-based separation process.",
+      "Recover different fractions, including proteins and oleosomes.",
+      "Test the properties needed for a useful ingredient."
+    ],
+    "note": "The branches are conceptual fractions, not a complete mass balance or a proprietary equipment design."
+  },
+  {
+    "slug": "nanalysis",
+    "heading": "From sample to a spectrum",
+    "brief": "1 small sample tube within a simple magnet housing; arrow to 2 the same sample receiving a short radio-frequency pulse represented by a short wavy line; arrow to 3 a decaying oscillating signal chart; arrow to 4 a spectrum with several peaks",
+    "steps": [
+      "Place the sample in a magnetic field.",
+      "Apply a radio-frequency pulse.",
+      "Record the response as a signal over time.",
+      "Transform the signal into a spectrum to interpret."
+    ],
+    "note": "The signal and peaks are illustrative, not measured data. NMR is an extension beyond the required course treatment."
+  },
+  {
+    "slug": "exergy-solutions",
+    "heading": "Two routes to a tested part",
+    "brief": "1 blueprint of a bracket; arrow branches to 2 two parallel routes: layers building a bracket and a cutting tool removing chips from a block; arrows converge at 3 finished bracket and calipers; arrow to 4 bracket supporting a test load",
+    "steps": [
+      "Define the part and its requirements.",
+      "Compare adding material with removing material.",
+      "Measure the finished dimensions.",
+      "Check whether the part meets its intended load and use."
+    ],
+    "note": "Printing and machining can also be combined. The bracket is a fictional teaching example, not an Exergy client part."
+  },
+  {
+    "slug": "livestock-water-recycling",
+    "heading": "Follow the material into different streams",
+    "brief": "1 tank of dark slurry; arrow to 2 generic separation block with mesh and simple liquid vessel; three arrows branch to 3 separate jars containing recovered water, nutrient-rich liquid, and solids; arrow to 4 sample-testing rack",
+    "steps": [
+      "Start with manure containing water and other material.",
+      "Apply physical and chemical separation steps.",
+      "Collect different water, nutrient and solid streams.",
+      "Test the outputs against their intended uses."
+    ],
+    "note": "Clear appearance does not prove drinking-water quality. Actual performance requires measurements."
+  },
+  {
+    "slug": "avmax",
+    "heading": "From inspection to an evidence-based decision",
+    "brief": "1 aircraft component on workbench; arrow to 2 inspection magnifier and measuring tool; arrow to 3 comparison of a measurement with limits on a document; arrow to 4 maintenance record and two diverging paths, one to component reuse and one to repair",
+    "steps": [
+      "Identify the component and the applicable procedure.",
+      "Inspect and measure its condition.",
+      "Compare the evidence with approved limits.",
+      "Record the authorized maintenance decision."
+    ],
+    "note": "This is a conceptual decision sequence, not an inspection procedure or permission to return a part to service."
+  },
+  {
+    "slug": "northern-rna",
+    "heading": "A batch needs a traceable history",
+    "brief": "1 numbered-looking but textless sample vials; arrow to 2 small closed bioprocess vessel; arrow to 3 purification column and collection vial; arrow to 4 analytical chart beside batch records",
+    "steps": [
+      "Define the material and starting conditions.",
+      "Produce a batch under recorded conditions.",
+      "Separate and purify the material.",
+      "Check identity, quality and consistency against the requirements."
+    ],
+    "note": "This generic sequence does not assert that every Northern RNA service occurs at one Calgary facility."
+  },
+  {
+    "slug": "aerium-analytics",
+    "heading": "Observe, intervene, then measure again",
+    "brief": "1 small flock of birds near a distant runway with binoculars; arrow to 2 robotic falcon-shaped aircraft in flight away from runway; arrow to 3 observer with binoculars and a tally sheet; arrow to 4 two small comparison charts; return arrow from 4 back to 1",
+    "steps": [
+      "Record bird activity before intervention.",
+      "Use the bird-shaped drone as one part of site management.",
+      "Continue observations after the intervention.",
+      "Compare results and consider other explanations."
+    ],
+    "note": "The arrows show an evaluation plan, not a guaranteed effect. The cited airport deployment is outside Calgary."
+  },
+  {
+    "slug": "geologicai",
+    "heading": "A scan is evidence to interpret",
+    "brief": "1 tray of cylindrical rock core; arrow to 2 enclosed scanner box above core; arrow to 3 aligned photograph, multicolour measurement strip and line trace; arrow to 4 geologist comparing the strips with a core sample",
+    "steps": [
+      "Keep track of the rock sample and its position.",
+      "Collect measurements with scanning instruments.",
+      "Align different measurements of the same core.",
+      "Compare patterns with geological observations and further tests."
+    ],
+    "note": "No particular mineral, grade or resource estimate is established by this illustration."
+  },
+  {
+    "slug": "tangent-design-engineering",
+    "heading": "Scale changes the engineering problem",
+    "brief": "1 small laboratory vessel; arrow to 2 simple flow drawing with tanks and arrows; arrow to 3 larger transportable demonstration skid with pipes and controls; arrow to 4 test records; return arrow from 4 to 2",
+    "steps": [
+      "Start with a process demonstrated at laboratory scale.",
+      "Plan flow, equipment and control needs.",
+      "Build a larger demonstration system.",
+      "Use testing to revise the design."
+    ],
+    "note": "The generic skid illustrates the documented Katal scale-up case; it is not a drawing of the actual machine."
+  },
+  {
+    "slug": "foremost",
+    "heading": "The same load over a different area",
+    "brief": "1 heavy load block with a downward weight arrow; arrow to 2 two identical loaded vehicle silhouettes, one with narrow wheels and one with wide tracks; arrow to 3 ground-contact footprints with small versus large shaded areas; arrow to 4 two patches of soft ground with deeper and shallower impressions",
+    "steps": [
+      "A loaded vehicle pushes down on the ground.",
+      "Wheels and tracks create different contact areas.",
+      "The same force spread over more area gives lower average pressure.",
+      "Ground strength, traction and loading still affect whether it sinks."
+    ],
+    "note": "A simplified equal-load comparison. This is not a prediction for a specific vehicle or soil."
+  },
+  {
+    "slug": "carbonova",
+    "heading": "Track carbon through a process",
+    "brief": "1 two secured gas cylinders connected by pipes; arrow to 2 simple enclosed reactor with a small heat icon; arrow to 3 a sealed vial of dark solid carbon material; arrow to 4 material test coupons and a measurement chart",
+    "steps": [
+      "Supply carbon-containing gases to the process.",
+      "Use controlled reaction conditions.",
+      "Recover solid carbon material.",
+      "Measure its properties and the process inputs and outputs."
+    ],
+    "note": "This is not a balanced reaction diagram. Energy use and other streams matter when evaluating environmental claims."
+  },
+  {
+    "slug": "summit-lithium-technologies",
+    "heading": "Capture, release and repeat",
+    "brief": "1 mixed-liquid jar with different colour dots; arrow to 2 column containing a porous solid with selected orange dots attached; arrow to 3 collected liquid with orange dots released from solid; arrow to 4 comparison chart of repeated cycles; clear return arrow from 3 back to 2 showing reuse",
+    "steps": [
+      "Begin with a mixture containing lithium and other substances.",
+      "A selective material captures some lithium.",
+      "Release lithium into another stream and prepare the material for reuse.",
+      "Compare recovery and performance over repeated cycles."
+    ],
+    "note": "Dots are conceptual, not literal ions or a disclosed sorbent structure. Commercial field activity is not assumed to occur in Calgary."
+  },
+  {
+    "slug": "veerum",
+    "heading": "Check a model against the site",
+    "brief": "1 generic industrial tank and survey tripod; arrow to 2 dotted point-cloud tank; arrow to 3 aligned wireframe and point-cloud tank with one visible gap; arrow to 4 tablet comparing model against real tank; return arrow from 4 to 1",
+    "steps": [
+      "Collect spatial observations of a site.",
+      "Organize measurements into a digital representation.",
+      "Check alignment, missing areas and observation dates.",
+      "Compare with current conditions before using the model for a decision."
+    ],
+    "note": "Detail is not the same as accuracy. The scene is generic, not a VEERUM customer installation."
+  },
+  {
+    "slug": "eguana-technologies",
+    "heading": "Move energy across time",
+    "brief": "1 sun and solar panel; arrow to 2 closed battery cabinet; arrow to 3 moon beside house with light on; arrow to 4 two small load symbols, a single lamp and several appliances with different timer icons",
+    "steps": [
+      "Electricity is available at one time.",
+      "Store some energy for later use.",
+      "Discharge it when electricity is needed.",
+      "A larger load uses the stored energy faster."
+    ],
+    "note": "The arrows show energy transfer, not creation. Losses, capacity and operating limits affect real runtime."
+  },
+  {
+    "slug": "ftg-aerospace-calgary",
+    "heading": "From aircraft observations to weather information",
+    "brief": "1 passenger aircraft along a curved flight path through atmosphere; arrow to 2 small abstract sensor box and several plotted readings; arrow to 3 radio transmission to ground antenna; arrow to 4 weather map and vertical profile on screen",
+    "steps": [
+      "Aircraft travel through different atmospheric conditions.",
+      "Sensors collect observations along the route.",
+      "Communication systems deliver data to the ground.",
+      "Meteorologists combine observations with other evidence and models."
+    ],
+    "note": "Sensor capability depends on the installed system. Flight paths leave gaps; the map is illustrative, not a forecast."
+  }
+]

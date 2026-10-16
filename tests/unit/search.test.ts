@@ -13,16 +13,17 @@ describe("resolveSearch", () => {
     expect(r.status).toBe("match");
     if (r.status === "match") {
       expect(r.label).toBe("Electromagnetic radiation");
-      expect(r.search.id).toBe("phys30");
+      expect(r.search.results).toEqual(expect.arrayContaining([expect.objectContaining({ exampleSlug: "geologicai" })]));
     }
   });
 
-  it("keeps each Chemistry 20 unit's own label even though both share a prepared search", () => {
+  it("keeps separate Chemistry 20 unit labels and additions", () => {
     const c = resolveSearch({ courseId: "chemistry-20", unitId: "c20c" });
     const d = resolveSearch({ courseId: "chemistry-20", unitId: "c20d" });
     expect(c.status === "match" && c.label).toBe("Matter as solutions, acids and bases");
     expect(d.status === "match" && d.label).toBe("Quantitative relationships in chemical changes");
-    expect(c.status === "match" && d.status === "match" && c.search.id === d.search.id).toBe(true);
+    expect(c.status === "match" && d.status === "match" && c.search.id !== d.search.id).toBe(true);
+    if (c.status === "match") expect(c.search.results).not.toEqual(expect.arrayContaining([expect.objectContaining({ exampleSlug: "carbonova" })]));
   });
 
   it("matches a typed topic by keyword and keeps the typed text as the label", () => {

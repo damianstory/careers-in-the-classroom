@@ -20,7 +20,7 @@ function Screen({ e }: { e: Example }) {
         <span className={styles.screenLabel}>{text?.label ?? e.discipline}</span>
         <RulerTicks />
       </p>
-      {kind ? (
+      {kind && kind !== "research" ? (
         <div className={styles.plot}>
           <ExampleCardDiagram kind={kind} />
         </div>

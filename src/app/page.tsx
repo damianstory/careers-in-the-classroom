@@ -145,7 +145,7 @@ export default async function Home({ searchParams }: PageProps<"/">) {
             <p className={styles.footnote}>
               <span className={styles.square} aria-hidden="true" />
               <span>
-                The library holds three researched Calgary examples and two recent developments, checked 24 September 2026.
+                The library holds {examples.length} researched Calgary-connected examples. Each example records its sources, local connection and research date.
                 Units without a prepared example say so honestly. Unit names follow Alberta Education programs of studies.
               </span>
             </p>

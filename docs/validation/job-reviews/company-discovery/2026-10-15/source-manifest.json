@@ -1,0 +1,301 @@
+[
+  {
+    "id": "CGY-001",
+    "url": "https://botaneco.com/about/",
+    "error": "HTTP Error 403: Forbidden",
+    "snapshot": null,
+    "note": "Free web search/open evidence available; no successful local capture"
+  },
+  {
+    "id": "CGY-002",
+    "url": "https://www.nanalysis.com/",
+    "final_url": "https://www.nanalysis.com/",
+    "status": 200,
+    "checked_on": "2026-10-15",
+    "snapshot": "evidence/CGY-002-a731f129.txt",
+    "sha256": "f47204e5d5a34032fc71ac3e36651fdcd6b0aee9d8619bdad7d3be7aab5d79c3",
+    "characters": 10410
+  },
+  {
+    "id": "CGY-003",
+    "url": "https://exergysolutions.com/services/manufacturing/",
+    "final_url": "https://exergysolutions.com/services/manufacturing/",
+    "status": 200,
+    "checked_on": "2026-10-15",
+    "snapshot": "evidence/CGY-003-c53b4821.txt",
+    "sha256": "37914a38154e9f96a660583cb4c0a1fd4ab5ef90052a43b2eeb04261612449af",
+    "characters": 3340
+  },
+  {
+    "id": "CGY-004",
+    "url": "https://www.livestockwaterrecycling.com/",
+    "final_url": "https://www.livestockwaterrecycling.com/",
+    "status": 200,
+    "checked_on": "2026-10-15",
+    "snapshot": "evidence/CGY-004-2c0b3cf3.txt",
+    "sha256": "656605f56dcadf12aaaf19bfb09cdb35566716cc39b6fccb64387b956b379996",
+    "characters": 3275
+  },
+  {
+    "id": "CGY-004",
+    "url": "https://www.livestockwaterrecycling.com/contact/contact-us/",
+    "final_url": "https://www.livestockwaterrecycling.com/contact/contact-us/",
+    "status": 200,
+    "checked_on": "2026-10-15",
+    "snapshot": "evidence/CGY-004-d19f7338.txt",
+    "sha256": "80efb2115b7024178d448e8621453ff42ba15219964f8f64d64382d5521987f4",
+    "characters": 2229
+  },
+  {
+    "id": "CGY-005",
+    "url": "https://www.avmax.com/companyoverview",
+    "final_url": "https://www.avmax.com/companyoverview",
+    "status": 200,
+    "checked_on": "2026-10-15",
+    "snapshot": "evidence/CGY-005-ec959353.txt",
+    "sha256": "d3d53ccbc4727f2b887b99d19dc6f9626cec929677795e5ff909f792a182fdaa",
+    "characters": 1688
+  },
+  {
+    "id": "CGY-005",
+    "url": "https://www.avmax.com/_files/ugd/82b8f8_daa3d66eeca64c949b6935077d0736d4.pdf",
+    "method": "web search reader",
+    "snapshot": null,
+    "note": "PDF discovery evidence; no local PDF capture attempted"
+  },
+  {
+    "id": "CGY-006",
+    "url": "https://northernrna.com/about-our-company/",
+    "error": "HTTP Error 406: Not Acceptable",
+    "snapshot": null,
+    "note": "Free web search/open evidence available; no successful local capture"
+  },
+  {
+    "id": "CGY-006",
+    "url": "https://northernrna.com/",
+    "error": "HTTP Error 406: Not Acceptable",
+    "snapshot": null,
+    "note": "Free web search/open evidence available; no successful local capture"
+  },
+  {
+    "id": "CGY-007",
+    "url": "https://www.aeriumanalytics.com/",
+    "final_url": "https://www.aeriumanalytics.com/",
+    "status": 200,
+    "checked_on": "2026-10-15",
+    "snapshot": "evidence/CGY-007-e1f70c90.txt",
+    "sha256": "19f622b42086c84d5d77e4db45a068899c80eacf932a62845cc15bcaabe5b1a7",
+    "characters": 7121
+  },
+  {
+    "id": "CGY-007",
+    "url": "https://www.aeriumanalytics.com/contact-us/",
+    "final_url": "https://www.aeriumanalytics.com/contact-us/",
+    "status": 200,
+    "checked_on": "2026-10-15",
+    "snapshot": "evidence/CGY-007-5af70dac.txt",
+    "sha256": "334698494e214f8e3bc729584aa893adcd25eaa479d02877c1927b87180c6540",
+    "characters": 1455
+  },
+  {
+    "id": "CGY-008",
+    "url": "https://www.geologicai.com/",
+    "final_url": "https://www.geologicai.com/",
+    "status": 200,
+    "checked_on": "2026-10-15",
+    "snapshot": "evidence/CGY-008-96047ee1.txt",
+    "sha256": "0d158bc1c1734cacdee5890e36b52cf0ba6ddd6042a685968d3d2efc0df539ea",
+    "characters": 5212
+  },
+  {
+    "id": "CGY-009",
+    "url": "https://www.tangentservices.com/projects/katal",
+    "final_url": "https://www.tangentservices.com/projects/katal",
+    "status": 200,
+    "checked_on": "2026-10-15",
+    "snapshot": "evidence/CGY-009-9aad11af.txt",
+    "sha256": "1b5cc3571d1120599e3863c034b493d67b7a7b9fadc70c576b3d39cd02043ae2",
+    "characters": 4199
+  },
+  {
+    "id": "CGY-010",
+    "url": "https://www.foremost.ca/careers",
+    "final_url": "https://www.foremost.ca/careers",
+    "status": 200,
+    "checked_on": "2026-10-15",
+    "snapshot": "evidence/CGY-010-c7f344e5.txt",
+    "sha256": "d8cbf7e4fd0d9854fa93e43ad32a5ccc5c07c53f99524a0e72f3888f2c8bf6a7",
+    "characters": 18
+  },
+  {
+    "id": "CGY-011",
+    "url": "https://carbonova.com/",
+    "final_url": "https://carbonova.com/",
+    "status": 200,
+    "checked_on": "2026-10-15",
+    "snapshot": "evidence/CGY-011-4d80f361.txt",
+    "sha256": "0a0aab593f12cc9f61203e46ffe43308ab70cb031c6f8fadef3ecf3d6ab1216a",
+    "characters": 10759
+  },
+  {
+    "id": "CGY-012",
+    "url": "https://summitlithium.tech/contact",
+    "final_url": "https://summitlithium.tech/contact",
+    "status": 200,
+    "checked_on": "2026-10-15",
+    "snapshot": "evidence/CGY-012-faf587a4.txt",
+    "sha256": "302c10eacaa43536d0b86299bc0d6ba9bb815ee79d91a877d5948f8152650823",
+    "characters": 1669
+  },
+  {
+    "id": "CGY-013",
+    "url": "https://www.kathairos.com/solutions/regions",
+    "final_url": "https://www.kathairos.com/solutions/regions",
+    "status": 200,
+    "checked_on": "2026-10-15",
+    "snapshot": "evidence/CGY-013-7360d01a.txt",
+    "sha256": "66a0a5aacb507dc82e02a5e9574f480459dfa81460e7d397dbcc6254177da19c",
+    "characters": 8986
+  },
+  {
+    "id": "CGY-014",
+    "url": "https://veerum.com/",
+    "final_url": "https://veerum.com/",
+    "status": 200,
+    "checked_on": "2026-10-15",
+    "snapshot": "evidence/CGY-014-7df18569.txt",
+    "sha256": "894ac6a15e108f657fc6ed154f6d5eac6f05ec5c6afb19f46e2a787edceb1659",
+    "characters": 5827
+  },
+  {
+    "id": "CGY-014",
+    "url": "https://veerum.com/corporate-contact/",
+    "final_url": "https://veerum.com/corporate-contact/",
+    "status": 200,
+    "checked_on": "2026-10-15",
+    "snapshot": "evidence/CGY-014-c8af4153.txt",
+    "sha256": "146240ca35c16a063e62cd1354bf3770c5480d2a99f9d9539f848b32885aabea",
+    "characters": 4291
+  },
+  {
+    "id": "CGY-014",
+    "url": "https://www.calgaryeconomicdevelopment.com/newsroom/veerum-digital-twin-technology/",
+    "final_url": "https://www.calgaryeconomicdevelopment.com/news/veerum-digital-twin-technology/",
+    "status": 200,
+    "checked_on": "2026-10-15",
+    "snapshot": "evidence/CGY-014-614504ff.txt",
+    "sha256": "61120e51367126938f141b03259654facf720569465adfd35330aab2986c97c0",
+    "characters": 4971
+  },
+  {
+    "id": "CGY-015",
+    "url": "https://eguanatech.com/products/energy-storage-systems/",
+    "final_url": "https://eguanatech.com/products/energy-storage-systems/",
+    "status": 200,
+    "checked_on": "2026-10-15",
+    "snapshot": "evidence/CGY-015-6b170914.txt",
+    "sha256": "73a89fd61a759260d1d606f0dc14b3f55590277ecb09a4a4cd14886fafcaa952",
+    "characters": 1919
+  },
+  {
+    "id": "CGY-015",
+    "url": "https://eguanatech.com/contact/contact-us/",
+    "final_url": "https://eguanatech.com/contact/contact-us/",
+    "status": 200,
+    "checked_on": "2026-10-15",
+    "snapshot": "evidence/CGY-015-2e0fa4c5.txt",
+    "sha256": "04037e3cc88aa07db996bfebc6e0f6e45d8eba7e9321d31fcdf41e20b6dfc4e9",
+    "characters": 1828
+  },
+  {
+    "id": "CGY-016",
+    "url": "https://flyht.com/",
+    "final_url": "https://flyht.com/",
+    "status": 200,
+    "checked_on": "2026-10-15",
+    "snapshot": "evidence/CGY-016-38a7a619.txt",
+    "sha256": "13986622e699b8eec882220475682336d53bcf02327dbdb8d2f6984964059434",
+    "characters": 8923
+  },
+  {
+    "id": "CGY-016",
+    "url": "https://flyht.com/about/",
+    "final_url": "https://flyht.com/about/",
+    "status": 200,
+    "checked_on": "2026-10-15",
+    "snapshot": "evidence/CGY-016-73fe6ea1.txt",
+    "sha256": "f0330ff4685a963d9dc37d7756c7ddd8acba78628c12a98d21583ffc91b1a148",
+    "characters": 7332
+  },
+  {
+    "id": "CGY-017",
+    "url": "https://www.symend.com/news/symend-appoints-joe-daee-as-vp-of-sales",
+    "final_url": "https://www.symend.com/news/symend-appoints-joe-daee-as-vp-of-sales",
+    "status": 200,
+    "checked_on": "2026-10-15",
+    "snapshot": "evidence/CGY-017-783210e4.txt",
+    "sha256": "ca3ad5391932965ad83333c9b30bd598e0cacaced5e4ef74405cbd5141a54ab6",
+    "characters": 2908
+  },
+  {
+    "id": "CGY-018",
+    "url": "https://www.neofinancial.com/company/careers?lang=en-US",
+    "final_url": "https://www.neofinancial.com/company/careers?lang=en-US",
+    "status": 200,
+    "checked_on": "2026-10-15",
+    "snapshot": "evidence/CGY-018-0146c968.txt",
+    "sha256": "5acacca2adf181972ca6c8ff28ce8f401e2ec88cf76ff1dfc324f5f7de7113d3",
+    "characters": 3863
+  },
+  {
+    "id": "CGY-018",
+    "url": "https://www.neofinancial.com/company/kiosks",
+    "final_url": "https://www.neofinancial.com/company/kiosks",
+    "status": 200,
+    "checked_on": "2026-10-15",
+    "snapshot": "evidence/CGY-018-0a87cb92.txt",
+    "sha256": "83688ca98a186e5c3ad469f8200dc41f15dcf3b2321a58af1b21cf4fbf20281c",
+    "characters": 2928
+  },
+  {
+    "id": "CGY-019",
+    "url": "https://oncolyticsbiotech.com/contact/",
+    "error": "HTTP Error 403: Forbidden",
+    "snapshot": null,
+    "note": "Free web search/open evidence available; no successful local capture"
+  },
+  {
+    "id": "CGY-019",
+    "url": "https://oncolyticsbiotech.com/",
+    "error": "HTTP Error 403: Forbidden",
+    "snapshot": null,
+    "note": "Free web search/open evidence available; no successful local capture"
+  },
+  {
+    "id": "CGY-020",
+    "url": "https://www.sensorup.com/solutions/methane/",
+    "final_url": "https://www.sensorup.com/solutions/methane/",
+    "status": 200,
+    "checked_on": "2026-10-15",
+    "snapshot": "evidence/CGY-020-36c6a8d3.txt",
+    "sha256": "12e193afaca1efbe15451332c196c5e9b1c57bb393e576540ec6e972887e48a7",
+    "characters": 8493
+  },
+  {
+    "id": "CGY-020",
+    "url": "https://www.sensorup.com/contact/",
+    "final_url": "https://www.sensorup.com/contact/",
+    "status": 200,
+    "checked_on": "2026-10-15",
+    "snapshot": "evidence/CGY-020-63022821.txt",
+    "sha256": "75e2dfba8928019aba6aac102d7eeb16d3da1ab6874f706f5acbab085ad38bf7",
+    "characters": 1994
+  },
+  {
+    "id": "CGY-020",
+    "url": "https://ptac.org/wp-content/uploads/2024/06/Updated-Canadian-Methane-Emission-Reduction-FINAL-2023.pdf",
+    "method": "web search reader",
+    "snapshot": null,
+    "note": "PDF discovery evidence; no local PDF capture attempted"
+  }
+]
