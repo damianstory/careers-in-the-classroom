@@ -37,7 +37,9 @@
 .picture img { display: block; width: 100%; height: 100%; object-fit: contain; }
 /* One consistent temporary cover conceals every baked-in title. Reveal removes it.
    No image is cropped, stretched, or covered by a saved-state badge. */
-.cover { position: absolute; inset: 0 0 auto; height: 27%; background: var(--surface-dark); color: var(--on-dark); display: flex; align-items: center; justify-content: center; text-align: center; font-size: 24px; line-height: 1.3; padding: 12px; }
+.cover { position: absolute; isolation: isolate; inset: 0 0 auto; height: 27%; background: var(--surface-dark); color: var(--on-dark); display: flex; align-items: center; justify-content: center; text-align: center; font-size: 24px; line-height: 1.3; padding: 12px; }
+/* Static version of the examples rail's dither, beneath the text and above the opaque cover. */
+.cover::before { content: ""; position: absolute; inset: 0; z-index: -1; background: url("/images/footer-dither.png") left bottom / 320px 400px repeat-x; image-rendering: pixelated; opacity: .35; mask-image: linear-gradient(transparent, #000); pointer-events: none; }
 .fallback { height: 100%; overflow-y: auto; padding: 52% 20px 20px; color: var(--on-dark); font-size: 18px; line-height: 1.5; }
 .fallback p + p { margin-top: 16px; }
 .exampleLink { display: flex; align-items: center; justify-content: center; margin-top: 16px; text-align: center; font-size: 17px; line-height: 1.4; text-decoration: none; }

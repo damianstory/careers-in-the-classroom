@@ -71,3 +71,9 @@ Validation: TypeScript, ESLint, production build and all 22 Discover browser che
 Restored the original full-height guessing frame and 27% title cover at the user's request. Removed the temporary image clipping; Restart retains its name and placement beside Reveal the job on desktop. The compact-banner screenshot above records the superseded version.
 
 Validation: production build and all 22 Discover browser checks pass, including original cover proportions, desktop button grouping and restart behavior.
+
+## Follow-up: patterned question cover
+
+Added a subtle static dither texture behind “What job is this?”, reusing the existing footer asset whose Bayer pattern matches the examples rail. The texture fades upward at 35% opacity; the solid green cover, original height and white question text remain intact.
+
+Validation: production build and five targeted browser checks pass (all-card cover/reveal, 720p layout, grouped desktop controls, and desktop/phone restart). Native desktop and phone inspection confirmed the pattern and readable text. [Current desktop screen](after-patterned-guess-banner.png).
