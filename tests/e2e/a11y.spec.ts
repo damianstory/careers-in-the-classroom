@@ -1,3 +1,4 @@
+import { toggleLayout } from "./example-helpers";
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test } from "./fixtures";
 
@@ -60,4 +61,34 @@ test("narrowest phones (320px) have no sideways scroll", async ({ page, requests
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
     expect(overflow, `${route} overflow`).toBeLessThanOrEqual(0);
   }
+});
+
+for (const slug of ["ghgsat", "wilder-institute", "e3-lithium"]) {
+  for (const layout of ["parts", "all"]) {
+    test(`${slug}: all parts pass axe in ${layout} layout`, async ({ page, requests }, info) => {
+      void requests;
+      await page.goto(`/examples/${slug}`);
+      if (layout === "all") await toggleLayout(page);
+      for (const part of ["question", "how-it-works", "who", "ways-in", "ask", "about", "sources"]) {
+        if (layout === "parts") await page.goto(`/examples/${slug}#${part}`);
+        const results = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze();
+        expect(results.violations.filter((v) => v.impact === "serious" || v.impact === "critical"), `${part}`).toEqual([]);
+        if (layout === "all") break;
+      }
+      if (info.project.name === "phone") {
+        await page.getByRole("button", { name: "Contents", exact: true }).click();
+        const results = await new AxeBuilder({ page }).include("dialog[open]").analyze();
+        expect(results.violations.filter((v) => v.impact === "serious" || v.impact === "critical")).toEqual([]);
+      }
+    });
+  }
+}
+
+test("projector passes axe", async ({ page, requests }, info) => {
+  void requests;
+  test.skip(info.project.name !== "desktop", "desktop projection");
+  await page.goto("/examples/wilder-institute#ways-in");
+  await page.locator('[data-present="ways-in"]').click();
+  const results = await new AxeBuilder({ page }).include("dialog[open]").analyze();
+  expect(results.violations.filter((v) => v.impact === "serious" || v.impact === "critical")).toEqual([]);
 });

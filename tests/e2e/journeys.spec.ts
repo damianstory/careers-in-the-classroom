@@ -141,7 +141,7 @@ test("speaker requests are prefilled and send nothing", async ({ page, requests 
   await expect(page.getByText("Physics 30 · Electromagnetic radiation · Later this month · Video call")).toBeVisible();
   await expect(page.getByText("Nothing was sent. This is not a booking.")).toBeVisible();
 
-  await page.goto("/examples/e3-lithium?course=chemistry-20&unit=c20c");
+  await page.goto("/examples/e3-lithium?course=chemistry-20&unit=c20c#about");
   await page.getByRole("button", { name: "Request a conversation" }).first().click();
   const d2 = page.getByRole("dialog", { name: "Request a practitioner conversation" });
   await expect(d2.getByLabel("Topic")).toHaveValue("Chemistry 20 · Matter as solutions, acids and bases");

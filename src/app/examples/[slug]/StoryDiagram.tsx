@@ -7,7 +7,7 @@ import styles from "./story-diagram.module.css";
 
 // Numbered keys stay live and readable on phones.
 // Briefs and visual review: design/story-diagrams-2026-10-07/.
-const diagrams = {
+export const diagrams = {
   methane: {
     image: methane,
     heading: "Measuring methane with reflected sunlight",
@@ -49,7 +49,7 @@ export function StoryDiagram({ story, headingId }: { story: ClassroomStory; head
     <section className={styles.band} aria-labelledby={headingId}>
       <div className={styles.content}>
         <p className={styles.eyebrow}>Schematic · not to scale</p>
-        <h2 id={headingId} className={styles.heading}>{diagram.heading}</h2>
+        <h3 id={headingId} className={styles.heading}>{diagram.heading}</h3>
         <figure className={styles.figure}>
           <Image src={diagram.image} alt={story.diagramAlt} sizes="(max-width: 720px) 100vw, 680px" className={styles.image} />
         </figure>

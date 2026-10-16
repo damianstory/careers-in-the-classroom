@@ -28,8 +28,10 @@ export function SectionDivider({ num, label }: { num: string; label: string }) {
 
   return (
     <div ref={ref} className={styles.divider} aria-hidden="true">
-      <span className={styles.dividerNum}>{num}</span>
-      <span className={styles.dividerDot}>·</span>
+      {num && <>
+        <span className={styles.dividerNum}>{num}</span>
+        <span className={styles.dividerDot}>·</span>
+      </>}
       <span className={styles.dividerName}>{label}</span>
       <span className={styles.dividerLine} />
     </div>

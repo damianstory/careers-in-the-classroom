@@ -48,9 +48,9 @@ export function GatedNews({
       <div className={styles.newsLocked}>
         <div className={styles.newsMain}>
           <div className={styles.newsLabelRow}>
-            <h2 id={headingId} className={styles.newsLabel}>
+            <h3 id={headingId} className={styles.newsLabel}>
               Recent development
-            </h2>
+            </h3>
             <span className={styles.lockTag}>
               <Icon name="lock" small />
               Free with signup
@@ -79,9 +79,9 @@ export function GatedNews({
   return (
     <div className={styles.newsOpen}>
       <div className={styles.newsLabelRow}>
-        <h2 id={headingId} className={`${styles.newsLabel} ${styles.newsLabelLight}`}>
+        <h3 id={headingId} className={`${styles.newsLabel} ${styles.newsLabelLight}`}>
           Recent development
-        </h2>
+        </h3>
         <span className="tag tag-interpreted">{news.status}</span>
       </div>
       <p className={styles.newsTitle}>{news.title}</p>

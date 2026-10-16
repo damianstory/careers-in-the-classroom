@@ -2129,3 +2129,117 @@
     line-height: 28px;
   }
 }
+
+/* Option D: all content is server rendered. Without these attributes it stays visible. */
+.shell[data-layout="parts"][data-part="question"] .content > [data-part]:not([id="question"]),
+.shell[data-layout="parts"][data-part="how-it-works"] .content > [data-part]:not([id="how-it-works"]),
+.shell[data-layout="parts"][data-part="who"] .content > [data-part]:not([id="who"]),
+.shell[data-layout="parts"][data-part="ways-in"] .content > [data-part]:not([id="ways-in"]),
+.shell[data-layout="parts"][data-part="ask"] .content > [data-part]:not([id="ask"]),
+.shell[data-layout="parts"][data-part="about"] .content > [data-part]:not([id="about"]),
+.shell[data-layout="parts"][data-part="sources"] .content > [data-part]:not([id="sources"]) { display: none; }
+
+.shell .pageTitle { padding-bottom: 0; }
+.shell[data-layout="parts"]:not([data-part="question"]) .pageTitle { padding-block: 24px; border-bottom: 1px solid var(--border); }
+.shell[data-layout="parts"]:not([data-part="question"]) .pageTitle h1 { font-size: 22px; line-height: 30px; letter-spacing: -.015em; }
+.partHeader { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 32px var(--band-r) 0 var(--band-l); }
+.partHeader h2 { font-size: 36px; line-height: 42px; }
+.questionControls { padding: 20px var(--band-r) 0 var(--band-l); }
+.partSteps { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; padding: 32px var(--band-r) 40px var(--band-l); border-top: 1px solid var(--border); }
+.partSteps a { min-height: 44px; display: inline-flex; align-items: center; font-weight: 500; }
+.shell:not([data-layout="parts"]) .partSteps, .shell[data-layout="parts"] .divider { display: none; }
+.presentButton { flex-shrink: 0; }
+.shell:not([data-layout]) .presentButton { display: none; }
+.groupLabel { padding: 16px 32px 8px; color: var(--on-dark-2); font: 500 12px/16px var(--font-mono); }
+.nav { margin-top: 8px; }
+.navItem { padding-block: 8px; min-height: 44px; }
+.viewToggle { margin: 24px 24px 12px; padding: 12px; border: 1px solid currentColor; border-radius: var(--radius-control); background: transparent; color: inherit; font: 500 15px/22px var(--font-ui); cursor: pointer; }
+.viewToggle[aria-pressed="true"] { box-shadow: inset 4px 0 currentColor; text-decoration: underline; text-underline-offset: 4px; }
+.locationBar { display: none; }
+.shell:not([data-layout]) .viewToggle { display: none; }
+.locationBar [data-location-part] { display: none; }
+.shell[data-part="question"] .locationBar [data-location-part="question"],
+.shell[data-part="how-it-works"] .locationBar [data-location-part="how-it-works"],
+.shell[data-part="who"] .locationBar [data-location-part="who"],
+.shell[data-part="ways-in"] .locationBar [data-location-part="ways-in"],
+.shell[data-part="ask"] .locationBar [data-location-part="ask"],
+.shell[data-part="about"] .locationBar [data-location-part="about"],
+.shell[data-part="sources"] .locationBar [data-location-part="sources"] { display: block; }
+.sheetNav { color: var(--ink); }
+.sheetNav .groupLabel, .sheetNav .navNum { color: var(--text-body); }
+.sheetNav .navItem { color: var(--ink); border-color: var(--border); }
+.sheetNav .navItem[aria-current="location"] { border-left: 3px solid var(--green); background: var(--bg-subtle); }
+.sheetNav .viewToggle { margin-inline: 32px; }
+@media (min-width: 961px) {
+  .railSticky { max-height: calc(100dvh - var(--header-h) - 32px); overflow-y: auto; }
+}
+@media (max-width: 960px) {
+  .railSticky { padding-top: 0; }
+  .stripLabel, .stripLabel[data-context] { display: block; margin: 0; padding: 10px var(--gutter) 0; }
+  .nav { display: flex; padding: 12px 0; margin: 0; }
+  .navItem, .navItem[aria-current="location"] { flex-direction: row; justify-content: flex-start; gap: 12px; padding: 10px 24px; text-align: left; font-size: 15px; border-bottom: 1px solid var(--hair-dark); }
+  .navItem[aria-current="location"] { border-left: 3px solid var(--signal); }
+  .shell[data-layout] .nav { display: none; }
+  .shell:not([data-layout]) .locationBar { display: none; }
+  .locationBar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px var(--gutter); }
+  .locationBar p { font: 400 11px/16px var(--font-mono); color: var(--on-dark-2); }
+  .locationBar strong { font-size: 16px; line-height: 22px; }
+  .locationBar button { flex-shrink: 0; }
+  /* Outrank global .btn display regardless of production stylesheet order. */
+  .shell .presentButton, .questionControls { display: none; }
+  .partHeader { padding-top: 24px; }
+  .partHeader h2 { font-size: 28px; line-height: 34px; }
+}
+
+/* Projector: a 1600 × 900 design frame, scaled as a whole. All body copy is 26px
+   in that frame. Pathway rows are measured at this size before pagination. */
+.presentation { position: fixed; inset: 0; width: 100vw; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; background: var(--surface-dark); color: var(--on-dark); overflow: hidden; }
+.presentation::backdrop { background: var(--surface-dark); }
+.projectControls { min-height: 80px; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 12px 24px; }
+.projectControls > div { display: flex; gap: 12px; }
+.projectControls p { font: 500 16px/24px var(--font-mono); }
+.projectControls button:disabled { opacity: .5; cursor: default; }
+.projectStage { position: relative; width: min(100vw, calc((100dvh - 88px) * 16 / 9)); aspect-ratio: 16 / 9; margin: auto; }
+.projectFrame { width: 1600px; height: 900px; padding: 56px; display: flex; flex-direction: column; gap: 24px; transform: scale(var(--frame-scale, .5)); transform-origin: top left; font: 400 26px/1.35 var(--font-ui); background: var(--surface-dark); color: var(--on-dark); }
+.projectFrame h2 { font-size: 48px; line-height: 1.1; font-weight: 600; letter-spacing: -.025em; }
+.projectFrame h3 { font-size: 32px; line-height: 1.2; font-weight: 600; }
+.projectFrame p { margin: 0; }
+.projectFrame img { object-fit: contain; }
+.projectGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.projectGrid > div { display: flex; flex-direction: column; gap: 14px; padding: 24px; border: 1px solid var(--hairline-dark); }
+.projectEvidence { color: var(--on-dark-2); }
+.projectQuestion { display: grid; grid-template-columns: 1.2fr 1fr; align-items: center; gap: 56px; flex: 1; }
+.projectQuestion > p { font-size: 56px; line-height: 1.15; font-weight: 500; }
+.projectQuestion figure { width: 100%; margin: 0; }
+.projectQuestion img { width: 100%; height: auto; }
+.projectDiagram { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 48px; min-height: 0; flex: 1; }
+.projectDiagram img { width: 100%; height: 100%; min-height: 0; }
+.projectDiagram ol { padding-left: 36px; display: flex; flex-direction: column; justify-content: center; gap: 24px; }
+.projectAsk { display: flex; flex-direction: column; justify-content: center; gap: 64px; flex: 1; }
+.projectAsk > p { font-size: 48px; line-height: 1.25; }
+.projectAsk h3 { margin-bottom: 20px; }
+.projectMeasure { position: fixed; left: -20000px; top: 0; height: auto; min-height: 900px; transform: none; visibility: hidden; pointer-events: none; }
+@media (prefers-reduced-motion: reduce) {
+  .shell *, .presentation * { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+}
+@media print {
+  .shell { display: block; }
+  .shell .content > [data-part] { display: block !important; }
+  .railColumn, .railSticky, .locationBar, .nav, .viewToggle, .partSteps, .presentButton, .questionControls, .presentation { display: none !important; }
+  .shell .pageTitle { padding-block: 24px !important; }
+  .shell .pageTitle h1 { font-size: 36px !important; line-height: 1.15 !important; }
+  .shell .divider { display: flex !important; }
+  .content { width: 100%; }
+}
+
+.presentationLayer { width: 100%; height: 100%; background: var(--surface-dark); color: var(--on-dark); }
+.projectRoles > div { padding: 16px; gap: 12px; }
+.projectFrame[data-frame-part="who"] { gap: 20px; }
+@media (max-width: 960px) {
+  /* The ordinary no-JS contents list must not cover fragment destinations. */
+  .shell:not([data-layout]) .railSticky { position: static; }
+}
+
+.shell .storyHero { padding-top: 24px; }
+.storyHero .storyIntro { margin-top: 0; }
+.partHeader h2 { margin-top: 0; }

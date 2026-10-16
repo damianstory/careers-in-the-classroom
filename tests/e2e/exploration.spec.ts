@@ -1,10 +1,8 @@
+import { choosePart, lessonNav } from "./example-helpers";
 import { expect, test } from "./fixtures";
 
-// Connected exploration of an enriched example (GHGSat): story, company, roles (with job examples), pathways,
-// one after another on one page (docs/build/PLAN-b2-one-page.md). Sections are reached by #fragment;
-// role and job are the selection, in the query.
+// Part navigation keeps role/job selection separate from the course and unit context.
 const P30 = "course=physics-30&unit=p30c";
-const lessonNav = (page: import("@playwright/test").Page) => page.getByRole("navigation", { name: "Explore this example" });
 const section = (page: import("@playwright/test").Page, name: string) => page.getByRole("region", { name, exact: true });
 
 test("physics example → story → company → role → job → pathways → story → results keeps the unit", async ({ page, requests }) => {
@@ -13,25 +11,26 @@ test("physics example → story → company → role → job → pathways → st
   await expect(page.getByRole("heading", { level: 1, name: "How can you find an invisible gas from space?" })).toBeVisible();
   await expect(page.getByText("Your lesson Physics 30 · Electromagnetic radiation")).toBeVisible();
 
-  await page.getByRole("link", { name: "Meet GHGSat" }).click();
-  await expect(page).toHaveURL(new RegExp(`${P30}#company$`));
-  await expect(page.getByRole("heading", { level: 2, name: "GHGSat", exact: true })).toBeFocused();
+  await choosePart(page, "About GHGSat");
+  await expect(page).toHaveURL(new RegExp(`${P30}#about$`));
+  await expect(page.getByRole("heading", { level: 2, name: "About GHGSat", exact: true })).toBeFocused();
 
-  await section(page, "GHGSat").getByRole("link", { name: "Atmospheric science and remote sensing" }).click();
-  await expect(page).toHaveURL(/\?course=physics-30&unit=p30c&role=atmospheric-science#roles$/);
-  await expect(page.getByRole("heading", { level: 2, name: "Atmospheric science and remote sensing" })).toBeFocused();
+  await section(page, "About GHGSat").getByRole("link", { name: "Who does this work", exact: true }).click();
+  await page.locator("#who").getByRole("link", { name: "Atmospheric science and remote sensing", exact: true }).click();
+  await expect(page).toHaveURL(/\?course=physics-30&unit=p30c&role=atmospheric-science#who$/);
+  await expect(page.locator("#who-title")).toBeFocused();
 
   await page.getByRole("link", { name: /Remote Emissions Scientist/ }).click();
-  await expect(page).toHaveURL(new RegExp(`${P30}&role=atmospheric-science&job=ghgsat-emissions-scientist#roles$`));
+  await expect(page).toHaveURL(new RegExp(`${P30}&role=atmospheric-science&job=ghgsat-emissions-scientist#who$`));
   await expect(page.getByRole("article", { name: "Remote Emissions Scientist" })).toBeVisible();
 
   await page.getByRole("link", { name: "See all pathways" }).click();
-  await expect(page).toHaveURL(new RegExp(`${P30}#pathways$`));
-  await expect(page.getByRole("heading", { level: 2, name: "Ways to prepare for this work" })).toBeInViewport();
+  await expect(page).toHaveURL(new RegExp(`${P30}#ways-in$`));
+  await expect(page.locator("#ways-in-title")).toBeInViewport();
   await expect(page.getByText("Earth Sciences major (BSc)")).toBeVisible();
 
-  await lessonNav(page).getByRole("link", { name: "Classroom story" }).click();
-  await expect(page).toHaveURL(new RegExp(`/examples/ghgsat\\?${P30}#story$`));
+  await choosePart(page, "The question");
+  await expect(page).toHaveURL(new RegExp(`/examples/ghgsat\\?${P30}#question$`));
   await expect(page.getByRole("heading", { level: 1 })).toBeFocused();
   await page.getByRole("link", { name: "Back to results" }).click();
   await expect(page).toHaveURL(new RegExp(`/\\?${P30}#library$`));
@@ -41,8 +40,8 @@ test("another supported course keeps its own label through the exploration", asy
   void requests;
   await page.goto("/examples/ghgsat?course=science-30&unit=s30c&view=company");
   await expect(page.getByText("Your lesson Science 30 · Electromagnetic energy")).toBeVisible();
-  await lessonNav(page).getByRole("link", { name: "Classroom story" }).click();
-  await expect(page).toHaveURL(/\/examples\/ghgsat\?course=science-30&unit=s30c#story$/);
+  await choosePart(page, "The question");
+  await expect(page).toHaveURL(/\/examples\/ghgsat\?course=science-30&unit=s30c#question$/);
   await expect(page.getByText("Why this matches Science 30 · Electromagnetic energy")).toBeVisible();
 });
 
@@ -51,7 +50,7 @@ test("an invalid search context is never claimed or carried along", async ({ pag
   await page.goto("/examples/ghgsat?course=physics-30&unit=zzz&view=roles");
   await expect(page.getByText("Your lesson")).toHaveCount(0);
   await expect(page.getByRole("link", { name: "All examples" })).toHaveAttribute("href", "/");
-  await expect(lessonNav(page).getByRole("link", { name: "Company" })).toHaveAttribute("href", "/examples/ghgsat#company");
+  await expect(lessonNav(page).getByRole("link", { name: "About GHGSat", includeHidden: true })).toHaveAttribute("href", "/examples/ghgsat#about");
 });
 
 test("a copied deep link survives reload, and Back/Forward follow the selection", async ({ page, requests }) => {
@@ -63,7 +62,7 @@ test("a copied deep link survives reload, and Back/Forward follow the selection"
   await page.reload();
   await expect(detail).toBeVisible();
   await page.getByRole("link", { name: /Senior Instrument Scientist/, expanded: true }).click();
-  await expect(page).toHaveURL(/role=satellite-engineering#roles$/);
+  await expect(page).toHaveURL(/role=satellite-engineering#who$/);
   await expect(detail).toHaveCount(0);
   await page.goBack();
   await expect(detail).toBeVisible();
@@ -74,10 +73,11 @@ test("a copied deep link survives reload, and Back/Forward follow the selection"
 test("unknown views, roles and jobs fall back without inventing anything", async ({ page, requests }) => {
   void requests;
   await page.goto(`/examples/ghgsat?${P30}&view=roles&role=astronaut&job=made-up`);
-  await expect(page.getByRole("heading", { level: 2, name: "Roles documented at GHGSat" })).toBeVisible();
+  await expect(page.locator("#who p[data-role-scope]")).toHaveText("Roles documented at GHGSat");
+  await expect(page.locator("#who h2")).toHaveText("Who does this work");
   await expect(page.getByRole("article")).toHaveCount(0);
   await page.goto(`/examples/ghgsat?${P30}&view=roles&role=software-data&job=muon-calibration-scientist`);
-  await expect(page.getByRole("heading", { level: 2, name: "Software and data" })).toBeVisible();
+  await expect(page.getByRole("heading", { level: 3, name: "Software and data" })).toBeVisible();
   await expect(page.getByRole("article")).toHaveCount(0);
   await page.goto(`/examples/ghgsat?${P30}&view=nonsense`);
   await expect(page.getByRole("heading", { level: 1, name: "How can you find an invisible gas from space?" })).toBeVisible();
@@ -88,14 +88,14 @@ test("switching role clears a job that no longer matches", async ({ page, reques
   void requests;
   await page.goto(`/examples/ghgsat?${P30}&view=roles&role=satellite-engineering&job=muon-calibration-scientist`);
   await page.getByRole("navigation", { name: "Other roles" }).getByRole("link", { name: "Software and data" }).click();
-  await expect(page).toHaveURL(new RegExp(`${P30}&role=software-data#roles$`));
+  await expect(page).toHaveURL(new RegExp(`${P30}&role=software-data#who$`));
   await expect(page.getByRole("article")).toHaveCount(0);
 });
 
 test("links saved before jobs moved into roles still open the posting", async ({ page, requests }) => {
   void requests;
   await page.goto(`/examples/ghgsat?${P30}&view=jobs&role=satellite-engineering&job=muon-calibration-scientist`);
-  await expect(page.getByRole("heading", { level: 2, name: "Satellite and instrument engineering" })).toBeVisible();
+  await expect(page.getByRole("heading", { level: 3, name: "Satellite and instrument engineering" })).toBeVisible();
   await expect(page.getByRole("article", { name: "Senior Instrument Scientist, Calibration Testing" })).toBeVisible();
 });
 
@@ -112,7 +112,7 @@ test("jobs and pathways never stand in for each other", async ({ page, requests 
 
   // On one page the role's jobs sit in Roles; the Pathways section still lists programs only.
   await page.goto(`/examples/ghgsat?${P30}&view=pathways&role=satellite-engineering`);
-  const pathways = section(page, "Ways to prepare for this work");
+  const pathways = section(page, "Ways in");
   await expect(pathways.getByText("Engineering Physics (BSc)")).toBeVisible();
   await expect(pathways.getByText("Senior Instrument Scientist")).toHaveCount(0);
 });
@@ -129,15 +129,14 @@ test("speaker requests keep the original example and lesson while viewing anothe
   await expect(dialog.getByText("Muon Space")).toHaveCount(0);
 });
 
-// One page: the rail's "Classroom story" is a section move like the others (the story heading takes
-// focus). The old "return restores the control that left the story" bookmark belonged to separate views.
+// Returning to The question focuses the single page h1.
 test("the rail leads back to the story from a copied section link", async ({ page, requests }) => {
   void requests;
   await page.goto(`/examples/ghgsat?${P30}&view=company`);
-  const story = lessonNav(page).getByRole("link", { name: "Classroom story" });
-  await expect(story).toHaveAttribute("href", `/examples/ghgsat?${P30}#story`);
-  await story.click();
-  await expect(page).toHaveURL(new RegExp(`/examples/ghgsat\\?${P30}#story$`));
+  const story = lessonNav(page).getByRole("link", { name: "The question", includeHidden: true });
+  await expect(story).toHaveAttribute("href", `/examples/ghgsat?${P30}#question`);
+  await choosePart(page, "The question");
+  await expect(page).toHaveURL(new RegExp(`/examples/ghgsat\\?${P30}#question$`));
   await expect(page.getByRole("heading", { level: 1, name: "How can you find an invisible gas from space?" })).toBeFocused();
   await expect(page.getByRole("heading", { level: 1 })).toBeInViewport();
 });
@@ -145,7 +144,7 @@ test("the rail leads back to the story from a copied section link", async ({ pag
 test("the company panel is an inline section, not a modal", async ({ page, requests }) => {
   void requests;
   await page.goto(`/examples/ghgsat?${P30}&view=company`);
-  await expect(section(page, "GHGSat")).toBeVisible();
+  await expect(section(page, "About GHGSat")).toBeVisible();
   await expect(page.locator("[aria-modal]")).toHaveCount(0);
 });
 
@@ -179,7 +178,8 @@ test("the top of the story shows the class fit, or every fit and a way to pick a
   await page.goto(`/examples/ghgsat?${P30}`);
   await expect(page.getByText("Why this matches Physics 30 · Electromagnetic radiation")).toBeVisible();
   await expect(page.getByRole("link", { name: "Pick your class" })).toHaveCount(0);
-  await expect(page.getByRole("heading", { level: 2, name: "Use it in class" })).toBeVisible();
+  await choosePart(page, "Ask the class");
+  await expect(page.getByRole("heading", { level: 3, name: "Use it in class" })).toBeVisible();
 
   await page.goto("/examples/ghgsat");
   // Every course fit is listed as a plain row (course · topic), never styled as an evidence tag.
@@ -215,13 +215,14 @@ test("one checked date on every view, with the evidence table closed", async ({ 
 
 test("new company profiles survive reload and reject another example's role", async ({ page, requests }) => {
   void requests;
-  for (const [slug, org, label] of [["wilder-institute", "Wilder Institute", "Organization"], ["e3-lithium", "E3 Lithium", "Company"]]) {
+  for (const [slug, org, label, scope] of [["wilder-institute", "Wilder Institute", "About Wilder Institute", "Roles documented at Wilder Institute"], ["e3-lithium", "E3 Lithium", "About E3 Lithium", "Roles connected to this example"]]) {
     await page.goto(`/examples/${slug}?view=company`);
     await page.reload();
-    await expect(lessonNav(page).getByRole("link", { name: label })).toHaveAttribute("aria-current", "location");
-    await expect(page.getByRole("heading", { level: 2, name: org, exact: true })).toBeVisible();
+    await expect(lessonNav(page).getByRole("link", { name: label, includeHidden: true })).toHaveAttribute("aria-current", "location");
+    await expect(page.getByRole("heading", { level: 2, name: `About ${org}`, exact: true })).toBeVisible();
     await page.goto(`/examples/${slug}?view=roles&role=atmospheric-science&job=ghgsat-emissions-scientist`);
-    await expect(page.getByRole("heading", { level: 2, name: `Roles documented at ${org}` })).toBeVisible();
+    await expect(page.locator("#who p[data-role-scope]")).toHaveText(scope);
+    await expect(page.locator("#who h2")).toHaveText("Who does this work");
     await expect(page.getByRole("article")).toHaveCount(0);
   }
 });
@@ -229,15 +230,7 @@ test("new company profiles survive reload and reject another example's role", as
 test("course tags are neutral and link chips carry an arrow", async ({ page, requests }) => {
   void requests;
   await page.goto(`/examples/ghgsat?${P30}`);
-  // The teaser names the roles as a plain list: no evidence-coloured tags.
-  const teaser = page.getByRole("region", { name: "Keep going" });
-  await expect(teaser.getByRole("listitem")).toHaveText([
-    "Atmospheric science and remote sensing",
-    "Satellite and instrument engineering",
-    "Software and data",
-    "Business development and partnerships",
-  ]);
-  await expect(teaser.locator(".tag:not(.tag-neutral)")).toHaveCount(0);
+  await expect(page.getByRole("region", { name: "Keep going" })).toHaveCount(0);
   await page.goto(`/examples/ghgsat?${P30}&view=pathways`);
   const chip = page.locator("main a.tag").first();
   await expect(chip).toHaveClass(/tag-neutral/);

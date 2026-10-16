@@ -1,3 +1,4 @@
+import { choosePart } from "./example-helpers";
 import { expect, test } from "./fixtures";
 
 for (const example of [
@@ -7,14 +8,16 @@ for (const example of [
   test(`${example.org}: story to organization, role, approved posting and pathway`, async ({ page, requests }) => {
     void requests;
     await page.goto(`/examples/${example.slug}`);
+    await choosePart(page, "How it works");
     await expect(page.getByRole("img", { name: example.diagram })).toBeVisible();
-    await page.getByRole("link", { name: `Meet ${example.org}`, exact: true }).click();
-    await expect(page).toHaveURL(new RegExp(`/examples/${example.slug}#company$`));
-    await expect(page.getByRole("heading", { level: 2, name: example.org, exact: true })).toBeFocused();
-    // One page: the organization's section lists its people; the role opens inline in Roles.
-    await page.getByRole("region", { name: example.org, exact: true }).getByRole("link", { name: example.role, exact: true }).click();
+    await choosePart(page, `About ${example.org}`);
+    await expect(page).toHaveURL(new RegExp(`/examples/${example.slug}#about$`));
+    await expect(page.getByRole("heading", { level: 2, name: `About ${example.org}`, exact: true })).toBeFocused();
+    // About links to the role overview; selecting a role keeps Who visible.
+    await page.locator("#about").getByRole("link", { name: "Who does this work", exact: true }).click();
+    await page.locator("#who").getByRole("link", { name: example.role, exact: true }).click();
     await expect(page.getByRole("heading", { name: "What might you actually do?" })).toBeVisible();
-    await expect(page.getByRole("heading", { level: 2, name: example.role, exact: true })).toBeFocused();
+    await expect(page.locator("#who-title")).toBeFocused();
     await page.getByRole("region", { name: "Real job examples" }).getByRole("link", { name: new RegExp(example.job.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")) }).click();
     const article = page.getByRole("article", { name: example.job });
     await expect(article).toBeVisible();
@@ -25,11 +28,12 @@ for (const example of [
       await expect(article.getByText(/does not identify burrowing owls/)).toBeVisible();
     }
     await page.getByRole("link", { name: "See all pathways", exact: true }).click();
-    await expect(page).toHaveURL(new RegExp(`/examples/${example.slug}#pathways$`));
-    await expect(page.getByRole("region", { name: "Ways to prepare for this work" }).getByText(example.program, { exact: true })).toBeVisible();
-    await page.getByRole("navigation", { name: "Explore this example" }).getByRole("link", { name: "Classroom story" }).click();
-    await expect(page).toHaveURL(new RegExp(`/examples/${example.slug}#story$`));
+    await expect(page).toHaveURL(new RegExp(`/examples/${example.slug}#ways-in$`));
+    await expect(page.getByRole("region", { name: "Ways in" }).getByText(example.program, { exact: true })).toBeVisible();
+    await choosePart(page, "The question");
+    await expect(page).toHaveURL(new RegExp(`/examples/${example.slug}#question$`));
     await expect(page.getByRole("heading", { level: 1 })).toBeFocused();
+    await choosePart(page, "How it works");
     await expect(page.getByRole("img", { name: example.diagram })).toBeVisible();
   });
 }
@@ -40,18 +44,19 @@ test("GHGSat's approved government posting has a commercial role and a preparati
   await expect(page.getByRole("article", { name: "Business Development Manager (Government)" })).toBeVisible();
   // The role's own preparation route, in its "How to prepare", and in the Pathways section it filters.
   await expect(page.getByRole("region", { name: "How to prepare" }).getByText("Business Administration – Marketing", { exact: true })).toBeVisible();
-  await expect(page.getByRole("region", { name: "Ways to prepare for this work" }).getByText("Business Administration – Marketing", { exact: true })).toBeVisible();
+  await choosePart(page, "Ways in");
+  await expect(page.getByRole("region", { name: "Ways in" }).getByText("Business Administration – Marketing", { exact: true })).toBeVisible();
 });
 
 test("approved related postings are reachable without implying featured-employer affiliation", async ({ page, requests }) => {
   void requests;
-  await page.goto("/examples/e3-lithium?role=laboratory-analysis&job=agat-water-lab-technician#roles");
+  await page.goto("/examples/e3-lithium?role=laboratory-analysis&job=agat-water-lab-technician#who");
   const lab = page.getByRole("article", { name: "Laboratory Technician C - Water Lab" });
   await expect(lab).toBeVisible();
   await expect(lab.getByText("Historical job example — not a current vacancy", { exact: true })).toBeVisible();
-  await expect(page.getByRole("region", { name: "E3 Lithium", exact: true }).getByRole("link", { name: "Laboratory analysis and quality control", exact: true })).toHaveCount(0);
+  await expect(page.locator("#about").getByRole("link", { name: "Laboratory analysis and quality control", exact: true })).toHaveCount(0);
   await page.reload();
   await expect(lab).toBeVisible();
-  await page.goto("/examples/wilder-institute?role=conservation-research&job=enmas-environmental-technician#roles");
+  await page.goto("/examples/wilder-institute?role=conservation-research&job=enmas-environmental-technician#who");
   await expect(page.getByRole("article", { name: "Environmental Technician", exact: true })).toBeVisible();
 });

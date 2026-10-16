@@ -13,6 +13,7 @@ import styles from "./dialogs.module.css";
 // dialog becomes a bottom sheet.
 export function Modal({
   open,
+  containFocus = false,
   onClose,
   titleId,
   title,
@@ -24,6 +25,8 @@ export function Modal({
   children,
 }: {
   open: boolean;
+  /** Explicit keyboard wrapping for the example Contents sheet. */
+  containFocus?: boolean;
   onClose: () => void;
   titleId: string;
   title: React.ReactNode;
@@ -60,6 +63,21 @@ export function Modal({
       className={`${styles.dialog} ${layout}`}
       style={{ "--dialog-width": `${width}px` } as React.CSSProperties}
       aria-labelledby={titleId}
+      onKeyDown={(event) => {
+        if (!containFocus || event.key !== "Tab") return;
+        const dialog = event.currentTarget;
+        const controls = [...dialog.querySelectorAll<HTMLElement>(
+          'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]',
+        )].filter((element) => element.tabIndex >= 0 && element.getClientRects().length > 0 && getComputedStyle(element).visibility !== "hidden");
+        const first = controls[0];
+        const last = controls.at(-1);
+        const active = document.activeElement;
+        if (!first || !last) { event.preventDefault(); return; }
+        if (event.shiftKey ? active === first || !dialog.contains(active) : active === last || !dialog.contains(active)) {
+          event.preventDefault();
+          (event.shiftKey ? last : first).focus();
+        }
+      }}
       onClose={() => {
         onClose();
         // If the control that opened the dialog was removed (e.g. signup unlocked the page),

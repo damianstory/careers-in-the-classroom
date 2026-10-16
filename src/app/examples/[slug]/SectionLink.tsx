@@ -2,14 +2,8 @@
 
 import Link from "next/link";
 import type { AnchorHTMLAttributes, ReactNode } from "react";
-import { selectionQuery, type View } from "@/lib/example-navigation";
-
-// Moving around the one-page example (plan: docs/build/PLAN-b2-one-page.md).
-// - Section links only move within the page: a real `#section` href for no-JS and copied links,
-//   and with JS one shared handler that scrolls, focuses the heading and replaces the fragment.
-//   They add no history entries.
-// - Selection links change role or job: real navigations (history entries) that carry the hash of
-//   the section they act in. ExploreFocus then lands on that section.
+import { rememberSelection } from "@/lib/example-selection";
+import { LAYOUT_KEY, selectionQuery, type Layout, type View } from "@/lib/example-navigation";
 
 /** Fired on window when a section move starts, so the rail can mark the destination at once. */
 export const SECTION_EVENT = "explore:section";
@@ -17,12 +11,12 @@ export const SECTION_EVENT = "explore:section";
 const DESKTOP = "(min-width: 961px)";
 const REDUCED_MOTION = "(prefers-reduced-motion: reduce)";
 
-// The height of what stays pinned at the top: the site header, plus the tab bar on phones and tablets.
+// The height of what stays pinned at the top: the site header, plus the location bar on phones and tablets.
 export function stickyOffset(): number {
   const header = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--header-h")) || 0;
   if (window.matchMedia(DESKTOP).matches) return header;
   const bar = document.querySelector<HTMLElement>("[data-rail-sticky]");
-  return header + (bar?.offsetHeight ?? 0);
+  return header + Math.ceil(bar?.getBoundingClientRect().height ?? 0);
 }
 
 export function sectionHeading(section: Element): HTMLElement | null {
@@ -47,24 +41,64 @@ function sectionScrollTop(section: HTMLElement, heading: HTMLElement | null): nu
   return Math.max(0, top);
 }
 
-/**
- * Scrolls to a section, focuses its heading and, unless told otherwise, replaces the URL's fragment
- * (dropping a stale legacy `view`). Smooth for a pointer or key press, instant with reduced motion.
- * Section links, the first landing and Back/Forward all move through here.
- */
-export function goToSection(id: View, { smooth = true, writeHash = true }: { smooth?: boolean; writeHash?: boolean } = {}) {
+export function exampleRoot() {
+  return document.querySelector<HTMLElement>("[data-example-root]");
+}
+
+export const LAYOUT_EVENT = "explore:layout";
+export function storedLayout(): Layout {
+  try { return localStorage.getItem(LAYOUT_KEY) === "all" ? "all" : "parts"; }
+  catch { return "parts"; }
+}
+
+export function changeLayout() {
+  const root = exampleRoot();
+  if (!root) return;
+  const layout = root.dataset.layout === "all" ? "parts" : "all";
+  root.dataset.layout = layout;
+  try { localStorage.setItem(LAYOUT_KEY, layout); } catch { /* preference is optional */ }
+  window.dispatchEvent(new Event(LAYOUT_EVENT));
+  goToSection((root.dataset.part ?? "question") as View, { smooth: false, history: "replace", focus: false });
+}
+
+let scrollFrame = 0;
+
+// All part moves reveal before measuring/focusing. Parts push history; all-page moves replace it.
+export function goToSection(id: View, { smooth = true, writeHash = true, history = "auto", focus = true }: {
+  smooth?: boolean; writeHash?: boolean; history?: "auto" | "replace"; focus?: boolean;
+} = {}) {
   const section = document.getElementById(id);
-  if (!section) return;
+  const root = exampleRoot();
+  if (!section || !root) return;
+  root.dataset.part = id;
   window.dispatchEvent(new CustomEvent<View>(SECTION_EVENT, { detail: id }));
   const heading = sectionHeading(section);
   const behavior = smooth && !window.matchMedia(REDUCED_MOTION).matches ? "smooth" : "instant";
-  window.scrollTo({ top: sectionScrollTop(section, heading), behavior });
-  heading?.focus({ preventScroll: true });
+  // In parts view the compact question remains above every part. Anchor the content
+  // at its title band, not at the part section (which would scroll the h1 under the header).
+  const target = root.dataset.layout === "parts"
+    ? root.querySelector<HTMLElement>("[data-example-title]") ?? section
+    : id === "question" && heading ? heading : section;
+  const scroll = (scrollBehavior: ScrollBehavior) => window.scrollTo({ top: sectionScrollTop(target, heading), behavior: scrollBehavior });
+  scroll(behavior);
+  // SECTION_EVENT updates the phone location label through React. Measure again after
+  // that commit, when wrapped labels and a closing Contents sheet have their final height.
+  const path = window.location.pathname;
+  cancelAnimationFrame(scrollFrame);
+  scrollFrame = requestAnimationFrame(() => {
+    if (root.isConnected && window.location.pathname === path && root.dataset.part === id) scroll(behavior);
+  });
+  if (focus) heading?.focus({ preventScroll: true });
   if (writeHash) {
     const url = new URL(window.location.href);
     url.searchParams.delete("view");
     url.hash = id;
-    if (url.href !== window.location.href) window.history.replaceState(null, "", url);
+    if (url.href !== window.location.href) {
+      const method = root.dataset.layout === "parts" && history === "auto" ? "pushState" : "replaceState";
+      // Next copies its internal state itself. Passing __NA back would bypass its
+      // patched history integration and leave the router's canonical URL stale.
+      window.history[method](null, "", url);
+    }
   }
 }
 
@@ -73,6 +107,7 @@ export function goToSection(id: View, { smooth = true, writeHash = true }: { smo
 // (scroll anchoring), and it applies that shift to a running animation too, which could carry the
 // animation far from where the next landing puts the reader.
 export function stopScrolling() {
+  cancelAnimationFrame(scrollFrame);
   window.scrollTo({ top: window.scrollY, behavior: "instant" });
 }
 
@@ -96,15 +131,6 @@ export function SectionLink({ section, href, ...rest }: AnchorProps & { section:
   );
 }
 
-// Set by a posting row's own toggle, read once by ExploreFocus when that navigation lands: only a row
-// keeps focus on itself. Every other selection link lands on the section in its hash.
-let rowToggle = false;
-export function takeRowToggle() {
-  const was = rowToggle;
-  rowToggle = false;
-  return was;
-}
-
 /**
  * A role, job, "All roles", "Show all" or "See all pathways" link. A real navigation with
  * `scroll={false}`: ExploreFocus lands on the section in its hash once the new selection renders.
@@ -121,7 +147,7 @@ export function SelectionLink({ section, href, row, ...rest }: AnchorProps & { s
         if (!plainClick(e)) return;
         const here = new URL(window.location.href);
         if (selectionQuery(new URL(href, here).searchParams) !== selectionQuery(here.searchParams)) {
-          rowToggle = !!row;
+          rememberSelection(new URL(href, here), section, !!row);
           stopScrolling();
           return;
         }

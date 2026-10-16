@@ -1,9 +1,14 @@
+import { choosePart } from "./example-helpers";
 import type { Page } from "@playwright/test";
 import { expect, test } from "./fixtures";
 
 // The example rail (plan: docs/build/PLAN-b2-field-instrument.md, Verification 1–8): the sticky
 // section links, the dither field canvas that mounts only on desktop, and the magnetic dots.
 // Since docs/build/PLAN-b2-one-page.md the rail runs beside the whole one-page example.
+
+test.beforeEach(async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem("example-layout", "all"));
+});
 
 const GHGSAT = "/examples/ghgsat";
 const ROLES = "/examples/ghgsat?view=roles";
@@ -83,7 +88,7 @@ async function dottedPoint(page: Page) {
       return n;
     };
     const links = document.querySelector("[data-rail-sticky]")!.getBoundingClientRect();
-    for (let y = Math.max(links.bottom + 40, window.innerHeight * 0.55); y < window.innerHeight - 20; y += 12)
+    for (let y = Math.min(links.bottom + 40, window.innerHeight - 80); y < window.innerHeight - 20; y += 12)
       for (let x = r.left + 40; x < r.right - 40; x += 10) if (opaque(x, y) >= 4) return { x, y };
     return null;
   });
@@ -124,10 +129,10 @@ test.describe("desktop rail", () => {
     await page.goto(GHGSAT);
     const entries = await page.evaluate(() => history.length);
     for (const [name, section] of [
-      ["Company", "company"],
-      ["Roles", "roles"],
-      ["Pathways", "pathways"],
-      ["Classroom story", "story"],
+      ["About GHGSat", "about"],
+      ["Who does this work", "who"],
+      ["Ways in", "ways-in"],
+      ["The question", "question"],
     ] as const) {
       await scrollToFraction(page, 0.5);
       const link = lessonNav(page).getByRole("link", { name });
@@ -138,7 +143,7 @@ test.describe("desktop rail", () => {
       await expect(heading).toBeFocused();
       await expect(heading).toBeInViewport();
       // At the story (the top of the page) the block sits in its own place, below the back link.
-      if (section !== "story") {
+      if (section !== "question") {
         await expect
           .poll(async () => Math.abs((await rect(page, "[data-rail-sticky]")).top - STICKY_TOP), { message: `${name}: the links stay pinned` })
           .toBeLessThanOrEqual(1);
@@ -147,7 +152,7 @@ test.describe("desktop rail", () => {
     expect(await page.evaluate(() => history.length), "section moves add no history entries").toBe(entries);
   });
 
-  test("2: mounting the field moves nothing", async ({ page, browser, requests }) => {
+  test("2: mounting the field moves nothing", async ({ page, requests }) => {
     void requests;
     const measure = async (p: Page) => {
       await p.evaluate(() => document.fonts.ready);
@@ -156,17 +161,24 @@ test.describe("desktop rail", () => {
       return { x: nav.x, y: nav.y, width: nav.width, height: nav.height, page: height };
     };
 
-    // Before RailField mounts: the server-rendered page, with no script at all.
-    const noScript = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 1440, height: 900 } });
-    const plain = await noScript.newPage();
-    await plain.goto(new URL(GHGSAT, test.info().project.use.baseURL).href);
-    await expect(plain.locator("[data-rail-canvas]")).toHaveCount(0);
-    const before = await measure(plain);
-    await noScript.close();
+    let release!: () => void;
+    const scripts = new Promise<void>((resolve) => { release = resolve; });
+    await page.route("**/_next/static/**/*.js", async (route) => { await scripts; await route.continue(); });
+    try {
+      await page.goto(GHGSAT, { waitUntil: "commit" });
+      await expect(page.locator("#sources")).toBeAttached();
+      await expect(page.locator("[data-example-root]")).toHaveAttribute("data-layout", "all");
+      await expect(lessonNav(page).getByRole("button", { name: "View as one page" })).toBeVisible();
+      await expect(canvas(page)).toHaveCount(0);
+      const before = await measure(page);
+      release();
+      await page.waitForLoadState("load");
+      await waitForField(page);
+      expect(await measure(page)).toEqual(before);
+    } finally {
+      release();
+    }
 
-    await page.goto(GHGSAT);
-    await waitForField(page);
-    expect(await measure(page)).toEqual(before);
   });
 
   test("3: the field mounts on desktop only, with the magnet only when motion is welcome", async ({ page, requests }) => {
@@ -195,16 +207,39 @@ test.describe("desktop rail", () => {
     const column = await rect(page, "[data-rail-column]");
     for (let y = 120; y < 860; y += 40) await page.mouse.move(column.left + 20 + ((y * 7) % 220), y, { steps: 2 });
     for (const [name, view] of [
-      ["Company", /\/examples\/ghgsat#company$/],
-      ["Roles", /\/examples\/ghgsat#roles$/],
-      ["Pathways", /\/examples\/ghgsat#pathways$/],
-      ["Classroom story", /\/examples\/ghgsat#story$/],
+      ["About GHGSat", /\/examples\/ghgsat#about$/],
+      ["Who does this work", /\/examples\/ghgsat#who$/],
+      ["Ways in", /\/examples\/ghgsat#ways-in$/],
+      ["The question", /\/examples\/ghgsat#question$/],
     ] as const) {
       const link = lessonNav(page).getByRole("link", { name });
       await link.click();
       await expect(page).toHaveURL(view);
       await expect(link).toHaveAttribute("aria-current", "location");
     }
+  });
+
+  test("short desktop rail keeps every link and the toggle reachable", async ({ page, requests }) => {
+    void requests;
+    await page.setViewportSize({ width: 1440, height: 600 });
+    await page.goto(GHGSAT);
+    await waitForField(page);
+    const sticky = page.locator("[data-rail-sticky]");
+    expect(await sticky.evaluate((element) => element.scrollHeight > element.clientHeight)).toBe(true);
+    for (const link of await lessonNav(page).getByRole("link").all()) {
+      await link.scrollIntoViewIfNeeded();
+      await expect(link).toBeInViewport({ ratio: 1 });
+      await link.click();
+      await expect(link).toHaveAttribute("aria-current", "location");
+    }
+    const toggle = lessonNav(page).getByRole("button", { name: "View as one page" });
+    await toggle.scrollIntoViewIfNeeded();
+    await expect(toggle).toBeInViewport({ ratio: 1 });
+    await toggle.click();
+    await expect(page.locator("[data-example-root]")).toHaveAttribute("data-layout", "parts");
+    await toggle.scrollIntoViewIfNeeded();
+    await toggle.click();
+    await expect(page.locator("[data-example-root]")).toHaveAttribute("data-layout", "all");
   });
 
   test("5: wheel scrolling under a still pointer keeps the field drawing", async ({ page, requests }) => {
@@ -227,7 +262,7 @@ test.describe("desktop rail", () => {
     void requests;
     await page.goto(GHGSAT);
     await waitForField(page);
-    for (const height of [900, 600, 900]) {
+    for (const height of [1000, 900, 1000]) {
       await page.setViewportSize({ width: 1440, height });
       await expect
         .poll(() =>
@@ -265,6 +300,7 @@ test("the field of the full one-page rail stays under the canvas size limit", as
   test.skip(info.project.name !== "desktop", "desktop rail only");
   // A 2× screen: the one-page rail is about 3× the old view's height.
   const context = await browser.newContext({ viewport: { width: 1440, height: 900 }, deviceScaleFactor: 2 });
+  await context.addInitScript(() => localStorage.setItem("example-layout", "all"));
   const page = await context.newPage();
   for (const slug of ["ghgsat", "wilder-institute", "e3-lithium"]) {
     await page.goto(new URL(`/examples/${slug}`, info.project.use.baseURL).href);
@@ -281,11 +317,12 @@ test("the field of the full one-page rail stays under the canvas size limit", as
   await context.close();
 });
 
-test("3: phones get the plain tab bar, never the field", async ({ page, requests }, info) => {
+test("3: phones get Contents, never the field", async ({ page, requests }, info) => {
   void requests;
   test.skip(info.project.name !== "phone", "phone layout only");
   await page.goto(GHGSAT, { waitUntil: "networkidle" });
-  await expect(lessonNav(page)).toBeVisible();
+  await expect(page.getByRole("button", { name: "Contents", exact: true })).toBeVisible();
+  await choosePart(page, "How it works");
   await expect(canvas(page)).toHaveCount(0);
 });
 

@@ -3,14 +3,13 @@ import { SourceLink } from "@/components/SourceLink";
 import type { Example } from "@/content";
 import styles from "./example.module.css";
 
-// Shared page footer: course fit, sources, the page's one checked date, and the evidence
-// table as a closed disclosure. It comes once, after the last section of the one-page example.
+// The Sources part: course fit, the page's one checked date and a closed evidence disclosure.
 export function SourcesAndFit({ e, checked }: { e: Example; checked: string }) {
   const sourceLabel = (id: string) => e.sources.find((s) => s.id === id)?.label ?? id;
   return (
-    <section id="sources" className={`${styles.band} ${styles.rule} ${styles.sources}`} aria-labelledby="sources-title">
+    <div className={`${styles.band} ${styles.rule} ${styles.sources}`}>
       <div className={styles.sourcesHead}>
-        <h2 id="sources-title" className={`display ${styles.h2}`}>
+        <h2 id="sources-title" tabIndex={-1} className={`display ${styles.h2}`}>
           Sources and course fit
         </h2>
         <p className={`${styles.checked} ${styles.marked}`} data-checked="">
@@ -77,6 +76,6 @@ export function SourcesAndFit({ e, checked }: { e: Example; checked: string }) {
         </table>
         <p className={styles.legend}>{evidenceLegend}</p>
       </details>
-    </section>
+    </div>
   );
 }

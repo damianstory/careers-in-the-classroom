@@ -1,13 +1,15 @@
 import { getJob, getOrganization, type Example, type ExampleDetails } from "@/content";
 
-// An enriched example is one long page: classroom story, company, roles and pathways, in order.
-// Its URL holds two separate things (plan: docs/build/PLAN-b2-one-page.md):
-// - the selection, in the query (role, job), next to the search context (course, unit, topic);
-// - the destination, in the fragment (#story, #company, #roles, #pathways), or a legacy `?view=`.
-// Job examples live inside their role: a job is only selected with its role.
-
-export const VIEWS = ["story", "company", "roles", "pathways"] as const;
+// The query holds a selection; the fragment holds a showable part.
+export const VIEWS = ["question", "how-it-works", "who", "ways-in", "ask", "about", "sources"] as const;
 export type View = (typeof VIEWS)[number];
+export type Layout = "parts" | "all";
+export const LAYOUT_KEY = "example-layout";
+export const SHOW_PARTS: readonly View[] = ["question", "how-it-works", "who", "ways-in", "ask"];
+export const PART_LABELS: Record<View, string> = {
+  question: "The question", "how-it-works": "How it works", who: "Who does this work",
+  "ways-in": "Ways in", ask: "Ask the class", about: "About", sources: "Sources",
+};
 
 export interface Selection {
   role?: string;
@@ -25,17 +27,17 @@ const first = (v: string | string[] | undefined) => (Array.isArray(v) ? v[0] : v
 // A section is offered only when the example has content for it. The same list governs the rail, the
 // page and the URL, so a copied or typed link can never land on a section with nothing behind it.
 export function availableViews(e: Example, details?: ExampleDetails): View[] {
-  const views: View[] = ["story"];
-  if (details && getOrganization(details.organizationId)) views.push("company");
-  if (details ? details.roleIds.length : e.roles.length) views.push("roles");
-  if (details ? details.pathwayIds.length : e.pathways.length) views.push("pathways");
+  const views: View[] = ["question", "how-it-works"];
+  if (details ? details.roleIds.length : e.roles.length) views.push("who");
+  if (details ? details.pathwayIds.length : e.pathways.length) views.push("ways-in");
+  views.push("ask");
+  if (details && getOrganization(details.organizationId)) views.push("about");
+  views.push("sources");
   return views;
 }
 
-// A section name from a fragment or a legacy view, if the page has that section.
 export function asView(raw: string | null | undefined, views: readonly View[]): View | undefined {
-  const v = raw === "jobs" ? "roles" : raw; // links saved before jobs moved into roles
-  return v && views.includes(v as View) ? (v as View) : undefined;
+  return landingSection(views, raw ?? "", null, {}, "all") ?? undefined;
 }
 
 // Unknown or incompatible values fall back to no selection; they never invent a link.
@@ -54,15 +56,36 @@ export function parseExplore(params: Params, details: ExampleDetails | undefined
   return { view, role, job };
 }
 
-// Where the page lands on load, reload and Back/Forward. The first match wins:
-// a valid fragment, a valid legacy view, Roles when a role is selected, otherwise the top (null).
+// Self-contained so the pre-paint script and hydrated navigation execute this exact rule.
+// `selection` has already been validated against the example on the server.
 export function landingSection(
-  views: readonly View[],
-  hash: string,
-  legacyView: string | null | undefined,
-  selection: Selection,
+  views: readonly View[], hash: string, legacyView: string | null | undefined,
+  selection: Selection, layout: Layout = "parts",
 ): View | null {
-  return asView(hash.replace(/^#/, ""), views) ?? asView(legacyView, views) ?? (selection.role ? asView("roles", views) : undefined) ?? null;
+  const legacy: Record<string, string> = { story: "question", company: "about", roles: "who", pathways: "ways-in", jobs: "who" };
+  const valid = (value: string) => {
+    const part = legacy[value] ?? value;
+    return views.includes(part as View) ? part as View : undefined;
+  };
+  return valid(hash.replace(/^#/, "")) ?? valid(legacyView?.trim() ?? "") ??
+    (selection.role || selection.job ? valid("who") : undefined) ?? (layout === "parts" ? "question" : null);
+}
+
+// A blocking native script: next/script afterInteractive is too late, and beforeInteractive
+// belongs in the root layout (installed Next.js docs: app/api-reference/components/script).
+// Escape '<' so serialized content cannot terminate the script element.
+export function layoutBootstrap(views: readonly View[], selection: Selection): string {
+  const data = JSON.stringify({ views, selection, key: LAYOUT_KEY }).replace(/</g, "\\u003c");
+  return `(()=>{const root=document.currentScript.parentElement;let observer;const fail=()=>{delete root.dataset.layout;delete root.dataset.part};try{
+const data=${data},land=${landingSection.toString()};let layout="parts";try{if(localStorage.getItem(data.key)==="all")layout="all"}catch{}
+root.dataset.part=land(data.views,location.hash,new URLSearchParams(location.search).get("view"),data.selection,layout)||"question";root.dataset.layout=layout;
+const sync=()=>{for(const link of root.querySelectorAll("[data-part-link]")){if(link.dataset.partLink===root.dataset.part)link.setAttribute("aria-current","location");else link.removeAttribute("aria-current")}for(const button of root.querySelectorAll("[data-view-toggle]"))button.setAttribute("aria-pressed",String(root.dataset.layout==="all"))};
+const hash=()=>{try{const part=land(data.views,location.hash,null,{},"all");if(!part)return;root.dataset.part=part;sync();const section=document.getElementById(part);section?.scrollIntoView({block:"start"});document.getElementById(section?.getAttribute("aria-labelledby"))?.focus({preventScroll:true})}catch{fail()}};
+const click=(event)=>{const button=event.target.closest("[data-contents],[data-view-toggle]");if(!button||event.button||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;event.preventDefault();event.stopPropagation();try{if(button.hasAttribute("data-contents")){delete root.dataset.layout}else{root.dataset.layout=root.dataset.layout==="all"?"parts":"all";try{localStorage.setItem(data.key,root.dataset.layout)}catch{}}sync()}catch{fail()}};
+const ready=()=>{observer?.disconnect();window.removeEventListener("hashchange",hash);root.removeEventListener("click",click,true)};
+observer=new MutationObserver(()=>{try{sync();if(root.querySelector("[data-navigation-end]"))observer.disconnect()}catch{fail();observer.disconnect()}});observer.observe(root,{childList:true,subtree:true});
+window.addEventListener("hashchange",hash);root.addEventListener("click",click,true);root.addEventListener("explore:ready",ready,{once:true});sync();
+}catch{observer?.disconnect();fail()}})()`;
 }
 
 // The query a URL navigates to, normalized the same way everywhere: without the legacy view (a
@@ -82,6 +105,9 @@ export function selectionQuery(params: URLSearchParams | Params): string {
 // The selection goes in the query and the section in the fragment. It never writes `view`.
 export function exploreHref(slug: string, contextQuery: string, target: Selection & { section?: View }): string {
   const q = new URLSearchParams(contextQuery);
+  q.delete("view");
+  q.delete("role");
+  q.delete("job");
   if (target.role) q.set("role", target.role);
   if (target.role && target.job) q.set("job", target.job);
   const s = q.toString();

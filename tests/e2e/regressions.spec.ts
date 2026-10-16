@@ -42,6 +42,7 @@ test("R3: on phones the example question comes before the side panel", async ({ 
   void requests;
   test.skip(info.project.name !== "phone", "phone layout only");
   await page.goto("/examples/ghgsat?course=physics-30&unit=p30c");
+  await page.evaluate(() => { document.querySelector<HTMLElement>("[data-example-root]")!.dataset.layout = "all"; });
   const h1 = await page.getByRole("heading", { level: 1 }).boundingBox();
   const rail = await page.getByRole("complementary", { name: /At a glance|Bring this work into class/ }).boundingBox();
   expect(h1!.y).toBeLessThan(rail!.y);
