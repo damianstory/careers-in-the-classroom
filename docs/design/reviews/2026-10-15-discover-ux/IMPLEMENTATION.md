@@ -47,3 +47,9 @@ Verification uses a clean temporary copy of base commit `99001ea` plus only the 
 - Native browser visual inspection covered desktop reveal, tablet layout, mobile topic landing and separate-employer posting context. Screenshots: [desktop](after-desktop-reveal.png), [tablet](after-tablet-reveal.png), [phone](after-phone-step-landing.png).
 
 This is browser and automated verification, not a teacher/student usability study or a complete manual screen-reader assessment. The report’s suggested comprehension tasks remain useful for validating educational outcomes. No hosting deployment is part of this change.
+
+## Follow-up: desktop controls and heading focus
+
+Removed the decorative focus outline from programmatically focused Discover headings while preserving focus and announcements. Interactive controls retain their visible keyboard focus. At desktop widths (1100px and up), the bottom Back/Next row and its helper text disappear after reveal; topic buttons handle section selection, and Next round remains in the top toolbar. Mobile/tablet controls and the initial Reveal the job action remain. Initial deep links focus the heading when the bottom action is hidden, preserving keyboard navigation.
+
+Validation: TypeScript, ESLint, production build and 23 targeted browser/accessibility checks pass, including the 162-state responsive matrix and checks for heading appearance, tab focus, keyboard progression and mobile controls.

@@ -152,7 +152,9 @@ export function DiscoverStage({ cards, initialState }: { cards: DiscoverCard[]; 
     const focused = document.activeElement;
     if (document.querySelector("dialog[open]") || focused?.closest("select")) return;
     if (focused === document.body || (focused && area.current?.contains(focused))) {
-      primary.current?.focus({ preventScroll: true });
+      // Desktop topic tabs replace the bottom controls after reveal.
+      const target = primary.current?.getClientRects().length ? primary.current : heading.current;
+      target?.focus({ preventScroll: true });
     }
   });
   useEffect(() => {

@@ -210,6 +210,33 @@ test.describe("Discover classroom flow", () => {
     await expect(page.getByRole("heading", { name: "Process Engineer", exact: true })).toBeVisible();
   });
 
+  test("desktop headings stay visually quiet while tabs retain keyboard focus", async ({ page, requests }) => {
+    void requests;
+    await page.goto("/discover");
+    await expect(page.getByRole("button", { name: "Start Space" })).toBeFocused();
+    await page.keyboard.press("Space");
+    const heading = page.getByRole("heading", { level: 1 });
+    await expect(heading).toBeFocused();
+    await expect(heading).toHaveCSS("outline-style", "none");
+    await page.keyboard.press("Space");
+    await expect(page.getByRole("button", { name: "Reveal the job", exact: true })).toBeVisible();
+    await page.keyboard.press("Space");
+    await expect(page.locator("#discover-title")).toBeFocused();
+    await expect(page.locator("#discover-title")).toHaveCSS("outline-style", "none");
+    await expect(page.getByRole("navigation", { name: "Round controls" })).toBeHidden();
+    await expect(page.getByRole("button", { name: "Next round", exact: true })).toBeVisible();
+    await page.keyboard.press("Space");
+    await expect(page.getByRole("region", { name: "Discover", exact: true })).toHaveAttribute("data-step", "2");
+    await page.keyboard.press("Tab");
+    const guess = page.getByRole("navigation", { name: "Reveal steps" }).getByRole("button", { name: "Guess", exact: true });
+    await expect(guess).toBeFocused();
+    await expect(guess).toHaveCSS("outline-style", "solid");
+    await page.goto("/discover?role=07&step=6");
+    await expect(page.locator("#discover-title")).toBeFocused();
+    await page.keyboard.press("ArrowLeft");
+    await expect(page.getByRole("region", { name: "Discover", exact: true })).toHaveAttribute("data-step", "5");
+  });
+
   test("qualifications stay with routes and related-employer postings", async ({ page, requests }) => {
     void requests;
     await page.goto("/discover?role=06&step=5");
