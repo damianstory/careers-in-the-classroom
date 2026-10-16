@@ -209,19 +209,21 @@ export function SearchForm({ filter, count }: { filter: LibraryFilter; count: nu
       </div>
 
       {/* Phones: the form scrolls away; this one row brings it back. */}
-      <button
-        type="button"
-        className={styles.summary}
-        hidden={formVisible}
-        onClick={() => {
-          formRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
-          document.getElementById("filter-course")?.focus({ preventScroll: true });
-        }}
-      >
-        <span className={styles.summaryText}>{describeFilter(filter)}</span>
-        {filtered && <span className={styles.summaryCount}>{countText}</span>}
-        <span className={styles.summaryAction}>Change</span>
-      </button>
+      <div className={styles.summarySlot}>
+        <button
+          type="button"
+          className={styles.summary}
+          hidden={formVisible}
+          onClick={() => {
+            formRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+            document.getElementById("filter-course")?.focus({ preventScroll: true });
+          }}
+        >
+          <span className={styles.summaryText}>{describeFilter(filter)}</span>
+          {filtered && <span className={styles.summaryCount}>{countText}</span>}
+          <span className={styles.summaryAction}>Change</span>
+        </button>
+      </div>
     </>
   );
 }

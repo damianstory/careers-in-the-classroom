@@ -4,6 +4,7 @@ import { ExampleCard } from "@/components/ExampleCard";
 import { SearchForm } from "@/components/SearchForm";
 import { examples, getNews, news } from "@/content";
 import { buildLibrary, parseFilter, type LibraryItem } from "@/lib/library";
+import { checkedRange } from "@/lib/job-status";
 import heroImage from "../../public/images/hero-calgary-dither-green.png";
 import { NewsCard, NoMatchRecorder, NoteTopic, ShowMore, SignupStrip, UnmatchedList } from "./LibraryParts";
 import styles from "./home.module.css";
@@ -120,10 +121,10 @@ export default async function Home({ searchParams }: PageProps<"/">) {
                         <dd>{news.length}</dd>
                       </div>
                       <div>
-                        <dt>Sources checked</dt>
+                        <dt>Example sources checked</dt>
                         <dd>
                           <span className={styles.square} aria-hidden="true" />
-                          24 Sep 2026
+                          {checkedRange(examples.map((e) => e.checkedOn))}
                         </dd>
                       </div>
                     </dl>

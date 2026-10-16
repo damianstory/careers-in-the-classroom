@@ -606,7 +606,7 @@ function RolesView({
           <EvidenceTag kind="interpreted">General explanation, written by us</EvidenceTag>
           {link && <Cite ids={link.sourceIds} className={styles.claimCite} />}
         </div>
-        <p className={styles.explanation}>{role.explanation}</p>
+        {role.explanation.trim() !== role.summary.trim() && <p className={styles.explanation}>{role.explanation}</p>}
       </header>
 
       <section className={`${base.band} ${base.tint} ${base.rule}`} aria-labelledby="tasks-title">

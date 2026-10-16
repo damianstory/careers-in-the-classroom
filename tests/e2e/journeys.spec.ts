@@ -219,17 +219,20 @@ test("source links open safely and match the content data", async ({ page, reque
   for (const path of pages) {
     // The signed-up state is read after hydration, so wait for it before counting source links.
     await page.goto(path, { waitUntil: "networkidle" });
-    const links = page.locator('a[target="_blank"]');
-    const count = await links.count();
-    expect(count, `${path} has source links`).toBeGreaterThan(0);
-    for (let i = 0; i < count; i++) {
-      const a = links.nth(i);
-      const href = (await a.getAttribute("href"))!;
+    // Read each page's links together: 18 examples now produce thousands of
+    // attribute round trips when queried one at a time, exceeding the test budget.
+    const links = await page.locator('a[target="_blank"]').evaluateAll((anchors) => anchors.map((a) => ({
+      href: a.getAttribute("href"),
+      rel: a.getAttribute("rel"),
+      referrerPolicy: a.getAttribute("referrerpolicy"),
+    })));
+    expect(links.length, `${path} has source links`).toBeGreaterThan(0);
+    for (const { href, rel, referrerPolicy } of links) {
       expect(href).toMatch(/^https:\/\//);
-      expect(known.has(href), `${href} comes from content data`).toBe(true);
-      expect(await a.getAttribute("rel")).toContain("noopener");
-      expect(await a.getAttribute("rel")).toContain("noreferrer");
-      expect(await a.getAttribute("referrerpolicy")).toBe("no-referrer");
+      expect(known.has(href!), `${href} comes from content data`).toBe(true);
+      expect(rel).toContain("noopener");
+      expect(rel).toContain("noreferrer");
+      expect(referrerPolicy).toBe("no-referrer");
     }
   }
 });

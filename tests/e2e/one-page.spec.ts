@@ -242,6 +242,28 @@ test.describe("without JavaScript", () => {
   });
 });
 
+test("phone filter summary appears without moving the library results", async ({ page, requests }, info) => {
+  void requests;
+  test.skip(info.project.name !== "phone", "phone filter summary");
+  for (const library of ["/", "/?course=physics-30&unit=p30c"]) {
+    await page.goto(library, { waitUntil: "networkidle" });
+    const summary = page.getByRole("button", { name: /Change$/ });
+    const card = page.locator('main a[href^="/examples/"]').first();
+    const documentTop = () => card.evaluate((el) => el.getBoundingClientRect().top + window.scrollY);
+    await expect(summary).toBeHidden();
+    const top = await documentTop();
+
+    await card.scrollIntoViewIfNeeded();
+    await expect(summary).toBeVisible();
+    expect(await documentTop(), `${library}: revealing the summary must not move cards`).toBeCloseTo(top, 0);
+
+    await summary.click();
+    await expect(page.getByRole("combobox", { name: "Course", exact: true })).toBeFocused();
+    await expect(summary).toBeHidden();
+    expect(await documentTop(), `${library}: hiding the summary must not move cards`).toBeCloseTo(top, 0);
+  }
+});
+
 test("INSPECT-005: Back from an example to the library leaves the library's scroll to the browser and router", async ({ page, requests }) => {
   void requests;
   // Record every programmatic scroll to the top, so the example cannot quietly reset the library.

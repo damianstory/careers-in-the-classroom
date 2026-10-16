@@ -1,6 +1,18 @@
 import { choosePart } from "./example-helpers";
 import { expect, test } from "./fixtures";
 
+test("role details show repeated introductory text once and retain distinct explanations", async ({ page, requests }) => {
+  void requests;
+  await page.goto("/examples/botaneco?role=work-food#who");
+  const repeated = "Investigate how ingredients behave in a product. This work connects a material’s composition to properties such as texture, stability or performance in a mixture.";
+  await expect(page.locator("#who").getByText(repeated, { exact: true })).toHaveCount(1);
+  await expect(page.getByRole("heading", { name: "What might you actually do?" })).toBeVisible();
+
+  await page.goto("/examples/ghgsat?role=atmospheric-science#who");
+  await expect(page.locator("#who").getByText("Turn light measurements into an explanation of what is in the air.", { exact: true })).toBeVisible();
+  await expect(page.locator("#who").getByText(/^Atmospheric and remote sensing scientists/)).toBeVisible();
+});
+
 for (const example of [
   { slug: "wilder-institute", org: "Wilder Institute", tab: "Organization", role: "Animal care and welfare", job: "Animal Care Technician (On-Call in Strathmore, AB)", program: "Veterinary Technical Assistant", diagram: /four-stage conservation sequence/i },
   { slug: "e3-lithium", org: "E3 Lithium", tab: "Company", role: "Process engineering", job: "Intermediate Process Engineer", program: "Chemical Engineering Technology", diagram: /conceptual process flow/i },

@@ -134,7 +134,7 @@
   color: var(--text-accent);
 }
 
-.summary {
+.summarySlot {
   display: none;
 }
 
@@ -203,11 +203,18 @@
     grid-row: 1;
   }
 
-  /* One sticky row that scrolls back to the form. Header + this row stay under ~110px. */
-  .summary {
+  /* Keep the sticky row out of flow: revealing it after Back must not shift the
+     results or make scroll anchoring adjust the restored reading position. */
+  .summarySlot {
     position: sticky;
     top: var(--header-h);
     z-index: 20;
+    display: block;
+    height: 0;
+  }
+
+  /* Header + this row stay under ~110px. */
+  .summary {
     display: flex;
     align-items: center;
     gap: 12px;

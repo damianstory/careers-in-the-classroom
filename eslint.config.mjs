@@ -12,6 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Archived browser runs include standalone CommonJS scripts and local configs.
+    "docs/validation/**/implementation-evidence/**",
+    "docs/validation/browser-qa-*/**",
   ]),
 ]);
 
