@@ -215,13 +215,17 @@ test("one checked date on every view, with the evidence table closed", async ({ 
 
 test("new company profiles survive reload and reject another example's role", async ({ page, requests }) => {
   void requests;
-  for (const [slug, org, label] of [["wilder-institute", "Wilder Institute", "Organization"], ["e3-lithium", "E3 Lithium", "Company"]]) {
+  // E3 also shows a related role from another employer, so its list is not titled as E3's own.
+  for (const [slug, org, label, rolesTitle] of [
+    ["wilder-institute", "Wilder Institute", "Organization", "Roles documented at Wilder Institute"],
+    ["e3-lithium", "E3 Lithium", "Company", "Roles connected to this example"],
+  ]) {
     await page.goto(`/examples/${slug}?view=company`);
     await page.reload();
     await expect(lessonNav(page).getByRole("link", { name: label })).toHaveAttribute("aria-current", "location");
     await expect(page.getByRole("heading", { level: 2, name: org, exact: true })).toBeVisible();
     await page.goto(`/examples/${slug}?view=roles&role=atmospheric-science&job=ghgsat-emissions-scientist`);
-    await expect(page.getByRole("heading", { level: 2, name: `Roles documented at ${org}` })).toBeVisible();
+    await expect(page.getByRole("heading", { level: 2, name: rolesTitle })).toBeVisible();
     await expect(page.getByRole("article")).toHaveCount(0);
   }
 });

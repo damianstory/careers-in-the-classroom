@@ -55,7 +55,7 @@ test("3: a selected role opens inline in Roles, and All roles returns to the lis
   await expect(roles.getByRole("heading", { name: "What might you actually do?" })).toBeVisible();
   await expect(roles.getByRole("heading", { name: "Satellite and instrument engineering" })).toHaveCount(0);
 
-  await roles.getByRole("link", { name: "All roles at GHGSat" }).click();
+  await roles.getByRole("link", { name: "All roles in this example" }).click();
   await expect(page).toHaveURL(/\/examples\/ghgsat#roles$/);
   await expect(heading(page, "roles")).toHaveText("Roles documented at GHGSat");
   await expectLanded(page, "roles");
@@ -96,10 +96,12 @@ test("5: each example shows its organization's logo, captioned, on the right pla
     expect(box.width, slug).toBeLessThanOrEqual(160.5);
     await expect(hero.locator("figure[data-logo] figcaption"), slug).toHaveText("Logo shown for identification only");
     await expect(hero.locator("[data-plate]"), slug).toHaveAttribute("data-plate", plate);
-    // Right of the question on wide screens; under the org line on phones.
+    // Under the question; beside the org line and artwork on wide screens, under the org line when stacked.
     const title = (await page.getByRole("heading", { level: 1 }).boundingBox())!;
-    if (page.viewportSize()!.width > 640) expect(box.x, slug).toBeGreaterThan(title.x + title.width);
-    else expect(box.y, slug).toBeGreaterThan((await hero.getByText(org, { exact: true }).first().boundingBox())!.y);
+    const orgLine = (await hero.getByText(org, { exact: true }).first().locator("..").boundingBox())!;
+    expect(box.y, slug).toBeGreaterThan(title.y + title.height);
+    if (page.viewportSize()!.width >= 1200) expect(box.x, slug).toBeGreaterThan(orgLine.x + orgLine.width);
+    else expect(box.y, slug).toBeGreaterThan(orgLine.y);
   }
 });
 
@@ -452,7 +454,7 @@ test("INSPECT-006: on a short landscape screen the focused heading is always on 
   }
 
   // A selection change, then Back and Forward.
-  await page.locator("#roles").getByRole("link", { name: "All roles at GHGSat" }).click();
+  await page.locator("#roles").getByRole("link", { name: "All roles in this example" }).click();
   await expect(page).toHaveURL(/\/examples\/ghgsat#roles$/);
   await expectHeading("roles", "Roles documented at GHGSat", "All roles");
   await page.goBack();
