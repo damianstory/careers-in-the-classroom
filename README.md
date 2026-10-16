@@ -12,6 +12,12 @@ npm run dev          # development server for building features
 
 Use `npm run demo` for interviews. Neither server logs requests or writes typed search topics to disk: `npm run dev` turns off Next.js trace recording, and both are checked by tests (`npm run test:privacy-dev` and the e2e suite).
 
+Discover is part of this repository at `/discover`; use the same server as the
+examples. The `feat/discover` work was integrated into `main`. On 15 October 2026,
+the clean older `CitC-discover` worktree was moved to
+`../.archives/CitC-discover-2026-10-15` for recovery, including its ignored local
+files. Its branch remains available; it is not the active development location.
+
 ## Checks
 
 ```bash
