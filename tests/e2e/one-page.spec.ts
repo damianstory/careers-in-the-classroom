@@ -255,12 +255,14 @@ test("INSPECT-005: Back from an example to the library leaves the library's scro
       return original(...(args as [ScrollToOptions]));
     }) as typeof window.scrollTo;
   });
-  const question = "How can you find an invisible gas from space?";
   const scrollY = () => page.evaluate(() => Math.round(window.scrollY));
   for (const library of ["/#library", "/?course=physics-30&unit=p30c#library", "/?course=physics-30&unit=p30c"]) {
     await page.goto(library, { waitUntil: "networkidle" });
     const anchor = await scrollY(); // where the #library fragment put the page (0 without one)
-    const card = page.getByRole("link", { name: question });
+    // The first example card on that library page (the full library shows only its first 12 cards).
+    const first = page.locator('main a[href^="/examples/"]').first();
+    const question = (await first.innerText()).trim();
+    const card = page.getByRole("link", { name: question, exact: true }).first();
     await card.scrollIntoViewIfNeeded();
     // Park a little further down, so the position is the reader's own.
     await page.evaluate(() => window.scrollBy(0, 120));

@@ -1,8 +1,10 @@
+import { expansionDetails } from "./calgary-expansion";
 import type { ExampleDetails } from "./types";
 
 // Connected exploration for an example. The classroom story is illustrative: it supports a
 // teacher's discussion and is not a lesson plan.
 export const exampleDetails: ExampleDetails[] = [
+  ...expansionDetails,
   {
     id: "ghgsat-details",
     exampleSlug: "ghgsat",

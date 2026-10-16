@@ -3,7 +3,7 @@ import { ExampleIllustration } from "@/components/ExampleIllustration";
 import { getOrganizationRole, getPathway, getRoleProfile, type Example, type ExampleDetails } from "@/content";
 import { PART_LABELS, SHOW_PARTS, type Selection, type View } from "@/lib/example-navigation";
 import type { PresentationFrame } from "./Presentation";
-import { diagrams } from "./StoryDiagram";
+import { storyDiagram } from "./StoryDiagram";
 import styles from "./explore.module.css";
 
 export function buildFrames(e: Example, details: ExampleDetails | undefined, views: View[], selection: Selection): PresentationFrame[] {
@@ -14,12 +14,12 @@ export function buildFrames(e: Example, details: ExampleDetails | undefined, vie
     </div>;
     if (part === "how-it-works") {
       const story = details?.story;
-      const diagram = story ? diagrams[story.diagramKind] : undefined;
+      const diagram = story ? storyDiagram(story) : undefined;
       frame.content = diagram && story ? <>
         <p>Schematic · not to scale</p>
         <h3>{diagram.heading}</h3>
         <div className={styles.projectDiagram}>
-          <Image src={diagram.image} alt={story.diagramAlt} sizes="70vw" />
+          <Image src={diagram.image} width={1344} height={756} alt={story.diagramAlt} sizes="70vw" />
           <ol>{diagram.steps.map((step) => <li key={step}>{step}</li>)}</ol>
         </div>
         <p>{diagram.note}</p>

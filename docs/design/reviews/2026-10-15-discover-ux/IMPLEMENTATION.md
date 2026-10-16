@@ -53,3 +53,27 @@ This is browser and automated verification, not a teacher/student usability stud
 Removed the decorative focus outline from programmatically focused Discover headings while preserving focus and announcements. Interactive controls retain their visible keyboard focus. At desktop widths (1100px and up), the bottom Back/Next row and its helper text disappear after reveal; topic buttons handle section selection, and Next round remains in the top toolbar. Mobile/tablet controls and the initial Reveal the job action remain. Initial deep links focus the heading when the bottom action is hidden, preserving keyboard navigation.
 
 Validation: TypeScript, ESLint, production build and 23 targeted browser/accessibility checks pass, including the 162-state responsive matrix and checks for heading appearance, tab focus, keyboard progression and mobile controls.
+
+## Follow-up: balanced guessing layout and Randomize
+
+The desktop guessing screen now centers the illustration and clues as one two-column group, removing the unused left column. Randomize replaces the disabled Back button before reveal: it immediately restarts the cycling round, or draws another picture in Single draw mode. Existing selection/exhaustion rules and the mobile layout remain intact.
+
+Validation: TypeScript, ESLint, production build and all 22 Discover browser checks pass. Added checks cover balanced desktop margins and direct randomization in both modes on desktop and phone. Native browser inspection confirmed the layout and restart/stop flow. [Updated guessing screen](after-guess-layout.png).
+
+## Follow-up: Restart and compact guessing banner
+
+Renamed Randomize to Restart and grouped it immediately before Reveal the job on desktop (1100px and up). The guessing banner is half its former height: the upper half of the source title region is clipped during guessing, and the remaining half stays covered. The work scene retains its natural proportions, and reveal restores the complete image.
+
+Validation: TypeScript, ESLint, production build and all 22 Discover browser checks pass, including title concealment across all nine cards, full-image restoration, adjacent desktop buttons, restart in both round styles, and the responsive content matrix. Native browser inspection confirmed desktop and phone presentation. [Updated desktop screen](after-compact-guess-banner.png).
+
+## Follow-up: restore original banner height
+
+Restored the original full-height guessing frame and 27% title cover at the user's request. Removed the temporary image clipping; Restart retains its name and placement beside Reveal the job on desktop. The compact-banner screenshot above records the superseded version.
+
+Validation: production build and all 22 Discover browser checks pass, including original cover proportions, desktop button grouping and restart behavior.
+
+## Follow-up: patterned question cover
+
+Added a subtle static dither texture behind “What job is this?”, reusing the existing footer asset whose Bayer pattern matches the examples rail. The texture fades upward at 35% opacity; the solid green cover, original height and white question text remain intact.
+
+Validation: production build and five targeted browser checks pass (all-card cover/reveal, 720p layout, grouped desktop controls, and desktop/phone restart). Native desktop and phone inspection confirmed the pattern and readable text. [Current desktop screen](after-patterned-guess-banner.png).

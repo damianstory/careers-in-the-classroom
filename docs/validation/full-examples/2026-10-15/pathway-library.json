@@ -1,0 +1,137 @@
+{
+  "lab": {
+    "name": "SAIT \u2014 Chemical Laboratory Technology",
+    "route": "Diploma",
+    "location": "Calgary",
+    "learns": "Practice chemical analysis, sample preparation and analytical instrumentation.",
+    "role_connection": "Supports laboratory testing and reliable measurement.",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+    "entry": "Check the provider\u2019s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+  },
+  "mechanical": {
+    "name": "SAIT \u2014 Mechanical Engineering Technology",
+    "route": "Diploma",
+    "location": "Calgary",
+    "learns": "Study mechanical systems, design and manufacturing, with specialization options.",
+    "role_connection": "Supports component design, prototyping and equipment work.",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology",
+    "entry": "Check the provider\u2019s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+  },
+  "instrument": {
+    "name": "SAIT \u2014 Instrumentation Engineering Technology",
+    "route": "Diploma",
+    "location": "Calgary",
+    "learns": "Work with measurement devices, calibration and automated process controls.",
+    "role_connection": "Supports process testing, troubleshooting and control systems.",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/instrumentation-engineering-technology",
+    "entry": "Check the provider\u2019s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+  },
+  "electrical": {
+    "name": "SAIT \u2014 Electrical Engineering Technology",
+    "route": "Diploma",
+    "location": "Calgary",
+    "learns": "Study circuits, electrical power and controls with practical laboratory work.",
+    "role_connection": "Supports electrical testing and technical systems work.",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/electrical-engineering-technology",
+    "entry": "Check the provider\u2019s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+  },
+  "software": {
+    "name": "SAIT \u2014 Software Development",
+    "route": "Diploma",
+    "location": "Calgary",
+    "learns": "Learn to design, test and build software across front-end and back-end systems.",
+    "role_connection": "A foundation for junior development or testing; senior roles require further experience.",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/software-development",
+    "entry": "Check the provider\u2019s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+  },
+  "geomatics": {
+    "name": "SAIT \u2014 Geomatics Engineering Technology",
+    "route": "Diploma",
+    "location": "Calgary",
+    "learns": "Learn surveying, GIS, positioning and remote sensing.",
+    "role_connection": "Supports spatial measurement and mapping data work.",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/geomatics-engineering-technology",
+    "entry": "Check the provider\u2019s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+  },
+  "ame": {
+    "name": "SAIT \u2014 Aircraft Maintenance Engineers Technology",
+    "route": "Diploma",
+    "location": "Calgary",
+    "learns": "Study aircraft systems, inspections and maintenance at the Art Smith Aero Centre.",
+    "role_connection": "A training route toward aircraft maintenance work.",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/aircraft-maintenance-engineers-technology",
+    "entry": "A diploma is not an AME licence. Transport Canada also requires qualifying experience, demonstrated skills and examinations; see the licensing source."
+  },
+  "avionics": {
+    "name": "SAIT \u2014 Avionics Technology",
+    "route": "Diploma",
+    "location": "Calgary",
+    "learns": "Study aircraft electrical, electronic, communication and navigation systems.",
+    "role_connection": "Supports avionics maintenance and troubleshooting.",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/avionics-technology",
+    "entry": "Training supports a route toward AME E licensing; graduation alone does not confer that licence. Check Transport Canada\u2019s requirements."
+  },
+  "machinist": {
+    "name": "SAIT \u2014 Machinist",
+    "route": "Apprenticeship",
+    "location": "Calgary",
+    "learns": "Learn precision measurement, machine tools, drawings and machining.",
+    "role_connection": "A paid-work-and-classroom route toward making precision parts.",
+    "url": "https://www.sait.ca/apprenticeships-and-trades/programs/machinist",
+    "entry": "Requires apprenticeship registration and workplace training as well as classroom instruction; admission to a course alone is not journeyperson certification."
+  },
+  "millwright": {
+    "name": "SAIT \u2014 Industrial Mechanic (Millwright)",
+    "route": "Apprenticeship",
+    "location": "Calgary",
+    "learns": "Learn to install, maintain and repair industrial machinery.",
+    "role_connection": "Supports equipment assembly, alignment and maintenance.",
+    "url": "https://www.sait.ca/apprenticeships-and-trades/programs/industrial-mechanic-millwright",
+    "entry": "Requires apprenticeship registration and workplace training. This is distinct from an engineering degree."
+  },
+  "welder": {
+    "name": "SAIT \u2014 Welder",
+    "route": "Apprenticeship",
+    "location": "Calgary",
+    "learns": "Learn joining processes, drawings and inspection of welded work.",
+    "role_connection": "Supports metal fabrication and assembly.",
+    "url": "https://www.sait.ca/apprenticeships-and-trades/programs/welder",
+    "entry": "Requires apprenticeship registration and workplace training. Check the current provincial and provider requirements."
+  },
+  "chemical": {
+    "name": "University of Calgary \u2014 Chemical Engineering",
+    "route": "Bachelor\u2019s degree",
+    "location": "Calgary",
+    "learns": "Study how to transform raw materials and design production processes.",
+    "role_connection": "Supports process design and scale-up; experience and professional requirements remain separate.",
+    "url": "https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-chemical-engineering",
+    "entry": "Check the provider\u2019s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+  },
+  "biochem": {
+    "name": "University of Calgary \u2014 Biochemistry",
+    "route": "Bachelor\u2019s degree",
+    "location": "Calgary",
+    "learns": "Study the chemistry of living organisms and changes within cells.",
+    "role_connection": "A scientific foundation for biological research; independent research positions may need further study.",
+    "url": "https://science.ucalgary.ca/future-students/undergraduate/programs",
+    "entry": "Check the provider\u2019s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+  },
+  "geology": {
+    "name": "University of Calgary \u2014 Geology",
+    "route": "Bachelor\u2019s degree",
+    "location": "Calgary",
+    "learns": "Study Earth materials through the geology program and its available study streams.",
+    "role_connection": "Supports interpreting rocks and geological evidence.",
+    "url": "https://science.ucalgary.ca/earth/future-students/undergraduate/earth-science",
+    "entry": "Check the provider\u2019s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+  },
+  "electrical-degree": {
+    "name": "University of Calgary \u2014 Electrical Engineering",
+    "route": "Bachelor\u2019s degree",
+    "location": "Calgary",
+    "learns": "Study electrical phenomena and their engineering applications.",
+    "role_connection": "A degree route relevant to power-electronics design; it does not replace job-specific experience.",
+    "url": "https://schulich.ucalgary.ca/future-students/undergraduate/programs/majors",
+    "entry": "Check the provider\u2019s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+  }
+}

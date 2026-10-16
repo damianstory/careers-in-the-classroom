@@ -554,7 +554,7 @@ function RolesView({
     return (
       <>
         <header className={`${base.band} ${base.hero}`}>
-          <p className={base.lede} data-role-scope="">{roles.some((r) => !getOrganizationRole(org.id, r.id)) ? `Roles connected to this example` : `Roles documented at ${org.name}`}</p>
+          <p className={base.lede} data-role-scope="">{roles.some((r) => !getOrganizationRole(org.id, r.id) || getOrganizationRole(org.id, r.id)?.establishes === "related-work") ? `Roles connected to this example` : `Roles documented at ${org.name}`}</p>
           <p className={base.lede}>What this kind of work involves, with real job examples and ways to prepare for each.</p>
         </header>
         <div className={`${base.band} ${base.tint} ${base.rule}`}>
@@ -851,7 +851,7 @@ function PathwaysView({ e, details, selection, href }: { e: Example; details?: E
                     <div className={styles.why}>
                       <p className={styles.whyLabel}>Why it connects to the work · our interpretation</p>
                       {p.roleRationale
-                        .filter((w) => !role || w.roleId === role.id)
+                        .filter((w) => details.roleIds.includes(w.roleId) && (!role || w.roleId === role.id))
                         .map((w) => (
                           <div key={w.roleId} className={styles.whyItem}>
                             <SelectionLink section="who" href={href({ section: "who", role: w.roleId })} className="tag tag-neutral">

@@ -1,3 +1,4 @@
+import { expansionSources } from "./calgary-expansion";
 import type { DatedSource } from "./types";
 
 // Shared source registry for the connected exploration (organizations, roles,
@@ -5,6 +6,7 @@ import type { DatedSource } from "./types";
 const checkedOn = "2026-09-25";
 
 export const registry: DatedSource[] = [
+  ...expansionSources,
   { id: "ghgsat-home", label: "GHGSat home page", url: "https://www.ghgsat.com/", checkedOn },
   { id: "ghgsat-about", label: "GHGSat: About us", url: "https://www.ghgsat.com/about-us/", checkedOn },
   { id: "ghgsat-team", label: "GHGSat: Our team", url: "https://www.ghgsat.com/ghgsat-team/", checkedOn },

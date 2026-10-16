@@ -1,0 +1,244 @@
+{
+  "lab": {
+    "title": "Laboratory analysis",
+    "summary": "Make measurements that other people can trust. A laboratory worker prepares samples, uses a method consistently and records enough detail for someone else to interpret the result.",
+    "tasks": [
+      "Prepare and label samples so their identity is preserved.",
+      "Run comparisons or reference samples to check the method.",
+      "Record results, units and limitations before sharing findings."
+    ],
+    "collaborators": "Scientists, process engineers and quality teams",
+    "classroom_connection": "A repeatable method and a fair comparison matter as much as a single impressive number."
+  },
+  "process": {
+    "title": "Process engineering",
+    "summary": "Turn a useful transformation into a workable sequence of equipment and operating steps. Process engineers consider what enters, what leaves and what conditions the system must maintain.",
+    "tasks": [
+      "Draw a flow of materials and energy through the system.",
+      "Compare operating conditions and equipment options.",
+      "Use trial results to revise the process and communicate constraints."
+    ],
+    "collaborators": "Laboratory staff, operators, mechanical designers and controls specialists",
+    "classroom_connection": "Conservation of matter and energy connects classroom calculations to process decisions."
+  },
+  "food": {
+    "title": "Ingredient and formulation science",
+    "summary": "Investigate how ingredients behave in a product. This work connects a material\u2019s composition to properties such as texture, stability or performance in a mixture.",
+    "tasks": [
+      "Choose a property to compare across formulations.",
+      "Prepare controlled trials and observe changes over time.",
+      "Explain the trade-offs between ingredients and processing conditions."
+    ],
+    "collaborators": "Biochemists, laboratory technicians and product-development teams",
+    "classroom_connection": "Molecules and mixtures help explain why two ingredients can behave differently."
+  },
+  "instrument": {
+    "title": "Instrument development and testing",
+    "summary": "Help build and check the equipment that produces measurements. Instrument work joins hardware, software and experiments rather than treating a reading as automatically correct.",
+    "tasks": [
+      "Check performance using a known reference.",
+      "Investigate drift, noise or inconsistent readings.",
+      "Document tests so later users know what the instrument can establish."
+    ],
+    "collaborators": "Scientists, electronics specialists and software developers",
+    "classroom_connection": "Measurement uncertainty is part of using a tool responsibly."
+  },
+  "applications": {
+    "title": "Scientific applications",
+    "summary": "Connect an instrument to the question a user needs to answer. Applications work involves selecting a method, interpreting results and explaining limitations.",
+    "tasks": [
+      "Choose a measurement approach for the sample.",
+      "Compare outputs with reference information.",
+      "Explain what further tests would resolve ambiguity."
+    ],
+    "collaborators": "Laboratory users, instrument engineers and researchers",
+    "classroom_connection": "A pattern is evidence to interpret, not a label that proves an answer by itself."
+  },
+  "mechanical": {
+    "title": "Mechanical design and prototyping",
+    "summary": "Translate a need into a component or machine that can be built and tested. Designers use dimensions, material properties and constraints to evaluate alternatives.",
+    "tasks": [
+      "Create and revise drawings or a digital model.",
+      "Choose materials and dimensions for the intended conditions.",
+      "Compare the prototype with its requirements and refine the design."
+    ],
+    "collaborators": "Machinists, fabricators, test staff and customers",
+    "classroom_connection": "Geometry, forces and material properties shape real design trade-offs."
+  },
+  "machining": {
+    "title": "Machining and dimensional inspection",
+    "summary": "Make parts fit their intended purpose by controlling dimensions. Machining combines tools, setup and measurement; finishing a part is not the same as proving it meets its specification.",
+    "tasks": [
+      "Interpret a drawing and plan a sequence of cuts.",
+      "Set up the machine and check the workpiece.",
+      "Measure critical dimensions and document deviations."
+    ],
+    "collaborators": "Designers, production teams and quality inspectors",
+    "classroom_connection": "Tolerance describes an acceptable range rather than a perfectly exact number."
+  },
+  "controls": {
+    "title": "Instrumentation and controls",
+    "summary": "Keep a process measurable and responsive. Controls work connects sensors, decisions and actuators so the system can respond when conditions change.",
+    "tasks": [
+      "Check whether sensors are reading reliably.",
+      "Compare measurements with the intended operating range.",
+      "Test how the system responds to a change or fault."
+    ],
+    "collaborators": "Operators, electricians and process engineers",
+    "classroom_connection": "Feedback uses a measured result to inform the next action."
+  },
+  "maintenance": {
+    "title": "Aircraft maintenance",
+    "summary": "Investigate condition, carry out authorized maintenance and preserve the records behind a decision. Aircraft maintenance work relies on approved procedures and appropriate qualifications.",
+    "tasks": [
+      "Inspect a component using the applicable procedure.",
+      "Compare findings with documented limits and escalate uncertainty.",
+      "Record work and test results for the maintenance decision."
+    ],
+    "collaborators": "Licensed AMEs, avionics specialists, engineering and quality teams",
+    "classroom_connection": "A visual impression alone is not enough evidence that a part is safe."
+  },
+  "avionics": {
+    "title": "Avionics and electronics",
+    "summary": "Work on the electronic systems that allow aircraft to communicate, navigate and collect data. Troubleshooting means distinguishing a faulty sensor from wiring, power or software problems.",
+    "tasks": [
+      "Trace a signal through connected components.",
+      "Use test equipment to compare expected and measured behaviour.",
+      "Document the fault and verify the result after authorized work."
+    ],
+    "collaborators": "Aircraft maintenance teams, electrical designers and software developers",
+    "classroom_connection": "Circuits and signals become useful when the complete system works reliably."
+  },
+  "quality": {
+    "title": "Quality and traceability",
+    "summary": "Make it possible to explain how a result or product was produced. Quality work checks records, methods and acceptance criteria so variation can be investigated rather than hidden.",
+    "tasks": [
+      "Check that materials and samples have traceable identities.",
+      "Compare recorded results with defined acceptance criteria.",
+      "Investigate deviations and document what changed."
+    ],
+    "collaborators": "Production, laboratory, engineering and customer teams",
+    "classroom_connection": "Repeated results need both measurements and records of the conditions that produced them."
+  },
+  "bioprocess": {
+    "title": "Bioprocess development",
+    "summary": "Develop repeatable ways to make and purify biological materials. This work connects molecular science to manufacturing conditions and checks whether a change improves the process.",
+    "tasks": [
+      "Define a comparison between process conditions.",
+      "Track production and purification steps for each batch.",
+      "Use analytical results to decide which change to test next."
+    ],
+    "collaborators": "Molecular scientists, analytical staff and quality teams",
+    "classroom_connection": "Knowing a sequence or molecule is different from producing a reliable batch of it."
+  },
+  "drone": {
+    "title": "Drone operations",
+    "summary": "Plan and carry out flights for a specific task while coordinating with the people responsible for the site. The aircraft is one tool within an operational plan.",
+    "tasks": [
+      "Review the task, site and operating constraints.",
+      "Check the aircraft and coordinate the flight with relevant personnel.",
+      "Record observations and equipment issues after the flight."
+    ],
+    "collaborators": "Site operations, wildlife specialists and data analysts",
+    "classroom_connection": "Flight performance must be considered alongside the task and the surrounding environment."
+  },
+  "wildlife": {
+    "title": "Wildlife monitoring and interpretation",
+    "summary": "Observe how animals respond to an intervention and ask whether the change lasts. This work needs consistent observations and attention to other causes of changing behaviour.",
+    "tasks": [
+      "Define how bird activity will be counted.",
+      "Compare observations before and after an intervention.",
+      "Record weather, season and other factors that could explain a difference."
+    ],
+    "collaborators": "Drone operators, airport staff and environmental teams",
+    "classroom_connection": "Behavioural response is evidence; reduced sightings alone do not prove a lasting safety outcome."
+  },
+  "spatial": {
+    "title": "Spatial data and mapping",
+    "summary": "Turn measurements tied to places into usable spatial information. The work involves coordinates, scale and checking that datasets describe the same location and time.",
+    "tasks": [
+      "Check coordinate systems and measurement dates.",
+      "Align and inspect spatial datasets.",
+      "Present maps or models with their limitations."
+    ],
+    "collaborators": "Surveyors, engineers, field operators and software teams",
+    "classroom_connection": "Models can be detailed while still containing gaps or misaligned measurements."
+  },
+  "geoscience": {
+    "title": "Geoscience and interpretation",
+    "summary": "Explain what rock measurements suggest about geology. Geoscientists combine observations with context and use additional tests where a scan leaves uncertainty.",
+    "tasks": [
+      "Describe core and identify changes along it.",
+      "Compare sensor patterns with geological observations or assays.",
+      "Communicate alternative interpretations and uncertainty."
+    ],
+    "collaborators": "Core technicians, data scientists and exploration teams",
+    "classroom_connection": "A measurement of a sample is not automatically a measurement of the whole deposit."
+  },
+  "software": {
+    "title": "Software and data systems",
+    "summary": "Build the tools that move, process and display information. Reliable software needs testing against missing, delayed and unexpected data as well as ideal examples.",
+    "tasks": [
+      "Translate a user need into a testable behaviour.",
+      "Build and test a data-processing or display feature.",
+      "Investigate failures and document assumptions about inputs."
+    ],
+    "collaborators": "Domain experts, designers, users and hardware teams",
+    "classroom_connection": "An algorithm\u2019s output depends on the quality and meaning of its inputs."
+  },
+  "millwright": {
+    "title": "Industrial machinery assembly and maintenance",
+    "summary": "Make machinery work together as a physical system. Millwright work connects assembly, alignment, inspection and troubleshooting.",
+    "tasks": [
+      "Read equipment drawings and plan assembly steps.",
+      "Align and connect mechanical components.",
+      "Check operation and record problems that need adjustment."
+    ],
+    "collaborators": "Designers, operators, electricians and fabrication teams",
+    "classroom_connection": "Small alignment errors can change how forces and motion pass through a machine."
+  },
+  "fabrication": {
+    "title": "Metal fabrication and welding",
+    "summary": "Join and assemble material into usable structures. Fabrication work follows drawings and procedures, then checks whether the finished work meets its requirements.",
+    "tasks": [
+      "Read dimensions and prepare components.",
+      "Use the specified joining process and sequence.",
+      "Inspect the assembly and communicate any deviation."
+    ],
+    "collaborators": "Designers, machinists and quality inspectors",
+    "classroom_connection": "Material properties and heat affect the result of a joining process."
+  },
+  "materials": {
+    "title": "Materials research and testing",
+    "summary": "Investigate whether a material improves a product for a defined purpose. A useful comparison separates the effect of the added material from other changes in the test.",
+    "tasks": [
+      "Prepare comparable samples with and without an additive.",
+      "Measure a relevant property under consistent conditions.",
+      "Explain performance changes alongside uncertainty and practical constraints."
+    ],
+    "collaborators": "Chemists, process engineers and product developers",
+    "classroom_connection": "Stronger, lighter and more conductive are different properties requiring different tests."
+  },
+  "power": {
+    "title": "Power-electronics design",
+    "summary": "Control how electrical energy moves between components. Power-electronics work combines circuit design with testing, thermal limits and the behaviour of the complete system.",
+    "tasks": [
+      "Choose and document a circuit design.",
+      "Test its response across operating conditions.",
+      "Investigate losses and component limits before revising the design."
+    ],
+    "collaborators": "Electrical technologists, firmware developers and manufacturing teams",
+    "classroom_connection": "Power describes the rate of energy transfer; stored energy describes how much is available."
+  },
+  "weather": {
+    "title": "Weather-data interpretation",
+    "summary": "Use observations to understand changing atmospheric conditions. Weather-data work checks where and when a measurement was made before combining it with other evidence.",
+    "tasks": [
+      "Check the position, time and quality of observations.",
+      "Compare measurements across altitude or time.",
+      "Identify gaps and explain how they limit an interpretation."
+    ],
+    "collaborators": "Meteorologists, instrument teams and data engineers",
+    "classroom_connection": "More measurements can help, but uneven coverage can still leave important gaps."
+  }
+}

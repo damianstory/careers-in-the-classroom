@@ -350,3 +350,38 @@ for (const width of [1280, 768, 390]) {
     expect(errors).toEqual([]);
   });
 }
+
+test("guessing offers a direct restart in cycling and single-draw modes", async ({ page, requests }) => {
+  void requests;
+  await page.goto("/discover?subject=chemistry&role=07&step=0");
+  await expect(page.getByRole("button", { name: "Back", exact: true })).toHaveCount(0);
+  await page.getByRole("button", { name: "Restart", exact: true }).click();
+  await expect(page.getByRole("region", { name: "Discover", exact: true })).toHaveAttribute("data-phase", "flashing");
+  await page.getByRole("button", { name: "STOP", exact: true }).click();
+  await expect(page.locator('[data-visible="true"]')).toHaveAttribute("data-role", "process-operations");
+  await page.goto("/discover?subject=chemistry&role=07&step=0");
+  await page.getByLabel("Round style").selectOption("draw");
+  await page.getByRole("button", { name: "Restart", exact: true }).click();
+  await expect(page.getByRole("region", { name: "Discover", exact: true })).toHaveAttribute("data-phase", "reveal");
+  await expect(page.getByRole("region", { name: "Discover", exact: true })).toHaveAttribute("data-step", "0");
+  await expect(page.locator('[data-visible="true"]')).toHaveAttribute("data-role", "process-operations");
+  await expect(page.getByRole("button", { name: "Reveal the job", exact: true })).toBeVisible();
+});
+
+test("desktop guessing balances picture and clues without an empty column", async ({ page, requests }, info) => {
+  test.skip(info.project.name === "phone");
+  void requests;
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto("/discover?role=09&step=0");
+  const picture = (await page.locator('[data-visible="true"]').boundingBox())!;
+  const clues = (await page.getByRole("heading", { name: "Look for clues" }).boundingBox())!;
+  expect(picture.x + picture.width).toBeLessThan(clues.x);
+  expect(clues.x - (picture.x + picture.width)).toBeLessThan(64);
+  const leftMargin = picture.x;
+  const rightMargin = 1440 - (clues.x + clues.width);
+  expect(Math.abs(leftMargin - rightMargin)).toBeLessThan(20);
+  const restart = (await page.getByRole("button", { name: "Restart", exact: true }).boundingBox())!;
+  const reveal = (await page.getByRole("button", { name: "Reveal the job", exact: true }).boundingBox())!;
+  expect(restart.y).toBe(reveal.y);
+  expect(reveal.x - (restart.x + restart.width)).toBeCloseTo(12, 0);
+});

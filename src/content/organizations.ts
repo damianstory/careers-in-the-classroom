@@ -1,7 +1,9 @@
+import { expansionOrganizations, expansionOrganizationRoles } from "./calgary-expansion";
 import type { Organization, OrganizationRole } from "./types";
 
 // Company claims are reported as GHGSat states them on its own pages, checked 25 September 2026.
 export const organizations: Organization[] = [
+  ...expansionOrganizations,
   {
     id: "ghgsat",
     name: "GHGSat",
@@ -182,6 +184,7 @@ export const organizations: Organization[] = [
 // Each link says what its source establishes: GHGSat names these as kinds of people on its team,
 // not as job titles, vacancies or Calgary positions.
 export const organizationRoles: OrganizationRole[] = [
+  ...expansionOrganizationRoles,
   {
     organizationId: "ghgsat",
     roleId: "atmospheric-science",

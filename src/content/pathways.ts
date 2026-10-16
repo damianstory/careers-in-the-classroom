@@ -1,8 +1,10 @@
+import { expansionPathways } from "./calgary-expansion";
 import type { LearningPathway } from "./types";
 
 // Official program pages only. What each program teaches is stated by the provider;
 // why it relates to a role is our reading of that page. None is an employer requirement.
 export const learningPathways: LearningPathway[] = [
+  ...expansionPathways,
   {
     id: "ucalgary-engineering-physics",
     provider: "University of Calgary, Schulich School of Engineering",

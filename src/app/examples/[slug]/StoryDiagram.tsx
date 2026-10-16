@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { expansionDiagrams } from "@/content/expansion-diagrams";
 import type { ClassroomStory } from "@/content";
 import methane from "../../../../public/images/story-diagrams/methane-graphic-novel.webp";
 import owls from "../../../../public/images/story-diagrams/owl-recovery-graphic-novel.webp";
@@ -43,15 +44,23 @@ export const diagrams = {
   },
 };
 
+// The page and the projector draw the same diagram: a hand-built one, or an approved research diagram.
+export function storyDiagram(story: ClassroomStory) {
+  return story.diagramKind === "research"
+    ? expansionDiagrams[story.illustrationSlug ?? ""]
+    : diagrams[story.diagramKind];
+}
+
 export function StoryDiagram({ story, headingId }: { story: ClassroomStory; headingId: string }) {
-  const diagram = diagrams[story.diagramKind];
+  const diagram = storyDiagram(story);
+  if (!diagram) return null;
   return (
     <section className={styles.band} aria-labelledby={headingId}>
       <div className={styles.content}>
         <p className={styles.eyebrow}>Schematic · not to scale</p>
         <h3 id={headingId} className={styles.heading}>{diagram.heading}</h3>
         <figure className={styles.figure}>
-          <Image src={diagram.image} alt={story.diagramAlt} sizes="(max-width: 720px) 100vw, 680px" className={styles.image} />
+          <Image src={diagram.image} width={1344} height={756} alt={story.diagramAlt} sizes="(max-width: 720px) 100vw, 680px" className={styles.image} />
         </figure>
         <ol className={styles.key}>
           {diagram.steps.map((step, index) => (
@@ -62,7 +71,7 @@ export function StoryDiagram({ story, headingId }: { story: ClassroomStory; head
           ))}
         </ol>
         <p className={styles.note}>{diagram.note}</p>
-        {"detail" in diagram && <p className={styles.detail}>{diagram.detail}</p>}
+        {"detail" in diagram && typeof diagram.detail === "string" && <p className={styles.detail}>{diagram.detail}</p>}
       </div>
     </section>
   );
