@@ -5,6 +5,34 @@ const GHGSAT_Q = "How can you find an invisible gas from space?";
 // The library shows its first 12 cards; the rest appear after "Show N more" (LibraryParts ShowMore).
 const FIRST_CARDS = Math.min(examples.length, 12);
 
+for (const activation of ["click", "keyboard"] as const) {
+  test(`Show more preserves the reading position on ${activation}`, async ({ page, requests }) => {
+    void requests;
+    for (const path of ["/", "/?topic=combustion#library"]) {
+      await page.goto(path, { waitUntil: "networkidle" });
+      const cards = page.locator('main a[href^="/examples/"]');
+      await expect(cards).toHaveCount(12);
+      const originalLinks = await cards.evaluateAll((links) => links.map((link) => link.getAttribute("href")));
+      const more = page.getByRole("button", { name: "Show 6 more", exact: true });
+      await more.scrollIntoViewIfNeeded();
+      if (activation === "keyboard") await more.focus();
+      const before = await page.evaluate(() => ({ y: window.scrollY, url: location.href }));
+      expect(before.y).toBeGreaterThan(1000);
+
+      if (activation === "keyboard") await more.press("Enter");
+      else await more.click();
+
+      await expect(cards).toHaveCount(18);
+      await expect(more).toHaveCount(0);
+      expect((await cards.evaluateAll((links) => links.map((link) => link.getAttribute("href")))).slice(0, 12)).toEqual(originalLinks);
+      // Allow layout and scroll anchoring to settle before checking the reading position.
+      await page.waitForTimeout(300);
+      expect(await page.evaluate(() => location.href)).toBe(before.url);
+      expect(Math.abs(await page.evaluate(() => window.scrollY) - before.y)).toBeLessThan(2);
+    }
+  });
+}
+
 test("course and unit filter the library in place → example → back", async ({ page, requests }) => {
   void requests;
   await page.goto("/", { waitUntil: "networkidle" });

@@ -149,18 +149,19 @@ export function SignupStrip({ label }: { label: string }) {
   );
 }
 
-// Long lists show 12 cards first; the rest are in the page and appear on request.
+// Long lists show 12 cards first; append the rest without remounting the visible cards.
 export function ShowMore({ children, total, first = 12 }: { children: React.ReactNode[]; total: number; first?: number }) {
   const [all, setAll] = useState(false);
-  if (all || total <= first) return <>{children}</>;
   return (
     <>
-      {children.slice(0, first)}
-      <li className={styles.more}>
-        <button type="button" className="btn btn-out" onClick={() => setAll(true)}>
-          Show {total - first} more
-        </button>
-      </li>
+      {all ? children : children.slice(0, first)}
+      {!all && total > first && (
+        <li className={styles.more}>
+          <button type="button" className="btn btn-out" onClick={() => setAll(true)}>
+            Show {total - first} more
+          </button>
+        </li>
+      )}
     </>
   );
 }
