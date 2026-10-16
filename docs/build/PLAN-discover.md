@@ -1,5 +1,10 @@
 # Discover — build plan
 
+> Integration note, 15 October 2026: this historical plan was implemented in
+> `46784fd`, already included in `CitC/main`. Develop and run `/discover` from
+> `CitC` alongside the examples. The old worktree was preserved at
+> `../.archives/CitC-discover-2026-10-15`; the branch remains available.
+
 Status: draft 2, after review round 1 · 6 October 2026
 Planner and coordinator: Claude (Opus 5.5, host session) · Plan reviewer and builder: Codex (`gpt-6-astra`, medium effort) · Final inspector: a fresh Claude session (`claude-opus-5-5`)
 Branch: `feat/discover` in the worktree `../CitC-discover`, based on `cab1c74`.

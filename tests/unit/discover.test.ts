@@ -3,7 +3,7 @@ import { describe, expect, it } from "vitest";
 import { discoverImages, exampleDetails, roleProfiles, organizationRoles } from "@/content";
 import { buildDiscoverCards, parseDiscoverState, roundOrder, serializeDiscoverState, subjectCounts } from "@/lib/discover";
 
-const featuredRoles = roleProfiles.filter((r) => organizationRoles.some((link) => link.roleId === r.id));
+const featuredRoles = roleProfiles.filter((r) => discoverImages.some((image) => image.roleId === r.id));
 const cards = buildDiscoverCards("2026-10-06");
 describe("Discover content", () => {
   it("has one existing picture and one owning example per role", () => {
@@ -12,9 +12,10 @@ describe("Discover content", () => {
       const images = discoverImages.filter((image) => image.roleId === role.id);
       expect(images).toHaveLength(1);
       expect(existsSync(`public${images[0].src}`)).toBe(true);
-      expect(images[0].titleBandPct).toBeGreaterThanOrEqual(15);
-      expect(images[0].titleBandPct).toBeLessThanOrEqual(35);
-      expect(exampleDetails.filter((d) => d.roleIds.includes(role.id))).toHaveLength(1);
+      expect(images[0].clue.length).toBeGreaterThan(40);
+      expect(images[0].clue).not.toContain(images[0].title);
+      expect(exampleDetails.filter((d) => d.organizationId === images[0].organizationId && d.roleIds.includes(role.id))).toHaveLength(1);
+      expect(organizationRoles.some((link) => link.roleId === role.id && link.organizationId === images[0].organizationId)).toBe(true);
     }
   });
   it("derives complete cards and preserves optional saved jobs", () => {
@@ -31,6 +32,24 @@ describe("Discover content", () => {
     }
     expect(cards.some((c) => c.job === null)).toBe(true);
     expect(cards.find((c) => c.role.id === "animal-care")?.capturedOn).toBe("2026-09-29");
+  });
+  it("keeps permanent numbers, curated routes and complete source qualifications", () => {
+    expect(cards.map((c) => [c.number, c.role.id])).toEqual([
+      ["01", "atmospheric-science"], ["02", "satellite-engineering"], ["03", "software-data"],
+      ["04", "conservation-research"], ["05", "animal-care"], ["06", "wildlife-veterinary"],
+      ["07", "process-engineering"], ["08", "process-operations"], ["09", "commercial-partnerships"],
+    ]);
+    for (const card of cards) {
+      expect(card.title).not.toBe(card.role.title);
+      expect(card.evidenceSources.every((source) => source?.url)).toBe(true);
+      expect(card.pathwaySources.every((source) => source?.url)).toBe(true);
+      if (card.job) expect(card.jobSource?.url).toBeTruthy();
+    }
+    expect(cards[4].pathway.id).toBe("olds-assistant");
+    expect(cards[5].pathwaySources.map((s) => s.id)).toContain("depth-ucalgary-dvm-entry");
+    expect(cards[1].job?.employer).toBe("Muon Space");
+    expect(cards[1].job?.employerNote.text).toContain("Not connected to GHGSat");
+    expect(parseDiscoverState({ role: "05" }, [...cards].reverse()).role).toBe("animal-care");
   });
   it("counts the subjects", () => expect(subjectCounts(cards)).toEqual({ all: 9, biology: 3, chemistry: 2, physics: 4 }));
 });

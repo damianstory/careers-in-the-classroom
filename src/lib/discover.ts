@@ -1,6 +1,6 @@
 import {
   discoverImages, exampleDetails, examples, getJob, getOrganization,
-  getOrganizationRole, getPathway, roleProfiles,
+  getOrganizationRole, getPathway, getRegistrySource, roleProfiles,
 } from "@/content";
 import { jobStatusLabel } from "./job-status";
 
@@ -9,28 +9,33 @@ export type Subject = typeof subjects[number];
 export const subjectLabels: Record<Subject, string> = {
   all: "All jobs", biology: "Biology", chemistry: "Chemistry", physics: "Physics",
 };
-export const steps = ["Guess", "Job", "Work", "Why", "Team", "Route", "Deeper"] as const;
+export const steps = ["Guess", "Reveal", "The work", "Why it matters", "Team & subjects", "Ways in", "Real job"] as const;
 
 export function buildDiscoverCards(today: string) {
-  // Discover presents documented work at the featured organization. Related-employer
-  // roles remain available in the example, without implying a company affiliation.
-  return roleProfiles.filter((role) => exampleDetails.some((d) =>
-    d.roleIds.includes(role.id) && getOrganizationRole(d.organizationId, role.id),
-  )).map((role, index) => {
-    const details = exampleDetails.find((d) => d.roleIds.includes(role.id))!;
+  return discoverImages.map((image) => {
+    const role = roleProfiles.find((r) => r.id === image.roleId);
+    const details = exampleDetails.find((d) => d.organizationId === image.organizationId && d.roleIds.includes(image.roleId)
+      && getOrganizationRole(d.organizationId, image.roleId));
+    const pathway = getPathway(image.pathwayId);
+    const rationale = pathway?.roleRationale.find((r) => r.roleId === image.roleId)?.why;
+    const job = image.jobId ? getJob(image.jobId) : undefined;
+    if (!role || !details || !pathway || !rationale || !details.pathwayIds.includes(pathway.id)
+      || (image.jobId && (!job || !details.jobIds.includes(job.id) || !job.roleIds.includes(role.id)))) {
+      throw new Error(`Invalid Discover selection: ${image.number}`);
+    }
     const example = examples.find((e) => e.detailsId === details.id)!;
     const organization = getOrganization(details.organizationId)!;
-    const evidence = getOrganizationRole(organization.id, role.id)!.label;
-    const pathway = details.pathwayIds.map(getPathway).find((p) => p?.roleRationale.some((r) => r.roleId === role.id))!;
-    const job = details.jobIds.map(getJob).find((j) => j?.roleIds.includes(role.id));
+    const link = getOrganizationRole(organization.id, role.id)!;
     return {
-      role, example, organization, evidence,
-      number: String(index + 1).padStart(2, "0"),
+      role, example, organization, evidence: link.label,
+      evidenceSources: [...new Set([...link.sourceIds, ...organization.problem.sourceIds, ...organization.description.sourceIds])].map((id) => getRegistrySource(id)!),
+      number: image.number, title: image.title,
       subject: example.discipline.toLowerCase() as Exclude<Subject, "all">,
-      image: discoverImages.find((image) => image.roleId === role.id)!,
-      courseFit: example.ledger.find((row) => row.type === "course fit")!,
-      pathway, rationale: pathway.roleRationale.find((r) => r.roleId === role.id)!.why,
+      image, courseFit: example.ledger.find((row) => row.type === "course fit")!,
+      pathway, rationale,
+      pathwaySources: pathway.sourceIds.map((id) => getRegistrySource(id)!),
       job: job ?? null, capturedOn: job?.capturedOn ?? null,
+      jobSource: job ? getRegistrySource(job.postingSourceId)! : null,
       jobStatus: job ? jobStatusLabel(job, today) : null,
     };
   });

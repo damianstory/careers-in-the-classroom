@@ -45,10 +45,10 @@ test.describe("Discover classroom flow", () => {
     await page.reload();
     await expect(page.getByRole("region", { name: "Discover", exact: true })).toHaveAttribute("data-step", "0");
     await expect(page.locator('[data-visible="true"]')).toHaveAttribute("data-role", role);
-    await expect(page.getByText("1 of 9 found", { exact: true })).toBeVisible();
+    await expect(page.getByText("1 of 9 selected", { exact: true })).toBeVisible();
     await concealed();
     await page.keyboard.press("Space");
-    await expect(page.getByRole("heading", { name: card.role.title, exact: true })).toBeVisible();
+    await expect(page.getByRole("heading", { name: card.title, exact: true })).toBeVisible();
     expect(new URL(page.url()).searchParams.get("role")).toBe(card.number);
     expect(new URL(page.url()).searchParams.get("step")).toBe("1");
     expect(new URL(page.url()).searchParams.get("found")?.split(",")).toContain(card.number);
@@ -56,23 +56,23 @@ test.describe("Discover classroom flow", () => {
     await expect(page.getByRole("region", { name: "Discover", exact: true })).toHaveAttribute("data-step", "0");
     expect(page.url()).not.toContain(role);
     expect(new URL(page.url()).searchParams.get("step")).toBe("0");
-    await expect(page.getByText("1 of 9 found", { exact: true })).toBeVisible();
+    await expect(page.getByText("1 of 9 selected", { exact: true })).toBeVisible();
     await page.keyboard.press("Space");
     for (let step = 2; step <= 6; step++) {
       await page.keyboard.press("Space");
       await expect(page.getByRole("heading", { name: steps[step], exact: true })).toBeVisible();
     }
     await page.keyboard.press("ArrowLeft");
-    await expect(page.getByRole("heading", { name: "Route", exact: true })).toBeVisible();
-    await page.getByRole("navigation", { name: "Reveal steps" }).getByRole("button", { name: "Team", exact: true }).click();
-    await expect(page.getByRole("heading", { name: "Team", exact: true })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Ways in", exact: true })).toBeVisible();
+    await page.getByRole("navigation", { name: "Reveal steps" }).getByRole("button", { name: "Team & subjects", exact: true }).click();
+    await expect(page.getByRole("heading", { name: "Team & subjects", exact: true })).toBeVisible();
     const before = page.url();
-    const example = page.getByRole("link", { name: `Explore the ${card.organization.name} example →` });
+    const example = page.getByRole("link", { name: `Work area at ${card.organization.name} →` });
     await expect(example).toHaveAttribute("href", `/examples/${card.example.slug}?role=${role}#roles`);
     await example.click();
     await page.goBack();
     await expect(page).toHaveURL(before);
-    await expect(page.getByRole("heading", { name: card.role.title, exact: true })).toBeVisible();
+    await expect(page.getByRole("heading", { name: card.title, exact: true })).toBeVisible();
     await expect(page.locator('[data-phase="reveal"]')).toHaveAttribute("data-step", "4");
     await page.getByRole("navigation", { name: "Main", exact: true }).getByRole("link", { name: "Discover", exact: true }).click();
     await expect(page).toHaveURL(/\/discover$/);
@@ -80,7 +80,7 @@ test.describe("Discover classroom flow", () => {
     await expect(page.getByRole("heading", { name: "Snap a job.", exact: true })).toBeVisible();
   });
 
-  test("one Space press stops without activating the newly focused button", async ({ page, requests }) => {
+  test("one Space press stops without advancing when the key is released", async ({ page, requests }) => {
     void requests;
     await page.goto("/discover");
     await page.getByRole("button", { name: "Start Space" }).click();
@@ -93,7 +93,7 @@ test.describe("Discover classroom flow", () => {
       primary.dispatchEvent(event);
       return { label: primary.textContent, prevented: event.defaultPrevented };
     });
-    expect(released.label).toBe("Reveal the job");
+    expect(released.label).toBe("What could this person do?");
     expect(released.prevented).toBe(true);
     await expect(page.getByRole("region", { name: "Discover", exact: true })).toHaveAttribute("data-step", "0");
   });
@@ -111,8 +111,8 @@ test.describe("Discover classroom flow", () => {
     expect(first).not.toBe(second);
     expect([first, second].sort()).toEqual(["process-engineering", "process-operations"]);
     await page.keyboard.press("r");
-    await expect(page.getByText("All jobs found. Starting a fresh set.")).toBeVisible();
-    await expect(page.getByText("0 of 2 found")).toBeVisible();
+    await expect(page.getByText("All jobs selected. Starting a fresh set.")).toBeVisible();
+    await expect(page.getByText("0 of 2 selected")).toBeVisible();
   });
 
   test("deep links retain route, saved date, vacancy label and empty state", async ({ page, requests }) => {
@@ -121,8 +121,8 @@ test.describe("Discover classroom flow", () => {
     await expect(page.getByRole("region", { name: "Discover", exact: true })).toHaveAttribute("data-step", "0");
     await expect(page.locator('[data-visible="true"]')).toHaveAttribute("data-role", "animal-care");
     await page.goto("/discover?role=05&step=5");
-    await expect(page.getByRole("heading", { name: "Route", exact: true })).toBeVisible();
-    await expect(page.getByRole("heading", { name: "Animal care and welfare", exact: true })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Ways in", exact: true })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Animal Care Technician", exact: true })).toBeVisible();
     await page.goto("/discover?role=05&step=6");
     await expect(page.getByText("Saved 29 Sep 2026", { exact: true })).toBeVisible();
     const job = cards.find((c) => c.role.id === "animal-care")!.job!;
@@ -178,18 +178,101 @@ test.describe("Discover classroom flow", () => {
     }
   });
 
-  test("reduced motion defaults to slower and failed pictures remain playable", async ({ page, requests }) => {
+  test("reduced motion draws once and failed pictures provide equivalent clues", async ({ page, requests }) => {
     void requests;
     await page.emulateMedia({ reducedMotion: "reduce" });
     await page.route("**/images/discover/*.jpg", (route) => route.abort());
     await page.goto("/discover");
-    await expect(page.getByRole("button", { name: "Slower: on" })).toBeVisible();
-    await page.getByRole("button", { name: "Start Space" }).click();
-    await page.getByRole("button", { name: "STOP", exact: true }).click();
+    await expect(page.getByLabel("Round style")).toHaveValue("draw");
+    await page.getByRole("button", { name: "Draw a picture Space" }).click();
+    await expect(page.locator('[data-phase="reveal"]')).toHaveAttribute("data-step", "0");
+    const picture = page.locator('[data-visible="true"]');
+    const id = await picture.getAttribute("data-role");
+    await page.waitForTimeout(1100);
+    await expect(picture).toHaveAttribute("data-role", id!);
+    await expect(picture).toContainText("Picture unavailable. Use these clues:");
+    await expect(picture).toContainText(cards.find((c) => c.role.id === id)!.image.clue);
     await page.getByRole("button", { name: "Reveal the job", exact: true }).click();
     await expect(page.locator("#discover-title")).toBeVisible();
-    await expect(page.locator('[data-visible="true"]')).toContainText("What job is this?");
+    await expect(page.getByText("What job is this?", { exact: true })).toHaveCount(0);
   });
+
+  test("classroom guessing controls fit a 720p screen and fullscreen can be requested", async ({ page, requests }) => {
+    void requests;
+    await page.setViewportSize({ width: 1280, height: 720 });
+    await page.goto("/discover?role=07&step=0");
+    const reveal = page.getByRole("button", { name: "Reveal the job", exact: true });
+    const box = (await reveal.boundingBox())!;
+    expect(box.y + box.height).toBeLessThanOrEqual(720);
+    await page.getByRole("button", { name: "Full screen", exact: true }).click();
+    await expect.poll(() => page.evaluate(() => document.fullscreenElement?.getAttribute("aria-label"))).toBe("Discover");
+    await reveal.click();
+    await expect(page.getByRole("heading", { name: "Process Engineer", exact: true })).toBeVisible();
+  });
+
+  test("desktop headings stay visually quiet while tabs retain keyboard focus", async ({ page, requests }) => {
+    void requests;
+    await page.goto("/discover");
+    await expect(page.getByRole("button", { name: "Start Space" })).toBeFocused();
+    await page.keyboard.press("Space");
+    const heading = page.getByRole("heading", { level: 1 });
+    await expect(heading).toBeFocused();
+    await expect(heading).toHaveCSS("outline-style", "none");
+    await page.keyboard.press("Space");
+    await expect(page.getByRole("button", { name: "Reveal the job", exact: true })).toBeVisible();
+    await page.keyboard.press("Space");
+    await expect(page.locator("#discover-title")).toBeFocused();
+    await expect(page.locator("#discover-title")).toHaveCSS("outline-style", "none");
+    await expect(page.getByRole("navigation", { name: "Round controls" })).toBeHidden();
+    await expect(page.getByRole("button", { name: "Next round", exact: true })).toBeVisible();
+    await page.keyboard.press("Space");
+    await expect(page.getByRole("region", { name: "Discover", exact: true })).toHaveAttribute("data-step", "2");
+    await page.keyboard.press("Tab");
+    const guess = page.getByRole("navigation", { name: "Reveal steps" }).getByRole("button", { name: "Guess", exact: true });
+    await expect(guess).toBeFocused();
+    await expect(guess).toHaveCSS("outline-style", "solid");
+    await page.goto("/discover?role=07&step=6");
+    await expect(page.locator("#discover-title")).toBeFocused();
+    await page.keyboard.press("ArrowLeft");
+    await expect(page.getByRole("region", { name: "Discover", exact: true })).toHaveAttribute("data-step", "5");
+  });
+
+  test("qualifications stay with routes and related-employer postings", async ({ page, requests }) => {
+    void requests;
+    await page.goto("/discover?role=06&step=5");
+    await expect(page.getByTestId("step-content")).toContainText("Not direct entry from high school");
+    const admissions = cards[5].pathwaySources.find((source) => source.id === "depth-ucalgary-dvm-entry")!;
+    await expect(page.getByRole("link", { name: `${admissions.label} ↗`, exact: true })).toHaveAttribute("href", admissions.url);
+    for (const number of ["02", "04", "09"]) {
+      const card = cards.find((c) => c.number === number)!;
+      await page.goto(`/discover?role=${number}&step=6`);
+      const content = page.getByTestId("step-content");
+      await expect(content).toContainText(`Employer: ${card.job!.employer}`);
+      await expect(content).toContainText(card.job!.employerNote.text);
+      await expect(content).toContainText(card.job!.level!);
+      if (card.job!.limitation) await expect(content).toContainText(card.job!.limitation);
+    }
+  });
+
+  test("every card has the same guess cover and reveals an unobstructed occupation", async ({ page, requests }) => {
+    void requests;
+    const coverRatios: number[] = [];
+    for (const card of cards) {
+      await page.goto(`/discover?role=${card.number}&step=0`);
+      const picture = page.locator('[data-visible="true"]');
+      const cover = picture.getByText("What job is this?", { exact: true });
+      const coverBox = (await cover.boundingBox())!;
+      const pictureBox = (await picture.boundingBox())!;
+      coverRatios.push(coverBox.height / pictureBox.height);
+      await page.getByRole("button", { name: "Reveal the job", exact: true }).click();
+      await expect(page.getByRole("heading", { name: card.title, exact: true, level: 1 })).toBeVisible();
+      await expect(page.getByText(`Work area: ${card.role.title}`, { exact: true })).toBeVisible();
+      await expect(page.getByText("What job is this?", { exact: true })).toHaveCount(0);
+      await expect(page.getByText("SAVED", { exact: true })).toHaveCount(0);
+    }
+    for (const ratio of coverRatios) expect(ratio).toBeCloseTo(.27, 2);
+  });
+
 });
 
 test("phone flow works by tap with readable type and no sideways scroll", async ({ page, requests }, info) => {
@@ -205,11 +288,65 @@ test("phone flow works by tap with readable type and no sideways scroll", async 
   await noOverflow();
   await page.getByRole("button", { name: "STOP", exact: true }).tap();
   await noOverflow();
-  for (const name of ["Reveal the job", "Show the work", "Why it matters", "The team", "A route"]) {
-    await page.getByRole("button", { name, exact: true }).tap();
+  for (const name of ["Reveal the job", "Show the work", "Why it matters", "Team & subjects", "Ways in"]) {
+    await page.getByRole("navigation", { name: "Round controls" }).getByRole("button", { name, exact: true }).tap();
     await noOverflow();
   }
-  await expect(page.getByRole("heading", { name: "Route", exact: true })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Ways in", exact: true })).toBeVisible();
   const sizes = await page.getByTestId("step-content").locator("p").evaluateAll((ps) => ps.map((p) => parseFloat(getComputedStyle(p).fontSize)));
   expect(Math.min(...sizes)).toBeGreaterThanOrEqual(16);
 });
+
+for (const width of [390, 768, 1024]) {
+  test(`step navigation lands on readable content at ${width}px`, async ({ page, requests }, info) => {
+    test.skip(info.project.name === "phone");
+    void requests;
+    await page.setViewportSize({ width, height: 1024 });
+    await page.goto("/discover?role=09&step=6");
+    await page.getByRole("button", { name: "Back", exact: true }).click();
+    await expect(page.locator("#discover-title")).toBeFocused();
+    const headerBottom = await page.getByRole("banner").evaluate((el) => el.getBoundingClientRect().bottom);
+    const heading = (await page.locator("#discover-title").boundingBox())!;
+    expect(heading.y).toBeGreaterThanOrEqual(headerBottom);
+    expect(heading.y).toBeLessThan(headerBottom + 180);
+    const geometry = await page.getByTestId("step-content").evaluate((el) => {
+      const style = getComputedStyle(el);
+      return { fontSize: parseFloat(style.fontSize), scale: el.getBoundingClientRect().width / (el as HTMLElement).offsetWidth, overflow: document.documentElement.scrollWidth - innerWidth };
+    });
+    expect(geometry.fontSize * geometry.scale).toBeGreaterThanOrEqual(16);
+    expect(geometry.overflow).toBe(0);
+    for (const button of await page.getByRole("navigation", { name: "Reveal steps" }).getByRole("button").all()) {
+      expect((await button.boundingBox())!.height).toBeGreaterThanOrEqual(44);
+    }
+  });
+}
+
+for (const width of [1280, 768, 390]) {
+  test(`all 54 content states remain readable and unclipped at ${width}px`, async ({ page, requests }, info) => {
+    test.skip(info.project.name === "phone");
+    test.setTimeout(120_000);
+    void requests;
+    const errors: string[] = [];
+    page.on("pageerror", (error) => errors.push(error.message));
+    await page.setViewportSize({ width, height: 900 });
+    for (const card of cards) {
+      for (let step = 1; step <= 6; step++) {
+        await page.goto(`/discover?role=${card.number}&step=${step}`);
+        await expect(page.locator("#discover-title")).toHaveText(card.title);
+        const content = page.getByTestId("step-content");
+        await expect(content.getByRole("heading", { name: steps[step], exact: true })).toBeVisible();
+        const measurements = await content.evaluate((el) => ({
+          pageOverflow: document.documentElement.scrollWidth - innerWidth,
+          contentOverflow: el.scrollWidth - el.clientWidth,
+          contentClipping: el.scrollHeight - el.clientHeight,
+          font: parseFloat(getComputedStyle(el).fontSize),
+        }));
+        expect(measurements.pageOverflow).toBeLessThanOrEqual(0);
+        expect(measurements.contentOverflow).toBeLessThanOrEqual(1);
+        expect(measurements.contentClipping).toBeLessThanOrEqual(1);
+        expect(measurements.font).toBeGreaterThanOrEqual(16);
+      }
+    }
+    expect(errors).toEqual([]);
+  });
+}

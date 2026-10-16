@@ -27,13 +27,19 @@ export async function expectNoRequests(requests: Request[], action: () => Promis
   const before = requests.length;
   await action();
   await new Promise((r) => setTimeout(r, 300));
-  // Next.js prefetches link targets as they scroll into view (GET with `_rsc`, or code chunks).
-  // Those carry only link URLs, never form data; anything else during a submit is a failure.
-  const isPrefetch = (r: Request) =>
-    r.method() === "GET" && (new URL(r.url()).searchParams.has("_rsc") || new URL(r.url()).pathname.startsWith("/_next/static/"));
+  // Playwright scrolls the target into view before clicking. Next.js then prefetches link targets
+  // (GET with `_rsc`, or code chunks) and lazy images start loading (GET `/_next/image` for a local file).
+  // Those carry only asset or link URLs, never form data; anything else during a submit is a failure.
+  const isBackgroundLoad = (r: Request) => {
+    if (r.method() !== "GET") return false;
+    const url = new URL(r.url());
+    if (url.searchParams.has("_rsc") || url.pathname.startsWith("/_next/static/")) return true;
+    const src = url.searchParams.get("url") ?? "";
+    return url.pathname === "/_next/image" && src.startsWith("/") && !src.startsWith("//");
+  };
   const during = requests
     .slice(before)
-    .filter((r) => !isPrefetch(r))
+    .filter((r) => !isBackgroundLoad(r))
     .map((r) => `${r.method()} ${r.url()}`);
   expect(during, "requests made while submitting a demo form").toEqual([]);
   expect(requests.filter((r) => r.method() !== "GET").map((r) => r.url()), "non-GET requests").toEqual([]);
