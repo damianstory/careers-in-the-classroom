@@ -2146,6 +2146,7 @@
 .partHeader h2 { font-size: 36px; line-height: 42px; }
 .questionControls { padding: 20px var(--band-r) 0 var(--band-l); }
 .partSteps { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; padding: 32px var(--band-r) 40px var(--band-l); border-top: 1px solid var(--border); }
+.section[id="question"] .partSteps { justify-content: flex-end; }
 .partSteps a { min-height: 44px; display: inline-flex; align-items: center; font-weight: 500; }
 .shell:not([data-layout="parts"]) .partSteps, .shell[data-layout="parts"] .divider { display: none; }
 .presentButton { flex-shrink: 0; }
