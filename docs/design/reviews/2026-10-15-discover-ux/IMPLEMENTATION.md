@@ -53,3 +53,9 @@ This is browser and automated verification, not a teacher/student usability stud
 Removed the decorative focus outline from programmatically focused Discover headings while preserving focus and announcements. Interactive controls retain their visible keyboard focus. At desktop widths (1100px and up), the bottom Back/Next row and its helper text disappear after reveal; topic buttons handle section selection, and Next round remains in the top toolbar. Mobile/tablet controls and the initial Reveal the job action remain. Initial deep links focus the heading when the bottom action is hidden, preserving keyboard navigation.
 
 Validation: TypeScript, ESLint, production build and 23 targeted browser/accessibility checks pass, including the 162-state responsive matrix and checks for heading appearance, tab focus, keyboard progression and mobile controls.
+
+## Follow-up: balanced guessing layout and Randomize
+
+The desktop guessing screen now centers the illustration and clues as one two-column group, removing the unused left column. Randomize replaces the disabled Back button before reveal: it immediately restarts the cycling round, or draws another picture in Single draw mode. Existing selection/exhaustion rules and the mobile layout remain intact.
+
+Validation: TypeScript, ESLint, production build and all 22 Discover browser checks pass. Added checks cover balanced desktop margins and direct randomization in both modes on desktop and phone. Native browser inspection confirmed the layout and restart/stop flow. [Updated guessing screen](after-guess-layout.png).

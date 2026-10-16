@@ -251,7 +251,7 @@ export function DiscoverStage({ cards, initialState }: { cards: DiscoverCard[]; 
             {active.slice(0, 2).map((c) => <div className={styles.fan} key={c.role.id}><img src={c.image.src} alt="" /><span /></div>)}
             <div className={styles.question}>?</div>
           </div>
-        </div> : <div className={`${styles.round} ${revealed ? styles.revealed : ""}`}>
+        </div> : <div className={`${styles.round} ${revealed ? styles.revealed : phase === "reveal" ? styles.guessing : ""}`}>
           {!revealed && <h1 ref={heading} tabIndex={-1} className={styles.caption}>{phase === "flashing" ? 'Shout “Stop!” to freeze a picture' : "What could this person do?"}</h1>}
           <div className={styles.pictureGroup}>
             <div className={styles.frame}>
@@ -279,7 +279,7 @@ export function DiscoverStage({ cards, initialState }: { cards: DiscoverCard[]; 
               </div>
             </section>}
             <div className={styles.bottom}>
-              <nav className={styles.navigation} aria-label="Round controls"><button disabled={state.step === 0} onClick={() => stepTo(state.step - 1)}>Back</button><button ref={primary} className={styles.primary} onClick={next}>{nextLabels[state.step]}</button></nav>
+              <nav className={styles.navigation} aria-label="Round controls">{state.step === 0 ? <button disabled={!ready} onClick={start}>Randomize</button> : <button onClick={() => stepTo(state.step - 1)}>Back</button>}<button ref={primary} className={styles.primary} onClick={next}>{nextLabels[state.step]}</button></nav>
               {revealed && <p className={styles.help}>Explore any topic, or choose Next round.</p>}
             </div>
           </>}

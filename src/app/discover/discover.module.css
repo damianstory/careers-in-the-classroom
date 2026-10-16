@@ -77,6 +77,10 @@
 .steps button[aria-current] { background: var(--surface-dark); color: var(--on-dark); }
 .help, .intro .help { font-size: 16px; line-height: 1.5; margin-top: 14px; }
 @media (min-width: 1100px) {
+  .guessing { grid-template-columns: clamp(200px, calc((100svh - var(--stage-header) - 280px) * .56), 300px) minmax(0, 480px); justify-content: center; }
+  .guessing .pictureGroup { grid-column: 1; }
+  .guessing .prompts { grid-column: 2; }
+  .guessing .bottom { grid-column: 1 / -1; }
   .revealed .bottom { display: none; }
   .round:not(.revealed) .pictureGroup { width: clamp(200px, calc((100svh - var(--stage-header) - 280px) * .56), 300px); justify-self: center; }
 }
