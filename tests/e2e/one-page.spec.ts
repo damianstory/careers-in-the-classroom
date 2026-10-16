@@ -295,7 +295,11 @@ test("INSPECT-005: a history traversal to another page is never handled as the e
   await page.goto(GHGSAT);
   await expect(lessonNav(page).locator("#nav-question")).toHaveAttribute("aria-current", "location");
   await toggleLayout(page);
+  // Scroll only once the one-page view is in place and tall enough to hold the position.
+  await expect(exampleRoot(page)).toHaveAttribute("data-layout", "all");
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollHeight - innerHeight)).toBeGreaterThan(2000);
   await page.evaluate(() => window.scrollTo(0, 2000));
+  await expect.poll(() => page.evaluate(() => Math.round(window.scrollY))).toBe(2000);
   const moved = await page.evaluate(async () => {
     const tops: number[] = [];
     const original = window.scrollTo.bind(window);
@@ -528,6 +532,24 @@ test("permanently blocked bundles leave every part reachable", async ({ page, re
   await page.evaluate(() => { location.hash = "main"; });
   await expect(page).toHaveURL(/#main$/);
   await expect(exampleRoot(page)).toHaveAttribute("data-part", "sources");
+});
+
+test("permanently blocked bundles: Back to the bare URL restores the first part", async ({ page, requests }) => {
+  void requests;
+  await page.route("**/_next/static/**/*.js", (route) => route.abort());
+  await page.goto("/examples/botaneco", { waitUntil: "domcontentloaded" });
+  await expect(exampleRoot(page)).not.toHaveAttribute("data-navigation-ready");
+  await expect(exampleRoot(page)).toHaveAttribute("data-part", "question");
+  const contents = page.getByRole("button", { name: "Contents", exact: true });
+  test.skip(await contents.isVisible(), "the phone fallback shows every part instead");
+  await lessonNav(page).locator("#nav-how-it-works").click();
+  await expect(exampleRoot(page)).toHaveAttribute("data-part", "how-it-works");
+  await page.goBack();
+  await expect(page).toHaveURL(/\/examples\/botaneco$/);
+  await expect(exampleRoot(page)).toHaveAttribute("data-part", "question");
+  await expect(lessonNav(page).locator("#nav-question")).toHaveAttribute("aria-current", "location");
+  await page.goForward();
+  await expect(exampleRoot(page)).toHaveAttribute("data-part", "how-it-works");
 });
 
 test("phone navigation geometry and context are stable across hydration", async ({ page, requests }, info) => {
