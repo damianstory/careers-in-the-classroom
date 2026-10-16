@@ -279,7 +279,7 @@ export function DiscoverStage({ cards, initialState }: { cards: DiscoverCard[]; 
               </div>
             </section>}
             <div className={styles.bottom}>
-              <nav className={styles.navigation} aria-label="Round controls">{state.step === 0 ? <button disabled={!ready} onClick={start}>Randomize</button> : <button onClick={() => stepTo(state.step - 1)}>Back</button>}<button ref={primary} className={styles.primary} onClick={next}>{nextLabels[state.step]}</button></nav>
+              <nav className={styles.navigation} aria-label="Round controls">{state.step === 0 ? <button disabled={!ready} onClick={start}>Restart</button> : <button onClick={() => stepTo(state.step - 1)}>Back</button>}<button ref={primary} className={styles.primary} onClick={next}>{nextLabels[state.step]}</button></nav>
               {revealed && <p className={styles.help}>Explore any topic, or choose Next round.</p>}
             </div>
           </>}

@@ -256,21 +256,27 @@ test.describe("Discover classroom flow", () => {
 
   test("every card has the same guess cover and reveals an unobstructed occupation", async ({ page, requests }) => {
     void requests;
-    const coverRatios: number[] = [];
     for (const card of cards) {
       await page.goto(`/discover?role=${card.number}&step=0`);
       const picture = page.locator('[data-visible="true"]');
       const cover = picture.getByText("What job is this?", { exact: true });
       const coverBox = (await cover.boundingBox())!;
-      const pictureBox = (await picture.boundingBox())!;
-      coverRatios.push(coverBox.height / pictureBox.height);
+      const imageBox = (await picture.locator("img").boundingBox())!;
+      // Half-height banner, with the entire baked-in title still concealed.
+      expect(coverBox.height / imageBox.height).toBeCloseTo(.135, 2);
+      expect(Math.abs(coverBox.y + coverBox.height - (imageBox.y + imageBox.height * .27))).toBeLessThan(1);
+      expect(imageBox.height / imageBox.width).toBeCloseTo(1344 / 752, 2);
       await page.getByRole("button", { name: "Reveal the job", exact: true }).click();
       await expect(page.getByRole("heading", { name: card.title, exact: true, level: 1 })).toBeVisible();
       await expect(page.getByText(`Work area: ${card.role.title}`, { exact: true })).toBeVisible();
       await expect(page.getByText("What job is this?", { exact: true })).toHaveCount(0);
       await expect(page.getByText("SAVED", { exact: true })).toHaveCount(0);
+      const revealedImage = (await picture.locator("img").boundingBox())!;
+      const revealedFrame = (await picture.boundingBox())!;
+      expect(Math.abs(revealedImage.y - revealedFrame.y)).toBeLessThan(1);
+      expect(Math.abs(revealedImage.height - revealedFrame.height)).toBeLessThan(1);
+      expect(revealedImage.height / revealedImage.width).toBeCloseTo(1344 / 752, 2);
     }
-    for (const ratio of coverRatios) expect(ratio).toBeCloseTo(.27, 2);
   });
 
 });
@@ -351,17 +357,17 @@ for (const width of [1280, 768, 390]) {
   });
 }
 
-test("guessing offers direct randomization in cycling and single-draw modes", async ({ page, requests }) => {
+test("guessing offers a direct restart in cycling and single-draw modes", async ({ page, requests }) => {
   void requests;
   await page.goto("/discover?subject=chemistry&role=07&step=0");
   await expect(page.getByRole("button", { name: "Back", exact: true })).toHaveCount(0);
-  await page.getByRole("button", { name: "Randomize", exact: true }).click();
+  await page.getByRole("button", { name: "Restart", exact: true }).click();
   await expect(page.getByRole("region", { name: "Discover", exact: true })).toHaveAttribute("data-phase", "flashing");
   await page.getByRole("button", { name: "STOP", exact: true }).click();
   await expect(page.locator('[data-visible="true"]')).toHaveAttribute("data-role", "process-operations");
   await page.goto("/discover?subject=chemistry&role=07&step=0");
   await page.getByLabel("Round style").selectOption("draw");
-  await page.getByRole("button", { name: "Randomize", exact: true }).click();
+  await page.getByRole("button", { name: "Restart", exact: true }).click();
   await expect(page.getByRole("region", { name: "Discover", exact: true })).toHaveAttribute("data-phase", "reveal");
   await expect(page.getByRole("region", { name: "Discover", exact: true })).toHaveAttribute("data-step", "0");
   await expect(page.locator('[data-visible="true"]')).toHaveAttribute("data-role", "process-operations");
@@ -380,4 +386,8 @@ test("desktop guessing balances picture and clues without an empty column", asyn
   const leftMargin = picture.x;
   const rightMargin = 1440 - (clues.x + clues.width);
   expect(Math.abs(leftMargin - rightMargin)).toBeLessThan(20);
+  const restart = (await page.getByRole("button", { name: "Restart", exact: true }).boundingBox())!;
+  const reveal = (await page.getByRole("button", { name: "Reveal the job", exact: true }).boundingBox())!;
+  expect(restart.y).toBe(reveal.y);
+  expect(reveal.x - (restart.x + restart.width)).toBeCloseTo(12, 0);
 });

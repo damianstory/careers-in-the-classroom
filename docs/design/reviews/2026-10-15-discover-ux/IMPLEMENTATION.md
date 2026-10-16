@@ -59,3 +59,9 @@ Validation: TypeScript, ESLint, production build and 23 targeted browser/accessi
 The desktop guessing screen now centers the illustration and clues as one two-column group, removing the unused left column. Randomize replaces the disabled Back button before reveal: it immediately restarts the cycling round, or draws another picture in Single draw mode. Existing selection/exhaustion rules and the mobile layout remain intact.
 
 Validation: TypeScript, ESLint, production build and all 22 Discover browser checks pass. Added checks cover balanced desktop margins and direct randomization in both modes on desktop and phone. Native browser inspection confirmed the layout and restart/stop flow. [Updated guessing screen](after-guess-layout.png).
+
+## Follow-up: Restart and compact guessing banner
+
+Renamed Randomize to Restart and grouped it immediately before Reveal the job on desktop (1100px and up). The guessing banner is half its former height: the upper half of the source title region is clipped during guessing, and the remaining half stays covered. The work scene retains its natural proportions, and reveal restores the complete image.
+
+Validation: TypeScript, ESLint, production build and all 22 Discover browser checks pass, including title concealment across all nine cards, full-image restoration, adjacent desktop buttons, restart in both round styles, and the responsive content matrix. Native browser inspection confirmed desktop and phone presentation. [Updated desktop screen](after-compact-guess-banner.png).
