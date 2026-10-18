@@ -1,9 +1,10 @@
 import { exampleRecords } from "./example-records";
+import { organizationLogos } from "./logos";
 import type { Organization, OrganizationRole } from "./types";
 
 // Company claims are reported as GHGSat states them on its own pages, checked 25 September 2026.
 export const organizations: Organization[] = [
-  ...exampleRecords.map((r) => r.organization),
+  ...exampleRecords.map(({ organization: o }) => ({ ...o, logo: o.logo ?? organizationLogos[o.id] })),
   {
     id: "ghgsat",
     name: "GHGSat",

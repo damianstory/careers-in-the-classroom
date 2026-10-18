@@ -25,6 +25,7 @@ import {
 } from "@/content";
 import type { Claim, Evidenced, JobExample, Source } from "@/content";
 import { jobStatusLabel } from "@/lib/job-status";
+import { pngSize, svgProblems, svgViewBox } from "./logo-files";
 
 function checkEvidence(item: Evidenced, sources: Source[], where: string) {
   const ids = new Set(sources.map((s) => s.id));
@@ -130,19 +131,83 @@ describe("connected exploration content", () => {
   });
 
   it("gives every organization its own logo file, recorded with its source and date", () => {
-    for (const o of organizations.filter((organization) => organization.logo)) {
-      const logo = o.logo!;
-      expect(logo, o.id).toBeDefined();
-      expect(logo.alt).toBe(`${o.name} logo`);
-      expect(logo.src).toMatch(/^\/images\/logos\/[a-z0-9-]+\.svg$/);
+    for (const o of organizations) {
+      const logo = o.logo;
+      expect(logo, `${o.id} logo`).toBeDefined();
+      if (!logo) continue;
+      expect(logo.alt, o.id).toMatch(/\S logo$/);
+      expect(logo.src, o.id).toBe(`/images/logos/${o.id}.${logo.src.endsWith(".png") ? "png" : "svg"}`);
       expect(logo.sourceUrl).toMatch(/^https:\/\//);
-      expect(logo.retrieved).toBe("2026-09-30");
-      const svg = readFileSync(join(process.cwd(), "public", logo.src), "utf8");
-      // Served as a file, never inlined: still, no scripts or external references ride along.
-      expect(svg, logo.src).not.toMatch(/<script|<foreignObject|\son[a-z]+=|href="http/i);
-      const [, , w, h] = svg.match(/viewBox="([\d.\s-]+)"/)![1].trim().split(/\s+/).map(Number);
-      expect(logo.width / logo.height, `${logo.src} aspect ratio`).toBeCloseTo(w / h, 1);
+      expect(logo.retrieved).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+      const file = join(process.cwd(), "public", logo.src);
+      if (logo.src.endsWith(".svg")) {
+        const svg = readFileSync(file, "utf8");
+        expect(svgProblems(svg), logo.src).toEqual([]);
+        const box = svgViewBox(svg);
+        expect(box, `${logo.src} viewBox`).toBeDefined();
+        const ratio = box![2] / box![3];
+        expect(Math.abs(logo.width / logo.height - ratio) / ratio, `${logo.src} aspect ratio`).toBeLessThanOrEqual(0.02);
+      } else {
+        const bytes = readFileSync(file);
+        expect(pngSize(bytes), `${logo.src} is a PNG`).toEqual({ width: logo.width, height: logo.height });
+        expect(bytes.length, `${logo.src} size`).toBeLessThanOrEqual(50_000);
+      }
     }
+  });
+
+  it("rejects SVG markup that could run script or load outside content", () => {
+    const wrap = (inner: string) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10">${inner}</svg>`;
+    expect(svgProblems(wrap('<path d="M0 0h10v10z" fill="#123"/><use href="#a"/>'))).toEqual([]);
+    for (const bad of [
+      "<script>alert(1)</script>",
+      '<g onload = "alert(1)"/>',
+      "<g ONCLICK='x()'/>",
+      "<rect onmouseover=x() />",
+      "<foreignObject><div/></foreignObject>",
+      "<iframe/>",
+      "<embed/>",
+      '<image href="https://example.com/a.png"/>',
+      "<use href='https://example.com/a.svg#x'/>",
+      '<use href="//example.com/a.svg#x"/>',
+      '<use xlink:href="data:image/svg+xml,x"/>',
+      '<rect style="fill:url(https://example.com/x)"/>',
+      "<style>@import url(x.css);</style>",
+      "<style>.a{fill:url('//example.com/p')}</style>",
+      '<rect style="fill:u&#114;l(https://example.com/x.svg#g)"/>',
+      '<rect style="fill:&#x75;rl(//example.com/x)"/>',
+      "<svg:style>.a{fill:url(https://example.com/x)}</svg:style>",
+      "<style><![CDATA[@import 'x.css';]]></style>",
+      "<style>.a{fill:\\75 rl(https://example.com/x)}</style>",
+      '<use href="&#x68;ttps://example.com/a.svg#x"/>',
+    ]) {
+      expect(svgProblems(wrap(bad)), bad).not.toEqual([]);
+    }
+    expect(svgProblems(wrap('<rect style="fill:url(#g)"/>'))).toEqual([]);
+    expect(svgProblems(wrap("<style>.a{fill:url(#g)}</style><rect class='a'/>"))).toEqual([]);
+    expect(svgProblems('<?xml version="1.0" encoding="UTF-8"?>' + wrap("<g><path d='M0 0'/></g>"))).toEqual([]);
+    for (const bad of [
+      '<?xml-stylesheet type="text/css" href="https://example.com/logo.css"?>' + wrap(""),
+      '<!DOCTYPE svg [<!ENTITY x "y">]>' + wrap(""),
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><g></svg>',
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"></g></svg>',
+      wrap("") + "<script/>",
+      wrap("") + "<g/>",
+      wrap("") + "trailing text",
+      wrap("<style><![CDATA[/* </style> */ @import url(https://example.com/x.css);]]></style>"),
+      wrap("<style><!-- </style> -->@import 'https://example.com/x.css';</style>"),
+      wrap('<path fill=red d="M0 0h10v10H0z"/>'),
+      wrap('<path fill="red" fill="blue"/>'),
+      wrap("<rect hidden/>"),
+      wrap("<style>.a{fill:#000}<!-- c -->.b{fill:url(https://example.com/x)}</style>"),
+    ]) {
+      expect(svgProblems(bad), bad).not.toEqual([]);
+    }
+  });
+
+  it("reads PNG dimensions only from real PNG files", () => {
+    const png = new Uint8Array([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a, 0, 0, 0, 13, 73, 72, 68, 82, 0, 0, 1, 44, 0, 0, 0, 50]);
+    expect(pngSize(png)).toEqual({ width: 300, height: 50 });
+    expect(pngSize(new TextEncoder().encode("<svg xmlns='http://www.w3.org/2000/svg'/>........"))).toBeUndefined();
   });
 
   it("says what each organization-role link establishes", () => {

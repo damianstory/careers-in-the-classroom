@@ -29,7 +29,8 @@
   position: relative;
   display: flex;
   margin-top: calc(-1 * var(--header-h));
-  min-height: clamp(calc(640px + var(--header-h)), 100svh, calc(860px + var(--header-h)));
+  /* Shorter than a front door: the home page introduces the project, so this hero only frames the search. */
+  min-height: clamp(calc(440px + var(--header-h)), 64svh, calc(560px + var(--header-h)));
   overflow: hidden;
   background: var(--surface-dark);
   color: var(--on-dark);
@@ -93,7 +94,7 @@
 .title {
   max-width: 1000px;
   font-family: var(--font-display);
-  font-size: clamp(44px, min(7.2vw, 11.5vh), 104px);
+  font-size: clamp(40px, min(5.6vw, 9vh), 80px);
   line-height: 0.95;
   font-weight: 600;
   letter-spacing: -0.035em;

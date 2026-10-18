@@ -1,159 +1,150 @@
 import Image from "next/image";
-import { PageDialogContext } from "@/components/dialogs/DialogProvider";
-import { ExampleCard } from "@/components/ExampleCard";
-import { SearchForm } from "@/components/SearchForm";
-import { examples, getNews, news } from "@/content";
-import { buildLibrary, courseOptions, parseFilter, type LibraryItem } from "@/lib/library";
-import { checkedRange } from "@/lib/job-status";
+import Link from "next/link";
+import { Icon } from "@/components/Icon";
 import heroImage from "../../public/images/hero-calgary-dither-green.png";
-import { NewsCard, NoMatchRecorder, NoteTopic, ShowMore, SignupStrip, UnmatchedList } from "./LibraryParts";
-import styles from "./home.module.css";
+import { Doors } from "./_home/Doors";
+import { companyDoors, courseDoors, getLandingExample, roleDoors, stats } from "./_home/data";
+import styles from "./_home/home.module.css";
 
-function Item({ item, label }: { item: LibraryItem; label?: string }) {
-  if (item.type === "example") return <ExampleCard e={item.example} href={item.href} why={item.why} />;
-  const n = getNews(item.newsId)!;
-  return (
-    <NewsCard
-      contextLabel={label}
-      item={{
-        why: item.why,
-        title: n.title,
-        published: n.published,
-        status: n.status,
-        statusShort: n.statusShort,
-        location: n.location,
-        summary: n.summary,
-        ask: n.ask,
-        caution: n.caution,
-        source: n.sources[0],
-      }}
-    />
-  );
-}
-
-// Home is the example library: a dark hero with the search console on its edge, and the cards right below.
-export default async function Home({ searchParams }: PageProps<"/">) {
-  const lib = buildLibrary(parseFilter(await searchParams));
-  const filtered = !!(lib.course || lib.filter.topic);
-  // Dialogs name the organization only when it is the prepared match; news-only matches have none.
-  const firstFit = lib.sections.find((s) => s.id === "fits")?.items.find((i) => i.type === "example");
-  const relatedOrg = firstFit?.type === "example" ? firstFit.example.org : undefined;
+// The front door: what this is, how a lesson uses it and why, the parts of one real example, then
+// three ways into the library (/connections). Filtered links to / are redirected there in src/proxy.ts.
+export default function Home() {
+  const { example, image, roles } = getLandingExample("ghgsat");
 
   return (
-    <>
-      <PageDialogContext topic={lib.label} org={relatedOrg} signupLabel={lib.label} />
-      {/* The console is taller when filtered (it adds a status line); the hero leaves room for it. */}
-      <div className={styles.home} data-filtered={filtered ? "" : undefined}>
-        <section className={styles.hero} aria-labelledby="home-title">
-          {/* A 1-bit dither: served as-is, because resampling would blur the dots. */}
-          <Image
-            src={heroImage}
-            alt="Downtown Calgary beside the Bow River, seen from above, drawn as a field of green dots"
-            fill
-            priority
-            unoptimized
-            sizes="100vw"
-            className={styles.photo}
-          />
-          <div className={styles.scrim} aria-hidden="true" />
-          <div className={`${styles.frame} ${styles.heroInner}`}>
-            <div className={styles.ruler} aria-hidden="true" />
-            {/* Each line rises from its own mask. The trailing spaces keep the heading's text whole. */}
-            <h1 id="home-title" className={styles.title}>
-              <span className={styles.line}>
-                <span className={styles.rise}>The science you </span>
-              </span>
-              <span className={styles.line}>
-                <span className={styles.rise}>teach is happening </span>
-              </span>
-              <span className={styles.line}>
-                <span className={styles.rise}>down the road.</span>
-              </span>
-            </h1>
-            <p className={styles.lead}>
-              Real Calgary organizations, the problems they’re working on, and the people doing the work. Pick your course
-              and unit to see what fits.
-            </p>
-          </div>
-          <p className={styles.credit}>Photo: Mahesh Gupta / Unsplash</p>
-        </section>
-
-        <div id="library" className={styles.library}>
-          <div className={`${styles.frame} ${styles.dock}`}>
-            <SearchForm filter={lib.filter} count={lib.count} courses={courseOptions()} />
-          </div>
-
-          <div className={`${styles.frame} ${styles.results}`}>
-            {lib.noMatch && (
-              <div className={styles.banner}>
-                <NoMatchRecorder course={lib.course?.name ?? "Any course"} label={lib.unit?.name ?? lib.filter.topic ?? ""} />
-                <div className={styles.bannerText}>
-                  <p className={styles.bannerTitle}>
-                    No prepared example for “{lib.unit?.name ?? lib.filter.topic}”
-                    {lib.course ? ` in ${lib.course.name}` : ""} yet.
-                  </p>
-                  <p className={styles.bannerNote}>
-                    We can’t research new topics live yet. The closest examples are below. Noting a topic tells us what
-                    teachers need next.
-                  </p>
-                </div>
-                <NoteTopic />
-              </div>
-            )}
-
-            {lib.sections.map((s, i) => (
-              <section key={s.id} className={styles.section} aria-labelledby={`section-${s.id}`}>
-                <div className={styles.sectionHead}>
-                  <div className={styles.sectionTitles}>
-                    <h2 id={`section-${s.id}`} className={i === 0 ? styles.sectionTitle : styles.sectionTitleSmall}>
-                      {s.id === "rest" && !filtered ? "Real problems Calgary organizations are working on" : s.title}
-                    </h2>
-                    {s.note && <p className={styles.sectionNote}>{s.note}</p>}
-                  </div>
-                  {i === 0 && !filtered && (
-                    <dl className={styles.readout}>
-                      <div>
-                        <dt>Examples</dt>
-                        <dd>{examples.length}</dd>
-                      </div>
-                      <div>
-                        <dt>Recent developments</dt>
-                        <dd>{news.length}</dd>
-                      </div>
-                      <div>
-                        <dt>Example sources checked</dt>
-                        <dd>
-                          <span className={styles.square} aria-hidden="true" />
-                          {checkedRange(examples.map((e) => e.checkedOn))}
-                        </dd>
-                      </div>
-                    </dl>
-                  )}
-                </div>
-                <ul className={styles.grid}>
-                  <ShowMore total={s.items.length}>
-                    {s.items.map((item) => (
-                      <li key={item.type === "example" ? item.example.slug : item.newsId}>
-                        <Item item={item} label={lib.label} />
-                      </li>
-                    ))}
-                  </ShowMore>
-                </ul>
-                {i === 0 && filtered && lib.label && <SignupStrip label={lib.label} />}
-              </section>
-            ))}
-
-            <p className={styles.footnote}>
-              <span className={styles.square} aria-hidden="true" />
-              <span>
-                The library holds {examples.length} researched Calgary-connected examples. Each example records its sources, local connection and research date.
-                Units without a prepared example say so honestly. Unit names follow Alberta Education programs of studies.
-              </span>
-            </p>
-            <UnmatchedList />
+    <div className={styles.landing}>
+      <section className={styles.heroA} aria-labelledby="a-title">
+        <Image src={heroImage} alt="" fill preload unoptimized sizes="100vw" className={styles.heroPhoto} />
+        <div className={styles.heroScrim} aria-hidden="true" />
+        <div className={`${styles.frame} ${styles.heroAInner}`}>
+          <h1 id="a-title" className={styles.heroTitle}>
+            <span className={styles.line}>
+              <span className={styles.rise}>Show your class who in Calgary </span>
+            </span>
+            <span className={styles.line}>
+              <span className={styles.rise}>uses the science they’re learning.</span>
+            </span>
+          </h1>
+          <p className={styles.heroLede}>
+            Careers in the Classroom helps Alberta high school science teachers connect the unit they’re teaching to a real
+            Calgary organization, the problem it’s working on and the people doing the work. Choose from {stats.examples}{" "}
+            examples, each ready to project in class.
+          </p>
+          <div className={styles.ctaRow}>
+            <a href="#start" className={styles.ctaPrimary}>
+              Find an example for my class <Icon name="arrowRight" small />
+            </a>
+            <a href="#how" className={styles.ctaGhost}>
+              How it works
+            </a>
           </div>
         </div>
-      </div>
-    </>
+      </section>
+
+      <section id="how" className={styles.band} aria-labelledby="a-how">
+        <div className={styles.frame}>
+          <h2 id="a-how" className={styles.h2}>
+            From your unit to a real conversation in three steps
+          </h2>
+          <ol className={styles.steps}>
+            <li className={styles.step}>
+              <span className={styles.stepNum}>1</span>
+              <h3 className={styles.h3}>Start from what you teach</h3>
+              <p>Pick your course and unit, or start from a company or a kind of job your students are curious about.</p>
+            </li>
+            <li className={styles.step}>
+              <span className={styles.stepNum}>2</span>
+              <h3 className={styles.h3}>Open a real Calgary example</h3>
+              <p>
+                Each example starts with a question students can reason about using the science they know, then explains how
+                the organization uses it.
+              </p>
+            </li>
+            <li className={styles.step}>
+              <span className={styles.stepNum}>3</span>
+              <h3 className={styles.h3}>Project it and talk</h3>
+              <p>
+                Show the example full screen, explore the roles and ways into the work, and finish with a question for the
+                class.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section className={`${styles.band} ${styles.bandWarm}`} aria-labelledby="a-anatomy">
+        <div className={`${styles.frame} ${styles.anatomy}`}>
+          <div>
+            <h2 id="a-anatomy" className={styles.h2}>
+              What a class sees: “{example.question}”
+            </h2>
+            <p className={styles.body}>
+              {example.org} · {example.localShort}
+            </p>
+            <dl className={styles.parts}>
+              <div>
+                <dt>The question</dt>
+                <dd>An opening question tied to your unit.</dd>
+              </div>
+              <div>
+                <dt>How it works</dt>
+                <dd>The science, step by step, with a teaching illustration.</dd>
+              </div>
+              <div>
+                <dt>Who does this work</dt>
+                <dd>{roles.map((r) => r.title).join(" · ")}</dd>
+              </div>
+              <div>
+                <dt>Ways in</dt>
+                <dd>Local programs and real job postings related to the work.</dd>
+              </div>
+              <div>
+                <dt>Ask the class</dt>
+                <dd>“{example.prompt.split("?")[0]}?”</dd>
+              </div>
+            </dl>
+            <Link href={`/examples/${example.slug}`} className={styles.textLink}>
+              Open this example <Icon name="arrowRight" small />
+            </Link>
+          </div>
+          {image && (
+            <figure className={styles.anatomyFigure}>
+              <Image src={image.src} alt={image.alt} sizes="(max-width: 900px) 100vw, 600px" className={styles.anatomyImage} />
+            </figure>
+          )}
+        </div>
+      </section>
+
+      <section className={styles.band} aria-labelledby="a-why">
+        <div className={`${styles.frame} ${styles.why}`}>
+          <h2 id="a-why" className={styles.whyStatement}>
+            “When will I ever use this?” deserves an answer from down the road.
+          </h2>
+          <div className={styles.whyBody}>
+            <p>
+              Science careers can feel like they happen somewhere else. These examples put the work in Calgary: an office on
+              5th Avenue, a roastery in the Simmons Building, a field program in southeastern Alberta.
+            </p>
+            <p>
+              Each one names the kinds of work involved and says what those people do day to day, with programs and job
+              postings students can look up afterwards.
+            </p>
+            <p>
+              Every claim links to a dated source. We distinguish what an organization says, what we found in a source and our own
+              interpretation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="start" className={`${styles.band} ${styles.bandDark}`} aria-labelledby="a-start">
+        <div className={styles.frame}>
+          <h2 id="a-start" className={`${styles.h2} ${styles.h2Dark}`}>
+            Where would you like to start?
+          </h2>
+          <Doors courses={courseDoors} companies={companyDoors} roles={roleDoors} tone="dark" />
+        </div>
+      </section>
+    </div>
   );
 }

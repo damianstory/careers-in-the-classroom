@@ -145,7 +145,7 @@ test.describe("Discover classroom flow", () => {
       await expect(page.locator('[data-phase="start"]')).toBeVisible();
       await expect(page.getByRole("button", { name: "Slower: off" })).toBeVisible();
     }
-    await page.getByRole("navigation", { name: "Main", exact: true }).getByRole("link", { name: "Examples", exact: true }).focus();
+    await page.getByRole("navigation", { name: "Main", exact: true }).getByRole("link", { name: "Connections", exact: true }).focus();
     await page.keyboard.press("Space");
     await expect(page.locator('[data-phase="start"]')).toBeVisible();
     await page.getByLabel("JOBS", { exact: true }).focus();
@@ -168,7 +168,7 @@ test.describe("Discover classroom flow", () => {
       await page.goto("/discover");
       await expect(page.getByRole("button", { name: /Loading pictures/ })).toBeDisabled();
       const focused = target === "header"
-        ? page.getByRole("navigation", { name: "Main", exact: true }).getByRole("link", { name: "Examples", exact: true })
+        ? page.getByRole("navigation", { name: "Main", exact: true }).getByRole("link", { name: "Connections", exact: true })
         : page.getByLabel("JOBS", { exact: true });
       if (target === "body") await page.evaluate(() => (document.activeElement as HTMLElement)?.blur());
       else await focused.focus();

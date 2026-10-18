@@ -82,5 +82,5 @@ export function exampleContext(slug: string, ctx: SearchContext | null): Example
   // Back goes to the filtered library on the home page, where a typed topic needs no "other" unit.
   const back = new URLSearchParams(query);
   if (ctx.unitId === OTHER_UNIT) back.delete("unit");
-  return { why: hit.why, label: `${res.course.name} · ${res.label}`, backHref: `/?${back}#library`, query };
+  return { why: hit.why, label: `${res.course.name} · ${res.label}`, backHref: `/connections?${back}#library`, query };
 }
