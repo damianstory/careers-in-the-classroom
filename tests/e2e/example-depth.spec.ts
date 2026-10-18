@@ -30,7 +30,7 @@ for (const example of [
     await page.locator("#who").getByRole("link", { name: example.role, exact: true }).click();
     await expect(page.getByRole("heading", { name: "What might you actually do?" })).toBeVisible();
     await expect(page.locator("#who-title")).toBeFocused();
-    await page.getByRole("region", { name: "Real job examples" }).getByRole("link", { name: new RegExp(example.job.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")) }).click();
+    await page.getByRole("region", { name: "Saved job examples" }).getByRole("link", { name: new RegExp(example.job.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")) }).click();
     const article = page.getByRole("article", { name: example.job });
     await expect(article).toBeVisible();
     await page.reload();

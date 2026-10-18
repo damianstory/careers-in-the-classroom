@@ -21,6 +21,7 @@ import {
 } from "@/content";
 import { exploreHref, landingSection, layoutBootstrap, PART_LABELS, SHOW_PARTS, type ExploreState, type Selection, type View } from "@/lib/example-navigation";
 import { checkedRange, formatDate, jobStatusLabel } from "@/lib/job-status";
+import { liveSearches, SEARCH_LOCATION, searchTitles } from "@/lib/job-search";
 import type { ExampleContext } from "@/lib/search";
 import { GatedNews, SaveExample, SpeakerButton } from "./ExampleParts";
 import { ExploreFocus } from "./ExploreFocus";
@@ -555,7 +556,7 @@ function RolesView({
       <>
         <header className={`${base.band} ${base.hero}`}>
           <p className={base.lede} data-role-scope="">{roles.some((r) => !getOrganizationRole(org.id, r.id) || getOrganizationRole(org.id, r.id)?.establishes === "related-work") ? `Roles connected to this example` : `Roles documented at ${org.name}`}</p>
-          <p className={base.lede}>What this kind of work involves, with real job examples and ways to prepare for each.</p>
+          <p className={base.lede}>What each kind of work involves, the job titles to look for, and where to find postings in Calgary.</p>
         </header>
         <div className={`${base.band} ${base.tint} ${base.rule}`}>
           <ul className={styles.cardGrid}>
@@ -563,9 +564,6 @@ function RolesView({
               const link = getOrganizationRole(org.id, r.id);
               return (
                 <li key={r.id} className={styles.card}>
-                  <div className={styles.cardStrip}>
-                    {link ? <EvidenceTag kind={link.kind}>{link.label}</EvidenceTag> : <EvidenceTag kind="interpreted">Related work at another employer</EvidenceTag>}
-                  </div>
                   <div className={styles.cardBody}>
                     <h3 className={`${styles.cardTitle} ${styles.cardTitleLg}`}>
                       <SelectionLink section="who" href={href({ section: "who", role: r.id })} className={styles.cardLink}>
@@ -575,6 +573,13 @@ function RolesView({
                     </h3>
                     <p className={styles.cardText}>{r.summary}</p>
                     <p className={styles.cardText}><strong>{ctx ? ctx.label.split(" · ")[0] : "Classroom connection"}</strong><br />{r.classroomConnection}</p>
+                    {searchTitles(r.id).length > 0 && (
+                      <p className={styles.cardText}><strong>Job titles to search</strong><br />{searchTitles(r.id).join(" · ")}</p>
+                    )}
+                  </div>
+                  {/* Evidence stays on every card, after the content a teacher reads first. */}
+                  <div className={`${styles.cardStrip} ${styles.cardFoot}`}>
+                    {link ? <EvidenceTag kind={link.kind}>{link.label}</EvidenceTag> : <EvidenceTag kind="interpreted">Related work at another employer</EvidenceTag>}
                   </div>
                 </li>
               );
@@ -715,54 +720,84 @@ function RoleJobs({
   today: string;
 }) {
   const jobs = details.jobIds.map((id) => getJob(id)!).filter((j) => j.roleIds.includes(role.id));
+  const searches = liveSearches(role.id);
+  const org = getOrganization(details.organizationId)!;
   const jobHref = (id?: string) => href({ section: "who", role: role.id, job: id });
 
   return (
     <section className={`${base.band} ${base.rule}`} aria-labelledby="jobs-title">
       <h3 id="jobs-title" className={`display ${base.h2}`}>
-        Real job examples
+        Related job postings
       </h3>
-      <p className={styles.jobsIntro}>
-        How employers have described this kind of work, saved on the date shown. Employers have not reviewed or endorsed this page.
-      </p>
-      {jobs.length === 0 ? (
-        <div className={styles.empty}>
-          <p className={styles.emptyTitle}>No saved job examples for this role yet.</p>
-          <p className={styles.bandNote}>We only save postings we could open, on the employer’s own board or as an attributed copy.</p>
-        </div>
-      ) : (
-        <ul className={styles.jobList}>
-          {jobs.map((j) => {
-            const open = selection.job === j.id;
-            return (
-              <li key={j.id} className={`${styles.jobItem} ${open ? styles.jobOpen : ""}`}>
-                <SelectionLink
-                  section="who"
-                  href={jobHref(open ? undefined : j.id)}
-                  row
-                  className={styles.jobRow}
-                  aria-expanded={open}
-                  data-job-detail={open ? "" : undefined}
-                >
-                  <span className={styles.jobRowMain}>
-                    <span className={styles.jobTitle}>{j.title}</span>
-                    <span className={styles.jobMetaLine}>
-                      {j.employer}
-                      {j.location ? ` · ${j.location}` : ""}
-                    </span>
-                  </span>
-                  <StatusTag job={j} today={today} />
-                  <Icon name="chevronDown" className={styles.chevron} />
-                </SelectionLink>
-                {open && (
-                  <article className={styles.rowBody} aria-labelledby={`job-title-${j.id}`}>
-                    <JobBody job={j} roles={roles} today={today} titleId={`job-title-${j.id}`} />
-                  </article>
-                )}
+      {searches.length > 0 && (
+        <>
+          <p className={styles.jobsIntro}>
+            Similar work at other employers in {SEARCH_LOCATION}, not openings at {org.name}. These are live searches: results change daily and we have not checked them.
+          </p>
+          <ul className={styles.searchList} aria-label="Live job searches">
+            {searches.map((s) => (
+              <li key={s.title} className={styles.searchRow}>
+                <span className={styles.jobTitle}>{s.title}</span>
+                <span className={styles.searchLinks}>
+                  {s.links.map((l) => (
+                    <a key={l.board} href={l.url} target="_blank" rel="noopener noreferrer" referrerPolicy="no-referrer" className={styles.arrowLink}>
+                      {l.board}
+                      <span className="sr-only"> search for {s.title} (opens in a new tab)</span>
+                      <Icon name="arrowRight" small />
+                    </a>
+                  ))}
+                </span>
               </li>
-            );
-          })}
-        </ul>
+            ))}
+          </ul>
+        </>
+      )}
+      {jobs.length === 0 ? (
+        searches.length === 0 && (
+          <div className={styles.empty}>
+            <p className={styles.emptyTitle}>No saved job examples for this role yet.</p>
+            <p className={styles.bandNote}>We only save postings we could open, on the employer’s own board or as an attributed copy.</p>
+          </div>
+        )
+      ) : (
+        <section aria-labelledby="saved-jobs-title">
+          <h4 id="saved-jobs-title" className={styles.savedTitle}>Saved job examples</h4>
+          <p className={styles.jobsIntro}>
+            How employers have described this kind of work, saved on the date shown. Employers have not reviewed or endorsed this page.
+          </p>
+          <ul className={styles.jobList}>
+            {jobs.map((j) => {
+              const open = selection.job === j.id;
+              return (
+                <li key={j.id} className={`${styles.jobItem} ${open ? styles.jobOpen : ""}`}>
+                  <SelectionLink
+                    section="who"
+                    href={jobHref(open ? undefined : j.id)}
+                    row
+                    className={styles.jobRow}
+                    aria-expanded={open}
+                    data-job-detail={open ? "" : undefined}
+                  >
+                    <span className={styles.jobRowMain}>
+                      <span className={styles.jobTitle}>{j.title}</span>
+                      <span className={styles.jobMetaLine}>
+                        {j.employer}
+                        {j.location ? ` · ${j.location}` : ""}
+                      </span>
+                    </span>
+                    <StatusTag job={j} today={today} />
+                    <Icon name="chevronDown" className={styles.chevron} />
+                  </SelectionLink>
+                  {open && (
+                    <article className={styles.rowBody} aria-labelledby={`job-title-${j.id}`}>
+                      <JobBody job={j} roles={roles} today={today} titleId={`job-title-${j.id}`} />
+                    </article>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        </section>
       )}
     </section>
   );
