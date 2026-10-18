@@ -3,15 +3,16 @@ import Link from "next/link";
 import { Icon, type IconName } from "@/components/Icon";
 import { QUERY_MAX, THEMES, browseCourses, browseExamples, browseRoles, matchesQuery } from "@/lib/browse";
 import { CompanyRow, ExampleTile, PreviewBar, RoleList } from "../BrowseParts";
+import { Dock } from "./Dock";
 import styles from "../browse.module.css";
 
 export const metadata: Metadata = { title: "Prototype A: four ways in" };
 
-const DOORS: { id: string; label: string; hint: string; icon: IconName }[] = [
-  { id: "course", label: "Your course", hint: "Start from what you’re teaching", icon: "book" },
-  { id: "challenge", label: "A challenge", hint: "Start from a real-world problem", icon: "compass" },
-  { id: "company", label: "A company", hint: "Start from who’s in Calgary", icon: "building" },
-  { id: "role", label: "A kind of work", hint: "Start from the people and jobs", icon: "users" },
+const DOORS: { id: string; label: string; short: string; hint: string; icon: IconName }[] = [
+  { id: "course", label: "Your course", short: "Course", hint: "Start from what you’re teaching", icon: "book" },
+  { id: "challenge", label: "A challenge", short: "Challenge", hint: "Start from a real-world problem", icon: "compass" },
+  { id: "company", label: "A company", short: "Company", hint: "Start from who’s in Calgary", icon: "building" },
+  { id: "role", label: "A kind of work", short: "Work", hint: "Start from the people and jobs", icon: "users" },
 ];
 
 // Version A: four equal doors above one panel. The choice and any search live in the URL.
@@ -75,7 +76,7 @@ export default async function PreviewA({ searchParams }: PageProps<"/preview/a">
           </section>
         ) : null}
 
-        <nav aria-label="Ways in" className={`${styles.frame} ${styles.doors}`}>
+        <nav id="ways-in" aria-label="Ways in" className={`${styles.frame} ${styles.doors}`}>
           {DOORS.map((d) => (
             <Link
               key={d.id}
@@ -91,7 +92,7 @@ export default async function PreviewA({ searchParams }: PageProps<"/preview/a">
           ))}
         </nav>
 
-        <section className={`${styles.frame} ${styles.panel}`} aria-label={DOORS.find((d) => d.id === by)!.label}>
+        <section id="panel" className={`${styles.frame} ${styles.panel} ${styles.doorPanel}`} aria-label={DOORS.find((d) => d.id === by)!.label}>
           {by === "course" && (
             <ul className={styles.courseGrid}>
               {browseCourses().map((c) => (
@@ -165,6 +166,7 @@ export default async function PreviewA({ searchParams }: PageProps<"/preview/a">
             </>
           )}
         </section>
+        <Dock doors={DOORS.map(({ id, label, short, icon }) => ({ id, label, short, icon }))} by={by} q={q} />
       </div>
     </>
   );

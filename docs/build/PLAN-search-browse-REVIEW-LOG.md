@@ -202,6 +202,46 @@ Runner result: `/tmp/claude-0/claudex/i2/claudex-r8krci2u/result.json`, session 
 }
 ```
 
+## Increment 2 (compact sticky bar): plan round 1
+
+REVISE. Two findings (labelled SB-001/SB-002 by the reviewer; logged here as D-001/D-002 to avoid clashing with the increment 1 ids):
+
+- D-001 (medium): landing a dock link on the panel at header + 16px would leave the door row's bottom 16px visible under the header, so the observer would hide the bar after a dock navigation.
+- D-002 (medium): the site footer sits outside the preview page, so padding inside the page cannot keep the fixed bar off the final footer text.
+
+### Host dispositions
+
+- D-001 accepted: the panel's scroll-margin-top is header − 16px and the bar shows only once the row is entirely above the header line. Verification checks the row rectangle and bar visibility after a dock navigation.
+- D-002 accepted: space is reserved with `body:has([data-dock])` padding of the bar height plus the safe-area inset. Verification adds a max-scroll check with a simulated inset.
+
+## Increment 2: plan round 2
+
+APPROVED. "The revision resolves SB-001 and SB-002 at the plan level."
+
+## Increment 2: build note
+
+Playwright verification found that an IntersectionObserver never fires when the page jumps straight from below the row to above it (End key, or a search page whose row starts below the fold). The plan and Dock.tsx switched to a passive, frame-throttled scroll and resize check before inspection.
+
+## Increment 2: inspection 1 (fresh Codex session)
+
+REVISE, three findings, all accepted and fixed:
+
+- DOCK-001 (medium): opening search kept the bar visible after scrolling back to the full doors. Now visibility follows the row only; the popover closes and focus inside the bar moves to the main search box.
+- DOCK-002 (low): Escape only worked inside the form, not after tabbing into the bar's links. Escape is now handled on the bar container.
+- DOCK-003 (low): with a search active, no bar item was marked current. The current item now follows `by` alone, like the full doors.
+
+## Increment 2: inspection 2 (fresh Codex session)
+
+REVISE, one finding, accepted and fixed:
+
+- DOCK-004 (medium): the signal-coloured focus ring disappeared on the signal-filled current and expanded items. Those now draw an ink ring inset inside the fill.
+
+## Increment 2: inspection 3 (fresh Codex session)
+
+APPROVED. "No material unresolved defects identified in Increment 2 through static review. The DOCK-004 focus-ring fix is present."
+
 ## Outcome
 
 Plan approved in round 3 of 5; code approved in inspection 2 of 2. Six findings (SB-001 to SB-006), all accepted and fixed. Requested model gpt-6-astra/high on every call; the CLI returned no observed model keys, so the serving model is not independently confirmed. No API key was used.
+
+Increment 2 (sticky bar): plan approved in round 2 of 5; code approved in inspection 3. Six findings (D-001, D-002, DOCK-001 to DOCK-004), all accepted and fixed. Same model request and caveat as above; no API key was used.

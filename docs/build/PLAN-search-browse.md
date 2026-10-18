@@ -56,3 +56,33 @@ The aim is helping educators connect class content to the actual Calgary organiz
 - Browser check (Playwright against `next start`): open `/preview/b?theme=water` (6 of 32, water checked), click the "B · One list, many filters" link (URL bare, 0 checked, 32 of 32); A with `q=E3` gives 1 match.
 - `npm run build`: succeeds; `/preview`, `/preview/a`, `/preview/b`, `/preview/c` listed.
 - Manual/visual: Playwright screenshots at 1280px and 390px of each version and state (A: each door and a search; B: unfiltered, Chemistry 20 + water, mobile with a kind-of-work filter; C: empty and filled), checking `scrollWidth <= innerWidth`.
+
+## Increment 2: compact sticky bar for version A (requested 18 October 2026)
+
+Damian chose version A and asked for the four doors to stay reachable while scrolling: a small, thumb-reachable bar like a mobile app's bottom navigation, with icons, plus a search button, so a teacher can switch ways in without scrolling back to the top.
+
+### Acceptance criteria
+
+- Once the full door row has scrolled out of view (above the viewport), a compact bar appears fixed at the bottom of the screen; it hides again when the door row is back in view. It is never shown while the door row is visible.
+- The bar has five buttons: the four doors (Course, Challenge, Company, Work) and Search. Each shows its icon with a short label under it (visible labels keep the icons understandable; the accessible name is the full door name). The current door is marked with `aria-current="page"` and a filled style.
+- A door button navigates to `/preview/a?by=<door>#panel` (dropping any search, like the big doors). The panel's anchor offset (`scroll-margin-top: calc(var(--header-h) - 16px)`, with the panel's 32px top padding) puts the panel's content 16px below the sticky site header and the bottom of the door row 16px under the header, so the door row is fully hidden, the bar stays visible and the new list starts at the top of the screen.
+- The Search button opens a small search field just above the bar, focused, with the same `maxLength` (`QUERY_MAX`) and a submit button. Submitting is a plain GET to `/preview/a` with the current `by` and `q`, so results render server-side at the top of the page as today. Escape or the Search button again closes it and returns focus to the Search button.
+- Layout: full-width on phones (with `env(safe-area-inset-bottom)` padding), a centred pill no wider than about 480px on wider screens. 44px minimum touch targets. No horizontal scroll at 390px. The site footer sits outside the preview page (root layout), so the space is reserved on the body itself: while the dock is mounted, `body:has([data-dock])` gets `padding-bottom: calc(var(--dock-h) + env(safe-area-inset-bottom))` (route-scoped, since only `/preview/a` renders the dock). At maximum scroll the footer's last line sits fully above the bar.
+- While hidden, the bar is not focusable or announced (`visibility: hidden` plus `aria-hidden`/`inert`). Its slide-in respects `prefers-reduced-motion`.
+- Without JavaScript nothing breaks: the bar simply never appears (it starts hidden), and the big doors and top search still work.
+
+### Approach
+
+- New client component `src/app/preview/a/Dock.tsx`, rendered by the server page with `by` and `q`. A passive scroll and resize listener (throttled to one check per animation frame, and run once on mount) compares the door row's (`#ways-in`) bottom edge with the site header's height (read from `--header-h`, so 64px or 56px). The bar shows when the row's bottom is at or above that line, i.e. the row is entirely above or under the sticky header. (Built first with an `IntersectionObserver`; verification showed it never fires when the page jumps straight from below the row to above it, as with the End key or a search page whose row starts below the fold.)
+- Door links are `next/link` to `/preview/a?by=<id>#panel`. The panel section gets `id="panel"` and `scroll-margin-top: calc(var(--header-h) - 16px)`.
+- The search popover is a `<form action="/preview/a">` with a hidden `by`; it is rendered only while open.
+- Styles in `browse.module.css`, using existing tokens: dark green surface (`--surface-dark`) with `--signal` for the active item, `z-index` 15 (below the site header's 20 and dialogs).
+
+### Non-goals
+
+- No change to B, C, the current home page or the example pages. Version A is still a prototype under `/preview`; moving it to the real library page waits for the landing-page PR (#1), which moves the library to `/examples`.
+
+### Verification
+
+- `npm run typecheck`, `npx eslint src/app/preview src/lib`, `npm test`, `npm run build`.
+- Playwright at 390×844 and 1280×900: at the top the bar is hidden; after scrolling past the doors it is visible and fixed to the bottom; clicking "Company" in the bar loads `?by=company`, the door row's bounding rectangle bottom is at or above the header's bottom, the company list's first row is just below the header, and the bar is still visible; at maximum scroll on a phone viewport (with a simulated 34px bottom safe-area inset via a test-only CSS override of the padding) the footer's last text line is above the bar's top edge; clicking Search focuses the field, typing "water" and submitting shows "matches for “water”"; Escape closes the field and focus returns to the Search button; no horizontal overflow. Screenshots of both widths.

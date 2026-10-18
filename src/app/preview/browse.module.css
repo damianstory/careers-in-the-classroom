@@ -960,3 +960,130 @@
     margin-bottom: 12px;
   }
 }
+
+/* A: compact door bar. Fixed to the bottom, within thumb reach; hidden until the door row has
+   scrolled away. Full width on phones, a centred pill on wider screens. */
+.doorPanel {
+  /* With the panel's 32px top padding, a #panel jump leaves its content 16px below the header and
+     the door row's bottom 16px under it, so the bar stays shown. */
+  scroll-margin-top: calc(var(--header-h) - 16px);
+}
+
+:global(body):has([data-dock]) {
+  --dock-h: 72px;
+  /* The footer is outside the page, so the bar's space is reserved on the body. */
+  padding-bottom: calc(var(--dock-h) + env(safe-area-inset-bottom));
+}
+
+.dock {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 15;
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  padding: 0 0 env(safe-area-inset-bottom);
+  visibility: hidden;
+  transform: translateY(100%);
+  transition: transform var(--duration-fast) var(--ease-standard), visibility 0s linear var(--duration-fast);
+  pointer-events: none;
+}
+
+.dock[data-shown] {
+  visibility: visible;
+  transform: none;
+  transition: transform var(--duration-fast) var(--ease-standard);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dock,
+  .dock[data-shown] {
+    transition: none;
+  }
+}
+
+.dockBar,
+.dockSearch {
+  pointer-events: auto;
+}
+
+.dockBar {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  width: 100%;
+  min-height: var(--dock-h);
+  padding: 6px 8px;
+  background: var(--surface-dark);
+  border-top: 1px solid var(--hairline-dark);
+}
+
+.dockItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-height: 56px;
+  padding: 4px 2px;
+  border: 0;
+  border-radius: var(--radius-control);
+  background: none;
+  color: var(--on-dark-2);
+  font: 500 11px/14px var(--font-ui);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.dockItem:hover {
+  color: var(--white);
+  background: rgb(255 255 255 / 0.08);
+}
+
+.dockItem[aria-current="page"],
+.dockItem[aria-expanded="true"] {
+  background: var(--signal);
+  color: var(--ink);
+}
+
+.dockItem:focus-visible {
+  outline: 3px solid var(--signal);
+  outline-offset: -3px;
+}
+
+/* A filled item would hide a signal-coloured ring, so its focus ring is ink, drawn inside the fill. */
+.dockItem[aria-current="page"]:focus-visible,
+.dockItem[aria-expanded="true"]:focus-visible {
+  outline-color: var(--ink);
+  outline-offset: -6px;
+}
+
+.dockSearch {
+  display: flex;
+  gap: 8px;
+  width: calc(100% - 2 * var(--gutter));
+  max-width: 560px;
+  padding: 10px;
+  border-radius: var(--radius-panel);
+  background: var(--surface-dark);
+}
+
+.dockInput {
+  height: 44px;
+  min-width: 0;
+}
+
+@media (min-width: 641px) {
+  :global(body):has([data-dock]) {
+    padding-bottom: calc(var(--dock-h) + 16px + env(safe-area-inset-bottom));
+  }
+  .dock {
+    padding-bottom: calc(16px + env(safe-area-inset-bottom));
+  }
+  .dockBar {
+    width: min(480px, calc(100% - 2 * var(--gutter)));
+    border: 1px solid var(--hairline-dark);
+    border-radius: 12px;
+  }
+}
