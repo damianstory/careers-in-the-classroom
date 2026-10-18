@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Icon, type IconName } from "@/components/Icon";
-import { THEMES, browseCourses, browseExamples, browseRoles, type BrowseExample } from "@/lib/browse";
+import { QUERY_MAX, THEMES, browseCourses, browseExamples, browseRoles, matchesQuery } from "@/lib/browse";
 import { CompanyRow, ExampleTile, PreviewBar, RoleList } from "../BrowseParts";
 import styles from "../browse.module.css";
 
@@ -14,20 +14,14 @@ const DOORS: { id: string; label: string; hint: string; icon: IconName }[] = [
   { id: "role", label: "A kind of work", hint: "Start from the people and jobs", icon: "users" },
 ];
 
-const text = (e: BrowseExample) =>
-  [e.question, e.org.name, e.org.tagline, e.localShort, ...e.roles.map((r) => r.title), ...e.courses.flatMap((c) => [c.name, c.topic])]
-    .join(" ")
-    .toLowerCase();
-
 // Version A: four equal doors above one panel. The choice and any search live in the URL.
 export default async function PreviewA({ searchParams }: PageProps<"/preview/a">) {
   const params = await searchParams;
   const raw = Array.isArray(params.by) ? params.by[0] : params.by;
   const by = DOORS.some((d) => d.id === raw) ? raw! : "course";
-  const q = (Array.isArray(params.q) ? params.q[0] : params.q)?.trim().slice(0, 80) ?? "";
+  const q = (Array.isArray(params.q) ? params.q[0] : params.q)?.trim().slice(0, QUERY_MAX) ?? "";
   const all = browseExamples();
-  const words = q.toLowerCase().split(/\s+/).filter((w) => w.length >= 3);
-  const hits = q ? all.filter((e) => words.every((w) => text(e).includes(w))) : [];
+  const hits = q ? all.filter((e) => matchesQuery(e, q)) : [];
   const byName = [...all].sort((a, b) => a.org.name.localeCompare(b.org.name));
 
   return (
@@ -40,7 +34,8 @@ export default async function PreviewA({ searchParams }: PageProps<"/preview/a">
           <p className={styles.lead}>
             Every example connects a science idea to a real Calgary organization and the people doing the work. Pick a way in.
           </p>
-          <form action="/preview/a" className={styles.searchRow} role="search">
+          {/* Keyed by the URL so an edited box resets when a link clears the search or changes door. */}
+          <form key={`${by}|${q}`} action="/preview/a" className={styles.searchRow} role="search">
             <input type="hidden" name="by" value={by} />
             <label htmlFor="qa" className="sr-only">
               Search everything
@@ -50,6 +45,7 @@ export default async function PreviewA({ searchParams }: PageProps<"/preview/a">
               id="qa"
               name="q"
               defaultValue={q}
+              maxLength={QUERY_MAX}
               className={`input ${styles.searchInput}`}
               placeholder="Try “water”, “drone”, “Chemistry 20” or “bakery”"
             />

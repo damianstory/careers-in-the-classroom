@@ -68,9 +68,15 @@ export function CompanyRow({ e, showRoles = true }: { e: BrowseExample; showRole
         </p>
         {showRoles && (
           <ul className={styles.roleChips} aria-label="Kinds of work shown">
-            {e.roles.map((r) => (
-              <li key={r.id}>{r.title}</li>
-            ))}
+            {e.roles.map((r) =>
+              r.scope === "elsewhere" ? (
+                <li key={r.id} className={styles.elsewhere}>
+                  {r.title} <span>· at another employer</span>
+                </li>
+              ) : (
+                <li key={r.id}>{r.title}</li>
+              ),
+            )}
           </ul>
         )}
       </div>
@@ -115,7 +121,11 @@ export function ExampleTile({ e, compact }: { e: BrowseExample; compact?: boolea
         )}
         {!compact && (
           <p className={styles.tileMeta}>
-            <Icon name="users" small /> {e.roles.map((r) => r.title).join(" · ")}
+            <Icon name="users" small />{" "}
+            {e.roles
+              .filter((r) => r.scope !== "elsewhere")
+              .map((r) => r.title)
+              .join(" · ")}
           </p>
         )}
       </div>
@@ -144,12 +154,17 @@ export function RoleList({ roles }: { roles: BrowseRoleGroup[] }) {
                     <p className={styles.roleTitle}>{r.title}</p>
                     <p className={styles.roleSummary}>{r.summary}</p>
                   </div>
-                  <ul className={styles.roleAt} aria-label={`Where ${r.title.toLowerCase()} happens in Calgary`}>
+                  <ul className={styles.roleAt} aria-label={`Organizations connected to ${r.title.toLowerCase()}`}>
                     {r.at.map((a) => (
                       <li key={a.org.id}>
-                        <Link href={a.href} className={styles.atLink} title={a.question}>
+                        <Link
+                          href={a.href}
+                          className={`${styles.atLink} ${a.scope === "elsewhere" ? styles.elsewhere : ""}`}
+                          title={a.question}
+                        >
                           <OrgMark org={a.org} size={24} />
                           {a.org.name}
+                          {a.scope === "elsewhere" && <span>· example only, work is at another employer</span>}
                         </Link>
                       </li>
                     ))}

@@ -27,3 +27,45 @@ export type FamilyId = (typeof FAMILIES)[number]["id"];
 
 export const themeName = (id: ThemeId) => THEMES.find((t) => t.id === id)!.name;
 export const familyName = (id: FamilyId) => FAMILIES.find((f) => f.id === id)!.name;
+
+/** Longest search kept, in the box and in the URL, so a shared link reproduces the same results. */
+export const QUERY_MAX = 80;
+
+type Searchable = {
+  question: string;
+  theme: ThemeId;
+  localShort: string;
+  org: { name: string; tagline: string };
+  roles: { title: string; family: FamilyId; scope: string }[];
+  courses: { name: string; topic: string }[];
+};
+
+// Work shown at another employer does not make an organization match a family of work.
+export const hasFamily = (e: Searchable, id: FamilyId | string) => e.roles.some((r) => r.family === id && r.scope !== "elsewhere");
+
+const COURSE = /\b(science|biology|chemistry|physics)\s*(10|20|30)\b/g;
+const STOP = new Set(["a", "an", "and", "the", "of", "in", "on", "for", "to", "with"]);
+const escape = (w: string) => w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+// A course named in the query ("Physics 30") must be one of the example's courses. Every other word,
+// however short ("E3"), must start a word in the example's text. A query with nothing usable matches nothing.
+export function matchesQuery(e: Searchable, query: string): boolean {
+  const q = query.toLowerCase().replace(/[’']/g, "");
+  const named = [...q.matchAll(COURSE)].map((m) => `${m[1]} ${m[2]}`);
+  if (!named.every((c) => e.courses.some((x) => x.name.toLowerCase() === c))) return false;
+  const words = q.replace(COURSE, " ").split(/[^a-z0-9]+/).filter((w) => w && !STOP.has(w));
+  if (!words.length) return named.length > 0;
+  const text = [
+    e.question,
+    e.org.name,
+    e.org.tagline,
+    e.localShort,
+    themeName(e.theme),
+    ...e.roles.map((r) => r.title),
+    ...e.courses.flatMap((c) => [c.name, c.topic]),
+  ]
+    .join(" ")
+    .toLowerCase()
+    .replace(/[’']/g, "");
+  return words.every((w) => new RegExp(`\\b${escape(w)}`).test(text));
+}

@@ -391,6 +391,18 @@
   margin-top: 2px;
 }
 
+/* Work the example shows at another employer, not at this organization. */
+.roleChips li.elsewhere,
+.atLink.elsewhere {
+  border-style: dashed;
+  border-color: var(--text-muted);
+  background: var(--bg-warm);
+}
+
+.elsewhere span {
+  color: var(--text-body);
+}
+
 /* Families and themes */
 .families,
 .theme {

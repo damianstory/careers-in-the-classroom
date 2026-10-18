@@ -1,8 +1,10 @@
 "use client";
 
+import { useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { Icon } from "@/components/Icon";
 import type { BrowseExample } from "@/lib/browse";
+import { QUERY_MAX, hasFamily, matchesQuery } from "@/lib/browse-terms";
 import { CompanyRow, ExampleTile } from "../BrowseParts";
 import styles from "../browse.module.css";
 
@@ -15,13 +17,8 @@ const EMPTY: Picks = { course: [], theme: [], family: [] };
 const has: Record<Facet, (e: BrowseExample, id: string) => boolean> = {
   course: (e, id) => e.courses.some((c) => c.id === id),
   theme: (e, id) => e.theme === id,
-  family: (e, id) => e.roles.some((r) => r.family === id),
+  family: hasFamily,
 };
-
-const text = (e: BrowseExample) =>
-  [e.question, e.org.name, e.org.tagline, e.localShort, ...e.roles.map((r) => r.title), ...e.courses.flatMap((c) => [c.name, c.topic])]
-    .join(" ")
-    .toLowerCase();
 
 // Within a facet, options widen (OR); across facets they narrow (AND).
 function matches(e: BrowseExample, picks: Picks, q: string, skip?: Facet) {
@@ -29,8 +26,7 @@ function matches(e: BrowseExample, picks: Picks, q: string, skip?: Facet) {
     if (f === skip || !picks[f].length) continue;
     if (!picks[f].some((id) => has[f](e, id))) return false;
   }
-  const words = q.toLowerCase().split(/\s+/).filter((w) => w.length >= 2);
-  return !words.length || words.every((w) => text(e).includes(w));
+  return !q.trim() || matchesQuery(e, q);
 }
 
 export interface DirectoryProps {
@@ -38,24 +34,50 @@ export interface DirectoryProps {
   courses: Opt[];
   themes: Opt[];
   families: Opt[];
-  initial: { picks: Picks; q: string };
 }
 
-// The filter is read from the URL on the server and written back as it changes, so it can be shared.
-export function Directory({ items, courses, themes, families, initial }: DirectoryProps) {
-  const [picks, setPicks] = useState<Picks>(initial.picks);
-  const [q, setQ] = useState(initial.q);
+function toQuery(picks: Picks, q: string) {
+  const p = new URLSearchParams();
+  picks.course.forEach((v) => p.append("course", v));
+  picks.theme.forEach((v) => p.append("theme", v));
+  picks.family.forEach((v) => p.append("work", v));
+  if (q.trim()) p.set("q", q.trim());
+  return p.toString();
+}
+
+// The URL is the source of truth: the filter is read from it, written back as it changes, and
+// re-read whenever something else changes it (a link, Back or Forward).
+export function Directory({ items, courses, themes, families }: DirectoryProps) {
+  const params = useSearchParams();
+  const fromUrl = (): { picks: Picks; q: string } => {
+    const valid = (ids: string[], opts: Opt[]) => ids.filter((id) => opts.some((o) => o.id === id));
+    return {
+      picks: { course: valid(params.getAll("course"), courses), theme: valid(params.getAll("theme"), themes), family: valid(params.getAll("work"), families) },
+      q: (params.get("q") ?? "").slice(0, QUERY_MAX),
+    };
+  };
+  const [picks, setPicks] = useState<Picks>(() => fromUrl().picks);
+  const [q, setQ] = useState(() => fromUrl().q);
   const [view, setView] = useState<"companies" | "cards">("companies");
   const [open, setOpen] = useState(false);
 
+  // An outside URL change that this component did not write replaces the local filter.
+  const urlKey = params.toString();
+  const [seenKey, setSeenKey] = useState(urlKey);
+  if (urlKey !== seenKey) {
+    setSeenKey(urlKey);
+    const next = fromUrl();
+    if (urlKey !== toQuery(picks, q)) {
+      setPicks(next.picks);
+      setQ(next.q);
+    }
+  }
+
   useEffect(() => {
-    const p = new URLSearchParams();
-    picks.course.forEach((v) => p.append("course", v));
-    picks.theme.forEach((v) => p.append("theme", v));
-    picks.family.forEach((v) => p.append("work", v));
-    if (q.trim()) p.set("q", q.trim());
-    const s = p.toString();
-    window.history.replaceState(null, "", s ? `?${s}` : window.location.pathname);
+    const s = toQuery(picks, q);
+    if (s !== new URLSearchParams(window.location.search).toString()) {
+      window.history.replaceState(null, "", s ? `?${s}` : window.location.pathname);
+    }
   }, [picks, q]);
 
   const shown = useMemo(() => items.filter((e) => matches(e, picks, q)), [items, picks, q]);
@@ -101,7 +123,8 @@ export function Directory({ items, courses, themes, families, initial }: Directo
             id="qb"
             className={`input ${styles.searchInput}`}
             value={q}
-            onChange={(ev) => setQ(ev.target.value)}
+            maxLength={QUERY_MAX}
+            onChange={(ev) => setQ(ev.target.value.slice(0, QUERY_MAX))}
             placeholder="Search companies, challenges and kinds of work"
           />
         </div>

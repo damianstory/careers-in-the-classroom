@@ -115,6 +115,12 @@ export interface BrowseRole {
   family: FamilyId;
   /** What the source shows at this organization, e.g. a team name or an actual job title. */
   label?: string;
+  /**
+   * documented: a source shows this team or job title at the organization.
+   * interpreted: the organization's sources point to this work, but not a specific assignment.
+   * elsewhere: the example shows this work at another employer, not at this organization.
+   */
+  scope: "documented" | "interpreted" | "elsewhere";
   href: string;
 }
 
@@ -159,7 +165,8 @@ function toBrowse(): BrowseExample[] {
       const r = getRoleProfile(id);
       if (!r) return [];
       const link = o ? getOrganizationRole(o.id, id) : undefined;
-      return [{ id, title: r.title, summary: r.summary, family: familyOf[id] ?? "engineering", label: link?.label, href: `${href}?role=${id}#who` }];
+      const scope = !link ? "elsewhere" : link.establishes === "related-work" ? "interpreted" : "documented";
+      return [{ id, title: r.title, summary: r.summary, family: familyOf[id] ?? "engineering", label: link?.label, scope, href: `${href}?role=${id}#who` }];
     });
     const name = o?.name ?? e.org;
     return {
@@ -211,7 +218,7 @@ export interface BrowseRoleGroup {
   title: string;
   summary: string;
   family: FamilyId;
-  at: { org: BrowseExample["org"]; label?: string; href: string; question: string }[];
+  at: { org: BrowseExample["org"]; label?: string; scope: BrowseRole["scope"]; href: string; question: string }[];
 }
 
 // One row per kind of work, listing every organization where the library shows it.
@@ -222,10 +229,12 @@ export function browseRoles(): BrowseRoleGroup[] {
       // Some profiles were written twice under different ids; merge rows that share a title.
       const key = r.title.toLowerCase();
       const row = map.get(key) ?? { id: r.id, title: r.title, summary: r.summary, family: r.family, at: [] };
-      row.at.push({ org: e.org, label: r.label, href: r.href, question: e.question });
+      row.at.push({ org: e.org, label: r.label, scope: r.scope, href: r.href, question: e.question });
       map.set(key, row);
     }
   }
+  // Work at another employer is listed after the organizations where the work happens.
+  for (const row of map.values()) row.at.sort((a, b) => Number(a.scope === "elsewhere") - Number(b.scope === "elsewhere"));
   return [...map.values()].sort((a, b) => b.at.length - a.at.length || a.title.localeCompare(b.title));
 }
 

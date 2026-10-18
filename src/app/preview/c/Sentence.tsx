@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { Icon } from "@/components/Icon";
 import type { BrowseExample } from "@/lib/browse";
+import { hasFamily } from "@/lib/browse-terms";
 import { ExampleTile, OrgMark } from "../BrowseParts";
 import styles from "../browse.module.css";
 
@@ -14,7 +15,7 @@ type Opt = { id: string; name: string };
 function pick(items: BrowseExample[], course: string, family: string, theme: string) {
   const fit = (e: BrowseExample, useTheme: boolean, useFamily: boolean) =>
     (!course || e.courses.some((c) => c.id === course)) &&
-    (!useFamily || !family || e.roles.some((r) => r.family === family)) &&
+    (!useFamily || !family || hasFamily(e, family)) &&
     (!useTheme || !theme || e.theme === theme);
   const exact = items.filter((e) => fit(e, true, true));
   if (exact.length) return { list: exact, relaxed: "" };
