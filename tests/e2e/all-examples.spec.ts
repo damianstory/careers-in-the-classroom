@@ -1,5 +1,6 @@
 import { examples, getDetails } from "../../src/content";
-import { SHOW_PARTS, availableViews } from "../../src/lib/example-navigation";
+import { SHOW_PARTS } from "../../src/lib/example-navigation";
+import { availableViews } from "../../src/lib/example-views";
 import type { Page } from "@playwright/test";
 import { exampleRoot, expectPart, lessonNav } from "./example-helpers";
 import { expect, test } from "./fixtures";

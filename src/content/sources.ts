@@ -1,5 +1,4 @@
-import { octoberSources } from "./calgary-october-17";
-import { expansionSources } from "./calgary-expansion";
+import { exampleRecords } from "./example-records";
 import type { DatedSource } from "./types";
 
 // Shared source registry for the connected exploration (organizations, roles,
@@ -7,8 +6,266 @@ import type { DatedSource } from "./types";
 const checkedOn = "2026-09-25";
 
 export const registry: DatedSource[] = [
-  ...octoberSources,
-  ...expansionSources,
+  ...exampleRecords.flatMap((r) => r.sources),
+  // Cited by more than one example, or by roles and pathways.
+  {
+    id: "oct17-source-6",
+    label: "Alberta Biology 20–30 program: water use and ecosystems",
+    url: "https://education.alberta.ca/media/159727/bio203007.pdf",
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-source-7",
+    label: "University of Calgary — Master of Landscape Architecture",
+    url: "https://sapl.ucalgary.ca/future-students/graduate/master-landscape-architecture-mla",
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-source-8",
+    label: "SAIT — Geomatics Engineering Technology",
+    url: "https://www.sait.ca/programs-and-courses/diplomas/geomatics-engineering-technology",
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-source-9",
+    label: "SAIT — Environmental Technology",
+    url: "https://www.sait.ca/programs-and-courses/diplomas/environmental-technology",
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-source-14",
+    label: "Alberta Physics 20–30 performance standards: A1, B1 and C1",
+    url: "https://www.alberta.ca/system/files/custom_downloaded_images/edc-physics20-30-performance-standards.pdf",
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-source-15",
+    label: "University of Calgary — Civil Engineering",
+    url: "https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-civil-engineering",
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-source-16",
+    label: "SAIT — Civil Engineering Technology, Municipal Major",
+    url: "https://www.sait.ca/programs-and-courses/diplomas/civil-engineering-technology-municipal",
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-source-17",
+    label: "SAIT — Architectural Technologies",
+    url: "https://www.sait.ca/programs-and-courses/diplomas/architectural-technologies",
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-source-21",
+    label: "SAIT — Instrumentation Engineering Technology",
+    url: "https://www.sait.ca/programs-and-courses/diplomas/instrumentation-engineering-technology",
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-source-22",
+    label: "SAIT — Chemical Laboratory Technology",
+    url: "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-source-23",
+    label: "SAIT — Mechanical Engineering Technology",
+    url: "https://www.sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology",
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-source-27",
+    label: "AUArts — Bachelor of Design",
+    url: "https://www.auarts.ca/program-areas/undergraduate/bachelor-of-design-bdes",
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-source-28",
+    label: "SAIT — Film and Video Production",
+    url: "https://www.sait.ca/programs-and-courses/diplomas/film-and-video-production",
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-source-32",
+    label: "CPKC — company/project evidence 4",
+    url: "https://careers.cpr.ca/job/Montreal-Rail-Traffic-Controller-QC-H4W-2J9/595098117/",
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-source-33",
+    label: "SAIT — Railway Conductor",
+    url: "https://www.sait.ca/programs-and-courses/certificates/railway-conductor",
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-source-34",
+    label: "SAIT — Software Development",
+    url: "https://www.sait.ca/programs-and-courses/diplomas/software-development",
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-source-38",
+    label: "SAIT — Integrated Water Management",
+    url: "https://www.sait.ca/programs-and-courses/diplomas/integrated-water-management",
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-source-43",
+    label: "Alberta Chemistry 20–30 program: solutions and concentration",
+    url: "https://education.alberta.ca/media/159730/chem2030_07.pdf",
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-source-44",
+    label: "University of Calgary — Chemical Engineering",
+    url: "https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-chemical-engineering",
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-source-51",
+    label: "Alberta Science 10 program: inquiry skills and technological systems",
+    url: "https://education.alberta.ca/media/159715/science10.pdf",
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-source-56",
+    label: "SAIT — Baking and Pastry Arts",
+    url: "https://www.sait.ca/programs-and-courses/diplomas/baking-and-pastry-arts",
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-source-57",
+    label: "Alberta Baker apprenticeship education",
+    url: "https://tradesecrets.alberta.ca/SOURCES/PDFS/curriculum_guides/024_outline.pdf",
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "expansion-source-5",
+    label: "Alberta Chemistry 20–30 program of studies (updated 2014)",
+    url: "https://education.alberta.ca/media/159730/chem2030_07.pdf",
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "expansion-source-6",
+    label: "SAIT — Chemical Laboratory Technology",
+    url: "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "expansion-source-7",
+    label: "University of Calgary — Biochemistry",
+    url: "https://science.ucalgary.ca/future-students/undergraduate/programs",
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "expansion-source-8",
+    label: "University of Calgary — Chemical Engineering",
+    url: "https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-chemical-engineering",
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "expansion-source-12",
+    label: "Alberta Physics 20–30 performance standards",
+    url: "https://www.alberta.ca/system/files/custom_downloaded_images/edc-physics20-30-performance-standards.pdf",
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "expansion-source-13",
+    label: "SAIT — Electrical Engineering Technology",
+    url: "https://www.sait.ca/programs-and-courses/diplomas/electrical-engineering-technology",
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "expansion-source-14",
+    label: "SAIT — Software Development",
+    url: "https://www.sait.ca/programs-and-courses/diplomas/software-development",
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "expansion-source-18",
+    label: "SAIT — Mechanical Engineering Technology",
+    url: "https://www.sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology",
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "expansion-source-19",
+    label: "SAIT — Machinist",
+    url: "https://www.sait.ca/apprenticeships-and-trades/programs/machinist",
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "expansion-source-20",
+    label: "SAIT — Instrumentation Engineering Technology",
+    url: "https://www.sait.ca/programs-and-courses/diplomas/instrumentation-engineering-technology",
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "expansion-source-25",
+    label: "Calgary Board of Education: Science 10/20/30 course topics",
+    url: "https://eps.cbe.ab.ca/science-10-20-30.aspx",
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "expansion-source-30",
+    label: "AME licensing overview",
+    url: "https://tc.canada.ca/en/aviation/licensing-aircraft-maintenance-engineers-ames/obtaining-aircraft-maintenance-engineer-ame-licence",
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "expansion-source-31",
+    label: "SAIT — Aircraft Maintenance Engineers Technology",
+    url: "https://www.sait.ca/programs-and-courses/diplomas/aircraft-maintenance-engineers-technology",
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "expansion-source-32",
+    label: "SAIT — Avionics Technology",
+    url: "https://www.sait.ca/programs-and-courses/diplomas/avionics-technology",
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "expansion-source-37",
+    label: "Calgary Board of Education: Biology 20/30 course topics",
+    url: "https://eps.cbe.ab.ca/biology-20-30.aspx",
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "expansion-source-42",
+    label: "SAIT — Geomatics Engineering Technology",
+    url: "https://www.sait.ca/programs-and-courses/diplomas/geomatics-engineering-technology",
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "expansion-source-46",
+    label: "University of Calgary — Geology",
+    url: "https://science.ucalgary.ca/earth/future-students/undergraduate/earth-science",
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "expansion-source-48",
+    label: "SAIT — Industrial Mechanic (Millwright)",
+    url: "https://www.sait.ca/apprenticeships-and-trades/programs/industrial-mechanic-millwright",
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "expansion-source-52",
+    label: "SAIT — Welder",
+    url: "https://www.sait.ca/apprenticeships-and-trades/programs/welder",
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "expansion-source-63",
+    label: "Alberta Science 10 program (government-hosted copy): inquiry skills, pp. 8–10",
+    url: "https://www.gov.nu.ca/sites/default/files/documents/2024-10/Science_10__Alberta_2005_.pdf",
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "expansion-source-67",
+    label: "University of Calgary — Electrical Engineering",
+    url: "https://schulich.ucalgary.ca/future-students/undergraduate/programs/majors",
+    checkedOn: "2026-10-15"
+  },
   { id: "ghgsat-home", label: "GHGSat home page", url: "https://www.ghgsat.com/", checkedOn },
   { id: "ghgsat-about", label: "GHGSat: About us", url: "https://www.ghgsat.com/about-us/", checkedOn },
   { id: "ghgsat-team", label: "GHGSat: Our team", url: "https://www.ghgsat.com/ghgsat-team/", checkedOn },

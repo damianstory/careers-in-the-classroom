@@ -3,7 +3,7 @@ import { PageDialogContext } from "@/components/dialogs/DialogProvider";
 import { ExampleCard } from "@/components/ExampleCard";
 import { SearchForm } from "@/components/SearchForm";
 import { examples, getNews, news } from "@/content";
-import { buildLibrary, parseFilter, type LibraryItem } from "@/lib/library";
+import { buildLibrary, courseOptions, parseFilter, type LibraryItem } from "@/lib/library";
 import { checkedRange } from "@/lib/job-status";
 import heroImage from "../../public/images/hero-calgary-dither-green.png";
 import { NewsCard, NoMatchRecorder, NoteTopic, ShowMore, SignupStrip, UnmatchedList } from "./LibraryParts";
@@ -80,7 +80,7 @@ export default async function Home({ searchParams }: PageProps<"/">) {
 
         <div id="library" className={styles.library}>
           <div className={`${styles.frame} ${styles.dock}`}>
-            <SearchForm filter={lib.filter} count={lib.count} />
+            <SearchForm filter={lib.filter} count={lib.count} courses={courseOptions()} />
           </div>
 
           <div className={`${styles.frame} ${styles.results}`}>
