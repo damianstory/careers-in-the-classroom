@@ -1,7 +1,8 @@
 import { getCourse, getPreparedSearch, getUnit, preparedSearches, type Course, type PreparedSearch } from "@/content";
+import { TOPIC_MAX } from "./library-filter";
 
+export { TOPIC_MAX };
 export const OTHER_UNIT = "other";
-export const TOPIC_MAX = 80;
 
 // A search context is { course, unit } or { course, unit: "other", topic }.
 // It is serialised the same way in every URL so results, examples and dialogs agree.
@@ -81,5 +82,5 @@ export function exampleContext(slug: string, ctx: SearchContext | null): Example
   // Back goes to the filtered library on the home page, where a typed topic needs no "other" unit.
   const back = new URLSearchParams(query);
   if (ctx.unitId === OTHER_UNIT) back.delete("unit");
-  return { why: hit.why, label: `${res.course.name} · ${res.label}`, backHref: `/?${back}#library`, query };
+  return { why: hit.why, label: `${res.course.name} · ${res.label}`, backHref: `/connections?${back}#library`, query };
 }

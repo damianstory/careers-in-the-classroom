@@ -120,9 +120,9 @@ export function ExampleExplorer({ e, details, views, ctx, state, navKey, news, s
           <div className={styles.railFx} aria-hidden="true">
             <RailField />
           </div>
-          <Link href={ctx?.backHref ?? "/"} className={styles.back}>
+          <Link href={ctx?.backHref ?? "/connections"} className={styles.back}>
             <Icon name="arrowLeft" small />
-            {ctx ? "Back to results" : "All examples"}
+            {ctx ? "Back to results" : "All connections"}
           </Link>
           <div className={styles.railSticky} id="explore-strip" data-rail-sticky="">
             <p className={styles.stripLabel} data-context={ctx ? "" : undefined}>
@@ -264,7 +264,7 @@ function FitsPanel({ e, ctx }: { e: Example; ctx: ExampleContext | null }) {
     <div className={styles.fits}>
       <div className={styles.fitsHead}>
         <p className={`eyebrow eyebrow-muted ${base.marked}`}>Where it fits</p>
-        <Link href="/#library" className={styles.pickClass}>
+        <Link href="/connections#library" className={styles.pickClass}>
           Pick your class
           <Icon name="arrowRight" small />
         </Link>

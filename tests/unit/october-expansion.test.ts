@@ -1,9 +1,14 @@
 import { existsSync, readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
-import { examples, getRoleProfile } from "@/content";
-import { octoberDetails, octoberExamples, octoberJobs, octoberPathways } from "@/content/calgary-october-17";
-import { octoberDiagrams } from "@/content/october-diagrams";
-import { octoberUnitLinks } from "@/content/october-unit-links";
+import { examples, getRoleProfile, learningPathways as octoberPathways } from "@/content";
+import { exampleRecords } from "@/content/example-records";
+
+const batch = exampleRecords.filter(r => r.addedOn === "2026-10-17");
+const octoberExamples = batch.map(r => r.example);
+const octoberDetails = batch.map(r => r.details);
+const octoberJobs = batch.flatMap(r => r.jobs);
+const octoberDiagrams = Object.fromEntries(batch.map(r => [r.example.slug, r.diagram]));
+const octoberUnitLinks = batch.flatMap(r => r.unitLinks.map(l => ({ slug: r.example.slug, ...l })));
 
 describe("17 October approved examples", () => {
   it("includes exactly the approved company set without duplicate example IDs", () => {
@@ -15,7 +20,7 @@ describe("17 October approved examples", () => {
 
   it.each(octoberDetails)("$exampleSlug has both images and a supported route for each role", detail => {
     expect(existsSync(`public/images/examples/${detail.exampleSlug}-graphic-novel.webp`)).toBe(true);
-    const diagram = octoberDiagrams[detail.exampleSlug as keyof typeof octoberDiagrams];
+    const diagram = octoberDiagrams[detail.exampleSlug];
     expect(existsSync(`public${diagram.image}`)).toBe(true);
     expect(diagram.steps).toHaveLength(4);
     for (const roleId of detail.roleIds) {

@@ -1,13 +1,11 @@
-import { octoberJobs } from "./calgary-october-17";
-import { expansionJobs } from "./calgary-expansion";
+import { exampleRecords } from "./example-records";
 import type { JobExample } from "./types";
 
 // Saved examples of how employers described real positions. The captured record does not change;
 // `status` is the separate, dated check of whether the posting was still accepting applications.
 // Duties and skills are paraphrased. Excerpts are short and attributed.
 export const jobExamples: JobExample[] = [
-  ...octoberJobs,
-  ...expansionJobs,
+  ...exampleRecords.flatMap((r) => r.jobs),
   {
     id: "ghgsat-emissions-scientist",
     title: "Remote Emissions Scientist",

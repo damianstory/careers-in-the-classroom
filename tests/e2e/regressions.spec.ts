@@ -14,7 +14,7 @@ function filesUnder(dir: string): string[] {
 test("R1: the demo server keeps no trace of typed search topics", async ({ page, requests }) => {
   void requests;
   const token = `${PROBE}topic${Date.now()}`;
-  await page.goto(`/?course=physics-30&topic=${token}`);
+  await page.goto(`/connections?course=physics-30&topic=${token}`);
   await expect(page.getByText(`No prepared example for “${token}” in Physics 30 yet.`)).toBeVisible();
   await page.waitForTimeout(500);
   const hits = filesUnder(".next").filter((f) => {
@@ -29,8 +29,8 @@ test("R1: the demo server keeps no trace of typed search topics", async ({ page,
 
 test("R2: the filter follows navigation it did not make", async ({ page, requests }) => {
   void requests;
-  await page.goto("/?course=physics-30&unit=p30c");
-  await page.goto("/?course=science-30&unit=s30c");
+  await page.goto("/connections?course=physics-30&unit=p30c");
+  await page.goto("/connections?course=science-30&unit=s30c");
   await expect(page.locator("#filter-course")).toHaveValue("science-30");
   await expect(page.locator("#filter-unit")).toHaveValue("s30c");
   await page.goBack();
@@ -50,7 +50,7 @@ test("R3: on phones the example question comes before the side panel", async ({ 
 
 test("R4: focus lands on the page heading after signup removes the opener", async ({ page, requests }) => {
   void requests;
-  await page.goto("/?course=physics-30&unit=p30c");
+  await page.goto("/connections?course=physics-30&unit=p30c");
   await page.getByRole("button", { name: "Sign up free to open" }).focus();
   await page.keyboard.press("Enter");
   await page.getByRole("button", { name: "Create free account" }).click();
@@ -65,7 +65,7 @@ test("R5: long unbroken topics never push the page sideways", async ({ page, req
   for (const width of [320, 390]) {
     await page.setViewportSize({ width, height: 700 });
     for (const course of ["physics-30", "biology-30"]) {
-      await page.goto(`/?course=${course}&topic=${long}`);
+      await page.goto(`/connections?course=${course}&topic=${long}`);
       const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
       expect(overflow, `${course} at ${width}px`).toBeLessThanOrEqual(0);
     }
@@ -90,7 +90,7 @@ test("R6: site-level speaker and signup actions use the current page context", a
 
 test("R2b: library speaker actions include the related organization", async ({ page, requests }, info) => {
   void requests;
-  await page.goto("/?course=physics-30&unit=p30c");
+  await page.goto("/connections?course=physics-30&unit=p30c");
   const header = page.getByRole("banner");
   if (info.project.name === "phone") await header.getByRole("button", { name: "Menu" }).click();
   await header.getByRole("button", { name: "Request a speaker" }).click();
@@ -104,7 +104,7 @@ test("R7: the demo still unlocks when session storage is blocked", async ({ page
       throw new Error("blocked");
     };
   });
-  await page.goto("/?course=physics-30&unit=p30c");
+  await page.goto("/connections?course=physics-30&unit=p30c");
   await page.getByRole("button", { name: "Sign up free to open" }).click();
   await page.getByRole("button", { name: "Create free account" }).click();
   await page.getByRole("button", { name: "Back to what I was reading" }).click();
@@ -116,7 +116,7 @@ test("I3-R1: the library filter stays readable at mid widths", async ({ page, re
   test.skip(info.project.name !== "desktop", "desktop widths");
   for (const width of [961, 1024, 1100]) {
     await page.setViewportSize({ width, height: 900 });
-    await page.goto("/?course=physics-30");
+    await page.goto("/connections?course=physics-30");
     const form = (await page.getByRole("form", { name: "Filter examples" }).boundingBox())!;
     const unit = (await page.locator("#filter-unit").boundingBox())!;
     expect(unit.width, `unit width at ${width}px`).toBeGreaterThanOrEqual(200);
@@ -129,7 +129,7 @@ test("I3-R1: the library filter stays readable at mid widths", async ({ page, re
 
 test("the filter docks under the header on wide screens, and phones get one summary row", async ({ page, requests }, info) => {
   void requests;
-  await page.goto("/?course=physics-30&unit=p30c");
+  await page.goto("/connections?course=physics-30&unit=p30c");
   await page.mouse.wheel(0, 1200);
   await page.waitForTimeout(400);
   if (info.project.name === "desktop") {
@@ -157,6 +157,6 @@ test("I3-R2: the phone menu does not reopen after navigating away and back", asy
   await expect(page).toHaveURL(/\/$/);
   await expect(page.getByRole("navigation", { name: "Main (mobile)" })).toHaveCount(0);
   await header.getByRole("button", { name: "Menu" }).click();
-  await page.getByRole("navigation", { name: "Main (mobile)" }).getByRole("link", { name: "Examples" }).click();
+  await page.getByRole("navigation", { name: "Main (mobile)" }).getByRole("link", { name: "Connections" }).click();
   await expect(page.getByRole("navigation", { name: "Main (mobile)" })).toHaveCount(0);
 });

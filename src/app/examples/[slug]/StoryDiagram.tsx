@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { expansionDiagrams } from "@/content/expansion-diagrams";
+import { storyDiagrams } from "@/content/example-records";
 import type { ClassroomStory } from "@/content";
 import methane from "../../../../public/images/story-diagrams/methane-graphic-novel.webp";
 import owls from "../../../../public/images/story-diagrams/owl-recovery-graphic-novel.webp";
@@ -47,7 +47,7 @@ export const diagrams = {
 // The page and the projector draw the same diagram: a hand-built one, or an approved research diagram.
 export function storyDiagram(story: ClassroomStory) {
   return story.diagramKind === "research"
-    ? expansionDiagrams[story.illustrationSlug ?? ""]
+    ? storyDiagrams[story.illustrationSlug ?? ""]
     : diagrams[story.diagramKind];
 }
 

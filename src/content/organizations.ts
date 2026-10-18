@@ -1,12 +1,10 @@
-import { octoberOrganizationRoles } from "./calgary-october-17";
-import { octoberOrganizations } from "./calgary-october-17";
-import { expansionOrganizations, expansionOrganizationRoles } from "./calgary-expansion";
+import { exampleRecords } from "./example-records";
+import { organizationLogos } from "./logos";
 import type { Organization, OrganizationRole } from "./types";
 
 // Company claims are reported as GHGSat states them on its own pages, checked 25 September 2026.
 export const organizations: Organization[] = [
-  ...octoberOrganizations,
-  ...expansionOrganizations,
+  ...exampleRecords.map(({ organization: o }) => ({ ...o, logo: o.logo ?? organizationLogos[o.id] })),
   {
     id: "ghgsat",
     name: "GHGSat",
@@ -187,8 +185,7 @@ export const organizations: Organization[] = [
 // Each link says what its source establishes: GHGSat names these as kinds of people on its team,
 // not as job titles, vacancies or Calgary positions.
 export const organizationRoles: OrganizationRole[] = [
-  ...octoberOrganizationRoles,
-  ...expansionOrganizationRoles,
+  ...exampleRecords.flatMap((r) => r.organizationRoles),
   {
     organizationId: "ghgsat",
     roleId: "atmospheric-science",

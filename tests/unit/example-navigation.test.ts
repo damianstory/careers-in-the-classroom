@@ -1,7 +1,8 @@
 import { runInNewContext } from "node:vm";
 import { describe, expect, it } from "vitest";
 import { getDetails, getExample, getJob } from "@/content";
-import { availableViews, exploreHref, landingSection, layoutBootstrap, parseExplore, selectionQuery } from "@/lib/example-navigation";
+import { exploreHref, landingSection, layoutBootstrap, selectionQuery } from "@/lib/example-navigation";
+import { availableViews, parseExplore } from "@/lib/example-views";
 import { checkedRange } from "@/lib/job-status";
 import { exampleContext, parseContext } from "@/lib/search";
 

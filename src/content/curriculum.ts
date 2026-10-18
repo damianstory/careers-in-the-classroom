@@ -1,5 +1,4 @@
-import { octoberUnitLinks } from "./october-unit-links";
-import { expansionUnitLinks } from "./expansion-unit-links";
+import { exampleRecords } from "./example-records";
 import type { Course, PreparedSearch, Unit } from "./types";
 
 export const courses: Course[] = [
@@ -114,9 +113,14 @@ export const presets: [string, string][] = [
   ["science-30", "s30c"],
 ];
 
+// Editorial unit matches from each example's record, earlier research batches first.
+const unitLinks = [...exampleRecords]
+  .sort((a, b) => a.addedOn.localeCompare(b.addedOn))
+  .flatMap((r) => r.unitLinks.map((link) => ({ slug: r.example.slug, ...link })));
+
 // Each expanded unit gets its own results, so one unit's additions never leak into another.
 for (const unit of units) {
-  const additions = [...expansionUnitLinks, ...octoberUnitLinks].filter((link) => link.unitId === unit.id);
+  const additions = unitLinks.filter((link) => link.unitId === unit.id);
   if (!additions.length) continue;
   const original = preparedSearches.find((search) => search.id === unit.preparedSearchId);
   const id = `expanded-${unit.id}`;

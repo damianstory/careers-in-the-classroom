@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { buildDiscoverCards, parseDiscoverState } from "@/lib/discover";
+import { parseDiscoverState } from "@/lib/discover";
+import { buildDiscoverCards } from "@/lib/discover-cards";
 import { DiscoverStage } from "./DiscoverStage";
 
 export const metadata: Metadata = { title: "Discover" };
