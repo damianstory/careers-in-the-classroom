@@ -1,12 +1,12 @@
 import { octoberOrganizationRoles } from "./calgary-october-17";
 import { octoberOrganizations } from "./calgary-october-17";
 import { expansionOrganizations, expansionOrganizationRoles } from "./calgary-expansion";
+import { organizationLogos } from "./logos";
 import type { Organization, OrganizationRole } from "./types";
 
 // Company claims are reported as GHGSat states them on its own pages, checked 25 September 2026.
 export const organizations: Organization[] = [
-  ...octoberOrganizations,
-  ...expansionOrganizations,
+  ...[...octoberOrganizations, ...expansionOrganizations].map((o) => ({ ...o, logo: o.logo ?? organizationLogos[o.id] })),
   {
     id: "ghgsat",
     name: "GHGSat",
