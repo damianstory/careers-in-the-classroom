@@ -3,9 +3,12 @@ import { exampleDetails } from "@/content";
 import { jobBoardLinks, liveSearches, searchTitles } from "@/lib/job-search";
 
 describe("live job searches", () => {
-  it("gives every role shown on an example at least one title to search", () => {
-    const missing = [...new Set(exampleDetails.flatMap((d) => d.roleIds))].filter((id) => searchTitles(id).length === 0);
-    expect(missing).toEqual([]);
+  it("gives every role shown on an example one to three non-blank titles to search", () => {
+    const invalid = [...new Set(exampleDetails.flatMap((d) => d.roleIds))].filter((id) => {
+      const titles = searchTitles(id);
+      return titles.length < 1 || titles.length > 3 || titles.some((t) => !t.trim());
+    });
+    expect(invalid).toEqual([]);
   });
 
   it("builds Calgary searches on Job Bank and Indeed", () => {
