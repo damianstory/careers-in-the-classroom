@@ -61,3 +61,20 @@ Launchpad tabs: `doors-company.jpg`, `doors-role.jpg`. Walkthrough steps: `walk-
   the approved graphic-novel image direction and would be heavy on school Chromebooks and classroom projectors.
 
 The plan these prototypes follow is in `PLAN.md`.
+
+## Independent plan review (claudex-loop, GPT-6 Astra, high effort)
+
+`PLAN.md` was reviewed by Codex (requested model `gpt-6-astra`, effort high; the CLI did not report which model
+actually served it). It approved on round 3 of 5. Fixes made along the way:
+
+1. The "kind of job" tab linked each role to the library's free-text search, which also matches unrelated examples.
+   Each role now lists and links to exactly the examples that include it.
+2. B's walkthrough showed job postings without their status, location or employer context. It now shows the same
+   status label as the full example page, the location, and an "Another employer" tag.
+3. C didn't say who it is for before the launchpad on mobile. Its opening line now names the audience and how it's used.
+4. The "Another employer" tag was first based on geographic relevance; it now compares the posting's employer with
+   the featured organization.
+5. B's job statuses would have been frozen at build time; the page now renders per request.
+
+SlopMonster's second pass also ran through Codex. Its plainer wording was taken for step text, part labels, the FAQ
+and the About page; its generic replacement headlines were not.

@@ -27,8 +27,9 @@ export default function LandingC() {
               Real Calgary work, matched to the science you teach.
             </h1>
             <p className={styles.heroCLede}>
-              {stats.examples} classroom-ready examples from {stats.companies} organizations. Start from your class, a company,
-              or a kind of job.
+              For Alberta high school science teachers: {stats.examples} examples from {stats.companies} Calgary organizations
+              that you open, project in class and finish with a discussion question. Start from your class, a company, or a
+              kind of job.
             </p>
             <Doors courses={courseDoors} companies={companyDoors} roles={roleDoors} tone="dark" />
           </div>
@@ -39,10 +40,10 @@ export default function LandingC() {
             </h2>
             <ol className={styles.primerSteps}>
               <li>
-                <strong>Pick a starting point.</strong> Your course and unit, a company, or a job.
+                <strong>Pick a starting point.</strong> Choose your course and unit, a company, or a kind of job.
               </li>
               <li>
-                <strong>Open an example.</strong> A question, the science behind the work, and the people doing it.
+                <strong>Open an example.</strong> Explore a question, the science behind the work, and the people doing it.
               </li>
               <li>
                 <strong>Show your class.</strong> Project it full screen and finish with a discussion question.

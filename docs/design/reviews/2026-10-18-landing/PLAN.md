@@ -11,9 +11,15 @@ company or kind of job.
 
 - `/` (the current library home) is unchanged. Prototypes live under `/landing`, `/landing/a`, `/landing/b`,
   `/landing/c` and `/landing/about`, with a review bar to switch between them.
-- Each prototype states who it is for, what the product is, and how a teacher uses it, above or near the fold.
+- Each prototype states who it is for, what the product is, and how a teacher uses it, above or near the fold, including
+  at 390px wide (C says so in its hero lede, before the launchpad).
+- Any job posting shown outside the full example keeps the context the full example gives it: its status label from
+  `jobStatusLabel` (historical, closed or accepting applications when checked), computed at request time (the page
+  calls `connection()` so a build does not freeze it), its location, and an "Another employer" marker decided by
+  comparing the posting's employer with the featured organization's name (not by geographic relevance).
 - Each offers three ways in: course (links to `/?course=<id>#library`), company (links to `/examples/<slug>`) and kind
-  of job (links to `/?topic=<role title>#library`). They only link; search and filtering are being redesigned in a
+  of job (lists and links to exactly the examples whose details include that role; no free-text search, which is
+  broader than the role). They only link; search and filtering are being redesigned in a
   separate thread and must not be changed here.
 - All counts and names come from existing content records (`src/content`), so they cannot disagree with the library.
 - No invented facts: no statistics, testimonials or time estimates that are not in the content or sourced.
@@ -63,7 +69,6 @@ the library moved to `/examples` if adopted.
 ## Risks
 
 - Only 3 of 32 organizations have a logo file; the company list leans on monograms.
-- Role links rely on the library's free-text topic search matching role titles.
 - Course counts are uneven (Chemistry 30, Science 20 and Biology 30 have one or two examples each).
 
 ## Verification

@@ -28,8 +28,8 @@ export interface RoleDoor {
   id: string;
   title: string;
   summary: string;
+  /** Exactly the examples whose details list this role; the row links to each one. */
   examples: { slug: string; org: string }[];
-  href: string;
 }
 
 const monogram = (name: string) =>
@@ -73,7 +73,6 @@ export const roleDoors: RoleDoor[] = roleProfiles
       title: r.title,
       summary: r.summary,
       examples: linked.map((e) => ({ slug: e.slug, org: e.org })),
-      href: `/?topic=${encodeURIComponent(r.title)}#library`,
     };
   })
   .filter((r) => r.examples.length > 0)

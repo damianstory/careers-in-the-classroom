@@ -18,12 +18,12 @@ export interface WalkExample {
   steps: string[];
   roles: { title: string; summary: string }[];
   pathways: { name: string; provider: string }[];
-  jobs: { title: string; employer: string }[];
+  jobs: { title: string; employer: string; location?: string; elsewhere: boolean; status: string }[];
   prompt: string;
 }
 
 const parts = [
-  { id: "question", label: "The question", gives: "A hook for the first five minutes, tied to the unit you’re on." },
+  { id: "question", label: "The question", gives: "An opening question to start the lesson, tied to your unit." },
   { id: "how", label: "How it works", gives: "The science your students know, applied to the organization’s real problem." },
   { id: "who", label: "Who does this work", gives: "The kinds of people involved and what they actually do all day." },
   { id: "ways", label: "Ways in", gives: "Programs in Calgary and Alberta, and real job postings, that lead to this work." },
@@ -120,11 +120,16 @@ export function Walkthrough({ examples }: { examples: WalkExample[] }) {
                   </ul>
                 </div>
                 <div>
-                  <p className={styles.screenSub}>Real job postings</p>
+                  <p className={styles.screenSub}>Saved job postings</p>
                   <ul className={styles.screenList}>
                     {e.jobs.slice(0, 4).map((x) => (
                       <li key={x.title + x.employer}>
                         <strong>{x.title}</strong> · {x.employer}
+                        {x.elsewhere && <span className={styles.screenTag}>Another employer</span>}
+                        <span className={styles.screenFine}>
+                          {x.location ? `${x.location} · ` : ""}
+                          {x.status}
+                        </span>
                       </li>
                     ))}
                     {e.jobs.length === 0 && <li>None saved for this example yet.</li>}

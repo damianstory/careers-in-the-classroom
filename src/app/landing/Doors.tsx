@@ -132,22 +132,19 @@ export function Doors({
             {roles.map((r) => (
               <li key={r.id} className={styles.roleRow}>
                 <div className={styles.roleText}>
-                  <Link href={r.href} className={styles.roleTitle}>
-                    {r.title}
-                  </Link>
+                  <p className={styles.roleTitle}>{r.title}</p>
                   <p className={styles.roleSummary}>{r.summary}</p>
                 </div>
                 <p className={styles.roleWhere}>
                   <span className={styles.roleWhereLabel}>
                     {r.examples.length} example{r.examples.length === 1 ? "" : "s"}
                   </span>
-                  {r.examples.slice(0, 3).map((e, i) => (
+                  {r.examples.map((e, i) => (
                     <span key={e.slug}>
                       {i > 0 && ", "}
                       <Link href={`/examples/${e.slug}`}>{e.org}</Link>
                     </span>
                   ))}
-                  {r.examples.length > 3 && <span> and {r.examples.length - 3} more</span>}
                 </p>
               </li>
             ))}

@@ -22,8 +22,7 @@ export default function About() {
         <h2 className={styles.aboutH2}>What it is</h2>
         <p>
           A library of {stats.examples} short, sourced examples for Alberta high school science. Each one connects a unit you
-          teach to a real Calgary organization, the problem it is working on, the people who do that work, and the programs
-          and job postings that lead there.
+          teach to a real Calgary organization, the problem it is working on, the people who do that work, and related programs and job postings.
         </p>
 
         <h2 className={styles.aboutH2}>Why it matters</h2>
@@ -42,7 +41,7 @@ export default function About() {
         </ol>
 
         <h2 className={styles.aboutH2}>How we research</h2>
-        <p>Every claim links to a dated source and carries a tag that says how sure we are:</p>
+        <p>Every claim links to a dated source and carries a tag explaining its basis:</p>
         <ul className={styles.aboutTags}>
           <li>
             <EvidenceTag kind="stated">Stated</EvidenceTag> The organization says it on its own pages.
@@ -58,7 +57,7 @@ export default function About() {
 
         <h2 className={styles.aboutH2}>Where it’s going</h2>
         <p>
-          We’re talking with teachers now about what helps in class. Next comes connecting classrooms with the people in these
+          We’re talking with teachers now about what helps in class. Next, we plan to connect classrooms with the people in these
           examples for visits and talks. Organizations can <Link href="/get-involved">list themselves</Link>.
         </p>
 

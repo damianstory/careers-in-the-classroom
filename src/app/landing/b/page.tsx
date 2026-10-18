@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getJob, getPathway } from "@/content";
+import { connection } from "next/server";
+import { getJob, getOrganization, getPathway } from "@/content";
+import { jobStatusLabel } from "@/lib/job-status";
 import { Icon } from "@/components/Icon";
 import methane from "../../../../public/images/story-diagrams/methane-graphic-novel.webp";
 import owls from "../../../../public/images/story-diagrams/owl-recovery-graphic-novel.webp";
@@ -15,8 +17,10 @@ export const metadata: Metadata = { title: "Landing B · Show one example" };
 
 const diagrams = { ghgsat: methane, "wilder-institute": owls, "e3-lithium": lithium } as const;
 
-function walk(slug: keyof typeof diagrams): WalkExample {
+function walk(slug: keyof typeof diagrams, today: string): WalkExample {
   const { example: e, details, image, roles } = getLandingExample(slug);
+  // "Elsewhere" means a different employer from the featured organization; relevance is geographic and says nothing about that.
+  const orgName = (details ? getOrganization(details.organizationId)?.name : undefined) ?? e.org;
   return {
     slug,
     org: e.org,
@@ -29,15 +33,23 @@ function walk(slug: keyof typeof diagrams): WalkExample {
     steps: details?.story.steps.map((s) => s.text) ?? [],
     roles: roles.map((r) => ({ title: r.title, summary: r.summary })),
     pathways: (details?.pathwayIds ?? []).map(getPathway).flatMap((p) => (p ? [{ name: p.name, provider: p.provider }] : [])),
-    jobs: (details?.jobIds ?? []).map(getJob).flatMap((j) => (j ? [{ title: j.title, employer: j.employer }] : [])),
+    // Saved postings keep their status, place and whether another employer posted them, as on the full example.
+    jobs: (details?.jobIds ?? []).map(getJob).flatMap((j) =>
+      j
+        ? [{ title: j.title, employer: j.employer, location: j.location, elsewhere: j.employer.trim().toLowerCase() !== orgName.trim().toLowerCase(), status: jobStatusLabel(j, today) }]
+        : [],
+    ),
     prompt: e.prompt,
   };
 }
 
 // Prototype B: show, don't tell. The page opens on a working miniature of one example, so a
 // newcomer understands the product by using it, then picks a way into the library.
-export default function LandingB() {
-  const walks = [walk("ghgsat"), walk("wilder-institute"), walk("e3-lithium")];
+export default async function LandingB() {
+  // Job status labels depend on today's date, so render per request rather than freezing them at build time.
+  await connection();
+  const today = new Date().toISOString().slice(0, 10);
+  const walks = [walk("ghgsat", today), walk("wilder-institute", today), walk("e3-lithium", today)];
 
   return (
     <div className={styles.landing}>
@@ -86,8 +98,7 @@ export default function LandingB() {
             <div>
               <dt>Where does the information come from?</dt>
               <dd>
-                From each organization’s own pages and other dated public sources. Every claim links to its source, and we
-                mark what is our interpretation.
+                From each organization’s own pages and other dated public sources. Every claim links to its source, and we label our interpretations.
               </dd>
             </div>
             <div>
@@ -99,7 +110,7 @@ export default function LandingB() {
             <div>
               <dt>Can someone from the company visit?</dt>
               <dd>
-                That’s the goal. Use Request a speaker at the top of any page to tell us who you’d like to hear from.
+                We’re working towards classroom visits and talks. Use Request a speaker at the top of any page to tell us who you’d like to hear from.
               </dd>
             </div>
           </dl>

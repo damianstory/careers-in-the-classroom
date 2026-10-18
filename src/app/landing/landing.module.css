@@ -636,6 +636,7 @@
 
 .roleTitle {
   font: 600 17px/24px var(--font-display);
+  margin: 0;
   color: var(--text);
 }
 
@@ -875,6 +876,23 @@
 .screenList li {
   padding: var(--space-2) 0;
   border-bottom: 1px solid var(--border);
+}
+
+.screenTag {
+  margin-left: 8px;
+  padding: 0 6px;
+  border: 1px dashed var(--border-green);
+  border-radius: var(--radius-control);
+  font: 500 11px/18px var(--font-mono);
+  color: var(--text-accent);
+  white-space: nowrap;
+}
+
+.screenFine {
+  display: block;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--text-body);
 }
 
 .screenList strong {

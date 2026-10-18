@@ -32,9 +32,9 @@ export default function LandingA() {
             </span>
           </h1>
           <p className={styles.heroLede}>
-            For Alberta high school science teachers. Careers in the Classroom connects the unit you’re teaching to a real
-            Calgary organization, the problem it’s working on and the people doing the work. There are {stats.examples}{" "}
-            examples so far, each ready to project in class.
+            Careers in the Classroom helps Alberta high school science teachers connect the unit they’re teaching to a real
+            Calgary organization, the problem it’s working on and the people doing the work. Choose from {stats.examples}{" "}
+            examples, each ready to project in class.
           </p>
           <div className={styles.ctaRow}>
             <a href="#start" className={styles.ctaPrimary}>
@@ -62,7 +62,7 @@ export default function LandingA() {
               <span className={styles.stepNum}>2</span>
               <h3 className={styles.h3}>Open a real Calgary example</h3>
               <p>
-                Each one starts with a question your students can reason about with the science they know, then shows how
+                Each example starts with a question students can reason about using the science they know, then explains how
                 the organization uses it.
               </p>
             </li>
@@ -70,7 +70,7 @@ export default function LandingA() {
               <span className={styles.stepNum}>3</span>
               <h3 className={styles.h3}>Project it and talk</h3>
               <p>
-                Show it full screen, meet the people who do the work and the ways into it, and finish with a question for the
+                Show the example full screen, explore the roles and ways into the work, and finish with a question for the
                 class.
               </p>
             </li>
@@ -90,7 +90,7 @@ export default function LandingA() {
             <dl className={styles.parts}>
               <div>
                 <dt>The question</dt>
-                <dd>A hook to open class, tied to your unit.</dd>
+                <dd>An opening question tied to your unit.</dd>
               </div>
               <div>
                 <dt>How it works</dt>
@@ -102,7 +102,7 @@ export default function LandingA() {
               </div>
               <div>
                 <dt>Ways in</dt>
-                <dd>Local programs and real job postings that lead there.</dd>
+                <dd>Local programs and real job postings related to the work.</dd>
               </div>
               <div>
                 <dt>Ask the class</dt>
@@ -136,8 +136,8 @@ export default function LandingA() {
               postings students can look up afterwards.
             </p>
             <p>
-              Every claim links to a dated source. We mark what an organization says, what we saw in a source, and what is
-              our own interpretation.
+              Every claim links to a dated source. We distinguish what an organization says, what we found in a source and our own
+              interpretation.
             </p>
           </div>
         </div>
