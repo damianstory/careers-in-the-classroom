@@ -45,10 +45,6 @@ export function svgProblems(svg: string): string[] {
     }
   }
   if (parsed !== opened) problems.push("unparsed tag");
-  // Style elements by local name, so a namespace prefix (<svg:style>) can't hide one.
-  for (const m of svg.matchAll(/<\s*(?:[\w.-]+:)?style\b[^>]*>([\s\S]*?)<\/\s*(?:[\w.-]+:)?style\s*>/gi)) {
-    if (badCss(m[1])) problems.push("style element with outside reference");
-  }
   if (/<!ENTITY/i.test(svg)) problems.push("entity declaration");
   problems.push(...structureProblems(svg));
   return problems;
@@ -61,11 +57,18 @@ function structureProblems(svg: string): string[] {
   const body = svg.trim().replace(/^<\?xml\s[^?]*\?>/, "");
   const stack: string[] = [];
   let roots = 0;
+  // Style element text is gathered by the same walk that skips comments, so a "</style>" inside a
+  // comment can't end it early. Matched by local name, so a prefix (<svg:style>) can't hide one.
+  let css = "";
+  let end = 0;
+  const inStyle = () => /^(?:[\w.-]+:)?style$/i.test(stack.at(-1) ?? "");
   for (const m of body.matchAll(/<!--[\s\S]*?-->|<!\[CDATA\[[\s\S]*?\]\]>|<\?[\s\S]*?\?>|<![^>]*>|<\/\s*([^\s>]+)\s*>|<\s*([A-Za-z][\w:.-]*)(?:"[^"]*"|'[^']*'|[^'">])*?(\/)?>/g)) {
     const token = m[0];
+    if (inStyle()) css += body.slice(end, m.index);
+    end = m.index + token.length;
     if (stack.length === 0 && roots > 0 && !token.startsWith("<!--")) problems.push(`content after the root: ${token.slice(0, 40)}`);
     if (token.startsWith("<?")) problems.push(`processing instruction ${token.slice(0, 40)}`);
-    // CDATA could hide a style element's real end from the style check above, so none is accepted.
+    // No CDATA: the logos have none, and refusing it keeps the style text check simple.
     else if (token.startsWith("<![CDATA[")) problems.push("CDATA section");
     else if (token.startsWith("<!") && !token.startsWith("<!--")) problems.push(`declaration ${token.slice(0, 40)}`);
     else if (m[1] !== undefined) {
@@ -73,6 +76,10 @@ function structureProblems(svg: string): string[] {
     } else if (m[2] !== undefined) {
       if (stack.length === 0) roots++;
       if (!m[3]) stack.push(m[2]);
+    }
+    if (m[1] !== undefined && /^(?:[\w.-]+:)?style$/i.test(m[1])) {
+      if (badCss(css)) problems.push("style element with outside reference");
+      css = "";
     }
   }
   // Exactly one root element, with nothing but comments and whitespace after it.

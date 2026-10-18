@@ -183,6 +183,7 @@ describe("connected exploration content", () => {
       expect(svgProblems(wrap(bad)), bad).not.toEqual([]);
     }
     expect(svgProblems(wrap('<rect style="fill:url(#g)"/>'))).toEqual([]);
+    expect(svgProblems(wrap("<style>.a{fill:url(#g)}</style><rect class='a'/>"))).toEqual([]);
     expect(svgProblems('<?xml version="1.0" encoding="UTF-8"?>' + wrap("<g><path d='M0 0'/></g>"))).toEqual([]);
     for (const bad of [
       '<?xml-stylesheet type="text/css" href="https://example.com/logo.css"?>' + wrap(""),
@@ -193,6 +194,8 @@ describe("connected exploration content", () => {
       wrap("") + "<g/>",
       wrap("") + "trailing text",
       wrap("<style><![CDATA[/* </style> */ @import url(https://example.com/x.css);]]></style>"),
+      wrap("<style><!-- </style> -->@import 'https://example.com/x.css';</style>"),
+      wrap("<style>.a{fill:#000}<!-- c -->.b{fill:url(https://example.com/x)}</style>"),
     ]) {
       expect(svgProblems(bad), bad).not.toEqual([]);
     }
