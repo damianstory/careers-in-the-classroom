@@ -82,9 +82,9 @@ list instead of initials. Prototype and screenshots: `docs/design/reviews/2026-1
 
 ## Build notes (deviations from the approach)
 
-- The filtered-`/` redirect is in `next.config.ts` (`has` query conditions on `course`, `unit`, `topic`) rather than in
-  the page. The installed docs say a page-level `redirect` inside a streamed render becomes a client-side meta refresh;
-  the config redirect is a real 307 before rendering, and `/` stays static. Browsers keep the `#hash` across it.
+- The filtered-`/` redirect is in `src/proxy.ts` (Next 16's renamed middleware) rather than in the page. It runs before
+  rendering, so `/` stays static, and it checks parameter presence, so empty values from the old form (`/?topic=`) also
+  redirect; `next.config.ts` `has` conditions skip empty values (Codex inspection, LANDING-001).
 - Logo records live in `src/content/logos.ts`, merged onto `Organization.logo` in `src/content/organizations.ts`, so the
   reviewed content files (`calgary-october-17.ts`, `calgary-expansion.ts`) are untouched. Draft PR #4 splits those files;
   this keeps the overlap to one line.
