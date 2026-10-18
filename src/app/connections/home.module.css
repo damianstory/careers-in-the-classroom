@@ -13,6 +13,17 @@
   --console-h: 167px;
 }
 
+/* The challenge, company and kind-of-work doors have no console, so the hero keeps no room for it
+   and links to #library land just under the header. */
+.home[data-door] {
+  --console-h: 0px;
+  --console-gap: 0px;
+}
+
+.home[data-door] .library {
+  scroll-margin-top: var(--header-h);
+}
+
 /* Wide content frame: the artboards run to 48px gutters at 1440. */
 .frame {
   width: 100%;
@@ -517,7 +528,8 @@
 
   .heroInner {
     padding-top: calc(var(--header-h) + 40px);
-    padding-bottom: 182px;
+    /* The door row fills what used to be open photo here, so less room is kept below it. */
+    padding-bottom: 96px;
   }
 
   .ruler {
