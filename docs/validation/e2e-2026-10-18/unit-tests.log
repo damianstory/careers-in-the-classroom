@@ -1,0 +1,13 @@
+
+> careers-in-the-classroom@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.1 /Users/damianmatheson/Desktop/Claude Code/CitC
+
+
+ Test Files  14 passed (14)
+      Tests  177 passed (177)
+   Start at  09:25:47
+   Duration  428ms (transform 60%, import 22%, tests 16%, worker 1%)
+

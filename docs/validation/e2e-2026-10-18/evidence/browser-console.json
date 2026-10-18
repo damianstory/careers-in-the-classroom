@@ -1,0 +1,14 @@
+[
+  {
+    "level": "warn",
+    "message": "[GSI_LOGGER]: Your client application uses one of the Google One Tap prompt UI status methods that may stop functioning when FedCM becomes mandatory. Refer to the migration guide to update your code accordingly and opt-in to FedCM to test your changes. Learn more: https://developers.google.com/identity/gsi/web/guides/fedcm-migration?s=dc#display_moment and https://developers.google.com/identity/gsi/web/guides/fedcm-migration?s=dc#skipped_moment",
+    "timestamp": "2026-10-18T13:25:39.060Z",
+    "url": "https://accounts.google.com/gsi/client"
+  },
+  {
+    "level": "error",
+    "message": "[GSI_LOGGER]: FedCM get() rejects with NetworkError: Error retrieving a token.",
+    "timestamp": "2026-10-18T13:25:39.484Z",
+    "url": "https://vercel.com/_next/static/immutable/chunks/30698u5481bfn.js"
+  }
+]

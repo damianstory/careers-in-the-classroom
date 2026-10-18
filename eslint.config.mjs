@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Bundled third-party skills are not application source.
+    ".claude/skills/**",
     // Archived browser runs include standalone CommonJS scripts and local configs.
     "docs/validation/**/implementation-evidence/**",
     "docs/validation/browser-qa-*/**",

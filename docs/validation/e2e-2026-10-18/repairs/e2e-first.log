@@ -1,0 +1,636 @@
+
+> careers-in-the-classroom@0.1.0 test:e2e
+> playwright test --workers=4
+
+[WebServer] (node:92097) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:92097) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:92139) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:92143) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:92140) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:92141) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:92145) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:92147) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:92144) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:92142) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:92146) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:92155) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:92181) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 430 tests using 4 workers
+
+(node:92189) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:92187) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:92186) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:92188) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓    3 [desktop] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /discover?role=05&step=5 (1.5s)
+  ✓    4 [desktop] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /discover (1.5s)
+  ✓    1 [desktop] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: / (1.5s)
+  ✓    2 [desktop] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /connections (1.7s)
+  ✓    7 [desktop] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /connections?course=biology-30&topic=DNA+replication (1.6s)
+  ✓    6 [desktop] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /connections?course=physics-30&unit=p30c (1.7s)
+  ✓    5 [desktop] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /connections?course=physics-20&unit=p20a (1.7s)
+  ✓    8 [desktop] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /examples/ghgsat?course=physics-30&unit=p30c (1.6s)
+  ✓    9 [desktop] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /examples/ghgsat?course=physics-30&unit=p30c&view=company (1.0s)
+  ✓   10 [desktop] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /examples/ghgsat?course=physics-30&unit=p30c&view=roles (976ms)
+  ✓   11 [desktop] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /examples/ghgsat?course=physics-30&unit=p30c&view=roles&role=satellite-engineering (1.0s)
+  ✓   12 [desktop] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /examples/ghgsat?course=physics-30&unit=p30c&view=roles&role=atmospheric-science&job=ghgsat-emissions-scientist (1.0s)
+  ✓   13 [desktop] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /examples/ghgsat?course=physics-30&unit=p30c&view=pathways (824ms)
+  ✓   14 [desktop] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /examples/ghgsat?view=pathways&role=software-data (817ms)
+  ✓   15 [desktop] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /examples/wilder-institute (767ms)
+  ✓   16 [desktop] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /examples/e3-lithium (720ms)
+  ✓   17 [desktop] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /examples/wilder-institute?view=company (846ms)
+  ✓   19 [desktop] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /examples/wilder-institute?view=pathways (840ms)
+  ✓   18 [desktop] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /examples/wilder-institute?view=roles&role=animal-care&job=wilder-animal-care (902ms)
+  ✓   20 [desktop] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /examples/e3-lithium?view=company (970ms)
+  ✓   23 [desktop] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /get-involved (709ms)
+  ✓   21 [desktop] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /examples/e3-lithium?view=roles&role=process-engineering&job=stantec-water-eit (863ms)
+  ✓   22 [desktop] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /examples/e3-lithium?view=pathways (850ms)
+  ✓   24 [desktop] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /digest (765ms)
+  ✓   25 [desktop] › tests/e2e/a11y.spec.ts:46:5 › open dialogs pass the accessibility scan (1.0s)
+  ✓   28 [desktop] › tests/e2e/a11y.spec.ts:69:9 › ghgsat: all parts pass axe in all layout (1.7s)
+  ✓   26 [desktop] › tests/e2e/a11y.spec.ts:57:5 › narrowest phones (320px) have no sideways scroll (2.9s)
+  ✓   30 [desktop] › tests/e2e/a11y.spec.ts:69:9 › wilder-institute: all parts pass axe in all layout (1.2s)
+  ✓   27 [desktop] › tests/e2e/a11y.spec.ts:69:9 › ghgsat: all parts pass axe in parts layout (4.0s)
+  ✓   32 [desktop] › tests/e2e/a11y.spec.ts:69:9 › e3-lithium: all parts pass axe in all layout (1.2s)
+  ✓   29 [desktop] › tests/e2e/a11y.spec.ts:69:9 › wilder-institute: all parts pass axe in parts layout (3.5s)
+  ✓   33 [desktop] › tests/e2e/a11y.spec.ts:88:5 › projector passes axe (750ms)
+  ✓   34 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › o2-planning-design: every part, the diagram and the projector work (1.9s)
+  ✓   35 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › entuitive: every part, the diagram and the projector work (1.8s)
+  ✓   31 [desktop] › tests/e2e/a11y.spec.ts:69:9 › e3-lithium: all parts pass axe in parts layout (3.7s)
+  ✓   36 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › phil-sebastian: every part, the diagram and the projector work (1.8s)
+  ✓   37 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › broken-pencil-studios: every part, the diagram and the projector work (1.4s)
+  ✓   38 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › cpkc: every part, the diagram and the projector work (1.5s)
+  ✓   39 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › watersmart: every part, the diagram and the projector work (1.3s)
+  ✓   40 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › integrated-sustainability: every part, the diagram and the projector work (1.4s)
+  ✓   41 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › trace-associates: every part, the diagram and the projector work (1.3s)
+  ✓   42 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › rjc-engineers: every part, the diagram and the projector work (1.2s)
+  ✓   43 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › calgary-italian-bakery: every part, the diagram and the projector work (1.4s)
+  ✓   44 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › joe-media-group: every part, the diagram and the projector work (1.3s)
+  ✓   46 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › isl-engineering: every part, the diagram and the projector work (1.3s)
+  ✓   45 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › cbl-bakeries-cinnaroll: every part, the diagram and the projector work (1.6s)
+  ✓   47 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › clearbakk: every part, the diagram and the projector work (1.2s)
+  ✓   48 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › botaneco: every part, the diagram and the projector work (1.2s)
+  ✓   49 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › nanalysis: every part, the diagram and the projector work (1.3s)
+  ✓   50 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › exergy-solutions: every part, the diagram and the projector work (1.4s)
+  ✓   51 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › livestock-water-recycling: every part, the diagram and the projector work (1.5s)
+  ✓   52 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › avmax: every part, the diagram and the projector work (1.5s)
+  ✓   53 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › northern-rna: every part, the diagram and the projector work (1.3s)
+  ✓   54 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › aerium-analytics: every part, the diagram and the projector work (1.4s)
+  ✓   56 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › tangent-design-engineering: every part, the diagram and the projector work (1.2s)
+  ✓   55 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › geologicai: every part, the diagram and the projector work (1.3s)
+  ✓   57 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › foremost: every part, the diagram and the projector work (1.4s)
+  ✓   58 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › carbonova: every part, the diagram and the projector work (1.3s)
+  ✓   59 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › summit-lithium-technologies: every part, the diagram and the projector work (1.3s)
+  ✓   60 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › veerum: every part, the diagram and the projector work (1.3s)
+  ✓   61 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › eguana-technologies: every part, the diagram and the projector work (1.3s)
+  ✓   62 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › ftg-aerospace-calgary: every part, the diagram and the projector work (1.4s)
+  ✓   64 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › e3-lithium: every part, the diagram and the projector work (1.4s)
+  ✓   63 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › wilder-institute: every part, the diagram and the projector work (1.4s)
+  ✓   66 [desktop] › tests/e2e/discover.spec.ts:11:7 › Discover classroom flow › header navigation is current (690ms)
+  ✓   68 [desktop] › tests/e2e/discover.spec.ts:84:7 › Discover classroom flow › one Space press stops without advancing when the key is released (707ms)
+  ✓   69 [desktop] › tests/e2e/discover.spec.ts:102:7 › Discover classroom flow › Chemistry does not repeat and resets the exhausted set (548ms)
+  ✓   65 [desktop] › tests/e2e/all-examples.spec.ts:28:7 › ghgsat: every part, the diagram and the projector work (1.6s)
+  ✓   70 [desktop] › tests/e2e/discover.spec.ts:119:7 › Discover classroom flow › deep links retain route, saved date, vacancy label and empty state (628ms)
+  ✓   72 [desktop] › tests/e2e/discover.spec.ts:156:7 › Discover classroom flow › picture loading respects header and subject focus (788ms)
+  ✓   67 [desktop] › tests/e2e/discover.spec.ts:19:7 › Discover classroom flow › stops the displayed picture, conceals titles, steps and restores through Back (2.2s)
+  ✓   74 [desktop] › tests/e2e/discover.spec.ts:201:7 › Discover classroom flow › classroom guessing controls fit a 720p screen and fullscreen can be requested (333ms)
+  ✓   75 [desktop] › tests/e2e/discover.spec.ts:214:7 › Discover classroom flow › desktop headings stay visually quiet while tabs retain keyboard focus (408ms)
+  ✓   76 [desktop] › tests/e2e/discover.spec.ts:241:7 › Discover classroom flow › qualifications stay with routes and related-employer postings (525ms)
+  ✓   73 [desktop] › tests/e2e/discover.spec.ts:182:7 › Discover classroom flow › reduced motion draws once and failed pictures provide equivalent clues (1.6s)
+  -   78 [desktop] › tests/e2e/discover.spec.ts:279:5 › phone flow works by tap with readable type and no sideways scroll
+  ✓   79 [desktop] › tests/e2e/discover.spec.ts:302:7 › step navigation lands on readable content at 390px (496ms)
+  ✓   80 [desktop] › tests/e2e/discover.spec.ts:302:7 › step navigation lands on readable content at 768px (563ms)
+  ✓   71 [desktop] › tests/e2e/discover.spec.ts:135:7 › Discover classroom flow › dialogs, fields and header controls isolate keyboard shortcuts (2.5s)
+  ✓   81 [desktop] › tests/e2e/discover.spec.ts:302:7 › step navigation lands on readable content at 1024px (632ms)
+  ✓   77 [desktop] › tests/e2e/discover.spec.ts:258:7 › Discover classroom flow › every card has the same guess cover and reveals an unobstructed occupation (1.7s)
+  ✓   85 [desktop] › tests/e2e/discover.spec.ts:355:5 › guessing offers a direct restart in cycling and single-draw modes (1.0s)
+  ✓   86 [desktop] › tests/e2e/discover.spec.ts:372:5 › desktop guessing balances picture and clues without an empty column (755ms)
+  ✓   87 [desktop] › tests/e2e/example-depth.spec.ts:4:5 › role details show repeated introductory text once and retain distinct explanations (709ms)
+  ✓   88 [desktop] › tests/e2e/example-depth.spec.ts:20:7 › Wilder Institute: story to organization, role, approved posting and pathway (2.5s)
+  ✓   83 [desktop] › tests/e2e/discover.spec.ts:326:7 › all 54 content states remain readable and unclipped at 768px (7.5s)
+  ✓   82 [desktop] › tests/e2e/discover.spec.ts:326:7 › all 54 content states remain readable and unclipped at 1280px (7.8s)
+  ✓   84 [desktop] › tests/e2e/discover.spec.ts:326:7 › all 54 content states remain readable and unclipped at 390px (7.6s)
+  ✓   89 [desktop] › tests/e2e/example-depth.spec.ts:20:7 › E3 Lithium: story to organization, role, approved posting and pathway (2.4s)
+  ✓   90 [desktop] › tests/e2e/example-depth.spec.ts:53:5 › GHGSat's approved government posting has a commercial role and a preparation route (529ms)
+  ✓   91 [desktop] › tests/e2e/example-depth.spec.ts:63:5 › approved related postings are reachable without implying featured-employer affiliation (907ms)
+  ✓   94 [desktop] › tests/e2e/exploration.spec.ts:48:5 › an invalid search context is never claimed or carried along (643ms)
+  ✓   93 [desktop] › tests/e2e/exploration.spec.ts:39:5 › another supported course keeps its own label through the exploration (830ms)
+  ✓   97 [desktop] › tests/e2e/exploration.spec.ts:87:5 › switching role clears a job that no longer matches (864ms)
+  ✓   95 [desktop] › tests/e2e/exploration.spec.ts:56:5 › a copied deep link survives reload, and Back/Forward follow the selection (1.1s)
+  ✓   96 [desktop] › tests/e2e/exploration.spec.ts:73:5 › unknown views, roles and jobs fall back without inventing anything (1.1s)
+  ✓   98 [desktop] › tests/e2e/exploration.spec.ts:95:5 › links saved before jobs moved into roles still open the posting (501ms)
+  ✓  100 [desktop] › tests/e2e/exploration.spec.ts:120:5 › speaker requests keep the original example and lesson while viewing another employer (621ms)
+  ✓   99 [desktop] › tests/e2e/exploration.spec.ts:102:5 › jobs and pathways never stand in for each other (747ms)
+  ✓  101 [desktop] › tests/e2e/exploration.spec.ts:133:5 › the rail leads back to the story from a copied section link (623ms)
+  ✓  102 [desktop] › tests/e2e/exploration.spec.ts:144:5 › the company panel is an inline section, not a modal (466ms)
+  ✓  104 [desktop] › tests/e2e/exploration.spec.ts:165:5 › direct visits never claim a selected unit, and copied postings say so (474ms)
+  ✓  105 [desktop] › tests/e2e/exploration.spec.ts:176:5 › the top of the story shows the class fit, or every fit and a way to pick a class (507ms)
+  ✓   92 [desktop] › tests/e2e/exploration.spec.ts:8:5 › physics example → story → company → role → job → pathways → story → results keeps the unit (4.0s)
+  ✓  107 [desktop] › tests/e2e/exploration.spec.ts:216:5 › new company profiles survive reload and reject another example's role (947ms)
+  ✓  106 [desktop] › tests/e2e/exploration.spec.ts:196:5 › one checked date on every view, with the evidence table closed (1.3s)
+  ✓  108 [desktop] › tests/e2e/exploration.spec.ts:230:5 › course tags are neutral and link chips carry an arrow (734ms)
+  ✓  109 [desktop] › tests/e2e/exploration.spec.ts:244:5 › pathway cards distinguish programs from employer requirements (335ms)
+  ✓  103 [desktop] › tests/e2e/exploration.spec.ts:151:5 › new outbound links pass no search context (3.3s)
+  ✓  113 [desktop] › tests/e2e/journeys.spec.ts:56:5 › Back and Forward restore the filter (378ms)
+  ✓  114 [desktop] › tests/e2e/journeys.spec.ts:67:5 › Chemistry 20 units keep their own label through the library, example and back (589ms)
+  ✓  111 [desktop] › tests/e2e/journeys.spec.ts:9:7 › Show more preserves the reading position on keyboard (2.4s)
+  ✓  110 [desktop] › tests/e2e/journeys.spec.ts:9:7 › Show more preserves the reading position on click (2.5s)
+  ✓  117 [desktop] › tests/e2e/journeys.spec.ts:109:5 › a course alone shows its examples and how many units are ready (276ms)
+  ✓  116 [desktop] › tests/e2e/journeys.spec.ts:98:5 › a typed Biology 30 topic shows the Calgary example and keeps the outside research labelled (296ms)
+  ✓  112 [desktop] › tests/e2e/journeys.spec.ts:36:5 › course and unit filter the library in place → example → back (2.8s)
+  ✓  119 [desktop] › tests/e2e/journeys.spec.ts:132:5 › a topic with no match anywhere still leaves examples to browse (359ms)
+  ✓  118 [desktop] › tests/e2e/journeys.spec.ts:118:5 › a unit without an example gets the honest banner and the closest fits (1.2s)
+  ✓  115 [desktop] › tests/e2e/journeys.spec.ts:82:5 › a typed topic keeps its label through the round trip (1.8s)
+  ✓  120 [desktop] › tests/e2e/journeys.spec.ts:141:5 › examples are open; only recent developments wait for the demo signup (1.3s)
+  ✓  123 [desktop] › tests/e2e/journeys.spec.ts:198:5 › old library, search, Explore and filtered home links land on the library (523ms)
+  ✓  122 [desktop] › tests/e2e/journeys.spec.ts:184:5 › dialogs work with the keyboard and return focus (793ms)
+  ✓  125 [desktop] › tests/e2e/journeys.spec.ts:249:7 › without JavaScript › the filter still works as a plain form (334ms)
+  ✓  121 [desktop] › tests/e2e/journeys.spec.ts:160:5 › speaker requests are prefilled and send nothing (1.8s)
+  ✓  127 [desktop] › tests/e2e/journeys.spec.ts:270:5 › Wilder pathways distinguish introductory care from veterinary medicine (320ms)
+  ✓  129 [desktop] › tests/e2e/journeys.spec.ts:308:5 › unknown example slugs show the not-found page (269ms)
+  ✓  124 [desktop] › tests/e2e/journeys.spec.ts:225:5 › the home page explains the project and opens the library three ways (1.3s)
+  ✓  126 [desktop] › tests/e2e/journeys.spec.ts:259:5 › get involved and the digest sample are honest demos (1.2s)
+  ✓  131 [desktop] › tests/e2e/one-page.spec.ts:8:7 › e3-lithium: parts first, one h1, persistent one-page choice and print (859ms)
+  ✓  130 [desktop] › tests/e2e/one-page.spec.ts:8:7 › ghgsat: parts first, one h1, persistent one-page choice and print (913ms)
+  ✓  132 [desktop] › tests/e2e/one-page.spec.ts:8:7 › wilder-institute: parts first, one h1, persistent one-page choice and print (1.1s)
+  ✓  135 [desktop] › tests/e2e/one-page.spec.ts:69:5 › pre-paint script selects the right part even before hydration can run (471ms)
+  ✓  133 [desktop] › tests/e2e/one-page.spec.ts:39:5 › each part is a history entry; Back and Forward restore focus (1.6s)
+  ✓  136 [desktop] › tests/e2e/one-page.spec.ts:78:5 › storage denial defaults to parts and does not break the toggle (848ms)
+  ✓  137 [desktop] › tests/e2e/one-page.spec.ts:92:5 › role overview exposes classroom connections; About links to it without role cards (746ms)
+  ✓  134 [desktop] › tests/e2e/one-page.spec.ts:57:5 › legacy URLs, explicit fragments and validated selections share the landing rule (2.9s)
+  ✓  138 [desktop] › tests/e2e/one-page.spec.ts:106:5 › selection, posting-row focus and pathways preserve course context (970ms)
+  ✓  139 [desktop] › tests/e2e/one-page.spec.ts:125:5 › a role link outside its posting row lands on the part heading (617ms)
+  -  142 [desktop] › tests/e2e/one-page.spec.ts:161:5 › phone Contents contains focus, closes by Escape or button, and navigates
+  ✓  140 [desktop] › tests/e2e/one-page.spec.ts:135:5 › invalid job removal is still a navigation and traverses correctly (549ms)
+  ✓  141 [desktop] › tests/e2e/one-page.spec.ts:145:5 › one-page scroll spy follows scrolling and section moves replace history (727ms)
+  ✓  143 [desktop] › tests/e2e/one-page.spec.ts:181:7 › ghgsat: projector sequence fits, keeps qualifications and returns focus to last part (1.3s)
+  ✓  144 [desktop] › tests/e2e/one-page.spec.ts:181:7 › e3-lithium: projector sequence fits, keeps qualifications and returns focus to last part (1.2s)
+  -  147 [desktop] › tests/e2e/one-page.spec.ts:245:5 › phone filter summary appears without moving the library results
+  ✓  145 [desktop] › tests/e2e/one-page.spec.ts:181:7 › wilder-institute: projector sequence fits, keeps qualifications and returns focus to last part (1.2s)
+  ✓  149 [desktop] › tests/e2e/one-page.spec.ts:313:5 › INSPECT-005: a history traversal to another page is never handled as the example's (794ms)
+  ✓  150 [desktop] › tests/e2e/one-page.spec.ts:341:5 › Show all clears the role filter and Back restores it (420ms)
+  ✓  146 [desktop] › tests/e2e/one-page.spec.ts:229:7 › without JavaScript › all parts and a visible list of fragment links work at both viewport sizes (1.6s)
+  ✓  151 [desktop] › tests/e2e/one-page.spec.ts:354:5 › reduced-motion navigation keeps the heading in a short viewport (537ms)
+  ✓  152 [desktop] › tests/e2e/one-page.spec.ts:372:5 › compact question stays below the site header when navigating parts (634ms)
+  ✓  153 [desktop] › tests/e2e/one-page.spec.ts:393:7 › ghgsat: part headings are unique and role scope stays explicit (509ms)
+  ✓  154 [desktop] › tests/e2e/one-page.spec.ts:393:7 › e3-lithium: part headings are unique and role scope stays explicit (507ms)
+  ✓  155 [desktop] › tests/e2e/one-page.spec.ts:393:7 › wilder-institute: part headings are unique and role scope stays explicit (574ms)
+  ✓  157 [desktop] › tests/e2e/one-page.spec.ts:428:7 › skip link preserves the active part and reading position in parts view (367ms)
+  ✓  156 [desktop] › tests/e2e/one-page.spec.ts:416:7 › INSPECT-004: bare parts load leaves focus and scroll at the document start (794ms)
+  ✓  159 [desktop] › tests/e2e/one-page.spec.ts:428:7 › skip link preserves the active part and reading position in all view (551ms)
+  ✓  158 [desktop] › tests/e2e/one-page.spec.ts:416:7 › INSPECT-004: bare all load leaves focus and scroll at the document start (882ms)
+  ✓  160 [desktop] › tests/e2e/one-page.spec.ts:453:5 › filtered Ways in projection keeps the role qualification (298ms)
+  ✓  148 [desktop] › tests/e2e/one-page.spec.ts:267:5 › INSPECT-005: Back from an example to the library leaves the library's scroll to the browser and router (4.3s)
+  ✓  161 [desktop] › tests/e2e/one-page.spec.ts:467:5 › For you dividers have no orphaned numbering or dot (388ms)
+  ✓  162 [desktop] › tests/e2e/one-page.spec.ts:477:5 › a fragment link clicked before hydration lands on its part (776ms)
+  ✓  163 [desktop] › tests/e2e/one-page.spec.ts:499:5 › pressing the view toggle during a section scroll preserves its destination (1.0s)
+  -  166 [desktop] › tests/e2e/one-page.spec.ts:577:5 › phone navigation geometry and context are stable across hydration
+  ✓  165 [desktop] › tests/e2e/one-page.spec.ts:559:5 › permanently blocked bundles: Back to the bare URL restores the first part (677ms)
+  ✓  164 [desktop] › tests/e2e/one-page.spec.ts:530:5 › permanently blocked bundles leave every part reachable (1.6s)
+  ✓  167 [desktop] › tests/e2e/post-merge-repairs.spec.ts:5:5 › home role links select the intended role through reload and history (1.0s)
+  ✓  168 [desktop] › tests/e2e/post-merge-repairs.spec.ts:23:7 › landing tabs support focus, activation and preserved search at 320px (1.1s)
+  ✓  169 [desktop] › tests/e2e/post-merge-repairs.spec.ts:23:7 › landing tabs support focus, activation and preserved search at 390px (992ms)
+  ✓  171 [desktop] › tests/e2e/post-merge-repairs.spec.ts:58:7 › landing anchors clear the sticky header at 320px (469ms)
+  ✓  172 [desktop] › tests/e2e/post-merge-repairs.spec.ts:58:7 › landing anchors clear the sticky header at 390px (459ms)
+  ✓  170 [desktop] › tests/e2e/post-merge-repairs.spec.ts:23:7 › landing tabs support focus, activation and preserved search at 1440px (980ms)
+  ✓  173 [desktop] › tests/e2e/post-merge-repairs.spec.ts:58:7 › landing anchors clear the sticky header at 768px (488ms)
+  ✓  175 [desktop] › tests/e2e/post-merge-repairs.spec.ts:79:5 › mobile menu Escape returns focus and its links still navigate (507ms)
+  ✓  174 [desktop] › tests/e2e/post-merge-repairs.spec.ts:58:7 › landing anchors clear the sticky header at 1440px (592ms)
+  ✓  176 [desktop] › tests/e2e/post-merge-repairs.spec.ts:95:5 › company search stays in its directory and survives the example round trip (1.4s)
+  ✓  179 [desktop] › tests/e2e/rail.spec.ts:104:7 › desktop rail › 1: the section links stay pinned while scrolling, and still work (4.1s)
+  ✓  180 [desktop] › tests/e2e/rail.spec.ts:155:7 › desktop rail › 2: mounting the field moves nothing (269ms)
+  ✓  181 [desktop] › tests/e2e/rail.spec.ts:184:7 › desktop rail › 3: the field mounts on desktop only, with the magnet only when motion is welcome (420ms)
+  ✘  178 [desktop] › tests/e2e/post-merge-repairs.spec.ts:115:7 › role group jumps and example return preserve the directory (6.2s)
+  ✘  177 [desktop] › tests/e2e/post-merge-repairs.spec.ts:115:7 › challenge group jumps and example return preserve the directory (6.2s)
+(node:93213) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:93214) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  182 [desktop] › tests/e2e/rail.spec.ts:203:7 › desktop rail › 4: the magnet never blocks the links (1.3s)
+  ✓  128 [desktop] › tests/e2e/journeys.spec.ts:280:5 › source links open safely and match the content data (22.6s)
+  ✓  184 [desktop] › tests/e2e/rail.spec.ts:245:7 › desktop rail › 5: wheel scrolling under a still pointer keeps the field drawing (648ms)
+  ✓  187 [desktop] › tests/e2e/rail.spec.ts:298:5 › the field of the full one-page rail stays under the canvas size limit (939ms)
+  ✓  183 [desktop] › tests/e2e/rail.spec.ts:222:7 › desktop rail › short desktop rail keeps every link and the toggle reachable (1.7s)
+  -  188 [desktop] › tests/e2e/rail.spec.ts:320:5 › 3: phones get Contents, never the field
+  ✓  189 [desktop] › tests/e2e/rail.spec.ts:329:5 › 8: no hero shows coordinates (724ms)
+  ✓  191 [desktop] › tests/e2e/regressions.spec.ts:30:5 › R2: the filter follows navigation it did not make (318ms)
+  -  192 [desktop] › tests/e2e/regressions.spec.ts:41:5 › R3: on phones the example question comes before the side panel
+  ✓  186 [desktop] › tests/e2e/rail.spec.ts:284:7 › desktop rail › 7: moved dots leave no trails once they are home (2.4s)
+  ✓  190 [desktop] › tests/e2e/regressions.spec.ts:14:5 › R1: the demo server keeps no trace of typed search topics (1.6s)
+  ✓  185 [desktop] › tests/e2e/rail.spec.ts:261:7 › desktop rail › 6: the visible canvas follows height-only resizes, and the pointer still moves the dots under it (3.8s)
+  ✓  194 [desktop] › tests/e2e/regressions.spec.ts:62:5 › R5: long unbroken topics never push the page sideways (606ms)
+  ✓  196 [desktop] › tests/e2e/regressions.spec.ts:91:5 › R2b: library speaker actions include the related organization (403ms)
+  ✓  195 [desktop] › tests/e2e/regressions.spec.ts:75:5 › R6: site-level speaker and signup actions use the current page context (516ms)
+  ✓  193 [desktop] › tests/e2e/regressions.spec.ts:51:5 › R4: focus lands on the page heading after signup removes the opener (1.4s)
+  ✓  198 [desktop] › tests/e2e/regressions.spec.ts:114:5 › I3-R1: the library filter stays readable at mid widths (608ms)
+  -  200 [desktop] › tests/e2e/regressions.spec.ts:147:5 › I3-R2: the phone menu does not reopen after navigating away and back
+  ✓  199 [desktop] › tests/e2e/regressions.spec.ts:130:5 › the filter docks under the header on wide screens, and phones get one summary row (751ms)
+  ✓  201 [desktop] › tests/e2e/ways-in.spec.ts:15:5 › the course door is the library, and old filter links still land there (408ms)
+  -  203 [desktop] › tests/e2e/ways-in.spec.ts:47:7 › kinds of work read as one column at 320px
+  -  204 [desktop] › tests/e2e/ways-in.spec.ts:47:7 › kinds of work read as one column at 390px
+  ✓  197 [desktop] › tests/e2e/regressions.spec.ts:100:5 › R7: the demo still unlocks when session storage is blocked (1.5s)
+  ✓  202 [desktop] › tests/e2e/ways-in.spec.ts:27:5 › each other door lists the connections its own way (787ms)
+  ✓  205 [desktop] › tests/e2e/ways-in.spec.ts:62:5 › the quick bar appears past the doors, switches doors and hides again (909ms)
+  ✓  206 [desktop] › tests/e2e/ways-in.spec.ts:85:5 › search from the quick bar filters the library and Escape closes it (990ms)
+  ✓  207 [desktop] › tests/e2e/ways-in.spec.ts:106:5 › quick-bar navigation keeps the signup and noted searches when storage is blocked (1.9s)
+  ✓  211 [desktop] › tests/e2e/ways-in.spec.ts:222:5 › the footer clears the bar at the bottom, even with a safe-area inset (255ms)
+  ✓  208 [desktop] › tests/e2e/ways-in.spec.ts:157:5 › a quick-bar search wins over a console edit that is still waiting to apply (2.6s)
+  ✓  210 [desktop] › tests/e2e/ways-in.spec.ts:208:5 › re-submitting the same search clears an abandoned console edit (2.3s)
+  ✓  212 [desktop] › tests/e2e/ways-in.spec.ts:246:7 › the course door and its quick bar pass axe with no sideways scroll (1.4s)
+  ✓  213 [desktop] › tests/e2e/ways-in.spec.ts:246:7 › the challenge door and its quick bar pass axe with no sideways scroll (1.5s)
+(node:93389) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  214 [desktop] › tests/e2e/ways-in.spec.ts:246:7 › the company door and its quick bar pass axe with no sideways scroll (1.8s)
+  ✓  215 [desktop] › tests/e2e/ways-in.spec.ts:246:7 › the role door and its quick bar pass axe with no sideways scroll (1.8s)
+  ✓  216 [phone] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /discover (579ms)
+(node:93413) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:93417) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  217 [phone] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /connections (708ms)
+  ✓  218 [phone] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /discover?role=05&step=5 (781ms)
+  ✓  219 [phone] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: / (815ms)
+  ✓  220 [phone] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /connections?course=physics-30&unit=p30c (889ms)
+  ✓  221 [phone] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /connections?course=physics-20&unit=p20a (810ms)
+  ✓  223 [phone] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /examples/ghgsat?course=physics-30&unit=p30c (613ms)
+  ✓  222 [phone] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /connections?course=biology-30&topic=DNA+replication (764ms)
+  ✓  224 [phone] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /examples/ghgsat?course=physics-30&unit=p30c&view=company (706ms)
+  ✓  225 [phone] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /examples/ghgsat?course=physics-30&unit=p30c&view=roles (664ms)
+  ✓  226 [phone] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /examples/ghgsat?course=physics-30&unit=p30c&view=roles&role=satellite-engineering (807ms)
+  ✓  227 [phone] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /examples/ghgsat?course=physics-30&unit=p30c&view=roles&role=atmospheric-science&job=ghgsat-emissions-scientist (693ms)
+  ✓  228 [phone] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /examples/ghgsat?course=physics-30&unit=p30c&view=pathways (697ms)
+  ✓  209 [desktop] › tests/e2e/ways-in.spec.ts:174:5 › door links also win over a waiting console edit, even when the page is slow (8.5s)
+  ✓  229 [phone] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /examples/ghgsat?view=pathways&role=software-data (741ms)
+  ✓  230 [phone] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /examples/wilder-institute (691ms)
+(node:93501) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  231 [phone] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /examples/e3-lithium (717ms)
+  ✓  232 [phone] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /examples/wilder-institute?view=roles&role=animal-care&job=wilder-animal-care (741ms)
+  ✓  233 [phone] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /examples/wilder-institute?view=pathways (809ms)
+  ✓  234 [phone] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /examples/e3-lithium?view=company (838ms)
+  ✓  236 [phone] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /examples/e3-lithium?view=roles&role=process-engineering&job=stantec-water-eit (911ms)
+  ✓  235 [phone] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /examples/wilder-institute?view=company (967ms)
+  ✓  238 [phone] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /get-involved (654ms)
+  ✓  237 [phone] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /examples/e3-lithium?view=pathways (757ms)
+  ✓  239 [phone] › tests/e2e/a11y.spec.ts:33:7 › no serious accessibility violations and no sideways scroll: /digest (758ms)
+  ✓  240 [phone] › tests/e2e/a11y.spec.ts:46:5 › open dialogs pass the accessibility scan (1.2s)
+  ✓  241 [phone] › tests/e2e/a11y.spec.ts:57:5 › narrowest phones (320px) have no sideways scroll (2.3s)
+  ✓  243 [phone] › tests/e2e/a11y.spec.ts:69:9 › ghgsat: all parts pass axe in all layout (2.6s)
+  ✓  242 [phone] › tests/e2e/a11y.spec.ts:69:9 › ghgsat: all parts pass axe in parts layout (3.6s)
+  ✓  244 [phone] › tests/e2e/a11y.spec.ts:69:9 › wilder-institute: all parts pass axe in parts layout (3.3s)
+  -  248 [phone] › tests/e2e/a11y.spec.ts:88:5 › projector passes axe
+  ✓  245 [phone] › tests/e2e/a11y.spec.ts:69:9 › wilder-institute: all parts pass axe in all layout (2.3s)
+  ✓  247 [phone] › tests/e2e/a11y.spec.ts:69:9 › e3-lithium: all parts pass axe in all layout (2.1s)
+  ✓  246 [phone] › tests/e2e/a11y.spec.ts:69:9 › e3-lithium: all parts pass axe in parts layout (2.7s)
+  ✓  250 [phone] › tests/e2e/all-examples.spec.ts:28:7 › entuitive: every part, the diagram and the projector work (9.4s)
+  ✓  249 [phone] › tests/e2e/all-examples.spec.ts:28:7 › o2-planning-design: every part, the diagram and the projector work (9.7s)
+  ✓  252 [phone] › tests/e2e/all-examples.spec.ts:28:7 › broken-pencil-studios: every part, the diagram and the projector work (9.0s)
+  ✓  251 [phone] › tests/e2e/all-examples.spec.ts:28:7 › phil-sebastian: every part, the diagram and the projector work (9.6s)
+  ✓  253 [phone] › tests/e2e/all-examples.spec.ts:28:7 › cpkc: every part, the diagram and the projector work (9.2s)
+  ✓  254 [phone] › tests/e2e/all-examples.spec.ts:28:7 › watersmart: every part, the diagram and the projector work (9.5s)
+  ✓  255 [phone] › tests/e2e/all-examples.spec.ts:28:7 › integrated-sustainability: every part, the diagram and the projector work (9.2s)
+  ✓  256 [phone] › tests/e2e/all-examples.spec.ts:28:7 › trace-associates: every part, the diagram and the projector work (9.5s)
+  ✓  257 [phone] › tests/e2e/all-examples.spec.ts:28:7 › rjc-engineers: every part, the diagram and the projector work (9.1s)
+  ✓  258 [phone] › tests/e2e/all-examples.spec.ts:28:7 › calgary-italian-bakery: every part, the diagram and the projector work (9.0s)
+  ✓  259 [phone] › tests/e2e/all-examples.spec.ts:28:7 › joe-media-group: every part, the diagram and the projector work (8.9s)
+  ✓  260 [phone] › tests/e2e/all-examples.spec.ts:28:7 › cbl-bakeries-cinnaroll: every part, the diagram and the projector work (9.1s)
+  ✓  261 [phone] › tests/e2e/all-examples.spec.ts:28:7 › isl-engineering: every part, the diagram and the projector work (9.1s)
+  ✓  262 [phone] › tests/e2e/all-examples.spec.ts:28:7 › clearbakk: every part, the diagram and the projector work (9.3s)
+  ✓  263 [phone] › tests/e2e/all-examples.spec.ts:28:7 › botaneco: every part, the diagram and the projector work (9.1s)
+  ✓  264 [phone] › tests/e2e/all-examples.spec.ts:28:7 › nanalysis: every part, the diagram and the projector work (8.9s)
+  ✓  265 [phone] › tests/e2e/all-examples.spec.ts:28:7 › exergy-solutions: every part, the diagram and the projector work (9.0s)
+  ✓  266 [phone] › tests/e2e/all-examples.spec.ts:28:7 › livestock-water-recycling: every part, the diagram and the projector work (9.4s)
+  ✓  267 [phone] › tests/e2e/all-examples.spec.ts:28:7 › avmax: every part, the diagram and the projector work (9.4s)
+  ✓  268 [phone] › tests/e2e/all-examples.spec.ts:28:7 › northern-rna: every part, the diagram and the projector work (9.2s)
+  ✓  269 [phone] › tests/e2e/all-examples.spec.ts:28:7 › aerium-analytics: every part, the diagram and the projector work (9.0s)
+  ✓  271 [phone] › tests/e2e/all-examples.spec.ts:28:7 › tangent-design-engineering: every part, the diagram and the projector work (9.0s)
+  ✓  272 [phone] › tests/e2e/all-examples.spec.ts:28:7 › foremost: every part, the diagram and the projector work (9.0s)
+  ✓  270 [phone] › tests/e2e/all-examples.spec.ts:28:7 › geologicai: every part, the diagram and the projector work (9.4s)
+  ✓  273 [phone] › tests/e2e/all-examples.spec.ts:28:7 › carbonova: every part, the diagram and the projector work (9.1s)
+  ✓  274 [phone] › tests/e2e/all-examples.spec.ts:28:7 › summit-lithium-technologies: every part, the diagram and the projector work (9.3s)
+  ✓  276 [phone] › tests/e2e/all-examples.spec.ts:28:7 › eguana-technologies: every part, the diagram and the projector work (9.1s)
+  ✓  275 [phone] › tests/e2e/all-examples.spec.ts:28:7 › veerum: every part, the diagram and the projector work (9.4s)
+  ✓  277 [phone] › tests/e2e/all-examples.spec.ts:28:7 › ftg-aerospace-calgary: every part, the diagram and the projector work (8.9s)
+  -  281 [phone] › tests/e2e/discover.spec.ts:11:7 › Discover classroom flow › header navigation is current
+  -  282 [phone] › tests/e2e/discover.spec.ts:19:7 › Discover classroom flow › stops the displayed picture, conceals titles, steps and restores through Back
+  -  283 [phone] › tests/e2e/discover.spec.ts:84:7 › Discover classroom flow › one Space press stops without advancing when the key is released
+  -  284 [phone] › tests/e2e/discover.spec.ts:102:7 › Discover classroom flow › Chemistry does not repeat and resets the exhausted set
+  -  285 [phone] › tests/e2e/discover.spec.ts:119:7 › Discover classroom flow › deep links retain route, saved date, vacancy label and empty state
+  -  286 [phone] › tests/e2e/discover.spec.ts:135:7 › Discover classroom flow › dialogs, fields and header controls isolate keyboard shortcuts
+  -  287 [phone] › tests/e2e/discover.spec.ts:156:7 › Discover classroom flow › picture loading respects header and subject focus
+  -  288 [phone] › tests/e2e/discover.spec.ts:182:7 › Discover classroom flow › reduced motion draws once and failed pictures provide equivalent clues
+  -  289 [phone] › tests/e2e/discover.spec.ts:201:7 › Discover classroom flow › classroom guessing controls fit a 720p screen and fullscreen can be requested
+  -  290 [phone] › tests/e2e/discover.spec.ts:214:7 › Discover classroom flow › desktop headings stay visually quiet while tabs retain keyboard focus
+  -  291 [phone] › tests/e2e/discover.spec.ts:241:7 › Discover classroom flow › qualifications stay with routes and related-employer postings
+  -  292 [phone] › tests/e2e/discover.spec.ts:258:7 › Discover classroom flow › every card has the same guess cover and reveals an unobstructed occupation
+  ✓  293 [phone] › tests/e2e/discover.spec.ts:279:5 › phone flow works by tap with readable type and no sideways scroll (662ms)
+  -  294 [phone] › tests/e2e/discover.spec.ts:302:7 › step navigation lands on readable content at 390px
+  -  295 [phone] › tests/e2e/discover.spec.ts:302:7 › step navigation lands on readable content at 768px
+  -  296 [phone] › tests/e2e/discover.spec.ts:302:7 › step navigation lands on readable content at 1024px
+  -  297 [phone] › tests/e2e/discover.spec.ts:326:7 › all 54 content states remain readable and unclipped at 1280px
+  -  298 [phone] › tests/e2e/discover.spec.ts:326:7 › all 54 content states remain readable and unclipped at 768px
+  -  299 [phone] › tests/e2e/discover.spec.ts:326:7 › all 54 content states remain readable and unclipped at 390px
+  ✓  279 [phone] › tests/e2e/all-examples.spec.ts:28:7 › e3-lithium: every part, the diagram and the projector work (8.9s)
+  -  301 [phone] › tests/e2e/discover.spec.ts:372:5 › desktop guessing balances picture and clues without an empty column
+  ✓  300 [phone] › tests/e2e/discover.spec.ts:355:5 › guessing offers a direct restart in cycling and single-draw modes (341ms)
+  ✓  278 [phone] › tests/e2e/all-examples.spec.ts:28:7 › wilder-institute: every part, the diagram and the projector work (9.5s)
+  ✓  302 [phone] › tests/e2e/example-depth.spec.ts:4:5 › role details show repeated introductory text once and retain distinct explanations (293ms)
+  ✓  280 [phone] › tests/e2e/all-examples.spec.ts:28:7 › ghgsat: every part, the diagram and the projector work (9.4s)
+  ✓  306 [phone] › tests/e2e/example-depth.spec.ts:63:5 › approved related postings are reachable without implying featured-employer affiliation (286ms)
+  ✓  305 [phone] › tests/e2e/example-depth.spec.ts:53:5 › GHGSat's approved government posting has a commercial role and a preparation route (1.2s)
+  ✓  308 [phone] › tests/e2e/exploration.spec.ts:39:5 › another supported course keeps its own label through the exploration (1.1s)
+  ✓  309 [phone] › tests/e2e/exploration.spec.ts:48:5 › an invalid search context is never claimed or carried along (197ms)
+  ✓  310 [phone] › tests/e2e/exploration.spec.ts:56:5 › a copied deep link survives reload, and Back/Forward follow the selection (317ms)
+  ✓  311 [phone] › tests/e2e/exploration.spec.ts:73:5 › unknown views, roles and jobs fall back without inventing anything (324ms)
+  ✓  312 [phone] › tests/e2e/exploration.spec.ts:87:5 › switching role clears a job that no longer matches (237ms)
+  ✓  313 [phone] › tests/e2e/exploration.spec.ts:95:5 › links saved before jobs moved into roles still open the posting (190ms)
+  ✓  314 [phone] › tests/e2e/exploration.spec.ts:102:5 › jobs and pathways never stand in for each other (275ms)
+  ✓  315 [phone] › tests/e2e/exploration.spec.ts:120:5 › speaker requests keep the original example and lesson while viewing another employer (258ms)
+  ✓  316 [phone] › tests/e2e/exploration.spec.ts:133:5 › the rail leads back to the story from a copied section link (1.1s)
+  ✓  317 [phone] › tests/e2e/exploration.spec.ts:144:5 › the company panel is an inline section, not a modal (188ms)
+  ✓  307 [phone] › tests/e2e/exploration.spec.ts:8:5 › physics example → story → company → role → job → pathways → story → results keeps the unit (5.9s)
+  ✓  319 [phone] › tests/e2e/exploration.spec.ts:165:5 › direct visits never claim a selected unit, and copied postings say so (261ms)
+  ✓  304 [phone] › tests/e2e/example-depth.spec.ts:20:7 › E3 Lithium: story to organization, role, approved posting and pathway (7.0s)
+  ✓  303 [phone] › tests/e2e/example-depth.spec.ts:20:7 › Wilder Institute: story to organization, role, approved posting and pathway (7.3s)
+  ✓  318 [phone] › tests/e2e/exploration.spec.ts:151:5 › new outbound links pass no search context (1.8s)
+  ✓  322 [phone] › tests/e2e/exploration.spec.ts:216:5 › new company profiles survive reload and reject another example's role (665ms)
+  ✓  321 [phone] › tests/e2e/exploration.spec.ts:196:5 › one checked date on every view, with the evidence table closed (902ms)
+  ✓  323 [phone] › tests/e2e/exploration.spec.ts:230:5 › course tags are neutral and link chips carry an arrow (485ms)
+  ✓  324 [phone] › tests/e2e/exploration.spec.ts:244:5 › pathway cards distinguish programs from employer requirements (278ms)
+  ✓  320 [phone] › tests/e2e/exploration.spec.ts:176:5 › the top of the story shows the class fit, or every fit and a way to pick a class (1.3s)
+  ✓  328 [phone] › tests/e2e/journeys.spec.ts:56:5 › Back and Forward restore the filter (474ms)
+  ✓  329 [phone] › tests/e2e/journeys.spec.ts:67:5 › Chemistry 20 units keep their own label through the library, example and back (555ms)
+  ✓  326 [phone] › tests/e2e/journeys.spec.ts:9:7 › Show more preserves the reading position on keyboard (2.3s)
+  ✓  325 [phone] › tests/e2e/journeys.spec.ts:9:7 › Show more preserves the reading position on click (2.4s)
+  ✓  331 [phone] › tests/e2e/journeys.spec.ts:98:5 › a typed Biology 30 topic shows the Calgary example and keeps the outside research labelled (223ms)
+  ✓  332 [phone] › tests/e2e/journeys.spec.ts:109:5 › a course alone shows its examples and how many units are ready (266ms)
+  ✓  327 [phone] › tests/e2e/journeys.spec.ts:36:5 › course and unit filter the library in place → example → back (2.9s)
+  ✓  334 [phone] › tests/e2e/journeys.spec.ts:132:5 › a topic with no match anywhere still leaves examples to browse (436ms)
+  ✓  330 [phone] › tests/e2e/journeys.spec.ts:82:5 › a typed topic keeps its label through the round trip (2.0s)
+  ✓  333 [phone] › tests/e2e/journeys.spec.ts:118:5 › a unit without an example gets the honest banner and the closest fits (1.1s)
+  ✓  337 [phone] › tests/e2e/journeys.spec.ts:184:5 › dialogs work with the keyboard and return focus (1.0s)
+  ✓  338 [phone] › tests/e2e/journeys.spec.ts:198:5 › old library, search, Explore and filtered home links land on the library (440ms)
+  ✓  335 [phone] › tests/e2e/journeys.spec.ts:141:5 › examples are open; only recent developments wait for the demo signup (1.4s)
+  ✓  340 [phone] › tests/e2e/journeys.spec.ts:249:7 › without JavaScript › the filter still works as a plain form (378ms)
+  ✓  342 [phone] › tests/e2e/journeys.spec.ts:270:5 › Wilder pathways distinguish introductory care from veterinary medicine (235ms)
+  ✓  336 [phone] › tests/e2e/journeys.spec.ts:160:5 › speaker requests are prefilled and send nothing (2.0s)
+  ✓  339 [phone] › tests/e2e/journeys.spec.ts:225:5 › the home page explains the project and opens the library three ways (999ms)
+  ✓  344 [phone] › tests/e2e/journeys.spec.ts:308:5 › unknown example slugs show the not-found page (242ms)
+  ✓  341 [phone] › tests/e2e/journeys.spec.ts:259:5 › get involved and the digest sample are honest demos (1.1s)
+  ✓  345 [phone] › tests/e2e/one-page.spec.ts:8:7 › ghgsat: parts first, one h1, persistent one-page choice and print (4.5s)
+  ✓  346 [phone] › tests/e2e/one-page.spec.ts:8:7 › e3-lithium: parts first, one h1, persistent one-page choice and print (4.4s)
+  ✓  347 [phone] › tests/e2e/one-page.spec.ts:8:7 › wilder-institute: parts first, one h1, persistent one-page choice and print (4.4s)
+  ✓  350 [phone] › tests/e2e/one-page.spec.ts:69:5 › pre-paint script selects the right part even before hydration can run (226ms)
+  ✓  349 [phone] › tests/e2e/one-page.spec.ts:57:5 › legacy URLs, explicit fragments and validated selections share the landing rule (1.4s)
+  ✓  352 [phone] › tests/e2e/one-page.spec.ts:92:5 › role overview exposes classroom connections; About links to it without role cards (1.2s)
+  ✓  353 [phone] › tests/e2e/one-page.spec.ts:106:5 › selection, posting-row focus and pathways preserve course context (506ms)
+  ✓  351 [phone] › tests/e2e/one-page.spec.ts:78:5 › storage denial defaults to parts and does not break the toggle (3.2s)
+  ✓  355 [phone] › tests/e2e/one-page.spec.ts:135:5 › invalid job removal is still a navigation and traverses correctly (276ms)
+  ✓  354 [phone] › tests/e2e/one-page.spec.ts:125:5 › a role link outside its posting row lands on the part heading (1.2s)
+  ✓  357 [phone] › tests/e2e/one-page.spec.ts:161:5 › phone Contents contains focus, closes by Escape or button, and navigates (2.2s)
+  -  358 [phone] › tests/e2e/one-page.spec.ts:181:7 › ghgsat: projector sequence fits, keeps qualifications and returns focus to last part
+  -  359 [phone] › tests/e2e/one-page.spec.ts:181:7 › e3-lithium: projector sequence fits, keeps qualifications and returns focus to last part
+  -  360 [phone] › tests/e2e/one-page.spec.ts:181:7 › wilder-institute: projector sequence fits, keeps qualifications and returns focus to last part
+  ✓  348 [phone] › tests/e2e/one-page.spec.ts:39:5 › each part is a history entry; Back and Forward restore focus (7.0s)
+  ✓  356 [phone] › tests/e2e/one-page.spec.ts:145:5 › one-page scroll spy follows scrolling and section moves replace history (3.2s)
+  ✓  361 [phone] › tests/e2e/one-page.spec.ts:229:7 › without JavaScript › all parts and a visible list of fragment links work at both viewport sizes (1.3s)
+  ✓  362 [phone] › tests/e2e/one-page.spec.ts:245:5 › phone filter summary appears without moving the library results (1.9s)
+  ✓  365 [phone] › tests/e2e/one-page.spec.ts:341:5 › Show all clears the role filter and Back restores it (276ms)
+  ✓  364 [phone] › tests/e2e/one-page.spec.ts:313:5 › INSPECT-005: a history traversal to another page is never handled as the example's (1.5s)
+  ✓  366 [phone] › tests/e2e/one-page.spec.ts:354:5 › reduced-motion navigation keeps the heading in a short viewport (464ms)
+  -  367 [phone] › tests/e2e/one-page.spec.ts:372:5 › compact question stays below the site header when navigating parts
+  ✓  363 [phone] › tests/e2e/one-page.spec.ts:267:5 › INSPECT-005: Back from an example to the library leaves the library's scroll to the browser and router (3.9s)
+  ✓  368 [phone] › tests/e2e/one-page.spec.ts:393:7 › ghgsat: part headings are unique and role scope stays explicit (2.2s)
+  ✓  369 [phone] › tests/e2e/one-page.spec.ts:393:7 › e3-lithium: part headings are unique and role scope stays explicit (2.3s)
+  ✓  372 [phone] › tests/e2e/one-page.spec.ts:428:7 › skip link preserves the active part and reading position in parts view (260ms)
+  ✓  371 [phone] › tests/e2e/one-page.spec.ts:416:7 › INSPECT-004: bare parts load leaves focus and scroll at the document start (694ms)
+  ✓  374 [phone] › tests/e2e/one-page.spec.ts:428:7 › skip link preserves the active part and reading position in all view (273ms)
+  -  375 [phone] › tests/e2e/one-page.spec.ts:453:5 › filtered Ways in projection keeps the role qualification
+  ✓  373 [phone] › tests/e2e/one-page.spec.ts:416:7 › INSPECT-004: bare all load leaves focus and scroll at the document start (717ms)
+  ✓  376 [phone] › tests/e2e/one-page.spec.ts:467:5 › For you dividers have no orphaned numbering or dot (252ms)
+  ✓  370 [phone] › tests/e2e/one-page.spec.ts:393:7 › wilder-institute: part headings are unique and role scope stays explicit (2.2s)
+  -  378 [phone] › tests/e2e/one-page.spec.ts:499:5 › pressing the view toggle during a section scroll preserves its destination
+  ✓  377 [phone] › tests/e2e/one-page.spec.ts:477:5 › a fragment link clicked before hydration lands on its part (419ms)
+  -  380 [phone] › tests/e2e/one-page.spec.ts:559:5 › permanently blocked bundles: Back to the bare URL restores the first part
+  ✓  381 [phone] › tests/e2e/one-page.spec.ts:577:5 › phone navigation geometry and context are stable across hydration (341ms)
+  ✓  382 [phone] › tests/e2e/post-merge-repairs.spec.ts:5:5 › home role links select the intended role through reload and history (533ms)
+  ✓  379 [phone] › tests/e2e/one-page.spec.ts:530:5 › permanently blocked bundles leave every part reachable (1.0s)
+  ✓  383 [phone] › tests/e2e/post-merge-repairs.spec.ts:23:7 › landing tabs support focus, activation and preserved search at 320px (859ms)
+  ✓  386 [phone] › tests/e2e/post-merge-repairs.spec.ts:58:7 › landing anchors clear the sticky header at 320px (432ms)
+  ✓  384 [phone] › tests/e2e/post-merge-repairs.spec.ts:23:7 › landing tabs support focus, activation and preserved search at 390px (909ms)
+  ✓  385 [phone] › tests/e2e/post-merge-repairs.spec.ts:23:7 › landing tabs support focus, activation and preserved search at 1440px (929ms)
+  ✓  343 [phone] › tests/e2e/journeys.spec.ts:280:5 › source links open safely and match the content data (20.3s)
+  ✓  387 [phone] › tests/e2e/post-merge-repairs.spec.ts:58:7 › landing anchors clear the sticky header at 390px (689ms)
+  ✓  388 [phone] › tests/e2e/post-merge-repairs.spec.ts:58:7 › landing anchors clear the sticky header at 768px (660ms)
+  ✓  389 [phone] › tests/e2e/post-merge-repairs.spec.ts:58:7 › landing anchors clear the sticky header at 1440px (666ms)
+  ✓  390 [phone] › tests/e2e/post-merge-repairs.spec.ts:79:5 › mobile menu Escape returns focus and its links still navigate (839ms)
+  -  394 [phone] › tests/e2e/rail.spec.ts:104:7 › desktop rail › 1: the section links stay pinned while scrolling, and still work
+  -  395 [phone] › tests/e2e/rail.spec.ts:155:7 › desktop rail › 2: mounting the field moves nothing
+  -  396 [phone] › tests/e2e/rail.spec.ts:184:7 › desktop rail › 3: the field mounts on desktop only, with the magnet only when motion is welcome
+  -  397 [phone] › tests/e2e/rail.spec.ts:203:7 › desktop rail › 4: the magnet never blocks the links
+  -  398 [phone] › tests/e2e/rail.spec.ts:222:7 › desktop rail › short desktop rail keeps every link and the toggle reachable
+  -  399 [phone] › tests/e2e/rail.spec.ts:245:7 › desktop rail › 5: wheel scrolling under a still pointer keeps the field drawing
+  -  400 [phone] › tests/e2e/rail.spec.ts:261:7 › desktop rail › 6: the visible canvas follows height-only resizes, and the pointer still moves the dots under it
+  -  401 [phone] › tests/e2e/rail.spec.ts:284:7 › desktop rail › 7: moved dots leave no trails once they are home
+  -  402 [phone] › tests/e2e/rail.spec.ts:298:5 › the field of the full one-page rail stays under the canvas size limit
+  ✓  391 [phone] › tests/e2e/post-merge-repairs.spec.ts:95:5 › company search stays in its directory and survives the example round trip (2.0s)
+  ✓  404 [phone] › tests/e2e/rail.spec.ts:329:5 › 8: no hero shows coordinates (446ms)
+  ✓  403 [phone] › tests/e2e/rail.spec.ts:320:5 › 3: phones get Contents, never the field (1.7s)
+  ✓  406 [phone] › tests/e2e/regressions.spec.ts:30:5 › R2: the filter follows navigation it did not make (343ms)
+  ✓  405 [phone] › tests/e2e/regressions.spec.ts:14:5 › R1: the demo server keeps no trace of typed search topics (1.4s)
+  ✓  407 [phone] › tests/e2e/regressions.spec.ts:41:5 › R3: on phones the example question comes before the side panel (244ms)
+  ✓  409 [phone] › tests/e2e/regressions.spec.ts:62:5 › R5: long unbroken topics never push the page sideways (462ms)
+  ✓  410 [phone] › tests/e2e/regressions.spec.ts:75:5 › R6: site-level speaker and signup actions use the current page context (316ms)
+  ✓  411 [phone] › tests/e2e/regressions.spec.ts:91:5 › R2b: library speaker actions include the related organization (240ms)
+  ✓  408 [phone] › tests/e2e/regressions.spec.ts:51:5 › R4: focus lands on the page heading after signup removes the opener (1.3s)
+  -  413 [phone] › tests/e2e/regressions.spec.ts:114:5 › I3-R1: the library filter stays readable at mid widths
+  ✓  414 [phone] › tests/e2e/regressions.spec.ts:130:5 › the filter docks under the header on wide screens, and phones get one summary row (640ms)
+  ✓  412 [phone] › tests/e2e/regressions.spec.ts:100:5 › R7: the demo still unlocks when session storage is blocked (1.2s)
+  ✓  415 [phone] › tests/e2e/regressions.spec.ts:147:5 › I3-R2: the phone menu does not reopen after navigating away and back (415ms)
+  ✓  416 [phone] › tests/e2e/ways-in.spec.ts:15:5 › the course door is the library, and old filter links still land there (333ms)
+  ✓  418 [phone] › tests/e2e/ways-in.spec.ts:47:7 › kinds of work read as one column at 320px (230ms)
+  ✓  417 [phone] › tests/e2e/ways-in.spec.ts:27:5 › each other door lists the connections its own way (500ms)
+  ✓  419 [phone] › tests/e2e/ways-in.spec.ts:47:7 › kinds of work read as one column at 390px (266ms)
+  ✘  393 [phone] › tests/e2e/post-merge-repairs.spec.ts:115:7 › role group jumps and example return preserve the directory (7.2s)
+  ✓  420 [phone] › tests/e2e/ways-in.spec.ts:62:5 › the quick bar appears past the doors, switches doors and hides again (675ms)
+  -  422 [phone] › tests/e2e/ways-in.spec.ts:157:5 › a quick-bar search wins over a console edit that is still waiting to apply
+  ✓  421 [phone] › tests/e2e/ways-in.spec.ts:85:5 › search from the quick bar filters the library and Escape closes it (664ms)
+  -  424 [phone] › tests/e2e/ways-in.spec.ts:208:5 › re-submitting the same search clears an abandoned console edit
+  -  423 [phone] › tests/e2e/ways-in.spec.ts:174:5 › door links also win over a waiting console edit, even when the page is slow
+(node:94761) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  425 [phone] › tests/e2e/ways-in.spec.ts:222:5 › the footer clears the bar at the bottom, even with a safe-area inset (324ms)
+  ✘  392 [phone] › tests/e2e/post-merge-repairs.spec.ts:115:7 › challenge group jumps and example return preserve the directory (8.1s)
+(node:94792) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  426 [phone] › tests/e2e/ways-in.spec.ts:246:7 › the course door and its quick bar pass axe with no sideways scroll (1.5s)
+  ✓  427 [phone] › tests/e2e/ways-in.spec.ts:246:7 › the challenge door and its quick bar pass axe with no sideways scroll (1.6s)
+  ✓  428 [phone] › tests/e2e/ways-in.spec.ts:106:5 › quick-bar navigation keeps the signup and noted searches when storage is blocked (1.6s)
+  ✓  430 [phone] › tests/e2e/ways-in.spec.ts:246:7 › the role door and its quick bar pass axe with no sideways scroll (1.8s)
+  ✓  429 [phone] › tests/e2e/ways-in.spec.ts:246:7 › the company door and its quick bar pass axe with no sideways scroll (1.9s)
+
+
+  1) [desktop] › tests/e2e/post-merge-repairs.spec.ts:115:7 › challenge group jumps and example return preserve the directory 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/connections\?by=challenge#library$/
+    Received string:  "http://localhost:3218/connections?by=challenge#library#library"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        - locator resolved to <html lang="en" class="ibm_plex_sans_fbfe13bd-module__imwjEq__variable ibm_plex_mono_b8c3c420-module__vGkobG__variable">…</html>
+        - unexpected value "http://localhost:3218/examples/ghgsat?from=challenge#ways-in"
+        13 × locator resolved to <html lang="en" class="ibm_plex_sans_fbfe13bd-module__imwjEq__variable ibm_plex_mono_b8c3c420-module__vGkobG__variable">…</html>
+           - unexpected value "http://localhost:3218/connections?by=challenge#library#library"
+
+
+      128 |     const back = page.getByRole("link", { name: mode === "role" ? "Back to kinds of work" : "Back to challenges" });
+      129 |     await back.click();
+    > 130 |     await expect(page).toHaveURL(new RegExp(`/connections\\?by=${mode}#library$`));
+          |                        ^
+      131 |   });
+      132 | }
+      133 |
+        at /Users/damianmatheson/Desktop/Claude Code/CitC/tests/e2e/post-merge-repairs.spec.ts:130:24
+
+    Error Context: test-results/post-merge-repairs-challen-b586a-turn-preserve-the-directory-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/post-merge-repairs-challen-b586a-turn-preserve-the-directory-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/post-merge-repairs-challen-b586a-turn-preserve-the-directory-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [desktop] › tests/e2e/post-merge-repairs.spec.ts:115:7 › role group jumps and example return preserve the directory 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/connections\?by=role#library$/
+    Received string:  "http://localhost:3218/connections?by=role#library#library"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        - locator resolved to <html lang="en" class="ibm_plex_sans_fbfe13bd-module__imwjEq__variable ibm_plex_mono_b8c3c420-module__vGkobG__variable">…</html>
+        - unexpected value "http://localhost:3218/examples/ghgsat?role=satellite-engineering&from=role#ways-in"
+        13 × locator resolved to <html lang="en" class="ibm_plex_sans_fbfe13bd-module__imwjEq__variable ibm_plex_mono_b8c3c420-module__vGkobG__variable">…</html>
+           - unexpected value "http://localhost:3218/connections?by=role#library#library"
+
+
+      128 |     const back = page.getByRole("link", { name: mode === "role" ? "Back to kinds of work" : "Back to challenges" });
+      129 |     await back.click();
+    > 130 |     await expect(page).toHaveURL(new RegExp(`/connections\\?by=${mode}#library$`));
+          |                        ^
+      131 |   });
+      132 | }
+      133 |
+        at /Users/damianmatheson/Desktop/Claude Code/CitC/tests/e2e/post-merge-repairs.spec.ts:130:24
+
+    Error Context: test-results/post-merge-repairs-role-gr-fee8c-turn-preserve-the-directory-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/post-merge-repairs-role-gr-fee8c-turn-preserve-the-directory-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/post-merge-repairs-role-gr-fee8c-turn-preserve-the-directory-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [phone] › tests/e2e/post-merge-repairs.spec.ts:115:7 › challenge group jumps and example return preserve the directory 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/connections\?by=challenge#library$/
+    Received string:  "http://localhost:3218/connections?by=challenge#library#library"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        - locator resolved to <html lang="en" class="ibm_plex_sans_fbfe13bd-module__imwjEq__variable ibm_plex_mono_b8c3c420-module__vGkobG__variable">…</html>
+        - unexpected value "http://localhost:3218/examples/ghgsat?from=challenge#ways-in"
+        13 × locator resolved to <html lang="en" class="ibm_plex_sans_fbfe13bd-module__imwjEq__variable ibm_plex_mono_b8c3c420-module__vGkobG__variable">…</html>
+           - unexpected value "http://localhost:3218/connections?by=challenge#library#library"
+
+
+      128 |     await link.click();
+      129 |     await expect(page).toHaveURL(new RegExp(`from=${mode}`));
+    > 130 |     await choosePart(page, "Ways in");
+          |                        ^
+      131 |     const back = page.getByRole("link", { name: mode === "role" ? "Back to kinds of work" : "Back to challenges" });
+      132 |     await back.click();
+      133 |     await expect(page).toHaveURL(new RegExp(`/connections\\?by=${mode}#library$`));
+        at /Users/damianmatheson/Desktop/Claude Code/CitC/tests/e2e/post-merge-repairs.spec.ts:130:24
+
+    Error Context: test-results/post-merge-repairs-challen-b586a-turn-preserve-the-directory-phone/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/post-merge-repairs-challen-b586a-turn-preserve-the-directory-phone/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/post-merge-repairs-challen-b586a-turn-preserve-the-directory-phone/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [phone] › tests/e2e/post-merge-repairs.spec.ts:115:7 › role group jumps and example return preserve the directory 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/connections\?by=role#library$/
+    Received string:  "http://localhost:3218/connections?by=role#library#library"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        - locator resolved to <html lang="en" class="ibm_plex_sans_fbfe13bd-module__imwjEq__variable ibm_plex_mono_b8c3c420-module__vGkobG__variable">…</html>
+        - unexpected value "http://localhost:3218/examples/ghgsat?role=satellite-engineering&from=role#ways-in"
+        13 × locator resolved to <html lang="en" class="ibm_plex_sans_fbfe13bd-module__imwjEq__variable ibm_plex_mono_b8c3c420-module__vGkobG__variable">…</html>
+           - unexpected value "http://localhost:3218/connections?by=role#library#library"
+
+
+      128 |     await link.click();
+      129 |     await expect(page).toHaveURL(new RegExp(`from=${mode}`));
+    > 130 |     await choosePart(page, "Ways in");
+          |                        ^
+      131 |     const back = page.getByRole("link", { name: mode === "role" ? "Back to kinds of work" : "Back to challenges" });
+      132 |     await back.click();
+      133 |     await expect(page).toHaveURL(new RegExp(`/connections\\?by=${mode}#library$`));
+        at /Users/damianmatheson/Desktop/Claude Code/CitC/tests/e2e/post-merge-repairs.spec.ts:130:24
+
+    Error Context: test-results/post-merge-repairs-role-gr-fee8c-turn-preserve-the-directory-phone/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/post-merge-repairs-role-gr-fee8c-turn-preserve-the-directory-phone/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/post-merge-repairs-role-gr-fee8c-turn-preserve-the-directory-phone/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4 failed
+    [desktop] › tests/e2e/post-merge-repairs.spec.ts:115:7 › challenge group jumps and example return preserve the directory 
+    [desktop] › tests/e2e/post-merge-repairs.spec.ts:115:7 › role group jumps and example return preserve the directory 
+    [phone] › tests/e2e/post-merge-repairs.spec.ts:115:7 › challenge group jumps and example return preserve the directory 
+    [phone] › tests/e2e/post-merge-repairs.spec.ts:115:7 › role group jumps and example return preserve the directory 
+  49 skipped
+  377 passed (3.6m)

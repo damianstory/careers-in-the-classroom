@@ -1,6 +1,6 @@
 import { defineConfig } from "@playwright/test";
 
-const PORT = 3200;
+const PORT = Number(process.env.CITC_E2E_PORT ?? 3200);
 
 // Uses the installed Google Chrome (no browser download) against the production build.
 export default defineConfig({

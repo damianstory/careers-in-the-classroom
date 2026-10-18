@@ -5,6 +5,52 @@
   padding-top: var(--space-8);
 }
 
+.companySearch {
+  margin-bottom: 24px;
+}
+
+.companySearch label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.companySearchControls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.companySearchControls input {
+  flex: 1 1 220px;
+  min-width: 0;
+  max-width: 480px;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-control);
+  background: var(--white);
+}
+
+.companySearchControls a,
+.groupJumps a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+.groupJumps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin-bottom: 32px;
+}
+
+.familyTitle[id] {
+  scroll-margin-top: calc(var(--header-h) + 24px);
+}
+
 .panelHead {
   display: flex;
   flex-wrap: wrap;

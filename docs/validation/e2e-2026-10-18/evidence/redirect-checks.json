@@ -1,0 +1,18 @@
+[
+  {
+    "from": "/examples?course=physics-30&unit=p30c#library",
+    "to": "https://careers-in-the-classroom.vercel.app/connections?course=physics-30&unit=p30c#library"
+  },
+  {
+    "from": "/search?course=chemistry-20&unit=c20c",
+    "to": "https://careers-in-the-classroom.vercel.app/connections?course=chemistry-20&unit=c20c"
+  },
+  {
+    "from": "/explore",
+    "to": "https://careers-in-the-classroom.vercel.app/connections"
+  },
+  {
+    "from": "/?topic=combustion#library",
+    "to": "https://careers-in-the-classroom.vercel.app/connections?topic=combustion#library"
+  }
+]

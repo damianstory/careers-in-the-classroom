@@ -23,3 +23,40 @@ export function parseDoor(params: Params): Door {
   const by = first(params.by);
   return DOORS.find((d) => d.id === by)?.id ?? "course";
 }
+
+export type BrowseOrigin = { door: Exclude<Door, "course">; company?: string };
+
+export function companyQuery(value: string | string[] | undefined): string {
+  return (first(value) ?? "").slice(0, 80);
+}
+
+// Only a named directory can be a return destination; never accept a redirect URL.
+export function parseBrowseOrigin(params: Params): BrowseOrigin | undefined {
+  const door = first(params.from);
+  if (door !== "company" && door !== "challenge" && door !== "role") return undefined;
+  const company = door === "company" ? companyQuery(params.company) : "";
+  return { door, ...(company ? { company } : {}) };
+}
+
+export function browseOriginQuery(origin?: BrowseOrigin): string {
+  if (!origin) return "";
+  const params = new URLSearchParams({ from: origin.door });
+  if (origin.door === "company" && origin.company) params.set("company", companyQuery(origin.company));
+  return params.toString();
+}
+
+export function browseReturnHref(origin?: BrowseOrigin): string {
+  if (!origin) return "/connections";
+  const params = new URLSearchParams(browseOriginQuery(origin));
+  params.delete("from");
+  params.set("by", origin.door);
+  return `/connections?${params}#library`;
+}
+
+export function withBrowseOrigin(href: string, origin: BrowseOrigin): string {
+  const [pathAndQuery, hash] = href.split("#");
+  const [path, query] = pathAndQuery.split("?");
+  const params = new URLSearchParams(query);
+  new URLSearchParams(browseOriginQuery(origin)).forEach((value, key) => params.set(key, value));
+  return `${path}?${params}${hash ? `#${hash}` : ""}`;
+}

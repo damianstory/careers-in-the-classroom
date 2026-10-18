@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useId, useState } from "react";
+import { useId, useRef, useState, useSyncExternalStore } from "react";
+import { exploreHref } from "@/lib/example-navigation";
 import { Icon, type IconName } from "@/components/Icon";
 import type { CompanyDoor, CourseDoor, RoleDoor } from "./data";
 import styles from "./home.module.css";
@@ -15,6 +16,14 @@ const tabs: { id: DoorId; label: string; hint: string; icon: IconName }[] = [
 ];
 
 const subjectOf = (name: string) => name.replace(/\s+\d+$/, "");
+const phoneQuery = "(max-width: 640px)";
+const subscribeOrientation = (changed: () => void) => {
+  const media = window.matchMedia(phoneQuery);
+  media.addEventListener("change", changed);
+  return () => media.removeEventListener("change", changed);
+};
+const phoneSnapshot = () => window.matchMedia(phoneQuery).matches;
+const serverSnapshot = () => false;
 
 // The launchpad: three ways into the same library. It only links; filtering lives in the library.
 export function Doors({
@@ -33,6 +42,8 @@ export function Doors({
   const [tab, setTab] = useState<DoorId>(initial);
   const [query, setQuery] = useState("");
   const id = useId();
+  const tabButtons = useRef<(HTMLButtonElement | null)[]>([]);
+  const vertical = useSyncExternalStore(subscribeOrientation, phoneSnapshot, serverSnapshot);
   const q = query.trim().toLowerCase();
   const shownCompanies = q
     ? companies.filter((c) => `${c.org} ${c.question} ${c.discipline}`.toLowerCase().includes(q))
@@ -41,17 +52,30 @@ export function Doors({
 
   return (
     <div className={styles.doors} data-tone={tone}>
-      <div role="tablist" aria-label="Start from" className={styles.doorTabs}>
-        {tabs.map((t) => (
+      <div role="tablist" aria-label="Start from" aria-orientation={vertical ? "vertical" : "horizontal"} className={styles.doorTabs}>
+        {tabs.map((t, index) => (
           <button
             key={t.id}
+            ref={(el) => { tabButtons.current[index] = el; }}
             type="button"
             role="tab"
             id={`${id}-${t.id}-tab`}
             aria-selected={tab === t.id}
+            tabIndex={tab === t.id ? 0 : -1}
             aria-controls={`${id}-${t.id}`}
             className={styles.doorTab}
             onClick={() => setTab(t.id)}
+            onKeyDown={(event) => {
+              let next: number;
+              if (event.key === "Home") next = 0;
+              else if (event.key === "End") next = tabs.length - 1;
+              else if (event.key === (vertical ? "ArrowDown" : "ArrowRight")) next = (index + 1) % tabs.length;
+              else if (event.key === (vertical ? "ArrowUp" : "ArrowLeft")) next = (index + tabs.length - 1) % tabs.length;
+              else return;
+              event.preventDefault();
+              setTab(tabs[next].id);
+              tabButtons.current[next]?.focus();
+            }}
           >
             <Icon name={t.icon} className={styles.doorTabIcon} />
             <span>
@@ -142,7 +166,7 @@ export function Doors({
                   {r.examples.map((e, i) => (
                     <span key={e.slug}>
                       {i > 0 && ", "}
-                      <Link href={`/examples/${e.slug}`}>{e.org}</Link>
+                      <Link href={exploreHref(e.slug, "", { role: r.id, section: "who" })}>{e.org}</Link>
                     </span>
                   ))}
                 </p>

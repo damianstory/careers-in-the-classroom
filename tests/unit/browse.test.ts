@@ -1,9 +1,34 @@
 import { describe, expect, it } from "vitest";
 import { examples } from "@/content";
 import { FAMILIES, THEMES, browseExamples, browseRoles, hasFamily } from "@/lib/browse";
-import { parseDoor } from "@/lib/doors";
+import { browseOriginQuery, browseReturnHref, companyQuery, parseBrowseOrigin, parseDoor, withBrowseOrigin } from "@/lib/doors";
 
 const all = browseExamples();
+
+describe("directory return paths", () => {
+  it("accepts only named directories, never a redirect destination", () => {
+    for (const from of ["https://example.com", "//example.com", "/admin", "course", ""]) {
+      expect(parseBrowseOrigin({ from })).toBeUndefined();
+    }
+    expect(browseReturnHref()).toBe("/connections");
+    expect(parseBrowseOrigin({ from: "role", company: "ignored" })).toEqual({ door: "role" });
+  });
+
+  it("keeps a bounded company search and role fragment through a round trip", () => {
+    const origin = parseBrowseOrigin({ from: ["company", "role"], company: "  Phil & Sebastian  " })!;
+    expect(companyQuery("x".repeat(100))).toHaveLength(80);
+    expect(new URLSearchParams(browseOriginQuery(origin)).get("company")).toBe("Phil & Sebastian");
+    const href = withBrowseOrigin("/examples/ghgsat?role=satellite-engineering#who", origin);
+    const url = new URL(href, "https://local.test");
+    expect(url.searchParams.get("role")).toBe("satellite-engineering");
+    expect(url.hash).toBe("#who");
+    const back = new URL(browseReturnHref(origin), "https://local.test");
+    expect(back.pathname).toBe("/connections");
+    expect(back.searchParams.get("by")).toBe("company");
+    expect(back.searchParams.get("company")).toBe("Phil & Sebastian");
+    expect(back.hash).toBe("#library");
+  });
+});
 
 describe("browse index", () => {
   it("covers every example with a theme and every role with a family", () => {

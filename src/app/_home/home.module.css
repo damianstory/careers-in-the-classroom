@@ -15,6 +15,10 @@
   font-variant-numeric: tabular-nums;
 }
 
+.landing section[id] {
+  scroll-margin-top: calc(var(--header-h) + 16px);
+}
+
 .landing ::selection {
   background: var(--green-tint-2);
   color: var(--ink);
