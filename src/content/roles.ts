@@ -6,7 +6,7 @@ export const roleProfiles: RoleProfile[] = [
   {
     id: "work-landscape-design",
     title: "Landscape design",
-    summary: "Shape outdoor spaces so water, habitat and human uses can work together..",
+    summary: "Shape outdoor spaces so water, habitat and human uses can work together.",
     explanation: "Shape outdoor spaces so water, habitat and human uses can work together.",
     tasks: [
       {
@@ -30,7 +30,7 @@ export const roleProfiles: RoleProfile[] = [
   {
     id: "work-environmental-field-assessment",
     title: "Environmental field assessment",
-    summary: "Collect and interpret evidence about a place before recommending an action..",
+    summary: "Collect and interpret evidence about a place before recommending an action.",
     explanation: "Collect and interpret evidence about a place before recommending an action.",
     tasks: [
       {
@@ -54,7 +54,7 @@ export const roleProfiles: RoleProfile[] = [
   {
     id: "work-structural-engineering",
     title: "Structural engineering",
-    summary: "Work out how a structure transfers loads through members and connections to its supports..",
+    summary: "Work out how a structure transfers loads through members and connections to its supports.",
     explanation: "Work out how a structure transfers loads through members and connections to its supports.",
     tasks: [
       {
@@ -78,7 +78,7 @@ export const roleProfiles: RoleProfile[] = [
   {
     id: "work-civil-and-construction-technology",
     title: "Civil and construction technology",
-    summary: "Turn project requirements into usable drawings, quantities and checks..",
+    summary: "Turn project requirements into usable drawings, quantities and checks.",
     explanation: "Turn project requirements into usable drawings, quantities and checks.",
     tasks: [
       {
@@ -102,7 +102,7 @@ export const roleProfiles: RoleProfile[] = [
   {
     id: "work-construction-coordination",
     title: "Construction coordination",
-    summary: "Help different teams work from compatible information and an achievable sequence..",
+    summary: "Help different teams work from compatible information and an achievable sequence.",
     explanation: "Help different teams work from compatible information and an achievable sequence.",
     tasks: [
       {
@@ -126,7 +126,7 @@ export const roleProfiles: RoleProfile[] = [
   {
     id: "work-roast-production",
     title: "Roast production",
-    summary: "Operate a controlled food-processing sequence and compare the product with its intended result..",
+    summary: "Operate a controlled food-processing sequence and compare the product with its intended result.",
     explanation: "Operate a controlled food-processing sequence and compare the product with its intended result.",
     tasks: [
       {
@@ -150,7 +150,7 @@ export const roleProfiles: RoleProfile[] = [
   {
     id: "work-storyboarding-and-illustration",
     title: "Storyboarding and illustration",
-    summary: "Decide what an audience needs to see before the final sequence is produced..",
+    summary: "Decide what an audience needs to see before the final sequence is produced.",
     explanation: "Decide what an audience needs to see before the final sequence is produced.",
     tasks: [
       {
@@ -174,7 +174,7 @@ export const roleProfiles: RoleProfile[] = [
   {
     id: "work-animation",
     title: "Animation",
-    summary: "Create motion from planned images, models and timing decisions..",
+    summary: "Create motion from planned images, models and timing decisions.",
     explanation: "Create motion from planned images, models and timing decisions.",
     tasks: [
       {
@@ -198,7 +198,7 @@ export const roleProfiles: RoleProfile[] = [
   {
     id: "work-creative-production-coordination",
     title: "Creative production coordination",
-    summary: "Help a project move from a communication brief to a deliverable that can be reviewed..",
+    summary: "Help a project move from a communication brief to a deliverable that can be reviewed.",
     explanation: "Help a project move from a communication brief to a deliverable that can be reviewed.",
     tasks: [
       {
@@ -222,7 +222,7 @@ export const roleProfiles: RoleProfile[] = [
   {
     id: "work-rail-traffic-control",
     title: "Rail traffic control",
-    summary: "Coordinate railway movements and crews within formal operating systems and rules..",
+    summary: "Coordinate railway movements and crews within formal operating systems and rules.",
     explanation: "Coordinate railway movements and crews within formal operating systems and rules.",
     tasks: [
       {
@@ -246,7 +246,7 @@ export const roleProfiles: RoleProfile[] = [
   {
     id: "work-railway-conductor-work",
     title: "Railway conductor work",
-    summary: "Support train movements and handling of rail vehicles through trained railway operations..",
+    summary: "Support train movements and handling of rail vehicles through trained railway operations.",
     explanation: "Support train movements and handling of rail vehicles through trained railway operations.",
     tasks: [
       {
@@ -270,7 +270,7 @@ export const roleProfiles: RoleProfile[] = [
   {
     id: "work-water-resource-planning",
     title: "Water-resource planning",
-    summary: "Compare water availability, demand and possible responses over time..",
+    summary: "Compare water availability, demand and possible responses over time.",
     explanation: "Compare water availability, demand and possible responses over time.",
     tasks: [
       {
@@ -294,7 +294,7 @@ export const roleProfiles: RoleProfile[] = [
   {
     id: "work-planning-communication-and-engagement",
     title: "Planning communication and engagement",
-    summary: "Help people with different needs understand and contribute to a planning process..",
+    summary: "Help people with different needs understand and contribute to a planning process.",
     explanation: "Help people with different needs understand and contribute to a planning process.",
     tasks: [
       {
@@ -318,7 +318,7 @@ export const roleProfiles: RoleProfile[] = [
   {
     id: "work-water-treatment-operations",
     title: "Water-treatment operations",
-    summary: "Keep a treatment process working within its specified conditions and record how it performs..",
+    summary: "Keep a treatment process working within its specified conditions and record how it performs.",
     explanation: "Keep a treatment process working within its specified conditions and record how it performs.",
     tasks: [
       {
@@ -342,7 +342,7 @@ export const roleProfiles: RoleProfile[] = [
   {
     id: "work-building-science-investigation",
     title: "Building-science investigation",
-    summary: "Investigate how a building enclosure manages heat, air and water..",
+    summary: "Investigate how a building enclosure manages heat, air and water.",
     explanation: "Investigate how a building enclosure manages heat, air and water.",
     tasks: [
       {
@@ -366,7 +366,7 @@ export const roleProfiles: RoleProfile[] = [
   {
     id: "work-commercial-baking",
     title: "Commercial baking",
-    summary: "Produce baked goods through a controlled sequence of preparation, processing and handling..",
+    summary: "Produce baked goods through a controlled sequence of preparation, processing and handling.",
     explanation: "Produce baked goods through a controlled sequence of preparation, processing and handling.",
     tasks: [
       {
@@ -390,7 +390,7 @@ export const roleProfiles: RoleProfile[] = [
   {
     id: "work-camera-and-image-capture",
     title: "Camera and image capture",
-    summary: "Record images that serve a production’s visual and storytelling requirements..",
+    summary: "Record images that serve a production’s visual and storytelling requirements.",
     explanation: "Record images that serve a production’s visual and storytelling requirements.",
     tasks: [
       {
@@ -414,7 +414,7 @@ export const roleProfiles: RoleProfile[] = [
   {
     id: "work-film-and-video-editing",
     title: "Film and video editing",
-    summary: "Build a sequence from selected footage to communicate a coherent idea..",
+    summary: "Build a sequence from selected footage to communicate a coherent idea.",
     explanation: "Build a sequence from selected footage to communicate a coherent idea.",
     tasks: [
       {
@@ -438,7 +438,7 @@ export const roleProfiles: RoleProfile[] = [
   {
     id: "work-colour-finishing",
     title: "Colour finishing",
-    summary: "Work on the appearance and consistency of images during post-production..",
+    summary: "Work on the appearance and consistency of images during post-production.",
     explanation: "Work on the appearance and consistency of images during post-production.",
     tasks: [
       {
