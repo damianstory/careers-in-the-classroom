@@ -76,13 +76,13 @@ describe("exampleContext", () => {
     const d = exampleContext("e3-lithium", { courseId: "chemistry-20", unitId: "c20d" });
     expect(c?.label).toBe("Chemistry 20 · Matter as solutions, acids and bases");
     expect(d?.label).toBe("Chemistry 20 · Quantitative relationships in chemical changes");
-    expect(d?.backHref).toBe("/?course=chemistry-20&unit=c20d#library");
+    expect(d?.backHref).toBe("/examples?course=chemistry-20&unit=c20d#library");
   });
 
   it("keeps a typed topic through the round trip", () => {
     const ctx = exampleContext("wilder-institute", { courseId: "biology-20", unitId: "other", topic: "owl recovery" });
     expect(ctx?.label).toBe("Biology 20 · owl recovery");
-    expect(ctx?.backHref).toBe("/?course=biology-20&topic=owl+recovery#library");
+    expect(ctx?.backHref).toBe("/examples?course=biology-20&topic=owl+recovery#library");
   });
 
   it("shows no why-match when the example is not in the resolved results", () => {

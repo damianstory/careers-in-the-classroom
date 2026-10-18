@@ -1,7 +1,7 @@
 import { courses, examples, getDetails, getOrganization, roleProfiles } from "@/content";
 import { exampleImages } from "@/content/example-images";
 
-// Server-side summaries for the landing page prototypes. Everything here is derived from the
+// Server-side summaries for the home page. Everything here is derived from the
 // existing example records, so the three doors (class, company, role) can never disagree with
 // the library. The doors only link into the library and example pages; they do not filter.
 
@@ -19,7 +19,7 @@ export interface CompanyDoor {
   discipline: string;
   local: string;
   /** The organization's own logo where we hold one; otherwise a monogram is drawn. */
-  logo?: { src: string; alt: string; width: number; height: number };
+  logo?: { src: string; width: number; height: number; onDark: boolean };
   monogram: string;
   href: string;
 }
@@ -45,7 +45,7 @@ export const courseDoors: CourseDoor[] = courses.map((c) => ({
   id: c.id,
   name: c.name,
   count: examples.filter((e) => e.courses.some((f) => f.course === c.name)).length,
-  href: `/?course=${c.id}#library`,
+  href: `/examples?course=${c.id}#library`,
 }));
 
 export const companyDoors: CompanyDoor[] = examples
@@ -57,7 +57,7 @@ export const companyDoors: CompanyDoor[] = examples
       question: e.question,
       discipline: e.discipline,
       local: e.localShort,
-      logo: org?.logo ? { src: org.logo.src, alt: org.logo.alt, width: org.logo.width, height: org.logo.height } : undefined,
+      logo: org?.logo ? { src: org.logo.src, width: org.logo.width, height: org.logo.height, onDark: org.logo.onDark } : undefined,
       monogram: monogram(e.org),
       href: `/examples/${e.slug}`,
     };
@@ -96,5 +96,3 @@ export const getLandingExample = (slug: string) => {
   };
 };
 
-/** A spread of subjects for "pick one to try" rows. */
-export const sampleSlugs = ["ghgsat", "phil-sebastian", "wilder-institute", "avmax", "nanalysis", "o2-planning-design"];

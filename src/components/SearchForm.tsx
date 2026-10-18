@@ -22,7 +22,7 @@ export const describeFilter = (f: LibraryFilter) =>
     .filter(Boolean)
     .join(" · ");
 
-// The library filter. Base: a plain GET form to "/" that works before hydration and without JS.
+// The library filter. Base: a plain GET form to "/examples" that works before hydration and without JS.
 // With JS it applies on change, keeps scroll and focus, and writes the filter to the URL.
 export function SearchForm({ filter, count }: { filter: LibraryFilter; count: number }) {
   const router = useRouter();
@@ -67,7 +67,7 @@ export function SearchForm({ filter, count }: { filter: LibraryFilter; count: nu
       const clean = { courseId: next.courseId || undefined, unitId: next.unitId || undefined, topic: next.topic?.trim() || undefined };
       setSent(clean);
       const q = filterQuery(clean);
-      const href = q ? `/?${q}` : "/";
+      const href = q ? `/examples?${q}` : "/examples";
       startTransition(() => (push ? router.push(href, { scroll: false }) : router.replace(href, { scroll: false })));
     }, delay);
   };
@@ -91,7 +91,7 @@ export function SearchForm({ filter, count }: { filter: LibraryFilter; count: nu
       <div className={styles.console}>
         <form
           ref={formRef}
-          action="/"
+          action="/examples"
           method="get"
           className={styles.bar}
           aria-label="Filter examples"
@@ -202,7 +202,7 @@ export function SearchForm({ filter, count }: { filter: LibraryFilter; count: nu
                   {course.name}: {ready.length} of {units.length} units ready
                 </p>
               )}
-              <Link href="/#library" scroll={false} className={styles.clear}>Clear</Link>
+              <Link href="/examples#library" scroll={false} className={styles.clear}>Clear</Link>
             </div>
           )}
         </form>

@@ -8,7 +8,7 @@ const FIRST_CARDS = Math.min(examples.length, 12);
 for (const activation of ["click", "keyboard"] as const) {
   test(`Show more preserves the reading position on ${activation}`, async ({ page, requests }) => {
     void requests;
-    for (const path of ["/", "/?topic=combustion#library"]) {
+    for (const path of ["/examples", "/examples?topic=combustion#library"]) {
       await page.goto(path, { waitUntil: "networkidle" });
       const cards = page.locator('main a[href^="/examples/"]');
       await expect(cards).toHaveCount(FIRST_CARDS);
@@ -35,11 +35,11 @@ for (const activation of ["click", "keyboard"] as const) {
 
 test("course and unit filter the library in place → example → back", async ({ page, requests }) => {
   void requests;
-  await page.goto("/", { waitUntil: "networkidle" });
+  await page.goto("/examples", { waitUntil: "networkidle" });
   await page.locator("#filter-course").selectOption("physics-30");
-  await expect(page).toHaveURL(/\/\?course=physics-30$/);
+  await expect(page).toHaveURL(/\/examples\?course=physics-30$/);
   await page.locator("#filter-unit").selectOption("p30c");
-  await expect(page).toHaveURL(/\/\?course=physics-30&unit=p30c$/);
+  await expect(page).toHaveURL(/\/examples\?course=physics-30&unit=p30c$/);
   await expect(page.getByRole("heading", { level: 2, name: "Fits Electromagnetic radiation" })).toBeVisible();
   // Four examples prepared for the unit, plus one more Physics 30 example under "Also fits".
   await expect(page.getByRole("status").first()).toHaveText("5 matching");
@@ -49,15 +49,15 @@ test("course and unit filter the library in place → example → back", async (
   await expect(page.getByText("Why this matches Physics 30 · Electromagnetic radiation")).toBeVisible();
 
   await page.getByRole("link", { name: "Back to results" }).click();
-  await expect(page).toHaveURL(/\/\?course=physics-30&unit=p30c#library$/);
+  await expect(page).toHaveURL(/\/examples\?course=physics-30&unit=p30c#library$/);
   await expect(page.locator("#filter-unit")).toHaveValue("p30c");
 });
 
 test("Back and Forward restore the filter", async ({ page, requests }) => {
   void requests;
-  await page.goto("/?course=physics-30&unit=p30c");
+  await page.goto("/examples?course=physics-30&unit=p30c");
   await page.getByRole("link", { name: "Clear" }).click();
-  await expect(page).toHaveURL(/\/(#library)?$/);
+  await expect(page).toHaveURL(/\/examples(#library)?$/);
   await expect(page.locator("#filter-course")).toHaveValue("");
   await page.goBack();
   await expect(page.locator("#filter-course")).toHaveValue("physics-30");
@@ -70,7 +70,7 @@ test("Chemistry 20 units keep their own label through the library, example and b
     ["c20c", "Matter as solutions, acids and bases"],
     ["c20d", "Quantitative relationships in chemical changes"],
   ]) {
-    await page.goto(`/?course=chemistry-20&unit=${unit}`);
+    await page.goto(`/examples?course=chemistry-20&unit=${unit}`);
     await expect(page.getByRole("heading", { level: 2, name: `Fits ${label}` })).toBeVisible();
     await page.getByRole("link", { name: "How do you separate something valuable from a complex liquid?" }).click();
     await expect(page.getByText(`Why this matches Chemistry 20 · ${label}`)).toBeVisible();
@@ -81,24 +81,24 @@ test("Chemistry 20 units keep their own label through the library, example and b
 
 test("a typed topic keeps its label through the round trip", async ({ page, requests }) => {
   void requests;
-  await page.goto("/", { waitUntil: "networkidle" });
+  await page.goto("/examples", { waitUntil: "networkidle" });
   await page.locator("#filter-course").selectOption("biology-20");
   await expect(page).toHaveURL(/course=biology-20/);
   await page.locator("#filter-topic").fill("owl recovery");
   await page.locator("#filter-topic").press("Enter");
-  await expect(page).toHaveURL(/\/\?course=biology-20&topic=owl\+recovery$/);
+  await expect(page).toHaveURL(/\/examples\?course=biology-20&topic=owl\+recovery$/);
   await expect(page.getByRole("heading", { level: 2, name: "Fits “owl recovery” in Biology 20" })).toBeVisible();
   await page.getByRole("link", { name: "Can helping individual owls help a population recover?" }).click();
   await expect(page.getByText("Why this matches Biology 20 · owl recovery")).toBeVisible();
   await page.getByRole("link", { name: "Back to results" }).click();
-  await expect(page).toHaveURL(/\/\?course=biology-20&topic=owl\+recovery#library$/);
+  await expect(page).toHaveURL(/\/examples\?course=biology-20&topic=owl\+recovery#library$/);
   await expect(page.locator("#filter-topic")).toHaveValue("owl recovery");
 });
 
 test("a typed Biology 30 topic shows the Calgary example and keeps the outside research labelled", async ({ page, requests }) => {
   void requests;
   // Northern RNA now gives this topic a Calgary example; the recent development stays marked as outside research.
-  await page.goto("/?course=biology-30&topic=DNA+replication");
+  await page.goto("/examples?course=biology-30&topic=DNA+replication");
   await expect(page.getByRole("heading", { level: 2, name: "Fits “DNA replication” in Biology 30" })).toBeVisible();
   await expect(page.getByText("No Calgary example is prepared for this topic yet.")).toHaveCount(0);
   await expect(page.getByRole("link", { name: "How do you make biological material consistently from batch to batch?" }).first()).toBeVisible();
@@ -108,7 +108,7 @@ test("a typed Biology 30 topic shows the Calgary example and keeps the outside r
 
 test("a course alone shows its examples and how many units are ready", async ({ page, requests }) => {
   void requests;
-  await page.goto("/?course=physics-30");
+  await page.goto("/examples?course=physics-30");
   await expect(page.getByRole("heading", { level: 2, name: "In Physics 30" })).toBeVisible();
   await expect(page.getByText("Physics 30: 2 of 4 units ready")).toBeVisible();
   await expect(page.locator("#filter-unit optgroup")).toHaveCount(2);
@@ -116,7 +116,7 @@ test("a course alone shows its examples and how many units are ready", async ({ 
 });
 
 test("a unit without an example gets the honest banner and the closest fits", async ({ page, requests }) => {
-  await page.goto("/?course=science-20&unit=s20a");
+  await page.goto("/examples?course=science-20&unit=s20a");
   await expect(page.getByText("No prepared example for “Chemical changes” in Science 20 yet.")).toBeVisible();
   const closest = page.getByRole("region", { name: "Closest examples" });
   await expect(closest.getByRole("link", { name: "How do you separate something valuable from a complex liquid?" })).toBeVisible();
@@ -131,7 +131,7 @@ test("a unit without an example gets the honest banner and the closest fits", as
 
 test("a topic with no match anywhere still leaves examples to browse", async ({ page, requests }) => {
   void requests;
-  await page.goto("/?topic=combustion");
+  await page.goto("/examples?topic=combustion");
   await expect(page.getByText("No prepared example for “combustion” yet.")).toBeVisible();
   await expect(page.getByRole("heading", { level: 2, name: "Other examples" })).toBeVisible();
   await expect(page.getByRole("heading", { level: 3 })).toHaveCount(FIRST_CARDS);
@@ -139,7 +139,7 @@ test("a topic with no match anywhere still leaves examples to browse", async ({ 
 });
 
 test("examples are open; only recent developments wait for the demo signup", async ({ page, requests }) => {
-  await page.goto("/?course=physics-30&unit=p30c");
+  await page.goto("/examples?course=physics-30&unit=p30c");
   await expect(page.getByText("free preview")).toHaveCount(0);
   await expect(page.getByText("Free with signup")).toBeVisible();
   await page.getByRole("button", { name: "Sign up free to open" }).click();
@@ -158,7 +158,7 @@ test("examples are open; only recent developments wait for the demo signup", asy
 });
 
 test("speaker requests are prefilled and send nothing", async ({ page, requests }, info) => {
-  await page.goto("/?course=physics-30&unit=p30c");
+  await page.goto("/examples?course=physics-30&unit=p30c");
   const header = page.getByRole("banner");
   if (info.project.name === "phone") await header.getByRole("button", { name: "Menu" }).click();
   await header.getByRole("button", { name: "Request a speaker" }).click();
@@ -183,7 +183,7 @@ test("speaker requests are prefilled and send nothing", async ({ page, requests 
 
 test("dialogs work with the keyboard and return focus", async ({ page, requests }) => {
   void requests;
-  await page.goto("/?course=physics-30&unit=p30c", { waitUntil: "networkidle" });
+  await page.goto("/examples?course=physics-30&unit=p30c", { waitUntil: "networkidle" });
   const opener = page.getByRole("button", { name: "Sign up free to open" });
   await opener.focus();
   await page.keyboard.press("Enter");
@@ -195,22 +195,49 @@ test("dialogs work with the keyboard and return focus", async ({ page, requests 
   await expect(opener).toBeFocused();
 });
 
-test("old search and Explore links land on the library", async ({ page, requests }) => {
+test("old search, Explore and filtered home links land on the library", async ({ page, requests }) => {
   void requests;
   await page.goto("/explore");
-  await expect(page).toHaveURL(/\/$/);
+  await expect(page).toHaveURL(/\/examples$/);
   await expect(page.getByRole("heading", { level: 2, name: "Real problems Calgary organizations are working on" })).toBeVisible();
   await expect(page.getByRole("heading", { level: 3 })).toHaveCount(FIRST_CARDS);
   await page.goto("/search?course=chemistry-20&unit=c20c");
-  await expect(page).toHaveURL(/\/\?course=chemistry-20&unit=c20c$/);
+  await expect(page).toHaveURL(/\/examples\?course=chemistry-20&unit=c20c$/);
   await expect(page.getByRole("heading", { level: 2, name: "Fits Matter as solutions, acids and bases" })).toBeVisible();
+  const res = await page.request.get("/?course=physics-30&unit=p30c", { maxRedirects: 0 });
+  expect(res.status()).toBe(307);
+  expect(res.headers().location).toBe("/examples?course=physics-30&unit=p30c");
+  await page.goto("/?topic=combustion#library");
+  await expect(page).toHaveURL(/\/examples\?topic=combustion#library$/);
+});
+
+test("the home page explains the project and opens the library three ways", async ({ page, requests }, info) => {
+  void requests;
+  await page.goto("/", { waitUntil: "networkidle" });
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("Show your class who in Calgary");
+  await expect(page.getByText(/Prototype/)).toHaveCount(0);
+  const start = page.locator("#start");
+  await start.getByRole("tab", { name: /A company/ }).click();
+  const logos = start.locator('a[href^="/examples/"] img');
+  await expect(logos).toHaveCount(examples.length);
+  for (const src of await logos.evaluateAll((imgs) => imgs.map((i) => (i as HTMLImageElement).currentSrc))) {
+    expect(src).toMatch(/\/images\/logos\/[a-z0-9-]+\.(svg|png)$/);
+  }
+  await expect.poll(() => logos.evaluateAll((imgs) => imgs.every((i) => (i as HTMLImageElement).naturalWidth > 0))).toBe(true);
+  await start.getByRole("tab", { name: /My class/ }).click();
+  await start.getByRole("link", { name: /Physics 30/ }).click();
+  await expect(page).toHaveURL(/\/examples\?course=physics-30#library$/);
+  await expect(page.locator("#filter-course")).toHaveValue("physics-30");
+  if (info.project.name !== "phone") {
+    await expect(page.getByRole("navigation", { name: "Main", exact: true }).getByRole("link", { name: "Examples" })).toHaveAttribute("aria-current", "page");
+  }
 });
 
 test.describe("without JavaScript", () => {
   test.use({ javaScriptEnabled: false });
   test("the filter still works as a plain form", async ({ page, requests }) => {
     void requests;
-    await page.goto("/");
+    await page.goto("/examples");
     await page.locator("#filter-course").selectOption("physics-30");
     await page.getByRole("button", { name: "Show examples" }).click();
     await expect(page).toHaveURL(/course=physics-30/);
@@ -235,7 +262,7 @@ test("Wilder pathways distinguish introductory care from veterinary medicine", a
   await expect(page.getByText("Veterinary Technical Assistant", { exact: true })).toBeVisible();
   await expect(page.getByText(/Not direct entry from high school/)).toBeVisible();
   await expect(page.getByText(/does not provide direct entry to a DVM/)).toBeVisible();
-  await expect(page.getByRole("link", { name: "All examples" }).first()).toHaveAttribute("href", "/");
+  await expect(page.getByRole("link", { name: "All examples" }).first()).toHaveAttribute("href", "/examples");
   await expect(page.getByText(/^Why this matches/)).toHaveCount(0);
 });
 
@@ -243,7 +270,7 @@ test("source links open safely and match the content data", async ({ page, reque
   void requests;
   const known = new Set([...examples.flatMap((e) => e.sources), ...news.flatMap((n) => n.sources), ...registry].map((s) => s.url));
   await page.addInitScript(() => sessionStorage.setItem("citc.signedUp", "1"));
-  const pages = [...examples.map((e) => `/examples/${e.slug}`), "/?course=physics-30&unit=p30c", "/digest"];
+  const pages = [...examples.map((e) => `/examples/${e.slug}`), "/examples?course=physics-30&unit=p30c", "/digest"];
   for (const path of pages) {
     // The signed-up state is read after hydration, so wait for it before counting source links.
     await page.goto(path, { waitUntil: "networkidle" });

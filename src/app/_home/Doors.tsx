@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useId, useState } from "react";
 import { Icon, type IconName } from "@/components/Icon";
 import type { CompanyDoor, CourseDoor, RoleDoor } from "./data";
-import styles from "./landing.module.css";
+import styles from "./home.module.css";
 
 export type DoorId = "class" | "company" | "role";
 
@@ -104,7 +104,7 @@ export function Doors({
             {shownCompanies.map((c) => (
               <li key={c.slug}>
                 <Link href={c.href} className={styles.companyRow}>
-                  <span className={styles.logoBox} aria-hidden="true">
+                  <span className={styles.logoBox} data-plate={c.logo?.onDark ? "dark" : "light"} aria-hidden="true">
                     {c.logo ? (
                       // Official identification logos are shown as they are, never resampled.
                       // eslint-disable-next-line @next/next/no-img-element
@@ -131,7 +131,7 @@ export function Doors({
           <ul className={styles.roleList}>
             {roles.map((r) => (
               <li key={r.id} className={styles.roleRow}>
-                <div className={styles.roleText}>
+                <div>
                   <p className={styles.roleTitle}>{r.title}</p>
                   <p className={styles.roleSummary}>{r.summary}</p>
                 </div>

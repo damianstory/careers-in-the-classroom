@@ -1,7 +1,9 @@
 # Landing page directions (18 October 2026)
 
-Prototypes live at `/landing` (index), `/landing/a`, `/landing/b`, `/landing/c` and `/landing/about`.
-The current home (`/`) is unchanged. A yellow review bar at the top of each prototype switches between them.
+**Outcome (18 October 2026):** Damian chose A. It is now the home page (`/`), the library moved to `/examples`, and
+the company list shows every organization's logo. Build plan: `docs/build/PLAN-landing-a.md`. The prototype routes were
+removed after the build; the screenshots below record them. Built pages: `built-home-desk.jpg`, `built-home-mob.jpg`,
+`built-doors-company-desk.jpg`, `built-doors-company-mob.jpg`, `built-examples-desk.jpg`, `built-examples-mob.jpg`.
 
 ## Should visitors still land straight in the library?
 
@@ -38,7 +40,7 @@ actually gets. Keep C's "New here?" primer as the fallback if you'd rather chang
 
 ## Content gaps the prototypes expose
 
-- Only 3 of 32 organizations have a logo on file (GHGSat, Wilder Institute, E3 Lithium). The company list falls back to monograms; collecting logos would make that list much easier to scan.
+- Only 3 of 32 organizations had a logo on file when the prototypes were made. All 32 have one now (see the repository README's logo sources).
 - Chemistry 30, Science 20 and Biology 30 have only one or two examples each, which shows clearly on the "My class" tab.
 - The "Why it matters" copy is our framing, not sourced research. If you want numbers there, they need sources.
 

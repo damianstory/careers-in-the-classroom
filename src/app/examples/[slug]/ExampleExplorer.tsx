@@ -119,7 +119,7 @@ export function ExampleExplorer({ e, details, views, ctx, state, navKey, news, s
           <div className={styles.railFx} aria-hidden="true">
             <RailField />
           </div>
-          <Link href={ctx?.backHref ?? "/"} className={styles.back}>
+          <Link href={ctx?.backHref ?? "/examples"} className={styles.back}>
             <Icon name="arrowLeft" small />
             {ctx ? "Back to results" : "All examples"}
           </Link>
@@ -263,7 +263,7 @@ function FitsPanel({ e, ctx }: { e: Example; ctx: ExampleContext | null }) {
     <div className={styles.fits}>
       <div className={styles.fitsHead}>
         <p className={`eyebrow eyebrow-muted ${base.marked}`}>Where it fits</p>
-        <Link href="/#library" className={styles.pickClass}>
+        <Link href="/examples#library" className={styles.pickClass}>
           Pick your class
           <Icon name="arrowRight" small />
         </Link>
