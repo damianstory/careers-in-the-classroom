@@ -35,7 +35,7 @@ export function buildFrames(e: Example, details: ExampleDetails | undefined, vie
           return <div key={id}><h3>{role.title}</h3><p>{role.classroomConnection || role.summary}</p>{searchTitles(id).length > 0 && <p><strong>Search for:</strong> {searchTitles(id)[0]}</p>}<p className={styles.projectEvidence}>{evidence?.label ?? "Related work at another employer"}</p></div>;
         }) : e.roles.map((role) => <div key={role.title}><h3>{role.title}</h3><p>{role.note}</p><p>{role.evidence}</p></div>)}
       </div>
-      <p>{details ? <>Each card says what is documented at {e.org}. Searching these titles finds related {SEARCH_LOCATION} postings, not openings at {e.org}.</> : e.rolesNote}</p>
+      <p>{details ? <>Searching these titles finds related {SEARCH_LOCATION} postings, not openings at {e.org}.</> : e.rolesNote}</p>
     </>;
     if (part === "ways-in") {
       const role = details && selection.role ? getRoleProfile(selection.role) : undefined;

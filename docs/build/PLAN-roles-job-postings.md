@@ -14,7 +14,7 @@ A teacher projecting "Who does this work" can, in under a minute, show students 
 3. A selected role's "Job postings" section always offers live searches (Job Bank and Indeed, location "Calgary, AB") for each title, labelled as unchecked related work, not openings at the organization.
 4. Saved, dated job examples keep their current behaviour and status labels, in their own "Saved job examples" region. The empty "No saved job examples" box shows only when a role has neither saved examples nor search titles.
 5. Outbound search links use `target=_blank`, `rel="noopener noreferrer"`, `referrerPolicy="no-referrer"` and carry no course/unit/topic context (existing privacy e2e test).
-6. The full-screen "Show your class" Who frame shows each role's lead title ("Search for: …") and a one-sentence footer that searching these titles finds related Calgary postings, not openings at the organization (replacing the longer two-sentence footer, so every Who frame still fits 1440×900). Live links stay on the page, not the projector, since a projected link is not clickable for students.
+6. The full-screen "Show your class" Who frame shows each role's lead title ("Search for: …") and a one-sentence footer (each card keeps its own evidence line) saying that searching these titles finds related Calgary postings, not openings at the organization (replacing the longer two-sentence footer, so every Who frame still fits 1440×900). Live links stay on the page, not the projector, since a projected link is not clickable for students.
 7. Fix the 19 role summaries in `calgary-october-17.ts` that end in "..", which also made the role page repeat the summary as its explanation.
 
 ## Approach
