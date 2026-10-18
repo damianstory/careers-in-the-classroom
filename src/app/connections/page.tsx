@@ -4,11 +4,15 @@ import { PageDialogContext } from "@/components/dialogs/DialogProvider";
 import { ExampleCard } from "@/components/ExampleCard";
 import { SearchForm } from "@/components/SearchForm";
 import { examples, getNews, news } from "@/content";
-import { buildLibrary, courseOptions, parseFilter, type LibraryItem } from "@/lib/library";
+import { parseDoor } from "@/lib/doors";
+import { buildLibrary, courseOptions, filterQuery, parseFilter, type LibraryItem } from "@/lib/library";
 import { checkedRange } from "@/lib/job-status";
 import heroImage from "../../../public/images/hero-calgary-dither-green.png";
+import { QuickBar } from "./QuickBar";
+import { ChallengePanel, CompanyPanel, Doors, RolePanel } from "./WaysIn";
 import { NewsCard, NoMatchRecorder, NoteTopic, ShowMore, SignupStrip, UnmatchedList } from "./LibraryParts";
 import styles from "./home.module.css";
+import ways from "./ways-in.module.css";
 
 function Item({ item, label }: { item: LibraryItem; label?: string }) {
   if (item.type === "example") return <ExampleCard e={item.example} href={item.href} why={item.why} />;
@@ -34,9 +38,15 @@ function Item({ item, label }: { item: LibraryItem; label?: string }) {
 
 export const metadata: Metadata = { title: "Connections" };
 
-// The library of connections: a short dark hero with the search console on its edge, and the cards right below.
+// The library of connections: a short dark hero with four ways in. The course door has the search
+// console on the hero's edge and the cards right below; the other doors list the same connections
+// by challenge, by organization or by kind of work.
 export default async function Connections({ searchParams }: PageProps<"/connections">) {
-  const lib = buildLibrary(parseFilter(await searchParams));
+  const params = await searchParams;
+  const door = parseDoor(params);
+  const lib = buildLibrary(parseFilter(params));
+  const query = filterQuery(lib.filter);
+  const courseHref = door === "course" && query ? `/connections?${query}` : "/connections";
   const filtered = !!(lib.course || lib.filter.topic);
   // Dialogs name the organization only when it is the prepared match; news-only matches have none.
   const firstFit = lib.sections.find((s) => s.id === "fits")?.items.find((i) => i.type === "example");
@@ -46,7 +56,7 @@ export default async function Connections({ searchParams }: PageProps<"/connecti
     <>
       <PageDialogContext topic={lib.label} org={relatedOrg} signupLabel={lib.label} />
       {/* The console is taller when filtered (it adds a status line); the hero leaves room for it. */}
-      <div className={styles.home} data-filtered={filtered ? "" : undefined}>
+      <div className={styles.home} data-filtered={filtered ? "" : undefined} data-door={door === "course" ? undefined : door}>
         <section className={styles.hero} aria-labelledby="home-title">
           {/* A 1-bit dither: served as-is, because resampling would blur the dots. */}
           <Image
@@ -70,11 +80,13 @@ export default async function Connections({ searchParams }: PageProps<"/connecti
                 <span className={styles.rise}>for your class.</span>
               </span>
             </h1>
-            <p className={styles.lead}>Pick your course and unit, or search for a topic.</p>
+            <p className={styles.lead}>Start from your course, a real-world challenge, a company or a kind of work.</p>
+            <Doors door={door} courseHref={courseHref} filter={lib.filter} />
           </div>
           <p className={styles.credit}>Photo: Mahesh Gupta / Unsplash</p>
         </section>
 
+        {door === "course" ? (
         <div id="library" className={styles.library}>
           <div className={`${styles.frame} ${styles.dock}`}>
             <SearchForm filter={lib.filter} count={lib.count} courses={courseOptions()} />
@@ -150,6 +162,16 @@ export default async function Connections({ searchParams }: PageProps<"/connecti
             <UnmatchedList />
           </div>
         </div>
+        ) : (
+          <div id="library" className={styles.library}>
+            <div className={`${styles.frame} ${ways.panelArea}`}>
+              {door === "challenge" && <ChallengePanel />}
+              {door === "company" && <CompanyPanel />}
+              {door === "role" && <RolePanel />}
+            </div>
+          </div>
+        )}
+        <QuickBar door={door} filter={lib.filter} courseHref={courseHref} />
       </div>
     </>
   );

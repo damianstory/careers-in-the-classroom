@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState, useSyncExternalStore, useTransition } from "react";
-import { filterQuery, TOPIC_MAX, type CourseOption, type LibraryFilter } from "@/lib/library-filter";
+import { FILTER_NAVIGATE, filterQuery, TOPIC_MAX, type CourseOption, type LibraryFilter } from "@/lib/library-filter";
 import { Icon } from "./Icon";
 import styles from "./SearchForm.module.css";
 
@@ -56,8 +56,20 @@ export function SearchForm({ filter, count, courses }: { filter: LibraryFilter; 
     if (!form) return;
     const io = new IntersectionObserver(([entry]) => setFormVisible(entry.isIntersecting), { rootMargin: "-80px 0px 0px 0px" });
     io.observe(form);
+    // Another control is navigating: drop any edit still waiting, and show the filter it goes to.
+    const cancel = (e: Event) => {
+      clearTimeout(timer.current);
+      const next = (e as CustomEvent<LibraryFilter | null>).detail;
+      if (!next) return;
+      setSent(null);
+      setCourseId(next.courseId ?? "");
+      setUnitId(next.unitId ?? "");
+      setTopic(next.topic ?? "");
+    };
+    window.addEventListener(FILTER_NAVIGATE, cancel);
     return () => {
       io.disconnect();
+      window.removeEventListener(FILTER_NAVIGATE, cancel);
       clearTimeout(timer.current);
     };
   }, []);

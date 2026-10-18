@@ -1,0 +1,629 @@
+/* Ways into the library: the door row in the hero, the challenge, company and kind-of-work panels,
+   and the quick bar. Ported from the search and browse prototype A (PR #2). */
+
+.panel {
+  padding-top: var(--space-8);
+}
+
+.panelHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 16px;
+  margin-bottom: var(--space-6);
+}
+
+.panelNote {
+  margin-bottom: var(--space-6);
+  max-width: 70ch;
+  color: var(--text-body);
+}
+
+.empty {
+  padding: 24px;
+  border: 1px dashed var(--text-muted);
+  border-radius: var(--radius-panel);
+  background: var(--bg-warm);
+  color: var(--text-body);
+}
+
+.stretch {
+  color: inherit;
+  text-decoration: none;
+}
+
+.stretch::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.stretch:hover {
+  color: var(--text-accent);
+  text-decoration: underline;
+}
+
+.count {
+  font: 500 13px/1 var(--font-mono);
+  color: var(--text-body);
+  margin-left: 6px;
+}
+
+/* Logo or monogram */
+.mark {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-control);
+  background: var(--white);
+  overflow: hidden;
+  padding: 4px;
+}
+
+.markDark {
+  background: var(--surface-dark);
+}
+
+.markImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.monogram {
+  background: var(--bg-accent-strong);
+  border-color: var(--border-green);
+  color: var(--green-shade-3);
+  font-family: var(--font-mono);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* Company rows */
+.companyList {
+  list-style: none;
+  padding: 0;
+  border-top: 1px solid var(--border);
+}
+
+.companyRow {
+  position: relative;
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) minmax(0, 300px) 20px;
+  gap: 20px;
+  align-items: start;
+  padding: 20px 8px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+  transition: background var(--duration-fast);
+}
+
+.companyRow:hover {
+  background: var(--bg-accent);
+}
+
+.companyMain {
+  display: grid;
+  gap: 4px;
+}
+
+.companyName {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+  font: 600 18px/24px var(--font-display);
+}
+
+.kind {
+  font: 500 11px/16px var(--font-mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-body);
+}
+
+.companyTagline {
+  color: var(--text-body);
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.companyQuestion {
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+.qMark {
+  font: 500 11px/16px var(--font-mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-accent);
+  margin-right: 6px;
+}
+
+.roleChips {
+  list-style: none;
+  padding: 0;
+  margin-top: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.roleChips li {
+  font-size: 13px;
+  line-height: 18px;
+  padding: 3px 8px;
+  border-radius: var(--radius-control);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  color: var(--text-body);
+}
+
+.companySide {
+  display: grid;
+  gap: 8px;
+}
+
+.where {
+  display: flex;
+  gap: 6px;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--text-body);
+}
+
+.where svg {
+  margin-top: 3px;
+  color: var(--text-accent);
+}
+
+.courseTags {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.rowArrow {
+  margin-top: 4px;
+  color: var(--text-accent);
+}
+
+@media (max-width: 860px) {
+  .companyRow {
+    grid-template-columns: 40px minmax(0, 1fr);
+    gap: 12px 14px;
+  }
+  .companyRow > .mark {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .companySide {
+    grid-column: 2;
+  }
+  .rowArrow {
+    display: none;
+  }
+}
+
+/* Tiles */
+.tileGrid {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-panel);
+  background: var(--bg);
+  overflow: hidden;
+  transition: border-color var(--duration-fast);
+}
+
+.tile:hover {
+  border-color: var(--green-tint-3);
+}
+
+.tileImg {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  display: block;
+}
+
+.tileCompact .tileImg {
+  aspect-ratio: 16 / 9;
+}
+
+.tileBody {
+  display: grid;
+  gap: 8px;
+  padding: 16px 18px 18px;
+}
+
+.tileOrg {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font: 500 13px/18px var(--font-ui);
+  color: var(--text-body);
+}
+
+.tileOrg .mark {
+  padding: 2px;
+  font-size: 10px !important;
+}
+
+.tileQ {
+  font: 600 17px/23px var(--font-display);
+}
+
+.tileMeta {
+  display: flex;
+  gap: 6px;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--text-body);
+}
+
+.tileMeta svg {
+  margin-top: 2px;
+}
+
+/* Work the example shows at another employer, not at this organization. */
+.roleChips li.elsewhere,
+.atLink.elsewhere {
+  border-style: dashed;
+  border-color: var(--text-muted);
+  background: var(--bg-warm);
+}
+
+.elsewhere span {
+  color: var(--text-body);
+}
+
+/* Families and themes */
+.families,
+.theme {
+  display: grid;
+  gap: var(--space-8);
+}
+
+.theme + .theme {
+  margin-top: var(--space-12);
+}
+
+.family {
+  display: grid;
+  grid-template-columns: minmax(0, 280px) minmax(0, 1fr);
+  gap: 24px;
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--border);
+}
+
+.theme .familyHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 16px;
+}
+
+.familyTitle {
+  font: 600 19px/26px var(--font-display);
+}
+
+.familyBlurb {
+  color: var(--text-body);
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.roleRows {
+  list-style: none;
+  padding: 0;
+  display: grid;
+}
+
+.roleRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.roleRow:first-child {
+  padding-top: 0;
+}
+
+.roleTitle {
+  font-weight: 600;
+}
+
+.roleSummary {
+  color: var(--text-body);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.roleAt {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: start;
+  gap: 6px;
+}
+
+@media (max-width: 860px) {
+  .family,
+  .roleRow {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
+.roleRow > *,
+.family > * {
+  min-width: 0;
+}
+
+.roleAt li {
+  max-width: 100%;
+}
+
+.atLink {
+  display: inline-flex;
+  max-width: 100%;
+  align-items: center;
+  gap: 6px;
+  min-height: 32px;
+  padding: 3px 10px 3px 3px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-control);
+  background: var(--bg);
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.atLink:hover {
+  border-color: var(--green-tint-3);
+  background: var(--bg-accent);
+  color: var(--ink);
+}
+
+.atLink .mark {
+  padding: 1px;
+  font-size: 9px !important;
+}
+
+
+.panelTitle {
+  font: 600 28px/36px var(--font-display);
+  color: var(--ink);
+}
+
+/* Door row, on the hero's dark ground under the lede. */
+.doors {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  max-width: 960px;
+  margin-top: 32px;
+}
+
+.door {
+  display: grid;
+  align-content: start;
+  gap: 4px;
+  padding: 16px 18px;
+  border: 1px solid rgb(255 255 255 / 0.22);
+  border-radius: var(--radius-panel);
+  background: rgb(27 59 25 / 0.82);
+  color: var(--white);
+  text-decoration: none;
+  transition: background var(--duration-fast), border-color var(--duration-fast);
+}
+
+.door svg {
+  color: var(--signal);
+  margin-bottom: 6px;
+}
+
+.door:hover {
+  background: rgb(27 59 25 / 0.95);
+  border-color: var(--signal);
+  color: var(--white);
+}
+
+.door[aria-current="page"] {
+  background: var(--white);
+  border-color: var(--white);
+  color: var(--ink);
+}
+
+.door[aria-current="page"] svg {
+  color: var(--text-accent);
+}
+
+.door:focus-visible {
+  outline: 3px solid var(--signal);
+  outline-offset: 2px;
+}
+
+.doorLabel {
+  font: 600 18px/24px var(--font-display);
+}
+
+.doorHint {
+  font-size: 14px;
+  line-height: 20px;
+  opacity: 0.85;
+}
+
+@media (max-width: 640px) {
+  .doors {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin-top: 24px;
+  }
+  .door {
+    padding: 12px 14px;
+  }
+  .doorLabel {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .doorHint {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+
+/* The open door's panel in the white library area. */
+.panelArea {
+  padding-top: 64px;
+  padding-bottom: 112px;
+}
+
+@media (max-width: 640px) {
+  .panelArea {
+    padding-top: 40px;
+    padding-bottom: 56px;
+  }
+}
+
+/* Quick bar: fixed to the bottom, within thumb reach, hidden until the door row has scrolled away.
+   Full width on phones, a centred pill on wider screens. */
+:global(body):has([data-quickbar]) {
+  --quickbar-h: 72px;
+  /* The footer is outside the page, so the bar's space is reserved on the body. */
+  padding-bottom: calc(var(--quickbar-h) + env(safe-area-inset-bottom));
+}
+
+.quick {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 15;
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  padding: 0 0 env(safe-area-inset-bottom);
+  visibility: hidden;
+  transform: translateY(100%);
+  transition: transform var(--duration-fast) var(--ease-standard), visibility 0s linear var(--duration-fast);
+  pointer-events: none;
+}
+
+.quick[data-shown] {
+  visibility: visible;
+  transform: none;
+  transition: transform var(--duration-fast) var(--ease-standard);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .quick,
+  .quick[data-shown] {
+    transition: none;
+  }
+}
+
+.quickBar,
+.quickSearch {
+  pointer-events: auto;
+}
+
+.quickBar {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  width: 100%;
+  min-height: var(--quickbar-h);
+  padding: 6px 8px;
+  background: var(--surface-dark);
+  border-top: 1px solid var(--hairline-dark);
+}
+
+.quickItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-height: 56px;
+  padding: 4px 2px;
+  border: 0;
+  border-radius: var(--radius-control);
+  background: none;
+  color: var(--on-dark-2);
+  font: 500 11px/14px var(--font-ui);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.quickItem:hover {
+  color: var(--white);
+  background: rgb(255 255 255 / 0.08);
+}
+
+.quickItem[aria-current="page"],
+.quickItem[aria-expanded="true"] {
+  background: var(--signal);
+  color: var(--ink);
+}
+
+.quickItem:focus-visible {
+  outline: 3px solid var(--signal);
+  outline-offset: -3px;
+}
+
+/* A filled item would hide a signal-coloured ring, so its focus ring is ink, drawn inside the fill. */
+.quickItem[aria-current="page"]:focus-visible,
+.quickItem[aria-expanded="true"]:focus-visible {
+  outline-color: var(--ink);
+  outline-offset: -6px;
+}
+
+.quickSearch {
+  display: flex;
+  gap: 8px;
+  width: calc(100% - 2 * var(--gutter));
+  max-width: 560px;
+  padding: 10px;
+  border-radius: var(--radius-panel);
+  background: var(--surface-dark);
+}
+
+.quickInput {
+  height: 44px;
+  min-width: 0;
+}
+
+@media (min-width: 641px) {
+  :global(body):has([data-quickbar]) {
+    padding-bottom: calc(var(--quickbar-h) + 16px + env(safe-area-inset-bottom));
+  }
+  .quick {
+    padding-bottom: calc(16px + env(safe-area-inset-bottom));
+  }
+  .quickBar {
+    width: min(480px, calc(100% - 2 * var(--gutter)));
+    border: 1px solid var(--hairline-dark);
+    border-radius: 12px;
+  }
+}

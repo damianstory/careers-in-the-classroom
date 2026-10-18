@@ -3,6 +3,14 @@
 
 export const TOPIC_MAX = 80;
 
+/** Sent on window by another control (a door or the quick bar) that is about to navigate the library,
+ *  so the console drops an edit it is still waiting to apply instead of overwriting the newer filter.
+ *  The detail is the filter being navigated to, or null when leaving the course door. */
+export const FILTER_NAVIGATE = "citc:filter-navigate";
+
+export const announceFilterNavigation = (next: LibraryFilter | null) =>
+  window.dispatchEvent(new CustomEvent<LibraryFilter | null>(FILTER_NAVIGATE, { detail: next }));
+
 export interface LibraryFilter {
   courseId?: string;
   unitId?: string;
