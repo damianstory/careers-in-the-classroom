@@ -103,12 +103,12 @@ test("jobs and pathways never stand in for each other", async ({ page, requests 
   void requests;
   // A role's job list holds only postings; its pathways are named separately, never as job cards.
   await page.goto(`/examples/ghgsat?${P30}&view=roles&role=satellite-engineering`);
-  const jobs = page.getByRole("region", { name: "Real job examples" });
+  const jobs = page.getByRole("region", { name: "Saved job examples" });
   await expect(jobs.getByRole("link")).toHaveCount(1);
   await expect(jobs.getByText("Engineering Physics (BSc)")).toHaveCount(0);
 
   await page.goto(`/examples/ghgsat?${P30}&view=roles&role=software-data`);
-  await expect(page.getByRole("region", { name: "Real job examples" }).getByRole("link", { name: /Developer/ })).toHaveCount(2);
+  await expect(page.getByRole("region", { name: "Saved job examples" }).getByRole("link", { name: /Developer/ })).toHaveCount(2);
 
   // On one page the role's jobs sit in Roles; the Pathways section still lists programs only.
   await page.goto(`/examples/ghgsat?${P30}&view=pathways&role=satellite-engineering`);

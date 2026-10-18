@@ -1448,6 +1448,46 @@
 }
 
 /* Job examples: one card per posting, opening in place. */
+.cardFoot {
+  border-top: 1px solid var(--border);
+  border-bottom: 0;
+}
+
+.searchList {
+  list-style: none;
+  margin-top: 24px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-panel);
+  overflow: hidden;
+}
+
+.searchRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 24px;
+  padding: 14px 24px;
+}
+
+.searchRow + .searchRow {
+  border-top: 1px solid var(--border);
+}
+
+.searchLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+}
+
+.savedTitle {
+  margin-top: 40px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
 .jobList {
   list-style: none;
   margin-top: 24px;
