@@ -41,8 +41,8 @@ test("course and unit filter the library in place → example → back", async (
   await page.locator("#filter-unit").selectOption("p30c");
   await expect(page).toHaveURL(/\/connections\?course=physics-30&unit=p30c$/);
   await expect(page.getByRole("heading", { level: 2, name: "Fits Electromagnetic radiation" })).toBeVisible();
-  // Four examples prepared for the unit, plus one more Physics 30 example under "Also fits".
-  await expect(page.getByRole("status").first()).toHaveText("5 matching");
+  // Five prepared examples plus the related Physics 30 result.
+  await expect(page.getByRole("status").first()).toHaveText("6 matching");
 
   await page.getByRole("link", { name: GHGSAT_Q }).click();
   await expect(page.getByRole("heading", { level: 1, name: GHGSAT_Q })).toBeVisible();
@@ -56,7 +56,7 @@ test("course and unit filter the library in place → example → back", async (
 test("Back and Forward restore the filter", async ({ page, requests }) => {
   void requests;
   await page.goto("/connections?course=physics-30&unit=p30c");
-  await page.getByRole("link", { name: "Clear" }).click();
+  await page.getByRole("link", { name: "Clear", exact: true }).click();
   await expect(page).toHaveURL(/\/connections(#library)?$/);
   await expect(page.locator("#filter-course")).toHaveValue("");
   await page.goBack();
@@ -112,16 +112,17 @@ test("a course alone shows its examples and how many units are ready", async ({ 
   await expect(page.getByRole("heading", { level: 2, name: "In Physics 30" })).toBeVisible();
   await expect(page.getByText("Physics 30: 2 of 4 units ready")).toBeVisible();
   await expect(page.locator("#filter-unit optgroup")).toHaveCount(2);
-  await expect(page.locator('#filter-unit optgroup[label="Ready now"] option')).toHaveText(["Forces and fields · 1 example", "Electromagnetic radiation · 4 examples"]);
+  await expect(page.locator('#filter-unit optgroup[label="Ready now"] option')).toHaveText(["Forces and fields · 1 example", "Electromagnetic radiation · 5 examples"]);
 });
 
 test("a unit without an example gets the honest banner and the closest fits", async ({ page, requests }) => {
   await page.goto("/connections?course=science-20&unit=s20a");
   await expect(page.getByText("No prepared example for “Chemical changes” in Science 20 yet.")).toBeVisible();
   const closest = page.getByRole("region", { name: "Closest examples" });
-  await expect(closest.getByRole("link", { name: "How do you separate something valuable from a complex liquid?" })).toBeVisible();
   const chemistry = examples.filter((e) => e.discipline === "Chemistry").length;
   await expect(closest.getByText(/The closest chemistry example/)).toHaveCount(Math.min(chemistry, 12));
+  if (chemistry > 12) await closest.getByRole("button", { name: `Show ${chemistry - 12} more`, exact: true }).click();
+  await expect(closest.getByRole("link", { name: "How do you separate something valuable from a complex liquid?" })).toBeVisible();
   await expect(page.getByText("for interview notes")).toHaveCount(0);
   await expectNoRequests(requests, async () => {
     await page.getByRole("button", { name: "Note this topic for follow-up" }).click();

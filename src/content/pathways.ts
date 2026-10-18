@@ -4,6 +4,353 @@ import type { LearningPathway } from "./types";
 // why it relates to a role is our reading of that page. None is an employer requirement.
 export const learningPathways: LearningPathway[] = [
   {
+    "id": "oct18-route-mechanical",
+    "provider": "SAIT",
+    "name": "Mechanical Engineering Technology",
+    "routeType": "Diploma",
+    "location": "Calgary",
+    "relevance": "local",
+    "learns": "Design, modelling and mechanical-system analysis.",
+    "roleRationale": [
+      {
+        "roleId": "work-mechanical",
+        "why": "Design, modelling and mechanical-system analysis. A model is useful when its assumptions are clear and measurements can challenge it."
+      },
+      {
+        "roleId": "work-manufacturing",
+        "why": "Design, modelling and mechanical-system analysis. Precision, tolerances and repeatable methods connect measurement to useful products."
+      },
+      {
+        "roleId": "work-controls",
+        "why": "Design, modelling and mechanical-system analysis. A reading depends on where and how it was measured, not just the number displayed."
+      },
+      {
+        "roleId": "work-acoustics",
+        "why": "Design, modelling and mechanical-system analysis. Reflection and absorption become decisions about how a room works."
+      }
+    ],
+    "entryNote": "A technical route; does not itself confer professional engineer registration. Check current admissions and intake before applying; this draft does not promise entry or employment.",
+    "urlSourceId": "oct18-source-5",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct18-source-5"
+    ],
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-route-machinist",
+    "provider": "SAIT",
+    "name": "Machinist",
+    "routeType": "Apprenticeship technical training",
+    "location": "Calgary",
+    "relevance": "local",
+    "learns": "Precision machining, drawings and measurement.",
+    "roleRationale": [
+      {
+        "roleId": "work-manufacturing",
+        "why": "Precision machining, drawings and measurement. Precision, tolerances and repeatable methods connect measurement to useful products."
+      },
+      {
+        "roleId": "work-quality",
+        "why": "Precision machining, drawings and measurement. A clear record makes a result checkable by someone who was not there."
+      }
+    ],
+    "entryNote": "Requires the apprenticeship process and workplace experience; technical school alone is not the full trade qualification. Check current admissions and intake before applying; this draft does not promise entry or employment.",
+    "urlSourceId": "oct18-source-6",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct18-source-6"
+    ],
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-route-instrument",
+    "provider": "SAIT",
+    "name": "Instrumentation Engineering Technology",
+    "routeType": "Diploma",
+    "location": "Calgary",
+    "relevance": "local",
+    "learns": "Measurement, calibration and process controls.",
+    "roleRationale": [
+      {
+        "roleId": "work-controls",
+        "why": "Measurement, calibration and process controls. A reading depends on where and how it was measured, not just the number displayed."
+      },
+      {
+        "roleId": "work-software",
+        "why": "Measurement, calibration and process controls. An alert is a reason to investigate, not proof of a single cause."
+      },
+      {
+        "roleId": "work-technical-support",
+        "why": "Measurement, calibration and process controls. Troubleshooting means testing explanations one at a time."
+      },
+      {
+        "roleId": "work-process",
+        "why": "Measurement, calibration and process controls. Conservation of matter and energy helps reveal missing assumptions."
+      }
+    ],
+    "entryNote": "Related to sensor/control work; no guaranteed employer placement. Check current admissions and intake before applying; this draft does not promise entry or employment.",
+    "urlSourceId": "oct18-source-13",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct18-source-13"
+    ],
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-route-chemical",
+    "provider": "SAIT",
+    "name": "Chemical Laboratory Technology",
+    "routeType": "Diploma",
+    "location": "Calgary",
+    "relevance": "local",
+    "learns": "Chemical analysis, samples and laboratory practice.",
+    "roleRationale": [
+      {
+        "roleId": "work-materials",
+        "why": "Chemical analysis, samples and laboratory practice. A promising material must be evaluated against a specific task."
+      },
+      {
+        "roleId": "work-lab",
+        "why": "Chemical analysis, samples and laboratory practice. Fair comparisons are more informative than an isolated result."
+      },
+      {
+        "roleId": "work-quality",
+        "why": "Chemical analysis, samples and laboratory practice. A clear record makes a result checkable by someone who was not there."
+      },
+      {
+        "roleId": "work-process",
+        "why": "Chemical analysis, samples and laboratory practice. Conservation of matter and energy helps reveal missing assumptions."
+      }
+    ],
+    "entryNote": "A laboratory route; not a medical licence or automatic research-scientist qualification. Check current admissions and intake before applying; this draft does not promise entry or employment.",
+    "urlSourceId": "oct18-source-19",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct18-source-19"
+    ],
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-route-degree",
+    "provider": "University of Calgary",
+    "name": "Mechanical Engineering",
+    "routeType": "BSc",
+    "location": "Calgary",
+    "relevance": "local",
+    "learns": "Design using mechanics, materials and energy.",
+    "roleRationale": [
+      {
+        "roleId": "work-mechanical",
+        "why": "Design using mechanics, materials and energy. A model is useful when its assumptions are clear and measurements can challenge it."
+      },
+      {
+        "roleId": "work-acoustics",
+        "why": "Design using mechanics, materials and energy. Reflection and absorption become decisions about how a room works."
+      }
+    ],
+    "entryNote": "Professional engineering registration is a separate process. Check current admissions and intake before applying; this draft does not promise entry or employment.",
+    "urlSourceId": "oct18-source-32",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct18-source-32"
+    ],
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-route-chemdegree",
+    "provider": "University of Calgary",
+    "name": "Chemistry or Biochemistry",
+    "routeType": "BSc program directions",
+    "location": "Calgary",
+    "relevance": "local",
+    "learns": "Chemical or biochemical foundations and scientific investigation.",
+    "roleRationale": [
+      {
+        "roleId": "work-materials",
+        "why": "Chemical or biochemical foundations and scientific investigation. A promising material must be evaluated against a specific task."
+      },
+      {
+        "roleId": "work-lab",
+        "why": "Chemical or biochemical foundations and scientific investigation. Fair comparisons are more informative than an isolated result."
+      }
+    ],
+    "entryNote": "Choose the actual program and check its current requirements; advanced research may require further study. Check current admissions and intake before applying; this draft does not promise entry or employment.",
+    "urlSourceId": "oct18-source-20",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct18-source-20"
+    ],
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-route-sonography",
+    "provider": "SAIT",
+    "name": "Diagnostic Medical Sonography",
+    "routeType": "Diploma",
+    "location": "Calgary",
+    "relevance": "local",
+    "learns": "Ultrasound acquisition, instrumentation and patient care.",
+    "roleRationale": [
+      {
+        "roleId": "work-sonography",
+        "why": "Ultrasound acquisition, instrumentation and patient care. Producing a clear measurement and interpreting its meaning are connected but different tasks."
+      }
+    ],
+    "entryNote": "EFW separately states recognised training, Sonography Canada credentials and liability insurance; its evergreen overview is not an offer of work. Check current admissions and intake before applying; this draft does not promise entry or employment.",
+    "urlSourceId": "oct18-source-41",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct18-source-41"
+    ],
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-route-moa",
+    "provider": "SAIT",
+    "name": "Medical Office Assistant and Unit Clerk",
+    "routeType": "Certificate",
+    "location": "Calgary",
+    "relevance": "local",
+    "learns": "Clinical administration and patient-record workflows.",
+    "roleRationale": [
+      {
+        "roleId": "work-clinic-administration",
+        "why": "Clinical administration and patient-record workflows. Care depends on reliable human coordination as well as instruments."
+      }
+    ],
+    "entryNote": "An administrative route, distinct from sonography and physician training. Check current admissions and intake before applying; this draft does not promise entry or employment.",
+    "urlSourceId": "oct18-source-42",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct18-source-42"
+    ],
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-route-power",
+    "provider": "SAIT",
+    "name": "Power Engineering Technology",
+    "routeType": "Diploma",
+    "location": "Calgary",
+    "relevance": "local",
+    "learns": "Thermal-energy systems and plant operations.",
+    "roleRationale": [
+      {
+        "roleId": "process-operations",
+        "why": "Thermal-energy systems and plant operations. Energy diagrams become real operating systems with constraints and losses."
+      }
+    ],
+    "entryNote": "Power-engineer certification requires its applicable exams and experience; this is distinct from a professional engineering degree. Check current admissions and intake before applying; this draft does not promise entry or employment.",
+    "urlSourceId": "oct18-source-53",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct18-source-53"
+    ],
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-route-refrigeration",
+    "provider": "SAIT",
+    "name": "Refrigeration and Air Conditioning Mechanic",
+    "routeType": "Apprenticeship technical training",
+    "location": "Calgary",
+    "relevance": "local",
+    "learns": "Install, maintain and troubleshoot refrigeration and air systems.",
+    "roleRationale": [
+      {
+        "roleId": "work-refrigeration",
+        "why": "Install, maintain and troubleshoot refrigeration and air systems. A refrigeration system moves heat; it does not create cold as a substance."
+      }
+    ],
+    "entryNote": "Combine employer-based apprenticeship experience with technical training; check current provincial entry requirements. Check current admissions and intake before applying; this draft does not promise entry or employment.",
+    "urlSourceId": "oct18-source-62",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct18-source-62"
+    ],
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-route-logistics",
+    "provider": "SAIT",
+    "name": "Business Administration — Supply Chain Management",
+    "routeType": "Diploma",
+    "location": "Calgary",
+    "relevance": "local",
+    "learns": "Supply-chain coordination, operations and planning.",
+    "roleRationale": [
+      {
+        "roleId": "work-logistics",
+        "why": "Supply-chain coordination, operations and planning. A technically sound product can still fail its purpose if timing or handling goes wrong."
+      },
+      {
+        "roleId": "work-warehousing",
+        "why": "Supply-chain coordination, operations and planning. Temperature, time and correct identification all matter to a cold chain."
+      }
+    ],
+    "entryNote": "A possible progression route, not a required credential for every warehouse role. Check current admissions and intake before applying; this draft does not promise entry or employment.",
+    "urlSourceId": "oct18-source-36",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct18-source-36"
+    ],
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-route-fibre",
+    "provider": "Alberta University of the Arts",
+    "name": "Fibre",
+    "routeType": "Studio concentration within degree study",
+    "location": "Calgary",
+    "relevance": "local",
+    "learns": "Material exploration, textile techniques and design critique.",
+    "roleRationale": [
+      {
+        "roleId": "work-bootmaking",
+        "why": "Material exploration, textile techniques and design critique. A flat pattern and a three-dimensional object have to agree."
+      },
+      {
+        "roleId": "work-quality",
+        "why": "Material exploration, textile techniques and design critique. A clear record makes a result checkable by someone who was not there."
+      }
+    ],
+    "entryNote": "Adjacent material/design education, not an Alberta Boot training program or bootmaking certificate. Check current admissions and intake before applying; this draft does not promise entry or employment.",
+    "urlSourceId": "oct18-source-46",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct18-source-46"
+    ],
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-route-bootwork",
+    "provider": "Alberta Boot Company",
+    "name": "Learning through retail and production experience",
+    "routeType": "Observed individual route",
+    "location": "Calgary",
+    "relevance": "local",
+    "learns": "An employer profile describes retail work during high school followed by growing production responsibilities.",
+    "roleRationale": [
+      {
+        "roleId": "work-bootmaking",
+        "why": "An employer profile describes retail work during high school followed by growing production responsibilities. A flat pattern and a three-dimensional object have to agree."
+      },
+      {
+        "roleId": "work-quality",
+        "why": "An employer profile describes retail work during high school followed by growing production responsibilities. A clear record makes a result checkable by someone who was not there."
+      }
+    ],
+    "entryNote": "One person's experience, not an advertised apprenticeship, vacancy or universal entry requirement. Check current admissions and intake before applying; this draft does not promise entry or employment.",
+    "urlSourceId": "oct18-source-45",
+    "kind": "observed",
+    "sourceIds": [
+      "oct18-source-45"
+    ],
+    "checkedOn": "2026-10-18"
+  },
+
+  {
     id: "oct17-route-university-of-calgary-master-of-landscape-architecture",
     provider: "University of Calgary",
     name: "Master of Landscape Architecture",

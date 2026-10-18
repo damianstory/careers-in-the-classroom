@@ -1,0 +1,144 @@
+[
+  {
+    "slug": "standens",
+    "src": "/images/logos/standens.png",
+    "alt": "Standen’s (IMT) logo",
+    "width": 420,
+    "height": 76,
+    "onDark": true,
+    "sourceUrl": "https://standens.com/wp-content/uploads/2024/12/IMT_Standens.png",
+    "retrieved": "2026-10-18"
+  },
+  {
+    "slug": "opisystems",
+    "src": "/images/logos/opisystems.png",
+    "alt": "OPIsystems (OPI) logo",
+    "width": 300,
+    "height": 147,
+    "onDark": false,
+    "sourceUrl": "https://opisystems.com/wp-content/uploads/2023/02/OPI_Logo_4c-300x147.png",
+    "retrieved": "2026-10-18"
+  },
+  {
+    "slug": "nanotess",
+    "src": "/images/logos/nanotess.png",
+    "alt": "NanoTess logo",
+    "width": 420,
+    "height": 69,
+    "onDark": false,
+    "sourceUrl": "https://www.nanotess.com/cdn/shop/files/NanoTess_Catalyzing_Healing.png?v=1741619526&width=600",
+    "retrieved": "2026-10-18"
+  },
+  {
+    "slug": "global-power-technologies",
+    "src": "/images/logos/global-power-technologies.png",
+    "alt": "Global Power Technologies logo",
+    "width": 420,
+    "height": 100,
+    "onDark": true,
+    "sourceUrl": "https://www.globalte.com/hubfs/GPT_Logo.svg",
+    "retrieved": "2026-10-18"
+  },
+  {
+    "slug": "hifi-engineering",
+    "src": "/images/logos/hifi-engineering.png",
+    "alt": "Hifi Engineering logo",
+    "width": 119,
+    "height": 52,
+    "onDark": false,
+    "sourceUrl": "https://hifieng.com/wp-content/uploads/2021/08/logo-dark-1.svg",
+    "retrieved": "2026-10-18"
+  },
+  {
+    "slug": "burnco",
+    "src": "/images/logos/burnco.png",
+    "alt": "BURNCO logo",
+    "width": 255,
+    "height": 48,
+    "onDark": false,
+    "sourceUrl": "https://www.burnco.com/wp-content/uploads/2022/12/burnco-logo.png",
+    "retrieved": "2026-10-18"
+  },
+  {
+    "slug": "efw-radiology",
+    "src": "/images/logos/efw-radiology.png",
+    "alt": "EFW Radiology logo",
+    "width": 420,
+    "height": 70,
+    "onDark": true,
+    "sourceUrl": "https://www.efw.ca/images/ui/logo_2025.png?v=1.3",
+    "retrieved": "2026-10-18"
+  },
+  {
+    "slug": "alberta-boot-company",
+    "src": "/images/logos/alberta-boot-company.png",
+    "alt": "Alberta Boot Company logo",
+    "width": 300,
+    "height": 119,
+    "onDark": false,
+    "sourceUrl": "https://www.albertaboot.ca/cdn/shop/files/ABCO_LOGO_ASSETS_ABCO_BRANDMARK_00263a_dd55fa8c-7c89-4928-9d1a-531b796cc2eb.png?v=1768700766&width=300",
+    "retrieved": "2026-10-18"
+  },
+  {
+    "slug": "ffa-acoustics",
+    "src": "/images/logos/ffa-acoustics.png",
+    "alt": "FFA Consultants in Acoustics and Noise Control logo",
+    "width": 273,
+    "height": 68,
+    "onDark": false,
+    "sourceUrl": "https://static.wixstatic.com/media/ba2cd3_afff0acc43494ec0acb3e8573123aa9e~mv2.jpg/v1/fill/w_273,h_68,al_c,q_80,enc_avif,quality_auto/ba2cd3_afff0acc43494ec0acb3e8573123aa9e~mv2.jpg",
+    "retrieved": "2026-10-18"
+  },
+  {
+    "slug": "enmax-shepard",
+    "src": "/images/logos/enmax-shepard.png",
+    "alt": "ENMAX logo",
+    "width": 242,
+    "height": 91,
+    "onDark": false,
+    "sourceUrl": "https://www.enmax.com/",
+    "retrieved": "2026-10-18",
+    "styleSource": "https://enmax.com/_next/static/css/430832a847e0d4de.css",
+    "resolvedFill": "#E31837"
+  },
+  {
+    "slug": "mobiltex",
+    "src": "/images/logos/mobiltex.png",
+    "alt": "MOBILTEX logo",
+    "width": 420,
+    "height": 84,
+    "onDark": false,
+    "sourceUrl": "https://www.mobiltex.com/wp-content/uploads/2023/12/logo40th.svg",
+    "retrieved": "2026-10-18"
+  },
+  {
+    "slug": "ice-western",
+    "src": "/images/logos/ice-western.png",
+    "alt": "ICE Western logo",
+    "width": 420,
+    "height": 153,
+    "onDark": false,
+    "sourceUrl": "https://www.icewestern.com/wp-content/uploads/ICE-Logo-Blue-white-oval-02.png",
+    "retrieved": "2026-10-18"
+  },
+  {
+    "slug": "congebec",
+    "src": "/images/logos/congebec.png",
+    "alt": "Congebec logo",
+    "width": 420,
+    "height": 159,
+    "onDark": true,
+    "sourceUrl": "https://congebec.com/wp-content/uploads/2023/03/LogoCongebec-Horizontal_Couleur_CMYK-texte-blanc-768x291.png",
+    "retrieved": "2026-10-18"
+  },
+  {
+    "slug": "fluid-energy",
+    "src": "/images/logos/fluid-energy.png",
+    "alt": "Fluid Energy (Dorf Ketal) logo",
+    "width": 344,
+    "height": 160,
+    "onDark": false,
+    "sourceUrl": "https://static.wixstatic.com/media/f75392_431575a5d90442bdbb40c3c16fd22189~mv2.png/v1/fill/w_370,h_172,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Fluid%20black%202%20color.png",
+    "retrieved": "2026-10-18"
+  }
+]

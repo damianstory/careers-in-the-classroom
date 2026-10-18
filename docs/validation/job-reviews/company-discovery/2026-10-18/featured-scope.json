@@ -1,0 +1,295 @@
+{
+  "checked_on": "2026-10-18",
+  "source": "src/content/examples.ts + example-records/index.ts + example-details.ts + organizations.ts; exported via src/content/index.ts",
+  "count": 32,
+  "examples": [
+    {
+      "example_slug": "o2-planning-design",
+      "featured_company": "O2 Planning and Design",
+      "details_id": "o2-planning-design-details",
+      "organization_id": "o2-planning-design",
+      "organization_name": "O2 Planning and Design",
+      "question": "How can a park help clean stormwater before it reaches a river?",
+      "location": "Calgary studio; the featured project is Dale Hodges Park in Calgary."
+    },
+    {
+      "example_slug": "entuitive",
+      "featured_company": "Entuitive",
+      "details_id": "entuitive-details",
+      "organization_id": "entuitive",
+      "organization_name": "Entuitive",
+      "question": "How can you support a library above a moving train?",
+      "location": "Calgary project and a Calgary-based structural engineering lead are explicitly documented."
+    },
+    {
+      "example_slug": "phil-sebastian",
+      "featured_company": "Phil & Sebastian Coffee Roasters",
+      "details_id": "phil-sebastian-details",
+      "organization_id": "phil-sebastian",
+      "organization_name": "Phil & Sebastian Coffee Roasters",
+      "question": "How can measurements help make a roast repeatable?",
+      "location": "The company identifies the Simmons Building as its Calgary roasting facility."
+    },
+    {
+      "example_slug": "broken-pencil-studios",
+      "featured_company": "Broken Pencil Studios",
+      "details_id": "broken-pencil-studios-details",
+      "organization_id": "broken-pencil-studios",
+      "organization_name": "Broken Pencil Studios",
+      "question": "How can a moving picture explain a process you cannot see?",
+      "location": "The company identifies itself as a Calgary animation production studio."
+    },
+    {
+      "example_slug": "cpkc",
+      "featured_company": "CPKC",
+      "details_id": "cpkc-details",
+      "organization_id": "cpkc",
+      "organization_name": "CPKC",
+      "question": "How can trains share a rail network without getting in each other’s way?",
+      "location": "Calgary operations centre and dispatch function are documented in the 2025 annual report."
+    },
+    {
+      "example_slug": "watersmart",
+      "featured_company": "WaterSMART — a Hazen company",
+      "details_id": "watersmart-details",
+      "organization_id": "watersmart",
+      "organization_name": "WaterSMART — a Hazen company",
+      "question": "How do you plan water supplies for a city that keeps changing?",
+      "location": "Calgary-based work is established through the City’s named roadmap partnership and the company team page."
+    },
+    {
+      "example_slug": "integrated-sustainability",
+      "featured_company": "Integrated Sustainability",
+      "details_id": "integrated-sustainability-details",
+      "organization_id": "integrated-sustainability",
+      "organization_name": "Integrated Sustainability",
+      "question": "Why does a water-treatment system need more than a successful laboratory test?",
+      "location": "Calgary engineering business; client treatment sites may be elsewhere."
+    },
+    {
+      "example_slug": "trace-associates",
+      "featured_company": "Trace Associates",
+      "details_id": "trace-associates-details",
+      "organization_id": "trace-associates",
+      "organization_name": "Trace Associates",
+      "question": "What evidence tells you which contaminated soil needs treatment?",
+      "location": "Calgary headquarters and a Calgary team’s environmental assessment work are documented; the teaching site is fictional."
+    },
+    {
+      "example_slug": "rjc-engineers",
+      "featured_company": "RJC Engineers",
+      "details_id": "rjc-engineers-details",
+      "organization_id": "rjc-engineers",
+      "organization_name": "RJC Engineers",
+      "question": "How can a building keep heat in while managing moisture?",
+      "location": "RJC’s Calgary building-science and restoration team is explicitly identified."
+    },
+    {
+      "example_slug": "calgary-italian-bakery",
+      "featured_company": "Calgary Italian Bakery",
+      "details_id": "calgary-italian-bakery-details",
+      "organization_id": "calgary-italian-bakery",
+      "organization_name": "Calgary Italian Bakery",
+      "question": "Where does a bakery lose food before it reaches the customer?",
+      "location": "Calgary bakery; a documented historical facility assessment supplies the specific story."
+    },
+    {
+      "example_slug": "joe-media-group",
+      "featured_company": "Joe Media Group",
+      "details_id": "joe-media-group-details",
+      "organization_id": "joe-media-group",
+      "organization_name": "Joe Media Group",
+      "question": "How can light and editing make separate shots feel like one scene?",
+      "location": "The company identifies a Calgary production operation and Calgary contact location."
+    },
+    {
+      "example_slug": "cbl-bakeries-cinnaroll",
+      "featured_company": "CBL Bakeries / Cinnaroll",
+      "details_id": "cbl-bakeries-cinnaroll-details",
+      "organization_id": "cbl-bakeries-cinnaroll",
+      "organization_name": "CBL Bakeries / Cinnaroll",
+      "question": "How can thousands of pastries come out consistently?",
+      "location": "Calgary company address and documented manufacturing activity; no separate Cinnzeo retail business is counted here."
+    },
+    {
+      "example_slug": "isl-engineering",
+      "featured_company": "ISL Engineering",
+      "details_id": "isl-engineering-details",
+      "organization_id": "isl-engineering",
+      "organization_name": "ISL Engineering",
+      "question": "How can a road cross a creek without ignoring the landscape?",
+      "location": "The featured road, creek crossing and pathways are in Calgary; ISL identifies the City as client."
+    },
+    {
+      "example_slug": "clearbakk",
+      "featured_company": "ClearBakk — ALSYS group",
+      "details_id": "clearbakk-details",
+      "organization_id": "clearbakk",
+      "organization_name": "ClearBakk — ALSYS group",
+      "question": "How can you fit a water-treatment process into a modular unit?",
+      "location": "Calgary engineering base; deployment sites and fabrication locations are not assumed to be in Calgary."
+    },
+    {
+      "example_slug": "botaneco",
+      "featured_company": "Botaneco",
+      "details_id": "botaneco-details",
+      "organization_id": "botaneco",
+      "organization_name": "Botaneco",
+      "question": "How can one seed become several useful ingredients?",
+      "location": "Calgary headquarters and R&D; the sources do not establish that every manufacturing step takes place in Calgary."
+    },
+    {
+      "example_slug": "nanalysis",
+      "featured_company": "Nanalysis",
+      "details_id": "nanalysis-details",
+      "organization_id": "nanalysis",
+      "organization_name": "Nanalysis",
+      "question": "How can magnets help identify what is in a sample?",
+      "location": "Calgary head office and instrument-development/manufacturing company; individual team assignments are not mapped to a specific vacancy."
+    },
+    {
+      "example_slug": "exergy-solutions",
+      "featured_company": "Exergy Solutions",
+      "details_id": "exergy-solutions-details",
+      "organization_id": "exergy-solutions",
+      "organization_name": "Exergy Solutions",
+      "question": "When should you print a metal part instead of machining it?",
+      "location": "Nexus manufacturing facility in Calgary; client projects may be used elsewhere."
+    },
+    {
+      "example_slug": "livestock-water-recycling",
+      "featured_company": "Livestock Water Recycling",
+      "details_id": "livestock-water-recycling-details",
+      "organization_id": "livestock-water-recycling",
+      "organization_name": "Livestock Water Recycling",
+      "question": "Can we recover useful water and nutrients from manure?",
+      "location": "Innovation centre and manufacturing plant in Calgary; farm installations are not assumed to be in the city."
+    },
+    {
+      "example_slug": "avmax",
+      "featured_company": "Avmax",
+      "details_id": "avmax-details",
+      "organization_id": "avmax",
+      "organization_name": "Avmax",
+      "question": "How do you decide whether an aircraft part is safe to keep using?",
+      "location": "Calgary corporate office and documented maintenance, engineering, avionics and component-repair services."
+    },
+    {
+      "example_slug": "northern-rna",
+      "featured_company": "Northern RNA",
+      "details_id": "northern-rna-details",
+      "organization_id": "northern-rna",
+      "organization_name": "Northern RNA",
+      "question": "How do you make biological material consistently from batch to batch?",
+      "location": "Calgary address and biomanufacturing business; the sources do not allocate every service or partner activity to a specific Calgary room or facility."
+    },
+    {
+      "example_slug": "aerium-analytics",
+      "featured_company": "AERIUM Analytics",
+      "details_id": "aerium-analytics-details",
+      "organization_id": "aerium-analytics",
+      "organization_name": "AERIUM Analytics",
+      "question": "Can a bird-shaped drone help reduce airport wildlife hazards?",
+      "location": "Calgary head office; the cited airport deployment is outside Calgary."
+    },
+    {
+      "example_slug": "geologicai",
+      "featured_company": "GeologicAI",
+      "details_id": "geologicai-details",
+      "organization_id": "geologicai",
+      "organization_name": "GeologicAI",
+      "question": "What can a rock scan tell us that our eyes cannot?",
+      "location": "Calgary office and company development team; scanning and field operations also occur at customer sites internationally."
+    },
+    {
+      "example_slug": "tangent-design-engineering",
+      "featured_company": "Tangent Design Engineering",
+      "details_id": "tangent-design-engineering-details",
+      "organization_id": "tangent-design-engineering",
+      "organization_name": "Tangent Design Engineering",
+      "question": "Why does a process that works in a lab need a new design at larger scale?",
+      "location": "Calgary consultancy and documented prototype build in its shop; the case study is undated."
+    },
+    {
+      "example_slug": "foremost",
+      "featured_company": "Foremost",
+      "details_id": "foremost-details",
+      "organization_id": "foremost",
+      "organization_name": "Foremost",
+      "question": "How can a heavy vehicle travel over soft ground without sinking?",
+      "location": "Calgary North engineering and manufacturing facility. The company explicitly lists tracked and wheeled off-road vehicle engineering here; individual model build locations are not asserted."
+    },
+    {
+      "example_slug": "carbonova",
+      "featured_company": "Carbonova",
+      "details_id": "carbonova-details",
+      "organization_id": "carbonova",
+      "organization_name": "Carbonova",
+      "question": "How can carbon-containing gases become useful solid materials?",
+      "location": "Calgary pilot and demonstration-project evidence; the larger demonstration unit is not described here as commissioned."
+    },
+    {
+      "example_slug": "summit-lithium-technologies",
+      "featured_company": "Summit Lithium Technologies",
+      "details_id": "summit-lithium-technologies-details",
+      "organization_id": "summit-lithium-technologies",
+      "organization_name": "Summit Lithium Technologies",
+      "question": "How can a material repeatedly capture lithium and then release it?",
+      "location": "Calgary headquarters, sorbent R&D, mechanical engineering and pilot-scale sorbent manufacturing. Commercial sorbent supply and field demonstrations are not assumed to be Calgary activities."
+    },
+    {
+      "example_slug": "veerum",
+      "featured_company": "VEERUM",
+      "details_id": "veerum-details",
+      "organization_id": "veerum",
+      "organization_name": "VEERUM",
+      "question": "How do you know a digital model matches the real site?",
+      "location": "Calgary headquarters and software-development business; customer assets may be elsewhere."
+    },
+    {
+      "example_slug": "eguana-technologies",
+      "featured_company": "Eguana Technologies",
+      "details_id": "eguana-technologies-details",
+      "organization_id": "eguana-technologies",
+      "organization_name": "Eguana Technologies",
+      "question": "How can stored electricity help when supply and demand happen at different times?",
+      "location": "Calgary headquarters and historical Calgary engineering evidence. Current manufacturing allocation is not inferred from older documents."
+    },
+    {
+      "example_slug": "ftg-aerospace-calgary",
+      "featured_company": "FTG Aerospace Calgary (formerly FLYHT)",
+      "details_id": "ftg-aerospace-calgary-details",
+      "organization_id": "ftg-aerospace-calgary",
+      "organization_name": "FTG Aerospace Calgary (formerly FLYHT)",
+      "question": "How can passenger aircraft help us understand the atmosphere?",
+      "location": "FTG Aerospace Calgary address and aircraft-data/software work. Sensor observations are collected along flight routes, not only over Calgary."
+    },
+    {
+      "example_slug": "wilder-institute",
+      "featured_company": "Wilder Institute",
+      "details_id": "wilder-details",
+      "organization_id": "wilder-institute",
+      "organization_name": "Wilder Institute",
+      "question": "Can helping individual owls help a population recover?",
+      "location": "Connected to the Calgary Zoo. Field program in southeastern Alberta."
+    },
+    {
+      "example_slug": "e3-lithium",
+      "featured_company": "E3 Lithium",
+      "details_id": "e3-lithium-details",
+      "organization_id": "e3-lithium",
+      "organization_name": "E3 Lithium",
+      "question": "How do you separate something valuable from a complex liquid?",
+      "location": "Calgary-based company. Clearwater project between Calgary and Red Deer."
+    },
+    {
+      "example_slug": "ghgsat",
+      "featured_company": "GHGSat",
+      "details_id": "ghgsat-details",
+      "organization_id": "ghgsat",
+      "organization_name": "GHGSat",
+      "question": "How can you find an invisible gas from space?",
+      "location": "Lists a Calgary office. Headquarters in Montreal."
+    }
+  ]
+}

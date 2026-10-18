@@ -41,10 +41,10 @@ describe("resolveSearch", () => {
   });
 
   it("returns an honest no-match for units without a prepared example", () => {
-    expect(resolveSearch({ courseId: "physics-20", unitId: "p20d" })).toEqual({
+    expect(resolveSearch({ courseId: "physics-30", unitId: "p30a" })).toEqual({
       status: "no-match",
-      courseName: "Physics 20",
-      label: "Oscillatory motion and mechanical waves",
+      courseName: "Physics 30",
+      label: "Momentum and impulse",
     });
   });
 

@@ -1,0 +1,13 @@
+{
+  "pass_cost_usd": 0.005,
+  "weekly_settled_usd": 0.035,
+  "weekly_outstanding_usd": 0.0,
+  "weekly_cap_usd": 10,
+  "provider": "Firecrawl through Looot",
+  "run_id": "run_3e2ad53f592f4edfa2d8cd2e43a6a0cf",
+  "wallet_before_usd": 19.0878,
+  "wallet_after_usd": 19.0828,
+  "direct_apify_usd": 0,
+  "topups": 0,
+  "outcome": "Recovered OPI careers shell only; no job details and no retry."
+}

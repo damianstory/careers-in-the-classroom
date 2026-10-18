@@ -1,0 +1,8 @@
+{
+  "authorized_on": "2026-10-18",
+  "reviewer": "user",
+  "instruction": "commit and push to main",
+  "scope": "All 14 October 18 examples and illustrations, including simplified EFW echo diagram, associated directories, tests and research records",
+  "target": "origin/main",
+  "deployment_status": "Not yet verified"
+}

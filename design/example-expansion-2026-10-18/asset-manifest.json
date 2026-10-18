@@ -1,0 +1,367 @@
+[
+  {
+    "slug": "standens",
+    "kind": "story",
+    "file": "public/images/examples/standens-graphic-novel.webp",
+    "sha256": "5050d04d6789acdb13c232d73daeebe58b0f36377368c6e087f0ab1dd6824e44",
+    "bytes": 236652,
+    "dimensions": [
+      1344,
+      756
+    ],
+    "original": "design/example-expansion-2026-10-18/standens-story.png",
+    "local_visual_review": "reviewed; final user review pending"
+  },
+  {
+    "slug": "standens",
+    "kind": "diagram",
+    "file": "public/images/story-diagrams/standens-graphic-novel.webp",
+    "sha256": "b16456dd5eca463336f8b7dd6b94b0f64137249273d65b314c422d6779d11752",
+    "bytes": 336188,
+    "dimensions": [
+      1344,
+      756
+    ],
+    "original": "design/example-expansion-2026-10-18/standens-diagram.png",
+    "local_visual_review": "reviewed; final user review pending"
+  },
+  {
+    "slug": "opisystems",
+    "kind": "story",
+    "file": "public/images/examples/opisystems-graphic-novel.webp",
+    "sha256": "29d1b639fd97f3534751629535d551e17d4dc2c5b9e35b286f461a09b4775575",
+    "bytes": 259510,
+    "dimensions": [
+      1344,
+      756
+    ],
+    "original": "design/example-expansion-2026-10-18/opisystems-story.png",
+    "local_visual_review": "reviewed; final user review pending"
+  },
+  {
+    "slug": "opisystems",
+    "kind": "diagram",
+    "file": "public/images/story-diagrams/opisystems-graphic-novel.webp",
+    "sha256": "978e8c6dbd2af79857e877ed942ab9970d8ff9422501d438c26b8c7ab43d619b",
+    "bytes": 394114,
+    "dimensions": [
+      1344,
+      756
+    ],
+    "original": "design/example-expansion-2026-10-18/opisystems-diagram.png",
+    "local_visual_review": "reviewed; final user review pending"
+  },
+  {
+    "slug": "nanotess",
+    "kind": "story",
+    "file": "public/images/examples/nanotess-graphic-novel.webp",
+    "sha256": "286c80468c95d35f960fdc64964914dd444f4eec03cb65b15cfb048aafc2bd2d",
+    "bytes": 255502,
+    "dimensions": [
+      1344,
+      756
+    ],
+    "original": "design/example-expansion-2026-10-18/nanotess-story.png",
+    "local_visual_review": "reviewed; final user review pending"
+  },
+  {
+    "slug": "nanotess",
+    "kind": "diagram",
+    "file": "public/images/story-diagrams/nanotess-graphic-novel.webp",
+    "sha256": "da4146ea183175287d435465797c00ab5c30a9f456109d8169cccffa1c383750",
+    "bytes": 104266,
+    "dimensions": [
+      1344,
+      756
+    ],
+    "original": "design/example-expansion-2026-10-18/nanotess-diagram.png",
+    "local_visual_review": "reviewed; final user review pending"
+  },
+  {
+    "slug": "global-power-technologies",
+    "kind": "story",
+    "file": "public/images/examples/global-power-technologies-graphic-novel.webp",
+    "sha256": "940e744da7be2fd48ee1749f692a78845675a5215e84c32c85b29bc9d317cbe2",
+    "bytes": 219282,
+    "dimensions": [
+      1344,
+      756
+    ],
+    "original": "design/example-expansion-2026-10-18/global-power-technologies-story.png",
+    "local_visual_review": "reviewed; final user review pending"
+  },
+  {
+    "slug": "global-power-technologies",
+    "kind": "diagram",
+    "file": "public/images/story-diagrams/global-power-technologies-graphic-novel.webp",
+    "sha256": "27b92365d902a644220dead31b416a3435a8f23f49ab95fc5b6efa068a4f5732",
+    "bytes": 134014,
+    "dimensions": [
+      1344,
+      756
+    ],
+    "original": "design/example-expansion-2026-10-18/global-power-technologies-diagram.png",
+    "local_visual_review": "reviewed; final user review pending"
+  },
+  {
+    "slug": "hifi-engineering",
+    "kind": "story",
+    "file": "public/images/examples/hifi-engineering-graphic-novel.webp",
+    "sha256": "10684c46bc6a77bba856d86a90ef2cef8a5fa0959735aaca7224e3078b8baa06",
+    "bytes": 218364,
+    "dimensions": [
+      1344,
+      756
+    ],
+    "original": "design/example-expansion-2026-10-18/hifi-engineering-story.png",
+    "local_visual_review": "reviewed; final user review pending"
+  },
+  {
+    "slug": "hifi-engineering",
+    "kind": "diagram",
+    "file": "public/images/story-diagrams/hifi-engineering-graphic-novel.webp",
+    "sha256": "06ab1b824eec5e53a0f3f2945c3511cfc18a9265f3b82406f1d882bdd8304c9b",
+    "bytes": 212898,
+    "dimensions": [
+      1344,
+      756
+    ],
+    "original": "design/example-expansion-2026-10-18/hifi-engineering-diagram.png",
+    "local_visual_review": "reviewed; final user review pending"
+  },
+  {
+    "slug": "burnco",
+    "kind": "story",
+    "file": "public/images/examples/burnco-graphic-novel.webp",
+    "sha256": "e00fb645a70cb915232805d31ca108c5839ba8b68f88bd65fdda8e4a93e7d3f9",
+    "bytes": 285502,
+    "dimensions": [
+      1344,
+      756
+    ],
+    "original": "design/example-expansion-2026-10-18/burnco-story.png",
+    "local_visual_review": "reviewed; final user review pending"
+  },
+  {
+    "slug": "burnco",
+    "kind": "diagram",
+    "file": "public/images/story-diagrams/burnco-graphic-novel.webp",
+    "sha256": "917e4433b5ba55e531786215224ce509584ae60d3e4c685061dbca970155eab8",
+    "bytes": 257486,
+    "dimensions": [
+      1344,
+      756
+    ],
+    "original": "design/example-expansion-2026-10-18/burnco-diagram.png",
+    "local_visual_review": "reviewed; final user review pending"
+  },
+  {
+    "slug": "efw-radiology",
+    "kind": "story",
+    "file": "public/images/examples/efw-radiology-graphic-novel.webp",
+    "sha256": "bedd34d5030b1128bfee683fce44b15c673993c09eff09d2b385a7e2e15ca0e8",
+    "bytes": 218640,
+    "dimensions": [
+      1344,
+      756
+    ],
+    "original": "design/example-expansion-2026-10-18/efw-radiology-story.png",
+    "local_visual_review": "reviewed; final user review pending"
+  },
+  {
+    "slug": "efw-radiology",
+    "kind": "diagram",
+    "file": "public/images/story-diagrams/efw-radiology-echo-graphic-novel.webp",
+    "sha256": "f3d00d1ff351d5cd318a4e664bd97afc9bd7071ea58fe6517b491e0eb1947fc4",
+    "bytes": 88564,
+    "dimensions": [
+      1344,
+      756
+    ],
+    "original": "design/example-expansion-2026-10-18/efw-radiology-echo-diagram.png",
+    "local_visual_review": "reviewed; final user review pending",
+    "revision_record": "design/example-expansion-2026-10-18/efw-simple-echo.json"
+  },
+  {
+    "slug": "alberta-boot-company",
+    "kind": "story",
+    "file": "public/images/examples/alberta-boot-company-graphic-novel.webp",
+    "sha256": "a2b526ea565415a527c7f507402925e9f3a164129a039007a05d19216a579911",
+    "bytes": 277908,
+    "dimensions": [
+      1344,
+      756
+    ],
+    "original": "design/example-expansion-2026-10-18/alberta-boot-company-story.png",
+    "local_visual_review": "reviewed; final user review pending"
+  },
+  {
+    "slug": "alberta-boot-company",
+    "kind": "diagram",
+    "file": "public/images/story-diagrams/alberta-boot-company-graphic-novel.webp",
+    "sha256": "9d8d8d26672b72e943424646ae206061a90d72d92e6cae38ae3de54ab45f9044",
+    "bytes": 204916,
+    "dimensions": [
+      1344,
+      756
+    ],
+    "original": "design/example-expansion-2026-10-18/alberta-boot-company-diagram.png",
+    "local_visual_review": "reviewed; final user review pending"
+  },
+  {
+    "slug": "ffa-acoustics",
+    "kind": "story",
+    "file": "public/images/examples/ffa-acoustics-graphic-novel.webp",
+    "sha256": "d710428ca4e8491240d4bc244856f00d7628bb8d28ee69b1bf68f49fabc97113",
+    "bytes": 288972,
+    "dimensions": [
+      1344,
+      756
+    ],
+    "original": "design/example-expansion-2026-10-18/ffa-acoustics-story.png",
+    "local_visual_review": "reviewed; final user review pending"
+  },
+  {
+    "slug": "ffa-acoustics",
+    "kind": "diagram",
+    "file": "public/images/story-diagrams/ffa-acoustics-graphic-novel.webp",
+    "sha256": "569e97bf3848cf29c21c75f962f70700a362dfd13ad5ddb513b13073f97d5dd7",
+    "bytes": 317986,
+    "dimensions": [
+      1344,
+      756
+    ],
+    "original": "design/example-expansion-2026-10-18/ffa-acoustics-diagram.png",
+    "local_visual_review": "reviewed; final user review pending"
+  },
+  {
+    "slug": "enmax-shepard",
+    "kind": "story",
+    "file": "public/images/examples/enmax-shepard-graphic-novel.webp",
+    "sha256": "cc1bc20db31dc0fb6667469c6a17942958759d95948738ec8cf0a1c9e82cb98a",
+    "bytes": 275780,
+    "dimensions": [
+      1344,
+      756
+    ],
+    "original": "design/example-expansion-2026-10-18/enmax-shepard-story.png",
+    "local_visual_review": "reviewed; final user review pending"
+  },
+  {
+    "slug": "enmax-shepard",
+    "kind": "diagram",
+    "file": "public/images/story-diagrams/enmax-shepard-graphic-novel.webp",
+    "sha256": "097e65a5dae9fc4c309555effee916516e668c3b61a0d6358924b3c98a615e00",
+    "bytes": 296140,
+    "dimensions": [
+      1344,
+      756
+    ],
+    "original": "design/example-expansion-2026-10-18/enmax-shepard-diagram.png",
+    "local_visual_review": "reviewed; final user review pending"
+  },
+  {
+    "slug": "mobiltex",
+    "kind": "story",
+    "file": "public/images/examples/mobiltex-graphic-novel.webp",
+    "sha256": "9bae6fe6f154727684e0f8bbf305a2185bef4d349bdb186a7f54dec81a656431",
+    "bytes": 276746,
+    "dimensions": [
+      1344,
+      756
+    ],
+    "original": "design/example-expansion-2026-10-18/mobiltex-story.png",
+    "local_visual_review": "reviewed; final user review pending"
+  },
+  {
+    "slug": "mobiltex",
+    "kind": "diagram",
+    "file": "public/images/story-diagrams/mobiltex-graphic-novel.webp",
+    "sha256": "6da8a3bf24cea25200d2fe1f4e3f066fa1469d60c0da87c7db34b2292e28fce9",
+    "bytes": 286172,
+    "dimensions": [
+      1344,
+      756
+    ],
+    "original": "design/example-expansion-2026-10-18/mobiltex-diagram.png",
+    "local_visual_review": "reviewed; final user review pending"
+  },
+  {
+    "slug": "ice-western",
+    "kind": "story",
+    "file": "public/images/examples/ice-western-graphic-novel.webp",
+    "sha256": "9c1befe07ae242d7902e1c440f377fc7596f301b3fb0ebc323e8e5b05764dc8c",
+    "bytes": 287880,
+    "dimensions": [
+      1344,
+      756
+    ],
+    "original": "design/example-expansion-2026-10-18/ice-western-story.png",
+    "local_visual_review": "reviewed; final user review pending"
+  },
+  {
+    "slug": "ice-western",
+    "kind": "diagram",
+    "file": "public/images/story-diagrams/ice-western-graphic-novel.webp",
+    "sha256": "ee1bd404ebfcb2792327babb0fcb7e92c7d9c059e2e50c0f215c264f8837c894",
+    "bytes": 129270,
+    "dimensions": [
+      1344,
+      756
+    ],
+    "original": "design/example-expansion-2026-10-18/ice-western-diagram.png",
+    "local_visual_review": "reviewed; final user review pending"
+  },
+  {
+    "slug": "congebec",
+    "kind": "story",
+    "file": "public/images/examples/congebec-graphic-novel.webp",
+    "sha256": "db189289cddd185b3c23a5b669847fa34e58a04db1a19a9137e6d9f7409097d5",
+    "bytes": 249172,
+    "dimensions": [
+      1344,
+      756
+    ],
+    "original": "design/example-expansion-2026-10-18/congebec-story.png",
+    "local_visual_review": "reviewed; final user review pending"
+  },
+  {
+    "slug": "congebec",
+    "kind": "diagram",
+    "file": "public/images/story-diagrams/congebec-graphic-novel.webp",
+    "sha256": "9d23d0ec2cdd487dbf67c9e5a60c8476d71ee7675dd81fbb6ad1905ff5109804",
+    "bytes": 233718,
+    "dimensions": [
+      1344,
+      756
+    ],
+    "original": "design/example-expansion-2026-10-18/congebec-diagram.png",
+    "local_visual_review": "reviewed; final user review pending"
+  },
+  {
+    "slug": "fluid-energy",
+    "kind": "story",
+    "file": "public/images/examples/fluid-energy-graphic-novel.webp",
+    "sha256": "79ff80a1a3de0cb649cff86fc6e8f58f09fed47d4a9c0830ee426d7ca49cf17b",
+    "bytes": 222214,
+    "dimensions": [
+      1344,
+      756
+    ],
+    "original": "design/example-expansion-2026-10-18/fluid-energy-story.png",
+    "local_visual_review": "reviewed; final user review pending"
+  },
+  {
+    "slug": "fluid-energy",
+    "kind": "diagram",
+    "file": "public/images/story-diagrams/fluid-energy-graphic-novel.webp",
+    "sha256": "b5db68ce1689e30634f915ff99c9dbd6e8ab8a3b0462852186f332ffd3d3bcd3",
+    "bytes": 212704,
+    "dimensions": [
+      1344,
+      756
+    ],
+    "original": "design/example-expansion-2026-10-18/fluid-energy-diagram.png",
+    "local_visual_review": "reviewed; final user review pending"
+  }
+]

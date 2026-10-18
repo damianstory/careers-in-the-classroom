@@ -4,7 +4,7 @@
   "periodEndExclusive": "2026-10-19",
   "timezone": "America/Toronto",
   "authorization": "User approved recurring $10/week on 2026-10-15; includes Apify via Looot only",
-  "settledCostUsd": 0.03,
+  "settledCostUsd": 0.035,
   "outstandingExposureUsd": 0.0,
   "runs": [
     {
@@ -151,6 +151,28 @@
       "runId": "run_548a7ecb49444d2a8190b1e91be024c8",
       "actualCostUsd": 0.005,
       "receipt": "docs/validation/full-examples/2026-10-17/cinnaroll-looot.json"
+    },
+    {
+      "requestKey": "citc-full-2026-10-18-opi-careers-v1",
+      "operation": "firecrawl-scrape",
+      "input": {
+        "url": "https://opisystems.bamboohr.com/careers",
+        "formats": [
+          "markdown"
+        ],
+        "maxAge": 0,
+        "parsers": [],
+        "proxy": "basic"
+      },
+      "purpose": "Recover employer ATS content: free direct response contained only BambooHR shell",
+      "estimateUsd": 0.005,
+      "maximumExposureUsd": 0.015,
+      "status": "completed",
+      "reservation_on": "2026-10-18",
+      "runId": "run_3e2ad53f592f4edfa2d8cd2e43a6a0cf",
+      "actualCostUsd": 0.005,
+      "receipt": "docs/validation/full-examples/2026-10-18/opi-looot-receipt.json",
+      "editorialOutcome": "Weak: careers shell recovered, no individual jobs. Vacancy status unknown; no retry."
     }
   ],
   "separatePilotExcludedUsd": 0.8822

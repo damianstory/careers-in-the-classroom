@@ -168,6 +168,101 @@
       "examples_implemented_locally": 14,
       "publication_status": "not deployed",
       "implementation_packet": "docs/validation/full-examples/2026-10-17/implementation.md"
+    },
+    {
+      "occurrence": "2026-10-18",
+      "trigger": "daily scheduled discovery",
+      "status": "completed",
+      "last_attempted_on": "2026-10-18",
+      "last_completed_on": "2026-10-18",
+      "candidate_leads_examined": 20,
+      "new_candidates_screened": 20,
+      "proposal_gates_passed": 16,
+      "held": 4,
+      "recommended": 5,
+      "eligible_score_8_plus": 14,
+      "qualified_reserve_score_7": 2,
+      "decisions_pending": 0,
+      "new_candidate_duplicates": 0,
+      "known_sample_excluded": 80,
+      "sources": [
+        "original employer facilities/products/services",
+        "government grants and trade/public-sector records",
+        "research/commercialization partner announcements",
+        "official education providers (pathway verification)"
+      ],
+      "sectors": [
+        "Acoustical engineering",
+        "Bio-based materials",
+        "Bioelectronics",
+        "Construction materials",
+        "Corrosion monitoring",
+        "Craft and manufacturing",
+        "Electricity generation",
+        "Energy systems",
+        "Food and agriculture",
+        "Food logistics and refrigeration",
+        "HVAC manufacturing",
+        "Health and advanced materials",
+        "Industrial chemistry",
+        "Industrial pumps",
+        "Industrial water treatment",
+        "Infrastructure sensing",
+        "Manufacturing and trades",
+        "Medical imaging",
+        "Molecular diagnostics"
+      ],
+      "looot_actual_usd": 0,
+      "looot_week_to_date_usd": 0.03,
+      "looot_outstanding_exposure_usd": 0.0,
+      "looot_weekly_cap_usd": 10,
+      "looot_provider_breakdown_week_usd": {
+        "firecrawl": 0.030000000000000002
+      },
+      "apify_direct_usd": 0,
+      "apify_via_looot_usd": 0,
+      "budget_deferrals": [],
+      "coverage_deferrals": [
+        {
+          "id": "CGY-066",
+          "reason": "HOLD: issuer announced plant closure. Resolve successor identity and current Calgary work; do not present a functioning hemp factory."
+        },
+        {
+          "id": "CGY-069",
+          "reason": "RESERVE: strong local evidence but overlaps Nanalysis magnetic resonance and today’s EFW proposal. Verify current provincial registration and local clinical-placement options before drafting."
+        },
+        {
+          "id": "CGY-070",
+          "reason": "RESERVE: resolve who performs each lab step, current clinical validation and credential requirements. Chemical lab study is only a foundation, not clinical molecular certification."
+        },
+        {
+          "id": "CGY-074",
+          "reason": "HOLD: find a current original Calgary operation source. A 1992 directory and old addresses are insufficient. Treat as SLB brand, not a new independent employer."
+        },
+        {
+          "id": "CGY-075",
+          "reason": "HOLD: outside-city evidence. A Calgary customer or Alberta project would not alone establish a local employer operation."
+        },
+        {
+          "id": "CGY-078",
+          "reason": "HOLD: distinguish current product stages, local work and regulatory/clinical evidence; company application claims are not proof of approved treatment or effectiveness."
+        }
+      ],
+      "cumulative_pending_entries": 46,
+      "featured_examples": 46,
+      "monday_maintenance": "Not scheduled on Sunday; active collection reconciled only",
+      "saturation": "Not triggered: four completed daily passes; today yielded 16 evidence-qualified candidates. Seven-pass threshold not met.",
+      "packet": "company-discovery/2026-10-18/review.md",
+      "research_log": "company-discovery/2026-10-18/research-log.json",
+      "proposals_approved": 14,
+      "proposals_deferred": 6,
+      "reviewed_on": "2026-10-18",
+      "full_research_in_progress": 0,
+      "full_drafts_prepared": 14,
+      "full_copy_decisions_pending": 0,
+      "full_example_packet": "docs/validation/full-examples/2026-10-18/review.md",
+      "examples_implemented_locally": 14,
+      "release_authorized": true
     }
   ]
 }

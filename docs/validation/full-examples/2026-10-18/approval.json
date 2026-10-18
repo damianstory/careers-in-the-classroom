@@ -1,0 +1,92 @@
+{
+  "reviewed_on": "2026-10-18",
+  "reviewer": "Damian (user)",
+  "instruction": "Alright, approve all 14 that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later.",
+  "approved_proposals": [
+    {
+      "id": "CGY-061",
+      "version": 1
+    },
+    {
+      "id": "CGY-062",
+      "version": 1
+    },
+    {
+      "id": "CGY-063",
+      "version": 1
+    },
+    {
+      "id": "CGY-064",
+      "version": 1
+    },
+    {
+      "id": "CGY-065",
+      "version": 1
+    },
+    {
+      "id": "CGY-067",
+      "version": 1
+    },
+    {
+      "id": "CGY-068",
+      "version": 1
+    },
+    {
+      "id": "CGY-071",
+      "version": 1
+    },
+    {
+      "id": "CGY-072",
+      "version": 1
+    },
+    {
+      "id": "CGY-073",
+      "version": 1
+    },
+    {
+      "id": "CGY-076",
+      "version": 1
+    },
+    {
+      "id": "CGY-077",
+      "version": 1
+    },
+    {
+      "id": "CGY-079",
+      "version": 1
+    },
+    {
+      "id": "CGY-080",
+      "version": 1
+    }
+  ],
+  "held_proposals": [
+    {
+      "id": "CGY-066",
+      "version": 1
+    },
+    {
+      "id": "CGY-069",
+      "version": 1
+    },
+    {
+      "id": "CGY-070",
+      "version": 1
+    },
+    {
+      "id": "CGY-074",
+      "version": 1
+    },
+    {
+      "id": "CGY-075",
+      "version": 1
+    },
+    {
+      "id": "CGY-078",
+      "version": 1
+    }
+  ],
+  "reviewed_snapshot_sha256": "df9195f3d0e019f8a8fe5c57e2d8d81c5b8438c9edf3456cf3b0e747d769e73c",
+  "full_copy_approval": "pending; not granted",
+  "implementation_authorized": false
+}

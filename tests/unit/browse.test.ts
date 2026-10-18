@@ -51,6 +51,16 @@ describe("browse index", () => {
   it("gives every organization its logo", () => {
     for (const e of all) expect(e.org.logo?.src, e.org.name).toMatch(/^\/images\/logos\//);
   });
+
+  it("places the new clinical, food and trade work in appropriate directories", () => {
+    const efw = all.find((e) => e.slug === "efw-radiology")!;
+    expect(efw.theme).toBe("sensing");
+    expect(efw.roles.find((r) => r.id === "work-sonography")?.family).toBe("health");
+    expect(all.find((e) => e.slug === "opisystems")?.theme).toBe("food");
+    expect(all.find((e) => e.slug === "congebec")?.theme).toBe("food");
+    expect(browseRoles().find((r) => r.id === "work-bootmaking")?.family).toBe("trades");
+    expect(browseRoles().find((r) => r.id === "work-refrigeration")?.family).toBe("trades");
+  });
 });
 
 describe("parseDoor", () => {

@@ -1,0 +1,88 @@
+{
+  "approved_on": "2026-10-18",
+  "reviewer": "Damian (user)",
+  "instruction": "All right let’s start the next step of creating illustrations and adding everything to the site. Just make sure to look at the new layout since we made some changes over the last 24 hours. The content you need to collect shouldn’t have changed but how we display it may have. Just take a look at that before actually adding anything and then we’ll review it before pushing it live.",
+  "drafts_sha256": "1fa24c853f52fa0e43459f1a78b900e2b2f65a200fca81da001939d0199df976",
+  "approved_versions": [
+    {
+      "id": "CGY-061-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-062-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-063-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-064-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-065-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-067-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-068-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-071-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-072-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-073-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-076-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-077-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-079-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-080-FULL",
+      "version": 1
+    }
+  ],
+  "local_implementation_authorized": true,
+  "publication_authorized": false,
+  "artwork_review": "Pending user review of local implementation",
+  "layout_checked_before_edits": "Rendered Entuitive page and current content schema inspected at 3aa6c1e; lesson rail, company/role directories, presentation and reserved image aspect ratios preserved.",
+  "role_mapping": {
+    "mechanical": "work-mechanical",
+    "quality": "work-quality",
+    "instrument": "work-controls",
+    "data": "work-software",
+    "materials": "work-materials",
+    "lab": "work-lab",
+    "process": "work-process",
+    "power": "process-operations",
+    "manufacturing": "work-manufacturing",
+    "support": "work-technical-support",
+    "logistics": "work-logistics",
+    "sonographer": "work-sonography",
+    "clinic": "work-clinic-administration",
+    "craft": "work-bootmaking",
+    "acoustics": "work-acoustics",
+    "refrigeration": "work-refrigeration",
+    "warehouse": "work-warehousing"
+  },
+  "note": "Existing general role profiles reused where equivalent; new detailed profiles added only for new kinds of work. No current vacancy cards invented."
+}

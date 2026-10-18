@@ -4,6 +4,241 @@ import type { RoleProfile } from "./types";
 // lives on the organization-role link, not here.
 export const roleProfiles: RoleProfile[] = [
   {
+    "id": "work-manufacturing",
+    "title": "Manufacturing and quality work",
+    "summary": "Make repeatable components and check that the output matches a specification.",
+    "explanation": "Make repeatable components and check that the output matches a specification.",
+    "tasks": [
+      {
+        "title": "Read",
+        "detail": "Read a drawing or work instruction before setting up a task."
+      },
+      {
+        "title": "Measure",
+        "detail": "Measure key dimensions or properties and record the result."
+      },
+      {
+        "title": "Investigate",
+        "detail": "Investigate variation rather than treating every difference as acceptable."
+      }
+    ],
+    "collaborators": [
+      "Design teams",
+      "Machine operators",
+      "Quality staff"
+    ],
+    "classroomConnection": "Precision, tolerances and repeatable methods connect measurement to useful products."
+  },
+  {
+    "id": "work-technical-support",
+    "title": "Technical application support",
+    "summary": "Help people use a technical product in the conditions of their own workplace.",
+    "explanation": "Help people use a technical product in the conditions of their own workplace.",
+    "tasks": [
+      {
+        "title": "Ask",
+        "detail": "Ask what the user is trying to measure or control."
+      },
+      {
+        "title": "Separate",
+        "detail": "Separate a setup problem from a sensor or process problem."
+      },
+      {
+        "title": "Explain",
+        "detail": "Explain the next diagnostic step and record what changed."
+      }
+    ],
+    "collaborators": [
+      "Customers",
+      "Product developers",
+      "Field technicians"
+    ],
+    "classroomConnection": "Troubleshooting means testing explanations one at a time."
+  },
+  {
+    "id": "work-logistics",
+    "title": "Dispatch and logistics coordination",
+    "summary": "Keep materials moving in the right order, with the information needed at each handoff.",
+    "explanation": "Keep materials moving in the right order, with the information needed at each handoff.",
+    "tasks": [
+      {
+        "title": "Match",
+        "detail": "Match deliveries or orders with available capacity."
+      },
+      {
+        "title": "Check",
+        "detail": "Check timing, identification and handling requirements."
+      },
+      {
+        "title": "Respond",
+        "detail": "Respond to a delay without losing track of the product or customer need."
+      }
+    ],
+    "collaborators": [
+      "Drivers",
+      "Warehouse teams",
+      "Customers"
+    ],
+    "classroomConnection": "A technically sound product can still fail its purpose if timing or handling goes wrong."
+  },
+  {
+    "id": "work-sonography",
+    "title": "Diagnostic medical sonographer",
+    "summary": "Acquire ultrasound images while supporting the person being examined.",
+    "explanation": "Acquire ultrasound images while supporting the person being examined.",
+    "tasks": [
+      {
+        "title": "Prepare",
+        "detail": "Prepare for the requested examination and communicate with the patient."
+      },
+      {
+        "title": "Position",
+        "detail": "Position the transducer and adjust acquisition settings to obtain useful views."
+      },
+      {
+        "title": "Document",
+        "detail": "Document the images for interpretation within the clinical team's workflow."
+      }
+    ],
+    "collaborators": [
+      "Patients",
+      "Radiologists",
+      "Clinic staff"
+    ],
+    "classroomConnection": "Producing a clear measurement and interpreting its meaning are connected but different tasks."
+  },
+  {
+    "id": "work-clinic-administration",
+    "title": "Medical office and booking support",
+    "summary": "Help patients and clinical teams coordinate the information and appointments needed for care.",
+    "explanation": "Help patients and clinical teams coordinate the information and appointments needed for care.",
+    "tasks": [
+      {
+        "title": "Handle",
+        "detail": "Handle appointment requests and confirm required information."
+      },
+      {
+        "title": "Communicate",
+        "detail": "Communicate clearly with patients and modality teams."
+      },
+      {
+        "title": "Keep",
+        "detail": "Keep registration and scheduling records accurate."
+      }
+    ],
+    "collaborators": [
+      "Patients",
+      "Technologists",
+      "Booking teams"
+    ],
+    "classroomConnection": "Care depends on reliable human coordination as well as instruments."
+  },
+  {
+    "id": "work-bootmaking",
+    "title": "Bootmaking and pattern work",
+    "summary": "Translate a design and material choice into a pair of boots through skilled craft.",
+    "explanation": "Translate a design and material choice into a pair of boots through skilled craft.",
+    "tasks": [
+      {
+        "title": "Plan",
+        "detail": "Plan and cut pieces with attention to material stretch."
+      },
+      {
+        "title": "Join",
+        "detail": "Join and shape components through stitching and lasting."
+      },
+      {
+        "title": "Inspect",
+        "detail": "Inspect the finished result against the intended design and fit."
+      }
+    ],
+    "collaborators": [
+      "Customers",
+      "Retail staff",
+      "Other makers"
+    ],
+    "classroomConnection": "A flat pattern and a three-dimensional object have to agree."
+  },
+  {
+    "id": "work-acoustics",
+    "title": "Acoustical consulting",
+    "summary": "Investigate how sound behaves in a space and recommend changes for its intended use.",
+    "explanation": "Investigate how sound behaves in a space and recommend changes for its intended use.",
+    "tasks": [
+      {
+        "title": "Measure",
+        "detail": "Measure or model sound paths and levels."
+      },
+      {
+        "title": "Compare",
+        "detail": "Compare changes to room surfaces, layout or noise isolation."
+      },
+      {
+        "title": "Explain",
+        "detail": "Explain the trade-offs to the people designing or using the space."
+      }
+    ],
+    "collaborators": [
+      "Architects",
+      "Mechanical engineers",
+      "Building users"
+    ],
+    "classroomConnection": "Reflection and absorption become decisions about how a room works."
+  },
+  {
+    "id": "work-refrigeration",
+    "title": "Refrigeration and air-conditioning mechanic",
+    "summary": "Install, maintain and troubleshoot equipment that moves heat and conditions air.",
+    "explanation": "Install, maintain and troubleshoot equipment that moves heat and conditions air.",
+    "tasks": [
+      {
+        "title": "Use",
+        "detail": "Use drawings to locate components and controls."
+      },
+      {
+        "title": "Check",
+        "detail": "Check operating conditions and investigate a fault."
+      },
+      {
+        "title": "Repair",
+        "detail": "Repair or adjust equipment and verify the result."
+      }
+    ],
+    "collaborators": [
+      "Controls technicians",
+      "Operators",
+      "Equipment designers"
+    ],
+    "classroomConnection": "A refrigeration system moves heat; it does not create cold as a substance."
+  },
+  {
+    "id": "work-warehousing",
+    "title": "Warehouse and inventory operations",
+    "summary": "Receive, locate and move goods while keeping identity and handling requirements visible.",
+    "explanation": "Receive, locate and move goods while keeping identity and handling requirements visible.",
+    "tasks": [
+      {
+        "title": "Check",
+        "detail": "Check incoming goods against shipment information."
+      },
+      {
+        "title": "Move",
+        "detail": "Move and store products using appropriate equipment and procedures."
+      },
+      {
+        "title": "Maintain",
+        "detail": "Maintain inventory records and coordinate outbound loads."
+      }
+    ],
+    "collaborators": [
+      "Drivers",
+      "Dispatch",
+      "Food-quality teams"
+    ],
+    "classroomConnection": "Temperature, time and correct identification all matter to a cold chain."
+  },
+
+  {
     id: "work-landscape-design",
     title: "Landscape design",
     summary: "Shape outdoor spaces so water, habitat and human uses can work together.",

@@ -109,7 +109,7 @@ test("company search stays in its directory and survives the example round trip"
   await page.goto("/connections?by=company");
   await page.getByRole("searchbox", { name: "Find a company" }).fill("ghgsat");
   await page.getByRole("button", { name: "Find company", exact: true }).click();
-  await expect(page.getByRole("status")).toContainText("1 of 32");
+  await expect(page.getByRole("status")).toContainText("1 of 46");
   await page.getByRole("link", { name: "GHGSat", exact: true }).click();
   await choosePart(page, "Who does this work");
   await expect(page).toHaveURL(/from=company&company=ghgsat#who$/);
@@ -163,7 +163,7 @@ test.describe("company directory without JavaScript", () => {
     await page.goto("/connections?by=company");
     await page.getByRole("searchbox", { name: "Find a company" }).fill("RJC");
     await page.getByRole("button", { name: "Find company", exact: true }).click();
-    await expect(page.getByRole("status")).toContainText("1 of 32");
+    await expect(page.getByRole("status")).toContainText("1 of 46");
     await page.getByRole("link", { name: "RJC Engineers", exact: true }).click();
     await page.getByRole("link", { name: "Back to companies", exact: true }).click();
     await expect(page.getByRole("searchbox", { name: "Find a company" })).toHaveValue("RJC");

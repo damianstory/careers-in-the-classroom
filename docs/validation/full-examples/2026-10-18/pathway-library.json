@@ -1,0 +1,145 @@
+{
+  "mechanical": {
+    "provider": "SAIT",
+    "name": "Mechanical Engineering Technology",
+    "route": "Diploma",
+    "location": "Calgary",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology",
+    "learns": "Design, modelling and mechanical-system analysis.",
+    "entry_note": "A technical route; does not itself confer professional engineer registration.",
+    "checked_on": "2026-10-18",
+    "admissions_note": "Check current admissions and intake before applying; this draft does not promise entry or employment."
+  },
+  "machinist": {
+    "provider": "SAIT",
+    "name": "Machinist",
+    "route": "Apprenticeship technical training",
+    "location": "Calgary",
+    "url": "https://www.sait.ca/apprenticeships-and-trades/programs/machinist",
+    "learns": "Precision machining, drawings and measurement.",
+    "entry_note": "Requires the apprenticeship process and workplace experience; technical school alone is not the full trade qualification.",
+    "checked_on": "2026-10-18",
+    "admissions_note": "Check current admissions and intake before applying; this draft does not promise entry or employment."
+  },
+  "instrument": {
+    "provider": "SAIT",
+    "name": "Instrumentation Engineering Technology",
+    "route": "Diploma",
+    "location": "Calgary",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/instrumentation-engineering-technology",
+    "learns": "Measurement, calibration and process controls.",
+    "entry_note": "Related to sensor/control work; no guaranteed employer placement.",
+    "checked_on": "2026-10-18",
+    "admissions_note": "Check current admissions and intake before applying; this draft does not promise entry or employment."
+  },
+  "chemical": {
+    "provider": "SAIT",
+    "name": "Chemical Laboratory Technology",
+    "route": "Diploma",
+    "location": "Calgary",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+    "learns": "Chemical analysis, samples and laboratory practice.",
+    "entry_note": "A laboratory route; not a medical licence or automatic research-scientist qualification.",
+    "checked_on": "2026-10-18",
+    "admissions_note": "Check current admissions and intake before applying; this draft does not promise entry or employment."
+  },
+  "degree": {
+    "provider": "University of Calgary",
+    "name": "Mechanical Engineering",
+    "route": "BSc",
+    "location": "Calgary",
+    "url": "https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-mechanical-engineering",
+    "learns": "Design using mechanics, materials and energy.",
+    "entry_note": "Professional engineering registration is a separate process.",
+    "checked_on": "2026-10-18",
+    "admissions_note": "Check current admissions and intake before applying; this draft does not promise entry or employment."
+  },
+  "chemdegree": {
+    "provider": "University of Calgary",
+    "name": "Chemistry or Biochemistry",
+    "route": "BSc program directions",
+    "location": "Calgary",
+    "url": "https://science.ucalgary.ca/current-students/undergraduate/program-guides",
+    "learns": "Chemical or biochemical foundations and scientific investigation.",
+    "entry_note": "Choose the actual program and check its current requirements; advanced research may require further study.",
+    "checked_on": "2026-10-18",
+    "admissions_note": "Check current admissions and intake before applying; this draft does not promise entry or employment."
+  },
+  "sonography": {
+    "provider": "SAIT",
+    "name": "Diagnostic Medical Sonography",
+    "route": "Diploma",
+    "location": "Calgary",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/diagnostic-medical-sonography",
+    "learns": "Ultrasound acquisition, instrumentation and patient care.",
+    "entry_note": "EFW separately states recognised training, Sonography Canada credentials and liability insurance; its evergreen overview is not an offer of work.",
+    "checked_on": "2026-10-18",
+    "admissions_note": "Check current admissions and intake before applying; this draft does not promise entry or employment."
+  },
+  "moa": {
+    "provider": "SAIT",
+    "name": "Medical Office Assistant and Unit Clerk",
+    "route": "Certificate",
+    "location": "Calgary",
+    "url": "https://www.sait.ca/programs-and-courses/certificates/medical-office-assistant-and-unit-clerk",
+    "learns": "Clinical administration and patient-record workflows.",
+    "entry_note": "An administrative route, distinct from sonography and physician training.",
+    "checked_on": "2026-10-18",
+    "admissions_note": "Check current admissions and intake before applying; this draft does not promise entry or employment."
+  },
+  "power": {
+    "provider": "SAIT",
+    "name": "Power Engineering Technology",
+    "route": "Diploma",
+    "location": "Calgary",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/power-engineering-technology",
+    "learns": "Thermal-energy systems and plant operations.",
+    "entry_note": "Power-engineer certification requires its applicable exams and experience; this is distinct from a professional engineering degree.",
+    "checked_on": "2026-10-18",
+    "admissions_note": "Check current admissions and intake before applying; this draft does not promise entry or employment."
+  },
+  "refrigeration": {
+    "provider": "SAIT",
+    "name": "Refrigeration and Air Conditioning Mechanic",
+    "route": "Apprenticeship technical training",
+    "location": "Calgary",
+    "url": "https://www.sait.ca/apprenticeships-and-trades/programs/refrigeration-and-air-conditioning-mechanic",
+    "learns": "Install, maintain and troubleshoot refrigeration and air systems.",
+    "entry_note": "Combine employer-based apprenticeship experience with technical training; check current provincial entry requirements.",
+    "checked_on": "2026-10-18",
+    "admissions_note": "Check current admissions and intake before applying; this draft does not promise entry or employment."
+  },
+  "logistics": {
+    "provider": "SAIT",
+    "name": "Business Administration — Supply Chain Management",
+    "route": "Diploma",
+    "location": "Calgary",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/business-administration-supply-chain-management",
+    "learns": "Supply-chain coordination, operations and planning.",
+    "entry_note": "A possible progression route, not a required credential for every warehouse role.",
+    "checked_on": "2026-10-18",
+    "admissions_note": "Check current admissions and intake before applying; this draft does not promise entry or employment."
+  },
+  "fibre": {
+    "provider": "Alberta University of the Arts",
+    "name": "Fibre",
+    "route": "Studio concentration within degree study",
+    "location": "Calgary",
+    "url": "https://www.auarts.ca/learn-with-us/program-areas/fibre",
+    "learns": "Material exploration, textile techniques and design critique.",
+    "entry_note": "Adjacent material/design education, not an Alberta Boot training program or bootmaking certificate.",
+    "checked_on": "2026-10-18",
+    "admissions_note": "Check current admissions and intake before applying; this draft does not promise entry or employment."
+  },
+  "bootwork": {
+    "provider": "Alberta Boot Company",
+    "name": "Learning through retail and production experience",
+    "route": "Observed individual route",
+    "location": "Calgary",
+    "url": "https://www.albertaboot.ca/blogs/blog/the-master-boot-maker-meet-antonio-juarez",
+    "learns": "An employer profile describes retail work during high school followed by growing production responsibilities.",
+    "entry_note": "One person's experience, not an advertised apprenticeship, vacancy or universal entry requirement.",
+    "checked_on": "2026-10-18",
+    "admissions_note": "Check current admissions and intake before applying; this draft does not promise entry or employment."
+  }
+}

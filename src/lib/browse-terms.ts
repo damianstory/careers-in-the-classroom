@@ -17,6 +17,7 @@ export type ThemeId = (typeof THEMES)[number]["id"];
 export const FAMILIES = [
   { id: "engineering", name: "Engineering and design", blurb: "Designing structures, machines, processes and instruments." },
   { id: "lab", name: "Lab science and quality", blurb: "Testing samples and making sure results and products are consistent." },
+  { id: "health", name: "Health and patient care", blurb: "Working with patients and clinical equipment to support care." },
   { id: "field", name: "Environment and wildlife", blurb: "Working outdoors with water, land, air and animals." },
   { id: "data", name: "Data, software and mapping", blurb: "Turning measurements into maps, models and tools." },
   { id: "trades", name: "Skilled trades and operations", blurb: "Building, running, fixing and making things by hand and machine." },

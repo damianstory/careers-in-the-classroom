@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "standens",
+    "name": "Standen\u2019s (IMT)",
+    "url": "https://standens.com/wp-content/uploads/2024/12/IMT_Standens.png",
+    "onDark": false
+  },
+  {
+    "slug": "opisystems",
+    "name": "OPIsystems (OPI)",
+    "url": "https://opisystems.com/wp-content/uploads/2023/02/OPI_Logo_4c-300x147.png",
+    "onDark": false
+  },
+  {
+    "slug": "nanotess",
+    "name": "NanoTess",
+    "url": "https://www.nanotess.com/cdn/shop/files/NanoTess_Catalyzing_Healing.png?v=1741619526&width=600",
+    "onDark": false
+  },
+  {
+    "slug": "global-power-technologies",
+    "name": "Global Power Technologies",
+    "url": "https://www.globalte.com/hubfs/GPT_Logo.svg",
+    "onDark": false
+  },
+  {
+    "slug": "hifi-engineering",
+    "name": "Hifi Engineering",
+    "url": "https://hifieng.com/wp-content/uploads/2021/08/logo-dark-1.svg",
+    "onDark": false
+  },
+  {
+    "slug": "burnco",
+    "name": "BURNCO",
+    "url": "https://www.burnco.com/wp-content/uploads/2022/12/burnco-logo.png",
+    "onDark": false
+  },
+  {
+    "slug": "efw-radiology",
+    "name": "EFW Radiology",
+    "url": "https://www.efw.ca/images/ui/logo_2025.png?v=1.3",
+    "onDark": false
+  },
+  {
+    "slug": "alberta-boot-company",
+    "name": "Alberta Boot Company",
+    "url": "https://www.albertaboot.ca/cdn/shop/files/ABCO_LOGO_ASSETS_ABCO_BRANDMARK_00263a_dd55fa8c-7c89-4928-9d1a-531b796cc2eb.png?v=1768700766&width=300",
+    "onDark": false
+  },
+  {
+    "slug": "ffa-acoustics",
+    "name": "FFA Consultants in Acoustics and Noise Control",
+    "url": "https://static.wixstatic.com/media/ba2cd3_afff0acc43494ec0acb3e8573123aa9e~mv2.jpg/v1/fill/w_273,h_68,al_c,q_80,enc_avif,quality_auto/ba2cd3_afff0acc43494ec0acb3e8573123aa9e~mv2.jpg",
+    "onDark": false
+  },
+  {
+    "slug": "enmax-shepard",
+    "name": "ENMAX",
+    "url": "https://www.enmax.com/",
+    "onDark": false
+  },
+  {
+    "slug": "mobiltex",
+    "name": "MOBILTEX",
+    "url": "https://www.mobiltex.com/wp-content/uploads/2023/12/logo40th.svg",
+    "onDark": false
+  },
+  {
+    "slug": "ice-western",
+    "name": "ICE Western",
+    "url": "https://www.icewestern.com/wp-content/uploads/ICE-Logo-Blue-white-oval-02.png",
+    "onDark": false
+  },
+  {
+    "slug": "congebec",
+    "name": "Congebec",
+    "url": "https://congebec.com/wp-content/uploads/2023/03/LogoCongebec-Horizontal_Couleur_CMYK-texte-blanc-768x291.png",
+    "onDark": true
+  },
+  {
+    "slug": "fluid-energy",
+    "name": "Fluid Energy (Dorf Ketal)",
+    "url": "https://static.wixstatic.com/media/f75392_431575a5d90442bdbb40c3c16fd22189~mv2.png/v1/fill/w_370,h_172,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Fluid%20black%202%20color.png",
+    "onDark": false
+  }
+]

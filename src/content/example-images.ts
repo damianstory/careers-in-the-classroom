@@ -1,3 +1,17 @@
+import october18Image0 from "../../public/images/examples/standens-graphic-novel.webp";
+import october18Image1 from "../../public/images/examples/opisystems-graphic-novel.webp";
+import october18Image2 from "../../public/images/examples/nanotess-graphic-novel.webp";
+import october18Image3 from "../../public/images/examples/global-power-technologies-graphic-novel.webp";
+import october18Image4 from "../../public/images/examples/hifi-engineering-graphic-novel.webp";
+import october18Image5 from "../../public/images/examples/burnco-graphic-novel.webp";
+import october18Image6 from "../../public/images/examples/efw-radiology-graphic-novel.webp";
+import october18Image7 from "../../public/images/examples/alberta-boot-company-graphic-novel.webp";
+import october18Image8 from "../../public/images/examples/ffa-acoustics-graphic-novel.webp";
+import october18Image9 from "../../public/images/examples/enmax-shepard-graphic-novel.webp";
+import october18Image10 from "../../public/images/examples/mobiltex-graphic-novel.webp";
+import october18Image11 from "../../public/images/examples/ice-western-graphic-novel.webp";
+import october18Image12 from "../../public/images/examples/congebec-graphic-novel.webp";
+import october18Image13 from "../../public/images/examples/fluid-energy-graphic-novel.webp";
 import octoberImage0 from "../../public/images/examples/o2-planning-design-graphic-novel.webp";
 import octoberImage1 from "../../public/images/examples/entuitive-graphic-novel.webp";
 import octoberImage2 from "../../public/images/examples/phil-sebastian-graphic-novel.webp";
@@ -35,6 +49,21 @@ import lithium from "../../public/images/examples/e3-lithium-graphic-novel.webp"
 // Fictional editorial scenes, not evidence of company staff, equipment or facilities.
 // Prompts and provenance: design/example-illustrations-2026-10-07/.
 export const exampleImages: Partial<Record<string, { src: StaticImageData; alt: string }>> = {
+  "standens": { src: october18Image0, alt: "Graphic-novel illustration. Technician checking the deflection of a leaf-spring assembly." },
+  "opisystems": { src: october18Image1, alt: "Graphic-novel illustration. Technician comparing grain-monitoring equipment and recorded readings." },
+  "nanotess": { src: october18Image2, alt: "Graphic-novel illustration. Researcher comparing materials using controlled laboratory measurements." },
+  "global-power-technologies": { src: october18Image3, alt: "Graphic-novel illustration. Technician checking a compact thermoelectric power system." },
+  "hifi-engineering": { src: october18Image4, alt: "Graphic-novel illustration. Engineer reviewing fibre-sensor measurements and their location along an asset." },
+  "burnco": { src: october18Image5, alt: "Graphic-novel illustration. Workers coordinating a concrete mixture and its delivery requirements." },
+  "efw-radiology": { src: october18Image6, alt: "Graphic-novel illustration. Sonographer practising ultrasound acquisition using a training phantom." },
+  "alberta-boot-company": { src: october18Image7, alt: "Graphic-novel illustration. Bootmaker shaping a stitched upper around a boot last." },
+  "ffa-acoustics": { src: october18Image8, alt: "Graphic-novel illustration. Consultant measuring sound in a room used for conversation." },
+  "enmax-shepard": { src: october18Image9, alt: "Graphic-novel illustration. Plant operator reviewing the energy flow through two generating stages." },
+  "mobiltex": { src: october18Image10, alt: "Graphic-novel illustration. Technician reviewing remote readings from a corrosion-protection monitoring system." },
+  "ice-western": { src: october18Image11, alt: "Graphic-novel illustration. Technician inspecting coils in a generic air-handling unit." },
+  "congebec": { src: october18Image12, alt: "Graphic-novel illustration. Warehouse team coordinating products and temperature checks in cold storage." },
+  "fluid-energy": { src: october18Image13, alt: "Graphic-novel illustration. Laboratory worker comparing chemical formulations using controlled samples." },
+
   "o2-planning-design": { src: octoberImage0, alt: "Graphic-novel illustration. Fictional landscape designer tracing a stormwater route on a plan beside a wetland boardwalk." },
   "entuitive": { src: octoberImage1, alt: "Graphic-novel illustration. Fictional structural engineer comparing a long-span model with a rail corridor drawing." },
   "phil-sebastian": { src: octoberImage2, alt: "Graphic-novel illustration. Fictional roast operator comparing sample beans and an instrument reading beside a closed roasting machine." },

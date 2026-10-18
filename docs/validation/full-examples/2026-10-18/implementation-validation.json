@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-18",
+  "status": "passed; ready for user review",
+  "base_revision": "3aa6c1e",
+  "examples_before": 32,
+  "examples_after": 46,
+  "new_examples": 14,
+  "new_illustrations": 28,
+  "role_connections": 39,
+  "pathway_connections": 31,
+  "new_role_profiles": 9,
+  "new_pathway_records": 13,
+  "new_job_cards": 0,
+  "research_sources": 70,
+  "additional_official_homepage_sources": 8,
+  "unit_tests": {
+    "passed": 194,
+    "failed": 0
+  },
+  "draft_preservation": "SHA256 matches implementation approval; questions, all four teaching steps, role and pathway counts matched for all 14",
+  "held_candidates_unchanged": 6,
+  "browser_initial": {
+    "passed": 407,
+    "failed": 18,
+    "skipped": 49,
+    "failures": "Six projector role captions overflowed; 12 desktop/phone tests used old counts, an ambiguous Clear selector, or assumed E3 remained in the first 12 cards. Fixes applied; focused production rerun in progress."
+  },
+  "manual_checks": [
+    "Existing Entuitive layout rendered before edits",
+    "Desktop Standens, EFW, Alberta Boot, ICE Western",
+    "EFW phone how-it-works and company directory",
+    "Six corrected projector role slides measured at 900/900px height",
+    "NanoTess Company website resolves to its official homepage in rendered local view"
+  ],
+  "looot_incremental_spend_usd": 0,
+  "looot_week_settled_usd": 0.035,
+  "looot_week_cap_usd": 10,
+  "looot_week_outstanding_usd": 0,
+  "committed": false,
+  "pushed": false,
+  "deployed": false,
+  "review_status": "Awaiting user review of local illustrated implementation",
+  "slugs": [
+    "standens",
+    "opisystems",
+    "nanotess",
+    "global-power-technologies",
+    "hifi-engineering",
+    "burnco",
+    "efw-radiology",
+    "alberta-boot-company",
+    "ffa-acoustics",
+    "enmax-shepard",
+    "mobiltex",
+    "ice-western",
+    "congebec",
+    "fluid-energy"
+  ],
+  "browser_final_focused": {
+    "passed": 185,
+    "failed": 0,
+    "skipped": 5,
+    "duration_minutes": 3.1,
+    "scope": [
+      "All 46 example pages, desktop and phone",
+      "Every available lesson part and teaching image",
+      "Desktop projector frames including all six corrected role slides",
+      "Course filtering and back/forward",
+      "Company search with and without JavaScript",
+      "Company/role/challenge return links",
+      "Four-directory accessibility and mobile overflow"
+    ],
+    "note": "Final rerun follows initial 407 passes and 18 corrected failures. Eight official homepage link references were added after this production test build; unit evidence integrity rechecked and NanoTess website link verified in local browser."
+  },
+  "lint": "passed",
+  "diff_check": "passed",
+  "build": "passed",
+  "typecheck": "passed",
+  "final_head": "3aa6c1e",
+  "release_checks": {
+    "date": "2026-10-18",
+    "unit_passed": 194,
+    "lint": "passed",
+    "typecheck": "passed",
+    "production_build": "passed via Playwright webServer",
+    "efw_production_browser_checks_passed": 4,
+    "scope": "EFW full parts/projector and reserved image geometry on desktop/phone",
+    "log": "browser-qa/release-efw.log"
+  }
+}

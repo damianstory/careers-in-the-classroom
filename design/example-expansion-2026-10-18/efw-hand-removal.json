@@ -1,0 +1,12 @@
+{
+  "requested_change": "Remove the distant hand on the control panel from the supplied earlier EFW illustration.",
+  "output": "design/example-expansion-2026-10-18/efw-radiology-diagram-hand-removed.png",
+  "original": "design/example-expansion-2026-10-18/efw-radiology-diagram-superseded.png",
+  "generated_source": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-a7c7944b-0a67-4802-86b5-e3637debe289.png",
+  "prompts": [
+    "Make exactly one localized correction to the supplied illustration: completely remove the stray hand and forearm resting on the ultrasound machine's control panel at the right, below the monitor. It is the hand near the patient's right-side sleeve, NOT the sonographer's foreground hand holding the probe. Reconstruct the now-unobstructed control panel with coherent existing buttons and trackball, and finish the nearby gown, bed sheet and background naturally with no extra limb. Keep the sonographer's probe-holding hand and arm exactly as they are. Preserve the patient, the woman's face and pose, monitor, teaching cutaway, arrows, numbers, composition, dimensions, graphic-novel ink/screenprint texture and palette. No added limbs, text, circles or annotations. Keep every other part as unchanged as possible.",
+    "The FIRST reference is the corrected version: keep it unchanged, including its empty control panel with NO hand. Restore only the four small dark green numbered circular markers that existed in the SECOND reference: 1 beside probe beam, 2 near reflection boundary, 3 at left of ultrasound monitor, 4 beside woman's shoulder. Match original marker positions and design. Do not bring back the stray hand on the machine in reference two. No other changes: retain all artwork and arrows exactly from reference one. Four small number circles only."
+  ],
+  "review": "Hand removed; four numbered markers restored. Existing simplified website diagram retained; this is a corrected alternative of the user's supplied earlier version.",
+  "published": false
+}

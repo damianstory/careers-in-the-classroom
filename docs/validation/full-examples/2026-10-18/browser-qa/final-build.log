@@ -1,0 +1,40 @@
+
+> careers-in-the-classroom@0.1.0 build
+> next build
+
+▲ Next.js 16.3.6 (Turbopack)
+✓ Running next.config.ts took 10ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 461ms
+  Running TypeScript ...
+  Finished TypeScript in 856ms ...
+  Collecting page data using 9 workers ...
+  Generating static pages using 9 workers (0/54) ...
+  Generating static pages using 9 workers (13/54)
+  Generating static pages using 9 workers (26/54)
+  Generating static pages using 9 workers (40/54)
+✓ Generating static pages using 9 workers (54/54) in 121ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ƒ /connections
+├ ○ /digest
+├ ƒ /discover
+├ ƒ /examples/[slug]
+└ ○ /get-involved
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+
+> careers-in-the-classroom@0.1.0 typecheck
+> next typegen && tsc --noEmit
+
+Generating route types...
+✓ Types generated successfully

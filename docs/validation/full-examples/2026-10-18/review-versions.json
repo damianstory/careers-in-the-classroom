@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "prepared_on": "2026-10-18",
+  "decision": "pending",
+  "artwork_status": "briefs only",
+  "files": [
+    {
+      "file": "drafts.json",
+      "sha256": "1fa24c853f52fa0e43459f1a78b900e2b2f65a200fca81da001939d0199df976"
+    },
+    {
+      "file": "all-drafts.md",
+      "sha256": "8a8d9a25dea8cacff3a0f164dabb9654046a73e67c3814d4d5cb488054827523"
+    },
+    {
+      "file": "role-library.json",
+      "sha256": "fddd26f6cd3281f9ad1a4755cafb7f8c0c336b45f1c7796215dbf159f7843100"
+    },
+    {
+      "file": "pathway-library.json",
+      "sha256": "bc561e61c7f08908afe5c0586c94b0694031adbfafa645f1a1ae425903d5a3a7"
+    },
+    {
+      "file": "cgy-061-standens.md",
+      "sha256": "7c881ed9e2526a1f7c43e00018de16beec5ae11e91013a3ad02bbd6b73613c33"
+    },
+    {
+      "file": "cgy-062-opisystems.md",
+      "sha256": "e3c3787cd6745fa3f7a2f67f67b04f74643c0b0c88e2bb0c5b60406112af3181"
+    },
+    {
+      "file": "cgy-063-nanotess.md",
+      "sha256": "c8963aa1fc604698e157cbb0061f43138ca15057c5d2665270a2d6042c95d9fa"
+    },
+    {
+      "file": "cgy-064-global-power-technologies.md",
+      "sha256": "586b4f1146fec0d2547ec8b7addb7f049c1212d812223ffb09ad6030a675aa17"
+    },
+    {
+      "file": "cgy-065-hifi-engineering.md",
+      "sha256": "4b061722b3bdeac0c79b1b2264ea84fdc3062ee8acd20378b2f39e45209a2fc0"
+    },
+    {
+      "file": "cgy-067-burnco.md",
+      "sha256": "6f394a999a070d8120948c3840e7edc202636070c6231e595daa954bae199f8f"
+    },
+    {
+      "file": "cgy-068-efw-radiology.md",
+      "sha256": "89428db4b70895cabccb039d43ebfa21e819b07ed5cb3e895a61765af74137ea"
+    },
+    {
+      "file": "cgy-071-alberta-boot-company.md",
+      "sha256": "63404c3b4ffb7ee4c881f81e0cbe416532fe95be65764a702cbfb24b1921417e"
+    },
+    {
+      "file": "cgy-072-ffa-acoustics.md",
+      "sha256": "849d1cc66c186f0c9d7123d9f7325c1eba0353a142ddea485e9fb0d669cbf5bd"
+    },
+    {
+      "file": "cgy-073-enmax-shepard.md",
+      "sha256": "cf1225e1495fe44f08d0611022b547eeb8270d8e68f0779876f8ac81cafec48f"
+    },
+    {
+      "file": "cgy-076-mobiltex.md",
+      "sha256": "cf0303907f22a1726dbedb707c8b1dc7946a5084f782b7807f8ac51d583b04fc"
+    },
+    {
+      "file": "cgy-077-ice-western.md",
+      "sha256": "e5ea9bfd79c700b90941d31b4fc102385fe9bd046e9e1477556add5304341472"
+    },
+    {
+      "file": "cgy-079-congebec.md",
+      "sha256": "4e87aefb1d98ba983e5053db0021ad65bf099fb53e6ef810085d96067d5157ad"
+    },
+    {
+      "file": "cgy-080-fluid-energy.md",
+      "sha256": "d98a219712a85261acb3f6c4248b63d5f2de4089959601aeecd00290bab5b221"
+    }
+  ]
+}

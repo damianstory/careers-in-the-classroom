@@ -1,6 +1,6 @@
 import { test, expect } from "./fixtures";
 
-for (const slug of ["ghgsat", "wilder-institute", "e3-lithium", "broken-pencil-studios"]) {
+for (const slug of ["ghgsat", "wilder-institute", "e3-lithium", "broken-pencil-studios", "standens", "efw-radiology"]) {
   test(`${slug}: story and teaching images reserve their loaded geometry`, async ({ page, requests }) => {
     void requests;
     await page.addInitScript(() => localStorage.setItem("example-layout", "all"));

@@ -1,0 +1,1725 @@
+{
+  "schema_version": 1,
+  "occurrence": "2026-10-18",
+  "candidates": [
+    {
+      "id": "CGY-061",
+      "version": 1,
+      "company": "Standen’s (IMT)",
+      "canonical_domain": "standens.com",
+      "aliases": [
+        "IMT Standen's",
+        "Standen's"
+      ],
+      "parent_or_brand": "IMT",
+      "sector": "Manufacturing and trades",
+      "calgary_evidence": "Calgary manufacturing facility stated on current company homepage.",
+      "presence_type": "manufacturing",
+      "work": "Leaf springs and suspension components",
+      "proposed_question": "Why can a steel spring bend repeatedly without staying bent?",
+      "concepts": "Forces, elastic deformation and materials; Physics 20 extension",
+      "role_leads": "Manufacturing and quality teams: shape components, check dimensions and compare load/deflection data.",
+      "role_status": "Task-based editorial leads, not verified current vacancies or employer hiring requirements",
+      "pathway_leads": [
+        {
+          "name": "SAIT Mechanical Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        },
+        {
+          "name": "SAIT Machinist apprenticeship",
+          "url": "https://www.sait.ca/apprenticeships-and-trades/programs/machinist",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        }
+      ],
+      "score_dimensions": [
+        4,
+        3,
+        2
+      ],
+      "score": 9,
+      "score_rationale": {
+        "classroom": "Forces, elastic deformation and materials; Physics 20 extension",
+        "concrete_work": "Leaf springs and suspension components",
+        "added_value": "Elastic components and metalworking complement existing prototyping and heavy-equipment stories."
+      },
+      "sources": [
+        "https://standens.com/"
+      ],
+      "gaps": "Verify a documented spring-testing example and heat-treatment details before teaching them as company-specific.",
+      "net_difference": "Elastic components and metalworking complement existing prototyping and heavy-equipment stories.",
+      "evidence_gate": "pass at proposal level",
+      "recommendation": "shortlist",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-18",
+      "last_attempted": "2026-10-18",
+      "last_researched": "2026-10-18",
+      "screening_completed_on": "2026-10-18",
+      "curriculum_status": "Provisional concepts only; exact Alberta outcomes not verified. Proposal approval is not approval of full content.",
+      "full_example_status": "draft v1 prepared; full-copy review pending",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-18/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-18/source-captures.json",
+      "source_check_date": "2026-10-18",
+      "planned_buildout": "Company: Calgary manufacturing facility stated on current company homepage. Roles: Manufacturing and quality teams: shape components, check dimensions and compare load/deflection data. Pathways: SAIT Mechanical Engineering Technology; SAIT Machinist apprenticeship. Classroom: Why can a steel spring bend repeatedly without staying bent? Remaining work: Verify a documented spring-testing example and heat-treatment details before teaching them as company-specific.",
+      "decision_choices": [
+        "approve proposal v1",
+        "revise proposal v1",
+        "reject proposal v1"
+      ],
+      "discovery_source": {
+        "family": "original employer/facility/product sources; corroborated with government or research-partner sources where listed",
+        "url": "https://standens.com/"
+      },
+      "last_completed_research_on": "2026-10-18",
+      "deferred_reason": null,
+      "exact_proposed_summary": "Standen’s makes suspension components at its Calgary facility. A leaf spring must flex under a load while continuing to do its job. Students could compare illustrative load-and-deflection measurements and discuss the difference between useful flexibility and permanent deformation.",
+      "decision_history": [
+        {
+          "prior_decision": "pending",
+          "decision": "approved",
+          "version": 1,
+          "reviewed_on": "2026-10-18",
+          "reviewer": "user",
+          "instruction": "Alright, approve all 14 that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later."
+        }
+      ],
+      "reviewed_on": "2026-10-18",
+      "full_copy_decision": "pending",
+      "full_draft_packet": "docs/validation/full-examples/2026-10-18/review.md",
+      "full_research_completed_on": "2026-10-18"
+    },
+    {
+      "id": "CGY-062",
+      "version": 1,
+      "company": "OPIsystems (OPI)",
+      "canonical_domain": "opisystems.com",
+      "aliases": [
+        "OPI",
+        "OPI Systems"
+      ],
+      "parent_or_brand": null,
+      "sector": "Food and agriculture",
+      "calgary_evidence": "Calgary operating contact/support location; company describes engineering, production and product-support teams. Farms and grain bins are customer sites, not claimed to be in Calgary.",
+      "presence_type": "operating office and support; customer projects elsewhere",
+      "work": "Monitor stored grain using temperature, moisture and CO2; control aeration.",
+      "proposed_question": "How can you spot a grain bin starting to spoil before the damage is visible?",
+      "concepts": "Respiration, environmental conditions and indirect measurements; Biology 20 inquiry",
+      "role_leads": "Sensor/product development, grain-system support and controls: compare signals, troubleshoot sensors and decide when to run fans.",
+      "role_status": "Task-based editorial leads, not verified current vacancies or employer hiring requirements",
+      "pathway_leads": [
+        {
+          "name": "SAIT Instrumentation Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/instrumentation-engineering-technology",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        },
+        {
+          "name": "SAIT Mechanical Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        }
+      ],
+      "score_dimensions": [
+        4,
+        3,
+        2
+      ],
+      "score": 9,
+      "score_rationale": {
+        "classroom": "Respiration, environmental conditions and indirect measurements; Biology 20 inquiry",
+        "concrete_work": "Monitor stored grain using temperature, moisture and CO2; control aeration.",
+        "added_value": "Adds food preservation and biological activity measured indirectly, beyond food manufacturing and wastewater."
+      },
+      "sources": [
+        "https://opisystems.com/contact/",
+        "https://opisystems.com/from-an-ounce-of-prevention-to-every-grain-to-market/",
+        "https://opisystems.com/solutions/for-commercial/"
+      ],
+      "gaps": "Verify exact Calgary team/factory assignments and one sample dataset; CO2 is a warning signal, not a unique diagnosis.",
+      "net_difference": "Adds food preservation and biological activity measured indirectly, beyond food manufacturing and wastewater.",
+      "evidence_gate": "pass at proposal level",
+      "recommendation": "shortlist",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-18",
+      "last_attempted": "2026-10-18",
+      "last_researched": "2026-10-18",
+      "screening_completed_on": "2026-10-18",
+      "curriculum_status": "Provisional concepts only; exact Alberta outcomes not verified. Proposal approval is not approval of full content.",
+      "full_example_status": "draft v1 prepared; full-copy review pending",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-18/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-18/source-captures.json",
+      "source_check_date": "2026-10-18",
+      "planned_buildout": "Company: Calgary operating contact/support location; company describes engineering, production and product-support teams. Farms and grain bins are customer sites, not claimed to be in Calgary. Roles: Sensor/product development, grain-system support and controls: compare signals, troubleshoot sensors and decide when to run fans. Pathways: SAIT Instrumentation Engineering Technology; SAIT Mechanical Engineering Technology. Classroom: How can you spot a grain bin starting to spoil before the damage is visible? Remaining work: Verify exact Calgary team/factory assignments and one sample dataset; CO2 is a warning signal, not a unique diagnosis.",
+      "decision_choices": [
+        "approve proposal v1",
+        "revise proposal v1",
+        "reject proposal v1"
+      ],
+      "discovery_source": {
+        "family": "original employer/facility/product sources; corroborated with government or research-partner sources where listed",
+        "url": "https://opisystems.com/contact/"
+      },
+      "last_completed_research_on": "2026-10-18",
+      "deferred_reason": null,
+      "exact_proposed_summary": "OPI connects grain-storage sensors and control systems with growers. Its Calgary operating base supports a business that combines engineering, manufacturing and customer support. Students could compare illustrative temperature, moisture and CO2 trends and ask what extra evidence would distinguish normal variation from a developing problem. Customer grain bins are not assumed to be in Calgary.",
+      "decision_history": [
+        {
+          "prior_decision": "pending",
+          "decision": "approved",
+          "version": 1,
+          "reviewed_on": "2026-10-18",
+          "reviewer": "user",
+          "instruction": "Alright, approve all 14 that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later."
+        }
+      ],
+      "reviewed_on": "2026-10-18",
+      "full_copy_decision": "pending",
+      "full_draft_packet": "docs/validation/full-examples/2026-10-18/review.md",
+      "full_research_completed_on": "2026-10-18"
+    },
+    {
+      "id": "CGY-063",
+      "version": 1,
+      "company": "NanoTess",
+      "canonical_domain": "nanotess.com",
+      "aliases": [],
+      "parent_or_brand": null,
+      "sector": "Health and advanced materials",
+      "calgary_evidence": "Federal grant record identifies Calgary laboratory/production scale-up; current company funding release describes ongoing materials development.",
+      "presence_type": "laboratory/production development",
+      "work": "Develop catalytic materials for wound-care products.",
+      "proposed_question": "How would you test whether a material changes a chemical process?",
+      "concepts": "Catalysts, controlled experiments and evidence; Chemistry inquiry",
+      "role_leads": "Materials research, laboratory testing and quality documentation.",
+      "role_status": "Task-based editorial leads, not verified current vacancies or employer hiring requirements",
+      "pathway_leads": [
+        {
+          "name": "SAIT Chemical Laboratory Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        }
+      ],
+      "score_dimensions": [
+        3,
+        3,
+        2
+      ],
+      "score": 8,
+      "score_rationale": {
+        "classroom": "Catalysts, controlled experiments and evidence; Chemistry inquiry",
+        "concrete_work": "Develop catalytic materials for wound-care products.",
+        "added_value": "Adds applied catalysis, but overlaps the pending health-device queue."
+      },
+      "sources": [
+        "https://search.open.canada.ca/grants/record/nrc-cnrc%2C172-2022-2023-Q4-1000203%2Ccurrent",
+        "https://www.nanotess.com/blogs/news/nanotess-secures-government-of-canada-funding"
+      ],
+      "gaps": "Separate materials mechanism from clinical claims; verify regulatory status and independent evidence before health claims. No efficacy figures proposed.",
+      "net_difference": "Adds applied catalysis, but overlaps the pending health-device queue.",
+      "evidence_gate": "pass at proposal level",
+      "recommendation": "eligible for review",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-18",
+      "last_attempted": "2026-10-18",
+      "last_researched": "2026-10-18",
+      "screening_completed_on": "2026-10-18",
+      "curriculum_status": "Provisional concepts only; exact Alberta outcomes not verified. Proposal approval is not approval of full content.",
+      "full_example_status": "draft v1 prepared; full-copy review pending",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-18/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-18/source-captures.json",
+      "source_check_date": "2026-10-18",
+      "planned_buildout": "Company: Federal grant record identifies Calgary laboratory/production scale-up; current company funding release describes ongoing materials development. Roles: Materials research, laboratory testing and quality documentation. Pathways: SAIT Chemical Laboratory Technology. Classroom: How would you test whether a material changes a chemical process? Remaining work: Separate materials mechanism from clinical claims; verify regulatory status and independent evidence before health claims. No efficacy figures proposed.",
+      "decision_choices": [
+        "approve proposal v1",
+        "revise proposal v1",
+        "reject proposal v1"
+      ],
+      "discovery_source": {
+        "family": "original employer/facility/product sources; corroborated with government or research-partner sources where listed",
+        "url": "https://search.open.canada.ca/grants/record/nrc-cnrc%2C172-2022-2023-Q4-1000203%2Ccurrent"
+      },
+      "last_completed_research_on": "2026-10-18",
+      "deferred_reason": null,
+      "decision_history": [
+        {
+          "prior_decision": "pending",
+          "decision": "approved",
+          "version": 1,
+          "reviewed_on": "2026-10-18",
+          "reviewer": "user",
+          "instruction": "Alright, approve all 14 that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later."
+        }
+      ],
+      "reviewed_on": "2026-10-18",
+      "full_copy_decision": "pending",
+      "full_draft_packet": "docs/validation/full-examples/2026-10-18/review.md",
+      "full_research_completed_on": "2026-10-18"
+    },
+    {
+      "id": "CGY-064",
+      "version": 1,
+      "company": "Global Power Technologies",
+      "canonical_domain": "globalte.com",
+      "aliases": [
+        "GPT"
+      ],
+      "parent_or_brand": null,
+      "sector": "Energy systems",
+      "calgary_evidence": "Company explicitly identifies manufacturing locations in Calgary and Bassano; preserve the distinction.",
+      "presence_type": "two Alberta facilities; Calgary plus Bassano",
+      "work": "Build remote power systems including thermoelectric generators.",
+      "proposed_question": "How can a temperature difference produce electricity without a spinning turbine?",
+      "concepts": "Energy conversion and temperature gradients; Science 10/Physics extension",
+      "role_leads": "Product testing, electrical integration and manufacturing; compare output under different thermal conditions.",
+      "role_status": "Task-based editorial leads, not verified current vacancies or employer hiring requirements",
+      "pathway_leads": [
+        {
+          "name": "SAIT Instrumentation Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/instrumentation-engineering-technology",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        },
+        {
+          "name": "SAIT Power Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/power-engineering-technology",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        }
+      ],
+      "score_dimensions": [
+        4,
+        2,
+        2
+      ],
+      "score": 8,
+      "score_rationale": {
+        "classroom": "Energy conversion and temperature gradients; Science 10/Physics extension",
+        "concrete_work": "Build remote power systems including thermoelectric generators.",
+        "added_value": "Adds thermoelectric conversion beyond battery storage and conventional generation."
+      },
+      "sources": [
+        "https://www.globalte.com/",
+        "https://www.globalte.com/resources/safety-at-gpt",
+        "https://www.globalte.com/resources/the-importance-of-fire-drills"
+      ],
+      "gaps": "Manufacturing-location evidence is dated 2023/2024; verify which product stages remain in each plant before full copy.",
+      "net_difference": "Adds thermoelectric conversion beyond battery storage and conventional generation.",
+      "evidence_gate": "pass at proposal level",
+      "recommendation": "eligible for review",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-18",
+      "last_attempted": "2026-10-18",
+      "last_researched": "2026-10-18",
+      "screening_completed_on": "2026-10-18",
+      "curriculum_status": "Provisional concepts only; exact Alberta outcomes not verified. Proposal approval is not approval of full content.",
+      "full_example_status": "draft v1 prepared; full-copy review pending",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-18/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-18/source-captures.json",
+      "source_check_date": "2026-10-18",
+      "planned_buildout": "Company: Company explicitly identifies manufacturing locations in Calgary and Bassano; preserve the distinction. Roles: Product testing, electrical integration and manufacturing; compare output under different thermal conditions. Pathways: SAIT Instrumentation Engineering Technology; SAIT Power Engineering Technology. Classroom: How can a temperature difference produce electricity without a spinning turbine? Remaining work: Manufacturing-location evidence is dated 2023/2024; verify which product stages remain in each plant before full copy.",
+      "decision_choices": [
+        "approve proposal v1",
+        "revise proposal v1",
+        "reject proposal v1"
+      ],
+      "discovery_source": {
+        "family": "original employer/facility/product sources; corroborated with government or research-partner sources where listed",
+        "url": "https://www.globalte.com/"
+      },
+      "last_completed_research_on": "2026-10-18",
+      "deferred_reason": null,
+      "decision_history": [
+        {
+          "prior_decision": "pending",
+          "decision": "approved",
+          "version": 1,
+          "reviewed_on": "2026-10-18",
+          "reviewer": "user",
+          "instruction": "Alright, approve all 14 that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later."
+        }
+      ],
+      "reviewed_on": "2026-10-18",
+      "full_copy_decision": "pending",
+      "full_draft_packet": "docs/validation/full-examples/2026-10-18/review.md",
+      "full_research_completed_on": "2026-10-18"
+    },
+    {
+      "id": "CGY-065",
+      "version": 1,
+      "company": "Hifi Engineering",
+      "canonical_domain": "hifieng.com",
+      "aliases": [
+        "Hifi"
+      ],
+      "parent_or_brand": null,
+      "sector": "Infrastructure sensing",
+      "calgary_evidence": "Company team page describes Calgary origins and engineering disciplines; current product release identifies Calgary headquarters and sensor work.",
+      "presence_type": "engineering headquarters; field work elsewhere",
+      "work": "Use distributed fibre-optic measurements to monitor pipelines and inspection tools.",
+      "proposed_question": "How can a long fibre help locate a disturbance along a pipeline?",
+      "concepts": "Waves, signals, location and uncertainty; Physics inquiry",
+      "role_leads": "Electrical/software/mechanical engineering: collect measurements, interpret patterns and validate alerts.",
+      "role_status": "Task-based editorial leads, not verified current vacancies or employer hiring requirements",
+      "pathway_leads": [
+        {
+          "name": "SAIT Instrumentation Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/instrumentation-engineering-technology",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        },
+        {
+          "name": "UCalgary BSc Mechanical Engineering",
+          "url": "https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-mechanical-engineering",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        }
+      ],
+      "score_dimensions": [
+        4,
+        3,
+        2
+      ],
+      "score": 9,
+      "score_rationale": {
+        "classroom": "Waves, signals, location and uncertainty; Physics inquiry",
+        "concrete_work": "Use distributed fibre-optic measurements to monitor pipelines and inspection tools.",
+        "added_value": "Adds continuous distributed sensing; overlaps GHGSat and instrument/data examples in a distinct infrastructure setting."
+      },
+      "sources": [
+        "https://hifieng.com/team/",
+        "https://hifieng.com/news/hifi-announces-new-advanced-pig-monitoring-service/"
+      ],
+      "gaps": "Establish a classroom-scale signal model without implying every vibration is a leak. Field installations may be outside Calgary.",
+      "net_difference": "Adds continuous distributed sensing; overlaps GHGSat and instrument/data examples in a distinct infrastructure setting.",
+      "evidence_gate": "pass at proposal level",
+      "recommendation": "eligible for review",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-18",
+      "last_attempted": "2026-10-18",
+      "last_researched": "2026-10-18",
+      "screening_completed_on": "2026-10-18",
+      "curriculum_status": "Provisional concepts only; exact Alberta outcomes not verified. Proposal approval is not approval of full content.",
+      "full_example_status": "draft v1 prepared; full-copy review pending",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-18/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-18/source-captures.json",
+      "source_check_date": "2026-10-18",
+      "planned_buildout": "Company: Company team page describes Calgary origins and engineering disciplines; current product release identifies Calgary headquarters and sensor work. Roles: Electrical/software/mechanical engineering: collect measurements, interpret patterns and validate alerts. Pathways: SAIT Instrumentation Engineering Technology; UCalgary BSc Mechanical Engineering. Classroom: How can a long fibre help locate a disturbance along a pipeline? Remaining work: Establish a classroom-scale signal model without implying every vibration is a leak. Field installations may be outside Calgary.",
+      "decision_choices": [
+        "approve proposal v1",
+        "revise proposal v1",
+        "reject proposal v1"
+      ],
+      "discovery_source": {
+        "family": "original employer/facility/product sources; corroborated with government or research-partner sources where listed",
+        "url": "https://hifieng.com/team/"
+      },
+      "last_completed_research_on": "2026-10-18",
+      "deferred_reason": null,
+      "decision_history": [
+        {
+          "prior_decision": "pending",
+          "decision": "approved",
+          "version": 1,
+          "reviewed_on": "2026-10-18",
+          "reviewer": "user",
+          "instruction": "Alright, approve all 14 that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later."
+        }
+      ],
+      "reviewed_on": "2026-10-18",
+      "full_copy_decision": "pending",
+      "full_draft_packet": "docs/validation/full-examples/2026-10-18/review.md",
+      "full_research_completed_on": "2026-10-18"
+    },
+    {
+      "id": "CGY-066",
+      "version": 1,
+      "company": "Hempalta / current successor unresolved",
+      "canonical_domain": "hempalta.com",
+      "aliases": [
+        "Hempalta Corp.",
+        "NextPhase Ventures (possible successor; unresolved)"
+      ],
+      "parent_or_brand": null,
+      "sector": "Bio-based materials",
+      "calgary_evidence": "Historical Calgary processing plant closed and was vacated in 2025; current identity and substantive local activity need resolution.",
+      "presence_type": "historical plant; current operation unresolved",
+      "work": "Historical hemp-fibre processing; subsequent strategic transition.",
+      "proposed_question": "How could plant fibres become useful materials?",
+      "concepts": "Fibre properties and life-cycle evidence",
+      "role_leads": "Historical processing operations; current roles not established",
+      "role_status": "Task-based editorial leads, not verified current vacancies or employer hiring requirements",
+      "pathway_leads": [
+        {
+          "name": "SAIT Chemical Laboratory Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        }
+      ],
+      "score_dimensions": [
+        3,
+        1,
+        1
+      ],
+      "score": 5,
+      "score_rationale": {
+        "classroom": "Fibre properties and life-cycle evidence",
+        "concrete_work": "Historical hemp-fibre processing; subsequent strategic transition.",
+        "added_value": "Potential bio-based materials story, but older manufacturing descriptions are materially stale."
+      },
+      "sources": [
+        "https://www.newsfile-prod.tmx.cloud/release/252845/Hempalta-Provides-Update-on-Strategic-Transition-Plant-Closure-FCC-Loan-and-Carbon-Credit-Progress?lang=fr"
+      ],
+      "gaps": "HOLD: issuer announced plant closure. Resolve successor identity and current Calgary work; do not present a functioning hemp factory.",
+      "net_difference": "Potential bio-based materials story, but older manufacturing descriptions are materially stale.",
+      "evidence_gate": "hold",
+      "recommendation": "hold",
+      "decision": "hold",
+      "workflow_state": "held",
+      "first_discovered": "2026-10-18",
+      "last_attempted": "2026-10-18",
+      "last_researched": null,
+      "screening_completed_on": "2026-10-18",
+      "curriculum_status": "Provisional concepts only; exact Alberta outcomes not verified. Proposal approval is not approval of full content.",
+      "full_example_status": "deferred by user",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-18/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-18/source-captures.json",
+      "source_check_date": "2026-10-18",
+      "planned_buildout": "Company: Historical Calgary processing plant closed and was vacated in 2025; current identity and substantive local activity need resolution. Roles: Historical processing operations; current roles not established Pathways: SAIT Chemical Laboratory Technology. Classroom: How could plant fibres become useful materials? Remaining work: HOLD: issuer announced plant closure. Resolve successor identity and current Calgary work; do not present a functioning hemp factory.",
+      "decision_choices": [
+        "approve proposal v1",
+        "revise proposal v1",
+        "reject proposal v1"
+      ],
+      "discovery_source": {
+        "family": "original employer/facility/product sources; corroborated with government or research-partner sources where listed",
+        "url": "https://www.newsfile-prod.tmx.cloud/release/252845/Hempalta-Provides-Update-on-Strategic-Transition-Plant-Closure-FCC-Loan-and-Carbon-Credit-Progress?lang=fr"
+      },
+      "last_completed_research_on": null,
+      "deferred_reason": "User requested revisit later. HOLD: issuer announced plant closure. Resolve successor identity and current Calgary work; do not present a functioning hemp factory.",
+      "decision_history": [
+        {
+          "prior_decision": "pending",
+          "decision": "hold",
+          "version": 1,
+          "reviewed_on": "2026-10-18",
+          "reviewer": "user",
+          "instruction": "Alright, approve all 14 that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later."
+        }
+      ],
+      "reviewed_on": "2026-10-18"
+    },
+    {
+      "id": "CGY-067",
+      "version": 1,
+      "company": "BURNCO",
+      "canonical_domain": "burnco.com",
+      "aliases": [],
+      "parent_or_brand": null,
+      "sector": "Construction materials",
+      "calgary_evidence": "Current employer locations identify Calgary corporate, dispatch and Four Star operations; wider-region sites kept separate.",
+      "presence_type": "corporate and dispatch operations; plant assignment unresolved",
+      "work": "Produce and dispatch ready-mix concrete with specified mix properties.",
+      "proposed_question": "How do you make a concrete batch suitable for the job it has to do?",
+      "concepts": "Mixtures, material properties and testing; Chemistry/Science inquiry",
+      "role_leads": "Mix-design/quality work and dispatch: interpret specifications, test samples and coordinate deliveries.",
+      "role_status": "Task-based editorial leads, not verified current vacancies or employer hiring requirements",
+      "pathway_leads": [
+        {
+          "name": "SAIT Chemical Laboratory Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        },
+        {
+          "name": "SAIT Mechanical Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        }
+      ],
+      "score_dimensions": [
+        4,
+        2,
+        2
+      ],
+      "score": 8,
+      "score_rationale": {
+        "classroom": "Mixtures, material properties and testing; Chemistry/Science inquiry",
+        "concrete_work": "Produce and dispatch ready-mix concrete with specified mix properties.",
+        "added_value": "Adds construction-material production and logistics, adjacent to existing structural-engineering examples."
+      },
+      "sources": [
+        "https://www.burnco.com/locations/",
+        "https://www.burnco.com/products/ready-mix/"
+      ],
+      "gaps": "Identify a specific Calgary production/test site and original test procedure before claiming a local laboratory or teaching exact water-strength relationships.",
+      "net_difference": "Adds construction-material production and logistics, adjacent to existing structural-engineering examples.",
+      "evidence_gate": "pass at proposal level",
+      "recommendation": "eligible for review",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-18",
+      "last_attempted": "2026-10-18",
+      "last_researched": "2026-10-18",
+      "screening_completed_on": "2026-10-18",
+      "curriculum_status": "Provisional concepts only; exact Alberta outcomes not verified. Proposal approval is not approval of full content.",
+      "full_example_status": "draft v1 prepared; full-copy review pending",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-18/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-18/source-captures.json",
+      "source_check_date": "2026-10-18",
+      "planned_buildout": "Company: Current employer locations identify Calgary corporate, dispatch and Four Star operations; wider-region sites kept separate. Roles: Mix-design/quality work and dispatch: interpret specifications, test samples and coordinate deliveries. Pathways: SAIT Chemical Laboratory Technology; SAIT Mechanical Engineering Technology. Classroom: How do you make a concrete batch suitable for the job it has to do? Remaining work: Identify a specific Calgary production/test site and original test procedure before claiming a local laboratory or teaching exact water-strength relationships.",
+      "decision_choices": [
+        "approve proposal v1",
+        "revise proposal v1",
+        "reject proposal v1"
+      ],
+      "discovery_source": {
+        "family": "original employer/facility/product sources; corroborated with government or research-partner sources where listed",
+        "url": "https://www.burnco.com/locations/"
+      },
+      "last_completed_research_on": "2026-10-18",
+      "deferred_reason": null,
+      "decision_history": [
+        {
+          "prior_decision": "pending",
+          "decision": "approved",
+          "version": 1,
+          "reviewed_on": "2026-10-18",
+          "reviewer": "user",
+          "instruction": "Alright, approve all 14 that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later."
+        }
+      ],
+      "reviewed_on": "2026-10-18",
+      "full_copy_decision": "pending",
+      "full_draft_packet": "docs/validation/full-examples/2026-10-18/review.md",
+      "full_research_completed_on": "2026-10-18"
+    },
+    {
+      "id": "CGY-068",
+      "version": 1,
+      "company": "EFW Radiology",
+      "canonical_domain": "efw.ca",
+      "aliases": [
+        "EFW",
+        "efwrad.com",
+        "efwradiology.ca"
+      ],
+      "parent_or_brand": null,
+      "sector": "Medical imaging",
+      "calgary_evidence": "Uxborough clinic in Calgary explicitly lists general ultrasound; employer explains the technique.",
+      "presence_type": "operating Calgary clinic",
+      "work": "Use reflected sound waves to create diagnostic images.",
+      "proposed_question": "How can an echo help make a picture of something inside the body?",
+      "concepts": "Sound-wave reflection, travel time and image interpretation; Physics 20 extension",
+      "role_leads": "Sonographer: acquire images and attend to image quality; radiologist: interpret images. Confirm employer-specific duties in full research.",
+      "role_status": "Task-based editorial leads, not verified current vacancies or employer hiring requirements",
+      "pathway_leads": [
+        {
+          "name": "SAIT Diagnostic Medical Sonography",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/diagnostic-medical-sonography",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        }
+      ],
+      "score_dimensions": [
+        4,
+        3,
+        3
+      ],
+      "score": 10,
+      "score_rationale": {
+        "classroom": "Sound-wave reflection, travel time and image interpretation; Physics 20 extension",
+        "concrete_work": "Use reflected sound waves to create diagnostic images.",
+        "added_value": "Adds patient-facing technical work and ultrasound physics, distinct from Nanalysis laboratory spectroscopy."
+      },
+      "sources": [
+        "https://www.efw.ca/services/general-ultrasound/",
+        "https://www.efw.ca/locations/uxborough-17/"
+      ],
+      "gaps": "Verify exact curriculum outcomes, registered-practice requirements and a non-diagnostic classroom model. Do not turn sample images into diagnosis exercises.",
+      "net_difference": "Adds patient-facing technical work and ultrasound physics, distinct from Nanalysis laboratory spectroscopy.",
+      "evidence_gate": "pass at proposal level",
+      "recommendation": "shortlist",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-18",
+      "last_attempted": "2026-10-18",
+      "last_researched": "2026-10-18",
+      "screening_completed_on": "2026-10-18",
+      "curriculum_status": "Provisional concepts only; exact Alberta outcomes not verified. Proposal approval is not approval of full content.",
+      "full_example_status": "draft v1 prepared; full-copy review pending",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-18/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-18/source-captures.json",
+      "source_check_date": "2026-10-18",
+      "planned_buildout": "Company: Uxborough clinic in Calgary explicitly lists general ultrasound; employer explains the technique. Roles: Sonographer: acquire images and attend to image quality; radiologist: interpret images. Confirm employer-specific duties in full research. Pathways: SAIT Diagnostic Medical Sonography. Classroom: How can an echo help make a picture of something inside the body? Remaining work: Verify exact curriculum outcomes, registered-practice requirements and a non-diagnostic classroom model. Do not turn sample images into diagnosis exercises.",
+      "decision_choices": [
+        "approve proposal v1",
+        "revise proposal v1",
+        "reject proposal v1"
+      ],
+      "discovery_source": {
+        "family": "original employer/facility/product sources; corroborated with government or research-partner sources where listed",
+        "url": "https://www.efw.ca/services/general-ultrasound/"
+      },
+      "last_completed_research_on": "2026-10-18",
+      "deferred_reason": null,
+      "exact_proposed_summary": "EFW provides ultrasound at its Uxborough clinic in Calgary. The equipment uses returning sound waves to help form images. Students could use a simple echo model to connect travel time and distance, then discuss why acquiring a useful image and interpreting it are different parts of the work.",
+      "decision_history": [
+        {
+          "prior_decision": "pending",
+          "decision": "approved",
+          "version": 1,
+          "reviewed_on": "2026-10-18",
+          "reviewer": "user",
+          "instruction": "Alright, approve all 14 that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later."
+        }
+      ],
+      "reviewed_on": "2026-10-18",
+      "full_copy_decision": "pending",
+      "full_draft_packet": "docs/validation/full-examples/2026-10-18/review.md",
+      "full_research_completed_on": "2026-10-18"
+    },
+    {
+      "id": "CGY-069",
+      "version": 1,
+      "company": "Mayfair Diagnostics",
+      "canonical_domain": "radiology.ca",
+      "aliases": [
+        "Mayfair"
+      ],
+      "parent_or_brand": null,
+      "sector": "Medical imaging",
+      "calgary_evidence": "Mayfair Place is a Calgary imaging clinic; own service pages document MRI.",
+      "presence_type": "operating Calgary clinic",
+      "work": "Acquire MRI images and support interpretation.",
+      "proposed_question": "How can magnets and radio waves help produce an image inside the body?",
+      "concepts": "Magnetic fields and signals; Physics 30 extension",
+      "role_leads": "MRI technologist and radiologist task leads; image acquisition, quality and interpretation.",
+      "role_status": "Task-based editorial leads, not verified current vacancies or employer hiring requirements",
+      "pathway_leads": [
+        {
+          "name": "NAIT Magnetic Resonance Imaging 1st Discipline (Edmonton)",
+          "url": "https://www.nait.ca/programs/magnetic-resonance",
+          "status": "Official MRI diploma verified 2026-10-18; outside Calgary. Admissions, clinical placement and employer requirements need full research."
+        }
+      ],
+      "score_dimensions": [
+        3,
+        3,
+        1
+      ],
+      "score": 7,
+      "score_rationale": {
+        "classroom": "Magnetic fields and signals; Physics 30 extension",
+        "concrete_work": "Acquire MRI images and support interpretation.",
+        "added_value": "Adds clinical imaging but a smaller marginal gain than ultrasound given the current instrument story."
+      },
+      "sources": [
+        "https://www.radiology.ca/location/mayfair-place/",
+        "https://private.radiology.ca/mri/"
+      ],
+      "gaps": "RESERVE: strong local evidence but overlaps Nanalysis magnetic resonance and today’s EFW proposal. Verify current provincial registration and local clinical-placement options before drafting.",
+      "net_difference": "Adds clinical imaging but a smaller marginal gain than ultrasound given the current instrument story.",
+      "evidence_gate": "pass at proposal level",
+      "recommendation": "reserve",
+      "decision": "hold",
+      "workflow_state": "held",
+      "first_discovered": "2026-10-18",
+      "last_attempted": "2026-10-18",
+      "last_researched": "2026-10-18",
+      "screening_completed_on": "2026-10-18",
+      "curriculum_status": "Provisional concepts only; exact Alberta outcomes not verified. Proposal approval is not approval of full content.",
+      "full_example_status": "deferred by user",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-18/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-18/source-captures.json",
+      "source_check_date": "2026-10-18",
+      "planned_buildout": "Company: Calgary Mayfair Place clinic. Roles: MRI image acquisition and interpretation. Pathways: NAIT MRI 1st Discipline diploma in Edmonton. Classroom: magnetic fields and radio signals. RESERVE: strong local evidence but overlaps Nanalysis magnetic resonance and today’s EFW proposal. Verify current provincial registration and local clinical-placement options before drafting.",
+      "decision_choices": [
+        "approve proposal v1",
+        "revise proposal v1",
+        "reject proposal v1"
+      ],
+      "discovery_source": {
+        "family": "original employer/facility/product sources; corroborated with government or research-partner sources where listed",
+        "url": "https://www.radiology.ca/location/mayfair-place/"
+      },
+      "last_completed_research_on": "2026-10-18",
+      "deferred_reason": "User requested revisit later. RESERVE: strong local evidence but overlaps Nanalysis magnetic resonance and today’s EFW proposal. Verify current provincial registration and local clinical-placement options before drafting.",
+      "decision_history": [
+        {
+          "prior_decision": "pending",
+          "decision": "hold",
+          "version": 1,
+          "reviewed_on": "2026-10-18",
+          "reviewer": "user",
+          "instruction": "Alright, approve all 14 that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later."
+        }
+      ],
+      "reviewed_on": "2026-10-18"
+    },
+    {
+      "id": "CGY-070",
+      "version": 1,
+      "company": "Qualisure Diagnostics",
+      "canonical_domain": "qualisuredx.com",
+      "aliases": [
+        "Qualisure"
+      ],
+      "parent_or_brand": null,
+      "sector": "Molecular diagnostics",
+      "calgary_evidence": "Original Canadian testing-partner announcement identifies Calgary diagnostic development; company describes molecular-test work.",
+      "presence_type": "Calgary diagnostic development; partner-delivered testing",
+      "work": "Develop molecular tests to help classify thyroid-cancer risk.",
+      "proposed_question": "What can a pattern of gene activity tell researchers that appearance alone cannot?",
+      "concepts": "Gene expression, classification and uncertainty; Biology 30 extension",
+      "role_leads": "Molecular-test development and data validation; laboratory and bioinformatics work areas.",
+      "role_status": "Task-based editorial leads, not verified current vacancies or employer hiring requirements",
+      "pathway_leads": [
+        {
+          "name": "SAIT Chemical Laboratory Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        }
+      ],
+      "score_dimensions": [
+        3,
+        2,
+        2
+      ],
+      "score": 7,
+      "score_rationale": {
+        "classroom": "Gene expression, classification and uncertainty; Biology 30 extension",
+        "concrete_work": "Develop molecular tests to help classify thyroid-cancer risk.",
+        "added_value": "Potential gene-expression story; overlap with Northern RNA and pending Syantra reduces immediate priority."
+      },
+      "sources": [
+        "https://qualisuredx.com/",
+        "https://www.oncohelix.org/news/press-release-oncohelix-partners-with-qualisure-diagnostics-to-provide-thyroid-guidepx-testing-across-canada"
+      ],
+      "gaps": "RESERVE: resolve who performs each lab step, current clinical validation and credential requirements. Chemical lab study is only a foundation, not clinical molecular certification.",
+      "net_difference": "Potential gene-expression story; overlap with Northern RNA and pending Syantra reduces immediate priority.",
+      "evidence_gate": "pass at proposal level",
+      "recommendation": "reserve",
+      "decision": "hold",
+      "workflow_state": "held",
+      "first_discovered": "2026-10-18",
+      "last_attempted": "2026-10-18",
+      "last_researched": "2026-10-18",
+      "screening_completed_on": "2026-10-18",
+      "curriculum_status": "Provisional concepts only; exact Alberta outcomes not verified. Proposal approval is not approval of full content.",
+      "full_example_status": "deferred by user",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-18/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-18/source-captures.json",
+      "source_check_date": "2026-10-18",
+      "planned_buildout": "Company: Original Canadian testing-partner announcement identifies Calgary diagnostic development; company describes molecular-test work. Roles: Molecular-test development and data validation; laboratory and bioinformatics work areas. Pathways: SAIT Chemical Laboratory Technology. Classroom: What can a pattern of gene activity tell researchers that appearance alone cannot? Remaining work: RESERVE: resolve who performs each lab step, current clinical validation and credential requirements. Chemical lab study is only a foundation, not clinical molecular certification.",
+      "decision_choices": [
+        "approve proposal v1",
+        "revise proposal v1",
+        "reject proposal v1"
+      ],
+      "discovery_source": {
+        "family": "original employer/facility/product sources; corroborated with government or research-partner sources where listed",
+        "url": "https://qualisuredx.com/"
+      },
+      "last_completed_research_on": "2026-10-18",
+      "deferred_reason": "User requested revisit later. RESERVE: resolve who performs each lab step, current clinical validation and credential requirements. Chemical lab study is only a foundation, not clinical molecular certification.",
+      "decision_history": [
+        {
+          "prior_decision": "pending",
+          "decision": "hold",
+          "version": 1,
+          "reviewed_on": "2026-10-18",
+          "reviewer": "user",
+          "instruction": "Alright, approve all 14 that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later."
+        }
+      ],
+      "reviewed_on": "2026-10-18"
+    },
+    {
+      "id": "CGY-071",
+      "version": 1,
+      "company": "Alberta Boot Company",
+      "canonical_domain": "albertaboot.ca",
+      "aliases": [
+        "Alberta Boot",
+        "albertaboot.com"
+      ],
+      "parent_or_brand": null,
+      "sector": "Craft and manufacturing",
+      "calgary_evidence": "Own store and custom-boot pages identify Calgary factory/workshop and cutting, stitching, shaping and finishing.",
+      "presence_type": "factory and retail workshop",
+      "work": "Make boots from selected materials and component shapes.",
+      "proposed_question": "How do material and shape choices change the way a boot performs?",
+      "concepts": "Friction, flexibility, wear and design tradeoffs; Science/CTS inquiry",
+      "role_leads": "Bootmaking, pattern work and finishing; compare material samples and inspect fit.",
+      "role_status": "Task-based editorial leads, not verified current vacancies or employer hiring requirements",
+      "pathway_leads": [
+        {
+          "name": "SAIT Mechanical Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        }
+      ],
+      "score_dimensions": [
+        3,
+        3,
+        2
+      ],
+      "score": 8,
+      "score_rationale": {
+        "classroom": "Friction, flexibility, wear and design tradeoffs; Science/CTS inquiry",
+        "concrete_work": "Make boots from selected materials and component shapes.",
+        "added_value": "Adds recognizable craft work and material decisions with a potentially accessible learning route."
+      },
+      "sources": [
+        "https://www.albertaboot.ca/pages/calgary",
+        "https://www.albertaboot.ca/pages/custom-boots"
+      ],
+      "gaps": "Find employer training or an actual leathercraft route; mechanical design is an adjacent route, not bootmaker certification. Company says it does not make individual foot moulds.",
+      "net_difference": "Adds recognizable craft work and material decisions with a potentially accessible learning route.",
+      "evidence_gate": "pass at proposal level",
+      "recommendation": "eligible for review",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-18",
+      "last_attempted": "2026-10-18",
+      "last_researched": "2026-10-18",
+      "screening_completed_on": "2026-10-18",
+      "curriculum_status": "Provisional concepts only; exact Alberta outcomes not verified. Proposal approval is not approval of full content.",
+      "full_example_status": "draft v1 prepared; full-copy review pending",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-18/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-18/source-captures.json",
+      "source_check_date": "2026-10-18",
+      "planned_buildout": "Company: Own store and custom-boot pages identify Calgary factory/workshop and cutting, stitching, shaping and finishing. Roles: Bootmaking, pattern work and finishing; compare material samples and inspect fit. Pathways: SAIT Mechanical Engineering Technology. Classroom: How do material and shape choices change the way a boot performs? Remaining work: Find employer training or an actual leathercraft route; mechanical design is an adjacent route, not bootmaker certification. Company says it does not make individual foot moulds.",
+      "decision_choices": [
+        "approve proposal v1",
+        "revise proposal v1",
+        "reject proposal v1"
+      ],
+      "discovery_source": {
+        "family": "original employer/facility/product sources; corroborated with government or research-partner sources where listed",
+        "url": "https://www.albertaboot.ca/pages/calgary"
+      },
+      "last_completed_research_on": "2026-10-18",
+      "deferred_reason": null,
+      "decision_history": [
+        {
+          "prior_decision": "pending",
+          "decision": "approved",
+          "version": 1,
+          "reviewed_on": "2026-10-18",
+          "reviewer": "user",
+          "instruction": "Alright, approve all 14 that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later."
+        }
+      ],
+      "reviewed_on": "2026-10-18",
+      "full_copy_decision": "pending",
+      "full_draft_packet": "docs/validation/full-examples/2026-10-18/review.md",
+      "full_research_completed_on": "2026-10-18"
+    },
+    {
+      "id": "CGY-072",
+      "version": 1,
+      "company": "FFA Consultants in Acoustics and Noise Control",
+      "canonical_domain": "ffaacoustics.ca",
+      "aliases": [
+        "FFA",
+        "Faszer Farquharson & Associates"
+      ],
+      "parent_or_brand": null,
+      "sector": "Acoustical engineering",
+      "calgary_evidence": "Calgary consulting office offers room-acoustic measurements, modelling and noise-control design.",
+      "presence_type": "Calgary acoustical consulting operation",
+      "work": "Design rooms for speech intelligibility and manage unwanted sound.",
+      "proposed_question": "Why is speech clear in one room and hard to understand in another?",
+      "concepts": "Reflection, absorption, reverberation and waves; Physics 20 inquiry",
+      "role_leads": "Acoustical consultant/engineering work: measure sound, model rooms and compare design changes.",
+      "role_status": "Task-based editorial leads, not verified current vacancies or employer hiring requirements",
+      "pathway_leads": [
+        {
+          "name": "UCalgary BSc Mechanical Engineering",
+          "url": "https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-mechanical-engineering",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        },
+        {
+          "name": "SAIT Mechanical Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        }
+      ],
+      "score_dimensions": [
+        4,
+        3,
+        3
+      ],
+      "score": 10,
+      "score_rationale": {
+        "classroom": "Reflection, absorption, reverberation and waves; Physics 20 inquiry",
+        "concrete_work": "Design rooms for speech intelligibility and manage unwanted sound.",
+        "added_value": "Adds everyday classroom acoustics and building-design work, distinct from existing visual/design stories."
+      },
+      "sources": [
+        "https://www.ffaacoustics.ca/about-us",
+        "https://www.ffaacoustics.ca/architectural"
+      ],
+      "gaps": "Verify a named project and actual early-career qualifications; do not invent a school client or claim every office role is licensed engineering.",
+      "net_difference": "Adds everyday classroom acoustics and building-design work, distinct from existing visual/design stories.",
+      "evidence_gate": "pass at proposal level",
+      "recommendation": "shortlist",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-18",
+      "last_attempted": "2026-10-18",
+      "last_researched": "2026-10-18",
+      "screening_completed_on": "2026-10-18",
+      "curriculum_status": "Provisional concepts only; exact Alberta outcomes not verified. Proposal approval is not approval of full content.",
+      "full_example_status": "draft v1 prepared; full-copy review pending",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-18/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-18/source-captures.json",
+      "source_check_date": "2026-10-18",
+      "planned_buildout": "Company: Calgary consulting office offers room-acoustic measurements, modelling and noise-control design. Roles: Acoustical consultant/engineering work: measure sound, model rooms and compare design changes. Pathways: UCalgary BSc Mechanical Engineering; SAIT Mechanical Engineering Technology. Classroom: Why is speech clear in one room and hard to understand in another? Remaining work: Verify a named project and actual early-career qualifications; do not invent a school client or claim every office role is licensed engineering.",
+      "decision_choices": [
+        "approve proposal v1",
+        "revise proposal v1",
+        "reject proposal v1"
+      ],
+      "discovery_source": {
+        "family": "original employer/facility/product sources; corroborated with government or research-partner sources where listed",
+        "url": "https://www.ffaacoustics.ca/about-us"
+      },
+      "last_completed_research_on": "2026-10-18",
+      "deferred_reason": null,
+      "exact_proposed_summary": "FFA is a Calgary acoustical consulting firm whose services include room modelling and design for speech. Students could compare the paths sound takes in two rooms and predict how changing a surface might affect echoes and clarity. A classroom is a familiar setting for investigating how physics informs design.",
+      "decision_history": [
+        {
+          "prior_decision": "pending",
+          "decision": "approved",
+          "version": 1,
+          "reviewed_on": "2026-10-18",
+          "reviewer": "user",
+          "instruction": "Alright, approve all 14 that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later."
+        }
+      ],
+      "reviewed_on": "2026-10-18",
+      "full_copy_decision": "pending",
+      "full_draft_packet": "docs/validation/full-examples/2026-10-18/review.md",
+      "full_research_completed_on": "2026-10-18"
+    },
+    {
+      "id": "CGY-073",
+      "version": 1,
+      "company": "ENMAX",
+      "canonical_domain": "enmax.com",
+      "aliases": [
+        "ENMAX Energy"
+      ],
+      "parent_or_brand": "Shepard: joint venture with Capital Power",
+      "sector": "Electricity generation",
+      "calgary_evidence": "Company identifies Shepard Energy Centre in southeast Calgary; joint venture with Capital Power, operated by ENMAX.",
+      "presence_type": "operating power station in Calgary",
+      "work": "Generate power with gas turbines and recover exhaust heat to drive a steam turbine.",
+      "proposed_question": "Why use the heat left over from making electricity to make more electricity?",
+      "concepts": "Energy transfers and efficiency; Science 10/Physics inquiry",
+      "role_leads": "Power engineering/plant operations, instrumentation and maintenance: monitor systems and compare energy flows.",
+      "role_status": "Task-based editorial leads, not verified current vacancies or employer hiring requirements",
+      "pathway_leads": [
+        {
+          "name": "SAIT Power Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/power-engineering-technology",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        },
+        {
+          "name": "SAIT Instrumentation Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/instrumentation-engineering-technology",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        }
+      ],
+      "score_dimensions": [
+        4,
+        3,
+        2
+      ],
+      "score": 9,
+      "score_rationale": {
+        "classroom": "Energy transfers and efficiency; Science 10/Physics inquiry",
+        "concrete_work": "Generate power with gas turbines and recover exhaust heat to drive a steam turbine.",
+        "added_value": "Adds power-plant operations and a technical diploma route beyond the existing battery story."
+      },
+      "sources": [
+        "https://www.enmax.com/generation-and-wires/generation/natural-gas-fuelled",
+        "https://www.enmax.com/generation-and-wires/generation"
+      ],
+      "gaps": "Use a labelled illustrative energy budget, not invented plant efficiencies. Confirm current site access and role duties; no emissions-superiority claim proposed.",
+      "net_difference": "Adds power-plant operations and a technical diploma route beyond the existing battery story.",
+      "evidence_gate": "pass at proposal level",
+      "recommendation": "eligible for review",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-18",
+      "last_attempted": "2026-10-18",
+      "last_researched": "2026-10-18",
+      "screening_completed_on": "2026-10-18",
+      "curriculum_status": "Provisional concepts only; exact Alberta outcomes not verified. Proposal approval is not approval of full content.",
+      "full_example_status": "draft v1 prepared; full-copy review pending",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-18/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-18/source-captures.json",
+      "source_check_date": "2026-10-18",
+      "planned_buildout": "Company: Company identifies Shepard Energy Centre in southeast Calgary; joint venture with Capital Power, operated by ENMAX. Roles: Power engineering/plant operations, instrumentation and maintenance: monitor systems and compare energy flows. Pathways: SAIT Power Engineering Technology; SAIT Instrumentation Engineering Technology. Classroom: Why use the heat left over from making electricity to make more electricity? Remaining work: Use a labelled illustrative energy budget, not invented plant efficiencies. Confirm current site access and role duties; no emissions-superiority claim proposed.",
+      "decision_choices": [
+        "approve proposal v1",
+        "revise proposal v1",
+        "reject proposal v1"
+      ],
+      "discovery_source": {
+        "family": "original employer/facility/product sources; corroborated with government or research-partner sources where listed",
+        "url": "https://www.enmax.com/generation-and-wires/generation/natural-gas-fuelled"
+      },
+      "last_completed_research_on": "2026-10-18",
+      "deferred_reason": null,
+      "decision_history": [
+        {
+          "prior_decision": "pending",
+          "decision": "approved",
+          "version": 1,
+          "reviewed_on": "2026-10-18",
+          "reviewer": "user",
+          "instruction": "Alright, approve all 14 that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later."
+        }
+      ],
+      "reviewed_on": "2026-10-18",
+      "full_copy_decision": "pending",
+      "full_draft_packet": "docs/validation/full-examples/2026-10-18/review.md",
+      "full_research_completed_on": "2026-10-18"
+    },
+    {
+      "id": "CGY-074",
+      "version": 1,
+      "company": "KUDU (SLB brand)",
+      "canonical_domain": "slb.com",
+      "aliases": [
+        "KUDU",
+        "KUDU Industries",
+        "kudupump.com"
+      ],
+      "parent_or_brand": "SLB",
+      "sector": "Industrial pumps",
+      "calgary_evidence": "Current SLB sources establish products; this pass did not establish current substantive Calgary manufacturing/work.",
+      "presence_type": "Calgary presence unresolved",
+      "work": "Progressing-cavity pumps move viscous fluids using a rotor/stator system.",
+      "proposed_question": "How can a rotating shape move a thick liquid upward?",
+      "concepts": "Rotational motion, flow and material wear; Physics/Science inquiry",
+      "role_leads": "Pump engineering, machining and testing leads; current Calgary roles unverified.",
+      "role_status": "Task-based editorial leads, not verified current vacancies or employer hiring requirements",
+      "pathway_leads": [
+        {
+          "name": "SAIT Machinist apprenticeship",
+          "url": "https://www.sait.ca/apprenticeships-and-trades/programs/machinist",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        },
+        {
+          "name": "SAIT Mechanical Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        }
+      ],
+      "score_dimensions": [
+        4,
+        2,
+        1
+      ],
+      "score": 7,
+      "score_rationale": {
+        "classroom": "Rotational motion, flow and material wear; Physics/Science inquiry",
+        "concrete_work": "Progressing-cavity pumps move viscous fluids using a rotor/stator system.",
+        "added_value": "Potential mechanical-pump story, but local evidence is the blocker."
+      },
+      "sources": [
+        "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/completions/artificial-lift/progressing-cavity-pumps/pcp-systems"
+      ],
+      "gaps": "HOLD: find a current original Calgary operation source. A 1992 directory and old addresses are insufficient. Treat as SLB brand, not a new independent employer.",
+      "net_difference": "Potential mechanical-pump story, but local evidence is the blocker.",
+      "evidence_gate": "hold",
+      "recommendation": "hold",
+      "decision": "hold",
+      "workflow_state": "held",
+      "first_discovered": "2026-10-18",
+      "last_attempted": "2026-10-18",
+      "last_researched": null,
+      "screening_completed_on": "2026-10-18",
+      "curriculum_status": "Provisional concepts only; exact Alberta outcomes not verified. Proposal approval is not approval of full content.",
+      "full_example_status": "deferred by user",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-18/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-18/source-captures.json",
+      "source_check_date": "2026-10-18",
+      "planned_buildout": "Company: Current SLB sources establish products; this pass did not establish current substantive Calgary manufacturing/work. Roles: Pump engineering, machining and testing leads; current Calgary roles unverified. Pathways: SAIT Machinist apprenticeship; SAIT Mechanical Engineering Technology. Classroom: How can a rotating shape move a thick liquid upward? Remaining work: HOLD: find a current original Calgary operation source. A 1992 directory and old addresses are insufficient. Treat as SLB brand, not a new independent employer.",
+      "decision_choices": [
+        "approve proposal v1",
+        "revise proposal v1",
+        "reject proposal v1"
+      ],
+      "discovery_source": {
+        "family": "original employer/facility/product sources; corroborated with government or research-partner sources where listed",
+        "url": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/completions/artificial-lift/progressing-cavity-pumps/pcp-systems"
+      },
+      "last_completed_research_on": null,
+      "deferred_reason": "User requested revisit later. HOLD: find a current original Calgary operation source. A 1992 directory and old addresses are insufficient. Treat as SLB brand, not a new independent employer.",
+      "decision_history": [
+        {
+          "prior_decision": "pending",
+          "decision": "hold",
+          "version": 1,
+          "reviewed_on": "2026-10-18",
+          "reviewer": "user",
+          "instruction": "Alright, approve all 14 that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later."
+        }
+      ],
+      "reviewed_on": "2026-10-18"
+    },
+    {
+      "id": "CGY-075",
+      "version": 1,
+      "company": "Saltworks Technologies",
+      "canonical_domain": "saltworkstech.com",
+      "aliases": [
+        "Saltworks"
+      ],
+      "parent_or_brand": null,
+      "sector": "Industrial water treatment",
+      "calgary_evidence": "Own company page places design/build headquarters in British Columbia; no substantive Calgary operation verified.",
+      "presence_type": "British Columbia; Calgary not established",
+      "work": "Industrial wastewater separation and lithium-related treatment systems.",
+      "proposed_question": "How do you separate useful salts from industrial water?",
+      "concepts": "Solutions and separation; Chemistry inquiry",
+      "role_leads": "Process engineering and testing; Calgary assignment not established.",
+      "role_status": "Task-based editorial leads, not verified current vacancies or employer hiring requirements",
+      "pathway_leads": [
+        {
+          "name": "SAIT Chemical Laboratory Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        },
+        {
+          "name": "SAIT Instrumentation Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/instrumentation-engineering-technology",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        }
+      ],
+      "score_dimensions": [
+        4,
+        2,
+        1
+      ],
+      "score": 7,
+      "score_rationale": {
+        "classroom": "Solutions and separation; Chemistry inquiry",
+        "concrete_work": "Industrial wastewater separation and lithium-related treatment systems.",
+        "added_value": "Also overlaps existing water/lithium content; keep as a reference lead, not a Calgary example."
+      },
+      "sources": [
+        "https://www.saltworkstech.com/about/"
+      ],
+      "gaps": "HOLD: outside-city evidence. A Calgary customer or Alberta project would not alone establish a local employer operation.",
+      "net_difference": "Also overlaps existing water/lithium content; keep as a reference lead, not a Calgary example.",
+      "evidence_gate": "hold",
+      "recommendation": "hold",
+      "decision": "hold",
+      "workflow_state": "held",
+      "first_discovered": "2026-10-18",
+      "last_attempted": "2026-10-18",
+      "last_researched": null,
+      "screening_completed_on": "2026-10-18",
+      "curriculum_status": "Provisional concepts only; exact Alberta outcomes not verified. Proposal approval is not approval of full content.",
+      "full_example_status": "deferred by user",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-18/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-18/source-captures.json",
+      "source_check_date": "2026-10-18",
+      "planned_buildout": "Company: Own company page places design/build headquarters in British Columbia; no substantive Calgary operation verified. Roles: Process engineering and testing; Calgary assignment not established. Pathways: SAIT Chemical Laboratory Technology; SAIT Instrumentation Engineering Technology. Classroom: How do you separate useful salts from industrial water? Remaining work: HOLD: outside-city evidence. A Calgary customer or Alberta project would not alone establish a local employer operation.",
+      "decision_choices": [
+        "approve proposal v1",
+        "revise proposal v1",
+        "reject proposal v1"
+      ],
+      "discovery_source": {
+        "family": "original employer/facility/product sources; corroborated with government or research-partner sources where listed",
+        "url": "https://www.saltworkstech.com/about/"
+      },
+      "last_completed_research_on": null,
+      "deferred_reason": "User requested revisit later. HOLD: outside-city evidence. A Calgary customer or Alberta project would not alone establish a local employer operation.",
+      "decision_history": [
+        {
+          "prior_decision": "pending",
+          "decision": "hold",
+          "version": 1,
+          "reviewed_on": "2026-10-18",
+          "reviewer": "user",
+          "instruction": "Alright, approve all 14 that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later."
+        }
+      ],
+      "reviewed_on": "2026-10-18"
+    },
+    {
+      "id": "CGY-076",
+      "version": 1,
+      "company": "MOBILTEX",
+      "canonical_domain": "mobiltex.com",
+      "aliases": [
+        "Mobiltex Data",
+        "corTalk"
+      ],
+      "parent_or_brand": "XPV Water Partners portfolio company (dated company announcement; confirm before full copy)",
+      "sector": "Corrosion monitoring",
+      "calgary_evidence": "Employer offers equipment training at its Calgary headquarters, with installation, commissioning and maintenance tasks.",
+      "presence_type": "Calgary headquarters and technical training",
+      "work": "Remotely monitor cathodic-protection systems for metal infrastructure.",
+      "proposed_question": "How can electrical measurements show whether buried steel is protected from corrosion?",
+      "concepts": "Oxidation/reduction and electrical measurements; Chemistry 30 inquiry",
+      "role_leads": "Instrumentation and corrosion-monitoring work: commission equipment, collect readings and investigate changing values.",
+      "role_status": "Task-based editorial leads, not verified current vacancies or employer hiring requirements",
+      "pathway_leads": [
+        {
+          "name": "SAIT Instrumentation Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/instrumentation-engineering-technology",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        },
+        {
+          "name": "SAIT Chemical Laboratory Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        }
+      ],
+      "score_dimensions": [
+        4,
+        3,
+        2
+      ],
+      "score": 9,
+      "score_rationale": {
+        "classroom": "Oxidation/reduction and electrical measurements; Chemistry 30 inquiry",
+        "concrete_work": "Remotely monitor cathodic-protection systems for metal infrastructure.",
+        "added_value": "Adds corrosion prevention and applied electrochemistry beyond mineral extraction and batteries."
+      },
+      "sources": [
+        "https://www.mobiltex.com/",
+        "https://www.mobiltex.com/support/product-training/"
+      ],
+      "gaps": "Confirm one original schematic and distinction between monitoring and supplying protection; no unverified credential or safety threshold.",
+      "net_difference": "Adds corrosion prevention and applied electrochemistry beyond mineral extraction and batteries.",
+      "evidence_gate": "pass at proposal level",
+      "recommendation": "shortlist",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-18",
+      "last_attempted": "2026-10-18",
+      "last_researched": "2026-10-18",
+      "screening_completed_on": "2026-10-18",
+      "curriculum_status": "Provisional concepts only; exact Alberta outcomes not verified. Proposal approval is not approval of full content.",
+      "full_example_status": "draft v1 prepared; full-copy review pending",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-18/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-18/source-captures.json",
+      "source_check_date": "2026-10-18",
+      "planned_buildout": "Company: Employer offers equipment training at its Calgary headquarters, with installation, commissioning and maintenance tasks. Roles: Instrumentation and corrosion-monitoring work: commission equipment, collect readings and investigate changing values. Pathways: SAIT Instrumentation Engineering Technology; SAIT Chemical Laboratory Technology. Classroom: How can electrical measurements show whether buried steel is protected from corrosion? Remaining work: Confirm one original schematic and distinction between monitoring and supplying protection; no unverified credential or safety threshold.",
+      "decision_choices": [
+        "approve proposal v1",
+        "revise proposal v1",
+        "reject proposal v1"
+      ],
+      "discovery_source": {
+        "family": "original employer/facility/product sources; corroborated with government or research-partner sources where listed",
+        "url": "https://www.mobiltex.com/"
+      },
+      "last_completed_research_on": "2026-10-18",
+      "deferred_reason": null,
+      "exact_proposed_summary": "MOBILTEX supplies monitoring equipment for corrosion-protection systems and offers technical training at its Calgary headquarters. Students could compare an illustrative series of electrical readings and decide when a technician should investigate. The example would distinguish the system that protects metal from the instruments that monitor it.",
+      "decision_history": [
+        {
+          "prior_decision": "pending",
+          "decision": "approved",
+          "version": 1,
+          "reviewed_on": "2026-10-18",
+          "reviewer": "user",
+          "instruction": "Alright, approve all 14 that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later."
+        }
+      ],
+      "reviewed_on": "2026-10-18",
+      "full_copy_decision": "pending",
+      "full_draft_packet": "docs/validation/full-examples/2026-10-18/review.md",
+      "full_research_completed_on": "2026-10-18"
+    },
+    {
+      "id": "CGY-077",
+      "version": 1,
+      "company": "ICE Western",
+      "canonical_domain": "icewestern.com",
+      "aliases": [
+        "ICE Western Sales"
+      ],
+      "parent_or_brand": null,
+      "sector": "HVAC manufacturing",
+      "calgary_evidence": "Employer identifies industrial manufacturing facility in Calgary's South Foothills.",
+      "presence_type": "Calgary manufacturing plant",
+      "work": "Make custom HVAC and heat-recovery equipment.",
+      "proposed_question": "How can a building bring fresh air in without losing all its heat?",
+      "concepts": "Heat transfer and energy balance; Science 10/Physics inquiry",
+      "role_leads": "Refrigeration, controls and assembly: build, commission and test air-handling systems.",
+      "role_status": "Task-based editorial leads, not verified current vacancies or employer hiring requirements",
+      "pathway_leads": [
+        {
+          "name": "SAIT Refrigeration and Air Conditioning Mechanic apprenticeship",
+          "url": "https://www.sait.ca/apprenticeships-and-trades/programs/refrigeration-and-air-conditioning-mechanic",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        },
+        {
+          "name": "SAIT Mechanical Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        }
+      ],
+      "score_dimensions": [
+        4,
+        3,
+        1
+      ],
+      "score": 8,
+      "score_rationale": {
+        "classroom": "Heat transfer and energy balance; Science 10/Physics inquiry",
+        "concrete_work": "Make custom HVAC and heat-recovery equipment.",
+        "added_value": "Adds hands-on HVAC trades; overlap with the pending Engineered Air lead lowers added-value score."
+      },
+      "sources": [
+        "https://icewestern.com/"
+      ],
+      "gaps": "Verify one particular heat-recovery product and job duties. Compare with already-known Engineered Air to avoid duplicating the same example.",
+      "net_difference": "Adds hands-on HVAC trades; overlap with the pending Engineered Air lead lowers added-value score.",
+      "evidence_gate": "pass at proposal level",
+      "recommendation": "eligible for review",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-18",
+      "last_attempted": "2026-10-18",
+      "last_researched": "2026-10-18",
+      "screening_completed_on": "2026-10-18",
+      "curriculum_status": "Provisional concepts only; exact Alberta outcomes not verified. Proposal approval is not approval of full content.",
+      "full_example_status": "draft v1 prepared; full-copy review pending",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-18/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-18/source-captures.json",
+      "source_check_date": "2026-10-18",
+      "planned_buildout": "Company: Employer identifies industrial manufacturing facility in Calgary's South Foothills. Roles: Refrigeration, controls and assembly: build, commission and test air-handling systems. Pathways: SAIT Refrigeration and Air Conditioning Mechanic apprenticeship; SAIT Mechanical Engineering Technology. Classroom: How can a building bring fresh air in without losing all its heat? Remaining work: Verify one particular heat-recovery product and job duties. Compare with already-known Engineered Air to avoid duplicating the same example.",
+      "decision_choices": [
+        "approve proposal v1",
+        "revise proposal v1",
+        "reject proposal v1"
+      ],
+      "discovery_source": {
+        "family": "original employer/facility/product sources; corroborated with government or research-partner sources where listed",
+        "url": "https://icewestern.com/"
+      },
+      "last_completed_research_on": "2026-10-18",
+      "deferred_reason": null,
+      "decision_history": [
+        {
+          "prior_decision": "pending",
+          "decision": "approved",
+          "version": 1,
+          "reviewed_on": "2026-10-18",
+          "reviewer": "user",
+          "instruction": "Alright, approve all 14 that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later."
+        }
+      ],
+      "reviewed_on": "2026-10-18",
+      "full_copy_decision": "pending",
+      "full_draft_packet": "docs/validation/full-examples/2026-10-18/review.md",
+      "full_research_completed_on": "2026-10-18"
+    },
+    {
+      "id": "CGY-078",
+      "version": 1,
+      "company": "Neuraura Biotech",
+      "canonical_domain": "neuraura.com",
+      "aliases": [
+        "Neuraura"
+      ],
+      "parent_or_brand": null,
+      "sector": "Bioelectronics",
+      "calgary_evidence": "Company describes UCalgary technology origins and a Calgary base; current allocation of local development/manufacturing not verified.",
+      "presence_type": "Calgary origins/base; current operational scope unresolved",
+      "work": "Micro-electrode development and wearable-device applications.",
+      "proposed_question": "How can you distinguish a tiny electrical signal from noise?",
+      "concepts": "Electrical signals, measurement and nervous systems; Physics/Biology extension",
+      "role_leads": "Electrode engineering, prototyping and validation leads.",
+      "role_status": "Task-based editorial leads, not verified current vacancies or employer hiring requirements",
+      "pathway_leads": [
+        {
+          "name": "SAIT Instrumentation Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/instrumentation-engineering-technology",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        },
+        {
+          "name": "UCalgary BSc Mechanical Engineering",
+          "url": "https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-mechanical-engineering",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        }
+      ],
+      "score_dimensions": [
+        3,
+        2,
+        2
+      ],
+      "score": 7,
+      "score_rationale": {
+        "classroom": "Electrical signals, measurement and nervous systems; Physics/Biology extension",
+        "concrete_work": "Micro-electrode development and wearable-device applications.",
+        "added_value": "Potential electrical-signal biology story, but requires more verification than routine medical-imaging examples."
+      },
+      "sources": [
+        "https://www.neuraura.com/about-us",
+        "https://www.neuraura.com/our-technology"
+      ],
+      "gaps": "HOLD: distinguish current product stages, local work and regulatory/clinical evidence; company application claims are not proof of approved treatment or effectiveness.",
+      "net_difference": "Potential electrical-signal biology story, but requires more verification than routine medical-imaging examples.",
+      "evidence_gate": "hold",
+      "recommendation": "hold",
+      "decision": "hold",
+      "workflow_state": "held",
+      "first_discovered": "2026-10-18",
+      "last_attempted": "2026-10-18",
+      "last_researched": null,
+      "screening_completed_on": "2026-10-18",
+      "curriculum_status": "Provisional concepts only; exact Alberta outcomes not verified. Proposal approval is not approval of full content.",
+      "full_example_status": "deferred by user",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-18/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-18/source-captures.json",
+      "source_check_date": "2026-10-18",
+      "planned_buildout": "Company: Company describes UCalgary technology origins and a Calgary base; current allocation of local development/manufacturing not verified. Roles: Electrode engineering, prototyping and validation leads. Pathways: SAIT Instrumentation Engineering Technology; UCalgary BSc Mechanical Engineering. Classroom: How can you distinguish a tiny electrical signal from noise? Remaining work: HOLD: distinguish current product stages, local work and regulatory/clinical evidence; company application claims are not proof of approved treatment or effectiveness.",
+      "decision_choices": [
+        "approve proposal v1",
+        "revise proposal v1",
+        "reject proposal v1"
+      ],
+      "discovery_source": {
+        "family": "original employer/facility/product sources; corroborated with government or research-partner sources where listed",
+        "url": "https://www.neuraura.com/about-us"
+      },
+      "last_completed_research_on": null,
+      "deferred_reason": "User requested revisit later. HOLD: distinguish current product stages, local work and regulatory/clinical evidence; company application claims are not proof of approved treatment or effectiveness.",
+      "decision_history": [
+        {
+          "prior_decision": "pending",
+          "decision": "hold",
+          "version": 1,
+          "reviewed_on": "2026-10-18",
+          "reviewer": "user",
+          "instruction": "Alright, approve all 14 that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later."
+        }
+      ],
+      "reviewed_on": "2026-10-18"
+    },
+    {
+      "id": "CGY-079",
+      "version": 1,
+      "company": "Congebec",
+      "canonical_domain": "congebec.com",
+      "aliases": [],
+      "parent_or_brand": null,
+      "sector": "Food logistics and refrigeration",
+      "calgary_evidence": "Operating cold-storage location listed at 5500 72 Avenue SE, Calgary.",
+      "presence_type": "operating Calgary cold-storage warehouse",
+      "work": "Store and move temperature-controlled food.",
+      "proposed_question": "How do you keep food cold while moving it through a busy warehouse?",
+      "concepts": "Heat transfer, insulation and process scheduling; Science inquiry",
+      "role_leads": "Refrigeration maintenance and warehouse/logistics work: monitor temperatures, maintain equipment and coordinate movements.",
+      "role_status": "Task-based editorial leads, not verified current vacancies or employer hiring requirements",
+      "pathway_leads": [
+        {
+          "name": "SAIT Refrigeration and Air Conditioning Mechanic apprenticeship",
+          "url": "https://www.sait.ca/apprenticeships-and-trades/programs/refrigeration-and-air-conditioning-mechanic",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        },
+        {
+          "name": "SAIT Power Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/power-engineering-technology",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        }
+      ],
+      "score_dimensions": [
+        4,
+        3,
+        2
+      ],
+      "score": 9,
+      "score_rationale": {
+        "classroom": "Heat transfer, insulation and process scheduling; Science inquiry",
+        "concrete_work": "Store and move temperature-controlled food.",
+        "added_value": "Adds cold-chain operations and maintenance, complementing existing food production."
+      },
+      "sources": [
+        "https://congebec.com/en/locations/",
+        "https://congebec.com/en/"
+      ],
+      "gaps": "Verify site-specific jobs/training and a temperature-flow model. Planned new rail facilities must not be described as operating.",
+      "net_difference": "Adds cold-chain operations and maintenance, complementing existing food production.",
+      "evidence_gate": "pass at proposal level",
+      "recommendation": "eligible for review",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-18",
+      "last_attempted": "2026-10-18",
+      "last_researched": "2026-10-18",
+      "screening_completed_on": "2026-10-18",
+      "curriculum_status": "Provisional concepts only; exact Alberta outcomes not verified. Proposal approval is not approval of full content.",
+      "full_example_status": "draft v1 prepared; full-copy review pending",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-18/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-18/source-captures.json",
+      "source_check_date": "2026-10-18",
+      "planned_buildout": "Company: Operating cold-storage location listed at 5500 72 Avenue SE, Calgary. Roles: Refrigeration maintenance and warehouse/logistics work: monitor temperatures, maintain equipment and coordinate movements. Pathways: SAIT Refrigeration and Air Conditioning Mechanic apprenticeship; SAIT Power Engineering Technology. Classroom: How do you keep food cold while moving it through a busy warehouse? Remaining work: Verify site-specific jobs/training and a temperature-flow model. Planned new rail facilities must not be described as operating.",
+      "decision_choices": [
+        "approve proposal v1",
+        "revise proposal v1",
+        "reject proposal v1"
+      ],
+      "discovery_source": {
+        "family": "original employer/facility/product sources; corroborated with government or research-partner sources where listed",
+        "url": "https://congebec.com/en/locations/"
+      },
+      "last_completed_research_on": "2026-10-18",
+      "deferred_reason": null,
+      "decision_history": [
+        {
+          "prior_decision": "pending",
+          "decision": "approved",
+          "version": 1,
+          "reviewed_on": "2026-10-18",
+          "reviewer": "user",
+          "instruction": "Alright, approve all 14 that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later."
+        }
+      ],
+      "reviewed_on": "2026-10-18",
+      "full_copy_decision": "pending",
+      "full_draft_packet": "docs/validation/full-examples/2026-10-18/review.md",
+      "full_research_completed_on": "2026-10-18"
+    },
+    {
+      "id": "CGY-080",
+      "version": 1,
+      "company": "Fluid Energy (Dorf Ketal)",
+      "canonical_domain": "fluidenergygroup.com",
+      "aliases": [
+        "Fluid Energy Ltd.",
+        "Fluid Energy Group"
+      ],
+      "parent_or_brand": "Dorf Ketal",
+      "sector": "Industrial chemistry",
+      "calgary_evidence": "Company explicitly identifies corporate research and manufacturing facility in Calgary.",
+      "presence_type": "Calgary research/manufacturing",
+      "work": "Develop and manufacture chemical formulations for industrial uses.",
+      "proposed_question": "How can changing an acid formulation change how it performs?",
+      "concepts": "Acids, concentrations, reaction rates and comparative tests; Chemistry inquiry",
+      "role_leads": "Chemists, engineers and operations: develop formulations, test properties and document quality.",
+      "role_status": "Task-based editorial leads, not verified current vacancies or employer hiring requirements",
+      "pathway_leads": [
+        {
+          "name": "SAIT Chemical Laboratory Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        },
+        {
+          "name": "SAIT Instrumentation Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/instrumentation-engineering-technology",
+          "status": "Official program checked 2026-10-18; potential learning route only. Employer requirements, admissions and intake not verified."
+        }
+      ],
+      "score_dimensions": [
+        4,
+        3,
+        1
+      ],
+      "score": 8,
+      "score_rationale": {
+        "classroom": "Acids, concentrations, reaction rates and comparative tests; Chemistry inquiry",
+        "concrete_work": "Develop and manufacture chemical formulations for industrial uses.",
+        "added_value": "Adds formulation testing, but overlaps the existing chemistry and processing cluster."
+      },
+      "sources": [
+        "https://www.fluidenergygroup.com/fluid-our-story",
+        "https://www.fluidenergygroup.com/"
+      ],
+      "gaps": "Verify a specific mechanism and comparative dataset; do not repeat unqualified 'safe/green' marketing or propose handling industrial acids in class.",
+      "net_difference": "Adds formulation testing, but overlaps the existing chemistry and processing cluster.",
+      "evidence_gate": "pass at proposal level",
+      "recommendation": "eligible for review",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-18",
+      "last_attempted": "2026-10-18",
+      "last_researched": "2026-10-18",
+      "screening_completed_on": "2026-10-18",
+      "curriculum_status": "Provisional concepts only; exact Alberta outcomes not verified. Proposal approval is not approval of full content.",
+      "full_example_status": "draft v1 prepared; full-copy review pending",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-18/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-18/source-captures.json",
+      "source_check_date": "2026-10-18",
+      "planned_buildout": "Company: Company explicitly identifies corporate research and manufacturing facility in Calgary. Roles: Chemists, engineers and operations: develop formulations, test properties and document quality. Pathways: SAIT Chemical Laboratory Technology; SAIT Instrumentation Engineering Technology. Classroom: How can changing an acid formulation change how it performs? Remaining work: Verify a specific mechanism and comparative dataset; do not repeat unqualified 'safe/green' marketing or propose handling industrial acids in class.",
+      "decision_choices": [
+        "approve proposal v1",
+        "revise proposal v1",
+        "reject proposal v1"
+      ],
+      "discovery_source": {
+        "family": "original employer/facility/product sources; corroborated with government or research-partner sources where listed",
+        "url": "https://www.fluidenergygroup.com/fluid-our-story"
+      },
+      "last_completed_research_on": "2026-10-18",
+      "deferred_reason": null,
+      "decision_history": [
+        {
+          "prior_decision": "pending",
+          "decision": "approved",
+          "version": 1,
+          "reviewed_on": "2026-10-18",
+          "reviewer": "user",
+          "instruction": "Alright, approve all 14 that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later."
+        }
+      ],
+      "reviewed_on": "2026-10-18",
+      "full_copy_decision": "pending",
+      "full_draft_packet": "docs/validation/full-examples/2026-10-18/review.md",
+      "full_research_completed_on": "2026-10-18"
+    }
+  ]
+}

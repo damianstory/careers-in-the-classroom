@@ -6,6 +6,436 @@ import type { DatedSource } from "./types";
 const checkedOn = "2026-09-25";
 
 export const registry: DatedSource[] = [
+  {"id": "oct18-home-opisystems", "label": "OPIsystems (OPI) — official website", "url": "https://opisystems.com/", "checkedOn": "2026-10-18"},
+  {"id": "oct18-home-nanotess", "label": "NanoTess — official website", "url": "https://nanotess.com/", "checkedOn": "2026-10-18"},
+  {"id": "oct18-home-efw-radiology", "label": "EFW Radiology — official website", "url": "https://efw.ca/", "checkedOn": "2026-10-18"},
+  {"id": "oct18-home-alberta-boot-company", "label": "Alberta Boot Company — official website", "url": "https://albertaboot.ca/", "checkedOn": "2026-10-18"},
+  {"id": "oct18-home-ffa-acoustics", "label": "FFA Consultants in Acoustics and Noise Control — official website", "url": "https://ffaacoustics.ca/", "checkedOn": "2026-10-18"},
+  {"id": "oct18-home-enmax-shepard", "label": "ENMAX — official website", "url": "https://enmax.com/", "checkedOn": "2026-10-18"},
+  {"id": "oct18-home-congebec", "label": "Congebec — official website", "url": "https://congebec.com/", "checkedOn": "2026-10-18"},
+  {"id": "oct18-home-fluid-energy", "label": "Fluid Energy (Dorf Ketal) — official website", "url": "https://fluidenergygroup.com/", "checkedOn": "2026-10-18"},
+
+  {
+    "id": "oct18-source-1",
+    "label": "standens.com — official website",
+    "url": "https://standens.com/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-2",
+    "label": "standens.com — leaf springs",
+    "url": "https://standens.com/leaf-springs/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-3",
+    "label": "standens.com — standens ordering and service announcement",
+    "url": "https://standens.com/standens-ordering-and-service-announcement/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-4",
+    "label": "standens.com — careers",
+    "url": "https://standens.com/careers/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-5",
+    "label": "SAIT — Mechanical Engineering Technology",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-6",
+    "label": "SAIT — Machinist",
+    "url": "https://www.sait.ca/apprenticeships-and-trades/programs/machinist",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-7",
+    "label": "alberta.ca — edc physics20 30 performance standards.pdf",
+    "url": "https://www.alberta.ca/system/files/custom_downloaded_images/edc-physics20-30-performance-standards.pdf",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-8",
+    "label": "opisystems.com — contact",
+    "url": "https://opisystems.com/contact/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-9",
+    "label": "opisystems.com — from an ounce of prevention to every grain to market",
+    "url": "https://opisystems.com/from-an-ounce-of-prevention-to-every-grain-to-market/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-10",
+    "label": "opisystems.com — for commercial",
+    "url": "https://opisystems.com/solutions/for-commercial/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-11",
+    "label": "opisystems.com — co2 monitoring",
+    "url": "https://opisystems.com/co2-monitoring/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-12",
+    "label": "opisystems.bamboohr.com — careers",
+    "url": "https://opisystems.bamboohr.com/careers",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-13",
+    "label": "SAIT — Instrumentation Engineering Technology",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/instrumentation-engineering-technology",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-14",
+    "label": "education.alberta.ca — bio203007.pdf",
+    "url": "https://education.alberta.ca/media/159727/bio203007.pdf",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-15",
+    "label": "search.open.canada.ca — nrc cnrc,172 2022 2023 Q4 1000203,current",
+    "url": "https://search.open.canada.ca/grants/record/nrc-cnrc%2C172-2022-2023-Q4-1000203%2Ccurrent",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-16",
+    "label": "nanotess.com — nanotess secures government of canada funding",
+    "url": "https://www.nanotess.com/blogs/news/nanotess-secures-government-of-canada-funding",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-17",
+    "label": "nanotess.com — stampede rodeo uses nanosalv",
+    "url": "https://www.nanotess.com/blogs/news/stampede-rodeo-uses-nanosalv",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-18",
+    "label": "nanotess.com — careers",
+    "url": "https://www.nanotess.com/pages/careers",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-19",
+    "label": "SAIT — Chemical Laboratory Technology",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-20",
+    "label": "University of Calgary — Chemistry or Biochemistry",
+    "url": "https://science.ucalgary.ca/current-students/undergraduate/program-guides",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-21",
+    "label": "education.alberta.ca — chem2030_07.pdf",
+    "url": "https://education.alberta.ca/media/159730/chem2030_07.pdf",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-22",
+    "label": "globalte.com — official website",
+    "url": "https://www.globalte.com/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-23",
+    "label": "globalte.com — safety at gpt",
+    "url": "https://www.globalte.com/resources/safety-at-gpt",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-24",
+    "label": "globalte.com — the importance of fire drills",
+    "url": "https://www.globalte.com/resources/the-importance-of-fire-drills",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-25",
+    "label": "globalte.com — tegs explained solid state remote power for sites that cant afford downtime",
+    "url": "https://www.globalte.com/resources/tegs-explained-solid-state-remote-power-for-sites-that-cant-afford-downtime",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-26",
+    "label": "globalte.com — careers",
+    "url": "https://www.globalte.com/about/careers",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-27",
+    "label": "education.alberta.ca — science10.pdf",
+    "url": "https://education.alberta.ca/media/159715/science10.pdf",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-28",
+    "label": "hifieng.com — team",
+    "url": "https://hifieng.com/team/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-29",
+    "label": "hifieng.com — hifi announces new advanced pig monitoring service",
+    "url": "https://hifieng.com/news/hifi-announces-new-advanced-pig-monitoring-service/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-30",
+    "label": "hifieng.com — official website",
+    "url": "https://hifieng.com/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-31",
+    "label": "hifieng.com — careers",
+    "url": "https://hifieng.com/careers/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-32",
+    "label": "University of Calgary — Mechanical Engineering",
+    "url": "https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-mechanical-engineering",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-33",
+    "label": "burnco.com — locations",
+    "url": "https://www.burnco.com/locations/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-34",
+    "label": "burnco.com — ready mix",
+    "url": "https://www.burnco.com/products/ready-mix/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-35",
+    "label": "burnco.com — careers",
+    "url": "https://www.burnco.com/careers/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-36",
+    "label": "SAIT — Business Administration — Supply Chain Management",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/business-administration-supply-chain-management",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-37",
+    "label": "efw.ca — general ultrasound",
+    "url": "https://www.efw.ca/services/general-ultrasound/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-38",
+    "label": "efw.ca — uxborough 17",
+    "url": "https://www.efw.ca/locations/uxborough-17/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-39",
+    "label": "efw.ca — commonly recruited positions",
+    "url": "https://www.efw.ca/careers/commonly-recruited-positions/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-40",
+    "label": "efw.ca — careers",
+    "url": "https://www.efw.ca/careers/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-41",
+    "label": "SAIT — Diagnostic Medical Sonography",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/diagnostic-medical-sonography",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-42",
+    "label": "SAIT — Medical Office Assistant and Unit Clerk",
+    "url": "https://www.sait.ca/programs-and-courses/certificates/medical-office-assistant-and-unit-clerk",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-43",
+    "label": "albertaboot.ca — calgary",
+    "url": "https://www.albertaboot.ca/pages/calgary",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-44",
+    "label": "albertaboot.ca — custom boots",
+    "url": "https://www.albertaboot.ca/pages/custom-boots",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-45",
+    "label": "Alberta Boot Company — Learning through retail and production experience",
+    "url": "https://www.albertaboot.ca/blogs/blog/the-master-boot-maker-meet-antonio-juarez",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-46",
+    "label": "Alberta University of the Arts — Fibre",
+    "url": "https://www.auarts.ca/learn-with-us/program-areas/fibre",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-47",
+    "label": "ffaacoustics.ca — about us",
+    "url": "https://www.ffaacoustics.ca/about-us",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-48",
+    "label": "ffaacoustics.ca — architectural",
+    "url": "https://www.ffaacoustics.ca/architectural",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-49",
+    "label": "enmax.com — natural gas fuelled",
+    "url": "https://www.enmax.com/generation-and-wires/generation/natural-gas-fuelled",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-50",
+    "label": "enmax.com — generation",
+    "url": "https://www.enmax.com/generation-and-wires/generation",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-51",
+    "label": "enmax.com — careers",
+    "url": "https://www.enmax.com/careers/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-52",
+    "label": "alis.alberta.ca — power engineer",
+    "url": "https://alis.alberta.ca/occinfo/occupations-in-alberta/occupation-profiles/power-engineer/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-53",
+    "label": "SAIT — Power Engineering Technology",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/power-engineering-technology",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-54",
+    "label": "mobiltex.com — official website",
+    "url": "https://www.mobiltex.com/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-55",
+    "label": "mobiltex.com — product training",
+    "url": "https://www.mobiltex.com/support/product-training/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-56",
+    "label": "mobiltex.com — what is cathodic protection cp monitoring",
+    "url": "https://www.mobiltex.com/what-is-cathodic-protection-cp-monitoring/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-57",
+    "label": "mobiltex.com — industry driven innovation",
+    "url": "https://www.mobiltex.com/trust/industry-driven-innovation/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-58",
+    "label": "mobiltex.com — careers",
+    "url": "https://www.mobiltex.com/company/careers/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-59",
+    "label": "icewestern.com — official website",
+    "url": "https://icewestern.com/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-60",
+    "label": "icewestern.com — Glycol_Runaround.pdf",
+    "url": "https://www.icewestern.com/wp-content/uploads/catalogue_2011/M_Glycol_Runaround/Glycol_Runaround.pdf",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-61",
+    "label": "icewestern.com — careers",
+    "url": "https://icewestern.com/careers",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-62",
+    "label": "SAIT — Refrigeration and Air Conditioning Mechanic",
+    "url": "https://www.sait.ca/apprenticeships-and-trades/programs/refrigeration-and-air-conditioning-mechanic",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-63",
+    "label": "congebec.com — locations",
+    "url": "https://congebec.com/en/locations/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-64",
+    "label": "congebec.com — en",
+    "url": "https://congebec.com/en/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-65",
+    "label": "congebec.com — careers 3",
+    "url": "https://congebec.com/en/careers-3/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-66",
+    "label": "congebec.com — job postings",
+    "url": "https://congebec.com/en/job-postings/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-67",
+    "label": "fluidenergygroup.com — fluid our story",
+    "url": "https://www.fluidenergygroup.com/fluid-our-story",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-68",
+    "label": "fluidenergygroup.com — official website",
+    "url": "https://www.fluidenergygroup.com/",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-69",
+    "label": "fluidenergygroup.com — hcr 7000 product detail",
+    "url": "https://www.fluidenergygroup.com/hcr-7000-product-detail",
+    "checkedOn": "2026-10-18"
+  },
+  {
+    "id": "oct18-source-70",
+    "label": "fluidenergygroup.com — fluidenergy jobs",
+    "url": "https://www.fluidenergygroup.com/fluidenergy-jobs",
+    "checkedOn": "2026-10-18"
+  },
+
   ...exampleRecords.flatMap((r) => r.sources),
   // Cited by more than one example, or by roles and pathways.
   {

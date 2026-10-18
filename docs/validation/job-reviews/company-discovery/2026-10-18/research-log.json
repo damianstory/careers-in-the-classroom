@@ -1,0 +1,104 @@
+{
+  "occurrence": "2026-10-18",
+  "status": "completed",
+  "bounded_stop": "20 unique new candidate companies screened; no further lead expansion",
+  "candidate_leads_examined": 20,
+  "new_candidates": 20,
+  "new_candidate_duplicates": 0,
+  "known_leads_excluded_before_search": 80,
+  "query_log_note": "Topic/search log reconstructed from executed searches; source-captures is the exact URL-level retrieval log. Repeated lookups and pathway checks are not extra company leads.",
+  "queries": [
+    "Standens Calgary leaf springs manufacturing official",
+    "OPIsystems Calgary grain sensors official",
+    "site:opisystems.com Calgary manufacturing engineering OPI",
+    "site:opisystems.com Calgary engineering manufacturing careers",
+    "site:opisystems.bamboohr.com Calgary",
+    "OPIsystems Calgary manufacturing site:alberta.ca",
+    "site:ucalgary.ca \"OPI\" \"Calgary\"",
+    "\"OPIsystems\" \"Calgary\" \"manufacturing\" -site:opisystems.com",
+    "NanoTess Calgary catalytic materials official",
+    "site:globalte.com Calgary engineering Bassano",
+    "Hifi Engineering Calgary fibre optic monitoring official",
+    "Hempalta processing facility closure May 21 2025",
+    "site:burnco.com Calgary ready mix plant quality laboratory",
+    "site:efw.ca ultrasound Calgary",
+    "Mayfair Diagnostics Calgary MRI official",
+    "Qualisure Diagnostics Calgary Thyroid Guide official",
+    "Alberta Boot Calgary factory official",
+    "FFA acoustics Calgary engineering official",
+    "site:ffaacoustics.ca Calgary projects",
+    "site:enmax.com Shepard combined cycle",
+    "site:enmax.com Shepard southeast Calgary facility",
+    "KUDU pumps Calgary manufacturing official",
+    "site:slb.com KUDU Calgary manufacturing",
+    "Saltworks Calgary industrial water official",
+    "site:mobiltex.com \"Calgary\" \"engineering\"",
+    "ICE Western Calgary manufacturing official",
+    "Neuraura Calgary electrode manufacturing official",
+    "site:neuraura.com Calgary research",
+    "Congebec Calgary cold storage official",
+    "Fluid Energy Calgary research manufacturing official",
+    "site:sait.ca programs diagnostic medical sonography mechanical engineering technology instrumentation engineering technology",
+    "site:sait.ca refrigeration air conditioning mechanic welding apprenticeship power engineering technology",
+    "site:sait.ca/programs-and-courses/diplomas/diagnostic-medical-sonography \"Overview\"",
+    "site:sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology \"Overview\"",
+    "site:sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology \"Overview\"",
+    "site:sait.ca/programs-and-courses/diplomas/power-engineering-technology \"Overview\"",
+    "site:sait.ca/apprenticeships-and-trades/programs/machinist \"Overview\"",
+    "site:ucalgary.ca future-students undergraduate mechanical engineering",
+    "site:sait.ca magnetic resonance imaging program certificate",
+    "site:nait.ca \"Magnetic Resonance\" \"program\""
+  ],
+  "source_families": [
+    "original employer facilities/products/services",
+    "government grants and trade/public-sector records",
+    "research/commercialization partner announcements",
+    "official education providers (pathway verification)"
+  ],
+  "unproductive_or_rejected_evidence": [
+    {
+      "query": "site:opisystems.bamboohr.com Calgary",
+      "result": "No search results; not evidence of no jobs."
+    },
+    {
+      "query": "OPIsystems Calgary manufacturing site:alberta.ca",
+      "result": "Old labour-market reports were not used to establish current operations."
+    },
+    {
+      "query": "site:ucalgary.ca \"OPI\" \"Calgary\"",
+      "result": "Unrelated acronym results discarded."
+    },
+    {
+      "company": "Qualisure",
+      "result": "Initial qualisure.com domain search did not establish identity; corrected to qualisuredx.com."
+    },
+    {
+      "company": "EFW",
+      "result": "Older efwrad.com references resolved to current efw.ca sources; retained aliases."
+    },
+    {
+      "company": "KUDU",
+      "result": "1992 public directory and secondary address listings not accepted as current Calgary operation evidence."
+    },
+    {
+      "company": "Hempalta",
+      "result": "Older manufacturing story contradicted by issuer plant-closure announcement; held."
+    },
+    {
+      "company": "Saltworks",
+      "result": "Original source identifies BC design/build; no verified Calgary operation; held."
+    },
+    {
+      "company": "ICE Western",
+      "result": "Direct HTTP timed out; original page available through free search reader. No paid retry."
+    },
+    {
+      "company": "MOBILTEX",
+      "result": "Search surfaced product manuals marked restricted; not used or archived. Public company/training pages suffice."
+    }
+  ],
+  "currency_limits": "Undated pages are company-stated, retrieved today, not audited current staffing. Dated 2023/2024 sources retained as dated; no live-vacancy claims.",
+  "looot_used": false,
+  "looot_reason": "Free original sources and free reader were sufficient for proposal screening. Holds concern substantive evidence, not a paywall. No pricing/balance check needed because no paid start was requested.",
+  "curriculum": "All course connections provisional; precise outcome mapping deferred to approved full-example research."
+}

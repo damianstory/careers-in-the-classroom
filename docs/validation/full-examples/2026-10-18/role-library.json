@@ -1,0 +1,272 @@
+{
+  "mechanical": {
+    "title": "Mechanical design and analysis",
+    "summary": "Turn a performance need into a component or system that can be built and checked.",
+    "tasks": [
+      "Translate the need into dimensions, loads and operating conditions.",
+      "Compare drawings or models and explain a design trade-off.",
+      "Work with manufacturing and test teams when a prototype behaves differently from the model."
+    ],
+    "collaborators": [
+      "Manufacturing staff",
+      "Test technicians",
+      "Customers"
+    ],
+    "connection": "A model is useful when its assumptions are clear and measurements can challenge it."
+  },
+  "manufacturing": {
+    "title": "Manufacturing and quality work",
+    "summary": "Make repeatable components and check that the output matches a specification.",
+    "tasks": [
+      "Read a drawing or work instruction before setting up a task.",
+      "Measure key dimensions or properties and record the result.",
+      "Investigate variation rather than treating every difference as acceptable."
+    ],
+    "collaborators": [
+      "Design teams",
+      "Machine operators",
+      "Quality staff"
+    ],
+    "connection": "Precision, tolerances and repeatable methods connect measurement to useful products."
+  },
+  "instrument": {
+    "title": "Instrumentation and control",
+    "summary": "Help a system turn physical conditions into dependable readings and actions.",
+    "tasks": [
+      "Choose a measurement point and check the instrument's range.",
+      "Compare readings with a reference and investigate missing or unexpected values.",
+      "Use evidence to adjust a control or recommend a closer inspection."
+    ],
+    "collaborators": [
+      "Operators",
+      "Engineers",
+      "Maintenance teams"
+    ],
+    "connection": "A reading depends on where and how it was measured, not just the number displayed."
+  },
+  "support": {
+    "title": "Technical application support",
+    "summary": "Help people use a technical product in the conditions of their own workplace.",
+    "tasks": [
+      "Ask what the user is trying to measure or control.",
+      "Separate a setup problem from a sensor or process problem.",
+      "Explain the next diagnostic step and record what changed."
+    ],
+    "collaborators": [
+      "Customers",
+      "Product developers",
+      "Field technicians"
+    ],
+    "connection": "Troubleshooting means testing explanations one at a time."
+  },
+  "lab": {
+    "title": "Laboratory testing and analysis",
+    "summary": "Produce measurements that are useful because samples and comparisons are controlled.",
+    "tasks": [
+      "Label and prepare samples so their identity stays traceable.",
+      "Change one planned factor while holding comparison conditions steady.",
+      "Report results with units, repeats and limitations."
+    ],
+    "collaborators": [
+      "Scientists",
+      "Quality teams",
+      "Process engineers"
+    ],
+    "connection": "Fair comparisons are more informative than an isolated result."
+  },
+  "materials": {
+    "title": "Materials and formulation research",
+    "summary": "Investigate how a material's composition and structure relate to what it does.",
+    "tasks": [
+      "Define a property that matters for the intended use.",
+      "Compare candidate materials using a stated method.",
+      "Explain trade-offs and what evidence is still missing."
+    ],
+    "collaborators": [
+      "Laboratory staff",
+      "Manufacturing teams",
+      "Application specialists"
+    ],
+    "connection": "A promising material must be evaluated against a specific task."
+  },
+  "quality": {
+    "title": "Quality documentation and verification",
+    "summary": "Keep the chain from a test or batch to a decision clear enough to inspect.",
+    "tasks": [
+      "Check which version of a method and sample was used.",
+      "Review whether measurements support the stated acceptance criteria.",
+      "Record a deviation and the evidence needed before releasing work."
+    ],
+    "collaborators": [
+      "Operations",
+      "Scientists",
+      "Customer support"
+    ],
+    "connection": "A clear record makes a result checkable by someone who was not there."
+  },
+  "data": {
+    "title": "Measurement software and data analysis",
+    "summary": "Turn streams of measurements into displays and comparisons people can use.",
+    "tasks": [
+      "Check timestamps, units and missing values.",
+      "Compare a new pattern with a defined baseline.",
+      "Test alerts against plausible alternative explanations."
+    ],
+    "collaborators": [
+      "Sensor engineers",
+      "Operators",
+      "Domain specialists"
+    ],
+    "connection": "An alert is a reason to investigate, not proof of a single cause."
+  },
+  "process": {
+    "title": "Process and systems engineering",
+    "summary": "Connect material and energy changes to a sequence of equipment and operating choices.",
+    "tasks": [
+      "Draw what enters and leaves each part of a process.",
+      "Compare equipment choices against the required conditions.",
+      "Use test results to revise the design and explain its limits."
+    ],
+    "collaborators": [
+      "Operators",
+      "Laboratory staff",
+      "Mechanical designers"
+    ],
+    "connection": "Conservation of matter and energy helps reveal missing assumptions."
+  },
+  "logistics": {
+    "title": "Dispatch and logistics coordination",
+    "summary": "Keep materials moving in the right order, with the information needed at each handoff.",
+    "tasks": [
+      "Match deliveries or orders with available capacity.",
+      "Check timing, identification and handling requirements.",
+      "Respond to a delay without losing track of the product or customer need."
+    ],
+    "collaborators": [
+      "Drivers",
+      "Warehouse teams",
+      "Customers"
+    ],
+    "connection": "A technically sound product can still fail its purpose if timing or handling goes wrong."
+  },
+  "sonographer": {
+    "title": "Diagnostic medical sonographer",
+    "summary": "Acquire ultrasound images while supporting the person being examined.",
+    "tasks": [
+      "Prepare for the requested examination and communicate with the patient.",
+      "Position the transducer and adjust acquisition settings to obtain useful views.",
+      "Document the images for interpretation within the clinical team's workflow."
+    ],
+    "collaborators": [
+      "Patients",
+      "Radiologists",
+      "Clinic staff"
+    ],
+    "connection": "Producing a clear measurement and interpreting its meaning are connected but different tasks."
+  },
+  "radiologist": {
+    "title": "Radiologist",
+    "summary": "A physician who interprets medical images in clinical context.",
+    "tasks": [
+      "Review images together with the clinical question.",
+      "Distinguish findings from uncertainty or imaging limitations.",
+      "Communicate an interpretation to the care team."
+    ],
+    "collaborators": [
+      "Sonographers",
+      "Referring clinicians",
+      "Patients"
+    ],
+    "connection": "A picture is evidence to interpret, not a diagnosis by itself."
+  },
+  "clinic": {
+    "title": "Medical office and booking support",
+    "summary": "Help patients and clinical teams coordinate the information and appointments needed for care.",
+    "tasks": [
+      "Handle appointment requests and confirm required information.",
+      "Communicate clearly with patients and modality teams.",
+      "Keep registration and scheduling records accurate."
+    ],
+    "collaborators": [
+      "Patients",
+      "Technologists",
+      "Booking teams"
+    ],
+    "connection": "Care depends on reliable human coordination as well as instruments."
+  },
+  "craft": {
+    "title": "Bootmaking and pattern work",
+    "summary": "Translate a design and material choice into a pair of boots through skilled craft.",
+    "tasks": [
+      "Plan and cut pieces with attention to material stretch.",
+      "Join and shape components through stitching and lasting.",
+      "Inspect the finished result against the intended design and fit."
+    ],
+    "collaborators": [
+      "Customers",
+      "Retail staff",
+      "Other makers"
+    ],
+    "connection": "A flat pattern and a three-dimensional object have to agree."
+  },
+  "acoustics": {
+    "title": "Acoustical consulting",
+    "summary": "Investigate how sound behaves in a space and recommend changes for its intended use.",
+    "tasks": [
+      "Measure or model sound paths and levels.",
+      "Compare changes to room surfaces, layout or noise isolation.",
+      "Explain the trade-offs to the people designing or using the space."
+    ],
+    "collaborators": [
+      "Architects",
+      "Mechanical engineers",
+      "Building users"
+    ],
+    "connection": "Reflection and absorption become decisions about how a room works."
+  },
+  "power": {
+    "title": "Power engineering and plant operations",
+    "summary": "Operate and monitor equipment that produces or transfers thermal and electrical energy.",
+    "tasks": [
+      "Read operating measurements and compare them with procedures.",
+      "Coordinate inspections and maintenance with other teams.",
+      "Track an abnormal condition and respond through established operating processes."
+    ],
+    "collaborators": [
+      "Control-room teams",
+      "Maintenance staff",
+      "Engineers"
+    ],
+    "connection": "Energy diagrams become real operating systems with constraints and losses."
+  },
+  "refrigeration": {
+    "title": "Refrigeration and air-conditioning mechanic",
+    "summary": "Install, maintain and troubleshoot equipment that moves heat and conditions air.",
+    "tasks": [
+      "Use drawings to locate components and controls.",
+      "Check operating conditions and investigate a fault.",
+      "Repair or adjust equipment and verify the result."
+    ],
+    "collaborators": [
+      "Controls technicians",
+      "Operators",
+      "Equipment designers"
+    ],
+    "connection": "A refrigeration system moves heat; it does not create cold as a substance."
+  },
+  "warehouse": {
+    "title": "Warehouse and inventory operations",
+    "summary": "Receive, locate and move goods while keeping identity and handling requirements visible.",
+    "tasks": [
+      "Check incoming goods against shipment information.",
+      "Move and store products using appropriate equipment and procedures.",
+      "Maintain inventory records and coordinate outbound loads."
+    ],
+    "collaborators": [
+      "Drivers",
+      "Dispatch",
+      "Food-quality teams"
+    ],
+    "connection": "Temperature, time and correct identification all matter to a cold chain."
+  }
+}

@@ -1,0 +1,196 @@
+[
+  {
+    "company": "Standen’s (IMT)",
+    "proposal_id": "CGY-061",
+    "checked_on": "2026-10-18",
+    "status": "unknown",
+    "note": "Employer careers page displays a loading message rather than individual postings. No accepting-application claim or job card.",
+    "rule": "No live-vacancy assertion; evergreen work descriptions stay in role profiles, not vacancy cards.",
+    "sources": [
+      "https://standens.com/",
+      "https://standens.com/leaf-springs/",
+      "https://standens.com/standens-ordering-and-service-announcement/",
+      "https://standens.com/careers/"
+    ]
+  },
+  {
+    "company": "OPIsystems (OPI)",
+    "proposal_id": "CGY-062",
+    "checked_on": "2026-10-18",
+    "status": "unknown",
+    "note": "Free ATS capture returned a shell. One Looot/Firecrawl capture recovered the heading but no individual postings. Status remains unknown, not 'no openings'.",
+    "rule": "No live-vacancy assertion; evergreen work descriptions stay in role profiles, not vacancy cards.",
+    "sources": [
+      "https://opisystems.com/contact/",
+      "https://opisystems.com/from-an-ounce-of-prevention-to-every-grain-to-market/",
+      "https://opisystems.com/solutions/for-commercial/",
+      "https://opisystems.com/co2-monitoring/",
+      "https://opisystems.bamboohr.com/careers"
+    ]
+  },
+  {
+    "company": "NanoTess",
+    "proposal_id": "CGY-063",
+    "checked_on": "2026-10-18",
+    "status": "unknown",
+    "note": "Company careers page lists commercial/marketing opportunities; those were not selected as strong evidence for this laboratory story. No new job card.",
+    "rule": "No live-vacancy assertion; evergreen work descriptions stay in role profiles, not vacancy cards.",
+    "sources": [
+      "https://search.open.canada.ca/grants/record/nrc-cnrc%2C172-2022-2023-Q4-1000203%2Ccurrent",
+      "https://www.nanotess.com/blogs/news/nanotess-secures-government-of-canada-funding",
+      "https://www.nanotess.com/blogs/news/stampede-rodeo-uses-nanosalv",
+      "https://www.nanotess.com/pages/careers"
+    ]
+  },
+  {
+    "company": "Global Power Technologies",
+    "proposal_id": "CGY-064",
+    "checked_on": "2026-10-18",
+    "status": "unknown",
+    "note": "Employer page lists an E&HS Advisor, but it is not a close match to the selected electrical-conversion work and was not made a job card.",
+    "rule": "No live-vacancy assertion; evergreen work descriptions stay in role profiles, not vacancy cards.",
+    "sources": [
+      "https://www.globalte.com/",
+      "https://www.globalte.com/resources/safety-at-gpt",
+      "https://www.globalte.com/resources/the-importance-of-fire-drills",
+      "https://www.globalte.com/resources/tegs-explained-solid-state-remote-power-for-sites-that-cant-afford-downtime",
+      "https://www.globalte.com/about/careers"
+    ]
+  },
+  {
+    "company": "Hifi Engineering",
+    "proposal_id": "CGY-065",
+    "checked_on": "2026-10-18",
+    "status": "unknown",
+    "note": "Careers page contains an invitation but no extractable individual positions. Unknown vacancy status; no job card.",
+    "rule": "No live-vacancy assertion; evergreen work descriptions stay in role profiles, not vacancy cards.",
+    "sources": [
+      "https://hifieng.com/team/",
+      "https://hifieng.com/news/hifi-announces-new-advanced-pig-monitoring-service/",
+      "https://hifieng.com/",
+      "https://hifieng.com/careers/"
+    ]
+  },
+  {
+    "company": "BURNCO",
+    "proposal_id": "CGY-067",
+    "checked_on": "2026-10-18",
+    "status": "unknown",
+    "note": "Corporate careers page links to opportunities, but this bounded pass did not verify a Calgary posting with sufficiently matched duties. No card and no claim of no jobs.",
+    "rule": "No live-vacancy assertion; evergreen work descriptions stay in role profiles, not vacancy cards.",
+    "sources": [
+      "https://www.burnco.com/locations/",
+      "https://www.burnco.com/products/ready-mix/",
+      "https://www.burnco.com/careers/"
+    ]
+  },
+  {
+    "company": "EFW Radiology",
+    "proposal_id": "CGY-068",
+    "checked_on": "2026-10-18",
+    "status": "unknown",
+    "note": "Evergreen commonly-recruited role descriptions supply useful duties and qualification evidence. They are not a dated vacancy or proof of an open position; no vacancy card proposed.",
+    "rule": "No live-vacancy assertion; evergreen work descriptions stay in role profiles, not vacancy cards.",
+    "sources": [
+      "https://www.efw.ca/services/general-ultrasound/",
+      "https://www.efw.ca/locations/uxborough-17/",
+      "https://www.efw.ca/careers/commonly-recruited-positions/",
+      "https://www.efw.ca/careers/"
+    ]
+  },
+  {
+    "company": "Alberta Boot Company",
+    "proposal_id": "CGY-071",
+    "checked_on": "2026-10-18",
+    "status": "unknown",
+    "note": "No individual role posting was verified. The maker profile documents one person's route from high-school retail work into production responsibility; it is not an advertised training scheme.",
+    "rule": "No live-vacancy assertion; evergreen work descriptions stay in role profiles, not vacancy cards.",
+    "sources": [
+      "https://www.albertaboot.ca/pages/calgary",
+      "https://www.albertaboot.ca/pages/custom-boots",
+      "https://www.albertaboot.ca/blogs/blog/the-master-boot-maker-meet-antonio-juarez"
+    ]
+  },
+  {
+    "company": "FFA Consultants in Acoustics and Noise Control",
+    "proposal_id": "CGY-072",
+    "checked_on": "2026-10-18",
+    "status": "unknown",
+    "note": "No role-specific vacancy was verified from the company sources. Principal biography supplies one historical mechanical-engineering route, not a universal hiring rule.",
+    "rule": "No live-vacancy assertion; evergreen work descriptions stay in role profiles, not vacancy cards.",
+    "sources": [
+      "https://www.ffaacoustics.ca/about-us",
+      "https://www.ffaacoustics.ca/architectural"
+    ]
+  },
+  {
+    "company": "ENMAX",
+    "proposal_id": "CGY-073",
+    "checked_on": "2026-10-18",
+    "status": "unknown",
+    "note": "Employer describes student/co-op opportunities and an engineer-in-training route at company level. Neither proves a current Shepard opening; no individual vacancy card.",
+    "rule": "No live-vacancy assertion; evergreen work descriptions stay in role profiles, not vacancy cards.",
+    "sources": [
+      "https://www.enmax.com/generation-and-wires/generation/natural-gas-fuelled",
+      "https://www.enmax.com/generation-and-wires/generation",
+      "https://www.enmax.com/careers/",
+      "https://alis.alberta.ca/occinfo/occupations-in-alberta/occupation-profiles/power-engineer/"
+    ]
+  },
+  {
+    "company": "MOBILTEX",
+    "proposal_id": "CGY-076",
+    "checked_on": "2026-10-18",
+    "status": "unknown",
+    "note": "Company careers page provides general employment context; no sufficiently evidenced individual Calgary posting selected.",
+    "rule": "No live-vacancy assertion; evergreen work descriptions stay in role profiles, not vacancy cards.",
+    "sources": [
+      "https://www.mobiltex.com/",
+      "https://www.mobiltex.com/support/product-training/",
+      "https://www.mobiltex.com/what-is-cathodic-protection-cp-monitoring/",
+      "https://www.mobiltex.com/trust/industry-driven-innovation/",
+      "https://www.mobiltex.com/company/careers/"
+    ]
+  },
+  {
+    "company": "ICE Western",
+    "proposal_id": "CGY-077",
+    "checked_on": "2026-10-18",
+    "status": "unknown",
+    "note": "Free reader recovered the employer careers page, but no individual titles or duties were visible. Status unknown; no vacancy card.",
+    "rule": "No live-vacancy assertion; evergreen work descriptions stay in role profiles, not vacancy cards.",
+    "sources": [
+      "https://icewestern.com/",
+      "https://www.icewestern.com/wp-content/uploads/catalogue_2011/M_Glycol_Runaround/Glycol_Runaround.pdf",
+      "https://icewestern.com/careers"
+    ]
+  },
+  {
+    "company": "Congebec",
+    "proposal_id": "CGY-079",
+    "checked_on": "2026-10-18",
+    "status": "unknown",
+    "note": "Employer categories are accessible, but the job-list page did not expose individual postings in the capture. No current Calgary vacancy confirmed; no vacancy card.",
+    "rule": "No live-vacancy assertion; evergreen work descriptions stay in role profiles, not vacancy cards.",
+    "sources": [
+      "https://congebec.com/en/locations/",
+      "https://congebec.com/en/",
+      "https://congebec.com/en/careers-3/",
+      "https://congebec.com/en/job-postings/"
+    ]
+  },
+  {
+    "company": "Fluid Energy (Dorf Ketal)",
+    "proposal_id": "CGY-080",
+    "checked_on": "2026-10-18",
+    "status": "unknown",
+    "note": "Company page describes technical, operations, logistics and quality work and directs vacancies elsewhere. No original role-specific Calgary posting selected.",
+    "rule": "No live-vacancy assertion; evergreen work descriptions stay in role profiles, not vacancy cards.",
+    "sources": [
+      "https://www.fluidenergygroup.com/fluid-our-story",
+      "https://www.fluidenergygroup.com/",
+      "https://www.fluidenergygroup.com/hcr-7000-product-detail",
+      "https://www.fluidenergygroup.com/fluidenergy-jobs"
+    ]
+  }
+]

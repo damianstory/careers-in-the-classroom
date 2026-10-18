@@ -19,6 +19,20 @@ export * from "./browse-terms";
 // (the course door is the library filter). Computed on the server.
 
 const themeOf: Record<string, ThemeId> = {
+  standens: "making",
+  opisystems: "food",
+  nanotess: "making",
+  "global-power-technologies": "energy",
+  "hifi-engineering": "sensing",
+  burnco: "build",
+  "efw-radiology": "sensing",
+  "alberta-boot-company": "making",
+  "ffa-acoustics": "build",
+  "enmax-shepard": "energy",
+  mobiltex: "sensing",
+  "ice-western": "energy",
+  congebec: "food",
+  "fluid-energy": "making",
   "o2-planning-design": "water",
   watersmart: "water",
   "integrated-sustainability": "water",
@@ -54,6 +68,15 @@ const themeOf: Record<string, ThemeId> = {
 };
 
 const familyOf: Record<string, FamilyId> = {
+  "work-manufacturing": "trades",
+  "work-technical-support": "people",
+  "work-logistics": "people",
+  "work-sonography": "health",
+  "work-clinic-administration": "people",
+  "work-bootmaking": "trades",
+  "work-acoustics": "engineering",
+  "work-refrigeration": "trades",
+  "work-warehousing": "trades",
   "work-landscape-design": "engineering",
   "work-structural-engineering": "engineering",
   "work-building-science-investigation": "engineering",

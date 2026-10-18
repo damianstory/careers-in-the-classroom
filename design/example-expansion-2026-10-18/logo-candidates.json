@@ -1,0 +1,561 @@
+[
+  {
+    "slug": "standens",
+    "url": "https://standens.com/",
+    "status": 200,
+    "images": [
+      {
+        "class": "logo-main scale-with-grid ",
+        "src": "https://standens.com/wp-content/uploads/2024/12/IMT_Standens.png#571",
+        "alt": "IMT_Standens"
+      },
+      {
+        "class": "logo-sticky scale-with-grid ",
+        "src": "https://standens.com/wp-content/uploads/2024/12/IMT_Standens-1.png#572",
+        "alt": "IMT_Standens"
+      },
+      {
+        "class": "logo-mobile scale-with-grid ",
+        "src": "https://standens.com/wp-content/uploads/2024/12/IMT_Standens.png#571",
+        "alt": "IMT_Standens"
+      },
+      {
+        "class": "logo-mobile-sticky scale-with-grid ",
+        "src": "https://standens.com/wp-content/uploads/2024/12/IMT_Standens.png#571",
+        "alt": "IMT_Standens"
+      }
+    ]
+  },
+  {
+    "slug": "opisystems",
+    "url": "https://opisystems.com/",
+    "status": 200,
+    "images": [
+      {
+        "src": "https://opisystems.com/wp-content/uploads/2023/02/OPI_Logo_4c-300x147.png",
+        "alt": "",
+        "width": "300",
+        "height": "147",
+        "class": "img-responsive"
+      }
+    ]
+  },
+  {
+    "slug": "nanotess",
+    "url": "https://nanotess.com/",
+    "status": 200,
+    "images": [
+      {
+        "src": "https://www.nanotess.com/cdn/shop/files/NanoTess_Catalyzing_Healing.png?v=1741619526&width=600",
+        "alt": "NanoTess Inc - Medical",
+        "width": "220",
+        "height": "35.773607506488325",
+        "class": "header__heading-logo motion-reduce"
+      },
+      {
+        "src": "https://www.nanotess.com/cdn/shop/articles/embecta_logo_background_5x7_0525f553-24cc-4251-8fcb-567c5fb5987c.jpg?v=1783012236&width=533",
+        "alt": "NanoTess Signs Deal with Diabetes Care Leader embecta  to Bring Catalytic Wound Care to All Canadians",
+        "width": "1866",
+        "height": "1333"
+      },
+      {
+        "class": "",
+        "src": "https://cdn.shopify.com/s/files/1/0688/5851/1665/files/logo-grrit-nanotess.png?v=1707159531",
+        "alt": "logo-grrit-nanotess",
+        "width": "135",
+        "height": "50"
+      },
+      {
+        "class": "",
+        "src": "https://cdn.shopify.com/s/files/1/0688/5851/1665/files/logo-alberta-innovates-nanotess.png?v=1707159363",
+        "alt": "logo-alberta-innovates-nanotess",
+        "width": "135",
+        "height": "50"
+      },
+      {
+        "class": "",
+        "src": "https://cdn.shopify.com/s/files/1/0688/5851/1665/files/logo-creative-destruction-lab-nanotess.png?v=1707159378",
+        "alt": "logo-creative-destruction-lab-nanotess",
+        "width": "135",
+        "height": "50"
+      },
+      {
+        "class": "",
+        "src": "https://cdn.shopify.com/s/files/1/0688/5851/1665/files/logo-bio-alberta-nanotess.png?v=1707159422",
+        "alt": "logo-bio-alberta-nanotess",
+        "width": "135",
+        "height": "50"
+      },
+      {
+        "class": "",
+        "src": "https://cdn.shopify.com/s/files/1/0688/5851/1665/files/logo-thin-air-labs-nanotess.png?v=1707159449",
+        "alt": "logo-thin-air-labs-nanotess",
+        "width": "135",
+        "height": "50"
+      },
+      {
+        "class": "",
+        "src": "https://cdn.shopify.com/s/files/1/0688/5851/1665/files/logo-aventrock-nanotess.png?v=1707159477",
+        "alt": "logo-aventrock-nanotess",
+        "width": "135",
+        "height": "50"
+      },
+      {
+        "class": "",
+        "src": "https://cdn.shopify.com/s/files/1/0688/5851/1665/files/logo-cels-nanotess.png?v=1707159504",
+        "alt": "logo-cels-nanotess",
+        "width": "135",
+        "height": "50"
+      },
+      {
+        "src": "https://www.nanotess.com/cdn/shop/files/logo_with_address_footer_copy_3c2a853b-b100-4c19-9d57-3d5e4e83b97e.png?v=1741620037&width=760",
+        "alt": "",
+        "width": "4167",
+        "height": "1579"
+      }
+    ]
+  },
+  {
+    "slug": "global-power-technologies",
+    "url": "https://globalte.com/",
+    "status": 200,
+    "images": [
+      {
+        "src": "https://www.globalte.com/hubfs/GPT_Logo.svg",
+        "class": "hs-image-widget ",
+        "height": "146",
+        "width": "190",
+        "alt": "GPT_Logo"
+      },
+      {
+        "src": "https://www.globalte.com/hubfs/GPT_Logo.svg",
+        "class": "hs-image-widget ",
+        "height": "146",
+        "width": "190",
+        "alt": "GPT_Logo"
+      },
+      {
+        "class": "splide__slide--image",
+        "alt": "GPT customer logos",
+        "src": "https://www.globalte.com/"
+      }
+    ]
+  },
+  {
+    "slug": "hifi-engineering",
+    "url": "https://hifieng.com/",
+    "status": 200,
+    "images": [
+      {
+        "width": "119",
+        "height": "52",
+        "src": "https://hifieng.com/wp-content/uploads/2021/08/logo-dark-1.svg",
+        "class": "neve-site-logo skip-lazy",
+        "alt": "Hifi Logo - Fiber Optic Sensing for Pipelines"
+      },
+      {
+        "width": "119",
+        "height": "52",
+        "src": "https://hifieng.com/wp-content/uploads/2021/08/logo-dark-1.svg",
+        "class": "neve-site-logo skip-lazy",
+        "alt": "Hifi Logo - Fiber Optic Sensing for Pipelines"
+      },
+      {
+        "width": "119",
+        "height": "52",
+        "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20119%2052'%3E%3C/svg%3E",
+        "class": "attachment-large size-large wp-image-577",
+        "alt": "Hifi Logo"
+      },
+      {
+        "width": "119",
+        "height": "52",
+        "src": "https://hifieng.com/wp-content/uploads/2021/06/logo-white.svg",
+        "class": "attachment-large size-large wp-image-577",
+        "alt": "Hifi Logo"
+      }
+    ]
+  },
+  {
+    "slug": "burnco",
+    "url": "https://burnco.com/",
+    "status": 403,
+    "images": []
+  },
+  {
+    "slug": "efw-radiology",
+    "url": "https://efw.ca/",
+    "status": 200,
+    "images": [
+      {
+        "src": "https://www.efw.ca/images/ui/logo_2025.png?v=1.3",
+        "alt": "EFW Radiology"
+      },
+      {
+        "src": "https://www.efw.ca/images/ui/logo_2025.png",
+        "alt": "EFW Radiology"
+      }
+    ]
+  },
+  {
+    "slug": "alberta-boot-company",
+    "url": "https://albertaboot.ca/",
+    "status": 200,
+    "images": [
+      {
+        "src": "https://www.albertaboot.ca/cdn/shop/files/ABCO_LOGO_ASSETS_ABCO_BRANDMARK_00263a_dd55fa8c-7c89-4928-9d1a-531b796cc2eb.png?v=1768700766&width=300",
+        "alt": "Alberta Boot",
+        "width": "300",
+        "height": "119",
+        "class": "abco-drawer-logo__img"
+      },
+      {
+        "class": "theme-img logo_image logo_image--desktop",
+        "src": "https://www.albertaboot.ca/cdn/shop/files/Logo_eade7034-21fa-4e6c-ae06-20434548866f.png?crop=center&height=1000&v=1773242740&width=1000",
+        "alt": "Alberta Boot"
+      },
+      {
+        "class": "theme-img logo_image logo_image--desktop js",
+        "alt": "Alberta Boot",
+        "width": "229",
+        "height": "29",
+        "src": "https://www.albertaboot.ca/cdn/shop/files/Logo_eade7034-21fa-4e6c-ae06-20434548866f.png?v=1773242740&width=1445"
+      },
+      {
+        "class": "theme-img logo_image logo_image--mobile",
+        "src": "https://www.albertaboot.ca/cdn/shop/files/ABCO_LOGO_ASSETS_ABCO_BRANDMARK_00263a_dd55fa8c-7c89-4928-9d1a-531b796cc2eb.png?crop=center&height=1000&v=1768700766&width=1000",
+        "alt": "Alberta Boot"
+      },
+      {
+        "class": "theme-img logo_image logo_image--mobile js",
+        "alt": "Alberta Boot",
+        "width": "5901",
+        "height": "2348",
+        "src": "https://www.albertaboot.ca/cdn/shop/files/ABCO_LOGO_ASSETS_ABCO_BRANDMARK_00263a_dd55fa8c-7c89-4928-9d1a-531b796cc2eb.png?v=1768700766&width=1445"
+      },
+      {
+        "class": "theme-img logo_image logo_image--desktop",
+        "src": "https://www.albertaboot.ca/cdn/shop/files/Logo_eade7034-21fa-4e6c-ae06-20434548866f.png?crop=center&height=1000&v=1773242740&width=1000",
+        "alt": "Alberta Boot"
+      },
+      {
+        "class": "theme-img logo_image logo_image--desktop js",
+        "alt": "Alberta Boot",
+        "width": "229",
+        "height": "29",
+        "src": "https://www.albertaboot.ca/cdn/shop/files/Logo_eade7034-21fa-4e6c-ae06-20434548866f.png?v=1773242740&width=1445"
+      },
+      {
+        "class": "theme-img logo_image logo_image--mobile",
+        "src": "https://www.albertaboot.ca/cdn/shop/files/ABCO_LOGO_ASSETS_ABCO_BRANDMARK_00263a_dd55fa8c-7c89-4928-9d1a-531b796cc2eb.png?crop=center&height=1000&v=1768700766&width=1000",
+        "alt": "Alberta Boot"
+      },
+      {
+        "class": "theme-img logo_image logo_image--mobile js",
+        "alt": "Alberta Boot",
+        "width": "5901",
+        "height": "2348",
+        "src": "https://www.albertaboot.ca/cdn/shop/files/ABCO_LOGO_ASSETS_ABCO_BRANDMARK_00263a_dd55fa8c-7c89-4928-9d1a-531b796cc2eb.png?v=1768700766&width=1445"
+      },
+      {
+        "class": "uhl_logo uhl_logo--desktop",
+        "src": "https://www.albertaboot.ca/cdn/shop/files/Group_1096_952d7815-5775-40ad-aa12-7c2d5fb573e6.png?v=1772820802",
+        "alt": "Alberta Boot"
+      },
+      {
+        "class": "uhl_logo uhl_logo--mobile",
+        "src": "https://www.albertaboot.ca/cdn/shop/files/Home.png?v=1772864663",
+        "alt": "Alberta Boot"
+      },
+      {
+        "class": "sb_logo",
+        "src": "https://www.albertaboot.ca/cdn/shop/files/ABBug_acddfacf-66c5-44ec-bb97-2aae213e4f89.png?v=1772828891",
+        "alt": "Alberta Boot"
+      },
+      {
+        "class": "sb_logo",
+        "src": "https://www.albertaboot.ca/cdn/shop/files/ABBug_acddfacf-66c5-44ec-bb97-2aae213e4f89.png?v=1772828891",
+        "alt": "Alberta Boot"
+      },
+      {
+        "class": "sb_logo",
+        "src": "https://www.albertaboot.ca/cdn/shop/files/ABBug_acddfacf-66c5-44ec-bb97-2aae213e4f89.png?v=1772828891",
+        "alt": "Alberta Boot"
+      },
+      {
+        "class": "sb_logo",
+        "src": "https://www.albertaboot.ca/cdn/shop/files/ABBug_acddfacf-66c5-44ec-bb97-2aae213e4f89.png?v=1772828891",
+        "alt": "Alberta Boot"
+      },
+      {
+        "class": "sb_logo",
+        "src": "https://www.albertaboot.ca/cdn/shop/files/ABBug_acddfacf-66c5-44ec-bb97-2aae213e4f89.png?v=1772828891",
+        "alt": "Alberta Boot"
+      },
+      {
+        "class": "sb_logo",
+        "src": "https://www.albertaboot.ca/cdn/shop/files/ABBug_acddfacf-66c5-44ec-bb97-2aae213e4f89.png?v=1772828891",
+        "alt": "Alberta Boot"
+      },
+      {
+        "class": "sb_logo",
+        "src": "https://www.albertaboot.ca/cdn/shop/files/ABBug_acddfacf-66c5-44ec-bb97-2aae213e4f89.png?v=1772828891",
+        "alt": "Alberta Boot"
+      },
+      {
+        "class": "sb_logo",
+        "src": "https://www.albertaboot.ca/cdn/shop/files/ABBug_acddfacf-66c5-44ec-bb97-2aae213e4f89.png?v=1772828891",
+        "alt": "Alberta Boot"
+      },
+      {
+        "class": "sb_logo",
+        "src": "https://www.albertaboot.ca/cdn/shop/files/ABBug_acddfacf-66c5-44ec-bb97-2aae213e4f89.png?v=1772828891",
+        "alt": "Alberta Boot"
+      },
+      {
+        "class": "sb_logo",
+        "src": "https://www.albertaboot.ca/cdn/shop/files/ABBug_acddfacf-66c5-44ec-bb97-2aae213e4f89.png?v=1772828891",
+        "alt": "Alberta Boot"
+      },
+      {
+        "class": "sb_logo",
+        "src": "https://www.albertaboot.ca/cdn/shop/files/ABBug_acddfacf-66c5-44ec-bb97-2aae213e4f89.png?v=1772828891",
+        "alt": "Alberta Boot"
+      },
+      {
+        "class": "sb_logo",
+        "src": "https://www.albertaboot.ca/cdn/shop/files/ABBug_acddfacf-66c5-44ec-bb97-2aae213e4f89.png?v=1772828891",
+        "alt": "Alberta Boot"
+      },
+      {
+        "src": "https://www.albertaboot.ca/cdn/shop/files/logotype.svg?v=1773249663&width=600",
+        "alt": "Store name",
+        "width": "223",
+        "height": "15"
+      }
+    ]
+  },
+  {
+    "slug": "ffa-acoustics",
+    "url": "https://ffaacoustics.ca/",
+    "status": 200,
+    "images": [
+      {
+        "src": "https://static.wixstatic.com/media/ba2cd3_afff0acc43494ec0acb3e8573123aa9e~mv2.jpg/v1/fill/w_273,h_68,al_c,q_80,enc_avif,quality_auto/ba2cd3_afff0acc43494ec0acb3e8573123aa9e~mv2.jpg",
+        "alt": "New-FFA-Logo",
+        "class": "gRkIq0 sFiSiq",
+        "width": "273",
+        "height": "68"
+      }
+    ]
+  },
+  {
+    "slug": "enmax-shepard",
+    "url": "https://enmax.com/",
+    "status": 200,
+    "images": []
+  },
+  {
+    "slug": "mobiltex",
+    "url": "https://mobiltex.com/",
+    "status": 200,
+    "images": [
+      {
+        "src": "https://www.mobiltex.com/wp-content/uploads/2023/12/logo40th.svg",
+        "alt": "MOBILTEX",
+        "width": "193",
+        "height": "50"
+      },
+      {
+        "src": "https://www.mobiltex.com/wp-content/uploads/2020/10/logo-sticky.svg",
+        "alt": "MOBILTEX",
+        "width": "50",
+        "height": "50"
+      },
+      {
+        "src": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "data-src": "https://www.mobiltex.com/wp-content/uploads/2020/10/coc-logo.svg",
+        "class": "lazyload",
+        "alt": "",
+        "width": "200",
+        "height": "200"
+      },
+      {
+        "src": "https://www.mobiltex.com/wp-content/uploads/2020/10/coc-logo.svg",
+        "alt": "",
+        "width": "200",
+        "height": "200"
+      },
+      {
+        "src": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "data-src": "https://www.mobiltex.com/wp-content/uploads/2020/10/Enbridge-Logo.wine_.svg",
+        "class": "lazyload",
+        "alt": "Enbridge logo",
+        "width": "200",
+        "height": "200"
+      },
+      {
+        "src": "https://www.mobiltex.com/wp-content/uploads/2020/10/Enbridge-Logo.wine_.svg",
+        "alt": "Enbridge logo",
+        "width": "200",
+        "height": "200"
+      },
+      {
+        "src": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "data-src": "https://www.mobiltex.com/wp-content/uploads/2020/10/oneok-logo.svg",
+        "class": "lazyload",
+        "alt": "Magellan Midstream Partners logo",
+        "width": "200",
+        "height": "200"
+      },
+      {
+        "src": "https://www.mobiltex.com/wp-content/uploads/2020/10/oneok-logo.svg",
+        "alt": "Magellan Midstream Partners logo",
+        "width": "200",
+        "height": "200"
+      },
+      {
+        "src": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "data-src": "https://www.mobiltex.com/wp-content/uploads/2020/10/Williams-logo-1.svg",
+        "class": "lazyload",
+        "alt": "Williams Energy logo",
+        "width": "200",
+        "height": "200"
+      },
+      {
+        "src": "https://www.mobiltex.com/wp-content/uploads/2020/10/Williams-logo-1.svg",
+        "alt": "Williams Energy logo",
+        "width": "200",
+        "height": "200"
+      },
+      {
+        "src": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "data-src": "https://www.mobiltex.com/wp-content/uploads/2020/10/dom-dark-logo.svg",
+        "class": "lazyload",
+        "alt": "Dominion Energy logo",
+        "width": "200",
+        "height": "200"
+      },
+      {
+        "src": "https://www.mobiltex.com/wp-content/uploads/2020/10/dom-dark-logo.svg",
+        "alt": "Dominion Energy logo",
+        "width": "200",
+        "height": "200"
+      },
+      {
+        "src": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "data-src": "https://www.mobiltex.com/wp-content/uploads/2020/10/fortis-bc-logo.png",
+        "class": "lazyload",
+        "alt": "",
+        "width": "200",
+        "height": "200"
+      },
+      {
+        "src": "https://www.mobiltex.com/wp-content/uploads/2020/10/fortis-bc-logo.png",
+        "alt": "",
+        "width": "200",
+        "height": "200"
+      },
+      {
+        "src": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "data-src": "https://www.mobiltex.com/wp-content/uploads/2020/10/Shell_logo.svg",
+        "class": "lazyload",
+        "alt": "Shell logo",
+        "width": "200",
+        "height": "200"
+      },
+      {
+        "src": "https://www.mobiltex.com/wp-content/uploads/2020/10/Shell_logo.svg",
+        "alt": "Shell logo",
+        "width": "200",
+        "height": "200"
+      },
+      {
+        "src": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "data-src": "https://www.mobiltex.com/wp-content/uploads/2020/10/Southwest_Gas_logo.svg",
+        "class": "lazyload",
+        "alt": "Southwest Gas",
+        "width": "200",
+        "height": "200"
+      },
+      {
+        "src": "https://www.mobiltex.com/wp-content/uploads/2020/10/Southwest_Gas_logo.svg",
+        "alt": "Southwest Gas",
+        "width": "200",
+        "height": "200"
+      },
+      {
+        "src": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "data-src": "https://www.mobiltex.com/wp-content/uploads/2020/10/Kinder_Morgan_logo.svg",
+        "class": "lazyload",
+        "alt": "Kinder Morgan logo",
+        "width": "200",
+        "height": "200"
+      },
+      {
+        "src": "https://www.mobiltex.com/wp-content/uploads/2020/10/Kinder_Morgan_logo.svg",
+        "alt": "Kinder Morgan logo",
+        "width": "200",
+        "height": "200"
+      },
+      {
+        "src": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "data-src": "https://www.mobiltex.com/wp-content/uploads/2021/01/Holly-Energy-logo.png",
+        "class": "lazyload",
+        "alt": "",
+        "width": "200",
+        "height": "200"
+      },
+      {
+        "src": "https://www.mobiltex.com/wp-content/uploads/2021/01/Holly-Energy-logo.png",
+        "alt": "",
+        "width": "200",
+        "height": "200"
+      }
+    ]
+  },
+  {
+    "slug": "ice-western",
+    "error": "HTTPSConnectionPool(host='icewestern.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)')))"
+  },
+  {
+    "slug": "congebec",
+    "url": "https://congebec.com/",
+    "status": 200,
+    "images": [
+      {
+        "width": "768",
+        "height": "291",
+        "src": "https://congebec.com/wp-content/uploads/2023/03/LogoCongebec-Horizontal_Couleur_CMYK-texte-blanc-768x291.png",
+        "class": "elementor-animation-grow attachment-medium_large size-medium_large wp-image-16401",
+        "alt": ""
+      },
+      {
+        "src": "https://congebec.com/wp-content/uploads/elementor/thumbs/3c-0551_GCCA-2019-Certified-Cold-Carrier-Logo_Opt2-Blue-PRINT-qs7u79ilzf2ewv9hh8nsrvsk4fvuzgzma4e39ftia2.png",
+        "alt": "3c-0551_GCCA-2019-Certified-Cold-Carrier-Logo_Opt2-Blue-PRINT.png"
+      },
+      {
+        "src": "https://congebec.com/wp-content/uploads/elementor/thumbs/Pip-logo-qs7u7agg693p8h84br2fcdk0ptr8763cm91kqps3py.jpg",
+        "alt": "Pip-logo.jpg"
+      },
+      {
+        "src": "https://congebec.com/wp-content/uploads/elementor/thumbs/cfia-acia-logo-png-transparent-qs7u7ageyedjgufj94x3cq1p7vcemysd4efqp5ep6o.png",
+        "alt": "cfia-acia-logo-png-transparent.png"
+      },
+      {
+        "src": "https://congebec.com/wp-content/uploads/elementor/thumbs/GCCA-Energy-Excellence-Logo_GOLD_72dpi-2-qs7u7agg693p8h84br2fcdk0ptr8763cm91kqps46m.png",
+        "alt": "GCCA-Energy-Excellence-Logo_GOLD_72dpi-2.png"
+      },
+      {
+        "src": "https://congebec.com/wp-content/uploads/elementor/thumbs/GCCA-Energy-Excellence-Logo_SILVER_72dpi-1-qs7u7agg693p8h84br2fcdk0ptr8763cm91kqps46m.png",
+        "alt": "GCCA-Energy-Excellence-Logo_SILVER_72dpi-1.png"
+      }
+    ]
+  },
+  {
+    "slug": "fluid-energy",
+    "url": "https://fluidenergygroup.com/",
+    "status": 200,
+    "images": []
+  }
+]

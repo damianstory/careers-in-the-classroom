@@ -1,0 +1,76 @@
+{
+  "checked_on": "2026-10-18",
+  "note": "Retrieval date does not certify currency. HTTP captures are separate from free search-reader checks; see candidates and research-log. No job-opening status inferred.",
+  "captures": [
+    {
+      "url": "https://www.burnco.com/careers/",
+      "retrieved_at": "2026-10-18T15:35:49.251829+00:00",
+      "method": "free original-source HTTP GET",
+      "provider": "direct HTTP",
+      "cost_usd": 0,
+      "status_code": 200,
+      "resolved_url": "https://www.burnco.com/careers/",
+      "response_sha256": "7190fd16845e3af479f62b9dd3d6e065a4aebdab4223dcad87e694c24303ec70",
+      "file": "evidence/7360ce0ac2e2.txt",
+      "text_sha256": "b520ea99d917d17d859b7be88cc416b321ac792950bd884b6cd2f1c4b028747b",
+      "characters": 4035,
+      "status": "captured; substantive content must be inspected"
+    },
+    {
+      "url": "https://www.sait.ca/programs-and-courses/certificates/medical-office-assistant-and-unit-clerk",
+      "retrieved_at": "2026-10-18T15:35:49.252053+00:00",
+      "method": "free original-source HTTP GET",
+      "provider": "direct HTTP",
+      "cost_usd": 0,
+      "status_code": 200,
+      "resolved_url": "https://www.sait.ca/programs-and-courses/certificates/medical-office-assistant-and-unit-clerk",
+      "response_sha256": "26b120439e1def24573017c9d18bc19b937564a9a49f5bc239e15021c7c805a1",
+      "file": "evidence/1104e357e6c5.txt",
+      "text_sha256": "b7ab4b682c0854adb0c3db9fcf2128362d90360998aa3b01e9276f4064d3d3a1",
+      "characters": 54830,
+      "status": "captured; substantive content must be inspected"
+    },
+    {
+      "url": "https://science.ucalgary.ca/current-students/undergraduate/program-guides",
+      "retrieved_at": "2026-10-18T15:35:49.252153+00:00",
+      "method": "free original-source HTTP GET",
+      "provider": "direct HTTP",
+      "cost_usd": 0,
+      "status_code": 200,
+      "resolved_url": "https://science.ucalgary.ca/current-students/undergraduate/program-guides",
+      "response_sha256": "777020cd7fb2bd36a1954f6742058fd2687d3360fe8cc4bf7e38eddbf1c596b5",
+      "file": "evidence/973e23ebf6c9.txt",
+      "text_sha256": "718446b603437301d934b32090d3f0928e8fcc6975527e2da8c7449fbc6d3d1c",
+      "characters": 20682,
+      "status": "captured; substantive content must be inspected"
+    },
+    {
+      "url": "https://www.mobiltex.com/what-is-cathodic-protection-cp-monitoring/",
+      "retrieved_at": "2026-10-18T15:35:49.252214+00:00",
+      "method": "free original-source HTTP GET",
+      "provider": "direct HTTP",
+      "cost_usd": 0,
+      "status_code": 200,
+      "resolved_url": "https://www.mobiltex.com/what-is-cathodic-protection-cp-monitoring/",
+      "response_sha256": "47432e257321eb2908e5ad8c2a5a03fb4fe139d401396fe19698df96de3f6802",
+      "file": "evidence/61f4a27c3068.txt",
+      "text_sha256": "3453a38be835a1cef38dae6cf158029f07b06e9518a025e56107d5778e3e06bd",
+      "characters": 21002,
+      "status": "captured; substantive content must be inspected"
+    },
+    {
+      "url": "https://www.mobiltex.com/trust/industry-driven-innovation/",
+      "retrieved_at": "2026-10-18T15:35:49.252333+00:00",
+      "method": "free original-source HTTP GET",
+      "provider": "direct HTTP",
+      "cost_usd": 0,
+      "status_code": 200,
+      "resolved_url": "https://www.mobiltex.com/trust/industry-driven-innovation/",
+      "response_sha256": "142000381b9d4ad80d99c869f5d542dbce8fb6de3b798d2a247a432e4150f287",
+      "file": "evidence/b737453d8011.txt",
+      "text_sha256": "d14c0ad24b932935bb4ab4386ea7db1383cef16b87ef164f09cea0f56f6957e1",
+      "characters": 15398,
+      "status": "captured; substantive content must be inspected"
+    }
+  ]
+}
