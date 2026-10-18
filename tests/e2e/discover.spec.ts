@@ -1,5 +1,6 @@
 import { expect, test } from "./fixtures";
-import { buildDiscoverCards, steps } from "../../src/lib/discover";
+import { steps } from "../../src/lib/discover";
+import { buildDiscoverCards } from "../../src/lib/discover-cards";
 import { jobStatusLabel } from "../../src/lib/job-status";
 
 const cards = buildDiscoverCards(new Date().toISOString().slice(0, 10));

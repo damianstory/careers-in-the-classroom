@@ -1,7 +1,14 @@
 import { existsSync, readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
-import { expansionDetails, expansionExamples, expansionJobs, expansionOrganizations, expansionPathways } from "@/content/calgary-expansion";
-import { expansionDiagrams } from "@/content/expansion-diagrams";
+import { learningPathways as expansionPathways } from "@/content";
+import { exampleRecords } from "@/content/example-records";
+
+const batch = exampleRecords.filter(r => r.addedOn === "2026-10-15");
+const expansionExamples = batch.map(r => r.example);
+const expansionDetails = batch.map(r => r.details);
+const expansionJobs = batch.flatMap(r => r.jobs);
+const expansionOrganizations = batch.map(r => r.organization);
+const expansionDiagrams = Object.fromEntries(batch.map(r => [r.example.slug, r.diagram]));
 
 describe("approved Calgary expansion", () => {
   it("implements exactly the approved full-copy set", () => {

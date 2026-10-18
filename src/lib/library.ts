@@ -1,4 +1,5 @@
 import {
+  courses,
   examples,
   getCourse,
   getPreparedSearch,
@@ -11,16 +12,13 @@ import {
   type PreparedSearch,
   type Unit,
 } from "@/content";
+import { filterQuery, type CourseOption, type LibraryFilter, type UnitOption } from "./library-filter";
 import { OTHER_UNIT, TOPIC_MAX, contextQuery, matchTopic, type SearchContext } from "./search";
+
+export { filterQuery, type CourseOption, type LibraryFilter, type UnitOption };
 
 // The home page is the example library. One filter (course → unit → optional topic) lives in the
 // URL, so a filtered library can be shared, reloaded and reached with Back/Forward.
-
-export interface LibraryFilter {
-  courseId?: string;
-  unitId?: string;
-  topic?: string;
-}
 
 type Params = Record<string, string | string[] | undefined>;
 const first = (v: string | string[] | undefined) => (Array.isArray(v) ? v[0] : v)?.trim();
@@ -35,14 +33,6 @@ export function parseFilter(params: Params): LibraryFilter {
     unitId: course && unit?.courseId === course.id ? unit.id : undefined,
     topic: topic || undefined,
   };
-}
-
-export function filterQuery(f: LibraryFilter): string {
-  const q = new URLSearchParams();
-  if (f.courseId) q.set("course", f.courseId);
-  if (f.courseId && f.unitId) q.set("unit", f.unitId);
-  if (f.topic) q.set("topic", f.topic);
-  return q.toString();
 }
 
 // Editorial subject for each course and Science unit. Used only to suggest the closest examples
@@ -70,14 +60,6 @@ export const disciplineFor = (courseId: string, unitId?: string): Discipline | u
 const exampleCount = (s: PreparedSearch | undefined) => s?.results.filter((r) => "exampleSlug" in r).length ?? 0;
 const newsCount = (s: PreparedSearch | undefined) => s?.results.filter((r) => "newsId" in r).length ?? 0;
 
-export interface UnitOption {
-  id: string;
-  name: string;
-  /** e.g. "1 example" or "1 recent development". Absent when nothing is prepared. */
-  note?: string;
-  ready: boolean;
-}
-
 // Coverage is shown before a teacher chooses: "Ready now" units have at least one prepared example.
 export function unitOptions(courseId: string): UnitOption[] {
   return unitsForCourse(courseId).map((u: Unit) => {
@@ -88,6 +70,9 @@ export function unitOptions(courseId: string): UnitOption[] {
     return { id: u.id, name: u.name, note, ready: ex > 0 };
   });
 }
+
+// Everything the filter form needs, computed on the server and passed to it as a prop.
+export const courseOptions = (): CourseOption[] => courses.map((c) => ({ id: c.id, name: c.name, units: unitOptions(c.id) }));
 
 export function coverage(courseId: string) {
   const opts = unitOptions(courseId);
