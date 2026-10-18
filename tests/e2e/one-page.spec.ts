@@ -245,7 +245,7 @@ test.describe("without JavaScript", () => {
 test("phone filter summary appears without moving the library results", async ({ page, requests }, info) => {
   void requests;
   test.skip(info.project.name !== "phone", "phone filter summary");
-  for (const library of ["/examples", "/examples?course=physics-30&unit=p30c"]) {
+  for (const library of ["/connections", "/connections?course=physics-30&unit=p30c"]) {
     await page.goto(library, { waitUntil: "networkidle" });
     const summary = page.getByRole("button", { name: /Change$/ });
     const card = page.locator('main a[href^="/examples/"]').first();
@@ -278,7 +278,7 @@ test("INSPECT-005: Back from an example to the library leaves the library's scro
     }) as typeof window.scrollTo;
   });
   const scrollY = () => page.evaluate(() => Math.round(window.scrollY));
-  for (const library of ["/examples#library", "/examples?course=physics-30&unit=p30c#library", "/examples?course=physics-30&unit=p30c"]) {
+  for (const library of ["/connections#library", "/connections?course=physics-30&unit=p30c#library", "/connections?course=physics-30&unit=p30c"]) {
     await page.goto(library, { waitUntil: "networkidle" });
     const anchor = await scrollY(); // where the #library fragment put the page (0 without one)
     // The first example card on that library page (the full library shows only its first 12 cards).

@@ -32,10 +32,10 @@ function Item({ item, label }: { item: LibraryItem; label?: string }) {
   );
 }
 
-export const metadata: Metadata = { title: "Examples" };
+export const metadata: Metadata = { title: "Connections" };
 
-// The example library: a short dark hero with the search console on its edge, and the cards right below.
-export default async function Examples({ searchParams }: PageProps<"/examples">) {
+// The library of connections: a short dark hero with the search console on its edge, and the cards right below.
+export default async function Connections({ searchParams }: PageProps<"/connections">) {
   const lib = buildLibrary(parseFilter(await searchParams));
   const filtered = !!(lib.course || lib.filter.topic);
   // Dialogs name the organization only when it is the prepared match; news-only matches have none.
@@ -64,7 +64,7 @@ export default async function Examples({ searchParams }: PageProps<"/examples">)
             {/* Each line rises from its own mask. The trailing spaces keep the heading's text whole. */}
             <h1 id="home-title" className={styles.title}>
               <span className={styles.line}>
-                <span className={styles.rise}>Find an example </span>
+                <span className={styles.rise}>Find a connection </span>
               </span>
               <span className={styles.line}>
                 <span className={styles.rise}>for your class.</span>

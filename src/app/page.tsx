@@ -7,7 +7,7 @@ import { companyDoors, courseDoors, getLandingExample, roleDoors, stats } from "
 import styles from "./_home/home.module.css";
 
 // The front door: what this is, how a lesson uses it and why, the parts of one real example, then
-// three ways into the library (/examples). Filtered links to / are redirected there in next.config.ts.
+// three ways into the library (/connections). Filtered links to / are redirected there in src/proxy.ts.
 export default function Home() {
   const { example, image, roles } = getLandingExample("ghgsat");
 

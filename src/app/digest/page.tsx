@@ -44,7 +44,7 @@ export default function DigestPage() {
             <div className={styles.topics}>
               <span className={styles.topic}>Physics 30 · Electromagnetic radiation</span>
               <span className={styles.topic}>Biology 30 · Cell division, genetics and molecular biology</span>
-              <Link href="/examples" className={styles.change}>
+              <Link href="/connections" className={styles.change}>
                 Change topics
               </Link>
             </div>

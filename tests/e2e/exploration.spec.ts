@@ -33,7 +33,7 @@ test("physics example → story → company → role → job → pathways → st
   await expect(page).toHaveURL(new RegExp(`/examples/ghgsat\\?${P30}#question$`));
   await expect(page.getByRole("heading", { level: 1 })).toBeFocused();
   await page.getByRole("link", { name: "Back to results" }).click();
-  await expect(page).toHaveURL(new RegExp(`/examples\\?${P30}#library$`));
+  await expect(page).toHaveURL(new RegExp(`/connections\\?${P30}#library$`));
 });
 
 test("another supported course keeps its own label through the exploration", async ({ page, requests }) => {
@@ -49,7 +49,7 @@ test("an invalid search context is never claimed or carried along", async ({ pag
   void requests;
   await page.goto("/examples/ghgsat?course=physics-30&unit=zzz&view=roles");
   await expect(page.getByText("Your lesson")).toHaveCount(0);
-  await expect(page.getByRole("link", { name: "All examples" })).toHaveAttribute("href", "/examples");
+  await expect(page.getByRole("link", { name: "All connections" })).toHaveAttribute("href", "/connections");
   await expect(lessonNav(page).getByRole("link", { name: "About GHGSat", includeHidden: true })).toHaveAttribute("href", "/examples/ghgsat#about");
 });
 
@@ -190,7 +190,7 @@ test("the top of the story shows the class fit, or every fit and a way to pick a
     "Science 10 · Global energy systems, as a broader introduction",
   ]);
   await expect(fits.locator(".tag")).toHaveCount(0);
-  await expect(page.getByRole("link", { name: "Pick your class" })).toHaveAttribute("href", "/examples#library");
+  await expect(page.getByRole("link", { name: "Pick your class" })).toHaveAttribute("href", "/connections#library");
 });
 
 test("one checked date on every view, with the evidence table closed", async ({ page, requests }) => {

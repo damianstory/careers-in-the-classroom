@@ -45,7 +45,7 @@ export const courseDoors: CourseDoor[] = courses.map((c) => ({
   id: c.id,
   name: c.name,
   count: examples.filter((e) => e.courses.some((f) => f.course === c.name)).length,
-  href: `/examples?course=${c.id}#library`,
+  href: `/connections?course=${c.id}#library`,
 }));
 
 export const companyDoors: CompanyDoor[] = examples

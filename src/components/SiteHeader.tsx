@@ -9,7 +9,8 @@ import { Icon } from "./Icon";
 import styles from "./SiteHeader.module.css";
 
 const nav = [
-  { href: "/examples", label: "Examples", match: (p: string) => p === "/examples" || p.startsWith("/examples/") },
+  // Connections is the library; each example page belongs to it.
+  { href: "/connections", label: "Connections", match: (p: string) => p === "/connections" || p.startsWith("/examples/") },
   { href: "/discover", label: "Discover", match: (p: string) => p.startsWith("/discover") },
   { href: "/get-involved", label: "List your company", match: (p: string) => p.startsWith("/get-involved") },
 ];
@@ -17,7 +18,7 @@ const nav = [
 export function SiteHeader() {
   const pathname = usePathname();
   // Both heroes sit under the header, which stays transparent over them until the page scrolls.
-  const onHome = pathname === "/" || pathname === "/examples";
+  const onHome = pathname === "/" || pathname === "/connections";
   const [pastHero, setPastHero] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   // Close the menu whenever the route changes (adjusting state during render, not in an effect).

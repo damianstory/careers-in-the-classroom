@@ -1,6 +1,7 @@
 # Landing page directions (18 October 2026)
 
-**Outcome (18 October 2026):** Damian chose A. It is now the home page (`/`), the library moved to `/examples`, and
+**Outcome (18 October 2026):** Damian chose A. It is now the home page (`/`), the library moved to `/connections` (first `/examples`; Damian renamed it
+Connections the same day, since it now leads with companies and roles as much as examples), and
 the company list shows every organization's logo. Build plan: `docs/build/PLAN-landing-a.md`. The prototype routes were
 removed after the build; the screenshots below record them. Built pages: `built-home-desk.jpg`, `built-home-mob.jpg`,
 `built-doors-company-desk.jpg`, `built-doors-company-mob.jpg`, `built-examples-desk.jpg`, `built-examples-mob.jpg`.

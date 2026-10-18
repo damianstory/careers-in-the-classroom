@@ -6,10 +6,10 @@ const routes = [
   "/discover",
   "/discover?role=05&step=5",
   "/",
-  "/examples",
-  "/examples?course=physics-30&unit=p30c",
-  "/examples?course=physics-20&unit=p20a",
-  "/examples?course=biology-30&topic=DNA+replication",
+  "/connections",
+  "/connections?course=physics-30&unit=p30c",
+  "/connections?course=physics-20&unit=p20a",
+  "/connections?course=biology-30&topic=DNA+replication",
   "/examples/ghgsat?course=physics-30&unit=p30c",
   "/examples/ghgsat?course=physics-30&unit=p30c&view=company",
   "/examples/ghgsat?course=physics-30&unit=p30c&view=roles",
@@ -45,7 +45,7 @@ for (const route of routes) {
 
 test("open dialogs pass the accessibility scan", async ({ page, requests }, info) => {
   void requests;
-  await page.goto("/examples?course=physics-30&unit=p30c");
+  await page.goto("/connections?course=physics-30&unit=p30c");
   const header = page.getByRole("banner");
   if (info.project.name === "phone") await header.getByRole("button", { name: "Menu" }).click();
   await header.getByRole("button", { name: "Request a speaker" }).click();

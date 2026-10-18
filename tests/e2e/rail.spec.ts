@@ -328,7 +328,7 @@ test("3: phones get Contents, never the field", async ({ page, requests }, info)
 
 test("8: no hero shows coordinates", async ({ page, requests }) => {
   void requests;
-  for (const url of ["/", "/examples", GHGSAT, "/examples/wilder-institute", "/examples/e3-lithium", "/get-involved", "/digest"]) {
+  for (const url of ["/", "/connections", GHGSAT, "/examples/wilder-institute", "/examples/e3-lithium", "/get-involved", "/digest"]) {
     await page.goto(url);
     await expect(page.locator("main").getByText("51.05"), url).toHaveCount(0);
   }
