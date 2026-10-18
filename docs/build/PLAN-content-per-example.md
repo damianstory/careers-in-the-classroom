@@ -44,3 +44,7 @@ Each researched Calgary example's own records live in one file, so adding or cor
 - HTML comparison: production build on each side, fetch the 234 URLs, strip `<script>` elements and script preloads, compare byte for byte.
 - `grep -l "<example text>" .next/static/chunks/*.js` returns nothing; measured gzip JS per page.
 - `npx playwright test` (with the container's Chromium) — 326 pass; "source links open safely" times out under 4 workers but passes alone in 25–27 s of its 30 s budget (34 page loads in one test).
+
+## Review note
+
+The full diff against `main` (14,000 deleted lines of data) is too large for one review turn. Inspections use a synthetic local base commit that already contains the generated data move: the 29 record files and `index.ts`, the shared records inserted into `roles.ts`, `pathways.ts` and `sources.ts`, and the six deleted batch files. The diff from that base is the hand-written code. The data move itself is covered by the snapshot and HTML comparisons above; reviewers can open any record file to spot-check it against `git show main:src/content/calgary-october-17.ts`.
