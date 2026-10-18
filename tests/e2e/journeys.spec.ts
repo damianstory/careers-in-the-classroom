@@ -231,10 +231,10 @@ test("the home page explains the project and opens the library three ways", asyn
   await start.getByRole("tab", { name: /A company/ }).click();
   const logos = start.locator('a[href^="/examples/"] img');
   await expect(logos).toHaveCount(examples.length);
+  await expect.poll(() => logos.evaluateAll((imgs) => imgs.every((i) => (i as HTMLImageElement).naturalWidth > 0))).toBe(true);
   for (const src of await logos.evaluateAll((imgs) => imgs.map((i) => (i as HTMLImageElement).currentSrc))) {
     expect(src).toMatch(/\/images\/logos\/[a-z0-9-]+\.(svg|png)$/);
   }
-  await expect.poll(() => logos.evaluateAll((imgs) => imgs.every((i) => (i as HTMLImageElement).naturalWidth > 0))).toBe(true);
   await start.getByRole("tab", { name: /My class/ }).click();
   await start.getByRole("link", { name: /Physics 30/ }).click();
   await expect(page).toHaveURL(/\/connections\?course=physics-30#library$/);
