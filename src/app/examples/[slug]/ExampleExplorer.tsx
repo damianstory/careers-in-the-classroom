@@ -727,12 +727,12 @@ function RoleJobs({
   return (
     <section className={`${base.band} ${base.rule}`} aria-labelledby="jobs-title">
       <h3 id="jobs-title" className={`display ${base.h2}`}>
-        Job postings
+        Related job postings
       </h3>
       {searches.length > 0 && (
         <>
           <p className={styles.jobsIntro}>
-            Live searches for postings in {SEARCH_LOCATION}. Results change daily and we have not checked them; they are related work, not openings at {org.name}.
+            Similar work at other employers in {SEARCH_LOCATION}, not openings at {org.name}. These are live searches: results change daily and we have not checked them.
           </p>
           <ul className={styles.searchList} aria-label="Live job searches">
             {searches.map((s) => (
