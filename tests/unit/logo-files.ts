@@ -60,14 +60,25 @@ function structureProblems(svg: string): string[] {
   const problems: string[] = [];
   const body = svg.trim().replace(/^<\?xml\s[^?]*\?>/, "");
   const stack: string[] = [];
+  let roots = 0;
   for (const m of body.matchAll(/<!--[\s\S]*?-->|<!\[CDATA\[[\s\S]*?\]\]>|<\?[\s\S]*?\?>|<![^>]*>|<\/\s*([^\s>]+)\s*>|<\s*([A-Za-z][\w:.-]*)(?:"[^"]*"|'[^']*'|[^'">])*?(\/)?>/g)) {
     const token = m[0];
+    if (stack.length === 0 && roots > 0 && !token.startsWith("<!--")) problems.push(`content after the root: ${token.slice(0, 40)}`);
     if (token.startsWith("<?")) problems.push(`processing instruction ${token.slice(0, 40)}`);
-    else if (token.startsWith("<!") && !token.startsWith("<!--") && !token.startsWith("<![CDATA[")) problems.push(`declaration ${token.slice(0, 40)}`);
+    // CDATA could hide a style element's real end from the style check above, so none is accepted.
+    else if (token.startsWith("<![CDATA[")) problems.push("CDATA section");
+    else if (token.startsWith("<!") && !token.startsWith("<!--")) problems.push(`declaration ${token.slice(0, 40)}`);
     else if (m[1] !== undefined) {
       if (stack.pop() !== m[1]) problems.push(`mismatched </${m[1]}>`);
-    } else if (m[2] !== undefined && !m[3]) stack.push(m[2]);
+    } else if (m[2] !== undefined) {
+      if (stack.length === 0) roots++;
+      if (!m[3]) stack.push(m[2]);
+    }
   }
+  // Exactly one root element, with nothing but comments and whitespace after it.
+  if (roots !== 1) problems.push(`${roots} root elements`);
+  const tail = body.slice(body.search(/<\/\s*(?:[\w.-]+:)?svg\s*>\s*(?:<!--[\s\S]*?-->\s*)*$/));
+  if (!/^<\/\s*(?:[\w.-]+:)?svg\s*>(?:\s|<!--[\s\S]*?-->)*$/.test(tail)) problems.push("text or markup after </svg>");
   if (stack.length) problems.push(`unclosed <${stack.join("> <")}>`);
   if (!/^<\s*svg\b/i.test(body.replace(/^(?:\s|<!--[\s\S]*?-->)*/, ""))) problems.push("does not start with <svg>");
   return problems;

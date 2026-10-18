@@ -190,6 +190,9 @@ describe("connected exploration content", () => {
       '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><g></svg>',
       '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"></g></svg>',
       wrap("") + "<script/>",
+      wrap("") + "<g/>",
+      wrap("") + "trailing text",
+      wrap("<style><![CDATA[/* </style> */ @import url(https://example.com/x.css);]]></style>"),
     ]) {
       expect(svgProblems(bad), bad).not.toEqual([]);
     }
