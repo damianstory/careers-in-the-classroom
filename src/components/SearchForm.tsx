@@ -3,9 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState, useSyncExternalStore, useTransition } from "react";
-import { courses, getCourse, getUnit } from "@/content";
-import { filterQuery, unitOptions, type LibraryFilter } from "@/lib/library";
-import { TOPIC_MAX } from "@/lib/search";
+import { filterQuery, TOPIC_MAX, type CourseOption, type LibraryFilter } from "@/lib/library-filter";
 import { Icon } from "./Icon";
 import styles from "./SearchForm.module.css";
 
@@ -17,14 +15,17 @@ const noop = () => () => {};
 const same = (a: LibraryFilter, b: LibraryFilter) =>
   (a.courseId ?? "") === (b.courseId ?? "") && (a.unitId ?? "") === (b.unitId ?? "") && (a.topic ?? "") === (b.topic ?? "");
 
-export const describeFilter = (f: LibraryFilter) =>
-  [getCourse(f.courseId ?? "")?.name ?? "All courses", getUnit(f.unitId ?? "")?.name, f.topic && `“${f.topic}”`]
+export const describeFilter = (f: LibraryFilter, courses: CourseOption[]) => {
+  const course = courses.find((c) => c.id === f.courseId);
+  return [course?.name ?? "All courses", course?.units.find((u) => u.id === f.unitId)?.name, f.topic && `“${f.topic}”`]
     .filter(Boolean)
     .join(" · ");
+};
 
 // The library filter. Base: a plain GET form to "/" that works before hydration and without JS.
 // With JS it applies on change, keeps scroll and focus, and writes the filter to the URL.
-export function SearchForm({ filter, count }: { filter: LibraryFilter; count: number }) {
+// Courses and unit coverage come from the server, so the content library stays out of the browser.
+export function SearchForm({ filter, count, courses }: { filter: LibraryFilter; count: number; courses: CourseOption[] }) {
   const router = useRouter();
   const [, startTransition] = useTransition();
   const [courseId, setCourseId] = useState(filter.courseId ?? "");
@@ -72,10 +73,10 @@ export function SearchForm({ filter, count }: { filter: LibraryFilter; count: nu
     }, delay);
   };
 
-  const units = courseId ? unitOptions(courseId) : [];
+  const course = courses.find((c) => c.id === courseId);
+  const units = course?.units ?? [];
   const ready = units.filter((u) => u.ready);
   const notYet = units.filter((u) => !u.ready);
-  const course = getCourse(courseId);
   const filtered = !!(filter.courseId || filter.topic);
   const countText = !filtered
     ? `${count} ${count === 1 ? "example" : "examples"}`
@@ -219,7 +220,7 @@ export function SearchForm({ filter, count }: { filter: LibraryFilter; count: nu
             document.getElementById("filter-course")?.focus({ preventScroll: true });
           }}
         >
-          <span className={styles.summaryText}>{describeFilter(filter)}</span>
+          <span className={styles.summaryText}>{describeFilter(filter, courses)}</span>
           {filtered && <span className={styles.summaryCount}>{countText}</span>}
           <span className={styles.summaryAction}>Change</span>
         </button>

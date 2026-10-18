@@ -1,7 +1,8 @@
 import { getCourse, getPreparedSearch, getUnit, preparedSearches, type Course, type PreparedSearch } from "@/content";
+import { TOPIC_MAX } from "./library-filter";
 
+export { TOPIC_MAX };
 export const OTHER_UNIT = "other";
-export const TOPIC_MAX = 80;
 
 // A search context is { course, unit } or { course, unit: "other", topic }.
 // It is serialised the same way in every URL so results, examples and dialogs agree.

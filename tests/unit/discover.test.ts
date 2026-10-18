@@ -1,7 +1,8 @@
 import { existsSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import { discoverImages, exampleDetails, roleProfiles, organizationRoles } from "@/content";
-import { buildDiscoverCards, parseDiscoverState, roundOrder, serializeDiscoverState, subjectCounts } from "@/lib/discover";
+import { parseDiscoverState, roundOrder, serializeDiscoverState, subjectCounts } from "@/lib/discover";
+import { buildDiscoverCards } from "@/lib/discover-cards";
 
 const featuredRoles = roleProfiles.filter((r) => discoverImages.some((image) => image.roleId === r.id));
 const cards = buildDiscoverCards("2026-10-06");

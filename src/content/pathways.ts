@@ -1,12 +1,938 @@
-import { octoberPathways } from "./calgary-october-17";
-import { expansionPathways } from "./calgary-expansion";
 import type { LearningPathway } from "./types";
 
 // Official program pages only. What each program teaches is stated by the provider;
 // why it relates to a role is our reading of that page. None is an employer requirement.
 export const learningPathways: LearningPathway[] = [
-  ...octoberPathways,
-  ...expansionPathways,
+  {
+    id: "oct17-route-university-of-calgary-master-of-landscape-architecture",
+    provider: "University of Calgary",
+    name: "Master of Landscape Architecture",
+    routeType: "Graduate degree",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Study landscape design, land stewardship and community needs.",
+    roleRationale: [
+      {
+        roleId: "work-landscape-design",
+        why: "A longer-term professional education route after undergraduate study; registration is separate. A change to a landform changes paths for both water and people."
+      }
+    ],
+    entryNote: "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration.",
+    urlSourceId: "oct17-source-7",
+    kind: "interpreted",
+    sourceIds: [
+      "oct17-source-7"
+    ],
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-route-sait-geomatics-engineering-technology",
+    provider: "SAIT",
+    name: "Geomatics Engineering Technology",
+    routeType: "Diploma",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Learn surveying, GIS, positioning and remote sensing.",
+    roleRationale: [
+      {
+        roleId: "work-spatial",
+        why: "Supports spatial measurement and mapping data work. Models can be detailed while still containing gaps or misaligned measurements."
+      }
+    ],
+    entryNote: "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement.",
+    urlSourceId: "oct17-source-8",
+    kind: "interpreted",
+    sourceIds: [
+      "oct17-source-8"
+    ],
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-route-sait-environmental-technology",
+    provider: "SAIT",
+    name: "Environmental Technology",
+    routeType: "Diploma",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Study environmental monitoring, assessment and field methods.",
+    roleRationale: [
+      {
+        roleId: "work-environmental-field-assessment",
+        why: "Supports field and laboratory work in environmental projects. A result has meaning only in the context of how and where it was collected."
+      }
+    ],
+    entryNote: "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration.",
+    urlSourceId: "oct17-source-9",
+    kind: "interpreted",
+    sourceIds: [
+      "oct17-source-9"
+    ],
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-route-university-of-calgary-civil-engineering",
+    provider: "University of Calgary",
+    name: "Civil Engineering",
+    routeType: "Bachelor’s degree",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Study the design and operation of structures, transportation and water infrastructure.",
+    roleRationale: [
+      {
+        roleId: "work-structural-engineering",
+        why: "A degree foundation for engineering work; professional registration and supervised experience are separate. Forces must have a continuous route to supports; an attractive shape alone is not evidence of performance."
+      },
+      {
+        roleId: "work-construction-coordination",
+        why: "A degree foundation for engineering work; professional registration and supervised experience are separate. A system that works at the end may need different support while it is being assembled."
+      },
+      {
+        roleId: "work-water-resource-planning",
+        why: "A degree foundation for engineering work; professional registration and supervised experience are separate. A model is a way to test assumptions, not a guarantee about the future."
+      },
+      {
+        roleId: "work-building-science-investigation",
+        why: "A degree foundation for engineering work; professional registration and supervised experience are separate. Different mechanisms can create similar visible symptoms."
+      },
+      {
+        roleId: "work-civil-and-construction-technology",
+        why: "A degree foundation for engineering work; professional registration and supervised experience are separate. Scale and accurate measurements connect a drawing to the real location."
+      }
+    ],
+    entryNote: "Check current admissions and program requirements. A degree is not automatic professional licensure.",
+    urlSourceId: "oct17-source-15",
+    kind: "interpreted",
+    sourceIds: [
+      "oct17-source-15"
+    ],
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-route-sait-civil-engineering-technology-municipal-major",
+    provider: "SAIT",
+    name: "Civil Engineering Technology, Municipal Major",
+    routeType: "Diploma",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Study municipal infrastructure, design and drafting.",
+    roleRationale: [
+      {
+        roleId: "work-civil-and-construction-technology",
+        why: "Technical design and project delivery; not professional engineer licensure. Scale and accurate measurements connect a drawing to the real location."
+      },
+      {
+        roleId: "work-construction-coordination",
+        why: "Technical design and project delivery; not professional engineer licensure. A system that works at the end may need different support while it is being assembled."
+      },
+      {
+        roleId: "work-quality",
+        why: "Technical design and project delivery; not professional engineer licensure. Repeated results need both measurements and records of the conditions that produced them."
+      }
+    ],
+    entryNote: "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration.",
+    urlSourceId: "oct17-source-16",
+    kind: "interpreted",
+    sourceIds: [
+      "oct17-source-16"
+    ],
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-route-sait-architectural-technologies",
+    provider: "SAIT",
+    name: "Architectural Technologies",
+    routeType: "Diploma",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Study building design, technical drawings and construction systems.",
+    roleRationale: [
+      {
+        roleId: "work-civil-and-construction-technology",
+        why: "Supports building-envelope detailing and technical coordination. Scale and accurate measurements connect a drawing to the real location."
+      },
+      {
+        roleId: "work-construction-coordination",
+        why: "Supports building-envelope detailing and technical coordination. A system that works at the end may need different support while it is being assembled."
+      },
+      {
+        roleId: "work-building-science-investigation",
+        why: "Supports building-envelope detailing and technical coordination. Different mechanisms can create similar visible symptoms."
+      },
+      {
+        roleId: "work-quality",
+        why: "Supports building-envelope detailing and technical coordination. Repeated results need both measurements and records of the conditions that produced them."
+      }
+    ],
+    entryNote: "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration.",
+    urlSourceId: "oct17-source-17",
+    kind: "interpreted",
+    sourceIds: [
+      "oct17-source-17"
+    ],
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-route-sait-instrumentation-engineering-technology",
+    provider: "SAIT",
+    name: "Instrumentation Engineering Technology",
+    routeType: "Diploma",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Work with measurement devices, calibration and automated process controls.",
+    roleRationale: [
+      {
+        roleId: "work-instrument",
+        why: "Supports process testing, troubleshooting and control systems. Measurement uncertainty is part of using a tool responsibly."
+      },
+      {
+        roleId: "work-controls",
+        why: "Supports process testing, troubleshooting and control systems. Feedback uses a measured result to inform the next action."
+      }
+    ],
+    entryNote: "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement.",
+    urlSourceId: "oct17-source-21",
+    kind: "interpreted",
+    sourceIds: [
+      "oct17-source-21"
+    ],
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-route-sait-chemical-laboratory-technology",
+    provider: "SAIT",
+    name: "Chemical Laboratory Technology",
+    routeType: "Diploma",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Practice chemical analysis, sample preparation and analytical instrumentation.",
+    roleRationale: [
+      {
+        roleId: "work-quality",
+        why: "Supports laboratory testing and reliable measurement. Repeated results need both measurements and records of the conditions that produced them."
+      },
+      {
+        roleId: "work-lab",
+        why: "Supports laboratory testing and reliable measurement. A repeatable method and a fair comparison matter as much as a single impressive number."
+      },
+      {
+        roleId: "work-food",
+        why: "Supports laboratory testing and reliable measurement. Molecules and mixtures help explain why two ingredients can behave differently."
+      }
+    ],
+    entryNote: "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement.",
+    urlSourceId: "oct17-source-22",
+    kind: "interpreted",
+    sourceIds: [
+      "oct17-source-22"
+    ],
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-route-sait-mechanical-engineering-technology",
+    provider: "SAIT",
+    name: "Mechanical Engineering Technology",
+    routeType: "Diploma",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Study mechanical systems, design and manufacturing, with specialization options.",
+    roleRationale: [
+      {
+        roleId: "work-roast-production",
+        why: "Mechanical study supports understanding equipment and process measurements. It is adjacent technical preparation, not a coffee-roasting qualification or employer requirement."
+      },
+      {
+        roleId: "work-instrument",
+        why: "Supports component design, prototyping and equipment work. Measurement uncertainty is part of using a tool responsibly."
+      },
+      {
+        roleId: "work-mechanical",
+        why: "Supports component design, prototyping and equipment work. Geometry, forces and material properties shape real design trade-offs."
+      }
+    ],
+    entryNote: "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement.",
+    urlSourceId: "oct17-source-23",
+    kind: "interpreted",
+    sourceIds: [
+      "oct17-source-23"
+    ],
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-route-auarts-bachelor-of-design",
+    provider: "AUArts",
+    name: "Bachelor of Design",
+    routeType: "Bachelor’s degree",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Develop visual communication through studio-based design work.",
+    roleRationale: [
+      {
+        roleId: "work-storyboarding-and-illustration",
+        why: "Supports illustration and visual storytelling; portfolio requirements apply. A model needs to preserve the relationship it is intended to explain."
+      },
+      {
+        roleId: "work-animation",
+        why: "Supports illustration and visual storytelling; portfolio requirements apply. Spacing at equal time intervals can communicate constant speed or changing speed."
+      },
+      {
+        roleId: "work-colour-finishing",
+        why: "Supports illustration and visual storytelling; portfolio requirements apply. Changing the appearance of an image is different from changing the original event."
+      }
+    ],
+    entryNote: "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration.",
+    urlSourceId: "oct17-source-27",
+    kind: "interpreted",
+    sourceIds: [
+      "oct17-source-27"
+    ],
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-route-sait-film-and-video-production",
+    provider: "SAIT",
+    name: "Film and Video Production",
+    routeType: "Diploma",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Practise production and post-production through film projects.",
+    roleRationale: [
+      {
+        roleId: "work-animation",
+        why: "Supports camera, editing and production work; a portfolio remains important. Spacing at equal time intervals can communicate constant speed or changing speed."
+      },
+      {
+        roleId: "work-creative-production-coordination",
+        why: "Supports camera, editing and production work; a portfolio remains important. Defining the question first helps distinguish useful evidence from extra detail."
+      },
+      {
+        roleId: "work-camera-and-image-capture",
+        why: "Supports camera, editing and production work; a portfolio remains important. The recorded image depends on both the light and how it is captured."
+      },
+      {
+        roleId: "work-film-and-video-editing",
+        why: "Supports camera, editing and production work; a portfolio remains important. Sequence can change interpretation even when the individual images stay the same."
+      },
+      {
+        roleId: "work-colour-finishing",
+        why: "Supports camera, editing and production work; a portfolio remains important. Changing the appearance of an image is different from changing the original event."
+      }
+    ],
+    entryNote: "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration.",
+    urlSourceId: "oct17-source-28",
+    kind: "interpreted",
+    sourceIds: [
+      "oct17-source-28"
+    ],
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-route-cpkc-employer-rail-traffic-controller-training",
+    provider: "CPKC",
+    name: "Employer rail traffic controller training",
+    routeType: "Employer training after selection",
+    location: "Calgary operations context; historical employer description",
+    relevance: "local",
+    learns: "A historical CPKC description outlined six months of company training for selected controller applicants, including qualification in railway operating rules.",
+    roleRationale: [
+      {
+        roleId: "work-rail-traffic-control",
+        why: "Directly relates to rail traffic control; this is not SAIT conductor training. Time and position together reveal conflicts that a map alone can miss."
+      }
+    ],
+    entryNote: "The indexed employer description listed high school completion or equivalent and employer selection and qualification requirements. The original job page is now unavailable, and its Montreal listing metadata conflicted with Calgary in the body. No open intake, current duration or present-day requirements are promised; check the current employer posting.",
+    urlSourceId: "oct17-source-32",
+    kind: "interpreted",
+    sourceIds: [
+      "oct17-source-32"
+    ],
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-route-sait-railway-conductor",
+    provider: "SAIT",
+    name: "Railway Conductor",
+    routeType: "Certificate",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Study railway operating procedures and train handling responsibilities.",
+    roleRationale: [
+      {
+        roleId: "work-railway-conductor-work",
+        why: "A route toward conductor work, not a rail traffic controller qualification or hiring guarantee. The plan and the physical movement must agree; conductor and dispatcher are different roles."
+      }
+    ],
+    entryNote: "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration.",
+    urlSourceId: "oct17-source-33",
+    kind: "interpreted",
+    sourceIds: [
+      "oct17-source-33"
+    ],
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-route-sait-software-development",
+    provider: "SAIT",
+    name: "Software Development",
+    routeType: "Diploma",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Learn to design, test and build software across front-end and back-end systems.",
+    roleRationale: [
+      {
+        roleId: "work-software",
+        why: "A foundation for junior development or testing; senior roles require further experience. An algorithm’s output depends on the quality and meaning of its inputs."
+      }
+    ],
+    entryNote: "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement.",
+    urlSourceId: "oct17-source-34",
+    kind: "interpreted",
+    sourceIds: [
+      "oct17-source-34"
+    ],
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-route-sait-integrated-water-management",
+    provider: "SAIT",
+    name: "Integrated Water Management",
+    routeType: "Diploma",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Study water systems, monitoring and management.",
+    roleRationale: [
+      {
+        roleId: "work-water-resource-planning",
+        why: "Water sampling, infrastructure and planning support. A model is a way to test assumptions, not a guarantee about the future."
+      },
+      {
+        roleId: "work-planning-communication-and-engagement",
+        why: "Water-management study gives context for explaining water choices and working with stakeholders. It does not itself qualify a specialist facilitator."
+      },
+      {
+        roleId: "work-water-treatment-operations",
+        why: "Water sampling, infrastructure and planning support. Stable operation matters even when average results look acceptable."
+      }
+    ],
+    entryNote: "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration.",
+    urlSourceId: "oct17-source-38",
+    kind: "interpreted",
+    sourceIds: [
+      "oct17-source-38"
+    ],
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-route-university-of-calgary-chemical-engineering",
+    provider: "University of Calgary",
+    name: "Chemical Engineering",
+    routeType: "Bachelor’s degree",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Study how to transform raw materials and design production processes.",
+    roleRationale: [
+      {
+        roleId: "work-process",
+        why: "Supports process design and scale-up; experience and professional requirements remain separate. Conservation of matter and energy connects classroom calculations to process decisions."
+      }
+    ],
+    entryNote: "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement.",
+    urlSourceId: "oct17-source-44",
+    kind: "interpreted",
+    sourceIds: [
+      "oct17-source-44"
+    ],
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-route-sait-baking-and-pastry-arts",
+    provider: "SAIT",
+    name: "Baking and Pastry Arts",
+    routeType: "Diploma",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Practise bakery and pastry production and product quality.",
+    roleRationale: [
+      {
+        roleId: "work-commercial-baking",
+        why: "Supports commercial baking; apprenticeship registration and workplace requirements are separate. Ratios, timing and temperature matter, but quality must still be checked."
+      },
+      {
+        roleId: "work-food",
+        why: "Supports commercial baking; apprenticeship registration and workplace requirements are separate. Molecules and mixtures help explain why two ingredients can behave differently."
+      }
+    ],
+    entryNote: "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration.",
+    urlSourceId: "oct17-source-56",
+    kind: "interpreted",
+    sourceIds: [
+      "oct17-source-56"
+    ],
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "oct17-route-alberta-baker-apprenticeship-education",
+    provider: "Alberta Baker apprenticeship education",
+    name: "Alberta Baker apprenticeship education",
+    routeType: "Apprenticeship",
+    location: "Alberta; workplace and classroom arrangements must be confirmed",
+    relevance: "local",
+    learns: "Combine structured trade education with workplace learning in baking.",
+    roleRationale: [
+      {
+        roleId: "work-commercial-baking",
+        why: "A trade route distinct from simply completing a diploma; registration and workplace requirements apply. Ratios, timing and temperature matter, but quality must still be checked."
+      }
+    ],
+    entryNote: "Use Tradesecrets to verify current entry, sponsorship and work-hour requirements. No specific Calgary employer placement is promised.",
+    urlSourceId: "oct17-source-57",
+    kind: "interpreted",
+    sourceIds: [
+      "oct17-source-57"
+    ],
+    checkedOn: "2026-10-17"
+  },
+  {
+    id: "route-lab",
+    provider: "SAIT",
+    name: "Chemical Laboratory Technology",
+    routeType: "Diploma",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Practice chemical analysis, sample preparation and analytical instrumentation.",
+    roleRationale: [
+      {
+        roleId: "work-food",
+        why: "Supports laboratory testing and reliable measurement. Molecules and mixtures help explain why two ingredients can behave differently."
+      },
+      {
+        roleId: "work-lab",
+        why: "Supports laboratory testing and reliable measurement. A repeatable method and a fair comparison matter as much as a single impressive number."
+      },
+      {
+        roleId: "work-applications",
+        why: "Supports laboratory testing and reliable measurement. A pattern is evidence to interpret, not a label that proves an answer by itself."
+      },
+      {
+        roleId: "work-bioprocess",
+        why: "Supports laboratory testing and reliable measurement. Knowing a sequence or molecule is different from producing a reliable batch of it."
+      },
+      {
+        roleId: "work-quality",
+        why: "Supports laboratory testing and reliable measurement. Repeated results need both measurements and records of the conditions that produced them."
+      },
+      {
+        roleId: "work-materials",
+        why: "Supports laboratory testing and reliable measurement. Stronger, lighter and more conductive are different properties requiring different tests."
+      }
+    ],
+    entryNote: "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement.",
+    urlSourceId: "expansion-source-6",
+    kind: "interpreted",
+    sourceIds: [
+      "expansion-source-6"
+    ],
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "route-biochem",
+    provider: "University of Calgary",
+    name: "Biochemistry",
+    routeType: "Bachelor’s degree",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Study the chemistry of living organisms and changes within cells.",
+    roleRationale: [
+      {
+        roleId: "work-food",
+        why: "A scientific foundation for biological research; independent research positions may need further study. Molecules and mixtures help explain why two ingredients can behave differently."
+      },
+      {
+        roleId: "work-lab",
+        why: "A scientific foundation for biological research; independent research positions may need further study. A repeatable method and a fair comparison matter as much as a single impressive number."
+      },
+      {
+        roleId: "work-bioprocess",
+        why: "A scientific foundation for biological research; independent research positions may need further study. Knowing a sequence or molecule is different from producing a reliable batch of it."
+      }
+    ],
+    entryNote: "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement.",
+    urlSourceId: "expansion-source-7",
+    kind: "interpreted",
+    sourceIds: [
+      "expansion-source-7"
+    ],
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "route-chemical",
+    provider: "University of Calgary",
+    name: "Chemical Engineering",
+    routeType: "Bachelor’s degree",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Study how to transform raw materials and design production processes.",
+    roleRationale: [
+      {
+        roleId: "work-process",
+        why: "Supports process design and scale-up; experience and professional requirements remain separate. Conservation of matter and energy connects classroom calculations to process decisions."
+      },
+      {
+        roleId: "work-controls",
+        why: "Supports process design and scale-up; experience and professional requirements remain separate. Feedback uses a measured result to inform the next action."
+      },
+      {
+        roleId: "work-bioprocess",
+        why: "Supports process design and scale-up; experience and professional requirements remain separate. Knowing a sequence or molecule is different from producing a reliable batch of it."
+      },
+      {
+        roleId: "work-materials",
+        why: "Supports process design and scale-up; experience and professional requirements remain separate. Stronger, lighter and more conductive are different properties requiring different tests."
+      }
+    ],
+    entryNote: "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement.",
+    urlSourceId: "expansion-source-8",
+    kind: "interpreted",
+    sourceIds: [
+      "expansion-source-8"
+    ],
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "route-electrical",
+    provider: "SAIT",
+    name: "Electrical Engineering Technology",
+    routeType: "Diploma",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Study circuits, electrical power and controls with practical laboratory work.",
+    roleRationale: [
+      {
+        roleId: "work-instrument",
+        why: "Supports electrical testing and technical systems work. Measurement uncertainty is part of using a tool responsibly."
+      },
+      {
+        roleId: "work-applications",
+        why: "Supports electrical testing and technical systems work. A pattern is evidence to interpret, not a label that proves an answer by itself."
+      },
+      {
+        roleId: "work-power",
+        why: "Supports electrical testing and technical systems work. Power describes the rate of energy transfer; stored energy describes how much is available."
+      },
+      {
+        roleId: "work-avionics",
+        why: "Supports electrical testing and technical systems work. Circuits and signals become useful when the complete system works reliably."
+      },
+      {
+        roleId: "work-weather",
+        why: "Supports electrical testing and technical systems work. More measurements can help, but uneven coverage can still leave important gaps."
+      }
+    ],
+    entryNote: "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement.",
+    urlSourceId: "expansion-source-13",
+    kind: "interpreted",
+    sourceIds: [
+      "expansion-source-13"
+    ],
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "route-software",
+    provider: "SAIT",
+    name: "Software Development",
+    routeType: "Diploma",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Learn to design, test and build software across front-end and back-end systems.",
+    roleRationale: [
+      {
+        roleId: "work-software",
+        why: "A foundation for junior development or testing; senior roles require further experience. An algorithm’s output depends on the quality and meaning of its inputs."
+      },
+      {
+        roleId: "work-spatial",
+        why: "A foundation for junior development or testing; senior roles require further experience. Models can be detailed while still containing gaps or misaligned measurements."
+      },
+      {
+        roleId: "work-quality",
+        why: "A foundation for junior development or testing; senior roles require further experience. Repeated results need both measurements and records of the conditions that produced them."
+      },
+      {
+        roleId: "work-weather",
+        why: "A foundation for junior development or testing; senior roles require further experience. More measurements can help, but uneven coverage can still leave important gaps."
+      }
+    ],
+    entryNote: "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement.",
+    urlSourceId: "expansion-source-14",
+    kind: "interpreted",
+    sourceIds: [
+      "expansion-source-14"
+    ],
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "route-mechanical",
+    provider: "SAIT",
+    name: "Mechanical Engineering Technology",
+    routeType: "Diploma",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Study mechanical systems, design and manufacturing, with specialization options.",
+    roleRationale: [
+      {
+        roleId: "work-mechanical",
+        why: "Supports component design, prototyping and equipment work. Geometry, forces and material properties shape real design trade-offs."
+      },
+      {
+        roleId: "work-machining",
+        why: "Supports component design, prototyping and equipment work. Tolerance describes an acceptable range rather than a perfectly exact number."
+      },
+      {
+        roleId: "work-quality",
+        why: "Supports component design, prototyping and equipment work. Repeated results need both measurements and records of the conditions that produced them."
+      },
+      {
+        roleId: "work-drone",
+        why: "Supports component design, prototyping and equipment work. Flight performance must be considered alongside the task and the surrounding environment."
+      },
+      {
+        roleId: "work-materials",
+        why: "Supports component design, prototyping and equipment work. Stronger, lighter and more conductive are different properties requiring different tests."
+      }
+    ],
+    entryNote: "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement.",
+    urlSourceId: "expansion-source-18",
+    kind: "interpreted",
+    sourceIds: [
+      "expansion-source-18"
+    ],
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "route-machinist",
+    provider: "SAIT",
+    name: "Machinist",
+    routeType: "Apprenticeship",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Learn precision measurement, machine tools, drawings and machining.",
+    roleRationale: [
+      {
+        roleId: "work-machining",
+        why: "A paid-work-and-classroom route toward making precision parts. Tolerance describes an acceptable range rather than a perfectly exact number."
+      }
+    ],
+    entryNote: "Requires apprenticeship registration and workplace training as well as classroom instruction; admission to a course alone is not journeyperson certification.",
+    urlSourceId: "expansion-source-19",
+    kind: "interpreted",
+    sourceIds: [
+      "expansion-source-19"
+    ],
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "route-instrument",
+    provider: "SAIT",
+    name: "Instrumentation Engineering Technology",
+    routeType: "Diploma",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Work with measurement devices, calibration and automated process controls.",
+    roleRationale: [
+      {
+        roleId: "work-quality",
+        why: "Supports process testing, troubleshooting and control systems. Repeated results need both measurements and records of the conditions that produced them."
+      },
+      {
+        roleId: "work-controls",
+        why: "Supports process testing, troubleshooting and control systems. Feedback uses a measured result to inform the next action."
+      }
+    ],
+    entryNote: "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement.",
+    urlSourceId: "expansion-source-20",
+    kind: "interpreted",
+    sourceIds: [
+      "expansion-source-20"
+    ],
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "route-ame",
+    provider: "SAIT",
+    name: "Aircraft Maintenance Engineers Technology",
+    routeType: "Diploma",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Study aircraft systems, inspections and maintenance at the Art Smith Aero Centre.",
+    roleRationale: [
+      {
+        roleId: "work-maintenance",
+        why: "A training route toward aircraft maintenance work. A visual impression alone is not enough evidence that a part is safe."
+      },
+      {
+        roleId: "work-quality",
+        why: "A training route toward aircraft maintenance work. Repeated results need both measurements and records of the conditions that produced them."
+      }
+    ],
+    entryNote: "A diploma is not an AME licence. Transport Canada also requires qualifying experience, demonstrated skills and examinations; see the licensing source.",
+    urlSourceId: "expansion-source-31",
+    kind: "interpreted",
+    sourceIds: [
+      "expansion-source-31"
+    ],
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "route-avionics",
+    provider: "SAIT",
+    name: "Avionics Technology",
+    routeType: "Diploma",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Study aircraft electrical, electronic, communication and navigation systems.",
+    roleRationale: [
+      {
+        roleId: "work-avionics",
+        why: "Supports avionics maintenance and troubleshooting. Circuits and signals become useful when the complete system works reliably."
+      }
+    ],
+    entryNote: "Training supports a route toward AME E licensing; graduation alone does not confer that licence. Check Transport Canada’s requirements.",
+    urlSourceId: "expansion-source-32",
+    kind: "interpreted",
+    sourceIds: [
+      "expansion-source-32"
+    ],
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "route-geomatics",
+    provider: "SAIT",
+    name: "Geomatics Engineering Technology",
+    routeType: "Diploma",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Learn surveying, GIS, positioning and remote sensing.",
+    roleRationale: [
+      {
+        roleId: "work-drone",
+        why: "Supports spatial measurement and mapping data work. Flight performance must be considered alongside the task and the surrounding environment."
+      },
+      {
+        roleId: "work-wildlife",
+        why: "Supports spatial measurement and mapping data work. Behavioural response is evidence; reduced sightings alone do not prove a lasting safety outcome."
+      },
+      {
+        roleId: "work-spatial",
+        why: "Supports spatial measurement and mapping data work. Models can be detailed while still containing gaps or misaligned measurements."
+      },
+      {
+        roleId: "work-geoscience",
+        why: "Supports spatial measurement and mapping data work. A measurement of a sample is not automatically a measurement of the whole deposit."
+      },
+      {
+        roleId: "work-instrument",
+        why: "Supports spatial measurement and mapping data work. Measurement uncertainty is part of using a tool responsibly."
+      }
+    ],
+    entryNote: "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement.",
+    urlSourceId: "expansion-source-42",
+    kind: "interpreted",
+    sourceIds: [
+      "expansion-source-42"
+    ],
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "route-geology",
+    provider: "University of Calgary",
+    name: "Geology",
+    routeType: "Bachelor’s degree",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Study Earth materials through the geology program and its available study streams.",
+    roleRationale: [
+      {
+        roleId: "work-geoscience",
+        why: "Supports interpreting rocks and geological evidence. A measurement of a sample is not automatically a measurement of the whole deposit."
+      }
+    ],
+    entryNote: "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement.",
+    urlSourceId: "expansion-source-46",
+    kind: "interpreted",
+    sourceIds: [
+      "expansion-source-46"
+    ],
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "route-millwright",
+    provider: "SAIT",
+    name: "Industrial Mechanic (Millwright)",
+    routeType: "Apprenticeship",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Learn to install, maintain and repair industrial machinery.",
+    roleRationale: [
+      {
+        roleId: "work-millwright",
+        why: "Supports equipment assembly, alignment and maintenance. Small alignment errors can change how forces and motion pass through a machine."
+      }
+    ],
+    entryNote: "Requires apprenticeship registration and workplace training. This is distinct from an engineering degree.",
+    urlSourceId: "expansion-source-48",
+    kind: "interpreted",
+    sourceIds: [
+      "expansion-source-48"
+    ],
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "route-welder",
+    provider: "SAIT",
+    name: "Welder",
+    routeType: "Apprenticeship",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Learn joining processes, drawings and inspection of welded work.",
+    roleRationale: [
+      {
+        roleId: "work-fabrication",
+        why: "Supports metal fabrication and assembly. Material properties and heat affect the result of a joining process."
+      }
+    ],
+    entryNote: "Requires apprenticeship registration and workplace training. Check the current provincial and provider requirements.",
+    urlSourceId: "expansion-source-52",
+    kind: "interpreted",
+    sourceIds: [
+      "expansion-source-52"
+    ],
+    checkedOn: "2026-10-15"
+  },
+  {
+    id: "route-electrical-degree",
+    provider: "University of Calgary",
+    name: "Electrical Engineering",
+    routeType: "Bachelor’s degree",
+    location: "Calgary",
+    relevance: "local",
+    learns: "Study electrical phenomena and their engineering applications.",
+    roleRationale: [
+      {
+        roleId: "work-power",
+        why: "A degree route relevant to power-electronics design; it does not replace job-specific experience. Power describes the rate of energy transfer; stored energy describes how much is available."
+      },
+      {
+        roleId: "work-instrument",
+        why: "A degree route relevant to power-electronics design; it does not replace job-specific experience. Measurement uncertainty is part of using a tool responsibly."
+      }
+    ],
+    entryNote: "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement.",
+    urlSourceId: "expansion-source-67",
+    kind: "interpreted",
+    sourceIds: [
+      "expansion-source-67"
+    ],
+    checkedOn: "2026-10-15"
+  },
   {
     id: "ucalgary-engineering-physics",
     provider: "University of Calgary, Schulich School of Engineering",

@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { expect, it } from "vitest";
 import { getDetails, getJob, getOrganizationRole, getRegistrySource } from "@/content";
-import { buildDiscoverCards } from "@/lib/discover";
+import { buildDiscoverCards } from "@/lib/discover-cards";
 import { jobStatusLabel } from "@/lib/job-status";
 
 const packet = JSON.parse(readFileSync("docs/validation/job-reviews/all-examples/2026-10-05-weekly/candidates.json", "utf8"));

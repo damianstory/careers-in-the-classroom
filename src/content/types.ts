@@ -248,3 +248,31 @@ export interface ExampleDetails {
   jobIds: string[];
   checkedOn: string;
 }
+
+/** A conceptual teaching schematic drawn in the approved graphic-novel style. */
+export interface StoryDiagramImage {
+  image: string;
+  heading: string;
+  steps: string[];
+  note: string;
+}
+
+/**
+ * Everything one researched example owns, in one file under src/content/example-records/.
+ * Roles, pathways and sources that other examples also cite live in roles.ts, pathways.ts and sources.ts.
+ * The editorial illustration is imported in example-images.ts, which only components load.
+ */
+export interface ExampleRecord {
+  /** Research batch date. Unit matches list earlier batches first. */
+  addedOn: string;
+  example: Example;
+  details: ExampleDetails;
+  organization: Organization;
+  organizationRoles: OrganizationRole[];
+  jobs: JobExample[];
+  /** Sources only this example cites. */
+  sources: DatedSource[];
+  diagram: StoryDiagramImage;
+  /** Editorial curriculum matches; inquiry-only examples have none. */
+  unitLinks: { unitId: string; why: string }[];
+}
