@@ -20,14 +20,14 @@ A teacher projecting "Who does this work" can, in under a minute, show students 
 ## Approach
 
 - `src/content/role-searches.ts`: `roleSearchTitles: Record<roleId, string[]>`, editorial, first title leads. Kept separate from `RoleProfile` so the large generated content files stay untouched.
-- `src/lib/job-search.ts`: `jobBoardLinks(title)`, `searchTitles(roleId)`, `liveSearches(roleId)`. URL patterns: `https://www.jobbank.gc.ca/jobsearch/jobsearch?searchstring=…&locationstring=Calgary%2C+AB` and `https://ca.indeed.com/jobs?q=…&l=Calgary%2C+AB`.
+- `src/lib/job-search.ts`: `jobBoardLinks(title)`, `searchTitles(roleId)`, `liveSearches(roleId)`. URL patterns: `https://www.jobbank.gc.ca/jobsearch/jobsearch?searchstring=…&locationstring=Calgary%2C+AB&locationparam=22310` and `https://ca.indeed.com/jobs?q=…&l=Calgary%2C+AB`.
 - `ExampleExplorer.tsx` `RolesView` list cards and `RoleJobs`; `PresentationFrames.tsx` Who frame; CSS in `explore.module.css` (`cardFoot`, `searchList`, `searchRow`, `searchLinks`, `savedTitle`).
 - e2e selectors renamed from region "Real job examples" to "Saved job examples".
 
 ### Decisions and trade-offs
 
 - **Live search links, not more saved postings.** 25 of 32 examples have zero saved job examples and 28 have none currently open; saved postings go stale within weeks. Searches never go stale and need no per-posting research. Cost: results are unchecked and may include irrelevant hits, so the copy says so.
-- **Job Bank first.** Government of Canada, free, no ads, and also publishes wages by occupation and region (a follow-up). Indeed second because it has the most Calgary volume.
+- **Indeed first, Job Bank second.** A live check on 18 Oct 2026 found Job Bank needs `locationparam=22310` to filter to Calgary (fixed), and even then returned zero or off-topic results for many professional titles (e.g. Process engineer 0, Applications scientist → web developers). Indeed has more Calgary volume but blocks automated checks from this environment, so its results were not verified.
 - **Titles are editorial.** They are common posting titles, not claims about the organization, consistent with `RoleProfile` being "written by us".
 
 ## Non-goals (recommended follow-ups, not in this prototype)

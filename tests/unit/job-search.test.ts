@@ -11,10 +11,10 @@ describe("live job searches", () => {
     expect(invalid).toEqual([]);
   });
 
-  it("builds Calgary searches on Job Bank and Indeed", () => {
+  it("builds Calgary searches on Indeed and Job Bank", () => {
     expect(jobBoardLinks("Structural engineer")).toEqual([
-      { board: "Job Bank", url: "https://www.jobbank.gc.ca/jobsearch/jobsearch?searchstring=Structural+engineer&locationstring=Calgary%2C+AB&locationparam=22310" },
       { board: "Indeed", url: "https://ca.indeed.com/jobs?q=Structural+engineer&l=Calgary%2C+AB" },
+      { board: "Job Bank", url: "https://www.jobbank.gc.ca/jobsearch/jobsearch?searchstring=Structural+engineer&locationstring=Calgary%2C+AB&locationparam=22310" },
     ]);
   });
 
