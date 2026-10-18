@@ -31,7 +31,6 @@ export default function LandingIndex() {
     <>
       <PrototypeBar current="index" />
       <div className={styles.about}>
-        <p className={styles.eyebrow}>For review</p>
         <h1 className={styles.aboutTitle}>Three landing page directions</h1>
         <p>
           Each uses live content from the library. The ways in (class, company, kind of job) link into the existing library

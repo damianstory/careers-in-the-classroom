@@ -47,3 +47,17 @@ actually gets. Keep C's "New here?" primer as the fallback if you'd rather chang
 Desktop (1440 wide): `a-desk.jpg`, `b-desk.jpg`, `c-desk.jpg`, `about-desk.jpg`.
 Mobile (390 wide): `a-mob.jpg`, `b-mob.jpg`, `c-mob.jpg`.
 Launchpad tabs: `doors-company.jpg`, `doors-role.jpg`. Walkthrough steps: `walk-Who.jpg`, `walk-Ways.jpg`.
+
+## Design and copy passes (Impeccable, SlopMonster)
+
+- **Impeccable**, as a refinement of the existing visual system: removed the small labels above every heading and the
+  hero stat row, replaced the equal three-column "why" grid with one statement and plain prose, removed a thick side
+  accent border, and gave each page one deliberate motion moment (A's headline rises line by line; B's walkthrough
+  steps slide in), with reduced-motion fallbacks. Text selection, list scrollbars and numerals now follow the palette.
+  Its detector reports no findings.
+- **SlopMonster**: B, C and About score 5/5. A's one remaining match is the step number "3" read as a statistic.
+  Removed an invented "five to fifteen minutes" estimate from B's FAQ and a "not just X" construction from A.
+- **Scroll-craft** was not used. It builds scroll-driven pages around generated photoreal video, which conflicts with
+  the approved graphic-novel image direction and would be heavy on school Chromebooks and classroom projectors.
+
+The plan these prototypes follow is in `PLAN.md`.

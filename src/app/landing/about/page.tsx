@@ -13,9 +13,11 @@ export default function About() {
   return (
     <>
       <PrototypeBar current="about" />
-      <article className={styles.about}>
-        <p className={styles.eyebrow}>About Careers in the Classroom</p>
-        <h1 className={styles.aboutTitle}>Helping teachers answer “where would I use this?” with people down the road.</h1>
+      <article className={`${styles.about} ${styles.landing}`}>
+        <h1 className={styles.aboutTitle}>About Careers in the Classroom</h1>
+        <p className={styles.aboutLede}>
+          Helping Alberta science teachers answer “where would I use this?” with people doing the work down the road.
+        </p>
 
         <h2 className={styles.aboutH2}>What it is</h2>
         <p>

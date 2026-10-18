@@ -76,63 +76,65 @@ export function Walkthrough({ examples }: { examples: WalkExample[] }) {
             {e.discipline} · {e.org} · {e.courseLine}
           </p>
 
-          {p.id === "question" && (
-            <div className={styles.screenSplit}>
-              <h3 className={styles.screenQ}>{e.question}</h3>
-              {e.image && <Image src={e.image.src} alt={e.image.alt} sizes="(max-width: 900px) 100vw, 480px" className={styles.screenImg} />}
-            </div>
-          )}
+          <div key={`${which}-${part}`} className={styles.screenAnim}>
+            {p.id === "question" && (
+              <div className={styles.screenSplit}>
+                <h3 className={styles.screenQ}>{e.question}</h3>
+                {e.image && <Image src={e.image.src} alt={e.image.alt} sizes="(max-width: 900px) 100vw, 480px" className={styles.screenImg} />}
+              </div>
+            )}
 
-          {p.id === "how" && (
-            <div className={styles.screenSplit}>
-              <ol className={styles.screenSteps}>
-                {e.steps.map((s) => (
-                  <li key={s}>{s}</li>
+            {p.id === "how" && (
+              <div className={styles.screenSplit}>
+                <ol className={styles.screenSteps}>
+                  {e.steps.map((s) => (
+                    <li key={s}>{s}</li>
+                  ))}
+                </ol>
+                {e.diagram && <Image src={e.diagram.src} alt={e.diagram.alt} sizes="(max-width: 900px) 100vw, 480px" className={styles.screenImg} />}
+              </div>
+            )}
+
+            {p.id === "who" && (
+              <ul className={styles.screenCards}>
+                {e.roles.map((r) => (
+                  <li key={r.title}>
+                    <Icon name="users" small />
+                    <strong>{r.title}</strong>
+                    <span>{r.summary}</span>
+                  </li>
                 ))}
-              </ol>
-              {e.diagram && <Image src={e.diagram.src} alt={e.diagram.alt} sizes="(max-width: 900px) 100vw, 480px" className={styles.screenImg} />}
-            </div>
-          )}
+              </ul>
+            )}
 
-          {p.id === "who" && (
-            <ul className={styles.screenCards}>
-              {e.roles.map((r) => (
-                <li key={r.title}>
-                  <Icon name="users" small />
-                  <strong>{r.title}</strong>
-                  <span>{r.summary}</span>
-                </li>
-              ))}
-            </ul>
-          )}
-
-          {p.id === "ways" && (
-            <div className={styles.screenTwo}>
-              <div>
-                <p className={styles.screenSub}>Programs</p>
-                <ul className={styles.screenList}>
-                  {e.pathways.slice(0, 4).map((x) => (
-                    <li key={x.name + x.provider}>
-                      <strong>{x.name}</strong> · {x.provider}
-                    </li>
-                  ))}
-                </ul>
+            {p.id === "ways" && (
+              <div className={styles.screenTwo}>
+                <div>
+                  <p className={styles.screenSub}>Programs</p>
+                  <ul className={styles.screenList}>
+                    {e.pathways.slice(0, 4).map((x) => (
+                      <li key={x.name + x.provider}>
+                        <strong>{x.name}</strong> · {x.provider}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <p className={styles.screenSub}>Real job postings</p>
+                  <ul className={styles.screenList}>
+                    {e.jobs.slice(0, 4).map((x) => (
+                      <li key={x.title + x.employer}>
+                        <strong>{x.title}</strong> · {x.employer}
+                      </li>
+                    ))}
+                    {e.jobs.length === 0 && <li>None saved for this example yet.</li>}
+                  </ul>
+                </div>
               </div>
-              <div>
-                <p className={styles.screenSub}>Real job postings</p>
-                <ul className={styles.screenList}>
-                  {e.jobs.slice(0, 4).map((x) => (
-                    <li key={x.title + x.employer}>
-                      <strong>{x.title}</strong> · {x.employer}
-                    </li>
-                  ))}
-                  {e.jobs.length === 0 && <li>None saved for this example yet.</li>}
-                </ul>
-              </div>
-            </div>
-          )}
+            )}
 
-          {p.id === "ask" && <p className={styles.screenAsk}>{e.prompt}</p>}
+            {p.id === "ask" && <p className={styles.screenAsk}>{e.prompt}</p>}
+          </div>
 
           <div className={styles.screenFoot}>
             <button type="button" className={styles.screenBtn} disabled={part === 0} onClick={() => setPart(part - 1)}>

@@ -16,20 +16,25 @@ export default function LandingA() {
   const { example, image, roles } = getLandingExample("ghgsat");
 
   return (
-    <>
+    <div className={styles.landing}>
       <PrototypeBar current="a" />
 
       <section className={styles.heroA} aria-labelledby="a-title">
         <Image src={heroImage} alt="" fill preload unoptimized sizes="100vw" className={styles.heroPhoto} />
         <div className={styles.heroScrim} aria-hidden="true" />
         <div className={`${styles.frame} ${styles.heroAInner}`}>
-          <p className={styles.kicker}>For Alberta high school science teachers</p>
           <h1 id="a-title" className={styles.heroTitle}>
-            Show your class who in Calgary uses the science they’re learning.
+            <span className={styles.line}>
+              <span className={styles.rise}>Show your class who in Calgary </span>
+            </span>
+            <span className={styles.line}>
+              <span className={styles.rise}>uses the science they’re learning.</span>
+            </span>
           </h1>
           <p className={styles.heroLede}>
-            Careers in the Classroom connects the unit you’re teaching to a real Calgary organization, the problem it’s working
-            on, and the people doing the work. Each example is ready to project in five minutes.
+            For Alberta high school science teachers. Careers in the Classroom connects the unit you’re teaching to a real
+            Calgary organization, the problem it’s working on and the people doing the work. There are {stats.examples}{" "}
+            examples so far, each ready to project in class.
           </p>
           <div className={styles.ctaRow}>
             <a href="#start" className={styles.ctaPrimary}>
@@ -39,32 +44,13 @@ export default function LandingA() {
               How it works
             </a>
           </div>
-          <dl className={styles.statRow}>
-            <div>
-              <dt>Examples</dt>
-              <dd>{stats.examples}</dd>
-            </div>
-            <div>
-              <dt>Calgary organizations</dt>
-              <dd>{stats.companies}</dd>
-            </div>
-            <div>
-              <dt>Kinds of work</dt>
-              <dd>{stats.roles}</dd>
-            </div>
-            <div>
-              <dt>Courses</dt>
-              <dd>{stats.courses}</dd>
-            </div>
-          </dl>
         </div>
       </section>
 
       <section id="how" className={styles.band} aria-labelledby="a-how">
         <div className={styles.frame}>
-          <p className={styles.eyebrow}>How it works</p>
           <h2 id="a-how" className={styles.h2}>
-            From your unit to a real conversation, in three steps
+            From your unit to a real conversation in three steps
           </h2>
           <ol className={styles.steps}>
             <li className={styles.step}>
@@ -76,8 +62,8 @@ export default function LandingA() {
               <span className={styles.stepNum}>2</span>
               <h3 className={styles.h3}>Open a real Calgary example</h3>
               <p>
-                Each one starts with a question your students can answer with the science they know, then shows how the
-                organization uses it.
+                Each one starts with a question your students can reason about with the science they know, then shows how
+                the organization uses it.
               </p>
             </li>
             <li className={styles.step}>
@@ -95,30 +81,34 @@ export default function LandingA() {
       <section className={`${styles.band} ${styles.bandWarm}`} aria-labelledby="a-anatomy">
         <div className={`${styles.frame} ${styles.anatomy}`}>
           <div>
-            <p className={styles.eyebrow}>What’s inside one example</p>
             <h2 id="a-anatomy" className={styles.h2}>
-              {example.question}
+              What a class sees: “{example.question}”
             </h2>
             <p className={styles.body}>
               {example.org} · {example.localShort}
             </p>
-            <ol className={styles.parts}>
-              <li>
-                <strong>The question.</strong> A hook to open class, tied to your unit.
-              </li>
-              <li>
-                <strong>How it works.</strong> The science, step by step, with a teaching illustration.
-              </li>
-              <li>
-                <strong>Who does this work.</strong> {roles.map((r) => r.title).join(", ")}.
-              </li>
-              <li>
-                <strong>Ways in.</strong> Local programs and real job postings that lead there.
-              </li>
-              <li>
-                <strong>Ask the class.</strong> “{example.prompt.split("?")[0]}?”
-              </li>
-            </ol>
+            <dl className={styles.parts}>
+              <div>
+                <dt>The question</dt>
+                <dd>A hook to open class, tied to your unit.</dd>
+              </div>
+              <div>
+                <dt>How it works</dt>
+                <dd>The science, step by step, with a teaching illustration.</dd>
+              </div>
+              <div>
+                <dt>Who does this work</dt>
+                <dd>{roles.map((r) => r.title).join(" · ")}</dd>
+              </div>
+              <div>
+                <dt>Ways in</dt>
+                <dd>Local programs and real job postings that lead there.</dd>
+              </div>
+              <div>
+                <dt>Ask the class</dt>
+                <dd>“{example.prompt.split("?")[0]}?”</dd>
+              </div>
+            </dl>
             <Link href={`/examples/${example.slug}`} className={styles.textLink}>
               Open this example <Icon name="arrowRight" small />
             </Link>
@@ -132,46 +122,35 @@ export default function LandingA() {
       </section>
 
       <section className={styles.band} aria-labelledby="a-why">
-        <div className={styles.frame}>
-          <p className={styles.eyebrow}>Why it matters</p>
-          <h2 id="a-why" className={styles.h2}>
-            “When will I ever use this?” deserves a local answer
+        <div className={`${styles.frame} ${styles.why}`}>
+          <h2 id="a-why" className={styles.whyStatement}>
+            “When will I ever use this?” deserves an answer from down the road.
           </h2>
-          <div className={styles.whyGrid}>
-            <div>
-              <h3 className={styles.h3}>Close to home</h3>
-              <p>
-                Students hear about science careers in faraway labs. These are organizations they could pass on the way to
-                school.
-              </p>
-            </div>
-            <div>
-              <h3 className={styles.h3}>People, not job titles</h3>
-              <p>
-                Every example names the kinds of work involved and explains what those people actually do, so careers feel
-                reachable.
-              </p>
-            </div>
-            <div>
-              <h3 className={styles.h3}>Honest and sourced</h3>
-              <p>
-                Every claim links to its source and is dated. We mark what a company says, what we observed, and what is our
-                interpretation.
-              </p>
-            </div>
+          <div className={styles.whyBody}>
+            <p>
+              Science careers can feel like they happen somewhere else. These examples put the work in Calgary: an office on
+              5th Avenue, a roastery in the Simmons Building, a field program in southeastern Alberta.
+            </p>
+            <p>
+              Each one names the kinds of work involved and says what those people do day to day, with programs and job
+              postings students can look up afterwards.
+            </p>
+            <p>
+              Every claim links to a dated source. We mark what an organization says, what we saw in a source, and what is
+              our own interpretation.
+            </p>
           </div>
         </div>
       </section>
 
       <section id="start" className={`${styles.band} ${styles.bandDark}`} aria-labelledby="a-start">
         <div className={styles.frame}>
-          <p className={`${styles.eyebrow} ${styles.eyebrowDark}`}>Get started</p>
           <h2 id="a-start" className={`${styles.h2} ${styles.h2Dark}`}>
             Where would you like to start?
           </h2>
           <Doors courses={courseDoors} companies={companyDoors} roles={roleDoors} tone="dark" />
         </div>
       </section>
-    </>
+    </div>
   );
 }

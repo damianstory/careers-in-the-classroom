@@ -17,7 +17,7 @@ export default function LandingC() {
   const picks = sampleSlugs.slice(0, 3).map((s) => getExample(s)!);
 
   return (
-    <>
+    <div className={styles.landing}>
       <PrototypeBar current="c" />
 
       <section className={styles.heroC} aria-labelledby="c-title">
@@ -34,9 +34,8 @@ export default function LandingC() {
           </div>
 
           <aside className={styles.primer} aria-labelledby="c-primer">
-            <p className={styles.primerKicker}>New here?</p>
             <h2 id="c-primer" className={styles.primerTitle}>
-              How it works
+              New here? How it works
             </h2>
             <ol className={styles.primerSteps}>
               <li>
@@ -75,6 +74,6 @@ export default function LandingC() {
           </ul>
         </div>
       </section>
-    </>
+    </div>
   );
 }

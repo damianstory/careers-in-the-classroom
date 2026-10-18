@@ -40,18 +40,17 @@ export default function LandingB() {
   const walks = [walk("ghgsat"), walk("wilder-institute"), walk("e3-lithium")];
 
   return (
-    <>
+    <div className={styles.landing}>
       <PrototypeBar current="b" />
 
       <section className={styles.heroB} aria-labelledby="b-title">
         <div className={styles.frame}>
-          <p className={styles.kicker}>Careers in the Classroom · for Alberta science teachers</p>
           <h1 id="b-title" className={styles.heroBTitle}>
             Here’s what you could show your class tomorrow.
           </h1>
           <p className={styles.heroBLede}>
-            Each example ties your unit to a real Calgary organization and the people doing the work. Click through one below,
-            the way you would in class.
+            Careers in the Classroom ties the unit you teach to a real Calgary organization and the people doing the work. It’s
+            for Alberta high school science teachers. Click through one example below, the way you would in class.
           </p>
         </div>
         <div className={styles.frame}>
@@ -61,12 +60,12 @@ export default function LandingB() {
 
       <section id="start" className={styles.band} aria-labelledby="b-start">
         <div className={styles.frame}>
-          <p className={styles.eyebrow}>
-            {stats.examples} examples from {stats.companies} Calgary organizations
-          </p>
-          <h2 id="b-start" className={styles.h2}>
+          <h2 id="b-start" className={styles.h2Tight}>
             Now find one for your class
           </h2>
+          <p className={styles.sectionLede}>
+            {stats.examples} examples from {stats.companies} Calgary organizations, so far.
+          </p>
           <Doors courses={courseDoors} companies={companyDoors} roles={roleDoors} />
         </div>
       </section>
@@ -79,7 +78,10 @@ export default function LandingB() {
           <dl className={styles.faq}>
             <div>
               <dt>How long does it take in class?</dt>
-              <dd>About five to fifteen minutes. Open with the question, or use it to close a lesson.</dd>
+              <dd>
+                As long as you want it to. Open with the question as a warm-up, walk through the whole example, or use the
+                discussion question to close a lesson.
+              </dd>
             </div>
             <div>
               <dt>Where does the information come from?</dt>
@@ -106,6 +108,6 @@ export default function LandingB() {
           </Link>
         </div>
       </section>
-    </>
+    </div>
   );
 }
