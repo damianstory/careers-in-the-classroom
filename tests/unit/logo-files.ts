@@ -35,7 +35,12 @@ export function svgProblems(svg: string): string[] {
     parsed++;
     const name = m[1].toLowerCase().split(":").pop()!;
     if (BANNED_ELEMENTS.has(name)) problems.push(`element <${m[1]}>`);
+    const seen = new Set<string>();
     for (const a of m[2].matchAll(ATTR)) {
+      // Well-formed XML: every value quoted, no name twice.
+      if (!a[2] || !/^["']/.test(a[2])) problems.push(`unquoted attribute ${a[1]} on <${m[1]}>`);
+      if (seen.has(a[1])) problems.push(`duplicate attribute ${a[1]} on <${m[1]}>`);
+      seen.add(a[1]);
       const attr = a[1].toLowerCase();
       const value = unquote(a[2]);
       const local = attr.split(":").pop()!;

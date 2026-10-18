@@ -195,6 +195,9 @@ describe("connected exploration content", () => {
       wrap("") + "trailing text",
       wrap("<style><![CDATA[/* </style> */ @import url(https://example.com/x.css);]]></style>"),
       wrap("<style><!-- </style> -->@import 'https://example.com/x.css';</style>"),
+      wrap('<path fill=red d="M0 0h10v10H0z"/>'),
+      wrap('<path fill="red" fill="blue"/>'),
+      wrap("<rect hidden/>"),
       wrap("<style>.a{fill:#000}<!-- c -->.b{fill:url(https://example.com/x)}</style>"),
     ]) {
       expect(svgProblems(bad), bad).not.toEqual([]);
