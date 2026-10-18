@@ -183,6 +183,16 @@ describe("connected exploration content", () => {
       expect(svgProblems(wrap(bad)), bad).not.toEqual([]);
     }
     expect(svgProblems(wrap('<rect style="fill:url(#g)"/>'))).toEqual([]);
+    expect(svgProblems('<?xml version="1.0" encoding="UTF-8"?>' + wrap("<g><path d='M0 0'/></g>"))).toEqual([]);
+    for (const bad of [
+      '<?xml-stylesheet type="text/css" href="https://example.com/logo.css"?>' + wrap(""),
+      '<!DOCTYPE svg [<!ENTITY x "y">]>' + wrap(""),
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><g></svg>',
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"></g></svg>',
+      wrap("") + "<script/>",
+    ]) {
+      expect(svgProblems(bad), bad).not.toEqual([]);
+    }
   });
 
   it("reads PNG dimensions only from real PNG files", () => {

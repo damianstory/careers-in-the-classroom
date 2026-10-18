@@ -50,6 +50,26 @@ export function svgProblems(svg: string): string[] {
     if (badCss(m[1])) problems.push("style element with outside reference");
   }
   if (/<!ENTITY/i.test(svg)) problems.push("entity declaration");
+  problems.push(...structureProblems(svg));
+  return problems;
+}
+
+// The XML around the tags: only a leading XML declaration is allowed (no stylesheet instructions or
+// DOCTYPE), and every element must close in order, so nothing hides in malformed markup.
+function structureProblems(svg: string): string[] {
+  const problems: string[] = [];
+  const body = svg.trim().replace(/^<\?xml\s[^?]*\?>/, "");
+  const stack: string[] = [];
+  for (const m of body.matchAll(/<!--[\s\S]*?-->|<!\[CDATA\[[\s\S]*?\]\]>|<\?[\s\S]*?\?>|<![^>]*>|<\/\s*([^\s>]+)\s*>|<\s*([A-Za-z][\w:.-]*)(?:"[^"]*"|'[^']*'|[^'">])*?(\/)?>/g)) {
+    const token = m[0];
+    if (token.startsWith("<?")) problems.push(`processing instruction ${token.slice(0, 40)}`);
+    else if (token.startsWith("<!") && !token.startsWith("<!--") && !token.startsWith("<![CDATA[")) problems.push(`declaration ${token.slice(0, 40)}`);
+    else if (m[1] !== undefined) {
+      if (stack.pop() !== m[1]) problems.push(`mismatched </${m[1]}>`);
+    } else if (m[2] !== undefined && !m[3]) stack.push(m[2]);
+  }
+  if (stack.length) problems.push(`unclosed <${stack.join("> <")}>`);
+  if (!/^<\s*svg\b/i.test(body.replace(/^(?:\s|<!--[\s\S]*?-->)*/, ""))) problems.push("does not start with <svg>");
   return problems;
 }
 
