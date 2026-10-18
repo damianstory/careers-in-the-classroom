@@ -15,6 +15,7 @@ export function ExampleIllustration({ slug, variant }: { slug: string; variant: 
           ? "(max-width: 640px) 100vw, (max-width: 1000px) 50vw, 33vw"
           : "(max-width: 720px) 100vw, 680px"}
         className={styles.image}
+        style={{ aspectRatio: `${image.src.width} / ${image.src.height}`, objectFit: "contain" }}
       />
     </figure>
   );

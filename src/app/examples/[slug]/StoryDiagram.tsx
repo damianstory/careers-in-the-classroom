@@ -54,13 +54,15 @@ export function storyDiagram(story: ClassroomStory) {
 export function StoryDiagram({ story, headingId }: { story: ClassroomStory; headingId: string }) {
   const diagram = storyDiagram(story);
   if (!diagram) return null;
+  const width = typeof diagram.image === "string" ? 1344 : diagram.image.width;
+  const height = typeof diagram.image === "string" ? 756 : diagram.image.height;
   return (
     <section className={styles.band} aria-labelledby={headingId}>
       <div className={styles.content}>
         <p className={styles.eyebrow}>Schematic · not to scale</p>
         <h3 id={headingId} className={styles.heading}>{diagram.heading}</h3>
         <figure className={styles.figure}>
-          <Image src={diagram.image} width={1344} height={756} alt={story.diagramAlt} sizes="(max-width: 720px) 100vw, 680px" className={styles.image} />
+          <Image src={diagram.image} width={width} height={height} alt={story.diagramAlt} sizes="(max-width: 720px) 100vw, 680px" className={styles.image} style={{ aspectRatio: `${width} / ${height}`, objectFit: "contain" }} />
         </figure>
         <ol className={styles.key}>
           {diagram.steps.map((step, index) => (
