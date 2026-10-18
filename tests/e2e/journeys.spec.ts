@@ -206,9 +206,16 @@ test("old search, Explore and filtered home links land on the library", async ({
   await expect(page.getByRole("heading", { level: 2, name: "Fits Matter as solutions, acids and bases" })).toBeVisible();
   const res = await page.request.get("/?course=physics-30&unit=p30c", { maxRedirects: 0 });
   expect(res.status()).toBe(307);
-  expect(res.headers().location).toBe("/examples?course=physics-30&unit=p30c");
+  expect(new URL(res.headers().location, res.url()).href).toBe(new URL("/examples?course=physics-30&unit=p30c", res.url()).href);
   await page.goto("/?topic=combustion#library");
   await expect(page).toHaveURL(/\/examples\?topic=combustion#library$/);
+  // Empty values, as the old unfiltered form submitted them, still mean the library.
+  for (const [query, kept] of [["topic=", "topic="], ["course=&unit=&topic=", "course=&unit=&topic="], ["unit", "unit="]]) {
+    const empty = await page.request.get(`/?${query}`, { maxRedirects: 0 });
+    expect(empty.status(), query).toBe(307);
+    expect(new URL(empty.headers().location, empty.url()).href, query).toBe(new URL(`/examples?${kept}`, empty.url()).href);
+  }
+  expect((await page.request.get("/", { maxRedirects: 0 })).status()).toBe(200);
 });
 
 test("the home page explains the project and opens the library three ways", async ({ page, requests }, info) => {
@@ -268,6 +275,8 @@ test("Wilder pathways distinguish introductory care from veterinary medicine", a
 
 test("source links open safely and match the content data", async ({ page, requests }) => {
   void requests;
+  // It visits every example page (32 now, each with its logo), which takes most of the default 30s alone.
+  test.setTimeout(90_000);
   const known = new Set([...examples.flatMap((e) => e.sources), ...news.flatMap((n) => n.sources), ...registry].map((s) => s.url));
   await page.addInitScript(() => sessionStorage.setItem("citc.signedUp", "1"));
   const pages = [...examples.map((e) => `/examples/${e.slug}`), "/examples?course=physics-30&unit=p30c", "/digest"];

@@ -5,14 +5,24 @@ const BANNED_ELEMENTS = new Set(["script", "foreignobject", "iframe", "object", 
 const TAG = /<\s*([A-Za-z][\w:.-]*)((?:\s+[^\s=/>]+(?:\s*=\s*(?:"[^"]*"|'[^']*'|[^\s"'=<>`]+))?)*)\s*\/?\s*>/g;
 const ATTR = /([^\s=/>]+)(?:\s*=\s*("[^"]*"|'[^']*'|[^\s"'=<>`]+))?/g;
 
-function unquote(v: string | undefined) {
-  if (v === undefined) return "";
-  return /^["']/.test(v) ? v.slice(1, -1) : v;
+// Values are checked as an XML parser will read them: with character references decoded.
+function decodeXml(s: string) {
+  return s
+    .replace(/&#x([0-9a-f]+);?/gi, (_, h: string) => String.fromCodePoint(parseInt(h, 16)))
+    .replace(/&#(\d+);?/g, (_, d: string) => String.fromCodePoint(Number(d)))
+    .replace(/&(lt|gt|quot|apos|amp);/g, (_, n: string) => ({ lt: "<", gt: ">", quot: '"', apos: "'", amp: "&" })[n]!);
 }
 
-function badCss(css: string) {
+function unquote(v: string | undefined) {
+  if (v === undefined) return "";
+  return decodeXml(/^["']/.test(v) ? v.slice(1, -1) : v);
+}
+
+function badCss(raw: string) {
+  const css = decodeXml(raw.replace(/<!\[CDATA\[|\]\]>/g, "")).replace(/\/\*[\s\S]*?\*\//g, "");
+  // CSS escapes can spell url( or @import in ways a pattern can't follow, so any escape is refused.
   // url() may only point inside the file (url(#id)); @import always fetches.
-  return /@import/i.test(css) || /url\(\s*(?!['"]?#)/i.test(css);
+  return css.includes("\\") || /@import/i.test(css) || /url\(\s*(?!['"]?#)/i.test(css);
 }
 
 /** Problems found in an SVG's markup; empty when the file is safe to serve. */
@@ -35,7 +45,10 @@ export function svgProblems(svg: string): string[] {
     }
   }
   if (parsed !== opened) problems.push("unparsed tag");
-  for (const m of svg.matchAll(/<style[^>]*>([\s\S]*?)<\/style\s*>/gi)) if (badCss(m[1])) problems.push("style element with outside reference");
+  // Style elements by local name, so a namespace prefix (<svg:style>) can't hide one.
+  for (const m of svg.matchAll(/<\s*(?:[\w.-]+:)?style\b[^>]*>([\s\S]*?)<\/\s*(?:[\w.-]+:)?style\s*>/gi)) {
+    if (badCss(m[1])) problems.push("style element with outside reference");
+  }
   if (/<!ENTITY/i.test(svg)) problems.push("entity declaration");
   return problems;
 }

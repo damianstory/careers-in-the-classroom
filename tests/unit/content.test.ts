@@ -173,6 +173,12 @@ describe("connected exploration content", () => {
       '<rect style="fill:url(https://example.com/x)"/>',
       "<style>@import url(x.css);</style>",
       "<style>.a{fill:url('//example.com/p')}</style>",
+      '<rect style="fill:u&#114;l(https://example.com/x.svg#g)"/>',
+      '<rect style="fill:&#x75;rl(//example.com/x)"/>',
+      "<svg:style>.a{fill:url(https://example.com/x)}</svg:style>",
+      "<style><![CDATA[@import 'x.css';]]></style>",
+      "<style>.a{fill:\\75 rl(https://example.com/x)}</style>",
+      '<use href="&#x68;ttps://example.com/a.svg#x"/>',
     ]) {
       expect(svgProblems(wrap(bad)), bad).not.toEqual([]);
     }
