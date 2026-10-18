@@ -1,3 +1,4 @@
+import { octoberExamples } from "./calgary-october-17";
 import { expansionExamples } from "./calgary-expansion";
 import type { Example } from "./types";
 
@@ -10,6 +11,7 @@ const CBE_PHYS = { id: "cbe-phys", label: "CBE Physics 20–30 topics", url: "ht
 const CBE_SCI = { id: "cbe-sci", label: "CBE Science 10–30 topics", url: "https://eps.cbe.ab.ca/science-10-20-30.aspx" };
 
 export const examples: Example[] = [
+  ...octoberExamples,
   ...expansionExamples,
   {
     slug: "wilder-institute",

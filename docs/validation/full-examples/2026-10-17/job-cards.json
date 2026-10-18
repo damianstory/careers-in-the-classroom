@@ -1,0 +1,66 @@
+[
+  {
+    "id": "CGY-041-J1",
+    "version": 1,
+    "decision": "pending",
+    "title": "Junior Landscape Designer",
+    "employer": "O2 Planning + Design",
+    "location": "Calgary",
+    "seniority": "Junior; employer requested at least one year of relevant experience",
+    "status": "unknown",
+    "label": "Undated employer role example \u2014 application status unverified, checked 17 October 2026",
+    "summary": "Help a multidisciplinary team turn landscape concepts into drawings and visual presentations.",
+    "duties": [
+      "Contribute to concept designs, reports and construction documentation.",
+      "Prepare 3D visualizations and renderings.",
+      "Develop technical detailing with the project team."
+    ],
+    "skills": [
+      "Landscape architecture or related university degree.",
+      "At least one year of relevant experience.",
+      "Graphic communication and CAD/3D software skills; eligibility for AALA Associate membership."
+    ],
+    "related_work": "Shows how the landscape design in the park story becomes documented plans. This posting does not establish assignment to Dale Hodges Park.",
+    "source": "https://www.o2design.com/s/O2_Junior-Landscape-Designer.pdf",
+    "publication_date": null,
+    "deadline": null,
+    "status_checked_on": "2026-10-17",
+    "score_dimensions": [
+      4,
+      3,
+      3
+    ]
+  },
+  {
+    "id": "CGY-050-J1",
+    "version": 1,
+    "decision": "pending",
+    "title": "Skilled Commercial Bakers",
+    "employer": "Calgary Italian Bakery",
+    "location": "Calgary",
+    "seniority": "Skilled; years of experience and specific credential not stated",
+    "status": "open",
+    "label": "Employer page accepting applications when checked 17 October 2026; posting date and deadline not stated",
+    "summary": "Produce standardized baked goods using commercial mixing and baking equipment.",
+    "duties": [
+      "Use high-volume mixing machines, ovens and related equipment.",
+      "Follow production schedules.",
+      "Follow recipes for consistent output."
+    ],
+    "skills": [
+      "Following production instructions and recipes.",
+      "Commercial equipment work described by employer.",
+      "Specific training, experience minimum and pay not stated."
+    ],
+    "related_work": "Production tasks connect to where losses can occur in the bakery process. The posting does not say this employee works on the historical waste-reduction project.",
+    "source": "https://www.cibl.com/employment",
+    "publication_date": null,
+    "deadline": null,
+    "status_checked_on": "2026-10-17",
+    "score_dimensions": [
+      4,
+      3,
+      2
+    ]
+  }
+]

@@ -11,9 +11,9 @@ for (const activation of ["click", "keyboard"] as const) {
     for (const path of ["/", "/?topic=combustion#library"]) {
       await page.goto(path, { waitUntil: "networkidle" });
       const cards = page.locator('main a[href^="/examples/"]');
-      await expect(cards).toHaveCount(12);
+      await expect(cards).toHaveCount(FIRST_CARDS);
       const originalLinks = await cards.evaluateAll((links) => links.map((link) => link.getAttribute("href")));
-      const more = page.getByRole("button", { name: "Show 6 more", exact: true });
+      const more = page.getByRole("button", { name: `Show ${examples.length - FIRST_CARDS} more`, exact: true });
       await more.scrollIntoViewIfNeeded();
       if (activation === "keyboard") await more.focus();
       const before = await page.evaluate(() => ({ y: window.scrollY, url: location.href }));
@@ -22,7 +22,7 @@ for (const activation of ["click", "keyboard"] as const) {
       if (activation === "keyboard") await more.press("Enter");
       else await more.click();
 
-      await expect(cards).toHaveCount(18);
+      await expect(cards).toHaveCount(examples.length);
       await expect(more).toHaveCount(0);
       expect((await cards.evaluateAll((links) => links.map((link) => link.getAttribute("href")))).slice(0, 12)).toEqual(originalLinks);
       // Allow layout and scroll anchoring to settle before checking the reading position.
@@ -41,8 +41,8 @@ test("course and unit filter the library in place → example → back", async (
   await page.locator("#filter-unit").selectOption("p30c");
   await expect(page).toHaveURL(/\/\?course=physics-30&unit=p30c$/);
   await expect(page.getByRole("heading", { level: 2, name: "Fits Electromagnetic radiation" })).toBeVisible();
-  // Two examples prepared for the unit, plus one more Physics 30 example under "Also fits".
-  await expect(page.getByRole("status").first()).toHaveText("3 matching");
+  // Four examples prepared for the unit, plus one more Physics 30 example under "Also fits".
+  await expect(page.getByRole("status").first()).toHaveText("5 matching");
 
   await page.getByRole("link", { name: GHGSAT_Q }).click();
   await expect(page.getByRole("heading", { level: 1, name: GHGSAT_Q })).toBeVisible();
@@ -112,7 +112,7 @@ test("a course alone shows its examples and how many units are ready", async ({ 
   await expect(page.getByRole("heading", { level: 2, name: "In Physics 30" })).toBeVisible();
   await expect(page.getByText("Physics 30: 2 of 4 units ready")).toBeVisible();
   await expect(page.locator("#filter-unit optgroup")).toHaveCount(2);
-  await expect(page.locator('#filter-unit optgroup[label="Ready now"] option')).toHaveText(["Forces and fields · 1 example", "Electromagnetic radiation · 2 examples"]);
+  await expect(page.locator('#filter-unit optgroup[label="Ready now"] option')).toHaveText(["Forces and fields · 1 example", "Electromagnetic radiation · 4 examples"]);
 });
 
 test("a unit without an example gets the honest banner and the closest fits", async ({ page, requests }) => {
@@ -247,7 +247,7 @@ test("source links open safely and match the content data", async ({ page, reque
   for (const path of pages) {
     // The signed-up state is read after hydration, so wait for it before counting source links.
     await page.goto(path, { waitUntil: "networkidle" });
-    // Read each page's links together: 18 examples now produce thousands of
+    // Read each page's links together: the expanded collection produces thousands of
     // attribute round trips when queried one at a time, exceeding the test budget.
     const links = await page.locator('a[target="_blank"]').evaluateAll((anchors) => anchors.map((a) => ({
       href: a.getAttribute("href"),

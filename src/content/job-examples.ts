@@ -1,3 +1,4 @@
+import { octoberJobs } from "./calgary-october-17";
 import { expansionJobs } from "./calgary-expansion";
 import type { JobExample } from "./types";
 
@@ -5,6 +6,7 @@ import type { JobExample } from "./types";
 // `status` is the separate, dated check of whether the posting was still accepting applications.
 // Duties and skills are paraphrased. Excerpts are short and attributed.
 export const jobExamples: JobExample[] = [
+  ...octoberJobs,
   ...expansionJobs,
   {
     id: "ghgsat-emissions-scientist",

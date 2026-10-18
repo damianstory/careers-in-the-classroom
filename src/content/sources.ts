@@ -1,3 +1,4 @@
+import { octoberSources } from "./calgary-october-17";
 import { expansionSources } from "./calgary-expansion";
 import type { DatedSource } from "./types";
 
@@ -6,6 +7,7 @@ import type { DatedSource } from "./types";
 const checkedOn = "2026-09-25";
 
 export const registry: DatedSource[] = [
+  ...octoberSources,
   ...expansionSources,
   { id: "ghgsat-home", label: "GHGSat home page", url: "https://www.ghgsat.com/", checkedOn },
   { id: "ghgsat-about", label: "GHGSat: About us", url: "https://www.ghgsat.com/about-us/", checkedOn },

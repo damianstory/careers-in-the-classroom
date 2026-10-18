@@ -1,0 +1,226 @@
+{
+  "counts": {
+    "octoberExamples": 14,
+    "octoberOrganizations": 14,
+    "octoberOrganizationRoles": 42,
+    "octoberRoles": 19,
+    "octoberPathways": 18,
+    "octoberJobs": 2,
+    "octoberDetails": 14,
+    "octoberSources": 74
+  },
+  "slugs": [
+    "o2-planning-design",
+    "entuitive",
+    "phil-sebastian",
+    "broken-pencil-studios",
+    "cpkc",
+    "watersmart",
+    "integrated-sustainability",
+    "trace-associates",
+    "rjc-engineers",
+    "calgary-italian-bakery",
+    "joe-media-group",
+    "cbl-bakeries-cinnaroll",
+    "isl-engineering",
+    "clearbakk"
+  ],
+  "unitLinks": [
+    {
+      "slug": "o2-planning-design",
+      "unitId": "b20b",
+      "why": "Biology 20 B1.3k relates biotic and abiotic factors in aquatic ecosystems. Use the park to compare habitat and water conditions; treatment performance needs measurements."
+    },
+    {
+      "slug": "entuitive",
+      "unitId": "p20b",
+      "why": "Physics 20 B1 concerns balanced and unbalanced forces. Draw a simplified free-body diagram; truss design and construction sequencing are engineering extensions."
+    },
+    {
+      "slug": "phil-sebastian",
+      "unitId": "p30c",
+      "why": "Physics 30 C1 includes reflection. Trace light from source to sample to sensor; roast data and flavour are separate evidence."
+    },
+    {
+      "slug": "broken-pencil-studios",
+      "unitId": "p20a",
+      "why": "Physics 20 A1 relates displacement, velocity, acceleration and time. Compare ball positions at equal time intervals; animation production supplies the context, not a claim that all studio work is physics."
+    },
+    {
+      "slug": "cpkc",
+      "unitId": "p20a",
+      "why": "Physics 20 A1 supports interpreting position-time graphs. Compare fictional movements; timetable decisions and railway rules are extensions beyond the classroom model."
+    },
+    {
+      "slug": "watersmart",
+      "unitId": "b20a",
+      "why": "Biology 20 A2.1sts explicitly connects societal water use to ecosystem water quality, quantity, purification and conservation. Compare scenarios rather than treating a forecast as certain."
+    },
+    {
+      "slug": "integrated-sustainability",
+      "unitId": "c20c",
+      "why": "Chemistry 20 Unit C addresses aqueous solutions and concentration. Compare feed and output concentrations with flow and sample timing; process controls are an engineering extension."
+    },
+    {
+      "slug": "trace-associates",
+      "unitId": "c20c",
+      "why": "Chemistry 20 Unit C provides concentration concepts. Compare results with units and a sampling plan; regulatory decisions and toxicology are not classroom safety rules."
+    },
+    {
+      "slug": "rjc-engineers",
+      "unitId": "s10b",
+      "why": "Science 10 Unit B connects heat transfer and technological systems. Compare insulation and joints; moisture transport is a building-science extension, not a universal wall prescription."
+    },
+    {
+      "slug": "joe-media-group",
+      "unitId": "p30c",
+      "why": "Physics 30 C1 includes reflection, refraction and thin-lens image formation. Follow light from subject through lens to sensor, then distinguish physical capture from editorial colour changes."
+    },
+    {
+      "slug": "isl-engineering",
+      "unitId": "b20b",
+      "why": "Biology 20 B1.3k connects biotic and abiotic characteristics of aquatic ecosystems. Compare creek habitat and water observations before and after a crossing; road geometry is context rather than a claimed kinematics outcome."
+    },
+    {
+      "slug": "clearbakk",
+      "unitId": "c20c",
+      "why": "Chemistry 20 Unit C supplies solution and concentration concepts. Compare feed and output evidence; modular layout and maintenance access are engineering applications."
+    }
+  ],
+  "localOnly": true,
+  "pathway_appearances": 42,
+  "illustrations": 28,
+  "prior_examples": 18,
+  "current_examples": 32,
+  "full_copy_decisions_pending": 0,
+  "additional_looot_usd": 0,
+  "weekly_looot_settled_usd": 0.03,
+  "files": [
+    {
+      "path": "src/content/calgary-october-17.ts",
+      "sha256": "ced5e763b4bb692ecb15138f25a6baadc3861aa7955a563e1948d43394f279d2"
+    },
+    {
+      "path": "src/content/october-unit-links.ts",
+      "sha256": "ebac71f9d855f63c21aca0ddc929b1be8cd60e7712aad2456572363ec97746b3"
+    },
+    {
+      "path": "src/content/october-diagrams.ts",
+      "sha256": "60136e1a87701b353d1cf319fc0b64a9777235ae96145ec7c54cd8192c1df684"
+    },
+    {
+      "path": "public/images/examples/broken-pencil-studios-graphic-novel.webp",
+      "sha256": "2280654a8f22af712c3c61d4eb201e66a4a1f0fc3fb8c2a8ec4520baecde5392"
+    },
+    {
+      "path": "public/images/examples/calgary-italian-bakery-graphic-novel.webp",
+      "sha256": "cf828b17ad1d19c715a87cdc6589bd32c17fc56eecb8a12550901af85e6a954c"
+    },
+    {
+      "path": "public/images/examples/cbl-bakeries-cinnaroll-graphic-novel.webp",
+      "sha256": "12cab63d71e70049cba9a08d146e8f254832e840f030415d3b419808abab2af8"
+    },
+    {
+      "path": "public/images/examples/clearbakk-graphic-novel.webp",
+      "sha256": "d201a32bc4bf5bacbb6c0d6432ae966b44717aef807b4a1ab10ab5da74cbd942"
+    },
+    {
+      "path": "public/images/examples/cpkc-graphic-novel.webp",
+      "sha256": "437dcfc7fbe540f7b3c5ed3e87ea39bb14ebf406a8d5ec09768c61a64ab6015b"
+    },
+    {
+      "path": "public/images/examples/entuitive-graphic-novel.webp",
+      "sha256": "6fbbcd81f69cf34849fb94b44a4418f30ded6107aad9700afa65c486ff4921f3"
+    },
+    {
+      "path": "public/images/examples/integrated-sustainability-graphic-novel.webp",
+      "sha256": "f725ba26146033818af13d392996bacb2fc80d6cb1316d059444b1ec62afdd07"
+    },
+    {
+      "path": "public/images/examples/isl-engineering-graphic-novel.webp",
+      "sha256": "61cf7a5f0fe3610652ab57a087a830611254b115afe606a900f550e8716c3357"
+    },
+    {
+      "path": "public/images/examples/joe-media-group-graphic-novel.webp",
+      "sha256": "3aaae9ffa1975eac746c9a4c75be1c36251ee4ea8eea8818233e05bab1326374"
+    },
+    {
+      "path": "public/images/examples/o2-planning-design-graphic-novel.webp",
+      "sha256": "cedf3d768db3ceb3e4e033d7c0d89f6fba0f0f14cd797ad7ee3992171e1c0a1e"
+    },
+    {
+      "path": "public/images/examples/phil-sebastian-graphic-novel.webp",
+      "sha256": "2f351cade07af27f98abf8b046353908d3393569179734d9dc22166bd4c5c44d"
+    },
+    {
+      "path": "public/images/examples/rjc-engineers-graphic-novel.webp",
+      "sha256": "78b34ce87f0abc641639af65df937f0b1e698ed3dbd96f58823505b00cd9cea7"
+    },
+    {
+      "path": "public/images/examples/trace-associates-graphic-novel.webp",
+      "sha256": "aeee7cbc331aa9bb2f517bf735e9deb518e58aea0c03882ae986bd1cf1524578"
+    },
+    {
+      "path": "public/images/examples/watersmart-graphic-novel.webp",
+      "sha256": "155bcf3b00099fc5514373b3cd3e848aad1d4c2bf57739835616214b03c34acc"
+    },
+    {
+      "path": "public/images/story-diagrams/broken-pencil-studios-graphic-novel.webp",
+      "sha256": "e17172b3537d3ceef1455f388ddaf7caf96e4d0606f0add35cfc9c2475a84aec"
+    },
+    {
+      "path": "public/images/story-diagrams/calgary-italian-bakery-graphic-novel.webp",
+      "sha256": "92d85e13c124344ce01053f9ef5894b8e60e0d0893c8241c535787381af23cc9"
+    },
+    {
+      "path": "public/images/story-diagrams/cbl-bakeries-cinnaroll-graphic-novel.webp",
+      "sha256": "61a65228eec57c646d3078dbfba55eff8b3cb8efdebc942a402df289c7543689"
+    },
+    {
+      "path": "public/images/story-diagrams/clearbakk-graphic-novel.webp",
+      "sha256": "d3c605f4e2903cb7f42c39a1132f528136fb177315b4a6334cbb039a6379265a"
+    },
+    {
+      "path": "public/images/story-diagrams/cpkc-graphic-novel.webp",
+      "sha256": "77ba3259a01e61baae9f856976ce49c62cafd1b538cf9e9e52d611f4ac683278"
+    },
+    {
+      "path": "public/images/story-diagrams/entuitive-graphic-novel.webp",
+      "sha256": "c4f90fa7701d3203b74d5ccfde7951e6ca2968578fc63b999d9c33d6a3098424"
+    },
+    {
+      "path": "public/images/story-diagrams/integrated-sustainability-graphic-novel.webp",
+      "sha256": "a52a5da81978e6c1b3ffca33804dc32904798d83d07dad5b2c18740b150b72a3"
+    },
+    {
+      "path": "public/images/story-diagrams/isl-engineering-graphic-novel.webp",
+      "sha256": "6544223f73d92efb8736ccaccff14af88ce963ee09bf7f90f838f1e75697fb53"
+    },
+    {
+      "path": "public/images/story-diagrams/joe-media-group-graphic-novel.webp",
+      "sha256": "d4da7c7a9951e0b53b350836c7189e0187dc15247b61de440dd5732da8cc25f8"
+    },
+    {
+      "path": "public/images/story-diagrams/o2-planning-design-graphic-novel.webp",
+      "sha256": "0419ec54b7c830c9f55a265cedc3392ef489669ea4c02b792ae72824da15e1f2"
+    },
+    {
+      "path": "public/images/story-diagrams/phil-sebastian-graphic-novel.webp",
+      "sha256": "bf7725630012bad2dc6d045d6631ee6e671efd6083205eda87d64cf0c977f732"
+    },
+    {
+      "path": "public/images/story-diagrams/rjc-engineers-graphic-novel.webp",
+      "sha256": "223b71ea995d70089835a0469a2c4b92229bd9c612f5a8ff638ebc2ebafc1c79"
+    },
+    {
+      "path": "public/images/story-diagrams/trace-associates-graphic-novel.webp",
+      "sha256": "1fca61d814233747dbdd369b731ce9800a5c9b37897da5540a8a63db3a8119a3"
+    },
+    {
+      "path": "public/images/story-diagrams/watersmart-graphic-novel.webp",
+      "sha256": "21f3479f27fe646f3f7e59de39b183a92ac0b3acf4c7a8738dce697f1efad173"
+    }
+  ],
+  "validation": "implementation-validation.json",
+  "preview_url": "http://127.0.0.1:3317/"
+}

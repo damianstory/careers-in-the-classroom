@@ -1,0 +1,164 @@
+{
+  "water": {
+    "name": "SAIT \u2014 Integrated Water Management",
+    "route": "Diploma",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/integrated-water-management",
+    "learns": "Study water systems, monitoring and management.",
+    "role_connection": "Water sampling, infrastructure and planning support.",
+    "location": "Calgary",
+    "entry": "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration."
+  },
+  "civil": {
+    "name": "SAIT \u2014 Civil Engineering Technology, Municipal Major",
+    "route": "Diploma",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/civil-engineering-technology-municipal",
+    "learns": "Study municipal infrastructure, design and drafting.",
+    "role_connection": "Technical design and project delivery; not professional engineer licensure.",
+    "location": "Calgary",
+    "entry": "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration."
+  },
+  "environment": {
+    "name": "SAIT \u2014 Environmental Technology",
+    "route": "Diploma",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/environmental-technology",
+    "learns": "Study environmental monitoring, assessment and field methods.",
+    "role_connection": "Supports field and laboratory work in environmental projects.",
+    "location": "Calgary",
+    "entry": "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration."
+  },
+  "architecture": {
+    "name": "SAIT \u2014 Architectural Technologies",
+    "route": "Diploma",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/architectural-technologies",
+    "learns": "Study building design, technical drawings and construction systems.",
+    "role_connection": "Supports building-envelope detailing and technical coordination.",
+    "location": "Calgary",
+    "entry": "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration."
+  },
+  "film": {
+    "name": "SAIT \u2014 Film and Video Production",
+    "route": "Diploma",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/film-and-video-production",
+    "learns": "Practise production and post-production through film projects.",
+    "role_connection": "Supports camera, editing and production work; a portfolio remains important.",
+    "location": "Calgary",
+    "entry": "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration."
+  },
+  "design": {
+    "name": "AUArts \u2014 Bachelor of Design",
+    "route": "Bachelor\u2019s degree",
+    "url": "https://www.auarts.ca/program-areas/undergraduate/bachelor-of-design-bdes",
+    "learns": "Develop visual communication through studio-based design work.",
+    "role_connection": "Supports illustration and visual storytelling; portfolio requirements apply.",
+    "location": "Calgary",
+    "entry": "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration."
+  },
+  "landscape": {
+    "name": "University of Calgary \u2014 Master of Landscape Architecture",
+    "route": "Graduate degree",
+    "url": "https://sapl.ucalgary.ca/future-students/graduate/master-landscape-architecture-mla",
+    "learns": "Study landscape design, land stewardship and community needs.",
+    "role_connection": "A longer-term professional education route after undergraduate study; registration is separate.",
+    "location": "Calgary",
+    "entry": "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration."
+  },
+  "baking": {
+    "name": "SAIT \u2014 Baking and Pastry Arts",
+    "route": "Diploma",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/baking-and-pastry-arts",
+    "learns": "Practise bakery and pastry production and product quality.",
+    "role_connection": "Supports commercial baking; apprenticeship registration and workplace requirements are separate.",
+    "location": "Calgary",
+    "entry": "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration."
+  },
+  "rail": {
+    "name": "SAIT \u2014 Railway Conductor",
+    "route": "Certificate",
+    "url": "https://www.sait.ca/programs-and-courses/certificates/railway-conductor",
+    "learns": "Study railway operating procedures and train handling responsibilities.",
+    "role_connection": "A route toward conductor work, not a rail traffic controller qualification or hiring guarantee.",
+    "location": "Calgary",
+    "entry": "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration."
+  },
+  "lab": {
+    "name": "SAIT \u2014 Chemical Laboratory Technology",
+    "route": "Diploma",
+    "location": "Calgary",
+    "learns": "Practice chemical analysis, sample preparation and analytical instrumentation.",
+    "role_connection": "Supports laboratory testing and reliable measurement.",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+    "entry": "Check the provider\u2019s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+  },
+  "mechanical": {
+    "name": "SAIT \u2014 Mechanical Engineering Technology",
+    "route": "Diploma",
+    "location": "Calgary",
+    "learns": "Study mechanical systems, design and manufacturing, with specialization options.",
+    "role_connection": "Supports component design, prototyping and equipment work.",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology",
+    "entry": "Check the provider\u2019s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+  },
+  "instrument": {
+    "name": "SAIT \u2014 Instrumentation Engineering Technology",
+    "route": "Diploma",
+    "location": "Calgary",
+    "learns": "Work with measurement devices, calibration and automated process controls.",
+    "role_connection": "Supports process testing, troubleshooting and control systems.",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/instrumentation-engineering-technology",
+    "entry": "Check the provider\u2019s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+  },
+  "chemical": {
+    "name": "University of Calgary \u2014 Chemical Engineering",
+    "route": "Bachelor\u2019s degree",
+    "location": "Calgary",
+    "learns": "Study how to transform raw materials and design production processes.",
+    "role_connection": "Supports process design and scale-up; experience and professional requirements remain separate.",
+    "url": "https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-chemical-engineering",
+    "entry": "Check the provider\u2019s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+  },
+  "geomatics": {
+    "name": "SAIT \u2014 Geomatics Engineering Technology",
+    "route": "Diploma",
+    "location": "Calgary",
+    "learns": "Learn surveying, GIS, positioning and remote sensing.",
+    "role_connection": "Supports spatial measurement and mapping data work.",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/geomatics-engineering-technology",
+    "entry": "Check the provider\u2019s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+  },
+  "software": {
+    "name": "SAIT \u2014 Software Development",
+    "route": "Diploma",
+    "location": "Calgary",
+    "learns": "Learn to design, test and build software across front-end and back-end systems.",
+    "role_connection": "A foundation for junior development or testing; senior roles require further experience.",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/software-development",
+    "entry": "Check the provider\u2019s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+  },
+  "millwright": {
+    "name": "SAIT \u2014 Industrial Mechanic (Millwright)",
+    "route": "Apprenticeship",
+    "location": "Calgary",
+    "learns": "Learn to install, maintain and repair industrial machinery.",
+    "role_connection": "Supports equipment assembly, alignment and maintenance.",
+    "url": "https://www.sait.ca/apprenticeships-and-trades/programs/industrial-mechanic-millwright",
+    "entry": "Requires apprenticeship registration and workplace training. This is distinct from an engineering degree."
+  },
+  "civil-degree": {
+    "name": "University of Calgary \u2014 Civil Engineering",
+    "route": "Bachelor\u2019s degree",
+    "location": "Calgary",
+    "url": "https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-civil-engineering",
+    "learns": "Study the design and operation of structures, transportation and water infrastructure.",
+    "role_connection": "A degree foundation for engineering work; professional registration and supervised experience are separate.",
+    "entry": "Check current admissions and program requirements. A degree is not automatic professional licensure."
+  },
+  "baker-apprentice": {
+    "name": "Alberta Baker apprenticeship education",
+    "route": "Apprenticeship",
+    "location": "Alberta; workplace and classroom arrangements must be confirmed",
+    "url": "https://tradesecrets.alberta.ca/SOURCES/PDFS/curriculum_guides/024_outline.pdf",
+    "learns": "Combine structured trade education with workplace learning in baking.",
+    "role_connection": "A trade route distinct from simply completing a diploma; registration and workplace requirements apply.",
+    "entry": "Use Tradesecrets to verify current entry, sponsorship and work-hour requirements. No specific Calgary employer placement is promised."
+  }
+}

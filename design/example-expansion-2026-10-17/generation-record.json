@@ -1,0 +1,251 @@
+{
+  "createdOn": "2026-10-17",
+  "provider": "built-in image_gen",
+  "styleDocument": "docs/design/image-direction.md",
+  "assets": [
+    {
+      "slug": "o2-planning-design",
+      "kind": "story",
+      "prompt": "Use case: illustration-story. Asset: landscape classroom example card and story image. A fictional landscape designer holding a plan at a wetland boardwalk, tracing the stormwater path on the plan. Marsh plants and a calm settling pond, urban park visible. One adult, two anatomically correct arms/hands. Generic location, not an exact architectural record of Dale Hodges Park. Confident forest-green ink contours, flat sage and warm ivory planes, warm natural skin colours, strong coarse halftone shadows, fine crosshatching, textured uncoated print paper, restrained burnt-orange/slate-blue accents. Mature expressive fictional adults, bold silhouettes and selective perspective. No photorealism or 3D, no voxel/pixel art. Landscape 16:9 composition. No title, brand/logo, captions, green bottom strip, speech bubbles or watermark.",
+      "originalPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-257a7c70-3d85-4e65-92aa-07d86bb8fea9.png",
+      "review": "Inspected generated result for anatomy, work relevance and conceptual relationships. Labels and limitations remain live text.",
+      "destination": "public/images/examples/o2-planning-design-graphic-novel.webp"
+    },
+    {
+      "slug": "o2-planning-design",
+      "kind": "diagram",
+      "prompt": "Use case: scientific-educational. Asset: static teaching diagram for classroom site. A single coherent wetland landscape cutaway flowing left to right. Four clear numbered green circles 1,2,3,4 only. 1 street drain with runoff flowing via blue directional arrow into 2 a broad settling pond, suspended particles sinking downward; then blue directional arrow into 3 a planted marsh; then blue directional arrow to 4 a river bordered by bird habitat. The river is downstream. No tap or drinking water, no invisible dissolved contaminants shown as gone. Large explicit arrowheads. Clear simple illustrations separated by whitespace, not comic panels. Only numbered markers may contain text; all explanatory words supplied live in UI. Confident forest-green ink contours, flat sage and warm ivory planes, warm natural skin colours, strong coarse halftone shadows, fine crosshatching, textured uncoated print paper, restrained burnt-orange/slate-blue accents. Mature expressive fictional adults, bold silhouettes and selective perspective. No photorealism or 3D, no voxel/pixel art. Landscape 16:9 composition. No title, brand/logo, captions, green bottom strip, speech bubbles or watermark.",
+      "originalPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-9a361bb4-74e1-4ca7-b34b-fc4e02228c8f.png",
+      "review": "Inspected generated result for anatomy, work relevance and conceptual relationships. Labels and limitations remain live text.",
+      "destination": "public/images/story-diagrams/o2-planning-design-graphic-novel.webp"
+    },
+    {
+      "slug": "entuitive",
+      "kind": "story",
+      "prompt": "Use case: illustration-story. Asset: classroom example story image. Fictional structural engineer comparing a tabletop triangular long-span truss model and a rail corridor drawing at a drafting desk. Clearly show an open span under the model, supports at both ends outside the rail corridor. No train above the building. One adult in a quiet design studio. Confident forest-green ink contours, flat sage and warm ivory planes, warm natural skin colours, strong coarse halftone shadows, fine crosshatching, textured uncoated print paper, restrained burnt-orange/slate-blue accents. Mature expressive fictional adults, bold silhouettes and selective perspective. No photorealism or 3D, no voxel/pixel art. Landscape 16:9 composition. No title, brand/logo, captions, green bottom strip, speech bubbles or watermark.",
+      "originalPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-d767ac97-2515-48df-944b-8a8ff9177763.png",
+      "review": "Inspected generated result for anatomy, work relevance and conceptual relationships. Labels and limitations remain live text.",
+      "destination": "public/images/examples/entuitive-graphic-novel.webp"
+    },
+    {
+      "slug": "entuitive",
+      "kind": "diagram",
+      "prompt": "Use case: scientific-educational. Asset: static teaching diagram for classroom site. Conceptual load-path schematic. Four numbered green circles 1,2,3,4 only. In one main elevation, a generic occupied building floor sits ABOVE a triangular structural truss spanning a clear railway corridor. 1 near downward orange load arrows on floor, 2 near the truss members, 3 near two columns OUTSIDE the rail clearance, 4 near the foundations on ground. Arrows follow load DOWN from floor through truss to side columns to ground. A small train travels under the structure, never on top. Simple accurate connected geometry, not the actual library. Clear simple illustrations separated by whitespace, not comic panels. Only numbered markers may contain text; all explanatory words supplied live in UI. Confident forest-green ink contours, flat sage and warm ivory planes, warm natural skin colours, strong coarse halftone shadows, fine crosshatching, textured uncoated print paper, restrained burnt-orange/slate-blue accents. Mature expressive fictional adults, bold silhouettes and selective perspective. No photorealism or 3D, no voxel/pixel art. Landscape 16:9 composition. No title, brand/logo, captions, green bottom strip, speech bubbles or watermark.",
+      "originalPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-093f4a28-7608-4dbe-a2ac-a975be64234c.png",
+      "review": "Inspected generated result for anatomy, work relevance and conceptual relationships. Labels and limitations remain live text.",
+      "destination": "public/images/story-diagrams/entuitive-graphic-novel.webp"
+    },
+    {
+      "slug": "phil-sebastian",
+      "kind": "story",
+      "prompt": "Use case: illustration-story. Asset: classroom example story image. Fictional coffee roast operator comparing sample beans in shallow dishes beside a compact enclosed reflectance meter and a closed drum roasting machine. Warm cafe-roastery workroom. No open flames. One adult with two natural hands, one holding a sample dish. Confident forest-green ink contours, flat sage and warm ivory planes, warm natural skin colours, strong coarse halftone shadows, fine crosshatching, textured uncoated print paper, restrained burnt-orange/slate-blue accents. Mature expressive fictional adults, bold silhouettes and selective perspective. No photorealism or 3D, no voxel/pixel art. Landscape 16:9 composition. No title, brand/logo, captions, green bottom strip, speech bubbles or watermark.",
+      "originalPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-237c896e-927b-4a94-a5da-ccb407ae593b.png",
+      "review": "Inspected generated result for anatomy, work relevance and conceptual relationships. Labels and limitations remain live text.",
+      "destination": "public/images/examples/phil-sebastian-graphic-novel.webp"
+    },
+    {
+      "slug": "phil-sebastian",
+      "kind": "diagram",
+      "prompt": "Use case: scientific-educational. Asset: static teaching diagram for classroom site. Four-stage coffee quality investigation, numbered circles 1,2,3,4. 1 closed drum roaster with small time-temperature curve on a log sheet; arrow to 2 dish of sampled roasted beans; arrow to 3 simple enclosed reflectometer cutaway with short orange light arrow from source DOWN to bean sample and slate-blue reflected light arrow UP to sensor; arrow to 4 side-by-side sample measurements and an adjustment dial. One curved feedback arrow from4 back1. No flavour score, no beam leaving device, no words. Clear simple illustrations separated by whitespace, not comic panels. Only numbered markers may contain text; all explanatory words supplied live in UI. Confident forest-green ink contours, flat sage and warm ivory planes, warm natural skin colours, strong coarse halftone shadows, fine crosshatching, textured uncoated print paper, restrained burnt-orange/slate-blue accents. Mature expressive fictional adults, bold silhouettes and selective perspective. No photorealism or 3D, no voxel/pixel art. Landscape 16:9 composition. No title, brand/logo, captions, green bottom strip, speech bubbles or watermark.",
+      "originalPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-d6f9b07f-5005-441c-9fac-502db2785a15.png",
+      "review": "Inspected generated result for anatomy, work relevance and conceptual relationships. Labels and limitations remain live text.",
+      "destination": "public/images/story-diagrams/phil-sebastian-graphic-novel.webp"
+    },
+    {
+      "slug": "broken-pencil-studios",
+      "kind": "story",
+      "prompt": "Use case: illustration-story. Asset: classroom example story image. Fictional animator at a desk comparing a paper storyboard with a simple ball-motion study on a monitor. Equally spaced frame guides show a ball moving. One adult with a stylus in one hand, other hand resting on desk. Studio work, no floating symbols. Confident forest-green ink contours, flat sage and warm ivory planes, warm natural skin colours, strong coarse halftone shadows, fine crosshatching, textured uncoated print paper, restrained burnt-orange/slate-blue accents. Mature expressive fictional adults, bold silhouettes and selective perspective. No photorealism or 3D, no voxel/pixel art. Landscape 16:9 composition. No title, brand/logo, captions, green bottom strip, speech bubbles or watermark.",
+      "originalPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-ab8dc6b0-4e4c-45f9-834c-33aaf7b40f7e.png",
+      "review": "Inspected generated result for anatomy, work relevance and conceptual relationships. Labels and limitations remain live text.",
+      "destination": "public/images/examples/broken-pencil-studios-graphic-novel.webp"
+    },
+    {
+      "slug": "broken-pencil-studios",
+      "kind": "diagram",
+      "prompt": "Use case: scientific-educational. Asset: static teaching diagram for classroom site. Four-stage animation planning diagram, numbered circles1,2,3,4. 1 a question card indicated only by question mark; arrow to2 pencil storyboard; arrow to3 a horizontal strip of FOUR equal-duration frames each with one ball on same horizontal baseline, increasing horizontal displacement per frame to illustrate speeding up; arrow to4 a viewer looking at the sequence with magnifying glass; feedback arrow4to2. Sparse, simple, no detailed people or extra hands. All frames equal size, no bouncing ball. Clear simple illustrations separated by whitespace, not comic panels. Only numbered markers may contain text; all explanatory words supplied live in UI. Confident forest-green ink contours, flat sage and warm ivory planes, warm natural skin colours, strong coarse halftone shadows, fine crosshatching, textured uncoated print paper, restrained burnt-orange/slate-blue accents. Mature expressive fictional adults, bold silhouettes and selective perspective. No photorealism or 3D, no voxel/pixel art. Landscape 16:9 composition. No title, brand/logo, captions, green bottom strip, speech bubbles or watermark.",
+      "originalPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-3db67003-c401-4ec3-8067-7abd0625125a.png",
+      "review": "Inspected generated result for anatomy, work relevance and conceptual relationships. Labels and limitations remain live text.",
+      "destination": "public/images/story-diagrams/broken-pencil-studios-graphic-novel.webp"
+    },
+    {
+      "slug": "cpkc",
+      "kind": "story",
+      "prompt": "Use case: illustration-story. Asset: classroom example story image. Fictional rail operations worker in a calm control room studying a schematic track network on one monitor and a simple time-distance chart on another. Screens generic, no official commands, no readable text. Person seated in side profile, one hand on keyboard and one on desk. Distinct coloured lines on screens. Confident forest-green ink contours, flat sage and warm ivory planes, warm natural skin colours, strong coarse halftone shadows, fine crosshatching, textured uncoated print paper, restrained burnt-orange/slate-blue accents. Mature expressive fictional adults, bold silhouettes and selective perspective. No photorealism or 3D, no voxel/pixel art. Landscape 16:9 composition. No title, brand/logo, captions, green bottom strip, speech bubbles or watermark.",
+      "originalPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-00d6414f-81fd-4392-b981-ac765fa34fd7.png",
+      "review": "Inspected generated result for anatomy, work relevance and conceptual relationships. Labels and limitations remain live text.",
+      "destination": "public/images/examples/cpkc-graphic-novel.webp"
+    },
+    {
+      "slug": "cpkc",
+      "kind": "diagram",
+      "prompt": "Use case: scientific-educational. Asset: static teaching diagram. Four numbered green circles 1,2,3,4 over a four-stage conceptual planning sequence. 1 two small generic trains on separate track branches approaching a shared corridor; arrow to2 simple time-space plot with two coloured paths meeting at one point; arrow to3 magnifying glass highlighting that potential conflict; arrow to4 revised plot with paths separated in time. Blank graph axes, no precise numerical data. No train collision, signal commands or realistic dispatch instructions. Pure teaching analogy. Clear spacing and large directional arrowheads. No explanatory words, numbered markers only, live text will explain. Confident forest-green ink contours, flat sage and warm ivory planes, warm natural skin colours, strong coarse halftone shadows, fine crosshatching, textured uncoated print paper, restrained burnt-orange/slate-blue accents. Mature expressive fictional adults, bold silhouettes and selective perspective. No photorealism or 3D, no voxel/pixel art. Landscape 16:9 composition. No title, brand/logo, captions, green bottom strip, speech bubbles or watermark.",
+      "originalPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-b9c71376-8953-4c6e-8e37-39e3c305def5.png",
+      "review": "Inspected generated result for anatomy, work relevance and conceptual relationships. Labels and limitations remain live text.",
+      "destination": "public/images/story-diagrams/cpkc-graphic-novel.webp"
+    },
+    {
+      "slug": "watersmart",
+      "kind": "story",
+      "prompt": "Use case: illustration-story. Asset: classroom example story image. A fictional female water planner in her fifties comparing a large watershed map and three small supply-demand scenario graphs at a sunny office table. Bow-like river valley on map, urban buildings outside window. Exactly two hands, one resting on paper and one holding pencil. Graphs unlabeled and clearly illustrative. Confident forest-green ink contours, flat sage and warm ivory planes, warm natural skin colours, strong coarse halftone shadows, fine crosshatching, textured uncoated print paper, restrained burnt-orange/slate-blue accents. Mature expressive fictional adults, bold silhouettes and selective perspective. No photorealism or 3D, no voxel/pixel art. Landscape 16:9 composition. No title, brand/logo, captions, green bottom strip, speech bubbles or watermark.",
+      "originalPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-9716dc9a-a82c-43fa-bd10-bee7dc7bc71e.png",
+      "review": "Inspected generated result for anatomy, work relevance and conceptual relationships. Labels and limitations remain live text.",
+      "destination": "public/images/examples/watersmart-graphic-novel.webp"
+    },
+    {
+      "slug": "watersmart",
+      "kind": "diagram",
+      "prompt": "Remove the solid green strip along the bottom. Replace only that strip with warm ivory textured paper that blends into the background. Preserve all four stages, arrows, people and content. Do not add text or any new border.",
+      "originalPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-51876177-6d6c-4aa7-acd9-67333aa18597.png",
+      "editSource": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-061fd1fe-3ac2-416e-99b1-55cdf66fb194.png",
+      "review": "Inspected generated result for anatomy, work relevance and conceptual relationships. Labels and limitations remain live text.",
+      "destination": "public/images/story-diagrams/watersmart-graphic-novel.webp"
+    },
+    {
+      "slug": "integrated-sustainability",
+      "kind": "story",
+      "prompt": "Use case: illustration-story. Asset: classroom example story image. A fictional female process engineer in hard hat and safety glasses with a clipboard comparing a flow diagram to water-quality instruments beside generic enclosed treatment tanks and pipes. One person with two correctly connected arms. No open contaminated water or splash, no plant brand. Confident forest-green ink contours, flat sage and warm ivory planes, warm natural skin colours, strong coarse halftone shadows, fine crosshatching, textured uncoated print paper, restrained burnt-orange/slate-blue accents. Mature expressive fictional adults, bold silhouettes and selective perspective. No photorealism or 3D, no voxel/pixel art. Landscape 16:9 composition. No title, brand/logo, captions, green bottom strip, speech bubbles or watermark.",
+      "originalPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-6d71b3c0-fc2d-4d1f-893c-cd52c640106e.png",
+      "review": "Inspected generated result for anatomy, work relevance and conceptual relationships. Labels and limitations remain live text.",
+      "destination": "public/images/examples/integrated-sustainability-graphic-novel.webp"
+    },
+    {
+      "slug": "integrated-sustainability",
+      "kind": "diagram",
+      "prompt": "Use case: scientific-educational. Asset: static teaching diagram. Four numbered circles1,2,3,4. 1 sample jar and measurement probe beside incoming water pipe; arrow to2 generic closed treatment tank with inlet, main outlet and separate downward residual pipe to a closed residual container; arrow to3 testing vial and sensor on main treated-water outlet; arrow to4 operator control dial and maintenance wrench, feedback arrow returning to treatment tank. Clearly distinguish output water from residual waste. No claim drinkable, no molecular chemistry. Clear spacing and large directional arrowheads. No explanatory words, numbered markers only, live text will explain. Confident forest-green ink contours, flat sage and warm ivory planes, warm natural skin colours, strong coarse halftone shadows, fine crosshatching, textured uncoated print paper, restrained burnt-orange/slate-blue accents. Mature expressive fictional adults, bold silhouettes and selective perspective. No photorealism or 3D, no voxel/pixel art. Landscape 16:9 composition. No title, brand/logo, captions, green bottom strip, speech bubbles or watermark.",
+      "originalPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-154e91af-7b4a-43d0-8e2c-29a1db1a0935.png",
+      "review": "Inspected generated result for anatomy, work relevance and conceptual relationships. Labels and limitations remain live text.",
+      "destination": "public/images/story-diagrams/integrated-sustainability-graphic-novel.webp"
+    },
+    {
+      "slug": "trace-associates",
+      "kind": "story",
+      "prompt": "Use case: illustration-story. Asset: classroom example story image. A fictional Black field scientist kneeling safely on prairie ground, wearing clean gloves and safety glasses, carefully labeling a closed soil sample jar beside a simple site map. Clean sampling kit on ground. Exactly two connected arms and hands. No recognizable site or pollution plume. Confident forest-green ink contours, flat sage and warm ivory planes, warm natural skin colours, strong coarse halftone shadows, fine crosshatching, textured uncoated print paper, restrained burnt-orange/slate-blue accents. Mature expressive fictional adults, bold silhouettes and selective perspective. No photorealism or 3D, no voxel/pixel art. Landscape 16:9 composition. No title, brand/logo, captions, green bottom strip, speech bubbles or watermark.",
+      "originalPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-d1259aea-d1da-42dc-866e-e15b36a22ae5.png",
+      "review": "Inspected generated result for anatomy, work relevance and conceptual relationships. Labels and limitations remain live text.",
+      "destination": "public/images/examples/trace-associates-graphic-novel.webp"
+    },
+    {
+      "slug": "trace-associates",
+      "kind": "diagram",
+      "prompt": "Use case: scientific-educational. Asset: static teaching diagram. Four numbered circles1,2,3,4. 1 site map with question mark; arrow to2 systematic grid sampling plan and three closed soil sample jars; arrow to3 laboratory instrument and simple comparison chart; arrow to4 revised site map with highlighted sampling area, feedback arrow returning to2. No recognizable polluted neighbourhood, no hazard threshold numbers, no claim one sample represents whole site. Minimal people, show work through equipment. Clear spacing and large directional arrowheads. No explanatory words, numbered markers only, live text will explain. Confident forest-green ink contours, flat sage and warm ivory planes, warm natural skin colours, strong coarse halftone shadows, fine crosshatching, textured uncoated print paper, restrained burnt-orange/slate-blue accents. Mature expressive fictional adults, bold silhouettes and selective perspective. No photorealism or 3D, no voxel/pixel art. Landscape 16:9 composition. No title, brand/logo, captions, green bottom strip, speech bubbles or watermark.",
+      "originalPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-342efdb2-cd78-4cea-bc5a-f414e1c94ce1.png",
+      "review": "Inspected generated result for anatomy, work relevance and conceptual relationships. Labels and limitations remain live text.",
+      "destination": "public/images/story-diagrams/trace-associates-graphic-novel.webp"
+    },
+    {
+      "slug": "rjc-engineers",
+      "kind": "story",
+      "prompt": "Use case: illustration-story. Asset: classroom example story image. A fictional South Asian building-science specialist in a hardhat inspecting an exterior window joint using a small handheld meter. Generic unfinished building wall section visible beside the window, layers and insulation, no exact construction instructions. Work at ground level, two anatomically correct arms. Confident forest-green ink contours, flat sage and warm ivory planes, warm natural skin colours, strong coarse halftone shadows, fine crosshatching, textured uncoated print paper, restrained burnt-orange/slate-blue accents. Mature expressive fictional adults, bold silhouettes and selective perspective. No photorealism or 3D, no voxel/pixel art. Landscape 16:9 composition. No title, brand/logo, captions, green bottom strip, speech bubbles or watermark.",
+      "originalPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-f768ccd0-1678-4a81-8210-f2e573cad581.png",
+      "review": "Inspected generated result for anatomy, work relevance and conceptual relationships. Labels and limitations remain live text.",
+      "destination": "public/images/examples/rjc-engineers-graphic-novel.webp"
+    },
+    {
+      "slug": "rjc-engineers",
+      "kind": "diagram",
+      "prompt": "Use case: scientific-educational. Asset: static teaching diagram. Four numbered markers1,2,3,4. 1 a generic window with a small interior moisture stain; arrow to2 a wall section with orange arrows showing heat going from warm inside to cool outside, blue rain droplets outside and a separate air path at joint; arrow to3 inspection of window joint using a handheld meter; arrow to4 repair detail drawing and a repeat measurement. Generic conceptual layers, no exact vapour barrier rule, no claim all moisture excluded. NO persons needed beyond a single anatomically correct hand holding meter. Clear spacing, obvious directional arrowheads. No words except numbered markers. Pale ivory background extends to every edge; no bottom stripe. Confident forest-green ink contours, flat sage and warm ivory planes, warm natural skin colours, strong coarse halftone shadows, fine crosshatching, textured uncoated print paper, restrained burnt-orange/slate-blue accents. Mature expressive fictional adults, bold silhouettes and selective perspective. No photorealism or 3D, no voxel/pixel art. Landscape 16:9 composition. No title, brand/logo, captions, green bottom strip, speech bubbles or watermark.",
+      "originalPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-25769071-bc56-4bae-8b1d-3627a747cc88.png",
+      "review": "Inspected generated result for anatomy, work relevance and conceptual relationships. Labels and limitations remain live text.",
+      "destination": "public/images/story-diagrams/rjc-engineers-graphic-novel.webp"
+    },
+    {
+      "slug": "calgary-italian-bakery",
+      "kind": "story",
+      "prompt": "Use case: illustration-story. Asset: classroom example story image. A fictional commercial baker in white coat, hairnet and clean apron inspecting a dough transfer point on a stopped production line. A small tray collects dough trim; a digital scale and simple tally record nearby. One person, two hands clearly attached, no hands inside machinery. Background trays of bread. Confident forest-green ink contours, flat sage and warm ivory planes, warm natural skin colours, strong coarse halftone shadows, fine crosshatching, textured uncoated print paper, restrained burnt-orange/slate-blue accents. Mature expressive fictional adults, bold silhouettes and selective perspective. No photorealism or 3D, no voxel/pixel art. Landscape 16:9 composition. No title, brand/logo, captions, green bottom strip, speech bubbles or watermark.",
+      "originalPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-76624671-f4d8-4da7-b34c-661e2d730a79.png",
+      "review": "Inspected generated result for anatomy, work relevance and conceptual relationships. Labels and limitations remain live text.",
+      "destination": "public/images/examples/calgary-italian-bakery-graphic-novel.webp"
+    },
+    {
+      "slug": "calgary-italian-bakery",
+      "kind": "diagram",
+      "prompt": "Use case: scientific-educational. Asset: static teaching diagram. Four numbered circles1,2,3,4. 1 simple bakery flow: ingredients, dough, loaf, packing; arrow to2 separate labelled-by-shape waste trays at transfer, shaping and packing with a weighing scale; arrow to3 adjustment of one dough transfer chute while machinery is stopped, no people; arrow to4 compare two total-waste bar charts and two acceptable loaves. The charts are abstract teaching icons without numbers. No claim measured company savings. Clear spacing, obvious directional arrowheads. No words except numbered markers. Pale ivory background extends to every edge; no bottom stripe. Confident forest-green ink contours, flat sage and warm ivory planes, warm natural skin colours, strong coarse halftone shadows, fine crosshatching, textured uncoated print paper, restrained burnt-orange/slate-blue accents. Mature expressive fictional adults, bold silhouettes and selective perspective. No photorealism or 3D, no voxel/pixel art. Landscape 16:9 composition. No title, brand/logo, captions, green bottom strip, speech bubbles or watermark.",
+      "originalPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-fc40a60f-91f0-447f-8c1a-7525e5aeefab.png",
+      "review": "Inspected generated result for anatomy, work relevance and conceptual relationships. Labels and limitations remain live text.",
+      "destination": "public/images/story-diagrams/calgary-italian-bakery-graphic-novel.webp"
+    },
+    {
+      "slug": "joe-media-group",
+      "kind": "story",
+      "prompt": "Use case: illustration-story. Asset: classroom example story image. A fictional Black female editor and a male colourist comparing two shots of the same simple ceramic vase on two screens in a small studio. One shot has warmer light, the other cooler light. A camera on tripod and reflector stand in the background. Adults seated, anatomically correct arms and hands; no actors, film brands or recognizable scenes. Confident forest-green ink contours, flat sage and warm ivory planes, warm natural skin colours, strong coarse halftone shadows, fine crosshatching, textured uncoated print paper, restrained burnt-orange/slate-blue accents. Mature expressive fictional adults, bold silhouettes and selective perspective. No photorealism or 3D, no voxel/pixel art. Landscape 16:9 composition. No title, brand/logo, captions, green bottom strip, speech bubbles or watermark.",
+      "originalPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-c954d077-b46d-4df8-a490-fc61473d5d53.png",
+      "review": "Inspected generated result for anatomy, work relevance and conceptual relationships. Labels and limitations remain live text.",
+      "destination": "public/images/examples/joe-media-group-graphic-novel.webp"
+    },
+    {
+      "slug": "joe-media-group",
+      "kind": "diagram",
+      "prompt": "Use case: scientific-educational. Asset: static teaching diagram. Four numbered circles1,2,3,4. 1 camera and a lit ceramic vase: light arrow from lamp DOWN to vase, then arrow from vase into camera lens; arrow to2 editing timeline with two shots of same vase; arrow to3 two screens comparing warmer and cooler versions of same vase; arrow to4 a person watching the two-shot sequence. Show no light emitted by camera, no film brands, no text. Visible optical path in stage1. Clear spacing, obvious directional arrowheads. No words except numbered markers. Pale ivory background extends to every edge; no bottom stripe. Confident forest-green ink contours, flat sage and warm ivory planes, warm natural skin colours, strong coarse halftone shadows, fine crosshatching, textured uncoated print paper, restrained burnt-orange/slate-blue accents. Mature expressive fictional adults, bold silhouettes and selective perspective. No photorealism or 3D, no voxel/pixel art. Landscape 16:9 composition. No title, brand/logo, captions, green bottom strip, speech bubbles or watermark.",
+      "originalPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-3eb2efa6-fca3-4017-97c5-8d9eaba551d1.png",
+      "review": "Inspected generated result for anatomy, work relevance and conceptual relationships. Labels and limitations remain live text.",
+      "destination": "public/images/story-diagrams/joe-media-group-graphic-novel.webp"
+    },
+    {
+      "slug": "cbl-bakeries-cinnaroll",
+      "kind": "story",
+      "prompt": "Use case: illustration-story. Asset: classroom example story image. A fictional East Asian quality technician in hairnet, white coat and clean gloves weighing a cinnamon-roll pastry on a bench scale beside a production record and trays of similar pastries. One person, one hand adjusting the tray and another holding a pencil over paper, clearly connected arms. Closed equipment in background. Confident forest-green ink contours, flat sage and warm ivory planes, warm natural skin colours, strong coarse halftone shadows, fine crosshatching, textured uncoated print paper, restrained burnt-orange/slate-blue accents. Mature expressive fictional adults, bold silhouettes and selective perspective. No photorealism or 3D, no voxel/pixel art. Landscape 16:9 composition. No title, brand/logo, captions, green bottom strip, speech bubbles or watermark.",
+      "originalPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-2ffe273b-02bf-4d58-a27a-5613b8ff0f4b.png",
+      "review": "Inspected generated result for anatomy, work relevance and conceptual relationships. Labels and limitations remain live text.",
+      "destination": "public/images/examples/cbl-bakeries-cinnaroll-graphic-novel.webp"
+    },
+    {
+      "slug": "cbl-bakeries-cinnaroll",
+      "kind": "diagram",
+      "prompt": "Add a single clearly visible curved dark-green directional arrow from stage 3 at upper right DOWN toward stage 4 at lower middle, without covering the pastries, person or numeral 4. Preserve the entire rest of the image exactly. Do not change people or objects.",
+      "originalPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-3e368a93-203a-4a80-acd6-256646c868b9.png",
+      "editSource": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-bf5e8f2d-2f02-43b4-8e22-590f40a35cb5.png",
+      "review": "Inspected generated result for anatomy, work relevance and conceptual relationships. Labels and limitations remain live text.",
+      "destination": "public/images/story-diagrams/cbl-bakeries-cinnaroll-graphic-novel.webp"
+    },
+    {
+      "slug": "isl-engineering",
+      "kind": "story",
+      "prompt": "Use case: illustration-story. Asset: classroom example story image. A fictional civil technologist and environmental specialist at a safe overlook beside a creek crossing. They review one contour map on a waist-high field table. In background a modest single-span road bridge crosses above the creek with no pier in the water. Prairie city-edge environment, adults in safety vests, two arms each. Confident forest-green ink contours, flat sage and warm ivory planes, warm natural skin colours, strong coarse halftone shadows, fine crosshatching, textured uncoated print paper, restrained burnt-orange/slate-blue accents. Mature expressive fictional adults, bold silhouettes and selective perspective. No photorealism or 3D, no voxel/pixel art. Landscape 16:9 composition. No title, brand/logo, captions, green bottom strip, speech bubbles or watermark.",
+      "originalPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-cd150806-8e02-4edf-9ddb-0df16f4db5ce.png",
+      "review": "Inspected generated result for anatomy, work relevance and conceptual relationships. Labels and limitations remain live text.",
+      "destination": "public/images/examples/isl-engineering-graphic-novel.webp"
+    },
+    {
+      "slug": "isl-engineering",
+      "kind": "diagram",
+      "prompt": "Use case: scientific-educational. Asset: static teaching diagram. Four numbered circles1,2,3,4. 1 contour map with river habitat observations; arrow to2 two alternative road routes across terrain, each crosses creek once; arrow to3 generic single-span bridge safely above creek with road deck and separate pedestrian path; arrow to4 water sampling jar and vegetation observation notebook beside the creek. No environmental improvement claim. Simple process illustrations with explicit directional arrows and generous ivory whitespace. No words except numbered markers. Confident forest-green ink contours, flat sage and warm ivory planes, warm natural skin colours, strong coarse halftone shadows, fine crosshatching, textured uncoated print paper, restrained burnt-orange/slate-blue accents. Mature expressive fictional adults, bold silhouettes and selective perspective. No photorealism or 3D, no voxel/pixel art. Landscape 16:9 composition. No title, brand/logo, captions, green bottom strip, speech bubbles or watermark.",
+      "originalPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-8b34839b-12a0-4b2e-8b70-b06c5f00bc98.png",
+      "review": "Inspected generated result for anatomy, work relevance and conceptual relationships. Labels and limitations remain live text.",
+      "destination": "public/images/story-diagrams/isl-engineering-graphic-novel.webp"
+    },
+    {
+      "slug": "clearbakk",
+      "kind": "story",
+      "prompt": "Use case: illustration-story. Asset: classroom example story image. A fictional middle-aged male process designer reviewing a small generic modular water-treatment skid in a workshop. Clear arrangement of tanks, pumps, access aisle and connected pipes. Designer points with one hand at a fitting while holding a plan in the other. Exactly two hands. No proprietary process claims, no brand. Confident forest-green ink contours, flat sage and warm ivory planes, warm natural skin colours, strong coarse halftone shadows, fine crosshatching, textured uncoated print paper, restrained burnt-orange/slate-blue accents. Mature expressive fictional adults, bold silhouettes and selective perspective. No photorealism or 3D, no voxel/pixel art. Landscape 16:9 composition. No title, brand/logo, captions, green bottom strip, speech bubbles or watermark.",
+      "originalPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-26be119a-7b37-4ebb-b272-09fbb74d7a86.png",
+      "review": "Inspected generated result for anatomy, work relevance and conceptual relationships. Labels and limitations remain live text.",
+      "destination": "public/images/examples/clearbakk-graphic-novel.webp"
+    },
+    {
+      "slug": "clearbakk",
+      "kind": "diagram",
+      "prompt": "Use case: scientific-educational. Asset: static teaching diagram. Four numbered circles1,2,3,4. 1 incoming-water sample and probe; arrow to2 a schematic sequence of two treatment stages with a separate residual-output branch; arrow to3 a generic compact skid with connected tanks,pump and clear maintenance access; arrow to4 a sample of the main output being tested by a meter, with residuals in a separate closed container. Include water-flow arrowheads, no drinking tap or disappearance of waste. Simple generous ivory whitespace. No words except numbered markers. Confident forest-green ink contours, flat sage and warm ivory planes, warm natural skin colours, strong coarse halftone shadows, fine crosshatching, textured uncoated print paper, restrained burnt-orange/slate-blue accents. Mature expressive fictional adults, bold silhouettes and selective perspective. No photorealism or 3D, no voxel/pixel art. Landscape 16:9 composition. No title, brand/logo, captions, green bottom strip, speech bubbles or watermark.",
+      "originalPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-add54fb5-c089-4a01-b314-34a6d33a2317.png",
+      "review": "Inspected generated result for anatomy, work relevance and conceptual relationships. Labels and limitations remain live text.",
+      "destination": "public/images/story-diagrams/clearbakk-graphic-novel.webp"
+    }
+  ],
+  "superseded": [
+    {
+      "slug": "watersmart",
+      "kind": "diagram",
+      "prompt": "Use case: scientific-educational. Asset: static teaching diagram. Four numbered circles1,2,3,4. 1 watershed map and city water-use symbols; arrow to2 three small alternative future supply-demand scenario graphs, clearly different possible futures; arrow to3 compare water conservation and reuse options using a building, reservoir and treatment-tank symbols; arrow to4 monitoring gauge and notebook with curved feedback arrow to2. No drinking-water tap connected directly to reuse, no guarantee or checkmark promising success. Clear spacing and large directional arrowheads. No explanatory words, numbered markers only, live text will explain. Confident forest-green ink contours, flat sage and warm ivory planes, warm natural skin colours, strong coarse halftone shadows, fine crosshatching, textured uncoated print paper, restrained burnt-orange/slate-blue accents. Mature expressive fictional adults, bold silhouettes and selective perspective. No photorealism or 3D, no voxel/pixel art. Landscape 16:9 composition. No title, brand/logo, captions, green bottom strip, speech bubbles or watermark.",
+      "originalPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-061fd1fe-3ac2-416e-99b1-55cdf66fb194.png",
+      "status": "superseded",
+      "reason": "Removed green bottom stripe"
+    },
+    {
+      "slug": "cbl-bakeries-cinnaroll",
+      "kind": "diagram",
+      "prompt": "Use case: scientific-educational. Asset: static teaching diagram. Four numbered circles1,2,3,4. 1 pastry size template and simple criteria sheet with geometric marks only; arrow to2 a tray of cinnamon-roll pastries and a batch tag without text; arrow to3 three pastries of slightly different sizes on a scale with a simple dot plot illustrating variation; arrow to4 a production setting dial and a comparison sheet, curved arrow back2. No average falsely masking variation, no food-handling hands, no numeric company measurements. Clear spacing, obvious directional arrowheads. No words except numbered markers. Pale ivory background extends to every edge; no bottom stripe. Confident forest-green ink contours, flat sage and warm ivory planes, warm natural skin colours, strong coarse halftone shadows, fine crosshatching, textured uncoated print paper, restrained burnt-orange/slate-blue accents. Mature expressive fictional adults, bold silhouettes and selective perspective. No photorealism or 3D, no voxel/pixel art. Landscape 16:9 composition. No title, brand/logo, captions, green bottom strip, speech bubbles or watermark.",
+      "originalPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-bf5e8f2d-2f02-43b4-8e22-590f40a35cb5.png",
+      "status": "superseded",
+      "reason": "Added missing arrow from step 3 to step 4"
+    }
+  ]
+}

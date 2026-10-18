@@ -1,0 +1,379 @@
+[
+  {
+    "url": "https://www.o2design.com/dale-hodges-park",
+    "retrieved_at": "2026-10-17T14:07:38.107692+00:00",
+    "status": 200,
+    "final_url": "https://www.o2design.com/dale-hodges-park",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-01.html",
+    "sha256": "3e45106f595c03d431441e95766def0864b65abbf33f441b787287453438e430",
+    "bytes": 120882,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://www.o2design.com/contact-us",
+    "retrieved_at": "2026-10-17T14:07:38.108260+00:00",
+    "status": 200,
+    "final_url": "https://www.o2design.com/contact-us",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-02.html",
+    "sha256": "1a0baba3586b8b90df64f72a9e2e6a5d5844a27fa1b7423e3f462591cb09c989",
+    "bytes": 93293,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://www.entuitive.com/post/designing-for-constructability-over-active-rail-lines",
+    "retrieved_at": "2026-10-17T14:07:38.108430+00:00",
+    "status": 200,
+    "final_url": "https://www.entuitive.com/post/designing-for-constructability-over-active-rail-lines",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-03.html",
+    "sha256": "1c04ed1e310776104a37fcd9cf8bd6f8700ad7ff23c1a07f9954fcfebf368027",
+    "bytes": 1146178,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://view.ceros.com/entuitive/new-calgary-library-big-story",
+    "retrieved_at": "2026-10-17T14:07:38.108522+00:00",
+    "status": 200,
+    "final_url": "https://view.ceros.com/entuitive/new-calgary-library-big-story",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-04.html",
+    "sha256": "337d8d1f78122e00823a8b682f19ccae6829cf7e0fafb9811746ee29a36b89d4",
+    "bytes": 27603,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://www.calgarymlc.ca/projects/central-library",
+    "retrieved_at": "2026-10-17T14:07:38.108607+00:00",
+    "status": 200,
+    "final_url": "https://www.calgarymlc.ca/projects/central-library",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-05.html",
+    "sha256": "b6d5275aa71f74a4e0c74a3e163eeab94bab527bc76634ff2e1d1292d28c6939",
+    "bytes": 500507,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://philsebastian.com/pages/locations/simmons",
+    "retrieved_at": "2026-10-17T14:07:38.108700+00:00",
+    "status": 200,
+    "final_url": "https://philsebastian.com/pages/locations/simmons",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-06.html",
+    "sha256": "93b3b231e31b240fddc10fc2e79e70fc38d9b7fa13e0cf35f648d994f2df3202",
+    "bytes": 301507,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://philsebastian.com/pages/our-coffee-approach",
+    "retrieved_at": "2026-10-17T14:07:38.108808+00:00",
+    "status": 200,
+    "final_url": "https://philsebastian.com/pages/our-coffee-approach",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-07.html",
+    "sha256": "5139043da7cbc9630fac77f4745055ba41868694b4eef42d30bbda1c5274aab2",
+    "bytes": 489352,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://www.brokenpencilstudios.ca/",
+    "retrieved_at": "2026-10-17T14:07:38.108895+00:00",
+    "status": 200,
+    "final_url": "https://www.brokenpencilstudios.ca/",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-08.html",
+    "sha256": "7b804a92d4b400e7ce1e1d1d04522411c63945a06c2edd0213cfa47f39e6366d",
+    "bytes": 68866,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://s21.q4cdn.com/736796105/files/doc_financials/2025/ar/v2/CPKC-Annual-Report-2025-Final-Web.pdf",
+    "retrieved_at": "2026-10-17T14:08:25.415406+00:00",
+    "status": 200,
+    "final_url": "https://s21.q4cdn.com/736796105/files/doc_financials/2025/ar/v2/CPKC-Annual-Report-2025-Final-Web.pdf",
+    "capture_status": "saved",
+    "previous_attempt_error": "Capture exceeds 6MB bound",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/cpkc-2025-report.pdf",
+    "bytes": 18205072,
+    "sha256": "452856be75e538134f6f4f96eea4743d67d1c14eac8df4fec312adaa3bca911f"
+  },
+  {
+    "url": "https://newsroom.calgary.ca/ensuring-a-reliable-water-supply-into-the-next-century-how-calgarys-water-security-roadmap-will-get-us-there/",
+    "retrieved_at": "2026-10-17T14:07:38.375678+00:00",
+    "status": 200,
+    "final_url": "https://newsroom.calgary.ca/ensuring-a-reliable-water-supply-into-the-next-century-how-calgarys-water-security-roadmap-will-get-us-there/",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-10.html",
+    "sha256": "a46ac7c42c69ab7df25ba82c8ad6c16c66664053f105d79ef1e9bc5b5acdb63f",
+    "bytes": 54310,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://watersmartsolutions.ca/stormwater-is-flowing-through-the-first-stages-of-the-newly-constructed-csmi-stormwater-system/",
+    "retrieved_at": "2026-10-17T14:07:38.504122+00:00",
+    "status": 200,
+    "final_url": "https://watersmartsolutions.ca/stormwater-is-flowing-through-the-first-stages-of-the-newly-constructed-csmi-stormwater-system/",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-11.html",
+    "sha256": "31fc3368a9bea134fb4bf03ba906c3e7faca95371f0092013988c25398593f09",
+    "bytes": 2017,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://www.integratedsustainability.com/about-us/",
+    "retrieved_at": "2026-10-17T14:07:38.504323+00:00",
+    "status": 200,
+    "final_url": "https://www.integratedsustainability.com/about-us/",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-12.html",
+    "sha256": "22332d6d9de63856acebb19a37a4ff0fde57accf63952e0be16f2b35e390b259",
+    "bytes": 563980,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://www.integratedsustainability.com/services/",
+    "retrieved_at": "2026-10-17T14:07:38.514074+00:00",
+    "status": 200,
+    "final_url": "https://www.integratedsustainability.com/services/",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-13.html",
+    "sha256": "7d3543db92a82807d135b9b5693062fe977ba06373b8f8a19934dc337bbd8e7e",
+    "bytes": 609159,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://traceassociates.ca/contact-us/calgary/",
+    "retrieved_at": "2026-10-17T14:07:38.595975+00:00",
+    "status": 200,
+    "final_url": "https://traceassociates.ca/contact-us/calgary/",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-14.html",
+    "sha256": "220540ed5d531d5dc2383135b044f208982d8b261a233c44ae50ed9a7c9724c9",
+    "bytes": 215646,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://traceassociates.ca/practice-area/remediation-and-risk/",
+    "retrieved_at": "2026-10-17T14:07:38.698893+00:00",
+    "status": 200,
+    "final_url": "https://traceassociates.ca/practice-area/remediation-and-risk/",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-15.html",
+    "sha256": "46e18953703ae6a451e5b6b7b0e6abfb33eb7f2a372988087da41a5843aab2c1",
+    "bytes": 176454,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://www.rjc.ca/location-details/calgary.html",
+    "retrieved_at": "2026-10-17T14:07:38.705818+00:00",
+    "status": 200,
+    "final_url": "https://www.rjc.ca/location-details/calgary.html",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-16.html",
+    "sha256": "4524567b1623b19562e7e7a6f4403c75ed06e53eafbcb5b730f76d54eba90b08",
+    "bytes": 303816,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://www.cibl.com/",
+    "retrieved_at": "2026-10-17T14:07:38.765075+00:00",
+    "status": 200,
+    "final_url": "https://www.cibl.com/",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-17.html",
+    "sha256": "432a76d5d8cdf9bbdf72f67579b4092be287e28c196bcf24fe2867fbee600d27",
+    "bytes": 11703,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://www.cibl.com/faq",
+    "retrieved_at": "2026-10-17T14:07:38.844448+00:00",
+    "status": 200,
+    "final_url": "https://www.cibl.com/faq",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-18.html",
+    "sha256": "6e8356c7fb4db41c267a97248feae1019ceafc847393a45702a8a56b624e5c7d",
+    "bytes": 15163,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://joemedia.tv/about-us",
+    "retrieved_at": "2026-10-17T14:07:38.931205+00:00",
+    "status": 200,
+    "final_url": "https://joemedia.tv/about-us",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-19.html",
+    "sha256": "5d1a2926da3ff872561b77dc82de36ab7b5f8afafabcf5c87061e46cfbfa35bd",
+    "bytes": 298629,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://joemedia.tv/corporate",
+    "retrieved_at": "2026-10-17T14:07:38.969543+00:00",
+    "status": 200,
+    "final_url": "https://joemedia.tv/corporate",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-20.html",
+    "sha256": "463cb0bd71ddbe4ba0dde09ee65b9c7e4be7ac668d170a70c27477da925e2257",
+    "bytes": 459016,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://joemedia.tv/contact",
+    "retrieved_at": "2026-10-17T14:07:39.054740+00:00",
+    "status": 200,
+    "final_url": "https://joemedia.tv/contact",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-21.html",
+    "sha256": "667149f279fd1c675ecc9b45fbcdf670bca56b35088ce70d6b292f5baced08e3",
+    "bytes": 442761,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://eccorecycling.com/",
+    "retrieved_at": "2026-10-17T14:07:39.118983+00:00",
+    "status": 200,
+    "final_url": "https://eccorecycling.com/",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-22.html",
+    "sha256": "6a43d6c326451b7d99aedab80faaf194440cdc1731972645e43da4d987734191",
+    "bytes": 92187,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://www.calgary.ca/emergencies/land-fill-fire.html?redirect=%2Flandfillfire",
+    "retrieved_at": "2026-10-17T14:07:39.138659+00:00",
+    "status": 200,
+    "final_url": "https://www.calgary.ca/emergencies/land-fill-fire.html?redirect=%2Flandfillfire",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-23.html",
+    "sha256": "340845566f3cd69867fbe5264afb2d19fd41468d031a3945225a446ab33be355",
+    "bytes": 164313,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://www.cascades.com/en/about-us/our-company/cascades-worldwide/recycling-centres",
+    "retrieved_at": "2026-10-17T14:07:39.252832+00:00",
+    "status": 200,
+    "final_url": "https://www.cascades.com/en/about-us/our-company/cascades-worldwide/recycling-centres",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-24.html",
+    "sha256": "777c04bef4eedb260f56750b2d97332a4b3f6d47c5a7f28ffd783476b86ee672",
+    "bytes": 111864,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://newsroom.calgary.ca/new-sorting-facility-for-city-of-calgary-recycling-program/",
+    "retrieved_at": "2026-10-17T14:07:39.393276+00:00",
+    "status": 200,
+    "final_url": "https://newsroom.calgary.ca/new-sorting-facility-for-city-of-calgary-recycling-program/",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-25.html",
+    "sha256": "4b570296d788aa16949a154c9c0d90863d0ffefdd0a0af6f888e56021101172e",
+    "bytes": 54301,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://www.cinnaroll.com/",
+    "retrieved_at": "2026-10-17T14:07:39.453531+00:00",
+    "status": 200,
+    "final_url": "https://www.cinnaroll.com/",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-26.html",
+    "sha256": "376f537968cd96c5b235f57024c63faa1d8d36fd0bb829c3ead054f88356865b",
+    "bytes": 971271,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://www.clifton.ca/",
+    "retrieved_at": "2026-10-17T14:07:39.531148+00:00",
+    "status": 200,
+    "final_url": "https://www.clifton.ca/",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-27.html",
+    "sha256": "ab152e8a4d76224c66c8b8f0fcd04419a1d128ff7739135d96b75a10cf9c4b51",
+    "bytes": 123314,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://www.clifton.ca/services/specialty/",
+    "retrieved_at": "2026-10-17T14:07:39.535917+00:00",
+    "status": 200,
+    "final_url": "https://www.clifton.ca/services/specialty/",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-28.html",
+    "sha256": "3809e3bb9a08391a610834676f439a0345b25eb8dc77488f2ea29bc0a2243148",
+    "bytes": 293539,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://islengineering.com/about/our-offices/",
+    "retrieved_at": "2026-10-17T14:07:39.600632+00:00",
+    "status": 200,
+    "final_url": "https://islengineering.com/about/our-offices/",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-29.html",
+    "sha256": "980c341b2cf8eed23fc3127a0c133aeffd866ef1e94d0f33bb8defe52fb91c34",
+    "bytes": 157233,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://islengineering.com/projects/",
+    "retrieved_at": "2026-10-17T14:07:39.632887+00:00",
+    "status": 200,
+    "final_url": "https://islengineering.com/projects/",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-30.html",
+    "sha256": "8d8b6f4296375aa412b8da2fcb099986f0e9604bd8657ee7d10d80380195ccc6",
+    "bytes": 156115,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://clearbakk.com/about-us/",
+    "retrieved_at": "2026-10-17T14:07:39.829913+00:00",
+    "status": 200,
+    "final_url": "https://clearbakk.com/about-us/",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-31.html",
+    "sha256": "d9ac956965782fb55242fbb88b4638840009ec86b48df52c62429e423957d710",
+    "bytes": 135258,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://clearbakk.com/",
+    "retrieved_at": "2026-10-17T14:07:39.837364+00:00",
+    "status": 200,
+    "final_url": "https://clearbakk.com/",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-32.html",
+    "sha256": "0565c4d66bfe8b86b2c38ede8cc4685d345d751125bdaa852b672b6357b27180",
+    "bytes": 129043,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://ised-isde.canada.ca/site/investment-canada-act/en/node/241975",
+    "retrieved_at": "2026-10-17T14:07:39.848367+00:00",
+    "status": 200,
+    "final_url": "https://ised-isde.canada.ca/site/investment-canada-act/en/node/241975",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-33.html",
+    "sha256": "2c0bdcdb1ab2e9973211b09a7cfcb60039670b189a614205db2ed4da9da9e081",
+    "bytes": 66827,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://www.bmacanada.org/community-member/montrose-environmental/",
+    "retrieved_at": "2026-10-17T14:07:40.052710+00:00",
+    "status": 200,
+    "final_url": "https://www.bmacanada.org/community-member/montrose-environmental/",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-34.html",
+    "sha256": "f900f79646566d4719135bcd73ef9d707532c12a99b64411d3d2aff32b1d4d23",
+    "bytes": 239617,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://go.montrose-env.com/montrose-in-canada",
+    "retrieved_at": "2026-10-17T14:07:40.205736+00:00",
+    "status": 200,
+    "final_url": "https://www.onterris.com/solutions",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-35.html",
+    "sha256": "cdb0e074c3c576866919beb4f466737b023eeb6605f583428a8c0781c60ba5c4",
+    "bytes": 284662,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://www.clearwatercalgary.com/",
+    "retrieved_at": "2026-10-17T14:07:40.223021+00:00",
+    "capture_status": "unavailable",
+    "error": "HTTP Error 403: Bad Behavior"
+  },
+  {
+    "url": "https://www.puppetstuffcanada.ca/about",
+    "retrieved_at": "2026-10-17T14:07:40.369746+00:00",
+    "status": 200,
+    "final_url": "https://www.puppetstuffcanada.ca/about",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-37.html",
+    "sha256": "3388cfe5bd0d5ef59a9b1716eb2310f7d1914a6c57f3035572557094022db0b9",
+    "bytes": 740238,
+    "capture_status": "saved"
+  },
+  {
+    "url": "https://www.puppetstuffcanada.ca/contact",
+    "retrieved_at": "2026-10-17T14:07:40.583493+00:00",
+    "status": 200,
+    "final_url": "https://www.puppetstuffcanada.ca/contact",
+    "saved_path": "docs/validation/job-reviews/company-discovery/2026-10-17/evidence/source-38.html",
+    "sha256": "e308a0c954e02a78a4af746031bc902861208044c36bbefdbd00d3abfddd1a1a",
+    "bytes": 761187,
+    "capture_status": "saved"
+  }
+]

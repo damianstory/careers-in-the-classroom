@@ -1,9 +1,11 @@
+import { octoberRoles } from "./calgary-october-17";
 import { expansionRoles } from "./calgary-expansion";
 import type { RoleProfile } from "./types";
 
 // General explanations of each kind of work, written by us. Company-specific evidence
 // lives on the organization-role link, not here.
 export const roleProfiles: RoleProfile[] = [
+  ...octoberRoles,
   ...expansionRoles,
   {
     id: "atmospheric-science",

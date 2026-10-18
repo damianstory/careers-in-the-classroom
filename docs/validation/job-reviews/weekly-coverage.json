@@ -1,5 +1,5 @@
 {
-  "updated_on": "2026-10-12",
+  "updated_on": "2026-10-17",
   "source_collection": "src/content/examples.ts",
   "examples": [
     {
@@ -82,6 +82,310 @@
           "last_review_packet": "all-examples/2026-10-05-weekly/review.md"
         }
       ]
+    },
+    {
+      "example_slug": "botaneco",
+      "featured_company": "Botaneco",
+      "first_discovered_on": "2026-10-16",
+      "active": true,
+      "last_attempted_on": null,
+      "last_completed_on": null,
+      "deferred_reason": "Newly featured; eligible for next Monday job-evidence maintenance",
+      "full_company_research_completed_on": "2026-10-15"
+    },
+    {
+      "example_slug": "nanalysis",
+      "featured_company": "Nanalysis",
+      "first_discovered_on": "2026-10-16",
+      "active": true,
+      "last_attempted_on": null,
+      "last_completed_on": null,
+      "deferred_reason": "Newly featured; eligible for next Monday job-evidence maintenance",
+      "full_company_research_completed_on": "2026-10-15"
+    },
+    {
+      "example_slug": "exergy-solutions",
+      "featured_company": "Exergy Solutions",
+      "first_discovered_on": "2026-10-16",
+      "active": true,
+      "last_attempted_on": null,
+      "last_completed_on": null,
+      "deferred_reason": "Newly featured; eligible for next Monday job-evidence maintenance",
+      "full_company_research_completed_on": "2026-10-15"
+    },
+    {
+      "example_slug": "livestock-water-recycling",
+      "featured_company": "Livestock Water Recycling",
+      "first_discovered_on": "2026-10-16",
+      "active": true,
+      "last_attempted_on": null,
+      "last_completed_on": null,
+      "deferred_reason": "Newly featured; eligible for next Monday job-evidence maintenance",
+      "full_company_research_completed_on": "2026-10-15"
+    },
+    {
+      "example_slug": "avmax",
+      "featured_company": "Avmax",
+      "first_discovered_on": "2026-10-16",
+      "active": true,
+      "last_attempted_on": null,
+      "last_completed_on": null,
+      "deferred_reason": "Newly featured; eligible for next Monday job-evidence maintenance",
+      "full_company_research_completed_on": "2026-10-15"
+    },
+    {
+      "example_slug": "northern-rna",
+      "featured_company": "Northern RNA",
+      "first_discovered_on": "2026-10-16",
+      "active": true,
+      "last_attempted_on": null,
+      "last_completed_on": null,
+      "deferred_reason": "Newly featured; eligible for next Monday job-evidence maintenance",
+      "full_company_research_completed_on": "2026-10-15"
+    },
+    {
+      "example_slug": "aerium-analytics",
+      "featured_company": "AERIUM Analytics",
+      "first_discovered_on": "2026-10-16",
+      "active": true,
+      "last_attempted_on": null,
+      "last_completed_on": null,
+      "deferred_reason": "Newly featured; eligible for next Monday job-evidence maintenance",
+      "full_company_research_completed_on": "2026-10-15"
+    },
+    {
+      "example_slug": "geologicai",
+      "featured_company": "GeologicAI",
+      "first_discovered_on": "2026-10-16",
+      "active": true,
+      "last_attempted_on": null,
+      "last_completed_on": null,
+      "deferred_reason": "Newly featured; eligible for next Monday job-evidence maintenance",
+      "full_company_research_completed_on": "2026-10-15"
+    },
+    {
+      "example_slug": "tangent-design-engineering",
+      "featured_company": "Tangent Design Engineering",
+      "first_discovered_on": "2026-10-16",
+      "active": true,
+      "last_attempted_on": null,
+      "last_completed_on": null,
+      "deferred_reason": "Newly featured; eligible for next Monday job-evidence maintenance",
+      "full_company_research_completed_on": "2026-10-15"
+    },
+    {
+      "example_slug": "foremost",
+      "featured_company": "Foremost",
+      "first_discovered_on": "2026-10-16",
+      "active": true,
+      "last_attempted_on": null,
+      "last_completed_on": null,
+      "deferred_reason": "Newly featured; eligible for next Monday job-evidence maintenance",
+      "full_company_research_completed_on": "2026-10-15"
+    },
+    {
+      "example_slug": "carbonova",
+      "featured_company": "Carbonova",
+      "first_discovered_on": "2026-10-16",
+      "active": true,
+      "last_attempted_on": null,
+      "last_completed_on": null,
+      "deferred_reason": "Newly featured; eligible for next Monday job-evidence maintenance",
+      "full_company_research_completed_on": "2026-10-15"
+    },
+    {
+      "example_slug": "summit-lithium-technologies",
+      "featured_company": "Summit Lithium Technologies",
+      "first_discovered_on": "2026-10-16",
+      "active": true,
+      "last_attempted_on": null,
+      "last_completed_on": null,
+      "deferred_reason": "Newly featured; eligible for next Monday job-evidence maintenance",
+      "full_company_research_completed_on": "2026-10-15"
+    },
+    {
+      "example_slug": "veerum",
+      "featured_company": "VEERUM",
+      "first_discovered_on": "2026-10-16",
+      "active": true,
+      "last_attempted_on": null,
+      "last_completed_on": null,
+      "deferred_reason": "Newly featured; eligible for next Monday job-evidence maintenance",
+      "full_company_research_completed_on": "2026-10-15"
+    },
+    {
+      "example_slug": "eguana-technologies",
+      "featured_company": "Eguana Technologies",
+      "first_discovered_on": "2026-10-16",
+      "active": true,
+      "last_attempted_on": null,
+      "last_completed_on": null,
+      "deferred_reason": "Newly featured; eligible for next Monday job-evidence maintenance",
+      "full_company_research_completed_on": "2026-10-15"
+    },
+    {
+      "example_slug": "ftg-aerospace-calgary",
+      "featured_company": "FTG Aerospace Calgary (formerly FLYHT)",
+      "first_discovered_on": "2026-10-16",
+      "active": true,
+      "last_attempted_on": null,
+      "last_completed_on": null,
+      "deferred_reason": "Newly featured; eligible for next Monday job-evidence maintenance",
+      "full_company_research_completed_on": "2026-10-15"
+    },
+    {
+      "example_slug": "o2-planning-design",
+      "featured_company": "O2 Planning and Design",
+      "first_discovered_on": "2026-10-17",
+      "active": true,
+      "last_attempted_on": null,
+      "last_completed_on": null,
+      "deferred_reason": "Newly featured locally; eligible for next Monday job-evidence maintenance",
+      "full_company_research_completed_on": "2026-10-17",
+      "implementation_record": "docs/validation/full-examples/2026-10-17/implementation.md"
+    },
+    {
+      "example_slug": "entuitive",
+      "featured_company": "Entuitive",
+      "first_discovered_on": "2026-10-17",
+      "active": true,
+      "last_attempted_on": null,
+      "last_completed_on": null,
+      "deferred_reason": "Newly featured locally; eligible for next Monday job-evidence maintenance",
+      "full_company_research_completed_on": "2026-10-17",
+      "implementation_record": "docs/validation/full-examples/2026-10-17/implementation.md"
+    },
+    {
+      "example_slug": "phil-sebastian",
+      "featured_company": "Phil & Sebastian Coffee Roasters",
+      "first_discovered_on": "2026-10-17",
+      "active": true,
+      "last_attempted_on": null,
+      "last_completed_on": null,
+      "deferred_reason": "Newly featured locally; eligible for next Monday job-evidence maintenance",
+      "full_company_research_completed_on": "2026-10-17",
+      "implementation_record": "docs/validation/full-examples/2026-10-17/implementation.md"
+    },
+    {
+      "example_slug": "broken-pencil-studios",
+      "featured_company": "Broken Pencil Studios",
+      "first_discovered_on": "2026-10-17",
+      "active": true,
+      "last_attempted_on": null,
+      "last_completed_on": null,
+      "deferred_reason": "Newly featured locally; eligible for next Monday job-evidence maintenance",
+      "full_company_research_completed_on": "2026-10-17",
+      "implementation_record": "docs/validation/full-examples/2026-10-17/implementation.md"
+    },
+    {
+      "example_slug": "cpkc",
+      "featured_company": "CPKC",
+      "first_discovered_on": "2026-10-17",
+      "active": true,
+      "last_attempted_on": null,
+      "last_completed_on": null,
+      "deferred_reason": "Newly featured locally; eligible for next Monday job-evidence maintenance",
+      "full_company_research_completed_on": "2026-10-17",
+      "implementation_record": "docs/validation/full-examples/2026-10-17/implementation.md"
+    },
+    {
+      "example_slug": "watersmart",
+      "featured_company": "WaterSMART — a Hazen company",
+      "first_discovered_on": "2026-10-17",
+      "active": true,
+      "last_attempted_on": null,
+      "last_completed_on": null,
+      "deferred_reason": "Newly featured locally; eligible for next Monday job-evidence maintenance",
+      "full_company_research_completed_on": "2026-10-17",
+      "implementation_record": "docs/validation/full-examples/2026-10-17/implementation.md"
+    },
+    {
+      "example_slug": "integrated-sustainability",
+      "featured_company": "Integrated Sustainability",
+      "first_discovered_on": "2026-10-17",
+      "active": true,
+      "last_attempted_on": null,
+      "last_completed_on": null,
+      "deferred_reason": "Newly featured locally; eligible for next Monday job-evidence maintenance",
+      "full_company_research_completed_on": "2026-10-17",
+      "implementation_record": "docs/validation/full-examples/2026-10-17/implementation.md"
+    },
+    {
+      "example_slug": "trace-associates",
+      "featured_company": "Trace Associates",
+      "first_discovered_on": "2026-10-17",
+      "active": true,
+      "last_attempted_on": null,
+      "last_completed_on": null,
+      "deferred_reason": "Newly featured locally; eligible for next Monday job-evidence maintenance",
+      "full_company_research_completed_on": "2026-10-17",
+      "implementation_record": "docs/validation/full-examples/2026-10-17/implementation.md"
+    },
+    {
+      "example_slug": "rjc-engineers",
+      "featured_company": "RJC Engineers",
+      "first_discovered_on": "2026-10-17",
+      "active": true,
+      "last_attempted_on": null,
+      "last_completed_on": null,
+      "deferred_reason": "Newly featured locally; eligible for next Monday job-evidence maintenance",
+      "full_company_research_completed_on": "2026-10-17",
+      "implementation_record": "docs/validation/full-examples/2026-10-17/implementation.md"
+    },
+    {
+      "example_slug": "calgary-italian-bakery",
+      "featured_company": "Calgary Italian Bakery",
+      "first_discovered_on": "2026-10-17",
+      "active": true,
+      "last_attempted_on": null,
+      "last_completed_on": null,
+      "deferred_reason": "Newly featured locally; eligible for next Monday job-evidence maintenance",
+      "full_company_research_completed_on": "2026-10-17",
+      "implementation_record": "docs/validation/full-examples/2026-10-17/implementation.md"
+    },
+    {
+      "example_slug": "joe-media-group",
+      "featured_company": "Joe Media Group",
+      "first_discovered_on": "2026-10-17",
+      "active": true,
+      "last_attempted_on": null,
+      "last_completed_on": null,
+      "deferred_reason": "Newly featured locally; eligible for next Monday job-evidence maintenance",
+      "full_company_research_completed_on": "2026-10-17",
+      "implementation_record": "docs/validation/full-examples/2026-10-17/implementation.md"
+    },
+    {
+      "example_slug": "cbl-bakeries-cinnaroll",
+      "featured_company": "CBL Bakeries / Cinnaroll",
+      "first_discovered_on": "2026-10-17",
+      "active": true,
+      "last_attempted_on": null,
+      "last_completed_on": null,
+      "deferred_reason": "Newly featured locally; eligible for next Monday job-evidence maintenance",
+      "full_company_research_completed_on": "2026-10-17",
+      "implementation_record": "docs/validation/full-examples/2026-10-17/implementation.md"
+    },
+    {
+      "example_slug": "isl-engineering",
+      "featured_company": "ISL Engineering",
+      "first_discovered_on": "2026-10-17",
+      "active": true,
+      "last_attempted_on": null,
+      "last_completed_on": null,
+      "deferred_reason": "Newly featured locally; eligible for next Monday job-evidence maintenance",
+      "full_company_research_completed_on": "2026-10-17",
+      "implementation_record": "docs/validation/full-examples/2026-10-17/implementation.md"
+    },
+    {
+      "example_slug": "clearbakk",
+      "featured_company": "ClearBakk — ALSYS group",
+      "first_discovered_on": "2026-10-17",
+      "active": true,
+      "last_attempted_on": null,
+      "last_completed_on": null,
+      "deferred_reason": "Newly featured locally; eligible for next Monday job-evidence maintenance",
+      "full_company_research_completed_on": "2026-10-17",
+      "implementation_record": "docs/validation/full-examples/2026-10-17/implementation.md"
     }
   ],
   "last_occurrence_id": "weekly-citc-job-example-review:2026-10-12",
@@ -96,5 +400,6 @@
       "OCT12-W1:v1",
       "OCT12-G1:v1"
     ]
-  }
+  },
+  "last_collection_reconciled_on": "2026-10-17"
 }

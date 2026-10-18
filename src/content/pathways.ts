@@ -1,9 +1,11 @@
+import { octoberPathways } from "./calgary-october-17";
 import { expansionPathways } from "./calgary-expansion";
 import type { LearningPathway } from "./types";
 
 // Official program pages only. What each program teaches is stated by the provider;
 // why it relates to a role is our reading of that page. None is an employer requirement.
 export const learningPathways: LearningPathway[] = [
+  ...octoberPathways,
   ...expansionPathways,
   {
     id: "ucalgary-engineering-physics",

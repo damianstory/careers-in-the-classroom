@@ -1,5 +1,7 @@
+import { octoberDiagrams } from "./october-diagrams";
 // Approved conceptual diagrams; generation and review in design/example-expansion-2026-10-15/.
 export const expansionDiagrams: Record<string, { image: string; heading: string; steps: string[]; note: string }> = {
+  ...octoberDiagrams,
   "botaneco": {
     "image": "/images/story-diagrams/botaneco-graphic-novel.webp",
     "heading": "From seed to useful fractions",

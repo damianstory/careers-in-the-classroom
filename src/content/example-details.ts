@@ -1,9 +1,11 @@
+import { octoberDetails } from "./calgary-october-17";
 import { expansionDetails } from "./calgary-expansion";
 import type { ExampleDetails } from "./types";
 
 // Connected exploration for an example. The classroom story is illustrative: it supports a
 // teacher's discussion and is not a lesson plan.
 export const exampleDetails: ExampleDetails[] = [
+  ...octoberDetails,
   ...expansionDetails,
   {
     id: "ghgsat-details",

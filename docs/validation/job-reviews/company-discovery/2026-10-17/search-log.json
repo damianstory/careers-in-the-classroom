@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-17",
+  "queries": [
+    "Calgary WaterSMART Integrated Sustainability water engineering Calgary projects",
+    "Calgary Trace Associates Matrix Solutions environmental office",
+    "Calgary RJC Entuitive structural engineering projects",
+    "Calgary Phil Sebastian roasting Calgary Italian Bakery production",
+    "site.calgaryitalianbakery.com Calgary production",
+    "site.o2design.com Dale Hodges Calgary",
+    "site.cpkcr.com Calgary operations headquarters rail",
+    "site.calgaryeconomicdevelopment.com companies Calgary film recycling food",
+    "Calgary Italian Bakery official production facility",
+    "Joe Media Group Calgary studio post production official",
+    "Calgary recycling ECCO Recycling Cascades Recovery facility official",
+    "Calgary soil engineering McIntosh Lalani Clifton official laboratory",
+    "site.islengineering.com Calgary Rocky Ridge glulam",
+    "site.ae.ca Calgary drinking water engineering office",
+    "site.montrose-env.com Matrix Calgary water environmental",
+    "site.clearbakk.com Calgary water treatment",
+    "site.ae.ca Calgary Bearspaw",
+    "site.marionette.ca Calgary animation studio",
+    "site.clifton.ca Calgary office laboratory",
+    "site.traceassociates.ca remediation Calgary project",
+    "site.philsebastian.com roasting Simmons temperature",
+    "site.entuitive.com Calgary Central Library truss rail",
+    "site.traceassociates.ca Remediation",
+    "site.sait.ca Civil Engineering 2026",
+    "site.cpkcr.com 2025 dispatch Calgary",
+    "site.puppetstuffcanada.ca Calgary studio",
+    "site.montrose-env.com Calgary Matrix Canada",
+    "site.cascades.com Calgary 4127",
+    "site.careers.cpkcr.com rail traffic controller training Calgary",
+    "site.auarts.ca visual communication design bachelor design"
+  ],
+  "source_families": [
+    "original employer projects/facilities",
+    "municipal and project-owner announcements",
+    "economic-development film-sector directory",
+    "government acquisition record",
+    "industry association member directory"
+  ],
+  "bound": "20 unique companies screened; at most 40 leads",
+  "stop_reason": "20 screened",
+  "known_companies_excluded": 60,
+  "duplicates_counted_as_new": 0,
+  "incidental_not_screened": [
+    "Associated Engineering: targeted searches not sufficient; no gate assessment",
+    "McIntosh Lalani: no usable result in bounded query",
+    "Marionette: ambiguous identity; no resolved local company",
+    "GFL: municipal sorting facility outside city",
+    "Creative Fields",
+    "Still-Human Studios",
+    "Ajax Creative",
+    "Red Dot Restoration",
+    "Matrix HR: unrelated to Matrix Solutions"
+  ],
+  "duplicate_notes": [
+    "CBL/Cinnaroll one company",
+    "Matrix/Montrose/Onterris retained in one held record",
+    "WaterSMART/Hazen and ClearBakk/ALSYS parent relationships retained"
+  ],
+  "source_attempt_manifest": "docs/validation/job-reviews/company-discovery/2026-10-17/source-captures.json",
+  "failed_searches": [
+    "Direct careers.cpkcr.com RTC training query yielded no usable result"
+  ],
+  "paid_calls": 0
+}

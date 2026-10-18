@@ -1628,7 +1628,2661 @@
       ],
       "prior_packet": "docs/validation/source-comparison/2026-10-15-calgary-20/paid-findings.md",
       "counts_as_new_today": false
+    },
+    {
+      "id": "CGY-021",
+      "version": 1,
+      "company": "Orpyx",
+      "canonical_domain": "orpyx.com",
+      "sector": "Medical devices",
+      "calgary_evidence": "Calgary device manufacturer identified in its current insole instructions",
+      "work": "Pressure-sensing footbeds and feedback",
+      "proposed_question": "How can a shoe help someone notice pressure they cannot feel?",
+      "sources": [
+        "https://www.orpyx.com/",
+        "https://www.orpyx.com/uploads/10001012-Orpyx-Custom-Sensory-Insole-System-IFU-V1-EN.pdf"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        4,
+        3,
+        3
+      ],
+      "score": 10,
+      "score_rationale": [
+        "4/4: The proposed question connects directly to pressure-sensing footbeds and feedback.",
+        "3/3: Sources describe specific operations or equipment.",
+        "3/3: Adds a distinct classroom context to the 18-example collection."
+      ],
+      "recommendation": "recommend",
+      "decision": "pending",
+      "workflow_state": "proposed",
+      "first_discovered": "2026-10-16",
+      "last_attempted": "2026-10-16",
+      "last_researched": "2026-10-16",
+      "screening_completed_on": "2026-10-16",
+      "gaps": "Verify sensor mechanism and separate device signals from clinical outcome claims.",
+      "curriculum_status": "Provisional concept connection; precise Alberta outcomes not yet checked",
+      "role_status": "Task-based editorial leads, not verified job titles or open vacancies",
+      "full_example_status": "not drafted",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "role_leads": "Sensor design; device testing; remote monitoring",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Electronics Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/electronics-engineering-technology",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        },
+        {
+          "name": "University of Calgary — Biomedical Engineering",
+          "url": "https://schulich.ucalgary.ca/biomedical/programs/undergraduate",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        }
+      ],
+      "aliases": [],
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-16/source-captures.json"
+    },
+    {
+      "id": "CGY-022",
+      "version": 1,
+      "company": "RetinaLogik",
+      "canonical_domain": "retinalogik.com",
+      "sector": "Vision technology",
+      "calgary_evidence": "Calgary university spinout developing portable vision testing",
+      "work": "Headset-based visual field tests",
+      "proposed_question": "How could a headset measure the parts of your vision you do not notice?",
+      "sources": [
+        "https://www.retinalogik.com/",
+        "https://www.retinalogik.com/about/"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        4,
+        3,
+        3
+      ],
+      "score": 10,
+      "score_rationale": [
+        "4/4: The proposed question connects directly to headset-based visual field tests.",
+        "3/3: Sources describe specific operations or equipment.",
+        "3/3: Adds a distinct classroom context to the 18-example collection."
+      ],
+      "recommendation": "recommend",
+      "decision": "pending",
+      "workflow_state": "proposed",
+      "first_discovered": "2026-10-16",
+      "last_attempted": "2026-10-16",
+      "last_researched": "2026-10-16",
+      "screening_completed_on": "2026-10-16",
+      "gaps": "Review independent validation; omit inconsistent percentage claims on homepage.",
+      "curriculum_status": "Provisional concept connection; precise Alberta outcomes not yet checked",
+      "role_status": "Task-based editorial leads, not verified job titles or open vacancies",
+      "full_example_status": "not drafted",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "role_leads": "Software testing; visual-stimulus design; clinical validation",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Electronics Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/electronics-engineering-technology",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        },
+        {
+          "name": "University of Calgary — Biomedical Engineering",
+          "url": "https://schulich.ucalgary.ca/biomedical/programs/undergraduate",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        }
+      ],
+      "aliases": [],
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-16/source-captures.json"
+    },
+    {
+      "id": "CGY-023",
+      "version": 1,
+      "company": "Righteous Gelato",
+      "canonical_domain": "righteousgelato.com",
+      "sector": "Food manufacturing",
+      "calgary_evidence": "Calgary gelato factory and separate recipe-development kitchen",
+      "work": "Frozen-dessert production and texture quality",
+      "proposed_question": "Why does melted and refrozen gelato feel different?",
+      "sources": [
+        "https://www.righteousgelato.com/pages/tour-and-tasting",
+        "https://www.righteousgelato.com/pages/faq"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        4,
+        3,
+        3
+      ],
+      "score": 10,
+      "score_rationale": [
+        "4/4: The proposed question connects directly to frozen-dessert production and texture quality.",
+        "3/3: Sources describe specific operations or equipment.",
+        "3/3: Adds a distinct classroom context to the 18-example collection."
+      ],
+      "recommendation": "recommend",
+      "decision": "pending",
+      "workflow_state": "proposed",
+      "first_discovered": "2026-10-16",
+      "last_attempted": "2026-10-16",
+      "last_researched": "2026-10-16",
+      "screening_completed_on": "2026-10-16",
+      "gaps": "Verify crystallization explanation with food-science sources; distinguish factory from test kitchen and other product facilities.",
+      "curriculum_status": "Provisional concept connection; precise Alberta outcomes not yet checked",
+      "role_status": "Task-based editorial leads, not verified job titles or open vacancies",
+      "full_example_status": "not drafted",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "role_leads": "Recipe development; frozen production; food quality checks",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Baking and Pastry Arts",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/baking-and-pastry-arts",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        },
+        {
+          "name": "SAIT — Chemical Laboratory Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        }
+      ],
+      "aliases": [
+        "Fiasco Gelato"
+      ],
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-16/source-captures.json"
+    },
+    {
+      "id": "CGY-024",
+      "version": 1,
+      "company": "FREDsense Technologies",
+      "canonical_domain": "fredsense.com",
+      "sector": "Water analysis",
+      "calgary_evidence": "Calgary analytical laboratory and field instrument development",
+      "work": "PFAS testing in lab and field",
+      "proposed_question": "How can you measure something in water that you cannot see?",
+      "sources": [
+        "https://fredsense.com/pfas-lab-services/",
+        "https://fredsense.com/news/fredsense-launches-advanced-rapid-testing-pfas-analytical-services/"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        4,
+        3,
+        2
+      ],
+      "score": 9,
+      "score_rationale": [
+        "4/4: The proposed question connects directly to pfas testing in lab and field.",
+        "3/3: Sources describe specific operations or equipment.",
+        "2/3: Adds a useful method or employer comparison."
+      ],
+      "recommendation": "recommend",
+      "decision": "pending",
+      "workflow_state": "proposed",
+      "first_discovered": "2026-10-16",
+      "last_attempted": "2026-10-16",
+      "last_researched": "2026-10-16",
+      "screening_completed_on": "2026-10-16",
+      "gaps": "Distinguish rapid screening from confirmatory lab methods; company says lab is uncertified; no regulatory-compliance assurance.",
+      "curriculum_status": "Provisional concept connection; precise Alberta outcomes not yet checked",
+      "role_status": "Task-based editorial leads, not verified job titles or open vacancies",
+      "full_example_status": "not drafted",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "role_leads": "Analytical chemistry; sample preparation; instrument calibration",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Chemical Laboratory Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        },
+        {
+          "name": "SAIT — Instrumentation Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/instrumentation-engineering-technology",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        }
+      ],
+      "aliases": [],
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-16/source-captures.json"
+    },
+    {
+      "id": "CGY-025",
+      "version": 1,
+      "company": "Falkbuilt",
+      "canonical_domain": "falkbuilt.com",
+      "sector": "Interior construction",
+      "calgary_evidence": "Calgary headquarters and factory",
+      "work": "Digital design connected to prefabricated interior components",
+      "proposed_question": "How can a room be designed so its parts fit before they reach the building?",
+      "sources": [
+        "https://falkbuilt.com/about/",
+        "https://falkbuilt.com/"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        4,
+        3,
+        3
+      ],
+      "score": 10,
+      "score_rationale": [
+        "4/4: The proposed question connects directly to digital design connected to prefabricated interior components.",
+        "3/3: Sources describe specific operations or equipment.",
+        "3/3: Adds a distinct classroom context to the 18-example collection."
+      ],
+      "recommendation": "recommend",
+      "decision": "pending",
+      "workflow_state": "proposed",
+      "first_discovered": "2026-10-16",
+      "last_attempted": "2026-10-16",
+      "last_researched": "2026-10-16",
+      "screening_completed_on": "2026-10-16",
+      "gaps": "Verify one assembly/tolerance example; no unsourced schedule or waste savings. Distinct from DIRTT.",
+      "curriculum_status": "Provisional concept connection; precise Alberta outcomes not yet checked",
+      "role_status": "Task-based editorial leads, not verified job titles or open vacancies",
+      "full_example_status": "not drafted",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "role_leads": "Digital modelling; component fabrication; installation coordination",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Architectural Technologies",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/architectural-technologies",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        },
+        {
+          "name": "SAIT — Mechanical Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        }
+      ],
+      "aliases": [],
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-16/source-captures.json"
+    },
+    {
+      "id": "CGY-026",
+      "version": 1,
+      "company": "Fluid Biomed",
+      "canonical_domain": "fluidbiomed.com",
+      "sector": "Medical materials",
+      "calgary_evidence": "University of Calgary biomedical device research and company development",
+      "work": "Hybrid polymer-metal flow-diverting stent under clinical investigation",
+      "proposed_question": "Why design a medical implant so part of it eventually disappears?",
+      "sources": [
+        "https://fluidbiomed.com/about_us/",
+        "https://fluidbiomed.com/"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        4,
+        3,
+        2
+      ],
+      "score": 9,
+      "score_rationale": [
+        "4/4: The proposed question connects directly to hybrid polymer-metal flow-diverting stent under clinical investigation.",
+        "3/3: Sources describe specific operations or equipment.",
+        "2/3: Adds a useful method or employer comparison."
+      ],
+      "recommendation": "reserve",
+      "decision": "pending",
+      "workflow_state": "screened",
+      "first_discovered": "2026-10-16",
+      "last_attempted": "2026-10-16",
+      "last_researched": "2026-10-16",
+      "screening_completed_on": "2026-10-16",
+      "gaps": "Investigational device, not commercially available; clinical efficacy and regulatory claims require dedicated review.",
+      "curriculum_status": "Provisional concept connection; precise Alberta outcomes not yet checked",
+      "role_status": "Task-based editorial leads, not verified job titles or open vacancies",
+      "full_example_status": "not drafted",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "role_leads": "Biomaterials research; prototype testing; clinical research",
+      "pathway_leads": [
+        {
+          "name": "University of Calgary — Biomedical Engineering",
+          "url": "https://schulich.ucalgary.ca/biomedical/programs/undergraduate",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        },
+        {
+          "name": "SAIT — Mechanical Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        }
+      ],
+      "aliases": [],
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-16/source-captures.json"
+    },
+    {
+      "id": "CGY-027",
+      "version": 1,
+      "company": "Dynamic Source Manufacturing",
+      "canonical_domain": "dynamicsourcemfg.com",
+      "sector": "Electronics manufacturing",
+      "calgary_evidence": "Calgary manufacturing facility; separate Tempe operation",
+      "work": "Circuit-board assembly and testing",
+      "proposed_question": "How can you tell whether a newly assembled circuit will work reliably?",
+      "sources": [
+        "https://dynamicsourcemfg.com/aboutus/"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        3,
+        3,
+        2
+      ],
+      "score": 8,
+      "score_rationale": [
+        "3/4: The proposed question connects directly to circuit-board assembly and testing.",
+        "3/3: Sources describe specific operations or equipment.",
+        "2/3: Adds a useful method or employer comparison."
+      ],
+      "recommendation": "reserve",
+      "decision": "pending",
+      "workflow_state": "screened",
+      "first_discovered": "2026-10-16",
+      "last_attempted": "2026-10-16",
+      "last_researched": "2026-10-16",
+      "screening_completed_on": "2026-10-16",
+      "gaps": "Verify a specific Calgary test method; do not assign Arizona work locally.",
+      "curriculum_status": "Provisional concept connection; precise Alberta outcomes not yet checked",
+      "role_status": "Task-based editorial leads, not verified job titles or open vacancies",
+      "full_example_status": "not drafted",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "role_leads": "Electronics assembly; test engineering; production quality",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Electronics Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/electronics-engineering-technology",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        },
+        {
+          "name": "SAIT — Mechanical Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        }
+      ],
+      "aliases": [],
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-16/source-captures.json"
+    },
+    {
+      "id": "CGY-028",
+      "version": 1,
+      "company": "Corma Industries",
+      "canonical_domain": "cormaindustries.ca",
+      "sector": "Machining",
+      "calgary_evidence": "Southeast Calgary CNC manufacturing facility",
+      "work": "CNC prototyping and production",
+      "proposed_question": "How precise must a part be for two pieces to fit together?",
+      "sources": [
+        "https://cormaindustries.ca/"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        4,
+        3,
+        1
+      ],
+      "score": 8,
+      "score_rationale": [
+        "4/4: The proposed question connects directly to cnc prototyping and production.",
+        "3/3: Sources describe specific operations or equipment.",
+        "1/3: Substantial overlap with existing or same-packet examples."
+      ],
+      "recommendation": "reserve",
+      "decision": "pending",
+      "workflow_state": "screened",
+      "first_discovered": "2026-10-16",
+      "last_attempted": "2026-10-16",
+      "last_researched": "2026-10-16",
+      "screening_completed_on": "2026-10-16",
+      "gaps": "Overlaps Exergy; find a distinct tolerance/measurement case. Not Corma Inc. in Ontario.",
+      "curriculum_status": "Provisional concept connection; precise Alberta outcomes not yet checked",
+      "role_status": "Task-based editorial leads, not verified job titles or open vacancies",
+      "full_example_status": "not drafted",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "role_leads": "CNC programming; machining; dimensional inspection",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Mechanical Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        }
+      ],
+      "aliases": [],
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-16/source-captures.json"
+    },
+    {
+      "id": "CGY-029",
+      "version": 1,
+      "company": "August Electronics",
+      "canonical_domain": "aeicm.com",
+      "sector": "Electronics manufacturing",
+      "calgary_evidence": "Calgary in-house manufacturing facility",
+      "work": "PCB assembly, functional and dielectric testing",
+      "proposed_question": "Why test a circuit in more than one way?",
+      "sources": [
+        "https://www.aeicm.com/"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        4,
+        3,
+        1
+      ],
+      "score": 8,
+      "score_rationale": [
+        "4/4: The proposed question connects directly to pcb assembly, functional and dielectric testing.",
+        "3/3: Sources describe specific operations or equipment.",
+        "1/3: Substantial overlap with existing or same-packet examples."
+      ],
+      "recommendation": "reserve",
+      "decision": "pending",
+      "workflow_state": "screened",
+      "first_discovered": "2026-10-16",
+      "last_attempted": "2026-10-16",
+      "last_researched": "2026-10-16",
+      "screening_completed_on": "2026-10-16",
+      "gaps": "Overlaps DSM and Eguana; select a concrete test example before build-out.",
+      "curriculum_status": "Provisional concept connection; precise Alberta outcomes not yet checked",
+      "role_status": "Task-based editorial leads, not verified job titles or open vacancies",
+      "full_example_status": "not drafted",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "role_leads": "PCB assembly; functional testing; quality inspection",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Electronics Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/electronics-engineering-technology",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        }
+      ],
+      "aliases": [],
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-16/source-captures.json"
+    },
+    {
+      "id": "CGY-030",
+      "version": 1,
+      "company": "Fidelity Manufacturing Group",
+      "canonical_domain": "fidelitymanufacturing.com",
+      "sector": "Tooling and moulding",
+      "calgary_evidence": "Calgary machining and mould-making business, formerly Fidelity Machine",
+      "work": "Injection mould tooling and precision components",
+      "proposed_question": "Why does the tool that makes a part need its own careful design?",
+      "sources": [
+        "https://www.fidelitymanufacturing.com/blog/how-fidelity-machine-became-fidelity-manufacturing-group",
+        "https://www.fidelitymanufacturing.com/"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        4,
+        3,
+        2
+      ],
+      "score": 9,
+      "score_rationale": [
+        "4/4: The proposed question connects directly to injection mould tooling and precision components.",
+        "3/3: Sources describe specific operations or equipment.",
+        "2/3: Adds a useful method or employer comparison."
+      ],
+      "recommendation": "reserve",
+      "decision": "pending",
+      "workflow_state": "screened",
+      "first_discovered": "2026-10-16",
+      "last_attempted": "2026-10-16",
+      "last_researched": "2026-10-16",
+      "screening_completed_on": "2026-10-16",
+      "gaps": "Verify a local moulding sequence and material; keep medical division distinct.",
+      "curriculum_status": "Provisional concept connection; precise Alberta outcomes not yet checked",
+      "role_status": "Task-based editorial leads, not verified job titles or open vacancies",
+      "full_example_status": "not drafted",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "role_leads": "Toolmaking; mould design; injection-moulding process control",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Mechanical Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        }
+      ],
+      "aliases": [
+        "Fidelity Machine",
+        "Fidelity Machine & Mould Solutions"
+      ],
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-16/source-captures.json"
+    },
+    {
+      "id": "CGY-031",
+      "version": 1,
+      "company": "ZeroKey",
+      "canonical_domain": "zerokey.com",
+      "sector": "Spatial sensing",
+      "calgary_evidence": "Calgary technology company developing industrial positioning",
+      "work": "Track tools and verify bolt sequences",
+      "proposed_question": "How can a factory know which bolt a tool just tightened?",
+      "sources": [
+        "https://zerokey.com/our-company/",
+        "https://zerokey.com/technology/",
+        "https://zerokey.com/"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        4,
+        3,
+        2
+      ],
+      "score": 9,
+      "score_rationale": [
+        "4/4: The proposed question connects directly to track tools and verify bolt sequences.",
+        "3/3: Sources describe specific operations or equipment.",
+        "2/3: Adds a useful method or employer comparison."
+      ],
+      "recommendation": "reserve",
+      "decision": "pending",
+      "workflow_state": "screened",
+      "first_discovered": "2026-10-16",
+      "last_attempted": "2026-10-16",
+      "last_researched": "2026-10-16",
+      "screening_completed_on": "2026-10-16",
+      "gaps": "Verify ultrasound explanation and error sources; customer sites are not automatically Calgary.",
+      "curriculum_status": "Provisional concept connection; precise Alberta outcomes not yet checked",
+      "role_status": "Task-based editorial leads, not verified job titles or open vacancies",
+      "full_example_status": "not drafted",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "role_leads": "Embedded systems; acoustic measurement; spatial software",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Electronics Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/electronics-engineering-technology",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        },
+        {
+          "name": "SAIT — Instrumentation Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/instrumentation-engineering-technology",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        }
+      ],
+      "aliases": [],
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-16/source-captures.json"
+    },
+    {
+      "id": "CGY-032",
+      "version": 1,
+      "company": "Cococo / Chocolaterie Bernard Callebaut",
+      "canonical_domain": "cococochocolatiers.com",
+      "sector": "Food manufacturing",
+      "calgary_evidence": "Calgary chocolate factory",
+      "work": "Chocolate confectionery production",
+      "proposed_question": "Why can the same chocolate set with different textures?",
+      "sources": [
+        "https://cococochocolatiers.com/",
+        "https://cococochocolatiers.com/pages/faqs"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        4,
+        2,
+        2
+      ],
+      "score": 8,
+      "score_rationale": [
+        "4/4: The proposed question connects directly to chocolate confectionery production.",
+        "2/3: Sources describe a product/process, with detailed mechanism still to verify.",
+        "2/3: Adds a useful method or employer comparison."
+      ],
+      "recommendation": "reserve",
+      "decision": "pending",
+      "workflow_state": "screened",
+      "first_discovered": "2026-10-16",
+      "last_attempted": "2026-10-16",
+      "last_researched": "2026-10-16",
+      "screening_completed_on": "2026-10-16",
+      "gaps": "Tempering is an editorial lead requiring process verification; preserve Cococo/brand identity, not Barry Callebaut.",
+      "curriculum_status": "Provisional concept connection; precise Alberta outcomes not yet checked",
+      "role_status": "Task-based editorial leads, not verified job titles or open vacancies",
+      "full_example_status": "not drafted",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "role_leads": "Confectionery production; recipe development; food quality",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Baking and Pastry Arts",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/baking-and-pastry-arts",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        }
+      ],
+      "aliases": [
+        "Chocolaterie Bernard Callebaut",
+        "Cococo"
+      ],
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-16/source-captures.json"
+    },
+    {
+      "id": "CGY-033",
+      "version": 1,
+      "company": "NOVA Chemicals",
+      "canonical_domain": "novachem.com",
+      "sector": "Polymer research",
+      "calgary_evidence": "Calgary Centre for Applied Research and technology teams",
+      "work": "Polymer product/process research and testing",
+      "proposed_question": "How can plastics with similar chemistry behave differently?",
+      "sources": [
+        "https://www.novachem.com/locations/centre-for-applied-research/",
+        "https://jobs.novachem.com/go/Technology/2588517/"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        4,
+        3,
+        2
+      ],
+      "score": 9,
+      "score_rationale": [
+        "4/4: The proposed question connects directly to polymer product/process research and testing.",
+        "3/3: Sources describe specific operations or equipment.",
+        "2/3: Adds a useful method or employer comparison."
+      ],
+      "recommendation": "reserve",
+      "decision": "pending",
+      "workflow_state": "screened",
+      "first_discovered": "2026-10-16",
+      "last_attempted": "2026-10-16",
+      "last_researched": "2026-10-16",
+      "screening_completed_on": "2026-10-16",
+      "gaps": "Confirm one Calgary lab example; manufacturing plants elsewhere are not Calgary facilities.",
+      "curriculum_status": "Provisional concept connection; precise Alberta outcomes not yet checked",
+      "role_status": "Task-based editorial leads, not verified job titles or open vacancies",
+      "full_example_status": "not drafted",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "role_leads": "Polymer chemistry; laboratory testing; product development",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Chemical Laboratory Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        },
+        {
+          "name": "University of Calgary — Chemical Engineering",
+          "url": "https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-chemical-engineering",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        }
+      ],
+      "aliases": [],
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-16/source-captures.json"
+    },
+    {
+      "id": "CGY-034",
+      "version": 1,
+      "company": "WestJet",
+      "canonical_domain": "westjet.com",
+      "sector": "Aircraft operations",
+      "calgary_evidence": "Calgary maintenance hangar and technical training campus",
+      "work": "Inspect, maintain and plan aircraft maintenance",
+      "proposed_question": "How do you plan maintenance when an aircraft needs to keep flying?",
+      "sources": [
+        "https://www.westjet.com/en-ca/careers/technical-operations",
+        "https://westjet.mediaroom.com/2019-04-24-WestJet-unveils-its-787-Dreamliner-maintenance-hangar"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        3,
+        3,
+        1
+      ],
+      "score": 7,
+      "score_rationale": [
+        "3/4: The proposed question connects directly to inspect, maintain and plan aircraft maintenance.",
+        "3/3: Sources describe specific operations or equipment.",
+        "1/3: Substantial overlap with existing or same-packet examples."
+      ],
+      "recommendation": "reserve",
+      "decision": "pending",
+      "workflow_state": "screened",
+      "first_discovered": "2026-10-16",
+      "last_attempted": "2026-10-16",
+      "last_researched": "2026-10-16",
+      "screening_completed_on": "2026-10-16",
+      "gaps": "Overlap with Avmax; use scheduling/reliability instead of another generic inspection story. Planned Lufthansa shop is separate.",
+      "curriculum_status": "Provisional concept connection; precise Alberta outcomes not yet checked",
+      "role_status": "Task-based editorial leads, not verified job titles or open vacancies",
+      "full_example_status": "not drafted",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "role_leads": "Aircraft maintenance; avionics; maintenance planning",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Aircraft Maintenance Engineers Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/aircraft-maintenance-engineers-technology",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        }
+      ],
+      "aliases": [],
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-16/source-captures.json"
+    },
+    {
+      "id": "CGY-035",
+      "version": 1,
+      "company": "De Havilland Canada",
+      "canonical_domain": "dehavilland.com",
+      "sector": "Aircraft manufacturing",
+      "calgary_evidence": "Employer recruitment describes Calgary assembly/technical work alongside Victoria",
+      "work": "Aircraft assembly and systems installation",
+      "proposed_question": "How do thousands of separately made parts become one aircraft?",
+      "sources": [
+        "https://dehavilland.com/recruitment/"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        3,
+        3,
+        2
+      ],
+      "score": 8,
+      "score_rationale": [
+        "3/4: The proposed question connects directly to aircraft assembly and systems installation.",
+        "3/3: Sources describe specific operations or equipment.",
+        "2/3: Adds a useful method or employer comparison."
+      ],
+      "recommendation": "reserve",
+      "decision": "pending",
+      "workflow_state": "screened",
+      "first_discovered": "2026-10-16",
+      "last_attempted": "2026-10-16",
+      "last_researched": "2026-10-16",
+      "screening_completed_on": "2026-10-16",
+      "gaps": "Separate Calgary operations from future Wheatland County De Havilland Field and Victoria; no live vacancy assertion.",
+      "curriculum_status": "Provisional concept connection; precise Alberta outcomes not yet checked",
+      "role_status": "Task-based editorial leads, not verified job titles or open vacancies",
+      "full_example_status": "not drafted",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "role_leads": "Aircraft assembly; systems installation; structures work",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Aircraft Maintenance Engineers Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/aircraft-maintenance-engineers-technology",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        },
+        {
+          "name": "SAIT — Mechanical Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        }
+      ],
+      "aliases": [
+        "Viking Air (legacy related operations; not counted separately)"
+      ],
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-16/source-captures.json"
+    },
+    {
+      "id": "CGY-036",
+      "version": 1,
+      "company": "Scovan",
+      "canonical_domain": "scovan.ca",
+      "sector": "Process engineering",
+      "calgary_evidence": "Calgary engineering teams; fabrication facility in Ponoka",
+      "work": "Process integration and steam-generation development",
+      "proposed_question": "How could a process recover useful heat without simply adding more energy?",
+      "sources": [
+        "https://scovan.ca/",
+        "https://scovan.ca/wp-content/uploads/2024/07/Scovan_ESG-2023-24.pdf"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        3,
+        3,
+        2
+      ],
+      "score": 8,
+      "score_rationale": [
+        "3/4: The proposed question connects directly to process integration and steam-generation development.",
+        "3/3: Sources describe specific operations or equipment.",
+        "2/3: Adds a useful method or employer comparison."
+      ],
+      "recommendation": "reserve",
+      "decision": "pending",
+      "workflow_state": "screened",
+      "first_discovered": "2026-10-16",
+      "last_attempted": "2026-10-16",
+      "last_researched": "2026-10-16",
+      "screening_completed_on": "2026-10-16",
+      "gaps": "Verify HipVap mechanism and evidence; fabrication is not in Calgary.",
+      "curriculum_status": "Provisional concept connection; precise Alberta outcomes not yet checked",
+      "role_status": "Task-based editorial leads, not verified job titles or open vacancies",
+      "full_example_status": "not drafted",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "role_leads": "Process engineering; instrumentation; equipment integration",
+      "pathway_leads": [
+        {
+          "name": "University of Calgary — Chemical Engineering",
+          "url": "https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-chemical-engineering",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        },
+        {
+          "name": "SAIT — Instrumentation Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/instrumentation-engineering-technology",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        }
+      ],
+      "aliases": [],
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-16/source-captures.json"
+    },
+    {
+      "id": "CGY-037",
+      "version": 1,
+      "company": "Acceleware",
+      "canonical_domain": "acceleware.com",
+      "sector": "Industrial heating",
+      "calgary_evidence": "Calgary-based RF technology development; cited field pilot near Marwayne",
+      "work": "Radio-frequency process heating",
+      "proposed_question": "How can electromagnetic waves heat material without a hot surface touching it?",
+      "sources": [
+        "https://www.acceleware.com/mining",
+        "https://www.acceleware.com/post/acceleware-pioneering-radio-frequency-heating-to-replace-sagd"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        4,
+        3,
+        2
+      ],
+      "score": 9,
+      "score_rationale": [
+        "4/4: The proposed question connects directly to radio-frequency process heating.",
+        "3/3: Sources describe specific operations or equipment.",
+        "2/3: Adds a useful method or employer comparison."
+      ],
+      "recommendation": "reserve",
+      "decision": "pending",
+      "workflow_state": "screened",
+      "first_discovered": "2026-10-16",
+      "last_attempted": "2026-10-16",
+      "last_researched": "2026-10-16",
+      "screening_completed_on": "2026-10-16",
+      "gaps": "Separate local development from field trials elsewhere; savings are company claims needing test conditions.",
+      "curriculum_status": "Provisional concept connection; precise Alberta outcomes not yet checked",
+      "role_status": "Task-based editorial leads, not verified job titles or open vacancies",
+      "full_example_status": "not drafted",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "role_leads": "Power electronics; RF engineering; process testing",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Electrical Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/electrical-engineering-technology",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        },
+        {
+          "name": "SAIT — Instrumentation Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/instrumentation-engineering-technology",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        }
+      ],
+      "aliases": [],
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-16/source-captures.json"
+    },
+    {
+      "id": "CGY-038",
+      "version": 1,
+      "company": "Syantra",
+      "canonical_domain": "syantra.com",
+      "sector": "Molecular diagnostics",
+      "calgary_evidence": "Calgary-linked clinical research; precise current local lab operation needs confirmation",
+      "work": "Blood-based gene-expression test development",
+      "proposed_question": "How could changes in gene activity become evidence for a test?",
+      "sources": [
+        "https://www.syantra.com/",
+        "https://www.syantra.com/accreditations",
+        "https://www.syantra.com/contact"
+      ],
+      "evidence_gate": "hold",
+      "score_dimensions": [
+        4,
+        2,
+        2
+      ],
+      "score": 8,
+      "score_rationale": [
+        "4/4: The proposed question connects directly to blood-based gene-expression test development.",
+        "2/3: Sources describe a product/process, with detailed mechanism still to verify.",
+        "2/3: Adds a useful method or employer comparison."
+      ],
+      "recommendation": "hold",
+      "decision": "pending",
+      "workflow_state": "held",
+      "first_discovered": "2026-10-16",
+      "last_attempted": "2026-10-16",
+      "last_researched": null,
+      "screening_completed_on": "2026-10-16",
+      "gaps": "HOLD: confirm substantive current Calgary lab operations and product-status boundaries before proposal.",
+      "curriculum_status": "Provisional concept connection; precise Alberta outcomes not yet checked",
+      "role_status": "Task-based editorial leads, not verified job titles or open vacancies",
+      "full_example_status": "not drafted",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "role_leads": "Molecular laboratory analysis; assay development; validation",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Chemical Laboratory Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        },
+        {
+          "name": "University of Calgary — Biomedical Engineering",
+          "url": "https://schulich.ucalgary.ca/biomedical/programs/undergraduate",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        }
+      ],
+      "aliases": [],
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-16/source-captures.json"
+    },
+    {
+      "id": "CGY-039",
+      "version": 1,
+      "company": "Earthware Reusables",
+      "canonical_domain": "earthware.me",
+      "sector": "Circular packaging",
+      "calgary_evidence": "Historical Calgary container-return/washing programme; current operation unverified",
+      "work": "Return, wash and reuse food containers",
+      "proposed_question": "How many times must a container be reused before it saves resources?",
+      "sources": [
+        "https://earthware.me/",
+        "https://bonterra.ca/2021/11/earthware-reusable-takeout-containers/"
+      ],
+      "evidence_gate": "hold",
+      "score_dimensions": [
+        4,
+        2,
+        3
+      ],
+      "score": 9,
+      "score_rationale": [
+        "4/4: The proposed question connects directly to return, wash and reuse food containers.",
+        "2/3: Sources describe a product/process, with detailed mechanism still to verify.",
+        "3/3: Adds a distinct classroom context to the 18-example collection."
+      ],
+      "recommendation": "hold",
+      "decision": "pending",
+      "workflow_state": "held",
+      "first_discovered": "2026-10-16",
+      "last_attempted": "2026-10-16",
+      "last_researched": null,
+      "screening_completed_on": "2026-10-16",
+      "gaps": "HOLD: original site timed out; 2021–24 partner evidence does not establish current operations.",
+      "curriculum_status": "Provisional concept connection; precise Alberta outcomes not yet checked",
+      "role_status": "Task-based editorial leads, not verified job titles or open vacancies",
+      "full_example_status": "not drafted",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "role_leads": "Reverse logistics; washing operations; reuse-impact analysis",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Mechanical Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        }
+      ],
+      "aliases": [],
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-16/source-captures.json"
+    },
+    {
+      "id": "CGY-040",
+      "version": 1,
+      "company": "MODUS Structures",
+      "canonical_domain": "modus.ca",
+      "sector": "Modular construction",
+      "calgary_evidence": "Crossfield, outside Calgary city",
+      "work": "Off-site modular building construction",
+      "proposed_question": "What changes when a building is assembled in a factory?",
+      "sources": [
+        "https://modus.ca/",
+        "https://modus.ca/projects-news/modus-acquires-roc-modular/"
+      ],
+      "evidence_gate": "hold",
+      "score_dimensions": [
+        3,
+        3,
+        2
+      ],
+      "score": 8,
+      "score_rationale": [
+        "3/4: The proposed question connects directly to off-site modular building construction.",
+        "3/3: Sources describe specific operations or equipment.",
+        "2/3: Adds a useful method or employer comparison."
+      ],
+      "recommendation": "hold",
+      "decision": "pending",
+      "workflow_state": "held",
+      "first_discovered": "2026-10-16",
+      "last_attempted": "2026-10-16",
+      "last_researched": null,
+      "screening_completed_on": "2026-10-16",
+      "gaps": "HOLD: regional company, no substantive Calgary city operation verified; ROC acquisition belongs under MODUS.",
+      "curriculum_status": "Provisional concept connection; precise Alberta outcomes not yet checked",
+      "role_status": "Task-based editorial leads, not verified job titles or open vacancies",
+      "full_example_status": "not drafted",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "role_leads": "Building design; fabrication; construction coordination",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Architectural Technologies",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/architectural-technologies",
+          "status": "Potential learning route; relevance interpreted, not an employer requirement; intake/prerequisites not checked"
+        }
+      ],
+      "aliases": [
+        "ROC Modular (acquired; not counted separately)"
+      ],
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-16/source-captures.json"
+    },
+    {
+      "id": "CGY-041",
+      "version": 1,
+      "company": "O2 Planning and Design",
+      "canonical_domain": "o2design.com",
+      "sector": "Landscape and ecology",
+      "calgary_evidence": "Calgary office and documented Dale Hodges Park project",
+      "work": "Designed marshes and wet meadows within a collaborative stormwater park project",
+      "proposed_question": "How can a park help clean stormwater before it reaches a river?",
+      "role_leads": "Landscape design; hydrology modelling; ecological assessment",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Integrated Water Management",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/integrated-water-management",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        },
+        {
+          "name": "SAIT — Geomatics Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/geomatics-engineering-technology",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        }
+      ],
+      "concepts": "Sedimentation, filtration, habitats and water flow",
+      "gaps": "Separate O2 contributions from partners; do not promise measured pollutant removal without data.",
+      "score_dimensions": [
+        4,
+        3,
+        3
+      ],
+      "score": 10,
+      "score_rationale": [
+        "Classroom 4/4: Sedimentation, filtration, habitats and water flow offers an explainable connection.",
+        "Work 3/3: Designed marshes and wet meadows within a collaborative stormwater park project.",
+        "Added value 3/3: Adds an accessible Calgary park where landscape design and ecology meet stormwater treatment, beyond wildlife recovery and industrial water processing."
+      ],
+      "sources": [
+        "https://www.o2design.com/dale-hodges-park",
+        "https://www.o2design.com/contact-us"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "recommendation": "recommend",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-17",
+      "last_attempted": "2026-10-17",
+      "last_researched": "2026-10-17",
+      "screening_completed_on": "2026-10-17",
+      "curriculum_status": "Editorial connection verified against cited curriculum topics; not external teacher endorsement.",
+      "role_status": "Task-based editorial leads, not verified vacancies or employer qualification requirements",
+      "full_example_status": "approved and implemented locally",
+      "implementation_status": "implemented locally",
+      "publication_status": "not deployed",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-17/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-17/source-captures.json",
+      "aliases": [],
+      "net_difference": "Adds an accessible Calgary park where landscape design and ecology meet stormwater treatment, beyond wildlife recovery and industrial water processing.",
+      "source_check_date": "2026-10-17",
+      "decision_history": [
+        {
+          "previous": "pending",
+          "decision": "approved",
+          "reviewer": "Damian",
+          "date": "2026-10-17",
+          "version": 1,
+          "instruction": "Alright, approve all 14. Let's research the full examples and bring the drafts back to me for review before we implement them.",
+          "scope": "Company proposal only; full draft review before implementation"
+        }
+      ],
+      "full_copy_decision": "approved",
+      "full_copy_version": 1,
+      "full_example_packet": "docs/validation/full-examples/2026-10-17/review.md",
+      "full_research_attempted_on": "2026-10-17",
+      "full_draft_completed_on": "2026-10-17",
+      "full_copy_decision_history": [
+        {
+          "previous": "pending",
+          "decision": "approved",
+          "version": 1,
+          "reviewer": "Damian",
+          "date": "2026-10-17",
+          "instruction": "Alright, approve all 14 drafts. Let's resolve the remaining curriculum and CPKC pathway gaps, then go ahead and implement them with the illustrations.",
+          "approval_record": "docs/validation/full-examples/2026-10-17/full-copy-approval.json"
+        }
+      ],
+      "implementation_completed_on": "2026-10-17",
+      "example_slug": "o2-planning-design",
+      "implementation_record": "docs/validation/full-examples/2026-10-17/implementation.md"
+    },
+    {
+      "id": "CGY-042",
+      "version": 1,
+      "company": "Entuitive",
+      "canonical_domain": "entuitive.com",
+      "sector": "Structural engineering",
+      "calgary_evidence": "Documented structural engineering on Calgary Central Library",
+      "work": "Designed a library spanning an active LRT line",
+      "proposed_question": "How can you support a library above a moving train?",
+      "role_leads": "Structural analysis; connection detailing; construction sequencing",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Civil Engineering Technology, Municipal Major",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/civil-engineering-technology-municipal",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        },
+        {
+          "name": "SAIT — Mechanical Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        }
+      ],
+      "concepts": "Forces, load paths and geometry",
+      "gaps": "Verify diagram loads and distinguish structural designer from architect and builder.",
+      "score_dimensions": [
+        4,
+        3,
+        3
+      ],
+      "score": 10,
+      "score_rationale": [
+        "Classroom 4/4: Forces, load paths and geometry offers an explainable connection.",
+        "Work 3/3: Designed a library spanning an active LRT line.",
+        "Added value 3/3: Adds public-building structural physics and construction sequencing, distinct from the existing manufacturing and digital-model stories."
+      ],
+      "sources": [
+        "https://www.entuitive.com/post/designing-for-constructability-over-active-rail-lines",
+        "https://view.ceros.com/entuitive/new-calgary-library-big-story",
+        "https://www.calgarymlc.ca/projects/central-library"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "recommendation": "recommend",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-17",
+      "last_attempted": "2026-10-17",
+      "last_researched": "2026-10-17",
+      "screening_completed_on": "2026-10-17",
+      "curriculum_status": "Editorial connection verified against cited curriculum topics; not external teacher endorsement.",
+      "role_status": "Task-based editorial leads, not verified vacancies or employer qualification requirements",
+      "full_example_status": "approved and implemented locally",
+      "implementation_status": "implemented locally",
+      "publication_status": "not deployed",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-17/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-17/source-captures.json",
+      "aliases": [],
+      "net_difference": "Adds public-building structural physics and construction sequencing, distinct from the existing manufacturing and digital-model stories.",
+      "source_check_date": "2026-10-17",
+      "decision_history": [
+        {
+          "previous": "pending",
+          "decision": "approved",
+          "reviewer": "Damian",
+          "date": "2026-10-17",
+          "version": 1,
+          "instruction": "Alright, approve all 14. Let's research the full examples and bring the drafts back to me for review before we implement them.",
+          "scope": "Company proposal only; full draft review before implementation"
+        }
+      ],
+      "full_copy_decision": "approved",
+      "full_copy_version": 1,
+      "full_example_packet": "docs/validation/full-examples/2026-10-17/review.md",
+      "full_research_attempted_on": "2026-10-17",
+      "full_draft_completed_on": "2026-10-17",
+      "full_copy_decision_history": [
+        {
+          "previous": "pending",
+          "decision": "approved",
+          "version": 1,
+          "reviewer": "Damian",
+          "date": "2026-10-17",
+          "instruction": "Alright, approve all 14 drafts. Let's resolve the remaining curriculum and CPKC pathway gaps, then go ahead and implement them with the illustrations.",
+          "approval_record": "docs/validation/full-examples/2026-10-17/full-copy-approval.json"
+        }
+      ],
+      "implementation_completed_on": "2026-10-17",
+      "example_slug": "entuitive",
+      "implementation_record": "docs/validation/full-examples/2026-10-17/implementation.md"
+    },
+    {
+      "id": "CGY-043",
+      "version": 1,
+      "company": "Phil & Sebastian Coffee Roasters",
+      "canonical_domain": "philsebastian.com",
+      "sector": "Food processing",
+      "calgary_evidence": "Simmons Building page identifies the Calgary roasting facility",
+      "work": "Roasting and optical measurements support repeatable coffee processing",
+      "proposed_question": "How can measurements help make a roast repeatable?",
+      "role_leads": "Roast operation; quality measurement; process calibration",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Chemical Laboratory Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        },
+        {
+          "name": "SAIT — Instrumentation Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/instrumentation-engineering-technology",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        }
+      ],
+      "concepts": "Heat transfer, reflectance and experimental control",
+      "gaps": "Distinguish measured roast colour from flavour; no student caffeine-consumption activity required.",
+      "score_dimensions": [
+        4,
+        3,
+        3
+      ],
+      "score": 10,
+      "score_rationale": [
+        "Classroom 4/4: Heat transfer, reflectance and experimental control offers an explainable connection.",
+        "Work 3/3: Roasting and optical measurements support repeatable coffee processing.",
+        "Added value 3/3: Brings measurement and process control into familiar food production, with a technical route beyond cafe service."
+      ],
+      "sources": [
+        "https://philsebastian.com/pages/locations/simmons",
+        "https://philsebastian.com/pages/our-coffee-approach"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "recommendation": "recommend",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-17",
+      "last_attempted": "2026-10-17",
+      "last_researched": "2026-10-17",
+      "screening_completed_on": "2026-10-17",
+      "curriculum_status": "Editorial connection verified against cited curriculum topics; not external teacher endorsement.",
+      "role_status": "Task-based editorial leads, not verified vacancies or employer qualification requirements",
+      "full_example_status": "approved and implemented locally",
+      "implementation_status": "implemented locally",
+      "publication_status": "not deployed",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-17/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-17/source-captures.json",
+      "aliases": [],
+      "net_difference": "Brings measurement and process control into familiar food production, with a technical route beyond cafe service.",
+      "source_check_date": "2026-10-17",
+      "decision_history": [
+        {
+          "previous": "pending",
+          "decision": "approved",
+          "reviewer": "Damian",
+          "date": "2026-10-17",
+          "version": 1,
+          "instruction": "Alright, approve all 14. Let's research the full examples and bring the drafts back to me for review before we implement them.",
+          "scope": "Company proposal only; full draft review before implementation"
+        }
+      ],
+      "full_copy_decision": "approved",
+      "full_copy_version": 1,
+      "full_example_packet": "docs/validation/full-examples/2026-10-17/review.md",
+      "full_research_attempted_on": "2026-10-17",
+      "full_draft_completed_on": "2026-10-17",
+      "full_copy_decision_history": [
+        {
+          "previous": "pending",
+          "decision": "approved",
+          "version": 1,
+          "reviewer": "Damian",
+          "date": "2026-10-17",
+          "instruction": "Alright, approve all 14 drafts. Let's resolve the remaining curriculum and CPKC pathway gaps, then go ahead and implement them with the illustrations.",
+          "approval_record": "docs/validation/full-examples/2026-10-17/full-copy-approval.json"
+        }
+      ],
+      "implementation_completed_on": "2026-10-17",
+      "example_slug": "phil-sebastian",
+      "implementation_record": "docs/validation/full-examples/2026-10-17/implementation.md"
+    },
+    {
+      "id": "CGY-044",
+      "version": 1,
+      "company": "Broken Pencil Studios",
+      "canonical_domain": "brokenpencilstudios.ca",
+      "sector": "Animation and communication",
+      "calgary_evidence": "Company describes its Calgary animation production studio",
+      "work": "Creates technical animation, motion graphics and explanatory visuals",
+      "proposed_question": "How can a moving picture explain a process you cannot see?",
+      "role_leads": "Storyboard design; animation; technical visualization",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Film and Video Production",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/film-and-video-production",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        },
+        {
+          "name": "AUArts — Bachelor of Design, Visual Communication Design",
+          "url": "https://www.auarts.ca/program-areas/undergraduate/bachelor-of-design-bdes",
+          "status": "Potential related study; portfolio and admission requirements need full research"
+        }
+      ],
+      "concepts": "Representations, motion, scale and communication",
+      "gaps": "Select one permitted portfolio example; verify any inferred animation mathematics before teaching it.",
+      "score_dimensions": [
+        4,
+        3,
+        3
+      ],
+      "score": 10,
+      "score_rationale": [
+        "Classroom 4/4: Representations, motion, scale and communication offers an explainable connection.",
+        "Work 3/3: Creates technical animation, motion graphics and explanatory visuals.",
+        "Added value 3/3: Adds creative production and technical communication, broadening the collection beyond engineering products and industrial sensing."
+      ],
+      "sources": [
+        "https://www.brokenpencilstudios.ca/"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "recommendation": "recommend",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-17",
+      "last_attempted": "2026-10-17",
+      "last_researched": "2026-10-17",
+      "screening_completed_on": "2026-10-17",
+      "curriculum_status": "Editorial connection verified against cited curriculum topics; not external teacher endorsement.",
+      "role_status": "Task-based editorial leads, not verified vacancies or employer qualification requirements",
+      "full_example_status": "approved and implemented locally",
+      "implementation_status": "implemented locally",
+      "publication_status": "not deployed",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-17/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-17/source-captures.json",
+      "aliases": [],
+      "net_difference": "Adds creative production and technical communication, broadening the collection beyond engineering products and industrial sensing.",
+      "source_check_date": "2026-10-17",
+      "decision_history": [
+        {
+          "previous": "pending",
+          "decision": "approved",
+          "reviewer": "Damian",
+          "date": "2026-10-17",
+          "version": 1,
+          "instruction": "Alright, approve all 14. Let's research the full examples and bring the drafts back to me for review before we implement them.",
+          "scope": "Company proposal only; full draft review before implementation"
+        }
+      ],
+      "full_copy_decision": "approved",
+      "full_copy_version": 1,
+      "full_example_packet": "docs/validation/full-examples/2026-10-17/review.md",
+      "full_research_attempted_on": "2026-10-17",
+      "full_draft_completed_on": "2026-10-17",
+      "full_copy_decision_history": [
+        {
+          "previous": "pending",
+          "decision": "approved",
+          "version": 1,
+          "reviewer": "Damian",
+          "date": "2026-10-17",
+          "instruction": "Alright, approve all 14 drafts. Let's resolve the remaining curriculum and CPKC pathway gaps, then go ahead and implement them with the illustrations.",
+          "approval_record": "docs/validation/full-examples/2026-10-17/full-copy-approval.json"
+        }
+      ],
+      "implementation_completed_on": "2026-10-17",
+      "example_slug": "broken-pencil-studios",
+      "implementation_record": "docs/validation/full-examples/2026-10-17/implementation.md"
+    },
+    {
+      "id": "CGY-045",
+      "version": 1,
+      "company": "CPKC",
+      "canonical_domain": "cpkcr.com",
+      "sector": "Rail operations",
+      "calgary_evidence": "2025 annual report identifies Calgary main operations centre and Canadian dispatch function",
+      "work": "Rail traffic controllers coordinate crews and locomotive operations",
+      "proposed_question": "How can trains share a rail network without getting in each other’s way?",
+      "role_leads": "Rail traffic control; operations planning; network coordination",
+      "pathway_leads": [
+        {
+          "name": "CPKC — Employer rail traffic controller training",
+          "url": "https://careers.cpr.ca/job/Montreal-Rail-Traffic-Controller-QC-H4W-2J9/595098117/",
+          "status": "The indexed employer description listed high school completion or equivalent and employer selection and qualification requirements. The original job page is now unavailable, and its Montreal listing metadata conflicted with Calgary in the body. No open intake, current duration or present-day requirements are promised; check the current employer posting."
+        },
+        {
+          "name": "SAIT — Railway Conductor",
+          "url": "https://www.sait.ca/programs-and-courses/certificates/railway-conductor",
+          "status": "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration."
+        },
+        {
+          "name": "SAIT — Software Development",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/software-development",
+          "status": "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+        }
+      ],
+      "concepts": "Networks, time-distance graphs and constraints",
+      "gaps": "Use a simplified fictional timetable; verify actual training routes and do not imply a software diploma qualifies a dispatcher.",
+      "score_dimensions": [
+        4,
+        3,
+        3
+      ],
+      "score": 10,
+      "score_rationale": [
+        "Classroom 4/4: Networks, time-distance graphs and constraints offers an explainable connection.",
+        "Work 3/3: Rail traffic controllers coordinate crews and locomotive operations.",
+        "Added value 3/3: Adds rail dispatch and network coordination, rather than the existing aircraft manufacture and maintenance stories."
+      ],
+      "sources": [
+        "https://s21.q4cdn.com/736796105/files/doc_financials/2025/ar/v2/CPKC-Annual-Report-2025-Final-Web.pdf"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "recommendation": "recommend",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-17",
+      "last_attempted": "2026-10-17",
+      "last_researched": "2026-10-17",
+      "screening_completed_on": "2026-10-17",
+      "curriculum_status": "Editorial connection verified against cited curriculum topics; not external teacher endorsement.",
+      "role_status": "Task-based editorial leads, not verified vacancies or employer qualification requirements",
+      "full_example_status": "approved and implemented locally",
+      "implementation_status": "implemented locally",
+      "publication_status": "not deployed",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-17/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-17/source-captures.json",
+      "aliases": [
+        "Canadian Pacific Kansas City",
+        "Canadian Pacific (legacy)"
+      ],
+      "net_difference": "Adds rail dispatch and network coordination, rather than the existing aircraft manufacture and maintenance stories.",
+      "pathway_limitation": "Historical employer controller-training route verified through indexed employer text; vacancy now unavailable and listing metadata conflicted. No current intake or requirements promised. SAIT conductor training is a separate occupation.",
+      "source_check_date": "2026-10-17",
+      "decision_history": [
+        {
+          "previous": "pending",
+          "decision": "approved",
+          "reviewer": "Damian",
+          "date": "2026-10-17",
+          "version": 1,
+          "instruction": "Alright, approve all 14. Let's research the full examples and bring the drafts back to me for review before we implement them.",
+          "scope": "Company proposal only; full draft review before implementation"
+        }
+      ],
+      "full_copy_decision": "approved",
+      "full_copy_version": 1,
+      "full_example_packet": "docs/validation/full-examples/2026-10-17/review.md",
+      "full_research_attempted_on": "2026-10-17",
+      "full_draft_completed_on": "2026-10-17",
+      "full_copy_decision_history": [
+        {
+          "previous": "pending",
+          "decision": "approved",
+          "version": 1,
+          "reviewer": "Damian",
+          "date": "2026-10-17",
+          "instruction": "Alright, approve all 14 drafts. Let's resolve the remaining curriculum and CPKC pathway gaps, then go ahead and implement them with the illustrations.",
+          "approval_record": "docs/validation/full-examples/2026-10-17/full-copy-approval.json"
+        }
+      ],
+      "implementation_completed_on": "2026-10-17",
+      "example_slug": "cpkc",
+      "implementation_record": "docs/validation/full-examples/2026-10-17/implementation.md"
+    },
+    {
+      "id": "CGY-046",
+      "version": 1,
+      "company": "WaterSMART — a Hazen company",
+      "canonical_domain": "watersmartsolutions.ca",
+      "sector": "Water planning",
+      "calgary_evidence": "City identifies WaterSMART as partner in Calgary water-security roadmap",
+      "work": "Models long-term water security and reuse options",
+      "proposed_question": "How do you plan water supplies for a city that keeps changing?",
+      "role_leads": "Water-resource modelling; scenario analysis; reuse planning",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Integrated Water Management",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/integrated-water-management",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        },
+        {
+          "name": "SAIT — Geomatics Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/geomatics-engineering-technology",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        }
+      ],
+      "concepts": "Water cycles, demand and scenarios",
+      "gaps": "Roadmap is planning evidence, not proof all proposed projects are built; retain Hazen parent.",
+      "score_dimensions": [
+        4,
+        3,
+        2
+      ],
+      "score": 9,
+      "score_rationale": [
+        "Classroom 4/4: Water cycles, demand and scenarios offers an explainable connection.",
+        "Work 3/3: Models long-term water security and reuse options.",
+        "Added value 2/3: Useful comparison, with overlap against other current or proposed stories."
+      ],
+      "sources": [
+        "https://newsroom.calgary.ca/ensuring-a-reliable-water-supply-into-the-next-century-how-calgarys-water-security-roadmap-will-get-us-there/",
+        "https://watersmartsolutions.ca/stormwater-is-flowing-through-the-first-stages-of-the-newly-constructed-csmi-stormwater-system/"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "recommendation": "reserve",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-17",
+      "last_attempted": "2026-10-17",
+      "last_researched": "2026-10-17",
+      "screening_completed_on": "2026-10-17",
+      "curriculum_status": "Editorial connection verified against cited curriculum topics; not external teacher endorsement.",
+      "role_status": "Task-based editorial leads, not verified vacancies or employer qualification requirements",
+      "full_example_status": "approved and implemented locally",
+      "implementation_status": "implemented locally",
+      "publication_status": "not deployed",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-17/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-17/source-captures.json",
+      "aliases": [
+        "WaterSMART Solutions"
+      ],
+      "source_check_date": "2026-10-17",
+      "decision_history": [
+        {
+          "previous": "pending",
+          "decision": "approved",
+          "reviewer": "Damian",
+          "date": "2026-10-17",
+          "version": 1,
+          "instruction": "Alright, approve all 14. Let's research the full examples and bring the drafts back to me for review before we implement them.",
+          "scope": "Company proposal only; full draft review before implementation"
+        }
+      ],
+      "full_copy_decision": "approved",
+      "full_copy_version": 1,
+      "full_example_packet": "docs/validation/full-examples/2026-10-17/review.md",
+      "full_research_attempted_on": "2026-10-17",
+      "full_draft_completed_on": "2026-10-17",
+      "full_copy_decision_history": [
+        {
+          "previous": "pending",
+          "decision": "approved",
+          "version": 1,
+          "reviewer": "Damian",
+          "date": "2026-10-17",
+          "instruction": "Alright, approve all 14 drafts. Let's resolve the remaining curriculum and CPKC pathway gaps, then go ahead and implement them with the illustrations.",
+          "approval_record": "docs/validation/full-examples/2026-10-17/full-copy-approval.json"
+        }
+      ],
+      "implementation_completed_on": "2026-10-17",
+      "example_slug": "watersmart",
+      "implementation_record": "docs/validation/full-examples/2026-10-17/implementation.md"
+    },
+    {
+      "id": "CGY-047",
+      "version": 1,
+      "company": "Integrated Sustainability",
+      "canonical_domain": "integratedsustainability.com",
+      "sector": "Water infrastructure",
+      "calgary_evidence": "Calgary-based engineering and equipment integration described in company history",
+      "work": "Integrates water treatment design, equipment and delivery",
+      "proposed_question": "What has to work together to turn dirty water into usable water?",
+      "role_leads": "Process design; equipment integration; treatment operations",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Integrated Water Management",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/integrated-water-management",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        },
+        {
+          "name": "University of Calgary — Chemical Engineering",
+          "url": "https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-chemical-engineering",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        }
+      ],
+      "concepts": "Systems, mixtures and treatment stages",
+      "gaps": "Confirm a specific Calgary-team assignment; do not locate all client treatment plants in Calgary.",
+      "score_dimensions": [
+        4,
+        3,
+        2
+      ],
+      "score": 9,
+      "score_rationale": [
+        "Classroom 4/4: Systems, mixtures and treatment stages offers an explainable connection.",
+        "Work 3/3: Integrates water treatment design, equipment and delivery.",
+        "Added value 2/3: Useful comparison, with overlap against other current or proposed stories."
+      ],
+      "sources": [
+        "https://www.integratedsustainability.com/about-us/",
+        "https://www.integratedsustainability.com/services/"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "recommendation": "reserve",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-17",
+      "last_attempted": "2026-10-17",
+      "last_researched": "2026-10-17",
+      "screening_completed_on": "2026-10-17",
+      "curriculum_status": "Editorial connection verified against cited curriculum topics; not external teacher endorsement.",
+      "role_status": "Task-based editorial leads, not verified vacancies or employer qualification requirements",
+      "full_example_status": "approved and implemented locally",
+      "implementation_status": "implemented locally",
+      "publication_status": "not deployed",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-17/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-17/source-captures.json",
+      "aliases": [],
+      "source_check_date": "2026-10-17",
+      "decision_history": [
+        {
+          "previous": "pending",
+          "decision": "approved",
+          "reviewer": "Damian",
+          "date": "2026-10-17",
+          "version": 1,
+          "instruction": "Alright, approve all 14. Let's research the full examples and bring the drafts back to me for review before we implement them.",
+          "scope": "Company proposal only; full draft review before implementation"
+        }
+      ],
+      "full_copy_decision": "approved",
+      "full_copy_version": 1,
+      "full_example_packet": "docs/validation/full-examples/2026-10-17/review.md",
+      "full_research_attempted_on": "2026-10-17",
+      "full_draft_completed_on": "2026-10-17",
+      "full_copy_decision_history": [
+        {
+          "previous": "pending",
+          "decision": "approved",
+          "version": 1,
+          "reviewer": "Damian",
+          "date": "2026-10-17",
+          "instruction": "Alright, approve all 14 drafts. Let's resolve the remaining curriculum and CPKC pathway gaps, then go ahead and implement them with the illustrations.",
+          "approval_record": "docs/validation/full-examples/2026-10-17/full-copy-approval.json"
+        }
+      ],
+      "implementation_completed_on": "2026-10-17",
+      "example_slug": "integrated-sustainability",
+      "implementation_record": "docs/validation/full-examples/2026-10-17/implementation.md"
+    },
+    {
+      "id": "CGY-048",
+      "version": 1,
+      "company": "Trace Associates",
+      "canonical_domain": "traceassociates.ca",
+      "sector": "Environmental consulting",
+      "calgary_evidence": "Calgary headquarters with environmental science and engineering team",
+      "work": "Site assessment and risk-based remediation",
+      "proposed_question": "What evidence tells you which contaminated soil needs treatment?",
+      "role_leads": "Environmental sampling; risk assessment; remediation planning",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Chemical Laboratory Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        },
+        {
+          "name": "University of Calgary — Geology",
+          "url": "https://science.ucalgary.ca/earth/future-students/undergraduate/earth-science",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        }
+      ],
+      "concepts": "Sampling, concentration and ecological risk",
+      "gaps": "Find a specific local-team case and distinguish risk assessment from a blanket safety claim.",
+      "score_dimensions": [
+        4,
+        2,
+        2
+      ],
+      "score": 8,
+      "score_rationale": [
+        "Classroom 4/4: Sampling, concentration and ecological risk offers an explainable connection.",
+        "Work 2/3: Site assessment and risk-based remediation.",
+        "Added value 2/3: Useful comparison, with overlap against other current or proposed stories."
+      ],
+      "sources": [
+        "https://traceassociates.ca/contact-us/calgary/",
+        "https://traceassociates.ca/practice-area/remediation-and-risk/"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "recommendation": "reserve",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-17",
+      "last_attempted": "2026-10-17",
+      "last_researched": "2026-10-17",
+      "screening_completed_on": "2026-10-17",
+      "curriculum_status": "Editorial connection verified against cited curriculum topics; not external teacher endorsement.",
+      "role_status": "Task-based editorial leads, not verified vacancies or employer qualification requirements",
+      "full_example_status": "approved and implemented locally",
+      "implementation_status": "implemented locally",
+      "publication_status": "not deployed",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-17/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-17/source-captures.json",
+      "aliases": [],
+      "source_check_date": "2026-10-17",
+      "decision_history": [
+        {
+          "previous": "pending",
+          "decision": "approved",
+          "reviewer": "Damian",
+          "date": "2026-10-17",
+          "version": 1,
+          "instruction": "Alright, approve all 14. Let's research the full examples and bring the drafts back to me for review before we implement them.",
+          "scope": "Company proposal only; full draft review before implementation"
+        }
+      ],
+      "full_copy_decision": "approved",
+      "full_copy_version": 1,
+      "full_example_packet": "docs/validation/full-examples/2026-10-17/review.md",
+      "full_research_attempted_on": "2026-10-17",
+      "full_draft_completed_on": "2026-10-17",
+      "full_copy_decision_history": [
+        {
+          "previous": "pending",
+          "decision": "approved",
+          "version": 1,
+          "reviewer": "Damian",
+          "date": "2026-10-17",
+          "instruction": "Alright, approve all 14 drafts. Let's resolve the remaining curriculum and CPKC pathway gaps, then go ahead and implement them with the illustrations.",
+          "approval_record": "docs/validation/full-examples/2026-10-17/full-copy-approval.json"
+        }
+      ],
+      "implementation_completed_on": "2026-10-17",
+      "example_slug": "trace-associates",
+      "implementation_record": "docs/validation/full-examples/2026-10-17/implementation.md"
+    },
+    {
+      "id": "CGY-049",
+      "version": 1,
+      "company": "RJC Engineers",
+      "canonical_domain": "rjc.ca",
+      "sector": "Building science",
+      "calgary_evidence": "Calgary office page describes local structural and envelope services",
+      "work": "Designs and repairs structures and building envelopes",
+      "proposed_question": "How can a building keep heat in while keeping moisture out?",
+      "role_leads": "Building-envelope assessment; structural design; restoration inspection",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Civil Engineering Technology, Municipal Major",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/civil-engineering-technology-municipal",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        },
+        {
+          "name": "SAIT — Mechanical Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        }
+      ],
+      "concepts": "Heat transfer, moisture and materials",
+      "gaps": "Select an envelope project with explicit Calgary team attribution.",
+      "score_dimensions": [
+        4,
+        2,
+        2
+      ],
+      "score": 8,
+      "score_rationale": [
+        "Classroom 4/4: Heat transfer, moisture and materials offers an explainable connection.",
+        "Work 2/3: Designs and repairs structures and building envelopes.",
+        "Added value 2/3: Useful comparison, with overlap against other current or proposed stories."
+      ],
+      "sources": [
+        "https://www.rjc.ca/location-details/calgary.html"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "recommendation": "reserve",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-17",
+      "last_attempted": "2026-10-17",
+      "last_researched": "2026-10-17",
+      "screening_completed_on": "2026-10-17",
+      "curriculum_status": "Editorial connection verified against cited curriculum topics; not external teacher endorsement.",
+      "role_status": "Task-based editorial leads, not verified vacancies or employer qualification requirements",
+      "full_example_status": "approved and implemented locally",
+      "implementation_status": "implemented locally",
+      "publication_status": "not deployed",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-17/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-17/source-captures.json",
+      "aliases": [],
+      "source_check_date": "2026-10-17",
+      "decision_history": [
+        {
+          "previous": "pending",
+          "decision": "approved",
+          "reviewer": "Damian",
+          "date": "2026-10-17",
+          "version": 1,
+          "instruction": "Alright, approve all 14. Let's research the full examples and bring the drafts back to me for review before we implement them.",
+          "scope": "Company proposal only; full draft review before implementation"
+        }
+      ],
+      "full_copy_decision": "approved",
+      "full_copy_version": 1,
+      "full_example_packet": "docs/validation/full-examples/2026-10-17/review.md",
+      "full_research_attempted_on": "2026-10-17",
+      "full_draft_completed_on": "2026-10-17",
+      "full_copy_decision_history": [
+        {
+          "previous": "pending",
+          "decision": "approved",
+          "version": 1,
+          "reviewer": "Damian",
+          "date": "2026-10-17",
+          "instruction": "Alright, approve all 14 drafts. Let's resolve the remaining curriculum and CPKC pathway gaps, then go ahead and implement them with the illustrations.",
+          "approval_record": "docs/validation/full-examples/2026-10-17/full-copy-approval.json"
+        }
+      ],
+      "implementation_completed_on": "2026-10-17",
+      "example_slug": "rjc-engineers",
+      "implementation_record": "docs/validation/full-examples/2026-10-17/implementation.md"
+    },
+    {
+      "id": "CGY-050",
+      "version": 1,
+      "company": "Calgary Italian Bakery",
+      "canonical_domain": "cibl.com",
+      "sector": "Food manufacturing",
+      "calgary_evidence": "Calgary bakery identifies production area and separate deli",
+      "work": "Produces bread and buns with consistent quality controls",
+      "proposed_question": "Why does the same bread recipe need careful control at factory scale?",
+      "role_leads": "Baking production; quality checks; process scheduling",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Baking and Pastry Arts",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/baking-and-pastry-arts",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        },
+        {
+          "name": "SAIT — Chemical Laboratory Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        }
+      ],
+      "concepts": "Fermentation, ratios and temperature",
+      "gaps": "Verify exact fermentation/process details; do not infer proprietary recipe or current certifications.",
+      "score_dimensions": [
+        4,
+        2,
+        2
+      ],
+      "score": 8,
+      "score_rationale": [
+        "Classroom 4/4: Fermentation, ratios and temperature offers an explainable connection.",
+        "Work 2/3: Produces bread and buns with consistent quality controls.",
+        "Added value 2/3: Useful comparison, with overlap against other current or proposed stories."
+      ],
+      "sources": [
+        "https://www.cibl.com/",
+        "https://www.cibl.com/faq"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "recommendation": "reserve",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-17",
+      "last_attempted": "2026-10-17",
+      "last_researched": "2026-10-17",
+      "screening_completed_on": "2026-10-17",
+      "curriculum_status": "Editorial connection verified against cited curriculum topics; not external teacher endorsement.",
+      "role_status": "Task-based editorial leads, not verified vacancies or employer qualification requirements",
+      "full_example_status": "approved and implemented locally",
+      "implementation_status": "implemented locally",
+      "publication_status": "not deployed",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-17/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-17/source-captures.json",
+      "aliases": [],
+      "source_check_date": "2026-10-17",
+      "decision_history": [
+        {
+          "previous": "pending",
+          "decision": "approved",
+          "reviewer": "Damian",
+          "date": "2026-10-17",
+          "version": 1,
+          "instruction": "Alright, approve all 14. Let's research the full examples and bring the drafts back to me for review before we implement them.",
+          "scope": "Company proposal only; full draft review before implementation"
+        }
+      ],
+      "full_copy_decision": "approved",
+      "full_copy_version": 1,
+      "full_example_packet": "docs/validation/full-examples/2026-10-17/review.md",
+      "full_research_attempted_on": "2026-10-17",
+      "full_draft_completed_on": "2026-10-17",
+      "full_copy_decision_history": [
+        {
+          "previous": "pending",
+          "decision": "approved",
+          "version": 1,
+          "reviewer": "Damian",
+          "date": "2026-10-17",
+          "instruction": "Alright, approve all 14 drafts. Let's resolve the remaining curriculum and CPKC pathway gaps, then go ahead and implement them with the illustrations.",
+          "approval_record": "docs/validation/full-examples/2026-10-17/full-copy-approval.json"
+        }
+      ],
+      "implementation_completed_on": "2026-10-17",
+      "example_slug": "calgary-italian-bakery",
+      "implementation_record": "docs/validation/full-examples/2026-10-17/implementation.md"
+    },
+    {
+      "id": "CGY-051",
+      "version": 1,
+      "company": "Joe Media Group",
+      "canonical_domain": "joemedia.tv",
+      "sector": "Film production",
+      "calgary_evidence": "Company identifies Calgary-based film and TV operation",
+      "work": "Creative development, filming and post-production",
+      "proposed_question": "How do separate shots become one convincing story?",
+      "role_leads": "Camera operation; editing; production coordination",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Film and Video Production",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/film-and-video-production",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        }
+      ],
+      "concepts": "Sequences, visual communication and sound",
+      "gaps": "Choose a concrete production technique with documented local work; science connection is provisional.",
+      "score_dimensions": [
+        3,
+        2,
+        3
+      ],
+      "score": 8,
+      "score_rationale": [
+        "Classroom 3/4: Sequences, visual communication and sound offers an explainable connection.",
+        "Work 2/3: Creative development, filming and post-production.",
+        "Added value 3/3: Distinct context relative to current technical examples."
+      ],
+      "sources": [
+        "https://joemedia.tv/about-us",
+        "https://joemedia.tv/corporate",
+        "https://joemedia.tv/contact"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "recommendation": "reserve",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-17",
+      "last_attempted": "2026-10-17",
+      "last_researched": "2026-10-17",
+      "screening_completed_on": "2026-10-17",
+      "curriculum_status": "Editorial connection verified against cited curriculum topics; not external teacher endorsement.",
+      "role_status": "Task-based editorial leads, not verified vacancies or employer qualification requirements",
+      "full_example_status": "approved and implemented locally",
+      "implementation_status": "implemented locally",
+      "publication_status": "not deployed",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-17/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-17/source-captures.json",
+      "aliases": [],
+      "source_check_date": "2026-10-17",
+      "decision_history": [
+        {
+          "previous": "pending",
+          "decision": "approved",
+          "reviewer": "Damian",
+          "date": "2026-10-17",
+          "version": 1,
+          "instruction": "Alright, approve all 14. Let's research the full examples and bring the drafts back to me for review before we implement them.",
+          "scope": "Company proposal only; full draft review before implementation"
+        }
+      ],
+      "full_copy_decision": "approved",
+      "full_copy_version": 1,
+      "full_example_packet": "docs/validation/full-examples/2026-10-17/review.md",
+      "full_research_attempted_on": "2026-10-17",
+      "full_draft_completed_on": "2026-10-17",
+      "full_copy_decision_history": [
+        {
+          "previous": "pending",
+          "decision": "approved",
+          "version": 1,
+          "reviewer": "Damian",
+          "date": "2026-10-17",
+          "instruction": "Alright, approve all 14 drafts. Let's resolve the remaining curriculum and CPKC pathway gaps, then go ahead and implement them with the illustrations.",
+          "approval_record": "docs/validation/full-examples/2026-10-17/full-copy-approval.json"
+        }
+      ],
+      "implementation_completed_on": "2026-10-17",
+      "example_slug": "joe-media-group",
+      "implementation_record": "docs/validation/full-examples/2026-10-17/implementation.md"
+    },
+    {
+      "id": "CGY-052",
+      "version": 1,
+      "company": "ECCO Recycling",
+      "canonical_domain": "eccorecycling.com",
+      "sector": "Materials recovery",
+      "calgary_evidence": "Quarry Park Calgary facility listed, but homepage explicitly says temporarily closed",
+      "work": "Historically sorts waste and converts wood into mulch",
+      "proposed_question": "How can mixed waste become useful materials again?",
+      "role_leads": "Material sorting; equipment operation; quality control",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Mechanical Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        },
+        {
+          "name": "SAIT — Chemical Laboratory Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        }
+      ],
+      "concepts": "Material properties and separation",
+      "gaps": "HOLD: Calgary temporary closure; resolve operating status and incident context before current-operation story.",
+      "score_dimensions": [
+        4,
+        3,
+        2
+      ],
+      "score": 9,
+      "score_rationale": [
+        "Classroom 4/4: Material properties and separation offers an explainable connection.",
+        "Work 3/3: Historically sorts waste and converts wood into mulch.",
+        "Added value 2/3: Useful comparison, with overlap against other current or proposed stories."
+      ],
+      "sources": [
+        "https://eccorecycling.com/",
+        "https://www.calgary.ca/emergencies/land-fill-fire.html?redirect=%2Flandfillfire"
+      ],
+      "evidence_gate": "hold",
+      "recommendation": "hold",
+      "decision": "pending",
+      "workflow_state": "held",
+      "first_discovered": "2026-10-17",
+      "last_attempted": "2026-10-17",
+      "last_researched": null,
+      "screening_completed_on": "2026-10-17",
+      "curriculum_status": "Provisional concepts; exact Alberta outcomes not verified",
+      "role_status": "Task-based editorial leads, not verified vacancies or employer qualification requirements",
+      "full_example_status": "not drafted",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-17/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-17/source-captures.json",
+      "aliases": [],
+      "source_check_date": "2026-10-17"
+    },
+    {
+      "id": "CGY-053",
+      "version": 1,
+      "company": "Cascades Recovery+",
+      "canonical_domain": "cascades.com",
+      "sector": "Commercial recycling",
+      "calgary_evidence": "Employer lists Calgary recycling centre; former municipal contract must not be treated as current",
+      "work": "Recovers discarded commercial materials",
+      "proposed_question": "How do you turn a mixed recycling load into useful material streams?",
+      "role_leads": "Recovery operations; material quality; logistics",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Mechanical Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        },
+        {
+          "name": "SAIT — Chemical Laboratory Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        }
+      ],
+      "concepts": "Mixtures and sorting",
+      "gaps": "HOLD: verify current Calgary centre tasks; city switched blue-cart processing to GFL outside city in 2024.",
+      "score_dimensions": [
+        4,
+        2,
+        2
+      ],
+      "score": 8,
+      "score_rationale": [
+        "Classroom 4/4: Mixtures and sorting offers an explainable connection.",
+        "Work 2/3: Recovers discarded commercial materials.",
+        "Added value 2/3: Useful comparison, with overlap against other current or proposed stories."
+      ],
+      "sources": [
+        "https://www.cascades.com/en/about-us/our-company/cascades-worldwide/recycling-centres",
+        "https://newsroom.calgary.ca/new-sorting-facility-for-city-of-calgary-recycling-program/"
+      ],
+      "evidence_gate": "hold",
+      "recommendation": "hold",
+      "decision": "pending",
+      "workflow_state": "held",
+      "first_discovered": "2026-10-17",
+      "last_attempted": "2026-10-17",
+      "last_researched": null,
+      "screening_completed_on": "2026-10-17",
+      "curriculum_status": "Provisional concepts; exact Alberta outcomes not verified",
+      "role_status": "Task-based editorial leads, not verified vacancies or employer qualification requirements",
+      "full_example_status": "not drafted",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-17/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-17/source-captures.json",
+      "aliases": [
+        "Cascades Canada ULC (parent)"
+      ],
+      "source_check_date": "2026-10-17"
+    },
+    {
+      "id": "CGY-054",
+      "version": 1,
+      "company": "CBL Bakeries / Cinnaroll",
+      "canonical_domain": "cinnaroll.com",
+      "sector": "Food manufacturing",
+      "calgary_evidence": "Company describes production systems and Calgary address",
+      "work": "Mass-produces pastries with quality assurance",
+      "proposed_question": "How can thousands of pastries come out consistently?",
+      "role_leads": "Production operation; recipe scale-up; quality assurance",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Baking and Pastry Arts",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/baking-and-pastry-arts",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        },
+        {
+          "name": "SAIT — Chemical Laboratory Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        }
+      ],
+      "concepts": "Ratios, heat and variation",
+      "gaps": "Confirm production-site relationship before full copy; avoid duplicating bakery story above.",
+      "score_dimensions": [
+        4,
+        3,
+        1
+      ],
+      "score": 8,
+      "score_rationale": [
+        "Classroom 4/4: Ratios, heat and variation offers an explainable connection.",
+        "Work 3/3: Mass-produces pastries with quality assurance.",
+        "Added value 1/3: Useful comparison, with overlap against other current or proposed stories."
+      ],
+      "sources": [
+        "https://www.cinnaroll.com/"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "recommendation": "reserve",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-17",
+      "last_attempted": "2026-10-17",
+      "last_researched": "2026-10-17",
+      "screening_completed_on": "2026-10-17",
+      "curriculum_status": "Editorial connection verified against cited curriculum topics; not external teacher endorsement.",
+      "role_status": "Task-based editorial leads, not verified vacancies or employer qualification requirements",
+      "full_example_status": "approved and implemented locally",
+      "implementation_status": "implemented locally",
+      "publication_status": "not deployed",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-17/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-17/source-captures.json",
+      "aliases": [
+        "CBL Bakeries Ltd.",
+        "Cinnaroll"
+      ],
+      "source_check_date": "2026-10-17",
+      "decision_history": [
+        {
+          "previous": "pending",
+          "decision": "approved",
+          "reviewer": "Damian",
+          "date": "2026-10-17",
+          "version": 1,
+          "instruction": "Alright, approve all 14. Let's research the full examples and bring the drafts back to me for review before we implement them.",
+          "scope": "Company proposal only; full draft review before implementation"
+        }
+      ],
+      "full_copy_decision": "approved",
+      "full_copy_version": 1,
+      "full_example_packet": "docs/validation/full-examples/2026-10-17/review.md",
+      "full_research_attempted_on": "2026-10-17",
+      "full_draft_completed_on": "2026-10-17",
+      "full_copy_decision_history": [
+        {
+          "previous": "pending",
+          "decision": "approved",
+          "version": 1,
+          "reviewer": "Damian",
+          "date": "2026-10-17",
+          "instruction": "Alright, approve all 14 drafts. Let's resolve the remaining curriculum and CPKC pathway gaps, then go ahead and implement them with the illustrations.",
+          "approval_record": "docs/validation/full-examples/2026-10-17/full-copy-approval.json"
+        }
+      ],
+      "implementation_completed_on": "2026-10-17",
+      "example_slug": "cbl-bakeries-cinnaroll",
+      "implementation_record": "docs/validation/full-examples/2026-10-17/implementation.md"
+    },
+    {
+      "id": "CGY-055",
+      "version": 1,
+      "company": "Clifton Engineering Group",
+      "canonical_domain": "clifton.ca",
+      "sector": "Geotechnical engineering",
+      "calgary_evidence": "Current Calgary office confirmed; exact local laboratory scope unresolved",
+      "work": "Company offers soil, concrete and asphalt testing",
+      "proposed_question": "How can testing the ground help prevent a building from settling?",
+      "role_leads": "Geotechnical investigation; materials testing; field monitoring",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Civil Engineering Technology, Municipal Major",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/civil-engineering-technology-municipal",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        },
+        {
+          "name": "University of Calgary — Geology",
+          "url": "https://science.ucalgary.ca/earth/future-students/undergraduate/earth-science",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        }
+      ],
+      "concepts": "Stress, soil properties and sampling",
+      "gaps": "HOLD: service pages cover whole company; verify Calgary team/lab or specific local project.",
+      "score_dimensions": [
+        4,
+        3,
+        2
+      ],
+      "score": 9,
+      "score_rationale": [
+        "Classroom 4/4: Stress, soil properties and sampling offers an explainable connection.",
+        "Work 3/3: Company offers soil, concrete and asphalt testing.",
+        "Added value 2/3: Useful comparison, with overlap against other current or proposed stories."
+      ],
+      "sources": [
+        "https://www.clifton.ca/",
+        "https://www.clifton.ca/services/specialty/"
+      ],
+      "evidence_gate": "hold",
+      "recommendation": "hold",
+      "decision": "pending",
+      "workflow_state": "held",
+      "first_discovered": "2026-10-17",
+      "last_attempted": "2026-10-17",
+      "last_researched": null,
+      "screening_completed_on": "2026-10-17",
+      "curriculum_status": "Provisional concepts; exact Alberta outcomes not verified",
+      "role_status": "Task-based editorial leads, not verified vacancies or employer qualification requirements",
+      "full_example_status": "not drafted",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-17/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-17/source-captures.json",
+      "aliases": [],
+      "source_check_date": "2026-10-17"
+    },
+    {
+      "id": "CGY-056",
+      "version": 1,
+      "company": "ISL Engineering",
+      "canonical_domain": "islengineering.com",
+      "sector": "Civil infrastructure",
+      "calgary_evidence": "Calgary office and 144 Avenue NW Calgary extension in project portfolio",
+      "work": "Civil design and infrastructure delivery",
+      "proposed_question": "How do engineers choose a safe route for a new road?",
+      "role_leads": "Road geometry; surveying; drainage planning",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Civil Engineering Technology, Municipal Major",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/civil-engineering-technology-municipal",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        },
+        {
+          "name": "SAIT — Geomatics Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/geomatics-engineering-technology",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        }
+      ],
+      "concepts": "Geometry, gradients and water flow",
+      "gaps": "Get project-specific duties and constraints; timber capability is company-wide, not proof of this road’s materials.",
+      "score_dimensions": [
+        4,
+        2,
+        2
+      ],
+      "score": 8,
+      "score_rationale": [
+        "Classroom 4/4: Geometry, gradients and water flow offers an explainable connection.",
+        "Work 2/3: Civil design and infrastructure delivery.",
+        "Added value 2/3: Useful comparison, with overlap against other current or proposed stories."
+      ],
+      "sources": [
+        "https://islengineering.com/about/our-offices/",
+        "https://islengineering.com/projects/"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "recommendation": "reserve",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-17",
+      "last_attempted": "2026-10-17",
+      "last_researched": "2026-10-17",
+      "screening_completed_on": "2026-10-17",
+      "curriculum_status": "Editorial connection verified against cited curriculum topics; not external teacher endorsement.",
+      "role_status": "Task-based editorial leads, not verified vacancies or employer qualification requirements",
+      "full_example_status": "approved and implemented locally",
+      "implementation_status": "implemented locally",
+      "publication_status": "not deployed",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-17/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-17/source-captures.json",
+      "aliases": [],
+      "source_check_date": "2026-10-17",
+      "decision_history": [
+        {
+          "previous": "pending",
+          "decision": "approved",
+          "reviewer": "Damian",
+          "date": "2026-10-17",
+          "version": 1,
+          "instruction": "Alright, approve all 14. Let's research the full examples and bring the drafts back to me for review before we implement them.",
+          "scope": "Company proposal only; full draft review before implementation"
+        }
+      ],
+      "full_copy_decision": "approved",
+      "full_copy_version": 1,
+      "full_example_packet": "docs/validation/full-examples/2026-10-17/review.md",
+      "full_research_attempted_on": "2026-10-17",
+      "full_draft_completed_on": "2026-10-17",
+      "full_copy_decision_history": [
+        {
+          "previous": "pending",
+          "decision": "approved",
+          "version": 1,
+          "reviewer": "Damian",
+          "date": "2026-10-17",
+          "instruction": "Alright, approve all 14 drafts. Let's resolve the remaining curriculum and CPKC pathway gaps, then go ahead and implement them with the illustrations.",
+          "approval_record": "docs/validation/full-examples/2026-10-17/full-copy-approval.json"
+        }
+      ],
+      "implementation_completed_on": "2026-10-17",
+      "example_slug": "isl-engineering",
+      "implementation_record": "docs/validation/full-examples/2026-10-17/implementation.md"
+    },
+    {
+      "id": "CGY-057",
+      "version": 1,
+      "company": "ClearBakk — ALSYS group",
+      "canonical_domain": "clearbakk.com",
+      "sector": "Water treatment equipment",
+      "calgary_evidence": "About page identifies Calgary engineering company",
+      "work": "Designs modular water-treatment units and fluid systems",
+      "proposed_question": "How can you fit a water-treatment process into a modular unit?",
+      "role_leads": "Process design; equipment integration; commissioning",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Integrated Water Management",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/integrated-water-management",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        },
+        {
+          "name": "SAIT — Instrumentation Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/instrumentation-engineering-technology",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        }
+      ],
+      "concepts": "Mixtures, flow and systems",
+      "gaps": "Select documented treatment sequence; retain ALSYS parent, distinguish engineering location from plant location.",
+      "score_dimensions": [
+        4,
+        3,
+        1
+      ],
+      "score": 8,
+      "score_rationale": [
+        "Classroom 4/4: Mixtures, flow and systems offers an explainable connection.",
+        "Work 3/3: Designs modular water-treatment units and fluid systems.",
+        "Added value 1/3: Useful comparison, with overlap against other current or proposed stories."
+      ],
+      "sources": [
+        "https://clearbakk.com/about-us/",
+        "https://clearbakk.com/"
+      ],
+      "evidence_gate": "pass at proposal level",
+      "recommendation": "reserve",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-17",
+      "last_attempted": "2026-10-17",
+      "last_researched": "2026-10-17",
+      "screening_completed_on": "2026-10-17",
+      "curriculum_status": "Editorial connection verified against cited curriculum topics; not external teacher endorsement.",
+      "role_status": "Task-based editorial leads, not verified vacancies or employer qualification requirements",
+      "full_example_status": "approved and implemented locally",
+      "implementation_status": "implemented locally",
+      "publication_status": "not deployed",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-17/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-17/source-captures.json",
+      "aliases": [
+        "ALSYS (parent)"
+      ],
+      "source_check_date": "2026-10-17",
+      "decision_history": [
+        {
+          "previous": "pending",
+          "decision": "approved",
+          "reviewer": "Damian",
+          "date": "2026-10-17",
+          "version": 1,
+          "instruction": "Alright, approve all 14. Let's research the full examples and bring the drafts back to me for review before we implement them.",
+          "scope": "Company proposal only; full draft review before implementation"
+        }
+      ],
+      "full_copy_decision": "approved",
+      "full_copy_version": 1,
+      "full_example_packet": "docs/validation/full-examples/2026-10-17/review.md",
+      "full_research_attempted_on": "2026-10-17",
+      "full_draft_completed_on": "2026-10-17",
+      "full_copy_decision_history": [
+        {
+          "previous": "pending",
+          "decision": "approved",
+          "version": 1,
+          "reviewer": "Damian",
+          "date": "2026-10-17",
+          "instruction": "Alright, approve all 14 drafts. Let's resolve the remaining curriculum and CPKC pathway gaps, then go ahead and implement them with the illustrations.",
+          "approval_record": "docs/validation/full-examples/2026-10-17/full-copy-approval.json"
+        }
+      ],
+      "implementation_completed_on": "2026-10-17",
+      "example_slug": "clearbakk",
+      "implementation_record": "docs/validation/full-examples/2026-10-17/implementation.md"
+    },
+    {
+      "id": "CGY-058",
+      "version": 1,
+      "company": "Former Matrix Solutions / Montrose (current brand unresolved)",
+      "canonical_domain": "montrose-env.com",
+      "sector": "Environmental engineering",
+      "calgary_evidence": "Government acquisition record identifies Calgary engineering business; current association listing corroborates city",
+      "work": "Environmental site assessment, remediation and project management",
+      "proposed_question": "How do you map where contamination may travel?",
+      "role_leads": "Hydrogeology; environmental assessment; spatial analysis",
+      "pathway_leads": [
+        {
+          "name": "University of Calgary — Geology",
+          "url": "https://science.ucalgary.ca/earth/future-students/undergraduate/earth-science",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        },
+        {
+          "name": "SAIT — Geomatics Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/geomatics-engineering-technology",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        }
+      ],
+      "concepts": "Groundwater, transport and mapping",
+      "gaps": "HOLD: former Montrose Canada URL now redirects to Onterris-branded corporate material. Resolve current brand/entity and Calgary team/project before full copy; Matrix HR is unrelated.",
+      "score_dimensions": [
+        4,
+        2,
+        2
+      ],
+      "score": 8,
+      "score_rationale": [
+        "Classroom 4/4: Groundwater, transport and mapping offers an explainable connection.",
+        "Work 2/3: Environmental site assessment, remediation and project management.",
+        "Added value 2/3: Useful comparison, with overlap against other current or proposed stories."
+      ],
+      "sources": [
+        "https://ised-isde.canada.ca/site/investment-canada-act/en/node/241975",
+        "https://www.bmacanada.org/community-member/montrose-environmental/",
+        "https://go.montrose-env.com/montrose-in-canada"
+      ],
+      "evidence_gate": "hold",
+      "recommendation": "hold",
+      "decision": "pending",
+      "workflow_state": "held",
+      "first_discovered": "2026-10-17",
+      "last_attempted": "2026-10-17",
+      "last_researched": null,
+      "screening_completed_on": "2026-10-17",
+      "curriculum_status": "Provisional concepts; exact Alberta outcomes not verified",
+      "role_status": "Task-based editorial leads, not verified vacancies or employer qualification requirements",
+      "full_example_status": "not drafted",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-17/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-17/source-captures.json",
+      "aliases": [
+        "Matrix Solutions",
+        "Onterris (redirected current brand; entity relationship requires verification)"
+      ],
+      "source_check_date": "2026-10-17"
+    },
+    {
+      "id": "CGY-059",
+      "version": 1,
+      "company": "Clearwater Calgary",
+      "canonical_domain": "clearwatercalgary.com",
+      "sector": "Water equipment services",
+      "calgary_evidence": "Company says it assembles softeners and filtration units in Calgary shop",
+      "work": "Assembles and services filtration, softening and reverse-osmosis equipment",
+      "proposed_question": "Why do different water problems need different treatment devices?",
+      "role_leads": "Equipment assembly; troubleshooting; water-system servicing",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Mechanical Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        },
+        {
+          "name": "SAIT — Instrumentation Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/instrumentation-engineering-technology",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        }
+      ],
+      "concepts": "Dissolved substances, filtration and maintenance",
+      "gaps": "Direct free reader failed; search-index evidence is provisional. Verify current shop work and treatment claims before drafting.",
+      "score_dimensions": [
+        4,
+        2,
+        1
+      ],
+      "score": 7,
+      "score_rationale": [
+        "Classroom 4/4: Dissolved substances, filtration and maintenance offers an explainable connection.",
+        "Work 2/3: Assembles and services filtration, softening and reverse-osmosis equipment.",
+        "Added value 1/3: Useful comparison, with overlap against other current or proposed stories."
+      ],
+      "sources": [
+        "https://www.clearwatercalgary.com/"
+      ],
+      "evidence_gate": "hold",
+      "recommendation": "hold",
+      "decision": "pending",
+      "workflow_state": "held",
+      "first_discovered": "2026-10-17",
+      "last_attempted": "2026-10-17",
+      "last_researched": null,
+      "screening_completed_on": "2026-10-17",
+      "curriculum_status": "Provisional concepts; exact Alberta outcomes not verified",
+      "role_status": "Task-based editorial leads, not verified vacancies or employer qualification requirements",
+      "full_example_status": "not drafted",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-17/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-17/source-captures.json",
+      "aliases": [],
+      "source_check_date": "2026-10-17"
+    },
+    {
+      "id": "CGY-060",
+      "version": 1,
+      "company": "Puppet Stuff Canada",
+      "canonical_domain": "puppetstuffcanada.ca",
+      "sector": "Creative fabrication",
+      "calgary_evidence": "Team page has Calgary references but current studio municipality not established",
+      "work": "Builds and performs puppets for screen and live shows",
+      "proposed_question": "How can a small movement make a puppet seem alive?",
+      "role_leads": "Puppet fabrication; performance; finishing and prop building",
+      "pathway_leads": [
+        {
+          "name": "SAIT — Film and Video Production",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/film-and-video-production",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        },
+        {
+          "name": "SAIT — Mechanical Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology",
+          "status": "Potential related learning route, not employer requirements or admission assurance; intake not checked"
+        }
+      ],
+      "concepts": "Levers, materials and motion",
+      "gaps": "HOLD: confirm studio is in Calgary city, not merely serving Calgary; do not infer current hiring from team biographies.",
+      "score_dimensions": [
+        4,
+        3,
+        3
+      ],
+      "score": 10,
+      "score_rationale": [
+        "Classroom 4/4: Levers, materials and motion offers an explainable connection.",
+        "Work 3/3: Builds and performs puppets for screen and live shows.",
+        "Added value 3/3: Distinct context relative to current technical examples."
+      ],
+      "sources": [
+        "https://www.puppetstuffcanada.ca/about",
+        "https://www.puppetstuffcanada.ca/contact"
+      ],
+      "evidence_gate": "hold",
+      "recommendation": "hold",
+      "decision": "pending",
+      "workflow_state": "held",
+      "first_discovered": "2026-10-17",
+      "last_attempted": "2026-10-17",
+      "last_researched": null,
+      "screening_completed_on": "2026-10-17",
+      "curriculum_status": "Provisional concepts; exact Alberta outcomes not verified",
+      "role_status": "Task-based editorial leads, not verified vacancies or employer qualification requirements",
+      "full_example_status": "not drafted",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-17/review.md",
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-17/source-captures.json",
+      "aliases": [],
+      "source_check_date": "2026-10-17"
     }
   ],
-  "updated_on": "2026-10-15"
+  "updated_on": "2026-10-17"
 }

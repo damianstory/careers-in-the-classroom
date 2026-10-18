@@ -1,0 +1,47 @@
+{
+  "checked_on": "2026-10-17",
+  "scope": "Local production build; no deployment",
+  "build_id": "okGjhVg4J4qhruowHvxtg",
+  "typecheck": "passed",
+  "lint": "passed",
+  "production_build": "passed",
+  "unit_tests": { "passed": 167, "failed": 0, "files": 12 },
+  "browser_regressions": {
+    "passed": 165,
+    "failed": 0,
+    "skipped": 1,
+    "skip_reason": "Existing projector accessibility check is intentionally desktop-only",
+    "suites": ["all-examples", "journeys", "a11y"],
+    "viewports": ["1440x900", "390x844"],
+    "examples_traversed_per_viewport": 32,
+    "isolated_origin": "http://127.0.0.1:3217"
+  },
+  "new_example_checks": {
+    "examples": 14,
+    "viewport_checks": 28,
+    "serious_or_critical_axe_violations": 0,
+    "horizontal_overflow_cases": 0,
+    "maximum_desktop_story_width_px": 615.375,
+    "maximum_desktop_diagram_width_px": 680,
+    "phone_image_width_px": 358,
+    "evidence": "browser-qa/checks.json"
+  },
+  "visual_review": {
+    "generated_images_reviewed": 28,
+    "superseded_images": 2,
+    "rendered_screenshots_reviewed": ["cpkc-desktop.png", "watersmart-diagram-desktop.png", "joe-media-group-desktop.png", "o2-planning-design-phone.png", "cpkc-diagram-phone.png", "joe-media-group-diagram-phone.png"],
+    "result": "Legible live explanations, intact aspect ratios, consistent style, no green image-caption strips; conceptual limitations retained in copy."
+  },
+  "git_diff_check": "passed",
+  "earlier_check_findings": [
+    "Three unit expectations and library browser counts described the previous collection; updated for the added examples.",
+    "Original Playwright port was occupied on IPv4 by an unrelated older server; interrupted the initial run and validated on isolated IPv4 port 3217.",
+    "The initial screenshot helper reused a saved layout preference; reset browser storage between pages and completed all 28 viewport checks."
+  ],
+  "limitations": [
+    "External employer and program content can change after the recorded check date.",
+    "CPKC controller training is historical evidence with conflicting original location metadata, not an open intake.",
+    "The two bakery stories are cross-unit inquiry examples without invented unit matches.",
+    "Generated illustrations show fictional people and generic equipment."
+  ]
+}

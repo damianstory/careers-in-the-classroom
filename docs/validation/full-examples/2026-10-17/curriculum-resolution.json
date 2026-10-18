@@ -1,0 +1,145 @@
+{
+  "checkedOn": "2026-10-17",
+  "sources": {
+    "phys": [
+      "Alberta Physics 20–30 performance standards: A1, B1 and C1",
+      "https://www.alberta.ca/system/files/custom_downloaded_images/edc-physics20-30-performance-standards.pdf"
+    ],
+    "bio": [
+      "Alberta Biology 20–30 program: water use and ecosystems",
+      "https://education.alberta.ca/media/159727/bio203007.pdf"
+    ],
+    "chem": [
+      "Alberta Chemistry 20–30 program: solutions and concentration",
+      "https://education.alberta.ca/media/159730/chem2030_07.pdf"
+    ],
+    "sci": [
+      "Alberta Science 10 program: inquiry skills and technological systems",
+      "https://education.alberta.ca/media/159715/science10.pdf"
+    ]
+  },
+  "mapping": {
+    "o2-planning-design": [
+      "Biology",
+      "Biology 20",
+      "Water, habitat and ecosystem relationships",
+      "b20b",
+      "bio",
+      "Biology 20 B1.3k relates biotic and abiotic factors in aquatic ecosystems. Use the park to compare habitat and water conditions; treatment performance needs measurements."
+    ],
+    "entuitive": [
+      "Physics",
+      "Physics 20",
+      "Balanced forces and structural load paths",
+      "p20b",
+      "phys",
+      "Physics 20 B1 concerns balanced and unbalanced forces. Draw a simplified free-body diagram; truss design and construction sequencing are engineering extensions."
+    ],
+    "phil-sebastian": [
+      "Physics",
+      "Physics 30",
+      "Reflection and optical measurement",
+      "p30c",
+      "phys",
+      "Physics 30 C1 includes reflection. Trace light from source to sample to sensor; roast data and flavour are separate evidence."
+    ],
+    "broken-pencil-studios": [
+      "Physics",
+      "Physics 20",
+      "Frame spacing, displacement and velocity",
+      "p20a",
+      "phys",
+      "Physics 20 A1 relates displacement, velocity, acceleration and time. Compare ball positions at equal time intervals; animation production supplies the context, not a claim that all studio work is physics."
+    ],
+    "cpkc": [
+      "Physics",
+      "Physics 20",
+      "Position-time graphs and motion",
+      "p20a",
+      "phys",
+      "Physics 20 A1 supports interpreting position-time graphs. Compare fictional movements; timetable decisions and railway rules are extensions beyond the classroom model."
+    ],
+    "watersmart": [
+      "Biology",
+      "Biology 20",
+      "Water use, conservation and ecosystems",
+      "b20a",
+      "bio",
+      "Biology 20 A2.1sts explicitly connects societal water use to ecosystem water quality, quantity, purification and conservation. Compare scenarios rather than treating a forecast as certain."
+    ],
+    "integrated-sustainability": [
+      "Chemistry",
+      "Chemistry 20",
+      "Solutions, concentration and treatment evidence",
+      "c20c",
+      "chem",
+      "Chemistry 20 Unit C addresses aqueous solutions and concentration. Compare feed and output concentrations with flow and sample timing; process controls are an engineering extension."
+    ],
+    "trace-associates": [
+      "Chemistry",
+      "Chemistry 20",
+      "Concentration and representative sampling",
+      "c20c",
+      "chem",
+      "Chemistry 20 Unit C provides concentration concepts. Compare results with units and a sampling plan; regulatory decisions and toxicology are not classroom safety rules."
+    ],
+    "rjc-engineers": [
+      "Physics",
+      "Science 10",
+      "Heat transfer in technological systems",
+      "s10b",
+      "sci",
+      "Science 10 Unit B connects heat transfer and technological systems. Compare insulation and joints; moisture transport is a building-science extension, not a universal wall prescription."
+    ],
+    "calgary-italian-bakery": [
+      "Chemistry",
+      "Science 10",
+      "Scientific inquiry: measuring losses and comparing changes",
+      null,
+      "sci",
+      "Science 10 inquiry skills (program p. 8) support operational definitions, measurements and evaluating data. This is a cross-unit investigation, not a chemical-reaction or stoichiometry outcome."
+    ],
+    "joe-media-group": [
+      "Physics",
+      "Physics 30",
+      "Reflection, refraction and camera image formation",
+      "p30c",
+      "phys",
+      "Physics 30 C1 includes reflection, refraction and thin-lens image formation. Follow light from subject through lens to sensor, then distinguish physical capture from editorial colour changes."
+    ],
+    "cbl-bakeries-cinnaroll": [
+      "Chemistry",
+      "Science 10",
+      "Scientific inquiry: variables, sampling and consistency",
+      null,
+      "sci",
+      "Science 10 inquiry skills (program p. 8) support controlled variables, sampling and interpreting variation. Recipe scale-up is not presented as chemical stoichiometry."
+    ],
+    "isl-engineering": [
+      "Biology",
+      "Biology 20",
+      "Aquatic ecosystems and environmental evidence",
+      "b20b",
+      "bio",
+      "Biology 20 B1.3k connects biotic and abiotic characteristics of aquatic ecosystems. Compare creek habitat and water observations before and after a crossing; road geometry is context rather than a claimed kinematics outcome."
+    ],
+    "clearbakk": [
+      "Chemistry",
+      "Chemistry 20",
+      "Solutions, separation and output testing",
+      "c20c",
+      "chem",
+      "Chemistry 20 Unit C supplies solution and concentration concepts. Compare feed and output evidence; modular layout and maintenance access are engineering applications."
+    ]
+  },
+  "limits": "Course/topic matches are editorial. Inquiry-only bakery examples receive no invented unit match. Physics standards are explicitly identified as standards, not mislabelled as the Program of Studies. Current Alberta renewal describes grades 7–9 science field testing, not a replacement high-school science program.",
+  "cpkc": {
+    "name": "CPKC — Employer rail traffic controller training",
+    "route": "Employer training after selection",
+    "location": "Calgary operations context; historical employer description",
+    "url": "https://careers.cpr.ca/job/Montreal-Rail-Traffic-Controller-QC-H4W-2J9/595098117/",
+    "learns": "A historical CPKC description outlined six months of company training for selected controller applicants, including qualification in railway operating rules.",
+    "role_connection": "Directly relates to rail traffic control; this is not SAIT conductor training.",
+    "entry": "The indexed employer description listed high school completion or equivalent and employer selection and qualification requirements. The original job page is now unavailable, and its Montreal listing metadata conflicted with Calgary in the body. No open intake, current duration or present-day requirements are promised; check the current employer posting."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-17",
+  "status": "ready_for_single_notification",
+  "new": 20,
+  "qualified": 14,
+  "held": 6,
+  "recommended_ids": [
+    "CGY-041",
+    "CGY-042",
+    "CGY-043",
+    "CGY-044",
+    "CGY-045"
+  ],
+  "weekly_spend_usd": 0.025,
+  "packet": "review.md"
+}

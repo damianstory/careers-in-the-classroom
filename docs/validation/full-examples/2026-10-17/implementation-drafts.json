@@ -1,0 +1,1588 @@
+[
+  {
+    "id": "CGY-041-FULL",
+    "version": 1,
+    "company": "O2 Planning and Design",
+    "slug": "o2-planning-design",
+    "decision": "approved",
+    "proposal_decision": "approved",
+    "checked_on": "2026-10-17",
+    "question": "How can a park help clean stormwater before it reaches a river?",
+    "hook": "A park can be part of a city’s water system.",
+    "company_copy": "O2 is a planning and design practice with a Calgary studio. At Dale Hodges Park, it worked with other specialists to combine stormwater treatment, habitat and public space. Its project account describes marshes, wet meadows and landforms that guide water before it reaches the Bow River. This was collaborative work; O2 did not design every element alone.",
+    "local_note": "Calgary studio; the featured project is Dale Hodges Park in Calgary.",
+    "classroom_steps": [
+      "Runoff carries water and suspended material from streets into drainage systems.",
+      "At Dale Hodges Park, water follows a designed route through a landscape rather than remaining hidden in pipes.",
+      "Slower flow can allow some suspended particles to settle. Different treatment stages address different parts of the problem.",
+      "The landscape also supports habitat and recreation. A useful design must account for these needs together."
+    ],
+    "discussion": "Would the clearest-looking water necessarily be the safest water?",
+    "activity": "Draw two fictional routes from a street drain to a river: one short and fast, one with space for settling. Mark where to sample and one habitat trade-off.",
+    "teacher_note": "Clear water can still contain dissolved contaminants. This is a planning model, not a drinking-water treatment demonstration.",
+    "roles": [
+      {
+        "title": "Landscape design",
+        "summary": "Shape outdoor spaces so water, habitat and human uses can work together.",
+        "tasks": [
+          "Read the site and identify competing needs.",
+          "Develop plans and sections that show landforms and planting.",
+          "Review details with engineers, ecologists and construction teams."
+        ],
+        "collaborators": "Ecologists, planners, engineers and contractors",
+        "classroom_connection": "A change to a landform changes paths for both water and people.",
+        "company_evidence": "O2 lists landscape architects and a Calgary junior-designer description; this role summary is editorial."
+      },
+      {
+        "title": "Spatial data and mapping",
+        "summary": "Turn measurements tied to places into usable spatial information. The work involves coordinates, scale and checking that datasets describe the same location and time.",
+        "tasks": [
+          "Check coordinate systems and measurement dates.",
+          "Align and inspect spatial datasets.",
+          "Present maps or models with their limitations."
+        ],
+        "collaborators": "Surveyors, engineers, field operators and software teams",
+        "classroom_connection": "Models can be detailed while still containing gaps or misaligned measurements.",
+        "company_evidence": "O2’s mapping page describes GIS and visualization services."
+      },
+      {
+        "title": "Environmental field assessment",
+        "summary": "Collect and interpret evidence about a place before recommending an action.",
+        "tasks": [
+          "Plan observations or samples around a clear question.",
+          "Record locations, methods and conditions consistently.",
+          "Explain the limits of the evidence and the next useful check."
+        ],
+        "collaborators": "Laboratory staff, engineers and project planners",
+        "classroom_connection": "A result has meaning only in the context of how and where it was collected.",
+        "company_evidence": "O2 lists environmental scientists; the park project supports ecological work, not a particular employee assignment."
+      }
+    ],
+    "pathways": [
+      {
+        "name": "University of Calgary — Master of Landscape Architecture",
+        "route": "Graduate degree",
+        "url": "https://sapl.ucalgary.ca/future-students/graduate/master-landscape-architecture-mla",
+        "learns": "Study landscape design, land stewardship and community needs.",
+        "role_connection": "A longer-term professional education route after undergraduate study; registration is separate.",
+        "location": "Calgary",
+        "entry": "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration."
+      },
+      {
+        "name": "SAIT — Geomatics Engineering Technology",
+        "route": "Diploma",
+        "location": "Calgary",
+        "learns": "Learn surveying, GIS, positioning and remote sensing.",
+        "role_connection": "Supports spatial measurement and mapping data work.",
+        "url": "https://www.sait.ca/programs-and-courses/diplomas/geomatics-engineering-technology",
+        "entry": "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+      },
+      {
+        "name": "SAIT — Environmental Technology",
+        "route": "Diploma",
+        "url": "https://www.sait.ca/programs-and-courses/diplomas/environmental-technology",
+        "learns": "Study environmental monitoring, assessment and field methods.",
+        "role_connection": "Supports field and laboratory work in environmental projects.",
+        "location": "Calgary",
+        "entry": "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration."
+      }
+    ],
+    "curriculum": "Biology 20 B1.3k relates biotic and abiotic factors in aquatic ecosystems. Use the park to compare habitat and water conditions; treatment performance needs measurements.",
+    "curriculum_status": "Editorial connection verified against cited curriculum topics; not external teacher endorsement.",
+    "job_evidence": "A complete employer Junior Landscape Designer PDF was captured. It is not confirmed on the current board; preserved as historical/undated role evidence, status unknown. A separate current planner listing was seen but not turned into an extra card.",
+    "job_cards": [
+      {
+        "id": "CGY-041-J1",
+        "version": 1,
+        "decision": "approved",
+        "title": "Junior Landscape Designer",
+        "employer": "O2 Planning + Design",
+        "location": "Calgary",
+        "seniority": "Junior; employer requested at least one year of relevant experience",
+        "status": "unknown",
+        "label": "Undated employer role example — application status unverified, checked 17 October 2026",
+        "summary": "Help a multidisciplinary team turn landscape concepts into drawings and visual presentations.",
+        "duties": [
+          "Contribute to concept designs, reports and construction documentation.",
+          "Prepare 3D visualizations and renderings.",
+          "Develop technical detailing with the project team."
+        ],
+        "skills": [
+          "Landscape architecture or related university degree.",
+          "At least one year of relevant experience.",
+          "Graphic communication and CAD/3D software skills; eligibility for AALA Associate membership."
+        ],
+        "related_work": "Shows how the landscape design in the park story becomes documented plans. This posting does not establish assignment to Dale Hodges Park.",
+        "source": "https://www.o2design.com/s/O2_Junior-Landscape-Designer.pdf",
+        "publication_date": null,
+        "deadline": null,
+        "status_checked_on": "2026-10-17",
+        "score_dimensions": [
+          4,
+          3,
+          3
+        ]
+      }
+    ],
+    "story_image_brief": "Fictional landscape designer tracing a stormwater route on a plan beside a wetland boardwalk.",
+    "teaching_image_brief": "Street runoff → settling area → marsh landscape → river; side connection to habitat, not a drinking-water tap.",
+    "alt_text": "Fictional landscape designer tracing a stormwater route on a plan beside a wetland boardwalk.",
+    "review_limitations": "No measured removal percentage is claimed. Preserve partner attribution and distinguish suspended particles from dissolved substances.",
+    "sources": [
+      "https://www.o2design.com/dale-hodges-park",
+      "https://www.o2design.com/contact-us",
+      "https://www.o2design.com/careers",
+      "https://www.o2design.com/s/O2_Junior-Landscape-Designer.pdf",
+      "https://engage.o2design.com/about.html"
+    ],
+    "imagery_status": "briefs only; not generated",
+    "implementation_status": "implemented locally",
+    "publication_status": "not deployed",
+    "implementation_revision": 1,
+    "based_on_reviewed_version": 1,
+    "approved_resolution_scope": "Curriculum and CPKC pathway resolution plus illustrations delegated in the implementation instruction."
+  },
+  {
+    "id": "CGY-042-FULL",
+    "version": 1,
+    "company": "Entuitive",
+    "slug": "entuitive",
+    "decision": "approved",
+    "proposal_decision": "approved",
+    "checked_on": "2026-10-17",
+    "question": "How can you support a library above a moving train?",
+    "hook": "The space below a building can be just as important as the rooms inside it.",
+    "company_copy": "Entuitive provided structural engineering for Calgary’s Central Library. Its Calgary-based project lead describes the challenge of building above an active LRT corridor using long-span trusses and coordinating construction with transit operations. Structural engineering helps the building carry loads while leaving space for the railway. The architect, builder and transit operator had different responsibilities.",
+    "local_note": "Calgary project and a Calgary-based structural engineering lead are explicitly documented.",
+    "classroom_steps": [
+      "A building’s weight and the people inside create loads that must reach the ground.",
+      "An active rail corridor limits where supports can go. The structure has to span the space.",
+      "Truss members and connections transfer forces along a designed load path. Construction stages need their own checks.",
+      "Engineers coordinate the drawings and sequence with builders and transit staff so the permanent design can be built."
+    ],
+    "discussion": "Why might a structure that works when complete need extra support during construction?",
+    "activity": "Sketch a fictional floor across a no-support zone. Trace a load path to the ground and identify a connection that would need checking.",
+    "teacher_note": "Conceptual force arrows are not an engineered design. Do not suggest students can assess a real building’s safety from a drawing.",
+    "roles": [
+      {
+        "title": "Structural engineering",
+        "summary": "Work out how a structure transfers loads through members and connections to its supports.",
+        "tasks": [
+          "Identify loads and constraints in the design brief.",
+          "Develop and check a structural model and details.",
+          "Coordinate construction-stage requirements with the project team."
+        ],
+        "collaborators": "Architects, technologists, builders and reviewers",
+        "classroom_connection": "Forces must have a continuous route to supports; an attractive shape alone is not evidence of performance.",
+        "company_evidence": "Entuitive identifies its structural engineering contribution and Calgary project lead."
+      },
+      {
+        "title": "Civil and construction technology",
+        "summary": "Turn project requirements into usable drawings, quantities and checks.",
+        "tasks": [
+          "Prepare technical drawings using measured site information.",
+          "Check dimensions and interfaces between design disciplines.",
+          "Support construction records and field verification."
+        ],
+        "collaborators": "Engineers, surveyors and site teams",
+        "classroom_connection": "Scale and accurate measurements connect a drawing to the real location.",
+        "company_evidence": "Technical detailing is documented in the project account; this is not a verified vacancy."
+      },
+      {
+        "title": "Construction coordination",
+        "summary": "Help different teams work from compatible information and an achievable sequence.",
+        "tasks": [
+          "Track design changes and unresolved interfaces.",
+          "Compare construction stages with access and operating constraints.",
+          "Communicate decisions and confirm that the correct documents reach the field."
+        ],
+        "collaborators": "Designers, contractors, owners and operations staff",
+        "classroom_connection": "A system that works at the end may need different support while it is being assembled.",
+        "company_evidence": "The project account describes construction sequencing and transit coordination; role label is editorial."
+      }
+    ],
+    "pathways": [
+      {
+        "name": "University of Calgary — Civil Engineering",
+        "route": "Bachelor’s degree",
+        "location": "Calgary",
+        "url": "https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-civil-engineering",
+        "learns": "Study the design and operation of structures, transportation and water infrastructure.",
+        "role_connection": "A degree foundation for engineering work; professional registration and supervised experience are separate.",
+        "entry": "Check current admissions and program requirements. A degree is not automatic professional licensure."
+      },
+      {
+        "name": "SAIT — Civil Engineering Technology, Municipal Major",
+        "route": "Diploma",
+        "url": "https://www.sait.ca/programs-and-courses/diplomas/civil-engineering-technology-municipal",
+        "learns": "Study municipal infrastructure, design and drafting.",
+        "role_connection": "Technical design and project delivery; not professional engineer licensure.",
+        "location": "Calgary",
+        "entry": "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration."
+      },
+      {
+        "name": "SAIT — Architectural Technologies",
+        "route": "Diploma",
+        "url": "https://www.sait.ca/programs-and-courses/diplomas/architectural-technologies",
+        "learns": "Study building design, technical drawings and construction systems.",
+        "role_connection": "Supports building-envelope detailing and technical coordination.",
+        "location": "Calgary",
+        "entry": "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration."
+      }
+    ],
+    "curriculum": "Physics 20 B1 concerns balanced and unbalanced forces. Draw a simplified free-body diagram; truss design and construction sequencing are engineering extensions.",
+    "curriculum_status": "Editorial connection verified against cited curriculum topics; not external teacher endorsement.",
+    "job_evidence": "Employer careers page inspected; no exact, story-matched job description was verified in this bounded pass.",
+    "job_cards": [],
+    "story_image_brief": "Fictional structural engineer comparing a long-span model with a rail corridor drawing.",
+    "teaching_image_brief": "Floor load → truss members → columns outside rail corridor → ground; add a separate construction-stage support cue.",
+    "alt_text": "Fictional structural engineer comparing a long-span model with a rail corridor drawing.",
+    "review_limitations": "Keep the LRT beneath a supported span. No invented loads, dimensions or claims that a generic illustration is the actual library structure.",
+    "sources": [
+      "https://www.entuitive.com/post/designing-for-constructability-over-active-rail-lines",
+      "https://view.ceros.com/entuitive/new-calgary-library-big-story",
+      "https://www.calgarymlc.ca/projects/central-library",
+      "https://www.entuitive.com/careers"
+    ],
+    "imagery_status": "briefs only; not generated",
+    "implementation_status": "implemented locally",
+    "publication_status": "not deployed",
+    "implementation_revision": 1,
+    "based_on_reviewed_version": 1,
+    "approved_resolution_scope": "Curriculum and CPKC pathway resolution plus illustrations delegated in the implementation instruction."
+  },
+  {
+    "id": "CGY-043-FULL",
+    "version": 1,
+    "company": "Phil & Sebastian Coffee Roasters",
+    "slug": "phil-sebastian",
+    "decision": "approved",
+    "proposal_decision": "approved",
+    "checked_on": "2026-10-17",
+    "question": "How can measurements help make a roast repeatable?",
+    "hook": "Consistency depends on checking what happened, not just repeating a recipe.",
+    "company_copy": "Phil & Sebastian operates a roasting facility in Calgary’s Simmons Building. The company describes a custom roaster, logged roast data and additional reflectance measurements used to check batches. The story connects food production with instrumentation: recording operating conditions and checking the product answer different questions. Its claims about competitors are not needed for this example.",
+    "local_note": "The company identifies the Simmons Building as its Calgary roasting facility.",
+    "classroom_steps": [
+      "A roast changes a batch of green coffee through heating. Time and temperature matter, but they do not describe every property of the result.",
+      "The company says it records roast data and checks samples with a reflectometer.",
+      "A reflectance reading measures how light returns from the sample under specified conditions; it is not a direct measurement of flavour.",
+      "Comparing process records with product measurements can reveal variation and guide the next controlled test."
+    ],
+    "discussion": "If two batches have the same recorded temperature history, what else would you want to measure?",
+    "activity": "Compare three fictional batches: A and B share a heating record but have different colour readings; B and C share colour readings but have different sensory notes. List what each comparison can and cannot show.",
+    "teacher_note": "The fictional comparisons are not company results. No coffee consumption or hot-equipment activity is required.",
+    "roles": [
+      {
+        "title": "Roast production",
+        "summary": "Operate a controlled food-processing sequence and compare the product with its intended result.",
+        "tasks": [
+          "Track batch identity and process settings.",
+          "Record observations and measurements during production.",
+          "Report variation and help compare trial adjustments."
+        ],
+        "collaborators": "Quality staff, technicians and production planners",
+        "classroom_connection": "Repeating a setting is not the same as verifying a repeatable result.",
+        "company_evidence": "Company process description supports roasting work; no specific roaster vacancy verified."
+      },
+      {
+        "title": "Instrument development and testing",
+        "summary": "Help build and check the equipment that produces measurements. Instrument work joins hardware, software and experiments rather than treating a reading as automatically correct.",
+        "tasks": [
+          "Check performance using a known reference.",
+          "Investigate drift, noise or inconsistent readings.",
+          "Document tests so later users know what the instrument can establish."
+        ],
+        "collaborators": "Scientists, electronics specialists and software developers",
+        "classroom_connection": "Measurement uncertainty is part of using a tool responsibly.",
+        "company_evidence": "Custom equipment and reflectance measurements support the work-area connection."
+      },
+      {
+        "title": "Quality and traceability",
+        "summary": "Make it possible to explain how a result or product was produced. Quality work checks records, methods and acceptance criteria so variation can be investigated rather than hidden.",
+        "tasks": [
+          "Check that materials and samples have traceable identities.",
+          "Compare recorded results with defined acceptance criteria.",
+          "Investigate deviations and document what changed."
+        ],
+        "collaborators": "Production, laboratory, engineering and customer teams",
+        "classroom_connection": "Repeated results need both measurements and records of the conditions that produced them.",
+        "company_evidence": "Company describes batch checks; the general quality profile is not a job description."
+      }
+    ],
+    "pathways": [
+      {
+        "name": "SAIT — Instrumentation Engineering Technology",
+        "route": "Diploma",
+        "location": "Calgary",
+        "learns": "Work with measurement devices, calibration and automated process controls.",
+        "role_connection": "Supports process testing, troubleshooting and control systems.",
+        "url": "https://www.sait.ca/programs-and-courses/diplomas/instrumentation-engineering-technology",
+        "entry": "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+      },
+      {
+        "name": "SAIT — Chemical Laboratory Technology",
+        "route": "Diploma",
+        "location": "Calgary",
+        "learns": "Practice chemical analysis, sample preparation and analytical instrumentation.",
+        "role_connection": "Supports laboratory testing and reliable measurement.",
+        "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+        "entry": "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+      },
+      {
+        "name": "SAIT — Mechanical Engineering Technology",
+        "route": "Diploma",
+        "location": "Calgary",
+        "learns": "Study mechanical systems, design and manufacturing, with specialization options.",
+        "role_connection": "Supports component design, prototyping and equipment work.",
+        "url": "https://www.sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology",
+        "entry": "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+      }
+    ],
+    "curriculum": "Physics 30 C1 includes reflection. Trace light from source to sample to sensor; roast data and flavour are separate evidence.",
+    "curriculum_status": "Editorial connection verified against cited curriculum topics; not external teacher endorsement.",
+    "job_evidence": "Employer careers page inspected; no complete roasting/instrument role card verified.",
+    "job_cards": [],
+    "story_image_brief": "Fictional roast operator comparing sample beans and an instrument reading beside a closed roasting machine.",
+    "teaching_image_brief": "Record roast conditions → collect sample → measure reflected light → compare and adjust; keep light between sensor and sample.",
+    "alt_text": "Fictional roast operator comparing sample beans and an instrument reading beside a closed roasting machine.",
+    "review_limitations": "No exact roast temperatures or proprietary machine internals. Colour and flavour must remain distinct.",
+    "sources": [
+      "https://philsebastian.com/pages/locations/simmons",
+      "https://philsebastian.com/pages/our-coffee-approach",
+      "https://philsebastian.com/pages/join-our-team"
+    ],
+    "imagery_status": "briefs only; not generated",
+    "implementation_status": "implemented locally",
+    "publication_status": "not deployed",
+    "implementation_revision": 1,
+    "based_on_reviewed_version": 1,
+    "approved_resolution_scope": "Curriculum and CPKC pathway resolution plus illustrations delegated in the implementation instruction."
+  },
+  {
+    "id": "CGY-044-FULL",
+    "version": 1,
+    "company": "Broken Pencil Studios",
+    "slug": "broken-pencil-studios",
+    "decision": "approved",
+    "proposal_decision": "approved",
+    "checked_on": "2026-10-17",
+    "question": "How can a moving picture explain a process you cannot see?",
+    "hook": "A useful animation helps an audience follow relationships that a camera cannot easily show.",
+    "company_copy": "Broken Pencil Studios is a Calgary creative studio offering animation, illustration and technical visualization. Its own production account describes moving from a communication brief to script, storyboard, design, animation and delivery. The work is not simply making something move: the team chooses what to show so an audience can understand a message.",
+    "local_note": "The company identifies itself as a Calgary animation production studio.",
+    "classroom_steps": [
+      "Start with the audience and one question the explanation must answer.",
+      "Turn the idea into a script and storyboard that show the sequence before polishing the artwork.",
+      "Use timing, viewpoint and visual choices to make a relationship visible. A model may simplify reality, so the simplification should be deliberate.",
+      "Review whether a viewer understood the intended idea. Revise a confusing scene instead of adding decoration."
+    ],
+    "discussion": "When does simplifying an animation make it misleading?",
+    "activity": "Draw four frames showing a ball at equal time intervals. Make one version constant-speed and one speeding up. Ask a partner to infer the motion from the spacing.",
+    "teacher_note": "Use the ball activity to compare positions at equal time intervals. Constant displacement per interval means constant velocity; increasing displacement means speeding up in that direction. This is our physics extension, not a claimed client project. Artistic motion can depart from reality.",
+    "roles": [
+      {
+        "title": "Storyboarding and illustration",
+        "summary": "Decide what an audience needs to see before the final sequence is produced.",
+        "tasks": [
+          "Translate a message into visual scenes.",
+          "Check order, viewpoint and transitions using rough drawings.",
+          "Revise the sequence after feedback before detailed animation."
+        ],
+        "collaborators": "Writers, animators and clients",
+        "classroom_connection": "A model needs to preserve the relationship it is intended to explain.",
+        "company_evidence": "Company production article describes script-to-storyboard and illustration work."
+      },
+      {
+        "title": "Animation",
+        "summary": "Create motion from planned images, models and timing decisions.",
+        "tasks": [
+          "Set key positions and the time between them.",
+          "Adjust spacing and transitions to communicate movement.",
+          "Review the result against the story and technical requirements."
+        ],
+        "collaborators": "Illustrators, directors and sound specialists",
+        "classroom_connection": "Spacing at equal time intervals can communicate constant speed or changing speed.",
+        "company_evidence": "Company article explicitly describes animation and timing."
+      },
+      {
+        "title": "Creative production coordination",
+        "summary": "Help a project move from a communication brief to a deliverable that can be reviewed.",
+        "tasks": [
+          "Clarify audience, scope and review milestones.",
+          "Coordinate feedback between creative and client teams.",
+          "Track revisions and confirm delivery requirements."
+        ],
+        "collaborators": "Writers, designers, animators and clients",
+        "classroom_connection": "Defining the question first helps distinguish useful evidence from extra detail.",
+        "company_evidence": "Company article identifies project/development work and staged client review; profile is editorial."
+      }
+    ],
+    "pathways": [
+      {
+        "name": "AUArts — Bachelor of Design",
+        "route": "Bachelor’s degree",
+        "url": "https://www.auarts.ca/program-areas/undergraduate/bachelor-of-design-bdes",
+        "learns": "Develop visual communication through studio-based design work.",
+        "role_connection": "Supports illustration and visual storytelling; portfolio requirements apply.",
+        "location": "Calgary",
+        "entry": "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration."
+      },
+      {
+        "name": "SAIT — Film and Video Production",
+        "route": "Diploma",
+        "url": "https://www.sait.ca/programs-and-courses/diplomas/film-and-video-production",
+        "learns": "Practise production and post-production through film projects.",
+        "role_connection": "Supports camera, editing and production work; a portfolio remains important.",
+        "location": "Calgary",
+        "entry": "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration."
+      }
+    ],
+    "curriculum": "Physics 20 A1 relates displacement, velocity, acceleration and time. Compare ball positions at equal time intervals; animation production supplies the context, not a claim that all studio work is physics.",
+    "curriculum_status": "Editorial connection verified against cited curriculum topics; not external teacher endorsement.",
+    "job_evidence": "Company workflow and team evidence used. No live vacancy verified; no dedicated job-feed search claimed.",
+    "job_cards": [],
+    "story_image_brief": "Fictional animator comparing a simple motion study on a monitor with a paper storyboard.",
+    "teaching_image_brief": "Brief → storyboard → timed frames → audience check, with feedback arrow; labels supplied outside artwork.",
+    "alt_text": "Fictional animator comparing a simple motion study on a monitor with a paper storyboard.",
+    "review_limitations": "The equal-time motion activity supplies the Physics 20 connection. Do not claim that animation improves learning by a measured percentage.",
+    "sources": [
+      "https://www.brokenpencilstudios.ca/",
+      "https://www.brokenpencilstudios.ca/about-us",
+      "https://www.brokenpencilstudios.ca/blogs/from-scribbles-to-screens-behind-the-scenes-of-creating-an-animated-explainer-video"
+    ],
+    "imagery_status": "briefs only; not generated",
+    "implementation_status": "implemented locally",
+    "publication_status": "not deployed",
+    "implementation_revision": 1,
+    "based_on_reviewed_version": 1,
+    "approved_resolution_scope": "Curriculum and CPKC pathway resolution plus illustrations delegated in the implementation instruction."
+  },
+  {
+    "id": "CGY-045-FULL",
+    "version": 1,
+    "company": "CPKC",
+    "slug": "cpkc",
+    "decision": "approved",
+    "proposal_decision": "approved",
+    "checked_on": "2026-10-17",
+    "question": "How can trains share a rail network without getting in each other’s way?",
+    "hook": "A railway moves through space, but its plan also has to work through time.",
+    "company_copy": "CPKC operates a rail network across Canada, the United States and Mexico. Its 2025 annual report identifies Calgary as the location of its main operations centre and primary Canadian dispatch facility. Rail traffic controllers coordinate crews and day-to-day locomotive operations. The classroom model below simplifies the scheduling problem; it does not describe railway operating rules.",
+    "local_note": "Calgary operations centre and dispatch function are documented in the 2025 annual report.",
+    "classroom_steps": [
+      "Two trains can need the same section of track at different times. Distance alone does not reveal a conflict.",
+      "A time-distance diagram lets a planner compare movement and waiting in one view.",
+      "Changing one train’s departure may affect several later movements. Plans have to consider constraints together.",
+      "Real rail operations use formal rules, communication and trained staff. A classroom timetable illustrates only one part of that system."
+    ],
+    "discussion": "What happens to the rest of a timetable when one train is delayed?",
+    "activity": "On a fictional single-track segment, Train A occupies it from minute 0 to 8 and Train B from minute 5 to 12. Shift B to remove overlap, then discuss what additional safety margin would need a real rule rather than a guess.",
+    "teacher_note": "This is a scheduling puzzle, not a safe operating procedure. Do not invent braking distances or dispatch clearances.",
+    "roles": [
+      {
+        "title": "Rail traffic control",
+        "summary": "Coordinate railway movements and crews within formal operating systems and rules.",
+        "tasks": [
+          "Monitor movement information and operating constraints.",
+          "Coordinate plans and communicate with railway teams.",
+          "Respond to changes using the applicable procedures and authority."
+        ],
+        "collaborators": "Train crews, operations managers and maintenance teams",
+        "classroom_connection": "Time and position together reveal conflicts that a map alone can miss.",
+        "company_evidence": "2025 company annual report explicitly identifies controllers and Calgary operations."
+      },
+      {
+        "title": "Railway conductor work",
+        "summary": "Support train movements and handling of rail vehicles through trained railway operations.",
+        "tasks": [
+          "Apply operating procedures during assigned movements.",
+          "Communicate with other railway workers.",
+          "Check and document required operational information."
+        ],
+        "collaborators": "Locomotive crews, controllers and yard teams",
+        "classroom_connection": "The plan and the physical movement must agree; conductor and dispatcher are different roles.",
+        "company_evidence": "SAIT describes conductor tasks as related railway work; no specific Calgary CPKC vacancy or project assignment is claimed."
+      },
+      {
+        "title": "Software and data systems",
+        "summary": "Build the tools that move, process and display information. Reliable software needs testing against missing, delayed and unexpected data as well as ideal examples.",
+        "tasks": [
+          "Translate a user need into a testable behaviour.",
+          "Build and test a data-processing or display feature.",
+          "Investigate failures and document assumptions about inputs."
+        ],
+        "collaborators": "Domain experts, designers, users and hardware teams",
+        "classroom_connection": "An algorithm’s output depends on the quality and meaning of its inputs.",
+        "company_evidence": "Adjacent network/data work; not a verified CPKC job or requirement for traffic control."
+      }
+    ],
+    "pathways": [
+      {
+        "name": "CPKC — Employer rail traffic controller training",
+        "route": "Employer training after selection",
+        "location": "Calgary operations context; historical employer description",
+        "url": "https://careers.cpr.ca/job/Montreal-Rail-Traffic-Controller-QC-H4W-2J9/595098117/",
+        "learns": "A historical CPKC description outlined six months of company training for selected controller applicants, including qualification in railway operating rules.",
+        "role_connection": "Directly relates to rail traffic control; this is not SAIT conductor training.",
+        "entry": "The indexed employer description listed high school completion or equivalent and employer selection and qualification requirements. The original job page is now unavailable, and its Montreal listing metadata conflicted with Calgary in the body. No open intake, current duration or present-day requirements are promised; check the current employer posting."
+      },
+      {
+        "name": "SAIT — Railway Conductor",
+        "route": "Certificate",
+        "url": "https://www.sait.ca/programs-and-courses/certificates/railway-conductor",
+        "learns": "Study railway operating procedures and train handling responsibilities.",
+        "role_connection": "A route toward conductor work, not a rail traffic controller qualification or hiring guarantee.",
+        "location": "Calgary",
+        "entry": "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration."
+      },
+      {
+        "name": "SAIT — Software Development",
+        "route": "Diploma",
+        "location": "Calgary",
+        "learns": "Learn to design, test and build software across front-end and back-end systems.",
+        "role_connection": "A foundation for junior development or testing; senior roles require further experience.",
+        "url": "https://www.sait.ca/programs-and-courses/diplomas/software-development",
+        "entry": "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+      }
+    ],
+    "curriculum": "Physics 20 A1 supports interpreting position-time graphs. Compare fictional movements; timetable decisions and railway rules are extensions beyond the classroom model.",
+    "curriculum_status": "Editorial connection verified against cited curriculum topics; not external teacher endorsement.",
+    "job_evidence": "No new live CPKC vacancy is claimed. A search-indexed original employer description supports the historical training route; the live page now says the job is unavailable.",
+    "job_cards": [],
+    "story_image_brief": "Fictional rail operations worker comparing a schematic network and a simple time-distance display.",
+    "teaching_image_brief": "Movement information → time-space comparison → conflict identified → revised plan; no realistic operating command or signalling instruction.",
+    "alt_text": "Fictional rail operations worker comparing a schematic network and a simple time-distance display.",
+    "review_limitations": "Controller entry is represented by a historical employer-training example, not a current vacancy or guaranteed six-month intake. SAIT Railway Conductor leads toward conductor work, not controller qualification. Older agreement terms are not treated as current.",
+    "sources": [
+      "https://s21.q4cdn.com/736796105/files/doc_financials/2025/ar/v2/CPKC-Annual-Report-2025-Final-Web.pdf",
+      "https://www.cpkcr.com/content/dam/cpkc/documents/english/labour-agreements/TCRC%20RTC%20and%20CP%20%282021-2023%29.pdf",
+      "https://investor.cpkcr.com/news/press-release-details/2025/CPKC-receives-arbitration-decision-establishing-new-TCRC-collective-agreements/default.aspx",
+      "https://careers.cpr.ca/job/Montreal-Rail-Traffic-Controller-QC-H4W-2J9/595098117/"
+    ],
+    "imagery_status": "briefs only; not generated",
+    "implementation_status": "implemented locally",
+    "publication_status": "not deployed",
+    "implementation_revision": 1,
+    "based_on_reviewed_version": 1,
+    "approved_resolution_scope": "Curriculum and CPKC pathway resolution plus illustrations delegated in the implementation instruction."
+  },
+  {
+    "id": "CGY-046-FULL",
+    "version": 1,
+    "company": "WaterSMART — a Hazen company",
+    "slug": "watersmart",
+    "decision": "approved",
+    "proposal_decision": "approved",
+    "checked_on": "2026-10-17",
+    "question": "How do you plan water supplies for a city that keeps changing?",
+    "hook": "A useful water plan asks what might change, not just how much water is available today.",
+    "company_copy": "WaterSMART, now presented as a Hazen company, works on water management with engineers, environmental scientists and policy specialists. The City of Calgary identifies WaterSMART as a partner in its integrated water-security roadmap and water-reuse assessment. The project supports long-term choices about water supply, demand and reuse; planning evidence does not mean every option has been built.",
+    "local_note": "Calgary-based work is established through the City’s named roadmap partnership and the company team page.",
+    "classroom_steps": [
+      "Describe the sources and uses of water in the system.",
+      "Build more than one scenario for future demand and available supply.",
+      "Compare options such as reducing demand or changing which water source serves a use. Reuse requires the right treatment and controls.",
+      "Choose actions that can be revised as monitoring and circumstances change. A plan should state uncertainty rather than hide it."
+    ],
+    "discussion": "Would you choose the option that is best in one forecast or useful across several forecasts?",
+    "activity": "Use fictional annual demand of 100 units. Compare a 10-unit demand reduction under supplies of 120, 100 and 80 units. Identify the remaining deficit and one assumption the arithmetic leaves out.",
+    "teacher_note": "Units are fictional. Real planning includes seasonality, ecosystems, rights, infrastructure and water quality; subtraction alone is not a water-security assessment.",
+    "roles": [
+      {
+        "title": "Water-resource planning",
+        "summary": "Compare water availability, demand and possible responses over time.",
+        "tasks": [
+          "Organize supply, use and monitoring information.",
+          "Test alternative assumptions in scenarios.",
+          "Explain trade-offs, uncertainty and priorities."
+        ],
+        "collaborators": "Hydrologists, engineers, policy specialists and communities",
+        "classroom_connection": "A model is a way to test assumptions, not a guarantee about the future.",
+        "company_evidence": "City roadmap and company team page support water-planning work."
+      },
+      {
+        "title": "Environmental field assessment",
+        "summary": "Collect and interpret evidence about a place before recommending an action.",
+        "tasks": [
+          "Plan observations or samples around a clear question.",
+          "Record locations, methods and conditions consistently.",
+          "Explain the limits of the evidence and the next useful check."
+        ],
+        "collaborators": "Laboratory staff, engineers and project planners",
+        "classroom_connection": "A result has meaning only in the context of how and where it was collected.",
+        "company_evidence": "Company lists environmental scientists; no specific vacancy or roadmap assignment is asserted."
+      },
+      {
+        "title": "Planning communication and engagement",
+        "summary": "Help people with different needs understand and contribute to a planning process.",
+        "tasks": [
+          "Explain scenarios and technical options in accessible language.",
+          "Gather and document questions and priorities.",
+          "Make clear what the evidence supports and where choices remain."
+        ],
+        "collaborators": "Technical teams, decision-makers and community participants",
+        "classroom_connection": "A number can inform a decision without deciding whose needs take priority.",
+        "company_evidence": "Company lists facilitators, communicators and policy advisers; tasks are editorial."
+      }
+    ],
+    "pathways": [
+      {
+        "name": "SAIT — Integrated Water Management",
+        "route": "Diploma",
+        "url": "https://www.sait.ca/programs-and-courses/diplomas/integrated-water-management",
+        "learns": "Study water systems, monitoring and management.",
+        "role_connection": "Water sampling, infrastructure and planning support.",
+        "location": "Calgary",
+        "entry": "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration."
+      },
+      {
+        "name": "University of Calgary — Civil Engineering",
+        "route": "Bachelor’s degree",
+        "location": "Calgary",
+        "url": "https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-civil-engineering",
+        "learns": "Study the design and operation of structures, transportation and water infrastructure.",
+        "role_connection": "A degree foundation for engineering work; professional registration and supervised experience are separate.",
+        "entry": "Check current admissions and program requirements. A degree is not automatic professional licensure."
+      },
+      {
+        "name": "SAIT — Environmental Technology",
+        "route": "Diploma",
+        "url": "https://www.sait.ca/programs-and-courses/diplomas/environmental-technology",
+        "learns": "Study environmental monitoring, assessment and field methods.",
+        "role_connection": "Supports field and laboratory work in environmental projects.",
+        "location": "Calgary",
+        "entry": "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration."
+      }
+    ],
+    "curriculum": "Biology 20 A2.1sts explicitly connects societal water use to ecosystem water quality, quantity, purification and conservation. Compare scenarios rather than treating a forecast as certain.",
+    "curriculum_status": "Editorial connection verified against cited curriculum topics; not external teacher endorsement.",
+    "job_evidence": "Team and project sources support work areas. No exact vacancy verified.",
+    "job_cards": [],
+    "story_image_brief": "Fictional water planner comparing a watershed map with three supply-and-demand scenarios.",
+    "teaching_image_brief": "Supply and demand evidence → scenarios → compare options → monitor and revise; never show a forecast as certain.",
+    "alt_text": "Fictional water planner comparing a watershed map with three supply-and-demand scenarios.",
+    "review_limitations": "No claim that reuse water is automatically potable or that roadmap recommendations are already constructed.",
+    "sources": [
+      "https://newsroom.calgary.ca/ensuring-a-reliable-water-supply-into-the-next-century-how-calgarys-water-security-roadmap-will-get-us-there/",
+      "https://watersmartsolutions.ca/stormwater-is-flowing-through-the-first-stages-of-the-newly-constructed-csmi-stormwater-system/",
+      "https://watersmartsolutions.ca/our-team/"
+    ],
+    "imagery_status": "briefs only; not generated",
+    "implementation_status": "implemented locally",
+    "publication_status": "not deployed",
+    "implementation_revision": 1,
+    "based_on_reviewed_version": 1,
+    "approved_resolution_scope": "Curriculum and CPKC pathway resolution plus illustrations delegated in the implementation instruction."
+  },
+  {
+    "id": "CGY-047-FULL",
+    "version": 1,
+    "company": "Integrated Sustainability",
+    "slug": "integrated-sustainability",
+    "decision": "approved",
+    "proposal_decision": "approved",
+    "checked_on": "2026-10-17",
+    "question": "Why does a water-treatment system need more than a successful laboratory test?",
+    "hook": "A treatment idea has to keep working when real water and operating conditions change.",
+    "company_copy": "Integrated Sustainability is a Calgary-based water-infrastructure business working across design, equipment delivery and operations. Its public project material describes biological treatment of mine water and operating work on a moving bed biofilm reactor. Those are company project claims, not evidence that a mine or treatment plant is located in Calgary. The teaching focus is the connection between a treatment process and the system around it.",
+    "local_note": "Calgary engineering business; client treatment sites may be elsewhere.",
+    "classroom_steps": [
+      "Identify what is in the incoming water and what quality is required for the intended discharge or reuse.",
+      "Select treatment steps that address the target substances. A biological reactor is one possible component, not a universal solution.",
+      "Equipment, controls and maintenance must keep the process within suitable conditions.",
+      "Measure the outgoing water and compare it with the requirement. A promising test is not the same as sustained operating performance."
+    ],
+    "discussion": "What could change between a successful small trial and a full operating plant?",
+    "activity": "Compare two fictional plants with equal average output quality: one has stable results and one has large swings. Decide what additional operating records would help explain the difference.",
+    "teacher_note": "Do not infer compliance from an average or equate all biological treatment processes. No claimed removal percentage is used.",
+    "roles": [
+      {
+        "title": "Process engineering",
+        "summary": "Turn a useful transformation into a workable sequence of equipment and operating steps. Process engineers consider what enters, what leaves and what conditions the system must maintain.",
+        "tasks": [
+          "Draw a flow of materials and energy through the system.",
+          "Compare operating conditions and equipment options.",
+          "Use trial results to revise the process and communicate constraints."
+        ],
+        "collaborators": "Laboratory staff, operators, mechanical designers and controls specialists",
+        "classroom_connection": "Conservation of matter and energy connects classroom calculations to process decisions.",
+        "company_evidence": "Company treatment-design services support process engineering."
+      },
+      {
+        "title": "Water-treatment operations",
+        "summary": "Keep a treatment process working within its specified conditions and record how it performs.",
+        "tasks": [
+          "Monitor process readings and output tests.",
+          "Follow operating and maintenance procedures.",
+          "Document deviations and coordinate investigation."
+        ],
+        "collaborators": "Process engineers, laboratories and maintenance teams",
+        "classroom_connection": "Stable operation matters even when average results look acceptable.",
+        "company_evidence": "Company project material describes treatment operations; not necessarily a Calgary plant or vacancy."
+      },
+      {
+        "title": "Instrumentation and controls",
+        "summary": "Keep a process measurable and responsive. Controls work connects sensors, decisions and actuators so the system can respond when conditions change.",
+        "tasks": [
+          "Check whether sensors are reading reliably.",
+          "Compare measurements with the intended operating range.",
+          "Test how the system responds to a change or fault."
+        ],
+        "collaborators": "Operators, electricians and process engineers",
+        "classroom_connection": "Feedback uses a measured result to inform the next action.",
+        "company_evidence": "Integrated systems require controls; this is an interpreted work connection, not a named employer posting."
+      }
+    ],
+    "pathways": [
+      {
+        "name": "University of Calgary — Chemical Engineering",
+        "route": "Bachelor’s degree",
+        "location": "Calgary",
+        "learns": "Study how to transform raw materials and design production processes.",
+        "role_connection": "Supports process design and scale-up; experience and professional requirements remain separate.",
+        "url": "https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-chemical-engineering",
+        "entry": "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+      },
+      {
+        "name": "SAIT — Integrated Water Management",
+        "route": "Diploma",
+        "url": "https://www.sait.ca/programs-and-courses/diplomas/integrated-water-management",
+        "learns": "Study water systems, monitoring and management.",
+        "role_connection": "Water sampling, infrastructure and planning support.",
+        "location": "Calgary",
+        "entry": "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration."
+      },
+      {
+        "name": "SAIT — Instrumentation Engineering Technology",
+        "route": "Diploma",
+        "location": "Calgary",
+        "learns": "Work with measurement devices, calibration and automated process controls.",
+        "role_connection": "Supports process testing, troubleshooting and control systems.",
+        "url": "https://www.sait.ca/programs-and-courses/diplomas/instrumentation-engineering-technology",
+        "entry": "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+      }
+    ],
+    "curriculum": "Chemistry 20 Unit C addresses aqueous solutions and concentration. Compare feed and output concentrations with flow and sample timing; process controls are an engineering extension.",
+    "curriculum_status": "Editorial connection verified against cited curriculum topics; not external teacher endorsement.",
+    "job_evidence": "Company service/project sources support work areas; no live vacancy verified.",
+    "job_cards": [],
+    "story_image_brief": "Fictional process engineer and operator comparing a flow diagram with water-quality readings beside generic treatment equipment.",
+    "teaching_image_brief": "Incoming water characterization → treatment stage → output measurement → operating adjustment; show residuals as a separate stream.",
+    "alt_text": "A fictional process specialist comparing a flow diagram with water-quality readings beside generic treatment equipment.",
+    "review_limitations": "The draft narrows the original generic treatment question to operating reliability. Omit “first”, efficiency and removal-rate marketing claims.",
+    "sources": [
+      "https://www.integratedsustainability.com/about-us/",
+      "https://www.integratedsustainability.com/services/",
+      "https://www.integratedsustainability.com/services/water-treatment/",
+      "https://www.integratedsustainability.com/"
+    ],
+    "imagery_status": "briefs only; not generated",
+    "implementation_status": "implemented locally",
+    "publication_status": "not deployed",
+    "implementation_revision": 1,
+    "based_on_reviewed_version": 1,
+    "approved_resolution_scope": "Curriculum and CPKC pathway resolution plus illustrations delegated in the implementation instruction."
+  },
+  {
+    "id": "CGY-048-FULL",
+    "version": 1,
+    "company": "Trace Associates",
+    "slug": "trace-associates",
+    "decision": "approved",
+    "proposal_decision": "approved",
+    "checked_on": "2026-10-17",
+    "question": "What evidence tells you which contaminated soil needs treatment?",
+    "hook": "A sample answers a question about a place, a depth and a moment in time.",
+    "company_copy": "Trace Associates has its headquarters in Calgary and provides environmental science and engineering services. Its remediation practice describes using site conditions and risk to guide decisions. Conference material by its Calgary division manager documents work involving soil and groundwater investigations. This supports a story about environmental evidence, without attributing a fictional contaminated site to a real Calgary property.",
+    "local_note": "Calgary headquarters and a Calgary team’s environmental assessment work are documented; the teaching site is fictional.",
+    "classroom_steps": [
+      "Define the question and consider how a substance could reach people, water or other organisms.",
+      "Choose sampling locations and depths that can test that explanation.",
+      "Compare laboratory results with units, detection limits and the sampling plan visible.",
+      "Use the evidence to consider treatment, further investigation or monitoring. One clean sample does not describe the whole site."
+    ],
+    "discussion": "How could a sampling plan miss the part of a site that matters most?",
+    "activity": "Place six sampling points on a fictional site map containing a former storage area and a drainage ditch. Explain why each point helps test a hypothesis and identify one unsampled uncertainty.",
+    "teacher_note": "This is a reasoning activity, not an environmental site-assessment protocol. Do not supply a universal safe concentration or ask learners to handle unknown soil.",
+    "roles": [
+      {
+        "title": "Environmental field assessment",
+        "summary": "Collect and interpret evidence about a place before recommending an action.",
+        "tasks": [
+          "Plan observations or samples around a clear question.",
+          "Record locations, methods and conditions consistently.",
+          "Explain the limits of the evidence and the next useful check."
+        ],
+        "collaborators": "Laboratory staff, engineers and project planners",
+        "classroom_connection": "A result has meaning only in the context of how and where it was collected.",
+        "company_evidence": "Calgary office and conference author evidence support site investigations."
+      },
+      {
+        "title": "Laboratory analysis",
+        "summary": "Make measurements that other people can trust. A laboratory worker prepares samples, uses a method consistently and records enough detail for someone else to interpret the result.",
+        "tasks": [
+          "Prepare and label samples so their identity is preserved.",
+          "Run comparisons or reference samples to check the method.",
+          "Record results, units and limitations before sharing findings."
+        ],
+        "collaborators": "Scientists, process engineers and quality teams",
+        "classroom_connection": "A repeatable method and a fair comparison matter as much as a single impressive number.",
+        "company_evidence": "Assessment work uses laboratory results; this does not establish that Trace employs an in-house laboratory team."
+      },
+      {
+        "title": "Water-resource planning",
+        "summary": "Compare water availability, demand and possible responses over time.",
+        "tasks": [
+          "Organize supply, use and monitoring information.",
+          "Test alternative assumptions in scenarios.",
+          "Explain trade-offs, uncertainty and priorities."
+        ],
+        "collaborators": "Hydrologists, engineers, policy specialists and communities",
+        "classroom_connection": "A model is a way to test assumptions, not a guarantee about the future.",
+        "company_evidence": "Company water and risk services support the connection; this is not a specific job posting."
+      }
+    ],
+    "pathways": [
+      {
+        "name": "SAIT — Environmental Technology",
+        "route": "Diploma",
+        "url": "https://www.sait.ca/programs-and-courses/diplomas/environmental-technology",
+        "learns": "Study environmental monitoring, assessment and field methods.",
+        "role_connection": "Supports field and laboratory work in environmental projects.",
+        "location": "Calgary",
+        "entry": "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration."
+      },
+      {
+        "name": "SAIT — Chemical Laboratory Technology",
+        "route": "Diploma",
+        "location": "Calgary",
+        "learns": "Practice chemical analysis, sample preparation and analytical instrumentation.",
+        "role_connection": "Supports laboratory testing and reliable measurement.",
+        "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+        "entry": "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+      },
+      {
+        "name": "SAIT — Integrated Water Management",
+        "route": "Diploma",
+        "url": "https://www.sait.ca/programs-and-courses/diplomas/integrated-water-management",
+        "learns": "Study water systems, monitoring and management.",
+        "role_connection": "Water sampling, infrastructure and planning support.",
+        "location": "Calgary",
+        "entry": "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration."
+      }
+    ],
+    "curriculum": "Chemistry 20 Unit C provides concentration concepts. Compare results with units and a sampling plan; regulatory decisions and toxicology are not classroom safety rules.",
+    "curriculum_status": "Editorial connection verified against cited curriculum topics; not external teacher endorsement.",
+    "job_evidence": "Careers page lists opportunities, but no individual matching posting was fully checked; no current job card proposed.",
+    "job_cards": [],
+    "story_image_brief": "Fictional field scientist labelling a sample beside a site map, with generic clean equipment.",
+    "teaching_image_brief": "Site question → sampling plan → laboratory evidence → revised investigation or response; feedback arrow to sampling.",
+    "alt_text": "Fictional field scientist labelling a sample beside a site map, with generic clean equipment.",
+    "review_limitations": "Do not label an actual neighbourhood contaminated. Specific test methods and regulatory decisions remain outside the classroom model.",
+    "sources": [
+      "https://traceassociates.ca/contact-us/calgary/",
+      "https://traceassociates.ca/practice-area/remediation-and-risk/",
+      "https://esaa.org/wp-content/uploads/2023/05/RTE2023Abstracts.pdf",
+      "https://traceassociates.ca/careers/"
+    ],
+    "imagery_status": "briefs only; not generated",
+    "implementation_status": "implemented locally",
+    "publication_status": "not deployed",
+    "implementation_revision": 1,
+    "based_on_reviewed_version": 1,
+    "approved_resolution_scope": "Curriculum and CPKC pathway resolution plus illustrations delegated in the implementation instruction."
+  },
+  {
+    "id": "CGY-049-FULL",
+    "version": 1,
+    "company": "RJC Engineers",
+    "slug": "rjc-engineers",
+    "decision": "approved",
+    "proposal_decision": "approved",
+    "checked_on": "2026-10-17",
+    "question": "How can a building keep heat in while managing moisture?",
+    "hook": "The layers around a room have several jobs, and they must work together.",
+    "company_copy": "RJC provides structural engineering and building-science services in Calgary. Its Calgary building-science leadership describes assessing and rehabilitating building envelopes and roofs. A building envelope separates indoors from outdoors while managing heat, air and water movement. This example uses a generic wall rather than claiming to reproduce an RJC design.",
+    "local_note": "RJC’s Calgary building-science and restoration team is explicitly identified.",
+    "classroom_steps": [
+      "Indoor and outdoor conditions differ, so heat and moisture can move across a building enclosure.",
+      "Materials and joints perform different jobs: insulation, air control, water control and structural support are not interchangeable.",
+      "A defect at a joint can matter even when the main wall materials perform well.",
+      "Inspection and measurements help identify a cause before a repair is chosen. Appearance alone may not explain the problem."
+    ],
+    "discussion": "Why might adding more insulation fail to fix a water leak?",
+    "activity": "Annotate a fictional wall section with separate arrows for heat flow, air leakage and rainwater. Identify one joint to inspect and one measurement that would distinguish competing explanations.",
+    "teacher_note": "The section is conceptual, not construction advice. Correct assemblies depend on climate, materials, codes and professional design.",
+    "roles": [
+      {
+        "title": "Building-science investigation",
+        "summary": "Investigate how a building enclosure manages heat, air and water.",
+        "tasks": [
+          "Inspect conditions and record where problems appear.",
+          "Compare observations with drawings and possible movement paths.",
+          "Help develop and verify repairs with the design team."
+        ],
+        "collaborators": "Owners, technologists, engineers and trades",
+        "classroom_connection": "Different mechanisms can create similar visible symptoms.",
+        "company_evidence": "RJC’s Calgary leadership profile explicitly describes building-envelope and roof investigation."
+      },
+      {
+        "title": "Civil and construction technology",
+        "summary": "Turn project requirements into usable drawings, quantities and checks.",
+        "tasks": [
+          "Prepare technical drawings using measured site information.",
+          "Check dimensions and interfaces between design disciplines.",
+          "Support construction records and field verification."
+        ],
+        "collaborators": "Engineers, surveyors and site teams",
+        "classroom_connection": "Scale and accurate measurements connect a drawing to the real location.",
+        "company_evidence": "Technical drawing and site support are general related work; not a verified RJC vacancy."
+      },
+      {
+        "title": "Quality and traceability",
+        "summary": "Make it possible to explain how a result or product was produced. Quality work checks records, methods and acceptance criteria so variation can be investigated rather than hidden.",
+        "tasks": [
+          "Check that materials and samples have traceable identities.",
+          "Compare recorded results with defined acceptance criteria.",
+          "Investigate deviations and document what changed."
+        ],
+        "collaborators": "Production, laboratory, engineering and customer teams",
+        "classroom_connection": "Repeated results need both measurements and records of the conditions that produced them.",
+        "company_evidence": "Quality verification is an editorial connection to rehabilitation work, not a named RJC position."
+      }
+    ],
+    "pathways": [
+      {
+        "name": "SAIT — Architectural Technologies",
+        "route": "Diploma",
+        "url": "https://www.sait.ca/programs-and-courses/diplomas/architectural-technologies",
+        "learns": "Study building design, technical drawings and construction systems.",
+        "role_connection": "Supports building-envelope detailing and technical coordination.",
+        "location": "Calgary",
+        "entry": "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration."
+      },
+      {
+        "name": "University of Calgary — Civil Engineering",
+        "route": "Bachelor’s degree",
+        "location": "Calgary",
+        "url": "https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-civil-engineering",
+        "learns": "Study the design and operation of structures, transportation and water infrastructure.",
+        "role_connection": "A degree foundation for engineering work; professional registration and supervised experience are separate.",
+        "entry": "Check current admissions and program requirements. A degree is not automatic professional licensure."
+      },
+      {
+        "name": "SAIT — Civil Engineering Technology, Municipal Major",
+        "route": "Diploma",
+        "url": "https://www.sait.ca/programs-and-courses/diplomas/civil-engineering-technology-municipal",
+        "learns": "Study municipal infrastructure, design and drafting.",
+        "role_connection": "Technical design and project delivery; not professional engineer licensure.",
+        "location": "Calgary",
+        "entry": "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration."
+      }
+    ],
+    "curriculum": "Science 10 Unit B connects heat transfer and technological systems. Compare insulation and joints; moisture transport is a building-science extension, not a universal wall prescription.",
+    "curriculum_status": "Editorial connection verified against cited curriculum topics; not external teacher endorsement.",
+    "job_evidence": "Local team biography supports the work. No exact vacancy verified.",
+    "job_cards": [],
+    "story_image_brief": "Fictional building-science specialist inspecting a window joint beside a generic cutaway wall.",
+    "teaching_image_brief": "Observe symptom → compare heat/air/water paths → investigate joint → choose and verify repair.",
+    "alt_text": "Fictional building-science specialist inspecting a window joint beside a generic cutaway wall.",
+    "review_limitations": "The question is refined from “keeping moisture out” to “managing moisture”; no exact RJC project assembly or blanket energy-saving claim.",
+    "sources": [
+      "https://www.rjc.ca/location-details/calgary.html",
+      "https://www.rjc.ca/people/our-leadership/details/ryan-coles.html"
+    ],
+    "imagery_status": "briefs only; not generated",
+    "implementation_status": "implemented locally",
+    "publication_status": "not deployed",
+    "implementation_revision": 1,
+    "based_on_reviewed_version": 1,
+    "approved_resolution_scope": "Curriculum and CPKC pathway resolution plus illustrations delegated in the implementation instruction."
+  },
+  {
+    "id": "CGY-050-FULL",
+    "version": 1,
+    "company": "Calgary Italian Bakery",
+    "slug": "calgary-italian-bakery",
+    "decision": "approved",
+    "proposal_decision": "approved",
+    "checked_on": "2026-10-17",
+    "question": "Where does a bakery lose food before it reaches the customer?",
+    "hook": "Waste can reveal a process problem before a new machine is needed.",
+    "company_copy": "Calgary Italian Bakery produces bread, buns and other baked goods. A published assessment conducted with Enviro-Stewards and project partners examined food loss and resource use at the bakery. It identified opportunities involving dough transfer, product forming and damage during later handling. These were assessed opportunities, not proof that every proposed improvement was implemented or that the historical figures describe today’s production.",
+    "local_note": "Calgary bakery; a documented historical facility assessment supplies the specific story.",
+    "classroom_steps": [
+      "Map the steps from ingredients to saleable product.",
+      "Measure material losses where they occur instead of combining everything into one waste total.",
+      "Investigate a cause: a transfer point, a forming step or later handling may need a different response.",
+      "Test a change and compare both waste and acceptable product output. Moving a loss to another step is not a reduction."
+    ],
+    "discussion": "Why is a smaller waste bin not enough evidence that a process improved?",
+    "activity": "For a fictional 100 kg batch, 6 kg is lost at transfer, 4 kg at shaping and 2 kg at packing. A change cuts transfer loss to 3 kg but adds 2 kg at shaping. Calculate the net change and propose one quality check.",
+    "teacher_note": "Fictional totals: loss falls from 12 to 11 kg, a 1 kg improvement. This simplified accounting ignores baking moisture loss and is not a real bakery mass balance.",
+    "roles": [
+      {
+        "title": "Commercial baking",
+        "summary": "Produce baked goods through a controlled sequence of preparation, processing and handling.",
+        "tasks": [
+          "Follow recipes and production schedules.",
+          "Use and check production equipment within trained procedures.",
+          "Observe product consistency and communicate defects or process variation."
+        ],
+        "collaborators": "Production staff, quality teams and maintenance workers",
+        "classroom_connection": "Ratios, timing and temperature matter, but quality must still be checked.",
+        "company_evidence": "Employer commercial-baker description explicitly mentions production equipment, recipes and schedules."
+      },
+      {
+        "title": "Quality and traceability",
+        "summary": "Make it possible to explain how a result or product was produced. Quality work checks records, methods and acceptance criteria so variation can be investigated rather than hidden.",
+        "tasks": [
+          "Check that materials and samples have traceable identities.",
+          "Compare recorded results with defined acceptance criteria.",
+          "Investigate deviations and document what changed."
+        ],
+        "collaborators": "Production, laboratory, engineering and customer teams",
+        "classroom_connection": "Repeated results need both measurements and records of the conditions that produced them.",
+        "company_evidence": "Employer emphasizes consistent safe products; the detailed profile is editorial."
+      },
+      {
+        "title": "Process engineering",
+        "summary": "Turn a useful transformation into a workable sequence of equipment and operating steps. Process engineers consider what enters, what leaves and what conditions the system must maintain.",
+        "tasks": [
+          "Draw a flow of materials and energy through the system.",
+          "Compare operating conditions and equipment options.",
+          "Use trial results to revise the process and communicate constraints."
+        ],
+        "collaborators": "Laboratory staff, operators, mechanical designers and controls specialists",
+        "classroom_connection": "Conservation of matter and energy connects classroom calculations to process decisions.",
+        "company_evidence": "Published facility assessment supports process-improvement tasks; external partners contributed and are not assumed to be bakery employees."
+      }
+    ],
+    "pathways": [
+      {
+        "name": "SAIT — Baking and Pastry Arts",
+        "route": "Diploma",
+        "url": "https://www.sait.ca/programs-and-courses/diplomas/baking-and-pastry-arts",
+        "learns": "Practise bakery and pastry production and product quality.",
+        "role_connection": "Supports commercial baking; apprenticeship registration and workplace requirements are separate.",
+        "location": "Calgary",
+        "entry": "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration."
+      },
+      {
+        "name": "Alberta Baker apprenticeship education",
+        "route": "Apprenticeship",
+        "location": "Alberta; workplace and classroom arrangements must be confirmed",
+        "url": "https://tradesecrets.alberta.ca/SOURCES/PDFS/curriculum_guides/024_outline.pdf",
+        "learns": "Combine structured trade education with workplace learning in baking.",
+        "role_connection": "A trade route distinct from simply completing a diploma; registration and workplace requirements apply.",
+        "entry": "Use Tradesecrets to verify current entry, sponsorship and work-hour requirements. No specific Calgary employer placement is promised."
+      },
+      {
+        "name": "SAIT — Chemical Laboratory Technology",
+        "route": "Diploma",
+        "location": "Calgary",
+        "learns": "Practice chemical analysis, sample preparation and analytical instrumentation.",
+        "role_connection": "Supports laboratory testing and reliable measurement.",
+        "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+        "entry": "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+      },
+      {
+        "name": "University of Calgary — Chemical Engineering",
+        "route": "Bachelor’s degree",
+        "location": "Calgary",
+        "learns": "Study how to transform raw materials and design production processes.",
+        "role_connection": "Supports process design and scale-up; experience and professional requirements remain separate.",
+        "url": "https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-chemical-engineering",
+        "entry": "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+      }
+    ],
+    "curriculum": "Science 10 inquiry skills (program p. 8) support operational definitions, measurements and evaluating data. This is a cross-unit investigation, not a chemical-reaction or stoichiometry outcome.",
+    "curriculum_status": "Editorial connection verified against cited curriculum topics; not external teacher endorsement.",
+    "job_evidence": "Employer employment page explicitly accepts applications for Skilled Commercial Bakers as checked 17 October 2026. No publication date or deadline is supplied.",
+    "job_cards": [
+      {
+        "id": "CGY-050-J1",
+        "version": 1,
+        "decision": "approved",
+        "title": "Skilled Commercial Bakers",
+        "employer": "Calgary Italian Bakery",
+        "location": "Calgary",
+        "seniority": "Skilled; years of experience and specific credential not stated",
+        "status": "open",
+        "label": "Employer page accepting applications when checked 17 October 2026; posting date and deadline not stated",
+        "summary": "Produce standardized baked goods using commercial mixing and baking equipment.",
+        "duties": [
+          "Use high-volume mixing machines, ovens and related equipment.",
+          "Follow production schedules.",
+          "Follow recipes for consistent output."
+        ],
+        "skills": [
+          "Following production instructions and recipes.",
+          "Commercial equipment work described by employer.",
+          "Specific training, experience minimum and pay not stated."
+        ],
+        "related_work": "Production tasks connect to where losses can occur in the bakery process. The posting does not say this employee works on the historical waste-reduction project.",
+        "source": "https://www.cibl.com/employment",
+        "publication_date": null,
+        "deadline": null,
+        "status_checked_on": "2026-10-17",
+        "score_dimensions": [
+          4,
+          3,
+          2
+        ]
+      }
+    ],
+    "story_image_brief": "Fictional bakery worker checking a dough transfer point while another records a waste category.",
+    "teaching_image_brief": "Map process → measure losses by step → test one change → compare net loss and product quality.",
+    "alt_text": "A fictional bakery worker inspecting dough on a production line with trays and production records nearby.",
+    "review_limitations": "Revised question distinguishes this from Cinnaroll. No current waste totals or achieved savings are claimed; source publication date remains uncertain.",
+    "sources": [
+      "https://www.cibl.com/",
+      "https://www.cibl.com/faq",
+      "https://www.cibl.com/employment",
+      "https://enviro-stewards.com/wp-content/uploads/2025/02/CIBL-Food-Waste-Prevention-Case-Study.pdf"
+    ],
+    "imagery_status": "briefs only; not generated",
+    "implementation_status": "implemented locally",
+    "publication_status": "not deployed",
+    "implementation_revision": 1,
+    "based_on_reviewed_version": 1,
+    "approved_resolution_scope": "Curriculum and CPKC pathway resolution plus illustrations delegated in the implementation instruction."
+  },
+  {
+    "id": "CGY-051-FULL",
+    "version": 1,
+    "company": "Joe Media Group",
+    "slug": "joe-media-group",
+    "decision": "approved",
+    "proposal_decision": "approved",
+    "checked_on": "2026-10-17",
+    "question": "How can light and editing make separate shots feel like one scene?",
+    "hook": "A scene can be assembled from images recorded at different moments.",
+    "company_copy": "Joe Media Group is a Calgary film and television production company. It describes work in production, editing and colour, and its post-production portfolio includes several formats. The classroom story examines how images are captured and matched. It does not claim that a particular technique or teaching exercise was used on a named production.",
+    "local_note": "The company identifies a Calgary production operation and Calgary contact location.",
+    "classroom_steps": [
+      "Light reflects from a subject and is refracted by a camera lens to form an image at the sensor.",
+      "Changing the lighting or camera settings can change the appearance of the same subject.",
+      "An editor arranges selected shots into a sequence; a colourist can work on differences in their appearance.",
+      "Review the sequence for continuity and meaning. A smooth-looking cut is a creative result, not proof that the events happened continuously."
+    ],
+    "discussion": "How can the order of two shots change what a viewer thinks happened?",
+    "activity": "Sketch the path of light from a lamp to an object, then through a converging camera lens to the sensor. Compare two fictional shots with different lighting. Which differences come from the light reaching the camera, and which could be introduced during colour editing?",
+    "teacher_note": "Use a thin-lens ray model for image formation. It simplifies a multi-element camera lens. Colour editing changes recorded pixel values; it does not change the light that originally reached the camera. This is an editorial classroom task, not a named client shoot.",
+    "roles": [
+      {
+        "title": "Camera and image capture",
+        "summary": "Record images that serve a production’s visual and storytelling requirements.",
+        "tasks": [
+          "Plan framing and camera setup with the production team.",
+          "Check exposure and consistency across takes.",
+          "Record information needed for editing and handoff."
+        ],
+        "collaborators": "Directors, lighting teams and editors",
+        "classroom_connection": "The recorded image depends on both the light and how it is captured.",
+        "company_evidence": "Company offers production; specific camera tasks are editorial rather than a verified staff job."
+      },
+      {
+        "title": "Film and video editing",
+        "summary": "Build a sequence from selected footage to communicate a coherent idea.",
+        "tasks": [
+          "Review and organize available footage.",
+          "Choose cuts, order and timing for the intended story.",
+          "Check continuity and revise against feedback."
+        ],
+        "collaborators": "Directors, producers, colourists and sound teams",
+        "classroom_connection": "Sequence can change interpretation even when the individual images stay the same.",
+        "company_evidence": "Company describes editing and post-production services."
+      },
+      {
+        "title": "Colour finishing",
+        "summary": "Work on the appearance and consistency of images during post-production.",
+        "tasks": [
+          "Compare shots using the agreed visual reference.",
+          "Adjust recorded colour and tonal relationships.",
+          "Check the sequence and deliverable with the production team."
+        ],
+        "collaborators": "Editors, cinematographers and directors",
+        "classroom_connection": "Changing the appearance of an image is different from changing the original event.",
+        "company_evidence": "Company about page names colour work; task wording is editorial."
+      }
+    ],
+    "pathways": [
+      {
+        "name": "SAIT — Film and Video Production",
+        "route": "Diploma",
+        "url": "https://www.sait.ca/programs-and-courses/diplomas/film-and-video-production",
+        "learns": "Practise production and post-production through film projects.",
+        "role_connection": "Supports camera, editing and production work; a portfolio remains important.",
+        "location": "Calgary",
+        "entry": "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration."
+      },
+      {
+        "name": "AUArts — Bachelor of Design",
+        "route": "Bachelor’s degree",
+        "url": "https://www.auarts.ca/program-areas/undergraduate/bachelor-of-design-bdes",
+        "learns": "Develop visual communication through studio-based design work.",
+        "role_connection": "Supports illustration and visual storytelling; portfolio requirements apply.",
+        "location": "Calgary",
+        "entry": "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration."
+      }
+    ],
+    "curriculum": "Physics 30 C1 includes reflection, refraction and thin-lens image formation. Follow light from subject through lens to sensor, then distinguish physical capture from editorial colour changes.",
+    "curriculum_status": "Editorial connection verified against cited curriculum topics; not external teacher endorsement.",
+    "job_evidence": "Company production and post-production sources support work areas. No vacancy verified.",
+    "job_cards": [],
+    "story_image_brief": "Fictional editor and colourist comparing two shots on monitors in a small studio.",
+    "teaching_image_brief": "Capture shots → select and order → compare appearance → review continuity; no fabricated recognizable film stills.",
+    "alt_text": "Fictional editor and colourist comparing two shots on monitors in a small studio.",
+    "review_limitations": "The optics activity supplies the Physics 30 connection. Film continuity and colour finishing are creative applications, not separate mandated physics outcomes.",
+    "sources": [
+      "https://joemedia.tv/about-us",
+      "https://joemedia.tv/corporate",
+      "https://joemedia.tv/contact",
+      "https://joemedia.tv/post-production"
+    ],
+    "imagery_status": "briefs only; not generated",
+    "implementation_status": "implemented locally",
+    "publication_status": "not deployed",
+    "implementation_revision": 1,
+    "based_on_reviewed_version": 1,
+    "approved_resolution_scope": "Curriculum and CPKC pathway resolution plus illustrations delegated in the implementation instruction."
+  },
+  {
+    "id": "CGY-054-FULL",
+    "version": 1,
+    "company": "CBL Bakeries / Cinnaroll",
+    "slug": "cbl-bakeries-cinnaroll",
+    "decision": "approved",
+    "proposal_decision": "approved",
+    "checked_on": "2026-10-17",
+    "question": "How can thousands of pastries come out consistently?",
+    "hook": "A familiar product becomes a different problem when it has to be repeated at scale.",
+    "company_copy": "CBL Bakeries, trading through the Cinnaroll brand, describes production equipment designed for large batches, product development and quality assurance. Its site lists a Calgary address and identifies production and packaging teams. This example examines variation across batches. It does not disclose the company’s recipe, equipment settings or internal quality limits.",
+    "local_note": "Calgary company address and documented manufacturing activity; no separate Cinnzeo retail business is counted here.",
+    "classroom_steps": [
+      "Define what consistency means for the product: size, appearance and other agreed properties may all matter.",
+      "Keep track of ingredients, processing conditions and batch identity.",
+      "Check samples from more than one point in a batch; an average can conceal individual differences.",
+      "Investigate a pattern and test one change at a time before deciding whether the process improved."
+    ],
+    "discussion": "Can two batches have the same average and still differ in quality?",
+    "activity": "Compare fictional piece masses: batch A is 49, 50, 50, 51 g; batch B is 40, 50, 50, 60 g. Both average 50 g. Compare spread and explain why an average alone is insufficient.",
+    "teacher_note": "The figures are invented and no company acceptance limits are implied. Mass comparison does not establish food safety.",
+    "roles": [
+      {
+        "title": "Commercial baking",
+        "summary": "Produce baked goods through a controlled sequence of preparation, processing and handling.",
+        "tasks": [
+          "Follow recipes and production schedules.",
+          "Use and check production equipment within trained procedures.",
+          "Observe product consistency and communicate defects or process variation."
+        ],
+        "collaborators": "Production staff, quality teams and maintenance workers",
+        "classroom_connection": "Ratios, timing and temperature matter, but quality must still be checked.",
+        "company_evidence": "Company describes manufacturing and production teams; no current vacancy claimed."
+      },
+      {
+        "title": "Quality and traceability",
+        "summary": "Make it possible to explain how a result or product was produced. Quality work checks records, methods and acceptance criteria so variation can be investigated rather than hidden.",
+        "tasks": [
+          "Check that materials and samples have traceable identities.",
+          "Compare recorded results with defined acceptance criteria.",
+          "Investigate deviations and document what changed."
+        ],
+        "collaborators": "Production, laboratory, engineering and customer teams",
+        "classroom_connection": "Repeated results need both measurements and records of the conditions that produced them.",
+        "company_evidence": "Company describes quality assurance; no named job description captured."
+      },
+      {
+        "title": "Ingredient and formulation science",
+        "summary": "Investigate how ingredients behave in a product. This work connects a material’s composition to properties such as texture, stability or performance in a mixture.",
+        "tasks": [
+          "Choose a property to compare across formulations.",
+          "Prepare controlled trials and observe changes over time.",
+          "Explain the trade-offs between ingredients and processing conditions."
+        ],
+        "collaborators": "Biochemists, laboratory technicians and product-development teams",
+        "classroom_connection": "Molecules and mixtures help explain why two ingredients can behave differently.",
+        "company_evidence": "Company describes product development; no particular scientist role or degree requirement is asserted."
+      }
+    ],
+    "pathways": [
+      {
+        "name": "SAIT — Baking and Pastry Arts",
+        "route": "Diploma",
+        "url": "https://www.sait.ca/programs-and-courses/diplomas/baking-and-pastry-arts",
+        "learns": "Practise bakery and pastry production and product quality.",
+        "role_connection": "Supports commercial baking; apprenticeship registration and workplace requirements are separate.",
+        "location": "Calgary",
+        "entry": "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration."
+      },
+      {
+        "name": "Alberta Baker apprenticeship education",
+        "route": "Apprenticeship",
+        "location": "Alberta; workplace and classroom arrangements must be confirmed",
+        "url": "https://tradesecrets.alberta.ca/SOURCES/PDFS/curriculum_guides/024_outline.pdf",
+        "learns": "Combine structured trade education with workplace learning in baking.",
+        "role_connection": "A trade route distinct from simply completing a diploma; registration and workplace requirements apply.",
+        "entry": "Use Tradesecrets to verify current entry, sponsorship and work-hour requirements. No specific Calgary employer placement is promised."
+      },
+      {
+        "name": "SAIT — Chemical Laboratory Technology",
+        "route": "Diploma",
+        "location": "Calgary",
+        "learns": "Practice chemical analysis, sample preparation and analytical instrumentation.",
+        "role_connection": "Supports laboratory testing and reliable measurement.",
+        "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+        "entry": "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+      }
+    ],
+    "curriculum": "Science 10 inquiry skills (program p. 8) support controlled variables, sampling and interpreting variation. Recipe scale-up is not presented as chemical stoichiometry.",
+    "curriculum_status": "Editorial connection verified against cited curriculum topics; not external teacher endorsement.",
+    "job_evidence": "Employer careers page says it is not currently hiring, checked 17 October 2026. This is a dated general notice, not a permanent conclusion.",
+    "job_cards": [],
+    "story_image_brief": "Fictional quality technician weighing pastry samples beside a production record and covered trays.",
+    "teaching_image_brief": "Set product criteria → produce identified batch → sample variation → investigate and adjust.",
+    "alt_text": "Fictional quality technician weighing pastry samples beside a production record and covered trays.",
+    "review_limitations": "Company careers page says no positions are currently being hired as checked 17 October. This dated notice does not prevent an occupational example.",
+    "sources": [
+      "https://www.cinnaroll.com/",
+      "https://www.cinnaroll.com/careers"
+    ],
+    "imagery_status": "briefs only; not generated",
+    "implementation_status": "implemented locally",
+    "publication_status": "not deployed",
+    "implementation_revision": 1,
+    "based_on_reviewed_version": 1,
+    "approved_resolution_scope": "Curriculum and CPKC pathway resolution plus illustrations delegated in the implementation instruction."
+  },
+  {
+    "id": "CGY-056-FULL",
+    "version": 1,
+    "company": "ISL Engineering",
+    "slug": "isl-engineering",
+    "decision": "approved",
+    "proposal_decision": "approved",
+    "checked_on": "2026-10-17",
+    "question": "How can a road cross a creek without ignoring the landscape?",
+    "hook": "A route has to work for people and for the ground and water beneath it.",
+    "company_copy": "ISL was the City of Calgary’s prime consultant for planning, detailed design and construction work on the 144 Avenue NW extension. Its project account describes steep terrain, a single-span bridge over West Nose Creek, creek work and multi-use pathways. This creates a local example of design constraints interacting, rather than a story about choosing the shortest line on a map.",
+    "local_note": "The featured road, creek crossing and pathways are in Calgary; ISL identifies the City as client.",
+    "classroom_steps": [
+      "Map the terrain, existing connections and watercourse before drawing a route.",
+      "Compare options for gradients, crossings and access. A change in one constraint can affect another.",
+      "Bring transportation, structural, water and environmental expertise together to develop the design.",
+      "Check the built corridor against its intended function and monitor the landscape it affects. Design intent is not a measured ecological outcome."
+    ],
+    "discussion": "Why might the shortest route be a poor design?",
+    "activity": "Choose between two fictional corridors: one is shorter but steep and crosses a creek twice; one is longer and crosses once. List evidence needed before selecting either, without inventing a numerical score.",
+    "teacher_note": "The exercise is not the actual route evaluation. No claim that the real creek project had a measured biodiversity improvement is made.",
+    "roles": [
+      {
+        "title": "Civil and construction technology",
+        "summary": "Turn project requirements into usable drawings, quantities and checks.",
+        "tasks": [
+          "Prepare technical drawings using measured site information.",
+          "Check dimensions and interfaces between design disciplines.",
+          "Support construction records and field verification."
+        ],
+        "collaborators": "Engineers, surveyors and site teams",
+        "classroom_connection": "Scale and accurate measurements connect a drawing to the real location.",
+        "company_evidence": "Project account describes planning/design/construction and engineering disciplines."
+      },
+      {
+        "title": "Spatial data and mapping",
+        "summary": "Turn measurements tied to places into usable spatial information. The work involves coordinates, scale and checking that datasets describe the same location and time.",
+        "tasks": [
+          "Check coordinate systems and measurement dates.",
+          "Align and inspect spatial datasets.",
+          "Present maps or models with their limitations."
+        ],
+        "collaborators": "Surveyors, engineers, field operators and software teams",
+        "classroom_connection": "Models can be detailed while still containing gaps or misaligned measurements.",
+        "company_evidence": "Site and route work support mapping; no specific surveyor posting is claimed."
+      },
+      {
+        "title": "Environmental field assessment",
+        "summary": "Collect and interpret evidence about a place before recommending an action.",
+        "tasks": [
+          "Plan observations or samples around a clear question.",
+          "Record locations, methods and conditions consistently.",
+          "Explain the limits of the evidence and the next useful check."
+        ],
+        "collaborators": "Laboratory staff, engineers and project planners",
+        "classroom_connection": "A result has meaning only in the context of how and where it was collected.",
+        "company_evidence": "Project account identifies environmental management and creek work."
+      }
+    ],
+    "pathways": [
+      {
+        "name": "SAIT — Civil Engineering Technology, Municipal Major",
+        "route": "Diploma",
+        "url": "https://www.sait.ca/programs-and-courses/diplomas/civil-engineering-technology-municipal",
+        "learns": "Study municipal infrastructure, design and drafting.",
+        "role_connection": "Technical design and project delivery; not professional engineer licensure.",
+        "location": "Calgary",
+        "entry": "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration."
+      },
+      {
+        "name": "University of Calgary — Civil Engineering",
+        "route": "Bachelor’s degree",
+        "location": "Calgary",
+        "url": "https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-civil-engineering",
+        "learns": "Study the design and operation of structures, transportation and water infrastructure.",
+        "role_connection": "A degree foundation for engineering work; professional registration and supervised experience are separate.",
+        "entry": "Check current admissions and program requirements. A degree is not automatic professional licensure."
+      },
+      {
+        "name": "SAIT — Geomatics Engineering Technology",
+        "route": "Diploma",
+        "location": "Calgary",
+        "learns": "Learn surveying, GIS, positioning and remote sensing.",
+        "role_connection": "Supports spatial measurement and mapping data work.",
+        "url": "https://www.sait.ca/programs-and-courses/diplomas/geomatics-engineering-technology",
+        "entry": "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+      },
+      {
+        "name": "SAIT — Environmental Technology",
+        "route": "Diploma",
+        "url": "https://www.sait.ca/programs-and-courses/diplomas/environmental-technology",
+        "learns": "Study environmental monitoring, assessment and field methods.",
+        "role_connection": "Supports field and laboratory work in environmental projects.",
+        "location": "Calgary",
+        "entry": "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration."
+      }
+    ],
+    "curriculum": "Biology 20 B1.3k connects biotic and abiotic characteristics of aquatic ecosystems. Compare creek habitat and water observations before and after a crossing; road geometry is context rather than a claimed kinematics outcome.",
+    "curriculum_status": "Editorial connection verified against cited curriculum topics; not external teacher endorsement.",
+    "job_evidence": "Employer careers page inspected; no individual story-matched posting fully verified.",
+    "job_cards": [],
+    "story_image_brief": "Fictional civil technologist and environmental specialist reviewing a contour map beside a generic creek crossing.",
+    "teaching_image_brief": "Terrain and habitat evidence → compare routes → coordinated design → monitoring; distinguish road, pathway and creek.",
+    "alt_text": "Fictional civil technologist and environmental specialist reviewing a contour map beside a generic creek crossing.",
+    "review_limitations": "Question narrowed from a generic safe route to the documented creek/terrain problem. Keep Indigenous engagement claims out unless specifically sourced and contextualized.",
+    "sources": [
+      "https://islengineering.com/about/our-offices/",
+      "https://islengineering.com/projects/",
+      "https://islengineering.com/project/144-ave-nw-calgary-extension/",
+      "https://islengineering.com/join-the-team/"
+    ],
+    "imagery_status": "briefs only; not generated",
+    "implementation_status": "implemented locally",
+    "publication_status": "not deployed",
+    "implementation_revision": 1,
+    "based_on_reviewed_version": 1,
+    "approved_resolution_scope": "Curriculum and CPKC pathway resolution plus illustrations delegated in the implementation instruction."
+  },
+  {
+    "id": "CGY-057-FULL",
+    "version": 1,
+    "company": "ClearBakk — ALSYS group",
+    "slug": "clearbakk",
+    "decision": "approved",
+    "proposal_decision": "approved",
+    "checked_on": "2026-10-17",
+    "question": "How can you fit a water-treatment process into a modular unit?",
+    "hook": "A compact system still needs the right sequence, connections and access for maintenance.",
+    "company_copy": "ClearBakk is a Calgary engineering company within the ALSYS group. It describes water-treatment and fluid-management work, including modular systems, and ALSYS identifies its design and integration capabilities. The example focuses on fitting a treatment sequence into equipment that can be delivered and operated. A modular package is not automatically suitable for every water source.",
+    "local_note": "Calgary engineering base; deployment sites and fabrication locations are not assumed to be in Calgary.",
+    "classroom_steps": [
+      "Start with incoming-water characteristics and the required output, not the size of a shipping frame.",
+      "Choose compatible treatment stages and account for water, chemicals and residual streams.",
+      "Arrange equipment so connections, controls and maintenance access can work within the available space.",
+      "Test the integrated system against the requirement. A compact layout is useful only if the treatment and operation also work."
+    ],
+    "discussion": "What could go wrong if a designer only tries to make the equipment smaller?",
+    "activity": "Arrange four fictional modules on a paper floor plan: feed tank, treatment, output check and residual storage. Draw flows and leave maintenance access. Explain one trade-off when the footprint is reduced.",
+    "teacher_note": "The layout is invented, not a ClearBakk specification. No water-quality guarantee or operational chemical instructions are supplied.",
+    "roles": [
+      {
+        "title": "Process engineering",
+        "summary": "Turn a useful transformation into a workable sequence of equipment and operating steps. Process engineers consider what enters, what leaves and what conditions the system must maintain.",
+        "tasks": [
+          "Draw a flow of materials and energy through the system.",
+          "Compare operating conditions and equipment options.",
+          "Use trial results to revise the process and communicate constraints."
+        ],
+        "collaborators": "Laboratory staff, operators, mechanical designers and controls specialists",
+        "classroom_connection": "Conservation of matter and energy connects classroom calculations to process decisions.",
+        "company_evidence": "ClearBakk describes process design and engineering services."
+      },
+      {
+        "title": "Mechanical design and prototyping",
+        "summary": "Translate a need into a component or machine that can be built and tested. Designers use dimensions, material properties and constraints to evaluate alternatives.",
+        "tasks": [
+          "Create and revise drawings or a digital model.",
+          "Choose materials and dimensions for the intended conditions.",
+          "Compare the prototype with its requirements and refine the design."
+        ],
+        "collaborators": "Machinists, fabricators, test staff and customers",
+        "classroom_connection": "Geometry, forces and material properties shape real design trade-offs.",
+        "company_evidence": "Modular integration supports mechanical layout work; generic profile."
+      },
+      {
+        "title": "Instrumentation and controls",
+        "summary": "Keep a process measurable and responsive. Controls work connects sensors, decisions and actuators so the system can respond when conditions change.",
+        "tasks": [
+          "Check whether sensors are reading reliably.",
+          "Compare measurements with the intended operating range.",
+          "Test how the system responds to a change or fault."
+        ],
+        "collaborators": "Operators, electricians and process engineers",
+        "classroom_connection": "Feedback uses a measured result to inform the next action.",
+        "company_evidence": "Controls connection is editorial to integrated equipment; not an employer-listed vacancy."
+      }
+    ],
+    "pathways": [
+      {
+        "name": "University of Calgary — Chemical Engineering",
+        "route": "Bachelor’s degree",
+        "location": "Calgary",
+        "learns": "Study how to transform raw materials and design production processes.",
+        "role_connection": "Supports process design and scale-up; experience and professional requirements remain separate.",
+        "url": "https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-chemical-engineering",
+        "entry": "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+      },
+      {
+        "name": "SAIT — Mechanical Engineering Technology",
+        "route": "Diploma",
+        "location": "Calgary",
+        "learns": "Study mechanical systems, design and manufacturing, with specialization options.",
+        "role_connection": "Supports component design, prototyping and equipment work.",
+        "url": "https://www.sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology",
+        "entry": "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+      },
+      {
+        "name": "SAIT — Instrumentation Engineering Technology",
+        "route": "Diploma",
+        "location": "Calgary",
+        "learns": "Work with measurement devices, calibration and automated process controls.",
+        "role_connection": "Supports process testing, troubleshooting and control systems.",
+        "url": "https://www.sait.ca/programs-and-courses/diplomas/instrumentation-engineering-technology",
+        "entry": "Check the provider’s current prerequisites and intake availability. This is a related learning route, not a hiring promise or an employer requirement."
+      }
+    ],
+    "curriculum": "Chemistry 20 Unit C supplies solution and concentration concepts. Compare feed and output evidence; modular layout and maintenance access are engineering applications.",
+    "curriculum_status": "Editorial connection verified against cited curriculum topics; not external teacher endorsement.",
+    "job_evidence": "Process and company sources used; no complete current posting verified.",
+    "job_cards": [],
+    "story_image_brief": "Fictional process designer checking flow connections on a small generic modular treatment layout.",
+    "teaching_image_brief": "Characterize feed → select stages → arrange accessible modules → test output; separate treated stream and residuals.",
+    "alt_text": "Fictional process designer checking flow connections on a small generic modular treatment layout.",
+    "review_limitations": "Free access to two ALSYS pages was blocked; public search-reader text supports parent context, while ClearBakk originals support the main copy.",
+    "sources": [
+      "https://clearbakk.com/about-us/",
+      "https://clearbakk.com/",
+      "https://www.alsys-group.com/clearbakk-modular-solutions/",
+      "https://www.alsys-group.com/solutions/alsys-engineering/"
+    ],
+    "imagery_status": "briefs only; not generated",
+    "implementation_status": "implemented locally",
+    "publication_status": "not deployed",
+    "implementation_revision": 1,
+    "based_on_reviewed_version": 1,
+    "approved_resolution_scope": "Curriculum and CPKC pathway resolution plus illustrations delegated in the implementation instruction."
+  }
+]

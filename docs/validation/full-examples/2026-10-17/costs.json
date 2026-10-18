@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-17",
+  "phase": "full example drafts for approved daily-discovery companies",
+  "paid_calls": 1,
+  "actual_cost_usd": 0.005,
+  "provider_breakdown": {
+    "Firecrawl through Looot": 0.005
+  },
+  "weekly_settled_usd": 0.03,
+  "outstanding_exposure_usd": 0.0,
+  "weekly_cap_usd": 10,
+  "balance_before_usd": 19.0928,
+  "balance_after_usd": 19.0878,
+  "receipt": "cinnaroll-looot.json",
+  "budget_deferrals": []
+}

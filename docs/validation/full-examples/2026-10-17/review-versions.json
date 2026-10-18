@@ -1,0 +1,86 @@
+[
+  {
+    "id": "CGY-041-FULL",
+    "version": 1,
+    "decision": "pending",
+    "sha256": "0464a816f2f33c112469a76fd5367d351f2cb1fb5434730a2beb4f165c1c366b"
+  },
+  {
+    "id": "CGY-042-FULL",
+    "version": 1,
+    "decision": "pending",
+    "sha256": "bbb4019ba7d9658222cfdebb9e7852a058542a373eb2641b15e35456e12388ae"
+  },
+  {
+    "id": "CGY-043-FULL",
+    "version": 1,
+    "decision": "pending",
+    "sha256": "1d10bfd799bb452eb35a56a5ca0551c376d1bbd4868e20dfd325ddecfa65ebf9"
+  },
+  {
+    "id": "CGY-044-FULL",
+    "version": 1,
+    "decision": "pending",
+    "sha256": "f2ca1d0d535fc4602b8f88b2dba0440b8d2638f35dbf7c32cd45f6eb9c0cc651"
+  },
+  {
+    "id": "CGY-045-FULL",
+    "version": 1,
+    "decision": "pending",
+    "sha256": "283c0a01420b78bfd9dd4d715ac15d94505326e06fa8e1a8f6df0feacfb4965e"
+  },
+  {
+    "id": "CGY-046-FULL",
+    "version": 1,
+    "decision": "pending",
+    "sha256": "0ef2823411c78d47b8ac4f7c31ea2b2441fc595e4d4ce3de0f7622149a9cf18c"
+  },
+  {
+    "id": "CGY-047-FULL",
+    "version": 1,
+    "decision": "pending",
+    "sha256": "65bf7dab755cd4a01a98e4d5a7af6b1248c1e41a7e68b992f1fabcd74131432d"
+  },
+  {
+    "id": "CGY-048-FULL",
+    "version": 1,
+    "decision": "pending",
+    "sha256": "acbc36233514c87ee55d1491255a3756c730907b85d9cc0d1e93fef79d313a7d"
+  },
+  {
+    "id": "CGY-049-FULL",
+    "version": 1,
+    "decision": "pending",
+    "sha256": "f07542255e76554279bf061392cf769f4877a187283019bdd5fc0db1a492db96"
+  },
+  {
+    "id": "CGY-050-FULL",
+    "version": 1,
+    "decision": "pending",
+    "sha256": "f153c814aac0722bda6691c713cd92c1920c7a1e9d5f7bf933a26c3486a66226"
+  },
+  {
+    "id": "CGY-051-FULL",
+    "version": 1,
+    "decision": "pending",
+    "sha256": "afdbbd0449d229380c933abf2dcde0922e902f850857ab9a83c0750d5fe53d79"
+  },
+  {
+    "id": "CGY-054-FULL",
+    "version": 1,
+    "decision": "pending",
+    "sha256": "45cbfe3c26e9526041f6d417ab286ac0548276cb1862cc971300f21f435282aa"
+  },
+  {
+    "id": "CGY-056-FULL",
+    "version": 1,
+    "decision": "pending",
+    "sha256": "6e4ae8b9c9b76e13eb02c8cdfead807afdebd286aec216b1489f086945b5674b"
+  },
+  {
+    "id": "CGY-057-FULL",
+    "version": 1,
+    "decision": "pending",
+    "sha256": "68401d74706be1aba6e4c6ab243234446394945405ea31540bd74ef30e81c51b"
+  }
+]

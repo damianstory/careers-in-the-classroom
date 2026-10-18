@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-17",
+  "paid_calls": 0,
+  "actual_today_usd": 0,
+  "weekly_ledger": "costs/looot-2026-10-12.json",
+  "weekly_settled_usd": 0.025,
+  "weekly_outstanding_usd": 0.0,
+  "cap_usd": 10,
+  "provider_breakdown": {
+    "Firecrawl via Looot": 0.025
+  },
+  "budget_deferrals": [],
+  "pricing_balance_check": "Not required: no paid start proposed"
+}

@@ -1,0 +1,157 @@
+{
+  "capUsd": 10,
+  "periodStart": "2026-10-12",
+  "periodEndExclusive": "2026-10-19",
+  "timezone": "America/Toronto",
+  "authorization": "User approved recurring $10/week on 2026-10-15; includes Apify via Looot only",
+  "settledCostUsd": 0.03,
+  "outstandingExposureUsd": 0.0,
+  "runs": [
+    {
+      "requestKey": "citc-full-2026-10-15-botaneco-platform-v1",
+      "operation": "firecrawl-scrape",
+      "input": {
+        "url": "https://botaneco.com/",
+        "formats": [
+          "markdown"
+        ],
+        "maxAge": 0,
+        "parsers": [],
+        "proxy": "basic"
+      },
+      "purpose": "Full example source capture: direct HTTP blocked in discovery",
+      "company": "Botaneco",
+      "estimateUsd": 0.005,
+      "maximumExposureUsd": 0.015,
+      "status": "completed",
+      "runId": "run_4a9f11c508f34ed08f7c936cb314a8c1",
+      "actualCostUsd": 0.005,
+      "receipt": "docs/validation/full-examples/2026-10-15/evidence/botaneco-looot.json"
+    },
+    {
+      "requestKey": "citc-full-2026-10-15-botaneco-tech-v1",
+      "operation": "firecrawl-scrape",
+      "input": {
+        "url": "https://botaneco.com/technology/",
+        "formats": [
+          "markdown"
+        ],
+        "maxAge": 0,
+        "parsers": [],
+        "proxy": "basic"
+      },
+      "purpose": "Recover original page blocked or thin in free direct capture",
+      "estimateUsd": 0.005,
+      "maximumExposureUsd": 0.015,
+      "status": "completed",
+      "runId": "run_02b7cae9c617472eb8f7cf1fbd063b3d",
+      "actualCostUsd": 0.005,
+      "receipt": "docs/validation/full-examples/2026-10-15/evidence/botaneco-tech-looot.json"
+    },
+    {
+      "requestKey": "citc-full-2026-10-15-northern-biomanufacturing-v1",
+      "operation": "firecrawl-scrape",
+      "input": {
+        "url": "https://northernrna.com/biomanufacturing/",
+        "formats": [
+          "markdown"
+        ],
+        "maxAge": 0,
+        "parsers": [],
+        "proxy": "basic"
+      },
+      "purpose": "Recover original page blocked or thin in free direct capture",
+      "estimateUsd": 0.005,
+      "maximumExposureUsd": 0.015,
+      "status": "completed",
+      "runId": "run_f9a9a43125d240acb50bfb8f62f125ec",
+      "actualCostUsd": 0.005,
+      "receipt": "docs/validation/full-examples/2026-10-15/evidence/northern-biomanufacturing-looot.json"
+    },
+    {
+      "requestKey": "citc-full-2026-10-15-foremost-careers-v1",
+      "operation": "firecrawl-scrape",
+      "input": {
+        "url": "https://www.foremost.ca/careers",
+        "formats": [
+          "markdown"
+        ],
+        "maxAge": 0,
+        "parsers": [],
+        "proxy": "basic"
+      },
+      "purpose": "Recover original page blocked or thin in free direct capture",
+      "estimateUsd": 0.005,
+      "maximumExposureUsd": 0.015,
+      "status": "completed",
+      "runId": "run_b35a6fe86ddb4e87afd8fecb567b77b0",
+      "actualCostUsd": 0.005,
+      "receipt": "docs/validation/full-examples/2026-10-15/evidence/foremost-careers-settled.json"
+    },
+    {
+      "requestKey": "citc-full-2026-10-15-geologic-job-v1",
+      "operation": "firecrawl-scrape",
+      "input": {
+        "url": "https://www.geologicai.com/blog/linkedin_job/intermediate-software-engineer-2/",
+        "formats": [
+          "markdown"
+        ],
+        "maxAge": 0,
+        "parsers": [],
+        "proxy": "basic"
+      },
+      "purpose": "Recover original page blocked or thin in free direct capture",
+      "estimateUsd": 0.005,
+      "maximumExposureUsd": 0.015,
+      "status": "completed",
+      "runId": "run_5cf3bde5397142e59cc62c98ba87aad0",
+      "actualCostUsd": 0.005,
+      "receipt": "docs/validation/full-examples/2026-10-15/evidence/geologic-job-looot.json"
+    },
+    {
+      "requestKey": "citc-full-2026-10-15-foremost-facility-v1",
+      "operation": "firecrawl-scrape",
+      "input": {
+        "url": "https://www.foremost.ca/facility-resume/calgary",
+        "formats": [
+          "markdown"
+        ],
+        "maxAge": 0,
+        "parsers": [],
+        "proxy": "basic"
+      },
+      "purpose": "Resolve which products are manufactured at Calgary facility",
+      "estimateUsd": 0.005,
+      "maximumExposureUsd": 0.015,
+      "status": "failed",
+      "runId": "run_20d3de02b3e4488ba67b139df14ff62b",
+      "actualCostUsd": 0,
+      "receipt": "docs/validation/full-examples/2026-10-15/evidence/foremost-facility-final.json"
+    },
+    {
+      "requestKey": "citc-full-2026-10-17-cinnaroll-behind-bake-v1",
+      "operation": "firecrawl-scrape",
+      "input": {
+        "url": "https://www.cinnaroll.com/behind-the-bake",
+        "formats": [
+          "markdown"
+        ],
+        "maxAge": 0,
+        "parsers": [],
+        "proxy": "basic"
+      },
+      "purpose": "Recover readable production context after free reader failed and raw page was mostly Wix payload",
+      "company": "CBL Bakeries / Cinnaroll",
+      "estimateUsd": 0.005,
+      "maximumExposureUsd": 0.015,
+      "status": "completed",
+      "pricing_checked_on": "2026-10-17",
+      "settlement_ceiling_source": "https://docs.looot.ai/money/settlement-ceiling",
+      "balance_before_usd": 19.0928,
+      "runId": "run_548a7ecb49444d2a8190b1e91be024c8",
+      "actualCostUsd": 0.005,
+      "receipt": "docs/validation/full-examples/2026-10-17/cinnaroll-looot.json"
+    }
+  ],
+  "separatePilotExcludedUsd": 0.8822
+}
