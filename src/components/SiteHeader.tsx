@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useSignedUp } from "@/lib/session";
 import { useDialogs } from "./dialogs/DialogProvider";
 import { Icon } from "./Icon";
@@ -21,6 +21,7 @@ export function SiteHeader() {
   const onHome = pathname === "/" || pathname === "/connections";
   const [pastHero, setPastHero] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const menuButton = useRef<HTMLButtonElement>(null);
   // Close the menu whenever the route changes (adjusting state during render, not in an effect).
   const [menuRoute, setMenuRoute] = useState(pathname);
   if (menuRoute !== pathname) {
@@ -42,7 +43,13 @@ export function SiteHeader() {
   const over = onHome && !pastHero && !menuOpen;
 
   return (
-    <header className={`${styles.header} ${over ? styles.over : ""}`}>
+    <header className={`${styles.header} ${over ? styles.over : ""}`} onKeyDown={(event) => {
+      if (menuOpen && event.key === "Escape") {
+        event.preventDefault();
+        setMenuOpen(false);
+        menuButton.current?.focus();
+      }
+    }}>
       <div className={styles.row}>
         <Link href="/" className={styles.brand} aria-label="Careers in the Classroom, home">
           <span className={styles.name}>Careers in the Classroom</span>
@@ -74,6 +81,7 @@ export function SiteHeader() {
         </div>
 
         <button
+          ref={menuButton}
           type="button"
           className={styles.menuButton}
           aria-expanded={menuOpen}

@@ -25,19 +25,22 @@ npm run lint
 npm run typecheck
 npm test             # unit tests: search, context round trips, demo gate, content sources
 npm run test:e2e     # builds, starts on :3200, runs journeys + accessibility in installed Google Chrome
+CITC_E2E_PORT=3218 npm run test:e2e  # use a free port when another server is running
 npm run test:privacy-dev   # starts the dev server and proves a typed topic is not logged or written to disk
 ```
 
 ## What is real and what is simulated
 
-- **Real:** the three prepared examples and two news items, with claim-level sources (checked 24 September 2026), a home page that introduces the project, the Connections library at `/connections` (course/unit/topic filter in the URL; old `/examples`, `/search`, `/explore` and filtered home links redirect to it), examples, Get involved, the monthly email sample page.
-- **Example parts (all three examples):** examples open one part at a time, with a persistent “View as one page” option for scrolling, searching and printing. Five “Show your class” parts support desktop full-screen projection; About and Sources sit under “For you”. Fragments identify parts, while role/job selections and course/unit/topic context remain in the query. Legacy links still work. Phones have a Contents sheet; without JavaScript every part and its fragment link remain visible. All content also prints regardless of the selected view.
+- **Real:** 32 prepared Calgary examples with claim-level sources and individual checked dates, a home page with course/company/job entry points, Discover, Get involved, and the monthly email sample page. The Connections library at `/connections` offers course/unit/topic filtering, challenge groups, a searchable company directory, and kinds of work. Old `/examples`, `/search`, `/explore` and filtered home links redirect to it.
+- **Example parts:** examples open one part at a time, with a persistent “View as one page” option for scrolling, searching and printing. Five “Show your class” parts support desktop full-screen projection; About and Sources sit under “For you”. Fragments identify parts, while role/job selections, browsing origin and course/unit/topic context remain in the query. Legacy links still work. Phones have a Contents sheet; without JavaScript every part and its fragment link remain visible. All content also prints regardless of the selected view.
 - **Job examples** are saved, dated captures of real postings. "Accepting applications" only appears within 30 days of a successful check; otherwise a posting reads as a historical example, never as a current vacancy.
-- **Simulated:** signup, speaker requests, "note this topic" and "start a conversation". Forms never submit or send anything. Only two things are kept, in `sessionStorage` for the current tab: the demo signup flag and the list of searches with no prepared match.
+- **Related job postings:** role-specific Indeed and Job Bank searches open external live search results. These are separate from the dated, saved job examples and do not establish that a featured organization is hiring.
+- **Simulated:** signup, speaker requests, "note this topic" and "start a conversation". These forms never submit or send anything. The demo signup flag and list of searches with no prepared match are kept in `sessionStorage` for the current tab. The example layout preference is kept in `localStorage`; both have in-memory fallbacks when storage is unavailable.
 - **Demo gate:** examples are always open. Only recent developments open after the demo signup. Gated content is in the page. This is a demonstration, not access control.
 - **Interview notes:** the list of searches with no prepared match shows only when the app runs with `NEXT_PUBLIC_INTERVIEW_NOTES=1`.
 - **Search parameters** (course, unit, typed topic) go to this app's own server in the URL. The server does not log or store them.
-- **Not built:** deployment, accounts, database, email, live research, news ingestion, admin tools, analytics.
+- **Deployment:** a public validation preview is available at https://careers-in-the-classroom.vercel.app (verified 18 October 2026). Local repairs require a separate deployment before appearing there.
+- **Not built:** real accounts, database, email delivery, automated live research/news ingestion, admin tools, analytics.
 
 ## Content and design sources
 

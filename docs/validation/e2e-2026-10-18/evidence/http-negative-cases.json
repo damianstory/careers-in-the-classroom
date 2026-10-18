@@ -1,0 +1,16 @@
+[
+  {
+    "path": "/examples/not-a-real-company",
+    "status": 404
+  },
+  {
+    "path": "/connections?course=not-a-course&unit=not-a-unit",
+    "status": 200,
+    "bytes": 148722
+  },
+  {
+    "path": "/examples/ghgsat?role=not-a-role&job=not-a-job",
+    "status": 200,
+    "bytes": 156737
+  }
+]

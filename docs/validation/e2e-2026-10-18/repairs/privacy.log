@@ -1,0 +1,5 @@
+
+> careers-in-the-classroom@0.1.0 test:privacy-dev
+> node scripts/check-dev-privacy.mjs
+
+OK: typed topic was not logged or written to disk by the dev server.

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { PageDialogContext } from "@/components/dialogs/DialogProvider";
 import { examples, getDetails, getExample, getNews } from "@/content";
 import { selectionQuery } from "@/lib/example-navigation";
+import { parseBrowseOrigin } from "@/lib/doors";
 import { availableViews, parseExplore } from "@/lib/example-views";
 import { exampleContext, parseContext } from "@/lib/search";
 import { ExampleExplorer } from "./ExampleExplorer";
@@ -38,6 +39,7 @@ export default async function ExamplePage({ params, searchParams }: PageProps<"/
         details={details}
         views={views}
         ctx={ctx}
+        origin={ctx ? undefined : parseBrowseOrigin(query)}
         state={parseExplore(query, details, views)}
         navKey={selectionQuery(query)}
         news={news}

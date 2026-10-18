@@ -40,7 +40,7 @@ test("each other door lists the connections its own way", async ({ page, request
   await doors(page).getByRole("link", { name: /A kind of work/ }).click();
   await expect(page.getByRole("heading", { level: 2, name: "Start from a kind of work" })).toBeVisible();
   const role = page.getByRole("link", { name: /GHGSat/ }).first();
-  await expect(role).toHaveAttribute("href", /^\/examples\/ghgsat\?role=[\w-]+#who$/);
+  await expect(role).toHaveAttribute("href", /^\/examples\/ghgsat\?role=[\w-]+&from=role#who$/);
 });
 
 for (const width of [320, 390]) {
@@ -129,6 +129,9 @@ test("quick-bar navigation keeps the signup and noted searches when storage is b
   await dialog.getByRole("button", { name: "Create free account" }).click();
   await page.getByRole("button", { name: "Back to what I was reading" }).click();
   await expect(page.getByText("Free with signup")).toHaveCount(0);
+  // Signup removes its opener. Wait for the dialog's asynchronous focus restoration
+  // before scrolling; otherwise that restoration can undo the test's scroll.
+  await expect(page.getByRole("heading", { level: 1 })).toBeFocused();
   await page.evaluate(() => ((window as unknown as { citcMark: number }).citcMark = 1));
 
   // Switch door, then search for a topic nothing matches: the no-match banner records it.

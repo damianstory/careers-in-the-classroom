@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { Icon } from "@/components/Icon";
 import { DOORS, type Door } from "@/lib/doors";
@@ -15,11 +15,25 @@ const noop = () => () => {};
 // otherwise. Without JavaScript it never appears.
 export function QuickBar({ door, filter, courseHref }: { door: Door; filter: LibraryFilter; courseHref: string }) {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const hydrated = useSyncExternalStore(noop, () => true, () => false);
   const [shown, setShown] = useState(false);
   const [searching, setSearching] = useState(false);
   const searchButton = useRef<HTMLButtonElement>(null);
   const bar = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    // Next 16.3.6 caches the initial document's fragment in its canonical route URL,
+    // then appends the destination fragment on a return navigation. Recover the known
+    // library target (e.g. #library#library) without reloading or losing demo state.
+    // Keep this bounded to malformed fragments ending at our own library anchor.
+    if (/^#.+#library$/.test(window.location.hash)) {
+      const url = new URL(window.location.href);
+      url.hash = "library";
+      window.history.replaceState(null, "", url);
+      document.getElementById("library")?.scrollIntoView();
+    }
+  }, [searchParams]);
 
   useEffect(() => {
     const row = document.getElementById("doors");

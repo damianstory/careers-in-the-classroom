@@ -4,7 +4,7 @@ import { PageDialogContext } from "@/components/dialogs/DialogProvider";
 import { ExampleCard } from "@/components/ExampleCard";
 import { SearchForm } from "@/components/SearchForm";
 import { examples, getNews, news } from "@/content";
-import { parseDoor } from "@/lib/doors";
+import { companyQuery, parseDoor } from "@/lib/doors";
 import { buildLibrary, courseOptions, filterQuery, parseFilter, type LibraryItem } from "@/lib/library";
 import { checkedRange } from "@/lib/job-status";
 import heroImage from "../../../public/images/hero-calgary-dither-green.png";
@@ -166,7 +166,7 @@ export default async function Connections({ searchParams }: PageProps<"/connecti
           <div id="library" className={styles.library}>
             <div className={`${styles.frame} ${ways.panelArea}`}>
               {door === "challenge" && <ChallengePanel />}
-              {door === "company" && <CompanyPanel />}
+              {door === "company" && <CompanyPanel query={companyQuery(params.company)} />}
               {door === "role" && <RolePanel />}
             </div>
           </div>

@@ -23,6 +23,7 @@ import { exploreHref, landingSection, layoutBootstrap, PART_LABELS, SHOW_PARTS, 
 import { checkedRange, formatDate, jobStatusLabel } from "@/lib/job-status";
 import { liveSearches, SEARCH_LOCATION, searchTitles } from "@/lib/job-search";
 import type { ExampleContext } from "@/lib/search";
+import { browseOriginQuery, browseReturnHref, type BrowseOrigin } from "@/lib/doors";
 import { GatedNews, SaveExample, SpeakerButton } from "./ExampleParts";
 import { ExploreFocus } from "./ExploreFocus";
 import { SourcesAndFit } from "./ExampleSections";
@@ -42,6 +43,7 @@ interface Props {
   details?: ExampleDetails;
   views: View[];
   ctx: ExampleContext | null;
+  origin?: BrowseOrigin;
   state: ExploreState;
   /** The page's query, normalized (selectionQuery): changes with every navigation to another URL. */
   navKey: string;
@@ -84,9 +86,9 @@ function pageChecked(e: Example, details?: ExampleDetails): string {
   return checkedRange(dates);
 }
 
-export function ExampleExplorer({ e, details, views, ctx, state, navKey, news, speakerTopic, today }: Props) {
+export function ExampleExplorer({ e, details, views, ctx, origin, state, navKey, news, speakerTopic, today }: Props) {
   const roles = details ? details.roleIds.map((id) => getRoleProfile(id)!) : [];
-  const href: Href = (t) => exploreHref(e.slug, ctx?.query ?? "", t);
+  const href: Href = (t) => exploreHref(e.slug, ctx?.query ?? browseOriginQuery(origin), t);
   const selection: Selection = { role: state.role, job: state.job };
   const label = (v: View) => v === "about" ? `About ${e.org}` : PART_LABELS[v];
   const items: RailItem[] = views.map((section) => ({ section, href: href({ section, ...selection }), label: label(section) }));
@@ -120,9 +122,9 @@ export function ExampleExplorer({ e, details, views, ctx, state, navKey, news, s
           <div className={styles.railFx} aria-hidden="true">
             <RailField />
           </div>
-          <Link href={ctx?.backHref ?? "/connections"} className={styles.back}>
+          <Link href={ctx?.backHref ?? browseReturnHref(origin)} className={styles.back}>
             <Icon name="arrowLeft" small />
-            {ctx ? "Back to results" : "All connections"}
+            {ctx ? "Back to results" : origin ? `Back to ${origin.door === "company" ? "companies" : origin.door === "challenge" ? "challenges" : "kinds of work"}` : "All connections"}
           </Link>
           <div className={styles.railSticky} id="explore-strip" data-rail-sticky="">
             <p className={styles.stripLabel} data-context={ctx ? "" : undefined}>

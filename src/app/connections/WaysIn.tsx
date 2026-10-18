@@ -3,9 +3,10 @@ import Link from "next/link";
 import { Icon } from "@/components/Icon";
 import { browseExamples, browseRoles, type BrowseExample, type BrowseRoleGroup } from "@/lib/browse";
 import { FAMILIES, THEMES, familyName } from "@/lib/browse-terms";
-import { DOORS, type Door } from "@/lib/doors";
+import { DOORS, withBrowseOrigin, type Door } from "@/lib/doors";
 import type { LibraryFilter } from "@/lib/library-filter";
 import { DoorLink } from "./DoorLink";
+import { CompanySearch } from "./CompanySearch";
 import styles from "./ways-in.module.css";
 
 // The four ways in, as a row of cards on the hero. The course card keeps the current filter.
@@ -55,13 +56,13 @@ function PanelHead({ title, note }: { title: string; note: string }) {
   );
 }
 
-function CompanyRow({ e }: { e: BrowseExample }) {
+function CompanyRow({ e, query }: { e: BrowseExample; query: string }) {
   return (
     <li className={styles.companyRow}>
       <OrgMark org={e.org} />
       <div className={styles.companyMain}>
         <p className={styles.companyName}>
-          <Link href={e.href} className={styles.stretch}>
+          <Link href={withBrowseOrigin(e.href, { door: "company", company: query })} className={styles.stretch}>
             {e.org.name}
           </Link>
           <span className={styles.kind}>{e.org.kind}</span>
@@ -110,7 +111,7 @@ function ExampleTile({ e }: { e: BrowseExample }) {
           {e.org.name}
         </p>
         <h4 className={styles.tileQ}>
-          <Link href={e.href} className={styles.stretch}>
+          <Link href={withBrowseOrigin(e.href, { door: "challenge" })} className={styles.stretch}>
             {e.question}
           </Link>
         </h4>
@@ -127,12 +128,15 @@ export function ChallengePanel() {
         title="Start from a challenge"
         note="Real problems Calgary organizations are working on, grouped by what they are about."
       />
+      <nav aria-label="Challenge groups" className={styles.groupJumps}>
+        {THEMES.filter((t) => all.some((e) => e.theme === t.id)).map((t) => <a key={t.id} href={`#t-${t.id}`}>{t.name}</a>)}
+      </nav>
       {THEMES.map((t) => {
         const list = all.filter((e) => e.theme === t.id);
         return (
           <section key={t.id} className={styles.theme} aria-labelledby={`t-${t.id}`}>
             <div className={styles.familyHead}>
-              <h3 id={`t-${t.id}`} className={styles.familyTitle}>
+              <h3 id={`t-${t.id}`} tabIndex={-1} className={styles.familyTitle}>
                 {t.name} <span className={styles.count}>{list.length}</span>
               </h3>
               <p className={styles.familyBlurb}>{t.blurb}</p>
@@ -149,17 +153,21 @@ export function ChallengePanel() {
   );
 }
 
-export function CompanyPanel() {
+export function CompanyPanel({ query = "" }: { query?: string }) {
   const byName = [...browseExamples()].sort((a, b) => a.org.name.localeCompare(b.org.name));
+  const matches = byName.filter((e) => e.org.name.toLowerCase().includes(query.toLowerCase()));
   return (
     <>
       <PanelHead
         title="Start from a company"
         note={`${byName.length} organizations, A to Z. Each one is working on a challenge you can bring into class.`}
       />
+      <CompanySearch query={query} />
+      {query && <p role="status" className={styles.panelNote}>{matches.length} of {byName.length} organizations match “{query}”.</p>}
+      {matches.length === 0 && <p className={styles.empty}>No company matches. Try part of its name or clear your search.</p>}
       <ul className={styles.companyList}>
-        {byName.map((e) => (
-          <CompanyRow key={e.slug} e={e} />
+        {matches.map((e) => (
+          <CompanyRow key={e.slug} e={e} query={query} />
         ))}
       </ul>
     </>
@@ -175,7 +183,7 @@ function RoleList({ roles }: { roles: BrowseRoleGroup[] }) {
         return (
           <section key={f.id} className={styles.family} aria-labelledby={`fam-${f.id}`}>
             <div className={styles.familyHead}>
-              <h3 id={`fam-${f.id}`} className={styles.familyTitle}>
+              <h3 id={`fam-${f.id}`} tabIndex={-1} className={styles.familyTitle}>
                 {familyName(f.id)}
               </h3>
               <p className={styles.familyBlurb}>{f.blurb}</p>
@@ -191,7 +199,7 @@ function RoleList({ roles }: { roles: BrowseRoleGroup[] }) {
                     {r.at.map((a) => (
                       <li key={a.org.id}>
                         <Link
-                          href={a.href}
+                          href={withBrowseOrigin(a.href, { door: "role" })}
                           className={`${styles.atLink} ${a.scope === "elsewhere" ? styles.elsewhere : ""}`}
                           title={a.question}
                         >
@@ -213,13 +221,17 @@ function RoleList({ roles }: { roles: BrowseRoleGroup[] }) {
 }
 
 export function RolePanel() {
+  const roles = browseRoles();
   return (
     <>
       <PanelHead
         title="Start from a kind of work"
         note="The kinds of work in these connections, grouped the way a student might think about them. Each name links to that person’s part of the connection."
       />
-      <RoleList roles={browseRoles()} />
+      <nav aria-label="Work groups" className={styles.groupJumps}>
+        {FAMILIES.filter((f) => roles.some((r) => r.family === f.id)).map((f) => <a key={f.id} href={`#fam-${f.id}`}>{familyName(f.id)}</a>)}
+      </nav>
+      <RoleList roles={roles} />
     </>
   );
 }
