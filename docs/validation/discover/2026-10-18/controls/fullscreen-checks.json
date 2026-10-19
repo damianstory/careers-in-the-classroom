@@ -1,0 +1,38 @@
+[
+  {
+    "role": "18",
+    "step": 0,
+    "pageOverflow": 0,
+    "stageOverflow": 0,
+    "scrollHeight": 720,
+    "clientHeight": 720,
+    "canvasTop": 79.859375
+  },
+  {
+    "role": "18",
+    "step": 1,
+    "pageOverflow": 0,
+    "stageOverflow": 0,
+    "scrollHeight": 720,
+    "clientHeight": 720,
+    "canvasTop": 81.890625
+  },
+  {
+    "role": "08",
+    "step": 3,
+    "pageOverflow": 0,
+    "stageOverflow": 0,
+    "scrollHeight": 883,
+    "clientHeight": 720,
+    "canvasTop": 62
+  },
+  {
+    "role": "06",
+    "step": 5,
+    "pageOverflow": 0,
+    "stageOverflow": 0,
+    "scrollHeight": 894,
+    "clientHeight": 720,
+    "canvasTop": 62
+  }
+]

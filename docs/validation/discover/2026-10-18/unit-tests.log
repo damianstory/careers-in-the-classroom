@@ -1,0 +1,16 @@
+
+> careers-in-the-classroom@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.1 /Users/damianmatheson/Desktop/Claude Code/CitC
+
+
+ Test Files  14 passed (14)
+      Tests  195 passed (195)
+   Start at  20:22:08
+   Duration  542ms (transform 65%, import 22%, tests 12%, worker 1%)
+
+  Transform  transforming modules took 2.15s · 65% of tracked time, re-done on every run
+             persist transforms across runs with fsModuleCache: true
+             learn more: https://vitest.dev/guide/improving-performance#caching-between-reruns

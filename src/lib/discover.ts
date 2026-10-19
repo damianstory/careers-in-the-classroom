@@ -9,9 +9,15 @@ export const steps = ["Guess", "Reveal", "The work", "Why it matters", "Team & s
 
 export type DiscoverCard = ReturnType<typeof buildDiscoverCards>[number];
 export const filterCards = (cards: DiscoverCard[], subject: Subject) =>
-  cards.filter((card) => subject === "all" || card.subject === subject);
+  cards.filter((card) => subject === "all" || card.subjects.includes(subject));
 export const subjectCounts = (cards: DiscoverCard[]) =>
   Object.fromEntries(subjects.map((subject) => [subject, filterCards(cards, subject).length])) as Record<Subject, number>;
+
+export function cardForSubject(card: DiscoverCard, subject: Subject): DiscoverCard {
+  if (subject === "all" || card.subject === subject) return card;
+  const context = card.contexts.find((c) => c.subject === subject);
+  return context ? { ...card, ...context } : card;
+}
 
 export function roundOrder(cards: DiscoverCard[], subject: Subject, found: string[], random = Math.random) {
   const active = filterCards(cards, subject).map((c) => c.role.id);

@@ -1,3 +1,5 @@
+import { expandedDiscoverImages } from "./discover-expansion";
+
 // Permanent opaque numbers preserve shared guessing links. Never renumber existing cards.
 // Titles describe the fictional illustrated occupation, not a verified employee or vacancy.
 export interface DiscoverImage {
@@ -27,6 +29,6 @@ const selections: CardSelection[] = [
   { number: "08", organizationId: "e3-lithium", roleId: "process-operations", title: "Plant Operator", clue: "A person in a hard hat and safety glasses checks a tablet beside large pipes, tanks and a pressure gauge.", pathwayId: "sait-power", jobId: "e3-shift-operator" },
   { number: "09", organizationId: "ghgsat", roleId: "commercial-partnerships", title: "Partnerships Manager", clue: "At a meeting table, a person presents a map and a diagram connecting satellite measurements, plants and people.", pathwayId: "sait-marketing", jobId: "ghgsat-government-business" },
 ];
-export const discoverImages: DiscoverImage[] = selections.map((selection) => ({
+export const discoverImages: DiscoverImage[] = [...selections.map((selection): DiscoverImage => ({
   ...selection, src: `/images/discover/${selection.roleId}.jpg`, width: 752, height: 1344,
-}));
+})), ...expandedDiscoverImages];

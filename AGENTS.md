@@ -17,3 +17,7 @@ Follow `docs/design/image-direction.md` for the palette, exact shared prompt, re
 Present editorial images cleanly, with no green bottom caption strips or illustration/disclaimer bands. Record provenance in design notes and retain accessible alt text. Apply this presentation and the graphic-novel theme to future examples and site artwork.
 
 Teaching illustrations use the same style as static images, with explicit directional arrows replacing animation and live numbered explanations preserving readability. Cap example-page story and teaching images at 680px on desktop; keep their full aspect ratio and fit narrow screens.
+
+## Example and Discover integration
+
+When researching or implementing company/example batches, include the occupation-guessing Discover experience. Follow `docs/workflows/discover-integration.md`. Account for each example's relevant work with new cards, links to existing occupations, or an explicit deferral. Preserve stable Discover numbers, review/source boundaries and the current guessing/reveal presentation. Do not declare a batch fully integrated while silently omitting Discover.

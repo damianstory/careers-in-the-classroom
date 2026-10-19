@@ -1,15 +1,19 @@
 .area { --stage-header: var(--header-h); min-height: calc(100svh - var(--header-h)); background: var(--bg-warm); color: var(--ink); }
-.area:fullscreen { --stage-header: 0px; height: 100svh; overflow-y: auto; }
+.area:fullscreen { --stage-header: 0px; height: 100svh; overflow-y: auto; display: flex; flex-direction: column; }
+.presentationTools { display: flex; flex-shrink: 0; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; padding: 12px var(--gutter) 0; }
+.area:fullscreen .presentationTools { padding: 16px 32px 0; }
+.area:fullscreen .canvas { flex: none; width: 100%; margin-block: auto; padding-top: 24px; padding-bottom: 32px; }
+.fullscreenHelp { font-size: 16px; line-height: 1.5; }
+.fullscreenHelp kbd { font: inherit; font-weight: 600; }
 .canvas { max-width: 1320px; margin: auto; padding: 12px 32px 24px; }
-.canvas button, .canvas select, .exampleLink { font: inherit; color: var(--ink); border: 1px solid var(--border); background: var(--white); border-radius: 4px; min-height: 44px; padding: 10px 14px; }
-.canvas button { cursor: pointer; }
+.canvas button, .canvas select, .presentationTools button, .exampleLink { font: inherit; color: var(--ink); border: 1px solid var(--border); background: var(--white); border-radius: 4px; min-height: 44px; padding: 10px 14px; }
+.canvas button, .presentationTools button { cursor: pointer; }
 .canvas button:disabled { cursor: default; opacity: .6; }
-.canvas :is(button, select, a):focus-visible { outline: 3px solid var(--green-shade-3); outline-offset: 3px; }
+.canvas :is(button, select, a):focus-visible, .presentationTools button:focus-visible { outline: 3px solid var(--green-shade-3); outline-offset: 3px; }
 /* Headings receive focus to announce new content; they are not interactive controls. */
 .canvas h1[tabindex="-1"]:focus { outline: none; }
 .canvas .primary { background: var(--green); border-color: var(--green-shade-2); font-weight: 600; }
 .mono { font: 500 14px/1.5 var(--font-mono); }
-.topbar { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 16px; }
 .tools { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 8px; font-size: 16px; }
 .tools label { display: flex; align-items: center; gap: 8px; }
 .notice { padding: 12px 0; }
@@ -86,10 +90,11 @@
   .guessing .navigation { justify-content: flex-end; }
   .revealed .bottom { display: none; }
   .round:not(.revealed) .pictureGroup { width: clamp(200px, calc((100svh - var(--stage-header) - 280px) * .56), 300px); justify-self: center; }
+  .area:fullscreen .guessing { grid-template-columns: clamp(180px, calc((100svh - 336px) * .56), 300px) minmax(0, 480px); }
+  .area:fullscreen .round:not(.revealed) .pictureGroup { width: clamp(180px, calc((100svh - 336px) * .56), 300px); }
 }
 @media (max-width: 1099px) {
   .canvas { padding: 20px 24px 32px; }
-  .topbar { align-items: flex-start; flex-direction: column; }
   .tools { justify-content: flex-start; }
   .startLayout { padding: 12px 0; gap: 48px; }
   .stack { width: 220px; }
@@ -106,7 +111,6 @@
 }
 @media (max-width: 699px) {
   .canvas { padding: 16px; }
-  .topbar { margin-bottom: 24px; }
   .tools { font-size: 16px; }
   .tools label { flex-wrap: wrap; }
   .startLayout, .round, .revealed { display: flex; flex-direction: column; gap: 24px; }

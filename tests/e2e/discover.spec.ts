@@ -46,7 +46,7 @@ test.describe("Discover classroom flow", () => {
     await page.reload();
     await expect(page.getByRole("region", { name: "Discover", exact: true })).toHaveAttribute("data-step", "0");
     await expect(page.locator('[data-visible="true"]')).toHaveAttribute("data-role", role);
-    await expect(page.getByText("1 of 9 selected", { exact: true })).toBeVisible();
+    await expect(page.getByText(`1 of ${cards.length} selected`, { exact: true })).toBeVisible();
     await concealed();
     await page.keyboard.press("Space");
     await expect(page.getByRole("heading", { name: card.title, exact: true })).toBeVisible();
@@ -57,7 +57,7 @@ test.describe("Discover classroom flow", () => {
     await expect(page.getByRole("region", { name: "Discover", exact: true })).toHaveAttribute("data-step", "0");
     expect(page.url()).not.toContain(role);
     expect(new URL(page.url()).searchParams.get("step")).toBe("0");
-    await expect(page.getByText("1 of 9 selected", { exact: true })).toBeVisible();
+    await expect(page.getByText(`1 of ${cards.length} selected`, { exact: true })).toBeVisible();
     await page.keyboard.press("Space");
     for (let step = 2; step <= 6; step++) {
       await page.keyboard.press("Space");
@@ -69,7 +69,7 @@ test.describe("Discover classroom flow", () => {
     await expect(page.getByRole("heading", { name: "Team & subjects", exact: true })).toBeVisible();
     const before = page.url();
     const example = page.getByRole("link", { name: `Work area at ${card.organization.name} →` });
-    await expect(example).toHaveAttribute("href", `/examples/${card.example.slug}?role=${role}#roles`);
+    await expect(example).toHaveAttribute("href", `/examples/${card.example.slug}?role=${role}#who`);
     await example.click();
     await page.goBack();
     await expect(page).toHaveURL(before);
@@ -110,10 +110,19 @@ test.describe("Discover classroom flow", () => {
     await page.getByRole("button", { name: "STOP", exact: true }).click();
     const second = await page.locator('[data-visible="true"]').getAttribute("data-role");
     expect(first).not.toBe(second);
-    expect([first, second].sort()).toEqual(["process-engineering", "process-operations"]);
+    const chemistry = cards.filter((c) => c.subjects.includes("chemistry"));
+    const selected = new Set([first, second]);
+    for (let i = 2; i < chemistry.length; i++) {
+      await page.keyboard.press("r");
+      await page.getByRole("button", { name: "STOP", exact: true }).click();
+      const id = await page.locator('[data-visible="true"]').getAttribute("data-role");
+      expect(selected.has(id)).toBe(false);
+      selected.add(id);
+    }
+    expect([...selected].sort()).toEqual(chemistry.map((c) => c.role.id).sort());
     await page.keyboard.press("r");
     await expect(page.getByText("All jobs selected. Starting a fresh set.")).toBeVisible();
-    await expect(page.getByText("0 of 2 selected")).toBeVisible();
+    await expect(page.getByText(`0 of ${chemistry.length} selected`)).toBeVisible();
   });
 
   test("deep links retain route, saved date, vacancy label and empty state", async ({ page, requests }) => {
@@ -143,14 +152,14 @@ test.describe("Discover classroom flow", () => {
       await expect(page.locator(field)).toHaveValue("a b s");
       await page.getByRole("dialog").getByRole("button", { name: "Close", exact: true }).click();
       await expect(page.locator('[data-phase="start"]')).toBeVisible();
-      await expect(page.getByRole("button", { name: "Slower: off" })).toBeVisible();
+      await expect(page.getByRole("button", { name: "Start Space" })).toBeVisible();
     }
     await page.getByRole("navigation", { name: "Main", exact: true }).getByRole("link", { name: "Connections", exact: true }).focus();
     await page.keyboard.press("Space");
     await expect(page.locator('[data-phase="start"]')).toBeVisible();
     await page.getByLabel("JOBS", { exact: true }).focus();
     await page.keyboard.press("s");
-    await expect(page.getByRole("button", { name: "Slower: off" })).toBeVisible();
+    await expect(page.locator('[data-phase="start"]')).toBeVisible();
   });
 
   test("picture loading respects header and subject focus", async ({ page, requests }) => {
@@ -182,9 +191,9 @@ test.describe("Discover classroom flow", () => {
   test("reduced motion draws once and failed pictures provide equivalent clues", async ({ page, requests }) => {
     void requests;
     await page.emulateMedia({ reducedMotion: "reduce" });
-    await page.route("**/images/discover/*.jpg", (route) => route.abort());
+    await page.route("**/images/discover/*", (route) => route.abort());
     await page.goto("/discover");
-    await expect(page.getByLabel("Round style")).toHaveValue("draw");
+    await expect(page.getByLabel("Round style")).toHaveCount(0);
     await page.getByRole("button", { name: "Draw a picture Space" }).click();
     await expect(page.locator('[data-phase="reveal"]')).toHaveAttribute("data-step", "0");
     const picture = page.locator('[data-visible="true"]');
@@ -201,14 +210,51 @@ test.describe("Discover classroom flow", () => {
   test("classroom guessing controls fit a 720p screen and fullscreen can be requested", async ({ page, requests }) => {
     void requests;
     await page.setViewportSize({ width: 1280, height: 720 });
-    await page.goto("/discover?role=07&step=0");
-    const reveal = page.getByRole("button", { name: "Reveal the job", exact: true });
-    const box = (await reveal.boundingBox())!;
-    expect(box.y + box.height).toBeLessThanOrEqual(720);
-    await page.getByRole("button", { name: "Full screen", exact: true }).click();
+    for (const number of ["07", "18"]) {
+      await page.goto(`/discover?role=${number}&step=0`);
+      const reveal = page.getByRole("button", { name: "Reveal the job", exact: true });
+      const box = (await reveal.boundingBox())!;
+      expect(box.y + box.height).toBeLessThanOrEqual(720);
+      await page.getByRole("button", { name: "Full screen", exact: true }).click();
+      await expect.poll(() => page.evaluate(() => document.fullscreenElement?.getAttribute("aria-label"))).toBe("Discover");
+      const fullBox = (await reveal.boundingBox())!;
+      expect(fullBox.y + fullBox.height).toBeLessThanOrEqual(720);
+      await reveal.click();
+      await expect(page.getByRole("heading", { name: cards.find((c) => c.number === number)!.title, exact: true })).toBeVisible();
+      await page.keyboard.press("Escape");
+      await expect.poll(() => page.evaluate(() => document.fullscreenElement === null)).toBe(true);
+    }
+  });
+
+  test("fullscreen sits below signup, centers the game and explains Escape", async ({ page, requests }) => {
+    void requests;
+    await page.setViewportSize({ width: 1440, height: 1000 });
+    await page.goto("/discover");
+    await expect(page.getByLabel("Round style")).toHaveCount(0);
+    await expect(page.getByRole("button", { name: /^Slower/ })).toHaveCount(0);
+    await expect(page.getByRole("button", { name: "Subjects", exact: true })).toHaveCount(0);
+    const full = page.getByRole("button", { name: "Full screen", exact: true });
+    const signup = (await page.getByRole("banner").getByRole("button", { name: "Sign up free", exact: true }).boundingBox())!;
+    const control = (await full.boundingBox())!;
+    expect(Math.abs(control.x + control.width - signup.x - signup.width)).toBeLessThan(2);
+    expect(control.y).toBeGreaterThan(signup.y + signup.height);
+    await full.click();
     await expect.poll(() => page.evaluate(() => document.fullscreenElement?.getAttribute("aria-label"))).toBe("Discover");
-    await reveal.click();
-    await expect(page.getByRole("heading", { name: "Process Engineer", exact: true })).toBeVisible();
+    await expect(page.getByText("Press Esc to exit full screen", { exact: true })).toBeVisible();
+    const geometry = await page.locator('[data-phase="start"]').evaluate((area) => {
+      const toolbar = area.firstElementChild!.getBoundingClientRect();
+      const canvas = area.lastElementChild!.getBoundingClientRect();
+      return { center: canvas.y + canvas.height / 2, availableCenter: (toolbar.bottom + innerHeight) / 2, overflow: document.documentElement.scrollWidth - innerWidth };
+    });
+    expect(Math.abs(geometry.center - geometry.availableCenter)).toBeLessThan(2);
+    expect(geometry.overflow).toBe(0);
+    await page.getByRole("button", { name: "Exit full screen", exact: true }).click();
+    await expect.poll(() => page.evaluate(() => document.fullscreenElement === null)).toBe(true);
+    await expect(full).toBeVisible();
+    await full.click();
+    await page.keyboard.press("Escape");
+    await expect.poll(() => page.evaluate(() => document.fullscreenElement === null)).toBe(true);
+    await expect(page.getByText("Press Esc to exit full screen", { exact: true })).toHaveCount(0);
   });
 
   test("desktop headings stay visually quiet while tabs retain keyboard focus", async ({ page, requests }) => {
@@ -323,9 +369,9 @@ for (const width of [390, 768, 1024]) {
 }
 
 for (const width of [1280, 768, 390]) {
-  test(`all 54 content states remain readable and unclipped at ${width}px`, async ({ page, requests }, info) => {
+  test(`all ${cards.length * 6} content states remain readable and unclipped at ${width}px`, async ({ page, requests }, info) => {
     test.skip(info.project.name === "phone");
-    test.setTimeout(120_000);
+    test.setTimeout(cards.length * 12_000);
     void requests;
     const errors: string[] = [];
     page.on("pageerror", (error) => errors.push(error.message));
@@ -359,13 +405,14 @@ test("guessing offers a direct restart in cycling and single-draw modes", async 
   await page.getByRole("button", { name: "Restart", exact: true }).click();
   await expect(page.getByRole("region", { name: "Discover", exact: true })).toHaveAttribute("data-phase", "flashing");
   await page.getByRole("button", { name: "STOP", exact: true }).click();
-  await expect(page.locator('[data-visible="true"]')).toHaveAttribute("data-role", "process-operations");
+  await expect(page.locator('[data-visible="true"]')).not.toHaveAttribute("data-role", "process-engineering");
   await page.goto("/discover?subject=chemistry&role=07&step=0");
-  await page.getByLabel("Round style").selectOption("draw");
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await expect(page.getByLabel("Round style")).toHaveCount(0);
   await page.getByRole("button", { name: "Restart", exact: true }).click();
   await expect(page.getByRole("region", { name: "Discover", exact: true })).toHaveAttribute("data-phase", "reveal");
   await expect(page.getByRole("region", { name: "Discover", exact: true })).toHaveAttribute("data-step", "0");
-  await expect(page.locator('[data-visible="true"]')).toHaveAttribute("data-role", "process-operations");
+  await expect(page.locator('[data-visible="true"]')).not.toHaveAttribute("data-role", "process-engineering");
   await expect(page.getByRole("button", { name: "Reveal the job", exact: true })).toBeVisible();
 });
 

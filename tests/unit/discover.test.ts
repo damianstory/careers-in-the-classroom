@@ -1,7 +1,7 @@
 import { existsSync } from "node:fs";
 import { describe, expect, it } from "vitest";
-import { discoverImages, exampleDetails, roleProfiles, organizationRoles } from "@/content";
-import { parseDiscoverState, roundOrder, serializeDiscoverState, subjectCounts } from "@/lib/discover";
+import { discoverImages, exampleDetails, examples, roleProfiles, organizationRoles } from "@/content";
+import { cardForSubject, filterCards, parseDiscoverState, roundOrder, serializeDiscoverState, subjectCounts } from "@/lib/discover";
 import { buildDiscoverCards } from "@/lib/discover-cards";
 
 const featuredRoles = roleProfiles.filter((r) => discoverImages.some((image) => image.roleId === r.id));
@@ -35,13 +35,13 @@ describe("Discover content", () => {
     expect(cards.find((c) => c.role.id === "animal-care")?.capturedOn).toBe("2026-09-29");
   });
   it("keeps permanent numbers, curated routes and complete source qualifications", () => {
-    expect(cards.map((c) => [c.number, c.role.id])).toEqual([
+    expect(cards.slice(0, 9).map((c) => [c.number, c.role.id])).toEqual([
       ["01", "atmospheric-science"], ["02", "satellite-engineering"], ["03", "software-data"],
       ["04", "conservation-research"], ["05", "animal-care"], ["06", "wildlife-veterinary"],
       ["07", "process-engineering"], ["08", "process-operations"], ["09", "commercial-partnerships"],
     ]);
     for (const card of cards) {
-      expect(card.title).not.toBe(card.role.title);
+      if (Number(card.number) < 10) expect(card.title).not.toBe(card.role.title);
       expect(card.evidenceSources.every((source) => source?.url)).toBe(true);
       expect(card.pathwaySources.every((source) => source?.url)).toBe(true);
       if (card.job) expect(card.jobSource?.url).toBeTruthy();
@@ -52,21 +52,47 @@ describe("Discover content", () => {
     expect(cards[1].job?.employerNote.text).toContain("Not connected to GHGSat");
     expect(parseDiscoverState({ role: "05" }, [...cards].reverse()).role).toBe("animal-care");
   });
-  it("counts the subjects", () => expect(subjectCounts(cards)).toEqual({ all: 9, biology: 3, chemistry: 2, physics: 4 }));
+  it("represents every company and linked role, including shared occupation profiles", () => {
+    for (const e of examples) {
+      const d = exampleDetails.find((d) => d.id === e.detailsId)!;
+      expect(cards.some((c) => c.relatedExamples.some((r) => r.slug === e.slug)), e.slug).toBe(true);
+      for (const roleId of d.roleIds.filter((id) => organizationRoles.some((r) => r.organizationId === d.organizationId && r.roleId === id))) {
+        const owners = cards.filter((c) => c.relatedExamples.some((r) => r.slug === e.slug && r.roleId === roleId));
+        expect(owners, `${e.slug}/${roleId} has exactly one Discover card`).toHaveLength(1);
+      }
+    }
+    expect(new Set(cards.map((c) => c.number)).size).toBe(cards.length);
+    expect(new Set(cards.map((c) => c.role.id)).size).toBe(cards.length);
+  });
+  it("lets shared occupations match the subjects of their actual examples", () => {
+    expect(subjectCounts(cards).all).toBe(cards.length);
+    expect(filterCards(cards, "physics").some((c) => c.role.id === "work-sonography")).toBe(true);
+    expect(filterCards(cards, "chemistry").some((c) => c.role.id === "software-data")).toBe(true);
+    const process = cards.find((c) => c.role.id === "process-engineering")!;
+    expect(process.relatedExamples.some((e) => e.roleId === "work-process")).toBe(true);
+    expect(cards.some((c) => c.role.id === "work-process")).toBe(false);
+    const operations = cards.find((c) => c.role.id === "process-operations")!;
+    const physics = cardForSubject(operations, "physics");
+    expect(physics.example.discipline).toBe("Physics");
+    expect(physics.contexts.some((c) => c.example.slug === physics.example.slug)).toBe(true);
+    expect(physics.pathway.roleRationale.some((r) => r.roleId === physics.contextRoleId)).toBe(true);
+    expect(cardForSubject(operations, "all")).toBe(operations);
+  });
 });
 describe("Discover rounds", () => {
   it("excludes found roles and never duplicates", () => {
     const { order, fresh } = roundOrder(cards, "all", ["animal-care"], () => .3);
-    expect(order).toHaveLength(8);
-    expect(new Set(order).size).toBe(8);
+    expect(order).toHaveLength(cards.length - 1);
+    expect(new Set(order).size).toBe(cards.length - 1);
     expect(order).not.toContain("animal-care");
     expect(fresh).toBe(false);
   });
   it("resets only the exhausted subject and signals a fresh set", () => {
-    const result = roundOrder(cards, "chemistry", ["animal-care", "process-engineering", "process-operations"]);
+    const active = filterCards(cards, "chemistry").map((c) => c.role.id);
+    const result = roundOrder(cards, "chemistry", ["animal-care", ...active]);
     expect(result.fresh).toBe(true);
     expect(result.found).toEqual(["animal-care"]);
-    expect(result.order.sort()).toEqual(["process-engineering", "process-operations"]);
+    expect(result.order.sort()).toEqual(active.sort());
   });
 });
 describe("Discover URL state", () => {

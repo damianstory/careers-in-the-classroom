@@ -1,0 +1,3208 @@
+{
+  "date": "2026-10-18",
+  "publication": "local review; not pushed",
+  "before": {
+    "cards": 9
+  },
+  "after": {
+    "cards": 57,
+    "examples": 46,
+    "distinctLinkedRoleIds": 59,
+    "subjectCounts": {
+      "all": 57,
+      "biology": 17,
+      "chemistry": 16,
+      "physics": 40
+    }
+  },
+  "coverage": [
+    {
+      "slug": "standens",
+      "company": "Standen’s (IMT)",
+      "roles": [
+        {
+          "roleId": "work-mechanical",
+          "cards": [
+            "10"
+          ]
+        },
+        {
+          "roleId": "work-manufacturing",
+          "cards": [
+            "11"
+          ]
+        },
+        {
+          "roleId": "work-quality",
+          "cards": [
+            "12"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "opisystems",
+      "company": "OPIsystems (OPI)",
+      "roles": [
+        {
+          "roleId": "work-controls",
+          "cards": [
+            "13"
+          ]
+        },
+        {
+          "roleId": "work-software",
+          "cards": [
+            "03"
+          ]
+        },
+        {
+          "roleId": "work-technical-support",
+          "cards": [
+            "14"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "nanotess",
+      "company": "NanoTess",
+      "roles": [
+        {
+          "roleId": "work-materials",
+          "cards": [
+            "15"
+          ]
+        },
+        {
+          "roleId": "work-lab",
+          "cards": [
+            "16"
+          ]
+        },
+        {
+          "roleId": "work-quality",
+          "cards": [
+            "12"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "global-power-technologies",
+      "company": "Global Power Technologies",
+      "roles": [
+        {
+          "roleId": "work-mechanical",
+          "cards": [
+            "10"
+          ]
+        },
+        {
+          "roleId": "work-controls",
+          "cards": [
+            "13"
+          ]
+        },
+        {
+          "roleId": "work-manufacturing",
+          "cards": [
+            "11"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "hifi-engineering",
+      "company": "Hifi Engineering",
+      "roles": [
+        {
+          "roleId": "work-controls",
+          "cards": [
+            "13"
+          ]
+        },
+        {
+          "roleId": "work-software",
+          "cards": [
+            "03"
+          ]
+        },
+        {
+          "roleId": "work-mechanical",
+          "cards": [
+            "10"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "burnco",
+      "company": "BURNCO",
+      "roles": [
+        {
+          "roleId": "work-materials",
+          "cards": [
+            "15"
+          ]
+        },
+        {
+          "roleId": "work-quality",
+          "cards": [
+            "12"
+          ]
+        },
+        {
+          "roleId": "work-logistics",
+          "cards": [
+            "17"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "efw-radiology",
+      "company": "EFW Radiology",
+      "roles": [
+        {
+          "roleId": "work-sonography",
+          "cards": [
+            "18"
+          ]
+        },
+        {
+          "roleId": "work-clinic-administration",
+          "cards": [
+            "19"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "alberta-boot-company",
+      "company": "Alberta Boot Company",
+      "roles": [
+        {
+          "roleId": "work-bootmaking",
+          "cards": [
+            "20"
+          ]
+        },
+        {
+          "roleId": "work-quality",
+          "cards": [
+            "12"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ffa-acoustics",
+      "company": "FFA Consultants in Acoustics and Noise Control",
+      "roles": [
+        {
+          "roleId": "work-acoustics",
+          "cards": [
+            "21"
+          ]
+        },
+        {
+          "roleId": "work-controls",
+          "cards": [
+            "13"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "enmax-shepard",
+      "company": "ENMAX",
+      "roles": [
+        {
+          "roleId": "process-operations",
+          "cards": [
+            "08"
+          ]
+        },
+        {
+          "roleId": "work-controls",
+          "cards": [
+            "13"
+          ]
+        },
+        {
+          "roleId": "work-mechanical",
+          "cards": [
+            "10"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "mobiltex",
+      "company": "MOBILTEX",
+      "roles": [
+        {
+          "roleId": "work-controls",
+          "cards": [
+            "13"
+          ]
+        },
+        {
+          "roleId": "work-software",
+          "cards": [
+            "03"
+          ]
+        },
+        {
+          "roleId": "work-technical-support",
+          "cards": [
+            "14"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ice-western",
+      "company": "ICE Western",
+      "roles": [
+        {
+          "roleId": "work-mechanical",
+          "cards": [
+            "10"
+          ]
+        },
+        {
+          "roleId": "work-refrigeration",
+          "cards": [
+            "22"
+          ]
+        },
+        {
+          "roleId": "work-controls",
+          "cards": [
+            "13"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "congebec",
+      "company": "Congebec",
+      "roles": [
+        {
+          "roleId": "work-warehousing",
+          "cards": [
+            "23"
+          ]
+        },
+        {
+          "roleId": "work-refrigeration",
+          "cards": [
+            "22"
+          ]
+        },
+        {
+          "roleId": "work-logistics",
+          "cards": [
+            "17"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "fluid-energy",
+      "company": "Fluid Energy (Dorf Ketal)",
+      "roles": [
+        {
+          "roleId": "work-materials",
+          "cards": [
+            "15"
+          ]
+        },
+        {
+          "roleId": "work-lab",
+          "cards": [
+            "16"
+          ]
+        },
+        {
+          "roleId": "work-process",
+          "cards": [
+            "07"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "o2-planning-design",
+      "company": "O2 Planning and Design",
+      "roles": [
+        {
+          "roleId": "work-landscape-design",
+          "cards": [
+            "24"
+          ]
+        },
+        {
+          "roleId": "work-spatial",
+          "cards": [
+            "25"
+          ]
+        },
+        {
+          "roleId": "work-environmental-field-assessment",
+          "cards": [
+            "26"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "entuitive",
+      "company": "Entuitive",
+      "roles": [
+        {
+          "roleId": "work-structural-engineering",
+          "cards": [
+            "27"
+          ]
+        },
+        {
+          "roleId": "work-civil-and-construction-technology",
+          "cards": [
+            "28"
+          ]
+        },
+        {
+          "roleId": "work-construction-coordination",
+          "cards": [
+            "29"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "phil-sebastian",
+      "company": "Phil & Sebastian Coffee Roasters",
+      "roles": [
+        {
+          "roleId": "work-roast-production",
+          "cards": [
+            "30"
+          ]
+        },
+        {
+          "roleId": "work-instrument",
+          "cards": [
+            "31"
+          ]
+        },
+        {
+          "roleId": "work-quality",
+          "cards": [
+            "12"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "broken-pencil-studios",
+      "company": "Broken Pencil Studios",
+      "roles": [
+        {
+          "roleId": "work-storyboarding-and-illustration",
+          "cards": [
+            "32"
+          ]
+        },
+        {
+          "roleId": "work-animation",
+          "cards": [
+            "33"
+          ]
+        },
+        {
+          "roleId": "work-creative-production-coordination",
+          "cards": [
+            "34"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "cpkc",
+      "company": "CPKC",
+      "roles": [
+        {
+          "roleId": "work-rail-traffic-control",
+          "cards": [
+            "35"
+          ]
+        },
+        {
+          "roleId": "work-railway-conductor-work",
+          "cards": [
+            "36"
+          ]
+        },
+        {
+          "roleId": "work-software",
+          "cards": [
+            "03"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "watersmart",
+      "company": "WaterSMART — a Hazen company",
+      "roles": [
+        {
+          "roleId": "work-water-resource-planning",
+          "cards": [
+            "37"
+          ]
+        },
+        {
+          "roleId": "work-environmental-field-assessment",
+          "cards": [
+            "26"
+          ]
+        },
+        {
+          "roleId": "work-planning-communication-and-engagement",
+          "cards": [
+            "38"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "integrated-sustainability",
+      "company": "Integrated Sustainability",
+      "roles": [
+        {
+          "roleId": "work-process",
+          "cards": [
+            "07"
+          ]
+        },
+        {
+          "roleId": "work-water-treatment-operations",
+          "cards": [
+            "39"
+          ]
+        },
+        {
+          "roleId": "work-controls",
+          "cards": [
+            "13"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "trace-associates",
+      "company": "Trace Associates",
+      "roles": [
+        {
+          "roleId": "work-environmental-field-assessment",
+          "cards": [
+            "26"
+          ]
+        },
+        {
+          "roleId": "work-lab",
+          "cards": [
+            "16"
+          ]
+        },
+        {
+          "roleId": "work-water-resource-planning",
+          "cards": [
+            "37"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "rjc-engineers",
+      "company": "RJC Engineers",
+      "roles": [
+        {
+          "roleId": "work-building-science-investigation",
+          "cards": [
+            "40"
+          ]
+        },
+        {
+          "roleId": "work-civil-and-construction-technology",
+          "cards": [
+            "28"
+          ]
+        },
+        {
+          "roleId": "work-quality",
+          "cards": [
+            "12"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "calgary-italian-bakery",
+      "company": "Calgary Italian Bakery",
+      "roles": [
+        {
+          "roleId": "work-commercial-baking",
+          "cards": [
+            "41"
+          ]
+        },
+        {
+          "roleId": "work-quality",
+          "cards": [
+            "12"
+          ]
+        },
+        {
+          "roleId": "work-process",
+          "cards": [
+            "07"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "joe-media-group",
+      "company": "Joe Media Group",
+      "roles": [
+        {
+          "roleId": "work-camera-and-image-capture",
+          "cards": [
+            "42"
+          ]
+        },
+        {
+          "roleId": "work-film-and-video-editing",
+          "cards": [
+            "43"
+          ]
+        },
+        {
+          "roleId": "work-colour-finishing",
+          "cards": [
+            "44"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "cbl-bakeries-cinnaroll",
+      "company": "CBL Bakeries / Cinnaroll",
+      "roles": [
+        {
+          "roleId": "work-commercial-baking",
+          "cards": [
+            "41"
+          ]
+        },
+        {
+          "roleId": "work-quality",
+          "cards": [
+            "12"
+          ]
+        },
+        {
+          "roleId": "work-food",
+          "cards": [
+            "45"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "isl-engineering",
+      "company": "ISL Engineering",
+      "roles": [
+        {
+          "roleId": "work-civil-and-construction-technology",
+          "cards": [
+            "28"
+          ]
+        },
+        {
+          "roleId": "work-spatial",
+          "cards": [
+            "25"
+          ]
+        },
+        {
+          "roleId": "work-environmental-field-assessment",
+          "cards": [
+            "26"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "clearbakk",
+      "company": "ClearBakk — ALSYS group",
+      "roles": [
+        {
+          "roleId": "work-process",
+          "cards": [
+            "07"
+          ]
+        },
+        {
+          "roleId": "work-mechanical",
+          "cards": [
+            "10"
+          ]
+        },
+        {
+          "roleId": "work-controls",
+          "cards": [
+            "13"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "botaneco",
+      "company": "Botaneco",
+      "roles": [
+        {
+          "roleId": "work-food",
+          "cards": [
+            "45"
+          ]
+        },
+        {
+          "roleId": "work-lab",
+          "cards": [
+            "16"
+          ]
+        },
+        {
+          "roleId": "work-process",
+          "cards": [
+            "07"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "nanalysis",
+      "company": "Nanalysis",
+      "roles": [
+        {
+          "roleId": "work-instrument",
+          "cards": [
+            "31"
+          ]
+        },
+        {
+          "roleId": "work-applications",
+          "cards": [
+            "46"
+          ]
+        },
+        {
+          "roleId": "work-software",
+          "cards": [
+            "03"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "exergy-solutions",
+      "company": "Exergy Solutions",
+      "roles": [
+        {
+          "roleId": "work-mechanical",
+          "cards": [
+            "10"
+          ]
+        },
+        {
+          "roleId": "work-machining",
+          "cards": [
+            "47"
+          ]
+        },
+        {
+          "roleId": "work-quality",
+          "cards": [
+            "12"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "livestock-water-recycling",
+      "company": "Livestock Water Recycling",
+      "roles": [
+        {
+          "roleId": "work-process",
+          "cards": [
+            "07"
+          ]
+        },
+        {
+          "roleId": "work-lab",
+          "cards": [
+            "16"
+          ]
+        },
+        {
+          "roleId": "work-controls",
+          "cards": [
+            "13"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "avmax",
+      "company": "Avmax",
+      "roles": [
+        {
+          "roleId": "work-maintenance",
+          "cards": [
+            "48"
+          ]
+        },
+        {
+          "roleId": "work-avionics",
+          "cards": [
+            "49"
+          ]
+        },
+        {
+          "roleId": "work-quality",
+          "cards": [
+            "12"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "northern-rna",
+      "company": "Northern RNA",
+      "roles": [
+        {
+          "roleId": "work-bioprocess",
+          "cards": [
+            "50"
+          ]
+        },
+        {
+          "roleId": "work-lab",
+          "cards": [
+            "16"
+          ]
+        },
+        {
+          "roleId": "work-quality",
+          "cards": [
+            "12"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "aerium-analytics",
+      "company": "AERIUM Analytics",
+      "roles": [
+        {
+          "roleId": "work-drone",
+          "cards": [
+            "51"
+          ]
+        },
+        {
+          "roleId": "work-wildlife",
+          "cards": [
+            "52"
+          ]
+        },
+        {
+          "roleId": "work-spatial",
+          "cards": [
+            "25"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "geologicai",
+      "company": "GeologicAI",
+      "roles": [
+        {
+          "roleId": "work-geoscience",
+          "cards": [
+            "53"
+          ]
+        },
+        {
+          "roleId": "work-instrument",
+          "cards": [
+            "31"
+          ]
+        },
+        {
+          "roleId": "work-software",
+          "cards": [
+            "03"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "tangent-design-engineering",
+      "company": "Tangent Design Engineering",
+      "roles": [
+        {
+          "roleId": "work-process",
+          "cards": [
+            "07"
+          ]
+        },
+        {
+          "roleId": "work-controls",
+          "cards": [
+            "13"
+          ]
+        },
+        {
+          "roleId": "work-millwright",
+          "cards": [
+            "54"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "foremost",
+      "company": "Foremost",
+      "roles": [
+        {
+          "roleId": "work-mechanical",
+          "cards": [
+            "10"
+          ]
+        },
+        {
+          "roleId": "work-fabrication",
+          "cards": [
+            "55"
+          ]
+        },
+        {
+          "roleId": "work-millwright",
+          "cards": [
+            "54"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "carbonova",
+      "company": "Carbonova",
+      "roles": [
+        {
+          "roleId": "work-process",
+          "cards": [
+            "07"
+          ]
+        },
+        {
+          "roleId": "work-materials",
+          "cards": [
+            "15"
+          ]
+        },
+        {
+          "roleId": "work-lab",
+          "cards": [
+            "16"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "summit-lithium-technologies",
+      "company": "Summit Lithium Technologies",
+      "roles": [
+        {
+          "roleId": "work-materials",
+          "cards": [
+            "15"
+          ]
+        },
+        {
+          "roleId": "work-process",
+          "cards": [
+            "07"
+          ]
+        },
+        {
+          "roleId": "work-controls",
+          "cards": [
+            "13"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "veerum",
+      "company": "VEERUM",
+      "roles": [
+        {
+          "roleId": "work-spatial",
+          "cards": [
+            "25"
+          ]
+        },
+        {
+          "roleId": "work-software",
+          "cards": [
+            "03"
+          ]
+        },
+        {
+          "roleId": "work-quality",
+          "cards": [
+            "12"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "eguana-technologies",
+      "company": "Eguana Technologies",
+      "roles": [
+        {
+          "roleId": "work-power",
+          "cards": [
+            "56"
+          ]
+        },
+        {
+          "roleId": "work-instrument",
+          "cards": [
+            "31"
+          ]
+        },
+        {
+          "roleId": "work-software",
+          "cards": [
+            "03"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ftg-aerospace-calgary",
+      "company": "FTG Aerospace Calgary (formerly FLYHT)",
+      "roles": [
+        {
+          "roleId": "work-avionics",
+          "cards": [
+            "49"
+          ]
+        },
+        {
+          "roleId": "work-software",
+          "cards": [
+            "03"
+          ]
+        },
+        {
+          "roleId": "work-weather",
+          "cards": [
+            "57"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "wilder-institute",
+      "company": "Wilder Institute",
+      "roles": [
+        {
+          "roleId": "conservation-research",
+          "cards": [
+            "04"
+          ]
+        },
+        {
+          "roleId": "animal-care",
+          "cards": [
+            "05"
+          ]
+        },
+        {
+          "roleId": "wildlife-veterinary",
+          "cards": [
+            "06"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "e3-lithium",
+      "company": "E3 Lithium",
+      "roles": [
+        {
+          "roleId": "process-engineering",
+          "cards": [
+            "07"
+          ]
+        },
+        {
+          "roleId": "process-operations",
+          "cards": [
+            "08"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ghgsat",
+      "company": "GHGSat",
+      "roles": [
+        {
+          "roleId": "atmospheric-science",
+          "cards": [
+            "01"
+          ]
+        },
+        {
+          "roleId": "satellite-engineering",
+          "cards": [
+            "02"
+          ]
+        },
+        {
+          "roleId": "software-data",
+          "cards": [
+            "03"
+          ]
+        },
+        {
+          "roleId": "commercial-partnerships",
+          "cards": [
+            "09"
+          ]
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "number": "01",
+      "roleId": "atmospheric-science",
+      "title": "Atmospheric Scientist",
+      "primaryExample": "ghgsat",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "ghgsat",
+          "roleId": "atmospheric-science",
+          "sourceIds": [
+            "ghgsat-team"
+          ]
+        }
+      ],
+      "pathwayId": "ualberta-earth-sciences",
+      "image": "/images/discover/atmospheric-science.jpg",
+      "sha256": "ddc4602d99f8f2fb45b9ca4301d9f5397be277b90dcba9982edda0a13304d172"
+    },
+    {
+      "number": "02",
+      "roleId": "satellite-engineering",
+      "title": "Satellite Instrument Engineer",
+      "primaryExample": "ghgsat",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "ghgsat",
+          "roleId": "satellite-engineering",
+          "sourceIds": [
+            "ghgsat-team",
+            "ghgsat-about"
+          ]
+        }
+      ],
+      "pathwayId": "ucalgary-engineering-physics",
+      "image": "/images/discover/satellite-engineering.jpg",
+      "sha256": "0954c195c060a6dc0fb09d3787de2236a60934bff5be8b0de9fdf2e0bd5d798c"
+    },
+    {
+      "number": "03",
+      "roleId": "software-data",
+      "title": "Software Developer",
+      "primaryExample": "ghgsat",
+      "subjects": [
+        "biology",
+        "physics",
+        "chemistry"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "opisystems",
+          "roleId": "work-software",
+          "sourceIds": [
+            "oct18-source-8",
+            "oct18-source-9",
+            "oct18-source-10",
+            "oct18-source-11",
+            "oct18-source-12"
+          ]
+        },
+        {
+          "slug": "hifi-engineering",
+          "roleId": "work-software",
+          "sourceIds": [
+            "oct18-source-28",
+            "oct18-source-29",
+            "oct18-source-30",
+            "oct18-source-31"
+          ]
+        },
+        {
+          "slug": "mobiltex",
+          "roleId": "work-software",
+          "sourceIds": [
+            "oct18-source-54",
+            "oct18-source-55",
+            "oct18-source-56",
+            "oct18-source-57",
+            "oct18-source-58"
+          ]
+        },
+        {
+          "slug": "cpkc",
+          "roleId": "work-software",
+          "sourceIds": [
+            "oct17-source-34"
+          ]
+        },
+        {
+          "slug": "nanalysis",
+          "roleId": "work-software",
+          "sourceIds": [
+            "expansion-source-9",
+            "expansion-source-10",
+            "expansion-source-11"
+          ]
+        },
+        {
+          "slug": "geologicai",
+          "roleId": "work-software",
+          "sourceIds": [
+            "expansion-source-43",
+            "expansion-source-44",
+            "expansion-source-45"
+          ]
+        },
+        {
+          "slug": "veerum",
+          "roleId": "work-software",
+          "sourceIds": [
+            "expansion-source-59",
+            "expansion-source-60",
+            "expansion-source-61",
+            "expansion-source-62"
+          ]
+        },
+        {
+          "slug": "eguana-technologies",
+          "roleId": "work-software",
+          "sourceIds": [
+            "expansion-source-64",
+            "expansion-source-65",
+            "expansion-source-66"
+          ]
+        },
+        {
+          "slug": "ftg-aerospace-calgary",
+          "roleId": "work-software",
+          "sourceIds": [
+            "expansion-source-68",
+            "expansion-source-69",
+            "expansion-source-70",
+            "expansion-source-30"
+          ]
+        },
+        {
+          "slug": "ghgsat",
+          "roleId": "software-data",
+          "sourceIds": [
+            "ghgsat-team"
+          ]
+        }
+      ],
+      "pathwayId": "sait-geomatics",
+      "image": "/images/discover/software-data.jpg",
+      "sha256": "d39999c46daa509c14b2606570ec600ea52c6c9a4781e83e0b23bbbf14fa074f"
+    },
+    {
+      "number": "04",
+      "roleId": "conservation-research",
+      "title": "Conservation Scientist",
+      "primaryExample": "wilder-institute",
+      "subjects": [
+        "biology"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "wilder-institute",
+          "roleId": "conservation-research",
+          "sourceIds": [
+            "depth-wilder-researcher"
+          ]
+        }
+      ],
+      "pathwayId": "ucalgary-zoology",
+      "image": "/images/discover/conservation-research.jpg",
+      "sha256": "474b4f147fd200cabb19d3e66026f1e9aab10cc79cc5ad53591568bb660f3850"
+    },
+    {
+      "number": "05",
+      "roleId": "animal-care",
+      "title": "Animal Care Technician",
+      "primaryExample": "wilder-institute",
+      "subjects": [
+        "biology"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "wilder-institute",
+          "roleId": "animal-care",
+          "sourceIds": [
+            "depth-wilder-care",
+            "depth-job-w1"
+          ]
+        }
+      ],
+      "pathwayId": "olds-assistant",
+      "image": "/images/discover/animal-care.jpg",
+      "sha256": "63dd39521e85c3160e6191a1d005f7d97ac090ae15bb29cba9382c9f6fdc1021"
+    },
+    {
+      "number": "06",
+      "roleId": "wildlife-veterinary",
+      "title": "Wildlife Veterinarian",
+      "primaryExample": "wilder-institute",
+      "subjects": [
+        "biology"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "wilder-institute",
+          "roleId": "wildlife-veterinary",
+          "sourceIds": [
+            "depth-wilder-care"
+          ]
+        }
+      ],
+      "pathwayId": "ucalgary-dvm",
+      "image": "/images/discover/wildlife-veterinary.jpg",
+      "sha256": "0e1d431ce4816c78c8d81930675235b73f1d97d0804412209d6570f3dd6655ed"
+    },
+    {
+      "number": "07",
+      "roleId": "process-engineering",
+      "title": "Process Engineer",
+      "primaryExample": "e3-lithium",
+      "subjects": [
+        "chemistry"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "fluid-energy",
+          "roleId": "work-process",
+          "sourceIds": [
+            "oct18-source-67",
+            "oct18-source-68",
+            "oct18-source-69",
+            "oct18-source-70"
+          ]
+        },
+        {
+          "slug": "integrated-sustainability",
+          "roleId": "work-process",
+          "sourceIds": [
+            "oct17-source-39",
+            "oct17-source-40",
+            "oct17-source-41",
+            "oct17-source-42"
+          ]
+        },
+        {
+          "slug": "calgary-italian-bakery",
+          "roleId": "work-process",
+          "sourceIds": [
+            "oct17-source-52",
+            "oct17-source-53",
+            "oct17-source-54",
+            "oct17-source-55"
+          ]
+        },
+        {
+          "slug": "clearbakk",
+          "roleId": "work-process",
+          "sourceIds": [
+            "oct17-source-68",
+            "oct17-source-69",
+            "oct17-source-70",
+            "oct17-source-71"
+          ]
+        },
+        {
+          "slug": "botaneco",
+          "roleId": "work-process",
+          "sourceIds": [
+            "expansion-source-1",
+            "expansion-source-2",
+            "expansion-source-3",
+            "expansion-source-4"
+          ]
+        },
+        {
+          "slug": "livestock-water-recycling",
+          "roleId": "work-process",
+          "sourceIds": [
+            "expansion-source-21",
+            "expansion-source-22",
+            "expansion-source-23",
+            "expansion-source-24"
+          ]
+        },
+        {
+          "slug": "tangent-design-engineering",
+          "roleId": "work-process",
+          "sourceIds": [
+            "expansion-source-47"
+          ]
+        },
+        {
+          "slug": "carbonova",
+          "roleId": "work-process",
+          "sourceIds": [
+            "expansion-source-53",
+            "expansion-source-54",
+            "expansion-source-55"
+          ]
+        },
+        {
+          "slug": "summit-lithium-technologies",
+          "roleId": "work-process",
+          "sourceIds": [
+            "expansion-source-56",
+            "expansion-source-57",
+            "expansion-source-58"
+          ]
+        },
+        {
+          "slug": "e3-lithium",
+          "roleId": "process-engineering",
+          "sourceIds": [
+            "depth-job-e2"
+          ]
+        }
+      ],
+      "pathwayId": "ucalgary-chemical",
+      "image": "/images/discover/process-engineering.jpg",
+      "sha256": "f66ad0baa2c669d2ee65c241de015a0038a27cbb698bf8fe3cf368b233048e76"
+    },
+    {
+      "number": "08",
+      "roleId": "process-operations",
+      "title": "Plant Operator",
+      "primaryExample": "e3-lithium",
+      "subjects": [
+        "physics",
+        "chemistry"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "enmax-shepard",
+          "roleId": "process-operations",
+          "sourceIds": [
+            "oct18-source-49",
+            "oct18-source-50",
+            "oct18-source-51",
+            "oct18-source-52"
+          ]
+        },
+        {
+          "slug": "e3-lithium",
+          "roleId": "process-operations",
+          "sourceIds": [
+            "depth-job-e1"
+          ]
+        }
+      ],
+      "pathwayId": "sait-power",
+      "image": "/images/discover/process-operations.jpg",
+      "sha256": "0ad7a2d57fe716d49180249cfd770cfbb19963406ae02f8fa49c982f38d8bacf"
+    },
+    {
+      "number": "09",
+      "roleId": "commercial-partnerships",
+      "title": "Partnerships Manager",
+      "primaryExample": "ghgsat",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "ghgsat",
+          "roleId": "commercial-partnerships",
+          "sourceIds": [
+            "depth-job-g1"
+          ]
+        }
+      ],
+      "pathwayId": "sait-marketing",
+      "image": "/images/discover/commercial-partnerships.jpg",
+      "sha256": "d2a6da6fdd6d03944e94590fd77762d869a6b2b134bef47b2c1707f9c5defa9d"
+    },
+    {
+      "number": "10",
+      "roleId": "work-mechanical",
+      "title": "Mechanical designer",
+      "primaryExample": "standens",
+      "subjects": [
+        "physics",
+        "chemistry"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "standens",
+          "roleId": "work-mechanical",
+          "sourceIds": [
+            "oct18-source-1",
+            "oct18-source-2",
+            "oct18-source-3",
+            "oct18-source-4"
+          ]
+        },
+        {
+          "slug": "global-power-technologies",
+          "roleId": "work-mechanical",
+          "sourceIds": [
+            "oct18-source-22",
+            "oct18-source-23",
+            "oct18-source-24",
+            "oct18-source-25",
+            "oct18-source-26"
+          ]
+        },
+        {
+          "slug": "hifi-engineering",
+          "roleId": "work-mechanical",
+          "sourceIds": [
+            "oct18-source-28",
+            "oct18-source-29",
+            "oct18-source-30",
+            "oct18-source-31"
+          ]
+        },
+        {
+          "slug": "enmax-shepard",
+          "roleId": "work-mechanical",
+          "sourceIds": [
+            "oct18-source-49",
+            "oct18-source-50",
+            "oct18-source-51",
+            "oct18-source-52"
+          ]
+        },
+        {
+          "slug": "ice-western",
+          "roleId": "work-mechanical",
+          "sourceIds": [
+            "oct18-source-59",
+            "oct18-source-60",
+            "oct18-source-61"
+          ]
+        },
+        {
+          "slug": "clearbakk",
+          "roleId": "work-mechanical",
+          "sourceIds": [
+            "oct17-source-68",
+            "oct17-source-69",
+            "oct17-source-70",
+            "oct17-source-71"
+          ]
+        },
+        {
+          "slug": "exergy-solutions",
+          "roleId": "work-mechanical",
+          "sourceIds": [
+            "expansion-source-15",
+            "expansion-source-16",
+            "expansion-source-17"
+          ]
+        },
+        {
+          "slug": "foremost",
+          "roleId": "work-mechanical",
+          "sourceIds": [
+            "expansion-source-49",
+            "expansion-source-50",
+            "expansion-source-51",
+            "expansion-source-51"
+          ]
+        }
+      ],
+      "pathwayId": "oct18-route-mechanical",
+      "image": "/images/discover/work-mechanical.webp",
+      "sha256": "4985d78741ee2ab20aa48008b4c6c888391dbcc992553c87c77080974500abb3"
+    },
+    {
+      "number": "11",
+      "roleId": "work-manufacturing",
+      "title": "Manufacturing technician",
+      "primaryExample": "standens",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "standens",
+          "roleId": "work-manufacturing",
+          "sourceIds": [
+            "oct18-source-1",
+            "oct18-source-2",
+            "oct18-source-3",
+            "oct18-source-4"
+          ]
+        },
+        {
+          "slug": "global-power-technologies",
+          "roleId": "work-manufacturing",
+          "sourceIds": [
+            "oct18-source-22",
+            "oct18-source-23",
+            "oct18-source-24",
+            "oct18-source-25",
+            "oct18-source-26"
+          ]
+        }
+      ],
+      "pathwayId": "oct18-route-mechanical",
+      "image": "/images/discover/work-manufacturing.webp",
+      "sha256": "f3e3e48240419977878192bfe8dc04a59b2d95d792f0d1ef4ea5dc8c783742b1"
+    },
+    {
+      "number": "12",
+      "roleId": "work-quality",
+      "title": "Quality assurance technician",
+      "primaryExample": "standens",
+      "subjects": [
+        "physics",
+        "chemistry",
+        "biology"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "standens",
+          "roleId": "work-quality",
+          "sourceIds": [
+            "oct18-source-1",
+            "oct18-source-2",
+            "oct18-source-3",
+            "oct18-source-4"
+          ]
+        },
+        {
+          "slug": "nanotess",
+          "roleId": "work-quality",
+          "sourceIds": [
+            "oct18-source-15",
+            "oct18-source-16",
+            "oct18-source-17",
+            "oct18-source-18"
+          ]
+        },
+        {
+          "slug": "burnco",
+          "roleId": "work-quality",
+          "sourceIds": [
+            "oct18-source-33",
+            "oct18-source-34",
+            "oct18-source-35"
+          ]
+        },
+        {
+          "slug": "alberta-boot-company",
+          "roleId": "work-quality",
+          "sourceIds": [
+            "oct18-source-43",
+            "oct18-source-44",
+            "oct18-source-45"
+          ]
+        },
+        {
+          "slug": "phil-sebastian",
+          "roleId": "work-quality",
+          "sourceIds": [
+            "oct17-source-18",
+            "oct17-source-19",
+            "oct17-source-20"
+          ]
+        },
+        {
+          "slug": "rjc-engineers",
+          "roleId": "work-quality",
+          "sourceIds": [
+            "oct17-source-49",
+            "oct17-source-50"
+          ]
+        },
+        {
+          "slug": "calgary-italian-bakery",
+          "roleId": "work-quality",
+          "sourceIds": [
+            "oct17-source-52",
+            "oct17-source-53",
+            "oct17-source-54",
+            "oct17-source-55"
+          ]
+        },
+        {
+          "slug": "cbl-bakeries-cinnaroll",
+          "roleId": "work-quality",
+          "sourceIds": [
+            "oct17-source-62",
+            "oct17-source-63"
+          ]
+        },
+        {
+          "slug": "exergy-solutions",
+          "roleId": "work-quality",
+          "sourceIds": [
+            "expansion-source-15",
+            "expansion-source-16",
+            "expansion-source-17"
+          ]
+        },
+        {
+          "slug": "avmax",
+          "roleId": "work-quality",
+          "sourceIds": [
+            "expansion-source-26",
+            "expansion-source-27",
+            "expansion-source-28",
+            "expansion-source-29",
+            "expansion-source-30"
+          ]
+        },
+        {
+          "slug": "northern-rna",
+          "roleId": "work-quality",
+          "sourceIds": [
+            "expansion-source-33",
+            "expansion-source-34",
+            "expansion-source-35",
+            "expansion-source-36"
+          ]
+        },
+        {
+          "slug": "veerum",
+          "roleId": "work-quality",
+          "sourceIds": [
+            "expansion-source-59",
+            "expansion-source-60",
+            "expansion-source-61",
+            "expansion-source-62"
+          ]
+        }
+      ],
+      "pathwayId": "oct18-route-machinist",
+      "image": "/images/discover/work-quality.webp",
+      "sha256": "c7269779f7c6df3a33516218abdeac27d1891fb3de9ce40ea15dbadd7b4c5fe5"
+    },
+    {
+      "number": "13",
+      "roleId": "work-controls",
+      "title": "Instrumentation technician",
+      "primaryExample": "opisystems",
+      "subjects": [
+        "biology",
+        "physics",
+        "chemistry"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "opisystems",
+          "roleId": "work-controls",
+          "sourceIds": [
+            "oct18-source-8",
+            "oct18-source-9",
+            "oct18-source-10",
+            "oct18-source-11",
+            "oct18-source-12"
+          ]
+        },
+        {
+          "slug": "global-power-technologies",
+          "roleId": "work-controls",
+          "sourceIds": [
+            "oct18-source-22",
+            "oct18-source-23",
+            "oct18-source-24",
+            "oct18-source-25",
+            "oct18-source-26"
+          ]
+        },
+        {
+          "slug": "hifi-engineering",
+          "roleId": "work-controls",
+          "sourceIds": [
+            "oct18-source-28",
+            "oct18-source-29",
+            "oct18-source-30",
+            "oct18-source-31"
+          ]
+        },
+        {
+          "slug": "ffa-acoustics",
+          "roleId": "work-controls",
+          "sourceIds": [
+            "oct18-source-47",
+            "oct18-source-48"
+          ]
+        },
+        {
+          "slug": "enmax-shepard",
+          "roleId": "work-controls",
+          "sourceIds": [
+            "oct18-source-49",
+            "oct18-source-50",
+            "oct18-source-51",
+            "oct18-source-52"
+          ]
+        },
+        {
+          "slug": "mobiltex",
+          "roleId": "work-controls",
+          "sourceIds": [
+            "oct18-source-54",
+            "oct18-source-55",
+            "oct18-source-56",
+            "oct18-source-57",
+            "oct18-source-58"
+          ]
+        },
+        {
+          "slug": "ice-western",
+          "roleId": "work-controls",
+          "sourceIds": [
+            "oct18-source-59",
+            "oct18-source-60",
+            "oct18-source-61"
+          ]
+        },
+        {
+          "slug": "integrated-sustainability",
+          "roleId": "work-controls",
+          "sourceIds": [
+            "oct17-source-39",
+            "oct17-source-40",
+            "oct17-source-41",
+            "oct17-source-42"
+          ]
+        },
+        {
+          "slug": "clearbakk",
+          "roleId": "work-controls",
+          "sourceIds": [
+            "oct17-source-68",
+            "oct17-source-69",
+            "oct17-source-70",
+            "oct17-source-71"
+          ]
+        },
+        {
+          "slug": "livestock-water-recycling",
+          "roleId": "work-controls",
+          "sourceIds": [
+            "expansion-source-21",
+            "expansion-source-22",
+            "expansion-source-23",
+            "expansion-source-24"
+          ]
+        },
+        {
+          "slug": "tangent-design-engineering",
+          "roleId": "work-controls",
+          "sourceIds": [
+            "expansion-source-47"
+          ]
+        },
+        {
+          "slug": "summit-lithium-technologies",
+          "roleId": "work-controls",
+          "sourceIds": [
+            "expansion-source-56",
+            "expansion-source-57",
+            "expansion-source-58"
+          ]
+        }
+      ],
+      "pathwayId": "oct18-route-instrument",
+      "image": "/images/discover/work-controls.webp",
+      "sha256": "c647b81ea2053a3c03d116ab5116604a1b25c0ea5c60c305c3bf5f81b92e1b39"
+    },
+    {
+      "number": "14",
+      "roleId": "work-technical-support",
+      "title": "Technical support specialist",
+      "primaryExample": "opisystems",
+      "subjects": [
+        "biology",
+        "chemistry"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "opisystems",
+          "roleId": "work-technical-support",
+          "sourceIds": [
+            "oct18-source-8",
+            "oct18-source-9",
+            "oct18-source-10",
+            "oct18-source-11",
+            "oct18-source-12"
+          ]
+        },
+        {
+          "slug": "mobiltex",
+          "roleId": "work-technical-support",
+          "sourceIds": [
+            "oct18-source-54",
+            "oct18-source-55",
+            "oct18-source-56",
+            "oct18-source-57",
+            "oct18-source-58"
+          ]
+        }
+      ],
+      "pathwayId": "oct18-route-instrument",
+      "image": "/images/discover/work-technical-support.webp",
+      "sha256": "1af02d6a095b2aba32563f66d8606bd7c0eca61287096efd73b53cca0b966f93"
+    },
+    {
+      "number": "15",
+      "roleId": "work-materials",
+      "title": "Materials scientist",
+      "primaryExample": "nanotess",
+      "subjects": [
+        "chemistry"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "nanotess",
+          "roleId": "work-materials",
+          "sourceIds": [
+            "oct18-source-15",
+            "oct18-source-16",
+            "oct18-source-17",
+            "oct18-source-18"
+          ]
+        },
+        {
+          "slug": "burnco",
+          "roleId": "work-materials",
+          "sourceIds": [
+            "oct18-source-33",
+            "oct18-source-34",
+            "oct18-source-35"
+          ]
+        },
+        {
+          "slug": "fluid-energy",
+          "roleId": "work-materials",
+          "sourceIds": [
+            "oct18-source-67",
+            "oct18-source-68",
+            "oct18-source-69",
+            "oct18-source-70"
+          ]
+        },
+        {
+          "slug": "carbonova",
+          "roleId": "work-materials",
+          "sourceIds": [
+            "expansion-source-53",
+            "expansion-source-54",
+            "expansion-source-55"
+          ]
+        },
+        {
+          "slug": "summit-lithium-technologies",
+          "roleId": "work-materials",
+          "sourceIds": [
+            "expansion-source-56",
+            "expansion-source-57",
+            "expansion-source-58"
+          ]
+        }
+      ],
+      "pathwayId": "oct18-route-chemical",
+      "image": "/images/discover/work-materials.webp",
+      "sha256": "91af6a97c892c7f9afb8f06eb767d4e5bd8750b080af489fbf3b57d2366dac29"
+    },
+    {
+      "number": "16",
+      "roleId": "work-lab",
+      "title": "Laboratory technician",
+      "primaryExample": "nanotess",
+      "subjects": [
+        "chemistry",
+        "biology"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "nanotess",
+          "roleId": "work-lab",
+          "sourceIds": [
+            "oct18-source-15",
+            "oct18-source-16",
+            "oct18-source-17",
+            "oct18-source-18"
+          ]
+        },
+        {
+          "slug": "fluid-energy",
+          "roleId": "work-lab",
+          "sourceIds": [
+            "oct18-source-67",
+            "oct18-source-68",
+            "oct18-source-69",
+            "oct18-source-70"
+          ]
+        },
+        {
+          "slug": "trace-associates",
+          "roleId": "work-lab",
+          "sourceIds": [
+            "oct17-source-45",
+            "oct17-source-46",
+            "oct17-source-47",
+            "oct17-source-48"
+          ]
+        },
+        {
+          "slug": "botaneco",
+          "roleId": "work-lab",
+          "sourceIds": [
+            "expansion-source-1",
+            "expansion-source-2",
+            "expansion-source-3",
+            "expansion-source-4"
+          ]
+        },
+        {
+          "slug": "livestock-water-recycling",
+          "roleId": "work-lab",
+          "sourceIds": [
+            "expansion-source-21",
+            "expansion-source-22",
+            "expansion-source-23",
+            "expansion-source-24"
+          ]
+        },
+        {
+          "slug": "northern-rna",
+          "roleId": "work-lab",
+          "sourceIds": [
+            "expansion-source-33",
+            "expansion-source-34",
+            "expansion-source-35",
+            "expansion-source-36"
+          ]
+        },
+        {
+          "slug": "carbonova",
+          "roleId": "work-lab",
+          "sourceIds": [
+            "expansion-source-53",
+            "expansion-source-54",
+            "expansion-source-55"
+          ]
+        }
+      ],
+      "pathwayId": "oct18-route-chemical",
+      "image": "/images/discover/work-lab.webp",
+      "sha256": "70e8ec3d53f5b0cacad21c1553964cea244661f181d77bd7a95cfde20d857bd9"
+    },
+    {
+      "number": "17",
+      "roleId": "work-logistics",
+      "title": "Logistics coordinator",
+      "primaryExample": "burnco",
+      "subjects": [
+        "chemistry",
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "burnco",
+          "roleId": "work-logistics",
+          "sourceIds": [
+            "oct18-source-33",
+            "oct18-source-34",
+            "oct18-source-35"
+          ]
+        },
+        {
+          "slug": "congebec",
+          "roleId": "work-logistics",
+          "sourceIds": [
+            "oct18-source-63",
+            "oct18-source-64",
+            "oct18-source-65",
+            "oct18-source-66"
+          ]
+        }
+      ],
+      "pathwayId": "oct18-route-logistics",
+      "image": "/images/discover/work-logistics.webp",
+      "sha256": "a32f6e54a163a141ce4686a9ba16a8d01b45a3c792c14d8adfbc5b8922c3027c"
+    },
+    {
+      "number": "18",
+      "roleId": "work-sonography",
+      "title": "Diagnostic medical sonographer",
+      "primaryExample": "efw-radiology",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "efw-radiology",
+          "roleId": "work-sonography",
+          "sourceIds": [
+            "oct18-source-37",
+            "oct18-source-38",
+            "oct18-source-39",
+            "oct18-source-40"
+          ]
+        }
+      ],
+      "pathwayId": "oct18-route-sonography",
+      "image": "/images/discover/work-sonography.webp",
+      "sha256": "d08b14931a4dbb3f02af297dc1410824c8dae8e44093baeeec93ce3683978243"
+    },
+    {
+      "number": "19",
+      "roleId": "work-clinic-administration",
+      "title": "Medical office assistant",
+      "primaryExample": "efw-radiology",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "efw-radiology",
+          "roleId": "work-clinic-administration",
+          "sourceIds": [
+            "oct18-source-37",
+            "oct18-source-38",
+            "oct18-source-39",
+            "oct18-source-40"
+          ]
+        }
+      ],
+      "pathwayId": "oct18-route-moa",
+      "image": "/images/discover/work-clinic-administration.webp",
+      "sha256": "699c2c572aa0596732500da4c6a02713da4694072ff853ef526d975ad74c554a"
+    },
+    {
+      "number": "20",
+      "roleId": "work-bootmaking",
+      "title": "Shoemaker",
+      "primaryExample": "alberta-boot-company",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "alberta-boot-company",
+          "roleId": "work-bootmaking",
+          "sourceIds": [
+            "oct18-source-43",
+            "oct18-source-44",
+            "oct18-source-45"
+          ]
+        }
+      ],
+      "pathwayId": "oct18-route-bootwork",
+      "image": "/images/discover/work-bootmaking.webp",
+      "sha256": "7c1a8e620a6e575f1aa2fb41022e55a257167f5165a240b6bb0cfa131aef59ba"
+    },
+    {
+      "number": "21",
+      "roleId": "work-acoustics",
+      "title": "Acoustical consultant",
+      "primaryExample": "ffa-acoustics",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "ffa-acoustics",
+          "roleId": "work-acoustics",
+          "sourceIds": [
+            "oct18-source-47",
+            "oct18-source-48"
+          ]
+        }
+      ],
+      "pathwayId": "oct18-route-degree",
+      "image": "/images/discover/work-acoustics.webp",
+      "sha256": "7ace26cd76a824af0cf39a53c0f662958ad0ddeb5cce55ae00d66742f11df7a6"
+    },
+    {
+      "number": "22",
+      "roleId": "work-refrigeration",
+      "title": "Refrigeration mechanic",
+      "primaryExample": "ice-western",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "ice-western",
+          "roleId": "work-refrigeration",
+          "sourceIds": [
+            "oct18-source-59",
+            "oct18-source-60",
+            "oct18-source-61"
+          ]
+        },
+        {
+          "slug": "congebec",
+          "roleId": "work-refrigeration",
+          "sourceIds": [
+            "oct18-source-63",
+            "oct18-source-64",
+            "oct18-source-65",
+            "oct18-source-66"
+          ]
+        }
+      ],
+      "pathwayId": "oct18-route-refrigeration",
+      "image": "/images/discover/work-refrigeration.webp",
+      "sha256": "f1de110cae8ee7643dd83d9c258244250017a2c3cd598da5d75fe6ffe85334ab"
+    },
+    {
+      "number": "23",
+      "roleId": "work-warehousing",
+      "title": "Warehouse associate",
+      "primaryExample": "congebec",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "congebec",
+          "roleId": "work-warehousing",
+          "sourceIds": [
+            "oct18-source-63",
+            "oct18-source-64",
+            "oct18-source-65",
+            "oct18-source-66"
+          ]
+        }
+      ],
+      "pathwayId": "oct18-route-logistics",
+      "image": "/images/discover/work-warehousing.webp",
+      "sha256": "1bb7ec948ab0baa133ec28204117157147ca0f13a9f93bb2c1a0bad855b4412c"
+    },
+    {
+      "number": "24",
+      "roleId": "work-landscape-design",
+      "title": "Landscape architect",
+      "primaryExample": "o2-planning-design",
+      "subjects": [
+        "biology"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "o2-planning-design",
+          "roleId": "work-landscape-design",
+          "sourceIds": [
+            "oct17-source-1",
+            "oct17-source-2",
+            "oct17-source-3",
+            "oct17-source-4",
+            "oct17-source-5"
+          ]
+        }
+      ],
+      "pathwayId": "oct17-route-university-of-calgary-master-of-landscape-architecture",
+      "image": "/images/discover/work-landscape-design.webp",
+      "sha256": "feb9791a6393a617a9ee080bcd141da644ff67ead19c7a7597ee7c9dc6d4ea46"
+    },
+    {
+      "number": "25",
+      "roleId": "work-spatial",
+      "title": "GIS technician",
+      "primaryExample": "o2-planning-design",
+      "subjects": [
+        "biology",
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "o2-planning-design",
+          "roleId": "work-spatial",
+          "sourceIds": [
+            "oct17-source-1",
+            "oct17-source-2",
+            "oct17-source-3",
+            "oct17-source-4",
+            "oct17-source-5"
+          ]
+        },
+        {
+          "slug": "isl-engineering",
+          "roleId": "work-spatial",
+          "sourceIds": [
+            "oct17-source-64",
+            "oct17-source-65",
+            "oct17-source-66",
+            "oct17-source-67"
+          ]
+        },
+        {
+          "slug": "aerium-analytics",
+          "roleId": "work-spatial",
+          "sourceIds": [
+            "expansion-source-38",
+            "expansion-source-39",
+            "expansion-source-40",
+            "expansion-source-41"
+          ]
+        },
+        {
+          "slug": "veerum",
+          "roleId": "work-spatial",
+          "sourceIds": [
+            "expansion-source-59",
+            "expansion-source-60",
+            "expansion-source-61",
+            "expansion-source-62"
+          ]
+        }
+      ],
+      "pathwayId": "oct17-route-sait-geomatics-engineering-technology",
+      "image": "/images/discover/work-spatial.webp",
+      "sha256": "f3fb571779566e5cd2844be473f7fae9804d3355b52bf376d513d6330fa9c06c"
+    },
+    {
+      "number": "26",
+      "roleId": "work-environmental-field-assessment",
+      "title": "Environmental technician",
+      "primaryExample": "o2-planning-design",
+      "subjects": [
+        "biology",
+        "chemistry"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "o2-planning-design",
+          "roleId": "work-environmental-field-assessment",
+          "sourceIds": [
+            "oct17-source-1",
+            "oct17-source-2",
+            "oct17-source-3",
+            "oct17-source-4",
+            "oct17-source-5"
+          ]
+        },
+        {
+          "slug": "watersmart",
+          "roleId": "work-environmental-field-assessment",
+          "sourceIds": [
+            "oct17-source-35",
+            "oct17-source-36",
+            "oct17-source-37"
+          ]
+        },
+        {
+          "slug": "trace-associates",
+          "roleId": "work-environmental-field-assessment",
+          "sourceIds": [
+            "oct17-source-45",
+            "oct17-source-46",
+            "oct17-source-47",
+            "oct17-source-48"
+          ]
+        },
+        {
+          "slug": "isl-engineering",
+          "roleId": "work-environmental-field-assessment",
+          "sourceIds": [
+            "oct17-source-64",
+            "oct17-source-65",
+            "oct17-source-66",
+            "oct17-source-67"
+          ]
+        }
+      ],
+      "pathwayId": "oct17-route-sait-environmental-technology",
+      "image": "/images/discover/work-environmental-field-assessment.webp",
+      "sha256": "a3230b86cfb12f3925428181d537f2eb90fa6eeee6e46d778c78918e90760808"
+    },
+    {
+      "number": "27",
+      "roleId": "work-structural-engineering",
+      "title": "Structural engineer",
+      "primaryExample": "entuitive",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "entuitive",
+          "roleId": "work-structural-engineering",
+          "sourceIds": [
+            "oct17-source-10",
+            "oct17-source-11",
+            "oct17-source-12",
+            "oct17-source-13"
+          ]
+        }
+      ],
+      "pathwayId": "oct17-route-university-of-calgary-civil-engineering",
+      "image": "/images/discover/work-structural-engineering.webp",
+      "sha256": "f6e2176d12291be78ec70e6d51513be021459dea33e660beb9d5f09893c913f5"
+    },
+    {
+      "number": "28",
+      "roleId": "work-civil-and-construction-technology",
+      "title": "Civil engineering technologist",
+      "primaryExample": "entuitive",
+      "subjects": [
+        "physics",
+        "biology"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "entuitive",
+          "roleId": "work-civil-and-construction-technology",
+          "sourceIds": [
+            "oct17-source-10",
+            "oct17-source-11",
+            "oct17-source-12",
+            "oct17-source-13"
+          ]
+        },
+        {
+          "slug": "rjc-engineers",
+          "roleId": "work-civil-and-construction-technology",
+          "sourceIds": [
+            "oct17-source-49",
+            "oct17-source-50"
+          ]
+        },
+        {
+          "slug": "isl-engineering",
+          "roleId": "work-civil-and-construction-technology",
+          "sourceIds": [
+            "oct17-source-64",
+            "oct17-source-65",
+            "oct17-source-66",
+            "oct17-source-67"
+          ]
+        }
+      ],
+      "pathwayId": "oct17-route-university-of-calgary-civil-engineering",
+      "image": "/images/discover/work-civil-and-construction-technology.webp",
+      "sha256": "28caa5455f2406d26e65e3d3402738cd929cdba54e40b31441ac2f9d6816027a"
+    },
+    {
+      "number": "29",
+      "roleId": "work-construction-coordination",
+      "title": "Construction project coordinator",
+      "primaryExample": "entuitive",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "entuitive",
+          "roleId": "work-construction-coordination",
+          "sourceIds": [
+            "oct17-source-10",
+            "oct17-source-11",
+            "oct17-source-12",
+            "oct17-source-13"
+          ]
+        }
+      ],
+      "pathwayId": "oct17-route-university-of-calgary-civil-engineering",
+      "image": "/images/discover/work-construction-coordination.webp",
+      "sha256": "760439bb9011738ff683afa2eb35cff3beb325628b0509f5e5ea95ef5f5ea251"
+    },
+    {
+      "number": "30",
+      "roleId": "work-roast-production",
+      "title": "Coffee roaster",
+      "primaryExample": "phil-sebastian",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "phil-sebastian",
+          "roleId": "work-roast-production",
+          "sourceIds": [
+            "oct17-source-18",
+            "oct17-source-19",
+            "oct17-source-20"
+          ]
+        }
+      ],
+      "pathwayId": "oct17-route-sait-mechanical-engineering-technology",
+      "image": "/images/discover/work-roast-production.webp",
+      "sha256": "e8a495603a51557cff97756e68aa788660995775b4f7ac3e04ce24eec7d12934"
+    },
+    {
+      "number": "31",
+      "roleId": "work-instrument",
+      "title": "Test engineer",
+      "primaryExample": "phil-sebastian",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "phil-sebastian",
+          "roleId": "work-instrument",
+          "sourceIds": [
+            "oct17-source-18",
+            "oct17-source-19",
+            "oct17-source-20"
+          ]
+        },
+        {
+          "slug": "nanalysis",
+          "roleId": "work-instrument",
+          "sourceIds": [
+            "expansion-source-9",
+            "expansion-source-10",
+            "expansion-source-11"
+          ]
+        },
+        {
+          "slug": "geologicai",
+          "roleId": "work-instrument",
+          "sourceIds": [
+            "expansion-source-43",
+            "expansion-source-44",
+            "expansion-source-45"
+          ]
+        },
+        {
+          "slug": "eguana-technologies",
+          "roleId": "work-instrument",
+          "sourceIds": [
+            "expansion-source-64",
+            "expansion-source-65",
+            "expansion-source-66"
+          ]
+        }
+      ],
+      "pathwayId": "oct17-route-sait-instrumentation-engineering-technology",
+      "image": "/images/discover/work-instrument.webp",
+      "sha256": "c4d9c531618d94ae41d2a4e0de2ffb75ec634c910057fac584674cac8fd4df60"
+    },
+    {
+      "number": "32",
+      "roleId": "work-storyboarding-and-illustration",
+      "title": "Storyboard artist",
+      "primaryExample": "broken-pencil-studios",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "broken-pencil-studios",
+          "roleId": "work-storyboarding-and-illustration",
+          "sourceIds": [
+            "oct17-source-24",
+            "oct17-source-25",
+            "oct17-source-26"
+          ]
+        }
+      ],
+      "pathwayId": "oct17-route-auarts-bachelor-of-design",
+      "image": "/images/discover/work-storyboarding-and-illustration.webp",
+      "sha256": "31c61e84daafe59f1e573828db618e7115e8d62301822a7abeb278bfd44a705a"
+    },
+    {
+      "number": "33",
+      "roleId": "work-animation",
+      "title": "Animator",
+      "primaryExample": "broken-pencil-studios",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "broken-pencil-studios",
+          "roleId": "work-animation",
+          "sourceIds": [
+            "oct17-source-24",
+            "oct17-source-25",
+            "oct17-source-26"
+          ]
+        }
+      ],
+      "pathwayId": "oct17-route-auarts-bachelor-of-design",
+      "image": "/images/discover/work-animation.webp",
+      "sha256": "eccd00dfcce0187f52db340cb5e7d76b3450fd004ad95d9d9af6435a475d2e87"
+    },
+    {
+      "number": "34",
+      "roleId": "work-creative-production-coordination",
+      "title": "Production coordinator",
+      "primaryExample": "broken-pencil-studios",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "broken-pencil-studios",
+          "roleId": "work-creative-production-coordination",
+          "sourceIds": [
+            "oct17-source-24",
+            "oct17-source-25",
+            "oct17-source-26"
+          ]
+        }
+      ],
+      "pathwayId": "oct17-route-sait-film-and-video-production",
+      "image": "/images/discover/work-creative-production-coordination.webp",
+      "sha256": "643030dcb7dfa37cccc2cdf4a881a0e4a4786d68843f7e001c2c0189b84814fa"
+    },
+    {
+      "number": "35",
+      "roleId": "work-rail-traffic-control",
+      "title": "Rail traffic controller",
+      "primaryExample": "cpkc",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "cpkc",
+          "roleId": "work-rail-traffic-control",
+          "sourceIds": [
+            "oct17-source-29",
+            "oct17-source-30",
+            "oct17-source-31",
+            "oct17-source-32"
+          ]
+        }
+      ],
+      "pathwayId": "oct17-route-cpkc-employer-rail-traffic-controller-training",
+      "image": "/images/discover/work-rail-traffic-control.webp",
+      "sha256": "84c7cdfc25a47657b9d08cf434183d693ff5c4f5a6f021917f4819283f19d1ce"
+    },
+    {
+      "number": "36",
+      "roleId": "work-railway-conductor-work",
+      "title": "Railway conductor",
+      "primaryExample": "cpkc",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "cpkc",
+          "roleId": "work-railway-conductor-work",
+          "sourceIds": [
+            "oct17-source-33"
+          ]
+        }
+      ],
+      "pathwayId": "oct17-route-sait-railway-conductor",
+      "image": "/images/discover/work-railway-conductor-work.webp",
+      "sha256": "521dc76603c53c0ce2b5a017dffad83cf3e95d375d48c624e61dd2633a72e639"
+    },
+    {
+      "number": "37",
+      "roleId": "work-water-resource-planning",
+      "title": "Water resources engineer",
+      "primaryExample": "watersmart",
+      "subjects": [
+        "biology",
+        "chemistry"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "watersmart",
+          "roleId": "work-water-resource-planning",
+          "sourceIds": [
+            "oct17-source-35",
+            "oct17-source-36",
+            "oct17-source-37"
+          ]
+        },
+        {
+          "slug": "trace-associates",
+          "roleId": "work-water-resource-planning",
+          "sourceIds": [
+            "oct17-source-45",
+            "oct17-source-46",
+            "oct17-source-47",
+            "oct17-source-48"
+          ]
+        }
+      ],
+      "pathwayId": "oct17-route-sait-integrated-water-management",
+      "image": "/images/discover/work-water-resource-planning.webp",
+      "sha256": "ea5bc21af3a90493306cb8734cb0fc43af2e898d806c35773177a06e3f39aaad"
+    },
+    {
+      "number": "38",
+      "roleId": "work-planning-communication-and-engagement",
+      "title": "Community engagement specialist",
+      "primaryExample": "watersmart",
+      "subjects": [
+        "biology"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "watersmart",
+          "roleId": "work-planning-communication-and-engagement",
+          "sourceIds": [
+            "oct17-source-35",
+            "oct17-source-36",
+            "oct17-source-37"
+          ]
+        }
+      ],
+      "pathwayId": "oct17-route-sait-integrated-water-management",
+      "image": "/images/discover/work-planning-communication-and-engagement.webp",
+      "sha256": "a9b5c06d44ff5d7cacf8ab6a64559c7a6e13d190af5bea7864e70134332fa0dc"
+    },
+    {
+      "number": "39",
+      "roleId": "work-water-treatment-operations",
+      "title": "Water treatment operator",
+      "primaryExample": "integrated-sustainability",
+      "subjects": [
+        "chemistry"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "integrated-sustainability",
+          "roleId": "work-water-treatment-operations",
+          "sourceIds": [
+            "oct17-source-39",
+            "oct17-source-40",
+            "oct17-source-41",
+            "oct17-source-42"
+          ]
+        }
+      ],
+      "pathwayId": "oct17-route-sait-integrated-water-management",
+      "image": "/images/discover/work-water-treatment-operations.webp",
+      "sha256": "0aa01407b50cbe9f57ff447d8b7f5e292fd8b96de68da096b13c236d93b95eeb"
+    },
+    {
+      "number": "40",
+      "roleId": "work-building-science-investigation",
+      "title": "Building science technologist",
+      "primaryExample": "rjc-engineers",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "rjc-engineers",
+          "roleId": "work-building-science-investigation",
+          "sourceIds": [
+            "oct17-source-49",
+            "oct17-source-50"
+          ]
+        }
+      ],
+      "pathwayId": "oct17-route-sait-architectural-technologies",
+      "image": "/images/discover/work-building-science-investigation.webp",
+      "sha256": "bc977c167de9b7977040564a1b044ca0172d52f378d8f4e79efd39bd5bb217e9"
+    },
+    {
+      "number": "41",
+      "roleId": "work-commercial-baking",
+      "title": "Production baker",
+      "primaryExample": "calgary-italian-bakery",
+      "subjects": [
+        "chemistry"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "calgary-italian-bakery",
+          "roleId": "work-commercial-baking",
+          "sourceIds": [
+            "oct17-source-52",
+            "oct17-source-53",
+            "oct17-source-54",
+            "oct17-source-55"
+          ]
+        },
+        {
+          "slug": "cbl-bakeries-cinnaroll",
+          "roleId": "work-commercial-baking",
+          "sourceIds": [
+            "oct17-source-62",
+            "oct17-source-63"
+          ]
+        }
+      ],
+      "pathwayId": "oct17-route-sait-baking-and-pastry-arts",
+      "image": "/images/discover/work-commercial-baking.webp",
+      "sha256": "db3e5b0f705e7ca67e04bbcdf6962b59d58b07a63d7946bfa7d2c2b4ffb3b7b9"
+    },
+    {
+      "number": "42",
+      "roleId": "work-camera-and-image-capture",
+      "title": "Camera operator",
+      "primaryExample": "joe-media-group",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "joe-media-group",
+          "roleId": "work-camera-and-image-capture",
+          "sourceIds": [
+            "oct17-source-58",
+            "oct17-source-59",
+            "oct17-source-60",
+            "oct17-source-61"
+          ]
+        }
+      ],
+      "pathwayId": "oct17-route-sait-film-and-video-production",
+      "image": "/images/discover/work-camera-and-image-capture.webp",
+      "sha256": "c8e25661235000a21f903eb03b84243e3e894d3fee1283f1d49b9a26c83a6921"
+    },
+    {
+      "number": "43",
+      "roleId": "work-film-and-video-editing",
+      "title": "Video editor",
+      "primaryExample": "joe-media-group",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "joe-media-group",
+          "roleId": "work-film-and-video-editing",
+          "sourceIds": [
+            "oct17-source-58",
+            "oct17-source-59",
+            "oct17-source-60",
+            "oct17-source-61"
+          ]
+        }
+      ],
+      "pathwayId": "oct17-route-sait-film-and-video-production",
+      "image": "/images/discover/work-film-and-video-editing.webp",
+      "sha256": "99ac43734ce0157123f64f97ba38adbea7a8e144ac35d285b5673f00255e6b68"
+    },
+    {
+      "number": "44",
+      "roleId": "work-colour-finishing",
+      "title": "Colourist",
+      "primaryExample": "joe-media-group",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "joe-media-group",
+          "roleId": "work-colour-finishing",
+          "sourceIds": [
+            "oct17-source-58",
+            "oct17-source-59",
+            "oct17-source-60",
+            "oct17-source-61"
+          ]
+        }
+      ],
+      "pathwayId": "oct17-route-sait-film-and-video-production",
+      "image": "/images/discover/work-colour-finishing.webp",
+      "sha256": "169bc80d9c96542e8a71602859a1c2e097ea56b5695574e1c25485bd47c31b0e"
+    },
+    {
+      "number": "45",
+      "roleId": "work-food",
+      "title": "Food scientist",
+      "primaryExample": "cbl-bakeries-cinnaroll",
+      "subjects": [
+        "chemistry"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "cbl-bakeries-cinnaroll",
+          "roleId": "work-food",
+          "sourceIds": [
+            "oct17-source-62",
+            "oct17-source-63"
+          ]
+        },
+        {
+          "slug": "botaneco",
+          "roleId": "work-food",
+          "sourceIds": [
+            "expansion-source-1",
+            "expansion-source-2",
+            "expansion-source-3",
+            "expansion-source-4"
+          ]
+        }
+      ],
+      "pathwayId": "oct17-route-sait-baking-and-pastry-arts",
+      "image": "/images/discover/work-food.webp",
+      "sha256": "e834c334015090549c7a729447229089f1bfb45c7052096eb5169e73639b7ad7"
+    },
+    {
+      "number": "46",
+      "roleId": "work-applications",
+      "title": "Applications scientist",
+      "primaryExample": "nanalysis",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "nanalysis",
+          "roleId": "work-applications",
+          "sourceIds": [
+            "expansion-source-9",
+            "expansion-source-10",
+            "expansion-source-11"
+          ]
+        }
+      ],
+      "pathwayId": "route-lab",
+      "image": "/images/discover/work-applications.webp",
+      "sha256": "28eb17097d6e451ce5efe12fdde9d303506947a7cc2a6e534d19e1518a076eb1"
+    },
+    {
+      "number": "47",
+      "roleId": "work-machining",
+      "title": "Machinist",
+      "primaryExample": "exergy-solutions",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "exergy-solutions",
+          "roleId": "work-machining",
+          "sourceIds": [
+            "expansion-source-15",
+            "expansion-source-16",
+            "expansion-source-17"
+          ]
+        }
+      ],
+      "pathwayId": "route-mechanical",
+      "image": "/images/discover/work-machining.webp",
+      "sha256": "3b5a0d893bd79bdb4808278f5e8dba1dbbbb6964879ee3af266266f327561287"
+    },
+    {
+      "number": "48",
+      "roleId": "work-maintenance",
+      "title": "Aircraft maintenance engineer",
+      "primaryExample": "avmax",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "avmax",
+          "roleId": "work-maintenance",
+          "sourceIds": [
+            "expansion-source-26",
+            "expansion-source-27",
+            "expansion-source-28",
+            "expansion-source-29",
+            "expansion-source-30"
+          ]
+        }
+      ],
+      "pathwayId": "route-ame",
+      "image": "/images/discover/work-maintenance.webp",
+      "sha256": "046564f1ccf72bedcf53b7a8d90e99f4e7ef10beeff0eed09631fba4ae16b86f"
+    },
+    {
+      "number": "49",
+      "roleId": "work-avionics",
+      "title": "Avionics technician",
+      "primaryExample": "avmax",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "avmax",
+          "roleId": "work-avionics",
+          "sourceIds": [
+            "expansion-source-26",
+            "expansion-source-27",
+            "expansion-source-28",
+            "expansion-source-29",
+            "expansion-source-30"
+          ]
+        },
+        {
+          "slug": "ftg-aerospace-calgary",
+          "roleId": "work-avionics",
+          "sourceIds": [
+            "expansion-source-68",
+            "expansion-source-69",
+            "expansion-source-70",
+            "expansion-source-30"
+          ]
+        }
+      ],
+      "pathwayId": "route-avionics",
+      "image": "/images/discover/work-avionics.webp",
+      "sha256": "ed9b2eadf20f6fee88f1783139c891e26a8675010b4e11711239251e0a246019"
+    },
+    {
+      "number": "50",
+      "roleId": "work-bioprocess",
+      "title": "Bioprocess scientist",
+      "primaryExample": "northern-rna",
+      "subjects": [
+        "biology"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "northern-rna",
+          "roleId": "work-bioprocess",
+          "sourceIds": [
+            "expansion-source-33",
+            "expansion-source-34",
+            "expansion-source-35",
+            "expansion-source-36"
+          ]
+        }
+      ],
+      "pathwayId": "route-lab",
+      "image": "/images/discover/work-bioprocess.webp",
+      "sha256": "9839d0591d04854751330fb342d88732a2d6e43763004cc993dc0dd674d45a75"
+    },
+    {
+      "number": "51",
+      "roleId": "work-drone",
+      "title": "Drone pilot",
+      "primaryExample": "aerium-analytics",
+      "subjects": [
+        "biology"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "aerium-analytics",
+          "roleId": "work-drone",
+          "sourceIds": [
+            "expansion-source-38",
+            "expansion-source-39",
+            "expansion-source-40",
+            "expansion-source-41"
+          ]
+        }
+      ],
+      "pathwayId": "route-geomatics",
+      "image": "/images/discover/work-drone.webp",
+      "sha256": "734b63ef8c7de033eadfe02f144a19e3b838b3cec7d9a484ebec1f38569d69f4"
+    },
+    {
+      "number": "52",
+      "roleId": "work-wildlife",
+      "title": "Wildlife biologist",
+      "primaryExample": "aerium-analytics",
+      "subjects": [
+        "biology"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "aerium-analytics",
+          "roleId": "work-wildlife",
+          "sourceIds": [
+            "expansion-source-38",
+            "expansion-source-39",
+            "expansion-source-40",
+            "expansion-source-41"
+          ]
+        }
+      ],
+      "pathwayId": "route-geomatics",
+      "image": "/images/discover/work-wildlife.webp",
+      "sha256": "9c279c6807ec6e6517c159976e171ddff085c7a2cfcb645b5b0ebf952c019b70"
+    },
+    {
+      "number": "53",
+      "roleId": "work-geoscience",
+      "title": "Geologist",
+      "primaryExample": "geologicai",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "geologicai",
+          "roleId": "work-geoscience",
+          "sourceIds": [
+            "expansion-source-43",
+            "expansion-source-44",
+            "expansion-source-45"
+          ]
+        }
+      ],
+      "pathwayId": "route-geology",
+      "image": "/images/discover/work-geoscience.webp",
+      "sha256": "005cda4283b3a9f14648bdbf556125dc773504bfc25474c0d5e94299bc2218d3"
+    },
+    {
+      "number": "54",
+      "roleId": "work-millwright",
+      "title": "Millwright",
+      "primaryExample": "tangent-design-engineering",
+      "subjects": [
+        "chemistry",
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "tangent-design-engineering",
+          "roleId": "work-millwright",
+          "sourceIds": [
+            "expansion-source-47"
+          ]
+        },
+        {
+          "slug": "foremost",
+          "roleId": "work-millwright",
+          "sourceIds": [
+            "expansion-source-49",
+            "expansion-source-50",
+            "expansion-source-51",
+            "expansion-source-51"
+          ]
+        }
+      ],
+      "pathwayId": "route-millwright",
+      "image": "/images/discover/work-millwright.webp",
+      "sha256": "b43aba59bc1938c217f3b5f0c9683eb635cfcd58577a34c11f093ab2d07e91e7"
+    },
+    {
+      "number": "55",
+      "roleId": "work-fabrication",
+      "title": "Welder",
+      "primaryExample": "foremost",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "foremost",
+          "roleId": "work-fabrication",
+          "sourceIds": [
+            "expansion-source-49",
+            "expansion-source-50",
+            "expansion-source-51",
+            "expansion-source-51"
+          ]
+        }
+      ],
+      "pathwayId": "route-welder",
+      "image": "/images/discover/work-fabrication.webp",
+      "sha256": "65a122e6f2610734c027225778aaf519d8fb8d59996308d88f584db5cded374e"
+    },
+    {
+      "number": "56",
+      "roleId": "work-power",
+      "title": "Power electronics engineer",
+      "primaryExample": "eguana-technologies",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "eguana-technologies",
+          "roleId": "work-power",
+          "sourceIds": [
+            "expansion-source-64",
+            "expansion-source-65",
+            "expansion-source-66"
+          ]
+        }
+      ],
+      "pathwayId": "route-electrical",
+      "image": "/images/discover/work-power.webp",
+      "sha256": "7b3b042ec4a1843c7ebacbe7edc4cc2a009477fd0eb5d4aff76f767c6baf2ca0"
+    },
+    {
+      "number": "57",
+      "roleId": "work-weather",
+      "title": "Meteorologist",
+      "primaryExample": "ftg-aerospace-calgary",
+      "subjects": [
+        "physics"
+      ],
+      "relatedExamples": [
+        {
+          "slug": "ftg-aerospace-calgary",
+          "roleId": "work-weather",
+          "sourceIds": [
+            "expansion-source-68",
+            "expansion-source-69",
+            "expansion-source-70",
+            "expansion-source-30"
+          ]
+        }
+      ],
+      "pathwayId": "route-software",
+      "image": "/images/discover/work-weather.webp",
+      "sha256": "05b8e19f32e4909cb3b68244d4a16b13e86a0af7c3632d81820a02c64cf4091d"
+    }
+  ],
+  "costs": {
+    "loootUsd": 0,
+    "directApifyUsd": 0
+  },
+  "exclusions": [
+    {
+      "example": "e3-lithium",
+      "roleId": "laboratory-analysis",
+      "reason": "Related-employer job evidence only; no E3 organization-role link. Laboratory work has a separate supported Discover card (16, work-lab). Do not imply this related posting is an E3 role.",
+      "nextAction": "Extend the laboratory card with an E3 context only if source-backed E3 role evidence is approved."
+    }
+  ]
+}

@@ -1,0 +1,2948 @@
+{
+  "date": "2026-10-18",
+  "featuredExamples": 46,
+  "currentDiscoverCards": 9,
+  "distinctLinkedRoleIds": 59,
+  "missingRoleIds": 50,
+  "examplesWithoutOwnDiscoverCard": 43,
+  "decision": "Draft coverage audit only; equivalent roles and artwork require editorial review",
+  "examples": [
+    {
+      "slug": "standens",
+      "company": "Standen’s (IMT)",
+      "roleIds": [
+        "work-mechanical",
+        "work-manufacturing",
+        "work-quality"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "opisystems",
+      "company": "OPIsystems (OPI)",
+      "roleIds": [
+        "work-controls",
+        "work-software",
+        "work-technical-support"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "nanotess",
+      "company": "NanoTess",
+      "roleIds": [
+        "work-materials",
+        "work-lab",
+        "work-quality"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "global-power-technologies",
+      "company": "Global Power Technologies",
+      "roleIds": [
+        "work-mechanical",
+        "work-controls",
+        "work-manufacturing"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "hifi-engineering",
+      "company": "Hifi Engineering",
+      "roleIds": [
+        "work-controls",
+        "work-software",
+        "work-mechanical"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "burnco",
+      "company": "BURNCO",
+      "roleIds": [
+        "work-materials",
+        "work-quality",
+        "work-logistics"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "efw-radiology",
+      "company": "EFW Radiology",
+      "roleIds": [
+        "work-sonography",
+        "work-clinic-administration"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "alberta-boot-company",
+      "company": "Alberta Boot Company",
+      "roleIds": [
+        "work-bootmaking",
+        "work-quality"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "ffa-acoustics",
+      "company": "FFA Consultants in Acoustics and Noise Control",
+      "roleIds": [
+        "work-acoustics",
+        "work-controls"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "enmax-shepard",
+      "company": "ENMAX",
+      "roleIds": [
+        "process-operations",
+        "work-controls",
+        "work-mechanical"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "mobiltex",
+      "company": "MOBILTEX",
+      "roleIds": [
+        "work-controls",
+        "work-software",
+        "work-technical-support"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "ice-western",
+      "company": "ICE Western",
+      "roleIds": [
+        "work-mechanical",
+        "work-refrigeration",
+        "work-controls"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "congebec",
+      "company": "Congebec",
+      "roleIds": [
+        "work-warehousing",
+        "work-refrigeration",
+        "work-logistics"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "fluid-energy",
+      "company": "Fluid Energy (Dorf Ketal)",
+      "roleIds": [
+        "work-materials",
+        "work-lab",
+        "work-process"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "o2-planning-design",
+      "company": "O2 Planning and Design",
+      "roleIds": [
+        "work-landscape-design",
+        "work-spatial",
+        "work-environmental-field-assessment"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "entuitive",
+      "company": "Entuitive",
+      "roleIds": [
+        "work-structural-engineering",
+        "work-civil-and-construction-technology",
+        "work-construction-coordination"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "phil-sebastian",
+      "company": "Phil & Sebastian Coffee Roasters",
+      "roleIds": [
+        "work-roast-production",
+        "work-instrument",
+        "work-quality"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "broken-pencil-studios",
+      "company": "Broken Pencil Studios",
+      "roleIds": [
+        "work-storyboarding-and-illustration",
+        "work-animation",
+        "work-creative-production-coordination"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "cpkc",
+      "company": "CPKC",
+      "roleIds": [
+        "work-rail-traffic-control",
+        "work-railway-conductor-work",
+        "work-software"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "watersmart",
+      "company": "WaterSMART — a Hazen company",
+      "roleIds": [
+        "work-water-resource-planning",
+        "work-environmental-field-assessment",
+        "work-planning-communication-and-engagement"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "integrated-sustainability",
+      "company": "Integrated Sustainability",
+      "roleIds": [
+        "work-process",
+        "work-water-treatment-operations",
+        "work-controls"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "trace-associates",
+      "company": "Trace Associates",
+      "roleIds": [
+        "work-environmental-field-assessment",
+        "work-lab",
+        "work-water-resource-planning"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "rjc-engineers",
+      "company": "RJC Engineers",
+      "roleIds": [
+        "work-building-science-investigation",
+        "work-civil-and-construction-technology",
+        "work-quality"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "calgary-italian-bakery",
+      "company": "Calgary Italian Bakery",
+      "roleIds": [
+        "work-commercial-baking",
+        "work-quality",
+        "work-process"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "joe-media-group",
+      "company": "Joe Media Group",
+      "roleIds": [
+        "work-camera-and-image-capture",
+        "work-film-and-video-editing",
+        "work-colour-finishing"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "cbl-bakeries-cinnaroll",
+      "company": "CBL Bakeries / Cinnaroll",
+      "roleIds": [
+        "work-commercial-baking",
+        "work-quality",
+        "work-food"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "isl-engineering",
+      "company": "ISL Engineering",
+      "roleIds": [
+        "work-civil-and-construction-technology",
+        "work-spatial",
+        "work-environmental-field-assessment"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "clearbakk",
+      "company": "ClearBakk — ALSYS group",
+      "roleIds": [
+        "work-process",
+        "work-mechanical",
+        "work-controls"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "botaneco",
+      "company": "Botaneco",
+      "roleIds": [
+        "work-food",
+        "work-lab",
+        "work-process"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "nanalysis",
+      "company": "Nanalysis",
+      "roleIds": [
+        "work-instrument",
+        "work-applications",
+        "work-software"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "exergy-solutions",
+      "company": "Exergy Solutions",
+      "roleIds": [
+        "work-mechanical",
+        "work-machining",
+        "work-quality"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "livestock-water-recycling",
+      "company": "Livestock Water Recycling",
+      "roleIds": [
+        "work-process",
+        "work-lab",
+        "work-controls"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "avmax",
+      "company": "Avmax",
+      "roleIds": [
+        "work-maintenance",
+        "work-avionics",
+        "work-quality"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "northern-rna",
+      "company": "Northern RNA",
+      "roleIds": [
+        "work-bioprocess",
+        "work-lab",
+        "work-quality"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "aerium-analytics",
+      "company": "AERIUM Analytics",
+      "roleIds": [
+        "work-drone",
+        "work-wildlife",
+        "work-spatial"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "geologicai",
+      "company": "GeologicAI",
+      "roleIds": [
+        "work-geoscience",
+        "work-instrument",
+        "work-software"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "tangent-design-engineering",
+      "company": "Tangent Design Engineering",
+      "roleIds": [
+        "work-process",
+        "work-controls",
+        "work-millwright"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "foremost",
+      "company": "Foremost",
+      "roleIds": [
+        "work-mechanical",
+        "work-fabrication",
+        "work-millwright"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "carbonova",
+      "company": "Carbonova",
+      "roleIds": [
+        "work-process",
+        "work-materials",
+        "work-lab"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "summit-lithium-technologies",
+      "company": "Summit Lithium Technologies",
+      "roleIds": [
+        "work-materials",
+        "work-process",
+        "work-controls"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "veerum",
+      "company": "VEERUM",
+      "roleIds": [
+        "work-spatial",
+        "work-software",
+        "work-quality"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "eguana-technologies",
+      "company": "Eguana Technologies",
+      "roleIds": [
+        "work-power",
+        "work-instrument",
+        "work-software"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "ftg-aerospace-calgary",
+      "company": "FTG Aerospace Calgary (formerly FLYHT)",
+      "roleIds": [
+        "work-avionics",
+        "work-software",
+        "work-weather"
+      ],
+      "discoverCardNumbers": []
+    },
+    {
+      "slug": "wilder-institute",
+      "company": "Wilder Institute",
+      "roleIds": [
+        "conservation-research",
+        "animal-care",
+        "wildlife-veterinary"
+      ],
+      "discoverCardNumbers": [
+        "04",
+        "05",
+        "06"
+      ]
+    },
+    {
+      "slug": "e3-lithium",
+      "company": "E3 Lithium",
+      "roleIds": [
+        "process-engineering",
+        "process-operations"
+      ],
+      "discoverCardNumbers": [
+        "07",
+        "08"
+      ]
+    },
+    {
+      "slug": "ghgsat",
+      "company": "GHGSat",
+      "roleIds": [
+        "atmospheric-science",
+        "satellite-engineering",
+        "software-data",
+        "commercial-partnerships"
+      ],
+      "discoverCardNumbers": [
+        "01",
+        "02",
+        "03",
+        "09"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "id": "work-mechanical",
+      "title": "Mechanical design and prototyping",
+      "exampleSlugs": [
+        "standens",
+        "global-power-technologies",
+        "hifi-engineering",
+        "enmax-shepard",
+        "ice-western",
+        "clearbakk",
+        "exergy-solutions",
+        "foremost"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Create and revise drawings or a digital model."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Choose materials and dimensions for the intended conditions."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Compare the prototype with its requirements and refine the design."
+        }
+      ],
+      "summary": "Translate a need into a component or machine that can be built and tested. Designers use dimensions, material properties and constraints to evaluate alternatives.",
+      "pathwayCandidates": [
+        {
+          "id": "oct18-route-mechanical",
+          "name": "Mechanical Engineering Technology",
+          "sourceIds": [
+            "oct18-source-5"
+          ]
+        },
+        {
+          "id": "oct18-route-degree",
+          "name": "Mechanical Engineering",
+          "sourceIds": [
+            "oct18-source-32"
+          ]
+        },
+        {
+          "id": "oct17-route-sait-mechanical-engineering-technology",
+          "name": "Mechanical Engineering Technology",
+          "sourceIds": [
+            "oct17-source-23"
+          ]
+        },
+        {
+          "id": "route-mechanical",
+          "name": "Mechanical Engineering Technology",
+          "sourceIds": [
+            "expansion-source-18"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-manufacturing",
+      "title": "Manufacturing and quality work",
+      "exampleSlugs": [
+        "standens",
+        "global-power-technologies"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Read",
+          "detail": "Read a drawing or work instruction before setting up a task."
+        },
+        {
+          "title": "Measure",
+          "detail": "Measure key dimensions or properties and record the result."
+        },
+        {
+          "title": "Investigate",
+          "detail": "Investigate variation rather than treating every difference as acceptable."
+        }
+      ],
+      "summary": "Make repeatable components and check that the output matches a specification.",
+      "pathwayCandidates": [
+        {
+          "id": "oct18-route-mechanical",
+          "name": "Mechanical Engineering Technology",
+          "sourceIds": [
+            "oct18-source-5"
+          ]
+        },
+        {
+          "id": "oct18-route-machinist",
+          "name": "Machinist",
+          "sourceIds": [
+            "oct18-source-6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-quality",
+      "title": "Quality and traceability",
+      "exampleSlugs": [
+        "standens",
+        "nanotess",
+        "burnco",
+        "alberta-boot-company",
+        "phil-sebastian",
+        "rjc-engineers",
+        "calgary-italian-bakery",
+        "cbl-bakeries-cinnaroll",
+        "exergy-solutions",
+        "avmax",
+        "northern-rna",
+        "veerum"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Check that materials and samples have traceable identities."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Compare recorded results with defined acceptance criteria."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Investigate deviations and document what changed."
+        }
+      ],
+      "summary": "Make it possible to explain how a result or product was produced. Quality work checks records, methods and acceptance criteria so variation can be investigated rather than hidden.",
+      "pathwayCandidates": [
+        {
+          "id": "oct18-route-machinist",
+          "name": "Machinist",
+          "sourceIds": [
+            "oct18-source-6"
+          ]
+        },
+        {
+          "id": "oct18-route-chemical",
+          "name": "Chemical Laboratory Technology",
+          "sourceIds": [
+            "oct18-source-19"
+          ]
+        },
+        {
+          "id": "oct18-route-bootwork",
+          "name": "Learning through retail and production experience",
+          "sourceIds": [
+            "oct18-source-45"
+          ]
+        },
+        {
+          "id": "oct18-route-fibre",
+          "name": "Fibre",
+          "sourceIds": [
+            "oct18-source-46"
+          ]
+        },
+        {
+          "id": "oct17-route-sait-chemical-laboratory-technology",
+          "name": "Chemical Laboratory Technology",
+          "sourceIds": [
+            "oct17-source-22"
+          ]
+        },
+        {
+          "id": "oct17-route-sait-architectural-technologies",
+          "name": "Architectural Technologies",
+          "sourceIds": [
+            "oct17-source-17"
+          ]
+        },
+        {
+          "id": "oct17-route-sait-civil-engineering-technology-municipal-major",
+          "name": "Civil Engineering Technology, Municipal Major",
+          "sourceIds": [
+            "oct17-source-16"
+          ]
+        },
+        {
+          "id": "route-mechanical",
+          "name": "Mechanical Engineering Technology",
+          "sourceIds": [
+            "expansion-source-18"
+          ]
+        },
+        {
+          "id": "route-instrument",
+          "name": "Instrumentation Engineering Technology",
+          "sourceIds": [
+            "expansion-source-20"
+          ]
+        },
+        {
+          "id": "route-ame",
+          "name": "Aircraft Maintenance Engineers Technology",
+          "sourceIds": [
+            "expansion-source-31"
+          ]
+        },
+        {
+          "id": "route-lab",
+          "name": "Chemical Laboratory Technology",
+          "sourceIds": [
+            "expansion-source-6"
+          ]
+        },
+        {
+          "id": "route-software",
+          "name": "Software Development",
+          "sourceIds": [
+            "expansion-source-14"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-controls",
+      "title": "Instrumentation and controls",
+      "exampleSlugs": [
+        "opisystems",
+        "global-power-technologies",
+        "hifi-engineering",
+        "ffa-acoustics",
+        "enmax-shepard",
+        "mobiltex",
+        "ice-western",
+        "integrated-sustainability",
+        "clearbakk",
+        "livestock-water-recycling",
+        "tangent-design-engineering",
+        "summit-lithium-technologies"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Check whether sensors are reading reliably."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Compare measurements with the intended operating range."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Test how the system responds to a change or fault."
+        }
+      ],
+      "summary": "Keep a process measurable and responsive. Controls work connects sensors, decisions and actuators so the system can respond when conditions change.",
+      "pathwayCandidates": [
+        {
+          "id": "oct18-route-instrument",
+          "name": "Instrumentation Engineering Technology",
+          "sourceIds": [
+            "oct18-source-13"
+          ]
+        },
+        {
+          "id": "oct18-route-mechanical",
+          "name": "Mechanical Engineering Technology",
+          "sourceIds": [
+            "oct18-source-5"
+          ]
+        },
+        {
+          "id": "oct17-route-sait-instrumentation-engineering-technology",
+          "name": "Instrumentation Engineering Technology",
+          "sourceIds": [
+            "oct17-source-21"
+          ]
+        },
+        {
+          "id": "route-instrument",
+          "name": "Instrumentation Engineering Technology",
+          "sourceIds": [
+            "expansion-source-20"
+          ]
+        },
+        {
+          "id": "route-chemical",
+          "name": "Chemical Engineering",
+          "sourceIds": [
+            "expansion-source-8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-software",
+      "title": "Software and data systems",
+      "exampleSlugs": [
+        "opisystems",
+        "hifi-engineering",
+        "mobiltex",
+        "cpkc",
+        "nanalysis",
+        "geologicai",
+        "veerum",
+        "eguana-technologies",
+        "ftg-aerospace-calgary"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Translate a user need into a testable behaviour."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Build and test a data-processing or display feature."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Investigate failures and document assumptions about inputs."
+        }
+      ],
+      "summary": "Build the tools that move, process and display information. Reliable software needs testing against missing, delayed and unexpected data as well as ideal examples.",
+      "pathwayCandidates": [
+        {
+          "id": "oct18-route-instrument",
+          "name": "Instrumentation Engineering Technology",
+          "sourceIds": [
+            "oct18-source-13"
+          ]
+        },
+        {
+          "id": "oct17-route-sait-software-development",
+          "name": "Software Development",
+          "sourceIds": [
+            "oct17-source-34"
+          ]
+        },
+        {
+          "id": "route-software",
+          "name": "Software Development",
+          "sourceIds": [
+            "expansion-source-14"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-technical-support",
+      "title": "Technical application support",
+      "exampleSlugs": [
+        "opisystems",
+        "mobiltex"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Ask",
+          "detail": "Ask what the user is trying to measure or control."
+        },
+        {
+          "title": "Separate",
+          "detail": "Separate a setup problem from a sensor or process problem."
+        },
+        {
+          "title": "Explain",
+          "detail": "Explain the next diagnostic step and record what changed."
+        }
+      ],
+      "summary": "Help people use a technical product in the conditions of their own workplace.",
+      "pathwayCandidates": [
+        {
+          "id": "oct18-route-instrument",
+          "name": "Instrumentation Engineering Technology",
+          "sourceIds": [
+            "oct18-source-13"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-materials",
+      "title": "Materials research and testing",
+      "exampleSlugs": [
+        "nanotess",
+        "burnco",
+        "fluid-energy",
+        "carbonova",
+        "summit-lithium-technologies"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Prepare comparable samples with and without an additive."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Measure a relevant property under consistent conditions."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Explain performance changes alongside uncertainty and practical constraints."
+        }
+      ],
+      "summary": "Investigate whether a material improves a product for a defined purpose. A useful comparison separates the effect of the added material from other changes in the test.",
+      "pathwayCandidates": [
+        {
+          "id": "oct18-route-chemical",
+          "name": "Chemical Laboratory Technology",
+          "sourceIds": [
+            "oct18-source-19"
+          ]
+        },
+        {
+          "id": "oct18-route-chemdegree",
+          "name": "Chemistry or Biochemistry",
+          "sourceIds": [
+            "oct18-source-20"
+          ]
+        },
+        {
+          "id": "route-chemical",
+          "name": "Chemical Engineering",
+          "sourceIds": [
+            "expansion-source-8"
+          ]
+        },
+        {
+          "id": "route-lab",
+          "name": "Chemical Laboratory Technology",
+          "sourceIds": [
+            "expansion-source-6"
+          ]
+        },
+        {
+          "id": "route-mechanical",
+          "name": "Mechanical Engineering Technology",
+          "sourceIds": [
+            "expansion-source-18"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-lab",
+      "title": "Laboratory analysis",
+      "exampleSlugs": [
+        "nanotess",
+        "fluid-energy",
+        "trace-associates",
+        "botaneco",
+        "livestock-water-recycling",
+        "northern-rna",
+        "carbonova"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Prepare and label samples so their identity is preserved."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Run comparisons or reference samples to check the method."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Record results, units and limitations before sharing findings."
+        }
+      ],
+      "summary": "Make measurements that other people can trust. A laboratory worker prepares samples, uses a method consistently and records enough detail for someone else to interpret the result.",
+      "pathwayCandidates": [
+        {
+          "id": "oct18-route-chemical",
+          "name": "Chemical Laboratory Technology",
+          "sourceIds": [
+            "oct18-source-19"
+          ]
+        },
+        {
+          "id": "oct18-route-chemdegree",
+          "name": "Chemistry or Biochemistry",
+          "sourceIds": [
+            "oct18-source-20"
+          ]
+        },
+        {
+          "id": "oct17-route-sait-chemical-laboratory-technology",
+          "name": "Chemical Laboratory Technology",
+          "sourceIds": [
+            "oct17-source-22"
+          ]
+        },
+        {
+          "id": "route-lab",
+          "name": "Chemical Laboratory Technology",
+          "sourceIds": [
+            "expansion-source-6"
+          ]
+        },
+        {
+          "id": "route-biochem",
+          "name": "Biochemistry",
+          "sourceIds": [
+            "expansion-source-7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-logistics",
+      "title": "Dispatch and logistics coordination",
+      "exampleSlugs": [
+        "burnco",
+        "congebec"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Match",
+          "detail": "Match deliveries or orders with available capacity."
+        },
+        {
+          "title": "Check",
+          "detail": "Check timing, identification and handling requirements."
+        },
+        {
+          "title": "Respond",
+          "detail": "Respond to a delay without losing track of the product or customer need."
+        }
+      ],
+      "summary": "Keep materials moving in the right order, with the information needed at each handoff.",
+      "pathwayCandidates": [
+        {
+          "id": "oct18-route-logistics",
+          "name": "Business Administration — Supply Chain Management",
+          "sourceIds": [
+            "oct18-source-36"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-sonography",
+      "title": "Diagnostic medical sonographer",
+      "exampleSlugs": [
+        "efw-radiology"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Prepare",
+          "detail": "Prepare for the requested examination and communicate with the patient."
+        },
+        {
+          "title": "Position",
+          "detail": "Position the transducer and adjust acquisition settings to obtain useful views."
+        },
+        {
+          "title": "Document",
+          "detail": "Document the images for interpretation within the clinical team's workflow."
+        }
+      ],
+      "summary": "Acquire ultrasound images while supporting the person being examined.",
+      "pathwayCandidates": [
+        {
+          "id": "oct18-route-sonography",
+          "name": "Diagnostic Medical Sonography",
+          "sourceIds": [
+            "oct18-source-41"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-clinic-administration",
+      "title": "Medical office and booking support",
+      "exampleSlugs": [
+        "efw-radiology"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Handle",
+          "detail": "Handle appointment requests and confirm required information."
+        },
+        {
+          "title": "Communicate",
+          "detail": "Communicate clearly with patients and modality teams."
+        },
+        {
+          "title": "Keep",
+          "detail": "Keep registration and scheduling records accurate."
+        }
+      ],
+      "summary": "Help patients and clinical teams coordinate the information and appointments needed for care.",
+      "pathwayCandidates": [
+        {
+          "id": "oct18-route-moa",
+          "name": "Medical Office Assistant and Unit Clerk",
+          "sourceIds": [
+            "oct18-source-42"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-bootmaking",
+      "title": "Bootmaking and pattern work",
+      "exampleSlugs": [
+        "alberta-boot-company"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Plan",
+          "detail": "Plan and cut pieces with attention to material stretch."
+        },
+        {
+          "title": "Join",
+          "detail": "Join and shape components through stitching and lasting."
+        },
+        {
+          "title": "Inspect",
+          "detail": "Inspect the finished result against the intended design and fit."
+        }
+      ],
+      "summary": "Translate a design and material choice into a pair of boots through skilled craft.",
+      "pathwayCandidates": [
+        {
+          "id": "oct18-route-bootwork",
+          "name": "Learning through retail and production experience",
+          "sourceIds": [
+            "oct18-source-45"
+          ]
+        },
+        {
+          "id": "oct18-route-fibre",
+          "name": "Fibre",
+          "sourceIds": [
+            "oct18-source-46"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-acoustics",
+      "title": "Acoustical consulting",
+      "exampleSlugs": [
+        "ffa-acoustics"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Measure",
+          "detail": "Measure or model sound paths and levels."
+        },
+        {
+          "title": "Compare",
+          "detail": "Compare changes to room surfaces, layout or noise isolation."
+        },
+        {
+          "title": "Explain",
+          "detail": "Explain the trade-offs to the people designing or using the space."
+        }
+      ],
+      "summary": "Investigate how sound behaves in a space and recommend changes for its intended use.",
+      "pathwayCandidates": [
+        {
+          "id": "oct18-route-degree",
+          "name": "Mechanical Engineering",
+          "sourceIds": [
+            "oct18-source-32"
+          ]
+        },
+        {
+          "id": "oct18-route-mechanical",
+          "name": "Mechanical Engineering Technology",
+          "sourceIds": [
+            "oct18-source-5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "process-operations",
+      "title": "Process and plant operations",
+      "exampleSlugs": [
+        "enmax-shepard",
+        "e3-lithium"
+      ],
+      "currentCards": [
+        "08"
+      ],
+      "tasks": [
+        {
+          "title": "Monitor the process",
+          "detail": "Take readings and inspect equipment for signs of unusual behaviour."
+        },
+        {
+          "title": "Keep useful records",
+          "detail": "Document conditions and events so results can be compared across shifts and tests."
+        },
+        {
+          "title": "Troubleshoot safely",
+          "detail": "Report problems, support maintenance and help with commissioning or start-up work."
+        }
+      ],
+      "summary": "Keep processing equipment running safely and learn from its measurements.",
+      "pathwayCandidates": [
+        {
+          "id": "oct18-route-power",
+          "name": "Power Engineering Technology",
+          "sourceIds": [
+            "oct18-source-53"
+          ]
+        },
+        {
+          "id": "sait-chemical",
+          "name": "Chemical Engineering Technology",
+          "sourceIds": [
+            "depth-sait-chemical"
+          ]
+        },
+        {
+          "id": "sait-power",
+          "name": "Power Engineering Technology",
+          "sourceIds": [
+            "depth-sait-power"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-refrigeration",
+      "title": "Refrigeration and air-conditioning mechanic",
+      "exampleSlugs": [
+        "ice-western",
+        "congebec"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Use",
+          "detail": "Use drawings to locate components and controls."
+        },
+        {
+          "title": "Check",
+          "detail": "Check operating conditions and investigate a fault."
+        },
+        {
+          "title": "Repair",
+          "detail": "Repair or adjust equipment and verify the result."
+        }
+      ],
+      "summary": "Install, maintain and troubleshoot equipment that moves heat and conditions air.",
+      "pathwayCandidates": [
+        {
+          "id": "oct18-route-refrigeration",
+          "name": "Refrigeration and Air Conditioning Mechanic",
+          "sourceIds": [
+            "oct18-source-62"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-warehousing",
+      "title": "Warehouse and inventory operations",
+      "exampleSlugs": [
+        "congebec"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Check",
+          "detail": "Check incoming goods against shipment information."
+        },
+        {
+          "title": "Move",
+          "detail": "Move and store products using appropriate equipment and procedures."
+        },
+        {
+          "title": "Maintain",
+          "detail": "Maintain inventory records and coordinate outbound loads."
+        }
+      ],
+      "summary": "Receive, locate and move goods while keeping identity and handling requirements visible.",
+      "pathwayCandidates": [
+        {
+          "id": "oct18-route-logistics",
+          "name": "Business Administration — Supply Chain Management",
+          "sourceIds": [
+            "oct18-source-36"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-process",
+      "title": "Process engineering",
+      "exampleSlugs": [
+        "fluid-energy",
+        "integrated-sustainability",
+        "calgary-italian-bakery",
+        "clearbakk",
+        "botaneco",
+        "livestock-water-recycling",
+        "tangent-design-engineering",
+        "carbonova",
+        "summit-lithium-technologies"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Draw a flow of materials and energy through the system."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Compare operating conditions and equipment options."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Use trial results to revise the process and communicate constraints."
+        }
+      ],
+      "summary": "Turn a useful transformation into a workable sequence of equipment and operating steps. Process engineers consider what enters, what leaves and what conditions the system must maintain.",
+      "pathwayCandidates": [
+        {
+          "id": "oct18-route-chemical",
+          "name": "Chemical Laboratory Technology",
+          "sourceIds": [
+            "oct18-source-19"
+          ]
+        },
+        {
+          "id": "oct18-route-instrument",
+          "name": "Instrumentation Engineering Technology",
+          "sourceIds": [
+            "oct18-source-13"
+          ]
+        },
+        {
+          "id": "oct17-route-university-of-calgary-chemical-engineering",
+          "name": "Chemical Engineering",
+          "sourceIds": [
+            "oct17-source-44"
+          ]
+        },
+        {
+          "id": "route-chemical",
+          "name": "Chemical Engineering",
+          "sourceIds": [
+            "expansion-source-8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-landscape-design",
+      "title": "Landscape design",
+      "exampleSlugs": [
+        "o2-planning-design"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Read the site and identify competing needs."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Develop plans and sections that show landforms and planting."
+        },
+        {
+          "title": "Document and improve",
+          "detail": "Review details with engineers, ecologists and construction teams."
+        }
+      ],
+      "summary": "Shape outdoor spaces so water, habitat and human uses can work together.",
+      "pathwayCandidates": [
+        {
+          "id": "oct17-route-university-of-calgary-master-of-landscape-architecture",
+          "name": "Master of Landscape Architecture",
+          "sourceIds": [
+            "oct17-source-7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-spatial",
+      "title": "Spatial data and mapping",
+      "exampleSlugs": [
+        "o2-planning-design",
+        "isl-engineering",
+        "aerium-analytics",
+        "veerum"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Check coordinate systems and measurement dates."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Align and inspect spatial datasets."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Present maps or models with their limitations."
+        }
+      ],
+      "summary": "Turn measurements tied to places into usable spatial information. The work involves coordinates, scale and checking that datasets describe the same location and time.",
+      "pathwayCandidates": [
+        {
+          "id": "oct17-route-sait-geomatics-engineering-technology",
+          "name": "Geomatics Engineering Technology",
+          "sourceIds": [
+            "oct17-source-8"
+          ]
+        },
+        {
+          "id": "route-geomatics",
+          "name": "Geomatics Engineering Technology",
+          "sourceIds": [
+            "expansion-source-42"
+          ]
+        },
+        {
+          "id": "route-software",
+          "name": "Software Development",
+          "sourceIds": [
+            "expansion-source-14"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-environmental-field-assessment",
+      "title": "Environmental field assessment",
+      "exampleSlugs": [
+        "o2-planning-design",
+        "watersmart",
+        "trace-associates",
+        "isl-engineering"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Plan observations or samples around a clear question."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Record locations, methods and conditions consistently."
+        },
+        {
+          "title": "Document and improve",
+          "detail": "Explain the limits of the evidence and the next useful check."
+        }
+      ],
+      "summary": "Collect and interpret evidence about a place before recommending an action.",
+      "pathwayCandidates": [
+        {
+          "id": "oct17-route-sait-environmental-technology",
+          "name": "Environmental Technology",
+          "sourceIds": [
+            "oct17-source-9"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-structural-engineering",
+      "title": "Structural engineering",
+      "exampleSlugs": [
+        "entuitive"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Identify loads and constraints in the design brief."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Develop and check a structural model and details."
+        },
+        {
+          "title": "Document and improve",
+          "detail": "Coordinate construction-stage requirements with the project team."
+        }
+      ],
+      "summary": "Work out how a structure transfers loads through members and connections to its supports.",
+      "pathwayCandidates": [
+        {
+          "id": "oct17-route-university-of-calgary-civil-engineering",
+          "name": "Civil Engineering",
+          "sourceIds": [
+            "oct17-source-15"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-civil-and-construction-technology",
+      "title": "Civil and construction technology",
+      "exampleSlugs": [
+        "entuitive",
+        "rjc-engineers",
+        "isl-engineering"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Prepare technical drawings using measured site information."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Check dimensions and interfaces between design disciplines."
+        },
+        {
+          "title": "Document and improve",
+          "detail": "Support construction records and field verification."
+        }
+      ],
+      "summary": "Turn project requirements into usable drawings, quantities and checks.",
+      "pathwayCandidates": [
+        {
+          "id": "oct17-route-university-of-calgary-civil-engineering",
+          "name": "Civil Engineering",
+          "sourceIds": [
+            "oct17-source-15"
+          ]
+        },
+        {
+          "id": "oct17-route-sait-civil-engineering-technology-municipal-major",
+          "name": "Civil Engineering Technology, Municipal Major",
+          "sourceIds": [
+            "oct17-source-16"
+          ]
+        },
+        {
+          "id": "oct17-route-sait-architectural-technologies",
+          "name": "Architectural Technologies",
+          "sourceIds": [
+            "oct17-source-17"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-construction-coordination",
+      "title": "Construction coordination",
+      "exampleSlugs": [
+        "entuitive"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Track design changes and unresolved interfaces."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Compare construction stages with access and operating constraints."
+        },
+        {
+          "title": "Document and improve",
+          "detail": "Communicate decisions and confirm that the correct documents reach the field."
+        }
+      ],
+      "summary": "Help different teams work from compatible information and an achievable sequence.",
+      "pathwayCandidates": [
+        {
+          "id": "oct17-route-university-of-calgary-civil-engineering",
+          "name": "Civil Engineering",
+          "sourceIds": [
+            "oct17-source-15"
+          ]
+        },
+        {
+          "id": "oct17-route-sait-civil-engineering-technology-municipal-major",
+          "name": "Civil Engineering Technology, Municipal Major",
+          "sourceIds": [
+            "oct17-source-16"
+          ]
+        },
+        {
+          "id": "oct17-route-sait-architectural-technologies",
+          "name": "Architectural Technologies",
+          "sourceIds": [
+            "oct17-source-17"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-roast-production",
+      "title": "Roast production",
+      "exampleSlugs": [
+        "phil-sebastian"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Track batch identity and process settings."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Record observations and measurements during production."
+        },
+        {
+          "title": "Document and improve",
+          "detail": "Report variation and help compare trial adjustments."
+        }
+      ],
+      "summary": "Operate a controlled food-processing sequence and compare the product with its intended result.",
+      "pathwayCandidates": [
+        {
+          "id": "oct17-route-sait-mechanical-engineering-technology",
+          "name": "Mechanical Engineering Technology",
+          "sourceIds": [
+            "oct17-source-23"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-instrument",
+      "title": "Instrument development and testing",
+      "exampleSlugs": [
+        "phil-sebastian",
+        "nanalysis",
+        "geologicai",
+        "eguana-technologies"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Check performance using a known reference."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Investigate drift, noise or inconsistent readings."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Document tests so later users know what the instrument can establish."
+        }
+      ],
+      "summary": "Help build and check the equipment that produces measurements. Instrument work joins hardware, software and experiments rather than treating a reading as automatically correct.",
+      "pathwayCandidates": [
+        {
+          "id": "oct17-route-sait-instrumentation-engineering-technology",
+          "name": "Instrumentation Engineering Technology",
+          "sourceIds": [
+            "oct17-source-21"
+          ]
+        },
+        {
+          "id": "oct17-route-sait-mechanical-engineering-technology",
+          "name": "Mechanical Engineering Technology",
+          "sourceIds": [
+            "oct17-source-23"
+          ]
+        },
+        {
+          "id": "route-electrical",
+          "name": "Electrical Engineering Technology",
+          "sourceIds": [
+            "expansion-source-13"
+          ]
+        },
+        {
+          "id": "route-geomatics",
+          "name": "Geomatics Engineering Technology",
+          "sourceIds": [
+            "expansion-source-42"
+          ]
+        },
+        {
+          "id": "route-electrical-degree",
+          "name": "Electrical Engineering",
+          "sourceIds": [
+            "expansion-source-67"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-storyboarding-and-illustration",
+      "title": "Storyboarding and illustration",
+      "exampleSlugs": [
+        "broken-pencil-studios"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Translate a message into visual scenes."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Check order, viewpoint and transitions using rough drawings."
+        },
+        {
+          "title": "Document and improve",
+          "detail": "Revise the sequence after feedback before detailed animation."
+        }
+      ],
+      "summary": "Decide what an audience needs to see before the final sequence is produced.",
+      "pathwayCandidates": [
+        {
+          "id": "oct17-route-auarts-bachelor-of-design",
+          "name": "Bachelor of Design",
+          "sourceIds": [
+            "oct17-source-27"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-animation",
+      "title": "Animation",
+      "exampleSlugs": [
+        "broken-pencil-studios"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Set key positions and the time between them."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Adjust spacing and transitions to communicate movement."
+        },
+        {
+          "title": "Document and improve",
+          "detail": "Review the result against the story and technical requirements."
+        }
+      ],
+      "summary": "Create motion from planned images, models and timing decisions.",
+      "pathwayCandidates": [
+        {
+          "id": "oct17-route-auarts-bachelor-of-design",
+          "name": "Bachelor of Design",
+          "sourceIds": [
+            "oct17-source-27"
+          ]
+        },
+        {
+          "id": "oct17-route-sait-film-and-video-production",
+          "name": "Film and Video Production",
+          "sourceIds": [
+            "oct17-source-28"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-creative-production-coordination",
+      "title": "Creative production coordination",
+      "exampleSlugs": [
+        "broken-pencil-studios"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Clarify audience, scope and review milestones."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Coordinate feedback between creative and client teams."
+        },
+        {
+          "title": "Document and improve",
+          "detail": "Track revisions and confirm delivery requirements."
+        }
+      ],
+      "summary": "Help a project move from a communication brief to a deliverable that can be reviewed.",
+      "pathwayCandidates": [
+        {
+          "id": "oct17-route-sait-film-and-video-production",
+          "name": "Film and Video Production",
+          "sourceIds": [
+            "oct17-source-28"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-rail-traffic-control",
+      "title": "Rail traffic control",
+      "exampleSlugs": [
+        "cpkc"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Monitor movement information and operating constraints."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Coordinate plans and communicate with railway teams."
+        },
+        {
+          "title": "Document and improve",
+          "detail": "Respond to changes using the applicable procedures and authority."
+        }
+      ],
+      "summary": "Coordinate railway movements and crews within formal operating systems and rules.",
+      "pathwayCandidates": [
+        {
+          "id": "oct17-route-cpkc-employer-rail-traffic-controller-training",
+          "name": "Employer rail traffic controller training",
+          "sourceIds": [
+            "oct17-source-32"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-railway-conductor-work",
+      "title": "Railway conductor work",
+      "exampleSlugs": [
+        "cpkc"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Apply operating procedures during assigned movements."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Communicate with other railway workers."
+        },
+        {
+          "title": "Document and improve",
+          "detail": "Check and document required operational information."
+        }
+      ],
+      "summary": "Support train movements and handling of rail vehicles through trained railway operations.",
+      "pathwayCandidates": [
+        {
+          "id": "oct17-route-sait-railway-conductor",
+          "name": "Railway Conductor",
+          "sourceIds": [
+            "oct17-source-33"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-water-resource-planning",
+      "title": "Water-resource planning",
+      "exampleSlugs": [
+        "watersmart",
+        "trace-associates"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Organize supply, use and monitoring information."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Test alternative assumptions in scenarios."
+        },
+        {
+          "title": "Document and improve",
+          "detail": "Explain trade-offs, uncertainty and priorities."
+        }
+      ],
+      "summary": "Compare water availability, demand and possible responses over time.",
+      "pathwayCandidates": [
+        {
+          "id": "oct17-route-sait-integrated-water-management",
+          "name": "Integrated Water Management",
+          "sourceIds": [
+            "oct17-source-38"
+          ]
+        },
+        {
+          "id": "oct17-route-university-of-calgary-civil-engineering",
+          "name": "Civil Engineering",
+          "sourceIds": [
+            "oct17-source-15"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-planning-communication-and-engagement",
+      "title": "Planning communication and engagement",
+      "exampleSlugs": [
+        "watersmart"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Explain scenarios and technical options in accessible language."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Gather and document questions and priorities."
+        },
+        {
+          "title": "Document and improve",
+          "detail": "Make clear what the evidence supports and where choices remain."
+        }
+      ],
+      "summary": "Help people with different needs understand and contribute to a planning process.",
+      "pathwayCandidates": [
+        {
+          "id": "oct17-route-sait-integrated-water-management",
+          "name": "Integrated Water Management",
+          "sourceIds": [
+            "oct17-source-38"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-water-treatment-operations",
+      "title": "Water-treatment operations",
+      "exampleSlugs": [
+        "integrated-sustainability"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Monitor process readings and output tests."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Follow operating and maintenance procedures."
+        },
+        {
+          "title": "Document and improve",
+          "detail": "Document deviations and coordinate investigation."
+        }
+      ],
+      "summary": "Keep a treatment process working within its specified conditions and record how it performs.",
+      "pathwayCandidates": [
+        {
+          "id": "oct17-route-sait-integrated-water-management",
+          "name": "Integrated Water Management",
+          "sourceIds": [
+            "oct17-source-38"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-building-science-investigation",
+      "title": "Building-science investigation",
+      "exampleSlugs": [
+        "rjc-engineers"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Inspect conditions and record where problems appear."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Compare observations with drawings and possible movement paths."
+        },
+        {
+          "title": "Document and improve",
+          "detail": "Help develop and verify repairs with the design team."
+        }
+      ],
+      "summary": "Investigate how a building enclosure manages heat, air and water.",
+      "pathwayCandidates": [
+        {
+          "id": "oct17-route-sait-architectural-technologies",
+          "name": "Architectural Technologies",
+          "sourceIds": [
+            "oct17-source-17"
+          ]
+        },
+        {
+          "id": "oct17-route-university-of-calgary-civil-engineering",
+          "name": "Civil Engineering",
+          "sourceIds": [
+            "oct17-source-15"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-commercial-baking",
+      "title": "Commercial baking",
+      "exampleSlugs": [
+        "calgary-italian-bakery",
+        "cbl-bakeries-cinnaroll"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Follow recipes and production schedules."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Use and check production equipment within trained procedures."
+        },
+        {
+          "title": "Document and improve",
+          "detail": "Observe product consistency and communicate defects or process variation."
+        }
+      ],
+      "summary": "Produce baked goods through a controlled sequence of preparation, processing and handling.",
+      "pathwayCandidates": [
+        {
+          "id": "oct17-route-sait-baking-and-pastry-arts",
+          "name": "Baking and Pastry Arts",
+          "sourceIds": [
+            "oct17-source-56"
+          ]
+        },
+        {
+          "id": "oct17-route-alberta-baker-apprenticeship-education",
+          "name": "Alberta Baker apprenticeship education",
+          "sourceIds": [
+            "oct17-source-57"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-camera-and-image-capture",
+      "title": "Camera and image capture",
+      "exampleSlugs": [
+        "joe-media-group"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Plan framing and camera setup with the production team."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Check exposure and consistency across takes."
+        },
+        {
+          "title": "Document and improve",
+          "detail": "Record information needed for editing and handoff."
+        }
+      ],
+      "summary": "Record images that serve a production’s visual and storytelling requirements.",
+      "pathwayCandidates": [
+        {
+          "id": "oct17-route-sait-film-and-video-production",
+          "name": "Film and Video Production",
+          "sourceIds": [
+            "oct17-source-28"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-film-and-video-editing",
+      "title": "Film and video editing",
+      "exampleSlugs": [
+        "joe-media-group"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Review and organize available footage."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Choose cuts, order and timing for the intended story."
+        },
+        {
+          "title": "Document and improve",
+          "detail": "Check continuity and revise against feedback."
+        }
+      ],
+      "summary": "Build a sequence from selected footage to communicate a coherent idea.",
+      "pathwayCandidates": [
+        {
+          "id": "oct17-route-sait-film-and-video-production",
+          "name": "Film and Video Production",
+          "sourceIds": [
+            "oct17-source-28"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-colour-finishing",
+      "title": "Colour finishing",
+      "exampleSlugs": [
+        "joe-media-group"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Compare shots using the agreed visual reference."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Adjust recorded colour and tonal relationships."
+        },
+        {
+          "title": "Document and improve",
+          "detail": "Check the sequence and deliverable with the production team."
+        }
+      ],
+      "summary": "Work on the appearance and consistency of images during post-production.",
+      "pathwayCandidates": [
+        {
+          "id": "oct17-route-sait-film-and-video-production",
+          "name": "Film and Video Production",
+          "sourceIds": [
+            "oct17-source-28"
+          ]
+        },
+        {
+          "id": "oct17-route-auarts-bachelor-of-design",
+          "name": "Bachelor of Design",
+          "sourceIds": [
+            "oct17-source-27"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-food",
+      "title": "Ingredient and formulation science",
+      "exampleSlugs": [
+        "cbl-bakeries-cinnaroll",
+        "botaneco"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Choose a property to compare across formulations."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Prepare controlled trials and observe changes over time."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Explain the trade-offs between ingredients and processing conditions."
+        }
+      ],
+      "summary": "Investigate how ingredients behave in a product. This work connects a material’s composition to properties such as texture, stability or performance in a mixture.",
+      "pathwayCandidates": [
+        {
+          "id": "oct17-route-sait-baking-and-pastry-arts",
+          "name": "Baking and Pastry Arts",
+          "sourceIds": [
+            "oct17-source-56"
+          ]
+        },
+        {
+          "id": "oct17-route-sait-chemical-laboratory-technology",
+          "name": "Chemical Laboratory Technology",
+          "sourceIds": [
+            "oct17-source-22"
+          ]
+        },
+        {
+          "id": "route-lab",
+          "name": "Chemical Laboratory Technology",
+          "sourceIds": [
+            "expansion-source-6"
+          ]
+        },
+        {
+          "id": "route-biochem",
+          "name": "Biochemistry",
+          "sourceIds": [
+            "expansion-source-7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-applications",
+      "title": "Scientific applications",
+      "exampleSlugs": [
+        "nanalysis"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Choose a measurement approach for the sample."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Compare outputs with reference information."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Explain what further tests would resolve ambiguity."
+        }
+      ],
+      "summary": "Connect an instrument to the question a user needs to answer. Applications work involves selecting a method, interpreting results and explaining limitations.",
+      "pathwayCandidates": [
+        {
+          "id": "route-lab",
+          "name": "Chemical Laboratory Technology",
+          "sourceIds": [
+            "expansion-source-6"
+          ]
+        },
+        {
+          "id": "route-electrical",
+          "name": "Electrical Engineering Technology",
+          "sourceIds": [
+            "expansion-source-13"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-machining",
+      "title": "Machining and dimensional inspection",
+      "exampleSlugs": [
+        "exergy-solutions"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Interpret a drawing and plan a sequence of cuts."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Set up the machine and check the workpiece."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Measure critical dimensions and document deviations."
+        }
+      ],
+      "summary": "Make parts fit their intended purpose by controlling dimensions. Machining combines tools, setup and measurement; finishing a part is not the same as proving it meets its specification.",
+      "pathwayCandidates": [
+        {
+          "id": "route-mechanical",
+          "name": "Mechanical Engineering Technology",
+          "sourceIds": [
+            "expansion-source-18"
+          ]
+        },
+        {
+          "id": "route-machinist",
+          "name": "Machinist",
+          "sourceIds": [
+            "expansion-source-19"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-maintenance",
+      "title": "Aircraft maintenance",
+      "exampleSlugs": [
+        "avmax"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Inspect a component using the applicable procedure."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Compare findings with documented limits and escalate uncertainty."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Record work and test results for the maintenance decision."
+        }
+      ],
+      "summary": "Investigate condition, carry out authorized maintenance and preserve the records behind a decision. Aircraft maintenance work relies on approved procedures and appropriate qualifications.",
+      "pathwayCandidates": [
+        {
+          "id": "route-ame",
+          "name": "Aircraft Maintenance Engineers Technology",
+          "sourceIds": [
+            "expansion-source-31"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-avionics",
+      "title": "Avionics and electronics",
+      "exampleSlugs": [
+        "avmax",
+        "ftg-aerospace-calgary"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Trace a signal through connected components."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Use test equipment to compare expected and measured behaviour."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Document the fault and verify the result after authorized work."
+        }
+      ],
+      "summary": "Work on the electronic systems that allow aircraft to communicate, navigate and collect data. Troubleshooting means distinguishing a faulty sensor from wiring, power or software problems.",
+      "pathwayCandidates": [
+        {
+          "id": "route-avionics",
+          "name": "Avionics Technology",
+          "sourceIds": [
+            "expansion-source-32"
+          ]
+        },
+        {
+          "id": "route-electrical",
+          "name": "Electrical Engineering Technology",
+          "sourceIds": [
+            "expansion-source-13"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-bioprocess",
+      "title": "Bioprocess development",
+      "exampleSlugs": [
+        "northern-rna"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Define a comparison between process conditions."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Track production and purification steps for each batch."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Use analytical results to decide which change to test next."
+        }
+      ],
+      "summary": "Develop repeatable ways to make and purify biological materials. This work connects molecular science to manufacturing conditions and checks whether a change improves the process.",
+      "pathwayCandidates": [
+        {
+          "id": "route-lab",
+          "name": "Chemical Laboratory Technology",
+          "sourceIds": [
+            "expansion-source-6"
+          ]
+        },
+        {
+          "id": "route-biochem",
+          "name": "Biochemistry",
+          "sourceIds": [
+            "expansion-source-7"
+          ]
+        },
+        {
+          "id": "route-chemical",
+          "name": "Chemical Engineering",
+          "sourceIds": [
+            "expansion-source-8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-drone",
+      "title": "Drone operations",
+      "exampleSlugs": [
+        "aerium-analytics"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Review the task, site and operating constraints."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Check the aircraft and coordinate the flight with relevant personnel."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Record observations and equipment issues after the flight."
+        }
+      ],
+      "summary": "Plan and carry out flights for a specific task while coordinating with the people responsible for the site. The aircraft is one tool within an operational plan.",
+      "pathwayCandidates": [
+        {
+          "id": "route-geomatics",
+          "name": "Geomatics Engineering Technology",
+          "sourceIds": [
+            "expansion-source-42"
+          ]
+        },
+        {
+          "id": "route-mechanical",
+          "name": "Mechanical Engineering Technology",
+          "sourceIds": [
+            "expansion-source-18"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-wildlife",
+      "title": "Wildlife monitoring and interpretation",
+      "exampleSlugs": [
+        "aerium-analytics"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Define how bird activity will be counted."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Compare observations before and after an intervention."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Record weather, season and other factors that could explain a difference."
+        }
+      ],
+      "summary": "Observe how animals respond to an intervention and ask whether the change lasts. This work needs consistent observations and attention to other causes of changing behaviour.",
+      "pathwayCandidates": [
+        {
+          "id": "route-geomatics",
+          "name": "Geomatics Engineering Technology",
+          "sourceIds": [
+            "expansion-source-42"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-geoscience",
+      "title": "Geoscience and interpretation",
+      "exampleSlugs": [
+        "geologicai"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Describe core and identify changes along it."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Compare sensor patterns with geological observations or assays."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Communicate alternative interpretations and uncertainty."
+        }
+      ],
+      "summary": "Explain what rock measurements suggest about geology. Geoscientists combine observations with context and use additional tests where a scan leaves uncertainty.",
+      "pathwayCandidates": [
+        {
+          "id": "route-geology",
+          "name": "Geology",
+          "sourceIds": [
+            "expansion-source-46"
+          ]
+        },
+        {
+          "id": "route-geomatics",
+          "name": "Geomatics Engineering Technology",
+          "sourceIds": [
+            "expansion-source-42"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-millwright",
+      "title": "Industrial machinery assembly and maintenance",
+      "exampleSlugs": [
+        "tangent-design-engineering",
+        "foremost"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Read equipment drawings and plan assembly steps."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Align and connect mechanical components."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Check operation and record problems that need adjustment."
+        }
+      ],
+      "summary": "Make machinery work together as a physical system. Millwright work connects assembly, alignment, inspection and troubleshooting.",
+      "pathwayCandidates": [
+        {
+          "id": "route-millwright",
+          "name": "Industrial Mechanic (Millwright)",
+          "sourceIds": [
+            "expansion-source-48"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-fabrication",
+      "title": "Metal fabrication and welding",
+      "exampleSlugs": [
+        "foremost"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Read dimensions and prepare components."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Use the specified joining process and sequence."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Inspect the assembly and communicate any deviation."
+        }
+      ],
+      "summary": "Join and assemble material into usable structures. Fabrication work follows drawings and procedures, then checks whether the finished work meets its requirements.",
+      "pathwayCandidates": [
+        {
+          "id": "route-welder",
+          "name": "Welder",
+          "sourceIds": [
+            "expansion-source-52"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-power",
+      "title": "Power-electronics design",
+      "exampleSlugs": [
+        "eguana-technologies"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Choose and document a circuit design."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Test its response across operating conditions."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Investigate losses and component limits before revising the design."
+        }
+      ],
+      "summary": "Control how electrical energy moves between components. Power-electronics work combines circuit design with testing, thermal limits and the behaviour of the complete system.",
+      "pathwayCandidates": [
+        {
+          "id": "route-electrical",
+          "name": "Electrical Engineering Technology",
+          "sourceIds": [
+            "expansion-source-13"
+          ]
+        },
+        {
+          "id": "route-electrical-degree",
+          "name": "Electrical Engineering",
+          "sourceIds": [
+            "expansion-source-67"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-weather",
+      "title": "Weather-data interpretation",
+      "exampleSlugs": [
+        "ftg-aerospace-calgary"
+      ],
+      "currentCards": [],
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Check the position, time and quality of observations."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Compare measurements across altitude or time."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Identify gaps and explain how they limit an interpretation."
+        }
+      ],
+      "summary": "Use observations to understand changing atmospheric conditions. Weather-data work checks where and when a measurement was made before combining it with other evidence.",
+      "pathwayCandidates": [
+        {
+          "id": "route-software",
+          "name": "Software Development",
+          "sourceIds": [
+            "expansion-source-14"
+          ]
+        },
+        {
+          "id": "route-electrical",
+          "name": "Electrical Engineering Technology",
+          "sourceIds": [
+            "expansion-source-13"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conservation-research",
+      "title": "Conservation research and population ecology",
+      "exampleSlugs": [
+        "wilder-institute"
+      ],
+      "currentCards": [
+        "04"
+      ],
+      "tasks": [
+        {
+          "title": "Plan a comparison",
+          "detail": "Choose measures of survival, breeding and population change, and decide what to compare them with."
+        },
+        {
+          "title": "Follow animals after release",
+          "detail": "Record observations over time, accounting for animals that are difficult to detect."
+        },
+        {
+          "title": "Interpret the evidence",
+          "detail": "Ask whether results reflect the intervention, environmental conditions or other explanations."
+        }
+      ],
+      "summary": "Find out whether an intervention helps a wild population recover.",
+      "pathwayCandidates": [
+        {
+          "id": "ucalgary-zoology",
+          "name": "Zoology (BSc)",
+          "sourceIds": [
+            "depth-ucalgary-zoology"
+          ]
+        },
+        {
+          "id": "olds-environment",
+          "name": "Environmental Science and Technology",
+          "sourceIds": [
+            "depth-olds-environment"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "animal-care",
+      "title": "Animal care and welfare",
+      "exampleSlugs": [
+        "wilder-institute"
+      ],
+      "currentCards": [
+        "05"
+      ],
+      "tasks": [
+        {
+          "title": "Provide daily care",
+          "detail": "Follow prescribed diets and maintain clean, suitable habitats."
+        },
+        {
+          "title": "Observe and record",
+          "detail": "Track behaviour, weight and body condition, and report changes to the team."
+        },
+        {
+          "title": "Work with specialists",
+          "detail": "Support veterinary procedures and enrichment under established welfare and safety protocols."
+        }
+      ],
+      "summary": "Support animals day to day and notice changes that matter.",
+      "pathwayCandidates": [
+        {
+          "id": "ucalgary-zoology",
+          "name": "Zoology (BSc)",
+          "sourceIds": [
+            "depth-ucalgary-zoology"
+          ]
+        },
+        {
+          "id": "olds-assistant",
+          "name": "Veterinary Technical Assistant",
+          "sourceIds": [
+            "depth-olds-assistant"
+          ]
+        },
+        {
+          "id": "olds-vet",
+          "name": "Veterinary Technology",
+          "sourceIds": [
+            "depth-olds-vet"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wildlife-veterinary",
+      "title": "Veterinary care for wildlife",
+      "exampleSlugs": [
+        "wilder-institute"
+      ],
+      "currentCards": [
+        "06"
+      ],
+      "tasks": [
+        {
+          "title": "Assess health",
+          "detail": "Examine animals and interpret observations or diagnostic tests."
+        },
+        {
+          "title": "Plan treatment",
+          "detail": "Choose appropriate care and work with the animal-care team to monitor the response."
+        },
+        {
+          "title": "Support conservation decisions",
+          "detail": "Contribute health and welfare evidence to decisions about care, transport and release."
+        }
+      ],
+      "summary": "Assess animal health and support safe care and release.",
+      "pathwayCandidates": [
+        {
+          "id": "ucalgary-dvm",
+          "name": "Doctor of Veterinary Medicine (DVM)",
+          "sourceIds": [
+            "depth-ucalgary-dvm",
+            "depth-ucalgary-dvm-entry"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "process-engineering",
+      "title": "Process engineering",
+      "exampleSlugs": [
+        "e3-lithium"
+      ],
+      "currentCards": [
+        "07"
+      ],
+      "tasks": [
+        {
+          "title": "Compare separation steps",
+          "detail": "Evaluate how different treatment stages affect recovery, purity and resource use."
+        },
+        {
+          "title": "Check the balances",
+          "detail": "Account for material entering and leaving each stage, using models and measurements."
+        },
+        {
+          "title": "Test and improve",
+          "detail": "Use pilot or demonstration results to improve designs and support commissioning."
+        }
+      ],
+      "summary": "Design and test the steps that separate useful materials from a mixture.",
+      "pathwayCandidates": [
+        {
+          "id": "ucalgary-chemical",
+          "name": "Chemical Engineering (BSc)",
+          "sourceIds": [
+            "depth-ucalgary-chemical"
+          ]
+        },
+        {
+          "id": "sait-chemical",
+          "name": "Chemical Engineering Technology",
+          "sourceIds": [
+            "depth-sait-chemical"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atmospheric-science",
+      "title": "Atmospheric science and remote sensing",
+      "exampleSlugs": [
+        "ghgsat"
+      ],
+      "currentCards": [
+        "01"
+      ],
+      "tasks": [
+        {
+          "title": "Check the signal",
+          "detail": "Decide whether a measurement is reliable, or caused by something else such as cloud or a bright surface."
+        },
+        {
+          "title": "Build an estimate",
+          "detail": "Use models and wind information to turn an absorption signal into a rate of emission."
+        },
+        {
+          "title": "Share the findings",
+          "detail": "Explain results, and their uncertainty, to people who make decisions."
+        }
+      ],
+      "summary": "Turn light measurements into an explanation of what is in the air.",
+      "pathwayCandidates": [
+        {
+          "id": "ualberta-earth-sciences",
+          "name": "Earth Sciences major (BSc)",
+          "sourceIds": [
+            "ualberta-earth"
+          ]
+        },
+        {
+          "id": "ucalgary-geomatics",
+          "name": "Geomatics Engineering (BSc)",
+          "sourceIds": [
+            "ucalgary-geomatics"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "satellite-engineering",
+      "title": "Satellite and instrument engineering",
+      "exampleSlugs": [
+        "ghgsat"
+      ],
+      "currentCards": [
+        "02"
+      ],
+      "tasks": [
+        {
+          "title": "Design the instrument",
+          "detail": "Choose optics and detectors that can pick out the wavelengths methane absorbs."
+        },
+        {
+          "title": "Test and calibrate",
+          "detail": "Check on the ground that the instrument measures what it should, using known light sources."
+        },
+        {
+          "title": "Support it in orbit",
+          "detail": "Monitor performance after launch and help fix problems from the ground."
+        }
+      ],
+      "summary": "Design, build and test the instruments and spacecraft that take the measurements.",
+      "pathwayCandidates": [
+        {
+          "id": "ucalgary-engineering-physics",
+          "name": "Engineering Physics (BSc)",
+          "sourceIds": [
+            "ucalgary-engphys"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "software-data",
+      "title": "Software and data",
+      "exampleSlugs": [
+        "ghgsat"
+      ],
+      "currentCards": [
+        "03"
+      ],
+      "tasks": [
+        {
+          "title": "Build data pipelines",
+          "detail": "Process large numbers of observations reliably and quickly."
+        },
+        {
+          "title": "Build tools for users",
+          "detail": "Create web platforms and interfaces that let customers find and use results."
+        },
+        {
+          "title": "Find patterns",
+          "detail": "Use statistics and machine learning to sort sites and spot changes over time."
+        }
+      ],
+      "summary": "Turn satellite measurements into data and tools people can use.",
+      "pathwayCandidates": [
+        {
+          "id": "ucalgary-geomatics",
+          "name": "Geomatics Engineering (BSc)",
+          "sourceIds": [
+            "ucalgary-geomatics"
+          ]
+        },
+        {
+          "id": "sait-geomatics",
+          "name": "Geomatics Engineering Technology",
+          "sourceIds": [
+            "sait-geomatics"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "commercial-partnerships",
+      "title": "Business development and partnerships",
+      "exampleSlugs": [
+        "ghgsat"
+      ],
+      "currentCards": [
+        "09"
+      ],
+      "tasks": [
+        {
+          "title": "Understand the need",
+          "detail": "Identify customer problems and assess whether the technology can help."
+        },
+        {
+          "title": "Build a proposal",
+          "detail": "Translate scientific capabilities into a clear offer, coordinating technical and commercial contributions."
+        },
+        {
+          "title": "Coordinate delivery",
+          "detail": "Maintain relationships and track the commitments made in a contract."
+        }
+      ],
+      "summary": "Connect technical capabilities with the people who can use them.",
+      "pathwayCandidates": [
+        {
+          "id": "sait-marketing",
+          "name": "Business Administration – Marketing",
+          "sourceIds": [
+            "depth-sait-marketing"
+          ]
+        }
+      ]
+    }
+  ]
+}

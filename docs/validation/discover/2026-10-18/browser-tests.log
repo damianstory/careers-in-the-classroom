@@ -1,0 +1,88 @@
+
+> careers-in-the-classroom@0.1.0 test:e2e
+> playwright test tests/e2e/discover.spec.ts --workers=3
+
+[WebServer] (node:83748) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:83748) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:83803) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:83797) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:83795) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:83799) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:83800) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:83801) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:83798) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:83796) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:83802) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:83807) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:83833) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 42 tests using 3 workers
+
+(node:83834) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:83835) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:83836) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   2 [desktop] › tests/e2e/discover.spec.ts:11:7 › Discover classroom flow › header navigation is current (1.2s)
+  ✓   1 [desktop] › tests/e2e/discover.spec.ts:84:7 › Discover classroom flow › one Space press stops without advancing when the key is released (1.8s)
+  ✓   5 [desktop] › tests/e2e/discover.spec.ts:128:7 › Discover classroom flow › deep links retain route, saved date, vacancy label and empty state (784ms)
+  ✓   4 [desktop] › tests/e2e/discover.spec.ts:102:7 › Discover classroom flow › Chemistry does not repeat and resets the exhausted set (2.3s)
+  ✓   3 [desktop] › tests/e2e/discover.spec.ts:19:7 › Discover classroom flow › stops the displayed picture, conceals titles, steps and restores through Back (3.6s)
+  ✓   8 [desktop] › tests/e2e/discover.spec.ts:191:7 › Discover classroom flow › reduced motion draws once and failed pictures provide equivalent clues (1.5s)
+  ✓   9 [desktop] › tests/e2e/discover.spec.ts:210:7 › Discover classroom flow › classroom guessing controls fit a 720p screen and fullscreen can be requested (368ms)
+  ✓   6 [desktop] › tests/e2e/discover.spec.ts:144:7 › Discover classroom flow › dialogs, fields and header controls isolate keyboard shortcuts (3.2s)
+  ✓   7 [desktop] › tests/e2e/discover.spec.ts:165:7 › Discover classroom flow › picture loading respects header and subject focus (3.1s)
+  ✓  11 [desktop] › tests/e2e/discover.spec.ts:250:7 › Discover classroom flow › qualifications stay with routes and related-employer postings (944ms)
+  -  13 [desktop] › tests/e2e/discover.spec.ts:288:5 › phone flow works by tap with readable type and no sideways scroll
+  ✓  10 [desktop] › tests/e2e/discover.spec.ts:223:7 › Discover classroom flow › desktop headings stay visually quiet while tabs retain keyboard focus (1.5s)
+  ✓  15 [desktop] › tests/e2e/discover.spec.ts:311:7 › step navigation lands on readable content at 768px (786ms)
+  ✓  14 [desktop] › tests/e2e/discover.spec.ts:311:7 › step navigation lands on readable content at 390px (869ms)
+  ✓  16 [desktop] › tests/e2e/discover.spec.ts:311:7 › step navigation lands on readable content at 1024px (901ms)
+  ✓  12 [desktop] › tests/e2e/discover.spec.ts:267:7 › Discover classroom flow › every card has the same guess cover and reveals an unobstructed occupation (28.4s)
+  ✓  17 [desktop] › tests/e2e/discover.spec.ts:335:7 › all 342 content states remain readable and unclipped at 1280px (2.6m)
+  ✓  18 [desktop] › tests/e2e/discover.spec.ts:335:7 › all 342 content states remain readable and unclipped at 768px (2.6m)
+  ✓  20 [desktop] › tests/e2e/discover.spec.ts:364:5 › guessing offers a direct restart in cycling and single-draw modes (1.3s)
+  ✓  21 [desktop] › tests/e2e/discover.spec.ts:381:5 › desktop guessing balances picture and clues without an empty column (831ms)
+(node:85133) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:85134) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  -  22 [phone] › tests/e2e/discover.spec.ts:11:7 › Discover classroom flow › header navigation is current
+  -  24 [phone] › tests/e2e/discover.spec.ts:84:7 › Discover classroom flow › one Space press stops without advancing when the key is released
+  -  23 [phone] › tests/e2e/discover.spec.ts:19:7 › Discover classroom flow › stops the displayed picture, conceals titles, steps and restores through Back
+  -  25 [phone] › tests/e2e/discover.spec.ts:102:7 › Discover classroom flow › Chemistry does not repeat and resets the exhausted set
+  -  27 [phone] › tests/e2e/discover.spec.ts:128:7 › Discover classroom flow › deep links retain route, saved date, vacancy label and empty state
+  -  26 [phone] › tests/e2e/discover.spec.ts:144:7 › Discover classroom flow › dialogs, fields and header controls isolate keyboard shortcuts
+  -  28 [phone] › tests/e2e/discover.spec.ts:165:7 › Discover classroom flow › picture loading respects header and subject focus
+  -  29 [phone] › tests/e2e/discover.spec.ts:191:7 › Discover classroom flow › reduced motion draws once and failed pictures provide equivalent clues
+  -  30 [phone] › tests/e2e/discover.spec.ts:223:7 › Discover classroom flow › desktop headings stay visually quiet while tabs retain keyboard focus
+  -  31 [phone] › tests/e2e/discover.spec.ts:210:7 › Discover classroom flow › classroom guessing controls fit a 720p screen and fullscreen can be requested
+  -  32 [phone] › tests/e2e/discover.spec.ts:267:7 › Discover classroom flow › every card has the same guess cover and reveals an unobstructed occupation
+  -  33 [phone] › tests/e2e/discover.spec.ts:250:7 › Discover classroom flow › qualifications stay with routes and related-employer postings
+  -  35 [phone] › tests/e2e/discover.spec.ts:311:7 › step navigation lands on readable content at 390px
+  -  36 [phone] › tests/e2e/discover.spec.ts:311:7 › step navigation lands on readable content at 768px
+  -  37 [phone] › tests/e2e/discover.spec.ts:311:7 › step navigation lands on readable content at 1024px
+  -  38 [phone] › tests/e2e/discover.spec.ts:335:7 › all 342 content states remain readable and unclipped at 1280px
+  -  39 [phone] › tests/e2e/discover.spec.ts:335:7 › all 342 content states remain readable and unclipped at 768px
+  ✓  34 [phone] › tests/e2e/discover.spec.ts:288:5 › phone flow works by tap with readable type and no sideways scroll (1.9s)
+  -  40 [phone] › tests/e2e/discover.spec.ts:335:7 › all 342 content states remain readable and unclipped at 390px
+  -  42 [phone] › tests/e2e/discover.spec.ts:381:5 › desktop guessing balances picture and clues without an empty column
+  ✓  41 [phone] › tests/e2e/discover.spec.ts:364:5 › guessing offers a direct restart in cycling and single-draw modes (1.3s)
+  ✓  19 [desktop] › tests/e2e/discover.spec.ts:335:7 › all 342 content states remain readable and unclipped at 390px (2.3m)
+
+  20 skipped
+  22 passed (3.0m)

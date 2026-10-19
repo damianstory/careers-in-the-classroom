@@ -1,0 +1,13 @@
+{
+  "reviewer": "user",
+  "date": "2026-10-18",
+  "instruction": "Backfill existing companies too (Recommended)",
+  "scope": "Local Discover backfill and future research/implementation workflow; review before push",
+  "publication_authorized": false,
+  "new_cards_planned": 48,
+  "original_cards_preserved": 9,
+  "alias_extensions": {
+    "work-software": "software-data",
+    "work-process": "process-engineering"
+  }
+}
