@@ -497,6 +497,7 @@
 /* Logos sit on a plate wide enough for a wordmark: white with a hairline, or dark for white logos. */
 .logoBox {
   display: grid;
+  grid-template: minmax(0, 1fr) / minmax(0, 1fr);
   place-items: center;
   width: 104px;
   height: 52px;
