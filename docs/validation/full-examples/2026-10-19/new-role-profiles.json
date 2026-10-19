@@ -1,0 +1,339 @@
+[
+  {
+    "id": "work-prosthetic-fabrication",
+    "title": "Prosthetic and orthotic technician",
+    "summary": "Turn a clinical design into a carefully made device.",
+    "explanation": "Turn a clinical design into a carefully made device.",
+    "tasks": [
+      {
+        "title": "Shape",
+        "detail": "Use a model and the prescribed design to form device components."
+      },
+      {
+        "title": "Assemble",
+        "detail": "Join and finish parts while checking dimensions and workmanship."
+      },
+      {
+        "title": "Revise",
+        "detail": "Work with the clinician to address fit or fabrication issues."
+      }
+    ],
+    "collaborators": [
+      "Prosthetists and orthotists",
+      "Other technicians"
+    ],
+    "classroomConnection": "A design has to become a physical object whose shape and materials suit its purpose."
+  },
+  {
+    "id": "work-prosthetic-clinical",
+    "title": "Prosthetist",
+    "summary": "Assess a person’s needs and evaluate a prosthesis with them.",
+    "explanation": "Assess a person’s needs and evaluate a prosthesis with them.",
+    "tasks": [
+      {
+        "title": "Assess",
+        "detail": "Discuss goals and collect measurements for an individual design."
+      },
+      {
+        "title": "Fit",
+        "detail": "Evaluate a trial device and its alignment with the person."
+      },
+      {
+        "title": "Follow up",
+        "detail": "Use comfort, movement and clinical observations to guide changes."
+      }
+    ],
+    "collaborators": [
+      "Clients",
+      "Technicians",
+      "Rehabilitation teams"
+    ],
+    "classroomConnection": "A useful solution is judged by evidence from the person using it, not by appearance alone."
+  },
+  {
+    "id": "work-prepress",
+    "title": "Prepress and print-production design",
+    "summary": "Prepare artwork so a print process can reproduce it reliably.",
+    "explanation": "Prepare artwork so a print process can reproduce it reliably.",
+    "tasks": [
+      {
+        "title": "Prepare",
+        "detail": "Check layout, image detail and the supplied production files."
+      },
+      {
+        "title": "Translate",
+        "detail": "Match the design to the print method, stock and finishing needs."
+      },
+      {
+        "title": "Proof",
+        "detail": "Inspect a proof and communicate corrections before production."
+      }
+    ],
+    "collaborators": [
+      "Designers",
+      "Press operators",
+      "Customers"
+    ],
+    "classroomConnection": "A screen preview and printed sheet use different materials and conditions."
+  },
+  {
+    "id": "work-printing-press",
+    "title": "Printing press operator",
+    "summary": "Set up equipment and check the printed output throughout a run.",
+    "explanation": "Set up equipment and check the printed output throughout a run.",
+    "tasks": [
+      {
+        "title": "Set up",
+        "detail": "Choose the job and adjust the press for the required output."
+      },
+      {
+        "title": "Inspect",
+        "detail": "Compare samples for colour, alignment and image quality."
+      },
+      {
+        "title": "Control",
+        "detail": "Make routine permitted adjustments and document checks."
+      }
+    ],
+    "collaborators": [
+      "Prepress team",
+      "Production colleagues",
+      "Finishing team"
+    ],
+    "classroomConnection": "Small changes in colour and alignment can change the quality of an entire batch."
+  },
+  {
+    "id": "work-recycling-operations",
+    "title": "Metal-recycling operations",
+    "summary": "Receive and sort scrap so suitable material can move into a recovery stream.",
+    "explanation": "Receive and sort scrap so suitable material can move into a recovery stream.",
+    "tasks": [
+      {
+        "title": "Identify",
+        "detail": "Distinguish material categories and identify items requiring special handling."
+      },
+      {
+        "title": "Separate",
+        "detail": "Keep grades and unwanted material apart using established procedures."
+      },
+      {
+        "title": "Record",
+        "detail": "Maintain receiving and movement records with the yard team."
+      }
+    ],
+    "collaborators": [
+      "Suppliers",
+      "Equipment operators",
+      "Transport teams"
+    ],
+    "classroomConnection": "Material identity and contamination affect what can be recovered; one test rarely tells the whole story."
+  },
+  {
+    "id": "work-aircraft-deicing",
+    "title": "Aircraft deicing technician",
+    "summary": "Apply trained ground procedures to remove or manage frozen contamination on aircraft.",
+    "explanation": "Apply trained ground procedures to remove or manage frozen contamination on aircraft.",
+    "tasks": [
+      {
+        "title": "Operate",
+        "detail": "Position and operate deicing equipment under airport procedures."
+      },
+      {
+        "title": "Apply",
+        "detail": "Use the required fluid/application procedure for the conditions and aircraft."
+      },
+      {
+        "title": "Communicate",
+        "detail": "Coordinate with crews and record the operation."
+      }
+    ],
+    "collaborators": [
+      "Flight and ground crews",
+      "Dispatchers",
+      "Other deicing staff"
+    ],
+    "classroomConnection": "Materials, temperature, communication and inspection all matter in one time-sensitive system."
+  },
+  {
+    "id": "work-glazing",
+    "title": "Glazier and window-installation work",
+    "summary": "Fit glazing and window systems into a building opening.",
+    "explanation": "Fit glazing and window systems into a building opening.",
+    "tasks": [
+      {
+        "title": "Measure",
+        "detail": "Check dimensions, alignment and installation requirements."
+      },
+      {
+        "title": "Install",
+        "detail": "Fit glazing/window components using appropriate supports and seals."
+      },
+      {
+        "title": "Inspect",
+        "detail": "Check the completed installation and identify problems."
+      }
+    ],
+    "collaborators": [
+      "Building trades",
+      "Customers",
+      "Manufacturing teams"
+    ],
+    "classroomConnection": "The performance of a material depends partly on how it is joined to the rest of the system."
+  },
+  {
+    "id": "work-blood-production",
+    "title": "Blood-component production work",
+    "summary": "Help turn collected donations into traceable blood components under controlled procedures.",
+    "explanation": "Help turn collected donations into traceable blood components under controlled procedures.",
+    "tasks": [
+      {
+        "title": "Prepare",
+        "detail": "Handle incoming products and follow the production workflow."
+      },
+      {
+        "title": "Track",
+        "detail": "Keep identity and processing records linked to the product."
+      },
+      {
+        "title": "Store",
+        "detail": "Maintain the prescribed handling and storage workflow."
+      }
+    ],
+    "collaborators": [
+      "Laboratory technologists",
+      "Quality teams",
+      "Distribution staff"
+    ],
+    "classroomConnection": "Separating material is not enough; its identity and handling history must remain reliable."
+  },
+  {
+    "id": "work-medical-laboratory",
+    "title": "Medical laboratory technologist",
+    "summary": "Perform laboratory testing within a clinical quality system.",
+    "explanation": "Perform laboratory testing within a clinical quality system.",
+    "tasks": [
+      {
+        "title": "Test",
+        "detail": "Prepare samples and operate validated testing processes."
+      },
+      {
+        "title": "Check",
+        "detail": "Examine controls and results for technical quality."
+      },
+      {
+        "title": "Document",
+        "detail": "Record and communicate results within the laboratory’s professional scope."
+      }
+    ],
+    "collaborators": [
+      "Laboratory assistants",
+      "Quality staff",
+      "Clinical and production teams"
+    ],
+    "classroomConnection": "A result is useful only when the method, controls and sample identity are trustworthy."
+  },
+  {
+    "id": "work-valve-service",
+    "title": "Valve service technician",
+    "summary": "Inspect, repair and test valves used to control or relieve process flow.",
+    "explanation": "Inspect, repair and test valves used to control or relieve process flow.",
+    "tasks": [
+      {
+        "title": "Inspect",
+        "detail": "Assess condition and investigate a valve’s reported behaviour."
+      },
+      {
+        "title": "Service",
+        "detail": "Carry out permitted repairs and reassembly."
+      },
+      {
+        "title": "Test",
+        "detail": "Use approved test equipment and document the result."
+      }
+    ],
+    "collaborators": [
+      "Instrumentation staff",
+      "Operations",
+      "Quality and safety teams"
+    ],
+    "classroomConnection": "A component must be tested under appropriate conditions before its behaviour can be trusted."
+  },
+  {
+    "id": "work-electrician",
+    "title": "Electrician",
+    "summary": "Build and check electrical installations using drawings, standards and trade procedures.",
+    "explanation": "Build and check electrical installations using drawings, standards and trade procedures.",
+    "tasks": [
+      {
+        "title": "Read",
+        "detail": "Interpret drawings and identify the intended circuit connections."
+      },
+      {
+        "title": "Install",
+        "detail": "Fit and connect components using approved methods."
+      },
+      {
+        "title": "Verify",
+        "detail": "Carry out permitted inspections and tests and document issues."
+      }
+    ],
+    "collaborators": [
+      "Controls technologists",
+      "Other trades",
+      "Inspectors"
+    ],
+    "classroomConnection": "A circuit diagram describes intended behaviour; installation and verification connect that model to a real system."
+  },
+  {
+    "id": "work-jewellery-design",
+    "title": "Jewellery designer",
+    "summary": "Translate a client’s ideas into a design that can be reviewed and made.",
+    "explanation": "Translate a client’s ideas into a design that can be reviewed and made.",
+    "tasks": [
+      {
+        "title": "Listen",
+        "detail": "Clarify the intended use, dimensions, materials and appearance."
+      },
+      {
+        "title": "Model",
+        "detail": "Use sketches or CAD to communicate the proposed piece."
+      },
+      {
+        "title": "Review",
+        "detail": "Use a render or prototype to discuss changes before production."
+      }
+    ],
+    "collaborators": [
+      "Clients",
+      "Goldsmiths and production partners",
+      "Sales colleagues"
+    ],
+    "classroomConnection": "A prototype tests the relationship between a digital idea and a physical object."
+  },
+  {
+    "id": "work-beekeeping",
+    "title": "Beekeeper",
+    "summary": "Observe colonies and plan their care around local conditions.",
+    "explanation": "Observe colonies and plan their care around local conditions.",
+    "tasks": [
+      {
+        "title": "Observe",
+        "detail": "Record colony condition, food resources and seasonal indicators."
+      },
+      {
+        "title": "Assess",
+        "detail": "Use appropriate sampling and records to investigate changes."
+      },
+      {
+        "title": "Plan",
+        "detail": "Adjust the seasonal work plan and monitor what happens next."
+      }
+    ],
+    "collaborators": [
+      "Other beekeepers",
+      "Instructors",
+      "Appropriate animal-health advisers"
+    ],
+    "classroomConnection": "Decisions about a living system depend on observations over time, not one isolated reading."
+  }
+]

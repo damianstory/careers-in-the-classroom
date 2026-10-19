@@ -1,0 +1,305 @@
+{
+  "schema_version": 1,
+  "packet_id": "calgary-weekly-2026-10-19",
+  "occurrence": "2026-10-19",
+  "candidates": [
+    {
+      "id": "OCT19-LWR1",
+      "copy_version": 1,
+      "decision": "pending",
+      "recommendation": "recommend",
+      "title": "Commissioning and Training Technician",
+      "employer": "Livestock Water Recycling",
+      "example_slug": "livestock-water-recycling",
+      "employer_note": "Featured employer; this posting does not establish assignment to the featured project.",
+      "location": "Calgary employer; job base unspecified. Frequent US and some other international field travel.",
+      "seniority": "Entry level; new Engineering Technology graduates, mechanical preferred.",
+      "summary": "Bring water-recovery equipment into service and help operators keep it working.",
+      "duties": [
+        "Commission and troubleshoot pumps, sensors and control systems.",
+        "Read schematics and calibrate process instruments.",
+        "Train operators and document field service."
+      ],
+      "skills": [
+        "Engineering Technology diploma; mechanical preferred.",
+        "PLC/HMI and mechanical/electrical experience are assets.",
+        "Driving and international-travel eligibility; field rotations of two weeks."
+      ],
+      "classroom_connection": "Shows the technical work needed after a manure-treatment system is designed. The posting does not prove assignment to a particular featured installation.",
+      "posting_url": "https://www.livestockwaterrecycling.com/media/Ad_Mech%20Tech_2025.11.14%20(1).pdf",
+      "posting_id": null,
+      "source_check_date": "2026-10-19",
+      "captured_on": "2026-10-19",
+      "employer_published_on": null,
+      "application_deadline": null,
+      "vacancy_status": "unknown",
+      "status_checked_on": "2026-10-19",
+      "status_note": "Employer currently links this substantive PDF; application entry was not verified. Use as a historical/undated role example, not an open vacancy.",
+      "snapshot": "docs/validation/job-reviews/all-examples/2026-10-19-weekly/evidence/lwr-commissioning.pdf",
+      "snapshot_sha256": "4f6ac333008a17b00dd7242c27ea78e47890458f1a65e037cad5791d910e8abf",
+      "text_snapshot": "docs/validation/job-reviews/all-examples/2026-10-19-weekly/evidence/lwr-commissioning.txt",
+      "evidence_gates": {
+        "employer": true,
+        "substantive_duties": true,
+        "location": "unknowns explicit in copy",
+        "status_attribution": true,
+        "material_contradictions": "bounded in limitations"
+      },
+      "score_dimensions": [
+        4,
+        3,
+        3
+      ],
+      "score": 10,
+      "score_rationale": [
+        "Direct connection to the featured recovery equipment.",
+        "Specific commissioning, calibration and training tasks.",
+        "Adds an explicitly entry-level diploma route with international field-work conditions."
+      ],
+      "existing_role_ids": [
+        "work-controls",
+        "work-process"
+      ],
+      "discover_integration": "Connect existing controls card 13 and process-operations card 08 after confirming role links. No new Discover card promised.",
+      "implementation_state": "not implemented",
+      "limitation": "No publication date or deadline is stated in the inspected source. Dates in a filename are not a verified posting date. Recheck vacancy status before implementation."
+    },
+    {
+      "id": "OCT19-TRACE1",
+      "copy_version": 1,
+      "decision": "pending",
+      "recommendation": "recommend",
+      "title": "Intermediate Environmental Consultant",
+      "employer": "Trace Associates",
+      "example_slug": "trace-associates",
+      "employer_note": "Featured employer; this posting does not establish assignment to the featured project.",
+      "location": "Alberta; Calgary is one preferred-office option, not guaranteed placement.",
+      "seniority": "Intermediate; 3–7 years of reclamation/remediation experience.",
+      "summary": "Plan field investigations and turn environmental observations into usable evidence.",
+      "duties": [
+        "Lead reclamation and remediation field programmes.",
+        "Carry out assessments and groundwater monitoring.",
+        "Prepare technical records and guide junior colleagues."
+      ],
+      "skills": [
+        "Science-related bachelor’s degree.",
+        "Professional designation, eligibility or in-training status.",
+        "Field and office reclamation/remediation experience."
+      ],
+      "classroom_connection": "Adds the people who collect and interpret evidence for contaminated-land decisions. It does not establish work on the featured project.",
+      "posting_url": "https://traceassociates.ca/jobs/intermediate-environmental-consultant/",
+      "posting_id": "CAN-AB-0300-05",
+      "source_check_date": "2026-10-19",
+      "captured_on": "2026-10-19",
+      "employer_published_on": null,
+      "application_deadline": null,
+      "vacancy_status": "open",
+      "status_checked_on": "2026-10-19",
+      "status_note": "Role page explicitly invites applications and displays an unfilled application form; nothing entered or submitted.",
+      "snapshot": "docs/validation/job-reviews/all-examples/2026-10-19-weekly/evidence/trace-intermediate.txt",
+      "snapshot_sha256": "d0d0e814c58e0217f482c598847fb940ef491a2217a4524848b78bfd5e1d96a7",
+      "text_snapshot": "docs/validation/job-reviews/all-examples/2026-10-19-weekly/evidence/trace-intermediate.txt",
+      "evidence_gates": {
+        "employer": true,
+        "substantive_duties": true,
+        "location": "unknowns explicit in copy",
+        "status_attribution": true,
+        "material_contradictions": "bounded in limitations"
+      },
+      "score_dimensions": [
+        4,
+        3,
+        2
+      ],
+      "score": 9,
+      "score_rationale": [
+        "Direct connection to assessment/remediation evidence.",
+        "Field, monitoring and documentation tasks are explicit.",
+        "Adds a featured-employer intermediate example but overlaps existing field-assessment work."
+      ],
+      "existing_role_ids": [
+        "work-environmental-field-assessment"
+      ],
+      "discover_integration": "Extend existing environmental-assessment card 26 with the approved Trace example; preserve number.",
+      "implementation_state": "not implemented",
+      "limitation": "No publication date or deadline is stated in the inspected source. Dates in a filename are not a verified posting date. Recheck vacancy status before implementation."
+    },
+    {
+      "id": "OCT19-IS1",
+      "copy_version": 1,
+      "decision": "pending",
+      "recommendation": "recommend",
+      "title": "Intermediate Groundwater Modeller",
+      "employer": "Integrated Sustainability",
+      "example_slug": "integrated-sustainability",
+      "employer_note": "Featured employer; this posting does not establish assignment to the featured project.",
+      "location": "Position-specific location unstated; employer lists a Calgary office.",
+      "seniority": "Intermediate; at least five years in hydrogeology and groundwater modelling.",
+      "summary": "Use measurements and models to examine how groundwater moves.",
+      "duties": [
+        "Build and calibrate groundwater models.",
+        "Interpret monitoring, pumping-test and water-quality data.",
+        "Document assumptions and explain model results."
+      ],
+      "skills": [
+        "Relevant undergraduate degree; graduate hydrogeology study preferred.",
+        "Hydrogeological modelling experience and software.",
+        "Professional registration eligibility is an asset."
+      ],
+      "classroom_connection": "Extends the water story to the evidence and modelling that inform water-management decisions. It does not prove assignment to the featured treatment system.",
+      "posting_url": "https://www.integratedsustainability.com/careers/intermediate-groundwater-modeller/",
+      "posting_id": null,
+      "source_check_date": "2026-10-19",
+      "captured_on": "2026-10-19",
+      "employer_published_on": null,
+      "application_deadline": null,
+      "vacancy_status": "open",
+      "status_checked_on": "2026-10-19",
+      "status_note": "Role page explicitly invites applications and displays an unfilled application form; nothing entered or submitted.",
+      "snapshot": "docs/validation/job-reviews/all-examples/2026-10-19-weekly/evidence/integrated-groundwater.txt",
+      "snapshot_sha256": "0016ea21015851776996a83865e6cc4c798a0810844801d320f3d51181bf60f9",
+      "text_snapshot": "docs/validation/job-reviews/all-examples/2026-10-19-weekly/evidence/integrated-groundwater.txt",
+      "evidence_gates": {
+        "employer": true,
+        "substantive_duties": true,
+        "location": "unknowns explicit in copy",
+        "status_attribution": true,
+        "material_contradictions": "bounded in limitations"
+      },
+      "score_dimensions": [
+        3,
+        3,
+        3
+      ],
+      "score": 9,
+      "score_rationale": [
+        "Shares water-management methods, with a different problem from treatment design.",
+        "Explicit modelling, calibration and data-analysis outputs.",
+        "Adds hydrogeology and model uncertainty to the existing mix."
+      ],
+      "existing_role_ids": [],
+      "discover_integration": "Potential extension of water-resources card 37; exact hydrogeology role/profile and example link need reviewed copy before implementation.",
+      "implementation_state": "not implemented",
+      "limitation": "No publication date or deadline is stated in the inspected source. Dates in a filename are not a verified posting date. Recheck vacancy status before implementation."
+    },
+    {
+      "id": "OCT19-IS2",
+      "copy_version": 1,
+      "decision": "pending",
+      "recommendation": "recommend",
+      "title": "Senior Process Engineer",
+      "employer": "Integrated Sustainability",
+      "example_slug": "integrated-sustainability",
+      "employer_note": "Featured employer; this posting does not establish assignment to the featured project.",
+      "location": "Position-specific location unstated; employer lists a Calgary office.",
+      "seniority": "Senior; at least 10 years of applicable process-engineering experience.",
+      "summary": "Lead the process choices that turn a water-treatment concept into an engineered system.",
+      "duties": [
+        "Develop water and wastewater treatment designs.",
+        "Use water-quality data to evaluate treatment choices and size equipment.",
+        "Coordinate process decisions across engineering disciplines."
+      ],
+      "skills": [
+        "Chemical/Process Engineering bachelor’s degree.",
+        "P.Eng. registration in a Canadian province, including Alberta or BC.",
+        "Substantial water-treatment design experience."
+      ],
+      "classroom_connection": "Shows the experienced design role behind the system, alongside operations and technician routes. This is a senior destination, not a first job.",
+      "posting_url": "https://www.integratedsustainability.com/careers/senior-process-engineer/",
+      "posting_id": null,
+      "source_check_date": "2026-10-19",
+      "captured_on": "2026-10-19",
+      "employer_published_on": null,
+      "application_deadline": null,
+      "vacancy_status": "open",
+      "status_checked_on": "2026-10-19",
+      "status_note": "Role page explicitly invites applications and displays an unfilled application form; nothing entered or submitted.",
+      "snapshot": "docs/validation/job-reviews/all-examples/2026-10-19-weekly/evidence/integrated-process.txt",
+      "snapshot_sha256": "a9c1ce73caed5deccdc1637a2134477b04897a14e031c2f9c163afd329f2c5c7",
+      "text_snapshot": "docs/validation/job-reviews/all-examples/2026-10-19-weekly/evidence/integrated-process.txt",
+      "evidence_gates": {
+        "employer": true,
+        "substantive_duties": true,
+        "location": "unknowns explicit in copy",
+        "status_attribution": true,
+        "material_contradictions": "bounded in limitations"
+      },
+      "score_dimensions": [
+        4,
+        3,
+        2
+      ],
+      "score": 9,
+      "score_rationale": [
+        "Direct connection to the treatment-system story.",
+        "Specific treatment, design-deliverable and multidisciplinary engineering work.",
+        "Useful senior comparison; lower marginal value alongside another water role."
+      ],
+      "existing_role_ids": [
+        "work-process"
+      ],
+      "discover_integration": "Connect to existing process-engineering card 07 via its role alias and the Integrated example; preserve number.",
+      "implementation_state": "not implemented",
+      "limitation": "No publication date or deadline is stated in the inspected source. Dates in a filename are not a verified posting date. Recheck vacancy status before implementation."
+    },
+    {
+      "id": "OCT19-GPT1",
+      "copy_version": 1,
+      "decision": "pending",
+      "recommendation": "recommend",
+      "title": "E&HS Advisor (on-site)",
+      "employer": "Global Power Technologies",
+      "example_slug": "global-power-technologies",
+      "employer_note": "Featured employer; this posting does not establish assignment to the featured project.",
+      "location": "On-site; primary location unstated. Up to 40% travel to Bassano manufacturing.",
+      "seniority": "Experienced; 3–5 years of related experience, preferably manufacturing.",
+      "summary": "Use inspections and incident evidence to improve safety in manufacturing work.",
+      "duties": [
+        "Inspect hazards and investigate incidents.",
+        "Develop training, procedures and corrective actions.",
+        "Track safety indicators and support compliance audits."
+      ],
+      "skills": [
+        "Occupational Health and Safety or related post-secondary study; alternatives considered.",
+        "Related experience; professional safety designation is an asset.",
+        "Travel to Bassano; transport provided."
+      ],
+      "classroom_connection": "Adds the safety work around making power equipment. It is adjacent to the thermoelectric story, rather than a job applying the thermoelectric effect.",
+      "posting_url": "https://www.globalte.com/hubfs/E%26HS%20Advisor%20(on-site)_2026.pdf?hsLang=en",
+      "posting_id": null,
+      "source_check_date": "2026-10-19",
+      "captured_on": "2026-10-19",
+      "employer_published_on": null,
+      "application_deadline": null,
+      "vacancy_status": "unknown",
+      "status_checked_on": "2026-10-19",
+      "status_note": "Employer currently links this substantive PDF; application entry was not verified. Use as a historical/undated role example, not an open vacancy.",
+      "snapshot": "docs/validation/job-reviews/all-examples/2026-10-19-weekly/evidence/global-ehs.pdf",
+      "snapshot_sha256": "a77db08bc67ae0968c293e064990cf10cfb038fa60b18e2a071821a8c49eba0b",
+      "text_snapshot": "docs/validation/job-reviews/all-examples/2026-10-19-weekly/evidence/global-ehs.txt",
+      "evidence_gates": {
+        "employer": true,
+        "substantive_duties": true,
+        "location": "unknowns explicit in copy",
+        "status_attribution": true,
+        "material_contradictions": "bounded in limitations"
+      },
+      "score_dimensions": [
+        2,
+        3,
+        3
+      ],
+      "score": 8,
+      "score_rationale": [
+        "Adjacent manufacturing-safety connection, not direct thermoelectric science.",
+        "Explicit inspection, investigation and reporting tasks.",
+        "Adds a safety function and a different educational route."
+      ],
+      "existing_role_ids": [],
+      "discover_integration": "Potential new industrial-safety occupation. Existing mechanical/controls links are insufficient; draft/profile/artwork must be reviewed separately.",
+      "implementation_state": "not implemented",
+      "limitation": "No publication date or deadline is stated in the inspected source. Dates in a filename are not a verified posting date. Recheck vacancy status before implementation."
+    }
+  ],
+  "decisions": "all pending; content approval separate from publication"
+}

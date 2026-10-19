@@ -529,5 +529,152 @@ export const expandedDiscoverImages: DiscoverImage[] = [
     "src": "/images/discover/work-weather.webp",
     "width": 752,
     "height": 1344
-  }
+  },
+  // october19: reviewed new occupations; permanent numbers 58–70.
+  {
+    "roleId": "work-prosthetic-fabrication",
+    "organizationId": "clynch-prosthetics",
+    "title": "Prosthetic and orthotic technician",
+    "clue": "At a workbench, a person checks a shaped limb device against a model and a measurement sheet.",
+    "pathwayId": "oct19-route-prosthetic-tech",
+    "number": "58",
+    "src": "/images/discover/work-prosthetic-fabrication.webp",
+    "width": 752,
+    "height": 1344
+  },
+  {
+    "roleId": "work-prosthetic-clinical",
+    "organizationId": "clynch-prosthetics",
+    "title": "Prosthetist",
+    "clue": "A person and an adult client compare a trial limb device with notes about comfort and movement.",
+    "pathwayId": "oct19-route-prosthetic-clinical",
+    "number": "59",
+    "src": "/images/discover/work-prosthetic-clinical.webp",
+    "width": 752,
+    "height": 1344
+  },
+  {
+    "roleId": "work-prepress",
+    "organizationId": "mountain-view-printing",
+    "title": "Prepress and print-production design",
+    "clue": "A person compares a page layout on a monitor with a paper proof, colour patches and production notes.",
+    "pathwayId": "oct19-route-graphic",
+    "number": "60",
+    "src": "/images/discover/work-prepress.webp",
+    "width": 752,
+    "height": 1344
+  },
+  {
+    "roleId": "work-printing-press",
+    "organizationId": "mountain-view-printing",
+    "title": "Printing press operator",
+    "clue": "A person checks a coloured sheet beside a large machine while comparing it with a reference sample.",
+    "pathwayId": "oct19-route-press",
+    "number": "61",
+    "src": "/images/discover/work-printing-press.webp",
+    "width": 752,
+    "height": 1344,
+    "jobId": "CGY-087-J1"
+  },
+  {
+    "roleId": "work-recycling-operations",
+    "organizationId": "calgary-metal-recycling",
+    "title": "Metal-recycling operations",
+    "clue": "A person checks a load record beside bins holding different metal objects and a separate hold area.",
+    "pathwayId": "oct19-route-recycling",
+    "number": "62",
+    "src": "/images/discover/work-recycling-operations.webp",
+    "width": 752,
+    "height": 1344
+  },
+  {
+    "roleId": "work-aircraft-deicing",
+    "organizationId": "aeromag-calgary",
+    "title": "Aircraft deicing technician",
+    "clue": "From a protected work position, a person directs a spray toward a stationary aircraft wing in winter conditions.",
+    "pathwayId": "oct19-route-deicing",
+    "number": "63",
+    "src": "/images/discover/work-aircraft-deicing.webp",
+    "width": 752,
+    "height": 1344,
+    "jobId": "CGY-089-J1"
+  },
+  {
+    "roleId": "work-glazing",
+    "organizationId": "lux-windows",
+    "title": "Glazier and window-installation work",
+    "clue": "A person checks the alignment of a glass-and-frame unit in a building opening using a level and tape.",
+    "pathwayId": "oct19-route-glazier",
+    "number": "64",
+    "src": "/images/discover/work-glazing.webp",
+    "width": 752,
+    "height": 1344
+  },
+  {
+    "roleId": "work-blood-production",
+    "organizationId": "canadian-blood-services-calgary",
+    "title": "Blood-component production work",
+    "clue": "A person checks sealed red product bags, identification labels and a production record at a clean workstation.",
+    "pathwayId": "oct19-route-mla",
+    "number": "65",
+    "src": "/images/discover/work-blood-production.webp",
+    "width": 752,
+    "height": 1344
+  },
+  {
+    "roleId": "work-medical-laboratory",
+    "organizationId": "canadian-blood-services-calgary",
+    "title": "Medical laboratory technologist",
+    "clue": "A person compares labelled sample tubes, an instrument and a quality-control chart at a laboratory bench.",
+    "pathwayId": "oct19-route-mlt",
+    "number": "66",
+    "src": "/images/discover/work-medical-laboratory.webp",
+    "width": 752,
+    "height": 1344
+  },
+  {
+    "roleId": "work-valve-service",
+    "organizationId": "spartan-controls",
+    "title": "Valve service technician",
+    "clue": "A person examines a round metal flow-control body on a workbench beside disassembled parts and a test record.",
+    "pathwayId": "route-millwright",
+    "number": "67",
+    "src": "/images/discover/work-valve-service.webp",
+    "width": 752,
+    "height": 1344
+  },
+  {
+    "roleId": "work-electrician",
+    "organizationId": "ptw-panel-shop",
+    "title": "Electrician",
+    "clue": "A person checks wire connections in an unpowered cabinet against a circuit drawing and an inspection list.",
+    "pathwayId": "oct19-route-electrician",
+    "number": "68",
+    "src": "/images/discover/work-electrician.webp",
+    "width": 752,
+    "height": 1344
+  },
+  {
+    "roleId": "work-jewellery-design",
+    "organizationId": "marlow-design",
+    "title": "Jewellery designer",
+    "clue": "A person and a client compare a ring-shaped model with sketches and a three-dimensional image on a screen.",
+    "pathwayId": "oct19-route-jewellery",
+    "number": "69",
+    "src": "/images/discover/work-jewellery-design.webp",
+    "width": 752,
+    "height": 1344,
+    "jobId": "CGY-098-J1"
+  },
+  {
+    "roleId": "work-beekeeping",
+    "organizationId": "abc-bees",
+    "title": "Beekeeper",
+    "clue": "A person in protective clothing examines a frame beside a hive, flowering plants and an observation notebook.",
+    "pathwayId": "oct19-route-bees",
+    "number": "70",
+    "src": "/images/discover/work-beekeeping.webp",
+    "width": 752,
+    "height": 1344
+  },
 ];

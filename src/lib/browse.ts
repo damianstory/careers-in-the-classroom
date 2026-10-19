@@ -19,6 +19,22 @@ export * from "./browse-terms";
 // (the course door is the library filter). Computed on the server.
 
 const themeOf: Record<string, ThemeId> = {
+  "clynch-prosthetics": "making",
+  "westech-industrial": "sensing",
+  "alberta-cheese": "food",
+  "mountain-view-printing": "media",
+  "calgary-metal-recycling": "making",
+  "aeromag-calgary": "build",
+  "lux-windows": "build",
+  "magna-engineering": "water",
+  "canadian-blood-services-calgary": "making",
+  "enerflex": "energy",
+  "spartan-controls": "sensing",
+  "canada-malting": "food",
+  "ptw-panel-shop": "making",
+  "marlow-design": "making",
+  "abc-bees": "wildlife",
+
   standens: "making",
   opisystems: "food",
   nanotess: "making",
@@ -68,6 +84,20 @@ const themeOf: Record<string, ThemeId> = {
 };
 
 const familyOf: Record<string, FamilyId> = {
+  "work-prosthetic-fabrication": "trades",
+  "work-prosthetic-clinical": "health",
+  "work-prepress": "creative",
+  "work-printing-press": "trades",
+  "work-recycling-operations": "trades",
+  "work-aircraft-deicing": "trades",
+  "work-glazing": "trades",
+  "work-blood-production": "lab",
+  "work-medical-laboratory": "lab",
+  "work-valve-service": "trades",
+  "work-electrician": "trades",
+  "work-jewellery-design": "creative",
+  "work-beekeeping": "field",
+
   "work-manufacturing": "trades",
   "work-technical-support": "people",
   "work-logistics": "people",

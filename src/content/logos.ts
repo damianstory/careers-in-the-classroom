@@ -5,6 +5,142 @@ import type { OrganizationLogo } from "./types";
 // its site refuses automated requests) on 18 October 2026, cleaned and cropped but not redrawn or
 // recoloured. Provenance notes are in README.md under "Logo sources".
 export const organizationLogos: Record<string, OrganizationLogo> = {
+  "clynch-prosthetics": {
+  "src": "/images/logos/clynch-prosthetics.png",
+  "alt": "Clynch Prosthetics & Orthotics logo",
+  "width": 420,
+  "height": 193,
+  "onDark": false,
+  "sourceUrl": "https://clynchprosthetics.com/wp-content/uploads/2024/08/clynch-logo-short-dark.webp",
+  "retrieved": "2026-10-19"
+},
+  "westech-industrial": {
+  "src": "/images/logos/westech-industrial.png",
+  "alt": "Westech Industrial logo",
+  "width": 304,
+  "height": 221,
+  "onDark": true,
+  "sourceUrl": "https://westech-ind.com/wp-content/uploads/2020/01/Westech-White_Web-Header-Logo.png",
+  "retrieved": "2026-10-19"
+},
+  "alberta-cheese": {
+  "src": "/images/logos/alberta-cheese.png",
+  "alt": "Alberta Cheese Company / Franco’s (Gay Lea) logo",
+  "width": 319,
+  "height": 260,
+  "onDark": false,
+  "sourceUrl": "https://albertacheese.com/images/alberta_cheese-logo.png",
+  "retrieved": "2026-10-19"
+},
+  "mountain-view-printing": {
+  "src": "/images/logos/mountain-view-printing.png",
+  "alt": "Mountain View Printing logo",
+  "width": 420,
+  "height": 109,
+  "onDark": false,
+  "sourceUrl": "https://mvprinters.com/wp-content/themes/mvprinters/assets/img/mountain-view-logo-horizontal.svg",
+  "retrieved": "2026-10-19"
+},
+  "calgary-metal-recycling": {
+  "src": "/images/logos/calgary-metal-recycling.png",
+  "alt": "Calgary Metal Recycling logo",
+  "width": 420,
+  "height": 186,
+  "onDark": false,
+  "sourceUrl": "https://calgarymetal.com/wp-content/themes/cmri/resource/img/calgary-metal-logo.svg",
+  "retrieved": "2026-10-19"
+},
+  "aeromag-calgary": {
+  "src": "/images/logos/aeromag-calgary.png",
+  "alt": "Aeromag — Calgary YYC station logo",
+  "width": 114,
+  "height": 100,
+  "onDark": false,
+  "sourceUrl": "https://aeromag.ca/wp-content/themes/aeromag/public/build/images/logo-graphic.901cc6a0.svg",
+  "retrieved": "2026-10-19"
+},
+  "magna-engineering": {
+  "src": "/images/logos/magna-engineering.png",
+  "alt": "MAGNA Engineering logo",
+  "width": 420,
+  "height": 97,
+  "onDark": false,
+  "sourceUrl": "https://images.squarespace-cdn.com/content/v1/6425d50c528f4a0e97a3e1eb/b855c12f-c73d-49c1-8e9b-afd79334d199/Magna_Logo_Colour_CMYK_small.png?format=1500w",
+  "retrieved": "2026-10-19"
+},
+  "canadian-blood-services-calgary": {
+  "src": "/images/logos/canadian-blood-services-calgary.png",
+  "alt": "Canadian Blood Services — Calgary operations logo",
+  "width": 420,
+  "height": 83,
+  "onDark": false,
+  "sourceUrl": "https://www.blood.ca/themes/custom/cbs_bootstrap_sass/CBS_Logo_descriptors_CMYK.svg",
+  "retrieved": "2026-10-19"
+},
+  "enerflex": {
+  "src": "/images/logos/enerflex.png",
+  "alt": "Enerflex logo",
+  "width": 395,
+  "height": 100,
+  "onDark": true,
+  "sourceUrl": "https://www.enerflex.com/wp-content/uploads/enerflex-logo-1-1.png",
+  "retrieved": "2026-10-19"
+},
+  "spartan-controls": {
+  "src": "/images/logos/spartan-controls.png",
+  "alt": "Spartan Controls logo",
+  "width": 286,
+  "height": 66,
+  "onDark": false,
+  "sourceUrl": "https://www.spartancontrols.com/getContentAsset/27614485-8e6c-4f6c-bb77-40e4d34d74de/dfc3d011-8f63-43f6-9ed8-4b444333a1d0/Spartan-Controls-logo.svg?language=en&v=1790776123899",
+  "retrieved": "2026-10-19"
+},
+  "ptw-panel-shop": {
+  "src": "/images/logos/ptw-panel-shop.png",
+  "alt": "PTW Energy Services — Calgary panel shop logo",
+  "width": 420,
+  "height": 248,
+  "onDark": true,
+  "sourceUrl": "https://www.ptwenergy.com/wp-content/uploads/2024/06/PTW-Logo-white.png",
+  "retrieved": "2026-10-19"
+},
+  "marlow-design": {
+  "src": "/images/logos/marlow-design.png",
+  "alt": "Marlow Design logo",
+  "width": 239,
+  "height": 119,
+  "onDark": false,
+  "sourceUrl": "https://marlowdesign.ca/cdn/shop/files/10years-marlowdesignlogo.png?v=1739313049&width=254",
+  "retrieved": "2026-10-19"
+},
+  "abc-bees": {
+  "src": "/images/logos/abc-bees.png",
+  "alt": "ABC Bees / Apiaries and Bees for Communities logo",
+  "width": 420,
+  "height": 87,
+  "onDark": false,
+  "sourceUrl": "https://import.cdn.thinkific.com/618441%2Fcustom_site_themes%2Fid%2FEUTDLxGwR5SKl6WHGcnq_colour-horizontal-logo.png",
+  "retrieved": "2026-10-19"
+},
+  "lux-windows": {
+  "src": "/images/logos/lux-windows.png",
+  "alt": "Lux Windows & Doors logo",
+  "width": 420,
+  "height": 148,
+  "onDark": false,
+  "sourceUrl": "https://www.luxwindows.com/assets/build/img/logos/2025-Lux-55YearsLogo-RGB-Black-Website.svg",
+  "retrieved": "2026-10-19"
+},
+  "canada-malting": {
+  "src": "/images/logos/canada-malting.png",
+  "alt": "Canada Malting logo",
+  "width": 300,
+  "height": 163,
+  "onDark": false,
+  "sourceUrl": "https://canadamalting.com/wp-content/themes/canadamalting/assets/grain-text.png",
+  "retrieved": "2026-10-19"
+},
+
   "standens": {
   "src": "/images/logos/standens.png",
   "alt": "Standen’s (IMT) logo",

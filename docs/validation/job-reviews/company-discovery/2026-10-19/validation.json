@@ -1,0 +1,18 @@
+{
+  "validated_on": "2026-10-19",
+  "company_candidates": 20,
+  "qualified_at_proposal_level": 19,
+  "score_8_plus": 15,
+  "reserves": 4,
+  "held": 1,
+  "new_job_cards": 5,
+  "all25_decisions_pending": true,
+  "previous_registry_fields_preserved": true,
+  "all_retained_snapshot_hashes_verified": true,
+  "calgary_blood_pdf_complete_bytes": 13089320,
+  "markdown_local_links_resolve": true,
+  "app_changes": false,
+  "paid_cost_usd": 0,
+  "outstanding_usd": 0,
+  "validation_scope": "Research artifacts only; no application tests needed or run."
+}

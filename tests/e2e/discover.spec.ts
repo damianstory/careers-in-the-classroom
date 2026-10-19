@@ -302,6 +302,8 @@ test.describe("Discover classroom flow", () => {
   });
 
   test("every card has the same guess cover and reveals an unobstructed occupation", async ({ page, requests }) => {
+    // Budget the whole-library sweep by card count; individual visibility waits remain unchanged.
+    test.setTimeout(cards.length * 2_000);
     void requests;
     const coverRatios: number[] = [];
     for (const card of cards) {

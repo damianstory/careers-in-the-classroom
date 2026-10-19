@@ -6,6 +6,482 @@ import type { DatedSource } from "./types";
 const checkedOn = "2026-09-25";
 
 export const registry: DatedSource[] = [
+  { id: "oct19-cbs-home", label: "Canadian Blood Services — official website", url: "https://www.blood.ca/en", checkedOn: "2026-10-19" },
+  {
+    "id": "oct19-source-1",
+    "label": "clynchprosthetics.com — official website",
+    "url": "https://clynchprosthetics.com/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-2",
+    "label": "clynchprosthetics.com — prosthetic solutions",
+    "url": "https://clynchprosthetics.com/prosthetic-solutions/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-3",
+    "label": "opcanada.ca — Accredited Programs",
+    "url": "https://opcanada.ca/page/Accredited_Programs",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-4",
+    "label": "opcanada.ca — Residency Program",
+    "url": "https://opcanada.ca/page/Residency_Program",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-5",
+    "label": "bcit.ca — prosthetics and orthotics diploma full time 7100diplt",
+    "url": "https://www.bcit.ca/programs/prosthetics-and-orthotics-diploma-full-time-7100diplt/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-6",
+    "label": "westech-ind.com — quality measurement solutions",
+    "url": "https://westech-ind.com/quality-measurement-solutions/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-7",
+    "label": "westech-ind.com — service support",
+    "url": "https://westech-ind.com/service-support/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-8",
+    "label": "westech-ind.com — careers",
+    "url": "https://westech-ind.com/about/careers/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-9",
+    "label": "albertacheese.com — official website",
+    "url": "https://albertacheese.com/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-10",
+    "label": "agriculture.canada.ca — canadian cheese manufacturers directory",
+    "url": "https://agriculture.canada.ca/en/canadas-agriculture-sectors/animal-industry/canadian-dairy-information-centre/canadian-cheese-manufacturers-directory?wbdisable=true",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-11",
+    "label": "gaylea.com — alberta cheese",
+    "url": "https://www.gaylea.com/news/foodservice/alberta-cheese",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-12",
+    "label": "books.lib.uoguelph.ca — 8 1 milk structure",
+    "url": "https://books.lib.uoguelph.ca/cheesemakingtechnologyebook/chapter/8-1-milk-structure/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-13",
+    "label": "mvprinters.com — capabilities",
+    "url": "https://mvprinters.com/capabilities/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-14",
+    "label": "mvprinters.com — careers",
+    "url": "https://mvprinters.com/careers/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-15",
+    "label": "alis.alberta.ca — printing press operator",
+    "url": "https://alis.alberta.ca/occinfo/occupations-in-alberta/occupation-profiles/printing-press-operator/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-16",
+    "label": "sait.ca — interactive design graphic design",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/interactive-design-graphic-design",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-17",
+    "label": "calgarymetal.com — official website",
+    "url": "https://calgarymetal.com/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-18",
+    "label": "calgarymetal.com — material acceptance",
+    "url": "https://calgarymetal.com/calgary-metal-recycling-services/material-acceptance/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-19",
+    "label": "calgarymetal.com — ferrous metal recycling",
+    "url": "https://calgarymetal.com/calgary-metal-buying-and-selling/ferrous-metal-recycling/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-20",
+    "label": "calgarymetal.com — non ferrous metal recycling",
+    "url": "https://calgarymetal.com/calgary-metal-buying-and-selling/non-ferrous-metal-recycling/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-21",
+    "label": "calgary.ca — metal scrap metal and unusable metal items.html",
+    "url": "https://www.calgary.ca/waste/what-goes-where/metal-scrap-metal-and-unusable-metal-items.html",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-22",
+    "label": "aeromag.ca — en",
+    "url": "https://aeromag.ca/en/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-23",
+    "label": "aeromag.ca — aircraft deicing",
+    "url": "https://aeromag.ca/en/services/aircraft-deicing/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-24",
+    "label": "aeromag.ca — careers",
+    "url": "https://aeromag.ca/en/careers/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-25",
+    "label": "aeromag.ca — seasonal deicing technician",
+    "url": "https://aeromag.ca/en/careers/seasonal-deicing-technician?airport=YYC&position=Seasonal%20Deicing%20Technician",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-26",
+    "label": "tc.canada.ca — guidelines aircraft ground icing operations tp 14052",
+    "url": "https://tc.canada.ca/en/aviation/publications/guidelines-aircraft-ground-icing-operations-tp-14052",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-27",
+    "label": "luxwindows.com — official website",
+    "url": "https://www.luxwindows.com/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-28",
+    "label": "luxwindows.com — pvc",
+    "url": "https://www.luxwindows.com/windows/pvc/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-29",
+    "label": "luxwindows.com — window installation",
+    "url": "https://www.luxwindows.com/renovations/window-installation/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-30",
+    "label": "luxwindows.com — renovation process",
+    "url": "https://www.luxwindows.com/renovations/renovation-process/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-31",
+    "label": "luxwindows.com — energy savings",
+    "url": "https://www.luxwindows.com/glass-performance/energy-savings/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-32",
+    "label": "sait.ca — glazier",
+    "url": "https://www.sait.ca/apprenticeships-and-trades/programs/glazier",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-33",
+    "label": "magnaengineering.ca — official website",
+    "url": "https://www.magnaengineering.ca/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-34",
+    "label": "magnaengineering.ca — resources",
+    "url": "https://www.magnaengineering.ca/resources",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-35",
+    "label": "magnaengineering.ca — livingston stormpark",
+    "url": "https://www.magnaengineering.ca/magnablog/livingston-stormpark",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-36",
+    "label": "magnaengineering.ca — meet the team",
+    "url": "https://www.magnaengineering.ca/meet-the-team",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-37",
+    "label": "magnaengineering.ca — careers",
+    "url": "https://www.magnaengineering.ca/careers",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-38",
+    "label": "magnaengineering.ca — intermediate stormwater engineer 1",
+    "url": "https://www.magnaengineering.ca/intermediate-stormwater-engineer-1",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-39",
+    "label": "blood.ca — M2053 CalgaryBook 2022 02 11 EN.pdf",
+    "url": "https://www.blood.ca/sites/default/files/M2053_CalgaryBook_2022-02-11-EN.pdf",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-40",
+    "label": "blood.ca — designed excellence calgary operations facility book",
+    "url": "https://www.blood.ca/en/about-us/publications-and-reports/designed-excellence-calgary-operations-facility-book",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-41",
+    "label": "blood.ca — audits 2025 2026",
+    "url": "https://www.blood.ca/en/about-us/reports-and-publications/audits-2025-2026",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-42",
+    "label": "blood.ca — laboratory services",
+    "url": "https://www.blood.ca/en/hospital-services/laboratory-services",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-43",
+    "label": "sait.ca — medical laboratory technology",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/medical-laboratory-technology",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-44",
+    "label": "sait.ca — medical laboratory assistant",
+    "url": "https://www.sait.ca/programs-and-courses/certificates/medical-laboratory-assistant",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-45",
+    "label": "enerflex.com — contact us",
+    "url": "https://www.enerflex.com/contact-us/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-46",
+    "label": "enerflex.com — company",
+    "url": "https://www.enerflex.com/company/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-47",
+    "label": "enerflex.com — careers",
+    "url": "https://www.enerflex.com/careers/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-48",
+    "label": "enerflex.com — compression",
+    "url": "https://www.enerflex.com/equipment/compression/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-49",
+    "label": "spartancontrols.com — valve services",
+    "url": "https://www.spartancontrols.com/services/valve-services/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-50",
+    "label": "spartancontrols.com — careers",
+    "url": "https://www.spartancontrols.com/careers/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-51",
+    "label": "canadamalting.com — official website",
+    "url": "https://canadamalting.com/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-52",
+    "label": "canadamalting.com — contactez nous",
+    "url": "https://canadamalting.com/fr/contactez-nous/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-53",
+    "label": "canadamalting.com — process",
+    "url": "https://canadamalting.com/process/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-54",
+    "label": "canadamalting.com — careers",
+    "url": "https://canadamalting.com/careers/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-55",
+    "label": "ualberta.ca — bachelor of science in nutrition and food science food science and technology specialization.html",
+    "url": "https://www.ualberta.ca/en/undergraduate-programs/bachelor-of-science-in-nutrition-and-food-science-food-science-and-technology-specialization.html",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-56",
+    "label": "ptwenergy.com — ptw business feature ptw panel shop",
+    "url": "https://www.ptwenergy.com/ptw-business-feature-ptw-panel-shop/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-57",
+    "label": "ptwenergy.com — ptw calgary panel shop panel construction",
+    "url": "https://www.ptwenergy.com/ptw-calgary-panel-shop-panel-construction/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-58",
+    "label": "ptwenergy.com — fabrication services",
+    "url": "https://www.ptwenergy.com/fabrication-services/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-59",
+    "label": "ptwenergy.com — careers",
+    "url": "https://www.ptwenergy.com/careers/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-60",
+    "label": "sait.ca — electrician",
+    "url": "https://www.sait.ca/apprenticeships-and-trades/programs/electrician",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-61",
+    "label": "marlowdesign.ca — official website",
+    "url": "https://marlowdesign.ca/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-62",
+    "label": "marlowdesign.ca — faq",
+    "url": "https://marlowdesign.ca/pages/faq",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-63",
+    "label": "marlowdesign.ca — design process",
+    "url": "https://marlowdesign.ca/pages/design-process",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-64",
+    "label": "marlowdesign.ca — jewellery designer full time careers",
+    "url": "https://marlowdesign.ca/pages/jewellery-designer-full-time-careers",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-65",
+    "label": "auarts.ca — jewellery and metals",
+    "url": "https://www.auarts.ca/learn-with-us/program-areas/jewellery-and-metals",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-66",
+    "label": "abcbees.ca — official website",
+    "url": "https://abcbees.ca/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-67",
+    "label": "abcbees.ca — calgary nucs",
+    "url": "https://abcbees.ca/product/calgary-nucs/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-68",
+    "label": "abcbees.ca — courses",
+    "url": "https://abcbees.ca/courses/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-69",
+    "label": "abcbees.ca — beekeeping seasonal indicators",
+    "url": "https://abcbees.ca/blog/beekeeping-seasonal-indicators/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-70",
+    "label": "abcbees.ca — ongoing beekeeping tasks",
+    "url": "https://abcbees.ca/blog/ongoing-beekeeping-tasks/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-71",
+    "label": "abcbees.buzz — level 1 beekeeping",
+    "url": "https://www.abcbees.buzz/courses/level-1-beekeeping",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-72",
+    "label": "clynchprosthetics.com — resources",
+    "url": "https://clynchprosthetics.com/resources/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-73",
+    "label": "opcanada.ca — Registration",
+    "url": "https://opcanada.ca/page/Registration",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-74",
+    "label": "aeromag.ca — about us",
+    "url": "https://aeromag.ca/en/about-us/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-75",
+    "label": "ptwenergy.com — electrical construction",
+    "url": "https://www.ptwenergy.com/tag/electrical-construction/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-76",
+    "label": "marlowdesign.ca — careers at marlow design",
+    "url": "https://marlowdesign.ca/pages/careers-at-marlow-design",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-77",
+    "label": "abcbees.ca — beekeeping regulations",
+    "url": "https://abcbees.ca/blog/beekeeping-regulations/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-78",
+    "label": "alis.alberta.ca — municipal recycling waste handler",
+    "url": "https://alis.alberta.ca/occinfo/occupations-in-alberta/occupation-profiles/municipal-recycling-waste-handler/",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-source-79",
+    "label": "George Brown Polytechnic — Orthotic/Prosthetic Technician S102",
+    "url": "https://www.georgebrown.ca/programs/orthotic-prosthetic-technician-program-s102",
+    "checkedOn": "2026-10-19"
+  },
+
   {"id": "oct18-home-opisystems", "label": "OPIsystems (OPI) — official website", "url": "https://opisystems.com/", "checkedOn": "2026-10-18"},
   {"id": "oct18-home-nanotess", "label": "NanoTess — official website", "url": "https://nanotess.com/", "checkedOn": "2026-10-18"},
   {"id": "oct18-home-efw-radiology", "label": "EFW Radiology — official website", "url": "https://efw.ca/", "checkedOn": "2026-10-18"},

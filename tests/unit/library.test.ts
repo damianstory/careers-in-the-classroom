@@ -31,7 +31,7 @@ describe("buildLibrary", () => {
 
   it("puts the unit's prepared results first, with why-match and a context link", () => {
     const lib = buildLibrary({ courseId: "physics-30", unitId: "p30c" });
-    expect(slugs(lib, "fits")).toEqual(["ghgsat", "ghgsat-second-generation", "geologicai", "phil-sebastian", "joe-media-group", "hifi-engineering"]);
+    expect(slugs(lib, "fits")).toEqual(["ghgsat", "ghgsat-second-generation", "geologicai", "phil-sebastian", "joe-media-group", "hifi-engineering", "mountain-view-printing"]);
     const first = lib.sections[0].items[0];
     expect(first.type === "example" && first.href).toBe("/examples/ghgsat?course=physics-30&unit=p30c");
     expect(first.type === "example" && first.why).toMatch(/spectrometer/);
@@ -78,7 +78,7 @@ describe("buildLibrary", () => {
 describe("coverage", () => {
   it("lists ready units with counts and keeps unprepared ones selectable", () => {
     const opts = unitOptions("physics-30");
-    expect(opts.find((o) => o.id === "p30c")).toMatchObject({ ready: true, note: "5 examples" });
+    expect(opts.find((o) => o.id === "p30c")).toMatchObject({ ready: true, note: "6 examples" });
     expect(opts.find((o) => o.id === "p30a")).toMatchObject({ ready: false, note: undefined });
     expect(coverage("physics-30")).toEqual({ ready: 2, total: 4 });
     expect(unitOptions("biology-30").find((o) => o.id === "b30c")).toMatchObject({ ready: true });

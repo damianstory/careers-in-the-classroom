@@ -1,0 +1,19 @@
+{
+  "checked_on": "2026-10-19",
+  "endpoint": {
+    "id": "firecrawl-scrape",
+    "name": "Firecrawl / Scrape a web page",
+    "provider": "Firecrawl",
+    "capability": "web.scrape.structured",
+    "executionMode": "sync",
+    "price": {
+      "currency": "USD",
+      "perCall": 0.005,
+      "estimateFormula": "$0.0050 per call"
+    },
+    "credential": "platform_own_key_optional"
+  },
+  "estimatedMaxCost": 0.005,
+  "credential": "platform_own_key_optional",
+  "bound": "Reserve 3x $0.005; HTML markdown only, parsers [], basic proxy, no fallback/retry, one URL; current public guide and API reference read."
+}

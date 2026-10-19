@@ -1,0 +1,1487 @@
+{
+  "schema_version": 1,
+  "occurrence": "2026-10-19",
+  "brief": "20 new Calgary candidates; research/review only",
+  "candidates": [
+    {
+      "id": "CGY-081",
+      "version": 1,
+      "company": "Clynch Prosthetics & Orthotics",
+      "canonical_domain": "clynchprosthetics.com",
+      "aliases": [],
+      "sector": "Assistive devices and rehabilitation",
+      "calgary_evidence": "Calgary clinic and on-site fabrication laboratory; evaluation, casting and trial fitting described.",
+      "presence_type": "Calgary city work as qualified above; wider geography kept explicit",
+      "work": "Measure and cast; fabricate a trial device; adjust fit with the client.",
+      "proposed_question": "How can an artificial limb fit one person and move with them?",
+      "role_leads": "prosthetic technician; prosthetist (separate clinical qualification)",
+      "role_status": "Source-described work areas and editorial task leads; no current vacancy or project assignment implied.",
+      "sources": [
+        "https://clynchprosthetics.com/",
+        "https://clynchprosthetics.com/prosthetic-solutions/"
+      ],
+      "source_keys": [
+        "clynch",
+        "clynch-solutions"
+      ],
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-19/source-captures.json",
+      "source_check_date": "2026-10-19",
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        4,
+        3,
+        3
+      ],
+      "score": 10,
+      "score_rationale": {
+        "classroom": "How can an artificial limb fit one person and move with them? — editorial connection to the sourced work, not a formal curriculum endorsement.",
+        "concrete_work": "Measure and cast; fabricate a trial device; adjust fit with the client.",
+        "added_value": "Adds assistive-device design and hands-on fabrication to medical imaging and industrial design."
+      },
+      "recommendation": "shortlist",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-19",
+      "last_attempted": "2026-10-19",
+      "last_researched": "2026-10-19",
+      "screening_completed_on": "2026-10-19",
+      "curriculum_status": "Provisional concept connection only; exact Alberta course outcomes and unit placement must be verified before full-copy approval.",
+      "gaps": "Resolve clinical certification/residency requirements and select one documented device; do not claim generic engineering study qualifies a clinician.",
+      "net_difference": "Adds assistive-device design and hands-on fabrication to medical imaging and industrial design.",
+      "pathway_leads": [
+        {
+          "name": "George Brown Orthotic/Prosthetic Technician S102",
+          "url": "https://www.georgebrown.ca/programs/orthotic-prosthetic-technician-program-s102",
+          "status": "Official provider page inspected through free reader 19 Oct; Toronto fabrication route, distinct from clinical certification; not a promise of admission or a Calgary job."
+        }
+      ],
+      "discover_opportunity": "New prosthetic-fabrication occupation; clinical prosthetist needs a separate credential decision.",
+      "planned_buildout": {
+        "Company": "Calgary clinic and on-site fabrication laboratory; evaluation, casting and trial fitting described.",
+        "Roles": "prosthetic technician; prosthetist (separate clinical qualification)",
+        "Pathways": "Use the sourced lead as a starting point; resolve occupation-specific credentials and employer requirements.",
+        "Classroom": "How can an artificial limb fit one person and move with them?",
+        "Discover": "New prosthetic-fabrication occupation; clinical prosthetist needs a separate credential decision."
+      },
+      "full_example_status": "full draft prepared; separate copy review pending",
+      "implementation_status": "not implemented; not authorized",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-19/review.md",
+      "decision_scope": "company/story proposal for full research only",
+      "last_completed_on": "2026-10-19",
+      "deferred_reason": null,
+      "reviewer": "user",
+      "decision_date": "2026-10-19",
+      "decision_instruction": "Approve all 15 companies that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later.",
+      "full_copy_decision": "pending",
+      "full_example_packet": "docs/validation/full-examples/2026-10-19/review.md",
+      "full_copy_candidate": "CGY-081-FULL",
+      "full_copy_version": 1,
+      "last_full_researched_on": "2026-10-19"
+    },
+    {
+      "id": "CGY-082",
+      "version": 1,
+      "company": "Orthotics In Motion",
+      "canonical_domain": "orthoticsinmotion.com",
+      "aliases": [],
+      "sector": "Pedorthics and footwear",
+      "calgary_evidence": "Calgary address, certified pedorthist and on-site orthotics laboratory described.",
+      "presence_type": "Calgary city work as qualified above; wider geography kept explicit",
+      "work": "Assess lower-limb mechanics and footwear; construct and modify orthotic devices.",
+      "proposed_question": "How can the shape of an insole change the way a foot is supported?",
+      "role_leads": "certified pedorthist; fabrication support",
+      "role_status": "Source-described work areas and editorial task leads; no current vacancy or project assignment implied.",
+      "sources": [
+        "https://www.orthoticsinmotion.com/"
+      ],
+      "source_keys": [
+        "orthotics"
+      ],
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-19/source-captures.json",
+      "source_check_date": "2026-10-19",
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        3,
+        2,
+        2
+      ],
+      "score": 7,
+      "score_rationale": {
+        "classroom": "How can the shape of an insole change the way a foot is supported? — editorial connection to the sourced work, not a formal curriculum endorsement.",
+        "concrete_work": "Assess lower-limb mechanics and footwear; construct and modify orthotic devices.",
+        "added_value": "Useful applied-anatomy comparison, but overlaps both Clynch and the existing bootmaking story."
+      },
+      "recommendation": "reserve",
+      "decision": "hold",
+      "workflow_state": "held",
+      "first_discovered": "2026-10-19",
+      "last_attempted": "2026-10-19",
+      "last_researched": "2026-10-19",
+      "screening_completed_on": "2026-10-19",
+      "curriculum_status": "Provisional concept connection only; exact Alberta course outcomes and unit placement must be verified before full-copy approval.",
+      "gaps": "Pedorthic certification is different from prosthetic technician training; verify a specific accredited route before full copy.",
+      "net_difference": "Useful applied-anatomy comparison, but overlaps both Clynch and the existing bootmaking story.",
+      "pathway_leads": [],
+      "discover_opportunity": "Compare with bootmaking card 20; defer a separate card until the clinical distinction adds value.",
+      "planned_buildout": {
+        "Company": "Calgary address, certified pedorthist and on-site orthotics laboratory described.",
+        "Roles": "certified pedorthist; fabrication support",
+        "Pathways": "Use the sourced lead as a starting point; resolve occupation-specific credentials and employer requirements.",
+        "Classroom": "How can the shape of an insole change the way a foot is supported?",
+        "Discover": "Compare with bootmaking card 20; defer a separate card until the clinical distinction adds value."
+      },
+      "full_example_status": "not researched or drafted; proposal selection only",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-19/review.md",
+      "decision_scope": "company/story proposal for full research only",
+      "pathway_gap": "Research a pedorthic education/certification route; prosthetic technician S102 is not evidence of pedorthic qualification.",
+      "last_completed_on": "2026-10-19",
+      "deferred_reason": "User requested hold for later. Pedorthic certification is different from prosthetic technician training; verify a specific accredited route before full copy.",
+      "reviewer": "user",
+      "decision_date": "2026-10-19",
+      "decision_instruction": "Approve all 15 companies that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later."
+    },
+    {
+      "id": "CGY-083",
+      "version": 1,
+      "company": "Westech Industrial",
+      "canonical_domain": "westech-ind.com",
+      "aliases": [],
+      "sector": "Industrial measurement and integration",
+      "calgary_evidence": "Company page says measurement buildings/skids can be built in its Calgary yard; integration and service work described.",
+      "presence_type": "Calgary city work as qualified above; wider geography kept explicit",
+      "work": "Integrate pressure, temperature and analytical measurement equipment; commission and maintain systems.",
+      "proposed_question": "How do you know an industrial reading is accurate enough to act on?",
+      "role_leads": "instrumentation technician; integration engineer",
+      "role_status": "Source-described work areas and editorial task leads; no current vacancy or project assignment implied.",
+      "sources": [
+        "https://westech-ind.com/quality-measurement-solutions/",
+        "https://tecowestinghouse.ca/contact/"
+      ],
+      "source_keys": [
+        "westech",
+        "emsl-partner"
+      ],
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-19/source-captures.json",
+      "source_check_date": "2026-10-19",
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        4,
+        3,
+        2
+      ],
+      "score": 9,
+      "score_rationale": {
+        "classroom": "How do you know an industrial reading is accurate enough to act on? — editorial connection to the sourced work, not a formal curriculum endorsement.",
+        "concrete_work": "Integrate pressure, temperature and analytical measurement equipment; commission and maintain systems.",
+        "added_value": "Adds calibration/integration comparison to OPI and Hifi sensors."
+      },
+      "recommendation": "recommend",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-19",
+      "last_attempted": "2026-10-19",
+      "last_researched": "2026-10-19",
+      "screening_completed_on": "2026-10-19",
+      "curriculum_status": "Provisional concept connection only; exact Alberta course outcomes and unit placement must be verified before full-copy approval.",
+      "gaps": "Choose one measurement system and verify the technician/engineering preparation; do not imply all work occurs in Calgary.",
+      "net_difference": "Adds calibration/integration comparison to OPI and Hifi sensors.",
+      "pathway_leads": [
+        {
+          "name": "SAIT Instrumentation Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/instrumentation-engineering-technology",
+          "status": "Original programme inspected 19 October: measurement, calibration and process-control training. Diploma route is distinct from trade certification and does not establish an employer requirement."
+        }
+      ],
+      "discover_opportunity": "Extend instrumentation card 13 and applications/scientific support card 46 where role evidence supports it.",
+      "planned_buildout": {
+        "Company": "Company page says measurement buildings/skids can be built in its Calgary yard; integration and service work described.",
+        "Roles": "instrumentation technician; integration engineer",
+        "Pathways": "Use the sourced lead as a starting point; resolve occupation-specific credentials and employer requirements.",
+        "Classroom": "How do you know an industrial reading is accurate enough to act on?",
+        "Discover": "Extend instrumentation card 13 and applications/scientific support card 46 where role evidence supports it."
+      },
+      "full_example_status": "full draft prepared; separate copy review pending",
+      "implementation_status": "not implemented; not authorized",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-19/review.md",
+      "decision_scope": "company/story proposal for full research only",
+      "last_completed_on": "2026-10-19",
+      "deferred_reason": null,
+      "reviewer": "user",
+      "decision_date": "2026-10-19",
+      "decision_instruction": "Approve all 15 companies that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later.",
+      "full_copy_decision": "pending",
+      "full_example_packet": "docs/validation/full-examples/2026-10-19/review.md",
+      "full_copy_candidate": "CGY-083-FULL",
+      "full_copy_version": 1,
+      "last_full_researched_on": "2026-10-19"
+    },
+    {
+      "id": "CGY-084",
+      "version": 1,
+      "company": "Electric Motor Service Ltd. (EMSL)",
+      "canonical_domain": "emsl.ca",
+      "aliases": [],
+      "sector": "Electric motors",
+      "calgary_evidence": "Manufacturer partner directory names a Calgary service/distributor location; original site returned 403 and no substantive original duties were recovered.",
+      "presence_type": "Calgary city work as qualified above; wider geography kept explicit",
+      "work": "Motor supply/service is a lead only; repair/rewinding duties remain unverified.",
+      "proposed_question": "What could testing tell you about a motor that has stopped working?",
+      "role_leads": "motor service technician (unverified lead)",
+      "role_status": "Source-described work areas and editorial task leads; no current vacancy or project assignment implied.",
+      "sources": [
+        "https://emsl.ca/",
+        "https://tecowestinghouse.ca/contact/"
+      ],
+      "source_keys": [
+        "emsl",
+        "emsl-partner"
+      ],
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-19/source-captures.json",
+      "source_check_date": "2026-10-19",
+      "evidence_gate": "hold: original duties and current operation not sufficiently verified",
+      "score_dimensions": null,
+      "score": null,
+      "score_rationale": {
+        "classroom": "What could testing tell you about a motor that has stopped working? — editorial connection to the sourced work, not a formal curriculum endorsement.",
+        "concrete_work": "Motor supply/service is a lead only; repair/rewinding duties remain unverified.",
+        "added_value": "Potential repair/trade story, but evidence gates are not yet met."
+      },
+      "recommendation": "hold",
+      "decision": "hold",
+      "workflow_state": "held",
+      "first_discovered": "2026-10-19",
+      "last_attempted": "2026-10-19",
+      "last_researched": null,
+      "screening_completed_on": "2026-10-19",
+      "curriculum_status": "Provisional concept connection only; exact Alberta course outcomes and unit placement must be verified before full-copy approval.",
+      "gaps": "Recover current original operation identity and actual duties; do not substitute a similarly named motor company.",
+      "net_difference": "Potential repair/trade story, but evidence gates are not yet met.",
+      "pathway_leads": [],
+      "discover_opportunity": "Hold; do not create a motor-repair card from the distributor entry alone.",
+      "planned_buildout": {
+        "Company": "Manufacturer partner directory names a Calgary service/distributor location; original site returned 403 and no substantive original duties were recovered.",
+        "Roles": "motor service technician (unverified lead)",
+        "Pathways": "Use the sourced lead as a starting point; resolve occupation-specific credentials and employer requirements.",
+        "Classroom": "What could testing tell you about a motor that has stopped working?",
+        "Discover": "Hold; do not create a motor-repair card from the distributor entry alone."
+      },
+      "full_example_status": "not researched or drafted; proposal selection only",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-19/review.md",
+      "decision_scope": "company/story proposal for full research only",
+      "pathway_gap": "Motor-repair/electrical trade route unresolved until actual employer tasks are recovered.",
+      "last_completed_on": null,
+      "deferred_reason": "User requested hold for later. Recover current original operation identity and actual duties; do not substitute a similarly named motor company.",
+      "reviewer": "user",
+      "decision_date": "2026-10-19",
+      "decision_instruction": "Approve all 15 companies that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later."
+    },
+    {
+      "id": "CGY-085",
+      "version": 1,
+      "company": "Alberta Cheese Company / Franco’s (Gay Lea)",
+      "canonical_domain": "albertacheese.com",
+      "aliases": [
+        "Franco’s",
+        "Gay Lea Alberta Cheese"
+      ],
+      "sector": "Dairy manufacturing",
+      "calgary_evidence": "Original company manufacturing page and current federal cheese-manufacturer directory identify Calgary operation; Gay Lea head office is outside Alberta.",
+      "presence_type": "Calgary city work as qualified above; wider geography kept explicit",
+      "work": "Manufacture specialty cheeses; compare product types and quality; exact plant process still to be researched.",
+      "proposed_question": "How can the same liquid milk become foods with different textures?",
+      "role_leads": "cheese-production operator; food quality technician (task leads)",
+      "role_status": "Source-described work areas and editorial task leads; no current vacancy or project assignment implied.",
+      "sources": [
+        "https://albertacheese.com/",
+        "https://agriculture.canada.ca/en/canadas-agriculture-sectors/animal-industry/canadian-dairy-information-centre/canadian-cheese-manufacturers-directory?wbdisable=true"
+      ],
+      "source_keys": [
+        "cheese",
+        "cheese-government"
+      ],
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-19/source-captures.json",
+      "source_check_date": "2026-10-19",
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        4,
+        2,
+        3
+      ],
+      "score": 9,
+      "score_rationale": {
+        "classroom": "How can the same liquid milk become foods with different textures? — editorial connection to the sourced work, not a formal curriculum endorsement.",
+        "concrete_work": "Manufacture specialty cheeses; compare product types and quality; exact plant process still to be researched.",
+        "added_value": "Adds dairy transformations and food-quality work to oilseeds, baking and roasting."
+      },
+      "recommendation": "recommend",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-19",
+      "last_attempted": "2026-10-19",
+      "last_researched": "2026-10-19",
+      "screening_completed_on": "2026-10-19",
+      "curriculum_status": "Provisional concept connection only; exact Alberta course outcomes and unit placement must be verified before full-copy approval.",
+      "gaps": "Verify one company-specific production sequence, cultures/enzymes and actual staff duties; no recipe inferred from a product list.",
+      "net_difference": "Adds dairy transformations and food-quality work to oilseeds, baking and roasting.",
+      "pathway_leads": [
+        {
+          "name": "SAIT Chemical Laboratory Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+          "status": "Original programme page captured 19 Oct; potential analytical foundation, not clinical medical-laboratory certification or an employer requirement."
+        }
+      ],
+      "discover_opportunity": "New cheesemaker lead or extend food scientist card 45 and production work after source verification.",
+      "planned_buildout": {
+        "Company": "Original company manufacturing page and current federal cheese-manufacturer directory identify Calgary operation; Gay Lea head office is outside Alberta.",
+        "Roles": "cheese-production operator; food quality technician (task leads)",
+        "Pathways": "Use the sourced lead as a starting point; resolve occupation-specific credentials and employer requirements.",
+        "Classroom": "How can the same liquid milk become foods with different textures?",
+        "Discover": "New cheesemaker lead or extend food scientist card 45 and production work after source verification."
+      },
+      "full_example_status": "full draft prepared; separate copy review pending",
+      "implementation_status": "not implemented; not authorized",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-19/review.md",
+      "decision_scope": "company/story proposal for full research only",
+      "last_completed_on": "2026-10-19",
+      "deferred_reason": null,
+      "reviewer": "user",
+      "decision_date": "2026-10-19",
+      "decision_instruction": "Approve all 15 companies that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later.",
+      "full_copy_decision": "pending",
+      "full_example_packet": "docs/validation/full-examples/2026-10-19/review.md",
+      "full_copy_candidate": "CGY-085-FULL",
+      "full_copy_version": 1,
+      "last_full_researched_on": "2026-10-19"
+    },
+    {
+      "id": "CGY-086",
+      "version": 1,
+      "company": "Saputo Foodservice Calgary",
+      "canonical_domain": "saputofoodservice.ca",
+      "aliases": [],
+      "sector": "Food distribution",
+      "calgary_evidence": "Original Calgary page confirms local on-site sales and deliveries; it does not establish cheese manufacturing at that location.",
+      "presence_type": "Calgary city work as qualified above; wider geography kept explicit",
+      "work": "Coordinate dairy/foodservice supply and delivery; support product selection.",
+      "proposed_question": "What has to stay controlled while a dairy product travels from supplier to kitchen?",
+      "role_leads": "distribution coordinator; foodservice sales",
+      "role_status": "Source-described work areas and editorial task leads; no current vacancy or project assignment implied.",
+      "sources": [
+        "https://www.saputofoodservice.ca/en/contact-us/calgary"
+      ],
+      "source_keys": [
+        "saputo"
+      ],
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-19/source-captures.json",
+      "source_check_date": "2026-10-19",
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        3,
+        2,
+        2
+      ],
+      "score": 7,
+      "score_rationale": {
+        "classroom": "What has to stay controlled while a dairy product travels from supplier to kitchen? — editorial connection to the sourced work, not a formal curriculum endorsement.",
+        "concrete_work": "Coordinate dairy/foodservice supply and delivery; support product selection.",
+        "added_value": "Reserve: valid local distribution comparison, but substantial overlap with Congebec."
+      },
+      "recommendation": "reserve",
+      "decision": "hold",
+      "workflow_state": "held",
+      "first_discovered": "2026-10-19",
+      "last_attempted": "2026-10-19",
+      "last_researched": "2026-10-19",
+      "screening_completed_on": "2026-10-19",
+      "curriculum_status": "Provisional concept connection only; exact Alberta course outcomes and unit placement must be verified before full-copy approval.",
+      "gaps": "Calgary manufacturing not established; cold-chain controls need source detail before making technical claims.",
+      "net_difference": "Reserve: valid local distribution comparison, but substantial overlap with Congebec.",
+      "pathway_leads": [],
+      "discover_opportunity": "Extend logistics card 17 or warehouse card 23 rather than inventing a Calgary cheesemaking card.",
+      "planned_buildout": {
+        "Company": "Original Calgary page confirms local on-site sales and deliveries; it does not establish cheese manufacturing at that location.",
+        "Roles": "distribution coordinator; foodservice sales",
+        "Pathways": "Use the sourced lead as a starting point; resolve occupation-specific credentials and employer requirements.",
+        "Classroom": "What has to stay controlled while a dairy product travels from supplier to kitchen?",
+        "Discover": "Extend logistics card 17 or warehouse card 23 rather than inventing a Calgary cheesemaking card."
+      },
+      "full_example_status": "not researched or drafted; proposal selection only",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-19/review.md",
+      "decision_scope": "company/story proposal for full research only",
+      "pathway_gap": "Warehouse/logistics or food-distribution training route unresolved. Chemical-laboratory study is not evidence of a delivery qualification.",
+      "last_completed_on": "2026-10-19",
+      "deferred_reason": "User requested hold for later. Calgary manufacturing not established; cold-chain controls need source detail before making technical claims.",
+      "reviewer": "user",
+      "decision_date": "2026-10-19",
+      "decision_instruction": "Approve all 15 companies that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later."
+    },
+    {
+      "id": "CGY-087",
+      "version": 1,
+      "company": "Mountain View Printing",
+      "canonical_domain": "mvprinters.com",
+      "aliases": [],
+      "sector": "Printing and packaging",
+      "calgary_evidence": "Capabilities page says its printed work is produced locally in Calgary; digital/offset printing and finishing listed.",
+      "presence_type": "Calgary city work as qualified above; wider geography kept explicit",
+      "work": "Prepare digital/offset output; print labels and packaging; die-cut, fold and finish.",
+      "proposed_question": "How can a few inks produce a page full of colours?",
+      "role_leads": "press operator; prepress technician; finishing operator",
+      "role_status": "Source-described work areas and editorial task leads; no current vacancy or project assignment implied.",
+      "sources": [
+        "https://mvprinters.com/capabilities/"
+      ],
+      "source_keys": [
+        "printing"
+      ],
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-19/source-captures.json",
+      "source_check_date": "2026-10-19",
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        4,
+        3,
+        2
+      ],
+      "score": 9,
+      "score_rationale": {
+        "classroom": "How can a few inks produce a page full of colours? — editorial connection to the sourced work, not a formal curriculum endorsement.",
+        "concrete_work": "Prepare digital/offset output; print labels and packaging; die-cut, fold and finish.",
+        "added_value": "Adds physical print production and packaging to the existing screen-based creative examples."
+      },
+      "recommendation": "recommend",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-19",
+      "last_attempted": "2026-10-19",
+      "last_researched": "2026-10-19",
+      "screening_completed_on": "2026-10-19",
+      "curriculum_status": "Provisional concept connection only; exact Alberta course outcomes and unit placement must be verified before full-copy approval.",
+      "gaps": "Verify colour-management, ink and substrate details plus a dedicated printing-training route; civil engineering is not that route.",
+      "net_difference": "Adds physical print production and packaging to the existing screen-based creative examples.",
+      "pathway_leads": [
+        {
+          "name": "SAIT Interactive Design — Graphic Design",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/interactive-design-graphic-design",
+          "status": "Official programme includes preparation of files for print. Prepress/design route only; press-operation training still needs research."
+        }
+      ],
+      "discover_opportunity": "New print-production occupation; do not collapse press work into animator/colourist cards.",
+      "planned_buildout": {
+        "Company": "Capabilities page says its printed work is produced locally in Calgary; digital/offset printing and finishing listed.",
+        "Roles": "press operator; prepress technician; finishing operator",
+        "Pathways": "Use the sourced lead as a starting point; resolve occupation-specific credentials and employer requirements.",
+        "Classroom": "How can a few inks produce a page full of colours?",
+        "Discover": "New print-production occupation; do not collapse press work into animator/colourist cards."
+      },
+      "full_example_status": "full draft prepared; separate copy review pending",
+      "implementation_status": "not implemented; not authorized",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-19/review.md",
+      "decision_scope": "company/story proposal for full research only",
+      "last_completed_on": "2026-10-19",
+      "deferred_reason": null,
+      "reviewer": "user",
+      "decision_date": "2026-10-19",
+      "decision_instruction": "Approve all 15 companies that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later.",
+      "full_copy_decision": "pending",
+      "full_example_packet": "docs/validation/full-examples/2026-10-19/review.md",
+      "full_copy_candidate": "CGY-087-FULL",
+      "full_copy_version": 1,
+      "last_full_researched_on": "2026-10-19"
+    },
+    {
+      "id": "CGY-088",
+      "version": 1,
+      "company": "Calgary Metal Recycling",
+      "canonical_domain": "calgarymetal.com",
+      "aliases": [],
+      "sector": "Metals recovery",
+      "calgary_evidence": "Original site names separate ferrous/non-ferrous Calgary yards; city lists Calgary Metal as a recycler.",
+      "presence_type": "Calgary city work as qualified above; wider geography kept explicit",
+      "work": "Classify and accept metal streams; remove unsafe contamination; prepare material for recycling.",
+      "proposed_question": "Why does sorting scrap metal matter before it becomes something new?",
+      "role_leads": "materials sorter; scale operator; equipment technician (task leads)",
+      "role_status": "Source-described work areas and editorial task leads; no current vacancy or project assignment implied.",
+      "sources": [
+        "https://calgarymetal.com/",
+        "https://calgarymetal.com/calgary-metal-recycling-services/material-acceptance/",
+        "https://www.calgary.ca/waste/what-goes-where/metal-scrap-metal-and-unusable-metal-items.html"
+      ],
+      "source_keys": [
+        "recycling",
+        "recycling-materials",
+        "recycling-city"
+      ],
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-19/source-captures.json",
+      "source_check_date": "2026-10-19",
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        4,
+        3,
+        2
+      ],
+      "score": 9,
+      "score_rationale": {
+        "classroom": "Why does sorting scrap metal matter before it becomes something new? — editorial connection to the sourced work, not a formal curriculum endorsement.",
+        "concrete_work": "Classify and accept metal streams; remove unsafe contamination; prepare material for recycling.",
+        "added_value": "Adds a source-backed Calgary scrap-metal operation; unlike earlier held recycling leads, location and work are resolved."
+      },
+      "recommendation": "recommend",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-19",
+      "last_attempted": "2026-10-19",
+      "last_researched": "2026-10-19",
+      "screening_completed_on": "2026-10-19",
+      "curriculum_status": "Provisional concept connection only; exact Alberta course outcomes and unit placement must be verified before full-copy approval.",
+      "gaps": "Verify actual sorting machinery and downstream destination; do not attribute the city’s GFL eddy-current line to this company.",
+      "net_difference": "Adds a source-backed Calgary scrap-metal operation; unlike earlier held recycling leads, location and work are resolved.",
+      "pathway_leads": [
+        {
+          "name": "SAIT Environmental Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/environmental-technology",
+          "status": "Original programme page captured 19 Oct; relevant environmental sampling/analysis preparation; not guaranteed employment."
+        }
+      ],
+      "discover_opportunity": "Potential new recycling-operator card; existing quality/warehouse work may also connect.",
+      "planned_buildout": {
+        "Company": "Original site names separate ferrous/non-ferrous Calgary yards; city lists Calgary Metal as a recycler.",
+        "Roles": "materials sorter; scale operator; equipment technician (task leads)",
+        "Pathways": "Use the sourced lead as a starting point; resolve occupation-specific credentials and employer requirements.",
+        "Classroom": "Why does sorting scrap metal matter before it becomes something new?",
+        "Discover": "Potential new recycling-operator card; existing quality/warehouse work may also connect."
+      },
+      "full_example_status": "full draft prepared; separate copy review pending",
+      "implementation_status": "not implemented; not authorized",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-19/review.md",
+      "decision_scope": "company/story proposal for full research only",
+      "last_completed_on": "2026-10-19",
+      "deferred_reason": null,
+      "reviewer": "user",
+      "decision_date": "2026-10-19",
+      "decision_instruction": "Approve all 15 companies that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later.",
+      "full_copy_decision": "pending",
+      "full_example_packet": "docs/validation/full-examples/2026-10-19/review.md",
+      "full_copy_candidate": "CGY-088-FULL",
+      "full_copy_version": 1,
+      "last_full_researched_on": "2026-10-19"
+    },
+    {
+      "id": "CGY-089",
+      "version": 1,
+      "company": "Aeromag — Calgary YYC station",
+      "canonical_domain": "aeromag.ca",
+      "aliases": [],
+      "sector": "Aircraft ground services",
+      "calgary_evidence": "Employer lists deicing and aircraft/vehicle control at YYC. Network glycol-recycling capability is not proof that Aeromag runs a Calgary recycling plant.",
+      "presence_type": "Calgary city work as qualified above; wider geography kept explicit",
+      "work": "Deice aircraft and coordinate vehicles safely around aircraft; technical fluid/ice mechanism needs full-source detail.",
+      "proposed_question": "Why does a plane need more than a quick scrape before a winter departure?",
+      "role_leads": "aircraft deicing operator; station operations coordinator",
+      "role_status": "Source-described work areas and editorial task leads; no current vacancy or project assignment implied.",
+      "sources": [
+        "https://aeromag.ca/en/services/recycling-glycol/",
+        "https://aeromag.ca/en/",
+        "https://www.teamyyc.com/YourCommunity/WeareTeamYYC/TabId/199/ArtMID/819/ArticleID/191/Update-on-Glycol-Treatment-Ponds-and-recycling.aspx"
+      ],
+      "source_keys": [
+        "aeromag",
+        "aeromag-deicing",
+        "yyc-partner"
+      ],
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-19/source-captures.json",
+      "source_check_date": "2026-10-19",
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        4,
+        3,
+        3
+      ],
+      "score": 10,
+      "score_rationale": {
+        "classroom": "Why does a plane need more than a quick scrape before a winter departure? — editorial connection to the sourced work, not a formal curriculum endorsement.",
+        "concrete_work": "Deice aircraft and coordinate vehicles safely around aircraft; technical fluid/ice mechanism needs full-source detail.",
+        "added_value": "Adds ground operations, freezing and fluid properties rather than more flying/aircraft repair."
+      },
+      "recommendation": "shortlist",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-19",
+      "last_attempted": "2026-10-19",
+      "last_researched": "2026-10-19",
+      "screening_completed_on": "2026-10-19",
+      "curriculum_status": "Provisional concept connection only; exact Alberta course outcomes and unit placement must be verified before full-copy approval.",
+      "gaps": "Separate Calgary deicing from recycling elsewhere; verify local procedures and employer training before final copy. The 2019 YYC recovery story does not name Aeromag as contractor.",
+      "net_difference": "Adds ground operations, freezing and fluid properties rather than more flying/aircraft repair.",
+      "pathway_leads": [
+        {
+          "name": "Aeromag employer training",
+          "url": "https://aeromag.ca/en/careers/",
+          "status": "Employer describes classroom and practical deicing-truck training. This is a company-wide pathway lead, not a verified Calgary vacancy or local course intake. Its named simulators are in Vancouver and Cleveland, not Calgary."
+        }
+      ],
+      "discover_opportunity": "New aircraft-deicing operator lead, distinct from aircraft-maintenance cards 48/49.",
+      "planned_buildout": {
+        "Company": "Employer lists deicing and aircraft/vehicle control at YYC. Network glycol-recycling capability is not proof that Aeromag runs a Calgary recycling plant.",
+        "Roles": "aircraft deicing operator; station operations coordinator",
+        "Pathways": "Use the sourced lead as a starting point; resolve occupation-specific credentials and employer requirements.",
+        "Classroom": "Why does a plane need more than a quick scrape before a winter departure?",
+        "Discover": "New aircraft-deicing operator lead, distinct from aircraft-maintenance cards 48/49."
+      },
+      "full_example_status": "full draft prepared; separate copy review pending",
+      "implementation_status": "not implemented; not authorized",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-19/review.md",
+      "decision_scope": "company/story proposal for full research only",
+      "last_completed_on": "2026-10-19",
+      "deferred_reason": null,
+      "reviewer": "user",
+      "decision_date": "2026-10-19",
+      "decision_instruction": "Approve all 15 companies that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later.",
+      "full_copy_decision": "pending",
+      "full_example_packet": "docs/validation/full-examples/2026-10-19/review.md",
+      "full_copy_candidate": "CGY-089-FULL",
+      "full_copy_version": 1,
+      "last_full_researched_on": "2026-10-19"
+    },
+    {
+      "id": "CGY-090",
+      "version": 1,
+      "company": "Lux Windows & Doors",
+      "canonical_domain": "luxwindows.com",
+      "aliases": [],
+      "sector": "Windows and building products",
+      "calgary_evidence": "Calgary showroom and employer installation service are explicit; manufacturing is stated as Alberta, not independently located to Calgary.",
+      "presence_type": "Calgary city work as qualified above; wider geography kept explicit",
+      "work": "Select glazing/frame systems and install windows; compare seals and thermal performance.",
+      "proposed_question": "How can a window let light through while slowing heat loss?",
+      "role_leads": "window installer; glazier; product support",
+      "role_status": "Source-described work areas and editorial task leads; no current vacancy or project assignment implied.",
+      "sources": [
+        "https://www.luxwindows.com/",
+        "https://www.luxwindows.com/windows/pvc/",
+        "https://www.luxwindows.com/renovations/window-installation/",
+        "https://www.luxwindows.com/lux-difference/our-story/"
+      ],
+      "source_keys": [
+        "lux",
+        "lux-pvc",
+        "lux-installation",
+        "lux-story-canonical"
+      ],
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-19/source-captures.json",
+      "source_check_date": "2026-10-19",
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        4,
+        3,
+        2
+      ],
+      "score": 9,
+      "score_rationale": {
+        "classroom": "How can a window let light through while slowing heat loss? — editorial connection to the sourced work, not a formal curriculum endorsement.",
+        "concrete_work": "Select glazing/frame systems and install windows; compare seals and thermal performance.",
+        "added_value": "Adds window/glass installation trade to HVAC and building-envelope examples."
+      },
+      "recommendation": "recommend",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-19",
+      "last_attempted": "2026-10-19",
+      "last_researched": "2026-10-19",
+      "screening_completed_on": "2026-10-19",
+      "curriculum_status": "Provisional concept connection only; exact Alberta course outcomes and unit placement must be verified before full-copy approval.",
+      "gaps": "Resolve factory location before a Calgary-factory claim. Omit conflicting facility size/headcount across old and new brochures.",
+      "net_difference": "Adds window/glass installation trade to HVAC and building-envelope examples.",
+      "pathway_leads": [
+        {
+          "name": "SAIT Glazier apprenticeship",
+          "url": "https://www.sait.ca/apprenticeships-and-trades/programs/glazier",
+          "status": "Original programme page inspected 19 Oct; apprenticeship requires employment/training arrangements; not an automatic job."
+        }
+      ],
+      "discover_opportunity": "New glazier/installer lead; distinguish manufacturing from building-science investigation card 40.",
+      "planned_buildout": {
+        "Company": "Calgary showroom and employer installation service are explicit; manufacturing is stated as Alberta, not independently located to Calgary.",
+        "Roles": "window installer; glazier; product support",
+        "Pathways": "Use the sourced lead as a starting point; resolve occupation-specific credentials and employer requirements.",
+        "Classroom": "How can a window let light through while slowing heat loss?",
+        "Discover": "New glazier/installer lead; distinguish manufacturing from building-science investigation card 40."
+      },
+      "full_example_status": "full draft prepared; separate copy review pending",
+      "implementation_status": "not implemented; not authorized",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-19/review.md",
+      "decision_scope": "company/story proposal for full research only",
+      "last_completed_on": "2026-10-19",
+      "deferred_reason": null,
+      "reviewer": "user",
+      "decision_date": "2026-10-19",
+      "decision_instruction": "Approve all 15 companies that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later.",
+      "full_copy_decision": "pending",
+      "full_example_packet": "docs/validation/full-examples/2026-10-19/review.md",
+      "full_copy_candidate": "CGY-090-FULL",
+      "full_copy_version": 1,
+      "last_full_researched_on": "2026-10-19"
+    },
+    {
+      "id": "CGY-091",
+      "version": 1,
+      "company": "MAGNA Engineering",
+      "canonical_domain": "magnaengineering.ca",
+      "aliases": [],
+      "sector": "Nature-based water infrastructure",
+      "calgary_evidence": "Calgary Inglewood office plus documented Livingston Pond E project in Calgary; wastewater MBWS case is Clearwater County, a different location.",
+      "presence_type": "Calgary city work as qualified above; wider geography kept explicit",
+      "work": "Develop stormwater concepts and engineering drawings; plan wetlands/biofilters and water-quality functions.",
+      "proposed_question": "Can a wetland be part of a city’s stormwater infrastructure?",
+      "role_leads": "civil/water engineer; environmental technologist; project designer",
+      "role_status": "Source-described work areas and editorial task leads; no current vacancy or project assignment implied.",
+      "sources": [
+        "https://www.magnaengineering.ca/",
+        "https://www.magnaengineering.ca/resources",
+        "https://www.magnaengineering.ca/magnablog/livingston-stormpark",
+        "https://www.magnaengineering.ca/mbws"
+      ],
+      "source_keys": [
+        "magna",
+        "magna-resources",
+        "magna-livingston",
+        "magna-wetland"
+      ],
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-19/source-captures.json",
+      "source_check_date": "2026-10-19",
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        4,
+        3,
+        3
+      ],
+      "score": 10,
+      "score_rationale": {
+        "classroom": "Can a wetland be part of a city’s stormwater infrastructure? — editorial connection to the sourced work, not a formal curriculum endorsement.",
+        "concrete_work": "Develop stormwater concepts and engineering drawings; plan wetlands/biofilters and water-quality functions.",
+        "added_value": "Adds ecological treatment and an identifiable city project to process-based water examples."
+      },
+      "recommendation": "shortlist",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-19",
+      "last_attempted": "2026-10-19",
+      "last_researched": "2026-10-19",
+      "screening_completed_on": "2026-10-19",
+      "curriculum_status": "Provisional concept connection only; exact Alberta course outcomes and unit placement must be verified before full-copy approval.",
+      "gaps": "Verify exact Livingston treatment stages and outcomes. Keep Calgary stormwater separate from Clearwater County wastewater; avoid unverified performance claims.",
+      "net_difference": "Adds ecological treatment and an identifiable city project to process-based water examples.",
+      "pathway_leads": [
+        {
+          "name": "SAIT Environmental Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/environmental-technology",
+          "status": "Original programme page captured 19 Oct; relevant environmental sampling/analysis preparation; not guaranteed employment."
+        }
+      ],
+      "discover_opportunity": "Extend environmental assessment card 26 and water resources card 37; consider a distinct biological-treatment role only with evidence.",
+      "planned_buildout": {
+        "Company": "Calgary Inglewood office plus documented Livingston Pond E project in Calgary; wastewater MBWS case is Clearwater County, a different location.",
+        "Roles": "civil/water engineer; environmental technologist; project designer",
+        "Pathways": "Use the sourced lead as a starting point; resolve occupation-specific credentials and employer requirements.",
+        "Classroom": "Can a wetland be part of a city’s stormwater infrastructure?",
+        "Discover": "Extend environmental assessment card 26 and water resources card 37; consider a distinct biological-treatment role only with evidence."
+      },
+      "full_example_status": "full draft prepared; separate copy review pending",
+      "implementation_status": "not implemented; not authorized",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-19/review.md",
+      "decision_scope": "company/story proposal for full research only",
+      "last_completed_on": "2026-10-19",
+      "deferred_reason": null,
+      "reviewer": "user",
+      "decision_date": "2026-10-19",
+      "decision_instruction": "Approve all 15 companies that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later.",
+      "full_copy_decision": "pending",
+      "full_example_packet": "docs/validation/full-examples/2026-10-19/review.md",
+      "full_copy_candidate": "CGY-091-FULL",
+      "full_copy_version": 1,
+      "last_full_researched_on": "2026-10-19"
+    },
+    {
+      "id": "CGY-092",
+      "version": 1,
+      "company": "Canadian Blood Services — Calgary operations",
+      "canonical_domain": "blood.ca",
+      "aliases": [
+        "Canadian Blood Services"
+      ],
+      "sector": "Blood component production and testing",
+      "calgary_evidence": "Calgary operations book describes production/donor testing; 2025–26 inspection listing separately identifies Calgary Operations. General diagnostic-services lab-city list concerns another service.",
+      "presence_type": "Calgary city work as qualified above; wider geography kept explicit",
+      "work": "Separate components, test donor samples, track and store products; distinct clinical and assistant scopes need research.",
+      "proposed_question": "Why is a donation not ready for a patient as soon as it is collected?",
+      "role_leads": "production laboratory assistant; medical laboratory technologist (different credentials)",
+      "role_status": "Source-described work areas and editorial task leads; no current vacancy or project assignment implied.",
+      "sources": [
+        "https://www.blood.ca/sites/default/files/M2053_CalgaryBook_2022-02-11-EN.pdf",
+        "https://www.blood.ca/en/about-us/publications-and-reports/designed-excellence-calgary-operations-facility-book",
+        "https://www.blood.ca/en/about-us/reports-and-publications/audits-2025-2026",
+        "https://www.blood.ca/en/hospital-services/laboratory-services"
+      ],
+      "source_keys": [
+        "blood-lab",
+        "blood-facility",
+        "blood-audits",
+        "blood-services"
+      ],
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-19/source-captures.json",
+      "source_check_date": "2026-10-19",
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        4,
+        3,
+        3
+      ],
+      "score": 10,
+      "score_rationale": {
+        "classroom": "Why is a donation not ready for a patient as soon as it is collected? — editorial connection to the sourced work, not a formal curriculum endorsement.",
+        "concrete_work": "Separate components, test donor samples, track and store products; distinct clinical and assistant scopes need research.",
+        "added_value": "Adds blood biology, separation, traceability and regulated clinical laboratory pathways."
+      },
+      "recommendation": "shortlist",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-19",
+      "last_attempted": "2026-10-19",
+      "last_researched": "2026-10-19",
+      "screening_completed_on": "2026-10-19",
+      "curriculum_status": "Provisional concept connection only; exact Alberta course outcomes and unit placement must be verified before full-copy approval.",
+      "gaps": "Verify a current Calgary role and occupation-specific registration route; distinguish production assistants from clinical technologists. Do not use an expired requisition as a live vacancy.",
+      "net_difference": "Adds blood biology, separation, traceability and regulated clinical laboratory pathways.",
+      "pathway_leads": [
+        {
+          "name": "SAIT Medical Laboratory Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/medical-laboratory-technology",
+          "status": "Official clinical-laboratory diploma, including blood testing/transfusion study. Occupation-specific registration, current admissions and production-assistant versus technologist qualifications still require full research. No CBS hiring or placement guarantee."
+        }
+      ],
+      "discover_opportunity": "Research a clinical-production lab occupation; do not merge regulated clinical credentials into generic chemical-lab card 16.",
+      "planned_buildout": {
+        "Company": "Calgary operations book describes production/donor testing; 2025–26 inspection listing separately identifies Calgary Operations. General diagnostic-services lab-city list concerns another service.",
+        "Roles": "production laboratory assistant; medical laboratory technologist (different credentials)",
+        "Pathways": "Use the sourced lead as a starting point; resolve occupation-specific credentials and employer requirements.",
+        "Classroom": "Why is a donation not ready for a patient as soon as it is collected?",
+        "Discover": "Research a clinical-production lab occupation; do not merge regulated clinical credentials into generic chemical-lab card 16."
+      },
+      "full_example_status": "full draft prepared; separate copy review pending",
+      "implementation_status": "not implemented; not authorized",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-19/review.md",
+      "decision_scope": "company/story proposal for full research only",
+      "last_completed_on": "2026-10-19",
+      "deferred_reason": null,
+      "reviewer": "user",
+      "decision_date": "2026-10-19",
+      "decision_instruction": "Approve all 15 companies that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later.",
+      "full_copy_decision": "pending",
+      "full_example_packet": "docs/validation/full-examples/2026-10-19/review.md",
+      "full_copy_candidate": "CGY-092-FULL",
+      "full_copy_version": 1,
+      "last_full_researched_on": "2026-10-19"
+    },
+    {
+      "id": "CGY-093",
+      "version": 1,
+      "company": "Alberta Distillers",
+      "canonical_domain": "albertadistillers.com",
+      "aliases": [],
+      "sector": "Distilling and process chemistry",
+      "calgary_evidence": "Original brands page states whisky is crafted in Calgary; provincial processing directory supports local operation.",
+      "presence_type": "Calgary city work as qualified above; wider geography kept explicit",
+      "work": "Distill and prepare grain-based spirits; specific process and job duties still need original technical evidence.",
+      "proposed_question": "How can boiling-point differences help separate a mixture?",
+      "role_leads": "process operator; quality technician (leads)",
+      "role_status": "Source-described work areas and editorial task leads; no current vacancy or project assignment implied.",
+      "sources": [
+        "https://www.albertadistillers.com/our-brands",
+        "https://www.alberta.ca/lookup/agricultural-processing-industry-listings.aspx"
+      ],
+      "source_keys": [
+        "distillers",
+        "distillers-government"
+      ],
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-19/source-captures.json",
+      "source_check_date": "2026-10-19",
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        3,
+        2,
+        2
+      ],
+      "score": 7,
+      "score_rationale": {
+        "classroom": "How can boiling-point differences help separate a mixture? — editorial connection to the sourced work, not a formal curriculum endorsement.",
+        "concrete_work": "Distill and prepare grain-based spirits; specific process and job duties still need original technical evidence.",
+        "added_value": "Potential separation-method comparison, but weaker detail and overlap with other process stories."
+      },
+      "recommendation": "reserve",
+      "decision": "hold",
+      "workflow_state": "held",
+      "first_discovered": "2026-10-19",
+      "last_attempted": "2026-10-19",
+      "last_researched": "2026-10-19",
+      "screening_completed_on": "2026-10-19",
+      "curriculum_status": "Provisional concept connection only; exact Alberta course outcomes and unit placement must be verified before full-copy approval.",
+      "gaps": "Reserve for a process-focused classroom framing and better company-specific technical evidence; omit product-promotion copy.",
+      "net_difference": "Potential separation-method comparison, but weaker detail and overlap with other process stories.",
+      "pathway_leads": [
+        {
+          "name": "Olds Introduction to Craft Beverages and Brewing",
+          "url": "https://www.oldscollege.ca/programs/continuing-education/service-industry-food-production/introduction-to-brewing.html",
+          "status": "Continuing-education course lead inspected 19 Oct; dates/intake require confirmation. Separate full-time Craft Beverage and Brewery Operations diploma is suspended on provider listing and must not be offered as available."
+        }
+      ],
+      "discover_opportunity": "Existing process-operations card 08 may connect; no separate occupation until a distinct method/role is evidenced.",
+      "planned_buildout": {
+        "Company": "Original brands page states whisky is crafted in Calgary; provincial processing directory supports local operation.",
+        "Roles": "process operator; quality technician (leads)",
+        "Pathways": "Use the sourced lead as a starting point; resolve occupation-specific credentials and employer requirements.",
+        "Classroom": "How can boiling-point differences help separate a mixture?",
+        "Discover": "Existing process-operations card 08 may connect; no separate occupation until a distinct method/role is evidenced."
+      },
+      "full_example_status": "not researched or drafted; proposal selection only",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-19/review.md",
+      "decision_scope": "company/story proposal for full research only",
+      "last_completed_on": "2026-10-19",
+      "deferred_reason": "User requested hold for later. Reserve for a process-focused classroom framing and better company-specific technical evidence; omit product-promotion copy.",
+      "reviewer": "user",
+      "decision_date": "2026-10-19",
+      "decision_instruction": "Approve all 15 companies that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later."
+    },
+    {
+      "id": "CGY-094",
+      "version": 1,
+      "company": "Enerflex",
+      "canonical_domain": "enerflex.com",
+      "aliases": [],
+      "sector": "Compression and industrial equipment",
+      "calgary_evidence": "Current employer locations page explicitly identifies Calgary manufacturing at 4700 47 Street SE, separate from its corporate office.",
+      "presence_type": "Calgary city work as qualified above; wider geography kept explicit",
+      "work": "Engineer, manufacture, commission and maintain compression/process equipment.",
+      "proposed_question": "Why does compressing a gas create more than a pressure problem?",
+      "role_leads": "mechanical technologist; fabrication technician; commissioning engineer",
+      "role_status": "Source-described work areas and editorial task leads; no current vacancy or project assignment implied.",
+      "sources": [
+        "https://www.enerflex.com/contact-us/",
+        "https://www.enerflex.com/company/"
+      ],
+      "source_keys": [
+        "enerflex",
+        "enerflex-company"
+      ],
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-19/source-captures.json",
+      "source_check_date": "2026-10-19",
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        4,
+        3,
+        2
+      ],
+      "score": 9,
+      "score_rationale": {
+        "classroom": "Why does compressing a gas create more than a pressure problem? — editorial connection to the sourced work, not a formal curriculum endorsement.",
+        "concrete_work": "Engineer, manufacture, commission and maintain compression/process equipment.",
+        "added_value": "Adds compression-system manufacturing and service while overlapping Foremost/Tangent equipment work."
+      },
+      "recommendation": "recommend",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-19",
+      "last_attempted": "2026-10-19",
+      "last_researched": "2026-10-19",
+      "screening_completed_on": "2026-10-19",
+      "curriculum_status": "Provisional concept connection only; exact Alberta course outcomes and unit placement must be verified before full-copy approval.",
+      "gaps": "Select a documented compressor package and verify thermodynamic details; broader engineering foundations are not a job qualification.",
+      "net_difference": "Adds compression-system manufacturing and service while overlapping Foremost/Tangent equipment work.",
+      "pathway_leads": [],
+      "discover_opportunity": "Extend mechanical card 10, manufacturing 11 and millwright 54 if actual role links support them.",
+      "planned_buildout": {
+        "Company": "Current employer locations page explicitly identifies Calgary manufacturing at 4700 47 Street SE, separate from its corporate office.",
+        "Roles": "mechanical technologist; fabrication technician; commissioning engineer",
+        "Pathways": "Use the sourced lead as a starting point; resolve occupation-specific credentials and employer requirements.",
+        "Classroom": "Why does compressing a gas create more than a pressure problem?",
+        "Discover": "Extend mechanical card 10, manufacturing 11 and millwright 54 if actual role links support them."
+      },
+      "full_example_status": "full draft prepared; separate copy review pending",
+      "implementation_status": "not implemented; not authorized",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-19/review.md",
+      "decision_scope": "company/story proposal for full research only",
+      "pathway_gap": "Mechanical engineering, fabrication and relevant trade routes need dedicated source checks. Civil engineering is not a compressor technician credential.",
+      "last_completed_on": "2026-10-19",
+      "deferred_reason": null,
+      "reviewer": "user",
+      "decision_date": "2026-10-19",
+      "decision_instruction": "Approve all 15 companies that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later.",
+      "full_copy_decision": "pending",
+      "full_example_packet": "docs/validation/full-examples/2026-10-19/review.md",
+      "full_copy_candidate": "CGY-094-FULL",
+      "full_copy_version": 1,
+      "last_full_researched_on": "2026-10-19"
+    },
+    {
+      "id": "CGY-095",
+      "version": 1,
+      "company": "Spartan Controls",
+      "canonical_domain": "spartancontrols.com",
+      "aliases": [],
+      "sector": "Valve testing and industrial service",
+      "calgary_evidence": "Employer identifies Calgary valve-repair and steam-testing facilities, beyond a head-office address.",
+      "presence_type": "Calgary city work as qualified above; wider geography kept explicit",
+      "work": "Diagnose valves; test leakage and pressure response; repair and document equipment.",
+      "proposed_question": "How do you test a valve that must open at the right pressure?",
+      "role_leads": "instrumentation technician; valve service technician",
+      "role_status": "Source-described work areas and editorial task leads; no current vacancy or project assignment implied.",
+      "sources": [
+        "https://www.spartancontrols.com/services/valve-services/"
+      ],
+      "source_keys": [
+        "spartan"
+      ],
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-19/source-captures.json",
+      "source_check_date": "2026-10-19",
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        4,
+        3,
+        2
+      ],
+      "score": 9,
+      "score_rationale": {
+        "classroom": "How do you test a valve that must open at the right pressure? — editorial connection to the sourced work, not a formal curriculum endorsement.",
+        "concrete_work": "Diagnose valves; test leakage and pressure response; repair and document equipment.",
+        "added_value": "Adds documented valve testing to sensor/plant operations without duplicating a generic engineer story."
+      },
+      "recommendation": "recommend",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-19",
+      "last_attempted": "2026-10-19",
+      "last_researched": "2026-10-19",
+      "screening_completed_on": "2026-10-19",
+      "curriculum_status": "Provisional concept connection only; exact Alberta course outcomes and unit placement must be verified before full-copy approval.",
+      "gaps": "Verify a specific non-operational teaching test and current trade route; no instructions for unsupervised pressure work.",
+      "net_difference": "Adds documented valve testing to sensor/plant operations without duplicating a generic engineer story.",
+      "pathway_leads": [
+        {
+          "name": "SAIT Instrumentation Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/instrumentation-engineering-technology",
+          "status": "Original programme inspected 19 October: measurement, calibration and process-control training. Diploma route is distinct from trade certification and does not establish an employer requirement."
+        }
+      ],
+      "discover_opportunity": "Extend instrumentation card 13 and millwright 54; distinct valve-testing card only after duties review.",
+      "planned_buildout": {
+        "Company": "Employer identifies Calgary valve-repair and steam-testing facilities, beyond a head-office address.",
+        "Roles": "instrumentation technician; valve service technician",
+        "Pathways": "Use the sourced lead as a starting point; resolve occupation-specific credentials and employer requirements.",
+        "Classroom": "How do you test a valve that must open at the right pressure?",
+        "Discover": "Extend instrumentation card 13 and millwright 54; distinct valve-testing card only after duties review."
+      },
+      "full_example_status": "full draft prepared; separate copy review pending",
+      "implementation_status": "not implemented; not authorized",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-19/review.md",
+      "decision_scope": "company/story proposal for full research only",
+      "last_completed_on": "2026-10-19",
+      "deferred_reason": null,
+      "reviewer": "user",
+      "decision_date": "2026-10-19",
+      "decision_instruction": "Approve all 15 companies that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later.",
+      "full_copy_decision": "pending",
+      "full_example_packet": "docs/validation/full-examples/2026-10-19/review.md",
+      "full_copy_candidate": "CGY-095-FULL",
+      "full_copy_version": 1,
+      "last_full_researched_on": "2026-10-19"
+    },
+    {
+      "id": "CGY-096",
+      "version": 1,
+      "company": "Canada Malting — Calgary malt house",
+      "canonical_domain": "canadamalting.com",
+      "aliases": [],
+      "sector": "Grain processing and germination",
+      "calgary_evidence": "Original location page explicitly names Calgary malt house; process page describes steeping, controlled germination and kilning.",
+      "presence_type": "Calgary city work as qualified above; wider geography kept explicit",
+      "work": "Manage grain moisture, controlled growth, drying and sample-quality checks.",
+      "proposed_question": "Why would a factory start a seed growing, then dry it?",
+      "role_leads": "maltster; process operator; laboratory technician",
+      "role_status": "Source-described work areas and editorial task leads; no current vacancy or project assignment implied.",
+      "sources": [
+        "https://canadamalting.com/",
+        "https://canadamalting.com/fr/contactez-nous/",
+        "https://canadamalting.com/process/"
+      ],
+      "source_keys": [
+        "malting",
+        "malting-locations",
+        "malting-process"
+      ],
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-19/source-captures.json",
+      "source_check_date": "2026-10-19",
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        4,
+        3,
+        3
+      ],
+      "score": 10,
+      "score_rationale": {
+        "classroom": "Why would a factory start a seed growing, then dry it? — editorial connection to the sourced work, not a formal curriculum endorsement.",
+        "concrete_work": "Manage grain moisture, controlled growth, drying and sample-quality checks.",
+        "added_value": "Connects plant physiology and enzyme activity to a real factory; malting is not itself fermentation."
+      },
+      "recommendation": "shortlist",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-19",
+      "last_attempted": "2026-10-19",
+      "last_researched": "2026-10-19",
+      "screening_completed_on": "2026-10-19",
+      "curriculum_status": "Provisional concept connection only; exact Alberta course outcomes and unit placement must be verified before full-copy approval.",
+      "gaps": "Verify Calgary-specific workflow and actual jobs; do not present suspended Olds full-time brewing diploma as available.",
+      "net_difference": "Connects plant physiology and enzyme activity to a real factory; malting is not itself fermentation.",
+      "pathway_leads": [
+        {
+          "name": "SAIT Chemical Laboratory Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+          "status": "Original programme page captured 19 Oct; potential analytical foundation, not clinical medical-laboratory certification or an employer requirement."
+        }
+      ],
+      "discover_opportunity": "Extend plant-operator card 08 and lab card 16; consider maltster only if genuinely distinct from the existing profiles.",
+      "planned_buildout": {
+        "Company": "Original location page explicitly names Calgary malt house; process page describes steeping, controlled germination and kilning.",
+        "Roles": "maltster; process operator; laboratory technician",
+        "Pathways": "Use the sourced lead as a starting point; resolve occupation-specific credentials and employer requirements.",
+        "Classroom": "Why would a factory start a seed growing, then dry it?",
+        "Discover": "Extend plant-operator card 08 and lab card 16; consider maltster only if genuinely distinct from the existing profiles."
+      },
+      "full_example_status": "full draft prepared; separate copy review pending",
+      "implementation_status": "not implemented; not authorized",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-19/review.md",
+      "decision_scope": "company/story proposal for full research only",
+      "last_completed_on": "2026-10-19",
+      "deferred_reason": null,
+      "reviewer": "user",
+      "decision_date": "2026-10-19",
+      "decision_instruction": "Approve all 15 companies that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later.",
+      "full_copy_decision": "pending",
+      "full_example_packet": "docs/validation/full-examples/2026-10-19/review.md",
+      "full_copy_candidate": "CGY-096-FULL",
+      "full_copy_version": 1,
+      "last_full_researched_on": "2026-10-19"
+    },
+    {
+      "id": "CGY-097",
+      "version": 1,
+      "company": "PTW Energy Services — Calgary panel shop",
+      "canonical_domain": "ptwenergy.com",
+      "aliases": [],
+      "sector": "Electrical control-panel fabrication",
+      "calgary_evidence": "Employer’s 2023 feature identifies Calgary custom panel facility and PLC/SCADA/VFD work; dated evidence needs a current facility recheck in full research.",
+      "presence_type": "Calgary city work as qualified above; wider geography kept explicit",
+      "work": "Build custom control/distribution panels and document/certify assemblies.",
+      "proposed_question": "How do loose components become a control panel a technician can trust?",
+      "role_leads": "panel assembler; electrical/instrumentation technician",
+      "role_status": "Source-described work areas and editorial task leads; no current vacancy or project assignment implied.",
+      "sources": [
+        "https://www.ptwenergy.com/ptw-business-feature-ptw-panel-shop/"
+      ],
+      "source_keys": [
+        "ptw"
+      ],
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-19/source-captures.json",
+      "source_check_date": "2026-10-19",
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        3,
+        3,
+        2
+      ],
+      "score": 8,
+      "score_rationale": {
+        "classroom": "How do loose components become a control panel a technician can trust? — editorial connection to the sourced work, not a formal curriculum endorsement.",
+        "concrete_work": "Build custom control/distribution panels and document/certify assemblies.",
+        "added_value": "Adds assembly and testing of control systems, with some overlap with current instrumentation examples."
+      },
+      "recommendation": "recommend",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-19",
+      "last_attempted": "2026-10-19",
+      "last_researched": "2026-10-19",
+      "screening_completed_on": "2026-10-19",
+      "curriculum_status": "Provisional concept connection only; exact Alberta course outcomes and unit placement must be verified before full-copy approval.",
+      "gaps": "2023 project article is historical. Verify current local shop scope and electrical/trade route; no automatic CPKC project-employment inference.",
+      "net_difference": "Adds assembly and testing of control systems, with some overlap with current instrumentation examples.",
+      "pathway_leads": [
+        {
+          "name": "SAIT Instrumentation Engineering Technology",
+          "url": "https://www.sait.ca/programs-and-courses/diplomas/instrumentation-engineering-technology",
+          "status": "Original programme inspected 19 October: measurement, calibration and process-control training. Diploma route is distinct from trade certification and does not establish an employer requirement."
+        }
+      ],
+      "discover_opportunity": "Extend controls card 13 and manufacturing card 11; a distinct panel-assembler card needs role evidence.",
+      "planned_buildout": {
+        "Company": "Employer’s 2023 feature identifies Calgary custom panel facility and PLC/SCADA/VFD work; dated evidence needs a current facility recheck in full research.",
+        "Roles": "panel assembler; electrical/instrumentation technician",
+        "Pathways": "Use the sourced lead as a starting point; resolve occupation-specific credentials and employer requirements.",
+        "Classroom": "How do loose components become a control panel a technician can trust?",
+        "Discover": "Extend controls card 13 and manufacturing card 11; a distinct panel-assembler card needs role evidence."
+      },
+      "full_example_status": "full draft prepared; separate copy review pending",
+      "implementation_status": "not implemented; not authorized",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-19/review.md",
+      "decision_scope": "company/story proposal for full research only",
+      "last_completed_on": "2026-10-19",
+      "deferred_reason": null,
+      "reviewer": "user",
+      "decision_date": "2026-10-19",
+      "decision_instruction": "Approve all 15 companies that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later.",
+      "full_copy_decision": "pending",
+      "full_example_packet": "docs/validation/full-examples/2026-10-19/review.md",
+      "full_copy_candidate": "CGY-097-FULL",
+      "full_copy_version": 1,
+      "last_full_researched_on": "2026-10-19"
+    },
+    {
+      "id": "CGY-098",
+      "version": 1,
+      "company": "Marlow Design",
+      "canonical_domain": "marlowdesign.ca",
+      "aliases": [],
+      "sector": "Custom jewellery and design",
+      "calgary_evidence": "Current original site and expansion notice identify Calgary studio; 3D previews and optional wax models are described.",
+      "presence_type": "Calgary city work as qualified above; wider geography kept explicit",
+      "work": "Discuss a brief, create 3D renders and wax models, refine a custom design; casting location not established.",
+      "proposed_question": "How can a digital shape become a piece of jewellery that fits?",
+      "role_leads": "jewellery designer; goldsmith (work-location verification needed)",
+      "role_status": "Source-described work areas and editorial task leads; no current vacancy or project assignment implied.",
+      "sources": [
+        "https://marlowdesign.ca/",
+        "https://marlowdesign.ca/pages/faq"
+      ],
+      "source_keys": [
+        "marlow",
+        "marlow-faq"
+      ],
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-19/source-captures.json",
+      "source_check_date": "2026-10-19",
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        3,
+        3,
+        2
+      ],
+      "score": 8,
+      "score_rationale": {
+        "classroom": "How can a digital shape become a piece of jewellery that fits? — editorial connection to the sourced work, not a formal curriculum endorsement.",
+        "concrete_work": "Discuss a brief, create 3D renders and wax models, refine a custom design; casting location not established.",
+        "added_value": "Adds small-scale custom design, modelling and material choices to bootmaking and industrial prototyping."
+      },
+      "recommendation": "recommend",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-19",
+      "last_attempted": "2026-10-19",
+      "last_researched": "2026-10-19",
+      "screening_completed_on": "2026-10-19",
+      "curriculum_status": "Provisional concept connection only; exact Alberta course outcomes and unit placement must be verified before full-copy approval.",
+      "gaps": "Verify who casts/fabricates and where, plus jewellery-specific training; do not imply all production is on-site from a showroom.",
+      "net_difference": "Adds small-scale custom design, modelling and material choices to bootmaking and industrial prototyping.",
+      "pathway_leads": [],
+      "discover_opportunity": "New jewellery-design occupation; mechanical prototyping card 10 is an adjacent comparison, not an identical profession.",
+      "planned_buildout": {
+        "Company": "Current original site and expansion notice identify Calgary studio; 3D previews and optional wax models are described.",
+        "Roles": "jewellery designer; goldsmith (work-location verification needed)",
+        "Pathways": "Use the sourced lead as a starting point; resolve occupation-specific credentials and employer requirements.",
+        "Classroom": "How can a digital shape become a piece of jewellery that fits?",
+        "Discover": "New jewellery-design occupation; mechanical prototyping card 10 is an adjacent comparison, not an identical profession."
+      },
+      "full_example_status": "full draft prepared; separate copy review pending",
+      "implementation_status": "not implemented; not authorized",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-19/review.md",
+      "decision_scope": "company/story proposal for full research only",
+      "pathway_gap": "Jewellery design/fabrication training route needs a specific provider source.",
+      "last_completed_on": "2026-10-19",
+      "deferred_reason": null,
+      "reviewer": "user",
+      "decision_date": "2026-10-19",
+      "decision_instruction": "Approve all 15 companies that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later.",
+      "full_copy_decision": "pending",
+      "full_example_packet": "docs/validation/full-examples/2026-10-19/review.md",
+      "full_copy_candidate": "CGY-098-FULL",
+      "full_copy_version": 1,
+      "last_full_researched_on": "2026-10-19"
+    },
+    {
+      "id": "CGY-099",
+      "version": 1,
+      "company": "GGA-Architecture (formerly Gibbs Gage Architects)",
+      "canonical_domain": "gga-arch.com",
+      "aliases": [
+        "Gibbs Gage Architects"
+      ],
+      "sector": "Architecture and built environment",
+      "calgary_evidence": "Original rebrand page resolves former/current names, Calgary studio and multidisciplinary design work.",
+      "presence_type": "Calgary city work as qualified above; wider geography kept explicit",
+      "work": "Produce design drawings, coordinate technical solutions and project requirements.",
+      "proposed_question": "How can a building design balance the needs of people who use it?",
+      "role_leads": "architect; architectural technologist; contract administrator",
+      "role_status": "Source-described work areas and editorial task leads; no current vacancy or project assignment implied.",
+      "sources": [
+        "https://gga-arch.com/introducing-gga-architecture/",
+        "https://gga-arch.com/projects/"
+      ],
+      "source_keys": [
+        "gga",
+        "gga-projects"
+      ],
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-19/source-captures.json",
+      "source_check_date": "2026-10-19",
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        3,
+        2,
+        2
+      ],
+      "score": 7,
+      "score_rationale": {
+        "classroom": "How can a building design balance the needs of people who use it? — editorial connection to the sourced work, not a formal curriculum endorsement.",
+        "concrete_work": "Produce design drawings, coordinate technical solutions and project requirements.",
+        "added_value": "Valid local lead but broad framing and substantial overlap with existing design examples."
+      },
+      "recommendation": "reserve",
+      "decision": "hold",
+      "workflow_state": "held",
+      "first_discovered": "2026-10-19",
+      "last_attempted": "2026-10-19",
+      "last_researched": "2026-10-19",
+      "screening_completed_on": "2026-10-19",
+      "curriculum_status": "Provisional concept connection only; exact Alberta course outcomes and unit placement must be verified before full-copy approval.",
+      "gaps": "Select one Calgary project with concrete environmental/physics decisions and an architectural education/registration route. Civil engineering is not an architecture credential.",
+      "net_difference": "Valid local lead but broad framing and substantial overlap with existing design examples.",
+      "pathway_leads": [],
+      "discover_opportunity": "Reserve a new architectural-technologist card; existing structural/landscape cards are adjacent.",
+      "planned_buildout": {
+        "Company": "Original rebrand page resolves former/current names, Calgary studio and multidisciplinary design work.",
+        "Roles": "architect; architectural technologist; contract administrator",
+        "Pathways": "Use the sourced lead as a starting point; resolve occupation-specific credentials and employer requirements.",
+        "Classroom": "How can a building design balance the needs of people who use it?",
+        "Discover": "Reserve a new architectural-technologist card; existing structural/landscape cards are adjacent."
+      },
+      "full_example_status": "not researched or drafted; proposal selection only",
+      "implementation_status": "not started",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-19/review.md",
+      "decision_scope": "company/story proposal for full research only",
+      "pathway_gap": "Architectural education and provincial registration route unresolved; civil engineering is not an architecture credential.",
+      "last_completed_on": "2026-10-19",
+      "deferred_reason": "User requested hold for later. Select one Calgary project with concrete environmental/physics decisions and an architectural education/registration route. Civil engineering is not an architecture credential.",
+      "reviewer": "user",
+      "decision_date": "2026-10-19",
+      "decision_instruction": "Approve all 15 companies that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later."
+    },
+    {
+      "id": "CGY-100",
+      "version": 1,
+      "company": "ABC Bees / Apiaries and Bees for Communities",
+      "canonical_domain": "abcbees.ca",
+      "aliases": [
+        "Apiaries and Bees for Communities"
+      ],
+      "sector": "Beekeeping education and colony support",
+      "calgary_evidence": "Original site describes Calgary in-person programmes; 2026 Calgary nucleus-colony delivery page corroborates local work. No current field-day availability is inferred.",
+      "presence_type": "Calgary city work as qualified above; wider geography kept explicit",
+      "work": "Teach seasonal management and colony care; coordinate inspections, transport and education.",
+      "proposed_question": "What can a beekeeper observe to decide what a colony needs next?",
+      "role_leads": "beekeeper; beekeeping educator",
+      "role_status": "Source-described work areas and editorial task leads; no current vacancy or project assignment implied.",
+      "sources": [
+        "https://abcbees.ca/",
+        "https://abcbees.ca/courses/",
+        "https://abcbees.ca/product/calgary-nucs/"
+      ],
+      "source_keys": [
+        "bees",
+        "bees-courses",
+        "bees-local"
+      ],
+      "source_snapshot_manifest": "docs/validation/job-reviews/company-discovery/2026-10-19/source-captures.json",
+      "source_check_date": "2026-10-19",
+      "evidence_gate": "pass at proposal level",
+      "score_dimensions": [
+        4,
+        2,
+        2
+      ],
+      "score": 8,
+      "score_rationale": {
+        "classroom": "What can a beekeeper observe to decide what a colony needs next? — editorial connection to the sourced work, not a formal curriculum endorsement.",
+        "concrete_work": "Teach seasonal management and colony care; coordinate inspections, transport and education.",
+        "added_value": "Adds managed-insect biology and seasonal observation to existing owl conservation."
+      },
+      "recommendation": "recommend",
+      "decision": "approved",
+      "workflow_state": "approved",
+      "first_discovered": "2026-10-19",
+      "last_attempted": "2026-10-19",
+      "last_researched": "2026-10-19",
+      "screening_completed_on": "2026-10-19",
+      "curriculum_status": "Provisional concept connection only; exact Alberta course outcomes and unit placement must be verified before full-copy approval.",
+      "gaps": "Resolve conflicting seasonal programme banners, actual workplace tasks, local apiary evidence and training limits; no current booking/vacancy claim.",
+      "net_difference": "Adds managed-insect biology and seasonal observation to existing owl conservation.",
+      "pathway_leads": [
+        {
+          "name": "ABC Bees in-person learning",
+          "url": "https://abcbees.ca/courses/",
+          "status": "Source describes beekeeping education; exact next Calgary field date, availability, cost and whether a paid occupational pathway exists remain unresolved."
+        }
+      ],
+      "discover_opportunity": "New beekeeper/educator lead; compare with animal-care and conservation cards without treating honey bees as native-wildlife recovery.",
+      "planned_buildout": {
+        "Company": "Original site describes Calgary in-person programmes; 2026 Calgary nucleus-colony delivery page corroborates local work. No current field-day availability is inferred.",
+        "Roles": "beekeeper; beekeeping educator",
+        "Pathways": "Use the sourced lead as a starting point; resolve occupation-specific credentials and employer requirements.",
+        "Classroom": "What can a beekeeper observe to decide what a colony needs next?",
+        "Discover": "New beekeeper/educator lead; compare with animal-care and conservation cards without treating honey bees as native-wildlife recovery."
+      },
+      "full_example_status": "full draft prepared; separate copy review pending",
+      "implementation_status": "not implemented; not authorized",
+      "publication_status": "not published",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-19/review.md",
+      "decision_scope": "company/story proposal for full research only",
+      "last_completed_on": "2026-10-19",
+      "deferred_reason": null,
+      "reviewer": "user",
+      "decision_date": "2026-10-19",
+      "decision_instruction": "Approve all 15 companies that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later.",
+      "full_copy_decision": "pending",
+      "full_example_packet": "docs/validation/full-examples/2026-10-19/review.md",
+      "full_copy_candidate": "CGY-100-FULL",
+      "full_copy_version": 1,
+      "last_full_researched_on": "2026-10-19"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "occurrence": "2026-10-19",
+  "status": "completed",
+  "mode": [
+    "daily proposal discovery",
+    "Monday existing-example job maintenance",
+    "Discover coverage reconciliation"
+  ],
+  "app_snapshot": {
+    "examples": 46,
+    "discover_cards": 57,
+    "saved_jobs": 17,
+    "source": "actual src/content imports using local TypeScript transpile helper; /tmp/citc-research-app.json"
+  },
+  "prior_state": {
+    "known_registry_entries": 100,
+    "daily_packets_read": [
+      "2026-10-15",
+      "2026-10-16",
+      "2026-10-17",
+      "2026-10-18"
+    ],
+    "benchmark": "docs/validation/source-comparison/2026-10-15-calgary-20/paid-findings.md",
+    "weekly_prior": "all-examples/2026-10-12-weekly/review.md",
+    "review_boundary": "Prior decisions preserved; all new company/job versions pending."
+  },
+  "search_families": [
+    "Calgary prosthetics/orthotics and fabrication",
+    "Calgary industrial instruments/motor repair, original supplier facilities",
+    "Calgary dairy/food processing and distribution",
+    "Calgary printing, metals recovery and windows",
+    "Calgary stormwater/wetlands and blood operations",
+    "Calgary malting/distilling, compression, valves and control panels",
+    "Calgary jewellery, architecture and beekeeping",
+    "Each actual featured employer career source or source-registry homepage",
+    "Specific employer job descriptions and original programme/training routes"
+  ],
+  "query_log_note": "These are search themes, not a fabricated exhaustive query transcript. URL-level evidence, retrieval times, failures and hashes are in the source manifests. Incidental results and already-known companies were excluded, not counted as new screens.",
+  "source_captures": {
+    "daily_manifest": "source-captures.json",
+    "daily_unique_urls": 58,
+    "weekly_manifest": "../../all-examples/2026-10-19-weekly/source-captures.json",
+    "weekly_unique_urls": 75,
+    "limitations": "HTTP success is retrieval only; blocked original pages explicitly held or unknown. George Brown full reader extraction inspected but direct snapshot was blocked; source URL retained with limitation."
+  },
+  "results": {
+    "new_screened": 20,
+    "gate_qualified": 19,
+    "score_8_plus": 15,
+    "reserves_score7": 4,
+    "held": 1,
+    "highlighted_company_proposals": 5,
+    "new_job_cards": 5,
+    "all_new_decisions": "pending",
+    "shortfall": 0
+  },
+  "budget": {
+    "week_start": "2026-10-19",
+    "paid_runs": 0,
+    "actual_usd": 0,
+    "outstanding_usd": 0,
+    "cap_usd": 10,
+    "provider_breakdown": {},
+    "ledger": "../../costs/looot-2026-10-19.json",
+    "no_topup": true
+  },
+  "saturation": {
+    "completed_daily_passes": 5,
+    "qualified_today": 19,
+    "triggered": false,
+    "recommendation": "Continue rotated Calgary screening; no evidence to declare saturation."
+  },
+  "no_app_edits": true,
+  "no_final_artwork_generated": true,
+  "no_publication": true
+}

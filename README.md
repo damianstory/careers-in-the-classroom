@@ -71,3 +71,7 @@ npm run test:privacy-dev   # starts the dev server and proves a typed topic is n
 
 `docs/build/PLAN.md` (reviewed and approved in 3 rounds; log in `docs/build/PLAN-REVIEW-LOG.md`).
 Connected exploration: `docs/build/PLAN-connected-exploration.md` (log `docs/build/PLAN-connected-exploration-REVIEW-LOG.md`, verification `docs/build/VERIFICATION-connected-exploration.md`).
+
+### 19 October 2026 identification additions
+
+Original company-owned assets and transformations are recorded in [the dated artwork record](design/example-expansion-2026-10-19/README.md#official-identification-assets). This adds identification graphics for the 15 approved examples; none were generated or redrawn.

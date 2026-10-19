@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-19",
+  "mode": "Full research and proposed copy for the 15 approved Oct19 companies",
+  "approval": "approval.json",
+  "prior_inputs": [
+    "docs/validation/job-reviews/company-discovery/2026-10-19/review.md",
+    "docs/validation/full-examples/2026-10-18/review.md",
+    "docs/validation/source-comparison/2026-10-15-calgary-20/paid-findings.md"
+  ],
+  "application_read": [
+    "src/content/types.ts",
+    "src/content/examples.ts",
+    "src/content/example-records/efw-radiology.ts",
+    "src/content/discover.ts",
+    "src/content/discover-role-aliases.ts",
+    "src/lib/discover-cards.ts",
+    "src/content/curriculum.ts"
+  ],
+  "same_day_discovery_sources_reused": true,
+  "free_collection_manifests": [
+    "source-captures.json",
+    "final-captures.json",
+    "pathway-captures.json",
+    "current-route-captures.json",
+    "technical-captures.json",
+    "recycling-route-captures.json",
+    "compression-capture.json"
+  ],
+  "paid_collection_reason": "OPC clinical/technical programme and residency sources both blocked to direct GET/free reader; two bounded original-page Firecrawl calls recovered them. No company-profile enrichment needed after original work evidence resolved scope.",
+  "source_limitations": [
+    "Gzip-compressed Aeromag discovery responses had unreadable captures. Fresh decoded originals supersede them.",
+    "Clinical programme provider has a stale generic next-intake sentence alongside an explicit 2026-closed/2028-opening notice; the explicit closed/next-opening notice governs the proposed copy.",
+    "PTW shop operation evidence is dated 2023; current pages do not update its exact configuration.",
+    "CBS historical job URL is unavailable; role overview remains separate from vacancy evidence.",
+    "ABC Bees field-day banners/availability conflict; no in-person intake claimed."
+  ],
+  "curriculum": "Original official documents retained in Oct17 research, relevant text reread; physics uses performance standards. Two inquiry-only proposals have no forced unit links.",
+  "drafts": 15,
+  "role_company_appearances": 28,
+  "new_Discover_occupations_proposed": 13,
+  "new_job_cards": 4,
+  "illustration_briefs": 43,
+  "artwork_generated": 0,
+  "app_edits": 0,
+  "implementation_authorized": false,
+  "publication": false
+}

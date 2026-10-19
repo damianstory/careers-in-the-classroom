@@ -1,0 +1,16 @@
+[
+  {
+    "id": "CGY-083-DIAGRAM-ART",
+    "prompt": "Edit this teaching illustration. Remove the balance scale entirely: it wrongly suggests weighing a meter against water. Keep the graphic-novel ink and halftone style and landscape frame. Replace it with a large simple paper comparison chart at step 3 showing several orange measurement points clustered together but offset from one blue reference line, no words or quantities. Step 1 is a known reference vessel, step 2 is the process meter; step 3 compares readings; step 4 is the record/recheck clipboard. Preserve clear directional arrowheads and return arrow. No embedded words, logos or footer band. Keep the rest unchanged.",
+    "path": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-bb9d7dcb-e37e-4aee-8b97-2a1efadb852d.png",
+    "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-024d60cd-11ca-4438-aa23-c61212ab12c0.png",
+    "status": "generated"
+  },
+  {
+    "id": "CGY-085-DIAGRAM-ART",
+    "prompt": "Edit this cheesemaking teaching schematic. Keep the ink-and-halftone style, landscape frame and steps 1 milk, 2 curd formation, 3 draining. Move marker 4 to the bowl of finished curds at upper right, adding a clear arrowhead from the draining curds to that bowl. Leave the whey jug below as the unnumbered separate liquid stream, fed by a clear arrow from the curd/whey vessel; remove its current marker 4 and unnecessary duplicate small bowl of whey. This is a general model, no company-specific machinery or recipe, no words or footer band. Preserve all other elements.",
+    "path": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-26b7ced3-be79-4446-a6e6-aaf3ca5f685f.png",
+    "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-fbb99785-c532-42c8-b1db-5d79ab147558.png",
+    "status": "generated"
+  }
+]

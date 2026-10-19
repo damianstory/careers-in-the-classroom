@@ -1,0 +1,145 @@
+[
+  {
+    "id": "oct19-route-prosthetic-tech",
+    "provider": "George Brown Polytechnic",
+    "name": "Orthotic/Prosthetic Technician S102",
+    "routeType": "Diploma",
+    "location": "Toronto, Ontario",
+    "url": "https://www.georgebrown.ca/programs/orthotic-prosthetic-technician-program-s102",
+    "learns": "Fabrication, repair, materials and collaboration with clinical practitioners.",
+    "entryNote": "OPC’s current accredited-programme description distinguishes this technical route from clinical qualification. Check provider admissions; professional technical registration involves additional requirements.",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-route-prosthetic-clinical",
+    "provider": "BCIT",
+    "name": "Prosthetics and Orthotics",
+    "routeType": "Post-graduate diploma",
+    "location": "Burnaby, British Columbia",
+    "url": "https://www.bcit.ca/programs/prosthetics-and-orthotics-diploma-full-time-7100diplt/",
+    "learns": "Clinical assessment, biomechanics, device design and patient-centred fitting.",
+    "entryNote": "Provider requires a prior bachelor’s degree. September 2026 applications are closed; the page says applications for September 2028 open 1 October 2027. OPC separately requires supervised residency and further certification steps; graduation alone does not certify a clinician.",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-route-graphic",
+    "provider": "SAIT",
+    "name": "Interactive Design — Graphic Design",
+    "routeType": "Diploma",
+    "location": "Calgary",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/interactive-design-graphic-design",
+    "learns": "Visual communication and preparation of files for small- and large-format print.",
+    "entryNote": "A prepress/design preparation route. It does not replace press-specific experience or training.",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-route-press",
+    "provider": "Alberta alis",
+    "name": "Printing press operator — education and workplace learning",
+    "routeType": "Occupational route",
+    "location": "Alberta workplaces",
+    "url": "https://alis.alberta.ca/occinfo/occupations-in-alberta/occupation-profiles/printing-press-operator/",
+    "learns": "Press setup, colour control, registration and production checks.",
+    "entryNote": "Government occupational overview, not an enrolled course or vacancy. Workplace training and employer requirements vary. Its duties section is dated 2020; no current wage claim is used.",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-route-deicing",
+    "provider": "Aeromag",
+    "name": "Employer classroom and practical training",
+    "routeType": "Employer training",
+    "location": "Company-wide; Calgary vacancy listed separately",
+    "url": "https://aeromag.ca/en/careers/",
+    "learns": "Aircraft, fluids, communication, truck operation and supervised practical work.",
+    "entryNote": "The current Calgary-linked seasonal posting requires a driver’s licence, shift availability and airport security/airside requirements. Training is employer-provided; it is not an aircraft-maintenance licence. Named simulators are in Vancouver and Cleveland.",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-route-glazier",
+    "provider": "SAIT",
+    "name": "Glazier",
+    "routeType": "Apprenticeship",
+    "location": "Calgary technical training plus workplace learning",
+    "url": "https://www.sait.ca/apprenticeships-and-trades/programs/glazier",
+    "learns": "Glazing systems, fabrication and installation skills.",
+    "entryNote": "An apprenticeship route requires the applicable registration, work and education components. Not every window-installation job is advertised as a glazier apprenticeship.",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-route-mlt",
+    "provider": "SAIT",
+    "name": "Medical Laboratory Technology",
+    "routeType": "Diploma",
+    "location": "Calgary and clinical learning sites",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/medical-laboratory-technology",
+    "learns": "Clinical laboratory testing, including hematology and transfusion-related study.",
+    "entryNote": "Separate from Chemical Laboratory Technology. Eligibility for professional practice, registration and individual employer requirements must be checked separately; no Calgary Blood Services placement is promised.",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-route-mla",
+    "provider": "SAIT",
+    "name": "Medical Laboratory Assistant",
+    "routeType": "Certificate",
+    "location": "Calgary and practicum settings",
+    "url": "https://www.sait.ca/programs-and-courses/certificates/medical-laboratory-assistant",
+    "learns": "Clinical specimens, laboratory procedures and quality-focused support work.",
+    "entryNote": "A related laboratory-support route, not proof that CBS requires this certificate for every production assistant. Does not qualify its graduate as a medical laboratory technologist.",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-route-food",
+    "provider": "University of Alberta",
+    "name": "Nutrition and Food Science — Food Science and Technology",
+    "routeType": "BSc specialization",
+    "location": "Edmonton",
+    "url": "https://www.ualberta.ca/en/undergraduate-programs/bachelor-of-science-in-nutrition-and-food-science-food-science-and-technology-specialization.html",
+    "learns": "Food manufacturing, preservation, storage and quality assurance.",
+    "entryNote": "An Alberta degree route relevant to food science; it is not a universal minimum for cheese-production or malt-house jobs.",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-route-electrician",
+    "provider": "SAIT",
+    "name": "Electrician",
+    "routeType": "Apprenticeship",
+    "location": "Calgary technical training plus workplace learning",
+    "url": "https://www.sait.ca/apprenticeships-and-trades/programs/electrician",
+    "learns": "Electrical drawings, circuits, installations and trade verification.",
+    "entryNote": "Apprenticeship requires registration and the required education/work components. An instrumentation diploma does not itself confer electrician qualification.",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-route-jewellery",
+    "provider": "Alberta University of the Arts",
+    "name": "Jewellery and Metals",
+    "routeType": "BFA study area",
+    "location": "Calgary",
+    "url": "https://www.auarts.ca/learn-with-us/program-areas/jewellery-and-metals",
+    "learns": "Jewellery, small metal objects, design and fabrication.",
+    "entryNote": "A local design/materials route, not an employer-mandated qualification or a guarantee of production work at Marlow.",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-route-bees",
+    "provider": "ABC Bees",
+    "name": "Level One Beekeeping Certificate",
+    "routeType": "Independent online education",
+    "location": "Online; provider has Calgary work",
+    "url": "https://www.abcbees.buzz/courses/level-1-beekeeping",
+    "learns": "Bee biology, observation and seasonal colony-management planning.",
+    "entryNote": "Provider-issued education, not an academic diploma, occupational licence or permission to keep bees. Online course listing is distinct from the contradictory/dated field-day banners; no current Calgary field-day booking is claimed.",
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-route-recycling",
+    "provider": "Alberta alis",
+    "name": "Recycling waste handling — workplace learning",
+    "routeType": "Occupational route",
+    "location": "Alberta workplaces",
+    "url": "https://alis.alberta.ca/occinfo/occupations-in-alberta/occupation-profiles/municipal-recycling-waste-handler/",
+    "learns": "Material categories, contamination checks and material handling through workplace training.",
+    "entryNote": "Government profile concerns municipal recycling, used as a related entry-route comparison. It does not prove Calgary Metal’s hiring requirements, training availability or equipment certifications. Employer-specific requirements must be checked.",
+    "checkedOn": "2026-10-19"
+  }
+]

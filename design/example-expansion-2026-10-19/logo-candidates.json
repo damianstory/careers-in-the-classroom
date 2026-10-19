@@ -1,0 +1,594 @@
+[
+  {
+    "slug": "clynch-prosthetics",
+    "name": "Clynch Prosthetics & Orthotics",
+    "url": "https://clynchprosthetics.com/",
+    "status": 200,
+    "images": [
+      {
+        "width": "800",
+        "height": "367",
+        "src": "https://clynchprosthetics.com/wp-content/uploads/2024/08/clynch-logo-short-light.webp",
+        "class": "attachment-full size-full wp-image-308",
+        "alt": "Clynch Prosthetic & Orthotic Laboratory Short Logo White Text",
+        "srcset": "https://clynchprosthetics.com/wp-content/uploads/2024/08/clynch-logo-short-light.webp 800w, https://clynchprosthetics.com/wp-content/uploads/2024/08/clynch-logo-short-light-300x138.webp 300w, https://clynchprosthetics.com/wp-content/uploads/2024/08/clynch-logo-short-light-768x352.webp 768w"
+      },
+      {
+        "width": "800",
+        "height": "367",
+        "src": "https://clynchprosthetics.com/wp-content/uploads/2024/08/clynch-logo-short-dark.webp",
+        "class": "attachment-full size-full wp-image-307",
+        "alt": "Clynch Prosthetic & Orthotic Laboratory Short Logo Full Color",
+        "srcset": "https://clynchprosthetics.com/wp-content/uploads/2024/08/clynch-logo-short-dark.webp 800w, https://clynchprosthetics.com/wp-content/uploads/2024/08/clynch-logo-short-dark-300x138.webp 300w, https://clynchprosthetics.com/wp-content/uploads/2024/08/clynch-logo-short-dark-768x352.webp 768w"
+      },
+      {
+        "width": "196",
+        "height": "101",
+        "src": "https://clynchprosthetics.com/wp-content/uploads/2024/08/logo-opc.webp",
+        "class": "attachment-large size-large wp-image-153",
+        "alt": "OPC Logo white and red"
+      },
+      {
+        "width": "219",
+        "height": "97",
+        "src": "https://clynchprosthetics.com/wp-content/uploads/2024/08/logo-aop.webp",
+        "class": "attachment-large size-large wp-image-152",
+        "alt": "AOP Logo in white"
+      },
+      {
+        "class": "swiper-slide-image",
+        "src": "https://clynchprosthetics.com/wp-content/uploads/2024/09/logo_aish.webp",
+        "alt": "Alberta AISH Logo in white and blue"
+      },
+      {
+        "class": "swiper-slide-image",
+        "src": "https://clynchprosthetics.com/wp-content/uploads/2024/09/logo_indigenous-affairs.webp",
+        "alt": "Indigenous Affairs Logo in white and red"
+      },
+      {
+        "class": "swiper-slide-image",
+        "src": "https://clynchprosthetics.com/wp-content/uploads/2024/09/logo_ifhp.webp",
+        "alt": "IFHP Logo in white and red"
+      },
+      {
+        "class": "swiper-slide-image",
+        "src": "https://clynchprosthetics.com/wp-content/uploads/2024/09/logo_veterans-affairs.webp",
+        "alt": "Veterans Affairs Logo in white and red"
+      },
+      {
+        "class": "swiper-slide-image",
+        "src": "https://clynchprosthetics.com/wp-content/uploads/2024/09/logo_alberta-blue-cross.webp",
+        "alt": "Alberta Bluecross Logo in white"
+      },
+      {
+        "class": "swiper-slide-image",
+        "src": "https://clynchprosthetics.com/wp-content/uploads/2024/09/logo_wcb.webp",
+        "alt": "WCB Logo in white"
+      },
+      {
+        "width": "800",
+        "height": "398",
+        "src": "https://clynchprosthetics.com/wp-content/uploads/2024/08/clynch-full-logo-light.webp",
+        "class": "attachment-full size-full wp-image-283",
+        "alt": "Clynch Prosthetic & Orthotic Laboratory Full Logo White Title Text",
+        "srcset": "https://clynchprosthetics.com/wp-content/uploads/2024/08/clynch-full-logo-light.webp 800w, https://clynchprosthetics.com/wp-content/uploads/2024/08/clynch-full-logo-light-300x149.webp 300w, https://clynchprosthetics.com/wp-content/uploads/2024/08/clynch-full-logo-light-768x382.webp 768w"
+      },
+      {
+        "class": "aligncenter",
+        "src": "https://clynchprosthetics.com/wp-content/uploads/2024/08/growme-logo-white.webp"
+      }
+    ]
+  },
+  {
+    "slug": "westech-industrial",
+    "name": "Westech Industrial",
+    "url": "https://westech-ind.com/",
+    "status": 200,
+    "images": [
+      {
+        "class": "fl-photo-img wp-image-31152 size-full",
+        "src": "https://westech-ind.com/wp-content/uploads/2020/01/Westech-White_Web-Header-Logo.png",
+        "alt": "Westech Industrial Logo",
+        "height": "226",
+        "width": "315",
+        "srcset": "https://westech-ind.com/wp-content/uploads/2020/01/Westech-White_Web-Header-Logo.png 315w, https://westech-ind.com/wp-content/uploads/2020/01/Westech-White_Web-Header-Logo-300x215.png 300w"
+      },
+      {
+        "class": "ubermenu-image ubermenu-image-size-full ubermenu-image-lazyload",
+        "data-src": "https://westech-ind.com/wp-content/uploads/2026/08/Crysound_menu.png",
+        "width": "130",
+        "height": "73",
+        "alt": "Crysound Logo",
+        "src": "https://westech-ind.com/wp-content/uploads/2026/08/Crysound_menu.png"
+      },
+      {
+        "class": "swiper-slide-image swiper-lazy",
+        "alt": "Crysound Logo",
+        "data-src": "https://westech-ind.com/wp-content/uploads/2026/08/Crysound_menu.png",
+        "width": "130",
+        "height": "73",
+        "src": "https://westech-ind.com/wp-content/uploads/2026/08/Crysound_menu.png"
+      },
+      {
+        "class": "fl-photo-img wp-image-33103 size-medium",
+        "src": "https://westech-ind.com/wp-content/uploads/2026/08/BM_Logo_2018-Primary-EN-PMS-transparent-300x103.png",
+        "alt": "BM_Logo_2018-Primary-EN-PMS-transparent",
+        "height": "103",
+        "width": "300",
+        "srcset": "https://westech-ind.com/wp-content/uploads/2026/08/BM_Logo_2018-Primary-EN-PMS-transparent-300x103.png 300w, https://westech-ind.com/wp-content/uploads/2026/08/BM_Logo_2018-Primary-EN-PMS-transparent-1024x352.png 1024w, https://westech-ind.com/wp-content/uploads/2026/08/BM_Logo_2018-Primary-EN-PMS-transparent-768x264.png 768w, https://westech-ind.com/wp-content/uploads/2026/08/BM_Logo_2018-Primary-EN-PMS-transparent-400x138.png 400w, https://westech-ind.com/wp-content/uploads/2026/08/BM_Logo_2018-Primary-EN-PMS-transparent.png 1367w"
+      },
+      {
+        "class": "fl-photo-img wp-image-33105 size-medium",
+        "src": "https://westech-ind.com/wp-content/uploads/2026/08/Intertek-Logo-1-244x300.png",
+        "alt": "Intertek-Logo-1",
+        "height": "300",
+        "width": "244",
+        "srcset": "https://westech-ind.com/wp-content/uploads/2026/08/Intertek-Logo-1-244x300.png 244w, https://westech-ind.com/wp-content/uploads/2026/08/Intertek-Logo-1.png 345w"
+      },
+      {
+        "class": "fl-photo-img wp-image-31123 size-medium",
+        "src": "https://westech-ind.com/wp-content/uploads/2020/01/Westech-White-Logo-Hoskins-Group_EN_300-300x219.png",
+        "alt": "Westech Industrial Logo",
+        "height": "219",
+        "width": "300",
+        "srcset": "https://westech-ind.com/wp-content/uploads/2020/01/Westech-White-Logo-Hoskins-Group_EN_300-300x219.png 300w, https://westech-ind.com/wp-content/uploads/2020/01/Westech-White-Logo-Hoskins-Group_EN_300.png 350w"
+      }
+    ]
+  },
+  {
+    "slug": "alberta-cheese",
+    "name": "Alberta Cheese Company / Franco\u2019s (Gay Lea)",
+    "url": "https://albertacheese.com/",
+    "status": 200,
+    "images": [
+      {
+        "src": "https://albertacheese.com/images/alberta_cheese-logo.png",
+        "alt": "Alberta Cheese",
+        "width": "409",
+        "height": "311",
+        "class": "logo"
+      },
+      {
+        "src": "https://albertacheese.com/images/gl-footer-logo-md.png",
+        "width": "150",
+        "height": "63",
+        "alt": "Gay Lea: Born on the farm"
+      },
+      {
+        "src": "https://albertacheese.com/images/alberta_cheese-map.png",
+        "alt": "Alberta Cheese/Fromage",
+        "width": "624",
+        "height": "406",
+        "class": "logo"
+      }
+    ]
+  },
+  {
+    "slug": "mountain-view-printing",
+    "name": "Mountain View Printing",
+    "url": "https://mvprinters.com/",
+    "status": 200,
+    "images": [
+      {
+        "class": "masthead__logo",
+        "src": "https://mvprinters.com/wp-content/themes/mvprinters/assets/img/mountain-view-logo.svg",
+        "alt": "Mountain View Print & Graphics Ltd."
+      },
+      {
+        "class": "letter__logo",
+        "src": "https://mvprinters.com/wp-content/themes/mvprinters/assets/img/mountain-view-logo-horizontal.svg",
+        "alt": "Mountain View Print & Graphics Ltd."
+      }
+    ]
+  },
+  {
+    "slug": "calgary-metal-recycling",
+    "name": "Calgary Metal Recycling",
+    "url": "https://calgarymetal.com/",
+    "status": 200,
+    "images": [
+      {
+        "src": "https://calgarymetal.com/wp-content/themes/cmri/resource/img/calgary-metal-logo.svg",
+        "alt": "Calgary Metal Recycling Inc."
+      }
+    ]
+  },
+  {
+    "slug": "aeromag-calgary",
+    "name": "Aeromag \u2014 Calgary YYC station",
+    "url": "https://aeromag.ca/",
+    "status": 200,
+    "images": [
+      {
+        "class": "logo-graphic",
+        "src": "https://aeromag.ca/wp-content/themes/aeromag/public/build/images/logo-graphic.901cc6a0.svg",
+        "alt": "Aeromag"
+      },
+      {
+        "class": "logo-light",
+        "src": "https://aeromag.ca/wp-content/themes/aeromag/public/build/images/logo-light.71edf22e.svg",
+        "alt": "Aeromag"
+      },
+      {
+        "class": "logo-dark",
+        "src": "https://aeromag.ca/wp-content/themes/aeromag/public/build/images/logo-dark.cc87b1ea.svg",
+        "alt": "Aeromag"
+      },
+      {
+        "src": "https://aeromag.ca/wp-content/themes/aeromag/public/build/images/logo-light.71edf22e.svg",
+        "alt": "Aeromag"
+      },
+      {
+        "src": "https://aeromag.ca/wp-content/uploads/2023/10/logo-primary.svg",
+        "alt": "Aeromag",
+        "class": "img-responsive"
+      }
+    ]
+  },
+  {
+    "slug": "lux-windows",
+    "name": "Lux Windows & Doors",
+    "url": "https://www.luxwindows.com/",
+    "status": 200,
+    "images": [
+      {
+        "src": "https://www.luxwindows.com/assets/build/img/logos/LUX_ReGen-NoTag-Black.svg",
+        "alt": "ReGen logo",
+        "class": "nav-regen-logo"
+      },
+      {
+        "src": "https://www.luxwindows.com/assets/build/img/pages/home/LUX_ReGen-Logo.svg",
+        "alt": "ReGen logo",
+        "class": "regen-logo"
+      },
+      {
+        "src": "https://www.luxwindows.com/img/layout/sam-awards-winner-logo.png",
+        "alt": "CHBA - Calgary Region | SAM Awards Winner Logo",
+        "class": "pull-left img-responsive"
+      },
+      {
+        "src": "https://www.luxwindows.com/img/layout/footer-certification-logos-with-bg.png",
+        "alt": "Certification Logos : ENERGY STAR, COR, Made in Canada"
+      }
+    ]
+  },
+  {
+    "slug": "magna-engineering",
+    "name": "MAGNA Engineering",
+    "url": "https://www.magnaengineering.ca/",
+    "status": 200,
+    "images": [
+      {
+        "src": "https://images.squarespace-cdn.com/content/v1/6425d50c528f4a0e97a3e1eb/b855c12f-c73d-49c1-8e9b-afd79334d199/Magna_Logo_Colour_CMYK_small.png?format=1500w",
+        "alt": "MAGNA Engineering"
+      },
+      {
+        "src": "https://images.squarespace-cdn.com/content/v1/6425d50c528f4a0e97a3e1eb/b855c12f-c73d-49c1-8e9b-afd79334d199/Magna_Logo_Colour_CMYK_small.png?format=1500w",
+        "alt": "MAGNA Engineering"
+      }
+    ]
+  },
+  {
+    "slug": "canadian-blood-services-calgary",
+    "name": "Canadian Blood Services \u2014 Calgary operations",
+    "url": "https://www.blood.ca/en",
+    "status": 200,
+    "images": [
+      {
+        "alt": "Home",
+        "class": "img-fluid d-inline-block align-top",
+        "src": "https://www.blood.ca/themes/custom/cbs_bootstrap_sass/CBS_Logo_descriptors_CMYK.svg"
+      },
+      {
+        "alt": "Home",
+        "src": "https://www.blood.ca/themes/custom/cbs_bootstrap_sass/CBS_Logo_descriptors_CMYK.svg",
+        "class": "img-fluid d-inline-block align-top w-100 pb-3 pb-lg-0 px-2"
+      }
+    ]
+  },
+  {
+    "slug": "enerflex",
+    "name": "Enerflex",
+    "url": "https://www.enerflex.com/",
+    "status": 200,
+    "images": [
+      {
+        "width": "190",
+        "height": "46",
+        "data-src": "https://www.enerflex.com/wp-content/uploads/enerflex-logo-1-1.png",
+        "class": "custom-logo lazyload",
+        "alt": "Enerflex logo in white text on a transparent background, representing energy solutions and equipment services company.",
+        "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg=="
+      }
+    ]
+  },
+  {
+    "slug": "spartan-controls",
+    "name": "Spartan Controls",
+    "url": "https://www.spartancontrols.com/",
+    "status": 200,
+    "images": [
+      {
+        "srcset": "/getContentAsset/46e07a0a-d96b-4fc8-83b1-c3e07c4d68c8/dfc3d011-8f63-43f6-9ed8-4b444333a1d0/spartancontrols-mobile-logo.svg?language=en&v=1790776123863",
+        "src": "https://www.spartancontrols.com/getContentAsset/46e07a0a-d96b-4fc8-83b1-c3e07c4d68c8/dfc3d011-8f63-43f6-9ed8-4b444333a1d0/spartancontrols-mobile-logo.svg?language=en&v=1790776123863"
+      },
+      {
+        "src": "https://www.spartancontrols.com/getContentAsset/27614485-8e6c-4f6c-bb77-40e4d34d74de/dfc3d011-8f63-43f6-9ed8-4b444333a1d0/Spartan-Controls-logo.svg?language=en&v=1790776123899",
+        "alt": "Spartan Controls",
+        "class": "navbar-brand-logo main-partner-logo"
+      },
+      {
+        "src": "https://www.spartancontrols.com/getContentAsset/013d857a-879e-4166-84b7-9e67c7b5b843/dfc3d011-8f63-43f6-9ed8-4b444333a1d0/emerson-logo.png?language=en&v=1790776123938",
+        "alt": "Emerson",
+        "class": "navbar-brand-logo"
+      },
+      {
+        "data-src": "/getContentAsset/013d857a-879e-4166-84b7-9e67c7b5b843/dfc3d011-8f63-43f6-9ed8-4b444333a1d0/emerson-logo.png?language=en&v=1790776123938",
+        "src": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27200%27%20height%3D%27103%27%2F%3E",
+        "alt": "Emerson",
+        "class": "navbar-brand-logo lazy"
+      },
+      {
+        "class": "img-fluid img-cover lazy",
+        "src": "https://www.spartancontrols.com/getContentAsset/8c858174-c4c2-4a1c-b405-15d6aa0a8d56/dfc3d011-8f63-43f6-9ed8-4b444333a1d0/TextOnImage4Cols/TruckVue-Truck-Realistic-Logo-Blue-Background_TextOnImage4Cols.webp?language=en&v=1792405378987",
+        "alt": "Preventative Maintenance Solutions"
+      },
+      {
+        "src": "https://www.spartancontrols.com/getContentAsset/0986d16a-4e64-49ab-9b61-7f9ed89fb665/dfc3d011-8f63-43f6-9ed8-4b444333a1d0/NewsCardImage/Spartan-Danfoss_NewsCardImage.webp?language=en&v=1792405376430",
+        "alt": "Spartan logo, Danfoss logo, partnership with Spartan and Danfoss",
+        "class": "latest-news-item-image"
+      },
+      {
+        "alt": "24-7 logo",
+        "src": "https://www.spartancontrols.com/getContentAsset/a32258ca-5c48-467e-b3e4-0839d4ae3d5e/dfc3d011-8f63-43f6-9ed8-4b444333a1d0/24?language=en"
+      }
+    ]
+  },
+  {
+    "slug": "canada-malting",
+    "name": "Canada Malting \u2014 Calgary malt house",
+    "url": "https://canadamalting.com/",
+    "status": 403,
+    "images": []
+  },
+  {
+    "slug": "ptw-panel-shop",
+    "name": "PTW Energy Services \u2014 Calgary panel shop",
+    "url": "https://www.ptwenergy.com/",
+    "status": 200,
+    "images": [
+      {
+        "class": "header-image is-logo-image",
+        "alt": "PTW Energy Services",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/2024/06/PTW-Logo-white.png",
+        "width": "793",
+        "height": "483"
+      },
+      {
+        "srcset": "//www.ptwenergy.com/wp-content/uploads/slider/cache/933cf3788a15e4e890362213c1ffedae/PTW-Logo-white.webp",
+        "class": "skip-lazy",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/slider/cache/933cf3788a15e4e890362213c1ffedae/PTW-Logo-white.webp"
+      },
+      {
+        "srcset": "//www.ptwenergy.com/wp-content/uploads/slider/cache/30528b046fc9bb1138f8affa353fdceb/PTW-Logo-white.webp",
+        "class": "skip-lazy",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/slider/cache/30528b046fc9bb1138f8affa353fdceb/PTW-Logo-white.webp"
+      },
+      {
+        "alt": "",
+        "class": "skip-lazy",
+        "width": "793",
+        "height": "483",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/2024/06/PTW-Logo-white.png"
+      },
+      {
+        "srcset": "//www.ptwenergy.com/wp-content/uploads/slider/cache/1aeb3a376ddc45b3fabac53125068f5e/ISN-Logo.webp",
+        "class": "skip-lazy",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/slider/cache/1aeb3a376ddc45b3fabac53125068f5e/ISN-Logo.webp"
+      },
+      {
+        "srcset": "//www.ptwenergy.com/wp-content/uploads/slider/cache/be9af2ba96c058011a8a8c91ae775f9e/ISN-Logo.webp",
+        "class": "skip-lazy",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/slider/cache/be9af2ba96c058011a8a8c91ae775f9e/ISN-Logo.webp"
+      },
+      {
+        "alt": "",
+        "class": "skip-lazy",
+        "width": "646",
+        "height": "182",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/2024/06/ISN-Logo.png"
+      },
+      {
+        "srcset": "//www.ptwenergy.com/wp-content/uploads/slider/cache/8b00a483321936bc5250934ff3f1b79d/Complyworks-Logo-1.webp",
+        "class": "skip-lazy",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/slider/cache/8b00a483321936bc5250934ff3f1b79d/Complyworks-Logo-1.webp"
+      },
+      {
+        "srcset": "//www.ptwenergy.com/wp-content/uploads/slider/cache/cdcb36d0b57cc38c1199a967b10ce5cb/Complyworks-Logo-1.webp",
+        "class": "skip-lazy",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/slider/cache/cdcb36d0b57cc38c1199a967b10ce5cb/Complyworks-Logo-1.webp"
+      },
+      {
+        "srcset": "//www.ptwenergy.com/wp-content/uploads/slider/cache/624a1ee3df00cbc40df2eb71fe58ac55/Complyworks-Logo-1.webp",
+        "class": "skip-lazy",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/slider/cache/624a1ee3df00cbc40df2eb71fe58ac55/Complyworks-Logo-1.webp"
+      },
+      {
+        "alt": "",
+        "class": "skip-lazy",
+        "width": "1045",
+        "height": "410",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/2024/06/Complyworks-Logo-1.webp"
+      },
+      {
+        "srcset": "//www.ptwenergy.com/wp-content/uploads/slider/cache/2b75f381a0dc1dd2cafdb56aeee9b23e/avetta_logo.webp",
+        "class": "skip-lazy",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/slider/cache/2b75f381a0dc1dd2cafdb56aeee9b23e/avetta_logo.webp"
+      },
+      {
+        "srcset": "//www.ptwenergy.com/wp-content/uploads/slider/cache/5af017b1bc76cbb80ff0785a283d7beb/avetta_logo.webp",
+        "class": "skip-lazy",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/slider/cache/5af017b1bc76cbb80ff0785a283d7beb/avetta_logo.webp"
+      },
+      {
+        "srcset": "//www.ptwenergy.com/wp-content/uploads/slider/cache/e17748f9adda145a3aa1ca458ed89d55/avetta_logo.webp",
+        "class": "skip-lazy",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/slider/cache/e17748f9adda145a3aa1ca458ed89d55/avetta_logo.webp"
+      },
+      {
+        "alt": "",
+        "class": "skip-lazy",
+        "width": "2195",
+        "height": "468",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/2024/06/avetta_logo.png"
+      },
+      {
+        "srcset": "//www.ptwenergy.com/wp-content/uploads/slider/cache/10f3c0d7e963af2ce4acdea5216eead6/ABSALogo.webp",
+        "class": "skip-lazy",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/slider/cache/10f3c0d7e963af2ce4acdea5216eead6/ABSALogo.webp"
+      },
+      {
+        "srcset": "//www.ptwenergy.com/wp-content/uploads/slider/cache/d37818408a58d41eb76574b485f3d3ca/ABSALogo.webp",
+        "class": "skip-lazy",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/slider/cache/d37818408a58d41eb76574b485f3d3ca/ABSALogo.webp"
+      },
+      {
+        "alt": "",
+        "class": "skip-lazy",
+        "width": "481",
+        "height": "217",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/2024/06/ABSALogo.png"
+      },
+      {
+        "srcset": "//www.ptwenergy.com/wp-content/uploads/slider/cache/3667c2bac657923f511d929432ed4a0c/bccsa_logo.webp",
+        "class": "skip-lazy",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/slider/cache/3667c2bac657923f511d929432ed4a0c/bccsa_logo.webp"
+      },
+      {
+        "srcset": "//www.ptwenergy.com/wp-content/uploads/slider/cache/ec23e2ff2431ad3770ad667a67272ab6/bccsa_logo.webp",
+        "class": "skip-lazy",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/slider/cache/ec23e2ff2431ad3770ad667a67272ab6/bccsa_logo.webp"
+      },
+      {
+        "alt": "",
+        "class": "skip-lazy",
+        "width": "700",
+        "height": "245",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/2024/06/bccsa_logo.png"
+      },
+      {
+        "srcset": "//www.ptwenergy.com/wp-content/uploads/slider/cache/3ca01e874649a160fcfa82ef3a3dbb16/StaySafe-logo.webp",
+        "class": "skip-lazy",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/slider/cache/3ca01e874649a160fcfa82ef3a3dbb16/StaySafe-logo.webp"
+      },
+      {
+        "srcset": "//www.ptwenergy.com/wp-content/uploads/slider/cache/2d902b74e488e07f8804f2762ce1317a/StaySafe-logo.webp",
+        "class": "skip-lazy",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/slider/cache/2d902b74e488e07f8804f2762ce1317a/StaySafe-logo.webp"
+      },
+      {
+        "srcset": "//www.ptwenergy.com/wp-content/uploads/slider/cache/d29957ff144cfe63a533afb55c0c2913/StaySafe-logo.webp",
+        "class": "skip-lazy",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/slider/cache/d29957ff144cfe63a533afb55c0c2913/StaySafe-logo.webp"
+      },
+      {
+        "alt": "",
+        "class": "skip-lazy",
+        "width": "1024",
+        "height": "340",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/2024/06/StaySafe-logo.png"
+      },
+      {
+        "srcset": "//www.ptwenergy.com/wp-content/uploads/slider/cache/1440280576c64334ab44a9436556cb08/ecompliancelogo1.webp",
+        "class": "skip-lazy",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/slider/cache/1440280576c64334ab44a9436556cb08/ecompliancelogo1.webp"
+      },
+      {
+        "srcset": "//www.ptwenergy.com/wp-content/uploads/slider/cache/7dd0a6cf3601be7d58973fb9ac9e7091/ecompliancelogo1.webp",
+        "class": "skip-lazy",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/slider/cache/7dd0a6cf3601be7d58973fb9ac9e7091/ecompliancelogo1.webp"
+      },
+      {
+        "srcset": "//www.ptwenergy.com/wp-content/uploads/slider/cache/5a2698aa8b5283cb3ea6031980bd3d28/ecompliancelogo1.webp",
+        "class": "skip-lazy",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/slider/cache/5a2698aa8b5283cb3ea6031980bd3d28/ecompliancelogo1.webp"
+      },
+      {
+        "alt": "",
+        "class": "skip-lazy",
+        "width": "850",
+        "height": "222",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/2024/06/ecompliancelogo1.png"
+      },
+      {
+        "srcset": "//www.ptwenergy.com/wp-content/uploads/slider/cache/f365ee9587de70161890b408da0f07c5/ERA-Logo.webp",
+        "class": "skip-lazy",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/slider/cache/f365ee9587de70161890b408da0f07c5/ERA-Logo.webp"
+      },
+      {
+        "srcset": "//www.ptwenergy.com/wp-content/uploads/slider/cache/73483ec62646be63a27967931e5ea0e1/ERA-Logo.webp",
+        "class": "skip-lazy",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/slider/cache/73483ec62646be63a27967931e5ea0e1/ERA-Logo.webp"
+      },
+      {
+        "srcset": "//www.ptwenergy.com/wp-content/uploads/slider/cache/af8c038da8e896e905e077e1c81ad4a8/ERA-Logo.webp",
+        "class": "skip-lazy",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/slider/cache/af8c038da8e896e905e077e1c81ad4a8/ERA-Logo.webp"
+      },
+      {
+        "alt": "",
+        "class": "n2-ss-item-content  n2-ss-item-image-area skip-lazy",
+        "width": "2550",
+        "height": "1205",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/2025/12/ERA-Logo.png"
+      },
+      {
+        "width": "793",
+        "height": "483",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/2024/06/PTW-Logo-white.png",
+        "alt": "",
+        "class": "wp-image-8018",
+        "srcset": "https://www.ptwenergy.com/wp-content/uploads/2024/06/PTW-Logo-white.png 793w, https://www.ptwenergy.com/wp-content/uploads/2024/06/PTW-Logo-white-300x183.png 300w, https://www.ptwenergy.com/wp-content/uploads/2024/06/PTW-Logo-white-768x468.png 768w"
+      },
+      {
+        "width": "900",
+        "height": "900",
+        "src": "https://www.ptwenergy.com/wp-content/uploads/2023/06/Apprentice-logo.png",
+        "alt": "",
+        "class": "wp-image-6421",
+        "srcset": "https://www.ptwenergy.com/wp-content/uploads/2023/06/Apprentice-logo.png 900w, https://www.ptwenergy.com/wp-content/uploads/2023/06/Apprentice-logo-300x300.png 300w, https://www.ptwenergy.com/wp-content/uploads/2023/06/Apprentice-logo-150x150.png 150w, https://www.ptwenergy.com/wp-content/uploads/2023/06/Apprentice-logo-768x768.png 768w, https://www.ptwenergy.com/wp-content/uploads/2023/06/Apprentice-logo-200x200.png 200w"
+      }
+    ]
+  },
+  {
+    "slug": "marlow-design",
+    "name": "Marlow Design",
+    "url": "https://marlowdesign.ca/",
+    "status": 200,
+    "images": [
+      {
+        "src": "https://marlowdesign.ca/cdn/shop/files/10years-marlowdesignlogo.png?v=1739313049&width=254",
+        "alt": "Marlow Design",
+        "srcset": "//marlowdesign.ca/cdn/shop/files/10years-marlowdesignlogo.png?v=1739313049&width=254 254w, //marlowdesign.ca/cdn/shop/files/10years-marlowdesignlogo.png?v=1739313049&width=254 254w",
+        "width": "254",
+        "height": "133",
+        "class": "header__logo-image"
+      },
+      {
+        "src": "https://marlowdesign.ca/cdn/shop/files/CBC_logo_svg_c0badce9-1eea-4fd5-a4bb-d0d53cf9d6b1.png?v=1756396552&width=200",
+        "alt": "",
+        "srcset": "//marlowdesign.ca/cdn/shop/files/CBC_logo_svg_c0badce9-1eea-4fd5-a4bb-d0d53cf9d6b1.png?v=1756396552&width=100 100w, //marlowdesign.ca/cdn/shop/files/CBC_logo_svg_c0badce9-1eea-4fd5-a4bb-d0d53cf9d6b1.png?v=1756396552&width=200 200w",
+        "width": "200",
+        "height": "51",
+        "class": "constrained-image"
+      }
+    ]
+  },
+  {
+    "slug": "abc-bees",
+    "name": "ABC Bees / Apiaries and Bees for Communities",
+    "url": "https://abcbees.ca/",
+    "status": 403,
+    "images": []
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "CGY-087-J1",
+    "sameTextAsReviewed": true,
+    "httpStatus": 200,
+    "status": {
+      "kind": "open",
+      "checkedOn": "2026-10-19",
+      "note": "Employer lists this specific role and an empty application form with this job as a selectable option. Nothing entered or submitted."
+    },
+    "reviewConclusion": "No material change to the original role text; retained reviewed status and its limits."
+  },
+  {
+    "id": "CGY-089-J1",
+    "sameTextAsReviewed": true,
+    "httpStatus": 200,
+    "status": {
+      "kind": "open",
+      "checkedOn": "2026-10-19",
+      "note": "Employer careers board explicitly lists this title under YYC, links to substantive duties and displays an empty application form. No application submitted."
+    },
+    "reviewConclusion": "No material change to the original role text; retained reviewed status and its limits."
+  },
+  {
+    "id": "CGY-091-J1",
+    "sameTextAsReviewed": true,
+    "httpStatus": 200,
+    "status": {
+      "kind": "unknown",
+      "checkedOn": "2026-10-19",
+      "note": "Substantive original posting is linked from employer careers page. Application acceptance was not independently verified; present as an undated employer role example."
+    },
+    "reviewConclusion": "No material change to the original role text; retained reviewed status and its limits."
+  },
+  {
+    "id": "CGY-098-J1",
+    "sameTextAsReviewed": true,
+    "httpStatus": 200,
+    "status": {
+      "kind": "open",
+      "checkedOn": "2026-10-19",
+      "note": "Current original role page explicitly invites resume applications by email. No email sent; actual hiring outcome unknown."
+    },
+    "reviewConclusion": "No material change to the original role text; retained reviewed status and its limits."
+  }
+]

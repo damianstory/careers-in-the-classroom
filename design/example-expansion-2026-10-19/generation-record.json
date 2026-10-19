@@ -1,0 +1,1292 @@
+{
+  "createdOn": "2026-10-19",
+  "provider": "built-in imagegen",
+  "provenance": "Fictional people and generic equipment; not photographic company evidence.",
+  "assets": [
+    {
+      "id": "CGY-081-DISC-work-prosthetic-fabrication-ART",
+      "kind": "portrait",
+      "stem": "work-prosthetic-fabrication",
+      "served": "public/images/discover/work-prosthetic-fabrication.webp",
+      "prompt": "Create ONE native tall portrait occupation card, aspect ratio 752:1344. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. The TOP 25 percent is a solid forest-green title band with large ivory uppercase text only: PROSTHETIC AND ORTHOTIC TECHNICIAN. Fit all title lettering comfortably within that top quarter. The LOWER 75 percent is a single working illustration, no other text. Scene: A fictional adult technician carefully checking a limb-device model secured on a bench, with fabrication tools put away between steps. Coherent anatomy: every visible hand connects to its own nearby arm, maximum two arms per person, no extra hands. No caption or footer band. No actual company equipment or employee identity implied.",
+      "scene": "A fictional adult technician carefully checking a limb-device model secured on a bench, with fabrication tools put away between steps.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-4d04e783-4b7c-411e-ac17-ce4c92e4588c.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/work-prosthetic-fabrication.png",
+      "servedMetadata": {
+        "width": 752,
+        "height": 1344,
+        "bytes": 248024
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-081-DISC-work-prosthetic-clinical-ART",
+      "kind": "portrait",
+      "stem": "work-prosthetic-clinical",
+      "served": "public/images/discover/work-prosthetic-clinical.webp",
+      "prompt": "Create ONE native tall portrait occupation card, aspect ratio 752:1344. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. The TOP 25 percent is a solid forest-green title band with large ivory uppercase text only: PROSTHETIST. Fit all title lettering comfortably within that top quarter. The LOWER 75 percent is a single working illustration, no other text. Scene: A fictional adult clinician and client discuss a trial lower-limb device in a generic fitting room; natural reachable hand positions, no exposed injury. Coherent anatomy: every visible hand connects to its own nearby arm, maximum two arms per person, no extra hands. No caption or footer band. No actual company equipment or employee identity implied.",
+      "scene": "A fictional adult clinician and client discuss a trial lower-limb device in a generic fitting room; natural reachable hand positions, no exposed injury.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-41ba5fe3-b573-40dc-a329-f9cd83bc612a.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/work-prosthetic-clinical.png",
+      "servedMetadata": {
+        "width": 752,
+        "height": 1344,
+        "bytes": 231190
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-081-STORY-ART",
+      "kind": "story",
+      "stem": "clynch-prosthetics-story",
+      "served": "public/images/examples/clynch-prosthetics-graphic-novel.webp",
+      "prompt": "Use case: illustration-story. Create ONE landscape 16:9 editorial illustration, 1536 by 864 composition. Approved graphic-novel / limited-colour screenprint style: confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouette, mature expressive fictional adults, selective perspective. Not photorealistic, no 3D, no comic panels. Scene for a Calgary prosthetics career example: a fictional adult fabrication technician checks a lower-limb prosthetic device secured upright on a workshop bench beside its matching casting model. A separate clinician and adult client discuss a trial prosthetic leg in the fitting area behind them. Plausible scale and equipment. Each person has at most two arms visibly attached to their own shoulders, hands naturally close to their own bodies; no floating or disembodied hands, no superfluous hands behind people. No injury, no exposed amputation. No text, no titles, no logos, no caption strip, no border, no speech bubbles. Clean single composed working scene, full-bleed landscape.",
+      "scene": "A fictional technician checks a lower-limb device secured on a workbench beside a model; a clinician and adult client discuss a separate trial device. Show coherent bodies and only the hands each person can plausibly reach with.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-1cc6d9e8-105f-4346-bce5-8f8014f60577.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/clynch-prosthetics-story.png",
+      "servedMetadata": {
+        "width": 1344,
+        "height": 756,
+        "bytes": 260184
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-081-DIAGRAM-ART",
+      "kind": "diagram",
+      "stem": "clynch-prosthetics-teaching",
+      "served": "public/images/story-diagrams/clynch-prosthetics-graphic-novel.webp",
+      "prompt": "Create ONE native landscape 16:9 teaching schematic. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. Scene: Measurement/model \u2192 fabrication \u2192 trial fit \u2192 follow-up, with a clear return arrow from trial fit to revision. Use a device model rather than an exposed body cross-section. Boundaries: This is a representative fitting workflow, not a specific patient case or a clinical prescription. The force diagram is a classroom model, not an analysis of a real patient or advice on fitting a prosthesis. Do not imply that technicians independently make clinical prescriptions. Use clear large arrowheads and numbered circular markers 1, 2, 3, 4 matching the process; no words, labels, titles, units, logos, caption strip or border. Explanations will be supplied as live text. Simple uncluttered schematic, objects rather than people where possible.",
+      "scene": "Measurement/model \u2192 fabrication \u2192 trial fit \u2192 follow-up, with a clear return arrow from trial fit to revision. Use a device model rather than an exposed body cross-section.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-4970db97-f520-498a-a0c3-5f8e3fc139bf.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/clynch-prosthetics-teaching.png",
+      "servedMetadata": {
+        "width": 1344,
+        "height": 756,
+        "bytes": 139328
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-083-STORY-ART",
+      "kind": "story",
+      "stem": "westech-industrial-story",
+      "served": "public/images/examples/westech-industrial-graphic-novel.webp",
+      "prompt": "Create ONE native landscape 16:9 editorial working scene. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. Scene: A fictional instrumentation technologist compares a reference vessel and meter on a workshop test rig, with a colleague recording results; no readable commercial quantities or company logo. Boundaries: Customer sites and project assignments vary; no particular local pipeline or client is assumed. Invented data, not a Westech test result. Calibration, adjustment and proof of fitness for a particular industrial use are different things. No text, titles, labels, logos, caption strip, border or speech bubbles. Full-bleed single scene. Every visible hand must connect to a nearby arm; no extra or floating hands.",
+      "scene": "A fictional instrumentation technologist compares a reference vessel and meter on a workshop test rig, with a colleague recording results; no readable commercial quantities or company logo.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-ebb19d25-2bc3-4b6a-a819-3c9f53cfc1a4.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/westech-industrial-story.png",
+      "servedMetadata": {
+        "width": 1344,
+        "height": 756,
+        "bytes": 339176
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-083-DIAGRAM-ART",
+      "kind": "diagram",
+      "stem": "westech-industrial-teaching",
+      "served": "public/images/story-diagrams/westech-industrial-graphic-novel.webp",
+      "prompt": "Create ONE native landscape 16:9 teaching schematic. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. Scene: Known reference \u2192 meter reading \u2192 comparison \u2192 documented recheck, with a return arrow for investigation. Keep known volume and reading as separate live labels. Boundaries: Customer sites and project assignments vary; no particular local pipeline or client is assumed. Invented data, not a Westech test result. Calibration, adjustment and proof of fitness for a particular industrial use are different things. Use clear large arrowheads and numbered circular markers 1, 2, 3, 4 matching the process; no words, labels, titles, units, logos, caption strip or border. Explanations will be supplied as live text. Simple uncluttered schematic, objects rather than people where possible.",
+      "scene": "Known reference \u2192 meter reading \u2192 comparison \u2192 documented recheck, with a return arrow for investigation. Keep known volume and reading as separate live labels.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-024d60cd-11ca-4438-aa23-c61212ab12c0.png",
+      "superseded": {
+        "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-bb9d7dcb-e37e-4aee-8b97-2a1efadb852d.png",
+        "original": "design/example-expansion-2026-10-19/westech-industrial-teaching.png",
+        "reason": "Edit this teaching illustration. Remove the balance scale entirely: it wrongly suggests weighing a meter against water. Keep the graphic-novel ink and halftone style and landscape frame. Replace it with a large simple paper comparison chart at step 3 showing several orange measurement points clustered together but offset from one blue reference line, no words or quantities. Step 1 is a known reference vessel, step 2 is the process meter; step 3 compares readings; step 4 is the record/recheck clipboard. Preserve clear directional arrowheads and return arrow. No embedded words, logos or footer band. Keep the rest unchanged."
+      },
+      "selectedOriginal": "design/example-expansion-2026-10-19/westech-industrial-teaching-revised.png",
+      "editPrompt": "Edit this teaching illustration. Remove the balance scale entirely: it wrongly suggests weighing a meter against water. Keep the graphic-novel ink and halftone style and landscape frame. Replace it with a large simple paper comparison chart at step 3 showing several orange measurement points clustered together but offset from one blue reference line, no words or quantities. Step 1 is a known reference vessel, step 2 is the process meter; step 3 compares readings; step 4 is the record/recheck clipboard. Preserve clear directional arrowheads and return arrow. No embedded words, logos or footer band. Keep the rest unchanged.",
+      "servedMetadata": {
+        "width": 1344,
+        "height": 756,
+        "bytes": 149524
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-085-STORY-ART",
+      "kind": "story",
+      "stem": "alberta-cheese-story",
+      "served": "public/images/examples/alberta-cheese-graphic-novel.webp",
+      "prompt": "Create ONE native landscape 16:9 editorial working scene. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. Scene: A fictional production worker compares a tray of curd and a separate whey vessel with a quality colleague checking a generic batch sheet; clean generic food equipment, no tasting or exposed product handling. Boundaries: Gay Lea\u2019s head office is outside Alberta. A generic curd/whey model does not identify this factory\u2019s exact recipe or equipment. Paper model only. Coagulation is not simply filtering all solids from milk. Do not offer a food-production recipe or assign a generic method to all Franco\u2019s products. No text, titles, labels, logos, caption strip, border or speech bubbles. Full-bleed single scene. Every visible hand must connect to a nearby arm; no extra or floating hands.",
+      "scene": "A fictional production worker compares a tray of curd and a separate whey vessel with a quality colleague checking a generic batch sheet; clean generic food equipment, no tasting or exposed product handling.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-c6864a7c-fd0b-4f0f-9402-d9bdd644e1e7.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/alberta-cheese-story.png",
+      "servedMetadata": {
+        "width": 1344,
+        "height": 756,
+        "bytes": 276166
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-085-DIAGRAM-ART",
+      "kind": "diagram",
+      "stem": "alberta-cheese-teaching",
+      "served": "public/images/story-diagrams/alberta-cheese-graphic-novel.webp",
+      "prompt": "Create ONE native landscape 16:9 teaching schematic. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. Scene: A milk-mixture vessel \u2192 curd formation \u2192 a branch to curds and whey \u2192 texture comparison. Preserve both material streams and show no disappearance of matter. Boundaries: Gay Lea\u2019s head office is outside Alberta. A generic curd/whey model does not identify this factory\u2019s exact recipe or equipment. Paper model only. Coagulation is not simply filtering all solids from milk. Do not offer a food-production recipe or assign a generic method to all Franco\u2019s products. Use clear large arrowheads and numbered circular markers 1, 2, 3, 4 matching the process; no words, labels, titles, units, logos, caption strip or border. Explanations will be supplied as live text. Simple uncluttered schematic, objects rather than people where possible.",
+      "scene": "A milk-mixture vessel \u2192 curd formation \u2192 a branch to curds and whey \u2192 texture comparison. Preserve both material streams and show no disappearance of matter.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-fbb99785-c532-42c8-b1db-5d79ab147558.png",
+      "superseded": {
+        "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-26b7ced3-be79-4446-a6e6-aaf3ca5f685f.png",
+        "original": "design/example-expansion-2026-10-19/alberta-cheese-teaching.png",
+        "reason": "Edit this cheesemaking teaching schematic. Keep the ink-and-halftone style, landscape frame and steps 1 milk, 2 curd formation, 3 draining. Move marker 4 to the bowl of finished curds at upper right, adding a clear arrowhead from the draining curds to that bowl. Leave the whey jug below as the unnumbered separate liquid stream, fed by a clear arrow from the curd/whey vessel; remove its current marker 4 and unnecessary duplicate small bowl of whey. This is a general model, no company-specific machinery or recipe, no words or footer band. Preserve all other elements."
+      },
+      "selectedOriginal": "design/example-expansion-2026-10-19/alberta-cheese-teaching-revised.png",
+      "editPrompt": "Edit this cheesemaking teaching schematic. Keep the ink-and-halftone style, landscape frame and steps 1 milk, 2 curd formation, 3 draining. Move marker 4 to the bowl of finished curds at upper right, adding a clear arrowhead from the draining curds to that bowl. Leave the whey jug below as the unnumbered separate liquid stream, fed by a clear arrow from the curd/whey vessel; remove its current marker 4 and unnecessary duplicate small bowl of whey. This is a general model, no company-specific machinery or recipe, no words or footer band. Preserve all other elements.",
+      "servedMetadata": {
+        "width": 1344,
+        "height": 756,
+        "bytes": 116372
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-087-DISC-work-prepress-ART",
+      "kind": "portrait",
+      "stem": "work-prepress",
+      "served": "public/images/discover/work-prepress.webp",
+      "prompt": "Create ONE native tall portrait occupation card, aspect ratio 752:1344. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. The TOP 25 percent is a solid forest-green title band with large ivory uppercase text only: PREPRESS AND PRINT-PRODUCTION DESIGN. Fit all title lettering comfortably within that top quarter. The LOWER 75 percent is a single working illustration, no other text. Scene: A fictional adult prepress worker comparing a screen layout, a paper proof and accurate functional CMYK patches at a studio workstation. Coherent anatomy: every visible hand connects to its own nearby arm, maximum two arms per person, no extra hands. No caption or footer band. No actual company equipment or employee identity implied.",
+      "scene": "A fictional adult prepress worker comparing a screen layout, a paper proof and accurate functional CMYK patches at a studio workstation.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-7e13ac3e-8f31-45a3-845d-0b9da9b59a10.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/work-prepress.png",
+      "servedMetadata": {
+        "width": 752,
+        "height": 1344,
+        "bytes": 234208
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-087-DISC-work-printing-press-ART",
+      "kind": "portrait",
+      "stem": "work-printing-press",
+      "served": "public/images/discover/work-printing-press.webp",
+      "prompt": "Create ONE native tall portrait occupation card, aspect ratio 752:1344. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. The TOP 25 percent is a solid forest-green title band with large ivory uppercase text only: PRINTING PRESS OPERATOR. Fit all title lettering comfortably within that top quarter. The LOWER 75 percent is a single working illustration, no other text. Scene: A fictional adult press operator examines a sheet at the output inspection table of a guarded digital press, away from moving rollers. Coherent anatomy: every visible hand connects to its own nearby arm, maximum two arms per person, no extra hands. No caption or footer band. No actual company equipment or employee identity implied.",
+      "scene": "A fictional adult press operator examines a sheet at the output inspection table of a guarded digital press, away from moving rollers.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-0a101c44-7e54-41a4-a5fe-dc8f2ad249d8.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/work-printing-press.png",
+      "servedMetadata": {
+        "width": 752,
+        "height": 1344,
+        "bytes": 237320
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-087-STORY-ART",
+      "kind": "story",
+      "stem": "mountain-view-printing-story",
+      "served": "public/images/examples/mountain-view-printing-graphic-novel.webp",
+      "prompt": "Create ONE native landscape 16:9 editorial working scene. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. Scene: A fictional operator checks an enlarged print proof beside a digital press, with a prepress colleague examining a layout. Allow accurate cyan/magenta/yellow/black swatches as functional colour information. Boundaries: The teaching model is generic CMYK printing; it does not describe every press or specialty-ink process the shop offers. CMYK describes subtractive print colour, not red/green/blue emitted-light mixing. The four-colour model is an application extension, and some printing uses different inks or methods. No text, titles, labels, logos, caption strip, border or speech bubbles. Full-bleed single scene. Every visible hand must connect to a nearby arm; no extra or floating hands.",
+      "scene": "A fictional operator checks an enlarged print proof beside a digital press, with a prepress colleague examining a layout. Allow accurate cyan/magenta/yellow/black swatches as functional colour information.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-824f003d-c713-401e-9ffc-a965dbd09be4.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/mountain-view-printing-story.png",
+      "servedMetadata": {
+        "width": 1344,
+        "height": 756,
+        "bytes": 262704
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-087-DIAGRAM-ART",
+      "kind": "diagram",
+      "stem": "mountain-view-printing-teaching",
+      "served": "public/images/story-diagrams/mountain-view-printing-graphic-novel.webp",
+      "prompt": "Create ONE native landscape 16:9 teaching schematic. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. Scene: White illumination \u2192 a magnified CMYK dot patch \u2192 reflected light toward an eye \u2192 registration check. Incoming light is not created by ink. Live text explains the model. Boundaries: The teaching model is generic CMYK printing; it does not describe every press or specialty-ink process the shop offers. CMYK describes subtractive print colour, not red/green/blue emitted-light mixing. The four-colour model is an application extension, and some printing uses different inks or methods. Use clear large arrowheads and numbered circular markers 1, 2, 3, 4 matching the process; no words, labels, titles, units, logos, caption strip or border. Explanations will be supplied as live text. Simple uncluttered schematic, objects rather than people where possible.",
+      "scene": "White illumination \u2192 a magnified CMYK dot patch \u2192 reflected light toward an eye \u2192 registration check. Incoming light is not created by ink. Live text explains the model.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-e70ee967-1092-4c24-874e-65417f475766.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/mountain-view-printing-teaching.png",
+      "servedMetadata": {
+        "width": 1344,
+        "height": 756,
+        "bytes": 302822
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-088-DISC-work-recycling-operations-ART",
+      "kind": "portrait",
+      "stem": "work-recycling-operations",
+      "served": "public/images/discover/work-recycling-operations.webp",
+      "prompt": "Create ONE native tall portrait occupation card, aspect ratio 752:1344. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. The TOP 25 percent is a solid forest-green title band with large ivory uppercase text only: METAL-RECYCLING OPERATIONS. Fit all title lettering comfortably within that top quarter. The LOWER 75 percent is a single working illustration, no other text. Scene: A fictional adult recycling-yard worker reviews sorted metal bins and an acceptance record from a safe pedestrian area. Coherent anatomy: every visible hand connects to its own nearby arm, maximum two arms per person, no extra hands. No caption or footer band. No actual company equipment or employee identity implied.",
+      "scene": "A fictional adult recycling-yard worker reviews sorted metal bins and an acceptance record from a safe pedestrian area.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-ec0418b4-ce91-4c4e-9b13-a25019b0019d.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/work-recycling-operations.png",
+      "servedMetadata": {
+        "width": 752,
+        "height": 1344,
+        "bytes": 254272
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-088-STORY-ART",
+      "kind": "story",
+      "stem": "calgary-metal-recycling-story",
+      "served": "public/images/examples/calgary-metal-recycling-graphic-novel.webp",
+      "prompt": "Create ONE native landscape 16:9 editorial working scene. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. Scene: A fictional yard worker reviews clearly separated scrap bins while another worker checks a receiving record; generic lifting equipment in the background, no unsafe hand sorting beside moving machinery. Boundaries: No on-site furnace, eddy-current system or municipal sorting-plant equipment is attributed to this employer. Paper-only material cards; do not handle unknown scrap or test hazardous containers. Iron-containing alloys do not all have identical magnetic behaviour, and sorting is not the same as chemical refining. No text, titles, labels, logos, caption strip, border or speech bubbles. Full-bleed single scene. Every visible hand must connect to a nearby arm; no extra or floating hands.",
+      "scene": "A fictional yard worker reviews clearly separated scrap bins while another worker checks a receiving record; generic lifting equipment in the background, no unsafe hand sorting beside moving machinery.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-8dac9578-5123-4140-ad1f-be5970038692.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/calgary-metal-recycling-story.png",
+      "servedMetadata": {
+        "width": 1344,
+        "height": 756,
+        "bytes": 345166
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-088-DIAGRAM-ART",
+      "kind": "diagram",
+      "stem": "calgary-metal-recycling-teaching",
+      "served": "public/images/story-diagrams/calgary-metal-recycling-graphic-novel.webp",
+      "prompt": "Create ONE native landscape 16:9 teaching schematic. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. Scene: Mixed incoming material \u2192 identification/check \u2192 separate ferrous/non-ferrous streams \u2192 onward recovery. Include an explicit hold branch for unknown or unsuitable items; no melting furnace. Boundaries: No on-site furnace, eddy-current system or municipal sorting-plant equipment is attributed to this employer. Paper-only material cards; do not handle unknown scrap or test hazardous containers. Iron-containing alloys do not all have identical magnetic behaviour, and sorting is not the same as chemical refining. Use clear large arrowheads and numbered circular markers 1, 2, 3, 4 matching the process; no words, labels, titles, units, logos, caption strip or border. Explanations will be supplied as live text. Simple uncluttered schematic, objects rather than people where possible.",
+      "scene": "Mixed incoming material \u2192 identification/check \u2192 separate ferrous/non-ferrous streams \u2192 onward recovery. Include an explicit hold branch for unknown or unsuitable items; no melting furnace.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-87afb02f-322f-4282-8c58-a43e255a35e9.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/calgary-metal-recycling-teaching.png",
+      "servedMetadata": {
+        "width": 1344,
+        "height": 756,
+        "bytes": 298718
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-089-DISC-work-aircraft-deicing-ART",
+      "kind": "portrait",
+      "stem": "work-aircraft-deicing",
+      "served": "public/images/discover/work-aircraft-deicing.webp",
+      "prompt": "Create ONE native tall portrait occupation card, aspect ratio 752:1344. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. The TOP 25 percent is a solid forest-green title band with large ivory uppercase text only: AIRCRAFT DEICING TECHNICIAN. Fit all title lettering comfortably within that top quarter. The LOWER 75 percent is a single working illustration, no other text. Scene: A fictional adult operator in a believable protected deicing-truck work position near a generic stationary wing, with no floating arms or implausible aircraft scale. Coherent anatomy: every visible hand connects to its own nearby arm, maximum two arms per person, no extra hands. No caption or footer band. No actual company equipment or employee identity implied.",
+      "scene": "A fictional adult operator in a believable protected deicing-truck work position near a generic stationary wing, with no floating arms or implausible aircraft scale.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-ff24cc38-e9f5-4e98-a687-0d5dd5916ce5.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/work-aircraft-deicing.png",
+      "servedMetadata": {
+        "width": 752,
+        "height": 1344,
+        "bytes": 224120
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-089-STORY-ART",
+      "kind": "story",
+      "stem": "aeromag-calgary-story",
+      "served": "public/images/examples/aeromag-calgary-graphic-novel.webp",
+      "prompt": "Create ONE native landscape 16:9 editorial working scene. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. Scene: A fictional deicing-truck operator in the vehicle\u2019s protected work position treats a generic stationary aircraft wing; show coordinated ground work without copying a specific aircraft or airport layout. Boundaries: Calgary station work is distinct from network recycling plants and simulators in other cities. General classroom model only. Deicing and anti-icing have different purposes; no holdover times, fluid ratios or aircraft-operating instructions are supplied. No text, titles, labels, logos, caption strip, border or speech bubbles. Full-bleed single scene. Every visible hand must connect to a nearby arm; no extra or floating hands.",
+      "scene": "A fictional deicing-truck operator in the vehicle\u2019s protected work position treats a generic stationary aircraft wing; show coordinated ground work without copying a specific aircraft or airport layout.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-51673a72-43fd-43d8-9686-7d7af1d93ff7.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/aeromag-calgary-story.png",
+      "servedMetadata": {
+        "width": 1344,
+        "height": 756,
+        "bytes": 270862
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-089-DIAGRAM-ART",
+      "kind": "diagram",
+      "stem": "aeromag-calgary-teaching",
+      "served": "public/images/story-diagrams/aeromag-calgary-graphic-novel.webp",
+      "prompt": "Create ONE native landscape 16:9 teaching schematic. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. Scene: Contamination observed \u2192 trained treatment \u2192 inspection/communication \u2192 changing conditions monitored. Add a return arrow; never depict a one-time treatment as indefinite protection. Boundaries: Calgary station work is distinct from network recycling plants and simulators in other cities. General classroom model only. Deicing and anti-icing have different purposes; no holdover times, fluid ratios or aircraft-operating instructions are supplied. Use clear large arrowheads and numbered circular markers 1, 2, 3, 4 matching the process; no words, labels, titles, units, logos, caption strip or border. Explanations will be supplied as live text. Simple uncluttered schematic, objects rather than people where possible.",
+      "scene": "Contamination observed \u2192 trained treatment \u2192 inspection/communication \u2192 changing conditions monitored. Add a return arrow; never depict a one-time treatment as indefinite protection.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-099d618f-febc-4690-9ae4-3d17b7dc7dc3.png",
+      "superseded": {
+        "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-08230648-ce1c-49da-8395-2f04cb18b394.png",
+        "original": "design/example-expansion-2026-10-19/aeromag-calgary-teaching.png",
+        "reason": "Edit this graphic-novel teaching diagram: completely remove the two circular inset facility and storage-tank pictures at lower left. They suggest a local recycling plant that is not established by the evidence. Fill that small area with plain ivory paper texture. Keep the central aircraft ground deicing, the ice-covered surface and cleared wing, weather instruments, crew communication, numbered markers and directional arrows. No additional equipment or text. Keep everything else unchanged."
+      },
+      "selectedOriginal": "design/example-expansion-2026-10-19/aeromag-calgary-teaching-revised.png",
+      "editPrompt": "Edit this graphic-novel teaching diagram: completely remove the two circular inset facility and storage-tank pictures at lower left. They suggest a local recycling plant that is not established by the evidence. Fill that small area with plain ivory paper texture. Keep the central aircraft ground deicing, the ice-covered surface and cleared wing, weather instruments, crew communication, numbered markers and directional arrows. No additional equipment or text. Keep everything else unchanged.",
+      "servedMetadata": {
+        "width": 1344,
+        "height": 756,
+        "bytes": 197268
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-090-DISC-work-glazing-ART",
+      "kind": "portrait",
+      "stem": "work-glazing",
+      "served": "public/images/discover/work-glazing.webp",
+      "prompt": "Create ONE native tall portrait occupation card, aspect ratio 752:1344. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. The TOP 25 percent is a solid forest-green title band with large ivory uppercase text only: GLAZIER AND WINDOW-INSTALLATION WORK. Fit all title lettering comfortably within that top quarter. The LOWER 75 percent is a single working illustration, no other text. Scene: A fictional adult glazing worker uses a level against a window frame in a wall opening, with coherent support/handling of the unit. Coherent anatomy: every visible hand connects to its own nearby arm, maximum two arms per person, no extra hands. No caption or footer band. No actual company equipment or employee identity implied.",
+      "scene": "A fictional adult glazing worker uses a level against a window frame in a wall opening, with coherent support/handling of the unit.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-a88adbd1-a6b9-4fdc-9b51-2ebac447371e.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/work-glazing.png",
+      "servedMetadata": {
+        "width": 752,
+        "height": 1344,
+        "bytes": 289642
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-090-STORY-ART",
+      "kind": "story",
+      "stem": "lux-windows-story",
+      "served": "public/images/examples/lux-windows-graphic-novel.webp",
+      "prompt": "Create ONE native landscape 16:9 editorial working scene. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. Scene: A fictional installer checks a window frame with a level and tape while a second worker reviews the opening; believable hand positions and glass-handling setup. Boundaries: Do not label an Alberta factory a Calgary factory or copy an unverified facility-size figure. Qualitative heat-transfer model, not a product-rating calculation. No Lux efficiency, energy saving or whole-home performance figure is claimed. No text, titles, labels, logos, caption strip, border or speech bubbles. Full-bleed single scene. Every visible hand must connect to a nearby arm; no extra or floating hands.",
+      "scene": "A fictional installer checks a window frame with a level and tape while a second worker reviews the opening; believable hand positions and glass-handling setup.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-263a3180-8602-4f0a-8948-e0d99999e23d.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/lux-windows-story.png",
+      "servedMetadata": {
+        "width": 1344,
+        "height": 756,
+        "bytes": 263800
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-090-DIAGRAM-ART",
+      "kind": "diagram",
+      "stem": "lux-windows-teaching",
+      "served": "public/images/story-diagrams/lux-windows-graphic-novel.webp",
+      "prompt": "Create ONE native landscape 16:9 teaching schematic. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. Scene: Warm side \u2192 several labelled heat-transfer paths through glazing/frame \u2192 cold side, plus a separate air-leakage arrow at a joint. Use arrowheads and live explanatory text; no suggestion of zero heat flow. Boundaries: Do not label an Alberta factory a Calgary factory or copy an unverified facility-size figure. Qualitative heat-transfer model, not a product-rating calculation. No Lux efficiency, energy saving or whole-home performance figure is claimed. Use clear large arrowheads and numbered circular markers 1, 2, 3, 4 matching the process; no words, labels, titles, units, logos, caption strip or border. Explanations will be supplied as live text. Simple uncluttered schematic, objects rather than people where possible.",
+      "scene": "Warm side \u2192 several labelled heat-transfer paths through glazing/frame \u2192 cold side, plus a separate air-leakage arrow at a joint. Use arrowheads and live explanatory text; no suggestion of zero heat flow.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-ce98cf11-7ed5-4000-9a3e-af9fa2d3e74b.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/lux-windows-teaching.png",
+      "servedMetadata": {
+        "width": 1344,
+        "height": 756,
+        "bytes": 355732
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-091-STORY-ART",
+      "kind": "story",
+      "stem": "magna-engineering-story",
+      "served": "public/images/examples/magna-engineering-graphic-novel.webp",
+      "prompt": "Create ONE native landscape 16:9 editorial working scene. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. Scene: A fictional civil designer and engineer review a wetland drainage plan at the edge of a generic urban stormwater pond, with vegetation and a visible controlled inlet. Boundaries: The Clearwater County wastewater case is a different location and process. The diagram is a general teaching model, not MAGNA\u2019s proprietary design. No percentage removal, drinking-water claim or exact treatment train is assigned to Livingston Pond E. Distinguish a classroom mechanism from verified site performance. No text, titles, labels, logos, caption strip, border or speech bubbles. Full-bleed single scene. Every visible hand must connect to a nearby arm; no extra or floating hands.",
+      "scene": "A fictional civil designer and engineer review a wetland drainage plan at the edge of a generic urban stormwater pond, with vegetation and a visible controlled inlet.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-624b74cc-c5fb-4875-8083-9f7201637c72.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/magna-engineering-story.png",
+      "servedMetadata": {
+        "width": 1344,
+        "height": 756,
+        "bytes": 400356
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-091-DIAGRAM-ART",
+      "kind": "diagram",
+      "stem": "magna-engineering-teaching",
+      "served": "public/images/story-diagrams/magna-engineering-graphic-novel.webp",
+      "prompt": "Create ONE native landscape 16:9 teaching schematic. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. Scene: Catchment runoff \u2192 storage/flow path \u2192 wetland/biofiltration zone \u2192 monitoring point. Show vegetation and water pathways without a proprietary cross-section or guaranteed clean-water symbol. Boundaries: The Clearwater County wastewater case is a different location and process. The diagram is a general teaching model, not MAGNA\u2019s proprietary design. No percentage removal, drinking-water claim or exact treatment train is assigned to Livingston Pond E. Distinguish a classroom mechanism from verified site performance. Use clear large arrowheads and numbered circular markers 1, 2, 3, 4 matching the process; no words, labels, titles, units, logos, caption strip or border. Explanations will be supplied as live text. Simple uncluttered schematic, objects rather than people where possible.",
+      "scene": "Catchment runoff \u2192 storage/flow path \u2192 wetland/biofiltration zone \u2192 monitoring point. Show vegetation and water pathways without a proprietary cross-section or guaranteed clean-water symbol.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-c4fbbd87-3e82-403a-a5c4-a223f10926c0.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/magna-engineering-teaching.png",
+      "servedMetadata": {
+        "width": 1344,
+        "height": 756,
+        "bytes": 295264
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-092-DISC-work-blood-production-ART",
+      "kind": "portrait",
+      "stem": "work-blood-production",
+      "served": "public/images/discover/work-blood-production.webp",
+      "prompt": "Create ONE native tall portrait occupation card, aspect ratio 752:1344. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. The TOP 25 percent is a solid forest-green title band with large ivory uppercase text only: BLOOD-COMPONENT PRODUCTION WORK. Fit all title lettering comfortably within that top quarter. The LOWER 75 percent is a single working illustration, no other text. Scene: A fictional adult production worker checks sealed labelled blood-component products and a barcode record; no exposed blood or patient. Coherent anatomy: every visible hand connects to its own nearby arm, maximum two arms per person, no extra hands. No caption or footer band. No actual company equipment or employee identity implied.",
+      "scene": "A fictional adult production worker checks sealed labelled blood-component products and a barcode record; no exposed blood or patient.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-7f181f07-059b-41f9-bdd7-b95ef0b3c97a.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/work-blood-production.png",
+      "servedMetadata": {
+        "width": 752,
+        "height": 1344,
+        "bytes": 232920
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-092-DISC-work-medical-laboratory-ART",
+      "kind": "portrait",
+      "stem": "work-medical-laboratory",
+      "served": "public/images/discover/work-medical-laboratory.webp",
+      "prompt": "Create ONE native tall portrait occupation card, aspect ratio 752:1344. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. The TOP 25 percent is a solid forest-green title band with large ivory uppercase text only: MEDICAL LABORATORY TECHNOLOGIST. Fit all title lettering comfortably within that top quarter. The LOWER 75 percent is a single working illustration, no other text. Scene: A fictional adult clinical laboratory technologist checks sample identity and a generic quality-control chart next to a medical laboratory instrument. Coherent anatomy: every visible hand connects to its own nearby arm, maximum two arms per person, no extra hands. No caption or footer band. No actual company equipment or employee identity implied.",
+      "scene": "A fictional adult clinical laboratory technologist checks sample identity and a generic quality-control chart next to a medical laboratory instrument.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-41c7e4c8-1155-41ec-81cb-1374edc41c20.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/work-medical-laboratory.png",
+      "servedMetadata": {
+        "width": 752,
+        "height": 1342,
+        "bytes": 213750
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-092-STORY-ART",
+      "kind": "story",
+      "stem": "canadian-blood-services-calgary-story",
+      "served": "public/images/examples/canadian-blood-services-calgary-graphic-novel.webp",
+      "prompt": "Create ONE native landscape 16:9 editorial working scene. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. Scene: A fictional production technician checks barcoded generic blood-component bags while a medical laboratory technologist works at a separate instrument; no patient, exposed blood or diagnostic display. Boundaries: The book is a dated account, not proof of today\u2019s equipment or staffing. No diagnostic laboratory from another city is assigned to Calgary. The model omits clinical release rules and compatibility decisions. A component picture cannot determine whether it is suitable for a patient; testing and professional decisions remain essential. No text, titles, labels, logos, caption strip, border or speech bubbles. Full-bleed single scene. Every visible hand must connect to a nearby arm; no extra or floating hands.",
+      "scene": "A fictional production technician checks barcoded generic blood-component bags while a medical laboratory technologist works at a separate instrument; no patient, exposed blood or diagnostic display.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-b6c32250-c97e-4265-b689-1a7b0a65fef3.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/canadian-blood-services-calgary-story.png",
+      "servedMetadata": {
+        "width": 1344,
+        "height": 756,
+        "bytes": 284920
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-092-DIAGRAM-ART",
+      "kind": "diagram",
+      "stem": "canadian-blood-services-calgary-teaching",
+      "served": "public/images/story-diagrams/canadian-blood-services-calgary-graphic-novel.webp",
+      "prompt": "Create ONE native landscape 16:9 teaching schematic. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. Scene: Identified donation \u2192 component separation branch \u2192 testing/records checkpoints \u2192 controlled storage/distribution. Do not show all components stored under one shared temperature or imply separation alone permits release. Boundaries: The book is a dated account, not proof of today\u2019s equipment or staffing. No diagnostic laboratory from another city is assigned to Calgary. The model omits clinical release rules and compatibility decisions. A component picture cannot determine whether it is suitable for a patient; testing and professional decisions remain essential. Use clear large arrowheads and numbered circular markers 1, 2, 3, 4 matching the process; no words, labels, titles, units, logos, caption strip or border. Explanations will be supplied as live text. Simple uncluttered schematic, objects rather than people where possible.",
+      "scene": "Identified donation \u2192 component separation branch \u2192 testing/records checkpoints \u2192 controlled storage/distribution. Do not show all components stored under one shared temperature or imply separation alone permits release.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-94360d03-fd49-4ec9-bdfd-ec45ae332d69.png",
+      "superseded": {
+        "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-024bbd1e-a2f5-4a53-83e3-f7ccb72739eb.png",
+        "original": "design/example-expansion-2026-10-19/canadian-blood-services-calgary-teaching.png",
+        "reason": "Edit this teaching schematic, retaining the graphic-novel style and donor \u2192 component separation \u2192 testing \u2192 storage sequence. Correct step 4 to clearly show DIFFERENT storage arrangements: top yellow plasma stream has a small enclosed FREEZER with a snowflake symbol; middle red-cell stream has a REFRIGERATOR; bottom yellow platelet stream goes to an open benchtop platelet agitator with bags on a gently rocking flat tray, not a refrigerator. No temperature numbers or words: explanatory live text will explain requirements. Preserve 1,2,3,4 markers and arrow directions, generic fictional equipment only. Do not imply separation alone approves a component for use."
+      },
+      "selectedOriginal": "design/example-expansion-2026-10-19/canadian-blood-services-calgary-teaching-revised.png",
+      "editPrompt": "Edit this teaching schematic, retaining the graphic-novel style and donor \u2192 component separation \u2192 testing \u2192 storage sequence. Correct step 4 to clearly show DIFFERENT storage arrangements: top yellow plasma stream has a small enclosed FREEZER with a snowflake symbol; middle red-cell stream has a REFRIGERATOR; bottom yellow platelet stream goes to an open benchtop platelet agitator with bags on a gently rocking flat tray, not a refrigerator. No temperature numbers or words: explanatory live text will explain requirements. Preserve 1,2,3,4 markers and arrow directions, generic fictional equipment only. Do not imply separation alone approves a component for use.",
+      "servedMetadata": {
+        "width": 1344,
+        "height": 756,
+        "bytes": 171202
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-094-STORY-ART",
+      "kind": "story",
+      "stem": "enerflex-story",
+      "served": "public/images/examples/enerflex-graphic-novel.webp",
+      "prompt": "Create ONE native landscape 16:9 editorial working scene. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. Scene: A fictional mechanical technologist checks a generic compressor assembly drawing while a machinery worker aligns a stationary shaft on a bench; no running exposed equipment or branded facility. Boundaries: 2716 Sunridge Way NE is labelled water treatment; it is not the manufacturing address. Global career stories are not proof of a named worker\u2019s Calgary job. The idealised isothermal result is not a specification or description of a real Enerflex compressor. Compression work, temperature change and heat removal must not be conflated. No text, titles, labels, logos, caption strip, border or speech bubbles. Full-bleed single scene. Every visible hand must connect to a nearby arm; no extra or floating hands.",
+      "scene": "A fictional mechanical technologist checks a generic compressor assembly drawing while a machinery worker aligns a stationary shaft on a bench; no running exposed equipment or branded facility.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-879db016-119c-4901-b8af-96202ac1b020.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/enerflex-story.png",
+      "servedMetadata": {
+        "width": 1344,
+        "height": 756,
+        "bytes": 266868
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-094-DIAGRAM-ART",
+      "kind": "diagram",
+      "stem": "enerflex-teaching",
+      "served": "public/images/story-diagrams/enerflex-graphic-novel.webp",
+      "prompt": "Create ONE native landscape 16:9 teaching schematic. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. Scene: Gas inlet \u2192 compression stage with work-input arrow \u2192 temperature/heat-transfer checkpoint \u2192 outlet. Keep a separate arrow for heat transfer; do not imply compression removes energy from the gas. Boundaries: 2716 Sunridge Way NE is labelled water treatment; it is not the manufacturing address. Global career stories are not proof of a named worker\u2019s Calgary job. The idealised isothermal result is not a specification or description of a real Enerflex compressor. Compression work, temperature change and heat removal must not be conflated. Use clear large arrowheads and numbered circular markers 1, 2, 3, 4 matching the process; no words, labels, titles, units, logos, caption strip or border. Explanations will be supplied as live text. Simple uncluttered schematic, objects rather than people where possible.",
+      "scene": "Gas inlet \u2192 compression stage with work-input arrow \u2192 temperature/heat-transfer checkpoint \u2192 outlet. Keep a separate arrow for heat transfer; do not imply compression removes energy from the gas.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-1b2c216d-4797-4f2a-ab8c-d476086826d5.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/enerflex-teaching.png",
+      "servedMetadata": {
+        "width": 1344,
+        "height": 756,
+        "bytes": 184302
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-095-DISC-work-valve-service-ART",
+      "kind": "portrait",
+      "stem": "work-valve-service",
+      "served": "public/images/discover/work-valve-service.webp",
+      "prompt": "Create ONE native tall portrait occupation card, aspect ratio 752:1344. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. The TOP 25 percent is a solid forest-green title band with large ivory uppercase text only: VALVE SERVICE TECHNICIAN. Fit all title lettering comfortably within that top quarter. The LOWER 75 percent is a single working illustration, no other text. Scene: A fictional adult service technician inspects a detached valve body on a bench with tools and a completed-test record; no pressurised system. Coherent anatomy: every visible hand connects to its own nearby arm, maximum two arms per person, no extra hands. No caption or footer band. No actual company equipment or employee identity implied.",
+      "scene": "A fictional adult service technician inspects a detached valve body on a bench with tools and a completed-test record; no pressurised system.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-f8cced91-edb1-462a-8adf-531f55761f00.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/work-valve-service.png",
+      "servedMetadata": {
+        "width": 752,
+        "height": 1344,
+        "bytes": 227002
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-095-STORY-ART",
+      "kind": "story",
+      "stem": "spartan-controls-story",
+      "served": "public/images/examples/spartan-controls-graphic-novel.webp",
+      "prompt": "Create ONE native landscape 16:9 editorial working scene. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. Scene: A fictional service technician examines a detached valve body on a workbench while a controls colleague reviews a test record; a generic isolated test rig is shown in the background. Boundaries: No test procedure, safety threshold or assignment to a particular plant is supplied. Physics force model only. No pressure equipment is assembled or tested in class. Control valves regulate flow; relief devices protect against overpressure and should not be treated as interchangeable. No text, titles, labels, logos, caption strip, border or speech bubbles. Full-bleed single scene. Every visible hand must connect to a nearby arm; no extra or floating hands.",
+      "scene": "A fictional service technician examines a detached valve body on a workbench while a controls colleague reviews a test record; a generic isolated test rig is shown in the background.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-f80ef424-0200-4091-bbee-457b6af734b7.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/spartan-controls-story.png",
+      "servedMetadata": {
+        "width": 1344,
+        "height": 756,
+        "bytes": 283246
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-095-DIAGRAM-ART",
+      "kind": "diagram",
+      "stem": "spartan-controls-teaching",
+      "served": "public/images/story-diagrams/spartan-controls-graphic-novel.webp",
+      "prompt": "Create ONE native landscape 16:9 teaching schematic. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. Scene: Purpose/specification \u2192 inspection/service \u2192 controlled test \u2192 record/return decision, with opposing force arrows on a simple inset valve model. No operational pressures or compliance stamps. Boundaries: No test procedure, safety threshold or assignment to a particular plant is supplied. Physics force model only. No pressure equipment is assembled or tested in class. Control valves regulate flow; relief devices protect against overpressure and should not be treated as interchangeable. Use clear large arrowheads and numbered circular markers 1, 2, 3, 4 matching the process; no words, labels, titles, units, logos, caption strip or border. Explanations will be supplied as live text. Simple uncluttered schematic, objects rather than people where possible.",
+      "scene": "Purpose/specification \u2192 inspection/service \u2192 controlled test \u2192 record/return decision, with opposing force arrows on a simple inset valve model. No operational pressures or compliance stamps.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-a78e4f2d-d5af-4351-ab5e-60a4ff2d8126.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/spartan-controls-teaching.png",
+      "servedMetadata": {
+        "width": 1344,
+        "height": 756,
+        "bytes": 146922
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-096-STORY-ART",
+      "kind": "story",
+      "stem": "canada-malting-story",
+      "served": "public/images/examples/canada-malting-graphic-novel.webp",
+      "prompt": "Create ONE native landscape 16:9 editorial working scene. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. Scene: A fictional plant operator checks a tray of germinating grain while a laboratory colleague examines a small labelled sample, with generic malt-house equipment behind them. Boundaries: Detailed process description is company-wide; no exact Calgary batch settings, output or individual test method is asserted. Malting is controlled grain germination and drying; it is not itself fermentation. Enzyme and seed examples extend core biology; do not call a growth record a company operating recipe. No text, titles, labels, logos, caption strip, border or speech bubbles. Full-bleed single scene. Every visible hand must connect to a nearby arm; no extra or floating hands.",
+      "scene": "A fictional plant operator checks a tray of germinating grain while a laboratory colleague examines a small labelled sample, with generic malt-house equipment behind them.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-184167b2-4f94-4ac2-8851-0a53f4066277.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/canada-malting-story.png",
+      "servedMetadata": {
+        "width": 1344,
+        "height": 756,
+        "bytes": 301802
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-096-DIAGRAM-ART",
+      "kind": "diagram",
+      "stem": "canada-malting-teaching",
+      "served": "public/images/story-diagrams/canada-malting-graphic-novel.webp",
+      "prompt": "Create ONE native landscape 16:9 teaching schematic. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. Scene: Grain selection \u2192 steeping \u2192 controlled germination \u2192 kilning, with moisture/temperature arrows and a separate sampling/check marker. Do not draw yeast fermentation or beer production. Boundaries: Detailed process description is company-wide; no exact Calgary batch settings, output or individual test method is asserted. Malting is controlled grain germination and drying; it is not itself fermentation. Enzyme and seed examples extend core biology; do not call a growth record a company operating recipe. Use clear large arrowheads and numbered circular markers 1, 2, 3, 4 matching the process; no words, labels, titles, units, logos, caption strip or border. Explanations will be supplied as live text. Simple uncluttered schematic, objects rather than people where possible.",
+      "scene": "Grain selection \u2192 steeping \u2192 controlled germination \u2192 kilning, with moisture/temperature arrows and a separate sampling/check marker. Do not draw yeast fermentation or beer production.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-cc2fee5a-9ac7-44da-b166-486c4590df52.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/canada-malting-teaching.png",
+      "servedMetadata": {
+        "width": 1344,
+        "height": 756,
+        "bytes": 287172
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-097-DISC-work-electrician-ART",
+      "kind": "portrait",
+      "stem": "work-electrician",
+      "served": "public/images/discover/work-electrician.webp",
+      "prompt": "Create ONE native tall portrait occupation card, aspect ratio 752:1344. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. The TOP 25 percent is a solid forest-green title band with large ivory uppercase text only: ELECTRICIAN. Fit all title lettering comfortably within that top quarter. The LOWER 75 percent is a single working illustration, no other text. Scene: A fictional adult electrician checks an isolated unpowered control cabinet against a drawing; no exposed live work and all limbs plausibly attached. Coherent anatomy: every visible hand connects to its own nearby arm, maximum two arms per person, no extra hands. No caption or footer band. No actual company equipment or employee identity implied.",
+      "scene": "A fictional adult electrician checks an isolated unpowered control cabinet against a drawing; no exposed live work and all limbs plausibly attached.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-48f7ec10-5f8d-4138-b84c-68304edb7a57.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/work-electrician.png",
+      "servedMetadata": {
+        "width": 752,
+        "height": 1344,
+        "bytes": 250964
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-097-STORY-ART",
+      "kind": "story",
+      "stem": "ptw-panel-shop-story",
+      "served": "public/images/examples/ptw-panel-shop-graphic-novel.webp",
+      "prompt": "Create ONE native landscape 16:9 editorial working scene. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. Scene: A fictional electrician checks an unpowered panel against a drawing while a controls technologist marks a factory-test checklist; all cabinet internals are generic, with no live-conductor work. Boundaries: Historical Calgary work example; exact present-day panel-shop staffing, capacity and operating configuration are unverified. A generic logic model, not PTW wiring, software or an approved safety interlock. Electrical work and instrumentation training are related but distinct qualifications. No text, titles, labels, logos, caption strip, border or speech bubbles. Full-bleed single scene. Every visible hand must connect to a nearby arm; no extra or floating hands.",
+      "scene": "A fictional electrician checks an unpowered panel against a drawing while a controls technologist marks a factory-test checklist; all cabinet internals are generic, with no live-conductor work.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-b5d87b84-7a95-4b1c-92f1-0a0f3efad471.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/ptw-panel-shop-story.png",
+      "servedMetadata": {
+        "width": 1344,
+        "height": 756,
+        "bytes": 242266
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-097-DIAGRAM-ART",
+      "kind": "diagram",
+      "stem": "ptw-panel-shop-teaching",
+      "served": "public/images/story-diagrams/ptw-panel-shop-graphic-novel.webp",
+      "prompt": "Create ONE native landscape 16:9 teaching schematic. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. Scene: Design intent \u2192 unpowered assembly \u2192 test inputs/observed outputs \u2192 issue record and correction. Use a clear feedback arrow; do not imply a test stamp guarantees all future operation. Boundaries: Historical Calgary work example; exact present-day panel-shop staffing, capacity and operating configuration are unverified. A generic logic model, not PTW wiring, software or an approved safety interlock. Electrical work and instrumentation training are related but distinct qualifications. Use clear large arrowheads and numbered circular markers 1, 2, 3, 4 matching the process; no words, labels, titles, units, logos, caption strip or border. Explanations will be supplied as live text. Simple uncluttered schematic, objects rather than people where possible.",
+      "scene": "Design intent \u2192 unpowered assembly \u2192 test inputs/observed outputs \u2192 issue record and correction. Use a clear feedback arrow; do not imply a test stamp guarantees all future operation.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-074590fe-b536-4c31-b7e3-d58da0ccc089.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/ptw-panel-shop-teaching.png",
+      "servedMetadata": {
+        "width": 1344,
+        "height": 756,
+        "bytes": 288502
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-098-DISC-work-jewellery-design-ART",
+      "kind": "portrait",
+      "stem": "work-jewellery-design",
+      "served": "public/images/discover/work-jewellery-design.webp",
+      "prompt": "Create ONE native tall portrait occupation card, aspect ratio 752:1344. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. The TOP 25 percent is a solid forest-green title band with large ivory uppercase text only: JEWELLERY DESIGNER. Fit all title lettering comfortably within that top quarter. The LOWER 75 percent is a single working illustration, no other text. Scene: A fictional adult jewellery designer discusses a ring render and wax model with a client at a studio desk; no invented casting machinery. Coherent anatomy: every visible hand connects to its own nearby arm, maximum two arms per person, no extra hands. No caption or footer band. No actual company equipment or employee identity implied.",
+      "scene": "A fictional adult jewellery designer discusses a ring render and wax model with a client at a studio desk; no invented casting machinery.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-05d52417-cc03-47c6-8e13-79f108cf1536.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/work-jewellery-design.png",
+      "servedMetadata": {
+        "width": 752,
+        "height": 1342,
+        "bytes": 242866
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-098-STORY-ART",
+      "kind": "story",
+      "stem": "marlow-design-story",
+      "served": "public/images/examples/marlow-design-graphic-novel.webp",
+      "prompt": "Create ONE native landscape 16:9 editorial working scene. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. Scene: A fictional jewellery designer and client compare a ring render with a small wax model on a studio desk; only one clearly connected pair of hands per person, no molten metal or invented factory. Boundaries: Design and consultation are verified locally; local casting or manufacture of every part is not established. Cross-curricular design inquiry, not a claim that jewellery is a required physics unit. No metal melting, casting or clinical sizing activity. No text, titles, labels, logos, caption strip, border or speech bubbles. Full-bleed single scene. Every visible hand must connect to a nearby arm; no extra or floating hands.",
+      "scene": "A fictional jewellery designer and client compare a ring render with a small wax model on a studio desk; only one clearly connected pair of hands per person, no molten metal or invented factory.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-6552eece-674f-452f-a226-304ce69a7d14.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/marlow-design-story.png",
+      "servedMetadata": {
+        "width": 1344,
+        "height": 756,
+        "bytes": 286966
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-098-DIAGRAM-ART",
+      "kind": "diagram",
+      "stem": "marlow-design-teaching",
+      "served": "public/images/story-diagrams/marlow-design-graphic-novel.webp",
+      "prompt": "Create ONE native landscape 16:9 teaching schematic. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. Scene: Client constraints \u2192 sketch/CAD \u2192 model review \u2192 revised design/delivery. Include feedback to the design rather than drawing unverified casting equipment. Boundaries: Design and consultation are verified locally; local casting or manufacture of every part is not established. Cross-curricular design inquiry, not a claim that jewellery is a required physics unit. No metal melting, casting or clinical sizing activity. Use clear large arrowheads and numbered circular markers 1, 2, 3, 4 matching the process; no words, labels, titles, units, logos, caption strip or border. Explanations will be supplied as live text. Simple uncluttered schematic, objects rather than people where possible.",
+      "scene": "Client constraints \u2192 sketch/CAD \u2192 model review \u2192 revised design/delivery. Include feedback to the design rather than drawing unverified casting equipment.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-4890735e-4488-442b-a6a9-70df870124b4.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/marlow-design-teaching.png",
+      "servedMetadata": {
+        "width": 1344,
+        "height": 756,
+        "bytes": 205574
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-100-DISC-work-beekeeping-ART",
+      "kind": "portrait",
+      "stem": "work-beekeeping",
+      "served": "public/images/discover/work-beekeeping.webp",
+      "prompt": "Create ONE native tall portrait occupation card, aspect ratio 752:1344. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. The TOP 25 percent is a solid forest-green title band with large ivory uppercase text only: BEEKEEPER. Fit all title lettering comfortably within that top quarter. The LOWER 75 percent is a single working illustration, no other text. Scene: A fictional adult beekeeper in protective clothing checks a frame alongside a notebook and closed spare hive; recognizable honey bees and coherent two-handed grip. Coherent anatomy: every visible hand connects to its own nearby arm, maximum two arms per person, no extra hands. No caption or footer band. No actual company equipment or employee identity implied.",
+      "scene": "A fictional adult beekeeper in protective clothing checks a frame alongside a notebook and closed spare hive; recognizable honey bees and coherent two-handed grip.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-47b26968-ff77-4c6d-a1f9-9fe9db5fc9d9.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/work-beekeeping.png",
+      "servedMetadata": {
+        "width": 752,
+        "height": 1344,
+        "bytes": 315290
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-100-STORY-ART",
+      "kind": "story",
+      "stem": "abc-bees-story",
+      "served": "public/images/examples/abc-bees-graphic-novel.webp",
+      "prompt": "Create ONE native landscape 16:9 editorial working scene. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. Scene: A fictional beekeeper in protective clothing studies a frame beside a closed spare hive and observation notebook, with recognizable honey bees and flowering plants; no exposed face beside disturbed bees. Boundaries: No present-day field class or colony stock is promised. Generic colony care is not evidence of an individual Calgary apiary\u2019s condition. Honey-bee management is not automatically native-pollinator conservation. The model does not prescribe pest treatments, doses or hive-opening conditions; course completion is not an academic or legal licence. No text, titles, labels, logos, caption strip, border or speech bubbles. Full-bleed single scene. Every visible hand must connect to a nearby arm; no extra or floating hands.",
+      "scene": "A fictional beekeeper in protective clothing studies a frame beside a closed spare hive and observation notebook, with recognizable honey bees and flowering plants; no exposed face beside disturbed bees.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-eb780fdf-d01e-45d9-a3e0-d6eaaecdfd04.png",
+      "selectedOriginal": "design/example-expansion-2026-10-19/abc-bees-story.png",
+      "servedMetadata": {
+        "width": 1344,
+        "height": 756,
+        "bytes": 369156
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    },
+    {
+      "id": "CGY-100-DIAGRAM-ART",
+      "kind": "diagram",
+      "stem": "abc-bees-teaching",
+      "served": "public/images/story-diagrams/abc-bees-graphic-novel.webp",
+      "prompt": "Create ONE native landscape 16:9 teaching schematic. Confident forest-green #1b3b19 ink contours, flat sage and warm ivory #faf9f7 planes, natural warm skin colours, coarse halftone shadows, fine crosshatching and textured uncoated print paper, restrained burnt-orange and slate-blue accents. Bold silhouettes, mature fictional adults, selective perspective. Not photorealistic, not 3D, no comic panels, no logos, no speech bubbles. Scene: Colony and environment observations \u2192 interpret seasonal context \u2192 plan \u2192 later observations, with feedback. Keep colony condition and wild-pollinator outcomes visibly separate. Boundaries: No present-day field class or colony stock is promised. Generic colony care is not evidence of an individual Calgary apiary\u2019s condition. Honey-bee management is not automatically native-pollinator conservation. The model does not prescribe pest treatments, doses or hive-opening conditions; course completion is not an academic or legal licence. Use clear large arrowheads and numbered circular markers 1, 2, 3, 4 matching the process; no words, labels, titles, units, logos, caption strip or border. Explanations will be supplied as live text. Simple uncluttered schematic, objects rather than people where possible.",
+      "scene": "Colony and environment observations \u2192 interpret seasonal context \u2192 plan \u2192 later observations, with feedback. Keep colony condition and wild-pollinator outcomes visibly separate.",
+      "status": "generated",
+      "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-fa38ab26-a788-4d6b-a349-83b2b7cb3088.png",
+      "superseded": {
+        "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-3617aaae-a74d-4940-9b54-c75540568624.png",
+        "original": "design/example-expansion-2026-10-19/abc-bees-teaching.png",
+        "reason": "Edit this teaching illustration. In the BOTTOM-RIGHT step 4, remove all butterflies and the large flowers; these imply an unsupported benefit to wild pollinators. Replace that small scene with a closed managed beehive beside an observation notebook showing simple abstract tally marks and a single drawing of a hive frame. Keep the cycle arrows showing repeated observations inform the next plan. Retain the top-left managed hive, top seasonal/weather context, top-right planning notebook, bottom-left later managed hive. It is about managing a honey-bee colony, not improving wild-pollinator conservation. No new text or logos, same ink/halftone graphic-novel style."
+      },
+      "selectedOriginal": "design/example-expansion-2026-10-19/abc-bees-teaching-revised.png",
+      "editPrompt": "Edit this teaching illustration. In the BOTTOM-RIGHT step 4, remove all butterflies and the large flowers; these imply an unsupported benefit to wild pollinators. Replace that small scene with a closed managed beehive beside an observation notebook showing simple abstract tally marks and a single drawing of a hive frame. Keep the cycle arrows showing repeated observations inform the next plan. Retain the top-left managed hive, top seasonal/weather context, top-right planning notebook, bottom-left later managed hive. It is about managing a honey-bee colony, not improving wild-pollinator conservation. No new text or logos, same ink/halftone graphic-novel style.",
+      "servedMetadata": {
+        "width": 1344,
+        "height": 756,
+        "bytes": 307212
+      },
+      "visualReview": {
+        "reviewer": "Codex",
+        "date": "2026-10-19",
+        "result": "accepted for local review",
+        "checks": [
+          "Coherent anatomy and plausible equipment",
+          "Graphic-novel ink and halftone style",
+          "No example caption/disclaimer bands",
+          "Portrait titles remain within the 27 percent guessing mask",
+          "Teaching direction and source boundaries reviewed"
+        ],
+        "userDecision": "pending review of local site"
+      }
+    }
+  ],
+  "visualReviewComplete": true,
+  "successfulGenerations": 48,
+  "servedAssets": 43,
+  "reviewSheets": [
+    "story-contact.jpg",
+    "diagram-contact.jpg",
+    "portrait-contact.jpg"
+  ]
+}

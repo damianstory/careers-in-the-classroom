@@ -1,0 +1,91 @@
+{
+  "checkedOn": "2026-10-19",
+  "new_cards": 4,
+  "candidate_file": "job-cards.json",
+  "notes": [
+    {
+      "draft": "CGY-081-FULL",
+      "job_evidence": "No verified individual posting was selected. Employer services/work-area evidence is not a live vacancy.",
+      "proposed_card_ids": []
+    },
+    {
+      "draft": "CGY-083-FULL",
+      "job_evidence": "No verified individual posting was selected. Employer services/work-area evidence is not a live vacancy.",
+      "proposed_card_ids": []
+    },
+    {
+      "draft": "CGY-085-FULL",
+      "job_evidence": "No verified individual posting was selected. Employer services/work-area evidence is not a live vacancy.",
+      "proposed_card_ids": []
+    },
+    {
+      "draft": "CGY-087-FULL",
+      "job_evidence": "A current employer Digital Press Operator description and unfilled application form were inspected. A separate proposed card is included for review; no application submitted.",
+      "proposed_card_ids": [
+        "CGY-087-J1"
+      ]
+    },
+    {
+      "draft": "CGY-088-FULL",
+      "job_evidence": "No verified individual posting was selected. Employer services/work-area evidence is not a live vacancy.",
+      "proposed_card_ids": []
+    },
+    {
+      "draft": "CGY-089-FULL",
+      "job_evidence": "Calgary-linked Seasonal Deicing Technician detail and empty application form inspected; proposed job card remains pending.",
+      "proposed_card_ids": [
+        "CGY-089-J1"
+      ]
+    },
+    {
+      "draft": "CGY-090-FULL",
+      "job_evidence": "No verified individual posting was selected. Employer services/work-area evidence is not a live vacancy.",
+      "proposed_card_ids": []
+    },
+    {
+      "draft": "CGY-091-FULL",
+      "job_evidence": "Intermediate Stormwater Engineer description inspected: degree, P.Eng. and 5–10 years of experience. Application acceptance is left unverified in the proposed historical/undated job card.",
+      "proposed_card_ids": [
+        "CGY-091-J1"
+      ]
+    },
+    {
+      "draft": "CGY-092-FULL",
+      "job_evidence": "A previously found laboratory-assistant URL now resolves to a generic unavailable page. The facility book supports work areas; no new vacancy card is proposed.",
+      "proposed_card_ids": []
+    },
+    {
+      "draft": "CGY-094-FULL",
+      "job_evidence": "No verified individual posting was selected. Employer services/work-area evidence is not a live vacancy.",
+      "proposed_card_ids": []
+    },
+    {
+      "draft": "CGY-095-FULL",
+      "job_evidence": "No verified individual posting was selected. Employer services/work-area evidence is not a live vacancy.",
+      "proposed_card_ids": []
+    },
+    {
+      "draft": "CGY-096-FULL",
+      "job_evidence": "No verified individual posting was selected. Employer services/work-area evidence is not a live vacancy.",
+      "proposed_card_ids": []
+    },
+    {
+      "draft": "CGY-097-FULL",
+      "job_evidence": "No verified individual posting was selected. Employer services/work-area evidence is not a live vacancy.",
+      "proposed_card_ids": []
+    },
+    {
+      "draft": "CGY-098-FULL",
+      "job_evidence": "Original full-time Jewellery Designer posting invites applications by email. Exact proposed role card remains pending; no email sent.",
+      "proposed_card_ids": [
+        "CGY-098-J1"
+      ]
+    },
+    {
+      "draft": "CGY-100-FULL",
+      "job_evidence": "No verified individual posting was selected. Employer services/work-area evidence is not a live vacancy.",
+      "proposed_card_ids": []
+    }
+  ],
+  "boundary": "Four individual copy versions pending; five Monday maintenance candidates remain separate and pending. General role/team/programme evidence is not a vacancy. Failed reads are unknown, not closed."
+}

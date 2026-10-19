@@ -1,0 +1,107 @@
+[
+  {
+    "slug": "clynch-prosthetics",
+    "name": "Clynch Prosthetics & Orthotics",
+    "url": "https://clynchprosthetics.com/wp-content/uploads/2024/08/clynch-logo-short-dark.webp",
+    "file": "design/example-expansion-2026-10-19/clynch-prosthetics-logo-original",
+    "onDark": false
+  },
+  {
+    "slug": "westech-industrial",
+    "name": "Westech Industrial",
+    "url": "https://westech-ind.com/wp-content/uploads/2020/01/Westech-White_Web-Header-Logo.png",
+    "file": "design/example-expansion-2026-10-19/westech-industrial-logo-original",
+    "onDark": true
+  },
+  {
+    "slug": "alberta-cheese",
+    "name": "Alberta Cheese Company / Franco\u2019s (Gay Lea)",
+    "url": "https://albertacheese.com/images/alberta_cheese-logo.png",
+    "file": "design/example-expansion-2026-10-19/alberta-cheese-logo-original",
+    "onDark": false
+  },
+  {
+    "slug": "mountain-view-printing",
+    "name": "Mountain View Printing",
+    "url": "https://mvprinters.com/wp-content/themes/mvprinters/assets/img/mountain-view-logo-horizontal.svg",
+    "file": "design/example-expansion-2026-10-19/mountain-view-printing-logo-original",
+    "onDark": false
+  },
+  {
+    "slug": "calgary-metal-recycling",
+    "name": "Calgary Metal Recycling",
+    "url": "https://calgarymetal.com/wp-content/themes/cmri/resource/img/calgary-metal-logo.svg",
+    "file": "design/example-expansion-2026-10-19/calgary-metal-recycling-logo-original",
+    "onDark": false
+  },
+  {
+    "slug": "aeromag-calgary",
+    "name": "Aeromag \u2014 Calgary YYC station",
+    "url": "https://aeromag.ca/wp-content/themes/aeromag/public/build/images/logo-graphic.901cc6a0.svg",
+    "file": "design/example-expansion-2026-10-19/aeromag-calgary-logo-original",
+    "onDark": false
+  },
+  {
+    "slug": "magna-engineering",
+    "name": "MAGNA Engineering",
+    "url": "https://images.squarespace-cdn.com/content/v1/6425d50c528f4a0e97a3e1eb/b855c12f-c73d-49c1-8e9b-afd79334d199/Magna_Logo_Colour_CMYK_small.png?format=1500w",
+    "file": "design/example-expansion-2026-10-19/magna-engineering-logo-original",
+    "onDark": false
+  },
+  {
+    "slug": "canadian-blood-services-calgary",
+    "name": "Canadian Blood Services \u2014 Calgary operations",
+    "url": "https://www.blood.ca/themes/custom/cbs_bootstrap_sass/CBS_Logo_descriptors_CMYK.svg",
+    "file": "design/example-expansion-2026-10-19/canadian-blood-services-calgary-logo-original",
+    "onDark": false
+  },
+  {
+    "slug": "enerflex",
+    "name": "Enerflex",
+    "url": "https://www.enerflex.com/wp-content/uploads/enerflex-logo-1-1.png",
+    "file": "design/example-expansion-2026-10-19/enerflex-logo-original",
+    "onDark": true
+  },
+  {
+    "slug": "spartan-controls",
+    "name": "Spartan Controls",
+    "url": "https://www.spartancontrols.com/getContentAsset/27614485-8e6c-4f6c-bb77-40e4d34d74de/dfc3d011-8f63-43f6-9ed8-4b444333a1d0/Spartan-Controls-logo.svg?language=en&v=1790776123899",
+    "file": "design/example-expansion-2026-10-19/spartan-controls-logo-original",
+    "onDark": false
+  },
+  {
+    "slug": "ptw-panel-shop",
+    "name": "PTW Energy Services \u2014 Calgary panel shop",
+    "url": "https://www.ptwenergy.com/wp-content/uploads/2024/06/PTW-Logo-white.png",
+    "file": "design/example-expansion-2026-10-19/ptw-panel-shop-logo-original",
+    "onDark": true
+  },
+  {
+    "slug": "marlow-design",
+    "name": "Marlow Design",
+    "url": "https://marlowdesign.ca/cdn/shop/files/10years-marlowdesignlogo.png?v=1739313049&width=254",
+    "file": "design/example-expansion-2026-10-19/marlow-design-logo-original",
+    "onDark": false
+  },
+  {
+    "slug": "abc-bees",
+    "name": "ABC Bees / Apiaries and Bees for Communities",
+    "url": "https://import.cdn.thinkific.com/618441%2Fcustom_site_themes%2Fid%2FEUTDLxGwR5SKl6WHGcnq_colour-horizontal-logo.png",
+    "file": "design/example-expansion-2026-10-19/abc-bees-logo-original",
+    "onDark": false
+  },
+  {
+    "slug": "lux-windows",
+    "name": "Lux Windows & Doors",
+    "url": "https://www.luxwindows.com/assets/build/img/logos/2025-Lux-55YearsLogo-RGB-Black-Website.svg",
+    "file": "design/example-expansion-2026-10-19/lux-windows-logo-original",
+    "onDark": false
+  },
+  {
+    "slug": "canada-malting",
+    "name": "Canada Malting",
+    "url": "https://canadamalting.com/wp-content/themes/canadamalting/assets/grain-text.png",
+    "file": "design/example-expansion-2026-10-19/canada-malting-logo-original",
+    "onDark": false
+  }
+]

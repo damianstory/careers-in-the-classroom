@@ -263,6 +263,137 @@
       "full_example_packet": "docs/validation/full-examples/2026-10-18/review.md",
       "examples_implemented_locally": 14,
       "release_authorized": true
+    },
+    {
+      "occurrence": "2026-10-19",
+      "trigger": "daily scheduled discovery plus Monday maintenance",
+      "status": "completed",
+      "last_attempted_on": "2026-10-19",
+      "last_completed_on": "2026-10-19",
+      "candidate_leads_examined": 20,
+      "new_candidates_screened": 20,
+      "proposal_gates_passed": 19,
+      "held": 1,
+      "recommended": 5,
+      "eligible_score_8_plus": 15,
+      "qualified_reserve_score_7": 4,
+      "decisions_pending": 0,
+      "new_candidate_duplicates": 0,
+      "known_registry_entries_excluded": 100,
+      "additional_featured_companies_excluded": [
+        "GHGSat",
+        "Wilder Institute",
+        "E3 Lithium"
+      ],
+      "sources": [
+        "original employer facility/services/process/careers",
+        "government manufacturer and recycling/inspection records",
+        "manufacturer partner distributor directory",
+        "airport/project partners",
+        "official education providers"
+      ],
+      "sectors": [
+        "Aircraft ground services",
+        "Architecture and built environment",
+        "Assistive devices and rehabilitation",
+        "Beekeeping education and colony support",
+        "Blood component production and testing",
+        "Compression and industrial equipment",
+        "Custom jewellery and design",
+        "Dairy manufacturing",
+        "Distilling and process chemistry",
+        "Electric motors",
+        "Electrical control-panel fabrication",
+        "Food distribution",
+        "Grain processing and germination",
+        "Industrial measurement and integration",
+        "Metals recovery",
+        "Nature-based water infrastructure",
+        "Pedorthics and footwear",
+        "Printing and packaging",
+        "Valve testing and industrial service",
+        "Windows and building products"
+      ],
+      "looot_actual_usd": 0,
+      "looot_week_to_date_usd": 0.01,
+      "looot_outstanding_exposure_usd": 0,
+      "looot_weekly_cap_usd": 10,
+      "looot_provider_breakdown_week_usd": {
+        "firecrawl": 0.01
+      },
+      "apify_direct_usd": 0,
+      "apify_via_looot_usd": 0,
+      "budget_deferrals": [],
+      "coverage_deferrals": [
+        {
+          "id": "CGY-082",
+          "reason": "Pedorthic certification is different from prosthetic technician training; verify a specific accredited route before full copy."
+        },
+        {
+          "id": "CGY-084",
+          "reason": "Recover current original operation identity and actual duties; do not substitute a similarly named motor company."
+        },
+        {
+          "id": "CGY-086",
+          "reason": "Calgary manufacturing not established; cold-chain controls need source detail before making technical claims."
+        },
+        {
+          "id": "CGY-093",
+          "reason": "Reserve for a process-focused classroom framing and better company-specific technical evidence; omit product-promotion copy."
+        },
+        {
+          "id": "CGY-099",
+          "reason": "Select one Calgary project with concrete environmental/physics decisions and an architectural education/registration route. Civil engineering is not an architecture credential."
+        }
+      ],
+      "featured_examples": 46,
+      "discover_cards": 57,
+      "monday_maintenance": {
+        "employers_attempted": 46,
+        "bounded_followups_completed": 6,
+        "partial_or_deferred": 40,
+        "saved_job_sources_attempted": 17,
+        "recommended_new_job_cards": 5
+      },
+      "saturation": "Not triggered: fifth completed daily pass, 19 gate-qualified candidates today. No city-exhaustion claim or scope/schedule change.",
+      "packet": "company-discovery/2026-10-19/review.md",
+      "research_log": "company-discovery/2026-10-19/research-log.json",
+      "cumulative_pending_entries": 66,
+      "notification": {
+        "decision": "NOTIFY",
+        "fingerprint": "95b5264501575ae4a8e91a55c632134700a3c69e7bdf62822bdc0d1815fbf84d",
+        "prepared_on": "2026-10-19",
+        "packets": [
+          "company-discovery/2026-10-19/review.md",
+          "all-examples/2026-10-19-weekly/review.md"
+        ]
+      },
+      "proposals_approved": 15,
+      "proposals_deferred": 5,
+      "reviewed_on": "2026-10-19",
+      "full_research_in_progress": 0,
+      "full_copy_decisions_pending": 0,
+      "full_example_packet": "docs/validation/full-examples/2026-10-19/review.md",
+      "full_drafts_prepared": 15,
+      "full_research": {
+        "new_job_cards_pending": 0,
+        "discover_new_occupations_pending": 0,
+        "implementation": "authorized and completed locally; visual review pending",
+        "cost_usd": 0.01,
+        "approved_job_cards": 4,
+        "discover_new_occupations_implemented_locally": 13
+      },
+      "full_copies_approved": 15,
+      "implemented_locally": 15,
+      "local_implementation_counts": {
+        "examples": 61,
+        "discover_cards": 70,
+        "saved_job_examples": 21,
+        "new_role_company_connections": 28,
+        "new_illustrations": 43
+      },
+      "publication": "not authorized; awaiting local review"
     }
-  ]
+  ],
+  "updated_on": "2026-10-19"
 }

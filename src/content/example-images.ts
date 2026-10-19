@@ -1,3 +1,18 @@
+import october19Image0 from "../../public/images/examples/clynch-prosthetics-graphic-novel.webp";
+import october19Image1 from "../../public/images/examples/westech-industrial-graphic-novel.webp";
+import october19Image2 from "../../public/images/examples/alberta-cheese-graphic-novel.webp";
+import october19Image3 from "../../public/images/examples/mountain-view-printing-graphic-novel.webp";
+import october19Image4 from "../../public/images/examples/calgary-metal-recycling-graphic-novel.webp";
+import october19Image5 from "../../public/images/examples/aeromag-calgary-graphic-novel.webp";
+import october19Image6 from "../../public/images/examples/lux-windows-graphic-novel.webp";
+import october19Image7 from "../../public/images/examples/magna-engineering-graphic-novel.webp";
+import october19Image8 from "../../public/images/examples/canadian-blood-services-calgary-graphic-novel.webp";
+import october19Image9 from "../../public/images/examples/enerflex-graphic-novel.webp";
+import october19Image10 from "../../public/images/examples/spartan-controls-graphic-novel.webp";
+import october19Image11 from "../../public/images/examples/canada-malting-graphic-novel.webp";
+import october19Image12 from "../../public/images/examples/ptw-panel-shop-graphic-novel.webp";
+import october19Image13 from "../../public/images/examples/marlow-design-graphic-novel.webp";
+import october19Image14 from "../../public/images/examples/abc-bees-graphic-novel.webp";
 import october18Image0 from "../../public/images/examples/standens-graphic-novel.webp";
 import october18Image1 from "../../public/images/examples/opisystems-graphic-novel.webp";
 import october18Image2 from "../../public/images/examples/nanotess-graphic-novel.webp";
@@ -49,6 +64,22 @@ import lithium from "../../public/images/examples/e3-lithium-graphic-novel.webp"
 // Fictional editorial scenes, not evidence of company staff, equipment or facilities.
 // Prompts and provenance: design/example-illustrations-2026-10-07/.
 export const exampleImages: Partial<Record<string, { src: StaticImageData; alt: string }>> = {
+  "clynch-prosthetics": { src: october19Image0, alt: "A technician and clinician compare a prosthetic device with its model during a fitting discussion." },
+  "westech-industrial": { src: october19Image1, alt: "A technologist compares a process meter with a reference during a workshop test." },
+  "alberta-cheese": { src: october19Image2, alt: "Workers compare a curd sample, whey and a batch record in a generic cheese-production setting." },
+  "mountain-view-printing": { src: october19Image3, alt: "A print operator checks colour and alignment on a proof beside a digital press." },
+  "calgary-metal-recycling": { src: october19Image4, alt: "A recycling worker checks separated scrap-metal bins against a receiving record." },
+  "aeromag-calgary": { src: october19Image5, alt: "A deicing technician works near a stationary aircraft during a winter ground operation." },
+  "lux-windows": { src: october19Image6, alt: "A window installer checks the alignment of a frame in a building opening." },
+  "magna-engineering": { src: october19Image7, alt: "An engineering team compares a stormwater plan with an urban wetland setting." },
+  "canadian-blood-services-calgary": { src: october19Image8, alt: "Two laboratory workers handle labelled blood-component products and check their records." },
+  "enerflex": { src: october19Image9, alt: "A mechanical technologist and machinery worker examine a stationary compressor assembly." },
+  "spartan-controls": { src: october19Image10, alt: "A service technician inspects a detached industrial valve beside a test record." },
+  "canada-malting": { src: october19Image11, alt: "An operator and laboratory colleague inspect grain at different stages of malting." },
+  "ptw-panel-shop": { src: october19Image12, alt: "Two workers compare an unpowered control panel with a drawing and test checklist." },
+  "marlow-design": { src: october19Image13, alt: "A designer and client compare a digital jewellery proposal with a physical model." },
+  "abc-bees": { src: october19Image14, alt: "A beekeeper compares a colony observation with notes about flowers and weather." },
+
   "standens": { src: october18Image0, alt: "Graphic-novel illustration. Technician checking the deflection of a leaf-spring assembly." },
   "opisystems": { src: october18Image1, alt: "Graphic-novel illustration. Technician comparing grain-monitoring equipment and recorded readings." },
   "nanotess": { src: october18Image2, alt: "Graphic-novel illustration. Researcher comparing materials using controlled laboratory measurements." },

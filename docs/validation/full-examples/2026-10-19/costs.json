@@ -1,0 +1,33 @@
+{
+  "currency": "USD",
+  "date": "2026-10-19",
+  "run_cost_usd": 0.01,
+  "weekly_settled_usd": 0.01,
+  "weekly_outstanding_usd": 0.0,
+  "weekly_cap_usd": 10,
+  "providers": {
+    "Firecrawl via Looot": 0.01,
+    "Apify via Looot": 0,
+    "direct Apify": 0
+  },
+  "wallet_before_usd": 18.3632,
+  "wallet_after_usd": 18.3532,
+  "wallet_delta_usd": 0.01,
+  "runs": [
+    {
+      "key": "citc-full-2026-10-19-opc-residency-v1",
+      "runId": "run_48636a4c61da4ef9aa93b1f605fb013c",
+      "actualCostUsd": 0.005,
+      "receipt": "docs/validation/full-examples/2026-10-19/opc-residency-looot.json"
+    },
+    {
+      "key": "citc-full-2026-10-19-opc-programs-v1",
+      "runId": "run_82469f2d8cc64d639e069b73acff885a",
+      "actualCostUsd": 0.005,
+      "receipt": "docs/validation/full-examples/2026-10-19/opc-programs-looot.json"
+    }
+  ],
+  "retries": 0,
+  "topups": 0,
+  "ledger": "docs/validation/job-reviews/costs/looot-2026-10-19.json"
+}

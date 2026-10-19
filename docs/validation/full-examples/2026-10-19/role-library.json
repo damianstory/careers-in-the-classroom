@@ -1,0 +1,663 @@
+{
+  "roles": [
+    {
+      "id": "process-operations",
+      "title": "Process and plant operations",
+      "summary": "Keep processing equipment running safely and learn from its measurements.",
+      "explanation": "Operators put a process into practice. They inspect equipment, record operating conditions and work with engineers and maintenance teams when results differ from what was expected.",
+      "tasks": [
+        {
+          "title": "Monitor the process",
+          "detail": "Take readings and inspect equipment for signs of unusual behaviour."
+        },
+        {
+          "title": "Keep useful records",
+          "detail": "Document conditions and events so results can be compared across shifts and tests."
+        },
+        {
+          "title": "Troubleshoot safely",
+          "detail": "Report problems, support maintenance and help with commissioning or start-up work."
+        }
+      ],
+      "collaborators": [
+        "Process engineers",
+        "Maintenance technicians",
+        "Laboratory staff",
+        "Safety teams"
+      ],
+      "classroomConnection": "A separation method must work repeatedly. Careful measurements help explain why performance changes between trials.",
+      "reuse": "existing current application profile; no rewrite proposed"
+    },
+    {
+      "id": "work-aircraft-deicing",
+      "title": "Aircraft deicing technician",
+      "summary": "Apply trained ground procedures to remove or manage frozen contamination on aircraft.",
+      "explanation": "Apply trained ground procedures to remove or manage frozen contamination on aircraft.",
+      "tasks": [
+        {
+          "title": "Operate",
+          "detail": "Position and operate deicing equipment under airport procedures."
+        },
+        {
+          "title": "Apply",
+          "detail": "Use the required fluid/application procedure for the conditions and aircraft."
+        },
+        {
+          "title": "Communicate",
+          "detail": "Coordinate with crews and record the operation."
+        }
+      ],
+      "collaborators": [
+        "Flight and ground crews",
+        "Dispatchers",
+        "Other deicing staff"
+      ],
+      "classroomConnection": "Materials, temperature, communication and inspection all matter in one time-sensitive system.",
+      "reuse": "new proposed occupation profile"
+    },
+    {
+      "id": "work-beekeeping",
+      "title": "Beekeeper",
+      "summary": "Observe colonies and plan their care around local conditions.",
+      "explanation": "Observe colonies and plan their care around local conditions.",
+      "tasks": [
+        {
+          "title": "Observe",
+          "detail": "Record colony condition, food resources and seasonal indicators."
+        },
+        {
+          "title": "Assess",
+          "detail": "Use appropriate sampling and records to investigate changes."
+        },
+        {
+          "title": "Plan",
+          "detail": "Adjust the seasonal work plan and monitor what happens next."
+        }
+      ],
+      "collaborators": [
+        "Other beekeepers",
+        "Instructors",
+        "Appropriate animal-health advisers"
+      ],
+      "classroomConnection": "Decisions about a living system depend on observations over time, not one isolated reading.",
+      "reuse": "new proposed occupation profile"
+    },
+    {
+      "id": "work-blood-production",
+      "title": "Blood-component production work",
+      "summary": "Help turn collected donations into traceable blood components under controlled procedures.",
+      "explanation": "Help turn collected donations into traceable blood components under controlled procedures.",
+      "tasks": [
+        {
+          "title": "Prepare",
+          "detail": "Handle incoming products and follow the production workflow."
+        },
+        {
+          "title": "Track",
+          "detail": "Keep identity and processing records linked to the product."
+        },
+        {
+          "title": "Store",
+          "detail": "Maintain the prescribed handling and storage workflow."
+        }
+      ],
+      "collaborators": [
+        "Laboratory technologists",
+        "Quality teams",
+        "Distribution staff"
+      ],
+      "classroomConnection": "Separating material is not enough; its identity and handling history must remain reliable.",
+      "reuse": "new proposed occupation profile"
+    },
+    {
+      "id": "work-civil-and-construction-technology",
+      "title": "Civil and construction technology",
+      "summary": "Turn project requirements into usable drawings, quantities and checks.",
+      "explanation": "Turn project requirements into usable drawings, quantities and checks.",
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Prepare technical drawings using measured site information."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Check dimensions and interfaces between design disciplines."
+        },
+        {
+          "title": "Document and improve",
+          "detail": "Support construction records and field verification."
+        }
+      ],
+      "collaborators": [
+        "Engineers, surveyors and site teams"
+      ],
+      "classroomConnection": "Scale and accurate measurements connect a drawing to the real location.",
+      "reuse": "existing current application profile; no rewrite proposed"
+    },
+    {
+      "id": "work-controls",
+      "title": "Instrumentation and controls",
+      "summary": "Keep a process measurable and responsive. Controls work connects sensors, decisions and actuators so the system can respond when conditions change.",
+      "explanation": "Keep a process measurable and responsive. Controls work connects sensors, decisions and actuators so the system can respond when conditions change.",
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Check whether sensors are reading reliably."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Compare measurements with the intended operating range."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Test how the system responds to a change or fault."
+        }
+      ],
+      "collaborators": [
+        "Operators, electricians and process engineers"
+      ],
+      "classroomConnection": "Feedback uses a measured result to inform the next action.",
+      "reuse": "existing current application profile; no rewrite proposed"
+    },
+    {
+      "id": "work-electrician",
+      "title": "Electrician",
+      "summary": "Build and check electrical installations using drawings, standards and trade procedures.",
+      "explanation": "Build and check electrical installations using drawings, standards and trade procedures.",
+      "tasks": [
+        {
+          "title": "Read",
+          "detail": "Interpret drawings and identify the intended circuit connections."
+        },
+        {
+          "title": "Install",
+          "detail": "Fit and connect components using approved methods."
+        },
+        {
+          "title": "Verify",
+          "detail": "Carry out permitted inspections and tests and document issues."
+        }
+      ],
+      "collaborators": [
+        "Controls technologists",
+        "Other trades",
+        "Inspectors"
+      ],
+      "classroomConnection": "A circuit diagram describes intended behaviour; installation and verification connect that model to a real system.",
+      "reuse": "new proposed occupation profile"
+    },
+    {
+      "id": "work-food",
+      "title": "Ingredient and formulation science",
+      "summary": "Investigate how ingredients behave in a product. This work connects a material’s composition to properties such as texture, stability or performance in a mixture.",
+      "explanation": "Investigate how ingredients behave in a product. This work connects a material’s composition to properties such as texture, stability or performance in a mixture.",
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Choose a property to compare across formulations."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Prepare controlled trials and observe changes over time."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Explain the trade-offs between ingredients and processing conditions."
+        }
+      ],
+      "collaborators": [
+        "Biochemists, laboratory technicians and product-development teams"
+      ],
+      "classroomConnection": "Molecules and mixtures help explain why two ingredients can behave differently.",
+      "reuse": "existing current application profile; no rewrite proposed"
+    },
+    {
+      "id": "work-glazing",
+      "title": "Glazier and window-installation work",
+      "summary": "Fit glazing and window systems into a building opening.",
+      "explanation": "Fit glazing and window systems into a building opening.",
+      "tasks": [
+        {
+          "title": "Measure",
+          "detail": "Check dimensions, alignment and installation requirements."
+        },
+        {
+          "title": "Install",
+          "detail": "Fit glazing/window components using appropriate supports and seals."
+        },
+        {
+          "title": "Inspect",
+          "detail": "Check the completed installation and identify problems."
+        }
+      ],
+      "collaborators": [
+        "Building trades",
+        "Customers",
+        "Manufacturing teams"
+      ],
+      "classroomConnection": "The performance of a material depends partly on how it is joined to the rest of the system.",
+      "reuse": "new proposed occupation profile"
+    },
+    {
+      "id": "work-jewellery-design",
+      "title": "Jewellery designer",
+      "summary": "Translate a client’s ideas into a design that can be reviewed and made.",
+      "explanation": "Translate a client’s ideas into a design that can be reviewed and made.",
+      "tasks": [
+        {
+          "title": "Listen",
+          "detail": "Clarify the intended use, dimensions, materials and appearance."
+        },
+        {
+          "title": "Model",
+          "detail": "Use sketches or CAD to communicate the proposed piece."
+        },
+        {
+          "title": "Review",
+          "detail": "Use a render or prototype to discuss changes before production."
+        }
+      ],
+      "collaborators": [
+        "Clients",
+        "Goldsmiths and production partners",
+        "Sales colleagues"
+      ],
+      "classroomConnection": "A prototype tests the relationship between a digital idea and a physical object.",
+      "reuse": "new proposed occupation profile"
+    },
+    {
+      "id": "work-lab",
+      "title": "Laboratory analysis",
+      "summary": "Make measurements that other people can trust. A laboratory worker prepares samples, uses a method consistently and records enough detail for someone else to interpret the result.",
+      "explanation": "Make measurements that other people can trust. A laboratory worker prepares samples, uses a method consistently and records enough detail for someone else to interpret the result.",
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Prepare and label samples so their identity is preserved."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Run comparisons or reference samples to check the method."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Record results, units and limitations before sharing findings."
+        }
+      ],
+      "collaborators": [
+        "Scientists, process engineers and quality teams"
+      ],
+      "classroomConnection": "A repeatable method and a fair comparison matter as much as a single impressive number.",
+      "reuse": "existing current application profile; no rewrite proposed"
+    },
+    {
+      "id": "work-logistics",
+      "title": "Dispatch and logistics coordination",
+      "summary": "Keep materials moving in the right order, with the information needed at each handoff.",
+      "explanation": "Keep materials moving in the right order, with the information needed at each handoff.",
+      "tasks": [
+        {
+          "title": "Match",
+          "detail": "Match deliveries or orders with available capacity."
+        },
+        {
+          "title": "Check",
+          "detail": "Check timing, identification and handling requirements."
+        },
+        {
+          "title": "Respond",
+          "detail": "Respond to a delay without losing track of the product or customer need."
+        }
+      ],
+      "collaborators": [
+        "Drivers",
+        "Warehouse teams",
+        "Customers"
+      ],
+      "classroomConnection": "A technically sound product can still fail its purpose if timing or handling goes wrong.",
+      "reuse": "existing current application profile; no rewrite proposed"
+    },
+    {
+      "id": "work-manufacturing",
+      "title": "Manufacturing and quality work",
+      "summary": "Make repeatable components and check that the output matches a specification.",
+      "explanation": "Make repeatable components and check that the output matches a specification.",
+      "tasks": [
+        {
+          "title": "Read",
+          "detail": "Read a drawing or work instruction before setting up a task."
+        },
+        {
+          "title": "Measure",
+          "detail": "Measure key dimensions or properties and record the result."
+        },
+        {
+          "title": "Investigate",
+          "detail": "Investigate variation rather than treating every difference as acceptable."
+        }
+      ],
+      "collaborators": [
+        "Design teams",
+        "Machine operators",
+        "Quality staff"
+      ],
+      "classroomConnection": "Precision, tolerances and repeatable methods connect measurement to useful products.",
+      "reuse": "existing current application profile; no rewrite proposed"
+    },
+    {
+      "id": "work-mechanical",
+      "title": "Mechanical design and prototyping",
+      "summary": "Translate a need into a component or machine that can be built and tested. Designers use dimensions, material properties and constraints to evaluate alternatives.",
+      "explanation": "Translate a need into a component or machine that can be built and tested. Designers use dimensions, material properties and constraints to evaluate alternatives.",
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Create and revise drawings or a digital model."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Choose materials and dimensions for the intended conditions."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Compare the prototype with its requirements and refine the design."
+        }
+      ],
+      "collaborators": [
+        "Machinists, fabricators, test staff and customers"
+      ],
+      "classroomConnection": "Geometry, forces and material properties shape real design trade-offs.",
+      "reuse": "existing current application profile; no rewrite proposed"
+    },
+    {
+      "id": "work-medical-laboratory",
+      "title": "Medical laboratory technologist",
+      "summary": "Perform laboratory testing within a clinical quality system.",
+      "explanation": "Perform laboratory testing within a clinical quality system.",
+      "tasks": [
+        {
+          "title": "Test",
+          "detail": "Prepare samples and operate validated testing processes."
+        },
+        {
+          "title": "Check",
+          "detail": "Examine controls and results for technical quality."
+        },
+        {
+          "title": "Document",
+          "detail": "Record and communicate results within the laboratory’s professional scope."
+        }
+      ],
+      "collaborators": [
+        "Laboratory assistants",
+        "Quality staff",
+        "Clinical and production teams"
+      ],
+      "classroomConnection": "A result is useful only when the method, controls and sample identity are trustworthy.",
+      "reuse": "new proposed occupation profile"
+    },
+    {
+      "id": "work-millwright",
+      "title": "Industrial machinery assembly and maintenance",
+      "summary": "Make machinery work together as a physical system. Millwright work connects assembly, alignment, inspection and troubleshooting.",
+      "explanation": "Make machinery work together as a physical system. Millwright work connects assembly, alignment, inspection and troubleshooting.",
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Read equipment drawings and plan assembly steps."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Align and connect mechanical components."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Check operation and record problems that need adjustment."
+        }
+      ],
+      "collaborators": [
+        "Designers, operators, electricians and fabrication teams"
+      ],
+      "classroomConnection": "Small alignment errors can change how forces and motion pass through a machine.",
+      "reuse": "existing current application profile; no rewrite proposed"
+    },
+    {
+      "id": "work-prepress",
+      "title": "Prepress and print-production design",
+      "summary": "Prepare artwork so a print process can reproduce it reliably.",
+      "explanation": "Prepare artwork so a print process can reproduce it reliably.",
+      "tasks": [
+        {
+          "title": "Prepare",
+          "detail": "Check layout, image detail and the supplied production files."
+        },
+        {
+          "title": "Translate",
+          "detail": "Match the design to the print method, stock and finishing needs."
+        },
+        {
+          "title": "Proof",
+          "detail": "Inspect a proof and communicate corrections before production."
+        }
+      ],
+      "collaborators": [
+        "Designers",
+        "Press operators",
+        "Customers"
+      ],
+      "classroomConnection": "A screen preview and printed sheet use different materials and conditions.",
+      "reuse": "new proposed occupation profile"
+    },
+    {
+      "id": "work-printing-press",
+      "title": "Printing press operator",
+      "summary": "Set up equipment and check the printed output throughout a run.",
+      "explanation": "Set up equipment and check the printed output throughout a run.",
+      "tasks": [
+        {
+          "title": "Set up",
+          "detail": "Choose the job and adjust the press for the required output."
+        },
+        {
+          "title": "Inspect",
+          "detail": "Compare samples for colour, alignment and image quality."
+        },
+        {
+          "title": "Control",
+          "detail": "Make routine permitted adjustments and document checks."
+        }
+      ],
+      "collaborators": [
+        "Prepress team",
+        "Production colleagues",
+        "Finishing team"
+      ],
+      "classroomConnection": "Small changes in colour and alignment can change the quality of an entire batch.",
+      "reuse": "new proposed occupation profile"
+    },
+    {
+      "id": "work-prosthetic-clinical",
+      "title": "Prosthetist",
+      "summary": "Assess a person’s needs and evaluate a prosthesis with them.",
+      "explanation": "Assess a person’s needs and evaluate a prosthesis with them.",
+      "tasks": [
+        {
+          "title": "Assess",
+          "detail": "Discuss goals and collect measurements for an individual design."
+        },
+        {
+          "title": "Fit",
+          "detail": "Evaluate a trial device and its alignment with the person."
+        },
+        {
+          "title": "Follow up",
+          "detail": "Use comfort, movement and clinical observations to guide changes."
+        }
+      ],
+      "collaborators": [
+        "Clients",
+        "Technicians",
+        "Rehabilitation teams"
+      ],
+      "classroomConnection": "A useful solution is judged by evidence from the person using it, not by appearance alone.",
+      "reuse": "new proposed occupation profile"
+    },
+    {
+      "id": "work-prosthetic-fabrication",
+      "title": "Prosthetic and orthotic technician",
+      "summary": "Turn a clinical design into a carefully made device.",
+      "explanation": "Turn a clinical design into a carefully made device.",
+      "tasks": [
+        {
+          "title": "Shape",
+          "detail": "Use a model and the prescribed design to form device components."
+        },
+        {
+          "title": "Assemble",
+          "detail": "Join and finish parts while checking dimensions and workmanship."
+        },
+        {
+          "title": "Revise",
+          "detail": "Work with the clinician to address fit or fabrication issues."
+        }
+      ],
+      "collaborators": [
+        "Prosthetists and orthotists",
+        "Other technicians"
+      ],
+      "classroomConnection": "A design has to become a physical object whose shape and materials suit its purpose.",
+      "reuse": "new proposed occupation profile"
+    },
+    {
+      "id": "work-quality",
+      "title": "Quality and traceability",
+      "summary": "Make it possible to explain how a result or product was produced. Quality work checks records, methods and acceptance criteria so variation can be investigated rather than hidden.",
+      "explanation": "Make it possible to explain how a result or product was produced. Quality work checks records, methods and acceptance criteria so variation can be investigated rather than hidden.",
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Check that materials and samples have traceable identities."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Compare recorded results with defined acceptance criteria."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Investigate deviations and document what changed."
+        }
+      ],
+      "collaborators": [
+        "Production, laboratory, engineering and customer teams"
+      ],
+      "classroomConnection": "Repeated results need both measurements and records of the conditions that produced them.",
+      "reuse": "existing current application profile; no rewrite proposed"
+    },
+    {
+      "id": "work-recycling-operations",
+      "title": "Metal-recycling operations",
+      "summary": "Receive and sort scrap so suitable material can move into a recovery stream.",
+      "explanation": "Receive and sort scrap so suitable material can move into a recovery stream.",
+      "tasks": [
+        {
+          "title": "Identify",
+          "detail": "Distinguish material categories and identify items requiring special handling."
+        },
+        {
+          "title": "Separate",
+          "detail": "Keep grades and unwanted material apart using established procedures."
+        },
+        {
+          "title": "Record",
+          "detail": "Maintain receiving and movement records with the yard team."
+        }
+      ],
+      "collaborators": [
+        "Suppliers",
+        "Equipment operators",
+        "Transport teams"
+      ],
+      "classroomConnection": "Material identity and contamination affect what can be recovered; one test rarely tells the whole story.",
+      "reuse": "new proposed occupation profile"
+    },
+    {
+      "id": "work-technical-support",
+      "title": "Technical application support",
+      "summary": "Help people use a technical product in the conditions of their own workplace.",
+      "explanation": "Help people use a technical product in the conditions of their own workplace.",
+      "tasks": [
+        {
+          "title": "Ask",
+          "detail": "Ask what the user is trying to measure or control."
+        },
+        {
+          "title": "Separate",
+          "detail": "Separate a setup problem from a sensor or process problem."
+        },
+        {
+          "title": "Explain",
+          "detail": "Explain the next diagnostic step and record what changed."
+        }
+      ],
+      "collaborators": [
+        "Customers",
+        "Product developers",
+        "Field technicians"
+      ],
+      "classroomConnection": "Troubleshooting means testing explanations one at a time.",
+      "reuse": "existing current application profile; no rewrite proposed"
+    },
+    {
+      "id": "work-valve-service",
+      "title": "Valve service technician",
+      "summary": "Inspect, repair and test valves used to control or relieve process flow.",
+      "explanation": "Inspect, repair and test valves used to control or relieve process flow.",
+      "tasks": [
+        {
+          "title": "Inspect",
+          "detail": "Assess condition and investigate a valve’s reported behaviour."
+        },
+        {
+          "title": "Service",
+          "detail": "Carry out permitted repairs and reassembly."
+        },
+        {
+          "title": "Test",
+          "detail": "Use approved test equipment and document the result."
+        }
+      ],
+      "collaborators": [
+        "Instrumentation staff",
+        "Operations",
+        "Quality and safety teams"
+      ],
+      "classroomConnection": "A component must be tested under appropriate conditions before its behaviour can be trusted.",
+      "reuse": "new proposed occupation profile"
+    },
+    {
+      "id": "work-water-resource-planning",
+      "title": "Water-resource planning",
+      "summary": "Compare water availability, demand and possible responses over time.",
+      "explanation": "Compare water availability, demand and possible responses over time.",
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Organize supply, use and monitoring information."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Test alternative assumptions in scenarios."
+        },
+        {
+          "title": "Document and improve",
+          "detail": "Explain trade-offs, uncertainty and priorities."
+        }
+      ],
+      "collaborators": [
+        "Hydrologists, engineers, policy specialists and communities"
+      ],
+      "classroomConnection": "A model is a way to test assumptions, not a guarantee about the future.",
+      "reuse": "existing current application profile; no rewrite proposed"
+    }
+  ]
+}

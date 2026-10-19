@@ -1,0 +1,23 @@
+[
+  {
+    "id": "CGY-089-DIAGRAM-ART",
+    "prompt": "Edit this graphic-novel teaching diagram: completely remove the two circular inset facility and storage-tank pictures at lower left. They suggest a local recycling plant that is not established by the evidence. Fill that small area with plain ivory paper texture. Keep the central aircraft ground deicing, the ice-covered surface and cleared wing, weather instruments, crew communication, numbered markers and directional arrows. No additional equipment or text. Keep everything else unchanged.",
+    "path": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-08230648-ce1c-49da-8395-2f04cb18b394.png",
+    "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-099d618f-febc-4690-9ae4-3d17b7dc7dc3.png",
+    "status": "generated"
+  },
+  {
+    "id": "CGY-092-DIAGRAM-ART",
+    "prompt": "Edit this teaching schematic, retaining the graphic-novel style and donor → component separation → testing → storage sequence. Correct step 4 to clearly show DIFFERENT storage arrangements: top yellow plasma stream has a small enclosed FREEZER with a snowflake symbol; middle red-cell stream has a REFRIGERATOR; bottom yellow platelet stream goes to an open benchtop platelet agitator with bags on a gently rocking flat tray, not a refrigerator. No temperature numbers or words: explanatory live text will explain requirements. Preserve 1,2,3,4 markers and arrow directions, generic fictional equipment only. Do not imply separation alone approves a component for use.",
+    "path": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-024bbd1e-a2f5-4a53-83e3-f7ccb72739eb.png",
+    "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-94360d03-fd49-4ec9-bdfd-ec45ae332d69.png",
+    "status": "generated"
+  },
+  {
+    "id": "CGY-100-DIAGRAM-ART",
+    "prompt": "Edit this teaching illustration. In the BOTTOM-RIGHT step 4, remove all butterflies and the large flowers; these imply an unsupported benefit to wild pollinators. Replace that small scene with a closed managed beehive beside an observation notebook showing simple abstract tally marks and a single drawing of a hive frame. Keep the cycle arrows showing repeated observations inform the next plan. Retain the top-left managed hive, top seasonal/weather context, top-right planning notebook, bottom-left later managed hive. It is about managing a honey-bee colony, not improving wild-pollinator conservation. No new text or logos, same ink/halftone graphic-novel style.",
+    "path": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-3617aaae-a74d-4940-9b54-c75540568624.png",
+    "generatedPath": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-fa38ab26-a788-4d6b-a349-83b2b7cb3088.png",
+    "status": "generated"
+  }
+]

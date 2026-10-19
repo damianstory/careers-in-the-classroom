@@ -1,0 +1,28 @@
+[
+  {
+    "url": "https://www.canadamalting.com/",
+    "status": 403,
+    "file": "logo-alt-0",
+    "images": []
+  },
+  {
+    "url": "https://canadamalting.com/en/",
+    "status": 403,
+    "file": "logo-alt-1",
+    "images": []
+  },
+  {
+    "url": "https://www.abcbees.buzz/",
+    "status": 200,
+    "file": "logo-alt-2",
+    "images": [
+      "<img src=\"https://import.cdn.thinkific.com/618441%2Fcustom_site_themes%2Fid%2FEUTDLxGwR5SKl6WHGcnq_colour-horizontal-logo.png\" srcset=\"https://import.cdn.thinkific.com/618441%2Fcustom_site_themes%2Fid%2FEUTDLxGwR5SKl6WHGcnq_colour-horizontal-logo.png?width=384&amp;dpr=1 1x, https://import.cdn.thinkific.com/618441%2Fcustom_site_themes%2Fid%2FEUTDLxGwR5SKl6WHGcnq_colour-horizontal-logo.png?width=384&amp;dpr=2 2x, https://import.cdn.thinkific.com/618441%2Fcustom_site_themes%2Fid%2FEUTDLxGwR5SKl6WHGcnq_colour-horizontal-logo.png?width=384&amp;dpr=3 3x\" alt=\"\" class=\"logo img-responsive\" loading=\"lazy\">"
+    ]
+  },
+  {
+    "url": "https://www.abcbees.ca/",
+    "status": 403,
+    "file": "logo-alt-3",
+    "images": []
+  }
+]

@@ -1,0 +1,249 @@
+{
+  "candidates": [
+    {
+      "id": "CGY-087-J1",
+      "copyVersion": 1,
+      "decision": "approved",
+      "title": "Digital Press Operator",
+      "employer": "Mountain View Printing",
+      "exampleSlug": "mountain-view-printing",
+      "roleIds": [
+        "work-printing-press"
+      ],
+      "location": "Calgary",
+      "level": "Experienced; employer asks for at least 2\u20133 years in print and relevant equipment experience.",
+      "summary": "Operate digital production equipment and check each job for colour and image quality.",
+      "duties": [
+        "Set up, program and release jobs from the print queue.",
+        "Make routine permitted equipment adjustments.",
+        "Check colour/image output and complete production records."
+      ],
+      "skills": [
+        "Experience on the same or similar digital equipment.",
+        "Colour judgment and attention to detail.",
+        "Ability to manage competing deadlines."
+      ],
+      "classroomConnection": "Shows how a colour model becomes a checked production result; this is not an entry-level role requiring no prior experience.",
+      "employerNote": "Featured employer; posting does not establish assignment to the illustrated scene or a named project.",
+      "postingSourceUrl": "https://mvprinters.com/careers/",
+      "sourceKey": "printing-careers",
+      "snapshot": "docs/validation/full-examples/2026-10-19/evidence/printing-careers.txt",
+      "snapshotSha256": "c70a8dba4fe288cca7ab387faf13873ed8296c51c45acbb31f104b87bad2f829",
+      "capturedOn": "2026-10-19",
+      "publishedOn": null,
+      "applicationDeadline": null,
+      "status": {
+        "kind": "open",
+        "checkedOn": "2026-10-19",
+        "note": "Employer lists this specific role and an empty application form with this job as a selectable option. Nothing entered or submitted."
+      },
+      "limitation": "Employer publication date and deadline are not stated; recheck current acceptance before any implementation. No application or email sent.",
+      "score": 10,
+      "scoreDimensions": [
+        4,
+        3,
+        3
+      ],
+      "recommendation": "recommend",
+      "approvalScope": "Individual copy version 1 approved; local implementation authorized. Publication not authorized.",
+      "scoreRationale": {
+        "connection": "Directly connects the colour/print story to digital production.",
+        "concreteWork": "Original posting specifies setup, adjustments and output checks.",
+        "addedValue": "Adds an actual experienced production role for a newly proposed occupation."
+      },
+      "evidenceGates": {
+        "resolvedEmployer": true,
+        "substantiveDuties": true,
+        "sourceSnapshot": true,
+        "location": "As stated in proposed copy; limitations explicit.",
+        "status": "Dated original invitation check or explicit unknown.",
+        "passed": true
+      },
+      "approvedOn": "2026-10-19"
+    },
+    {
+      "id": "CGY-089-J1",
+      "copyVersion": 1,
+      "decision": "approved",
+      "title": "Seasonal Deicing Technician",
+      "employer": "Aeromag",
+      "exampleSlug": "aeromag-calgary",
+      "roleIds": [
+        "work-aircraft-deicing"
+      ],
+      "location": "Calgary YYC listing; generic role detail reached through that original listing.",
+      "level": "Seasonal; prior aviation/heavy-equipment experience is an asset, not an explicit prerequisite.",
+      "summary": "Use trained procedures and equipment for aircraft ground deicing in winter conditions.",
+      "duties": [
+        "Operate deicing trucks safely around stationary aircraft.",
+        "Apply fluids under the required procedure and communicate with crews.",
+        "Complete operational logs and reports."
+      ],
+      "skills": [
+        "Valid driver\u2019s licence and required airside qualification.",
+        "Airport security clearance requirements.",
+        "Outdoor shift availability; employer provides paid training."
+      ],
+      "classroomConnection": "Adds an employer-training route into aviation ground operations, distinct from aircraft maintenance or flying.",
+      "employerNote": "Featured employer; posting does not establish assignment to the illustrated scene or a named project.",
+      "postingSourceUrl": "https://aeromag.ca/en/careers/seasonal-deicing-technician?airport=YYC&position=Seasonal%20Deicing%20Technician",
+      "sourceKey": "aeromag-job",
+      "snapshot": "docs/validation/full-examples/2026-10-19/evidence/aeromag-job.txt",
+      "snapshotSha256": "937856aecf4105d29df3accb581e730e867623fc419138913970050cbbdd394f",
+      "capturedOn": "2026-10-19",
+      "publishedOn": null,
+      "applicationDeadline": null,
+      "status": {
+        "kind": "open",
+        "checkedOn": "2026-10-19",
+        "note": "Employer careers board explicitly lists this title under YYC, links to substantive duties and displays an empty application form. No application submitted."
+      },
+      "limitation": "Employer publication date and deadline are not stated; recheck current acceptance before any implementation. No application or email sent.",
+      "score": 10,
+      "scoreDimensions": [
+        4,
+        3,
+        3
+      ],
+      "recommendation": "recommend",
+      "approvalScope": "Individual copy version 1 approved; local implementation authorized. Publication not authorized.",
+      "scoreRationale": {
+        "connection": "Directly connects winter aircraft treatment to the featured work.",
+        "concreteWork": "Original duties name equipment, fluid application, communication and records.",
+        "addedValue": "Adds seasonal employer-paid training rather than another degree-only aviation route."
+      },
+      "evidenceGates": {
+        "resolvedEmployer": true,
+        "substantiveDuties": true,
+        "sourceSnapshot": true,
+        "location": "As stated in proposed copy; limitations explicit.",
+        "status": "Dated original invitation check or explicit unknown.",
+        "passed": true
+      },
+      "approvedOn": "2026-10-19"
+    },
+    {
+      "id": "CGY-091-J1",
+      "copyVersion": 1,
+      "decision": "approved",
+      "title": "Intermediate Stormwater Engineer",
+      "employer": "MAGNA Engineering",
+      "exampleSlug": "magna-engineering",
+      "roleIds": [
+        "work-water-resource-planning"
+      ],
+      "location": "Calgary office context established on employer careers page; role detail has no separate location field.",
+      "level": "Intermediate; 5\u201310 years of relevant stormwater/municipal experience.",
+      "summary": "Design stormwater systems and coordinate projects that manage runoff and water quality.",
+      "duties": [
+        "Model and analyse drainage systems.",
+        "Prepare design drawings, reports and project recommendations.",
+        "Coordinate project stages, agencies and other disciplines."
+      ],
+      "skills": [
+        "Accredited engineering bachelor\u2019s degree.",
+        "P.Eng. designation; relevant experience.",
+        "Hydrology/hydraulics and project communication skills."
+      ],
+      "classroomConnection": "Shows the experienced engineering work behind nature-based urban drainage, without claiming assignment to Livingston Pond E.",
+      "employerNote": "Featured employer; posting does not establish assignment to the illustrated scene or a named project.",
+      "postingSourceUrl": "https://www.magnaengineering.ca/intermediate-stormwater-engineer-1",
+      "sourceKey": "magna-role",
+      "snapshot": "docs/validation/full-examples/2026-10-19/evidence/magna-role.txt",
+      "snapshotSha256": "6053f5179bb2333c79ff2d2f8e8da8c71f318bb1a3c47ad4480d227d9b3fe872",
+      "capturedOn": "2026-10-19",
+      "publishedOn": null,
+      "applicationDeadline": null,
+      "status": {
+        "kind": "unknown",
+        "checkedOn": "2026-10-19",
+        "note": "Substantive original posting is linked from employer careers page. Application acceptance was not independently verified; present as an undated employer role example."
+      },
+      "limitation": "Employer publication date and deadline are not stated; recheck current acceptance before any implementation. No application or email sent.",
+      "score": 9,
+      "scoreDimensions": [
+        4,
+        3,
+        2
+      ],
+      "recommendation": "recommend",
+      "approvalScope": "Individual copy version 1 approved; local implementation authorized. Publication not authorized.",
+      "scoreRationale": {
+        "connection": "Direct connection to the featured stormwater-engineering work.",
+        "concreteWork": "Original duties include modelling, drawings, reports and project coordination.",
+        "addedValue": "Adds a featured-employer role, with some overlap with the wider water-engineering collection."
+      },
+      "evidenceGates": {
+        "resolvedEmployer": true,
+        "substantiveDuties": true,
+        "sourceSnapshot": true,
+        "location": "As stated in proposed copy; limitations explicit.",
+        "status": "Dated original invitation check or explicit unknown.",
+        "passed": true
+      },
+      "approvedOn": "2026-10-19"
+    },
+    {
+      "id": "CGY-098-J1",
+      "copyVersion": 1,
+      "decision": "approved",
+      "title": "Jewellery Designer (Full-Time)",
+      "employer": "Marlow Design",
+      "exampleSlug": "marlow-design",
+      "roleIds": [
+        "work-jewellery-design"
+      ],
+      "location": "1900 11 Street SE, Unit 105, Calgary",
+      "level": "Experienced; jewellery design or sales experience requested.",
+      "summary": "Translate client ideas into custom jewellery proposals using sketches, materials advice and CAD where useful.",
+      "duties": [
+        "Discuss design goals and options with clients.",
+        "Use sketches and CAD to communicate designs.",
+        "Advise on materials and stones while supporting consultations."
+      ],
+      "skills": [
+        "Jewellery design or sales experience.",
+        "Detail-focused design judgment.",
+        "Client communication and teamwork."
+      ],
+      "classroomConnection": "Connects prototypes and material/design choices with a real client-facing occupation. The posting does not prove local casting.",
+      "employerNote": "Featured employer; posting does not establish assignment to the illustrated scene or a named project.",
+      "postingSourceUrl": "https://marlowdesign.ca/pages/jewellery-designer-full-time-careers",
+      "sourceKey": "marlow-role",
+      "snapshot": "docs/validation/full-examples/2026-10-19/evidence/marlow-role.txt",
+      "snapshotSha256": "9a2b5f1e0e1685fc61eaaaf7ea9bae14a2b6218d1f584a11b14aaf699e2016df",
+      "capturedOn": "2026-10-19",
+      "publishedOn": null,
+      "applicationDeadline": null,
+      "status": {
+        "kind": "open",
+        "checkedOn": "2026-10-19",
+        "note": "Current original role page explicitly invites resume applications by email. No email sent; actual hiring outcome unknown."
+      },
+      "limitation": "Employer publication date and deadline are not stated; recheck current acceptance before any implementation. No application or email sent.",
+      "score": 10,
+      "scoreDimensions": [
+        4,
+        3,
+        3
+      ],
+      "recommendation": "recommend",
+      "approvalScope": "Individual copy version 1 approved; local implementation authorized. Publication not authorized.",
+      "scoreRationale": {
+        "connection": "Directly connects the design/prototype story to client work.",
+        "concreteWork": "Original description specifies sketches, CAD and materials advice.",
+        "addedValue": "Adds a sourced creative/client-facing occupation and arts route."
+      },
+      "evidenceGates": {
+        "resolvedEmployer": true,
+        "substantiveDuties": true,
+        "sourceSnapshot": true,
+        "location": "As stated in proposed copy; limitations explicit.",
+        "status": "Dated original invitation check or explicit unknown.",
+        "passed": true
+      },
+      "approvedOn": "2026-10-19"
+    }
+  ],
+  "decisions": "All four approved by user on 19 October 2026 for local implementation. The five OCT19 Monday maintenance cards are separate and remain pending."
+}

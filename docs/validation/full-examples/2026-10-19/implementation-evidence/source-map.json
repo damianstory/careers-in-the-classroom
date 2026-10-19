@@ -1,0 +1,964 @@
+{
+  "byResearchKey": {
+    "clynch": "oct19-source-1",
+    "clynch-solutions": "oct19-source-2",
+    "opc-programs-looot": "oct19-source-3",
+    "opc-residency-looot": "oct19-source-4",
+    "route-clinical": "oct19-source-5",
+    "westech": "oct19-source-6",
+    "westech-service": "oct19-source-7",
+    "westech-careers": "oct19-source-8",
+    "cheese": "oct19-source-9",
+    "cheese-government": "oct19-source-10",
+    "cheese-owner": "oct19-source-11",
+    "cheese-science": "oct19-source-12",
+    "printing": "oct19-source-13",
+    "printing-careers": "oct19-source-14",
+    "printing-training": "oct19-source-15",
+    "path-graphic": "oct19-source-16",
+    "recycling": "oct19-source-17",
+    "recycling-materials": "oct19-source-18",
+    "recycling-ferrous": "oct19-source-19",
+    "recycling-nonferrous": "oct19-source-20",
+    "recycling-city": "oct19-source-21",
+    "aeromag-home": "oct19-source-22",
+    "aeromag-deice": "oct19-source-23",
+    "aeromag-training": "oct19-source-24",
+    "aeromag-job": "oct19-source-25",
+    "aviation-science": "oct19-source-26",
+    "lux": "oct19-source-27",
+    "lux-pvc": "oct19-source-28",
+    "lux-installation": "oct19-source-29",
+    "lux-renovation": "oct19-source-30",
+    "lux-glass": "oct19-source-31",
+    "glazier-route": "oct19-source-32",
+    "magna": "oct19-source-33",
+    "magna-resources": "oct19-source-34",
+    "magna-livingston": "oct19-source-35",
+    "magna-team": "oct19-source-36",
+    "magna-careers": "oct19-source-37",
+    "magna-role": "oct19-source-38",
+    "blood-lab": "oct19-source-39",
+    "blood-facility": "oct19-source-40",
+    "blood-audits": "oct19-source-41",
+    "blood-services": "oct19-source-42",
+    "path-medical-lab": "oct19-source-43",
+    "route-mla": "oct19-source-44",
+    "enerflex": "oct19-source-45",
+    "enerflex-company": "oct19-source-46",
+    "enerflex-careers": "oct19-source-47",
+    "enerflex-compression": "oct19-source-48",
+    "current-oct18-route-mechanical": "expansion-source-18",
+    "current-route-millwright": "expansion-source-48",
+    "spartan": "oct19-source-49",
+    "spartan-careers": "oct19-source-50",
+    "path-instrumentation": "expansion-source-20",
+    "malting": "oct19-source-51",
+    "malting-locations": "oct19-source-52",
+    "malting-process": "oct19-source-53",
+    "malting-careers": "oct19-source-54",
+    "route-food": "oct19-source-55",
+    "ptw": "oct19-source-56",
+    "ptw-panels": "oct19-source-57",
+    "ptw-fabrication": "oct19-source-58",
+    "ptw-careers": "oct19-source-59",
+    "path-electrician": "oct19-source-60",
+    "marlow": "oct19-source-61",
+    "marlow-faq": "oct19-source-62",
+    "marlow-design": "oct19-source-63",
+    "marlow-role": "oct19-source-64",
+    "path-jewellery": "oct19-source-65",
+    "bees": "oct19-source-66",
+    "bees-local": "oct19-source-67",
+    "bees-courses": "oct19-source-68",
+    "bees-season": "oct19-source-69",
+    "bees-tasks": "oct19-source-70",
+    "bees-learning": "oct19-source-71",
+    "environmental-route": "oct17-source-9",
+    "clynch-resources": "oct19-source-72",
+    "opc-programs": "oct19-source-3",
+    "opc-residency": "oct19-source-4",
+    "opc-technical": "oct19-source-73",
+    "aeromag-services": "oct19-source-74",
+    "ptw-electrical": "oct19-source-75",
+    "marlow-careers": "oct19-source-76",
+    "bees-regulations": "oct19-source-77",
+    "current-oct18-route-instrument": "expansion-source-20",
+    "current-oct18-route-chemical": "expansion-source-6",
+    "current-oct18-route-power": "depth-sait-power",
+    "current-oct18-route-logistics": "oct18-source-36",
+    "current-oct17-route-university-of-calgary-civil-engineering": "oct17-source-15",
+    "current-oct17-route-sait-civil-engineering-technology-municipal-major": "oct17-source-16",
+    "route-recycling": "oct19-source-78"
+  },
+  "byURL": {
+    "https://opisystems.com/": "oct18-home-opisystems",
+    "https://nanotess.com/": "oct18-home-nanotess",
+    "https://efw.ca/": "oct18-home-efw-radiology",
+    "https://albertaboot.ca/": "oct18-home-alberta-boot-company",
+    "https://ffaacoustics.ca/": "oct18-home-ffa-acoustics",
+    "https://enmax.com/": "oct18-home-enmax-shepard",
+    "https://congebec.com/": "oct18-home-congebec",
+    "https://fluidenergygroup.com/": "oct18-home-fluid-energy",
+    "https://standens.com/": "oct18-source-1",
+    "https://standens.com/leaf-springs/": "oct18-source-2",
+    "https://standens.com/standens-ordering-and-service-announcement/": "oct18-source-3",
+    "https://standens.com/careers/": "oct18-source-4",
+    "https://www.sait.ca/programs-and-courses/diplomas/mechanical-engineering-technology": "expansion-source-18",
+    "https://www.sait.ca/apprenticeships-and-trades/programs/machinist": "expansion-source-19",
+    "https://www.alberta.ca/system/files/custom_downloaded_images/edc-physics20-30-performance-standards.pdf": "expansion-source-12",
+    "https://opisystems.com/contact/": "oct18-source-8",
+    "https://opisystems.com/from-an-ounce-of-prevention-to-every-grain-to-market/": "oct18-source-9",
+    "https://opisystems.com/solutions/for-commercial/": "oct18-source-10",
+    "https://opisystems.com/co2-monitoring/": "oct18-source-11",
+    "https://opisystems.bamboohr.com/careers": "oct18-source-12",
+    "https://www.sait.ca/programs-and-courses/diplomas/instrumentation-engineering-technology": "expansion-source-20",
+    "https://education.alberta.ca/media/159727/bio203007.pdf": "oct17-source-6",
+    "https://search.open.canada.ca/grants/record/nrc-cnrc%2C172-2022-2023-Q4-1000203%2Ccurrent": "oct18-source-15",
+    "https://www.nanotess.com/blogs/news/nanotess-secures-government-of-canada-funding": "oct18-source-16",
+    "https://www.nanotess.com/blogs/news/stampede-rodeo-uses-nanosalv": "oct18-source-17",
+    "https://www.nanotess.com/pages/careers": "oct18-source-18",
+    "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology": "expansion-source-6",
+    "https://science.ucalgary.ca/current-students/undergraduate/program-guides": "oct18-source-20",
+    "https://education.alberta.ca/media/159730/chem2030_07.pdf": "expansion-source-5",
+    "https://www.globalte.com/": "oct18-source-22",
+    "https://www.globalte.com/resources/safety-at-gpt": "oct18-source-23",
+    "https://www.globalte.com/resources/the-importance-of-fire-drills": "oct18-source-24",
+    "https://www.globalte.com/resources/tegs-explained-solid-state-remote-power-for-sites-that-cant-afford-downtime": "oct18-source-25",
+    "https://www.globalte.com/about/careers": "oct18-source-26",
+    "https://education.alberta.ca/media/159715/science10.pdf": "oct17-source-51",
+    "https://hifieng.com/team/": "oct18-source-28",
+    "https://hifieng.com/news/hifi-announces-new-advanced-pig-monitoring-service/": "oct18-source-29",
+    "https://hifieng.com/": "oct18-source-30",
+    "https://hifieng.com/careers/": "oct18-source-31",
+    "https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-mechanical-engineering": "oct18-source-32",
+    "https://www.burnco.com/locations/": "oct18-source-33",
+    "https://www.burnco.com/products/ready-mix/": "oct18-source-34",
+    "https://www.burnco.com/careers/": "oct18-source-35",
+    "https://www.sait.ca/programs-and-courses/diplomas/business-administration-supply-chain-management": "oct18-source-36",
+    "https://www.efw.ca/services/general-ultrasound/": "oct18-source-37",
+    "https://www.efw.ca/locations/uxborough-17/": "oct18-source-38",
+    "https://www.efw.ca/careers/commonly-recruited-positions/": "oct18-source-39",
+    "https://www.efw.ca/careers/": "oct18-source-40",
+    "https://www.sait.ca/programs-and-courses/diplomas/diagnostic-medical-sonography": "oct18-source-41",
+    "https://www.sait.ca/programs-and-courses/certificates/medical-office-assistant-and-unit-clerk": "oct18-source-42",
+    "https://www.albertaboot.ca/pages/calgary": "oct18-source-43",
+    "https://www.albertaboot.ca/pages/custom-boots": "oct18-source-44",
+    "https://www.albertaboot.ca/blogs/blog/the-master-boot-maker-meet-antonio-juarez": "oct18-source-45",
+    "https://www.auarts.ca/learn-with-us/program-areas/fibre": "oct18-source-46",
+    "https://www.ffaacoustics.ca/about-us": "oct18-source-47",
+    "https://www.ffaacoustics.ca/architectural": "oct18-source-48",
+    "https://www.enmax.com/generation-and-wires/generation/natural-gas-fuelled": "oct18-source-49",
+    "https://www.enmax.com/generation-and-wires/generation": "oct18-source-50",
+    "https://www.enmax.com/careers/": "oct18-source-51",
+    "https://alis.alberta.ca/occinfo/occupations-in-alberta/occupation-profiles/power-engineer/": "oct18-source-52",
+    "https://www.sait.ca/programs-and-courses/diplomas/power-engineering-technology": "depth-sait-power",
+    "https://www.mobiltex.com/": "oct18-source-54",
+    "https://www.mobiltex.com/support/product-training/": "oct18-source-55",
+    "https://www.mobiltex.com/what-is-cathodic-protection-cp-monitoring/": "oct18-source-56",
+    "https://www.mobiltex.com/trust/industry-driven-innovation/": "oct18-source-57",
+    "https://www.mobiltex.com/company/careers/": "oct18-source-58",
+    "https://icewestern.com/": "oct18-source-59",
+    "https://www.icewestern.com/wp-content/uploads/catalogue_2011/M_Glycol_Runaround/Glycol_Runaround.pdf": "oct18-source-60",
+    "https://icewestern.com/careers": "oct18-source-61",
+    "https://www.sait.ca/apprenticeships-and-trades/programs/refrigeration-and-air-conditioning-mechanic": "oct18-source-62",
+    "https://congebec.com/en/locations/": "oct18-source-63",
+    "https://congebec.com/en/": "oct18-source-64",
+    "https://congebec.com/en/careers-3/": "oct18-source-65",
+    "https://congebec.com/en/job-postings/": "oct18-source-66",
+    "https://www.fluidenergygroup.com/fluid-our-story": "oct18-source-67",
+    "https://www.fluidenergygroup.com/": "oct18-source-68",
+    "https://www.fluidenergygroup.com/hcr-7000-product-detail": "oct18-source-69",
+    "https://www.fluidenergygroup.com/fluidenergy-jobs": "oct18-source-70",
+    "https://www.o2design.com/dale-hodges-park": "oct17-source-1",
+    "https://www.o2design.com/contact-us": "oct17-source-2",
+    "https://www.o2design.com/careers": "oct17-source-3",
+    "https://www.o2design.com/s/O2_Junior-Landscape-Designer.pdf": "oct17-source-4",
+    "https://engage.o2design.com/about.html": "oct17-source-5",
+    "https://www.o2design.com/": "oct17-o2-planning-design-website",
+    "https://www.entuitive.com/post/designing-for-constructability-over-active-rail-lines": "oct17-source-10",
+    "https://view.ceros.com/entuitive/new-calgary-library-big-story": "oct17-source-11",
+    "https://www.calgarymlc.ca/projects/central-library": "oct17-source-12",
+    "https://www.entuitive.com/careers": "oct17-source-13",
+    "https://www.entuitive.com/": "oct17-entuitive-website",
+    "https://philsebastian.com/pages/locations/simmons": "oct17-source-18",
+    "https://philsebastian.com/pages/our-coffee-approach": "oct17-source-19",
+    "https://philsebastian.com/pages/join-our-team": "oct17-source-20",
+    "https://www.brokenpencilstudios.ca/": "oct17-source-24",
+    "https://www.brokenpencilstudios.ca/about-us": "oct17-source-25",
+    "https://www.brokenpencilstudios.ca/blogs/from-scribbles-to-screens-behind-the-scenes-of-creating-an-animated-explainer-video": "oct17-source-26",
+    "https://s21.q4cdn.com/736796105/files/doc_financials/2025/ar/v2/CPKC-Annual-Report-2025-Final-Web.pdf": "oct17-source-29",
+    "https://www.cpkcr.com/content/dam/cpkc/documents/english/labour-agreements/TCRC%20RTC%20and%20CP%20%282021-2023%29.pdf": "oct17-source-30",
+    "https://investor.cpkcr.com/news/press-release-details/2025/CPKC-receives-arbitration-decision-establishing-new-TCRC-collective-agreements/default.aspx": "oct17-source-31",
+    "https://www.cpkcr.com/": "oct17-cpkc-website",
+    "https://newsroom.calgary.ca/ensuring-a-reliable-water-supply-into-the-next-century-how-calgarys-water-security-roadmap-will-get-us-there/": "oct17-source-35",
+    "https://watersmartsolutions.ca/stormwater-is-flowing-through-the-first-stages-of-the-newly-constructed-csmi-stormwater-system/": "oct17-source-36",
+    "https://watersmartsolutions.ca/our-team/": "oct17-source-37",
+    "https://www.integratedsustainability.com/about-us/": "oct17-source-39",
+    "https://www.integratedsustainability.com/services/": "oct17-source-40",
+    "https://www.integratedsustainability.com/services/water-treatment/": "oct17-source-41",
+    "https://www.integratedsustainability.com/": "oct17-source-42",
+    "https://traceassociates.ca/contact-us/calgary/": "oct17-source-45",
+    "https://traceassociates.ca/practice-area/remediation-and-risk/": "oct17-source-46",
+    "https://esaa.org/wp-content/uploads/2023/05/RTE2023Abstracts.pdf": "oct17-source-47",
+    "https://traceassociates.ca/careers/": "oct17-source-48",
+    "https://www.rjc.ca/location-details/calgary.html": "oct17-source-49",
+    "https://www.rjc.ca/people/our-leadership/details/ryan-coles.html": "oct17-source-50",
+    "https://www.cibl.com/": "oct17-source-52",
+    "https://www.cibl.com/faq": "oct17-source-53",
+    "https://www.cibl.com/employment": "oct17-source-54",
+    "https://enviro-stewards.com/wp-content/uploads/2025/02/CIBL-Food-Waste-Prevention-Case-Study.pdf": "oct17-source-55",
+    "https://joemedia.tv/about-us": "oct17-source-58",
+    "https://joemedia.tv/corporate": "oct17-source-59",
+    "https://joemedia.tv/contact": "oct17-source-60",
+    "https://joemedia.tv/post-production": "oct17-source-61",
+    "https://www.cinnaroll.com/": "oct17-source-62",
+    "https://www.cinnaroll.com/careers": "oct17-source-63",
+    "https://islengineering.com/about/our-offices/": "oct17-source-64",
+    "https://islengineering.com/projects/": "oct17-source-65",
+    "https://islengineering.com/project/144-ave-nw-calgary-extension/": "oct17-source-66",
+    "https://islengineering.com/join-the-team/": "oct17-source-67",
+    "https://clearbakk.com/about-us/": "oct17-source-68",
+    "https://clearbakk.com/": "oct17-source-69",
+    "https://www.alsys-group.com/clearbakk-modular-solutions/": "oct17-source-70",
+    "https://www.alsys-group.com/solutions/alsys-engineering/": "oct17-source-71",
+    "https://botaneco.com/about/": "expansion-source-1",
+    "https://botaneco.com/technology/": "expansion-source-2",
+    "https://botaneco.com/": "expansion-source-3",
+    "https://botaneco.com/careers/": "expansion-source-4",
+    "https://www.nanalysis.com/": "expansion-source-9",
+    "https://www.nanalysis.com/nmready-blog/2023/6/27/relation-between-the-fid-and-the-nmr-spectrum": "expansion-source-10",
+    "https://www.nanalysis.com/career": "expansion-source-11",
+    "https://exergysolutions.com/services/manufacturing/": "expansion-source-15",
+    "https://exergysolutions.com/contact-us/": "expansion-source-16",
+    "https://exergysolutions.com/careers": "expansion-source-17",
+    "https://www.livestockwaterrecycling.com/the-system/plant/": "expansion-source-21",
+    "https://www.livestockwaterrecycling.com/our-story/innovation-center/": "expansion-source-22",
+    "https://www.livestockwaterrecycling.com/contact/contact-us/": "expansion-source-23",
+    "https://www.livestockwaterrecycling.com/careers/current-job-openings/": "expansion-source-24",
+    "https://www.avmax.com/contact": "expansion-source-26",
+    "https://www.avmax.com/mro-1": "expansion-source-27",
+    "https://www.avmax.com/services-9": "expansion-source-28",
+    "https://www.avmax.com/careers": "expansion-source-29",
+    "https://northernrna.com/biomanufacturing/": "expansion-source-33",
+    "https://northernrna.com/development-services/": "expansion-source-34",
+    "https://northernrna.com/": "expansion-source-35",
+    "https://northernrna.com/careers/": "expansion-source-36",
+    "https://www.aeriumanalytics.com/robird/": "expansion-source-38",
+    "https://www.aeriumanalytics.com/life-at-the-heart-of-aeriums-operations/": "expansion-source-39",
+    "https://www.aeriumanalytics.com/services/": "expansion-source-40",
+    "https://www.aeriumanalytics.com/contact-us/": "expansion-source-41",
+    "https://www.geologicai.com/": "expansion-source-43",
+    "https://www.geologicai.com/careers/": "expansion-source-44",
+    "https://www.geologicai.com/s/GeologicAI-Tech-Specs-2024.pdf": "expansion-source-45",
+    "https://www.tangentservices.com/projects/katal": "expansion-source-47",
+    "https://www.foremost.ca/careers": "expansion-source-49",
+    "https://media.foremost.ca/reason_middle_pdf_1742231408010_VEHICLES-OVERVIEW-WEB.pdf?v=products": "expansion-source-50",
+    "https://www.foremost.ca/facility-resume/calgary": "expansion-source-51",
+    "https://carbonova.com/": "expansion-source-53",
+    "https://www.eralberta.ca/projects/details/carbon-nanofiber-commerical-demonstration/": "expansion-source-54",
+    "https://www.eralberta.ca/projects/details/carbon-reforming-to-economic-additives-for-transitioning-into-emission-less-era/": "expansion-source-55",
+    "https://summitlithium.tech/company": "expansion-source-56",
+    "https://summitlithium.tech/technology": "expansion-source-57",
+    "https://summitlithium.tech/newsroom/summit-nanotech-becomes-summit-lithium-technologies-completes-basic-engineering-for-commercial-dle-plant": "expansion-source-58",
+    "https://veerum.com/": "expansion-source-59",
+    "https://veerum.com/corporate-contact/": "expansion-source-60",
+    "https://veerum.com/news/veerum-announces-support-for-ogc-s-3d-tiles-standard-to-modernize-asset-visualization-for-industrial/": "expansion-source-61",
+    "https://veerum.com/careers/": "expansion-source-62",
+    "https://eguanatech.com/products/energy-storage-systems/": "expansion-source-64",
+    "https://eguanatech.com/contact/contact-us/": "expansion-source-65",
+    "https://eguanatech.com/_resources/careers/Power-Electronics-Engineer.pdf": "expansion-source-66",
+    "https://flyht.com/": "expansion-source-68",
+    "https://flyht.com/weather-sensors/tamdar/": "expansion-source-69",
+    "https://flyht.com/people/": "expansion-source-70",
+    "https://sapl.ucalgary.ca/future-students/graduate/master-landscape-architecture-mla": "oct17-source-7",
+    "https://www.sait.ca/programs-and-courses/diplomas/geomatics-engineering-technology": "sait-geomatics",
+    "https://www.sait.ca/programs-and-courses/diplomas/environmental-technology": "oct17-source-9",
+    "https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-civil-engineering": "oct17-source-15",
+    "https://www.sait.ca/programs-and-courses/diplomas/civil-engineering-technology-municipal": "oct17-source-16",
+    "https://www.sait.ca/programs-and-courses/diplomas/architectural-technologies": "oct17-source-17",
+    "https://www.auarts.ca/program-areas/undergraduate/bachelor-of-design-bdes": "oct17-source-27",
+    "https://www.sait.ca/programs-and-courses/diplomas/film-and-video-production": "oct17-source-28",
+    "https://careers.cpr.ca/job/Montreal-Rail-Traffic-Controller-QC-H4W-2J9/595098117/": "oct17-source-32",
+    "https://www.sait.ca/programs-and-courses/certificates/railway-conductor": "oct17-source-33",
+    "https://www.sait.ca/programs-and-courses/diplomas/software-development": "expansion-source-14",
+    "https://www.sait.ca/programs-and-courses/diplomas/integrated-water-management": "oct17-source-38",
+    "https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-chemical-engineering": "depth-ucalgary-chemical",
+    "https://www.sait.ca/programs-and-courses/diplomas/baking-and-pastry-arts": "oct17-source-56",
+    "https://tradesecrets.alberta.ca/SOURCES/PDFS/curriculum_guides/024_outline.pdf": "oct17-source-57",
+    "https://science.ucalgary.ca/future-students/undergraduate/programs": "expansion-source-7",
+    "https://www.sait.ca/programs-and-courses/diplomas/electrical-engineering-technology": "expansion-source-13",
+    "https://eps.cbe.ab.ca/science-10-20-30.aspx": "expansion-source-25",
+    "https://tc.canada.ca/en/aviation/licensing-aircraft-maintenance-engineers-ames/obtaining-aircraft-maintenance-engineer-ame-licence": "expansion-source-30",
+    "https://www.sait.ca/programs-and-courses/diplomas/aircraft-maintenance-engineers-technology": "expansion-source-31",
+    "https://www.sait.ca/programs-and-courses/diplomas/avionics-technology": "expansion-source-32",
+    "https://eps.cbe.ab.ca/biology-20-30.aspx": "expansion-source-37",
+    "https://science.ucalgary.ca/earth/future-students/undergraduate/earth-science": "expansion-source-46",
+    "https://www.sait.ca/apprenticeships-and-trades/programs/industrial-mechanic-millwright": "expansion-source-48",
+    "https://www.sait.ca/apprenticeships-and-trades/programs/welder": "expansion-source-52",
+    "https://www.gov.nu.ca/sites/default/files/documents/2024-10/Science_10__Alberta_2005_.pdf": "expansion-source-63",
+    "https://schulich.ucalgary.ca/future-students/undergraduate/programs/majors": "expansion-source-67",
+    "https://www.ghgsat.com/": "ghgsat-home",
+    "https://www.ghgsat.com/about-us/": "ghgsat-about",
+    "https://www.ghgsat.com/ghgsat-team/": "ghgsat-team",
+    "https://www.ghgsat.com/contact/": "ghgsat-contact",
+    "https://www.ghgsat.com/technology/": "ghgsat-technology",
+    "https://www.ghgsat.com/technology/satellite-constellation/": "ghgsat-constellation",
+    "https://apply.workable.com/ghgsat/": "ghgsat-careers",
+    "https://amt.copernicus.org/articles/14/2127/2021/": "jervis-2021",
+    "https://ca.talent.com/view?id=623142164046743621": "job-ghgsat-emissions",
+    "https://apply.workable.com/ghgsat/j/32DA8F3BEC/": "job-ghgsat-backend",
+    "https://apply.workable.com/ghgsat/j/703FE3851D/": "job-ghgsat-fullstack",
+    "https://job-boards.greenhouse.io/muonspace/jobs/5248812007": "job-muon-calibration",
+    "https://schulich.ucalgary.ca/departments-centres/departments-and-programs-overview/engineering-physics": "ucalgary-engphys",
+    "https://www.ucalgary.ca/future-students/undergraduate/explore-programs/geomatics-engineering": "ucalgary-geomatics",
+    "https://www.ualberta.ca/en/undergraduate-programs/bachelor-of-science-with-major-earth-sciences.html": "ualberta-earth",
+    "https://wilderinstitute.org/about-wilder/": "depth-wilder-about",
+    "https://wilderinstitute.org/contact/": "depth-wilder-contact",
+    "https://wilderinstitute.org/program/burrowing-owl-program/": "depth-wilder-program",
+    "https://wilderinstitute.org/2025/07/21/head-starting-burrowing-owls-for-a-wild-future/": "depth-wilder-researcher",
+    "https://wilderinstitute.org/blog/100th-owl-returns-to-the-prairies/": "depth-wilder-care",
+    "https://www.e3lithium.ca/": "depth-e3-home",
+    "https://e3lithium.ca/newsroom/news-releases/e3-lithium-provides-status-update-on-clearwater-project": "depth-e3-update",
+    "https://www.e3lithium.ca/recruitment/": "depth-e3-careers",
+    "https://www.sait.ca/programs-and-courses/diplomas/chemical-engineering-technology": "depth-sait-chemical",
+    "https://www.oldscollege.ca/programs/areas-of-interest/land-environment/environmental-science-technology.html": "depth-olds-environment",
+    "https://www.oldscollege.ca/programs/areas-of-interest/animal-health/veterinary-technology-diploma.html": "depth-olds-vet",
+    "https://www.oldscollege.ca/programs/areas-of-interest/animal-health/veterinary-technical-assistant-certificate.html": "depth-olds-assistant",
+    "https://vet.ucalgary.ca/future-students/dvm-students-undergraduate-program/dvm-program": "depth-ucalgary-dvm",
+    "https://vet.ucalgary.ca/future-students/dvm-students-undergraduate-program/admission-requirements": "depth-ucalgary-dvm-entry",
+    "https://www.sait.ca/programs-and-courses/diplomas/business-administration-marketing": "depth-sait-marketing",
+    "https://www.ucalgary.ca/future-students/undergraduate/explore-programs/zoology": "depth-ucalgary-zoology",
+    "https://www.e3lithium.ca/_resources/careers/Shift-Operators.pdf?v=092911": "depth-job-e1",
+    "https://www.e3lithium.ca/_resources/careers/Intermediate-Process-Engineer.pdf?v=092911": "depth-job-e2",
+    "https://hdhl.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/1007312": "depth-job-e3",
+    "https://ghgsat.bamboohr.com/careers/204": "depth-job-g1",
+    "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=21776daf-f5d6-445a-8284-be1d53c78d12&jobId=24852": "depth-job-w1",
+    "https://agatlaboratories.applytojob.com/apply/lnOX39GFbP/Laboratory-Technician-C-Water-Lab": "weekly-oct05-e1",
+    "https://www.enmas.ca/job-detail.php?id=1": "weekly-oct05-w1",
+    "https://ghgsat.bamboohr.com/careers/205": "job-ghgsat-backend-bamboohr",
+    "https://www.calgarywildlife.org/jobs": "weekly-oct12-w1",
+    "https://arolytics.com/post/Data-Scientist-Full-Time-Calgary-Based-hybrid-remote": "weekly-oct12-g1",
+    "https://clynchprosthetics.com/": "oct19-source-1",
+    "https://clynchprosthetics.com/prosthetic-solutions/": "oct19-source-2",
+    "https://opcanada.ca/page/Accredited_Programs": "oct19-source-3",
+    "https://opcanada.ca/page/Residency_Program": "oct19-source-4",
+    "https://www.bcit.ca/programs/prosthetics-and-orthotics-diploma-full-time-7100diplt/": "oct19-source-5",
+    "https://westech-ind.com/quality-measurement-solutions/": "oct19-source-6",
+    "https://westech-ind.com/service-support/": "oct19-source-7",
+    "https://westech-ind.com/about/careers/": "oct19-source-8",
+    "https://albertacheese.com/": "oct19-source-9",
+    "https://agriculture.canada.ca/en/canadas-agriculture-sectors/animal-industry/canadian-dairy-information-centre/canadian-cheese-manufacturers-directory?wbdisable=true": "oct19-source-10",
+    "https://www.gaylea.com/news/foodservice/alberta-cheese": "oct19-source-11",
+    "https://books.lib.uoguelph.ca/cheesemakingtechnologyebook/chapter/8-1-milk-structure/": "oct19-source-12",
+    "https://mvprinters.com/capabilities/": "oct19-source-13",
+    "https://mvprinters.com/careers/": "oct19-source-14",
+    "https://alis.alberta.ca/occinfo/occupations-in-alberta/occupation-profiles/printing-press-operator/": "oct19-source-15",
+    "https://www.sait.ca/programs-and-courses/diplomas/interactive-design-graphic-design": "oct19-source-16",
+    "https://calgarymetal.com/": "oct19-source-17",
+    "https://calgarymetal.com/calgary-metal-recycling-services/material-acceptance/": "oct19-source-18",
+    "https://calgarymetal.com/calgary-metal-buying-and-selling/ferrous-metal-recycling/": "oct19-source-19",
+    "https://calgarymetal.com/calgary-metal-buying-and-selling/non-ferrous-metal-recycling/": "oct19-source-20",
+    "https://www.calgary.ca/waste/what-goes-where/metal-scrap-metal-and-unusable-metal-items.html": "oct19-source-21",
+    "https://aeromag.ca/en/": "oct19-source-22",
+    "https://aeromag.ca/en/services/aircraft-deicing/": "oct19-source-23",
+    "https://aeromag.ca/en/careers/": "oct19-source-24",
+    "https://aeromag.ca/en/careers/seasonal-deicing-technician?airport=YYC&position=Seasonal%20Deicing%20Technician": "oct19-source-25",
+    "https://tc.canada.ca/en/aviation/publications/guidelines-aircraft-ground-icing-operations-tp-14052": "oct19-source-26",
+    "https://www.luxwindows.com/": "oct19-source-27",
+    "https://www.luxwindows.com/windows/pvc/": "oct19-source-28",
+    "https://www.luxwindows.com/renovations/window-installation/": "oct19-source-29",
+    "https://www.luxwindows.com/renovations/renovation-process/": "oct19-source-30",
+    "https://www.luxwindows.com/glass-performance/energy-savings/": "oct19-source-31",
+    "https://www.sait.ca/apprenticeships-and-trades/programs/glazier": "oct19-source-32",
+    "https://www.magnaengineering.ca/": "oct19-source-33",
+    "https://www.magnaengineering.ca/resources": "oct19-source-34",
+    "https://www.magnaengineering.ca/magnablog/livingston-stormpark": "oct19-source-35",
+    "https://www.magnaengineering.ca/meet-the-team": "oct19-source-36",
+    "https://www.magnaengineering.ca/careers": "oct19-source-37",
+    "https://www.magnaengineering.ca/intermediate-stormwater-engineer-1": "oct19-source-38",
+    "https://www.blood.ca/sites/default/files/M2053_CalgaryBook_2022-02-11-EN.pdf": "oct19-source-39",
+    "https://www.blood.ca/en/about-us/publications-and-reports/designed-excellence-calgary-operations-facility-book": "oct19-source-40",
+    "https://www.blood.ca/en/about-us/reports-and-publications/audits-2025-2026": "oct19-source-41",
+    "https://www.blood.ca/en/hospital-services/laboratory-services": "oct19-source-42",
+    "https://www.sait.ca/programs-and-courses/diplomas/medical-laboratory-technology": "oct19-source-43",
+    "https://www.sait.ca/programs-and-courses/certificates/medical-laboratory-assistant": "oct19-source-44",
+    "https://www.enerflex.com/contact-us/": "oct19-source-45",
+    "https://www.enerflex.com/company/": "oct19-source-46",
+    "https://www.enerflex.com/careers/": "oct19-source-47",
+    "https://www.enerflex.com/equipment/compression/": "oct19-source-48",
+    "https://www.spartancontrols.com/services/valve-services/": "oct19-source-49",
+    "https://www.spartancontrols.com/careers/": "oct19-source-50",
+    "https://canadamalting.com/": "oct19-source-51",
+    "https://canadamalting.com/fr/contactez-nous/": "oct19-source-52",
+    "https://canadamalting.com/process/": "oct19-source-53",
+    "https://canadamalting.com/careers/": "oct19-source-54",
+    "https://www.ualberta.ca/en/undergraduate-programs/bachelor-of-science-in-nutrition-and-food-science-food-science-and-technology-specialization.html": "oct19-source-55",
+    "https://www.ptwenergy.com/ptw-business-feature-ptw-panel-shop/": "oct19-source-56",
+    "https://www.ptwenergy.com/ptw-calgary-panel-shop-panel-construction/": "oct19-source-57",
+    "https://www.ptwenergy.com/fabrication-services/": "oct19-source-58",
+    "https://www.ptwenergy.com/careers/": "oct19-source-59",
+    "https://www.sait.ca/apprenticeships-and-trades/programs/electrician": "oct19-source-60",
+    "https://marlowdesign.ca/": "oct19-source-61",
+    "https://marlowdesign.ca/pages/faq": "oct19-source-62",
+    "https://marlowdesign.ca/pages/design-process": "oct19-source-63",
+    "https://marlowdesign.ca/pages/jewellery-designer-full-time-careers": "oct19-source-64",
+    "https://www.auarts.ca/learn-with-us/program-areas/jewellery-and-metals": "oct19-source-65",
+    "https://abcbees.ca/": "oct19-source-66",
+    "https://abcbees.ca/product/calgary-nucs/": "oct19-source-67",
+    "https://abcbees.ca/courses/": "oct19-source-68",
+    "https://abcbees.ca/blog/beekeeping-seasonal-indicators/": "oct19-source-69",
+    "https://abcbees.ca/blog/ongoing-beekeeping-tasks/": "oct19-source-70",
+    "https://www.abcbees.buzz/courses/level-1-beekeeping": "oct19-source-71",
+    "https://clynchprosthetics.com/resources/": "oct19-source-72",
+    "https://opcanada.ca/page/Registration": "oct19-source-73",
+    "https://aeromag.ca/en/about-us/": "oct19-source-74",
+    "https://www.ptwenergy.com/tag/electrical-construction/": "oct19-source-75",
+    "https://marlowdesign.ca/pages/careers-at-marlow-design": "oct19-source-76",
+    "https://abcbees.ca/blog/beekeeping-regulations/": "oct19-source-77",
+    "https://alis.alberta.ca/occinfo/occupations-in-alberta/occupation-profiles/municipal-recycling-waste-handler/": "oct19-source-78",
+    "https://www.georgebrown.ca/programs/orthotic-prosthetic-technician-program-s102": "oct19-source-79"
+  },
+  "newSources": [
+    {
+      "id": "oct19-source-1",
+      "label": "clynchprosthetics.com — official website",
+      "url": "https://clynchprosthetics.com/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-2",
+      "label": "clynchprosthetics.com — prosthetic solutions",
+      "url": "https://clynchprosthetics.com/prosthetic-solutions/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-3",
+      "label": "opcanada.ca — Accredited Programs",
+      "url": "https://opcanada.ca/page/Accredited_Programs",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-4",
+      "label": "opcanada.ca — Residency Program",
+      "url": "https://opcanada.ca/page/Residency_Program",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-5",
+      "label": "bcit.ca — prosthetics and orthotics diploma full time 7100diplt",
+      "url": "https://www.bcit.ca/programs/prosthetics-and-orthotics-diploma-full-time-7100diplt/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-6",
+      "label": "westech-ind.com — quality measurement solutions",
+      "url": "https://westech-ind.com/quality-measurement-solutions/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-7",
+      "label": "westech-ind.com — service support",
+      "url": "https://westech-ind.com/service-support/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-8",
+      "label": "westech-ind.com — careers",
+      "url": "https://westech-ind.com/about/careers/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-9",
+      "label": "albertacheese.com — official website",
+      "url": "https://albertacheese.com/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-10",
+      "label": "agriculture.canada.ca — canadian cheese manufacturers directory",
+      "url": "https://agriculture.canada.ca/en/canadas-agriculture-sectors/animal-industry/canadian-dairy-information-centre/canadian-cheese-manufacturers-directory?wbdisable=true",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-11",
+      "label": "gaylea.com — alberta cheese",
+      "url": "https://www.gaylea.com/news/foodservice/alberta-cheese",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-12",
+      "label": "books.lib.uoguelph.ca — 8 1 milk structure",
+      "url": "https://books.lib.uoguelph.ca/cheesemakingtechnologyebook/chapter/8-1-milk-structure/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-13",
+      "label": "mvprinters.com — capabilities",
+      "url": "https://mvprinters.com/capabilities/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-14",
+      "label": "mvprinters.com — careers",
+      "url": "https://mvprinters.com/careers/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-15",
+      "label": "alis.alberta.ca — printing press operator",
+      "url": "https://alis.alberta.ca/occinfo/occupations-in-alberta/occupation-profiles/printing-press-operator/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-16",
+      "label": "sait.ca — interactive design graphic design",
+      "url": "https://www.sait.ca/programs-and-courses/diplomas/interactive-design-graphic-design",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-17",
+      "label": "calgarymetal.com — official website",
+      "url": "https://calgarymetal.com/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-18",
+      "label": "calgarymetal.com — material acceptance",
+      "url": "https://calgarymetal.com/calgary-metal-recycling-services/material-acceptance/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-19",
+      "label": "calgarymetal.com — ferrous metal recycling",
+      "url": "https://calgarymetal.com/calgary-metal-buying-and-selling/ferrous-metal-recycling/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-20",
+      "label": "calgarymetal.com — non ferrous metal recycling",
+      "url": "https://calgarymetal.com/calgary-metal-buying-and-selling/non-ferrous-metal-recycling/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-21",
+      "label": "calgary.ca — metal scrap metal and unusable metal items.html",
+      "url": "https://www.calgary.ca/waste/what-goes-where/metal-scrap-metal-and-unusable-metal-items.html",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-22",
+      "label": "aeromag.ca — en",
+      "url": "https://aeromag.ca/en/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-23",
+      "label": "aeromag.ca — aircraft deicing",
+      "url": "https://aeromag.ca/en/services/aircraft-deicing/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-24",
+      "label": "aeromag.ca — careers",
+      "url": "https://aeromag.ca/en/careers/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-25",
+      "label": "aeromag.ca — seasonal deicing technician",
+      "url": "https://aeromag.ca/en/careers/seasonal-deicing-technician?airport=YYC&position=Seasonal%20Deicing%20Technician",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-26",
+      "label": "tc.canada.ca — guidelines aircraft ground icing operations tp 14052",
+      "url": "https://tc.canada.ca/en/aviation/publications/guidelines-aircraft-ground-icing-operations-tp-14052",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-27",
+      "label": "luxwindows.com — official website",
+      "url": "https://www.luxwindows.com/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-28",
+      "label": "luxwindows.com — pvc",
+      "url": "https://www.luxwindows.com/windows/pvc/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-29",
+      "label": "luxwindows.com — window installation",
+      "url": "https://www.luxwindows.com/renovations/window-installation/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-30",
+      "label": "luxwindows.com — renovation process",
+      "url": "https://www.luxwindows.com/renovations/renovation-process/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-31",
+      "label": "luxwindows.com — energy savings",
+      "url": "https://www.luxwindows.com/glass-performance/energy-savings/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-32",
+      "label": "sait.ca — glazier",
+      "url": "https://www.sait.ca/apprenticeships-and-trades/programs/glazier",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-33",
+      "label": "magnaengineering.ca — official website",
+      "url": "https://www.magnaengineering.ca/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-34",
+      "label": "magnaengineering.ca — resources",
+      "url": "https://www.magnaengineering.ca/resources",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-35",
+      "label": "magnaengineering.ca — livingston stormpark",
+      "url": "https://www.magnaengineering.ca/magnablog/livingston-stormpark",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-36",
+      "label": "magnaengineering.ca — meet the team",
+      "url": "https://www.magnaengineering.ca/meet-the-team",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-37",
+      "label": "magnaengineering.ca — careers",
+      "url": "https://www.magnaengineering.ca/careers",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-38",
+      "label": "magnaengineering.ca — intermediate stormwater engineer 1",
+      "url": "https://www.magnaengineering.ca/intermediate-stormwater-engineer-1",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-39",
+      "label": "blood.ca — M2053 CalgaryBook 2022 02 11 EN.pdf",
+      "url": "https://www.blood.ca/sites/default/files/M2053_CalgaryBook_2022-02-11-EN.pdf",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-40",
+      "label": "blood.ca — designed excellence calgary operations facility book",
+      "url": "https://www.blood.ca/en/about-us/publications-and-reports/designed-excellence-calgary-operations-facility-book",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-41",
+      "label": "blood.ca — audits 2025 2026",
+      "url": "https://www.blood.ca/en/about-us/reports-and-publications/audits-2025-2026",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-42",
+      "label": "blood.ca — laboratory services",
+      "url": "https://www.blood.ca/en/hospital-services/laboratory-services",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-43",
+      "label": "sait.ca — medical laboratory technology",
+      "url": "https://www.sait.ca/programs-and-courses/diplomas/medical-laboratory-technology",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-44",
+      "label": "sait.ca — medical laboratory assistant",
+      "url": "https://www.sait.ca/programs-and-courses/certificates/medical-laboratory-assistant",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-45",
+      "label": "enerflex.com — contact us",
+      "url": "https://www.enerflex.com/contact-us/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-46",
+      "label": "enerflex.com — company",
+      "url": "https://www.enerflex.com/company/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-47",
+      "label": "enerflex.com — careers",
+      "url": "https://www.enerflex.com/careers/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-48",
+      "label": "enerflex.com — compression",
+      "url": "https://www.enerflex.com/equipment/compression/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-49",
+      "label": "spartancontrols.com — valve services",
+      "url": "https://www.spartancontrols.com/services/valve-services/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-50",
+      "label": "spartancontrols.com — careers",
+      "url": "https://www.spartancontrols.com/careers/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-51",
+      "label": "canadamalting.com — official website",
+      "url": "https://canadamalting.com/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-52",
+      "label": "canadamalting.com — contactez nous",
+      "url": "https://canadamalting.com/fr/contactez-nous/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-53",
+      "label": "canadamalting.com — process",
+      "url": "https://canadamalting.com/process/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-54",
+      "label": "canadamalting.com — careers",
+      "url": "https://canadamalting.com/careers/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-55",
+      "label": "ualberta.ca — bachelor of science in nutrition and food science food science and technology specialization.html",
+      "url": "https://www.ualberta.ca/en/undergraduate-programs/bachelor-of-science-in-nutrition-and-food-science-food-science-and-technology-specialization.html",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-56",
+      "label": "ptwenergy.com — ptw business feature ptw panel shop",
+      "url": "https://www.ptwenergy.com/ptw-business-feature-ptw-panel-shop/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-57",
+      "label": "ptwenergy.com — ptw calgary panel shop panel construction",
+      "url": "https://www.ptwenergy.com/ptw-calgary-panel-shop-panel-construction/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-58",
+      "label": "ptwenergy.com — fabrication services",
+      "url": "https://www.ptwenergy.com/fabrication-services/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-59",
+      "label": "ptwenergy.com — careers",
+      "url": "https://www.ptwenergy.com/careers/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-60",
+      "label": "sait.ca — electrician",
+      "url": "https://www.sait.ca/apprenticeships-and-trades/programs/electrician",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-61",
+      "label": "marlowdesign.ca — official website",
+      "url": "https://marlowdesign.ca/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-62",
+      "label": "marlowdesign.ca — faq",
+      "url": "https://marlowdesign.ca/pages/faq",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-63",
+      "label": "marlowdesign.ca — design process",
+      "url": "https://marlowdesign.ca/pages/design-process",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-64",
+      "label": "marlowdesign.ca — jewellery designer full time careers",
+      "url": "https://marlowdesign.ca/pages/jewellery-designer-full-time-careers",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-65",
+      "label": "auarts.ca — jewellery and metals",
+      "url": "https://www.auarts.ca/learn-with-us/program-areas/jewellery-and-metals",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-66",
+      "label": "abcbees.ca — official website",
+      "url": "https://abcbees.ca/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-67",
+      "label": "abcbees.ca — calgary nucs",
+      "url": "https://abcbees.ca/product/calgary-nucs/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-68",
+      "label": "abcbees.ca — courses",
+      "url": "https://abcbees.ca/courses/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-69",
+      "label": "abcbees.ca — beekeeping seasonal indicators",
+      "url": "https://abcbees.ca/blog/beekeeping-seasonal-indicators/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-70",
+      "label": "abcbees.ca — ongoing beekeeping tasks",
+      "url": "https://abcbees.ca/blog/ongoing-beekeeping-tasks/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-71",
+      "label": "abcbees.buzz — level 1 beekeeping",
+      "url": "https://www.abcbees.buzz/courses/level-1-beekeeping",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-72",
+      "label": "clynchprosthetics.com — resources",
+      "url": "https://clynchprosthetics.com/resources/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-73",
+      "label": "opcanada.ca — Registration",
+      "url": "https://opcanada.ca/page/Registration",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-74",
+      "label": "aeromag.ca — about us",
+      "url": "https://aeromag.ca/en/about-us/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-75",
+      "label": "ptwenergy.com — electrical construction",
+      "url": "https://www.ptwenergy.com/tag/electrical-construction/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-76",
+      "label": "marlowdesign.ca — careers at marlow design",
+      "url": "https://marlowdesign.ca/pages/careers-at-marlow-design",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-77",
+      "label": "abcbees.ca — beekeeping regulations",
+      "url": "https://abcbees.ca/blog/beekeeping-regulations/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-78",
+      "label": "alis.alberta.ca — municipal recycling waste handler",
+      "url": "https://alis.alberta.ca/occinfo/occupations-in-alberta/occupation-profiles/municipal-recycling-waste-handler/",
+      "checkedOn": "2026-10-19"
+    },
+    {
+      "id": "oct19-source-79",
+      "label": "George Brown Polytechnic — Orthotic/Prosthetic Technician S102",
+      "url": "https://www.georgebrown.ca/programs/orthotic-prosthetic-technician-program-s102",
+      "checkedOn": "2026-10-19"
+    }
+  ],
+  "pathwayRationaleUpdates": {
+    "oct17-route-sait-environmental-technology": [
+      {
+        "roleId": "work-environmental-field-assessment",
+        "why": "Supports field and laboratory work in environmental projects. A result has meaning only in the context of how and where it was collected."
+      },
+      {
+        "roleId": "work-recycling-operations",
+        "why": "For Metal-recycling operations, this route supplies related preparation: Study environmental monitoring, assessment and field methods. It is a preparation connection, not a claim of the employer’s minimum qualification."
+      }
+    ],
+    "oct18-route-instrument": [
+      {
+        "roleId": "work-controls",
+        "why": "Measurement, calibration and process controls. A reading depends on where and how it was measured, not just the number displayed."
+      },
+      {
+        "roleId": "work-software",
+        "why": "Measurement, calibration and process controls. An alert is a reason to investigate, not proof of a single cause."
+      },
+      {
+        "roleId": "work-technical-support",
+        "why": "Measurement, calibration and process controls. Troubleshooting means testing explanations one at a time."
+      },
+      {
+        "roleId": "work-process",
+        "why": "Measurement, calibration and process controls. Conservation of matter and energy helps reveal missing assumptions."
+      },
+      {
+        "roleId": "work-valve-service",
+        "why": "For Valve service technician, this route supplies related preparation: Measurement, calibration and process controls. It is a preparation connection, not a claim of the employer’s minimum qualification."
+      }
+    ],
+    "oct18-route-mechanical": [
+      {
+        "roleId": "work-mechanical",
+        "why": "Design, modelling and mechanical-system analysis. A model is useful when its assumptions are clear and measurements can challenge it."
+      },
+      {
+        "roleId": "work-manufacturing",
+        "why": "Design, modelling and mechanical-system analysis. Precision, tolerances and repeatable methods connect measurement to useful products."
+      },
+      {
+        "roleId": "work-controls",
+        "why": "Design, modelling and mechanical-system analysis. A reading depends on where and how it was measured, not just the number displayed."
+      },
+      {
+        "roleId": "work-acoustics",
+        "why": "Design, modelling and mechanical-system analysis. Reflection and absorption become decisions about how a room works."
+      },
+      {
+        "roleId": "work-quality",
+        "why": "For Quality and traceability, this route supplies related preparation: Design, modelling and mechanical-system analysis. It is a preparation connection, not a claim of the employer’s minimum qualification."
+      }
+    ],
+    "route-millwright": [
+      {
+        "roleId": "work-millwright",
+        "why": "Supports equipment assembly, alignment and maintenance. Small alignment errors can change how forces and motion pass through a machine."
+      },
+      {
+        "roleId": "work-valve-service",
+        "why": "For Valve service technician, this route supplies related preparation: Learn to install, maintain and repair industrial machinery. It is a preparation connection, not a claim of the employer’s minimum qualification."
+      }
+    ]
+  }
+}

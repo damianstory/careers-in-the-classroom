@@ -4,6 +4,309 @@ import type { LearningPathway } from "./types";
 // why it relates to a role is our reading of that page. None is an employer requirement.
 export const learningPathways: LearningPathway[] = [
   {
+    "id": "oct19-route-bees",
+    "provider": "ABC Bees",
+    "name": "Level One Beekeeping Certificate",
+    "routeType": "Independent online education",
+    "location": "Online; provider has Calgary work",
+    "learns": "Bee biology, observation and seasonal colony-management planning.",
+    "entryNote": "Provider-issued education, not an academic diploma, occupational licence or permission to keep bees. Online course listing is distinct from the contradictory/dated field-day banners; no current Calgary field-day booking is claimed.",
+    "relevance": "local",
+    "roleRationale": [
+      {
+        "roleId": "work-beekeeping",
+        "why": "For Beekeeper, this route supplies related preparation: Bee biology, observation and seasonal colony-management planning. It is a preparation connection, not a claim of the employer’s minimum qualification."
+      }
+    ],
+    "urlSourceId": "oct19-source-71",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct19-source-71",
+      "oct19-source-68"
+    ],
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-route-deicing",
+    "provider": "Aeromag",
+    "name": "Employer classroom and practical training",
+    "routeType": "Employer training",
+    "location": "Company-wide; Calgary vacancy listed separately",
+    "learns": "Aircraft, fluids, communication, truck operation and supervised practical work.",
+    "entryNote": "The current Calgary-linked seasonal posting requires a driver’s licence, shift availability and airport security/airside requirements. Training is employer-provided; it is not an aircraft-maintenance licence. Named simulators are in Vancouver and Cleveland.",
+    "relevance": "local",
+    "roleRationale": [
+      {
+        "roleId": "work-aircraft-deicing",
+        "why": "For Aircraft deicing technician, this route supplies related preparation: Aircraft, fluids, communication, truck operation and supervised practical work. It is a preparation connection, not a claim of the employer’s minimum qualification."
+      }
+    ],
+    "urlSourceId": "oct19-source-24",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct19-source-24",
+      "oct19-source-25"
+    ],
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-route-electrician",
+    "provider": "SAIT",
+    "name": "Electrician",
+    "routeType": "Apprenticeship",
+    "location": "Calgary technical training plus workplace learning",
+    "learns": "Electrical drawings, circuits, installations and trade verification.",
+    "entryNote": "Apprenticeship requires registration and the required education/work components. An instrumentation diploma does not itself confer electrician qualification.",
+    "relevance": "local",
+    "roleRationale": [
+      {
+        "roleId": "work-electrician",
+        "why": "For Electrician, this route supplies related preparation: Electrical drawings, circuits, installations and trade verification. It is a preparation connection, not a claim of the employer’s minimum qualification."
+      }
+    ],
+    "urlSourceId": "oct19-source-60",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct19-source-60"
+    ],
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-route-food",
+    "provider": "University of Alberta",
+    "name": "Nutrition and Food Science — Food Science and Technology",
+    "routeType": "BSc specialization",
+    "location": "Edmonton",
+    "learns": "Food manufacturing, preservation, storage and quality assurance.",
+    "entryNote": "An Alberta degree route relevant to food science; it is not a universal minimum for cheese-production or malt-house jobs.",
+    "relevance": "local",
+    "roleRationale": [
+      {
+        "roleId": "work-food",
+        "why": "For Ingredient and formulation science, this route supplies related preparation: Food manufacturing, preservation, storage and quality assurance. It is a preparation connection, not a claim of the employer’s minimum qualification."
+      },
+      {
+        "roleId": "work-quality",
+        "why": "For Quality and traceability, this route supplies related preparation: Food manufacturing, preservation, storage and quality assurance. It is a preparation connection, not a claim of the employer’s minimum qualification."
+      },
+      {
+        "roleId": "work-lab",
+        "why": "For Laboratory analysis, this route supplies related preparation: Food manufacturing, preservation, storage and quality assurance. It is a preparation connection, not a claim of the employer’s minimum qualification."
+      }
+    ],
+    "urlSourceId": "oct19-source-55",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct19-source-55"
+    ],
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-route-glazier",
+    "provider": "SAIT",
+    "name": "Glazier",
+    "routeType": "Apprenticeship",
+    "location": "Calgary technical training plus workplace learning",
+    "learns": "Glazing systems, fabrication and installation skills.",
+    "entryNote": "An apprenticeship route requires the applicable registration, work and education components. Not every window-installation job is advertised as a glazier apprenticeship.",
+    "relevance": "local",
+    "roleRationale": [
+      {
+        "roleId": "work-glazing",
+        "why": "For Glazier and window-installation work, this route supplies related preparation: Glazing systems, fabrication and installation skills. It is a preparation connection, not a claim of the employer’s minimum qualification."
+      }
+    ],
+    "urlSourceId": "oct19-source-32",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct19-source-32"
+    ],
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-route-graphic",
+    "provider": "SAIT",
+    "name": "Interactive Design — Graphic Design",
+    "routeType": "Diploma",
+    "location": "Calgary",
+    "learns": "Visual communication and preparation of files for small- and large-format print.",
+    "entryNote": "A prepress/design preparation route. It does not replace press-specific experience or training.",
+    "relevance": "local",
+    "roleRationale": [
+      {
+        "roleId": "work-prepress",
+        "why": "For Prepress and print-production design, this route supplies related preparation: Visual communication and preparation of files for small- and large-format print. It is a preparation connection, not a claim of the employer’s minimum qualification."
+      },
+      {
+        "roleId": "work-jewellery-design",
+        "why": "For Jewellery designer, this route supplies related preparation: Visual communication and preparation of files for small- and large-format print. It is a preparation connection, not a claim of the employer’s minimum qualification."
+      }
+    ],
+    "urlSourceId": "oct19-source-16",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct19-source-16"
+    ],
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-route-jewellery",
+    "provider": "Alberta University of the Arts",
+    "name": "Jewellery and Metals",
+    "routeType": "BFA study area",
+    "location": "Calgary",
+    "learns": "Jewellery, small metal objects, design and fabrication.",
+    "entryNote": "A local design/materials route, not an employer-mandated qualification or a guarantee of production work at Marlow.",
+    "relevance": "local",
+    "roleRationale": [
+      {
+        "roleId": "work-jewellery-design",
+        "why": "For Jewellery designer, this route supplies related preparation: Jewellery, small metal objects, design and fabrication. It is a preparation connection, not a claim of the employer’s minimum qualification."
+      }
+    ],
+    "urlSourceId": "oct19-source-65",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct19-source-65"
+    ],
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-route-mla",
+    "provider": "SAIT",
+    "name": "Medical Laboratory Assistant",
+    "routeType": "Certificate",
+    "location": "Calgary and practicum settings",
+    "learns": "Clinical specimens, laboratory procedures and quality-focused support work.",
+    "entryNote": "A related laboratory-support route, not proof that CBS requires this certificate for every production assistant. Does not qualify its graduate as a medical laboratory technologist.",
+    "relevance": "local",
+    "roleRationale": [
+      {
+        "roleId": "work-blood-production",
+        "why": "Clinical specimen identity and laboratory procedures are a related support foundation for handling blood products. This does not establish CBS production-job requirements or qualify an assistant as a technologist."
+      }
+    ],
+    "urlSourceId": "oct19-source-44",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct19-source-44"
+    ],
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-route-mlt",
+    "provider": "SAIT",
+    "name": "Medical Laboratory Technology",
+    "routeType": "Diploma",
+    "location": "Calgary and clinical learning sites",
+    "learns": "Clinical laboratory testing, including hematology and transfusion-related study.",
+    "entryNote": "Separate from Chemical Laboratory Technology. Eligibility for professional practice, registration and individual employer requirements must be checked separately; no Calgary Blood Services placement is promised.",
+    "relevance": "local",
+    "roleRationale": [
+      {
+        "roleId": "work-medical-laboratory",
+        "why": "For Medical laboratory technologist, this route supplies related preparation: Clinical laboratory testing, including hematology and transfusion-related study. It is a preparation connection, not a claim of the employer’s minimum qualification."
+      }
+    ],
+    "urlSourceId": "oct19-source-43",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct19-source-43"
+    ],
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-route-press",
+    "provider": "Alberta alis",
+    "name": "Printing press operator — education and workplace learning",
+    "routeType": "Occupational route",
+    "location": "Alberta workplaces",
+    "learns": "Press setup, colour control, registration and production checks.",
+    "entryNote": "Government occupational overview, not an enrolled course or vacancy. Workplace training and employer requirements vary. Its duties section is dated 2020; no current wage claim is used.",
+    "relevance": "local",
+    "roleRationale": [
+      {
+        "roleId": "work-printing-press",
+        "why": "For Printing press operator, this route supplies related preparation: Press setup, colour control, registration and production checks. It is a preparation connection, not a claim of the employer’s minimum qualification."
+      }
+    ],
+    "urlSourceId": "oct19-source-15",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct19-source-15"
+    ],
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-route-prosthetic-clinical",
+    "provider": "BCIT",
+    "name": "Prosthetics and Orthotics",
+    "routeType": "Post-graduate diploma",
+    "location": "Burnaby, British Columbia",
+    "learns": "Clinical assessment, biomechanics, device design and patient-centred fitting.",
+    "entryNote": "Provider requires a prior bachelor’s degree. September 2026 applications are closed; the page says applications for September 2028 open 1 October 2027. OPC separately requires supervised residency and further certification steps; graduation alone does not certify a clinician.",
+    "relevance": "broader",
+    "roleRationale": [
+      {
+        "roleId": "work-prosthetic-clinical",
+        "why": "For Prosthetist, this route supplies related preparation: Clinical assessment, biomechanics, device design and patient-centred fitting. It is a preparation connection, not a claim of the employer’s minimum qualification."
+      }
+    ],
+    "urlSourceId": "oct19-source-5",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct19-source-5",
+      "oct19-source-3",
+      "oct19-source-4"
+    ],
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-route-prosthetic-tech",
+    "provider": "George Brown Polytechnic",
+    "name": "Orthotic/Prosthetic Technician S102",
+    "routeType": "Diploma",
+    "location": "Toronto, Ontario",
+    "learns": "Fabrication, repair, materials and collaboration with clinical practitioners.",
+    "entryNote": "OPC’s current accredited-programme description distinguishes this technical route from clinical qualification. Check provider admissions; professional technical registration involves additional requirements.",
+    "relevance": "broader",
+    "roleRationale": [
+      {
+        "roleId": "work-prosthetic-fabrication",
+        "why": "For Prosthetic and orthotic technician, this route supplies related preparation: Fabrication, repair, materials and collaboration with clinical practitioners. It is a preparation connection, not a claim of the employer’s minimum qualification."
+      }
+    ],
+    "urlSourceId": "oct19-source-79",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct19-source-3"
+    ],
+    "checkedOn": "2026-10-19"
+  },
+  {
+    "id": "oct19-route-recycling",
+    "provider": "Alberta alis",
+    "name": "Recycling waste handling — workplace learning",
+    "routeType": "Occupational route",
+    "location": "Alberta workplaces",
+    "learns": "Material categories, contamination checks and material handling through workplace training.",
+    "entryNote": "Government profile concerns municipal recycling, used as a related entry-route comparison. It does not prove Calgary Metal’s hiring requirements, training availability or equipment certifications. Employer-specific requirements must be checked.",
+    "relevance": "local",
+    "roleRationale": [
+      {
+        "roleId": "work-recycling-operations",
+        "why": "The government profile shows workplace learning in recyclable-material checks and handling. This is a municipal-setting comparison, not proof of Calgary Metal’s entry requirements or an advertised training place."
+      }
+    ],
+    "urlSourceId": "oct19-source-78",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct19-source-78"
+    ],
+    "checkedOn": "2026-10-19"
+  },
+
+  {
     "id": "oct18-route-mechanical",
     "provider": "SAIT",
     "name": "Mechanical Engineering Technology",
@@ -12,23 +315,27 @@ export const learningPathways: LearningPathway[] = [
     "relevance": "local",
     "learns": "Design, modelling and mechanical-system analysis.",
     "roleRationale": [
-      {
-        "roleId": "work-mechanical",
-        "why": "Design, modelling and mechanical-system analysis. A model is useful when its assumptions are clear and measurements can challenge it."
-      },
-      {
-        "roleId": "work-manufacturing",
-        "why": "Design, modelling and mechanical-system analysis. Precision, tolerances and repeatable methods connect measurement to useful products."
-      },
-      {
-        "roleId": "work-controls",
-        "why": "Design, modelling and mechanical-system analysis. A reading depends on where and how it was measured, not just the number displayed."
-      },
-      {
-        "roleId": "work-acoustics",
-        "why": "Design, modelling and mechanical-system analysis. Reflection and absorption become decisions about how a room works."
-      }
-    ],
+  {
+    "roleId": "work-mechanical",
+    "why": "Design, modelling and mechanical-system analysis. A model is useful when its assumptions are clear and measurements can challenge it."
+  },
+  {
+    "roleId": "work-manufacturing",
+    "why": "Design, modelling and mechanical-system analysis. Precision, tolerances and repeatable methods connect measurement to useful products."
+  },
+  {
+    "roleId": "work-controls",
+    "why": "Design, modelling and mechanical-system analysis. A reading depends on where and how it was measured, not just the number displayed."
+  },
+  {
+    "roleId": "work-acoustics",
+    "why": "Design, modelling and mechanical-system analysis. Reflection and absorption become decisions about how a room works."
+  },
+  {
+    "roleId": "work-quality",
+    "why": "For Quality and traceability, this route supplies related preparation: Design, modelling and mechanical-system analysis. It is a preparation connection, not a claim of the employer’s minimum qualification."
+  }
+],
     "entryNote": "A technical route; does not itself confer professional engineer registration. Check current admissions and intake before applying; this draft does not promise entry or employment.",
     "urlSourceId": "oct18-source-5",
     "kind": "interpreted",
@@ -72,23 +379,27 @@ export const learningPathways: LearningPathway[] = [
     "relevance": "local",
     "learns": "Measurement, calibration and process controls.",
     "roleRationale": [
-      {
-        "roleId": "work-controls",
-        "why": "Measurement, calibration and process controls. A reading depends on where and how it was measured, not just the number displayed."
-      },
-      {
-        "roleId": "work-software",
-        "why": "Measurement, calibration and process controls. An alert is a reason to investigate, not proof of a single cause."
-      },
-      {
-        "roleId": "work-technical-support",
-        "why": "Measurement, calibration and process controls. Troubleshooting means testing explanations one at a time."
-      },
-      {
-        "roleId": "work-process",
-        "why": "Measurement, calibration and process controls. Conservation of matter and energy helps reveal missing assumptions."
-      }
-    ],
+  {
+    "roleId": "work-controls",
+    "why": "Measurement, calibration and process controls. A reading depends on where and how it was measured, not just the number displayed."
+  },
+  {
+    "roleId": "work-software",
+    "why": "Measurement, calibration and process controls. An alert is a reason to investigate, not proof of a single cause."
+  },
+  {
+    "roleId": "work-technical-support",
+    "why": "Measurement, calibration and process controls. Troubleshooting means testing explanations one at a time."
+  },
+  {
+    "roleId": "work-process",
+    "why": "Measurement, calibration and process controls. Conservation of matter and energy helps reveal missing assumptions."
+  },
+  {
+    "roleId": "work-valve-service",
+    "why": "For Valve service technician, this route supplies related preparation: Measurement, calibration and process controls. It is a preparation connection, not a claim of the employer’s minimum qualification."
+  }
+],
     "entryNote": "Related to sensor/control work; no guaranteed employer placement. Check current admissions and intake before applying; this draft does not promise entry or employment.",
     "urlSourceId": "oct18-source-13",
     "kind": "interpreted",
@@ -403,11 +714,15 @@ export const learningPathways: LearningPathway[] = [
     relevance: "local",
     learns: "Study environmental monitoring, assessment and field methods.",
     roleRationale: [
-      {
-        roleId: "work-environmental-field-assessment",
-        why: "Supports field and laboratory work in environmental projects. A result has meaning only in the context of how and where it was collected."
-      }
-    ],
+  {
+    "roleId": "work-environmental-field-assessment",
+    "why": "Supports field and laboratory work in environmental projects. A result has meaning only in the context of how and where it was collected."
+  },
+  {
+    "roleId": "work-recycling-operations",
+    "why": "For Metal-recycling operations, this route supplies related preparation: Study environmental monitoring, assessment and field methods. It is a preparation connection, not a claim of the employer’s minimum qualification."
+  }
+],
     entryNote: "Check current admission, portfolio, intake and workplace requirements; program completion does not guarantee a job or professional registration.",
     urlSourceId: "oct17-source-9",
     kind: "interpreted",
@@ -1219,11 +1534,15 @@ export const learningPathways: LearningPathway[] = [
     relevance: "local",
     learns: "Learn to install, maintain and repair industrial machinery.",
     roleRationale: [
-      {
-        roleId: "work-millwright",
-        why: "Supports equipment assembly, alignment and maintenance. Small alignment errors can change how forces and motion pass through a machine."
-      }
-    ],
+  {
+    "roleId": "work-millwright",
+    "why": "Supports equipment assembly, alignment and maintenance. Small alignment errors can change how forces and motion pass through a machine."
+  },
+  {
+    "roleId": "work-valve-service",
+    "why": "For Valve service technician, this route supplies related preparation: Learn to install, maintain and repair industrial machinery. It is a preparation connection, not a claim of the employer’s minimum qualification."
+  }
+],
     entryNote: "Requires apprenticeship registration and workplace training. This is distinct from an engineering degree.",
     urlSourceId: "expansion-source-48",
     kind: "interpreted",

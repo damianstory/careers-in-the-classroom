@@ -1,0 +1,31 @@
+{
+  "reviewedOn": "2026-10-19",
+  "reviewer": "user",
+  "instruction": "Alright, approve all 15 drafts and the four job cards. Let's create the illustrations and add everything to the site, including Discover. We'll review it before pushing live.",
+  "fullDraftIds": [
+    "CGY-081-FULL",
+    "CGY-083-FULL",
+    "CGY-085-FULL",
+    "CGY-087-FULL",
+    "CGY-088-FULL",
+    "CGY-089-FULL",
+    "CGY-090-FULL",
+    "CGY-091-FULL",
+    "CGY-092-FULL",
+    "CGY-094-FULL",
+    "CGY-095-FULL",
+    "CGY-096-FULL",
+    "CGY-097-FULL",
+    "CGY-098-FULL",
+    "CGY-100-FULL"
+  ],
+  "jobCardIds": [
+    "CGY-087-J1",
+    "CGY-089-J1",
+    "CGY-091-J1",
+    "CGY-098-J1"
+  ],
+  "discover": "All reviewed proposed connections and 13 new occupations included in authorized local integration.",
+  "artwork": "Generate, inspect and integrate reviewed briefs; unseen results subject to local review.",
+  "authorization": "Local implementation only. No push, deployment or publication authorized."
+}

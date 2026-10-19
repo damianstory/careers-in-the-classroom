@@ -1,0 +1,346 @@
+{
+  "checked_on": "2026-10-19",
+  "jobs": [
+    {
+      "job_id": "cgy-041-j1",
+      "title": "Junior Landscape Designer",
+      "employer": "O2 Planning + Design",
+      "prior_status": {
+        "kind": "unknown",
+        "checkedOn": "2026-10-17",
+        "note": "Undated employer role example — application status unverified, checked 17 October 2026"
+      },
+      "original_captured_on": "2026-10-17",
+      "checked_on": "2026-10-19",
+      "source_url": "https://www.o2design.com/s/O2_Junior-Landscape-Designer.pdf",
+      "http_status": 200,
+      "snapshot": "docs/validation/job-reviews/all-examples/2026-10-19-weekly/evidence/saved-cgy-041-j1.pdf",
+      "snapshot_sha256": "3819b744d370824a402b0373b88717bf890fb8f90b134dc684a12ff232e91e2d",
+      "assessment": "unknown",
+      "evidence": "Historical/undated employer PDF retrieved; application acceptance not verified.",
+      "action": "Research record only; app copy/status and capturedOn unchanged.",
+      "material_new_change": false
+    },
+    {
+      "job_id": "cgy-050-j1",
+      "title": "Skilled Commercial Bakers",
+      "employer": "Calgary Italian Bakery",
+      "prior_status": {
+        "kind": "open",
+        "checkedOn": "2026-10-17",
+        "note": "Employer page accepting applications when checked 17 October 2026; posting date and deadline not stated"
+      },
+      "original_captured_on": "2026-10-17",
+      "checked_on": "2026-10-19",
+      "source_url": "https://www.cibl.com/employment",
+      "http_status": 200,
+      "snapshot": "docs/validation/job-reviews/all-examples/2026-10-19-weekly/evidence/saved-cgy-050-j1.txt",
+      "snapshot_sha256": "8fadd281e3d6df2ab904a936ef444f0a3c792824f189f2cb8f09eff11f751dba",
+      "assessment": "open",
+      "evidence": "Original employer description still explicitly invites applications; no application sent.",
+      "action": "Research record only; app copy/status and capturedOn unchanged.",
+      "material_new_change": false
+    },
+    {
+      "job_id": "cgy-015-j1",
+      "title": "Power Electronics Engineer — historical example",
+      "employer": "Eguana Technologies",
+      "prior_status": {
+        "kind": "unknown",
+        "checkedOn": "2026-10-15",
+        "note": "Historical employer PDF; current acceptance of applications not verified. Do not display as an open opportunity."
+      },
+      "original_captured_on": "2026-10-15",
+      "checked_on": "2026-10-19",
+      "source_url": "https://eguanatech.com/_resources/careers/Power-Electronics-Engineer.pdf",
+      "http_status": 200,
+      "snapshot": "docs/validation/job-reviews/all-examples/2026-10-19-weekly/evidence/saved-cgy-015-j1.pdf",
+      "snapshot_sha256": "66bf3d043708c8a066c9fa9cd987c5aef4a868be6593f499f933d4ff03232edd",
+      "assessment": "unknown",
+      "evidence": "Historical employer PDF remains accessible; no verified current application acceptance.",
+      "action": "Research record only; app copy/status and capturedOn unchanged.",
+      "material_new_change": false
+    },
+    {
+      "job_id": "cgy-016-j1",
+      "title": "Senior Enterprise Software Developer",
+      "employer": "FTG Aerospace Calgary / FLYHT",
+      "prior_status": {
+        "kind": "unknown",
+        "checkedOn": "2026-10-15",
+        "note": "Full employer description retrieved 15 October 2026; application acceptance was not verified."
+      },
+      "original_captured_on": "2026-10-15",
+      "checked_on": "2026-10-19",
+      "source_url": "https://flyht.com/people/",
+      "http_status": 403,
+      "snapshot": null,
+      "snapshot_sha256": null,
+      "assessment": "unknown",
+      "evidence": "Original URL returned 403; current state unknown. Prior evidence preserved.",
+      "action": "Research record only; app copy/status and capturedOn unchanged.",
+      "material_new_change": false
+    },
+    {
+      "job_id": "ghgsat-emissions-scientist",
+      "title": "Remote Emissions Scientist",
+      "employer": "GHGSat",
+      "prior_status": {
+        "kind": "closed",
+        "checkedOn": "2026-09-25",
+        "note": "Seen as a copy on a job site that says it is no longer accepting applications. Not on GHGSat’s own board. The posting date was not shown."
+      },
+      "original_captured_on": "2026-09-25",
+      "checked_on": "2026-10-19",
+      "source_url": "https://ca.talent.com/view?id=623142164046743621",
+      "http_status": 404,
+      "snapshot": null,
+      "snapshot_sha256": null,
+      "assessment": "closed",
+      "evidence": "Original checked URL returned 404; preserve previously evidenced closure attribution, not a newly inferred closure date.",
+      "action": "Research record only; app copy/status and capturedOn unchanged.",
+      "material_new_change": false
+    },
+    {
+      "job_id": "ghgsat-backend-developer",
+      "title": "Senior Backend Developer - Spectra",
+      "employer": "GHGSat",
+      "prior_status": {
+        "kind": "open",
+        "checkedOn": "2026-10-07",
+        "note": "BambooHR description and application entry inspected. Nothing entered or submitted."
+      },
+      "original_captured_on": "2026-10-05",
+      "checked_on": "2026-10-19",
+      "source_url": "https://ghgsat.bamboohr.com/careers/205",
+      "http_status": 200,
+      "snapshot": "docs/validation/job-reviews/all-examples/2026-10-19-weekly/evidence/saved-ghgsat-backend-developer.txt",
+      "snapshot_sha256": "60fb8c468fbae3f81a5365b69e9771a6716adf7d771abcf4098215053897f886",
+      "assessment": "unknown",
+      "evidence": "BambooHR returned a JavaScript shell; no fresh acceptance check. Do not infer closed or replace prior open check.",
+      "action": "Research record only; app copy/status and capturedOn unchanged.",
+      "material_new_change": false
+    },
+    {
+      "job_id": "ghgsat-full-stack-developer",
+      "title": "Senior Full Stack Web Developer - Spectra",
+      "employer": "GHGSat",
+      "prior_status": {
+        "kind": "closed",
+        "checkedOn": "2026-10-05",
+        "note": "The original Workable posting explicitly says this job is no longer available."
+      },
+      "original_captured_on": "2026-09-25",
+      "checked_on": "2026-10-19",
+      "source_url": "https://apply.workable.com/ghgsat/j/703FE3851D/",
+      "http_status": 200,
+      "snapshot": "docs/validation/job-reviews/all-examples/2026-10-19-weekly/evidence/saved-ghgsat-full-stack-developer.txt",
+      "snapshot_sha256": "dba752534dbd2c15b2b72518966470fc0f76595904ceee73d239473ee576f40c",
+      "assessment": "closed",
+      "evidence": "Workable response is now a shell; preserve prior explicit no-longer-available evidence, not a new date.",
+      "action": "Research record only; app copy/status and capturedOn unchanged.",
+      "material_new_change": false
+    },
+    {
+      "job_id": "muon-calibration-scientist",
+      "title": "Senior Instrument Scientist, Calibration Testing",
+      "employer": "Muon Space",
+      "prior_status": {
+        "kind": "open",
+        "checkedOn": "2026-09-25",
+        "note": "Listed on Muon Space’s own job board when checked. The posting does not mention methane."
+      },
+      "original_captured_on": "2026-09-25",
+      "checked_on": "2026-10-19",
+      "source_url": "https://job-boards.greenhouse.io/muonspace/jobs/5248812007",
+      "http_status": 200,
+      "snapshot": "docs/validation/job-reviews/all-examples/2026-10-19-weekly/evidence/saved-muon-calibration-scientist.txt",
+      "snapshot_sha256": "ed5938a5c415e94146efb82bea4da4759ec375416ffc6cec6063006706d6b963",
+      "assessment": "open",
+      "evidence": "Original Greenhouse description and application invitation/fields available. Mountain View/San Jose-area role, not Calgary; no methane assignment claimed.",
+      "action": "Research record only; app copy/status and capturedOn unchanged.",
+      "material_new_change": false
+    },
+    {
+      "job_id": "e3-shift-operator",
+      "title": "Shift Operator",
+      "employer": "E3 Lithium",
+      "prior_status": {
+        "kind": "open",
+        "checkedOn": "2026-09-29",
+        "note": "Linked from current employer careers page; PDF invites applications by email. No email was sent."
+      },
+      "original_captured_on": "2026-09-29",
+      "checked_on": "2026-10-19",
+      "source_url": "https://www.e3lithium.ca/_resources/careers/Shift-Operators.pdf?v=092911",
+      "http_status": 200,
+      "snapshot": "docs/validation/job-reviews/all-examples/2026-10-19-weekly/evidence/saved-e3-shift-operator.pdf",
+      "snapshot_sha256": "ab341a2bb3034b0908dd95e6a8da31f9bcd7efa312665b1df7d59ee666d6f9f4",
+      "assessment": "open",
+      "evidence": "Currently linked employer PDF invites email applications; no email sent. Preserve original captured date.",
+      "action": "Research record only; app copy/status and capturedOn unchanged.",
+      "material_new_change": false
+    },
+    {
+      "job_id": "e3-process-engineer",
+      "title": "Intermediate Process Engineer",
+      "employer": "E3 Lithium",
+      "prior_status": {
+        "kind": "open",
+        "checkedOn": "2026-09-29",
+        "note": "Linked from current employer careers page; PDF invites applications by email. No email was sent."
+      },
+      "original_captured_on": "2026-09-29",
+      "checked_on": "2026-10-19",
+      "source_url": "https://www.e3lithium.ca/_resources/careers/Intermediate-Process-Engineer.pdf?v=092911",
+      "http_status": 200,
+      "snapshot": "docs/validation/job-reviews/all-examples/2026-10-19-weekly/evidence/saved-e3-process-engineer.pdf",
+      "snapshot_sha256": "e8afc19863e24d4a82f5c50b606c039f00c0242311926bf3901bd7cbe9cb1f27",
+      "assessment": "open",
+      "evidence": "Currently linked employer PDF invites email applications; no email sent. Preserve original captured date.",
+      "action": "Research record only; app copy/status and capturedOn unchanged.",
+      "material_new_change": false
+    },
+    {
+      "job_id": "stantec-water-eit",
+      "title": "Process Engineer in Training- Water",
+      "employer": "Stantec",
+      "prior_status": {
+        "kind": "open",
+        "checkedOn": "2026-09-29",
+        "note": "Original role details rendered; Apply Now opened an email-based application entry form. No information was entered."
+      },
+      "original_captured_on": "2026-09-29",
+      "checked_on": "2026-10-19",
+      "source_url": "https://hdhl.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/1007312",
+      "http_status": 200,
+      "snapshot": "docs/validation/job-reviews/all-examples/2026-10-19-weekly/evidence/saved-stantec-water-eit.txt",
+      "snapshot_sha256": "a7c3f52e02d52f899f21b661d3bfc545eabe78d81544b830e6ec82f9547d17d5",
+      "assessment": "unknown",
+      "evidence": "ATS returned a thin shell; no fresh acceptance check and no closure inference.",
+      "action": "Research record only; app copy/status and capturedOn unchanged.",
+      "material_new_change": false
+    },
+    {
+      "job_id": "ghgsat-government-business",
+      "title": "Business Development Manager (Government)",
+      "employer": "GHGSat",
+      "prior_status": {
+        "kind": "open",
+        "checkedOn": "2026-09-29",
+        "note": "Original description and empty application form inspected, including UK work-authorization question."
+      },
+      "original_captured_on": "2026-09-29",
+      "checked_on": "2026-10-19",
+      "source_url": "https://ghgsat.bamboohr.com/careers/204",
+      "http_status": 200,
+      "snapshot": "docs/validation/job-reviews/all-examples/2026-10-19-weekly/evidence/saved-ghgsat-government-business.txt",
+      "snapshot_sha256": "60fb8c468fbae3f81a5365b69e9771a6716adf7d771abcf4098215053897f886",
+      "assessment": "unknown",
+      "evidence": "BambooHR shell; no fresh acceptance check and no closure inference.",
+      "action": "Research record only; app copy/status and capturedOn unchanged.",
+      "material_new_change": false
+    },
+    {
+      "job_id": "wilder-animal-care",
+      "title": "Animal Care Technician (On-Call in Strathmore, AB)",
+      "employer": "Wilder Institute",
+      "prior_status": {
+        "kind": "open",
+        "checkedOn": "2026-09-29",
+        "note": "Employer ADP job description, requisition 1178, deadline, and application entry form inspected. No information entered."
+      },
+      "original_captured_on": "2026-09-29",
+      "checked_on": "2026-10-19",
+      "source_url": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=21776daf-f5d6-445a-8284-be1d53c78d12&jobId=24852",
+      "http_status": 200,
+      "snapshot": "docs/validation/job-reviews/all-examples/2026-10-19-weekly/evidence/saved-wilder-animal-care.txt",
+      "snapshot_sha256": "f0682205b62f6f258136068106eb9f85ebd6f798ebc34e73c8745b4fd57994aa",
+      "assessment": "deadline-passed",
+      "evidence": "Known 9 October 2026 deadline has passed; the app already treats this as historical. ADP now renders unsupported-browser text; actual hiring outcome unknown.",
+      "action": "Research record only; app copy/status and capturedOn unchanged.",
+      "material_new_change": false
+    },
+    {
+      "job_id": "agat-water-lab-technician",
+      "title": "Laboratory Technician C - Water Lab",
+      "employer": "AGAT Laboratories",
+      "prior_status": {
+        "kind": "unknown",
+        "checkedOn": "2026-10-07",
+        "note": "Original employer URL returned HTTP 410 on recheck. Closure date is unknown; saved 5 October description remains historical work evidence."
+      },
+      "original_captured_on": "2026-10-05",
+      "checked_on": "2026-10-19",
+      "source_url": "https://agatlaboratories.applytojob.com/apply/lnOX39GFbP/Laboratory-Technician-C-Water-Lab",
+      "http_status": 410,
+      "snapshot": null,
+      "snapshot_sha256": null,
+      "assessment": "unknown",
+      "evidence": "HTTP 410 repeats the previously recorded source limitation; no new closure date.",
+      "action": "Research record only; app copy/status and capturedOn unchanged.",
+      "material_new_change": false
+    },
+    {
+      "job_id": "enmas-environmental-technician",
+      "title": "Environmental Technician",
+      "employer": "Enmas",
+      "prior_status": {
+        "kind": "open",
+        "checkedOn": "2026-10-07",
+        "note": "Original employer description still invites applications by email. No email sent."
+      },
+      "original_captured_on": "2026-10-05",
+      "checked_on": "2026-10-19",
+      "source_url": "https://www.enmas.ca/job-detail.php?id=1",
+      "http_status": 200,
+      "snapshot": "docs/validation/job-reviews/all-examples/2026-10-19-weekly/evidence/saved-enmas-environmental-technician.txt",
+      "snapshot_sha256": "ebdacd7e18f57bdf863fa6f51a349a449e1f470ae6d03066f246cef0a794ded0",
+      "assessment": "open",
+      "evidence": "Original employer page still invites email applications; no email sent.",
+      "action": "Research record only; app copy/status and capturedOn unchanged.",
+      "material_new_change": false
+    },
+    {
+      "job_id": "calgary-wildlife-rehabilitator",
+      "title": "Wildlife Rehabilitator",
+      "employer": "Calgary Wildlife",
+      "prior_status": {
+        "kind": "open",
+        "checkedOn": "2026-10-12",
+        "note": "Original employer description invites email applications and says the listing remains open until a suitable candidate is found. No email sent; actual hiring outcome unknown."
+      },
+      "original_captured_on": "2026-10-12",
+      "checked_on": "2026-10-19",
+      "source_url": "https://www.calgarywildlife.org/jobs",
+      "http_status": 200,
+      "snapshot": "docs/validation/job-reviews/all-examples/2026-10-19-weekly/evidence/saved-calgary-wildlife-rehabilitator.txt",
+      "snapshot_sha256": "18a285c50a0ea2cba91f131d6f10c6f2c98322ba6b1eb03918e3a71b2fc872dd",
+      "assessment": "open",
+      "evidence": "Employer still invites email applications and says until a suitable candidate is found; actual hire unknown.",
+      "action": "Research record only; app copy/status and capturedOn unchanged.",
+      "material_new_change": false
+    },
+    {
+      "job_id": "arolytics-data-scientist",
+      "title": "Data Scientist",
+      "employer": "Arolytics",
+      "prior_status": {
+        "kind": "unknown",
+        "checkedOn": "2026-10-12",
+        "note": "Employer page remains accessible but explicitly gives an April 20, 2026 deadline. Deadline overrides the email application invitation; no current vacancy or actual hire/closure date inferred."
+      },
+      "original_captured_on": "2026-10-12",
+      "checked_on": "2026-10-19",
+      "source_url": "https://arolytics.com/post/Data-Scientist-Full-Time-Calgary-Based-hybrid-remote",
+      "http_status": 200,
+      "snapshot": "docs/validation/job-reviews/all-examples/2026-10-19-weekly/evidence/saved-arolytics-data-scientist.txt",
+      "snapshot_sha256": "b71220e9960304c031a9acd91c44e54e88cbf2813e33a8ed2c6c067f6e0e3762",
+      "assessment": "deadline-passed",
+      "evidence": "Known April 20, 2026 deadline remains historical despite an accessible page; no current vacancy inferred.",
+      "action": "Research record only; app copy/status and capturedOn unchanged.",
+      "material_new_change": false
+    }
+  ],
+  "caution": "Open describes an invitation inspected on the check date, not proof the employer has not already filled the job."
+}

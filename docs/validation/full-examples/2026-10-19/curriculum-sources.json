@@ -1,0 +1,46 @@
+{
+  "physics": {
+    "name": "Alberta Physics 20–30 performance standards (not the program of studies)",
+    "url": "https://www.alberta.ca/system/files/custom_downloaded_images/edc-physics20-30-performance-standards.pdf",
+    "file": "docs/validation/full-examples/2026-10-17/evidence/source-039.pdf",
+    "text": "docs/validation/full-examples/2026-10-17/implementation-evidence/curriculum-phys.txt",
+    "sha256": "d8aa76922c597bf3e4d9a3c4dc85d1d03ef6cec6cf74a325ba9f273b20f52939",
+    "checked_on": "2026-10-19",
+    "reused_from": "2026-10-17 research",
+    "reuse_note": "Original official document captured in 17 October research; text reread and hash verified for this packet. Not relabelled as newly downloaded.",
+    "text_sha256": "455dface546a0fe9b8322e1744abc72c4e44d15c6aa06ec325bfe09d1e60a6f2"
+  },
+  "chemistry": {
+    "name": "Alberta Chemistry 20–30 program of studies",
+    "url": "https://education.alberta.ca/media/159730/chem2030_07.pdf",
+    "file": "docs/validation/full-examples/2026-10-17/evidence/source-040.pdf",
+    "text": "docs/validation/full-examples/2026-10-17/implementation-evidence/source-040.txt",
+    "sha256": "3ca9eeb681708ea6bf8e972989e7abf4c05e38e4de953a41ec4a4ac51bccde53",
+    "checked_on": "2026-10-19",
+    "reused_from": "2026-10-17 research",
+    "reuse_note": "Original official document captured in 17 October research; text reread and hash verified for this packet. Not relabelled as newly downloaded.",
+    "text_sha256": "61c3c63c97d1bc64f14f518cd7215035e23be3df1f1ee0908468666e3b0cf2e7"
+  },
+  "science10": {
+    "name": "Alberta Science 10 program of studies",
+    "url": "https://education.alberta.ca/media/159715/science10.pdf",
+    "file": "docs/validation/full-examples/2026-10-17/evidence/source-041.pdf",
+    "text": "docs/validation/full-examples/2026-10-17/implementation-evidence/source-041.txt",
+    "sha256": "b6a58b15cf195a8f2d0f7390dde7a42f81c52cc796edbaad7ac74e608bc797d6",
+    "checked_on": "2026-10-19",
+    "reused_from": "2026-10-17 research",
+    "reuse_note": "Original official document captured in 17 October research; text reread and hash verified for this packet. Not relabelled as newly downloaded.",
+    "text_sha256": "1d25eec9a83d31c1bc53712d8249571a17ce97f611feb6b2ce8522a6ef7619e8"
+  },
+  "biology": {
+    "name": "Alberta Biology 20–30 program of studies",
+    "url": "https://education.alberta.ca/media/159727/bio203007.pdf",
+    "file": "docs/validation/full-examples/2026-10-17/implementation-evidence/biology.pdf",
+    "text": "docs/validation/full-examples/2026-10-17/implementation-evidence/biology.txt",
+    "sha256": "07864cbe1e95b135ce87a8d6aa3339b38a9b8f414d2a4d10802e3d702922cb0f",
+    "checked_on": "2026-10-19",
+    "reused_from": "2026-10-17 research",
+    "reuse_note": "Original official document captured in 17 October research; text reread and hash verified for this packet. Not relabelled as newly downloaded.",
+    "text_sha256": "6f611f4e45a5627547dfb9dabb69d6d9f9a29e9aac88fa76d5f616b3ecb5c0e9"
+  }
+}

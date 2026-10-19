@@ -1,3 +1,18 @@
+import october19Example0 from "./clynch-prosthetics";
+import october19Example1 from "./westech-industrial";
+import october19Example2 from "./alberta-cheese";
+import october19Example3 from "./mountain-view-printing";
+import october19Example4 from "./calgary-metal-recycling";
+import october19Example5 from "./aeromag-calgary";
+import october19Example6 from "./lux-windows";
+import october19Example7 from "./magna-engineering";
+import october19Example8 from "./canadian-blood-services-calgary";
+import october19Example9 from "./enerflex";
+import october19Example10 from "./spartan-controls";
+import october19Example11 from "./canada-malting";
+import october19Example12 from "./ptw-panel-shop";
+import october19Example13 from "./marlow-design";
+import october19Example14 from "./abc-bees";
 import standens from "./standens";
 import opisystems from "./opisystems";
 import nanotess from "./nanotess";
@@ -45,6 +60,22 @@ import type { ExampleRecord, StoryDiagramImage } from "../types";
 
 // One file per researched example. Library order follows this list.
 export const exampleRecords: ExampleRecord[] = [
+  october19Example0,
+  october19Example1,
+  october19Example2,
+  october19Example3,
+  october19Example4,
+  october19Example5,
+  october19Example6,
+  october19Example7,
+  october19Example8,
+  october19Example9,
+  october19Example10,
+  october19Example11,
+  october19Example12,
+  october19Example13,
+  october19Example14,
+
   standens,
   opisystems,
   nanotess,

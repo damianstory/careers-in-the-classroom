@@ -1,0 +1,444 @@
+{
+  "recordedOn": "2026-10-19",
+  "publication": "not authorized",
+  "files": [
+    {
+      "path": "src/content/example-records/aeromag-calgary.ts",
+      "sha256": "2741e3bf9730abcb202fc75378c5ab53db32dcf3f979b75ef2b618978924ae79"
+    },
+    {
+      "path": "src/content/example-records/enmax-shepard.ts",
+      "sha256": "0598fffcaef5061e6ef5ba04a26047d1c42d917ee48872a2836a512468e0fe41"
+    },
+    {
+      "path": "src/content/example-records/clynch-prosthetics.ts",
+      "sha256": "fb5480d88bb52378087ecf2fffa758488c8fb6d7db5e49d53bea61c38e051f72"
+    },
+    {
+      "path": "src/content/example-records/abc-bees.ts",
+      "sha256": "eb7bd1e22214c79067edd89815cba81565f3c411a6425c5a28c64f4ca1146d48"
+    },
+    {
+      "path": "src/content/example-records/enerflex.ts",
+      "sha256": "833840f6ea5d59b00d310b583647a3958dd04475b1db04c91c0fec1b841292ba"
+    },
+    {
+      "path": "src/content/example-records/ffa-acoustics.ts",
+      "sha256": "4456ea1a4819d22ac1650c2a3f95936a5b63997471b467e3cf6a4168e03d9cd1"
+    },
+    {
+      "path": "src/content/example-records/lux-windows.ts",
+      "sha256": "083de6e19779625e499417e4017cffe5011359770a8756b3bd68c6a5789fd3bd"
+    },
+    {
+      "path": "src/content/example-records/cbl-bakeries-cinnaroll.ts",
+      "sha256": "554d6da7fe8d2115efb76d91a3b32cb132b59acd7a7e92570b5c4be7080ec07f"
+    },
+    {
+      "path": "src/content/example-records/mobiltex.ts",
+      "sha256": "06bdf9057d954b72e4d4125b000ca54df84b35034a8ac05f26a63d9015cccfcb"
+    },
+    {
+      "path": "src/content/example-records/integrated-sustainability.ts",
+      "sha256": "576f6676f1597e2c7d28f23e423ce67030ff1f94f52515dc3ae6cade50a70f25"
+    },
+    {
+      "path": "src/content/example-records/geologicai.ts",
+      "sha256": "6113ce170db37dd7602fed249bdd99d582254b2f3be038345cfb657bc41fa0dc"
+    },
+    {
+      "path": "src/content/example-records/nanotess.ts",
+      "sha256": "c173c00a672ce997cd01e034670ecc4615c803833721b7c3d80f7ea61d6c72bb"
+    },
+    {
+      "path": "src/content/example-records/livestock-water-recycling.ts",
+      "sha256": "2f1fac7181eb2c61acd2b709efcc4f9920a186e0eaee8173bf0e93e8e707be9a"
+    },
+    {
+      "path": "src/content/example-records/alberta-boot-company.ts",
+      "sha256": "7293104e51f1e8d636acbf69be02e266eafb4f44223d97ff906d5c0705991b7e"
+    },
+    {
+      "path": "src/content/example-records/carbonova.ts",
+      "sha256": "8ca43276eb079d4eb0c80d813f715beb2197490bb9bc5c547e8e663689d907b2"
+    },
+    {
+      "path": "src/content/example-records/opisystems.ts",
+      "sha256": "cc8e75810467d96e42193ca7aefa2c04fbe481bbaa6e9ac2d799e7041a3aec55"
+    },
+    {
+      "path": "src/content/example-records/entuitive.ts",
+      "sha256": "80722a13d0025554baf234fe88bcccff4d4c2e87353ca93084152cf3c01ce54a"
+    },
+    {
+      "path": "src/content/example-records/northern-rna.ts",
+      "sha256": "9dfb568a450d16a945e6098c8a5978da28710ceba6788b20d3d7bfd08bcfe43e"
+    },
+    {
+      "path": "src/content/example-records/botaneco.ts",
+      "sha256": "f0bd49827ef92a029c8c3656fc2a2d561f488357cce0da64653cd16cadcd27af"
+    },
+    {
+      "path": "src/content/example-records/watersmart.ts",
+      "sha256": "ceef905a2f2d49740c34eb6e82d81ccf18d8afac02d3fdb3afdb5bc6372eb016"
+    },
+    {
+      "path": "src/content/example-records/exergy-solutions.ts",
+      "sha256": "0ebc1c6eea14dd0c3f49ae1e3c939b41b15451e78b3c8f86565c3f2998f604fa"
+    },
+    {
+      "path": "src/content/example-records/trace-associates.ts",
+      "sha256": "aeff2719630001da24602a4189cdc433e61511e625961965861452658ddbc9ea"
+    },
+    {
+      "path": "src/content/example-records/efw-radiology.ts",
+      "sha256": "d9ec698c3aafd8acd7d3128e337a88873b5f7c1a52e2c243c22117ba0f378b78"
+    },
+    {
+      "path": "src/content/example-records/burnco.ts",
+      "sha256": "4287aa77afab9dd6ba7a75d08993d76ffda0da0fda2e265fd2f288e576391ae0"
+    },
+    {
+      "path": "src/content/example-records/avmax.ts",
+      "sha256": "a743703bced5cf6e5a0d3e549a13b72dcfa52bbe1a51bff7fb351d4bcf92d452"
+    },
+    {
+      "path": "src/content/example-records/summit-lithium-technologies.ts",
+      "sha256": "42b8f9a363daa9b38780d1f76d45d33d54f2042a13fe19042e928876fa8c843a"
+    },
+    {
+      "path": "src/content/example-records/joe-media-group.ts",
+      "sha256": "cf730760ecccf89d2690f0baf32a5acfdc1fb5e73781626d090100e83602b9f4"
+    },
+    {
+      "path": "src/content/example-records/ptw-panel-shop.ts",
+      "sha256": "e62b205e2ae1d740b64654a3f5bf4dc81da836eb4bbc37d4a0a8e52f1d647ee7"
+    },
+    {
+      "path": "src/content/example-records/rjc-engineers.ts",
+      "sha256": "ec68ae0d1bfe8222cf681a713c81113514cc6fc96b4c4b2fdfe5ece86a916ed3"
+    },
+    {
+      "path": "src/content/example-records/broken-pencil-studios.ts",
+      "sha256": "0df5b4787e2119d80fa5cd985f503b9f7bb3a125e177274f086139e7b17162e2"
+    },
+    {
+      "path": "src/content/example-records/o2-planning-design.ts",
+      "sha256": "3dd57f685a4ef556de1a607e4e72c4b2ae8074829a6e8c5645dbc037e373ce0c"
+    },
+    {
+      "path": "src/content/example-records/isl-engineering.ts",
+      "sha256": "29114919b8db4fa0c1558b7ef33868c38b29b4973f59f94341c06ca2f125d6d4"
+    },
+    {
+      "path": "src/content/example-records/global-power-technologies.ts",
+      "sha256": "3af822f4528f8b512ac6d90566fc582d8119354d67711b5aef35c552319b7883"
+    },
+    {
+      "path": "src/content/example-records/standens.ts",
+      "sha256": "45c161c9b590f3f6ff332afd778b4eea540d8a74e6d4a676ae75ee18bfa29926"
+    },
+    {
+      "path": "src/content/example-records/phil-sebastian.ts",
+      "sha256": "ca6027d850bb276b41928a430f405ae42e27b28c7d5151ff274a7abeaef84d2a"
+    },
+    {
+      "path": "src/content/example-records/congebec.ts",
+      "sha256": "276a4779b80ad98d1d336cb6fd865428bb4b62707ad2f047787d47f2089dda4e"
+    },
+    {
+      "path": "src/content/example-records/veerum.ts",
+      "sha256": "685cbed7ead9ad9cc0c417f9e51746ab3a7479003803b9efdf38140df3a8a494"
+    },
+    {
+      "path": "src/content/example-records/fluid-energy.ts",
+      "sha256": "f45b68b2a440e8d0626c2e1d1542c91a7e6024542736e9d3c4dbf5207d3f73f4"
+    },
+    {
+      "path": "src/content/example-records/canadian-blood-services-calgary.ts",
+      "sha256": "202e7c8dd5d814cbbb6ef2671ab62efc859012e104be2d5d732637ada4698471"
+    },
+    {
+      "path": "src/content/example-records/tangent-design-engineering.ts",
+      "sha256": "bf50ef218ed0ebdbd1eb739554b618752109e0ba31d4766521707e2be18c28d6"
+    },
+    {
+      "path": "src/content/example-records/eguana-technologies.ts",
+      "sha256": "5b967164b209246b73fa2b2c2c7777d5fccf2a50c67a8814de651d572ae1fd1f"
+    },
+    {
+      "path": "src/content/example-records/index.ts",
+      "sha256": "b4f5a0f83025b678f30d8d6946b75e0ee606a8b3a611740f0df520336305b9d6"
+    },
+    {
+      "path": "src/content/example-records/calgary-metal-recycling.ts",
+      "sha256": "2eef989ee2bdadc57acaad5aadee0073345ce44583188b025b6f01248ed0dcea"
+    },
+    {
+      "path": "src/content/example-records/alberta-cheese.ts",
+      "sha256": "596a2a5a4a3846101c4ecff770704bb52a338fa149edf2234f2bbdb68d842824"
+    },
+    {
+      "path": "src/content/example-records/clearbakk.ts",
+      "sha256": "f72634b474f42f7fded04cdf07883c9b2d02c407a687346dd558cdc57cab8fd1"
+    },
+    {
+      "path": "src/content/example-records/mountain-view-printing.ts",
+      "sha256": "baaf5c109aa4ad937af585229737f93a68100235337c68b08225ada67e3100e1"
+    },
+    {
+      "path": "src/content/example-records/calgary-italian-bakery.ts",
+      "sha256": "c6de64eada290e165ca363a8cc0c7a17ffebb9ac64f6c00b9756536a3de40930"
+    },
+    {
+      "path": "src/content/example-records/canada-malting.ts",
+      "sha256": "6b5c4240bc7c753a7bf8eb8362123a1a16e4300477ea1d67aacc54b95b2685e6"
+    },
+    {
+      "path": "src/content/example-records/westech-industrial.ts",
+      "sha256": "55e948fe88e993ae5c259fd86bb59d041b111fddfeb2c9648c870f2cc9bc455c"
+    },
+    {
+      "path": "src/content/example-records/aerium-analytics.ts",
+      "sha256": "4582e2498c7b67192269cd57cd1def6e39d466b20aebc7ea4a6e551fa36328bc"
+    },
+    {
+      "path": "src/content/example-records/magna-engineering.ts",
+      "sha256": "f1257350dc3a805974600b82e7087fc715824f26cd1d0758d045eb5f9a9a037f"
+    },
+    {
+      "path": "src/content/example-records/ftg-aerospace-calgary.ts",
+      "sha256": "7920b0e5f5e0851cc05ea913c19008bac5f6661f77599d5cf14f9dc47ba2b54b"
+    },
+    {
+      "path": "src/content/example-records/marlow-design.ts",
+      "sha256": "677c83f84442db22a1e5ce045b86edcb23b9d4a48e38d4acf7343175d5f9212e"
+    },
+    {
+      "path": "src/content/example-records/nanalysis.ts",
+      "sha256": "6dc1e87bc69ebc8aa11aea3ba9ee3bceda715eb46123db82f951621484cda1e9"
+    },
+    {
+      "path": "src/content/example-records/hifi-engineering.ts",
+      "sha256": "348aa824db288a06c500da57a5ed674f7628157b5f27b2837610a9dc950ca19f"
+    },
+    {
+      "path": "src/content/example-records/foremost.ts",
+      "sha256": "0af334ce6f563a555e99e833d6d0f3b4a929b3c587b1519f6fbe5f68be14b9ef"
+    },
+    {
+      "path": "src/content/example-records/spartan-controls.ts",
+      "sha256": "6d9edbdd8f70c9f17773488559401919fcc9f8738827302ef4cdb5a482ad79a3"
+    },
+    {
+      "path": "src/content/example-records/cpkc.ts",
+      "sha256": "10af846eb0ab01a928f7e70927c013ac16def41adec88fe3cda62304d5bb5b6e"
+    },
+    {
+      "path": "src/content/example-records/ice-western.ts",
+      "sha256": "f53a1dda99889b29e6cd59728b803a7a469a48497824991d6e20abff6ffe2606"
+    },
+    {
+      "path": "src/content/discover-expansion.ts",
+      "sha256": "2dc2b132d3fe3318feaf999de0aa691255b19ae8e0599b045033256b20c27612"
+    },
+    {
+      "path": "src/content/pathways.ts",
+      "sha256": "5651c912ab77a5e961ad242a68e1d1a5349b2f225252e7ceb4b9778874688a24"
+    },
+    {
+      "path": "src/content/roles.ts",
+      "sha256": "612d153ff37f94b9781b2de32bc783080799e72585c37c4118ffc130d1ddd6ee"
+    },
+    {
+      "path": "src/content/role-searches.ts",
+      "sha256": "6be5582245680e53bb18a1d768bdf626670c09cca2423b953f20d4f23f8a9a95"
+    },
+    {
+      "path": "src/lib/browse.ts",
+      "sha256": "d627c230ab8338a13b3b001f041009992614cd210dbc83dc253b0da833221081"
+    },
+    {
+      "path": "src/content/logos.ts",
+      "sha256": "91d497c1d02f221e011fae66773723e4bcb0a6e617c0998bb63649c42e93386b"
+    },
+    {
+      "path": "src/content/sources.ts",
+      "sha256": "9b43bd21472b69d0eb1caa9e3108e8275b304af48732840334cf07cff89a43b3"
+    }
+  ],
+  "servedImages": [
+    {
+      "path": "public/images/discover/work-prosthetic-fabrication.webp",
+      "sha256": "f5c84d04e6dbcfc905dbf6110f5041c730eb15c60a57b710f9d01ae69832f1a0"
+    },
+    {
+      "path": "public/images/discover/work-prosthetic-clinical.webp",
+      "sha256": "2cbf3f293aef251e45a3d91b3b2dd8ab34ee99ec9bcd943a84fb3d2cae21438e"
+    },
+    {
+      "path": "public/images/examples/clynch-prosthetics-graphic-novel.webp",
+      "sha256": "41f1249933470c2fb9bfd77736826610bdc7a0f56cae2cc6a22446d4846b25a6"
+    },
+    {
+      "path": "public/images/story-diagrams/clynch-prosthetics-graphic-novel.webp",
+      "sha256": "0ec9236e48c8d8c440d72d637550c34f1ddaea0ac1ebf23dbd083abc76b7e241"
+    },
+    {
+      "path": "public/images/examples/westech-industrial-graphic-novel.webp",
+      "sha256": "ef04c0a176a6d552db7e98c4e92ce0289e24ef47cf85bc4582d1badcc2ba2ac3"
+    },
+    {
+      "path": "public/images/story-diagrams/westech-industrial-graphic-novel.webp",
+      "sha256": "a5daf8de91b225fe3df2c0874056f0f15afb9ac35892e7a81eaac468f7ede43a"
+    },
+    {
+      "path": "public/images/examples/alberta-cheese-graphic-novel.webp",
+      "sha256": "2c36111b1949e911bee38e2f4872b8c10ef5b81bac2386462f1bc54ff35def3a"
+    },
+    {
+      "path": "public/images/story-diagrams/alberta-cheese-graphic-novel.webp",
+      "sha256": "0a6ac9557cd02f82a68c86f532329f5e6ee4f7fc1df46b6d5680f457edfb3b11"
+    },
+    {
+      "path": "public/images/discover/work-prepress.webp",
+      "sha256": "4712948672d7fe619e2faf77b1d0f79ff28504a069ef8033d3a7a2481bf9f87b"
+    },
+    {
+      "path": "public/images/discover/work-printing-press.webp",
+      "sha256": "05801ca77714403c11371bbb9a83f95edccfe405522ef1c27ab621b74efb1a28"
+    },
+    {
+      "path": "public/images/examples/mountain-view-printing-graphic-novel.webp",
+      "sha256": "60112c694f59d6bee4e2f7c7015e3d4281663bb1d21ae413d575f40143c05aa2"
+    },
+    {
+      "path": "public/images/story-diagrams/mountain-view-printing-graphic-novel.webp",
+      "sha256": "4b800a7f0082a25c7b97659692d9fb7dea90cfa30af0a0a4ab3a1137baf16e7a"
+    },
+    {
+      "path": "public/images/discover/work-recycling-operations.webp",
+      "sha256": "98fe7d6f53ec0302f553e11e25b8898483588a237567e4f32f84c8b008aff08c"
+    },
+    {
+      "path": "public/images/examples/calgary-metal-recycling-graphic-novel.webp",
+      "sha256": "2605b2512b3e5f9674f2587104b740e7632ebcdb30e4c34e42cfb8ce0da39961"
+    },
+    {
+      "path": "public/images/story-diagrams/calgary-metal-recycling-graphic-novel.webp",
+      "sha256": "f59a456297140cfe4a74afb64f3a1b3e83c064458d1724730060435498c9dbd5"
+    },
+    {
+      "path": "public/images/discover/work-aircraft-deicing.webp",
+      "sha256": "591571d2a725acd404979beb692b52bc5df66661ee3d6a6e8daa2bfea93206f7"
+    },
+    {
+      "path": "public/images/examples/aeromag-calgary-graphic-novel.webp",
+      "sha256": "7739412dbeb41aba2797d2b384eab63a72e4091240693efb6dcd151cbe853661"
+    },
+    {
+      "path": "public/images/story-diagrams/aeromag-calgary-graphic-novel.webp",
+      "sha256": "0c5d3feb3ab56f2c945eb5cfc927cdc86601b7fb6b9f57936e08c2b9ad102f79"
+    },
+    {
+      "path": "public/images/discover/work-glazing.webp",
+      "sha256": "50134b1c5a4b541849d1a52f7b815cb254af79fe03a08a29d42a162f56c75efe"
+    },
+    {
+      "path": "public/images/examples/lux-windows-graphic-novel.webp",
+      "sha256": "3c9587df76b28dd1c9167f5f6a2d6dc599ea84d86b1ac09f3ee119f595a50e1d"
+    },
+    {
+      "path": "public/images/story-diagrams/lux-windows-graphic-novel.webp",
+      "sha256": "bdd1786b713f9635f2ed4ae1e144f8753920e5c8ba5b0d90856190b330cb2337"
+    },
+    {
+      "path": "public/images/examples/magna-engineering-graphic-novel.webp",
+      "sha256": "7591bb9508f51dc9cb058fbb11225c5a4e0329d4db8f71c45734e53675033e79"
+    },
+    {
+      "path": "public/images/story-diagrams/magna-engineering-graphic-novel.webp",
+      "sha256": "3ff1198d57d113f6a3d17417afefe4ad663e607c0711c872b29507f9e99fef76"
+    },
+    {
+      "path": "public/images/discover/work-blood-production.webp",
+      "sha256": "d55a61a040cc618c3fd1998dd9bcb8733fad80ca0c5867208964b0099e7fc7a3"
+    },
+    {
+      "path": "public/images/discover/work-medical-laboratory.webp",
+      "sha256": "ceab86aa659a10a8b2ec8ee51d2aca45f2a95cf2de6ca7541d547d2d99c18327"
+    },
+    {
+      "path": "public/images/examples/canadian-blood-services-calgary-graphic-novel.webp",
+      "sha256": "162e250bf5a2eba7f9a4df298efa6710bac92fed938c4ff4ba1f3c8cca98ffa1"
+    },
+    {
+      "path": "public/images/story-diagrams/canadian-blood-services-calgary-graphic-novel.webp",
+      "sha256": "b0f0a3dad3c79459d6a864b92428e4afe2d3f6ceb42ddd2939c348e51ad9c83e"
+    },
+    {
+      "path": "public/images/examples/enerflex-graphic-novel.webp",
+      "sha256": "d00b5755ed76712026d8ded81c6b0e27d2b9bc35b8c783d07e8f3ef305a580eb"
+    },
+    {
+      "path": "public/images/story-diagrams/enerflex-graphic-novel.webp",
+      "sha256": "9be0375b9fe00824a2c98e51031aae65c72817ded2b74dbb775f7df017b081e9"
+    },
+    {
+      "path": "public/images/discover/work-valve-service.webp",
+      "sha256": "c79348068775e2a6e3ce1661bfcee20f9138b9e5f17a77533fc158797f39ad06"
+    },
+    {
+      "path": "public/images/examples/spartan-controls-graphic-novel.webp",
+      "sha256": "1985688458aba3792806fa4c063f9e290b126bfe9e17e96c56a1b3f0fdb1ee8a"
+    },
+    {
+      "path": "public/images/story-diagrams/spartan-controls-graphic-novel.webp",
+      "sha256": "b9575beeba91162c854bdb01056e73117383383464d2ff20e879aa05939a49d5"
+    },
+    {
+      "path": "public/images/examples/canada-malting-graphic-novel.webp",
+      "sha256": "0270e59daceadebbfeae3e9f877d0e62c825d767d0788e7e28cba8200273b2a6"
+    },
+    {
+      "path": "public/images/story-diagrams/canada-malting-graphic-novel.webp",
+      "sha256": "8f79df9015549a7bf29c4165b3d0980e363589395be0f4aa319bb78ea50ce05f"
+    },
+    {
+      "path": "public/images/discover/work-electrician.webp",
+      "sha256": "4d5a82c64bdd2f356fe1319bb43cc82d0b8a3409d79637216a7488885b7b3cfd"
+    },
+    {
+      "path": "public/images/examples/ptw-panel-shop-graphic-novel.webp",
+      "sha256": "024681a22324937187bc67a105031cfa5eef63e8c38cc733a0df5eb19f6222cd"
+    },
+    {
+      "path": "public/images/story-diagrams/ptw-panel-shop-graphic-novel.webp",
+      "sha256": "9094826ee6143055ce7c705439341b1a00a8c191c68cfa50373009165dd19ba4"
+    },
+    {
+      "path": "public/images/discover/work-jewellery-design.webp",
+      "sha256": "68759c0e9d403cf32aa7465f93e012a3011510a855ed263849dc88d4936578ef"
+    },
+    {
+      "path": "public/images/examples/marlow-design-graphic-novel.webp",
+      "sha256": "d93b9093dce9aa48855aefbd62197187b526def9073047b93630ef4f9b4648d2"
+    },
+    {
+      "path": "public/images/story-diagrams/marlow-design-graphic-novel.webp",
+      "sha256": "f2b03ef5a1e6d8053ee11fd53a1e4a138b2fe472207c14d0f32af197996286b0"
+    },
+    {
+      "path": "public/images/discover/work-beekeeping.webp",
+      "sha256": "42eeca2385a3de56737493cb9bfaf15eb7e525ba93ca86477e4f8937b29e7df1"
+    },
+    {
+      "path": "public/images/examples/abc-bees-graphic-novel.webp",
+      "sha256": "7d8b174e27a6b2b917e4e876eda92ba5f7177458c200ee604d2321dbc11a96f9"
+    },
+    {
+      "path": "public/images/story-diagrams/abc-bees-graphic-novel.webp",
+      "sha256": "86a6f7692cffc42a6a98443c07ae364e0b095a10bb438adc6108d510deff129c"
+    }
+  ]
+}

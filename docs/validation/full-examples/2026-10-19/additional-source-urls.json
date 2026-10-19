@@ -1,0 +1,157 @@
+[
+  {
+    "key": "clynch-resources",
+    "url": "https://clynchprosthetics.com/resources/",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  },
+  {
+    "key": "opc-programs",
+    "url": "https://opcanada.ca/page/Accredited_Programs",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  },
+  {
+    "key": "opc-residency",
+    "url": "https://opcanada.ca/page/Residency_Program",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  },
+  {
+    "key": "opc-technical",
+    "url": "https://opcanada.ca/page/Registration",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  },
+  {
+    "key": "westech-careers",
+    "url": "https://westech-ind.com/about/careers/",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  },
+  {
+    "key": "westech-service",
+    "url": "https://westech-ind.com/service-support/",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  },
+  {
+    "key": "cheese-owner",
+    "url": "https://www.gaylea.com/news/foodservice/alberta-cheese",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  },
+  {
+    "key": "cheese-science",
+    "url": "https://books.lib.uoguelph.ca/cheesemakingtechnologyebook/chapter/8-1-milk-structure/",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  },
+  {
+    "key": "printing-careers",
+    "url": "https://mvprinters.com/careers/",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  },
+  {
+    "key": "printing-training",
+    "url": "https://alis.alberta.ca/occinfo/occupations-in-alberta/occupation-profiles/printing-press-operator/",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  },
+  {
+    "key": "recycling-ferrous",
+    "url": "https://calgarymetal.com/calgary-metal-buying-and-selling/ferrous-metal-recycling/",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  },
+  {
+    "key": "recycling-nonferrous",
+    "url": "https://calgarymetal.com/calgary-metal-buying-and-selling/non-ferrous-metal-recycling/",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  },
+  {
+    "key": "aeromag-home",
+    "url": "https://aeromag.ca/en/",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  },
+  {
+    "key": "aeromag-services",
+    "url": "https://aeromag.ca/en/about-us/",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  },
+  {
+    "key": "aeromag-training",
+    "url": "https://aeromag.ca/en/careers/",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  },
+  {
+    "key": "lux-renovation",
+    "url": "https://www.luxwindows.com/renovations/renovation-process/",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  },
+  {
+    "key": "magna-careers",
+    "url": "https://www.magnaengineering.ca/careers",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  },
+  {
+    "key": "magna-team",
+    "url": "https://www.magnaengineering.ca/meet-the-team",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  },
+  {
+    "key": "enerflex-careers",
+    "url": "https://www.enerflex.com/careers/",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  },
+  {
+    "key": "spartan-careers",
+    "url": "https://www.spartancontrols.com/careers/",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  },
+  {
+    "key": "malting-careers",
+    "url": "https://canadamalting.com/careers/",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  },
+  {
+    "key": "ptw-electrical",
+    "url": "https://www.ptwenergy.com/tag/electrical-construction/",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  },
+  {
+    "key": "ptw-fabrication",
+    "url": "https://www.ptwenergy.com/fabrication-services/",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  },
+  {
+    "key": "ptw-careers",
+    "url": "https://www.ptwenergy.com/careers/",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  },
+  {
+    "key": "marlow-design",
+    "url": "https://marlowdesign.ca/pages/design-process",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  },
+  {
+    "key": "marlow-careers",
+    "url": "https://marlowdesign.ca/pages/careers-at-marlow-design",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  },
+  {
+    "key": "bees-season",
+    "url": "https://abcbees.ca/blog/beekeeping-seasonal-indicators/",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  },
+  {
+    "key": "bees-tasks",
+    "url": "https://abcbees.ca/blog/ongoing-beekeeping-tasks/",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  },
+  {
+    "key": "bees-learning",
+    "url": "https://www.abcbees.buzz/courses/level-1-beekeeping",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  },
+  {
+    "key": "path-jewellery",
+    "url": "https://www.auarts.ca/learn-with-us/program-areas/jewellery-and-metals",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  },
+  {
+    "key": "path-electrician",
+    "url": "https://www.sait.ca/apprenticeships-and-trades/programs/electrician",
+    "output_dir": "docs/validation/full-examples/2026-10-19"
+  }
+]

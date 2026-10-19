@@ -1,0 +1,71 @@
+{
+  "capUsd": 10,
+  "periodStart": "2026-10-19",
+  "periodEndExclusive": "2026-10-26",
+  "timezone": "America/Toronto",
+  "authorization": "User approved recurring US$10/week shared across discovery, maintenance and Looot providers; no direct paid Apify.",
+  "settledCostUsd": 0.01,
+  "outstandingExposureUsd": 0.0,
+  "runs": [
+    {
+      "requestKey": "citc-full-2026-10-19-opc-residency-v1",
+      "operation": "firecrawl-scrape",
+      "input": {
+        "url": "https://opcanada.ca/page/Residency_Program",
+        "formats": [
+          "markdown"
+        ],
+        "maxAge": 0,
+        "parsers": [],
+        "proxy": "basic",
+        "onlyMainContent": true
+      },
+      "purpose": "Full Clynch example: original professional residency requirement blocked to direct GET and free reader",
+      "estimateUsd": 0.005,
+      "maximumExposureUsd": 0.015,
+      "status": "completed",
+      "actualCostUsd": 0.005,
+      "provider": "Firecrawl",
+      "inspection": "docs/validation/full-examples/2026-10-19/looot-inspection.json",
+      "runId": "run_48636a4c61da4ef9aa93b1f605fb013c",
+      "outcome": "hit",
+      "receipt": "docs/validation/full-examples/2026-10-19/opc-residency-looot.json"
+    },
+    {
+      "requestKey": "citc-full-2026-10-19-opc-programs-v1",
+      "operation": "firecrawl-scrape",
+      "input": {
+        "url": "https://opcanada.ca/page/Accredited_Programs",
+        "formats": [
+          "markdown"
+        ],
+        "maxAge": 0,
+        "parsers": [],
+        "proxy": "basic",
+        "onlyMainContent": true
+      },
+      "purpose": "Clynch: distinguish accredited clinical and technical programmes after both free original readers failed",
+      "estimateUsd": 0.005,
+      "maximumExposureUsd": 0.015,
+      "status": "completed",
+      "actualCostUsd": 0.005,
+      "provider": "Firecrawl",
+      "runId": "run_82469f2d8cc64d639e069b73acff885a",
+      "outcome": "hit",
+      "receipt": "docs/validation/full-examples/2026-10-19/opc-programs-looot.json"
+    }
+  ],
+  "providerBreakdownUsd": {
+    "firecrawl": 0.01
+  },
+  "lastCheckedOn": "2026-10-19",
+  "balanceCheck": {
+    "availableUsd": 18.3632,
+    "reservedUsd": 0,
+    "source": "secure Looot balance tool, 19 October 2026",
+    "note": "Account balance is separate from weekly allowance; no paid execution in this occurrence."
+  },
+  "freeResearchOccurrences": [
+    "2026-10-19"
+  ]
+}

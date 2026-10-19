@@ -1,0 +1,97 @@
+{
+  "packet_id": "calgary-full-examples-2026-10-19",
+  "reviewed_on": "2026-10-19",
+  "reviewer": "user",
+  "instruction": "Approve all 15 companies that scored 8 or higher. Let's research the full examples and bring the drafts back to me for review before we implement them. Keep the others on hold for later.",
+  "approved_company_proposals": [
+    {
+      "id": "CGY-081",
+      "version": 1
+    },
+    {
+      "id": "CGY-083",
+      "version": 1
+    },
+    {
+      "id": "CGY-085",
+      "version": 1
+    },
+    {
+      "id": "CGY-087",
+      "version": 1
+    },
+    {
+      "id": "CGY-088",
+      "version": 1
+    },
+    {
+      "id": "CGY-089",
+      "version": 1
+    },
+    {
+      "id": "CGY-090",
+      "version": 1
+    },
+    {
+      "id": "CGY-091",
+      "version": 1
+    },
+    {
+      "id": "CGY-092",
+      "version": 1
+    },
+    {
+      "id": "CGY-094",
+      "version": 1
+    },
+    {
+      "id": "CGY-095",
+      "version": 1
+    },
+    {
+      "id": "CGY-096",
+      "version": 1
+    },
+    {
+      "id": "CGY-097",
+      "version": 1
+    },
+    {
+      "id": "CGY-098",
+      "version": 1
+    },
+    {
+      "id": "CGY-100",
+      "version": 1
+    }
+  ],
+  "held_company_proposals": [
+    {
+      "id": "CGY-082",
+      "version": 1,
+      "reason": "User requested hold for later. Pedorthic certification is different from prosthetic technician training; verify a specific accredited route before full copy."
+    },
+    {
+      "id": "CGY-084",
+      "version": 1,
+      "reason": "User requested hold for later. Recover current original operation identity and actual duties; do not substitute a similarly named motor company."
+    },
+    {
+      "id": "CGY-086",
+      "version": 1,
+      "reason": "User requested hold for later. Calgary manufacturing not established; cold-chain controls need source detail before making technical claims."
+    },
+    {
+      "id": "CGY-093",
+      "version": 1,
+      "reason": "User requested hold for later. Reserve for a process-focused classroom framing and better company-specific technical evidence; omit product-promotion copy."
+    },
+    {
+      "id": "CGY-099",
+      "version": 1,
+      "reason": "User requested hold for later. Select one Calgary project with concrete environmental/physics decisions and an architectural education/registration route. Civil engineering is not an architecture credential."
+    }
+  ],
+  "scope": "Full-example research/drafting only. Final copy, Discover copy, individual job cards, artwork and implementation are not approved.",
+  "weekly_job_cards": "OCT19 cards remain pending and are outside this company approval."
+}

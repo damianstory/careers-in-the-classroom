@@ -1,0 +1,33 @@
+{
+  "validatedOn": "2026-10-19",
+  "fullDrafts": 15,
+  "fullCopyDecisionsPending": 15,
+  "heldCompanies": 5,
+  "companyRoleConnections": 28,
+  "distinctProfiles": 25,
+  "distinctRoutes": 22,
+  "DiscoverBefore": 57,
+  "DiscoverProposedAfter": 70,
+  "newOccupations": 13,
+  "existingCardsToExtend": 12,
+  "coverageDeferrals": 0,
+  "inquiryOnlyDrafts": [
+    "CGY-083-FULL",
+    "CGY-098-FULL"
+  ],
+  "newJobCardsPending": 4,
+  "separateMondayJobCardsStillPending": 5,
+  "illustrationBriefs": 43,
+  "generatedImages": 0,
+  "sourceSnapshotsAndHashes": "passed",
+  "curriculumHashes": "passed",
+  "reviewedVersionHashes": "passed",
+  "priorCompanyDecisions": "preserved",
+  "weeklyPaidUsd": 0.01,
+  "outstandingUsd": 0,
+  "applicationEdits": 0,
+  "buildOrTests": "Not run: research artifacts only; no application implementation or runtime changes.",
+  "publication": false,
+  "commitOrPush": false,
+  "limitations": "Source-based research validation, not independent employer confirmation or runtime implementation QA."
+}

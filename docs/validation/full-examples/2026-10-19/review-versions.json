@@ -1,0 +1,490 @@
+{
+  "packetId": "calgary-full-examples-2026-10-19",
+  "preparedOn": "2026-10-19",
+  "fullCopies": [
+    {
+      "id": "CGY-081-FULL",
+      "version": 1,
+      "decision": "pending",
+      "file": "cgy-081-clynch-prosthetics.md",
+      "sha256": "5a3232289ce0369157cbe637ce22066599e483d8b87fc28acbada5c165ad4857"
+    },
+    {
+      "id": "CGY-083-FULL",
+      "version": 1,
+      "decision": "pending",
+      "file": "cgy-083-westech-industrial.md",
+      "sha256": "90150428cdfc0412f6408b0145b2e08d5f2d238dfbfd6334162a0e2acc7f2733"
+    },
+    {
+      "id": "CGY-085-FULL",
+      "version": 1,
+      "decision": "pending",
+      "file": "cgy-085-alberta-cheese.md",
+      "sha256": "3f150887d7ca51694cd365d5932f7b56a100be12512b782fb0a0787d3999d25a"
+    },
+    {
+      "id": "CGY-087-FULL",
+      "version": 1,
+      "decision": "pending",
+      "file": "cgy-087-mountain-view-printing.md",
+      "sha256": "89c74b895a777daa47f57f50fd78d39358d30ed6fe9afba5cc4b2bf24dad806c"
+    },
+    {
+      "id": "CGY-088-FULL",
+      "version": 1,
+      "decision": "pending",
+      "file": "cgy-088-calgary-metal-recycling.md",
+      "sha256": "1857c7e8e028a881dfcf5fc533677f2068db7a792ab6daa450c12751a865fb3d"
+    },
+    {
+      "id": "CGY-089-FULL",
+      "version": 1,
+      "decision": "pending",
+      "file": "cgy-089-aeromag-calgary.md",
+      "sha256": "e08e3497b17762cc86145c780e11a8f9f9995f39fd6d3825dbf8e1f498ba7d00"
+    },
+    {
+      "id": "CGY-090-FULL",
+      "version": 1,
+      "decision": "pending",
+      "file": "cgy-090-lux-windows.md",
+      "sha256": "c884477525fd6173c402dd7d63ac5a85bec6a4276389758ea4378797efef4a54"
+    },
+    {
+      "id": "CGY-091-FULL",
+      "version": 1,
+      "decision": "pending",
+      "file": "cgy-091-magna-engineering.md",
+      "sha256": "7b446bdfd101866ec55c32f312e2f1763b8f741b9a08153902ee231e112132fa"
+    },
+    {
+      "id": "CGY-092-FULL",
+      "version": 1,
+      "decision": "pending",
+      "file": "cgy-092-canadian-blood-services-calgary.md",
+      "sha256": "50851fed89f510d0d6448ae6bf3a97a0cd9bcfedf60c4fe6c57090b30f9ad807"
+    },
+    {
+      "id": "CGY-094-FULL",
+      "version": 1,
+      "decision": "pending",
+      "file": "cgy-094-enerflex.md",
+      "sha256": "18e7a86430f5fe11b2a58e29ab6ebf9d957858b3411e790cd678869cf08fd62a"
+    },
+    {
+      "id": "CGY-095-FULL",
+      "version": 1,
+      "decision": "pending",
+      "file": "cgy-095-spartan-controls.md",
+      "sha256": "201803696d666457364e60b40caa2b1cb03d77020997fcc81ba93da9aa52c72f"
+    },
+    {
+      "id": "CGY-096-FULL",
+      "version": 1,
+      "decision": "pending",
+      "file": "cgy-096-canada-malting.md",
+      "sha256": "a6e6874edeafc5f35e9efcaec8c27757dd1c30a0d6dbc1390cddfdf25679d39b"
+    },
+    {
+      "id": "CGY-097-FULL",
+      "version": 1,
+      "decision": "pending",
+      "file": "cgy-097-ptw-panel-shop.md",
+      "sha256": "18c4a5dafa54a61ea84918f1f13124db5c0d85e7877e50781fe04a5cbb7373e4"
+    },
+    {
+      "id": "CGY-098-FULL",
+      "version": 1,
+      "decision": "pending",
+      "file": "cgy-098-marlow-design.md",
+      "sha256": "59c254d4b72b759de5f1f8c5f0da9aea9d741a20670c55ce42a820525db360c2"
+    },
+    {
+      "id": "CGY-100-FULL",
+      "version": 1,
+      "decision": "pending",
+      "file": "cgy-100-abc-bees.md",
+      "sha256": "b285f9a7d425b9cefc5fbb7af7864c50c6d474ac0680308866ef8bd6609b689d"
+    }
+  ],
+  "jobCards": [
+    {
+      "id": "CGY-087-J1",
+      "version": 1,
+      "decision": "pending"
+    },
+    {
+      "id": "CGY-089-J1",
+      "version": 1,
+      "decision": "pending"
+    },
+    {
+      "id": "CGY-091-J1",
+      "version": 1,
+      "decision": "pending"
+    },
+    {
+      "id": "CGY-098-J1",
+      "version": 1,
+      "decision": "pending"
+    }
+  ],
+  "discoverProposals": [
+    {
+      "id": "CGY-081-DISC-work-prosthetic-fabrication",
+      "version": 1,
+      "decision": "pending"
+    },
+    {
+      "id": "CGY-081-DISC-work-prosthetic-clinical",
+      "version": 1,
+      "decision": "pending"
+    },
+    {
+      "id": "CGY-083-DISC-work-controls",
+      "version": 1,
+      "decision": "pending"
+    },
+    {
+      "id": "CGY-083-DISC-work-technical-support",
+      "version": 1,
+      "decision": "pending"
+    },
+    {
+      "id": "CGY-085-DISC-work-food",
+      "version": 1,
+      "decision": "pending"
+    },
+    {
+      "id": "CGY-085-DISC-work-quality",
+      "version": 1,
+      "decision": "pending"
+    },
+    {
+      "id": "CGY-087-DISC-work-prepress",
+      "version": 1,
+      "decision": "pending"
+    },
+    {
+      "id": "CGY-087-DISC-work-printing-press",
+      "version": 1,
+      "decision": "pending"
+    },
+    {
+      "id": "CGY-088-DISC-work-recycling-operations",
+      "version": 1,
+      "decision": "pending"
+    },
+    {
+      "id": "CGY-088-DISC-work-logistics",
+      "version": 1,
+      "decision": "pending"
+    },
+    {
+      "id": "CGY-089-DISC-work-aircraft-deicing",
+      "version": 1,
+      "decision": "pending"
+    },
+    {
+      "id": "CGY-090-DISC-work-glazing",
+      "version": 1,
+      "decision": "pending"
+    },
+    {
+      "id": "CGY-090-DISC-work-manufacturing",
+      "version": 1,
+      "decision": "pending"
+    },
+    {
+      "id": "CGY-091-DISC-work-water-resource-planning",
+      "version": 1,
+      "decision": "pending"
+    },
+    {
+      "id": "CGY-091-DISC-work-civil-and-construction-technology",
+      "version": 1,
+      "decision": "pending"
+    },
+    {
+      "id": "CGY-092-DISC-work-blood-production",
+      "version": 1,
+      "decision": "pending"
+    },
+    {
+      "id": "CGY-092-DISC-work-medical-laboratory",
+      "version": 1,
+      "decision": "pending"
+    },
+    {
+      "id": "CGY-094-DISC-work-mechanical",
+      "version": 1,
+      "decision": "pending"
+    },
+    {
+      "id": "CGY-094-DISC-work-millwright",
+      "version": 1,
+      "decision": "pending"
+    },
+    {
+      "id": "CGY-095-DISC-work-valve-service",
+      "version": 1,
+      "decision": "pending"
+    },
+    {
+      "id": "CGY-095-DISC-work-controls",
+      "version": 1,
+      "decision": "pending"
+    },
+    {
+      "id": "CGY-096-DISC-process-operations",
+      "version": 1,
+      "decision": "pending"
+    },
+    {
+      "id": "CGY-096-DISC-work-lab",
+      "version": 1,
+      "decision": "pending"
+    },
+    {
+      "id": "CGY-097-DISC-work-electrician",
+      "version": 1,
+      "decision": "pending"
+    },
+    {
+      "id": "CGY-097-DISC-work-controls",
+      "version": 1,
+      "decision": "pending"
+    },
+    {
+      "id": "CGY-097-DISC-work-quality",
+      "version": 1,
+      "decision": "pending"
+    },
+    {
+      "id": "CGY-098-DISC-work-jewellery-design",
+      "version": 1,
+      "decision": "pending"
+    },
+    {
+      "id": "CGY-100-DISC-work-beekeeping",
+      "version": 1,
+      "decision": "pending"
+    }
+  ],
+  "artwork": "Briefs pending; no generated images exist in this batch.",
+  "artifacts": [
+    {
+      "file": "additional-source-urls.json",
+      "sha256": "465b6d48bb984d89e88b9c7eb8bac024dba56c32d3a01a217424cce2466fc060"
+    },
+    {
+      "file": "all-drafts.md",
+      "sha256": "e9b97bb93ff03a9732c9473d91d8ac6165eaec047d3bd477393022d11919b9fa"
+    },
+    {
+      "file": "approval.json",
+      "sha256": "c23bb5cdefa5190260513b6e1a16c9ba00192a7d57298cf82baef5f8332b5764"
+    },
+    {
+      "file": "cgy-081-clynch-prosthetics.md",
+      "sha256": "5a3232289ce0369157cbe637ce22066599e483d8b87fc28acbada5c165ad4857"
+    },
+    {
+      "file": "cgy-083-westech-industrial.md",
+      "sha256": "90150428cdfc0412f6408b0145b2e08d5f2d238dfbfd6334162a0e2acc7f2733"
+    },
+    {
+      "file": "cgy-085-alberta-cheese.md",
+      "sha256": "3f150887d7ca51694cd365d5932f7b56a100be12512b782fb0a0787d3999d25a"
+    },
+    {
+      "file": "cgy-087-mountain-view-printing.md",
+      "sha256": "89c74b895a777daa47f57f50fd78d39358d30ed6fe9afba5cc4b2bf24dad806c"
+    },
+    {
+      "file": "cgy-088-calgary-metal-recycling.md",
+      "sha256": "1857c7e8e028a881dfcf5fc533677f2068db7a792ab6daa450c12751a865fb3d"
+    },
+    {
+      "file": "cgy-089-aeromag-calgary.md",
+      "sha256": "e08e3497b17762cc86145c780e11a8f9f9995f39fd6d3825dbf8e1f498ba7d00"
+    },
+    {
+      "file": "cgy-090-lux-windows.md",
+      "sha256": "c884477525fd6173c402dd7d63ac5a85bec6a4276389758ea4378797efef4a54"
+    },
+    {
+      "file": "cgy-091-magna-engineering.md",
+      "sha256": "7b446bdfd101866ec55c32f312e2f1763b8f741b9a08153902ee231e112132fa"
+    },
+    {
+      "file": "cgy-092-canadian-blood-services-calgary.md",
+      "sha256": "50851fed89f510d0d6448ae6bf3a97a0cd9bcfedf60c4fe6c57090b30f9ad807"
+    },
+    {
+      "file": "cgy-094-enerflex.md",
+      "sha256": "18e7a86430f5fe11b2a58e29ab6ebf9d957858b3411e790cd678869cf08fd62a"
+    },
+    {
+      "file": "cgy-095-spartan-controls.md",
+      "sha256": "201803696d666457364e60b40caa2b1cb03d77020997fcc81ba93da9aa52c72f"
+    },
+    {
+      "file": "cgy-096-canada-malting.md",
+      "sha256": "a6e6874edeafc5f35e9efcaec8c27757dd1c30a0d6dbc1390cddfdf25679d39b"
+    },
+    {
+      "file": "cgy-097-ptw-panel-shop.md",
+      "sha256": "18c4a5dafa54a61ea84918f1f13124db5c0d85e7877e50781fe04a5cbb7373e4"
+    },
+    {
+      "file": "cgy-098-marlow-design.md",
+      "sha256": "59c254d4b72b759de5f1f8c5f0da9aea9d741a20670c55ce42a820525db360c2"
+    },
+    {
+      "file": "cgy-100-abc-bees.md",
+      "sha256": "b285f9a7d425b9cefc5fbb7af7864c50c6d474ac0680308866ef8bd6609b689d"
+    },
+    {
+      "file": "compression-capture.json",
+      "sha256": "063211980dc799615c099ae937527c9fb272b12c5155447cc9378f8483250eb7"
+    },
+    {
+      "file": "compression-source-url.json",
+      "sha256": "da6c715c1db8813b507f78fb046989d7cb1cb416a97b7a956b8ba6a26e5e7bcb"
+    },
+    {
+      "file": "costs.json",
+      "sha256": "b42c4f465fed3d7e0ec0fc4b2fd77d26650349eede114bc84d02681103b1d38b"
+    },
+    {
+      "file": "current-route-captures.json",
+      "sha256": "07f553d958ca6cb3e8d4db5cf7ab6f5d8459cdd27a48d8c7eefedf3e72cf3369"
+    },
+    {
+      "file": "current-route-source-urls.json",
+      "sha256": "56fa48581cff721f35d6e71134bb999cc318cb27248491ed5c3269aad0135af5"
+    },
+    {
+      "file": "curriculum-review.md",
+      "sha256": "78477389437554828df69a99ea8672b57acae90f3dccb9b32d0f1353b88b256b"
+    },
+    {
+      "file": "curriculum-sources.json",
+      "sha256": "111818dce47a572ea203622d6127876778769e3dbe75a560458fe0806e8c4e6a"
+    },
+    {
+      "file": "discover-proposals.json",
+      "sha256": "dba0d1e9c3c5bfb0394f242aeabc78cadeff078d716d05987cdb58228aa6a9fe"
+    },
+    {
+      "file": "discover-review.md",
+      "sha256": "cb11074d40302d9ce1af2bb6f9b76bde79995b1ad09be9f47c330a691ea0669b"
+    },
+    {
+      "file": "drafts.json",
+      "sha256": "973e3080f6f3384aa621dc5d4399e2549a89af57f1ee649a0adeee9154b659ea"
+    },
+    {
+      "file": "editorial-draft-data.json",
+      "sha256": "c6ae63d611fa01a723716c58bc3fd15ae52e9679a1424caef3b62895e500f3eb"
+    },
+    {
+      "file": "evidence-manifest.json",
+      "sha256": "9317930c0e57c666846e9961bcfd81fb16ab552d25a7a133df72a7d9d7b3fa52"
+    },
+    {
+      "file": "final-captures.json",
+      "sha256": "0fab639ebbc5dab0b52f14477bba958d4ab603a3bb1cc049ae9f877bee37b142"
+    },
+    {
+      "file": "final-source-urls.json",
+      "sha256": "483d0c9567ebc21b087737511bee5f7aa1cf48cede76135249f3a9bb00b8c0b4"
+    },
+    {
+      "file": "illustration-briefs.json",
+      "sha256": "0cf66a91d324c4fc7048bb87ceaf22a12da1b3b8c470b697386f2d0b899eb979"
+    },
+    {
+      "file": "job-cards.json",
+      "sha256": "40493c1f51ff910d5679de2e9f3a17e636e699052b77527c1bd1dc31e7d2f131"
+    },
+    {
+      "file": "job-research.json",
+      "sha256": "6fcb4d7eb324368a210214fc58ebef0b1422b40950f5b5964fe3a3e17c2283d6"
+    },
+    {
+      "file": "looot-inspection.json",
+      "sha256": "6c5fc4a01aa3ad50ab092ce14de411be20f892091471d0e31c9abae9c013e9a1"
+    },
+    {
+      "file": "new-pathways.json",
+      "sha256": "f7353f950b89438f0b42bd986a86a84dd098d8fabb8b8a38d8c0308282a1dc33"
+    },
+    {
+      "file": "new-role-profiles.json",
+      "sha256": "fe5a08544b54201736a19a0a07d439053562769e8b24dce66c955a8e61f611ca"
+    },
+    {
+      "file": "opc-programs-looot.json",
+      "sha256": "47837a34df87f71203642d4111f097cffa03dc3e013d389db8986b8b0ec373c5"
+    },
+    {
+      "file": "opc-residency-looot.json",
+      "sha256": "d6aed4a6666656cb8423b391d67f001cca56b2eb1a887c34f9201ccaaec4ef71"
+    },
+    {
+      "file": "pathway-captures.json",
+      "sha256": "2e18cb7fd0ca2f3d05bea696206f023842f5da0782ab37dab7eaba709d7db8d8"
+    },
+    {
+      "file": "pathway-library.json",
+      "sha256": "563d0d8431885fcec20b0be6d144bc849100f8f573ceaff3801b13d114e4e3f3"
+    },
+    {
+      "file": "pathway-source-urls.json",
+      "sha256": "374bbd00925daca6d9e5e20938e3ef2e103deb3dd382c27eeec0c88316e1642a"
+    },
+    {
+      "file": "recycling-route-captures.json",
+      "sha256": "67c3a9d901a7ce0ab2bb3f5df3845565e53c622453f01919a50df2d98dfb3878"
+    },
+    {
+      "file": "recycling-route-urls.json",
+      "sha256": "8f7ca4fbfb681700a312ac06d8a0e14a3efcf44705cf5aedd66bcd7b3dd7b4a7"
+    },
+    {
+      "file": "research-log.json",
+      "sha256": "53e1fa83e4bd56efee4167a238839bf77ae1e90408eb0eb78777241833db5ef2"
+    },
+    {
+      "file": "review.md",
+      "sha256": "1f4a2341414503e28197482a1ec87b408697b02b90614c81ff8929abcd91a22d"
+    },
+    {
+      "file": "reviewed-company-proposals-v1.json",
+      "sha256": "06951a6abbdb841f8bafced44691e0c1038e208d4d22678fc32cfbb3232b9d39"
+    },
+    {
+      "file": "role-library.json",
+      "sha256": "5078bc941c97dddd4532b608f910ade6a8315956da13ee4246e5af3d9adf0115"
+    },
+    {
+      "file": "source-captures.json",
+      "sha256": "08366e6e14a1b51737a31517d30e3cdfca9ae2cc52e8c9c9f257fb26fff8d588"
+    },
+    {
+      "file": "technical-captures.json",
+      "sha256": "14e6061f56634baf3f1ff44118c9cde66bd4710ebecb19afc60f865782f73062"
+    },
+    {
+      "file": "technical-source-urls.json",
+      "sha256": "b17d6659dd94296421aa201234ae5325207beeb0226a482ea5c1e89ce771b880"
+    },
+    {
+      "file": "validation.json",
+      "sha256": "61e580831e0550005b132837c27c0e17a0456d2975ad006bf4e30db64aeaecdf"
+    }
+  ]
+}

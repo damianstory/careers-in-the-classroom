@@ -1,0 +1,346 @@
+[
+  {
+    "id": "CGY-081-DISC-work-prosthetic-fabrication-ART",
+    "original": "design/example-expansion-2026-10-19/work-prosthetic-fabrication.png",
+    "served": "public/images/discover/work-prosthetic-fabrication.webp",
+    "width": 752,
+    "height": 1344,
+    "bytes": 248024
+  },
+  {
+    "id": "CGY-081-DISC-work-prosthetic-clinical-ART",
+    "original": "design/example-expansion-2026-10-19/work-prosthetic-clinical.png",
+    "served": "public/images/discover/work-prosthetic-clinical.webp",
+    "width": 752,
+    "height": 1344,
+    "bytes": 231190
+  },
+  {
+    "id": "CGY-081-STORY-ART",
+    "original": "design/example-expansion-2026-10-19/clynch-prosthetics-story.png",
+    "served": "public/images/examples/clynch-prosthetics-graphic-novel.webp",
+    "width": 1344,
+    "height": 756,
+    "bytes": 260184
+  },
+  {
+    "id": "CGY-081-DIAGRAM-ART",
+    "original": "design/example-expansion-2026-10-19/clynch-prosthetics-teaching.png",
+    "served": "public/images/story-diagrams/clynch-prosthetics-graphic-novel.webp",
+    "width": 1344,
+    "height": 756,
+    "bytes": 139328
+  },
+  {
+    "id": "CGY-083-STORY-ART",
+    "original": "design/example-expansion-2026-10-19/westech-industrial-story.png",
+    "served": "public/images/examples/westech-industrial-graphic-novel.webp",
+    "width": 1344,
+    "height": 756,
+    "bytes": 339176
+  },
+  {
+    "id": "CGY-083-DIAGRAM-ART",
+    "original": "design/example-expansion-2026-10-19/westech-industrial-teaching.png",
+    "served": "public/images/story-diagrams/westech-industrial-graphic-novel.webp",
+    "width": 1344,
+    "height": 756,
+    "bytes": 175726
+  },
+  {
+    "id": "CGY-085-STORY-ART",
+    "original": "design/example-expansion-2026-10-19/alberta-cheese-story.png",
+    "served": "public/images/examples/alberta-cheese-graphic-novel.webp",
+    "width": 1344,
+    "height": 756,
+    "bytes": 276166
+  },
+  {
+    "id": "CGY-085-DIAGRAM-ART",
+    "original": "design/example-expansion-2026-10-19/alberta-cheese-teaching.png",
+    "served": "public/images/story-diagrams/alberta-cheese-graphic-novel.webp",
+    "width": 1344,
+    "height": 756,
+    "bytes": 145880
+  },
+  {
+    "id": "CGY-087-DISC-work-prepress-ART",
+    "original": "design/example-expansion-2026-10-19/work-prepress.png",
+    "served": "public/images/discover/work-prepress.webp",
+    "width": 752,
+    "height": 1344,
+    "bytes": 234208
+  },
+  {
+    "id": "CGY-087-DISC-work-printing-press-ART",
+    "original": "design/example-expansion-2026-10-19/work-printing-press.png",
+    "served": "public/images/discover/work-printing-press.webp",
+    "width": 752,
+    "height": 1344,
+    "bytes": 237320
+  },
+  {
+    "id": "CGY-087-STORY-ART",
+    "original": "design/example-expansion-2026-10-19/mountain-view-printing-story.png",
+    "served": "public/images/examples/mountain-view-printing-graphic-novel.webp",
+    "width": 1344,
+    "height": 756,
+    "bytes": 262704
+  },
+  {
+    "id": "CGY-087-DIAGRAM-ART",
+    "original": "design/example-expansion-2026-10-19/mountain-view-printing-teaching.png",
+    "served": "public/images/story-diagrams/mountain-view-printing-graphic-novel.webp",
+    "width": 1344,
+    "height": 756,
+    "bytes": 302822
+  },
+  {
+    "id": "CGY-088-DISC-work-recycling-operations-ART",
+    "original": "design/example-expansion-2026-10-19/work-recycling-operations.png",
+    "served": "public/images/discover/work-recycling-operations.webp",
+    "width": 752,
+    "height": 1344,
+    "bytes": 254272
+  },
+  {
+    "id": "CGY-088-STORY-ART",
+    "original": "design/example-expansion-2026-10-19/calgary-metal-recycling-story.png",
+    "served": "public/images/examples/calgary-metal-recycling-graphic-novel.webp",
+    "width": 1344,
+    "height": 756,
+    "bytes": 345166
+  },
+  {
+    "id": "CGY-088-DIAGRAM-ART",
+    "original": "design/example-expansion-2026-10-19/calgary-metal-recycling-teaching.png",
+    "served": "public/images/story-diagrams/calgary-metal-recycling-graphic-novel.webp",
+    "width": 1344,
+    "height": 756,
+    "bytes": 298718
+  },
+  {
+    "id": "CGY-089-DISC-work-aircraft-deicing-ART",
+    "original": "design/example-expansion-2026-10-19/work-aircraft-deicing.png",
+    "served": "public/images/discover/work-aircraft-deicing.webp",
+    "width": 752,
+    "height": 1344,
+    "bytes": 224120
+  },
+  {
+    "id": "CGY-089-STORY-ART",
+    "original": "design/example-expansion-2026-10-19/aeromag-calgary-story.png",
+    "served": "public/images/examples/aeromag-calgary-graphic-novel.webp",
+    "width": 1344,
+    "height": 756,
+    "bytes": 270862
+  },
+  {
+    "id": "CGY-089-DIAGRAM-ART",
+    "original": "design/example-expansion-2026-10-19/aeromag-calgary-teaching.png",
+    "served": "public/images/story-diagrams/aeromag-calgary-graphic-novel.webp",
+    "width": 1344,
+    "height": 756,
+    "bytes": 260744
+  },
+  {
+    "id": "CGY-090-DISC-work-glazing-ART",
+    "original": "design/example-expansion-2026-10-19/work-glazing.png",
+    "served": "public/images/discover/work-glazing.webp",
+    "width": 752,
+    "height": 1344,
+    "bytes": 289642
+  },
+  {
+    "id": "CGY-090-STORY-ART",
+    "original": "design/example-expansion-2026-10-19/lux-windows-story.png",
+    "served": "public/images/examples/lux-windows-graphic-novel.webp",
+    "width": 1344,
+    "height": 756,
+    "bytes": 263800
+  },
+  {
+    "id": "CGY-090-DIAGRAM-ART",
+    "original": "design/example-expansion-2026-10-19/lux-windows-teaching.png",
+    "served": "public/images/story-diagrams/lux-windows-graphic-novel.webp",
+    "width": 1344,
+    "height": 756,
+    "bytes": 355732
+  },
+  {
+    "id": "CGY-091-STORY-ART",
+    "original": "design/example-expansion-2026-10-19/magna-engineering-story.png",
+    "served": "public/images/examples/magna-engineering-graphic-novel.webp",
+    "width": 1344,
+    "height": 756,
+    "bytes": 400356
+  },
+  {
+    "id": "CGY-091-DIAGRAM-ART",
+    "original": "design/example-expansion-2026-10-19/magna-engineering-teaching.png",
+    "served": "public/images/story-diagrams/magna-engineering-graphic-novel.webp",
+    "width": 1344,
+    "height": 756,
+    "bytes": 295264
+  },
+  {
+    "id": "CGY-092-DISC-work-blood-production-ART",
+    "original": "design/example-expansion-2026-10-19/work-blood-production.png",
+    "served": "public/images/discover/work-blood-production.webp",
+    "width": 752,
+    "height": 1344,
+    "bytes": 232920
+  },
+  {
+    "id": "CGY-092-DISC-work-medical-laboratory-ART",
+    "original": "design/example-expansion-2026-10-19/work-medical-laboratory.png",
+    "served": "public/images/discover/work-medical-laboratory.webp",
+    "width": 752,
+    "height": 1342,
+    "bytes": 213750
+  },
+  {
+    "id": "CGY-092-STORY-ART",
+    "original": "design/example-expansion-2026-10-19/canadian-blood-services-calgary-story.png",
+    "served": "public/images/examples/canadian-blood-services-calgary-graphic-novel.webp",
+    "width": 1344,
+    "height": 756,
+    "bytes": 284920
+  },
+  {
+    "id": "CGY-092-DIAGRAM-ART",
+    "original": "design/example-expansion-2026-10-19/canadian-blood-services-calgary-teaching.png",
+    "served": "public/images/story-diagrams/canadian-blood-services-calgary-graphic-novel.webp",
+    "width": 1344,
+    "height": 756,
+    "bytes": 192604
+  },
+  {
+    "id": "CGY-094-STORY-ART",
+    "original": "design/example-expansion-2026-10-19/enerflex-story.png",
+    "served": "public/images/examples/enerflex-graphic-novel.webp",
+    "width": 1344,
+    "height": 756,
+    "bytes": 266868
+  },
+  {
+    "id": "CGY-094-DIAGRAM-ART",
+    "original": "design/example-expansion-2026-10-19/enerflex-teaching.png",
+    "served": "public/images/story-diagrams/enerflex-graphic-novel.webp",
+    "width": 1344,
+    "height": 756,
+    "bytes": 184302
+  },
+  {
+    "id": "CGY-095-DISC-work-valve-service-ART",
+    "original": "design/example-expansion-2026-10-19/work-valve-service.png",
+    "served": "public/images/discover/work-valve-service.webp",
+    "width": 752,
+    "height": 1344,
+    "bytes": 227002
+  },
+  {
+    "id": "CGY-095-STORY-ART",
+    "original": "design/example-expansion-2026-10-19/spartan-controls-story.png",
+    "served": "public/images/examples/spartan-controls-graphic-novel.webp",
+    "width": 1344,
+    "height": 756,
+    "bytes": 283246
+  },
+  {
+    "id": "CGY-095-DIAGRAM-ART",
+    "original": "design/example-expansion-2026-10-19/spartan-controls-teaching.png",
+    "served": "public/images/story-diagrams/spartan-controls-graphic-novel.webp",
+    "width": 1344,
+    "height": 756,
+    "bytes": 146922
+  },
+  {
+    "id": "CGY-096-STORY-ART",
+    "original": "design/example-expansion-2026-10-19/canada-malting-story.png",
+    "served": "public/images/examples/canada-malting-graphic-novel.webp",
+    "width": 1344,
+    "height": 756,
+    "bytes": 301802
+  },
+  {
+    "id": "CGY-096-DIAGRAM-ART",
+    "original": "design/example-expansion-2026-10-19/canada-malting-teaching.png",
+    "served": "public/images/story-diagrams/canada-malting-graphic-novel.webp",
+    "width": 1344,
+    "height": 756,
+    "bytes": 287172
+  },
+  {
+    "id": "CGY-097-DISC-work-electrician-ART",
+    "original": "design/example-expansion-2026-10-19/work-electrician.png",
+    "served": "public/images/discover/work-electrician.webp",
+    "width": 752,
+    "height": 1344,
+    "bytes": 250964
+  },
+  {
+    "id": "CGY-097-STORY-ART",
+    "original": "design/example-expansion-2026-10-19/ptw-panel-shop-story.png",
+    "served": "public/images/examples/ptw-panel-shop-graphic-novel.webp",
+    "width": 1344,
+    "height": 756,
+    "bytes": 242266
+  },
+  {
+    "id": "CGY-097-DIAGRAM-ART",
+    "original": "design/example-expansion-2026-10-19/ptw-panel-shop-teaching.png",
+    "served": "public/images/story-diagrams/ptw-panel-shop-graphic-novel.webp",
+    "width": 1344,
+    "height": 756,
+    "bytes": 288502
+  },
+  {
+    "id": "CGY-098-DISC-work-jewellery-design-ART",
+    "original": "design/example-expansion-2026-10-19/work-jewellery-design.png",
+    "served": "public/images/discover/work-jewellery-design.webp",
+    "width": 752,
+    "height": 1342,
+    "bytes": 242866
+  },
+  {
+    "id": "CGY-098-STORY-ART",
+    "original": "design/example-expansion-2026-10-19/marlow-design-story.png",
+    "served": "public/images/examples/marlow-design-graphic-novel.webp",
+    "width": 1344,
+    "height": 756,
+    "bytes": 286966
+  },
+  {
+    "id": "CGY-098-DIAGRAM-ART",
+    "original": "design/example-expansion-2026-10-19/marlow-design-teaching.png",
+    "served": "public/images/story-diagrams/marlow-design-graphic-novel.webp",
+    "width": 1344,
+    "height": 756,
+    "bytes": 205574
+  },
+  {
+    "id": "CGY-100-DISC-work-beekeeping-ART",
+    "original": "design/example-expansion-2026-10-19/work-beekeeping.png",
+    "served": "public/images/discover/work-beekeeping.webp",
+    "width": 752,
+    "height": 1344,
+    "bytes": 315290
+  },
+  {
+    "id": "CGY-100-STORY-ART",
+    "original": "design/example-expansion-2026-10-19/abc-bees-story.png",
+    "served": "public/images/examples/abc-bees-graphic-novel.webp",
+    "width": 1344,
+    "height": 756,
+    "bytes": 369156
+  },
+  {
+    "id": "CGY-100-DIAGRAM-ART",
+    "original": "design/example-expansion-2026-10-19/abc-bees-teaching.png",
+    "served": "public/images/story-diagrams/abc-bees-graphic-novel.webp",
+    "width": 1344,
+    "height": 756,
+    "bytes": 312446
+  }
+]

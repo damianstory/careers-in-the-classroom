@@ -1,0 +1,34 @@
+{
+  "checkedOn": "2026-10-19",
+  "status": "ready for local user review",
+  "scope": "15 approved full examples, four approved job cards, 13 new Discover occupations and 28 company/role connections",
+  "unitTests": {
+    "passed": 214,
+    "failed": 0,
+    "log": "docs/validation/full-examples/2026-10-19/implementation-evidence/unit-tests.log"
+  },
+  "typecheck": "passed",
+  "lint": "passed",
+  "productionBuild": "passed",
+  "browserChecks": {
+    "passed": 65,
+    "expectedDeviceSkips": 21,
+    "failedUnresolved": 0,
+    "coverage": "All 15 new example journeys on desktop and phone; projector and teaching diagrams; all 70 Discover cards guessing/reveal; 420 states at each of 1280,768,390px; existing image geometry checks.",
+    "primaryLog": "docs/validation/full-examples/2026-10-19/implementation-evidence/browser-tests-verified.log",
+    "coverSweepLog": "docs/validation/full-examples/2026-10-19/implementation-evidence/browser-covers.log",
+    "resolvedHarnessIssues": "Port 3200 was occupied by an unrelated IPv4 process, so final production tests used 127.0.0.1:3379. The whole-library cover sweep exhausted its default 30-second total deadline; its total budget now scales with card count, with individual visibility waits unchanged. Its focused rerun passed all 70 cards."
+  },
+  "contentAudit": "docs/validation/full-examples/2026-10-19/implementation-evidence/content-audit.json",
+  "illustrations": {
+    "selected": 43,
+    "agentVisualReview": "passed",
+    "userVisualDecision": "pending local review",
+    "generationRecord": "design/example-expansion-2026-10-19/generation-record.json"
+  },
+  "incrementalLoootSpendUsd": 0,
+  "loootWeekToDateUsd": 0.01,
+  "loootWeeklyCapUsd": 10,
+  "directApifyUsd": 0,
+  "publication": "No commit, push or deployment performed. Local review pending."
+}
