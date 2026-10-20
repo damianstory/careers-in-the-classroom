@@ -1,0 +1,13 @@
+{
+  "id": "good-earth-franchise-support-story",
+  "type": "story",
+  "exampleSlug": "good-earth-franchise-support",
+  "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional franchise-support coordinator and coffeehouse operator compare a training checklist with a generic store layout. Context: What does a franchise partner get beyond a brand name? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+  "original": "design/example-expansion-2026-10-20/good-earth-franchise-support-story.png",
+  "destination": "public/images/examples/good-earth-franchise-support-graphic-novel.webp",
+  "aspect": "16:9",
+  "status": "generated",
+  "generatedSource": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-ecee5354-a33d-4ed9-b73f-b00a6e8e028e.png",
+  "tool": "built-in image_gen",
+  "elapsedSeconds": 43
+}

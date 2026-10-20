@@ -1,8 +1,9 @@
+import { october20Pathways, october20PathwayLinks } from "./october20";
 import type { LearningPathway } from "./types";
 
 // Official program pages only. What each program teaches is stated by the provider;
 // why it relates to a role is our reading of that page. None is an employer requirement.
-export const learningPathways: LearningPathway[] = [
+const existingLearningPathways: LearningPathway[] = [
   {
     "id": "oct19-route-bees",
     "provider": "ABC Bees",
@@ -1887,4 +1888,18 @@ export const learningPathways: LearningPathway[] = [
     "urlSourceId": "depth-sait-marketing",
     "checkedOn": "2026-09-29"
   },
+];
+
+// Connect approved new examples to existing provider routes without replacing their history.
+export const learningPathways: LearningPathway[] = [
+  ...existingLearningPathways.map((pathway) => ({
+    ...pathway,
+    roleRationale: [
+      ...pathway.roleRationale,
+      ...(october20PathwayLinks[pathway.id] ?? []).filter(
+        (link) => !pathway.roleRationale.some((existing) => existing.roleId === link.roleId),
+      ),
+    ],
+  })),
+  ...october20Pathways,
 ];

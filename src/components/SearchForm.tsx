@@ -86,6 +86,8 @@ export function SearchForm({ filter, count, courses }: { filter: LibraryFilter; 
   };
 
   const course = courses.find((c) => c.id === courseId);
+  const groups = [...new Set(courses.map((c) => c.group))];
+  const focusName = course?.focusLabel ?? "Unit";
   const units = course?.units ?? [];
   const ready = units.filter((u) => u.ready);
   const notYet = units.filter((u) => !u.ready);
@@ -131,10 +133,12 @@ export function SearchForm({ filter, count, courses }: { filter: LibraryFilter; 
                   }}
                 >
                   <option value="">All courses</option>
-                  {courses.map((c) => (
-                    <option key={c.id} value={c.id}>
-                      {c.name}
-                    </option>
+                  {groups.map((group) => (
+                    <optgroup key={group} label={group}>
+                      {courses.filter((c) => c.group === group).map((c) => (
+                        <option key={c.id} value={c.id}>{c.name}</option>
+                      ))}
+                    </optgroup>
                   ))}
                 </select>
                 <Icon name="chevronDown" small className={styles.chevron} />
@@ -142,7 +146,7 @@ export function SearchForm({ filter, count, courses }: { filter: LibraryFilter; 
             </div>
             <div className={styles.field}>
               <span className={styles.caption} aria-hidden="true">and we’re on</span>
-              <label htmlFor="filter-unit" className="sr-only">Unit</label>
+              <label htmlFor="filter-unit" className="sr-only">{focusName}</label>
               <div className={styles.control}>
                 <select
                   id="filter-unit"
@@ -155,7 +159,7 @@ export function SearchForm({ filter, count, courses }: { filter: LibraryFilter; 
                     go({ courseId, unitId: e.target.value, topic }, { delay: SELECT_DELAY });
                   }}
                 >
-                  <option value="">{courseId ? "Any unit" : "Choose a course first"}</option>
+                  <option value="">{courseId ? `Any ${focusName.toLowerCase()}` : "Choose a course first"}</option>
                   {ready.length > 0 && (
                     <optgroup label="Ready now">
                       {ready.map((u) => (
@@ -212,7 +216,7 @@ export function SearchForm({ filter, count, courses }: { filter: LibraryFilter; 
               <p role="status" className={styles.count}>{countText}</p>
               {course && (
                 <p className={styles.coverage}>
-                  {course.name}: {ready.length} of {units.length} units ready
+                  {course.name}: {ready.length} of {units.length} {course.focusLabel ? "outcome focuses" : "units"} ready
                 </p>
               )}
               <Link href="/connections#library" scroll={false} className={styles.clear}>Clear</Link>

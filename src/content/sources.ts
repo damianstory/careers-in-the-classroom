@@ -1,3 +1,4 @@
+import { october20Sources } from "./october20";
 import { exampleRecords } from "./example-records";
 import type { DatedSource } from "./types";
 
@@ -6,6 +7,7 @@ import type { DatedSource } from "./types";
 const checkedOn = "2026-09-25";
 
 export const registry: DatedSource[] = [
+  ...october20Sources,
   { id: "oct19-cbs-home", label: "Canadian Blood Services — official website", url: "https://www.blood.ca/en", checkedOn: "2026-10-19" },
   {
     "id": "oct19-source-1",

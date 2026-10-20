@@ -1,8 +1,10 @@
+import { october20Roles } from "./october20";
 import type { RoleProfile } from "./types";
 
 // General explanations of each kind of work, written by us. Company-specific evidence
 // lives on the organization-role link, not here.
 export const roleProfiles: RoleProfile[] = [
+  ...october20Roles,
   {
     "id": "work-prosthetic-fabrication",
     "title": "Prosthetic and orthotic technician",

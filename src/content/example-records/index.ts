@@ -1,3 +1,33 @@
+import october20Example0 from "./providence-rna-delivery";
+import october20Example1 from "./nimble-small-intestine-sampling";
+import october20Example2 from "./aggene-crop-traits";
+import october20Example3 from "./agat-trustworthy-water-results";
+import october20Example4 from "./solvet-consistent-batches";
+import october20Example5 from "./calgary-wildlife-release-evidence";
+import october20Example6 from "./cawst-biosand-learning";
+import october20Example7 from "./csi-alberta-training-evidence";
+import october20Example8 from "./itres-beyond-visible-colours";
+import october20Example9 from "./microhard-remote-radio-data";
+import october20Example10 from "./sfc-fuel-cell-battery-support";
+import october20Example11 from "./skyfire-solar-output";
+import october20Example12 from "./westpower-pump-performance";
+import october20Example13 from "./engineered-power-demanding-batteries";
+import october20Example14 from "./frog3d-digital-to-physical";
+import october20Example15 from "./calhort-soil-and-water";
+import october20Example16 from "./ez-robot-sensor-decisions";
+import october20Example17 from "./clio-linked-client-records";
+import october20Example18 from "./absorb-learning-rules";
+import october20Example19 from "./userful-visual-information-routing";
+import october20Example20 from "./peloton-consistent-field-records";
+import october20Example21 from "./arcobi-comparing-power-data";
+import october20Example22 from "./athennian-company-relationships";
+import october20Example23 from "./calgary-coop-member-value";
+import october20Example24 from "./olympia-revenue-and-profit";
+import october20Example25 from "./boardwalk-housing-operating-costs";
+import october20Example26 from "./stampede-event-sustainability";
+import october20Example27 from "./monogram-coffee-subscriptions";
+import october20Example28 from "./good-earth-franchise-support";
+import october20Example29 from "./eight-ounce-wholesale-retail";
 import october19Example0 from "./clynch-prosthetics";
 import october19Example1 from "./westech-industrial";
 import october19Example2 from "./alberta-cheese";
@@ -60,6 +90,37 @@ import type { ExampleRecord, StoryDiagramImage } from "../types";
 
 // One file per researched example. Library order follows this list.
 export const exampleRecords: ExampleRecord[] = [
+  october20Example0,
+  october20Example1,
+  october20Example2,
+  october20Example3,
+  october20Example4,
+  october20Example5,
+  october20Example6,
+  october20Example7,
+  october20Example8,
+  october20Example9,
+  october20Example10,
+  october20Example11,
+  october20Example12,
+  october20Example13,
+  october20Example14,
+  october20Example15,
+  october20Example16,
+  october20Example17,
+  october20Example18,
+  october20Example19,
+  october20Example20,
+  october20Example21,
+  october20Example22,
+  october20Example23,
+  october20Example24,
+  october20Example25,
+  october20Example26,
+  october20Example27,
+  october20Example28,
+  october20Example29,
+
   october19Example0,
   october19Example1,
   october19Example2,

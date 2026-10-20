@@ -1,10 +1,284 @@
 import type { OrganizationLogo } from "./types";
 
 // Identification logos for the organizations whose records don't carry one, keyed by organization id.
+// October 20 assets and visual checks: design/example-expansion-2026-10-20/ and
+// docs/validation/full-examples/2026-10-20/implementation-evidence/logos.json.
+// SkyFire's identification logo comes from its B Lab company profile; others use original sites.
 // Each is the organization's own asset, taken from its website (CPKC: its 2025 annual report, because
 // its site refuses automated requests) on 18 October 2026, cleaned and cropped but not redrawn or
 // recoloured. Provenance notes are in README.md under "Logo sources".
 export const organizationLogos: Record<string, OrganizationLogo> = {
+  "providence-therapeutics": {
+  "src": "/images/logos/providence-therapeutics.png",
+  "alt": "Providence Therapeutics logo",
+  "width": 169,
+  "height": 150,
+  "onDark": true,
+  "sourceUrl": "https://providence.b-cdn.net/templates/g5_hydrogen/custom/images/Full%20Logo%20-%20white.png",
+  "retrieved": "2026-10-20"
+},
+  "nimble-science": {
+  "src": "/images/logos/nimble-science.png",
+  "alt": "Nimble Science logo",
+  "width": 171,
+  "height": 76,
+  "onDark": false,
+  "sourceUrl": "https://static.wixstatic.com/media/5e7637_1b2668c2084242d5b2e09ead47da0ba3~mv2.png/v1/fill/w_201,h_81,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/LogoBlueSci.png",
+  "retrieved": "2026-10-20"
+},
+  "aggene": {
+  "src": "/images/logos/aggene.png",
+  "alt": "AgGene logo",
+  "width": 152,
+  "height": 121,
+  "onDark": false,
+  "sourceUrl": "https://img1.wsimg.com/isteam/ip/1a77c340-2e36-466d-a51f-d540c2410cb5/ag-gene.png/:/rs=h:121,cg:true,m/qt=q:95",
+  "retrieved": "2026-10-20"
+},
+  "agat-laboratories": {
+  "src": "/images/logos/agat-laboratories.png",
+  "alt": "AGAT Laboratories logo",
+  "width": 331,
+  "height": 150,
+  "onDark": false,
+  "sourceUrl": "https://cdn-ildjpnd.nitrocdn.com/LWdtPFnCsgXuypwyfqmaKWCWETsaiwPp/assets/images/optimized/rev-f33ff6b/agatlabs.com/wp-content/uploads/2024/12/agat-laboratories-vertical.png",
+  "retrieved": "2026-10-20"
+},
+  "solvet": {
+  "src": "/images/logos/solvet.png",
+  "alt": "Solvet / Alberta Veterinary Laboratories logo",
+  "width": 360,
+  "height": 135,
+  "onDark": false,
+  "sourceUrl": "https://solvet.ca/wp-content/uploads/2023/02/Logo_solvet_red.svg",
+  "retrieved": "2026-10-20"
+},
+  "calgary-wildlife": {
+  "src": "/images/logos/calgary-wildlife.png",
+  "alt": "Calgary Wildlife Rehabilitation Society logo",
+  "width": 176,
+  "height": 67,
+  "onDark": false,
+  "sourceUrl": "https://static.wixstatic.com/media/d9dc05_ce2d9c7492ce4019b91341dadb40f8c0~mv2.jpg/v1/fill/w_177,h_67,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/CWRS%20Logo%20Horizontal%20with%20Tagline%20-%20Green.jpg",
+  "retrieved": "2026-10-20"
+},
+  "cawst": {
+  "src": "/images/logos/cawst.png",
+  "alt": "CAWST logo",
+  "width": 360,
+  "height": 126,
+  "onDark": true,
+  "sourceUrl": "https://images.squarespace-cdn.com/content/v1/64b03f4148331a3c38d30b0e/7bcbbf8a-b725-42e1-8711-0a834b38b859/cawst_logo--horizontal_white.png?format=1500w",
+  "retrieved": "2026-10-20"
+},
+  "canadian-sport-institute-alberta": {
+  "src": "/images/logos/canadian-sport-institute-alberta.png",
+  "alt": "Canadian Sport Institute Alberta logo",
+  "width": 150,
+  "height": 59,
+  "onDark": true,
+  "sourceUrl": "https://csialberta.ca/wp-content/uploads/2025/06/2023_CSIC_Brand_Alberta_Logo_REV_FINAL-698d5260.png",
+  "retrieved": "2026-10-20"
+},
+  "itres": {
+  "src": "/images/logos/itres.png",
+  "alt": "ITRES Research logo",
+  "width": 360,
+  "height": 136,
+  "onDark": false,
+  "sourceUrl": "https://itres.com/wp-content/uploads/2019/05/ITRES_color_black_wavebehind.png",
+  "retrieved": "2026-10-20"
+},
+  "microhard-systems": {
+  "src": "/images/logos/microhard-systems.png",
+  "alt": "Microhard Systems logo",
+  "width": 360,
+  "height": 141,
+  "onDark": false,
+  "sourceUrl": "https://www.microhardcorp.com/images/microhard-logo-blue.png",
+  "retrieved": "2026-10-20"
+},
+  "sfc-energy-canada": {
+  "src": "/images/logos/sfc-energy-canada.png",
+  "alt": "SFC Energy Canada / former Simark Controls logo",
+  "width": 264,
+  "height": 150,
+  "onDark": false,
+  "sourceUrl": "https://www.sfc-energy.ca/wp-content/themes/sfc/img/sfc.svg",
+  "retrieved": "2026-10-20"
+},
+  "skyfire-energy": {
+  "src": "/images/logos/skyfire-energy.png",
+  "alt": "SkyFire Energy logo",
+  "width": 261,
+  "height": 150,
+  "onDark": false,
+  "sourceUrl": "https://s3.amazonaws.com/blab-impact-published-production/0OFi75sTDI84kD5lyKxsrvXXfpe7IgRB",
+  "retrieved": "2026-10-20"
+},
+  "westpower": {
+  "src": "/images/logos/westpower.png",
+  "alt": "Westpower logo",
+  "width": 360,
+  "height": 39,
+  "onDark": false,
+  "sourceUrl": "https://westpowergroup.com/wp-content/themes/wp-westpower/assets/images/westpower.svg",
+  "retrieved": "2026-10-20"
+},
+  "engineered-power": {
+  "src": "/images/logos/engineered-power.png",
+  "alt": "Engineered Power — Lithion Battery logo",
+  "width": 332,
+  "height": 150,
+  "onDark": false,
+  "sourceUrl": "https://cdn.prod.website-files.com/66ffb64a823d61cba7cd072e/6877d6a9bad509ee9820c8c5_EP%20Logo-new.png",
+  "retrieved": "2026-10-20"
+},
+  "streamline-automation": {
+  "src": "/images/logos/streamline-automation.png",
+  "alt": "Streamline Automation / FROG3D logo",
+  "width": 188,
+  "height": 41,
+  "onDark": false,
+  "sourceUrl": "https://www.frog3d.com/wp-content/uploads/2024/01/logo-frog3d-new-1.png",
+  "retrieved": "2026-10-20"
+},
+  "calgary-horticultural-society": {
+  "src": "/images/logos/calgary-horticultural-society.png",
+  "alt": "Calgary Horticultural Society logo",
+  "width": 205,
+  "height": 81,
+  "onDark": false,
+  "sourceUrl": "https://www.calhort.org/wp-content/uploads/logo.png",
+  "retrieved": "2026-10-20"
+},
+  "ez-robot": {
+  "src": "/images/logos/ez-robot.png",
+  "alt": "EZ-Robot logo",
+  "width": 243,
+  "height": 31,
+  "onDark": false,
+  "sourceUrl": "https://www.ez-robot.com/uploads/1/2/6/9/126941806/published/ez-robot-horizontal-17-x-2-5-inches-96dpi-trans-bg.png?1789600273",
+  "retrieved": "2026-10-20"
+},
+  "clio": {
+  "src": "/images/logos/clio.png",
+  "alt": "Clio logo",
+  "width": 150,
+  "height": 150,
+  "onDark": true,
+  "sourceUrl": "https://docs.developers.clio.com/img/clio-logo-white.png",
+  "retrieved": "2026-10-20"
+},
+  "absorb-software": {
+  "src": "/images/logos/absorb-software.png",
+  "alt": "Absorb Software logo",
+  "width": 360,
+  "height": 109,
+  "onDark": false,
+  "sourceUrl": "https://cdn.prod.website-files.com/67e5b0da600dc9b00112eac4/68407cfb4d1d1717b4ad8604_77fe9be0a93c75d398d7a9d530c289e1_lightTheme_Absorb-Logo.svg",
+  "retrieved": "2026-10-20"
+},
+  "userful": {
+  "src": "/images/logos/userful.png",
+  "alt": "Userful logo",
+  "width": 360,
+  "height": 39,
+  "onDark": true,
+  "sourceUrl": "https://www.userful.com/hubfs/Logo%202023/Secondary%20Logo/userful-secondary-light.svg",
+  "retrieved": "2026-10-20"
+},
+  "peloton": {
+  "src": "/images/logos/peloton.png",
+  "alt": "Peloton logo",
+  "width": 320,
+  "height": 150,
+  "onDark": true,
+  "sourceUrl": "https://www.peloton.com/hubfs/white-logo.svg",
+  "retrieved": "2026-10-20"
+},
+  "arcobi": {
+  "src": "/images/logos/arcobi.png",
+  "alt": "Arcobi (formerly Arcus Power) logo",
+  "width": 360,
+  "height": 100,
+  "onDark": false,
+  "sourceUrl": "https://cdn.prod.website-files.com/699dea491ea81f3f29fed944/69a02df0929feddd1b82a9f0_arcobi-logo-black.svg",
+  "retrieved": "2026-10-20"
+},
+  "athennian": {
+  "src": "/images/logos/athennian.png",
+  "alt": "Athennian logo",
+  "width": 360,
+  "height": 44,
+  "onDark": false,
+  "sourceUrl": "https://cdn.prod.website-files.com/60ccf10f9ef34060de9640db/6a199bfa14edfcd7f94ce16b_Group%202.png",
+  "retrieved": "2026-10-20"
+},
+  "calgary-coop": {
+  "src": "/images/logos/calgary-coop.png",
+  "alt": "Calgary Co-op logo",
+  "width": 154,
+  "height": 150,
+  "onDark": false,
+  "sourceUrl": "https://www.calgarycoop.com/wp-content/themes/calgarycoop/src/images/cc-red-desktop-logo.svg",
+  "retrieved": "2026-10-20"
+},
+  "olympia-financial": {
+  "src": "/images/logos/olympia-financial.png",
+  "alt": "Olympia Financial Group logo",
+  "width": 305,
+  "height": 150,
+  "onDark": false,
+  "sourceUrl": "https://cdn.prod.website-files.com/615ddbc8fe83a35ba6572ae8/6167075d4dc84e64bece2ec2_ofgi_en_1.svg",
+  "retrieved": "2026-10-20"
+},
+  "boardwalk": {
+  "src": "/images/logos/boardwalk.png",
+  "alt": "Boardwalk REIT logo",
+  "width": 360,
+  "height": 130,
+  "onDark": true,
+  "sourceUrl": "https://www.bwalk.com/hubfs/Logos/bwalk_003-rgb-colour-small-negative.svg",
+  "retrieved": "2026-10-20"
+},
+  "calgary-stampede": {
+  "src": "/images/logos/calgary-stampede.png",
+  "alt": "Calgary Stampede logo",
+  "width": 89,
+  "height": 150,
+  "onDark": true,
+  "sourceUrl": "https://www.calgarystampede.com/images/cs-logo-white.svg",
+  "retrieved": "2026-10-20"
+},
+  "monogram-coffee": {
+  "src": "/images/logos/monogram-coffee.png",
+  "alt": "Monogram Coffee logo",
+  "width": 360,
+  "height": 91,
+  "onDark": false,
+  "sourceUrl": "https://monogramcoffee.com/cdn/shop/files/MonogramFullLogo_Grey.svg?v=1752529402&width=365",
+  "retrieved": "2026-10-20"
+},
+  "good-earth-coffeehouse": {
+  "src": "/images/logos/good-earth-coffeehouse.png",
+  "alt": "Good Earth Coffeehouse logo",
+  "width": 360,
+  "height": 77,
+  "onDark": false,
+  "sourceUrl": "https://goodearthcoffeehouse.com/wp-content/uploads/2022/01/good_earth_horizontal_logo@2x.png",
+  "retrieved": "2026-10-20"
+},
+  "eight-ounce-coffee": {
+  "src": "/images/logos/eight-ounce-coffee.png",
+  "alt": "Eight Ounce Coffee logo",
+  "width": 250,
+  "height": 60,
+  "onDark": true,
+  "sourceUrl": "https://eightouncecoffee.ca/cdn/shop/files/8OZ_Wordmark_White_d0e3abd9-1b29-40fa-82f0-1f215a41e06e_250x.png?v=1735831831",
+  "retrieved": "2026-10-20"
+},
+
   "clynch-prosthetics": {
   "src": "/images/logos/clynch-prosthetics.png",
   "alt": "Clynch Prosthetics & Orthotics logo",

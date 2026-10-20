@@ -2,20 +2,87 @@ import { exampleRecords } from "./example-records";
 import type { Course, PreparedSearch, Unit } from "./types";
 
 export const courses: Course[] = [
-  { id: "science-10", name: "Science 10" },
-  { id: "science-20", name: "Science 20" },
-  { id: "science-30", name: "Science 30" },
-  { id: "biology-20", name: "Biology 20" },
-  { id: "biology-30", name: "Biology 30" },
-  { id: "chemistry-20", name: "Chemistry 20" },
-  { id: "chemistry-30", name: "Chemistry 30" },
-  { id: "physics-20", name: "Physics 20" },
-  { id: "physics-30", name: "Physics 30" },
+  { id: "science-10", name: "Science 10", group: "Science" },
+  { id: "science-20", name: "Science 20", group: "Science" },
+  { id: "science-30", name: "Science 30", group: "Science" },
+  { id: "biology-20", name: "Biology 20", group: "Biology" },
+  { id: "biology-30", name: "Biology 30", group: "Biology" },
+  { id: "chemistry-20", name: "Chemistry 20", group: "Chemistry" },
+  { id: "chemistry-30", name: "Chemistry 30", group: "Chemistry" },
+  { id: "physics-20", name: "Physics 20", group: "Physics" },
+  { id: "physics-30", name: "Physics 30", group: "Physics" },
+  // Verified implemented CTS modules; company lessons remain subject to content review.
+  {
+    id: "cse1120",
+    name: "CSE1120 · Structured Programming 2",
+    group: "Technology",
+    focusLabel: "Outcome focus",
+    curriculum: {
+      url: "https://curriculum.learnalberta.ca/curriculum/en/pos/CTSCSE/CSE1120",
+      checkedOn: "2026-10-19",
+      level: "Introductory",
+      preparation: "Prerequisite: CSE1110 — Structured Programming 1."
+    }
+  },
+  {
+    id: "inf2070",
+    name: "INF2070 · Database 2",
+    group: "Technology",
+    focusLabel: "Outcome focus",
+    curriculum: {
+      url: "https://curriculum.learnalberta.ca/curriculum/en/pos/CTSINF/INF2070",
+      checkedOn: "2026-10-19",
+      level: "Intermediate",
+      preparation: "No formal prerequisite; prior flat-file database understanding is expected."
+    }
+  },
+  {
+    id: "cse1240",
+    name: "CSE1240 · Robotics Programming 1",
+    group: "Technology",
+    focusLabel: "Outcome focus",
+    curriculum: {
+      url: "https://curriculum.learnalberta.ca/curriculum/en/pos/CTSCSE/CSE1240",
+      checkedOn: "2026-10-19",
+      level: "Introductory",
+      preparation: "Prerequisite: CSE1110. Physical or simulated robotics environments are permitted."
+    }
+  },
+  {
+    id: "ent2010",
+    name: "ENT2010 · Analyzing Ventures",
+    group: "Business",
+    focusLabel: "Outcome focus",
+    curriculum: {
+      url: "https://curriculum.learnalberta.ca/curriculum/en/pos/CTSENT/ENT2010",
+      checkedOn: "2026-10-19",
+      level: "Intermediate",
+      preparation: "No prerequisite."
+    }
+  },
+  {
+    id: "fin3060",
+    name: "FIN3060 · Financial Analysis",
+    group: "Business",
+    focusLabel: "Outcome focus",
+    curriculum: {
+      url: "https://curriculum.learnalberta.ca/curriculum/en/pos/CTSFIN/FIN3060",
+      checkedOn: "2026-10-19",
+      level: "Advanced",
+      preparation: "Prerequisite: FIN3040 — Financial Statements."
+    }
+  },
 ];
 
 // Unit names from Alberta Education programs of studies.
 // To confirm against the current curriculum before wider use.
+// CTS focus names below summarize selected verified outcomes; they are not official unit titles.
 export const units: Unit[] = [
+  { id: "cse1120-focus", courseId: "cse1120", name: "Decisions, repetition and testing", outcomeIds: ["1", "1.9", "2", "3.1"] },
+  { id: "inf2070-focus", courseId: "inf2070", name: "Related tables, keys and data imports", outcomeIds: ["1.1", "1.2", "1.4", "2.4", "2.8", "3.4"] },
+  { id: "cse1240-focus", courseId: "cse1240", name: "Robot tasks, environments and capabilities", outcomeIds: ["1.3", "1.4", "3.1", "3.2", "3.3"] },
+  { id: "ent2010-focus", courseId: "ent2010", name: "Customer value and venture feasibility", outcomeIds: ["1.1.2", "1.1.5", "1.1.7", "2.1.3", "2.1.10", "2.1.11"] },
+  { id: "fin3060-focus", courseId: "fin3060", name: "Comparative statements, trends and ratios", outcomeIds: ["1.2", "1.3", "2.2", "2.3", "2.4"] },
   { id: "s10a", courseId: "science-10", name: "Energy and matter in chemical change" },
   { id: "s10b", courseId: "science-10", name: "Energy flow in technological systems" },
   { id: "s10c", courseId: "science-10", name: "Cycling of matter in living systems" },

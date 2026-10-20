@@ -1,0 +1,14 @@
+{
+  "id": "calgary-coop-member-value-teaching",
+  "type": "teaching",
+  "exampleSlug": "calgary-coop-member-value",
+  "prompt": "Create one landscape16:9 teaching illustration in limited-colour graphic-novel screenprint. Forest green outlines, warm ivory paper, sage, orange and slate-blue halftone. Four labelled-number-only steps 1–4, connected by directional arrows: retail activity in a generic Canadian grocery store; operating-cost icons for staffing, power and transport; a remaining pool of plain coins; divide those remaining coins into THREE distinct destinations, customer/member benefits (person with shopping bag), reinvestment (store improvements), reserves (safe). No currency symbols at all: no pound, dollar, euro, no letters or text, no values or allocation percentages. This is a hypothetical surplus-allocation model, never equate gross sales with surplus. Readable at classroom size, coherent fictional adults and attached hands.",
+  "original": "design/example-expansion-2026-10-20/calgary-coop-member-value-teaching.png",
+  "destination": "public/images/story-diagrams/calgary-coop-member-value-graphic-novel.webp",
+  "aspect": "16:9",
+  "status": "generated",
+  "version": 2,
+  "correctionReason": "non-Canadian currency symbol removed",
+  "generatedSource": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-8f894312-729c-4c00-a630-80532746bcb8.png",
+  "tool": "built-in image_gen"
+}

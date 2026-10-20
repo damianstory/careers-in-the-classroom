@@ -93,17 +93,26 @@ export default async function Connections({ searchParams }: PageProps<"/connecti
           </div>
 
           <div className={`${styles.frame} ${styles.results}`}>
+            {lib.course?.curriculum && (
+              <p className="body-text small">
+                {lib.course.curriculum.level} CTS course · 1 credit. {lib.course.curriculum.preparation}{" "}
+                <a href={lib.course.curriculum.url}>Alberta curriculum and outcomes</a>.
+                {" "}The outcome focus summarizes selected course outcomes.
+              </p>
+            )}
             {lib.noMatch && (
               <div className={styles.banner}>
-                <NoMatchRecorder course={lib.course?.name ?? "Any course"} label={lib.unit?.name ?? lib.filter.topic ?? ""} />
+                <NoMatchRecorder course={lib.course?.name ?? "Any course"} label={lib.unit?.name ?? lib.filter.topic ?? lib.course?.name ?? ""} />
                 <div className={styles.bannerText}>
                   <p className={styles.bannerTitle}>
-                    No prepared example for “{lib.unit?.name ?? lib.filter.topic}”
-                    {lib.course ? ` in ${lib.course.name}` : ""} yet.
+                    No prepared example for “{lib.unit?.name ?? lib.filter.topic ?? lib.course?.name}”
+                    {lib.course && (lib.unit || lib.filter.topic) ? ` in ${lib.course.name}` : ""} yet.
                   </p>
                   <p className={styles.bannerNote}>
-                    We can’t research new topics live yet. The closest examples are below. Noting a topic tells us what
-                    teachers need next.
+                    {lib.sections.some((s) => s.id === "closest")
+                      ? "The closest examples are below, with their course connections explained."
+                      : "You can browse examples for other courses below."}
+                    {" "}Noting a topic saves a reminder in this tab; it does not send a request.
                   </p>
                 </div>
                 <NoteTopic />

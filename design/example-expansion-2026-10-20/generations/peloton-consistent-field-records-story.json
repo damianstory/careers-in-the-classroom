@@ -1,0 +1,14 @@
+{
+  "id": "peloton-consistent-field-records-story",
+  "type": "story",
+  "exampleSlug": "peloton-consistent-field-records",
+  "prompt": "Create one landscape16:9 editorial graphic-novel limited-colour screenprint illustration. A fictional software/data specialist at an office workstation compares a field measurement sheet with invented WELL-SITE records on a monitor. Monitor shows related records for generic energy wells: timestamp, site identifier, pressure gauge icons and units, with a small location map, no legible values or text. A distant window view of Calgary buildings provides setting; no fitness equipment, river, water sampling, beakers or environmental-test scene. Show meaningful record-checking work: one hand points to a row, the other rests on the notebook. Forest green contour ink, ivory paper, sage shadows, orange and blue accents, halftone, coherent anatomy, mature adult, no logos, captions, titles or text.",
+  "original": "design/example-expansion-2026-10-20/peloton-consistent-field-records-story.png",
+  "destination": "public/images/examples/peloton-consistent-field-records-graphic-novel.webp",
+  "aspect": "16:9",
+  "status": "generated",
+  "version": 2,
+  "correctionReason": "field-data illustration corrected to the energy-well context",
+  "generatedSource": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-344ae1b2-5ccf-401b-a7ef-a65f30e862a8.png",
+  "tool": "built-in image_gen"
+}

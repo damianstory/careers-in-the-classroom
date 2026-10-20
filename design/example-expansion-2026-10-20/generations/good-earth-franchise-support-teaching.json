@@ -1,0 +1,13 @@
+{
+  "id": "good-earth-franchise-support-teaching",
+  "type": "teaching",
+  "exampleSlug": "good-earth-franchise-support",
+  "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Brand organization ↔ local operator, with labelled training, systems and feedback links; customers connect to the local operation. The conceptual steps supplied by the UI are: Distinguish the parties: the brand organization and local operator have different responsibilities. | Identify support: training, systems and marketing are part of the offered model. | Consider the operator’s work: daily service and execution still require local decisions. | Evaluate the fit: compare benefits, obligations and uncertainties before assuming one model is better. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+  "original": "design/example-expansion-2026-10-20/good-earth-franchise-support-teaching.png",
+  "destination": "public/images/story-diagrams/good-earth-franchise-support-graphic-novel.webp",
+  "aspect": "16:9",
+  "status": "generated",
+  "generatedSource": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-1f961f0d-bb69-451c-8443-ba64c74eb09a.png",
+  "tool": "built-in image_gen",
+  "elapsedSeconds": 60
+}

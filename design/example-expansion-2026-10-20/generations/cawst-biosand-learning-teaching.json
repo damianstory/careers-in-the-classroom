@@ -1,0 +1,14 @@
+{
+  "id": "cawst-biosand-learning-teaching",
+  "type": "teaching",
+  "exampleSlug": "cawst-biosand-learning",
+  "prompt": "ONE landscape 16:9 educational conceptual diagram of a biosand filter. No people. Show one clear cutaway with TOP TO BOTTOM: empty reservoir, a perforated diffuser plate, shallow standing water, a very thin biological film at the sand surface (not roots or plants), a DEEP beige fine-sand bed occupying most of the filter body, a thin small-gravel layer, a coarse drainage-gravel layer at the bottom. ONE continuous blue outlet pipe starts in the bottom drainage layer, passes through the lower side wall, turns UP outside the filter, rises to the SAME HEIGHT as the standing-water surface, then curves down a little into an outlet spout at that HIGH level. The high spout pours into a covered collection container on a stand. No second outlet, no lower spout or branch. Blue arrowheads point DOWN through sand then UP along the single outside pipe to the high outlet. Four small dark green numbered circles 1,2,3,4 mark input, surface, sand, outlet. Leave generous whitespace. No dimensions, numbers except 1-4, words, percentages, plants, garden, roots, microbes drawn to scale or drinking people. This is a flow-and-layer teaching model, not construction instructions. Graphic-novel limited-colour screenprint with forest-green contours, ivory paper, sage, blue and orange accents, halftone, not photographic.",
+  "original": "design/example-expansion-2026-10-20/cawst-biosand-learning-teaching.png",
+  "destination": "public/images/story-diagrams/cawst-biosand-learning-graphic-novel.webp",
+  "aspect": "16:9",
+  "status": "generated",
+  "correctionReason": "wrong lower outlet would drain standing water",
+  "version": 2,
+  "generatedSource": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-87569f48-5ace-4d02-be3b-b6c89550f648.png",
+  "tool": "built-in image_gen"
+}

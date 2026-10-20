@@ -1,0 +1,250 @@
+{
+  "date": "2026-10-20",
+  "reviewer": "Damian",
+  "instruction": "Okay, we'll come back to that. In the meantime, for the work that you did to find the 40 companies, let's take all the 30 of them that scored eight and above, and let's start the process of getting them added to the platform",
+  "scope": "Approve the 30 score-8-plus company proposals v1 and begin full-example research. Final copy and artwork remain pending review; no publication approval.",
+  "approved": [
+    {
+      "id": "CGY-101",
+      "version": 1,
+      "company": "Providence Therapeutics",
+      "score": 9
+    },
+    {
+      "id": "CGY-102",
+      "version": 1,
+      "company": "Nimble Science",
+      "score": 10
+    },
+    {
+      "id": "CGY-103",
+      "version": 1,
+      "company": "AgGene",
+      "score": 9
+    },
+    {
+      "id": "CGY-105",
+      "version": 1,
+      "company": "AGAT Laboratories",
+      "score": 9
+    },
+    {
+      "id": "CGY-107",
+      "version": 1,
+      "company": "Solvet / Alberta Veterinary Laboratories",
+      "score": 8
+    },
+    {
+      "id": "CGY-108",
+      "version": 1,
+      "company": "Calgary Wildlife Rehabilitation Society",
+      "score": 8
+    },
+    {
+      "id": "CGY-109",
+      "version": 1,
+      "company": "CAWST",
+      "score": 9
+    },
+    {
+      "id": "CGY-110",
+      "version": 1,
+      "company": "Canadian Sport Institute Alberta",
+      "score": 9
+    },
+    {
+      "id": "CGY-111",
+      "version": 1,
+      "company": "ITRES Research",
+      "score": 8
+    },
+    {
+      "id": "CGY-112",
+      "version": 1,
+      "company": "Microhard Systems",
+      "score": 8
+    },
+    {
+      "id": "CGY-114",
+      "version": 1,
+      "company": "SFC Energy Canada / former Simark Controls",
+      "score": 9
+    },
+    {
+      "id": "CGY-116",
+      "version": 1,
+      "company": "SkyFire Energy",
+      "score": 9
+    },
+    {
+      "id": "CGY-117",
+      "version": 1,
+      "company": "Westpower",
+      "score": 8
+    },
+    {
+      "id": "CGY-118",
+      "version": 1,
+      "company": "Engineered Power — Lithion Battery",
+      "score": 10
+    },
+    {
+      "id": "CGY-119",
+      "version": 1,
+      "company": "Streamline Automation / FROG3D",
+      "score": 8
+    },
+    {
+      "id": "CGY-120",
+      "version": 1,
+      "company": "Calgary Horticultural Society",
+      "score": 8
+    },
+    {
+      "id": "CGY-121",
+      "version": 1,
+      "company": "EZ-Robot",
+      "score": 10
+    },
+    {
+      "id": "CGY-123",
+      "version": 1,
+      "company": "Clio",
+      "score": 8
+    },
+    {
+      "id": "CGY-124",
+      "version": 1,
+      "company": "Absorb Software",
+      "score": 9
+    },
+    {
+      "id": "CGY-125",
+      "version": 1,
+      "company": "Userful",
+      "score": 9
+    },
+    {
+      "id": "CGY-127",
+      "version": 1,
+      "company": "Peloton",
+      "score": 8
+    },
+    {
+      "id": "CGY-128",
+      "version": 1,
+      "company": "Arcobi (formerly Arcus Power)",
+      "score": 9
+    },
+    {
+      "id": "CGY-130",
+      "version": 1,
+      "company": "Athennian",
+      "score": 10
+    },
+    {
+      "id": "CGY-131",
+      "version": 1,
+      "company": "Calgary Co-op",
+      "score": 9
+    },
+    {
+      "id": "CGY-133",
+      "version": 1,
+      "company": "Olympia Financial Group",
+      "score": 10
+    },
+    {
+      "id": "CGY-134",
+      "version": 1,
+      "company": "Boardwalk REIT",
+      "score": 9
+    },
+    {
+      "id": "CGY-135",
+      "version": 1,
+      "company": "Calgary Stampede",
+      "score": 9
+    },
+    {
+      "id": "CGY-136",
+      "version": 1,
+      "company": "Monogram Coffee",
+      "score": 8
+    },
+    {
+      "id": "CGY-137",
+      "version": 1,
+      "company": "Good Earth Coffeehouse",
+      "score": 8
+    },
+    {
+      "id": "CGY-139",
+      "version": 1,
+      "company": "Eight Ounce Coffee",
+      "score": 10
+    }
+  ],
+  "unselected": [
+    {
+      "id": "CGY-104",
+      "company": "Excir",
+      "decision": "pending",
+      "recommendation": "hold"
+    },
+    {
+      "id": "CGY-106",
+      "company": "Element Materials Technology — Calgary laboratory",
+      "decision": "pending",
+      "recommendation": "hold"
+    },
+    {
+      "id": "CGY-113",
+      "company": "Carbon Alpha",
+      "decision": "pending",
+      "recommendation": "hold"
+    },
+    {
+      "id": "CGY-115",
+      "company": "REV Engineering / REV Power Solutions",
+      "decision": "pending",
+      "recommendation": "reserve"
+    },
+    {
+      "id": "CGY-122",
+      "company": "4Front Robotics",
+      "decision": "pending",
+      "recommendation": "hold"
+    },
+    {
+      "id": "CGY-126",
+      "company": "Pandell — ESG",
+      "decision": "pending",
+      "recommendation": "reserve"
+    },
+    {
+      "id": "CGY-129",
+      "company": "Quorum Information Technologies",
+      "decision": "pending",
+      "recommendation": "hold"
+    },
+    {
+      "id": "CGY-132",
+      "company": "Servus Credit Union / former connectFirst",
+      "decision": "pending",
+      "recommendation": "hold"
+    },
+    {
+      "id": "CGY-138",
+      "company": "Lammle’s Western Wear",
+      "decision": "pending",
+      "recommendation": "reserve"
+    },
+    {
+      "id": "CGY-140",
+      "company": "Rocky Mountain Soap Company",
+      "decision": "pending",
+      "recommendation": "reserve"
+    }
+  ]
+}

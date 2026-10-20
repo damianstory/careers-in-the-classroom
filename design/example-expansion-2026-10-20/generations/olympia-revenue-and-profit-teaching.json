@@ -1,0 +1,16 @@
+{
+  "id": "olympia-revenue-and-profit-teaching",
+  "type": "teaching",
+  "exampleSlug": "olympia-revenue-and-profit",
+  "prompt": "Make exactly one localized correction to this teaching illustration. The man under number 1 on the far left has an extra third hand touching his chin. Completely REMOVE that chin-touching hand AND its connected extra forearm from chin down toward chest. Restore his beard, neck and sage-green shirt naturally behind the removed limb. Keep the TWO existing hands holding the two papers, one hand per paper, with natural arms. He must have exactly two hands total. Keep his head position and thoughtful expression. Do not change the papers, charts, arrows, numbers 1\u20134, woman on right, layout, colors, illustration texture, canvas size or any other elements. Preserve graphic-novel limited-colour screenprint style.",
+  "original": "design/example-expansion-2026-10-20/olympia-revenue-and-profit-teaching.png",
+  "destination": "public/images/story-diagrams/olympia-revenue-and-profit-graphic-novel-v2.webp",
+  "aspect": "16:9",
+  "status": "generated and visually reviewed",
+  "generatedSource": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-2ae1f785-be3c-43a1-bad7-c27edc35b5a6.png",
+  "tool": "built-in image_gen",
+  "elapsedSeconds": 50,
+  "version": 2,
+  "correctionReason": "User requested removing the extra chin-touching hand and forearm; keep both hands holding the two papers.",
+  "reference": "design/example-expansion-2026-10-20/olympia-revenue-and-profit-teaching.v1.png"
+}

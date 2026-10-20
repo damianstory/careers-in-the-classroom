@@ -36,5 +36,7 @@ export interface UnitOption {
 export interface CourseOption {
   id: string;
   name: string;
+  group: string;
+  focusLabel?: "Outcome focus";
   units: UnitOption[];
 }

@@ -1,0 +1,16 @@
+{
+  "id": "solvet-consistent-batches-story",
+  "type": "story",
+  "exampleSlug": "solvet-consistent-batches",
+  "prompt": "Edit the supplied illustration with ONE targeted correction: remove the extra UPRIGHT clipboard and its visible white form in front of the man's chest (the upper board angled up toward his right shoulder). Reconstruct his dark green coat naturally in that space. Keep ONLY the single lower clipboard he is holding at waist level, with its dark back facing the viewer. He should naturally be writing with the pen on the hidden upper face of that one lower clipboard; the audience does not need to see the paper or writing. Keep both existing hands plausibly connected to his arms, one supporting that single lower board and one writing. Preserve the woman's appearance, bottle, every other container, background equipment, composition, dimensions, graphic-novel screenprint texture, palette and lighting. No extra board, page, floating clipboard, annotations or red markings.",
+  "original": "design/example-expansion-2026-10-20/solvet-consistent-batches-story.png",
+  "destination": "public/images/examples/solvet-consistent-batches-graphic-novel.webp",
+  "aspect": "16:9",
+  "status": "generated and visually reviewed",
+  "generatedSource": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-58a05426-de77-4498-ab3c-d72923823de1.png",
+  "tool": "built-in image_gen",
+  "elapsedSeconds": 206,
+  "version": 2,
+  "correctionReason": "User requested removal of duplicate upright clipboard; retain one lower board with writing surface facing the man.",
+  "reference": "design/example-expansion-2026-10-20/solvet-consistent-batches-story.v1.png"
+}

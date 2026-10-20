@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-20",
+  "registries": [
+    {
+      "file": "docs/validation/job-reviews/company-discovery.json",
+      "updated": 30,
+      "otherRecordsPreserved": 136
+    },
+    {
+      "file": "docs/validation/job-reviews/company-discovery/2026-10-20/candidates.json",
+      "updated": 30,
+      "otherRecordsPreserved": 10
+    }
+  ],
+  "reviewedFilesUnchanged": 34,
+  "previousSourceFilesChanged": [
+    "src/content/logos.ts",
+    "src/content/sources.ts",
+    "src/content/discover-expansion.ts",
+    "src/content/pathways.ts",
+    "src/content/role-searches.ts",
+    "src/content/example-images.ts",
+    "src/content/roles.ts",
+    "src/content/example-records/index.ts"
+  ],
+  "preExistingUiEditsPreserved": true,
+  "publication": "not performed"
+}

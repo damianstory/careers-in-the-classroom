@@ -1,0 +1,528 @@
+{
+  "as_of": "2026-10-20",
+  "pending_count": 59,
+  "entries": [
+    {
+      "id": null,
+      "company": "Attabotics",
+      "first_discovered": "2026-10-15",
+      "version": 1,
+      "recommendation": null,
+      "review_packet": null
+    },
+    {
+      "id": null,
+      "company": "Eavor",
+      "first_discovered": "2026-10-15",
+      "version": 1,
+      "recommendation": null,
+      "review_packet": null
+    },
+    {
+      "id": null,
+      "company": "Carbon Upcycling",
+      "first_discovered": "2026-10-15",
+      "version": 1,
+      "recommendation": null,
+      "review_packet": null
+    },
+    {
+      "id": null,
+      "company": "Ayrton Energy",
+      "first_discovered": "2026-10-15",
+      "version": 1,
+      "recommendation": null,
+      "review_packet": null
+    },
+    {
+      "id": null,
+      "company": "Kent Imaging",
+      "first_discovered": "2026-10-15",
+      "version": 1,
+      "recommendation": null,
+      "review_packet": null
+    },
+    {
+      "id": null,
+      "company": "Circle CVI",
+      "first_discovered": "2026-10-15",
+      "version": 1,
+      "recommendation": null,
+      "review_packet": null
+    },
+    {
+      "id": null,
+      "company": "NovAtel",
+      "first_discovered": "2026-10-15",
+      "version": 1,
+      "recommendation": null,
+      "review_packet": null
+    },
+    {
+      "id": null,
+      "company": "CoolIT Systems",
+      "first_discovered": "2026-10-15",
+      "version": 1,
+      "recommendation": null,
+      "review_packet": null
+    },
+    {
+      "id": null,
+      "company": "DIRTT",
+      "first_discovered": "2026-10-15",
+      "version": 1,
+      "recommendation": null,
+      "review_packet": null
+    },
+    {
+      "id": null,
+      "company": "Helcim",
+      "first_discovered": "2026-10-15",
+      "version": 1,
+      "recommendation": null,
+      "review_packet": null
+    },
+    {
+      "id": null,
+      "company": "GoodLeaf Farms",
+      "first_discovered": "2026-10-15",
+      "version": 1,
+      "recommendation": null,
+      "review_packet": null
+    },
+    {
+      "id": null,
+      "company": "SMART Technologies",
+      "first_discovered": "2026-10-15",
+      "version": 1,
+      "recommendation": null,
+      "review_packet": null
+    },
+    {
+      "id": null,
+      "company": "PureWeb",
+      "first_discovered": "2026-10-15",
+      "version": 1,
+      "recommendation": null,
+      "review_packet": null
+    },
+    {
+      "id": null,
+      "company": "Benevity",
+      "first_discovered": "2026-10-15",
+      "version": 1,
+      "recommendation": null,
+      "review_packet": null
+    },
+    {
+      "id": null,
+      "company": "ZayZoon",
+      "first_discovered": "2026-10-15",
+      "version": 1,
+      "recommendation": null,
+      "review_packet": null
+    },
+    {
+      "id": null,
+      "company": "Big Rock Brewery",
+      "first_discovered": "2026-10-15",
+      "version": 1,
+      "recommendation": null,
+      "review_packet": null
+    },
+    {
+      "id": null,
+      "company": "Blackline Safety",
+      "first_discovered": "2026-10-15",
+      "version": 1,
+      "recommendation": null,
+      "review_packet": null
+    },
+    {
+      "id": null,
+      "company": "Engineered Air",
+      "first_discovered": "2026-10-15",
+      "version": 1,
+      "recommendation": null,
+      "review_packet": null
+    },
+    {
+      "id": null,
+      "company": "Pason",
+      "first_discovered": "2026-10-15",
+      "version": 1,
+      "recommendation": null,
+      "review_packet": null
+    },
+    {
+      "id": null,
+      "company": "Evans",
+      "first_discovered": "2026-10-15",
+      "version": 1,
+      "recommendation": null,
+      "review_packet": null
+    },
+    {
+      "id": "CGY-021",
+      "company": "Orpyx",
+      "first_discovered": "2026-10-16",
+      "version": 1,
+      "recommendation": "recommend",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md"
+    },
+    {
+      "id": "CGY-022",
+      "company": "RetinaLogik",
+      "first_discovered": "2026-10-16",
+      "version": 1,
+      "recommendation": "recommend",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md"
+    },
+    {
+      "id": "CGY-023",
+      "company": "Righteous Gelato",
+      "first_discovered": "2026-10-16",
+      "version": 1,
+      "recommendation": "recommend",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md"
+    },
+    {
+      "id": "CGY-024",
+      "company": "FREDsense Technologies",
+      "first_discovered": "2026-10-16",
+      "version": 1,
+      "recommendation": "recommend",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md"
+    },
+    {
+      "id": "CGY-025",
+      "company": "Falkbuilt",
+      "first_discovered": "2026-10-16",
+      "version": 1,
+      "recommendation": "recommend",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md"
+    },
+    {
+      "id": "CGY-026",
+      "company": "Fluid Biomed",
+      "first_discovered": "2026-10-16",
+      "version": 1,
+      "recommendation": "reserve",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md"
+    },
+    {
+      "id": "CGY-027",
+      "company": "Dynamic Source Manufacturing",
+      "first_discovered": "2026-10-16",
+      "version": 1,
+      "recommendation": "reserve",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md"
+    },
+    {
+      "id": "CGY-028",
+      "company": "Corma Industries",
+      "first_discovered": "2026-10-16",
+      "version": 1,
+      "recommendation": "reserve",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md"
+    },
+    {
+      "id": "CGY-029",
+      "company": "August Electronics",
+      "first_discovered": "2026-10-16",
+      "version": 1,
+      "recommendation": "reserve",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md"
+    },
+    {
+      "id": "CGY-030",
+      "company": "Fidelity Manufacturing Group",
+      "first_discovered": "2026-10-16",
+      "version": 1,
+      "recommendation": "reserve",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md"
+    },
+    {
+      "id": "CGY-031",
+      "company": "ZeroKey",
+      "first_discovered": "2026-10-16",
+      "version": 1,
+      "recommendation": "reserve",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md"
+    },
+    {
+      "id": "CGY-032",
+      "company": "Cococo / Chocolaterie Bernard Callebaut",
+      "first_discovered": "2026-10-16",
+      "version": 1,
+      "recommendation": "reserve",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md"
+    },
+    {
+      "id": "CGY-033",
+      "company": "NOVA Chemicals",
+      "first_discovered": "2026-10-16",
+      "version": 1,
+      "recommendation": "reserve",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md"
+    },
+    {
+      "id": "CGY-034",
+      "company": "WestJet",
+      "first_discovered": "2026-10-16",
+      "version": 1,
+      "recommendation": "reserve",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md"
+    },
+    {
+      "id": "CGY-035",
+      "company": "De Havilland Canada",
+      "first_discovered": "2026-10-16",
+      "version": 1,
+      "recommendation": "reserve",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md"
+    },
+    {
+      "id": "CGY-036",
+      "company": "Scovan",
+      "first_discovered": "2026-10-16",
+      "version": 1,
+      "recommendation": "reserve",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md"
+    },
+    {
+      "id": "CGY-037",
+      "company": "Acceleware",
+      "first_discovered": "2026-10-16",
+      "version": 1,
+      "recommendation": "reserve",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md"
+    },
+    {
+      "id": "CGY-038",
+      "company": "Syantra",
+      "first_discovered": "2026-10-16",
+      "version": 1,
+      "recommendation": "hold",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md"
+    },
+    {
+      "id": "CGY-039",
+      "company": "Earthware Reusables",
+      "first_discovered": "2026-10-16",
+      "version": 1,
+      "recommendation": "hold",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md"
+    },
+    {
+      "id": "CGY-040",
+      "company": "MODUS Structures",
+      "first_discovered": "2026-10-16",
+      "version": 1,
+      "recommendation": "hold",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-16/review.md"
+    },
+    {
+      "id": "CGY-052",
+      "company": "ECCO Recycling",
+      "first_discovered": "2026-10-17",
+      "version": 1,
+      "recommendation": "hold",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-17/review.md"
+    },
+    {
+      "id": "CGY-053",
+      "company": "Cascades Recovery+",
+      "first_discovered": "2026-10-17",
+      "version": 1,
+      "recommendation": "hold",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-17/review.md"
+    },
+    {
+      "id": "CGY-055",
+      "company": "Clifton Engineering Group",
+      "first_discovered": "2026-10-17",
+      "version": 1,
+      "recommendation": "hold",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-17/review.md"
+    },
+    {
+      "id": "CGY-058",
+      "company": "Former Matrix Solutions / Montrose (current brand unresolved)",
+      "first_discovered": "2026-10-17",
+      "version": 1,
+      "recommendation": "hold",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-17/review.md"
+    },
+    {
+      "id": "CGY-059",
+      "company": "Clearwater Calgary",
+      "first_discovered": "2026-10-17",
+      "version": 1,
+      "recommendation": "hold",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-17/review.md"
+    },
+    {
+      "id": "CGY-060",
+      "company": "Puppet Stuff Canada",
+      "first_discovered": "2026-10-17",
+      "version": 1,
+      "recommendation": "hold",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-17/review.md"
+    },
+    {
+      "id": "TB-02",
+      "company": "Arcurve",
+      "first_discovered": "2026-10-19",
+      "version": 1,
+      "recommendation": null,
+      "review_packet": "docs/validation/tech-business-pilot/2026-10-19/review.md"
+    },
+    {
+      "id": "TB-06",
+      "company": "Critical Mass",
+      "first_discovered": "2026-10-19",
+      "version": 1,
+      "recommendation": null,
+      "review_packet": "docs/validation/tech-business-pilot/2026-10-19/review.md"
+    },
+    {
+      "id": "TB-07",
+      "company": "Showpass",
+      "first_discovered": "2026-10-19",
+      "version": 1,
+      "recommendation": null,
+      "review_packet": "docs/validation/tech-business-pilot/2026-10-19/review.md"
+    },
+    {
+      "id": "CGY-104",
+      "company": "Excir",
+      "first_discovered": "2026-10-20",
+      "version": 1,
+      "recommendation": "hold",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-20/review.md"
+    },
+    {
+      "id": "CGY-106",
+      "company": "Element Materials Technology — Calgary laboratory",
+      "first_discovered": "2026-10-20",
+      "version": 1,
+      "recommendation": "hold",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-20/review.md"
+    },
+    {
+      "id": "CGY-113",
+      "company": "Carbon Alpha",
+      "first_discovered": "2026-10-20",
+      "version": 1,
+      "recommendation": "hold",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-20/review.md"
+    },
+    {
+      "id": "CGY-115",
+      "company": "REV Engineering / REV Power Solutions",
+      "first_discovered": "2026-10-20",
+      "version": 1,
+      "recommendation": "reserve",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-20/review.md"
+    },
+    {
+      "id": "CGY-122",
+      "company": "4Front Robotics",
+      "first_discovered": "2026-10-20",
+      "version": 1,
+      "recommendation": "hold",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-20/review.md"
+    },
+    {
+      "id": "CGY-126",
+      "company": "Pandell — ESG",
+      "first_discovered": "2026-10-20",
+      "version": 1,
+      "recommendation": "reserve",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-20/review.md"
+    },
+    {
+      "id": "CGY-129",
+      "company": "Quorum Information Technologies",
+      "first_discovered": "2026-10-20",
+      "version": 1,
+      "recommendation": "hold",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-20/review.md"
+    },
+    {
+      "id": "CGY-132",
+      "company": "Servus Credit Union / former connectFirst",
+      "first_discovered": "2026-10-20",
+      "version": 1,
+      "recommendation": "hold",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-20/review.md"
+    },
+    {
+      "id": "CGY-138",
+      "company": "Lammle’s Western Wear",
+      "first_discovered": "2026-10-20",
+      "version": 1,
+      "recommendation": "reserve",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-20/review.md"
+    },
+    {
+      "id": "CGY-140",
+      "company": "Rocky Mountain Soap Company",
+      "first_discovered": "2026-10-20",
+      "version": 1,
+      "recommendation": "reserve",
+      "review_packet": "docs/validation/job-reviews/company-discovery/2026-10-20/review.md"
+    }
+  ],
+  "known_pilot_extension_queue": "known-company-extensions.json",
+  "note": "Pending company proposals, older known leads and full-copy readiness are different states; this is not a publication queue.",
+  "proposal_approvals_applied_on": "2026-10-20",
+  "approved_proposal_ids_this_batch": [
+    "CGY-101",
+    "CGY-102",
+    "CGY-103",
+    "CGY-105",
+    "CGY-107",
+    "CGY-108",
+    "CGY-109",
+    "CGY-110",
+    "CGY-111",
+    "CGY-112",
+    "CGY-114",
+    "CGY-116",
+    "CGY-117",
+    "CGY-118",
+    "CGY-119",
+    "CGY-120",
+    "CGY-121",
+    "CGY-123",
+    "CGY-124",
+    "CGY-125",
+    "CGY-127",
+    "CGY-128",
+    "CGY-130",
+    "CGY-131",
+    "CGY-133",
+    "CGY-134",
+    "CGY-135",
+    "CGY-136",
+    "CGY-137",
+    "CGY-139"
+  ],
+  "separate_full_copy_review": {
+    "count": 30,
+    "decision": "approved",
+    "packet": "docs/validation/full-examples/2026-10-20/review.md",
+    "approved_on": "2026-10-20",
+    "implementation_review": "docs/validation/full-examples/2026-10-20/implementation-review.md",
+    "implementation_status": "local; user review before push"
+  },
+  "full_copy_review_history": [
+    {
+      "count": 30,
+      "decision": "pending",
+      "packet": "docs/validation/full-examples/2026-10-20/review.md"
+    }
+  ]
+}

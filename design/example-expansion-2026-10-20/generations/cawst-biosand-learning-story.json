@@ -1,0 +1,15 @@
+{
+  "id": "cawst-biosand-learning-story",
+  "type": "story",
+  "exampleSlug": "cawst-biosand-learning",
+  "prompt": "The current filter looks like a planted garden. Replace the entire filter and gardening materials with a closed, plain concrete biosand filter demonstration model. Keep the educator and adult learners discussing the model, with notebooks and small jars of clean sand and gravel. NO plants, roots, soil or gardening tools on the table or inside the model. Do not expose technical internals or show a glass of drinking water. Keep coherent attached arms and the original scene composition and screenprint style. No text.",
+  "original": "design/example-expansion-2026-10-20/cawst-biosand-learning-story.png",
+  "destination": "public/images/examples/cawst-biosand-learning-graphic-novel.webp",
+  "aspect": "16:9",
+  "status": "generated",
+  "correctionReason": "planted filter was scientifically wrong",
+  "version": 2,
+  "reference": "/Users/damianmatheson/Desktop/Claude Code/CitC/design/example-expansion-2026-10-20/cawst-biosand-learning-story.png",
+  "generatedSource": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-a46e290b-f4f7-4377-bc87-c58af208f72d.png",
+  "tool": "built-in image_gen"
+}

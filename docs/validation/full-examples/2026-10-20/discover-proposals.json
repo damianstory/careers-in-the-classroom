@@ -1,0 +1,1305 @@
+{
+  "version": 1,
+  "decision": "pending",
+  "currentCardCount": 70,
+  "existingCardExtensions": [
+    {
+      "id": "OCT20-EXTEND-03",
+      "version": 1,
+      "decision": "pending",
+      "action": "extend existing occupation",
+      "existingCard": {
+        "number": "03",
+        "organizationId": "ghgsat",
+        "roleId": "software-data",
+        "title": "Software Developer",
+        "clue": "A person types at a desk with code on one screen, maps and graphs on another, and a diagram in a notebook.",
+        "pathwayId": "sait-geomatics",
+        "jobId": "ghgsat-backend-developer",
+        "src": "/images/discover/software-data.jpg",
+        "width": 752,
+        "height": 1344
+      },
+      "preserve": [
+        "number",
+        "roleId",
+        "shared URL",
+        "title",
+        "clue",
+        "primary organization",
+        "primary pathway and job evidence",
+        "artwork"
+      ],
+      "additionalCompanyLinks": [
+        {
+          "companyProposalId": "CGY-121",
+          "company": "EZ-Robot",
+          "exampleSlug": "ez-robot-sensor-decisions",
+          "roleId": "work-software",
+          "pathwayKey": "route-software",
+          "copy": "Turn sensor information into a tested program.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://www.ez-robot.com/",
+            "https://www.ez-robot.com/contact-us.html",
+            "https://www.ez-robot.com/learn-robotics-movement-panels.html",
+            "https://www.ez-robot.com/store/p15/ultrasonic-sensor.html"
+          ]
+        },
+        {
+          "companyProposalId": "CGY-123",
+          "company": "Clio",
+          "exampleSlug": "clio-linked-client-records",
+          "roleId": "work-software",
+          "pathwayKey": "route-software",
+          "copy": "Model and test relationships among clients, matters and documents.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://www.clio.com/ca/about/careers/calgary/",
+            "https://docs.developers.clio.com/guides/clio-manage/custom-fields/",
+            "https://docs.developers.clio.com/api-docs/paging/"
+          ]
+        },
+        {
+          "companyProposalId": "CGY-124",
+          "company": "Absorb Software",
+          "exampleSlug": "absorb-learning-rules",
+          "roleId": "work-software",
+          "pathwayKey": "route-software",
+          "copy": "Develop and test assignment logic using defined learner conditions.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://www.absorbai.com/",
+            "https://www.absorbai.com/company/contact",
+            "https://www.absorbai.com/company/careers",
+            "https://support.absorblms.com/hc/en-us/articles/32624653167251-Understanding-Enrollment"
+          ]
+        },
+        {
+          "companyProposalId": "CGY-125",
+          "company": "Userful",
+          "exampleSlug": "userful-visual-information-routing",
+          "roleId": "work-software",
+          "pathwayKey": "route-software",
+          "copy": "Represent visual workflows and test exceptional states.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://www.userful.com/about",
+            "https://www.userful.com/about/company-news/userful-visual-networking-platform-implemented-calgarys-library-network"
+          ]
+        },
+        {
+          "companyProposalId": "CGY-127",
+          "company": "Peloton",
+          "exampleSlug": "peloton-consistent-field-records",
+          "roleId": "work-software",
+          "pathwayKey": "route-software",
+          "copy": "Organize and validate related operational records.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://www.peloton.com/",
+            "https://www.peloton.com/contact-us",
+            "https://www.peloton.com/about-us"
+          ]
+        },
+        {
+          "companyProposalId": "CGY-128",
+          "company": "Arcobi (formerly Arcus Power)",
+          "exampleSlug": "arcobi-comparing-power-data",
+          "roleId": "work-software",
+          "pathwayKey": "route-software",
+          "copy": "Organize time- and location-dependent datasets for meaningful comparison.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://www.arcuspower.com/",
+            "https://www.arcobi.com/contact",
+            "https://www.arcobi.com/about-us",
+            "https://www.arcobi.com/datahub"
+          ]
+        },
+        {
+          "companyProposalId": "CGY-130",
+          "company": "Athennian",
+          "exampleSlug": "athennian-company-relationships",
+          "roleId": "work-software",
+          "pathwayKey": "route-software",
+          "copy": "Maintain consistent relationships among organization and appointment records.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://www.athennian.com/",
+            "https://www.athennian.com/careers",
+            "https://help.athennian.com/hc/en-us/sections/28159196895387-Entity-Creation-Management"
+          ]
+        }
+      ],
+      "artworkDecision": "Reuse current occupation image; no redundant card or new portrait required."
+    },
+    {
+      "id": "OCT20-EXTEND-05",
+      "version": 1,
+      "decision": "pending",
+      "action": "extend existing occupation",
+      "existingCard": {
+        "number": "05",
+        "organizationId": "wilder-institute",
+        "roleId": "animal-care",
+        "title": "Animal Care Technician",
+        "clue": "Inside a bird enclosure, a person wearing gloves prepares a bowl near food, a checklist and an owl on a perch.",
+        "pathwayId": "olds-assistant",
+        "jobId": "wilder-animal-care",
+        "src": "/images/discover/animal-care.jpg",
+        "width": 752,
+        "height": 1344
+      },
+      "preserve": [
+        "number",
+        "roleId",
+        "shared URL",
+        "title",
+        "clue",
+        "primary organization",
+        "primary pathway and job evidence",
+        "artwork"
+      ],
+      "additionalCompanyLinks": [
+        {
+          "companyProposalId": "CGY-108",
+          "company": "Calgary Wildlife Rehabilitation Society",
+          "exampleSlug": "calgary-wildlife-release-evidence",
+          "roleId": "animal-care",
+          "pathwayKey": "route-biology",
+          "copy": "Record animal condition and behaviour to support professional rehabilitation decisions.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://www.calgarywildlife.org/",
+            "https://www.calgarywildlife.org/behind-the-scenes",
+            "https://www.calgarywildlife.org/holiday-wildlife"
+          ]
+        }
+      ],
+      "artworkDecision": "Reuse current occupation image; no redundant card or new portrait required."
+    },
+    {
+      "id": "OCT20-EXTEND-10",
+      "version": 1,
+      "decision": "pending",
+      "action": "extend existing occupation",
+      "existingCard": {
+        "number": "10",
+        "roleId": "work-mechanical",
+        "organizationId": "standens",
+        "title": "Mechanical designer",
+        "clue": "At a workshop bench, a person measures a metal bracket with callipers while comparing it with a dimensioned drawing.",
+        "pathwayId": "oct18-route-mechanical",
+        "src": "/images/discover/work-mechanical.webp",
+        "width": 752,
+        "height": 1344
+      },
+      "preserve": [
+        "number",
+        "roleId",
+        "shared URL",
+        "title",
+        "clue",
+        "primary organization",
+        "primary pathway and job evidence",
+        "artwork"
+      ],
+      "additionalCompanyLinks": [
+        {
+          "companyProposalId": "CGY-102",
+          "company": "Nimble Science",
+          "exampleSlug": "nimble-small-intestine-sampling",
+          "roleId": "work-mechanical",
+          "pathwayKey": "route-mechanical",
+          "copy": "Translate sample-collection needs into device constraints.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://www.nimblesci.com/",
+            "https://www.nimblesci.com/simbagiplatform",
+            "https://www.nimblesci.com/post/gi-disorders-the-microbiome-a-clinical-investigation"
+          ]
+        },
+        {
+          "companyProposalId": "CGY-117",
+          "company": "Westpower",
+          "exampleSlug": "westpower-pump-performance",
+          "roleId": "work-mechanical",
+          "pathwayKey": "route-mechanical",
+          "copy": "Evaluate mechanical requirements and changes to equipment.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://westpowergroup.com/",
+            "https://westpowergroup.com/contact-us/"
+          ]
+        },
+        {
+          "companyProposalId": "CGY-119",
+          "company": "Streamline Automation / FROG3D",
+          "exampleSlug": "frog3d-digital-to-physical",
+          "roleId": "work-mechanical",
+          "pathwayKey": "route-mechanical",
+          "copy": "Translate a digital design into a feasible fabrication approach.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://www.frog3d.com/",
+            "https://www.frog3d.com/get-training-from-the-experts-at-frog3d/"
+          ]
+        }
+      ],
+      "artworkDecision": "Reuse current occupation image; no redundant card or new portrait required."
+    },
+    {
+      "id": "OCT20-EXTEND-11",
+      "version": 1,
+      "decision": "pending",
+      "action": "extend existing occupation",
+      "existingCard": {
+        "number": "11",
+        "roleId": "work-manufacturing",
+        "organizationId": "standens",
+        "title": "Manufacturing technician",
+        "clue": "At a guarded production station, a person wearing safety glasses checks a newly made metal component against a drawing.",
+        "pathwayId": "oct18-route-mechanical",
+        "src": "/images/discover/work-manufacturing.webp",
+        "width": 752,
+        "height": 1344
+      },
+      "preserve": [
+        "number",
+        "roleId",
+        "shared URL",
+        "title",
+        "clue",
+        "primary organization",
+        "primary pathway and job evidence",
+        "artwork"
+      ],
+      "additionalCompanyLinks": [
+        {
+          "companyProposalId": "CGY-107",
+          "company": "Solvet / Alberta Veterinary Laboratories",
+          "exampleSlug": "solvet-consistent-batches",
+          "roleId": "work-manufacturing",
+          "pathwayKey": "route-lab",
+          "copy": "Follow controlled preparation steps and document production.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://solvet.ca/about-us/",
+            "https://solvet.ca/",
+            "https://solvet.ca/careers/"
+          ]
+        }
+      ],
+      "artworkDecision": "Reuse current occupation image; no redundant card or new portrait required."
+    },
+    {
+      "id": "OCT20-EXTEND-12",
+      "version": 1,
+      "decision": "pending",
+      "action": "extend existing occupation",
+      "existingCard": {
+        "number": "12",
+        "roleId": "work-quality",
+        "organizationId": "standens",
+        "title": "Quality assurance technician",
+        "clue": "At an inspection bench, a person wearing safety glasses measures a metal component beside a drawing and a checklist.",
+        "pathwayId": "oct18-route-machinist",
+        "src": "/images/discover/work-quality.webp",
+        "width": 752,
+        "height": 1344
+      },
+      "preserve": [
+        "number",
+        "roleId",
+        "shared URL",
+        "title",
+        "clue",
+        "primary organization",
+        "primary pathway and job evidence",
+        "artwork"
+      ],
+      "additionalCompanyLinks": [
+        {
+          "companyProposalId": "CGY-105",
+          "company": "AGAT Laboratories",
+          "exampleSlug": "agat-trustworthy-water-results",
+          "roleId": "work-quality",
+          "pathwayKey": "route-lab",
+          "copy": "Trace the evidence connecting sample, method and reported result.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://agatlabs.com/",
+            "https://agatlabs.com/locations/",
+            "https://agatlabs.com/about/quality-accreditation/",
+            "https://www.agric.gov.ab.ca/app68/loadagriprocessorslisting?cat1=Analytical+Laboratories&id=%2F%24directories%2Fdcommdty.nsf%2FAll%2Flst50248"
+          ]
+        },
+        {
+          "companyProposalId": "CGY-107",
+          "company": "Solvet / Alberta Veterinary Laboratories",
+          "exampleSlug": "solvet-consistent-batches",
+          "roleId": "work-quality",
+          "pathwayKey": "route-lab",
+          "copy": "Check batches and retain records for investigation.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://solvet.ca/about-us/",
+            "https://solvet.ca/",
+            "https://solvet.ca/careers/"
+          ]
+        },
+        {
+          "companyProposalId": "CGY-118",
+          "company": "Engineered Power — Lithion Battery",
+          "exampleSlug": "engineered-power-demanding-batteries",
+          "roleId": "work-quality",
+          "pathwayKey": "route-electrical",
+          "copy": "Maintain evidence that production and test results meet requirements.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://www.lithionbattery.com/engineered-power/home"
+          ]
+        }
+      ],
+      "artworkDecision": "Reuse current occupation image; no redundant card or new portrait required."
+    },
+    {
+      "id": "OCT20-EXTEND-13",
+      "version": 1,
+      "decision": "pending",
+      "action": "extend existing occupation",
+      "existingCard": {
+        "number": "13",
+        "roleId": "work-controls",
+        "organizationId": "opisystems",
+        "title": "Instrumentation technician",
+        "clue": "At a training bench with closed electrical panels, a person checks a small pressure instrument and a signal display.",
+        "pathwayId": "oct18-route-instrument",
+        "src": "/images/discover/work-controls.webp",
+        "width": 752,
+        "height": 1344
+      },
+      "preserve": [
+        "number",
+        "roleId",
+        "shared URL",
+        "title",
+        "clue",
+        "primary organization",
+        "primary pathway and job evidence",
+        "artwork"
+      ],
+      "additionalCompanyLinks": [
+        {
+          "companyProposalId": "CGY-114",
+          "company": "SFC Energy Canada / former Simark Controls",
+          "exampleSlug": "sfc-fuel-cell-battery-support",
+          "roleId": "work-controls",
+          "pathwayKey": "route-electrical",
+          "copy": "Connect monitoring information with system-control decisions.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://www.sfc-energy.ca/",
+            "https://www.sfc-energy.ca/products/energy/"
+          ]
+        },
+        {
+          "companyProposalId": "CGY-121",
+          "company": "EZ-Robot",
+          "exampleSlug": "ez-robot-sensor-decisions",
+          "roleId": "work-controls",
+          "pathwayKey": "route-electrical",
+          "copy": "Connect physical sensing and action with safe operating constraints.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://www.ez-robot.com/",
+            "https://www.ez-robot.com/contact-us.html",
+            "https://www.ez-robot.com/learn-robotics-movement-panels.html",
+            "https://www.ez-robot.com/store/p15/ultrasonic-sensor.html"
+          ]
+        }
+      ],
+      "artworkDecision": "Reuse current occupation image; no redundant card or new portrait required."
+    },
+    {
+      "id": "OCT20-EXTEND-14",
+      "version": 1,
+      "decision": "pending",
+      "action": "extend existing occupation",
+      "existingCard": {
+        "number": "14",
+        "roleId": "work-technical-support",
+        "organizationId": "opisystems",
+        "title": "Technical support specialist",
+        "clue": "At a support desk, a person compares a sensor connection diagram with a customer device while using a headset.",
+        "pathwayId": "oct18-route-instrument",
+        "src": "/images/discover/work-technical-support.webp",
+        "width": 752,
+        "height": 1344
+      },
+      "preserve": [
+        "number",
+        "roleId",
+        "shared URL",
+        "title",
+        "clue",
+        "primary organization",
+        "primary pathway and job evidence",
+        "artwork"
+      ],
+      "additionalCompanyLinks": [
+        {
+          "companyProposalId": "CGY-112",
+          "company": "Microhard Systems",
+          "exampleSlug": "microhard-remote-radio-data",
+          "roleId": "work-technical-support",
+          "pathwayKey": "route-electrical",
+          "copy": "Explain equipment capabilities and help investigate connection problems.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://www.microhardcorp.com/scada.php",
+            "https://www.microhardcorp.com/about.php"
+          ]
+        },
+        {
+          "companyProposalId": "CGY-125",
+          "company": "Userful",
+          "exampleSlug": "userful-visual-information-routing",
+          "roleId": "work-technical-support",
+          "pathwayKey": "route-software",
+          "copy": "Explain system behaviour and help troubleshoot missing inputs.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://www.userful.com/about",
+            "https://www.userful.com/about/company-news/userful-visual-networking-platform-implemented-calgarys-library-network"
+          ]
+        },
+        {
+          "companyProposalId": "CGY-127",
+          "company": "Peloton",
+          "exampleSlug": "peloton-consistent-field-records",
+          "roleId": "work-technical-support",
+          "pathwayKey": "route-software",
+          "copy": "Help users interpret data requirements and resolve workflow problems.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://www.peloton.com/",
+            "https://www.peloton.com/contact-us",
+            "https://www.peloton.com/about-us"
+          ]
+        }
+      ],
+      "artworkDecision": "Reuse current occupation image; no redundant card or new portrait required."
+    },
+    {
+      "id": "OCT20-EXTEND-15",
+      "version": 1,
+      "decision": "pending",
+      "action": "extend existing occupation",
+      "existingCard": {
+        "number": "15",
+        "roleId": "work-materials",
+        "organizationId": "nanotess",
+        "title": "Materials scientist",
+        "clue": "At a laboratory bench, a person wearing safety glasses compares two material samples beside a small testing instrument.",
+        "pathwayId": "oct18-route-chemical",
+        "src": "/images/discover/work-materials.webp",
+        "width": 752,
+        "height": 1344
+      },
+      "preserve": [
+        "number",
+        "roleId",
+        "shared URL",
+        "title",
+        "clue",
+        "primary organization",
+        "primary pathway and job evidence",
+        "artwork"
+      ],
+      "additionalCompanyLinks": [
+        {
+          "companyProposalId": "CGY-118",
+          "company": "Engineered Power — Lithion Battery",
+          "exampleSlug": "engineered-power-demanding-batteries",
+          "roleId": "work-materials",
+          "pathwayKey": "route-lab",
+          "copy": "Compare materials and cell performance against demanding conditions.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://www.lithionbattery.com/engineered-power/home"
+          ]
+        }
+      ],
+      "artworkDecision": "Reuse current occupation image; no redundant card or new portrait required."
+    },
+    {
+      "id": "OCT20-EXTEND-16",
+      "version": 1,
+      "decision": "pending",
+      "action": "extend existing occupation",
+      "existingCard": {
+        "number": "16",
+        "roleId": "work-lab",
+        "organizationId": "nanotess",
+        "title": "Laboratory technician",
+        "clue": "At a laboratory bench, a person in safety glasses, lab coat and gloves uses a pipette beside labelled sample vials.",
+        "pathwayId": "oct18-route-chemical",
+        "src": "/images/discover/work-lab.webp",
+        "width": 752,
+        "height": 1344
+      },
+      "preserve": [
+        "number",
+        "roleId",
+        "shared URL",
+        "title",
+        "clue",
+        "primary organization",
+        "primary pathway and job evidence",
+        "artwork"
+      ],
+      "additionalCompanyLinks": [
+        {
+          "companyProposalId": "CGY-101",
+          "company": "Providence Therapeutics",
+          "exampleSlug": "providence-rna-delivery",
+          "roleId": "work-lab",
+          "pathwayKey": "route-lab",
+          "copy": "Compare samples and keep records that support formulation research.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://providencetherapeutics.com/",
+            "https://providencetherapeutics.com/about/foundations-of-providence.html",
+            "https://providencetherapeutics.com/technology/next-gen-lnp.html",
+            "https://providencetherapeutics.com/technology/mrna-platform.html",
+            "https://providencetherapeutics.com/careers-culture.html"
+          ]
+        },
+        {
+          "companyProposalId": "CGY-102",
+          "company": "Nimble Science",
+          "exampleSlug": "nimble-small-intestine-sampling",
+          "roleId": "work-lab",
+          "pathwayKey": "route-lab",
+          "copy": "Keep sample identity and analysis limitations clear.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://www.nimblesci.com/",
+            "https://www.nimblesci.com/simbagiplatform",
+            "https://www.nimblesci.com/post/gi-disorders-the-microbiome-a-clinical-investigation"
+          ]
+        },
+        {
+          "companyProposalId": "CGY-103",
+          "company": "AgGene",
+          "exampleSlug": "aggene-crop-traits",
+          "roleId": "work-lab",
+          "pathwayKey": "route-lab",
+          "copy": "Record and compare laboratory observations supporting crop research.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://aggene.ca/",
+            "https://uiqcalgary.com/blog/aggene/"
+          ]
+        },
+        {
+          "companyProposalId": "CGY-105",
+          "company": "AGAT Laboratories",
+          "exampleSlug": "agat-trustworthy-water-results",
+          "roleId": "work-lab",
+          "pathwayKey": "route-lab",
+          "copy": "Prepare and analyze samples with appropriate checks.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://agatlabs.com/",
+            "https://agatlabs.com/locations/",
+            "https://agatlabs.com/about/quality-accreditation/",
+            "https://www.agric.gov.ab.ca/app68/loadagriprocessorslisting?cat1=Analytical+Laboratories&id=%2F%24directories%2Fdcommdty.nsf%2FAll%2Flst50248"
+          ]
+        }
+      ],
+      "artworkDecision": "Reuse current occupation image; no redundant card or new portrait required."
+    },
+    {
+      "id": "OCT20-EXTEND-17",
+      "version": 1,
+      "decision": "pending",
+      "action": "extend existing occupation",
+      "existingCard": {
+        "number": "17",
+        "roleId": "work-logistics",
+        "organizationId": "burnco",
+        "title": "Logistics coordinator",
+        "clue": "At a dispatch desk, a person compares delivery cards, a clock and a schematic route map while speaking into a headset.",
+        "pathwayId": "oct18-route-logistics",
+        "src": "/images/discover/work-logistics.webp",
+        "width": 752,
+        "height": 1344
+      },
+      "preserve": [
+        "number",
+        "roleId",
+        "shared URL",
+        "title",
+        "clue",
+        "primary organization",
+        "primary pathway and job evidence",
+        "artwork"
+      ],
+      "additionalCompanyLinks": [
+        {
+          "companyProposalId": "CGY-139",
+          "company": "Eight Ounce Coffee",
+          "exampleSlug": "eight-ounce-wholesale-retail",
+          "roleId": "work-logistics",
+          "pathwayKey": "route-logistics",
+          "copy": "Coordinate inventory and fulfilment for different types of orders.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://eightouncecoffee.ca/",
+            "https://eightouncecoffee.ca/pages/about-eight-ounce-coffee"
+          ]
+        }
+      ],
+      "artworkDecision": "Reuse current occupation image; no redundant card or new portrait required."
+    },
+    {
+      "id": "OCT20-EXTEND-25",
+      "version": 1,
+      "decision": "pending",
+      "action": "extend existing occupation",
+      "existingCard": {
+        "number": "25",
+        "roleId": "work-spatial",
+        "organizationId": "o2-planning-design",
+        "title": "GIS technician",
+        "clue": "At a desk, a person compares a site map with a three-dimensional point cloud on a screen and survey notes.",
+        "pathwayId": "oct17-route-sait-geomatics-engineering-technology",
+        "src": "/images/discover/work-spatial.webp",
+        "width": 752,
+        "height": 1344
+      },
+      "preserve": [
+        "number",
+        "roleId",
+        "shared URL",
+        "title",
+        "clue",
+        "primary organization",
+        "primary pathway and job evidence",
+        "artwork"
+      ],
+      "additionalCompanyLinks": [
+        {
+          "companyProposalId": "CGY-111",
+          "company": "ITRES Research",
+          "exampleSlug": "itres-beyond-visible-colours",
+          "roleId": "work-spatial",
+          "pathwayKey": "route-geomatics",
+          "copy": "Process and interpret geographically referenced imagery.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://www.itres.com/",
+            "https://www.itres.com/contact/",
+            "https://www.itres.com/careers/"
+          ]
+        }
+      ],
+      "artworkDecision": "Reuse current occupation image; no redundant card or new portrait required."
+    },
+    {
+      "id": "OCT20-EXTEND-31",
+      "version": 1,
+      "decision": "pending",
+      "action": "extend existing occupation",
+      "existingCard": {
+        "number": "31",
+        "roleId": "work-instrument",
+        "organizationId": "phil-sebastian",
+        "title": "Test engineer",
+        "clue": "At an electronics bench, a person in safety glasses adjusts a small optical test assembly beside a signal display.",
+        "pathwayId": "oct17-route-sait-instrumentation-engineering-technology",
+        "src": "/images/discover/work-instrument.webp",
+        "width": 752,
+        "height": 1344
+      },
+      "preserve": [
+        "number",
+        "roleId",
+        "shared URL",
+        "title",
+        "clue",
+        "primary organization",
+        "primary pathway and job evidence",
+        "artwork"
+      ],
+      "additionalCompanyLinks": [
+        {
+          "companyProposalId": "CGY-111",
+          "company": "ITRES Research",
+          "exampleSlug": "itres-beyond-visible-colours",
+          "roleId": "work-instrument",
+          "pathwayKey": "route-electrical",
+          "copy": "Check sensor operation and calibration.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://www.itres.com/",
+            "https://www.itres.com/contact/",
+            "https://www.itres.com/careers/"
+          ]
+        },
+        {
+          "companyProposalId": "CGY-112",
+          "company": "Microhard Systems",
+          "exampleSlug": "microhard-remote-radio-data",
+          "roleId": "work-instrument",
+          "pathwayKey": "route-electrical",
+          "copy": "Test communication equipment and investigate measurement performance.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://www.microhardcorp.com/scada.php",
+            "https://www.microhardcorp.com/about.php"
+          ]
+        }
+      ],
+      "artworkDecision": "Reuse current occupation image; no redundant card or new portrait required."
+    },
+    {
+      "id": "OCT20-EXTEND-47",
+      "version": 1,
+      "decision": "pending",
+      "action": "extend existing occupation",
+      "existingCard": {
+        "number": "47",
+        "roleId": "work-machining",
+        "organizationId": "exergy-solutions",
+        "title": "Machinist",
+        "clue": "At a workshop inspection bench beside a closed guarded CNC machine, a person measures a finished metal part with a micrometer.",
+        "pathwayId": "route-mechanical",
+        "src": "/images/discover/work-machining.webp",
+        "width": 752,
+        "height": 1344
+      },
+      "preserve": [
+        "number",
+        "roleId",
+        "shared URL",
+        "title",
+        "clue",
+        "primary organization",
+        "primary pathway and job evidence",
+        "artwork"
+      ],
+      "additionalCompanyLinks": [
+        {
+          "companyProposalId": "CGY-119",
+          "company": "Streamline Automation / FROG3D",
+          "exampleSlug": "frog3d-digital-to-physical",
+          "roleId": "work-machining",
+          "pathwayKey": "route-mechanical",
+          "copy": "Check the dimensions and manufacturability of a physical part.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://www.frog3d.com/",
+            "https://www.frog3d.com/get-training-from-the-experts-at-frog3d/"
+          ]
+        }
+      ],
+      "artworkDecision": "Reuse current occupation image; no redundant card or new portrait required."
+    },
+    {
+      "id": "OCT20-EXTEND-50",
+      "version": 1,
+      "decision": "pending",
+      "action": "extend existing occupation",
+      "existingCard": {
+        "number": "50",
+        "roleId": "work-bioprocess",
+        "organizationId": "northern-rna",
+        "title": "Bioprocess scientist",
+        "clue": "At a clean laboratory bench, a person in a lab coat, safety glasses and gloves checks sealed sample vials and a batch record.",
+        "pathwayId": "route-lab",
+        "src": "/images/discover/work-bioprocess.webp",
+        "width": 752,
+        "height": 1344
+      },
+      "preserve": [
+        "number",
+        "roleId",
+        "shared URL",
+        "title",
+        "clue",
+        "primary organization",
+        "primary pathway and job evidence",
+        "artwork"
+      ],
+      "additionalCompanyLinks": [
+        {
+          "companyProposalId": "CGY-101",
+          "company": "Providence Therapeutics",
+          "exampleSlug": "providence-rna-delivery",
+          "roleId": "work-bioprocess",
+          "pathwayKey": "route-biology",
+          "copy": "Connect RNA development with reproducible preparation and testing.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://providencetherapeutics.com/",
+            "https://providencetherapeutics.com/about/foundations-of-providence.html",
+            "https://providencetherapeutics.com/technology/next-gen-lnp.html",
+            "https://providencetherapeutics.com/technology/mrna-platform.html",
+            "https://providencetherapeutics.com/careers-culture.html"
+          ]
+        }
+      ],
+      "artworkDecision": "Reuse current occupation image; no redundant card or new portrait required."
+    },
+    {
+      "id": "OCT20-EXTEND-54",
+      "version": 1,
+      "decision": "pending",
+      "action": "extend existing occupation",
+      "existingCard": {
+        "number": "54",
+        "roleId": "work-millwright",
+        "organizationId": "tangent-design-engineering",
+        "title": "Millwright",
+        "clue": "In a workshop, a person in safety glasses checks the alignment of a stopped, isolated pump and motor assembly.",
+        "pathwayId": "route-millwright",
+        "src": "/images/discover/work-millwright.webp",
+        "width": 752,
+        "height": 1344
+      },
+      "preserve": [
+        "number",
+        "roleId",
+        "shared URL",
+        "title",
+        "clue",
+        "primary organization",
+        "primary pathway and job evidence",
+        "artwork"
+      ],
+      "additionalCompanyLinks": [
+        {
+          "companyProposalId": "CGY-117",
+          "company": "Westpower",
+          "exampleSlug": "westpower-pump-performance",
+          "roleId": "work-millwright",
+          "pathwayKey": "route-millwright",
+          "copy": "Inspect, align and maintain rotating equipment.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://westpowergroup.com/",
+            "https://westpowergroup.com/contact-us/"
+          ]
+        }
+      ],
+      "artworkDecision": "Reuse current occupation image; no redundant card or new portrait required."
+    },
+    {
+      "id": "OCT20-EXTEND-56",
+      "version": 1,
+      "decision": "pending",
+      "action": "extend existing occupation",
+      "existingCard": {
+        "number": "56",
+        "roleId": "work-power",
+        "organizationId": "eguana-technologies",
+        "title": "Power electronics engineer",
+        "clue": "At an electronics laboratory bench, a person in safety glasses compares a circuit diagram with a closed power-conversion module.",
+        "pathwayId": "route-electrical",
+        "src": "/images/discover/work-power.webp",
+        "width": 752,
+        "height": 1344
+      },
+      "preserve": [
+        "number",
+        "roleId",
+        "shared URL",
+        "title",
+        "clue",
+        "primary organization",
+        "primary pathway and job evidence",
+        "artwork"
+      ],
+      "additionalCompanyLinks": [
+        {
+          "companyProposalId": "CGY-114",
+          "company": "SFC Energy Canada / former Simark Controls",
+          "exampleSlug": "sfc-fuel-cell-battery-support",
+          "roleId": "work-power",
+          "pathwayKey": "route-electrical",
+          "copy": "Consider how conversion, storage and loads fit together.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://www.sfc-energy.ca/",
+            "https://www.sfc-energy.ca/products/energy/"
+          ]
+        },
+        {
+          "companyProposalId": "CGY-116",
+          "company": "SkyFire Energy",
+          "exampleSlug": "skyfire-solar-output",
+          "roleId": "work-power",
+          "pathwayKey": "route-electrical",
+          "copy": "Assess electrical-system requirements and conversion constraints.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://skyfireenergy.com/",
+            "https://skyfireenergy.com/contact-us/"
+          ]
+        }
+      ],
+      "artworkDecision": "Reuse current occupation image; no redundant card or new portrait required."
+    },
+    {
+      "id": "OCT20-EXTEND-68",
+      "version": 1,
+      "decision": "pending",
+      "action": "extend existing occupation",
+      "existingCard": {
+        "roleId": "work-electrician",
+        "organizationId": "ptw-panel-shop",
+        "title": "Electrician",
+        "clue": "A person checks wire connections in an unpowered cabinet against a circuit drawing and an inspection list.",
+        "pathwayId": "oct19-route-electrician",
+        "number": "68",
+        "src": "/images/discover/work-electrician.webp",
+        "width": 752,
+        "height": 1344
+      },
+      "preserve": [
+        "number",
+        "roleId",
+        "shared URL",
+        "title",
+        "clue",
+        "primary organization",
+        "primary pathway and job evidence",
+        "artwork"
+      ],
+      "additionalCompanyLinks": [
+        {
+          "companyProposalId": "CGY-116",
+          "company": "SkyFire Energy",
+          "exampleSlug": "skyfire-solar-output",
+          "roleId": "work-electrician",
+          "pathwayKey": "route-electrician",
+          "copy": "Install and maintain electrical systems through the appropriate qualified trade route.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://skyfireenergy.com/",
+            "https://skyfireenergy.com/contact-us/"
+          ]
+        }
+      ],
+      "artworkDecision": "Reuse current occupation image; no redundant card or new portrait required."
+    }
+  ],
+  "newOccupationProposals": [
+    {
+      "id": "OCT20-DISCOVER-plant-biotechnology",
+      "version": 1,
+      "decision": "pending",
+      "action": "new occupation proposal",
+      "roleId": "new-plant-biotechnology",
+      "number": null,
+      "permanentNumberPolicy": "Allocate only during authorized implementation; preserve existing 01–70.",
+      "title": "Plant biotechnology scientist",
+      "clue": "In a growth room, a person compares labelled seedling trays with a notebook showing several watering groups.",
+      "roleCopyRef": "role-library.json#/proposedNew/new-plant-biotechnology",
+      "companyLinks": [
+        {
+          "companyProposalId": "CGY-103",
+          "company": "AgGene",
+          "exampleSlug": "aggene-crop-traits",
+          "roleId": "new-plant-biotechnology",
+          "pathwayKey": "route-biology",
+          "copy": "Investigate plant traits with controlled biological comparisons.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://aggene.ca/",
+            "https://uiqcalgary.com/blog/aggene/"
+          ]
+        }
+      ],
+      "illustrationBrief": "In a growth room, a person compares labelled seedling trays with a notebook showing several watering groups. Portrait 752×1344 graphic-novel screenprint; one clear occupational action, coherent anatomy, title band consistent with the current Discover template. No company logo or invented qualifications.",
+      "alt": "In a growth room, a person compares labelled seedling trays with a notebook showing several watering groups.",
+      "illustrationStatus": "brief only; no artwork generated"
+    },
+    {
+      "id": "OCT20-DISCOVER-science-education",
+      "version": 1,
+      "decision": "pending",
+      "action": "new occupation proposal",
+      "roleId": "new-science-education",
+      "number": null,
+      "permanentNumberPolicy": "Allocate only during authorized implementation; preserve existing 01–70.",
+      "title": "Science educator",
+      "clue": "At a demonstration table, a person uses a cutaway model and a sketch to help a small group compare what they observe.",
+      "roleCopyRef": "role-library.json#/proposedNew/new-science-education",
+      "companyLinks": [
+        {
+          "companyProposalId": "CGY-109",
+          "company": "CAWST",
+          "exampleSlug": "cawst-biosand-learning",
+          "roleId": "new-science-education",
+          "pathwayKey": "route-environment",
+          "copy": "Translate technical water-treatment knowledge into learning and practitioner support.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://www.cawst.org/",
+            "https://www.cawst.org/resources",
+            "https://washresources.cawst.org/en/topics/69af3832/bsf"
+          ]
+        },
+        {
+          "companyProposalId": "CGY-120",
+          "company": "Calgary Horticultural Society",
+          "exampleSlug": "calhort-soil-and-water",
+          "roleId": "new-science-education",
+          "pathwayKey": "route-horticulture-diploma",
+          "copy": "Explain how soil and moisture observations inform gardening decisions.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://www.calhort.org/resources/gardening/soil-tips/"
+          ]
+        }
+      ],
+      "illustrationBrief": "At a demonstration table, a person uses a cutaway model and a sketch to help a small group compare what they observe. Portrait 752×1344 graphic-novel screenprint; one clear occupational action, coherent anatomy, title band consistent with the current Discover template. No company logo or invented qualifications.",
+      "alt": "At a demonstration table, a person uses a cutaway model and a sketch to help a small group compare what they observe.",
+      "illustrationStatus": "brief only; no artwork generated"
+    },
+    {
+      "id": "OCT20-DISCOVER-sport-physiology",
+      "version": 1,
+      "decision": "pending",
+      "action": "new occupation proposal",
+      "roleId": "new-sport-physiology",
+      "number": null,
+      "permanentNumberPolicy": "Allocate only during authorized implementation; preserve existing 01–70.",
+      "title": "Sport physiologist",
+      "clue": "Beside exercise-testing equipment, a person compares a recovery graph with notes while talking with an athlete.",
+      "roleCopyRef": "role-library.json#/proposedNew/new-sport-physiology",
+      "companyLinks": [
+        {
+          "companyProposalId": "CGY-110",
+          "company": "Canadian Sport Institute Alberta",
+          "exampleSlug": "csi-alberta-training-evidence",
+          "roleId": "new-sport-physiology",
+          "pathwayKey": "route-kinesiology",
+          "copy": "Use physiological measurements to interpret training responses with athletes and coaches.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://csialberta.ca/en/sport-science-solutions/",
+            "https://csialberta.ca/en/contact-us/",
+            "https://csialberta.ca/en/sport-science-solutions/"
+          ]
+        }
+      ],
+      "illustrationBrief": "Beside exercise-testing equipment, a person compares a recovery graph with notes while talking with an athlete. Portrait 752×1344 graphic-novel screenprint; one clear occupational action, coherent anatomy, title band consistent with the current Discover template. No company logo or invented qualifications.",
+      "alt": "Beside exercise-testing equipment, a person compares a recovery graph with notes while talking with an athlete.",
+      "illustrationStatus": "brief only; no artwork generated"
+    },
+    {
+      "id": "OCT20-DISCOVER-retail-operations",
+      "version": 1,
+      "decision": "pending",
+      "action": "new occupation proposal",
+      "roleId": "new-retail-operations",
+      "number": null,
+      "permanentNumberPolicy": "Allocate only during authorized implementation; preserve existing 01–70.",
+      "title": "Retail operations coordinator",
+      "clue": "In a store office, a person compares a floor plan, a staff schedule and a customer-service checklist.",
+      "roleCopyRef": "role-library.json#/proposedNew/new-retail-operations",
+      "companyLinks": [
+        {
+          "companyProposalId": "CGY-131",
+          "company": "Calgary Co-op",
+          "exampleSlug": "calgary-coop-member-value",
+          "roleId": "new-retail-operations",
+          "pathwayKey": "route-management",
+          "copy": "Connect service choices with member benefits and operating resources.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://www.calgarycoop.com/about-us/annual-reports/",
+            "https://www.calgarycoop.com/blog/calgary-co-op-shares-2025-financial-results-annual-report-and-2026-director-election-results/"
+          ]
+        }
+      ],
+      "illustrationBrief": "In a store office, a person compares a floor plan, a staff schedule and a customer-service checklist. Portrait 752×1344 graphic-novel screenprint; one clear occupational action, coherent anatomy, title band consistent with the current Discover template. No company logo or invented qualifications.",
+      "alt": "In a store office, a person compares a floor plan, a staff schedule and a customer-service checklist.",
+      "illustrationStatus": "brief only; no artwork generated"
+    },
+    {
+      "id": "OCT20-DISCOVER-financial-analysis",
+      "version": 1,
+      "decision": "pending",
+      "action": "new occupation proposal",
+      "roleId": "new-financial-analysis",
+      "number": null,
+      "permanentNumberPolicy": "Allocate only during authorized implementation; preserve existing 01–70.",
+      "title": "Financial analyst",
+      "clue": "At a desk, a person compares two period columns, highlights differences and writes notes beside a simple chart.",
+      "roleCopyRef": "role-library.json#/proposedNew/new-financial-analysis",
+      "companyLinks": [
+        {
+          "companyProposalId": "CGY-133",
+          "company": "Olympia Financial Group",
+          "exampleSlug": "olympia-revenue-and-profit",
+          "roleId": "new-financial-analysis",
+          "pathwayKey": "route-accounting",
+          "copy": "Compare revenue, expenses and results across consistent reporting periods.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://www.olympiafinancial.com/financial-information-shareholder-meeting-materials",
+            "https://s202.q4cdn.com/266937384/files/doc_financials/2025/ar/Olympia-Financial-Group-2025-Annual-Report-FINAL.pdf"
+          ]
+        },
+        {
+          "companyProposalId": "CGY-134",
+          "company": "Boardwalk REIT",
+          "exampleSlug": "boardwalk-housing-operating-costs",
+          "roleId": "new-financial-analysis",
+          "pathwayKey": "route-accounting",
+          "copy": "Analyze housing-operation measures without confusing property and group results.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://www.bwalk.com/",
+            "https://www.bwalk.com/en-ca/apartments-for-rent-in-calgary",
+            "https://www.bwalk.com/en-ca/investors/financial-reports",
+            "https://www.bwalk.com/hubfs/2025%20Boardwalk%20REIT%20Annual%20Report-FINAL.pdf"
+          ]
+        }
+      ],
+      "illustrationBrief": "At a desk, a person compares two period columns, highlights differences and writes notes beside a simple chart. Portrait 752×1344 graphic-novel screenprint; one clear occupational action, coherent anatomy, title band consistent with the current Discover template. No company logo or invented qualifications.",
+      "alt": "At a desk, a person compares two period columns, highlights differences and writes notes beside a simple chart.",
+      "illustrationStatus": "brief only; no artwork generated"
+    },
+    {
+      "id": "OCT20-DISCOVER-event-operations",
+      "version": 1,
+      "decision": "pending",
+      "action": "new occupation proposal",
+      "roleId": "new-event-operations",
+      "number": null,
+      "permanentNumberPolicy": "Allocate only during authorized implementation; preserve existing 01–70.",
+      "title": "Event operations coordinator",
+      "clue": "A person at an event office checks a site map, a timetable and several team checklists before the gates open.",
+      "roleCopyRef": "role-library.json#/proposedNew/new-event-operations",
+      "companyLinks": [
+        {
+          "companyProposalId": "CGY-135",
+          "company": "Calgary Stampede",
+          "exampleSlug": "stampede-event-sustainability",
+          "roleId": "new-event-operations",
+          "pathwayKey": "route-management",
+          "copy": "Coordinate visitor experience, resources and delivery constraints.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://www.calgarystampede.com/",
+            "https://corporate.calgarystampede.com/"
+          ]
+        }
+      ],
+      "illustrationBrief": "A person at an event office checks a site map, a timetable and several team checklists before the gates open. Portrait 752×1344 graphic-novel screenprint; one clear occupational action, coherent anatomy, title band consistent with the current Discover template. No company logo or invented qualifications.",
+      "alt": "A person at an event office checks a site map, a timetable and several team checklists before the gates open.",
+      "illustrationStatus": "brief only; no artwork generated"
+    },
+    {
+      "id": "OCT20-DISCOVER-ecommerce-operations",
+      "version": 1,
+      "decision": "pending",
+      "action": "new occupation proposal",
+      "roleId": "new-ecommerce-operations",
+      "number": null,
+      "permanentNumberPolicy": "Allocate only during authorized implementation; preserve existing 01–70.",
+      "title": "Ecommerce operations coordinator",
+      "clue": "At a packing-area desk, a person compares a recurring delivery calendar with a one-time order and a customer-options screen.",
+      "roleCopyRef": "role-library.json#/proposedNew/new-ecommerce-operations",
+      "companyLinks": [
+        {
+          "companyProposalId": "CGY-136",
+          "company": "Monogram Coffee",
+          "exampleSlug": "monogram-coffee-subscriptions",
+          "roleId": "new-ecommerce-operations",
+          "pathwayKey": "route-marketing",
+          "copy": "Connect subscription choices with order and fulfilment needs.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://monogramcoffee.com/",
+            "https://monogramcoffee.com/collections/subscriptions"
+          ]
+        }
+      ],
+      "illustrationBrief": "At a packing-area desk, a person compares a recurring delivery calendar with a one-time order and a customer-options screen. Portrait 752×1344 graphic-novel screenprint; one clear occupational action, coherent anatomy, title band consistent with the current Discover template. No company logo or invented qualifications.",
+      "alt": "At a packing-area desk, a person compares a recurring delivery calendar with a one-time order and a customer-options screen.",
+      "illustrationStatus": "brief only; no artwork generated"
+    },
+    {
+      "id": "OCT20-DISCOVER-franchise-support",
+      "version": 1,
+      "decision": "pending",
+      "action": "new occupation proposal",
+      "roleId": "new-franchise-support",
+      "number": null,
+      "permanentNumberPolicy": "Allocate only during authorized implementation; preserve existing 01–70.",
+      "title": "Franchise support coordinator",
+      "clue": "A person and a coffeehouse operator compare a training checklist, a shop plan and a shared operating guide.",
+      "roleCopyRef": "role-library.json#/proposedNew/new-franchise-support",
+      "companyLinks": [
+        {
+          "companyProposalId": "CGY-137",
+          "company": "Good Earth Coffeehouse",
+          "exampleSlug": "good-earth-franchise-support",
+          "roleId": "new-franchise-support",
+          "pathwayKey": "route-management",
+          "copy": "Coordinate training, systems and operating support for local partners.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://goodearthcoffeehouse.com/",
+            "https://goodearthcoffeehouse.com/franchising/",
+            "https://goodearthcoffeehouse.com/location/11th-street-sw-beltline/"
+          ]
+        }
+      ],
+      "illustrationBrief": "A person and a coffeehouse operator compare a training checklist, a shop plan and a shared operating guide. Portrait 752×1344 graphic-novel screenprint; one clear occupational action, coherent anatomy, title band consistent with the current Discover template. No company logo or invented qualifications.",
+      "alt": "A person and a coffeehouse operator compare a training checklist, a shop plan and a shared operating guide.",
+      "illustrationStatus": "brief only; no artwork generated"
+    },
+    {
+      "id": "OCT20-DISCOVER-procurement",
+      "version": 1,
+      "decision": "pending",
+      "action": "new occupation proposal",
+      "roleId": "new-procurement",
+      "number": null,
+      "permanentNumberPolicy": "Allocate only during authorized implementation; preserve existing 01–70.",
+      "title": "Procurement specialist",
+      "clue": "At a warehouse office, a person compares product samples, supplier information and an inventory list.",
+      "roleCopyRef": "role-library.json#/proposedNew/new-procurement",
+      "companyLinks": [
+        {
+          "companyProposalId": "CGY-139",
+          "company": "Eight Ounce Coffee",
+          "exampleSlug": "eight-ounce-wholesale-retail",
+          "roleId": "new-procurement",
+          "pathwayKey": "route-logistics",
+          "copy": "Connect product selection with customer needs and supply constraints.",
+          "evidenceKind": "work-area interpretation",
+          "sourceUrls": [
+            "https://eightouncecoffee.ca/",
+            "https://eightouncecoffee.ca/pages/about-eight-ounce-coffee"
+          ]
+        }
+      ],
+      "illustrationBrief": "At a warehouse office, a person compares product samples, supplier information and an inventory list. Portrait 752×1344 graphic-novel screenprint; one clear occupational action, coherent anatomy, title band consistent with the current Discover template. No company logo or invented qualifications.",
+      "alt": "At a warehouse office, a person compares product samples, supplier information and an inventory list.",
+      "illustrationStatus": "brief only; no artwork generated"
+    }
+  ],
+  "proposedCardCountAfterApproval": 79,
+  "scopeNote": "Every example accounted for. Context-specific pathways are additional links; never replace a prior employer job or route silently. Alias work-software connects to canonical card 03 software-data. New numbers unallocated. All source links pending review."
+}

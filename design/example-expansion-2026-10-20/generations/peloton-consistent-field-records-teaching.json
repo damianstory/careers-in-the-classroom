@@ -1,0 +1,14 @@
+{
+  "id": "peloton-consistent-field-records-teaching",
+  "type": "teaching",
+  "exampleSlug": "peloton-consistent-field-records",
+  "prompt": "Create one landscape16:9 teaching diagram in graphic-novel limited-colour screenprint: forest green contours, ivory paper, sage, orange and blue halftone. Four simple vignettes 1–4 joined left to right by arrows. 1: a fictional technician beside a closed generic oil/gas wellhead records a pressure gauge reading on a clipboard from a safe distance. 2: an office data specialist checks record fields and flags one orange mismatch in a pressure-unit dropdown (use abstract lines and gauge icons, no text or values). 3: a simple schematic links SITE record rows to several MEASUREMENT record rows by a shared identifying coloured key. 4: reviewed consistent records on a screen with a checkmark. NO river, water samples, chemical vials, water-quality testing or fitness bikes. No company-specific proprietary schema claimed. No real names or numbers, only 1–4 markers. Coherent hands, fictional people and generic equipment.",
+  "original": "design/example-expansion-2026-10-20/peloton-consistent-field-records-teaching.png",
+  "destination": "public/images/story-diagrams/peloton-consistent-field-records-graphic-novel.webp",
+  "aspect": "16:9",
+  "status": "generated",
+  "version": 2,
+  "correctionReason": "water-sampling diagram did not represent the sourced work",
+  "generatedSource": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-4ebe4b63-dafc-47ba-8bc4-f644ed649315.png",
+  "tool": "built-in image_gen"
+}

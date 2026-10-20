@@ -43,7 +43,7 @@ describe("19 October approved implementation", () => {
     for (const before of numbering.previousNumbersPreserved) {
       expect(cards.find(c => c.number === before.number)?.role.id).toBe(before.roleId);
     }
-    expect(cards.filter(c => Number(c.number) >= 58).map(c => c.number)).toEqual(Array.from({ length: 13 }, (_, i) => String(58 + i)));
+    expect(cards.filter(c => Number(c.number) >= 58 && Number(c.number) <= 70).map(c => c.number)).toEqual(Array.from({ length: 13 }, (_, i) => String(58 + i)));
     for (const r of batch) {
       expect(existsSync(`public/images/examples/${r.example.slug}-graphic-novel.webp`)).toBe(true);
       expect(existsSync(`public${r.diagram.image}`)).toBe(true);

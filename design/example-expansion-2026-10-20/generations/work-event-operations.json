@@ -1,0 +1,14 @@
+{
+  "id": "work-event-operations",
+  "type": "discover",
+  "roleId": "work-event-operations",
+  "prompt": "Create ONE tall portrait 752:1344 occupation guessing card. The TOP 26 percent of the canvas is a solid forest-green rectangle with large ivory uppercase condensed lettering, EXACT title: \"EVENT OPERATIONS COORDINATOR\". Keep every letter inside the top 26 percent; absolutely no text elsewhere. The lower 74 percent depicts: A person at an event office checks a site map, a timetable and several team checklists before the gates open. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene with a distinct fictional adult actively doing this work. Equipment and spatial layout must match the clue. Do not crop hands or invent extra arms. Not a landscape crop. Scene fills width below title band. No bottom caption, no logo.",
+  "original": "design/example-expansion-2026-10-20/work-event-operations.png",
+  "destination": "public/images/discover/work-event-operations.webp",
+  "aspect": "752:1344",
+  "status": "generated",
+  "number": "76",
+  "generatedSource": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-67b0a1e9-2a94-4335-93b8-9f2f13326d28.png",
+  "tool": "built-in image_gen",
+  "elapsedSeconds": 22
+}

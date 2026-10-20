@@ -1,0 +1,13 @@
+{
+  "id": "csi-alberta-training-evidence-story",
+  "type": "story",
+  "exampleSlug": "csi-alberta-training-evidence",
+  "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional sport physiologist and athlete discuss a simple recovery graph beside stationary exercise-testing equipment. Context: How can measurements help decide whether a training plan is working? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+  "original": "design/example-expansion-2026-10-20/csi-alberta-training-evidence-story.png",
+  "destination": "public/images/examples/csi-alberta-training-evidence-graphic-novel.webp",
+  "aspect": "16:9",
+  "status": "generated",
+  "generatedSource": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-429079ad-d579-47b6-b008-f08f27b4dcaf.png",
+  "tool": "built-in image_gen",
+  "elapsedSeconds": 19
+}

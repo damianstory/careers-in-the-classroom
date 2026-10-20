@@ -1,0 +1,15 @@
+{
+  "id": "itres-beyond-visible-colours-teaching",
+  "type": "teaching",
+  "exampleSlug": "itres-beyond-visible-colours",
+  "prompt": "Edit this illustration with one precise scientific correction in PANEL 1 ONLY: the three orange, green and blue rays between the field and the aircraft must have arrowheads ONLY at their upper ends pointing UP into the sensor. Remove the three downward-pointing arrowheads at their lower ends near the field, leaving simple flat ray ends at the field. This is passive imaging: reflected sunlight travels FROM the ground UP to the sensor; the aircraft does not emit these rays. Keep the upper upward arrowheads. Do not change any other panels, numbering, colours, layout, characters or style.",
+  "original": "design/example-expansion-2026-10-20/itres-beyond-visible-colours-teaching.png",
+  "destination": "public/images/story-diagrams/itres-beyond-visible-colours-graphic-novel.webp",
+  "aspect": "16:9",
+  "status": "generated",
+  "correctionReason": "Passive light travels from field to sensor only",
+  "version": 3,
+  "generatedSource": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-cfd6e857-4b16-4b27-9aaf-7dba8002fd89.png",
+  "tool": "built-in image_gen",
+  "reference": "/Users/damianmatheson/Desktop/Claude Code/CitC/design/example-expansion-2026-10-20/itres-beyond-visible-colours-teaching.v2.png"
+}

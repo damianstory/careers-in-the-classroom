@@ -1,0 +1,13 @@
+{
+  "id": "cawst-biosand-learning-teaching",
+  "type": "teaching",
+  "exampleSlug": "cawst-biosand-learning",
+  "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Conceptual cutaway of one biosand filter: inlet reservoir above a perforated diffuser; standing water above a thin biologically active surface zone; deep fine-sand bed above two gravel layers. Flow arrows point down through the bed, then along an outlet tube that rises outside the body to the standing-water level. Small numbered markers 1–4, no dimensions, no removal percentages, no drinking person. Keep a covered collection vessel below the outlet. Depict layer ordering accurately. The conceptual steps supplied by the UI are: Start with the water: different problems require different treatment decisions. | Understand the filter: water moves through a diffuser, a biologically active zone near the sand surface, a sand bed and supporting gravel before reaching the outlet. | Teach operation: a device’s performance depends on appropriate use and maintenance. | Verify the outcome: clearer-looking water is not proof that it is safe to drink. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+  "original": "design/example-expansion-2026-10-20/cawst-biosand-learning-teaching.png",
+  "destination": "public/images/story-diagrams/cawst-biosand-learning-graphic-novel.webp",
+  "aspect": "16:9",
+  "status": "generated",
+  "generatedSource": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-28fdd63d-ac50-465a-8fb0-fd5c43eccda7.png",
+  "tool": "built-in image_gen",
+  "elapsedSeconds": 180
+}

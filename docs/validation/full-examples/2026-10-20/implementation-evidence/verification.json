@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-20",
+  "unitTests": {
+    "passed": 257,
+    "log": "/tmp/citc-oct20-tests.log"
+  },
+  "focusedEndToEnd": {
+    "passed": 82,
+    "initialRun": {
+      "passed": 80,
+      "failed": 2,
+      "log": "/tmp/citc-oct20-e2e.log"
+    },
+    "targetedRerun": {
+      "passed": 2,
+      "log": "/tmp/citc-oct20-e2e-courses.log"
+    },
+    "failureResolution": "Updated two test expectations to match newly populated course content and the actual example link question."
+  },
+  "build": "passed via Playwright production webServer build",
+  "typecheck": {
+    "status": "passed",
+    "log": "/tmp/citc-oct20-typecheck.log"
+  },
+  "lint": {
+    "status": "passed",
+    "log": "/tmp/citc-oct20-final-lint.log"
+  },
+  "gitDiffCheck": "passed",
+  "publication": "not performed",
+  "localReviewUrl": "http://localhost:3311/connections"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "calhort-soil-and-water-teaching",
+  "type": "teaching",
+  "exampleSlug": "calhort-soil-and-water",
+  "prompt": "ONE landscape16:9 graphic-novel limited-colour screenprint educational diagram, dark forest-green ink, ivory paper, sage, blue water arrows and sparse orange highlights. Compare TWO IDENTICAL transparent cylindrical soil columns side by side at the SAME height and width. Both have the SAME small seedling species, size and age. Left contains coarse sandy soil, right contains finer soil. Identical graduated cups above contain the SAME quantity of water; down arrows show equal addition. Below, drainage arrows and blue collection puddles show more rapid drainage on left and more water retained in small pores on right. Include small magnified soil-pore circular insets. Numbered markers1-4 connect equal input, soils, root-zone moisture, drainage comparison. No isolated floating hands, no people, no unequal watering containers, no words, exact values or percentages. Clear conceptual comparison, not a claim that all real soils or plants behave identically.",
+  "original": "design/example-expansion-2026-10-20/calhort-soil-and-water-teaching.png",
+  "destination": "public/images/story-diagrams/calhort-soil-and-water-graphic-novel.webp",
+  "aspect": "16:9",
+  "status": "generated",
+  "correctionReason": "equal comparison was obscured by different plants",
+  "version": 2,
+  "generatedSource": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-37f0e3e6-b445-4a02-922e-b308b791514b.png",
+  "tool": "built-in image_gen"
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "calgary-coop-member-value-teaching",
+    "type": "teaching",
+    "exampleSlug": "calgary-coop-member-value",
+    "prompt": "Create one landscape16:9 teaching illustration in limited-colour graphic-novel screenprint. Forest green outlines, warm ivory paper, sage, orange and slate-blue halftone. Four labelled-number-only steps 1\u20134, connected by directional arrows: retail activity in a generic Canadian grocery store; operating-cost icons for staffing, power and transport; a remaining pool of plain coins; divide those remaining coins into THREE distinct destinations, customer/member benefits (person with shopping bag), reinvestment (store improvements), reserves (safe). No currency symbols at all: no pound, dollar, euro, no letters or text, no values or allocation percentages. This is a hypothetical surplus-allocation model, never equate gross sales with surplus. Readable at classroom size, coherent fictional adults and attached hands.",
+    "original": "design/example-expansion-2026-10-20/calgary-coop-member-value-teaching.png",
+    "destination": "public/images/story-diagrams/calgary-coop-member-value-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending",
+    "version": 2,
+    "correctionReason": "non-Canadian currency symbol removed"
+  },
+  {
+    "id": "peloton-consistent-field-records-story",
+    "type": "story",
+    "exampleSlug": "peloton-consistent-field-records",
+    "prompt": "Create one landscape16:9 editorial graphic-novel limited-colour screenprint illustration. A fictional software/data specialist at an office workstation compares a field measurement sheet with invented WELL-SITE records on a monitor. Monitor shows related records for generic energy wells: timestamp, site identifier, pressure gauge icons and units, with a small location map, no legible values or text. A distant window view of Calgary buildings provides setting; no fitness equipment, river, water sampling, beakers or environmental-test scene. Show meaningful record-checking work: one hand points to a row, the other rests on the notebook. Forest green contour ink, ivory paper, sage shadows, orange and blue accents, halftone, coherent anatomy, mature adult, no logos, captions, titles or text.",
+    "original": "design/example-expansion-2026-10-20/peloton-consistent-field-records-story.png",
+    "destination": "public/images/examples/peloton-consistent-field-records-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending",
+    "version": 2,
+    "correctionReason": "field-data illustration corrected to the energy-well context"
+  },
+  {
+    "id": "peloton-consistent-field-records-teaching",
+    "type": "teaching",
+    "exampleSlug": "peloton-consistent-field-records",
+    "prompt": "Create one landscape16:9 teaching diagram in graphic-novel limited-colour screenprint: forest green contours, ivory paper, sage, orange and blue halftone. Four simple vignettes 1\u20134 joined left to right by arrows. 1: a fictional technician beside a closed generic oil/gas wellhead records a pressure gauge reading on a clipboard from a safe distance. 2: an office data specialist checks record fields and flags one orange mismatch in a pressure-unit dropdown (use abstract lines and gauge icons, no text or values). 3: a simple schematic links SITE record rows to several MEASUREMENT record rows by a shared identifying coloured key. 4: reviewed consistent records on a screen with a checkmark. NO river, water samples, chemical vials, water-quality testing or fitness bikes. No company-specific proprietary schema claimed. No real names or numbers, only 1\u20134 markers. Coherent hands, fictional people and generic equipment.",
+    "original": "design/example-expansion-2026-10-20/peloton-consistent-field-records-teaching.png",
+    "destination": "public/images/story-diagrams/peloton-consistent-field-records-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending",
+    "version": 2,
+    "correctionReason": "water-sampling diagram did not represent the sourced work"
+  }
+]

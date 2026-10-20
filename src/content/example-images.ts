@@ -1,3 +1,33 @@
+import october20Image0 from "../../public/images/examples/providence-rna-delivery-graphic-novel.webp";
+import october20Image1 from "../../public/images/examples/nimble-small-intestine-sampling-graphic-novel.webp";
+import october20Image2 from "../../public/images/examples/aggene-crop-traits-graphic-novel.webp";
+import october20Image3 from "../../public/images/examples/agat-trustworthy-water-results-graphic-novel.webp";
+import october20Image4 from "../../public/images/examples/solvet-consistent-batches-graphic-novel.webp";
+import october20Image5 from "../../public/images/examples/calgary-wildlife-release-evidence-graphic-novel.webp";
+import october20Image6 from "../../public/images/examples/cawst-biosand-learning-graphic-novel.webp";
+import october20Image7 from "../../public/images/examples/csi-alberta-training-evidence-graphic-novel.webp";
+import october20Image8 from "../../public/images/examples/itres-beyond-visible-colours-graphic-novel.webp";
+import october20Image9 from "../../public/images/examples/microhard-remote-radio-data-graphic-novel.webp";
+import october20Image10 from "../../public/images/examples/sfc-fuel-cell-battery-support-graphic-novel.webp";
+import october20Image11 from "../../public/images/examples/skyfire-solar-output-graphic-novel.webp";
+import october20Image12 from "../../public/images/examples/westpower-pump-performance-graphic-novel.webp";
+import october20Image13 from "../../public/images/examples/engineered-power-demanding-batteries-graphic-novel.webp";
+import october20Image14 from "../../public/images/examples/frog3d-digital-to-physical-graphic-novel.webp";
+import october20Image15 from "../../public/images/examples/calhort-soil-and-water-graphic-novel.webp";
+import october20Image16 from "../../public/images/examples/ez-robot-sensor-decisions-graphic-novel.webp";
+import october20Image17 from "../../public/images/examples/clio-linked-client-records-graphic-novel.webp";
+import october20Image18 from "../../public/images/examples/absorb-learning-rules-graphic-novel.webp";
+import october20Image19 from "../../public/images/examples/userful-visual-information-routing-graphic-novel.webp";
+import october20Image20 from "../../public/images/examples/peloton-consistent-field-records-graphic-novel.webp";
+import october20Image21 from "../../public/images/examples/arcobi-comparing-power-data-graphic-novel.webp";
+import october20Image22 from "../../public/images/examples/athennian-company-relationships-graphic-novel.webp";
+import october20Image23 from "../../public/images/examples/calgary-coop-member-value-graphic-novel.webp";
+import october20Image24 from "../../public/images/examples/olympia-revenue-and-profit-graphic-novel.webp";
+import october20Image25 from "../../public/images/examples/boardwalk-housing-operating-costs-graphic-novel.webp";
+import october20Image26 from "../../public/images/examples/stampede-event-sustainability-graphic-novel.webp";
+import october20Image27 from "../../public/images/examples/monogram-coffee-subscriptions-graphic-novel.webp";
+import october20Image28 from "../../public/images/examples/good-earth-franchise-support-graphic-novel.webp";
+import october20Image29 from "../../public/images/examples/eight-ounce-wholesale-retail-graphic-novel.webp";
 import october19Image0 from "../../public/images/examples/clynch-prosthetics-graphic-novel.webp";
 import october19Image1 from "../../public/images/examples/westech-industrial-graphic-novel.webp";
 import october19Image2 from "../../public/images/examples/alberta-cheese-graphic-novel.webp";
@@ -64,6 +94,36 @@ import lithium from "../../public/images/examples/e3-lithium-graphic-novel.webp"
 // Fictional editorial scenes, not evidence of company staff, equipment or facilities.
 // Prompts and provenance: design/example-illustrations-2026-10-07/.
 export const exampleImages: Partial<Record<string, { src: StaticImageData; alt: string }>> = {
+  "providence-rna-delivery": { src: october20Image0, alt: "Graphic-novel illustration. A fictional scientist compares labelled sample vials and a simplified delivery sketch at a clean laboratory bench; a colleague records results." },
+  "nimble-small-intestine-sampling": { src: october20Image1, alt: "Graphic-novel illustration. A fictional device designer and laboratory analyst compare a generic sealed sampling capsule with a digestive-tract diagram, without a patient procedure." },
+  "aggene-crop-traits": { src: october20Image2, alt: "Graphic-novel illustration. A fictional plant researcher compares labelled trays of seedlings in a growth room with a notebook showing controlled watering groups." },
+  "agat-trustworthy-water-results": { src: october20Image3, alt: "Graphic-novel illustration. A fictional analyst compares labelled water vials, a reference vial and a measurement log at a laboratory bench." },
+  "solvet-consistent-batches": { src: october20Image4, alt: "Graphic-novel illustration. Fictional production and quality workers compare sealed generic containers with a batch record in a clean manufacturing workspace." },
+  "calgary-wildlife-release-evidence": { src: october20Image5, alt: "Graphic-novel illustration. A fictional wildlife-care worker observes an owl from outside a spacious rehabilitation enclosure and records behaviour without handling it." },
+  "cawst-biosand-learning": { src: october20Image6, alt: "Graphic-novel illustration. A fictional technical educator discusses a cutaway filter model with adult learners around a table; no one drinks the demonstration water." },
+  "csi-alberta-training-evidence": { src: october20Image7, alt: "Graphic-novel illustration. A fictional sport physiologist and athlete discuss a simple recovery graph beside stationary exercise-testing equipment." },
+  "itres-beyond-visible-colours": { src: october20Image8, alt: "Graphic-novel illustration. A fictional sensor technician checks an optical instrument while a colleague compares a multi-band image with a calibration chart." },
+  "microhard-remote-radio-data": { src: october20Image9, alt: "Graphic-novel illustration. A fictional electronics worker tests a radio module beside a tabletop terrain model and a receiving station." },
+  "sfc-fuel-cell-battery-support": { src: october20Image10, alt: "Graphic-novel illustration. A fictional integration technician examines a generic fuel-cell power cabinet and battery beside a remote monitoring unit." },
+  "skyfire-solar-output": { src: october20Image11, alt: "Graphic-novel illustration. A fictional solar designer compares a roof shading sketch with a generic panel layout from a safe ground-level workspace." },
+  "westpower-pump-performance": { src: october20Image12, alt: "Graphic-novel illustration. A fictional millwright and mechanical technologist inspect an isolated pump assembly on a workshop stand." },
+  "engineered-power-demanding-batteries": { src: october20Image13, alt: "Graphic-novel illustration. A fictional materials worker reviews sealed industrial cells and an environmental-test record without exposing cell contents." },
+  "frog3d-digital-to-physical": { src: october20Image14, alt: "Graphic-novel illustration. A fictional fabrication worker compares a digital curved profile with a finished generic foam form and measuring tool." },
+  "calhort-soil-and-water": { src: october20Image15, alt: "Graphic-novel illustration. A fictional horticulture educator compares two soil samples and plant roots with a learner at a garden workbench." },
+  "ez-robot-sensor-decisions": { src: october20Image16, alt: "Graphic-novel illustration. A fictional robotics developer tests a small wheeled educational robot in a marked tabletop obstacle area, hands safely away from movement." },
+  "clio-linked-client-records": { src: october20Image17, alt: "Graphic-novel illustration. A fictional software developer sketches three linked record tables beside a screen containing invented matter identifiers." },
+  "absorb-learning-rules": { src: october20Image18, alt: "Graphic-novel illustration. A fictional developer and learning administrator compare a simple assignment rule with several invented learner test cases." },
+  "userful-visual-information-routing": { src: october20Image19, alt: "Graphic-novel illustration. A fictional software-support worker compares a small display-layout plan with a wall of generic non-sensitive screens." },
+  "peloton-consistent-field-records": { src: october20Image20, alt: "Graphic-novel illustration. A fictional data developer compares a field measurement sheet with a screen showing invented site records." },
+  "arcobi-comparing-power-data": { src: october20Image21, alt: "Graphic-novel illustration. A fictional data specialist compares timestamped market records and a simple labelled chart at a workstation." },
+  "athennian-company-relationships": { src: october20Image22, alt: "Graphic-novel illustration. A fictional developer discusses a relationship diagram of invented companies and people with a product colleague." },
+  "calgary-coop-member-value": { src: october20Image23, alt: "Graphic-novel illustration. A fictional retail operations worker compares a store-service plan with a simple three-way allocation chart." },
+  "olympia-revenue-and-profit": { src: october20Image24, alt: "Graphic-novel illustration. A fictional financial analyst compares two clearly labelled period columns and annotates the relationship between revenue and expenses." },
+  "boardwalk-housing-operating-costs": { src: october20Image25, alt: "Graphic-novel illustration. A fictional financial analyst and property operations colleague compare invented occupancy and cost figures beside a generic housing plan." },
+  "stampede-event-sustainability": { src: october20Image26, alt: "Graphic-novel illustration. A fictional event coordinator discusses a site plan, staffing schedule and visitor route with colleagues in an event office." },
+  "monogram-coffee-subscriptions": { src: october20Image27, alt: "Graphic-novel illustration. A fictional ecommerce coordinator compares a one-time order with a recurring delivery schedule beside packaged coffee." },
+  "good-earth-franchise-support": { src: october20Image28, alt: "Graphic-novel illustration. A fictional franchise-support coordinator and coffeehouse operator compare a training checklist with a generic store layout." },
+  "eight-ounce-wholesale-retail": { src: october20Image29, alt: "Graphic-novel illustration. A fictional procurement worker and warehouse coordinator compare product samples with separate caf\u00e9 and household order lists." },
   "clynch-prosthetics": { src: october19Image0, alt: "A technician and clinician compare a prosthetic device with its model during a fitting discussion." },
   "westech-industrial": { src: october19Image1, alt: "A technologist compares a process meter with a reference during a workshop test." },
   "alberta-cheese": { src: october19Image2, alt: "Workers compare a curd sample, whey and a batch record in a generic cheese-production setting." },

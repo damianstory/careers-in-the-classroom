@@ -36,7 +36,7 @@ export default function GetInvolvedPage() {
               List your company
             </p>
             <h1 id="gi-title" className={`display ${styles.title}`}>
-              Help students see the science work happening around them.
+              Help students see the science, technology and business work happening around them.
             </h1>
             <p className={styles.lede}>
               Careers in the Classroom connects teachers with real organizations and the people inside them. If your work

@@ -1,0 +1,13 @@
+{
+  "id": "calhort-soil-and-water-story",
+  "type": "story",
+  "exampleSlug": "calhort-soil-and-water",
+  "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional horticulture educator compares two soil samples and plant roots with a learner at a garden workbench. Context: How does soil change the amount of water a garden needs? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+  "original": "design/example-expansion-2026-10-20/calhort-soil-and-water-story.png",
+  "destination": "public/images/examples/calhort-soil-and-water-graphic-novel.webp",
+  "aspect": "16:9",
+  "status": "generated",
+  "generatedSource": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-038cd851-7881-40e9-888c-c56af7dae5e9.png",
+  "tool": "built-in image_gen",
+  "elapsedSeconds": 64
+}

@@ -1,0 +1,13 @@
+{
+  "id": "stampede-event-sustainability-teaching",
+  "type": "teaching",
+  "exampleSlug": "stampede-event-sustainability",
+  "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Visitor needs → event plan → fixed and variable costs → fictional budget comparison. Keep economic impact outside the revenue calculation. The conceptual steps supplied by the UI are: Define the experience: identify what different visitors value. | Plan delivery: people, facilities and services create the experience and generate costs. | Compare scenarios: attendance and spending assumptions affect a budget. | Review the trade-offs: an affordable ticket, a better experience and financial resilience may pull in different directions. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+  "original": "design/example-expansion-2026-10-20/stampede-event-sustainability-teaching.png",
+  "destination": "public/images/story-diagrams/stampede-event-sustainability-graphic-novel.webp",
+  "aspect": "16:9",
+  "status": "generated",
+  "generatedSource": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-afd1b581-c405-41fd-88a7-34b0fb7b362e.png",
+  "tool": "built-in image_gen",
+  "elapsedSeconds": 153
+}

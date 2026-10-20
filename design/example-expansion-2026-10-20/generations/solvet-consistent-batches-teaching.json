@@ -1,0 +1,14 @@
+{
+  "id": "solvet-consistent-batches-teaching",
+  "type": "teaching",
+  "exampleSlug": "solvet-consistent-batches",
+  "prompt": "ONE landscape 16:9 graphic-novel limited-colour screenprint teaching illustration, forest-green contours, ivory background, sage, orange and slate blue. Four numbered vignettes connected left to right with clear directional arrows, numbers1-4 only. 1 technician compares a simple specification checklist with SEALED unbranded bottles of pharmaceutical ingredients. NO herbs, leaves, vegetables or plants. 2 controlled preparation: enclosed generic stainless-steel mixing vessel, measured containers and a batch checklist. 3 scientist checks samples with an analytical instrument and marks a single orange failed check. 4 traceable batch records link ingredients, preparation and test results. An orange arrow from failed test loops BACK to a magnifying-glass investigation symbol, NOT to release or automatic remixing. Fictional equipment, no medication names, no dosing instructions, no words or labels, no packaging logo. Coherent hands and sensible laboratory PPE.",
+  "original": "design/example-expansion-2026-10-20/solvet-consistent-batches-teaching.png",
+  "destination": "public/images/story-diagrams/solvet-consistent-batches-graphic-novel.webp",
+  "aspect": "16:9",
+  "status": "generated",
+  "correctionReason": "plant ingredients incorrectly implied herbal products",
+  "version": 2,
+  "generatedSource": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-442cdaa2-690c-4145-b4a5-d0579b4f35ac.png",
+  "tool": "built-in image_gen"
+}

@@ -1,0 +1,63 @@
+[
+  {
+    "id": "cawst-biosand-learning-story",
+    "type": "story",
+    "exampleSlug": "cawst-biosand-learning",
+    "prompt": "The current filter looks like a planted garden. Replace the entire filter and gardening materials with a closed, plain concrete biosand filter demonstration model. Keep the educator and adult learners discussing the model, with notebooks and small jars of clean sand and gravel. NO plants, roots, soil or gardening tools on the table or inside the model. Do not expose technical internals or show a glass of drinking water. Keep coherent attached arms and the original scene composition and screenprint style. No text.",
+    "original": "design/example-expansion-2026-10-20/cawst-biosand-learning-story.png",
+    "destination": "public/images/examples/cawst-biosand-learning-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending",
+    "correctionReason": "planted filter was scientifically wrong",
+    "version": 2,
+    "reference": "/Users/damianmatheson/Desktop/Claude Code/CitC/design/example-expansion-2026-10-20/cawst-biosand-learning-story.png"
+  },
+  {
+    "id": "cawst-biosand-learning-teaching",
+    "type": "teaching",
+    "exampleSlug": "cawst-biosand-learning",
+    "prompt": "ONE landscape 16:9 educational conceptual diagram of a biosand filter. No people. Show one clear cutaway with TOP TO BOTTOM: empty reservoir, a perforated diffuser plate, shallow standing water, a very thin biological film at the sand surface (not roots or plants), a DEEP beige fine-sand bed occupying most of the filter body, a thin small-gravel layer, a coarse drainage-gravel layer at the bottom. ONE continuous blue outlet pipe starts in the bottom drainage layer, passes through the lower side wall, turns UP outside the filter, rises to the SAME HEIGHT as the standing-water surface, then curves down a little into an outlet spout at that HIGH level. The high spout pours into a covered collection container on a stand. No second outlet, no lower spout or branch. Blue arrowheads point DOWN through sand then UP along the single outside pipe to the high outlet. Four small dark green numbered circles 1,2,3,4 mark input, surface, sand, outlet. Leave generous whitespace. No dimensions, numbers except 1-4, words, percentages, plants, garden, roots, microbes drawn to scale or drinking people. This is a flow-and-layer teaching model, not construction instructions. Graphic-novel limited-colour screenprint with forest-green contours, ivory paper, sage, blue and orange accents, halftone, not photographic.",
+    "original": "design/example-expansion-2026-10-20/cawst-biosand-learning-teaching.png",
+    "destination": "public/images/story-diagrams/cawst-biosand-learning-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending",
+    "correctionReason": "wrong lower outlet would drain standing water",
+    "version": 2
+  },
+  {
+    "id": "itres-beyond-visible-colours-teaching",
+    "type": "teaching",
+    "exampleSlug": "itres-beyond-visible-colours",
+    "prompt": "ONE landscape 16:9 graphic-novel limited-colour screenprint educational illustration, forest-green contours on ivory paper, sage, orange and blue, flat halftones. Four simple left-to-right vignettes joined by arrowheads, small numbered circles 1-4. 1: a small generic airplane above farmland carries a downward-pointing imaging sensor; reflected sunlight from fields returns upward to sensor. NO satellite, spacecraft or space scene. 2: generic spectrometer separates received light into a few colour bands, compared against a reference target. 3: scientist compares generic instrument results and map on monitor. 4: false-colour map tiles of the SAME field patch at different spectral bands. Depict fictional comparative graphics, no real measured values. Readable restrained composition, no titles, letters, captions or text apart from 1-4. Anatomically coherent adult hands. Educational conceptual model of airborne spectral imaging.",
+    "original": "design/example-expansion-2026-10-20/itres-beyond-visible-colours-teaching.png",
+    "destination": "public/images/story-diagrams/itres-beyond-visible-colours-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending",
+    "correctionReason": "satellite implied the wrong platform",
+    "version": 2
+  },
+  {
+    "id": "solvet-consistent-batches-teaching",
+    "type": "teaching",
+    "exampleSlug": "solvet-consistent-batches",
+    "prompt": "ONE landscape 16:9 graphic-novel limited-colour screenprint teaching illustration, forest-green contours, ivory background, sage, orange and slate blue. Four numbered vignettes connected left to right with clear directional arrows, numbers1-4 only. 1 technician compares a simple specification checklist with SEALED unbranded bottles of pharmaceutical ingredients. NO herbs, leaves, vegetables or plants. 2 controlled preparation: enclosed generic stainless-steel mixing vessel, measured containers and a batch checklist. 3 scientist checks samples with an analytical instrument and marks a single orange failed check. 4 traceable batch records link ingredients, preparation and test results. An orange arrow from failed test loops BACK to a magnifying-glass investigation symbol, NOT to release or automatic remixing. Fictional equipment, no medication names, no dosing instructions, no words or labels, no packaging logo. Coherent hands and sensible laboratory PPE.",
+    "original": "design/example-expansion-2026-10-20/solvet-consistent-batches-teaching.png",
+    "destination": "public/images/story-diagrams/solvet-consistent-batches-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending",
+    "correctionReason": "plant ingredients incorrectly implied herbal products",
+    "version": 2
+  },
+  {
+    "id": "calhort-soil-and-water-teaching",
+    "type": "teaching",
+    "exampleSlug": "calhort-soil-and-water",
+    "prompt": "ONE landscape16:9 graphic-novel limited-colour screenprint educational diagram, dark forest-green ink, ivory paper, sage, blue water arrows and sparse orange highlights. Compare TWO IDENTICAL transparent cylindrical soil columns side by side at the SAME height and width. Both have the SAME small seedling species, size and age. Left contains coarse sandy soil, right contains finer soil. Identical graduated cups above contain the SAME quantity of water; down arrows show equal addition. Below, drainage arrows and blue collection puddles show more rapid drainage on left and more water retained in small pores on right. Include small magnified soil-pore circular insets. Numbered markers1-4 connect equal input, soils, root-zone moisture, drainage comparison. No isolated floating hands, no people, no unequal watering containers, no words, exact values or percentages. Clear conceptual comparison, not a claim that all real soils or plants behave identically.",
+    "original": "design/example-expansion-2026-10-20/calhort-soil-and-water-teaching.png",
+    "destination": "public/images/story-diagrams/calhort-soil-and-water-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending",
+    "correctionReason": "equal comparison was obscured by different plants",
+    "version": 2
+  }
+]

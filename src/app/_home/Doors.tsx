@@ -15,7 +15,6 @@ const tabs: { id: DoorId; label: string; hint: string; icon: IconName }[] = [
   { id: "role", label: "A kind of job", hint: "Start from the people doing the work", icon: "users" },
 ];
 
-const subjectOf = (name: string) => name.replace(/\s+\d+$/, "");
 const phoneQuery = "(max-width: 640px)";
 const subscribeOrientation = (changed: () => void) => {
   const media = window.matchMedia(phoneQuery);
@@ -48,7 +47,7 @@ export function Doors({
   const shownCompanies = q
     ? companies.filter((c) => `${c.org} ${c.question} ${c.discipline}`.toLowerCase().includes(q))
     : companies;
-  const subjects = [...new Set(courses.map((c) => subjectOf(c.name)))];
+  const subjects = [...new Set(courses.map((c) => c.group))];
 
   return (
     <div className={styles.doors} data-tone={tone}>
@@ -93,7 +92,7 @@ export function Doors({
               <p className={styles.subjectName}>{s}</p>
               <ul className={styles.courseList}>
                 {courses
-                  .filter((c) => subjectOf(c.name) === s)
+                  .filter((c) => c.group === s)
                   .map((c) => (
                     <li key={c.id}>
                       <Link href={c.href} className={styles.courseTile}>
@@ -108,7 +107,7 @@ export function Doors({
               </ul>
             </div>
           ))}
-          <p className={styles.doorNote}>Next, you choose your unit, and the library shows what fits it best.</p>
+          <p className={styles.doorNote}>Next, choose a unit or outcome focus. Counts show the examples available for each course.</p>
         </div>
       )}
 

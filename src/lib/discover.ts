@@ -1,9 +1,10 @@
 import type { buildDiscoverCards } from "./discover-cards";
 
-export const subjects = ["all", "biology", "chemistry", "physics"] as const;
+export const subjects = ["all", "biology", "chemistry", "physics", "technology", "business"] as const;
 export type Subject = typeof subjects[number];
 export const subjectLabels: Record<Subject, string> = {
   all: "All jobs", biology: "Biology", chemistry: "Chemistry", physics: "Physics",
+  technology: "Technology", business: "Business",
 };
 export const steps = ["Guess", "Reveal", "The work", "Why it matters", "Team & subjects", "Ways in", "Real job"] as const;
 

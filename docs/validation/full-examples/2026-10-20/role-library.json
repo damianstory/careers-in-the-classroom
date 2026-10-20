@@ -1,0 +1,702 @@
+{
+  "existing": {
+    "animal-care": {
+      "id": "animal-care",
+      "title": "Animal care and welfare",
+      "summary": "Support animals day to day and notice changes that matter.",
+      "explanation": "Animal care teams provide food, maintain habitats and observe behaviour and body condition. Care records help the team respond to changes and support conservation work without treating every species as if it has the same needs.",
+      "tasks": [
+        {
+          "title": "Provide daily care",
+          "detail": "Follow prescribed diets and maintain clean, suitable habitats."
+        },
+        {
+          "title": "Observe and record",
+          "detail": "Track behaviour, weight and body condition, and report changes to the team."
+        },
+        {
+          "title": "Work with specialists",
+          "detail": "Support veterinary procedures and enrichment under established welfare and safety protocols."
+        }
+      ],
+      "collaborators": [
+        "Veterinarians",
+        "Conservation researchers",
+        "Animal care assistants",
+        "Facility staff"
+      ],
+      "classroomConnection": "Individual health and behaviour influence survival. Daily observations provide evidence, while population outcomes require follow-up beyond care."
+    },
+    "work-bioprocess": {
+      "id": "work-bioprocess",
+      "title": "Bioprocess development",
+      "summary": "Develop repeatable ways to make and purify biological materials. This work connects molecular science to manufacturing conditions and checks whether a change improves the process.",
+      "explanation": "Develop repeatable ways to make and purify biological materials. This work connects molecular science to manufacturing conditions and checks whether a change improves the process.",
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Define a comparison between process conditions."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Track production and purification steps for each batch."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Use analytical results to decide which change to test next."
+        }
+      ],
+      "collaborators": [
+        "Molecular scientists, analytical staff and quality teams"
+      ],
+      "classroomConnection": "Knowing a sequence or molecule is different from producing a reliable batch of it."
+    },
+    "work-controls": {
+      "id": "work-controls",
+      "title": "Instrumentation and controls",
+      "summary": "Keep a process measurable and responsive. Controls work connects sensors, decisions and actuators so the system can respond when conditions change.",
+      "explanation": "Keep a process measurable and responsive. Controls work connects sensors, decisions and actuators so the system can respond when conditions change.",
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Check whether sensors are reading reliably."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Compare measurements with the intended operating range."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Test how the system responds to a change or fault."
+        }
+      ],
+      "collaborators": [
+        "Operators, electricians and process engineers"
+      ],
+      "classroomConnection": "Feedback uses a measured result to inform the next action."
+    },
+    "work-electrician": {
+      "id": "work-electrician",
+      "title": "Electrician",
+      "summary": "Build and check electrical installations using drawings, standards and trade procedures.",
+      "explanation": "Build and check electrical installations using drawings, standards and trade procedures.",
+      "tasks": [
+        {
+          "title": "Read",
+          "detail": "Interpret drawings and identify the intended circuit connections."
+        },
+        {
+          "title": "Install",
+          "detail": "Fit and connect components using approved methods."
+        },
+        {
+          "title": "Verify",
+          "detail": "Carry out permitted inspections and tests and document issues."
+        }
+      ],
+      "collaborators": [
+        "Controls technologists",
+        "Other trades",
+        "Inspectors"
+      ],
+      "classroomConnection": "A circuit diagram describes intended behaviour; installation and verification connect that model to a real system."
+    },
+    "work-instrument": {
+      "id": "work-instrument",
+      "title": "Instrument development and testing",
+      "summary": "Help build and check the equipment that produces measurements. Instrument work joins hardware, software and experiments rather than treating a reading as automatically correct.",
+      "explanation": "Help build and check the equipment that produces measurements. Instrument work joins hardware, software and experiments rather than treating a reading as automatically correct.",
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Check performance using a known reference."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Investigate drift, noise or inconsistent readings."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Document tests so later users know what the instrument can establish."
+        }
+      ],
+      "collaborators": [
+        "Scientists, electronics specialists and software developers"
+      ],
+      "classroomConnection": "Measurement uncertainty is part of using a tool responsibly."
+    },
+    "work-lab": {
+      "id": "work-lab",
+      "title": "Laboratory analysis",
+      "summary": "Make measurements that other people can trust. A laboratory worker prepares samples, uses a method consistently and records enough detail for someone else to interpret the result.",
+      "explanation": "Make measurements that other people can trust. A laboratory worker prepares samples, uses a method consistently and records enough detail for someone else to interpret the result.",
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Prepare and label samples so their identity is preserved."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Run comparisons or reference samples to check the method."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Record results, units and limitations before sharing findings."
+        }
+      ],
+      "collaborators": [
+        "Scientists, process engineers and quality teams"
+      ],
+      "classroomConnection": "A repeatable method and a fair comparison matter as much as a single impressive number."
+    },
+    "work-logistics": {
+      "id": "work-logistics",
+      "title": "Dispatch and logistics coordination",
+      "summary": "Keep materials moving in the right order, with the information needed at each handoff.",
+      "explanation": "Keep materials moving in the right order, with the information needed at each handoff.",
+      "tasks": [
+        {
+          "title": "Match",
+          "detail": "Match deliveries or orders with available capacity."
+        },
+        {
+          "title": "Check",
+          "detail": "Check timing, identification and handling requirements."
+        },
+        {
+          "title": "Respond",
+          "detail": "Respond to a delay without losing track of the product or customer need."
+        }
+      ],
+      "collaborators": [
+        "Drivers",
+        "Warehouse teams",
+        "Customers"
+      ],
+      "classroomConnection": "A technically sound product can still fail its purpose if timing or handling goes wrong."
+    },
+    "work-machining": {
+      "id": "work-machining",
+      "title": "Machining and dimensional inspection",
+      "summary": "Make parts fit their intended purpose by controlling dimensions. Machining combines tools, setup and measurement; finishing a part is not the same as proving it meets its specification.",
+      "explanation": "Make parts fit their intended purpose by controlling dimensions. Machining combines tools, setup and measurement; finishing a part is not the same as proving it meets its specification.",
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Interpret a drawing and plan a sequence of cuts."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Set up the machine and check the workpiece."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Measure critical dimensions and document deviations."
+        }
+      ],
+      "collaborators": [
+        "Designers, production teams and quality inspectors"
+      ],
+      "classroomConnection": "Tolerance describes an acceptable range rather than a perfectly exact number."
+    },
+    "work-manufacturing": {
+      "id": "work-manufacturing",
+      "title": "Manufacturing and quality work",
+      "summary": "Make repeatable components and check that the output matches a specification.",
+      "explanation": "Make repeatable components and check that the output matches a specification.",
+      "tasks": [
+        {
+          "title": "Read",
+          "detail": "Read a drawing or work instruction before setting up a task."
+        },
+        {
+          "title": "Measure",
+          "detail": "Measure key dimensions or properties and record the result."
+        },
+        {
+          "title": "Investigate",
+          "detail": "Investigate variation rather than treating every difference as acceptable."
+        }
+      ],
+      "collaborators": [
+        "Design teams",
+        "Machine operators",
+        "Quality staff"
+      ],
+      "classroomConnection": "Precision, tolerances and repeatable methods connect measurement to useful products."
+    },
+    "work-materials": {
+      "id": "work-materials",
+      "title": "Materials research and testing",
+      "summary": "Investigate whether a material improves a product for a defined purpose. A useful comparison separates the effect of the added material from other changes in the test.",
+      "explanation": "Investigate whether a material improves a product for a defined purpose. A useful comparison separates the effect of the added material from other changes in the test.",
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Prepare comparable samples with and without an additive."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Measure a relevant property under consistent conditions."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Explain performance changes alongside uncertainty and practical constraints."
+        }
+      ],
+      "collaborators": [
+        "Chemists, process engineers and product developers"
+      ],
+      "classroomConnection": "Stronger, lighter and more conductive are different properties requiring different tests."
+    },
+    "work-mechanical": {
+      "id": "work-mechanical",
+      "title": "Mechanical design and prototyping",
+      "summary": "Translate a need into a component or machine that can be built and tested. Designers use dimensions, material properties and constraints to evaluate alternatives.",
+      "explanation": "Translate a need into a component or machine that can be built and tested. Designers use dimensions, material properties and constraints to evaluate alternatives.",
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Create and revise drawings or a digital model."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Choose materials and dimensions for the intended conditions."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Compare the prototype with its requirements and refine the design."
+        }
+      ],
+      "collaborators": [
+        "Machinists, fabricators, test staff and customers"
+      ],
+      "classroomConnection": "Geometry, forces and material properties shape real design trade-offs."
+    },
+    "work-millwright": {
+      "id": "work-millwright",
+      "title": "Industrial machinery assembly and maintenance",
+      "summary": "Make machinery work together as a physical system. Millwright work connects assembly, alignment, inspection and troubleshooting.",
+      "explanation": "Make machinery work together as a physical system. Millwright work connects assembly, alignment, inspection and troubleshooting.",
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Read equipment drawings and plan assembly steps."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Align and connect mechanical components."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Check operation and record problems that need adjustment."
+        }
+      ],
+      "collaborators": [
+        "Designers, operators, electricians and fabrication teams"
+      ],
+      "classroomConnection": "Small alignment errors can change how forces and motion pass through a machine."
+    },
+    "work-power": {
+      "id": "work-power",
+      "title": "Power-electronics design",
+      "summary": "Control how electrical energy moves between components. Power-electronics work combines circuit design with testing, thermal limits and the behaviour of the complete system.",
+      "explanation": "Control how electrical energy moves between components. Power-electronics work combines circuit design with testing, thermal limits and the behaviour of the complete system.",
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Choose and document a circuit design."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Test its response across operating conditions."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Investigate losses and component limits before revising the design."
+        }
+      ],
+      "collaborators": [
+        "Electrical technologists, firmware developers and manufacturing teams"
+      ],
+      "classroomConnection": "Power describes the rate of energy transfer; stored energy describes how much is available."
+    },
+    "work-quality": {
+      "id": "work-quality",
+      "title": "Quality and traceability",
+      "summary": "Make it possible to explain how a result or product was produced. Quality work checks records, methods and acceptance criteria so variation can be investigated rather than hidden.",
+      "explanation": "Make it possible to explain how a result or product was produced. Quality work checks records, methods and acceptance criteria so variation can be investigated rather than hidden.",
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Check that materials and samples have traceable identities."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Compare recorded results with defined acceptance criteria."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Investigate deviations and document what changed."
+        }
+      ],
+      "collaborators": [
+        "Production, laboratory, engineering and customer teams"
+      ],
+      "classroomConnection": "Repeated results need both measurements and records of the conditions that produced them."
+    },
+    "work-software": {
+      "id": "work-software",
+      "title": "Software and data systems",
+      "summary": "Build the tools that move, process and display information. Reliable software needs testing against missing, delayed and unexpected data as well as ideal examples.",
+      "explanation": "Build the tools that move, process and display information. Reliable software needs testing against missing, delayed and unexpected data as well as ideal examples.",
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Translate a user need into a testable behaviour."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Build and test a data-processing or display feature."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Investigate failures and document assumptions about inputs."
+        }
+      ],
+      "collaborators": [
+        "Domain experts, designers, users and hardware teams"
+      ],
+      "classroomConnection": "An algorithm’s output depends on the quality and meaning of its inputs."
+    },
+    "work-spatial": {
+      "id": "work-spatial",
+      "title": "Spatial data and mapping",
+      "summary": "Turn measurements tied to places into usable spatial information. The work involves coordinates, scale and checking that datasets describe the same location and time.",
+      "explanation": "Turn measurements tied to places into usable spatial information. The work involves coordinates, scale and checking that datasets describe the same location and time.",
+      "tasks": [
+        {
+          "title": "Investigate",
+          "detail": "Check coordinate systems and measurement dates."
+        },
+        {
+          "title": "Test and compare",
+          "detail": "Align and inspect spatial datasets."
+        },
+        {
+          "title": "Explain and improve",
+          "detail": "Present maps or models with their limitations."
+        }
+      ],
+      "collaborators": [
+        "Surveyors, engineers, field operators and software teams"
+      ],
+      "classroomConnection": "Models can be detailed while still containing gaps or misaligned measurements."
+    },
+    "work-technical-support": {
+      "id": "work-technical-support",
+      "title": "Technical application support",
+      "summary": "Help people use a technical product in the conditions of their own workplace.",
+      "explanation": "Help people use a technical product in the conditions of their own workplace.",
+      "tasks": [
+        {
+          "title": "Ask",
+          "detail": "Ask what the user is trying to measure or control."
+        },
+        {
+          "title": "Separate",
+          "detail": "Separate a setup problem from a sensor or process problem."
+        },
+        {
+          "title": "Explain",
+          "detail": "Explain the next diagnostic step and record what changed."
+        }
+      ],
+      "collaborators": [
+        "Customers",
+        "Product developers",
+        "Field technicians"
+      ],
+      "classroomConnection": "Troubleshooting means testing explanations one at a time."
+    }
+  },
+  "proposedNew": {
+    "new-plant-biotechnology": {
+      "id": "new-plant-biotechnology",
+      "title": "Plant biotechnology scientist",
+      "summary": "Investigate how plant characteristics relate to biological information and growing conditions.",
+      "explanation": "Investigate how plant characteristics relate to biological information and growing conditions.",
+      "tasks": [
+        {
+          "title": "Frame",
+          "detail": "Define a trait and a testable research question."
+        },
+        {
+          "title": "Compare",
+          "detail": "Plan controlled comparisons and record observations."
+        },
+        {
+          "title": "Interpret",
+          "detail": "Separate evidence for a trait from effects of growing conditions."
+        }
+      ],
+      "collaborators": [
+        "Laboratory technicians",
+        "Crop-development teams"
+      ],
+      "classroomConnection": "Genetic information and controlled comparisons connect laboratory questions to crop traits.",
+      "defaultPathwayKey": "route-biology",
+      "clue": "In a growth room, a person compares labelled seedling trays with a notebook showing several watering groups.",
+      "evidenceKind": "editorial occupation/work-area interpretation; not an asserted current employer job title",
+      "decision": "pending",
+      "version": 1
+    },
+    "new-science-education": {
+      "id": "new-science-education",
+      "title": "Science educator",
+      "summary": "Help people understand and apply scientific ideas through explanations and practical learning.",
+      "explanation": "Help people understand and apply scientific ideas through explanations and practical learning.",
+      "tasks": [
+        {
+          "title": "Understand",
+          "detail": "Identify the learner’s question and context."
+        },
+        {
+          "title": "Explain",
+          "detail": "Choose a model or demonstration that makes the idea visible."
+        },
+        {
+          "title": "Check",
+          "detail": "Ask learners to apply the idea and discuss the model’s limits."
+        }
+      ],
+      "collaborators": [
+        "Technical specialists",
+        "Community partners"
+      ],
+      "classroomConnection": "A good explanation connects a concept to a decision and makes uncertainty visible.",
+      "defaultPathwayKey": "route-environment",
+      "clue": "At a demonstration table, a person uses a cutaway model and a sketch to help a small group compare what they observe.",
+      "evidenceKind": "editorial occupation/work-area interpretation; not an asserted current employer job title",
+      "decision": "pending",
+      "version": 1
+    },
+    "new-sport-physiology": {
+      "id": "new-sport-physiology",
+      "title": "Sport physiologist",
+      "summary": "Use knowledge of the body and measured evidence to help interpret training responses.",
+      "explanation": "Use knowledge of the body and measured evidence to help interpret training responses.",
+      "tasks": [
+        {
+          "title": "Plan",
+          "detail": "Connect a measurement to a specific training question."
+        },
+        {
+          "title": "Measure",
+          "detail": "Use consistent conditions and record relevant context."
+        },
+        {
+          "title": "Interpret",
+          "detail": "Discuss patterns and limitations with coaches and athletes."
+        }
+      ],
+      "collaborators": [
+        "Coaches",
+        "Athletes",
+        "Other sport-science professionals"
+      ],
+      "classroomConnection": "Respiratory and circulatory systems help explain responses to exercise.",
+      "defaultPathwayKey": "route-kinesiology",
+      "clue": "Beside exercise-testing equipment, a person compares a recovery graph with notes while talking with an athlete.",
+      "evidenceKind": "editorial occupation/work-area interpretation; not an asserted current employer job title",
+      "decision": "pending",
+      "version": 1
+    },
+    "new-retail-operations": {
+      "id": "new-retail-operations",
+      "title": "Retail operations coordinator",
+      "summary": "Connect day-to-day service with the resources a retail business needs.",
+      "explanation": "Connect day-to-day service with the resources a retail business needs.",
+      "tasks": [
+        {
+          "title": "Observe",
+          "detail": "Identify customer needs and service constraints."
+        },
+        {
+          "title": "Coordinate",
+          "detail": "Organize tasks and resources to deliver the service."
+        },
+        {
+          "title": "Review",
+          "detail": "Compare outcomes and trade-offs before changing a process."
+        }
+      ],
+      "collaborators": [
+        "Store teams",
+        "Customer-service teams",
+        "Finance colleagues"
+      ],
+      "classroomConnection": "Customer benefit and operating costs need to be considered together.",
+      "defaultPathwayKey": "route-management",
+      "clue": "In a store office, a person compares a floor plan, a staff schedule and a customer-service checklist.",
+      "evidenceKind": "editorial occupation/work-area interpretation; not an asserted current employer job title",
+      "decision": "pending",
+      "version": 1
+    },
+    "new-financial-analysis": {
+      "id": "new-financial-analysis",
+      "title": "Financial analyst",
+      "summary": "Compare financial information and explain what the numbers can and cannot establish.",
+      "explanation": "Compare financial information and explain what the numbers can and cannot establish.",
+      "tasks": [
+        {
+          "title": "Define",
+          "detail": "Check the period, scope and meaning of each measure."
+        },
+        {
+          "title": "Calculate",
+          "detail": "Compare statements or scenarios using consistent definitions."
+        },
+        {
+          "title": "Explain",
+          "detail": "Describe the result, assumptions and important omissions."
+        }
+      ],
+      "collaborators": [
+        "Accounting teams",
+        "Operations teams"
+      ],
+      "classroomConnection": "Ratios and changes are useful only when their underlying quantities are comparable.",
+      "defaultPathwayKey": "route-accounting",
+      "clue": "At a desk, a person compares two period columns, highlights differences and writes notes beside a simple chart.",
+      "evidenceKind": "editorial occupation/work-area interpretation; not an asserted current employer job title",
+      "decision": "pending",
+      "version": 1
+    },
+    "new-event-operations": {
+      "id": "new-event-operations",
+      "title": "Event operations coordinator",
+      "summary": "Organize the people, services and practical details that make an event work.",
+      "explanation": "Organize the people, services and practical details that make an event work.",
+      "tasks": [
+        {
+          "title": "Plan",
+          "detail": "Connect visitor needs with a workable event layout."
+        },
+        {
+          "title": "Coordinate",
+          "detail": "Arrange schedules and dependencies across teams."
+        },
+        {
+          "title": "Adapt",
+          "detail": "Compare delivery conditions with the plan and resolve conflicts."
+        }
+      ],
+      "collaborators": [
+        "Venue teams",
+        "Service suppliers",
+        "Visitor-support teams"
+      ],
+      "classroomConnection": "An event turns a value proposition into a network of resource decisions.",
+      "defaultPathwayKey": "route-management",
+      "clue": "A person at an event office checks a site map, a timetable and several team checklists before the gates open.",
+      "evidenceKind": "editorial occupation/work-area interpretation; not an asserted current employer job title",
+      "decision": "pending",
+      "version": 1
+    },
+    "new-ecommerce-operations": {
+      "id": "new-ecommerce-operations",
+      "title": "Ecommerce operations coordinator",
+      "summary": "Connect online customer choices with reliable order and delivery processes.",
+      "explanation": "Connect online customer choices with reliable order and delivery processes.",
+      "tasks": [
+        {
+          "title": "Clarify",
+          "detail": "Make product and purchase options understandable."
+        },
+        {
+          "title": "Coordinate",
+          "detail": "Connect orders, inventory and fulfilment information."
+        },
+        {
+          "title": "Improve",
+          "detail": "Review customer needs and process problems using evidence."
+        }
+      ],
+      "collaborators": [
+        "Marketing colleagues",
+        "Warehouse teams",
+        "Customer support"
+      ],
+      "classroomConnection": "Different purchase models create different customer benefits and delivery requirements.",
+      "defaultPathwayKey": "route-marketing",
+      "clue": "At a packing-area desk, a person compares a recurring delivery calendar with a one-time order and a customer-options screen.",
+      "evidenceKind": "editorial occupation/work-area interpretation; not an asserted current employer job title",
+      "decision": "pending",
+      "version": 1
+    },
+    "new-franchise-support": {
+      "id": "new-franchise-support",
+      "title": "Franchise support coordinator",
+      "summary": "Help local operators apply shared systems and communicate operational needs.",
+      "explanation": "Help local operators apply shared systems and communicate operational needs.",
+      "tasks": [
+        {
+          "title": "Explain",
+          "detail": "Help operators understand available systems and support."
+        },
+        {
+          "title": "Coordinate",
+          "detail": "Connect training and operating questions with the right team."
+        },
+        {
+          "title": "Learn",
+          "detail": "Gather feedback about where support or processes need improvement."
+        }
+      ],
+      "collaborators": [
+        "Local operators",
+        "Training teams",
+        "Marketing colleagues"
+      ],
+      "classroomConnection": "A franchise model divides decisions and resources across connected businesses.",
+      "defaultPathwayKey": "route-management",
+      "clue": "A person and a coffeehouse operator compare a training checklist, a shop plan and a shared operating guide.",
+      "evidenceKind": "editorial occupation/work-area interpretation; not an asserted current employer job title",
+      "decision": "pending",
+      "version": 1
+    },
+    "new-procurement": {
+      "id": "new-procurement",
+      "title": "Procurement specialist",
+      "summary": "Help an organization choose products and coordinate what it buys.",
+      "explanation": "Help an organization choose products and coordinate what it buys.",
+      "tasks": [
+        {
+          "title": "Specify",
+          "detail": "Understand the products and quantities the business needs."
+        },
+        {
+          "title": "Compare",
+          "detail": "Evaluate options against relevant requirements and constraints."
+        },
+        {
+          "title": "Coordinate",
+          "detail": "Connect purchasing decisions with inventory and delivery planning."
+        }
+      ],
+      "collaborators": [
+        "Suppliers",
+        "Warehouse teams",
+        "Sales teams"
+      ],
+      "classroomConnection": "Customer needs become purchasing requirements and operational trade-offs.",
+      "defaultPathwayKey": "route-logistics",
+      "clue": "At a warehouse office, a person compares product samples, supplier information and an inventory list.",
+      "evidenceKind": "editorial occupation/work-area interpretation; not an asserted current employer job title",
+      "decision": "pending",
+      "version": 1
+    }
+  },
+  "boundary": "Existing general role copy is carried forward, not proof of a current job at a newly linked company. Per-company role links below are labelled work-area interpretations. Professional status and minimum qualifications are not inferred."
+}

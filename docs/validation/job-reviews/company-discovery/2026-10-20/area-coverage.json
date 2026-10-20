@@ -1,0 +1,38 @@
+{
+  "science": {
+    "target": 20,
+    "new_screened": 20,
+    "evidence_qualified": 17,
+    "score_8_plus_qualified": 16,
+    "qualified_reserves_7_or_less": 1,
+    "held": 3,
+    "duplicates_counted_as_new": 0,
+    "new_extension_proposals": 0,
+    "known_extension_records_reconciled": 0,
+    "new_screened_shortfall": 0
+  },
+  "technology": {
+    "target": 10,
+    "new_screened": 10,
+    "evidence_qualified": 8,
+    "score_8_plus_qualified": 7,
+    "qualified_reserves_7_or_less": 1,
+    "held": 2,
+    "duplicates_counted_as_new": 0,
+    "new_extension_proposals": 0,
+    "known_extension_records_reconciled": 5,
+    "new_screened_shortfall": 0
+  },
+  "business": {
+    "target": 10,
+    "new_screened": 10,
+    "evidence_qualified": 9,
+    "score_8_plus_qualified": 7,
+    "qualified_reserves_7_or_less": 2,
+    "held": 1,
+    "duplicates_counted_as_new": 0,
+    "new_extension_proposals": 0,
+    "known_extension_records_reconciled": 2,
+    "new_screened_shortfall": 0
+  }
+}

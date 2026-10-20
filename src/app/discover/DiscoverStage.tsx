@@ -36,7 +36,7 @@ export function DiscoverStage({ cards, initialState }: { cards: DiscoverCard[]; 
   const active = useMemo(() => filterCards(cards, state.subject), [cards, state.subject]);
   const counts = subjectCounts(cards);
   const readyCount = active.filter((c) => loaded.includes(c.role.id)).length;
-  const ready = readyCount === active.length;
+  const ready = active.length > 0 && readyCount === active.length;
   const baseCard = cards.find((c) => c.role.id === visible);
   const card = baseCard ? cardForSubject(baseCard, state.subject) : undefined;
   const revealed = phase === "reveal" && state.step > 0;
@@ -253,7 +253,8 @@ export function DiscoverStage({ cards, initialState }: { cards: DiscoverCard[]; 
             <select id="discover-subject" value={state.subject} onChange={(e) => subjectsScreen(e.target.value as Subject)}>
               {subjects.map((subject) => <option key={subject} value={subject}>{subjectLabels[subject]} ({counts[subject]})</option>)}
             </select>
-            <button ref={primary} className={styles.primary} disabled={!ready} onClick={start}>{ready ? <>{mode === "draw" ? "Draw a picture" : "Start"} <kbd>Space</kbd></> : `Loading pictures ${readyCount}/${active.length}`}</button>
+            {active.length === 0 && <p role="status">No prepared jobs for {subjectLabels[state.subject].toLowerCase()} yet. Choose another subject to play.</p>}
+            <button ref={primary} className={styles.primary} disabled={!ready} onClick={start}>{ready ? <>{mode === "draw" ? "Draw a picture" : "Start"} <kbd>Space</kbd></> : active.length === 0 ? "No jobs yet" : `Loading pictures ${readyCount}/${active.length}`}</button>
             <p className={styles.help}>Space: start, stop or continue · Arrow keys: previous / next topic · R: next round</p>
           </section>
           <div className={styles.stack} aria-hidden="true">

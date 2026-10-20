@@ -677,4 +677,103 @@ export const expandedDiscoverImages: DiscoverImage[] = [
     "width": 752,
     "height": 1344
   },
+{
+  "number": "71",
+  "roleId": "work-plant-biotechnology",
+  "organizationId": "aggene",
+  "title": "Plant biotechnology scientist",
+  "clue": "In a growth room, a person compares labelled seedling trays with a notebook showing several watering groups.",
+  "pathwayId": "oct20-route-biology",
+  "src": "/images/discover/work-plant-biotechnology.webp",
+  "width": 752,
+  "height": 1344
+},
+{
+  "number": "72",
+  "roleId": "work-science-education",
+  "organizationId": "cawst",
+  "title": "Science educator",
+  "clue": "At a demonstration table, a person uses a cutaway model and a sketch to help a small group compare what they observe.",
+  "pathwayId": "oct17-route-sait-environmental-technology",
+  "src": "/images/discover/work-science-education.webp",
+  "width": 752,
+  "height": 1344
+},
+{
+  "number": "73",
+  "roleId": "work-sport-physiology",
+  "organizationId": "canadian-sport-institute-alberta",
+  "title": "Sport physiologist",
+  "clue": "Beside exercise-testing equipment, a person compares a recovery graph with notes while talking with an athlete.",
+  "pathwayId": "oct20-route-kinesiology",
+  "src": "/images/discover/work-sport-physiology.webp",
+  "width": 752,
+  "height": 1344
+},
+{
+  "number": "74",
+  "roleId": "work-retail-operations",
+  "organizationId": "calgary-coop",
+  "title": "Retail operations coordinator",
+  "clue": "In a store office, a person compares a floor plan, a staff schedule and a customer-service checklist.",
+  "pathwayId": "oct20-route-management",
+  "src": "/images/discover/work-retail-operations.webp",
+  "width": 752,
+  "height": 1344
+},
+{
+  "number": "75",
+  "roleId": "work-financial-analysis",
+  "organizationId": "olympia-financial",
+  "title": "Financial analyst",
+  "clue": "At a desk, a person compares two period columns, highlights differences and writes notes beside a simple chart.",
+  "pathwayId": "oct20-route-accounting",
+  "src": "/images/discover/work-financial-analysis.webp",
+  "width": 752,
+  "height": 1344
+},
+{
+  "number": "76",
+  "roleId": "work-event-operations",
+  "organizationId": "calgary-stampede",
+  "title": "Event operations coordinator",
+  "clue": "A person at an event office checks a site map, a timetable and several team checklists before the gates open.",
+  "pathwayId": "oct20-route-management",
+  "src": "/images/discover/work-event-operations.webp",
+  "width": 752,
+  "height": 1344
+},
+{
+  "number": "77",
+  "roleId": "work-ecommerce-operations",
+  "organizationId": "monogram-coffee",
+  "title": "Ecommerce operations coordinator",
+  "clue": "At a packing-area desk, a person compares a recurring delivery calendar with a one-time order and a customer-options screen.",
+  "pathwayId": "oct20-route-marketing",
+  "src": "/images/discover/work-ecommerce-operations.webp",
+  "width": 752,
+  "height": 1344
+},
+{
+  "number": "78",
+  "roleId": "work-franchise-support",
+  "organizationId": "good-earth-coffeehouse",
+  "title": "Franchise support coordinator",
+  "clue": "A person and a coffeehouse operator compare a training checklist, a shop plan and a shared operating guide.",
+  "pathwayId": "oct20-route-management",
+  "src": "/images/discover/work-franchise-support.webp",
+  "width": 752,
+  "height": 1344
+},
+{
+  "number": "79",
+  "roleId": "work-procurement",
+  "organizationId": "eight-ounce-coffee",
+  "title": "Procurement specialist",
+  "clue": "At a warehouse office, a person compares product samples, supplier information and an inventory list.",
+  "pathwayId": "oct18-route-logistics",
+  "src": "/images/discover/work-procurement.webp",
+  "width": 752,
+  "height": 1344
+},
 ];

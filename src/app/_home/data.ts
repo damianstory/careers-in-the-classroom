@@ -8,6 +8,7 @@ import { exampleImages } from "@/content/example-images";
 export interface CourseDoor {
   id: string;
   name: string;
+  group: string;
   count: number;
   href: string;
 }
@@ -44,6 +45,7 @@ const monogram = (name: string) =>
 export const courseDoors: CourseDoor[] = courses.map((c) => ({
   id: c.id,
   name: c.name,
+  group: c.group,
   count: examples.filter((e) => e.courses.some((f) => f.course === c.name)).length,
   href: `/connections?course=${c.id}#library`,
 }));

@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-20",
+  "result": "pass",
+  "new_candidates": 40,
+  "areas": {
+    "science": 20,
+    "technology": 10,
+    "business": 10
+  },
+  "qualified": 34,
+  "score8plus": 30,
+  "qualified_reserves": 4,
+  "evidence_holds": 6,
+  "highlighted": 5,
+  "all_new_decisions_pending": true,
+  "prior_registry_entries_preserved": 120,
+  "prior_review_fields_preserved": true,
+  "registry_entries_after": 166,
+  "pilot_records_reconciled_not_new": 7,
+  "evidence_records": 139,
+  "source_snapshot_hashes_verified": true,
+  "science_topics_provisional": true,
+  "verified_cts_course_anchors": 5,
+  "official_curriculum_check_date": "2026-10-19",
+  "weekly_maintenance_dates_unchanged": true,
+  "existing_example_discover_coverage": "61 of 61",
+  "weekly_paid_usd": 0.015,
+  "outstanding_usd": 0,
+  "weekly_cap_usd": 10,
+  "protected_app_files_unchanged": 14,
+  "no_app_edits_or_artwork_or_publication": true,
+  "review_packet_sha256": "a588899e80588073c108f4675a5dd4872ed5f42a493c2a139653661cfdec5915"
+}

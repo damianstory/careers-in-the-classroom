@@ -72,7 +72,10 @@ export function unitOptions(courseId: string): UnitOption[] {
 }
 
 // Everything the filter form needs, computed on the server and passed to it as a prop.
-export const courseOptions = (): CourseOption[] => courses.map((c) => ({ id: c.id, name: c.name, units: unitOptions(c.id) }));
+export const courseOptions = (): CourseOption[] => courses.map((c) => ({
+  id: c.id, name: c.name, group: c.group, focusLabel: c.focusLabel,
+  units: unitOptions(c.id),
+}));
 
 export function coverage(courseId: string) {
   const opts = unitOptions(courseId);
@@ -203,9 +206,13 @@ export function buildLibrary(filter: LibraryFilter): Library {
     }
   }
 
-  const count = shown.size;
+  // Matches in other courses remain useful suggestions, but never inflate this course's count.
+  const count = course
+    ? new Set(sections.filter((s) => s.id === "fits" || s.id === "course")
+      .flatMap((s) => s.items.flatMap((i) => i.type === "example" ? [i.example.slug] : []))).size
+    : shown.size;
   // A chosen unit with nothing prepared is a no-match even when other examples fit the course.
-  const noMatch = unit ? fits.length === 0 : !!topic && count === 0 && fits.length === 0;
+  const noMatch = unit ? fits.length === 0 : !!(course || topic) && count === 0 && fits.length === 0;
 
   // Nothing prepared: suggest the closest examples in the same subject, each with its reason.
   if (noMatch && course) {

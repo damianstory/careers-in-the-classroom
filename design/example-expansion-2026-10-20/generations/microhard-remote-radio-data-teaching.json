@@ -1,0 +1,13 @@
+{
+  "id": "microhard-remote-radio-data-teaching",
+  "type": "teaching",
+  "exampleSlug": "microhard-remote-radio-data",
+  "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Sensor → transmitter → radio path with one obstacle → receiver → data display. Differentiate the physical signal from the information it carries. The conceptual steps supplied by the UI are: Measure locally: a sensor produces information at the equipment. | Send a signal: radio equipment carries encoded information across a wireless link. | Check reception: distance, obstacles and interference can affect communication. | Use the data: the receiving system needs to know whether information arrived and whether it is current. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+  "original": "design/example-expansion-2026-10-20/microhard-remote-radio-data-teaching.png",
+  "destination": "public/images/story-diagrams/microhard-remote-radio-data-graphic-novel.webp",
+  "aspect": "16:9",
+  "status": "generated",
+  "generatedSource": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-ca030168-5366-4757-a9cc-44fb5ecc133f.png",
+  "tool": "built-in image_gen",
+  "elapsedSeconds": 54
+}

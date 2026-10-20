@@ -26,7 +26,7 @@ const plexMono = localFont({
 
 export const metadata: Metadata = {
   title: { default: "Careers in the Classroom", template: "%s · Careers in the Classroom" },
-  description: "Real Calgary organizations, the problems they’re working on, and the people doing the work, matched to Alberta science courses.",
+  description: "Real Calgary organizations, the problems they’re working on, and the people doing the work, with Alberta science, technology and business course connections.",
   robots: { index: false, follow: false },
 };
 

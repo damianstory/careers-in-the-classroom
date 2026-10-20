@@ -1,0 +1,14 @@
+{
+  "id": "work-plant-biotechnology",
+  "type": "discover",
+  "roleId": "work-plant-biotechnology",
+  "prompt": "Create ONE tall portrait 752:1344 occupation guessing card. The TOP 26 percent of the canvas is a solid forest-green rectangle with large ivory uppercase condensed lettering, EXACT title: \"PLANT BIOTECHNOLOGY SCIENTIST\". Keep every letter inside the top 26 percent; absolutely no text elsewhere. The lower 74 percent depicts: In a growth room, a person compares labelled seedling trays with a notebook showing several watering groups. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene with a distinct fictional adult actively doing this work. Equipment and spatial layout must match the clue. Do not crop hands or invent extra arms. Not a landscape crop. Scene fills width below title band. No bottom caption, no logo.",
+  "original": "design/example-expansion-2026-10-20/work-plant-biotechnology.png",
+  "destination": "public/images/discover/work-plant-biotechnology.webp",
+  "aspect": "752:1344",
+  "status": "generated",
+  "number": "71",
+  "generatedSource": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-6638465a-cf3c-43da-b864-5eeb899f4150.png",
+  "tool": "built-in image_gen",
+  "elapsedSeconds": 79
+}

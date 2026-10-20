@@ -1,0 +1,23 @@
+{
+  "checkedOn": "2026-10-20",
+  "result": "passed",
+  "approvedCompanyProposals": 30,
+  "fullDraftsPendingReview": 30,
+  "unchangedUnselectedProposals": 10,
+  "reviewConditions": 3,
+  "newDiscoverProposals": 9,
+  "existingDiscoverExtensions": 17,
+  "allApprovedExamplesHaveDiscoverCoverage": true,
+  "newCardNumbersAllocated": false,
+  "pathwayRecords": 15,
+  "evidenceSnapshotsHashChecked": 94,
+  "protectedAppFilesChecked": 159,
+  "protectedAppFilesChanged": [],
+  "newSrcFiles": [],
+  "unrelatedRegistryEntriesUnchanged": true,
+  "markdownLinksValid": true,
+  "appBuild": "not run; this phase changes research documents and review metadata only",
+  "publication": "not performed",
+  "reviewVersionFilesHashChecked": 34,
+  "finalCopyLocalConnectionsSeparatedFromEvidenceNotes": true
+}

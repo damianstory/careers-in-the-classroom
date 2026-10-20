@@ -1,0 +1,14 @@
+{
+  "id": "itres-beyond-visible-colours-teaching",
+  "type": "teaching",
+  "exampleSlug": "itres-beyond-visible-colours",
+  "prompt": "ONE landscape 16:9 graphic-novel limited-colour screenprint educational illustration, forest-green contours on ivory paper, sage, orange and blue, flat halftones. Four simple left-to-right vignettes joined by arrowheads, small numbered circles 1-4. 1: a small generic airplane above farmland carries a downward-pointing imaging sensor; reflected sunlight from fields returns upward to sensor. NO satellite, spacecraft or space scene. 2: generic spectrometer separates received light into a few colour bands, compared against a reference target. 3: scientist compares generic instrument results and map on monitor. 4: false-colour map tiles of the SAME field patch at different spectral bands. Depict fictional comparative graphics, no real measured values. Readable restrained composition, no titles, letters, captions or text apart from 1-4. Anatomically coherent adult hands. Educational conceptual model of airborne spectral imaging.",
+  "original": "design/example-expansion-2026-10-20/itres-beyond-visible-colours-teaching.png",
+  "destination": "public/images/story-diagrams/itres-beyond-visible-colours-graphic-novel.webp",
+  "aspect": "16:9",
+  "status": "generated",
+  "correctionReason": "satellite implied the wrong platform",
+  "version": 2,
+  "generatedSource": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-4e001631-6ee8-49be-87c3-9c234194b110.png",
+  "tool": "built-in image_gen"
+}

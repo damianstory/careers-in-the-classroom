@@ -22,13 +22,13 @@ export default function Home() {
               <span className={styles.rise}>Show your class who in Calgary </span>
             </span>
             <span className={styles.line}>
-              <span className={styles.rise}>uses the science they’re learning.</span>
+              <span className={styles.rise}>uses what they’re learning.</span>
             </span>
           </h1>
           <p className={styles.heroLede}>
-            Careers in the Classroom helps Alberta high school science teachers connect the unit they’re teaching to a real
+            Careers in the Classroom helps Alberta high school teachers connect what they teach to a real
             Calgary organization, the problem it’s working on and the people doing the work. Choose from {stats.examples}{" "}
-            examples, each ready to project in class.
+            examples ready to project in class, with course browsing for science, technology and business.
           </p>
           <div className={styles.ctaRow}>
             <a href="#start" className={styles.ctaPrimary}>
@@ -44,19 +44,19 @@ export default function Home() {
       <section id="how" className={styles.band} aria-labelledby="a-how">
         <div className={styles.frame}>
           <h2 id="a-how" className={styles.h2}>
-            From your unit to a real conversation in three steps
+            From your course to a real conversation in three steps
           </h2>
           <ol className={styles.steps}>
             <li className={styles.step}>
               <span className={styles.stepNum}>1</span>
               <h3 className={styles.h3}>Start from what you teach</h3>
-              <p>Pick your course and unit, or start from a company or a kind of job your students are curious about.</p>
+              <p>Pick your course and a unit or outcome focus, or start from a company or a kind of job your students are curious about.</p>
             </li>
             <li className={styles.step}>
               <span className={styles.stepNum}>2</span>
               <h3 className={styles.h3}>Open a real Calgary example</h3>
               <p>
-                Each example starts with a question students can reason about using the science they know, then explains how
+                Each example starts with a question students can reason about using what they know, then explains how
                 the organization uses it.
               </p>
             </li>
@@ -122,7 +122,7 @@ export default function Home() {
           </h2>
           <div className={styles.whyBody}>
             <p>
-              Science careers can feel like they happen somewhere else. These examples put the work in Calgary: an office on
+              Careers can feel like they happen somewhere else. These examples put the work in Calgary: an office on
               5th Avenue, a roastery in the Simmons Building, a field program in southeastern Alberta.
             </p>
             <p>

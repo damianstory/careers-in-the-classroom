@@ -1,0 +1,12 @@
+{
+  "phase": "30-company full-example draft research",
+  "date": "2026-10-20",
+  "newPaidCalls": 0,
+  "phaseCostUsd": 0,
+  "existingWeeklySettledCostUsd": 0.015,
+  "existingWeeklyOutstandingExposureUsd": 0,
+  "weeklyCapUsd": 10,
+  "providerBreakdownThisPhase": {},
+  "weeklyLedger": "docs/validation/job-reviews/costs/looot-2026-10-19.json",
+  "note": "Same-day discovery includes a previously paid Calhort source; reusing it here incurs no additional charge. No Alexandria connection or direct Apify usage."
+}

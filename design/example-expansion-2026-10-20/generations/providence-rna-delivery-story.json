@@ -1,0 +1,11 @@
+{
+  "id": "providence-rna-delivery-story",
+  "type": "story",
+  "exampleSlug": "providence-rna-delivery",
+  "prompt": "Create one landscape 16:9 editorial illustration for a classroom company example about RNA delivery. A fictional mature male formulation scientist with short hair and protective glasses compares sealed sample vials and a simple nanoparticle sketch at a clean laboratory bench; a colleague takes notes in the background. The recognizable task is comparing formulations to protect and deliver RNA, not manufacturing a specific approved treatment. Graphic-novel / limited-colour screenprint: confident forest-green ink contours, flat sage and ivory planes, warm natural skin, coarse halftone shadows, fine crosshatching, textured uncoated paper, restrained burnt-orange and slate-blue accents. Bold silhouette and selective perspective. One composed scene; no comic panels, labels, text, logos, title bands, caption strips, watermark, photorealism or 3D. Anatomically coherent hands visibly attached to arms. Keep all equipment generic. Output filename if supported in result description: providence-rna-delivery-story.",
+  "original": "design/example-expansion-2026-10-20/providence-rna-delivery-story.png",
+  "destination": "public/images/examples/providence-rna-delivery-graphic-novel.webp",
+  "aspect": "16:9",
+  "status": "generated",
+  "generatedSource": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-744626fb-82bc-4d5c-87fa-2432fecc257c.png"
+}

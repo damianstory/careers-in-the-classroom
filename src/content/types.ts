@@ -6,7 +6,7 @@
 //   unresearched – honestly not researched yet; must carry no sources (dashed tag)
 export type EvidenceKind = "stated" | "observed" | "interpreted" | "unresearched";
 
-export type Discipline = "Biology" | "Chemistry" | "Physics";
+export type Discipline = "Biology" | "Chemistry" | "Physics" | "Technology" | "Business";
 
 export interface Source {
   id: string;
@@ -89,6 +89,15 @@ export interface NewsItem extends Evidenced {
 export interface Course {
   id: string;
   name: string;
+  group: "Science" | Discipline;
+  /** CTS modules use selected outcome focuses, not invented provincial units. */
+  focusLabel?: "Outcome focus";
+  curriculum?: {
+    url: string;
+    checkedOn: string;
+    level: "Introductory" | "Intermediate" | "Advanced";
+    preparation: string;
+  };
 }
 
 export interface Unit {
@@ -96,6 +105,8 @@ export interface Unit {
   courseId: string;
   name: string;
   preparedSearchId?: string;
+  /** Selected official outcomes; the focus name is an editorial summary. */
+  outcomeIds?: string[];
 }
 
 export type PreparedResult =

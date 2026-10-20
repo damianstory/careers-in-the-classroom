@@ -1,0 +1,702 @@
+[
+  {
+    "id": "providence-rna-delivery-story",
+    "type": "story",
+    "exampleSlug": "providence-rna-delivery",
+    "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional scientist compares labelled sample vials and a simplified delivery sketch at a clean laboratory bench; a colleague records results. Context: How can an RNA message be delivered without being destroyed first? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+    "original": "design/example-expansion-2026-10-20/providence-rna-delivery-story.png",
+    "destination": "public/images/examples/providence-rna-delivery-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "generated",
+    "generatedSource": "/Users/damianmatheson/.codex/generated_images/01a0e243-15ae-7292-829f-013229155de2/exec-744626fb-82bc-4d5c-87fa-2432fecc257c.png"
+  },
+  {
+    "id": "providence-rna-delivery-teaching",
+    "type": "teaching",
+    "exampleSlug": "providence-rna-delivery",
+    "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Four panels: RNA message, protective lipid particle, cell uptake, protein production. Arrows show sequence; no claim that delivery guarantees a therapeutic result. The conceptual steps supplied by the UI are: Choose the message: an RNA sequence carries instructions for making a protein. | Protect the cargo: a lipid formulation packages the RNA for delivery. | Compare formulations: researchers investigate stability, delivery and unwanted effects rather than assuming one carrier suits every task. | Read the evidence: delivery is one stage in development, not proof that a treatment is safe or effective. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+    "original": "design/example-expansion-2026-10-20/providence-rna-delivery-teaching.png",
+    "destination": "public/images/story-diagrams/providence-rna-delivery-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "nimble-small-intestine-sampling-story",
+    "type": "story",
+    "exampleSlug": "nimble-small-intestine-sampling",
+    "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional device designer and laboratory analyst compare a generic sealed sampling capsule with a digestive-tract diagram, without a patient procedure. Context: Why might a stool sample miss what is happening in the small intestine? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+    "original": "design/example-expansion-2026-10-20/nimble-small-intestine-sampling-story.png",
+    "destination": "public/images/examples/nimble-small-intestine-sampling-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "nimble-small-intestine-sampling-teaching",
+    "type": "teaching",
+    "exampleSlug": "nimble-small-intestine-sampling",
+    "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Outline of the digestive tract with distinct small- and large-intestine sampling points; arrows connect each location to a separate sample container. The conceptual steps supplied by the UI are: Locate the question: the small intestine and large intestine are different sampling environments. | Reach the location: an ingestible device is designed to collect fluid from within the gastrointestinal tract. | Preserve the sample: collection and sealing help protect information for later analysis. | Interpret cautiously: a sample describes a place and time; it does not describe every part of the digestive tract. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+    "original": "design/example-expansion-2026-10-20/nimble-small-intestine-sampling-teaching.png",
+    "destination": "public/images/story-diagrams/nimble-small-intestine-sampling-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "aggene-crop-traits-story",
+    "type": "story",
+    "exampleSlug": "aggene-crop-traits",
+    "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional plant researcher compares labelled trays of seedlings in a growth room with a notebook showing controlled watering groups. Context: How can a plant trait help a crop cope with heat or drought? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+    "original": "design/example-expansion-2026-10-20/aggene-crop-traits-story.png",
+    "destination": "public/images/examples/aggene-crop-traits-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "aggene-crop-traits-teaching",
+    "type": "teaching",
+    "exampleSlug": "aggene-crop-traits",
+    "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Two plant varieties crossed with two watering conditions in a four-box comparison; arrows lead to measurements, not a guaranteed better crop. The conceptual steps supplied by the UI are: Define the trait: decide which plant characteristic would address a growing problem. | Investigate the biology: researchers study how genetic information relates to the characteristic. | Compare plants: controlled comparisons help separate a trait from differences in growing conditions. | Test the limits: a promising laboratory result still needs evidence in relevant growing environments. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+    "original": "design/example-expansion-2026-10-20/aggene-crop-traits-teaching.png",
+    "destination": "public/images/story-diagrams/aggene-crop-traits-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "agat-trustworthy-water-results-story",
+    "type": "story",
+    "exampleSlug": "agat-trustworthy-water-results",
+    "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional analyst compares labelled water vials, a reference vial and a measurement log at a laboratory bench. Context: How do you know a water-test result can be trusted? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+    "original": "design/example-expansion-2026-10-20/agat-trustworthy-water-results-story.png",
+    "destination": "public/images/examples/agat-trustworthy-water-results-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "agat-trustworthy-water-results-teaching",
+    "type": "teaching",
+    "exampleSlug": "agat-trustworthy-water-results",
+    "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Sample identification → preparation → measurement with separate blank/reference/repeat checks → report including units. No invented instrument readings. The conceptual steps supplied by the UI are: Identify the sample: record where it came from and what question the test should answer. | Prepare consistently: a suitable method controls the steps between collection and measurement. | Check the measurement: reference materials, blanks or repeat measurements can reveal different problems. | Report the limits: a result needs units, context and an explanation of what the method can establish. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+    "original": "design/example-expansion-2026-10-20/agat-trustworthy-water-results-teaching.png",
+    "destination": "public/images/story-diagrams/agat-trustworthy-water-results-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "solvet-consistent-batches-story",
+    "type": "story",
+    "exampleSlug": "solvet-consistent-batches",
+    "prompt": "Create ONE landscape 16:9 editorial illustration. Fictional production and quality workers compare sealed generic containers with a batch record in a clean manufacturing workspace. Context: How can an animal-health product batch be made consistent? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+    "original": "design/example-expansion-2026-10-20/solvet-consistent-batches-story.png",
+    "destination": "public/images/examples/solvet-consistent-batches-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "solvet-consistent-batches-teaching",
+    "type": "teaching",
+    "exampleSlug": "solvet-consistent-batches",
+    "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Ingredient records → controlled mixing → quality checks → batch record. Show one rejected measurement returning for investigation, not automatic release. The conceptual steps supplied by the UI are: Define the specification: describe the intended product and measurable checks. | Control preparation: consistent quantities and recorded steps make batches comparable. | Check the batch: quality work examines whether the evidence meets the specification. | Keep traceability: records connect ingredients, preparation and checks so a problem can be investigated. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+    "original": "design/example-expansion-2026-10-20/solvet-consistent-batches-teaching.png",
+    "destination": "public/images/story-diagrams/solvet-consistent-batches-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "calgary-wildlife-release-evidence-story",
+    "type": "story",
+    "exampleSlug": "calgary-wildlife-release-evidence",
+    "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional wildlife-care worker observes an owl from outside a spacious rehabilitation enclosure and records behaviour without handling it. Context: What evidence shows that an injured wild animal is ready for release? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+    "original": "design/example-expansion-2026-10-20/calgary-wildlife-release-evidence-story.png",
+    "destination": "public/images/examples/calgary-wildlife-release-evidence-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "calgary-wildlife-release-evidence-teaching",
+    "type": "teaching",
+    "exampleSlug": "calgary-wildlife-release-evidence",
+    "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Condition assessment → repeated observations → habitat demands → professional review. Final panel is a decision point, not an automatic release arrow. The conceptual steps supplied by the UI are: Understand the problem: staff assess an animal’s condition and care needs. | Record recovery: observations over time are more informative than a single encouraging moment. | Observe independent behaviour: Calgary Wildlife describes flight and hunting observations for hawks and owls, together with checking that animals are not habituated to people. | Plan release professionally: medical recovery, behaviour, habitat, weather and seasonal timing inform the team’s decision. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+    "original": "design/example-expansion-2026-10-20/calgary-wildlife-release-evidence-teaching.png",
+    "destination": "public/images/story-diagrams/calgary-wildlife-release-evidence-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "cawst-biosand-learning-story",
+    "type": "story",
+    "exampleSlug": "cawst-biosand-learning",
+    "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional technical educator discusses a cutaway filter model with adult learners around a table; no one drinks the demonstration water. Context: How can layers of sand and living organisms help treat water? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+    "original": "design/example-expansion-2026-10-20/cawst-biosand-learning-story.png",
+    "destination": "public/images/examples/cawst-biosand-learning-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "cawst-biosand-learning-teaching",
+    "type": "teaching",
+    "exampleSlug": "cawst-biosand-learning",
+    "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Conceptual cutaway of one biosand filter: inlet reservoir above a perforated diffuser; standing water above a thin biologically active surface zone; deep fine-sand bed above two gravel layers. Flow arrows point down through the bed, then along an outlet tube that rises outside the body to the standing-water level. Small numbered markers 1–4, no dimensions, no removal percentages, no drinking person. Keep a covered collection vessel below the outlet. Depict layer ordering accurately. The conceptual steps supplied by the UI are: Start with the water: different problems require different treatment decisions. | Understand the filter: water moves through a diffuser, a biologically active zone near the sand surface, a sand bed and supporting gravel before reaching the outlet. | Teach operation: a device’s performance depends on appropriate use and maintenance. | Verify the outcome: clearer-looking water is not proof that it is safe to drink. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+    "original": "design/example-expansion-2026-10-20/cawst-biosand-learning-teaching.png",
+    "destination": "public/images/story-diagrams/cawst-biosand-learning-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "csi-alberta-training-evidence-story",
+    "type": "story",
+    "exampleSlug": "csi-alberta-training-evidence",
+    "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional sport physiologist and athlete discuss a simple recovery graph beside stationary exercise-testing equipment. Context: How can measurements help decide whether a training plan is working? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+    "original": "design/example-expansion-2026-10-20/csi-alberta-training-evidence-story.png",
+    "destination": "public/images/examples/csi-alberta-training-evidence-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "csi-alberta-training-evidence-teaching",
+    "type": "teaching",
+    "exampleSlug": "csi-alberta-training-evidence",
+    "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Consistent measurement conditions → repeated measurements → comparison graph → interpretation with coach. Use neutral fictional values and no health thresholds. The conceptual steps supplied by the UI are: Ask a focused question: decide which response a training change should affect. | Measure consistently: testing conditions influence the meaning of a result. | Compare over time: a pattern across observations can be more informative than one personal best. | Interpret together: sport scientists and coaches consider the evidence alongside the athlete’s circumstances. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+    "original": "design/example-expansion-2026-10-20/csi-alberta-training-evidence-teaching.png",
+    "destination": "public/images/story-diagrams/csi-alberta-training-evidence-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "itres-beyond-visible-colours-story",
+    "type": "story",
+    "exampleSlug": "itres-beyond-visible-colours",
+    "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional sensor technician checks an optical instrument while a colleague compares a multi-band image with a calibration chart. Context: What can extra colours reveal that an ordinary photograph cannot? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+    "original": "design/example-expansion-2026-10-20/itres-beyond-visible-colours-story.png",
+    "destination": "public/images/examples/itres-beyond-visible-colours-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "itres-beyond-visible-colours-teaching",
+    "type": "teaching",
+    "exampleSlug": "itres-beyond-visible-colours",
+    "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Incoming light → separated wavelength bands → calibrated measurements → comparison map. Use fabricated spectral curves and a clearly generic landscape. The conceptual steps supplied by the UI are: Separate wavelengths: sensors record information in different parts of the spectrum. | Check the instrument: calibration helps make measurements interpretable. | Connect image and place: processing links measurements with locations and checks data quality. | Compare signatures: differences across bands can support a question that a normal colour image cannot answer alone. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+    "original": "design/example-expansion-2026-10-20/itres-beyond-visible-colours-teaching.png",
+    "destination": "public/images/story-diagrams/itres-beyond-visible-colours-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "microhard-remote-radio-data-story",
+    "type": "story",
+    "exampleSlug": "microhard-remote-radio-data",
+    "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional electronics worker tests a radio module beside a tabletop terrain model and a receiving station. Context: How do measurements get back from equipment far from a wired network? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+    "original": "design/example-expansion-2026-10-20/microhard-remote-radio-data-story.png",
+    "destination": "public/images/examples/microhard-remote-radio-data-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "microhard-remote-radio-data-teaching",
+    "type": "teaching",
+    "exampleSlug": "microhard-remote-radio-data",
+    "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Sensor → transmitter → radio path with one obstacle → receiver → data display. Differentiate the physical signal from the information it carries. The conceptual steps supplied by the UI are: Measure locally: a sensor produces information at the equipment. | Send a signal: radio equipment carries encoded information across a wireless link. | Check reception: distance, obstacles and interference can affect communication. | Use the data: the receiving system needs to know whether information arrived and whether it is current. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+    "original": "design/example-expansion-2026-10-20/microhard-remote-radio-data-teaching.png",
+    "destination": "public/images/story-diagrams/microhard-remote-radio-data-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "sfc-fuel-cell-battery-support-story",
+    "type": "story",
+    "exampleSlug": "sfc-fuel-cell-battery-support",
+    "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional integration technician examines a generic fuel-cell power cabinet and battery beside a remote monitoring unit. Context: How can a fuel cell keep a remote battery charged? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+    "original": "design/example-expansion-2026-10-20/sfc-fuel-cell-battery-support-story.png",
+    "destination": "public/images/examples/sfc-fuel-cell-battery-support-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "sfc-fuel-cell-battery-support-teaching",
+    "type": "teaching",
+    "exampleSlug": "sfc-fuel-cell-battery-support",
+    "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Fuel chemical energy → fuel cell → battery and electrical load, with separate heat-loss arrows. Show control information as dashed arrows distinct from energy flow. The conceptual steps supplied by the UI are: Estimate the demand: the equipment requires energy over time. | Store a reserve: a battery supplies the connected load. | Replenish the reserve: a fuel-cell system can charge the battery when its control conditions call for it. | Check the whole system: fuel supply, losses, operating conditions and maintenance affect useful service. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+    "original": "design/example-expansion-2026-10-20/sfc-fuel-cell-battery-support-teaching.png",
+    "destination": "public/images/story-diagrams/sfc-fuel-cell-battery-support-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "skyfire-solar-output-story",
+    "type": "story",
+    "exampleSlug": "skyfire-solar-output",
+    "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional solar designer compares a roof shading sketch with a generic panel layout from a safe ground-level workspace. Context: Why can identical solar panels produce different amounts of electricity? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+    "original": "design/example-expansion-2026-10-20/skyfire-solar-output-story.png",
+    "destination": "public/images/examples/skyfire-solar-output-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "skyfire-solar-output-teaching",
+    "type": "teaching",
+    "exampleSlug": "skyfire-solar-output",
+    "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Sunlight → panel → usable electricity, plus losses. Compare two roofs with a clearly visible shading difference and label all output data fictional. The conceptual steps supplied by the UI are: Identify the input: sunlight available at the panel changes with conditions. | Consider the arrangement: orientation and shading affect exposure. | Convert energy: the system turns some incoming solar energy into usable electrical energy. | Compare like with like: distinguish instantaneous power from energy accumulated over time. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+    "original": "design/example-expansion-2026-10-20/skyfire-solar-output-teaching.png",
+    "destination": "public/images/story-diagrams/skyfire-solar-output-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "westpower-pump-performance-story",
+    "type": "story",
+    "exampleSlug": "westpower-pump-performance",
+    "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional millwright and mechanical technologist inspect an isolated pump assembly on a workshop stand. Context: Why can a pump work well at one flow rate and poorly at another? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+    "original": "design/example-expansion-2026-10-20/westpower-pump-performance-story.png",
+    "destination": "public/images/examples/westpower-pump-performance-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "westpower-pump-performance-teaching",
+    "type": "teaching",
+    "exampleSlug": "westpower-pump-performance",
+    "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Motor energy input → pump → liquid raised through height, with losses. Keep an energy diagram separate from a generic performance curve. The conceptual steps supplied by the UI are: Define the duty: specify the required movement of liquid and operating conditions. | Compare performance: the same pump does not behave identically at every operating point. | Inspect the equipment: mechanical condition can affect reliability and performance. | Test the change: measurements are needed to judge whether a repair or adjustment helped. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+    "original": "design/example-expansion-2026-10-20/westpower-pump-performance-teaching.png",
+    "destination": "public/images/story-diagrams/westpower-pump-performance-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "engineered-power-demanding-batteries-story",
+    "type": "story",
+    "exampleSlug": "engineered-power-demanding-batteries",
+    "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional materials worker reviews sealed industrial cells and an environmental-test record without exposing cell contents. Context: How can a battery keep working under heat and vibration? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+    "original": "design/example-expansion-2026-10-20/engineered-power-demanding-batteries-story.png",
+    "destination": "public/images/examples/engineered-power-demanding-batteries-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "engineered-power-demanding-batteries-teaching",
+    "type": "teaching",
+    "exampleSlug": "engineered-power-demanding-batteries",
+    "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Generic primary cell with two electrodes, electrolyte and external circuit; a separate panel shows temperature and vibration as test conditions, never a recharge arrow. The conceptual steps supplied by the UI are: Choose the application: temperature, vibration and energy needs set constraints. | Use electrochemistry: chemical reactions drive charge through an external circuit. | Design the package: materials and connections must function under the expected conditions. | Test against requirements: performance and physical reliability both matter. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+    "original": "design/example-expansion-2026-10-20/engineered-power-demanding-batteries-teaching.png",
+    "destination": "public/images/story-diagrams/engineered-power-demanding-batteries-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "frog3d-digital-to-physical-story",
+    "type": "story",
+    "exampleSlug": "frog3d-digital-to-physical",
+    "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional fabrication worker compares a digital curved profile with a finished generic foam form and measuring tool. Context: How can a digital shape become a physical object without losing its dimensions? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+    "original": "design/example-expansion-2026-10-20/frog3d-digital-to-physical-story.png",
+    "destination": "public/images/examples/frog3d-digital-to-physical-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "frog3d-digital-to-physical-teaching",
+    "type": "teaching",
+    "exampleSlug": "frog3d-digital-to-physical",
+    "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Dimensioned digital profile → tool-access check → generic machining stage → measured part. Show an inside-corner limitation clearly. The conceptual steps supplied by the UI are: Define the shape: a digital model describes dimensions and geometry. | Plan the process: material, tool access and machine limits constrain fabrication. | Make a controlled cut: equipment follows a prepared manufacturing process. | Check the result: compare the physical part with the intended dimensions and revise the plan if needed. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+    "original": "design/example-expansion-2026-10-20/frog3d-digital-to-physical-teaching.png",
+    "destination": "public/images/story-diagrams/frog3d-digital-to-physical-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "calhort-soil-and-water-story",
+    "type": "story",
+    "exampleSlug": "calhort-soil-and-water",
+    "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional horticulture educator compares two soil samples and plant roots with a learner at a garden workbench. Context: How does soil change the amount of water a garden needs? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+    "original": "design/example-expansion-2026-10-20/calhort-soil-and-water-story.png",
+    "destination": "public/images/examples/calhort-soil-and-water-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "calhort-soil-and-water-teaching",
+    "type": "teaching",
+    "exampleSlug": "calhort-soil-and-water",
+    "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Two equal soil columns receive equal water; arrows show drainage and retained moisture. Put measured values in live text rather than generated labels. The conceptual steps supplied by the UI are: Look below the plant: soil characteristics influence movement and retention of water. | Compare conditions: drainage and moisture affect the plant’s environment. | Observe over time: one wet surface does not describe the whole root zone. | Adjust using evidence: connect observations to plant needs rather than a universal watering rule. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+    "original": "design/example-expansion-2026-10-20/calhort-soil-and-water-teaching.png",
+    "destination": "public/images/story-diagrams/calhort-soil-and-water-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "ez-robot-sensor-decisions-story",
+    "type": "story",
+    "exampleSlug": "ez-robot-sensor-decisions",
+    "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional robotics developer tests a small wheeled educational robot in a marked tabletop obstacle area, hands safely away from movement. Context: How can a robot use a sensor reading to choose its next move? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+    "original": "design/example-expansion-2026-10-20/ez-robot-sensor-decisions-story.png",
+    "destination": "public/images/examples/ez-robot-sensor-decisions-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "ez-robot-sensor-decisions-teaching",
+    "type": "teaching",
+    "exampleSlug": "ez-robot-sensor-decisions",
+    "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Sensor reading → validity check → distance condition → stop or move → repeat. Include a visible stop path for invalid data. The conceptual steps supplied by the UI are: Define the task: decide what the robot should do in a simple environment. | Read the sensor: a distance measurement supplies information, not a decision by itself. | Apply a rule: compare the reading with a chosen condition and select an action. | Test the boundary: check what happens near the threshold and when a reading is missing. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+    "original": "design/example-expansion-2026-10-20/ez-robot-sensor-decisions-teaching.png",
+    "destination": "public/images/story-diagrams/ez-robot-sensor-decisions-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "clio-linked-client-records-story",
+    "type": "story",
+    "exampleSlug": "clio-linked-client-records",
+    "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional software developer sketches three linked record tables beside a screen containing invented matter identifiers. Context: How can software keep the right client, matter and document connected? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+    "original": "design/example-expansion-2026-10-20/clio-linked-client-records-story.png",
+    "destination": "public/images/examples/clio-linked-client-records-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "clio-linked-client-records-teaching",
+    "type": "teaching",
+    "exampleSlug": "clio-linked-client-records",
+    "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Client table → matter table → document table with primary and foreign-key arrows. Label it fictional classroom schema, with no real legal records. The conceptual steps supplied by the UI are: Identify the records: distinguish a client, a matter and a document. | Give each record an identity: stable keys avoid relying only on similar-looking names. | Connect records: relationships associate each document with the relevant matter and client. | Check the result: test that updates and searches return the intended information. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+    "original": "design/example-expansion-2026-10-20/clio-linked-client-records-teaching.png",
+    "destination": "public/images/story-diagrams/clio-linked-client-records-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "absorb-learning-rules-story",
+    "type": "story",
+    "exampleSlug": "absorb-learning-rules",
+    "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional developer and learning administrator compare a simple assignment rule with several invented learner test cases. Context: How can software decide which learning task someone should see next? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+    "original": "design/example-expansion-2026-10-20/absorb-learning-rules-story.png",
+    "destination": "public/images/examples/absorb-learning-rules-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "absorb-learning-rules-teaching",
+    "type": "teaching",
+    "exampleSlug": "absorb-learning-rules",
+    "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Fictional learner record → condition checks → assigned or not assigned → test results. Show a missing-data case separately. The conceptual steps supplied by the UI are: Define the condition: identify which learner information matters for an assignment. | Evaluate the rule: compare each fictional record with the required conditions. | Assign the result: decide which learning task should appear. | Retest changes: a changed rule or learner record can change the expected result. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+    "original": "design/example-expansion-2026-10-20/absorb-learning-rules-teaching.png",
+    "destination": "public/images/story-diagrams/absorb-learning-rules-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "userful-visual-information-routing-story",
+    "type": "story",
+    "exampleSlug": "userful-visual-information-routing",
+    "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional software-support worker compares a small display-layout plan with a wall of generic non-sensitive screens. Context: How do the right signals reach the right control-room screen? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+    "original": "design/example-expansion-2026-10-20/userful-visual-information-routing-story.png",
+    "destination": "public/images/examples/userful-visual-information-routing-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "userful-visual-information-routing-teaching",
+    "type": "teaching",
+    "exampleSlug": "userful-visual-information-routing",
+    "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Three generic inputs → fictional routing rule → two display layouts. Include an unavailable-input state and avoid real security or operational data. The conceptual steps supplied by the UI are: Identify the inputs: different sources carry different information. | Define the viewing need: the team decides which information belongs on which display. | Apply a workflow: software helps route and arrange the selected content. | Check exceptions: unavailable or stale inputs need an understandable response. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+    "original": "design/example-expansion-2026-10-20/userful-visual-information-routing-teaching.png",
+    "destination": "public/images/story-diagrams/userful-visual-information-routing-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "peloton-consistent-field-records-story",
+    "type": "story",
+    "exampleSlug": "peloton-consistent-field-records",
+    "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional data developer compares a field measurement sheet with a screen showing invented site records. Context: How can field measurements and office records stay consistent? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+    "original": "design/example-expansion-2026-10-20/peloton-consistent-field-records-story.png",
+    "destination": "public/images/examples/peloton-consistent-field-records-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "peloton-consistent-field-records-teaching",
+    "type": "teaching",
+    "exampleSlug": "peloton-consistent-field-records",
+    "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Field observation → field checks → linked site and measurement tables → reviewed record. Flag an invalid unit without inventing a company error rate. The conceptual steps supplied by the UI are: Identify the record: connect a measurement to a site and time. | Validate the fields: consistent units and required values help catch errors. | Relate the tables: site details and repeated measurements serve different purposes. | Review updates: people need to know which data changed and whether the result is usable. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+    "original": "design/example-expansion-2026-10-20/peloton-consistent-field-records-teaching.png",
+    "destination": "public/images/story-diagrams/peloton-consistent-field-records-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "arcobi-comparing-power-data-story",
+    "type": "story",
+    "exampleSlug": "arcobi-comparing-power-data",
+    "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional data specialist compares timestamped market records and a simple labelled chart at a workstation. Context: How do you compare electricity prices recorded at different times and places? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+    "original": "design/example-expansion-2026-10-20/arcobi-comparing-power-data-story.png",
+    "destination": "public/images/examples/arcobi-comparing-power-data-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "arcobi-comparing-power-data-teaching",
+    "type": "teaching",
+    "exampleSlug": "arcobi-comparing-power-data",
+    "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Market and interval identifiers → validated price records → filtered comparison. Visually distinguish missing values from zero. The conceptual steps supplied by the UI are: Define the comparison: select the market, period and measurement needed. | Organize the records: time, location and units belong with every value. | Prepare comparable data: missing records and different intervals can distort a comparison. | Ask a bounded question: a filtered result supports an analysis, not a guaranteed forecast. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+    "original": "design/example-expansion-2026-10-20/arcobi-comparing-power-data-teaching.png",
+    "destination": "public/images/story-diagrams/arcobi-comparing-power-data-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "athennian-company-relationships-story",
+    "type": "story",
+    "exampleSlug": "athennian-company-relationships",
+    "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional developer discusses a relationship diagram of invented companies and people with a product colleague. Context: How can changing one company record update the relationships that depend on it? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+    "original": "design/example-expansion-2026-10-20/athennian-company-relationships-story.png",
+    "destination": "public/images/examples/athennian-company-relationships-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "athennian-company-relationships-teaching",
+    "type": "teaching",
+    "exampleSlug": "athennian-company-relationships",
+    "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Three linked tables with an appointment start and end date; show one relationship ending while the person record remains. The conceptual steps supplied by the UI are: Distinguish entities: people, organizations and appointments are different record types. | Record relationships: a person can hold more than one appointment and an organization can have several connections. | Update carefully: stable identifiers help preserve the intended relationships. | Review the history: changes need context so users can understand what is current. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+    "original": "design/example-expansion-2026-10-20/athennian-company-relationships-teaching.png",
+    "destination": "public/images/story-diagrams/athennian-company-relationships-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "calgary-coop-member-value-story",
+    "type": "story",
+    "exampleSlug": "calgary-coop-member-value",
+    "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional retail operations worker compares a store-service plan with a simple three-way allocation chart. Context: How can a member-owned retailer decide how much value to return to members? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+    "original": "design/example-expansion-2026-10-20/calgary-coop-member-value-story.png",
+    "destination": "public/images/examples/calgary-coop-member-value-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "calgary-coop-member-value-teaching",
+    "type": "teaching",
+    "exampleSlug": "calgary-coop-member-value",
+    "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Retail activity → operating costs → fictional available surplus → benefits, reinvestment and reserves. Label allocation hypothetical. The conceptual steps supplied by the UI are: Identify the value: members receive products, services and membership-related benefits. | Account for operations: revenue must support the costs of providing those services. | Consider future needs: investment and financial resilience compete with immediate uses of funds. | Explain the decision: compare alternatives in terms of customer benefits and the venture’s continuing capacity. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+    "original": "design/example-expansion-2026-10-20/calgary-coop-member-value-teaching.png",
+    "destination": "public/images/story-diagrams/calgary-coop-member-value-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "olympia-revenue-and-profit-story",
+    "type": "story",
+    "exampleSlug": "olympia-revenue-and-profit",
+    "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional financial analyst compares two clearly labelled period columns and annotates the relationship between revenue and expenses. Context: Why might revenue and profit change at different rates? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+    "original": "design/example-expansion-2026-10-20/olympia-revenue-and-profit-story.png",
+    "destination": "public/images/examples/olympia-revenue-and-profit-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "olympia-revenue-and-profit-teaching",
+    "type": "teaching",
+    "exampleSlug": "olympia-revenue-and-profit",
+    "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Two-period revenue and expense bars → calculated difference → explanation. Keep actual report context separate from fictional worksheet numbers. The conceptual steps supplied by the UI are: Identify comparable periods: use statements with consistent scope and definitions. | Separate revenue and expenses: a change in either can affect the result. | Calculate the relationship: compare the direction and size of changes, not only the largest headline number. | Explain the limits: a simplified comparison cannot replace the complete financial statements and notes. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+    "original": "design/example-expansion-2026-10-20/olympia-revenue-and-profit-teaching.png",
+    "destination": "public/images/story-diagrams/olympia-revenue-and-profit-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "boardwalk-housing-operating-costs-story",
+    "type": "story",
+    "exampleSlug": "boardwalk-housing-operating-costs",
+    "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional financial analyst and property operations colleague compare invented occupancy and cost figures beside a generic housing plan. Context: How do occupancy, rent and operating costs change a housing business? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+    "original": "design/example-expansion-2026-10-20/boardwalk-housing-operating-costs-story.png",
+    "destination": "public/images/examples/boardwalk-housing-operating-costs-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "boardwalk-housing-operating-costs-teaching",
+    "type": "teaching",
+    "exampleSlug": "boardwalk-housing-operating-costs",
+    "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Occupied units and rent → hypothetical rental income; operating costs subtract separately. Explicitly mark omitted financing, tax and other items. The conceptual steps supplied by the UI are: Define the scope: a single property and a national portfolio are different units of analysis. | Track operating inputs: occupied units, rents and expenses influence property results. | Compare consistently: distinguish property operating measures from accounting profit and cash flow. | Interpret the change: explain what the calculation leaves out before drawing a conclusion. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+    "original": "design/example-expansion-2026-10-20/boardwalk-housing-operating-costs-teaching.png",
+    "destination": "public/images/story-diagrams/boardwalk-housing-operating-costs-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "stampede-event-sustainability-story",
+    "type": "story",
+    "exampleSlug": "stampede-event-sustainability",
+    "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional event coordinator discusses a site plan, staffing schedule and visitor route with colleagues in an event office. Context: How can a major event serve visitors and remain financially sustainable? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+    "original": "design/example-expansion-2026-10-20/stampede-event-sustainability-story.png",
+    "destination": "public/images/examples/stampede-event-sustainability-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "stampede-event-sustainability-teaching",
+    "type": "teaching",
+    "exampleSlug": "stampede-event-sustainability",
+    "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Visitor needs → event plan → fixed and variable costs → fictional budget comparison. Keep economic impact outside the revenue calculation. The conceptual steps supplied by the UI are: Define the experience: identify what different visitors value. | Plan delivery: people, facilities and services create the experience and generate costs. | Compare scenarios: attendance and spending assumptions affect a budget. | Review the trade-offs: an affordable ticket, a better experience and financial resilience may pull in different directions. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+    "original": "design/example-expansion-2026-10-20/stampede-event-sustainability-teaching.png",
+    "destination": "public/images/story-diagrams/stampede-event-sustainability-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "monogram-coffee-subscriptions-story",
+    "type": "story",
+    "exampleSlug": "monogram-coffee-subscriptions",
+    "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional ecommerce coordinator compares a one-time order with a recurring delivery schedule beside packaged coffee. Context: Why offer a subscription as well as a single purchase? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+    "original": "design/example-expansion-2026-10-20/monogram-coffee-subscriptions-story.png",
+    "destination": "public/images/examples/monogram-coffee-subscriptions-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "monogram-coffee-subscriptions-teaching",
+    "type": "teaching",
+    "exampleSlug": "monogram-coffee-subscriptions",
+    "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Customer need → one-time or recurring order → fulfilment → customer change or renewal decision. Avoid implying automatic loyalty. The conceptual steps supplied by the UI are: Compare customer needs: some buyers want a single purchase; others value a recurring delivery. | Describe the offer: quantity, timing and flexibility affect the customer benefit. | Plan fulfilment: recurring orders still require stock, preparation and delivery. | Evaluate the model: convenience does not prove retention or profitability; those need evidence. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+    "original": "design/example-expansion-2026-10-20/monogram-coffee-subscriptions-teaching.png",
+    "destination": "public/images/story-diagrams/monogram-coffee-subscriptions-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "good-earth-franchise-support-story",
+    "type": "story",
+    "exampleSlug": "good-earth-franchise-support",
+    "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional franchise-support coordinator and coffeehouse operator compare a training checklist with a generic store layout. Context: What does a franchise partner get beyond a brand name? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+    "original": "design/example-expansion-2026-10-20/good-earth-franchise-support-story.png",
+    "destination": "public/images/examples/good-earth-franchise-support-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "good-earth-franchise-support-teaching",
+    "type": "teaching",
+    "exampleSlug": "good-earth-franchise-support",
+    "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Brand organization ↔ local operator, with labelled training, systems and feedback links; customers connect to the local operation. The conceptual steps supplied by the UI are: Distinguish the parties: the brand organization and local operator have different responsibilities. | Identify support: training, systems and marketing are part of the offered model. | Consider the operator’s work: daily service and execution still require local decisions. | Evaluate the fit: compare benefits, obligations and uncertainties before assuming one model is better. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+    "original": "design/example-expansion-2026-10-20/good-earth-franchise-support-teaching.png",
+    "destination": "public/images/story-diagrams/good-earth-franchise-support-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "eight-ounce-wholesale-retail-story",
+    "type": "story",
+    "exampleSlug": "eight-ounce-wholesale-retail",
+    "prompt": "Create ONE landscape 16:9 editorial illustration. A fictional procurement worker and warehouse coordinator compare product samples with separate café and household order lists. Context: Why would a business sell to both cafés and individual customers? GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene; avoid collages, comic panels, speech bubbles, all text, labels, titles, caption bands and borders. Generic people/equipment, not an actual company facility. Vary the fictional adult from other images; readable tools and task at small card size.",
+    "original": "design/example-expansion-2026-10-20/eight-ounce-wholesale-retail-story.png",
+    "destination": "public/images/examples/eight-ounce-wholesale-retail-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "eight-ounce-wholesale-retail-teaching",
+    "type": "teaching",
+    "exampleSlug": "eight-ounce-wholesale-retail",
+    "prompt": "Create ONE landscape 16:9 static classroom teaching diagram in graphic-novel screenprint style. Supplier → shared inventory → wholesale orders and retail orders → distinct fulfilment needs. No unsupported cost advantage arrows. The conceptual steps supplied by the UI are: Distinguish customers: a business buyer and a household may have different quantities and service needs. | Select products: purchasing decisions must fit customers and available supply. | Coordinate orders: inventory and fulfilment connect the offer to the delivered product. | Compare channels: assess customer benefits and operational demands without assuming one channel is always more profitable. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Prioritize a SIMPLE accurate scientific or process relationship, generous ivory negative space. Explicit arrowheads show causal direction; at most four small forest-green circular markers numbered 1, 2, 3, 4. No other text, no long labels, no title, no brand, no caption strip. No invented statistics or precision. Labels/explanations will be live HTML outside this artwork. For data and business diagrams use clearly schematic fictional records and shapes, avoid tiny pseudo-text. For medical/scientific diagrams avoid depicting a clinical procedure. No distracting human figures unless necessary to the specified mechanism.",
+    "original": "design/example-expansion-2026-10-20/eight-ounce-wholesale-retail-teaching.png",
+    "destination": "public/images/story-diagrams/eight-ounce-wholesale-retail-graphic-novel.webp",
+    "aspect": "16:9",
+    "status": "pending"
+  },
+  {
+    "id": "work-plant-biotechnology",
+    "type": "discover",
+    "roleId": "work-plant-biotechnology",
+    "prompt": "Create ONE tall portrait 752:1344 occupation guessing card. The TOP 26 percent of the canvas is a solid forest-green rectangle with large ivory uppercase condensed lettering, EXACT title: \"PLANT BIOTECHNOLOGY SCIENTIST\". Keep every letter inside the top 26 percent; absolutely no text elsewhere. The lower 74 percent depicts: In a growth room, a person compares labelled seedling trays with a notebook showing several watering groups. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene with a distinct fictional adult actively doing this work. Equipment and spatial layout must match the clue. Do not crop hands or invent extra arms. Not a landscape crop. Scene fills width below title band. No bottom caption, no logo.",
+    "original": "design/example-expansion-2026-10-20/work-plant-biotechnology.png",
+    "destination": "public/images/discover/work-plant-biotechnology.webp",
+    "aspect": "752:1344",
+    "status": "pending",
+    "number": "71"
+  },
+  {
+    "id": "work-science-education",
+    "type": "discover",
+    "roleId": "work-science-education",
+    "prompt": "Create ONE tall portrait 752:1344 occupation guessing card. The TOP 26 percent of the canvas is a solid forest-green rectangle with large ivory uppercase condensed lettering, EXACT title: \"SCIENCE EDUCATOR\". Keep every letter inside the top 26 percent; absolutely no text elsewhere. The lower 74 percent depicts: At a demonstration table, a person uses a cutaway model and a sketch to help a small group compare what they observe. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene with a distinct fictional adult actively doing this work. Equipment and spatial layout must match the clue. Do not crop hands or invent extra arms. Not a landscape crop. Scene fills width below title band. No bottom caption, no logo.",
+    "original": "design/example-expansion-2026-10-20/work-science-education.png",
+    "destination": "public/images/discover/work-science-education.webp",
+    "aspect": "752:1344",
+    "status": "pending",
+    "number": "72"
+  },
+  {
+    "id": "work-sport-physiology",
+    "type": "discover",
+    "roleId": "work-sport-physiology",
+    "prompt": "Create ONE tall portrait 752:1344 occupation guessing card. The TOP 26 percent of the canvas is a solid forest-green rectangle with large ivory uppercase condensed lettering, EXACT title: \"SPORT PHYSIOLOGIST\". Keep every letter inside the top 26 percent; absolutely no text elsewhere. The lower 74 percent depicts: Beside exercise-testing equipment, a person compares a recovery graph with notes while talking with an athlete. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene with a distinct fictional adult actively doing this work. Equipment and spatial layout must match the clue. Do not crop hands or invent extra arms. Not a landscape crop. Scene fills width below title band. No bottom caption, no logo.",
+    "original": "design/example-expansion-2026-10-20/work-sport-physiology.png",
+    "destination": "public/images/discover/work-sport-physiology.webp",
+    "aspect": "752:1344",
+    "status": "pending",
+    "number": "73"
+  },
+  {
+    "id": "work-retail-operations",
+    "type": "discover",
+    "roleId": "work-retail-operations",
+    "prompt": "Create ONE tall portrait 752:1344 occupation guessing card. The TOP 26 percent of the canvas is a solid forest-green rectangle with large ivory uppercase condensed lettering, EXACT title: \"RETAIL OPERATIONS COORDINATOR\". Keep every letter inside the top 26 percent; absolutely no text elsewhere. The lower 74 percent depicts: In a store office, a person compares a floor plan, a staff schedule and a customer-service checklist. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene with a distinct fictional adult actively doing this work. Equipment and spatial layout must match the clue. Do not crop hands or invent extra arms. Not a landscape crop. Scene fills width below title band. No bottom caption, no logo.",
+    "original": "design/example-expansion-2026-10-20/work-retail-operations.png",
+    "destination": "public/images/discover/work-retail-operations.webp",
+    "aspect": "752:1344",
+    "status": "pending",
+    "number": "74"
+  },
+  {
+    "id": "work-financial-analysis",
+    "type": "discover",
+    "roleId": "work-financial-analysis",
+    "prompt": "Create ONE tall portrait 752:1344 occupation guessing card. The TOP 26 percent of the canvas is a solid forest-green rectangle with large ivory uppercase condensed lettering, EXACT title: \"FINANCIAL ANALYST\". Keep every letter inside the top 26 percent; absolutely no text elsewhere. The lower 74 percent depicts: At a desk, a person compares two period columns, highlights differences and writes notes beside a simple chart. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene with a distinct fictional adult actively doing this work. Equipment and spatial layout must match the clue. Do not crop hands or invent extra arms. Not a landscape crop. Scene fills width below title band. No bottom caption, no logo.",
+    "original": "design/example-expansion-2026-10-20/work-financial-analysis.png",
+    "destination": "public/images/discover/work-financial-analysis.webp",
+    "aspect": "752:1344",
+    "status": "pending",
+    "number": "75"
+  },
+  {
+    "id": "work-event-operations",
+    "type": "discover",
+    "roleId": "work-event-operations",
+    "prompt": "Create ONE tall portrait 752:1344 occupation guessing card. The TOP 26 percent of the canvas is a solid forest-green rectangle with large ivory uppercase condensed lettering, EXACT title: \"EVENT OPERATIONS COORDINATOR\". Keep every letter inside the top 26 percent; absolutely no text elsewhere. The lower 74 percent depicts: A person at an event office checks a site map, a timetable and several team checklists before the gates open. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene with a distinct fictional adult actively doing this work. Equipment and spatial layout must match the clue. Do not crop hands or invent extra arms. Not a landscape crop. Scene fills width below title band. No bottom caption, no logo.",
+    "original": "design/example-expansion-2026-10-20/work-event-operations.png",
+    "destination": "public/images/discover/work-event-operations.webp",
+    "aspect": "752:1344",
+    "status": "pending",
+    "number": "76"
+  },
+  {
+    "id": "work-ecommerce-operations",
+    "type": "discover",
+    "roleId": "work-ecommerce-operations",
+    "prompt": "Create ONE tall portrait 752:1344 occupation guessing card. The TOP 26 percent of the canvas is a solid forest-green rectangle with large ivory uppercase condensed lettering, EXACT title: \"ECOMMERCE OPERATIONS COORDINATOR\". Keep every letter inside the top 26 percent; absolutely no text elsewhere. The lower 74 percent depicts: At a packing-area desk, a person compares a recurring delivery calendar with a one-time order and a customer-options screen. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene with a distinct fictional adult actively doing this work. Equipment and spatial layout must match the clue. Do not crop hands or invent extra arms. Not a landscape crop. Scene fills width below title band. No bottom caption, no logo.",
+    "original": "design/example-expansion-2026-10-20/work-ecommerce-operations.png",
+    "destination": "public/images/discover/work-ecommerce-operations.webp",
+    "aspect": "752:1344",
+    "status": "pending",
+    "number": "77"
+  },
+  {
+    "id": "work-franchise-support",
+    "type": "discover",
+    "roleId": "work-franchise-support",
+    "prompt": "Create ONE tall portrait 752:1344 occupation guessing card. The TOP 26 percent of the canvas is a solid forest-green rectangle with large ivory uppercase condensed lettering, EXACT title: \"FRANCHISE SUPPORT COORDINATOR\". Keep every letter inside the top 26 percent; absolutely no text elsewhere. The lower 74 percent depicts: A person and a coffeehouse operator compare a training checklist, a shop plan and a shared operating guide. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene with a distinct fictional adult actively doing this work. Equipment and spatial layout must match the clue. Do not crop hands or invent extra arms. Not a landscape crop. Scene fills width below title band. No bottom caption, no logo.",
+    "original": "design/example-expansion-2026-10-20/work-franchise-support.png",
+    "destination": "public/images/discover/work-franchise-support.webp",
+    "aspect": "752:1344",
+    "status": "pending",
+    "number": "78"
+  },
+  {
+    "id": "work-procurement",
+    "type": "discover",
+    "roleId": "work-procurement",
+    "prompt": "Create ONE tall portrait 752:1344 occupation guessing card. The TOP 26 percent of the canvas is a solid forest-green rectangle with large ivory uppercase condensed lettering, EXACT title: \"PROCUREMENT SPECIALIST\". Keep every letter inside the top 26 percent; absolutely no text elsewhere. The lower 74 percent depicts: At a warehouse office, a person compares product samples, supplier information and an inventory list. GRAPHIC-NOVEL / limited-colour SCREENPRINT. Confident forest-green ink contours (#1b3b19), mature expressive fictional adults, flat sage and ivory (#faf9f7) colour planes, natural skin and hair, bold silhouettes, coarse halftone shadows, fine crosshatching, textured uncoated paper and restrained burnt-orange/slate-blue accents. Not photorealistic, not 3D, not pixel art. Anatomically coherent hands attached to visible arms; no floating limbs, no logos, no watermark. Single composed working scene with a distinct fictional adult actively doing this work. Equipment and spatial layout must match the clue. Do not crop hands or invent extra arms. Not a landscape crop. Scene fills width below title band. No bottom caption, no logo.",
+    "original": "design/example-expansion-2026-10-20/work-procurement.png",
+    "destination": "public/images/discover/work-procurement.webp",
+    "aspect": "752:1344",
+    "status": "pending",
+    "number": "79"
+  }
+]
