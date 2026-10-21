@@ -166,8 +166,8 @@ export default {
       },
       {
         id: "page-watersmart-oct17-source-37",
-        label: "WaterSMART — a Hazen company — company/project evidence 3",
-        url: "https://watersmartsolutions.ca/our-team/"
+        label: "Hazen — Claire Jackson, WaterSMART president",
+        url: "https://www.hazenandsawyer.com/ca/people/claire-jackson"
       },
       {
         id: "page-watersmart-oct17-source-38",
@@ -293,16 +293,19 @@ export default {
       sourceIds: []
     },
     localConnection: {
-      text: "Calgary-based work is established through the City’s named roadmap partnership and the company team page.",
+      text: "Hazen lists a Calgary office at 2100, 700 6th Avenue SW. Its current profile of WaterSMART president Claire Jackson describes water strategy, environmental-policy work, risk assessment, and water-management modelling. This supports the local organization and work connection; it does not establish that every Hazen project is delivered by the Calgary team.",
       kind: "stated",
       sourceIds: [
         "oct17-source-35",
         "oct17-source-36",
-        "oct17-source-37"
+        "oct17-source-37",
+        "alx-oct20-08-1",
+        "alx-oct20-08-2",
+        "alx-oct20-08-3"
       ]
     },
     websiteSourceId: "oct17-source-37",
-    checkedOn: "2026-10-17"
+    checkedOn: "2026-10-20"
   },
   organizationRoles: [
     {
@@ -361,9 +364,27 @@ export default {
     },
     {
       id: "oct17-source-37",
-      label: "WaterSMART — a Hazen company — company/project evidence 3",
-      url: "https://watersmartsolutions.ca/our-team/",
-      checkedOn: "2026-10-17"
+      label: "Hazen — Claire Jackson, WaterSMART president",
+      url: "https://www.hazenandsawyer.com/ca/people/claire-jackson",
+      checkedOn: "2026-10-20"
+    },
+    {
+      "id": "alx-oct20-08-1",
+      "label": "Hazen — Calgary office",
+      "url": "https://www.hazenandsawyer.com/locations/calgary",
+      "checkedOn": "2026-10-20"
+    },
+    {
+      "id": "alx-oct20-08-2",
+      "label": "Hazen — Claire Jackson, WaterSMART president",
+      "url": "https://www.hazenandsawyer.com/ca/people/claire-jackson",
+      "checkedOn": "2026-10-20"
+    },
+    {
+      "id": "alx-oct20-08-3",
+      "label": "Hazen — WaterSMART acquisition announcement (2024)",
+      "url": "https://www.hazenandsawyer.com/ca/news/hazen-and-sawyer-acquires-watersmart-solutions-to-enhance-and-expand-operations-in-north-america-and-globally",
+      "checkedOn": "2026-10-20"
     }
   ],
   diagram: {

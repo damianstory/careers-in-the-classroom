@@ -118,10 +118,11 @@ export const exampleDetails: ExampleDetails[] = [
       "caption": "An illustrative connection between solutions chemistry and process development.",
       "steps": [
         {
-          "text": "E3’s Clearwater project targets lithium dissolved in underground brine in Alberta.",
+          "text": "E3’s Clearwater project targets lithium dissolved in underground brine in Alberta. A November 2025 Alberta Energy Regulator application notice describes a proposed flow from production wells through pipelines to a central processing facility, followed by reinjection of lithium-depleted brine. The notice records a proposal; it does not establish the facility’s current operating status.",
           "kind": "stated",
           "sourceIds": [
-            "depth-e3-home"
+            "depth-e3-home",
+            "alx-oct20-07-1"
           ]
         },
         {
@@ -168,6 +169,6 @@ export const exampleDetails: ExampleDetails[] = [
       "stantec-water-eit",
       "agat-water-lab-technician"
     ],
-    "checkedOn": "2026-09-29"
+    "checkedOn": "2026-10-20"
   },
 ];

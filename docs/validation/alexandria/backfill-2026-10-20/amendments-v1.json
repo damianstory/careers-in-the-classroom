@@ -1,0 +1,259 @@
+[
+  {
+    "slug": "isl-engineering",
+    "title": "Show a documented engineering project lifecycle",
+    "field": "organization.description",
+    "append": "Separate Alberta procurement records show the range of work behind an engineering project. A 2025 bridge-and-culvert contract awarded to ISL included design, construction supervision, and post-construction and warranty inspections. In July 2026, Strathmore awarded ISL reservoir-expansion design work and listed its Calgary office. The reservoir brief asks for a construction plan that maintains water service. These are separate projects from Calgary’s 144 Avenue NW extension.",
+    "sources": [
+      "https://purchasing.alberta.ca/posting/AB-2025-04348",
+      "https://purchasing.alberta.ca/posting/AB-2026-04298"
+    ],
+    "delta": "Adds purchaser-documented tasks, a Calgary office award, and continuity-of-service constraints.",
+    "cautions": "2025 bridge award names Edmonton; do not assign it to Calgary staff. Strathmore is outside Calgary. An award does not establish construction completion or hiring.",
+    "origin": "Alexandria APC",
+    "score": 9,
+    "id": "ALX-BF-01",
+    "version": 1,
+    "userDecision": "pending",
+    "checkedOn": "2026-10-20",
+    "organizationId": "isl-engineering",
+    "before": "ISL was the City of Calgary’s prime consultant for planning, detailed design and construction work on the 144 Avenue NW extension. Its project account describes steep terrain, a single-span bridge over West Nose Creek, creek work and multi-use pathways. This creates a local example of design constraints interacting, rather than a story about choosing the shortest line on a map.",
+    "proposedCopy": "ISL was the City of Calgary’s prime consultant for planning, detailed design and construction work on the 144 Avenue NW extension. Its project account describes steep terrain, a single-span bridge over West Nose Creek, creek work and multi-use pathways. This creates a local example of design constraints interacting, rather than a story about choosing the shortest line on a map. Separate Alberta procurement records show the range of work behind an engineering project. A 2025 bridge-and-culvert contract awarded to ISL included design, construction supervision, and post-construction and warranty inspections. In July 2026, Strathmore awarded ISL reservoir-expansion design work and listed its Calgary office. The reservoir brief asks for a construction plan that maintains water service. These are separate projects from Calgary’s 144 Avenue NW extension.",
+    "operation": "append",
+    "discover": {
+      "decision": "retain-existing-cards",
+      "roleIds": [
+        "work-civil-and-construction-technology",
+        "work-spatial",
+        "work-environmental-field-assessment"
+      ],
+      "proposedCopyChange": null,
+      "reason": "Evidence strengthening within already represented occupations; retain current clues, artwork, pathways, stable numbers and example links."
+    },
+    "pathwayDecision": "No curriculum or pathway qualification changes."
+  },
+  {
+    "slug": "spartan-controls",
+    "title": "Explain why replacement parts must fit the existing system",
+    "field": "organization.description",
+    "append": "A February 2025 University of Alberta award names Spartan Controls at its Calgary address as the supplier of control valves for large heat exchangers. The university specified matching replacements because another make or model would require changes to the existing piping. This is an example of engineering compatibility: a replacement component has to work with the wider system. These control valves are distinct from pressure-relief devices.",
+    "sources": [
+      "https://purchasing.alberta.ca/posting/AB-2025-00956"
+    ],
+    "delta": "Adds independent customer evidence and a clear design-constraint example.",
+    "cautions": "The customer is in Edmonton. The record establishes supply, not installation by Calgary staff or a current vacancy. OPEN status is misleading here; award entries and notice flags establish the award.",
+    "origin": "Alexandria APC",
+    "score": 9,
+    "id": "ALX-BF-02",
+    "version": 1,
+    "userDecision": "pending",
+    "checkedOn": "2026-10-20",
+    "organizationId": "spartan-controls",
+    "before": "Spartan Controls describes valve diagnostics, repair, commissioning and specialised testing. Its service page explicitly identifies Calgary repair and steam-testing capability. The classroom model focuses on evidence of valve behaviour, keeping a control valve’s purpose separate from a pressure-relief device’s protective function.",
+    "proposedCopy": "Spartan Controls describes valve diagnostics, repair, commissioning and specialised testing. Its service page explicitly identifies Calgary repair and steam-testing capability. The classroom model focuses on evidence of valve behaviour, keeping a control valve’s purpose separate from a pressure-relief device’s protective function. A February 2025 University of Alberta award names Spartan Controls at its Calgary address as the supplier of control valves for large heat exchangers. The university specified matching replacements because another make or model would require changes to the existing piping. This is an example of engineering compatibility: a replacement component has to work with the wider system. These control valves are distinct from pressure-relief devices.",
+    "operation": "append",
+    "discover": {
+      "decision": "retain-existing-cards",
+      "roleIds": [
+        "work-valve-service",
+        "work-controls"
+      ],
+      "proposedCopyChange": null,
+      "reason": "Evidence strengthening within already represented occupations; retain current clues, artwork, pathways, stable numbers and example links."
+    },
+    "pathwayDecision": "No curriculum or pathway qualification changes."
+  },
+  {
+    "slug": "skyfire-solar-output",
+    "title": "Ground the solar example in a named Alberta project",
+    "field": "organization.description",
+    "append": "For the RenuWell project, SkyFire reports designing and building two solar arrays on former well sites in the Municipal District of Taber. Its case study describes solar modules, inverters, and ongoing operations and maintenance. This adds a practical engineering question: how do site conditions, equipment choices, and maintenance affect what a solar system delivers? The project is in southern Alberta; Calgary is the company’s head-office connection.",
+    "sources": [
+      "https://skyfireenergy.com/case-study-utility/renuwell-solar-project/"
+    ],
+    "delta": "Adds a named project and maintenance work to the generic company context.",
+    "cautions": "Company-reported case study. Equipment ratings are not measured energy output. Do not claim the project is in Calgary. No new quantitative benefits proposed.",
+    "origin": "Free employer source",
+    "score": 9,
+    "id": "ALX-BF-03",
+    "version": 1,
+    "userDecision": "pending",
+    "checkedOn": "2026-10-20",
+    "organizationId": "skyfire-energy",
+    "before": "SkyFire designs and installs solar-energy systems and has a Calgary head office.",
+    "proposedCopy": "SkyFire designs and installs solar-energy systems and has a Calgary head office. For the RenuWell project, SkyFire reports designing and building two solar arrays on former well sites in the Municipal District of Taber. Its case study describes solar modules, inverters, and ongoing operations and maintenance. This adds a practical engineering question: how do site conditions, equipment choices, and maintenance affect what a solar system delivers? The project is in southern Alberta; Calgary is the company’s head-office connection.",
+    "operation": "append",
+    "discover": {
+      "decision": "retain-existing-cards",
+      "roleIds": [
+        "work-electrician",
+        "work-power"
+      ],
+      "proposedCopyChange": null,
+      "reason": "Evidence strengthening within already represented occupations; retain current clues, artwork, pathways, stable numbers and example links."
+    },
+    "pathwayDecision": "No curriculum or pathway qualification changes."
+  },
+  {
+    "slug": "botaneco",
+    "title": "Make the separation mechanism more concrete",
+    "field": "details.story.steps[1].text",
+    "append": "One published Botaneco patent application describes using centrifuges to separate fractions by density and changing pH to help recover protein. This is a documented process example, not a specification for every Botaneco product.",
+    "sources": [
+      "https://patents.google.com/patent/EP4701425A1/en"
+    ],
+    "delta": "Connects aqueous separation to density and pH with a technical disclosure.",
+    "cautions": "European patent application, published March 4, 2026. No claim about current ownership, legal validity, product implementation, Calgary manufacturing, or independently measured performance.",
+    "origin": "Free patent publication",
+    "score": 8,
+    "id": "ALX-BF-04",
+    "version": 1,
+    "userDecision": "pending",
+    "checkedOn": "2026-10-20",
+    "organizationId": "botaneco",
+    "before": "The company describes an aqueous process for separating proteins and intact oleosomes while avoiding harsh processing conditions.",
+    "proposedCopy": "The company describes an aqueous process for separating proteins and intact oleosomes while avoiding harsh processing conditions. One published Botaneco patent application describes using centrifuges to separate fractions by density and changing pH to help recover protein. This is a documented process example, not a specification for every Botaneco product.",
+    "operation": "append",
+    "discover": {
+      "decision": "retain-existing-cards",
+      "roleIds": [
+        "work-food",
+        "work-lab",
+        "work-process"
+      ],
+      "proposedCopyChange": null,
+      "reason": "Evidence strengthening within already represented occupations; retain current clues, artwork, pathways, stable numbers and example links."
+    },
+    "pathwayDecision": "No curriculum or pathway qualification changes."
+  },
+  {
+    "slug": "nanalysis",
+    "title": "Connect instrument design to magnetic-field uniformity",
+    "field": "details.story.steps[0].text",
+    "append": "Designing the instrument also involves controlling how uniform that field is. A Nanalysis patent describes arrangements of magnets aimed at improving field uniformity and strength.",
+    "sources": [
+      "https://patents.google.com/patent/US11815574B2/en"
+    ],
+    "delta": "Adds a concrete instrument-design task to the sample-to-spectrum explanation.",
+    "cautions": "US patent publication from 2023; not proof that a particular marketed instrument uses this arrangement. No legal-status or current-vacancy claim.",
+    "origin": "Free patent fallback after zero-cost CIPO failure",
+    "score": 8,
+    "id": "ALX-BF-05",
+    "version": 1,
+    "userDecision": "pending",
+    "checkedOn": "2026-10-20",
+    "organizationId": "nanalysis",
+    "before": "Place a suitable sample in the instrument’s magnetic field. NMR concerns the magnetic behaviour of particular atomic nuclei.",
+    "proposedCopy": "Place a suitable sample in the instrument’s magnetic field. NMR concerns the magnetic behaviour of particular atomic nuclei. Designing the instrument also involves controlling how uniform that field is. A Nanalysis patent describes arrangements of magnets aimed at improving field uniformity and strength.",
+    "operation": "append",
+    "discover": {
+      "decision": "retain-existing-cards",
+      "roleIds": [
+        "work-instrument",
+        "work-applications",
+        "work-software"
+      ],
+      "proposedCopyChange": null,
+      "reason": "Evidence strengthening within already represented occupations; retain current clues, artwork, pathways, stable numbers and example links."
+    },
+    "pathwayDecision": "No curriculum or pathway qualification changes."
+  },
+  {
+    "slug": "nimble-small-intestine-sampling",
+    "title": "Add published sampling evidence",
+    "field": "details.story.steps[3].text",
+    "append": "In a published study involving 20 healthy participants, researchers used X-ray tracking to check sampling location and compared capsule samples with stool samples. This helps explain why sampling location matters; it does not establish a treatment benefit.",
+    "sources": [
+      "https://pubmed.ncbi.nlm.nih.gov/41853500/",
+      "https://www.mitacs.ca/our-projects/validation-of-simba-capsules-for-small-intestine-sampling/"
+    ],
+    "delta": "Adds a specific study to support the sampling lesson. A historical University of Calgary/Mitacs project is a separate pathway lead.",
+    "cautions": "Some study authors were company employees/shareholders. Keep study scope and dates visible. The Mitacs project is historical evidence, not an available internship. Regulatory-language conflict separately held for verification.",
+    "origin": "Free original research and Mitacs",
+    "score": 9,
+    "id": "ALX-BF-06",
+    "version": 1,
+    "userDecision": "pending",
+    "checkedOn": "2026-10-20",
+    "organizationId": "nimble-science",
+    "before": "Interpret cautiously: a sample describes a place and time; it does not describe every part of the digestive tract.",
+    "proposedCopy": "Interpret cautiously: a sample describes a place and time; it does not describe every part of the digestive tract. In a published study involving 20 healthy participants, researchers used X-ray tracking to check sampling location and compared capsule samples with stool samples. This helps explain why sampling location matters; it does not establish a treatment benefit.",
+    "operation": "append",
+    "discover": {
+      "decision": "retain-existing-cards",
+      "roleIds": [
+        "work-mechanical",
+        "work-lab"
+      ],
+      "proposedCopyChange": null,
+      "reason": "Evidence strengthening within already represented occupations; retain current clues, artwork, pathways, stable numbers and example links."
+    },
+    "pathwayDecision": "No curriculum or pathway qualification changes. Nimble historical Mitacs source is an additional lead, not a promised entry route."
+  },
+  {
+    "slug": "e3-lithium",
+    "title": "Add regulator-sourced process context",
+    "field": "details.story.steps[0].text",
+    "append": "A November 2025 Alberta Energy Regulator application notice describes a proposed flow from production wells through pipelines to a central processing facility, followed by reinjection of lithium-depleted brine. The notice records a proposal; it does not establish the facility’s current operating status.",
+    "sources": [
+      "https://static.webapps.aer.ca/pnoa/html/00510304-001.htm"
+    ],
+    "delta": "Adds an independent, dated process-flow source to existing company/job evidence.",
+    "cautions": "Application notice, not permit approval or operating evidence. No projected figures promoted to measured results. Reused pilot evidence; no paid retry.",
+    "origin": "Free original / pilot reuse",
+    "score": 8,
+    "id": "ALX-BF-07",
+    "version": 1,
+    "userDecision": "pending",
+    "checkedOn": "2026-10-20",
+    "organizationId": "e3-lithium",
+    "before": "E3’s Clearwater project targets lithium dissolved in underground brine in Alberta.",
+    "proposedCopy": "E3’s Clearwater project targets lithium dissolved in underground brine in Alberta. A November 2025 Alberta Energy Regulator application notice describes a proposed flow from production wells through pipelines to a central processing facility, followed by reinjection of lithium-depleted brine. The notice records a proposal; it does not establish the facility’s current operating status.",
+    "operation": "append",
+    "discover": {
+      "decision": "retain-existing-cards",
+      "roleIds": [
+        "process-engineering",
+        "process-operations",
+        "laboratory-analysis"
+      ],
+      "proposedCopyChange": null,
+      "reason": "Evidence strengthening within already represented occupations; retain current clues, artwork, pathways, stable numbers and example links."
+    },
+    "pathwayDecision": "No curriculum or pathway qualification changes."
+  },
+  {
+    "slug": "watersmart",
+    "title": "Replace the team-page dead end with current parent-company evidence",
+    "field": "organization.localConnection",
+    "replace": "Hazen lists a Calgary office at 2100, 700 6th Avenue SW. Its current profile of WaterSMART president Claire Jackson describes water strategy, environmental-policy work, risk assessment, and water-management modelling. This supports the local organization and work connection; it does not establish that every Hazen project is delivered by the Calgary team.",
+    "sources": [
+      "https://www.hazenandsawyer.com/locations/calgary",
+      "https://www.hazenandsawyer.com/ca/people/claire-jackson",
+      "https://www.hazenandsawyer.com/ca/news/hazen-and-sawyer-acquires-watersmart-solutions-to-enhance-and-expand-operations-in-north-america-and-globally"
+    ],
+    "delta": "Repairs a source landing on a parent-company placeholder and supplies direct office/work evidence.",
+    "cautions": "Preserve the existing WaterSMART/Hazen relationship and classroom project. Do not replace unrelated historical project sources with a generic profile.",
+    "origin": "Free original source maintenance",
+    "score": 9,
+    "id": "ALX-BF-08",
+    "version": 1,
+    "userDecision": "pending",
+    "checkedOn": "2026-10-20",
+    "organizationId": "watersmart",
+    "before": "Calgary-based work is established through the City’s named roadmap partnership and the company team page.",
+    "proposedCopy": "Hazen lists a Calgary office at 2100, 700 6th Avenue SW. Its current profile of WaterSMART president Claire Jackson describes water strategy, environmental-policy work, risk assessment, and water-management modelling. This supports the local organization and work connection; it does not establish that every Hazen project is delivered by the Calgary team.",
+    "operation": "replace",
+    "discover": {
+      "decision": "retain-existing-cards",
+      "roleIds": [
+        "work-water-resource-planning",
+        "work-environmental-field-assessment",
+        "work-planning-communication-and-engagement"
+      ],
+      "proposedCopyChange": null,
+      "reason": "Evidence strengthening within already represented occupations; retain current clues, artwork, pathways, stable numbers and example links."
+    },
+    "pathwayDecision": "No curriculum or pathway qualification changes."
+  }
+]

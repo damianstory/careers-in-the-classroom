@@ -195,13 +195,14 @@ export default {
           ]
         },
         {
-          "text": "Interpret cautiously: a sample describes a place and time; it does not describe every part of the digestive tract.",
+          "text": "Interpret cautiously: a sample describes a place and time; it does not describe every part of the digestive tract. In a published study involving 20 healthy participants, researchers used X-ray tracking to check sampling location and compared capsule samples with stool samples. This helps explain why sampling location matters; it does not establish a treatment benefit.",
           "kind": "interpreted",
           "sourceIds": [
             "oct20-nimble-science-source-1",
             "oct20-nimble-science-source-2",
             "oct20-nimble-science-source-3",
-            "oct20-curriculum-1"
+            "oct20-curriculum-1",
+            "alx-oct20-06-1"
           ]
         }
       ],
@@ -325,6 +326,18 @@ export default {
       "id": "oct20-nimble-science-source-3",
       "label": "www.nimblesci.com — gi disorders the microbiome a clinical investigation",
       "url": "https://www.nimblesci.com/post/gi-disorders-the-microbiome-a-clinical-investigation",
+      "checkedOn": "2026-10-20"
+    },
+    {
+      "id": "alx-oct20-06-1",
+      "label": "SIMBA sampling study — 20 healthy participants (2024; includes company-affiliated authors)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41853500/",
+      "checkedOn": "2026-10-20"
+    },
+    {
+      "id": "alx-oct20-06-2",
+      "label": "Mitacs — historical SIMBA capsule validation project, not a current internship",
+      "url": "https://www.mitacs.ca/our-projects/validation-of-simba-capsules-for-small-intestine-sampling/",
       "checkedOn": "2026-10-20"
     }
   ],

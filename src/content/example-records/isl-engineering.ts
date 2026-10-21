@@ -283,13 +283,15 @@ export default {
     organizationType: "company",
     tagline: "A route has to work for people and for the ground and water beneath it.",
     description: {
-      text: "ISL was the City of Calgary’s prime consultant for planning, detailed design and construction work on the 144 Avenue NW extension. Its project account describes steep terrain, a single-span bridge over West Nose Creek, creek work and multi-use pathways. This creates a local example of design constraints interacting, rather than a story about choosing the shortest line on a map.",
+      text: "ISL was the City of Calgary’s prime consultant for planning, detailed design and construction work on the 144 Avenue NW extension. Its project account describes steep terrain, a single-span bridge over West Nose Creek, creek work and multi-use pathways. This creates a local example of design constraints interacting, rather than a story about choosing the shortest line on a map. Separate Alberta procurement records show the range of work behind an engineering project. A 2025 bridge-and-culvert contract awarded to ISL included design, construction supervision, and post-construction and warranty inspections. In July 2026, Strathmore awarded ISL reservoir-expansion design work and listed its Calgary office. The reservoir brief asks for a construction plan that maintains water service. These are separate projects from Calgary’s 144 Avenue NW extension.",
       kind: "stated",
       sourceIds: [
         "oct17-source-64",
         "oct17-source-65",
         "oct17-source-66",
-        "oct17-source-67"
+        "oct17-source-67",
+        "alx-oct20-01-1",
+        "alx-oct20-01-2"
       ]
     },
     problem: {
@@ -338,7 +340,7 @@ export default {
       ]
     },
     websiteSourceId: "oct17-source-64",
-    checkedOn: "2026-10-17",
+    checkedOn: "2026-10-20",
     careersSourceId: "oct17-source-67"
   },
   organizationRoles: [
@@ -410,6 +412,18 @@ export default {
       label: "ISL Engineering — company/project evidence 4",
       url: "https://islengineering.com/join-the-team/",
       checkedOn: "2026-10-17"
+    },
+    {
+      "id": "alx-oct20-01-1",
+      "label": "Alberta Purchasing Connection — ISL bridge and culvert engineering award (2025)",
+      "url": "https://purchasing.alberta.ca/posting/AB-2025-04348",
+      "checkedOn": "2026-10-20"
+    },
+    {
+      "id": "alx-oct20-01-2",
+      "label": "Alberta Purchasing Connection — Strathmore Wildflower Reservoir design award (2026)",
+      "url": "https://purchasing.alberta.ca/posting/AB-2026-04298",
+      "checkedOn": "2026-10-20"
     }
   ],
   diagram: {

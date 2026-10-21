@@ -1,0 +1,268 @@
+{
+  "date": "2026-10-20",
+  "examples": 91,
+  "discoverCards": 79,
+  "amendments": [
+    {
+      "id": "ALX-BF-01",
+      "version": 1,
+      "exampleSlug": "isl-engineering",
+      "exactCopy": true,
+      "sourceIds": [
+        "oct17-source-64",
+        "oct17-source-65",
+        "oct17-source-66",
+        "oct17-source-67",
+        "alx-oct20-01-1",
+        "alx-oct20-01-2"
+      ],
+      "discover": [
+        {
+          "roleId": "work-civil-and-construction-technology",
+          "number": "28"
+        },
+        {
+          "roleId": "work-spatial",
+          "number": "25"
+        },
+        {
+          "roleId": "work-environmental-field-assessment",
+          "number": "26"
+        }
+      ]
+    },
+    {
+      "id": "ALX-BF-02",
+      "version": 1,
+      "exampleSlug": "spartan-controls",
+      "exactCopy": true,
+      "sourceIds": [
+        "oct19-source-49",
+        "oct19-source-50",
+        "expansion-source-20",
+        "alx-oct20-02-1"
+      ],
+      "discover": [
+        {
+          "roleId": "work-valve-service",
+          "number": "67"
+        },
+        {
+          "roleId": "work-controls",
+          "number": "13"
+        }
+      ]
+    },
+    {
+      "id": "ALX-BF-03",
+      "version": 1,
+      "exampleSlug": "skyfire-solar-output",
+      "exactCopy": true,
+      "sourceIds": [
+        "oct20-skyfire-energy-source-1",
+        "oct20-skyfire-energy-source-2",
+        "alx-oct20-03-1"
+      ],
+      "discover": [
+        {
+          "roleId": "work-electrician",
+          "number": "68"
+        },
+        {
+          "roleId": "work-power",
+          "number": "56"
+        }
+      ]
+    },
+    {
+      "id": "ALX-BF-04",
+      "version": 1,
+      "exampleSlug": "botaneco",
+      "exactCopy": true,
+      "sourceIds": [
+        "expansion-source-1",
+        "expansion-source-2",
+        "expansion-source-3",
+        "expansion-source-4",
+        "alx-oct20-04-1"
+      ],
+      "discover": [
+        {
+          "roleId": "work-food",
+          "number": "45"
+        },
+        {
+          "roleId": "work-lab",
+          "number": "16"
+        },
+        {
+          "roleId": "work-process",
+          "number": "07"
+        }
+      ]
+    },
+    {
+      "id": "ALX-BF-05",
+      "version": 1,
+      "exampleSlug": "nanalysis",
+      "exactCopy": true,
+      "sourceIds": [
+        "expansion-source-9",
+        "expansion-source-10",
+        "expansion-source-11",
+        "alx-oct20-05-1"
+      ],
+      "discover": [
+        {
+          "roleId": "work-instrument",
+          "number": "31"
+        },
+        {
+          "roleId": "work-applications",
+          "number": "46"
+        },
+        {
+          "roleId": "work-software",
+          "number": "03"
+        }
+      ]
+    },
+    {
+      "id": "ALX-BF-06",
+      "version": 1,
+      "exampleSlug": "nimble-small-intestine-sampling",
+      "exactCopy": true,
+      "sourceIds": [
+        "oct20-nimble-science-source-1",
+        "oct20-nimble-science-source-2",
+        "oct20-nimble-science-source-3",
+        "oct20-curriculum-1",
+        "alx-oct20-06-1"
+      ],
+      "discover": [
+        {
+          "roleId": "work-mechanical",
+          "number": "10"
+        },
+        {
+          "roleId": "work-lab",
+          "number": "16"
+        }
+      ]
+    },
+    {
+      "id": "ALX-BF-07",
+      "version": 1,
+      "exampleSlug": "e3-lithium",
+      "exactCopy": true,
+      "sourceIds": [
+        "depth-e3-home",
+        "alx-oct20-07-1"
+      ],
+      "discover": [
+        {
+          "roleId": "process-engineering",
+          "number": "07"
+        },
+        {
+          "roleId": "process-operations",
+          "number": "08"
+        },
+        {
+          "roleId": "laboratory-analysis",
+          "disposition": "deferred-existing-job-only-role",
+          "reason": "No organization-role evidence link; not included by current Discover builder. No new occupation approved in this amendment."
+        }
+      ]
+    },
+    {
+      "id": "ALX-BF-08",
+      "version": 1,
+      "exampleSlug": "watersmart",
+      "exactCopy": true,
+      "sourceIds": [
+        "oct17-source-35",
+        "oct17-source-36",
+        "oct17-source-37",
+        "alx-oct20-08-1",
+        "alx-oct20-08-2",
+        "alx-oct20-08-3"
+      ],
+      "discover": [
+        {
+          "roleId": "work-water-resource-planning",
+          "number": "37"
+        },
+        {
+          "roleId": "work-environmental-field-assessment",
+          "number": "26"
+        },
+        {
+          "roleId": "work-planning-communication-and-engagement",
+          "number": "38"
+        }
+      ]
+    }
+  ],
+  "browserChecks": [
+    {
+      "id": "ALX-BF-01",
+      "tab": "company",
+      "httpStatus": 200,
+      "approvedCopyVisible": true
+    },
+    {
+      "id": "ALX-BF-02",
+      "tab": "company",
+      "httpStatus": 200,
+      "approvedCopyVisible": true
+    },
+    {
+      "id": "ALX-BF-03",
+      "tab": "company",
+      "httpStatus": 200,
+      "approvedCopyVisible": true
+    },
+    {
+      "id": "ALX-BF-04",
+      "tab": "how-it-works",
+      "httpStatus": 200,
+      "approvedCopyVisible": true
+    },
+    {
+      "id": "ALX-BF-05",
+      "tab": "how-it-works",
+      "httpStatus": 200,
+      "approvedCopyVisible": true
+    },
+    {
+      "id": "ALX-BF-06",
+      "tab": "how-it-works",
+      "httpStatus": 200,
+      "approvedCopyVisible": true
+    },
+    {
+      "id": "ALX-BF-07",
+      "tab": "how-it-works",
+      "httpStatus": 200,
+      "approvedCopyVisible": true
+    },
+    {
+      "id": "ALX-BF-08",
+      "tab": "company",
+      "httpStatus": 200,
+      "approvedCopyVisible": true
+    },
+    {
+      "viewport": "390x844",
+      "example": "isl-engineering",
+      "overflow": false
+    }
+  ],
+  "validation": {
+    "unitTests": 257,
+    "unitTestFiles": 17,
+    "productionBuild": "passed",
+    "typecheck": "passed as part of production build"
+  }
+}

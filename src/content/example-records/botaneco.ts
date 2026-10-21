@@ -211,13 +211,14 @@ export default {
           ]
         },
         {
-          text: "The company describes an aqueous process for separating proteins and intact oleosomes while avoiding harsh processing conditions.",
+          text: "The company describes an aqueous process for separating proteins and intact oleosomes while avoiding harsh processing conditions. One published Botaneco patent application describes using centrifuges to separate fractions by density and changing pH to help recover protein. This is a documented process example, not a specification for every Botaneco product.",
           kind: "interpreted",
           sourceIds: [
             "expansion-source-1",
             "expansion-source-2",
             "expansion-source-3",
-            "expansion-source-4"
+            "expansion-source-4",
+            "alx-oct20-04-1"
           ]
         },
         {
@@ -256,7 +257,7 @@ export default {
       "route-chemical"
     ],
     jobIds: [],
-    checkedOn: "2026-10-15"
+    checkedOn: "2026-10-20"
   },
   organization: {
     id: "botaneco",
@@ -396,6 +397,12 @@ export default {
       label: "Careers check",
       url: "https://botaneco.com/careers/",
       checkedOn: "2026-10-15"
+    },
+    {
+      "id": "alx-oct20-04-1",
+      "label": "Botaneco — published sunflower oleosome and protein separation patent application EP4701425A1 (2026)",
+      "url": "https://patents.google.com/patent/EP4701425A1/en",
+      "checkedOn": "2026-10-20"
     }
   ],
   diagram: {

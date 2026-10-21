@@ -7,6 +7,12 @@ import type { DatedSource } from "./types";
 const checkedOn = "2026-09-25";
 
 export const registry: DatedSource[] = [
+  {
+    "id": "alx-oct20-07-1",
+    "label": "Alberta Energy Regulator — E3 Clearwater application notice (November 2025; proposed facility)",
+    "url": "https://static.webapps.aer.ca/pnoa/html/00510304-001.htm",
+    "checkedOn": "2026-10-20"
+  },
   ...october20Sources,
   { id: "oct19-cbs-home", label: "Canadian Blood Services — official website", url: "https://www.blood.ca/en", checkedOn: "2026-10-19" },
   {

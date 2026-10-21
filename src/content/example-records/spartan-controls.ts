@@ -216,12 +216,13 @@ export default {
     "organizationType": "company",
     "tagline": "A valve must behave correctly when the process needs it.",
     "description": {
-      "text": "Spartan Controls describes valve diagnostics, repair, commissioning and specialised testing. Its service page explicitly identifies Calgary repair and steam-testing capability. The classroom model focuses on evidence of valve behaviour, keeping a control valve’s purpose separate from a pressure-relief device’s protective function.",
+      "text": "Spartan Controls describes valve diagnostics, repair, commissioning and specialised testing. Its service page explicitly identifies Calgary repair and steam-testing capability. The classroom model focuses on evidence of valve behaviour, keeping a control valve’s purpose separate from a pressure-relief device’s protective function. A February 2025 University of Alberta award names Spartan Controls at its Calgary address as the supplier of control valves for large heat exchangers. The university specified matching replacements because another make or model would require changes to the existing piping. This is an example of engineering compatibility: a replacement component has to work with the wider system. These control valves are distinct from pressure-relief devices.",
       "kind": "stated",
       "sourceIds": [
         "oct19-source-49",
         "oct19-source-50",
-        "expansion-source-20"
+        "expansion-source-20",
+        "alx-oct20-02-1"
       ]
     },
     "problem": {
@@ -266,7 +267,7 @@ export default {
       ]
     },
     "websiteSourceId": "oct19-source-49",
-    "checkedOn": "2026-10-19",
+    "checkedOn": "2026-10-20",
     "careersSourceId": "oct19-source-50"
   },
   "organizationRoles": [
@@ -300,7 +301,14 @@ export default {
     }
   ],
   "jobs": [],
-  "sources": [],
+  "sources": [
+    {
+      "id": "alx-oct20-02-1",
+      "label": "University of Alberta — control-valve replacement award to Spartan Controls (2025)",
+      "url": "https://purchasing.alberta.ca/posting/AB-2025-00956",
+      "checkedOn": "2026-10-20"
+    }
+  ],
   "diagram": {
     "image": "/images/story-diagrams/spartan-controls-graphic-novel.webp",
     "heading": "A valve must behave correctly when the process needs it.",

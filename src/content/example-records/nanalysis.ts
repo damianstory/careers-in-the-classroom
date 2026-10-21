@@ -189,12 +189,13 @@ export default {
       caption: "A chemical sample can produce a pattern we can interpret.",
       steps: [
         {
-          text: "Place a suitable sample in the instrument’s magnetic field. NMR concerns the magnetic behaviour of particular atomic nuclei.",
+          text: "Place a suitable sample in the instrument’s magnetic field. NMR concerns the magnetic behaviour of particular atomic nuclei. Designing the instrument also involves controlling how uniform that field is. A Nanalysis patent describes arrangements of magnets aimed at improving field uniformity and strength.",
           kind: "interpreted",
           sourceIds: [
             "expansion-source-9",
             "expansion-source-10",
-            "expansion-source-11"
+            "expansion-source-11",
+            "alx-oct20-05-1"
           ]
         },
         {
@@ -240,7 +241,7 @@ export default {
       "route-software"
     ],
     jobIds: [],
-    checkedOn: "2026-10-15"
+    checkedOn: "2026-10-20"
   },
   organization: {
     id: "nanalysis",
@@ -365,6 +366,12 @@ export default {
       label: "Careers check",
       url: "https://www.nanalysis.com/career",
       checkedOn: "2026-10-15"
+    },
+    {
+      "id": "alx-oct20-05-1",
+      "label": "Nanalysis — magnet configurations patent US11815574B2 (2023)",
+      "url": "https://patents.google.com/patent/US11815574B2/en",
+      "checkedOn": "2026-10-20"
     }
   ],
   diagram: {

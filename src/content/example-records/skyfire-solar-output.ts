@@ -210,11 +210,12 @@ export default {
     "name": "SkyFire Energy",
     "tagline": "Panel rating is only one part of the story of electricity production.",
     "description": {
-      "text": "SkyFire designs and installs solar-energy systems and has a Calgary head office.",
+      "text": "SkyFire designs and installs solar-energy systems and has a Calgary head office. For the RenuWell project, SkyFire reports designing and building two solar arrays on former well sites in the Municipal District of Taber. Its case study describes solar modules, inverters, and ongoing operations and maintenance. This adds a practical engineering question: how do site conditions, equipment choices, and maintenance affect what a solar system delivers? The project is in southern Alberta; Calgary is the company’s head-office connection.",
       "kind": "stated",
       "sourceIds": [
         "oct20-skyfire-energy-source-1",
-        "oct20-skyfire-energy-source-2"
+        "oct20-skyfire-energy-source-2",
+        "alx-oct20-03-1"
       ]
     },
     "problem": {
@@ -297,6 +298,12 @@ export default {
       "id": "oct20-skyfire-energy-source-2",
       "label": "skyfireenergy.com — contact us",
       "url": "https://skyfireenergy.com/contact-us/",
+      "checkedOn": "2026-10-20"
+    },
+    {
+      "id": "alx-oct20-03-1",
+      "label": "SkyFire Energy — RenuWell solar project in the Municipal District of Taber",
+      "url": "https://skyfireenergy.com/case-study-utility/renuwell-solar-project/",
       "checkedOn": "2026-10-20"
     }
   ],
