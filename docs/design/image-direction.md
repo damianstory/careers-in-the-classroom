@@ -24,7 +24,7 @@ Exact shared art-style instruction from the collection:
 
 ## Adapt the composition to its purpose
 
-Discover cards retain the portrait composition and large ivory role-title band. Example illustrations use landscape compositions with no embedded title, labels or branding; the UI supplies factual text. Compose natively for the required frame. Do not crop a portrait card to manufacture a landscape scene.
+Discover cards retain the portrait composition and large ivory role-title band at the **top**. Keep every title letter within the first 24% of image height so the existing top cover hides the answer during guessing; never place the title at the bottom. Verify the actual Guess and Reveal states on desktop and phone, since a DOM heading check cannot detect text embedded in artwork. Example illustrations use landscape compositions with no embedded title, labels or branding; the UI supplies factual text. Compose natively for the required frame. Do not crop a portrait card to manufacture a landscape scene.
 
 For examples, illustrate the problem and work in the sourced story. A fictional person is representative of the work, never proof of an employee, company facility, process design or measured result. Present editorial artwork as a clean image: **no green bottom strip, illustration caption, disclaimer band or extra border below it**. The user approved this presentation on 7 October 2026 after reviewing the example images. Keep artwork provenance in the design records and descriptive alt text in the UI. Official identification logos remain their original assets.
 

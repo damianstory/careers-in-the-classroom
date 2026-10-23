@@ -1,0 +1,135 @@
+[
+  {
+    "id": "CGY-185",
+    "exampleSlug": "bioaro-checking-genomic-results",
+    "state": "implemented-local",
+    "publication": "not deployed",
+    "authorization": "authorization.json"
+  },
+  {
+    "id": "CGY-186",
+    "exampleSlug": "nanostech-catalyst-pathways",
+    "state": "implemented-local",
+    "publication": "not deployed",
+    "authorization": "authorization.json"
+  },
+  {
+    "id": "CGY-188",
+    "exampleSlug": "ept-oil-condition-evidence",
+    "state": "implemented-local",
+    "publication": "not deployed",
+    "authorization": "authorization.json"
+  },
+  {
+    "id": "CGY-189",
+    "exampleSlug": "optiseis-survey-tradeoffs",
+    "state": "implemented-local",
+    "publication": "not deployed",
+    "authorization": "authorization.json"
+  },
+  {
+    "id": "CGY-190",
+    "exampleSlug": "absolute-imaging-signal-and-noise",
+    "state": "implemented-local",
+    "publication": "not deployed",
+    "authorization": "authorization.json"
+  },
+  {
+    "id": "CGY-194",
+    "exampleSlug": "allnorth-sensor-to-control",
+    "state": "implemented-local",
+    "publication": "not deployed",
+    "authorization": "authorization.json"
+  },
+  {
+    "id": "CGY-198",
+    "exampleSlug": "spark-programming-motion",
+    "state": "implemented-local",
+    "publication": "not deployed",
+    "authorization": "authorization.json"
+  },
+  {
+    "id": "CGY-199",
+    "exampleSlug": "ozonebio-wood-to-materials",
+    "state": "implemented-local",
+    "publication": "not deployed",
+    "authorization": "authorization.json"
+  },
+  {
+    "id": "CGY-201",
+    "exampleSlug": "launchcode-scheduling-rules",
+    "state": "implemented-local",
+    "publication": "not deployed",
+    "authorization": "authorization.json"
+  },
+  {
+    "id": "CGY-202",
+    "exampleSlug": "dakota-checking-data-joins",
+    "state": "implemented-local",
+    "publication": "not deployed",
+    "authorization": "authorization.json"
+  },
+  {
+    "id": "CGY-203",
+    "exampleSlug": "vistavu-order-records",
+    "state": "implemented-local",
+    "publication": "not deployed",
+    "authorization": "authorization.json"
+  },
+  {
+    "id": "CGY-204",
+    "exampleSlug": "robots-pencils-testing-user-needs",
+    "state": "implemented-local",
+    "publication": "not deployed",
+    "authorization": "authorization.json"
+  },
+  {
+    "id": "CGY-205",
+    "exampleSlug": "vog-event-app-decisions",
+    "state": "implemented-local",
+    "publication": "not deployed",
+    "authorization": "authorization.json"
+  },
+  {
+    "id": "CGY-208",
+    "exampleSlug": "stellaralgo-fan-records",
+    "state": "implemented-local",
+    "publication": "not deployed",
+    "authorization": "authorization.json"
+  },
+  {
+    "id": "CGY-211",
+    "exampleSlug": "made-by-marcus-seasonal-value",
+    "state": "implemented-local",
+    "publication": "not deployed",
+    "authorization": "authorization.json"
+  },
+  {
+    "id": "CGY-213",
+    "exampleSlug": "calgary-market-vendor-mix",
+    "state": "implemented-local",
+    "publication": "not deployed",
+    "authorization": "authorization.json"
+  },
+  {
+    "id": "CGY-215",
+    "exampleSlug": "crave-cafe-customer-value",
+    "state": "implemented-local",
+    "publication": "not deployed",
+    "authorization": "authorization.json"
+  },
+  {
+    "id": "CGY-217",
+    "exampleSlug": "fyidoctors-service-coordination",
+    "state": "implemented-local",
+    "publication": "not deployed",
+    "authorization": "authorization.json"
+  },
+  {
+    "id": "CGY-218",
+    "exampleSlug": "pba-office-to-hotel",
+    "state": "implemented-local",
+    "publication": "not deployed",
+    "authorization": "authorization.json"
+  }
+]

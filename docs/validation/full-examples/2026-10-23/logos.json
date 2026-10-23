@@ -1,0 +1,118 @@
+[
+  {
+    "organizationId": "bioaro",
+    "url": "https://bioaro.com/frontend/img/logo.png",
+    "file": "design/example-expansion-2026-10-23/bioaro-logo-original",
+    "status": 200
+  },
+  {
+    "organizationId": "nanostech",
+    "url": "https://www.nanos.tech/assets/logo-horizontal-color.png",
+    "file": "design/example-expansion-2026-10-23/nanostech-logo-original",
+    "status": 200
+  },
+  {
+    "organizationId": "optiseis",
+    "url": "https://optiseis.com/wp-content/uploads/2024/08/OptiSeis_logo_color_1920-1024x333.png",
+    "file": "design/example-expansion-2026-10-23/optiseis-logo-original",
+    "status": 200
+  },
+  {
+    "organizationId": "absolute-imaging",
+    "url": "https://www.absoluteimaging.ca/wp-content/uploads/2020/08/logo.png",
+    "file": "design/example-expansion-2026-10-23/absolute-imaging-logo-original",
+    "status": 200
+  },
+  {
+    "organizationId": "allnorth",
+    "url": "https://www.allnorth.com/wp-content/uploads/yootheme/cache/15/logo-30-1557c7cb.png",
+    "file": "design/example-expansion-2026-10-23/allnorth-logo-original",
+    "status": 200
+  },
+  {
+    "organizationId": "telus-spark",
+    "url": "https://telusspark.cdn.prismic.io/telusspark/513f5967-73be-41a4-ac0b-6fc1e50fcfe1_logo.svg",
+    "file": "design/example-expansion-2026-10-23/telus-spark-logo-original",
+    "status": 200
+  },
+  {
+    "organizationId": "ozonebio",
+    "url": "https://ozonebio.ca/assets/images/logo/ozonebio-logo-blue.svg",
+    "file": "design/example-expansion-2026-10-23/ozonebio-logo-original",
+    "status": 200
+  },
+  {
+    "organizationId": "dakota-analytics",
+    "url": "https://dakotaanalytics.com/wp-content/uploads/2025/04/Dakota-Analytics-Logo-Horizontal.svg",
+    "file": "design/example-expansion-2026-10-23/dakota-analytics-logo-original",
+    "status": 200
+  },
+  {
+    "organizationId": "vistavu",
+    "url": "https://www.vistavusolutions.com/hs-fs/hubfs/VistaVu%20Solutions_Official%20Logo-1.png?width=150&height=36&name=VistaVu%20Solutions_Official%20Logo-1.png",
+    "file": "design/example-expansion-2026-10-23/vistavu-logo-original",
+    "status": 200
+  },
+  {
+    "organizationId": "vog-by-novus",
+    "url": "https://vogappdevelopers.com/wp-content/uploads/2024/09/novusbyvog-black-300.png",
+    "file": "design/example-expansion-2026-10-23/vog-by-novus-logo-original",
+    "status": 200
+  },
+  {
+    "organizationId": "made-by-marcus",
+    "url": "https://madebymarcus.ca/cdn/shop/files/MBM-logo_e75af24c-ba3a-4f9e-a7ae-2fe86f1c85b0_250x.svg?v=1790613344",
+    "file": "design/example-expansion-2026-10-23/made-by-marcus-logo-original",
+    "status": 200
+  },
+  {
+    "organizationId": "calgary-farmers-market",
+    "url": "https://calgaryfarmersmarket.ca/wp-content/uploads/2025/03/CFM-logo.webp",
+    "file": "design/example-expansion-2026-10-23/calgary-farmers-market-logo-original",
+    "status": 200
+  },
+  {
+    "organizationId": "crave-cupcakes",
+    "url": "https://www.cravecupcakes.ca/cdn/shop/files/NEW-Branding_Logo_Refresh_PMS295C_320x.png?v=1675717347",
+    "file": "design/example-expansion-2026-10-23/crave-cupcakes-logo-original",
+    "status": 200
+  },
+  {
+    "organizationId": "fyidoctors",
+    "url": "https://fyidoctors.com/cdn/shop/files/FYidoctors_logo.svg?v=1757989283&width=120",
+    "file": "design/example-expansion-2026-10-23/fyidoctors-logo-original",
+    "status": 200
+  },
+  {
+    "organizationId": "pba-group",
+    "url": "https://thepbagroup.com/wp-content/uploads/2025/11/logo-white.png",
+    "file": "design/example-expansion-2026-10-23/pba-group-logo-original",
+    "status": 200
+  },
+  {
+    "organizationId": "ept-clean-oil",
+    "url": "https://cleanoil.com/wp-content/uploads/2026/09/logo.webp",
+    "file": "design/example-expansion-2026-10-23/ept-clean-oil-logo-original",
+    "status": 200
+  },
+  {
+    "organizationId": "robots-and-pencils",
+    "url": "https://robotsandpencils.com/wp-content/uploads/2025/07/footer-logo.svg",
+    "file": "design/example-expansion-2026-10-23/robots-and-pencils-logo-original",
+    "status": 200
+  },
+  {
+    "organizationId": "launchcode",
+    "url": "https://lc.dev/",
+    "file": "design/example-expansion-2026-10-23/launchcode-logo-original.svg",
+    "status": 200,
+    "note": "Original inline header SVG"
+  },
+  {
+    "organizationId": "stellaralgo",
+    "file": "design/example-expansion-2026-10-23/stellaralgo-logo-original.png",
+    "url": "https://f.hubspotusercontent10.net/hubfs/2584811/StellarAlgo%20Raises%2016.5M%20Series%20A.pdf",
+    "status": 200,
+    "note": "Original embedded wordmark extracted from company press release; historical logo, home inaccessible."
+  }
+]

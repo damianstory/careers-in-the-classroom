@@ -1,0 +1,402 @@
+{
+  "checkedOn": "2026-10-21",
+  "state": "implemented-local-review",
+  "publication": "not committed, pushed or deployed in this step",
+  "examplesBefore": 91,
+  "examplesAfter": 114,
+  "newExamples": 23,
+  "discoverBefore": 79,
+  "discoverAfter": 82,
+  "newDiscoverNumbers": [
+    "80",
+    "81",
+    "82"
+  ],
+  "existingDiscoverExtended": 14,
+  "illustrations": 49,
+  "officialLogos": 23,
+  "tests": {
+    "unit": {
+      "passed": 283,
+      "failed": 0
+    },
+    "browserProduction": {
+      "passed": 52,
+      "failed": 0,
+      "coverage": "23 examples across desktop and phone, all parts, teaching diagrams, desktop projector; 3 new Discover cards across both viewports"
+    },
+    "finalDiscoverAssetChecks": "implementation-evidence/discover-final-checks.json",
+    "lint": "passed",
+    "typecheck": "passed",
+    "productionBuild": "passed as browser-test prerequisite",
+    "visual": "All 49 selected illustrations inspected; responsive page and title-mask screenshots reviewed"
+  },
+  "costs": {
+    "implementationFirecrawlCredits": 6,
+    "perCallCredits": {
+      "BGC": 1,
+      "Trufla": 1,
+      "Convverge": 1,
+      "MNP": 1,
+      "Precision": 1,
+      "ATCO": 1
+    },
+    "weeklyFirecrawlCredits": 16,
+    "weeklyFirecrawlCap": 200,
+    "weeklyLoootUsd": 0.0298,
+    "weeklyLoootCapUsd": 10,
+    "outstandingReservations": 0,
+    "backfillCredits": 60,
+    "backfillCap": 200
+  },
+  "existingExampleQueue": {
+    "count": 91,
+    "status": "triage only; not completed fresh research",
+    "path": "docs/validation/job-reviews/existing-strengthening/2026-10-21/opportunity-queue.json"
+  },
+  "assets": [
+    {
+      "path": "public/images/examples/earthmaster-roadside-restoration-graphic-novel.webp",
+      "sha256": "41cf45c3553715c731a3c8ea3f065b7bfe848c6c9b454b738d4cb6972723283b",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-0.json"
+    },
+    {
+      "path": "public/images/story-diagrams/earthmaster-roadside-restoration-graphic-novel.webp",
+      "sha256": "cb4938130ba62badcdaa56ba6840c7a6af6097684eb60cd64e54dcdca3d1265c",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-1.json"
+    },
+    {
+      "path": "public/images/examples/thurber-testing-the-ground-graphic-novel.webp",
+      "sha256": "a214c142e5f6e811c593d8f4dfa9b38f0bf341ef4f0dc17f2672c64dc079e798",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-2.json"
+    },
+    {
+      "path": "public/images/story-diagrams/thurber-testing-the-ground-graphic-novel.webp",
+      "sha256": "196850e6c520ab66c9ff4c4fab642218a495b4fd4923189f753df15ad894d652",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-3.json"
+    },
+    {
+      "path": "public/images/examples/bgc-landfill-water-pathways-graphic-novel.webp",
+      "sha256": "b9064bd625bf6a54a962402e1b8d87274f98e882efb0cc87b44ebb04304e5303",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-4.json"
+    },
+    {
+      "path": "public/images/story-diagrams/bgc-landfill-water-pathways-graphic-novel.webp",
+      "sha256": "aab8d67775b13958424698c5939d1dc2ad5463f73b545d08bb2744cdf4839004",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-5.json"
+    },
+    {
+      "path": "public/images/examples/mcelhanney-measuring-landscapes-graphic-novel.webp",
+      "sha256": "e075357f9c38abcec1abd8e0c0a4ea9e450f2607071324de30f6d4a0070e7132",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-6.json"
+    },
+    {
+      "path": "public/images/story-diagrams/mcelhanney-measuring-landscapes-graphic-novel.webp",
+      "sha256": "49608de438c9ba2444cdc08a112a88da3d79178aebf3cc87d7983689dcfeaed2",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-7.json"
+    },
+    {
+      "path": "public/images/examples/als-checking-trace-chemicals-graphic-novel.webp",
+      "sha256": "112fbb3fd5fed984d46d92e83a00ee71caabc49fb159875435e86dad39e1720c",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-8.json"
+    },
+    {
+      "path": "public/images/story-diagrams/als-checking-trace-chemicals-graphic-novel.webp",
+      "sha256": "1bcfccdec3f9f49908be4cb9a37d766dae032a09beb882007d358c239e52aa80",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-9.json"
+    },
+    {
+      "path": "public/images/examples/innotech-identifying-carbon-materials-graphic-novel.webp",
+      "sha256": "dd01ce671dd26147fb28a273612e26879010eb2293ac754c71b781d142abc1dd",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-10.json"
+    },
+    {
+      "path": "public/images/story-diagrams/innotech-identifying-carbon-materials-graphic-novel.webp",
+      "sha256": "8b37608223fed5469041b78fce592336271d7347338ab52ec76e7b0edc19c869",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "correction-receipt-11.json"
+    },
+    {
+      "path": "public/images/examples/pure-technologies-listening-for-leaks-graphic-novel.webp",
+      "sha256": "889991957e5f3f223fe1b05b8a1b2155f764cb54776eab9e8dc78ff1d8700fe1",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "correction-receipt-12.json"
+    },
+    {
+      "path": "public/images/story-diagrams/pure-technologies-listening-for-leaks-graphic-novel.webp",
+      "sha256": "56781676867c8e0e552bdacd8286186dd4e428824a1ceccc59e956a1ec1d6577",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "additional-correction-receipt-13.json"
+    },
+    {
+      "path": "public/images/examples/calfrac-fluid-test-conditions-graphic-novel.webp",
+      "sha256": "735872956e4f045a9ffed4572731d165eae7f78d830ab452dd529c219279466b",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-14.json"
+    },
+    {
+      "path": "public/images/story-diagrams/calfrac-fluid-test-conditions-graphic-novel.webp",
+      "sha256": "c816eec1c44552a2cc339787a617e085267216ce3ba8735170e329ea7817832e",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-15.json"
+    },
+    {
+      "path": "public/images/examples/trican-cement-barrier-testing-graphic-novel.webp",
+      "sha256": "8ee7f22a44f39a4f0f9c3108d8ca45c983f173d7bc22d03acf0d4058cb2936ea",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-16.json"
+    },
+    {
+      "path": "public/images/story-diagrams/trican-cement-barrier-testing-graphic-novel.webp",
+      "sha256": "c20eb6c5521f08de552fa406eb8963fca321261ea4faa9386407a92d58a28f1f",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "additional-correction-receipt-17.json"
+    },
+    {
+      "path": "public/images/examples/ces-fluid-formulation-evidence-graphic-novel.webp",
+      "sha256": "15f3da59f7f02f3a16d9709cd459b8fd3bb03082311beda9ef6e6461ded84853",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-18.json"
+    },
+    {
+      "path": "public/images/story-diagrams/ces-fluid-formulation-evidence-graphic-novel.webp",
+      "sha256": "7ee9d269cac0109b5b18061f17a5860b96ed50ea9aaa0bd426db9f7328534ab7",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-19.json"
+    },
+    {
+      "path": "public/images/examples/chata-questions-to-queries-graphic-novel.webp",
+      "sha256": "d2074e2d69645560022d8a35fc49c092bb87212a56117284e95864ee1f824316",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "correction-receipt-20.json"
+    },
+    {
+      "path": "public/images/story-diagrams/chata-questions-to-queries-graphic-novel.webp",
+      "sha256": "77babf0399905e632e25a28eb7381a83dda763d8958886700766d1def7f8b248",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-21.json"
+    },
+    {
+      "path": "public/images/examples/aimsio-field-ticket-to-invoice-graphic-novel.webp",
+      "sha256": "647e45cc4c24b58599a43d1f3ab2c1d8fc5df576d3f7aae7ef3708df898b4665",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-22.json"
+    },
+    {
+      "path": "public/images/story-diagrams/aimsio-field-ticket-to-invoice-graphic-novel.webp",
+      "sha256": "7d168e5f8d5110b815f72bcfc6266132aea37f01f857e3954d94ce8e929d63c2",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-23.json"
+    },
+    {
+      "path": "public/images/examples/atvenu-concert-inventory-graphic-novel.webp",
+      "sha256": "db15b77ed8ffd6288b0abd96c32bee324bc8cce53cd9263e398419e55dc75316",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-24.json"
+    },
+    {
+      "path": "public/images/story-diagrams/atvenu-concert-inventory-graphic-novel.webp",
+      "sha256": "5014dcb3fdd3d330110358ece1654f1c3d51c4ece4b2328e75f1e9848d70d63d",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "additional-correction-receipt-25.json"
+    },
+    {
+      "path": "public/images/examples/trufla-client-record-rules-graphic-novel.webp",
+      "sha256": "f81cadd9fef40fc7ef69a1bf1c370d59e0ac1c19cf8b6380bd863027f8a5e457",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-26.json"
+    },
+    {
+      "path": "public/images/story-diagrams/trufla-client-record-rules-graphic-novel.webp",
+      "sha256": "0da46ec83886004ec501bc03946149c1fe23f433abd111b352706340bcd19c77",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-27.json"
+    },
+    {
+      "path": "public/images/examples/convverge-clinic-reporting-workflow-graphic-novel.webp",
+      "sha256": "c0973710f91da938e2ef57c2c5c5e5f32814b19ea88db0f5bda4c6e9377c86c3",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-28.json"
+    },
+    {
+      "path": "public/images/story-diagrams/convverge-clinic-reporting-workflow-graphic-novel.webp",
+      "sha256": "c8af52ced14f096c24eeb812b2f9e90b6be7f05f12dbef3eb59e6d3e1d61038f",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "additional-correction-receipt-29.json"
+    },
+    {
+      "path": "public/images/examples/validere-measurement-records-graphic-novel.webp",
+      "sha256": "c10c48ff5cd2dc920d8c2468ac222e842661de8ef1011c27b3a3b69e86b1bb21",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "additional-correction-receipt-30.json"
+    },
+    {
+      "path": "public/images/story-diagrams/validere-measurement-records-graphic-novel.webp",
+      "sha256": "82add01acfb1af60f07b7d59eccbea59c9582a8eba77ecd643ce8b64a67684ca",
+      "width": 1360,
+      "height": 766,
+      "selectedReceipt": "additional-correction-receipt-31.json"
+    },
+    {
+      "path": "public/images/examples/amazon-yyc4-robot-decisions-graphic-novel.webp",
+      "sha256": "cda0fc61655841ebf905a9317bd523f93e2d0754e445ddfd10b8817a0e04968d",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-32.json"
+    },
+    {
+      "path": "public/images/story-diagrams/amazon-yyc4-robot-decisions-graphic-novel.webp",
+      "sha256": "7fa9822e4754f981181942e6b3049250aca0c27a4f465328c28eb1b3e041977e",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "additional-correction-receipt-33.json"
+    },
+    {
+      "path": "public/images/examples/atb-testing-business-ideas-graphic-novel.webp",
+      "sha256": "6f40878b64b1cd1694c31e218d66ff6b1fb251cc9d3c70747449830a28feb136",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-34.json"
+    },
+    {
+      "path": "public/images/story-diagrams/atb-testing-business-ideas-graphic-novel.webp",
+      "sha256": "2c1501df66c933acc75b7671a5249e4cb8464069cc2f12fa634c8d9bc7dc7c1d",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-35.json"
+    },
+    {
+      "path": "public/images/examples/prairiesky-royalty-revenue-graphic-novel.webp",
+      "sha256": "b2937edc85ef515fa24044787f305c5ec93f46fd321bd8864cf8db75c9feea06",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "correction-receipt-36.json"
+    },
+    {
+      "path": "public/images/story-diagrams/prairiesky-royalty-revenue-graphic-novel.webp",
+      "sha256": "cd3a24ecd868604d2a62f5fdf5fceb33b20d8d733301d9772a1222d29cdcd9c1",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-37.json"
+    },
+    {
+      "path": "public/images/examples/trail-appliances-customer-value-graphic-novel.webp",
+      "sha256": "58eccb08b2c445dda6d15a2d1d14352124cbd491a7dacf847b7b3610f3ccc6d5",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "correction-receipt-38.json"
+    },
+    {
+      "path": "public/images/story-diagrams/trail-appliances-customer-value-graphic-novel.webp",
+      "sha256": "d61143ca813fe710f1745c63482ec75b6cfc9d41adcbe160a59222d5e2b5c174",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "correction-receipt-39.json"
+    },
+    {
+      "path": "public/images/examples/mnp-financial-evidence-graphic-novel.webp",
+      "sha256": "bd7551f7211a057d7e3dc17e79c874a2f6fb0a6a8d7ef761fa5a9a66a0e2ea82",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-40.json"
+    },
+    {
+      "path": "public/images/story-diagrams/mnp-financial-evidence-graphic-novel.webp",
+      "sha256": "51722c61ecd19821801bf0965236f37875b45ed84b27ad190e49952efb2511bd",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-41.json"
+    },
+    {
+      "path": "public/images/examples/atco-segment-comparisons-graphic-novel.webp",
+      "sha256": "eb7e0693cf94026f0672ce031a23e5b172676df2c2f5e61a43870c0e622e888b",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "correction-receipt-42.json"
+    },
+    {
+      "path": "public/images/story-diagrams/atco-segment-comparisons-graphic-novel.webp",
+      "sha256": "2ef128bcb90c437f6cb5b350eece3d4d1cef49a3b09a6ca7c309c850f0281f4c",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-43.json"
+    },
+    {
+      "path": "public/images/examples/precision-utilization-and-revenue-graphic-novel.webp",
+      "sha256": "a7d73671c428d54334a346522a50d0b428eff698003d0dd95dc80376596344ef",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "receipt-44.json"
+    },
+    {
+      "path": "public/images/story-diagrams/precision-utilization-and-revenue-graphic-novel.webp",
+      "sha256": "a0d652b62297507600343e157af9b553ae119c715373a10974f893d9fd54664b",
+      "width": 1360,
+      "height": 765,
+      "selectedReceipt": "final-correction-receipt-45.json"
+    },
+    {
+      "path": "public/images/discover/work-pipeline-inspection.webp",
+      "sha256": "c8822489603ba647c54b3685bf67d7fa1b7c8d6244ec3c6c0a965e45c84f3e50",
+      "width": 752,
+      "height": 1336,
+      "selectedReceipt": "title-correction-receipt-46.json"
+    },
+    {
+      "path": "public/images/discover/work-business-advisory.webp",
+      "sha256": "dba8920e7e412c540a1236b325473f27d6827ba729fa3f0c29f705f4e24f5168",
+      "width": 752,
+      "height": 1336,
+      "selectedReceipt": "title-correction-receipt-47.json"
+    },
+    {
+      "path": "public/images/discover/work-accounting-assurance.webp",
+      "sha256": "1b86df3650d98abe9b9d745cdb78efa04f800b11041571aa7c863f969ccab2da",
+      "width": 752,
+      "height": 1336,
+      "selectedReceipt": "title-correction-receipt-48.json"
+    }
+  ]
+}

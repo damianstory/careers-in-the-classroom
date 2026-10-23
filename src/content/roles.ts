@@ -1,9 +1,13 @@
+import { october23Roles } from "./october23";
+import { october21Roles } from "./october21";
 import { october20Roles } from "./october20";
 import type { RoleProfile } from "./types";
 
 // General explanations of each kind of work, written by us. Company-specific evidence
 // lives on the organization-role link, not here.
 export const roleProfiles: RoleProfile[] = [
+  ...october23Roles,
+  ...october21Roles,
   ...october20Roles,
   {
     "id": "work-prosthetic-fabrication",
@@ -1591,46 +1595,58 @@ export const roleProfiles: RoleProfile[] = [
     classroomConnection: "Interference, wavelength and the behaviour of light are what make a spectrometer work.",
   },
   {
-    id: "software-data",
-    title: "Software and data",
-    summary: "Turn satellite measurements into data and tools people can use.",
-    explanation:
-      "Software developers and data specialists move measurements from the satellite to the people who need them. They build the systems that process large amounts of data and the web tools customers use to see where emissions are.",
-    tasks: [
-      { title: "Build data pipelines", detail: "Process large numbers of observations reliably and quickly." },
-      { title: "Build tools for users", detail: "Create web platforms and interfaces that let customers find and use results." },
-      { title: "Find patterns", detail: "Use statistics and machine learning to sort sites and spot changes over time." },
-    ],
-    collaborators: ["Scientists", "Product designers", "Customers", "Operations teams"],
-    classroomConnection: "A measurement only helps if people can find it, trust it and understand what it means.",
-  },
+  "id": "software-data",
+  "title": "Software and data",
+  "summary": "Build software that turns information into reliable tools and workflows.",
+  "explanation": "Software developers translate user needs into data structures, rules and interfaces. They test how the system behaves, investigate errors and improve the way people find and use information.",
+  "tasks": [
+    {
+      "title": "Understand the task",
+      "detail": "Clarify users, records and the decisions the software needs to support."
+    },
+    {
+      "title": "Build and connect",
+      "detail": "Implement data relationships, processing rules and useful interfaces."
+    },
+    {
+      "title": "Test and improve",
+      "detail": "Check expected results, missing inputs and access rules, then investigate failures."
+    }
+  ],
+  "collaborators": [
+    "Product designers",
+    "Users",
+    "Technical specialists",
+    "Operations teams"
+  ],
+  "classroomConnection": "Information helps only when people can find it, trust it and use it for the intended decision."
+},
   {
-    "id": "conservation-research",
-    "title": "Conservation research and population ecology",
-    "summary": "Find out whether an intervention helps a wild population recover.",
-    "explanation": "Conservation researchers connect observations of individual animals to changes in a population. They plan what to measure, compare outcomes and explain what the evidence can and cannot establish.",
-    "tasks": [
-      {
-        "title": "Plan a comparison",
-        "detail": "Choose measures of survival, breeding and population change, and decide what to compare them with."
-      },
-      {
-        "title": "Follow animals after release",
-        "detail": "Record observations over time, accounting for animals that are difficult to detect."
-      },
-      {
-        "title": "Interpret the evidence",
-        "detail": "Ask whether results reflect the intervention, environmental conditions or other explanations."
-      }
-    ],
-    "collaborators": [
-      "Animal care teams",
-      "Veterinarians",
-      "Landowners",
-      "Field technicians"
-    ],
-    "classroomConnection": "Survival and reproduction at different life stages affect population change. A successful release alone does not establish population recovery."
-  },
+  "id": "conservation-research",
+  "title": "Conservation research and population ecology",
+  "summary": "Investigate changes in living populations and habitats using repeatable observations.",
+  "explanation": "Conservation researchers choose ecological questions, plan comparisons and interpret evidence about living populations and their habitats. Measures can include survival, reproduction, abundance or vegetation; the choice depends on the question.",
+  "tasks": [
+    {
+      "title": "Plan a comparison",
+      "detail": "Choose relevant ecological measures and a defensible comparison."
+    },
+    {
+      "title": "Observe consistently",
+      "detail": "Record organisms and environmental conditions using repeatable methods."
+    },
+    {
+      "title": "Interpret the evidence",
+      "detail": "Consider detection limits and alternative explanations before drawing conclusions."
+    }
+  ],
+  "collaborators": [
+    "Field technicians",
+    "Land managers",
+    "Other scientists"
+  ],
+  "classroomConnection": "A visible change does not by itself establish the cause of ecological recovery."
+},
   {
     "id": "animal-care",
     "title": "Animal care and welfare",
@@ -1685,32 +1701,32 @@ export const roleProfiles: RoleProfile[] = [
     "classroomConnection": "The health of an individual and the recovery of a population are related questions, but they require different evidence."
   },
   {
-    "id": "process-engineering",
-    "title": "Process engineering",
-    "summary": "Design and test the steps that separate useful materials from a mixture.",
-    "explanation": "Process engineers connect chemistry to equipment and operating conditions. They use calculations, models and test results to decide how a process should work, then help troubleshoot what happens when it is scaled up.",
-    "tasks": [
-      {
-        "title": "Compare separation steps",
-        "detail": "Evaluate how different treatment stages affect recovery, purity and resource use."
-      },
-      {
-        "title": "Check the balances",
-        "detail": "Account for material entering and leaving each stage, using models and measurements."
-      },
-      {
-        "title": "Test and improve",
-        "detail": "Use pilot or demonstration results to improve designs and support commissioning."
-      }
-    ],
-    "collaborators": [
-      "Plant operators",
-      "Laboratory staff",
-      "Equipment suppliers",
-      "Other engineers"
-    ],
-    "classroomConnection": "Concentration, mixtures and quantitative chemical change become practical questions about recovery, purity, water use and scale."
-  },
+  "id": "process-engineering",
+  "title": "Process engineering",
+  "summary": "Use chemistry, measurements and engineering constraints to design and improve industrial processes.",
+  "explanation": "Process engineers compare operating conditions and test results, model how materials move and change, and work with other specialists to improve a process. The relevant process may involve separation, treatment or fluid handling.",
+  "tasks": [
+    {
+      "title": "Define the process",
+      "detail": "Identify materials, desired outcomes and operating constraints."
+    },
+    {
+      "title": "Compare evidence",
+      "detail": "Use measurements and calculations to compare possible conditions or stages."
+    },
+    {
+      "title": "Test and improve",
+      "detail": "Evaluate results and identify changes that need further testing."
+    }
+  ],
+  "collaborators": [
+    "Laboratory staff",
+    "Operators",
+    "Equipment specialists",
+    "Other engineers"
+  ],
+  "classroomConnection": "Material properties and quantitative comparisons help explain how a process behaves and where a model is incomplete."
+},
   {
     "id": "process-operations",
     "title": "Process and plant operations",

@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-23",
+  "unit": {
+    "passed": 305,
+    "files": 19
+  },
+  "typecheck": "pass",
+  "lint": "pass",
+  "productionBuild": "pass, via Playwright webServer command",
+  "browser": {
+    "passed": 78,
+    "desktop": [
+      1440,
+      900
+    ],
+    "phone": [
+      390,
+      844
+    ],
+    "scope": "19 examples: all sections, teaching diagrams, desktop projector; story and logo loading; no horizontal overflow; off-origin-request checks; Discover 83 guess/reveal and pathway"
+  },
+  "visualReview": "39 final assets plus desktop and mobile screenshots inspected",
+  "existingExamplesPreserved": 114,
+  "existingDiscoverCardsPreserved": 82,
+  "otherCompanyLedgerRecordsPreserved": 227,
+  "publication": "local only; not deployed",
+  "initialTestHarnessCorrection": "About navigation is named About <company>; fixed test locator after initial timeout. No application navigation defect."
+}

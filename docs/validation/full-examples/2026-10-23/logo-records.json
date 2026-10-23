@@ -1,0 +1,154 @@
+{
+  "bioaro": {
+    "src": "/images/logos/bioaro.png",
+    "width": 208,
+    "height": 88,
+    "onDark": false,
+    "sourceUrl": "https://bioaro.com/frontend/img/logo.png",
+    "retrieved": "2026-10-23"
+  },
+  "nanostech": {
+    "src": "/images/logos/nanostech.png",
+    "width": 400,
+    "height": 95,
+    "onDark": false,
+    "sourceUrl": "https://www.nanos.tech/assets/logo-horizontal-color.png",
+    "retrieved": "2026-10-23"
+  },
+  "optiseis": {
+    "src": "/images/logos/optiseis.png",
+    "width": 400,
+    "height": 130,
+    "onDark": false,
+    "sourceUrl": "https://optiseis.com/wp-content/uploads/2024/08/OptiSeis_logo_color_1920-1024x333.png",
+    "retrieved": "2026-10-23"
+  },
+  "absolute-imaging": {
+    "src": "/images/logos/absolute-imaging.png",
+    "width": 245,
+    "height": 150,
+    "onDark": true,
+    "sourceUrl": "https://www.absoluteimaging.ca/wp-content/uploads/2020/08/logo.png",
+    "retrieved": "2026-10-23"
+  },
+  "allnorth": {
+    "src": "/images/logos/allnorth.png",
+    "width": 300,
+    "height": 52,
+    "onDark": false,
+    "sourceUrl": "https://www.allnorth.com/wp-content/uploads/yootheme/cache/15/logo-30-1557c7cb.png",
+    "retrieved": "2026-10-23"
+  },
+  "telus-spark": {
+    "src": "/images/logos/telus-spark.png",
+    "width": 351,
+    "height": 124,
+    "onDark": true,
+    "sourceUrl": "https://telusspark.cdn.prismic.io/telusspark/513f5967-73be-41a4-ac0b-6fc1e50fcfe1_logo.svg",
+    "retrieved": "2026-10-23"
+  },
+  "ozonebio": {
+    "src": "/images/logos/ozonebio.png",
+    "width": 400,
+    "height": 132,
+    "onDark": false,
+    "sourceUrl": "https://ozonebio.ca/assets/images/logo/ozonebio-logo-blue.svg",
+    "retrieved": "2026-10-23"
+  },
+  "dakota-analytics": {
+    "src": "/images/logos/dakota-analytics.png",
+    "width": 400,
+    "height": 134,
+    "onDark": false,
+    "sourceUrl": "https://dakotaanalytics.com/wp-content/uploads/2025/04/Dakota-Analytics-Logo-Horizontal.svg",
+    "retrieved": "2026-10-23"
+  },
+  "vistavu": {
+    "src": "/images/logos/vistavu.png",
+    "width": 150,
+    "height": 36,
+    "onDark": false,
+    "sourceUrl": "https://www.vistavusolutions.com/hs-fs/hubfs/VistaVu%20Solutions_Official%20Logo-1.png?width=150&height=36&name=VistaVu%20Solutions_Official%20Logo-1.png",
+    "retrieved": "2026-10-23"
+  },
+  "vog-by-novus": {
+    "src": "/images/logos/vog-by-novus.png",
+    "width": 300,
+    "height": 56,
+    "onDark": false,
+    "sourceUrl": "https://vogappdevelopers.com/wp-content/uploads/2024/09/novusbyvog-black-300.png",
+    "retrieved": "2026-10-23"
+  },
+  "made-by-marcus": {
+    "src": "/images/logos/made-by-marcus.png",
+    "width": 400,
+    "height": 141,
+    "onDark": false,
+    "sourceUrl": "https://madebymarcus.ca/cdn/shop/files/MBM-logo_e75af24c-ba3a-4f9e-a7ae-2fe86f1c85b0_250x.svg?v=1790613344",
+    "retrieved": "2026-10-23"
+  },
+  "calgary-farmers-market": {
+    "src": "/images/logos/calgary-farmers-market.png",
+    "width": 229,
+    "height": 150,
+    "onDark": false,
+    "sourceUrl": "https://calgaryfarmersmarket.ca/wp-content/uploads/2025/03/CFM-logo.webp",
+    "retrieved": "2026-10-23"
+  },
+  "crave-cupcakes": {
+    "src": "/images/logos/crave-cupcakes.png",
+    "width": 320,
+    "height": 147,
+    "onDark": false,
+    "sourceUrl": "https://www.cravecupcakes.ca/cdn/shop/files/NEW-Branding_Logo_Refresh_PMS295C_320x.png?v=1675717347",
+    "retrieved": "2026-10-23"
+  },
+  "fyidoctors": {
+    "src": "/images/logos/fyidoctors.png",
+    "width": 400,
+    "height": 131,
+    "onDark": true,
+    "sourceUrl": "https://fyidoctors.com/cdn/shop/files/FYidoctors_logo.svg?v=1757989283&width=120",
+    "retrieved": "2026-10-23"
+  },
+  "pba-group": {
+    "src": "/images/logos/pba-group.png",
+    "width": 400,
+    "height": 130,
+    "onDark": true,
+    "sourceUrl": "https://thepbagroup.com/wp-content/uploads/2025/11/logo-white.png",
+    "retrieved": "2026-10-23"
+  },
+  "ept-clean-oil": {
+    "src": "/images/logos/ept-clean-oil.png",
+    "width": 162,
+    "height": 150,
+    "onDark": false,
+    "sourceUrl": "https://cleanoil.com/wp-content/uploads/2026/09/logo.webp",
+    "retrieved": "2026-10-23"
+  },
+  "robots-and-pencils": {
+    "src": "/images/logos/robots-and-pencils.png",
+    "width": 264,
+    "height": 109,
+    "onDark": true,
+    "sourceUrl": "https://robotsandpencils.com/wp-content/uploads/2025/07/footer-logo.svg",
+    "retrieved": "2026-10-23"
+  },
+  "launchcode": {
+    "src": "/images/logos/launchcode.png",
+    "width": 400,
+    "height": 82,
+    "onDark": false,
+    "sourceUrl": "https://lc.dev/",
+    "retrieved": "2026-10-23"
+  },
+  "stellaralgo": {
+    "src": "/images/logos/stellaralgo.png",
+    "width": 400,
+    "height": 85,
+    "onDark": false,
+    "sourceUrl": "https://f.hubspotusercontent10.net/hubfs/2584811/StellarAlgo%20Raises%2016.5M%20Series%20A.pdf",
+    "retrieved": "2026-10-23"
+  }
+}

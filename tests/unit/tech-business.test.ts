@@ -6,7 +6,7 @@ import { buildDiscoverCards } from "@/lib/discover-cards";
 import { filterCards, parseDiscoverState, roundOrder, serializeDiscoverState } from "@/lib/discover";
 
 const modules = ["cse1120", "inf2070", "cse1240", "ent2010", "fin3060"];
-const expectedCounts: Record<string, number> = { cse1120: 2, inf2070: 4, cse1240: 1, ent2010: 5, fin3060: 2 };
+const expectedCounts: Record<string, number> = { cse1120: 7, inf2070: 11, cse1240: 3, ent2010: 12, fin3060: 6 };
 
 describe("verified CTS course browsing with approved examples", () => {
   it.each(modules)("keeps %s selectable with sourced outcomes and honest coverage", (id) => {

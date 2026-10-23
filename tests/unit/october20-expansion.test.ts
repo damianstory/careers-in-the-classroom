@@ -27,7 +27,7 @@ describe("20 October approved batch", () => {
       const card = cards.find((c) => c.number === previous.number)!;
       expect([card.role.id, card.organization.id, card.pathway.id]).toEqual([previous.roleId, previous.organizationId, previous.pathwayId]);
     }
-    expect(cards.filter((c) => Number(c.number) > 70).map((c) => c.number)).toEqual(["71", "72", "73", "74", "75", "76", "77", "78", "79"]);
+    expect(cards.filter((c) => Number(c.number) > 70 && Number(c.number) <= 79).map((c) => c.number)).toEqual(["71", "72", "73", "74", "75", "76", "77", "78", "79"]);
     for (const record of batch) {
       for (const roleId of record.details.roleIds) {
         expect(cards.filter((c) => c.relatedExamples.some((e) => e.slug === record.example.slug && e.roleId === roleId))).toHaveLength(1);

@@ -1,0 +1,24 @@
+{
+  "checkedOn": "2026-10-21",
+  "drafts": 23,
+  "byArea": {
+    "science": 10,
+    "technology": 7,
+    "business": 6
+  },
+  "sourceUrls": 74,
+  "sourcesWithCaptures": 74,
+  "appFilesHashed": 546,
+  "appChanges": [],
+  "appAdded": [],
+  "unselectedRegistryChanges": [],
+  "newDiscover": 3,
+  "existingDiscoverExtended": 14,
+  "allFinalDecisionsPending": true,
+  "loootWeekUsd": 0.0298,
+  "firecrawlWeekCredits": 10,
+  "outstandingLoootUsd": 0,
+  "outstandingFirecrawlCredits": 0,
+  "errors": [],
+  "tests": "Research consistency and source/copy/ledger checks only; application tests not run because no app changes."
+}

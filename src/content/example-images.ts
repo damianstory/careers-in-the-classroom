@@ -1,3 +1,45 @@
+import october23Image0 from "../../public/images/examples/bioaro-checking-genomic-results-graphic-novel.webp";
+import october23Image1 from "../../public/images/examples/nanostech-catalyst-pathways-graphic-novel.webp";
+import october23Image2 from "../../public/images/examples/ept-oil-condition-evidence-graphic-novel.webp";
+import october23Image3 from "../../public/images/examples/optiseis-survey-tradeoffs-graphic-novel.webp";
+import october23Image4 from "../../public/images/examples/absolute-imaging-signal-and-noise-graphic-novel.webp";
+import october23Image5 from "../../public/images/examples/allnorth-sensor-to-control-graphic-novel.webp";
+import october23Image6 from "../../public/images/examples/spark-programming-motion-graphic-novel.webp";
+import october23Image7 from "../../public/images/examples/ozonebio-wood-to-materials-graphic-novel.webp";
+import october23Image8 from "../../public/images/examples/launchcode-scheduling-rules-graphic-novel.webp";
+import october23Image9 from "../../public/images/examples/dakota-checking-data-joins-graphic-novel.webp";
+import october23Image10 from "../../public/images/examples/vistavu-order-records-graphic-novel.webp";
+import october23Image11 from "../../public/images/examples/robots-pencils-testing-user-needs-graphic-novel.webp";
+import october23Image12 from "../../public/images/examples/vog-event-app-decisions-graphic-novel.webp";
+import october23Image13 from "../../public/images/examples/stellaralgo-fan-records-graphic-novel.webp";
+import october23Image14 from "../../public/images/examples/made-by-marcus-seasonal-value-graphic-novel.webp";
+import october23Image15 from "../../public/images/examples/calgary-market-vendor-mix-graphic-novel.webp";
+import october23Image16 from "../../public/images/examples/crave-cafe-customer-value-graphic-novel.webp";
+import october23Image17 from "../../public/images/examples/fyidoctors-service-coordination-graphic-novel.webp";
+import october23Image18 from "../../public/images/examples/pba-office-to-hotel-graphic-novel.webp";
+import october21Image0 from "../../public/images/examples/earthmaster-roadside-restoration-graphic-novel.webp";
+import october21Image1 from "../../public/images/examples/thurber-testing-the-ground-graphic-novel.webp";
+import october21Image2 from "../../public/images/examples/bgc-landfill-water-pathways-graphic-novel.webp";
+import october21Image3 from "../../public/images/examples/mcelhanney-measuring-landscapes-graphic-novel.webp";
+import october21Image4 from "../../public/images/examples/als-checking-trace-chemicals-graphic-novel.webp";
+import october21Image5 from "../../public/images/examples/innotech-identifying-carbon-materials-graphic-novel.webp";
+import october21Image6 from "../../public/images/examples/pure-technologies-listening-for-leaks-graphic-novel.webp";
+import october21Image7 from "../../public/images/examples/calfrac-fluid-test-conditions-graphic-novel.webp";
+import october21Image8 from "../../public/images/examples/trican-cement-barrier-testing-graphic-novel.webp";
+import october21Image9 from "../../public/images/examples/ces-fluid-formulation-evidence-graphic-novel.webp";
+import october21Image10 from "../../public/images/examples/chata-questions-to-queries-graphic-novel.webp";
+import october21Image11 from "../../public/images/examples/aimsio-field-ticket-to-invoice-graphic-novel.webp";
+import october21Image12 from "../../public/images/examples/atvenu-concert-inventory-graphic-novel.webp";
+import october21Image13 from "../../public/images/examples/trufla-client-record-rules-graphic-novel.webp";
+import october21Image14 from "../../public/images/examples/convverge-clinic-reporting-workflow-graphic-novel.webp";
+import october21Image15 from "../../public/images/examples/validere-measurement-records-graphic-novel.webp";
+import october21Image16 from "../../public/images/examples/amazon-yyc4-robot-decisions-graphic-novel.webp";
+import october21Image17 from "../../public/images/examples/atb-testing-business-ideas-graphic-novel.webp";
+import october21Image18 from "../../public/images/examples/prairiesky-royalty-revenue-graphic-novel.webp";
+import october21Image19 from "../../public/images/examples/trail-appliances-customer-value-graphic-novel.webp";
+import october21Image20 from "../../public/images/examples/mnp-financial-evidence-graphic-novel.webp";
+import october21Image21 from "../../public/images/examples/atco-segment-comparisons-graphic-novel.webp";
+import october21Image22 from "../../public/images/examples/precision-utilization-and-revenue-graphic-novel.webp";
 import october20Image0 from "../../public/images/examples/providence-rna-delivery-graphic-novel.webp";
 import october20Image1 from "../../public/images/examples/nimble-small-intestine-sampling-graphic-novel.webp";
 import october20Image2 from "../../public/images/examples/aggene-crop-traits-graphic-novel.webp";
@@ -94,6 +136,48 @@ import lithium from "../../public/images/examples/e3-lithium-graphic-novel.webp"
 // Fictional editorial scenes, not evidence of company staff, equipment or facilities.
 // Prompts and provenance: design/example-illustrations-2026-10-07/.
 export const exampleImages: Partial<Record<string, { src: StaticImageData; alt: string }>> = {
+  "bioaro-checking-genomic-results": { src: october23Image0, alt: "Fictional adult male laboratory researcher with dark skin, safety glasses, gloves and lab coat comparing a sealed sample tube with a rack of controls and a monitor displaying abstract sequence traces." },
+  "nanostech-catalyst-pathways": { src: october23Image1, alt: "Fictional woman chemical researcher in safety glasses and lab coat comparing sealed amber liquid samples at a laboratory bench, with a small generic enclosed pilot reactor and process sketch behind her." },
+  "ept-oil-condition-evidence": { src: october23Image2, alt: "Fictional mature laboratory technician wearing safety glasses and gloves comparing sealed clear and amber lubricant sample bottles beside a generic bench filtration apparatus and a notebook." },
+  "optiseis-survey-tradeoffs": { src: october23Image3, alt: "Fictional geophysicist at an office table comparing two terrain maps with a few small receiver markers, an existing access route and a wetland marked by a blue shape; wave traces visible on a nearby monitor." },
+  "absolute-imaging-signal-and-noise": { src: october23Image4, alt: "Fictional adult woman geophysicist at a workstation carefully comparing noisy wave traces on one monitor with a geological cross-section on another; printed traces and a pencil at hand." },
+  "allnorth-sensor-to-control": { src: october23Image5, alt: "Fictional instrumentation technician at a safe training bench comparing a temperature sensor display with a small guarded fan and a closed control panel; no exposed live wires." },
+  "spark-programming-motion": { src: october23Image6, alt: "Fictional adult science educator beside a small tabletop teaching robot arm, explaining a simple path on a screen to two learners in a public science learning space. Do not depict a passenger ride or company equipment." },
+  "ozonebio-wood-to-materials": { src: october23Image7, alt: "Fictional woman process researcher examining a sealed sample beside wood chips and a small generic closed process vessel in a pilot laboratory, with polymer pellets in a separate dish." },
+  "launchcode-scheduling-rules": { src: october23Image8, alt: "Fictional software developer at a desk comparing a colourful weekly schedule grid on a monitor with simple availability cards laid out on the desk." },
+  "dakota-checking-data-joins": { src: october23Image9, alt: "Fictional data developer comparing two structured tables and a chart at a workstation, with mismatched rows marked using coloured paper tabs." },
+  "vistavu-order-records": { src: october23Image10, alt: "Fictional software support specialist comparing a generic order screen, a packing slip and a warehouse item record at an office desk, with a colleague listening." },
+  "robots-pencils-testing-user-needs": { src: october23Image11, alt: "Two fictional adult software collaborators testing a paper phone-interface prototype beside a laptop, one observing while the other attempts a task; sketches and a few notes on the desk." },
+  "vog-event-app-decisions": { src: october23Image12, alt: "Fictional developer testing a phone app with an abstract festival schedule and small map while a colourful outdoor event is visible through a window; no brands or recognizable logos." },
+  "stellaralgo-fan-records": { src: october23Image13, alt: "Fictional data analyst at a desk comparing abstract ticket records with a small hockey-arena seating diagram on a monitor; no fan names, team logos or private data." },
+  "made-by-marcus-seasonal-value": { src: october23Image14, alt: "Fictional ice-cream shop manager comparing a summer service calendar with a small winter ice-cream-making workshop table inside a simple neighbourhood shop; natural people and no branding." },
+  "calgary-market-vendor-mix": { src: october23Image15, alt: "Fictional market operations coordinator reviewing a stall floor plan with a vendor, with produce, baked-goods and craft stalls visible behind them in an indoor market." },
+  "crave-cafe-customer-value": { src: october23Image16, alt: "Fictional bakery operations coordinator discussing a floor plan with a baker, with a pastry display on one side and a small coffee seating area on the other." },
+  "fyidoctors-service-coordination": { src: october23Image17, alt: "Fictional medical office coordinator at a welcoming eye-clinic reception desk explaining a blank appointment card to an adult visitor; eyeglass frames in the background, no clinical examination or patient data." },
+  "pba-office-to-hotel": { src: october23Image18, alt: "Fictional development planner comparing an office floor plan with a hotel-room layout at a desk, with an ordinary downtown building visible through a window; no claim of actual architecture." },
+  "earthmaster-roadside-restoration": { src: october21Image0, alt: "A fictional field technician kneels beside a sampling quadrat in a Calgary roadside meadow, recording plant cover; a colleague compares a simple site map." },
+  "thurber-testing-the-ground": { src: october21Image1, alt: "A fictional materials technologist records a soil sample's response beside a laboratory test frame; sample labels and a site sketch connect the bench to the ground." },
+  "bgc-landfill-water-pathways": { src: october21Image2, alt: "Two fictional environmental specialists compare a simplified ground cross-section with a monitoring location beside an urban stream; no visible pollution or affected people." },
+  "mcelhanney-measuring-landscapes": { src: october21Image3, alt: "A fictional survey technologist checks a tripod instrument while a colleague compares a terrain model on a tablet." },
+  "als-checking-trace-chemicals": { src: october21Image4, alt: "A fictional laboratory technician compares labelled water samples and a calibration graph beside a generic analytical instrument." },
+  "innotech-identifying-carbon-materials": { src: october21Image5, alt: "A fictional materials researcher compares two sample holders with a microscopic structure image on a screen; generic equipment and no invented atomic result." },
+  "pure-technologies-listening-for-leaks": { src: october21Image6, alt: "A fictional inspection specialist examines a spherical listening instrument at a workbench beside a water pipe, with a route map and sound trace for comparison." },
+  "calfrac-fluid-test-conditions": { src: october21Image7, alt: "A fictional fluid-laboratory technician compares sealed sample containers and a flow-test graph at a controlled bench." },
+  "trican-cement-barrier-testing": { src: october21Image8, alt: "A fictional laboratory worker compares labelled cement samples and a generic barrier cross-section on a monitor." },
+  "ces-fluid-formulation-evidence": { src: october21Image9, alt: "A fictional chemist compares small labelled fluid samples beside generic filtration equipment and a results notebook." },
+  "chata-questions-to-queries": { src: october21Image10, alt: "A fictional developer compares a plain-language question with two related tables and a test result on screens." },
+  "aimsio-field-ticket-to-invoice": { src: october21Image11, alt: "A fictional software developer checks a tablet field ticket against related job and invoice records on a monitor." },
+  "atvenu-concert-inventory": { src: october21Image12, alt: "A fictional developer checks inventory counts by shirt size and stand while a generic point-of-sale device sits on the desk." },
+  "trufla-client-record-rules": { src: october21Image13, alt: "A fictional developer tests a generic member form beside a decision diagram with allowed and correction branches." },
+  "convverge-clinic-reporting-workflow": { src: october21Image14, alt: "A fictional application developer and colleague review a generic reporting form and its validation diagram on a screen." },
+  "validere-measurement-records": { src: october21Image15, alt: "A fictional data developer compares a field record with an equipment table and a flagged missing unit." },
+  "amazon-yyc4-robot-decisions": { src: october21Image16, alt: "A fictional warehouse associate checks a labelled tote while a generic guided cart remains within a marked operating lane." },
+  "atb-testing-business-ideas": { src: october21Image17, alt: "A fictional business adviser and small-business owner compare a customer sketch, cost sheet and two simple demand scenarios at a desk." },
+  "prairiesky-royalty-revenue": { src: october21Image18, alt: "A fictional financial analyst compares a simple royalty calculation with labelled production and price records; use Canadian dollar signs, not pounds." },
+  "trail-appliances-customer-value": { src: october21Image19, alt: "A fictional retail adviser compares appliance dimensions with a customer's sketch while a separate warehouse handoff is suggested through a labelled order screen." },
+  "mnp-financial-evidence": { src: october21Image20, alt: "A fictional accountant holds two documents while comparing an invoice, delivery record and financial summary on a desk; exactly two hands." },
+  "atco-segment-comparisons": { src: october21Image21, alt: "A fictional financial analyst compares two segment charts with a combined total, using neutral labels and invented numbers." },
+  "precision-utilization-and-revenue": { src: october21Image22, alt: "A fictional analyst compares a calendar of equipment-use days with a rate table and revenue chart; no suggestion that office staff operate a drilling rig." },
   "providence-rna-delivery": { src: october20Image0, alt: "Graphic-novel illustration. A fictional scientist compares labelled sample vials and a simplified delivery sketch at a clean laboratory bench; a colleague records results." },
   "nimble-small-intestine-sampling": { src: october20Image1, alt: "Graphic-novel illustration. A fictional device designer and laboratory analyst compare a generic sealed sampling capsule with a digestive-tract diagram, without a patient procedure." },
   "aggene-crop-traits": { src: october20Image2, alt: "Graphic-novel illustration. A fictional plant researcher compares labelled trays of seedlings in a growth room with a notebook showing controlled watering groups." },

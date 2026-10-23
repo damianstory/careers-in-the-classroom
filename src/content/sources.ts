@@ -1,3 +1,5 @@
+import { october23Sources } from "./october23";
+import { october21Sources } from "./october21";
 import { october20Sources } from "./october20";
 import { exampleRecords } from "./example-records";
 import type { DatedSource } from "./types";
@@ -7,6 +9,8 @@ import type { DatedSource } from "./types";
 const checkedOn = "2026-09-25";
 
 export const registry: DatedSource[] = [
+  ...october23Sources,
+  ...october21Sources,
   {
     "id": "alx-oct20-07-1",
     "label": "Alberta Energy Regulator — E3 Clearwater application notice (November 2025; proposed facility)",

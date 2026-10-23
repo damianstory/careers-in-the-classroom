@@ -1,0 +1,62 @@
+[
+  {
+    "example": "earthmaster-roadside-restoration",
+    "before": "No publication blocker in this scoped wording; measured ecological benefits remain unclaimed.",
+    "after": "Measured ecological benefits are not established by this source.",
+    "reason": "Remove internal approval/workflow wording after approval; evidence scope unchanged."
+  },
+  {
+    "example": "bgc-landfill-water-pathways",
+    "before": "Course narrowed from the screening suggestions to Biology 20 human impacts and local abiotic conditions.",
+    "after": "The Biology 20 connection focuses on human impacts and local abiotic conditions.",
+    "reason": "Remove internal approval/workflow wording after approval; evidence scope unchanged."
+  },
+  {
+    "example": "als-checking-trace-chemicals",
+    "before": "No blocker in dated method wording. Accreditation and reporting-limit figures are intentionally omitted.",
+    "after": "Method information is dated; no current accreditation or reporting-limit claim is made.",
+    "reason": "Remove internal approval/workflow wording after approval; evidence scope unchanged."
+  },
+  {
+    "example": "innotech-identifying-carbon-materials",
+    "before": "Revised classroom question needs final-copy approval. Do not equate carbon characterization with proven commercial performance.",
+    "after": "Material characterization does not by itself establish commercial performance.",
+    "reason": "Remove internal approval/workflow wording after approval; evidence scope unchanged."
+  },
+  {
+    "example": "chata-questions-to-queries",
+    "before": "No AI reliability percentages or customer-data access guarantees are copied into the draft.",
+    "after": "No AI reliability percentage or customer-data access guarantee is established here.",
+    "reason": "Remove internal approval/workflow wording after approval; evidence scope unchanged."
+  },
+  {
+    "example": "atvenu-concert-inventory",
+    "before": "Software QA is a valid further lead, but the existing manufacturing-quality portrait is not silently repurposed as software testing.",
+    "after": "Software-testing roles require separate evidence and are not included in this example.",
+    "reason": "Remove internal approval/workflow wording after approval; evidence scope unchanged."
+  },
+  {
+    "example": "convverge-clinic-reporting-workflow",
+    "before": "Question refined from generic approvals to the sourced Calgary reporting project; final-copy review covers this change.",
+    "after": "The classroom question is based on a documented Calgary reporting project; the teaching model is simplified.",
+    "reason": "Remove internal approval/workflow wording after approval; evidence scope unchanged."
+  },
+  {
+    "example": "validere-measurement-records",
+    "before": "No current vacancy, headcount, headquarters designation or compliance guarantee proposed.",
+    "after": "Current vacancies, headcount, headquarters designation and compliance guarantees are not established here.",
+    "reason": "Remove internal approval/workflow wording after approval; evidence scope unchanged."
+  },
+  {
+    "example": "prairiesky-royalty-revenue",
+    "before": "Real financial-ratio claims and exact audited figures are not used; the approved draft would contain the transparent toy model.",
+    "after": "The classroom royalty model uses invented figures; it is not a reconstruction of actual financial results.",
+    "reason": "Remove internal approval/workflow wording after approval; evidence scope unchanged."
+  },
+  {
+    "example": "mnp-financial-evidence",
+    "before": "FIN3060 is a financial-information application, not an auditing qualification; a distinct assurance Discover card is proposed.",
+    "after": "FIN3060 provides a financial-information connection, not an auditing qualification.",
+    "reason": "Remove internal approval/workflow wording after approval; evidence scope unchanged."
+  }
+]

@@ -1,0 +1,262 @@
+{
+  "createdOn": "2026-10-21",
+  "researchSelection": [
+    "CGY-141",
+    "CGY-142",
+    "CGY-143",
+    "CGY-144",
+    "CGY-145",
+    "CGY-149",
+    "CGY-150",
+    "CGY-155",
+    "CGY-156",
+    "CGY-157",
+    "CGY-163",
+    "CGY-164",
+    "CGY-165",
+    "CGY-166",
+    "CGY-168",
+    "CGY-169",
+    "CGY-170",
+    "CGY-171",
+    "CGY-173",
+    "CGY-174",
+    "CGY-175",
+    "CGY-177",
+    "CGY-178"
+  ],
+  "finalCopy": [
+    {
+      "id": "CGY-141-FULL",
+      "version": 1,
+      "decision": "approved",
+      "sha256": "1cfeb1759a50ce7cd03e45e6d95574ed4193e9e93f6b831b1a3e3f5233ae89fe",
+      "approvedOn": "2026-10-21",
+      "reviewer": "user"
+    },
+    {
+      "id": "CGY-142-FULL",
+      "version": 1,
+      "decision": "approved",
+      "sha256": "87ed4519d4687193e9af8267653af460d494cfeeab81395efc1cf9eefabf3c12",
+      "approvedOn": "2026-10-21",
+      "reviewer": "user"
+    },
+    {
+      "id": "CGY-143-FULL",
+      "version": 1,
+      "decision": "approved",
+      "sha256": "11413a5d8400fd08dee7080994b58e7dcd5e2064396636be733868aea7a3ed82",
+      "approvedOn": "2026-10-21",
+      "reviewer": "user"
+    },
+    {
+      "id": "CGY-144-FULL",
+      "version": 1,
+      "decision": "approved",
+      "sha256": "ec4b20df1b48bcf3ac51f43d36333ca75182afb44e9f0246cb2ed29ae389a14f",
+      "approvedOn": "2026-10-21",
+      "reviewer": "user"
+    },
+    {
+      "id": "CGY-145-FULL",
+      "version": 1,
+      "decision": "approved",
+      "sha256": "b60b64aa554fa7901b3a9aa3e224ce2bf54bf07bcdb97c5710de7d3076127890",
+      "approvedOn": "2026-10-21",
+      "reviewer": "user"
+    },
+    {
+      "id": "CGY-149-FULL",
+      "version": 1,
+      "decision": "approved",
+      "sha256": "4478ac2b1c4b2f7ead4ae050ee48f7da37b42c128cd9eb68404f55c4f8ba740b",
+      "approvedOn": "2026-10-21",
+      "reviewer": "user"
+    },
+    {
+      "id": "CGY-150-FULL",
+      "version": 1,
+      "decision": "approved",
+      "sha256": "65cc7442aa26284fbee14d010110304fa2751a71f9791b8e843e5d4d48636c1c",
+      "approvedOn": "2026-10-21",
+      "reviewer": "user"
+    },
+    {
+      "id": "CGY-155-FULL",
+      "version": 1,
+      "decision": "approved",
+      "sha256": "d7ac171d35720f67b0e8d4da99e45798f60aaae62e27306f4bc75f3443ca3f29",
+      "approvedOn": "2026-10-21",
+      "reviewer": "user"
+    },
+    {
+      "id": "CGY-156-FULL",
+      "version": 1,
+      "decision": "approved",
+      "sha256": "fc6587fbb20f50740ba7728921613a47e7625fe06b3c0eac8af8d3c937c648f4",
+      "approvedOn": "2026-10-21",
+      "reviewer": "user"
+    },
+    {
+      "id": "CGY-157-FULL",
+      "version": 1,
+      "decision": "approved",
+      "sha256": "9fe7ffac77bc297a7de32723f4de2038e2c33ade567308ceea84fa3deb2d27c3",
+      "approvedOn": "2026-10-21",
+      "reviewer": "user"
+    },
+    {
+      "id": "CGY-163-FULL",
+      "version": 1,
+      "decision": "approved",
+      "sha256": "2ab69b9230465c8abc9600acb81189e5e10850a27654a64114a69239e3d5381b",
+      "approvedOn": "2026-10-21",
+      "reviewer": "user"
+    },
+    {
+      "id": "CGY-164-FULL",
+      "version": 1,
+      "decision": "approved",
+      "sha256": "03457cb0fd3edaf839122491ed51219a0155f8a9d88e1a9bbdf7f65bd54d7fcd",
+      "approvedOn": "2026-10-21",
+      "reviewer": "user"
+    },
+    {
+      "id": "CGY-165-FULL",
+      "version": 1,
+      "decision": "approved",
+      "sha256": "546bfbd6f7141a4d6ccd035743336aba918bf56342ead40a7b46ce3b2d71f6ab",
+      "approvedOn": "2026-10-21",
+      "reviewer": "user"
+    },
+    {
+      "id": "CGY-166-FULL",
+      "version": 1,
+      "decision": "approved",
+      "sha256": "b7f25af997b6fa3f3086b2f1167c39809f9d328b6fbcd9515db9eee65c44bd6b",
+      "approvedOn": "2026-10-21",
+      "reviewer": "user"
+    },
+    {
+      "id": "CGY-168-FULL",
+      "version": 1,
+      "decision": "approved",
+      "sha256": "f25763c40a00893c93eac3e205aafa410df860861adc915c592ea11fa716f377",
+      "approvedOn": "2026-10-21",
+      "reviewer": "user"
+    },
+    {
+      "id": "CGY-169-FULL",
+      "version": 1,
+      "decision": "approved",
+      "sha256": "7aee7a3ec542791f810c0680e44ca281db097d4984fcca99d888db26ea479c3f",
+      "approvedOn": "2026-10-21",
+      "reviewer": "user"
+    },
+    {
+      "id": "CGY-170-FULL",
+      "version": 1,
+      "decision": "approved",
+      "sha256": "8e686d7a13bb9f648d8f3bd03c1d7b0ed6804e65fd599d878cbcb0480479b31b",
+      "approvedOn": "2026-10-21",
+      "reviewer": "user"
+    },
+    {
+      "id": "CGY-171-FULL",
+      "version": 1,
+      "decision": "approved",
+      "sha256": "6f71df558330b11f531f5c22fd5fe82dd756700dbed5423a9da38f5178065510",
+      "approvedOn": "2026-10-21",
+      "reviewer": "user"
+    },
+    {
+      "id": "CGY-173-FULL",
+      "version": 1,
+      "decision": "approved",
+      "sha256": "c22bf557282760a27a7ba6c237ff11f4f9c2a6c2d7bd4c7dc16b5240997b6c35",
+      "approvedOn": "2026-10-21",
+      "reviewer": "user"
+    },
+    {
+      "id": "CGY-174-FULL",
+      "version": 1,
+      "decision": "approved",
+      "sha256": "8a7a9a8fafc03f468936982492cead5f4a31b120d9eb879cc6e457f6e1fac820",
+      "approvedOn": "2026-10-21",
+      "reviewer": "user"
+    },
+    {
+      "id": "CGY-175-FULL",
+      "version": 1,
+      "decision": "approved",
+      "sha256": "d2b7166527a96d45caf3d5c0d5c5de07f4698e1089dedcd56006568fdb56263c",
+      "approvedOn": "2026-10-21",
+      "reviewer": "user"
+    },
+    {
+      "id": "CGY-177-FULL",
+      "version": 1,
+      "decision": "approved",
+      "sha256": "b150c0df57511d79fa1ca1b75d9f66e89be42e029db7709cfb084e641686069e",
+      "approvedOn": "2026-10-21",
+      "reviewer": "user"
+    },
+    {
+      "id": "CGY-178-FULL",
+      "version": 1,
+      "decision": "approved",
+      "sha256": "1401aaed9d324b66f4cf97e6ff13b115728fedd5fddbb6570b4a5949c827316f",
+      "approvedOn": "2026-10-21",
+      "reviewer": "user"
+    }
+  ],
+  "sharedRoles": [
+    {
+      "id": "OCT21-ROLE-software-data",
+      "version": 1,
+      "decision": "approved",
+      "approvedOn": "2026-10-21",
+      "reviewer": "user"
+    },
+    {
+      "id": "OCT21-ROLE-conservation-research",
+      "version": 1,
+      "decision": "approved",
+      "approvedOn": "2026-10-21",
+      "reviewer": "user"
+    },
+    {
+      "id": "OCT21-ROLE-process-engineering",
+      "version": 1,
+      "decision": "approved",
+      "approvedOn": "2026-10-21",
+      "reviewer": "user"
+    }
+  ],
+  "newDiscover": [
+    {
+      "id": "OCT21-DISCOVER-work-pipeline-inspection",
+      "version": 1,
+      "decision": "approved",
+      "approvedOn": "2026-10-21",
+      "reviewer": "user"
+    },
+    {
+      "id": "OCT21-DISCOVER-work-business-advisory",
+      "version": 1,
+      "decision": "approved",
+      "approvedOn": "2026-10-21",
+      "reviewer": "user"
+    },
+    {
+      "id": "OCT21-DISCOVER-work-accounting-assurance",
+      "version": 1,
+      "decision": "approved",
+      "approvedOn": "2026-10-21",
+      "reviewer": "user"
+    }
+  ],
+  "publication": "not authorized by this research request",
+  "implementation": "authorized locally; pending review before publication"
+}

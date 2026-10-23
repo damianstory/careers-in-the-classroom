@@ -1,0 +1,50 @@
+[
+  {
+    "key": "ept-lab-web",
+    "label": "EPT Clean Oil — Fluid Technical Center",
+    "url": "https://cleanoil.com/lab-services/",
+    "checkedOn": "2026-10-23",
+    "retrieval": "web tool original-page view; direct fetch blocked",
+    "summary": "Chemists interpret lubricant tests and compare laboratory-scale treatments."
+  },
+  {
+    "key": "ept-contact-web",
+    "label": "EPT Clean Oil — Calgary contact",
+    "url": "https://cleanoil.com/contact/",
+    "checkedOn": "2026-10-23",
+    "retrieval": "web tool original-page view; direct fetch blocked",
+    "summary": "Head office: 17-3900 106 Ave SE, Calgary."
+  },
+  {
+    "key": "ept-about-web",
+    "label": "EPT Clean Oil — company history",
+    "url": "https://cleanoil.com/about/",
+    "checkedOn": "2026-10-23",
+    "retrieval": "web tool original-page view; direct fetch blocked",
+    "summary": "History records expansion of Calgary chemistry laboratory space in 2012 and the Fluid Technical Center in 2019."
+  },
+  {
+    "key": "robots-about-web",
+    "label": "Robots & Pencils — company and locations",
+    "url": "https://robotsandpencils.com/about/",
+    "checkedOn": "2026-10-23",
+    "retrieval": "web tool original-page view; direct fetch blocked",
+    "summary": "Engineering, design and strategy services; Calgary is listed among locations."
+  },
+  {
+    "key": "robots-sprint-web",
+    "label": "Robots & Pencils — Sharpening Sprint",
+    "url": "https://robotsandpencils.com/sharpening-sprint/",
+    "checkedOn": "2026-10-23",
+    "retrieval": "web tool original-page view; direct fetch blocked",
+    "summary": "Clarifies priorities, defines use cases and assesses data, technology and operating readiness."
+  },
+  {
+    "key": "stellar-case-web",
+    "label": "Ticketmaster — StellarAlgo and Calgary Flames case study",
+    "url": "https://business.ticketmaster.com/how-stellaralgo-ticketmaster-and-the-calgary-flames-grew-a-fanbase/",
+    "checkedOn": "2026-10-23",
+    "retrieval": "web tool original-page view; direct fetch blocked",
+    "summary": "Published November 1, 2022. Describes 2021–22 work organizing and analyzing fan and ticketing data. Historical example; no current results asserted."
+  }
+]

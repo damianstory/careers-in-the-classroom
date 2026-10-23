@@ -1,0 +1,248 @@
+{
+  "environment": {
+    "id": "oct17-route-sait-environmental-technology",
+    "provider": "SAIT",
+    "name": "Environmental Technology",
+    "routeType": "Diploma",
+    "location": "Calgary",
+    "relevance": "local",
+    "learns": "Study environmental monitoring, assessment and field methods.",
+    "entryNote": "A related preparation route, not a verified employer requirement or hiring partnership. Check the provider for current admissions and intake details. Specialized work may require further training or professional registration.",
+    "urlSourceId": "oct17-source-9",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct17-source-9"
+    ],
+    "checkedOn": "2026-10-17",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/environmental-technology",
+    "sourceCheckedOn": "2026-10-21",
+    "decision": "pending for these new company links"
+  },
+  "biology": {
+    "id": "oct20-route-biology",
+    "provider": "University of Calgary",
+    "name": "Biological Sciences BSc",
+    "routeType": "Degree",
+    "location": "Calgary",
+    "relevance": "local",
+    "learns": "Biological systems, research and laboratory investigation.",
+    "entryNote": "A related preparation route, not a verified employer requirement or hiring partnership. Check the provider for current admissions and intake details. Specialized work may require further training or professional registration.",
+    "urlSourceId": "oct20-pathway-biology",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct20-pathway-biology"
+    ],
+    "checkedOn": "2026-10-20",
+    "url": "https://www.ucalgary.ca/future-students/undergraduate/explore-programs/biological-sciences",
+    "sourceCheckedOn": "2026-10-21",
+    "decision": "pending for these new company links"
+  },
+  "civil": {
+    "id": "oct17-route-sait-civil-engineering-technology-municipal-major",
+    "provider": "SAIT",
+    "name": "Civil Engineering Technology, Municipal Major",
+    "routeType": "Diploma",
+    "location": "Calgary",
+    "relevance": "local",
+    "learns": "Study municipal infrastructure, design and drafting.",
+    "entryNote": "A related preparation route, not a verified employer requirement or hiring partnership. Check the provider for current admissions and intake details. Specialized work may require further training or professional registration.",
+    "urlSourceId": "oct17-source-16",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct17-source-16"
+    ],
+    "checkedOn": "2026-10-17",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/civil-engineering-technology-municipal",
+    "sourceCheckedOn": "2026-10-21",
+    "decision": "pending for these new company links"
+  },
+  "geology": {
+    "id": "route-geology",
+    "provider": "University of Calgary",
+    "name": "Geoscience (BSc)",
+    "routeType": "Bachelor’s degree",
+    "location": "Calgary",
+    "relevance": "local",
+    "learns": "Study Earth materials through the geology program and its available study streams.",
+    "entryNote": "A related preparation route, not a verified employer requirement or hiring partnership. Check the provider for current admissions and intake details. Specialized work may require further training or professional registration.",
+    "urlSourceId": "expansion-source-46",
+    "kind": "interpreted",
+    "sourceIds": [
+      "expansion-source-46"
+    ],
+    "checkedOn": "2026-10-15",
+    "url": "https://www.ucalgary.ca/future-students/undergraduate/explore-programs/geoscience",
+    "sourceCheckedOn": "2026-10-21",
+    "decision": "pending for these new company links",
+    "changeNote": "Current original page redirects from geology to geoscience; proposed existing-pathway name/URL refresh requires review. Stable pathway ID retained."
+  },
+  "geomatics": {
+    "id": "oct17-route-sait-geomatics-engineering-technology",
+    "provider": "SAIT",
+    "name": "Geomatics Engineering Technology",
+    "routeType": "Diploma",
+    "location": "Calgary",
+    "relevance": "local",
+    "learns": "Learn surveying, GIS, positioning and remote sensing.",
+    "entryNote": "A related preparation route, not a verified employer requirement or hiring partnership. Check the provider for current admissions and intake details. Specialized work may require further training or professional registration.",
+    "urlSourceId": "oct17-source-8",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct17-source-8"
+    ],
+    "checkedOn": "2026-10-17",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/geomatics-engineering-technology",
+    "sourceCheckedOn": "2026-10-21",
+    "decision": "pending for these new company links"
+  },
+  "lab": {
+    "id": "oct18-route-chemical",
+    "provider": "SAIT",
+    "name": "Chemical Laboratory Technology",
+    "routeType": "Diploma",
+    "location": "Calgary",
+    "relevance": "local",
+    "learns": "Chemical analysis, samples and laboratory practice.",
+    "entryNote": "A related preparation route, not a verified employer requirement or hiring partnership. Check the provider for current admissions and intake details. Specialized work may require further training or professional registration.",
+    "urlSourceId": "oct18-source-19",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct18-source-19"
+    ],
+    "checkedOn": "2026-10-18",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+    "sourceCheckedOn": "2026-10-21",
+    "decision": "pending for these new company links"
+  },
+  "instrument": {
+    "id": "oct18-route-instrument",
+    "provider": "SAIT",
+    "name": "Instrumentation Engineering Technology",
+    "routeType": "Diploma",
+    "location": "Calgary",
+    "relevance": "local",
+    "learns": "Measurement, calibration and process controls.",
+    "entryNote": "A related preparation route, not a verified employer requirement or hiring partnership. Check the provider for current admissions and intake details. Specialized work may require further training or professional registration.",
+    "urlSourceId": "oct18-source-13",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct18-source-13"
+    ],
+    "checkedOn": "2026-10-18",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/instrumentation-engineering-technology",
+    "sourceCheckedOn": "2026-10-21",
+    "decision": "pending for these new company links"
+  },
+  "chemical-engineering": {
+    "id": "ucalgary-chemical",
+    "provider": "University of Calgary",
+    "name": "Chemical Engineering (BSc)",
+    "routeType": "University degree",
+    "location": "Calgary",
+    "relevance": "local",
+    "learns": "Engineering foundations, process design and a final-year team design project, with an internship opportunity.",
+    "entryNote": "A related preparation route, not a verified employer requirement or hiring partnership. Check the provider for current admissions and intake details. Specialized work may require further training or professional registration.",
+    "kind": "interpreted",
+    "sourceIds": [
+      "depth-ucalgary-chemical"
+    ],
+    "urlSourceId": "depth-ucalgary-chemical",
+    "checkedOn": "2026-09-29",
+    "url": "https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-chemical-engineering",
+    "sourceCheckedOn": "2026-10-21",
+    "decision": "pending for these new company links"
+  },
+  "software": {
+    "id": "route-software",
+    "provider": "SAIT",
+    "name": "Software Development",
+    "routeType": "Diploma",
+    "location": "Calgary",
+    "relevance": "local",
+    "learns": "Learn to design, test and build software across front-end and back-end systems.",
+    "entryNote": "A related preparation route, not a verified employer requirement or hiring partnership. Check the provider for current admissions and intake details. Specialized work may require further training or professional registration.",
+    "urlSourceId": "expansion-source-14",
+    "kind": "interpreted",
+    "sourceIds": [
+      "expansion-source-14"
+    ],
+    "checkedOn": "2026-10-15",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/software-development",
+    "sourceCheckedOn": "2026-10-21",
+    "decision": "pending for these new company links"
+  },
+  "supply-chain": {
+    "id": "oct18-route-logistics",
+    "provider": "SAIT",
+    "name": "Business Administration — Supply Chain Management",
+    "routeType": "Diploma",
+    "location": "Calgary",
+    "relevance": "local",
+    "learns": "Supply-chain coordination, operations and planning.",
+    "entryNote": "A related preparation route, not a verified employer requirement or hiring partnership. Check the provider for current admissions and intake details. Specialized work may require further training or professional registration.",
+    "urlSourceId": "oct18-source-36",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct18-source-36"
+    ],
+    "checkedOn": "2026-10-18",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/business-administration-supply-chain-management",
+    "sourceCheckedOn": "2026-10-21",
+    "decision": "pending for these new company links"
+  },
+  "management": {
+    "id": "oct20-route-management",
+    "provider": "SAIT",
+    "name": "Business Administration — Management diploma",
+    "routeType": "Diploma",
+    "location": "Calgary",
+    "relevance": "local",
+    "learns": "Business operations and organizational decisions.",
+    "entryNote": "A related preparation route, not a verified employer requirement or hiring partnership. Check the provider for current admissions and intake details. Specialized work may require further training or professional registration.",
+    "urlSourceId": "oct20-pathway-management",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct20-pathway-management"
+    ],
+    "checkedOn": "2026-10-20",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/business-administration-management",
+    "sourceCheckedOn": "2026-10-21",
+    "decision": "pending for these new company links"
+  },
+  "accounting": {
+    "id": "oct20-route-accounting",
+    "provider": "SAIT",
+    "name": "Business Administration — Accounting diploma",
+    "routeType": "Diploma",
+    "location": "Calgary",
+    "relevance": "local",
+    "learns": "Financial statements and accounting analysis.",
+    "entryNote": "A related preparation route, not a verified employer requirement or hiring partnership. Check the provider for current admissions and intake details. Specialized work may require further training or professional registration. A diploma is not the CPA designation; CPA education, examinations and practical experience are separate requirements.",
+    "urlSourceId": "oct20-pathway-accounting",
+    "kind": "interpreted",
+    "sourceIds": [
+      "oct20-pathway-accounting"
+    ],
+    "checkedOn": "2026-10-20",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/business-administration-accounting",
+    "sourceCheckedOn": "2026-10-21",
+    "decision": "pending for these new company links",
+    "professionalExtensionSources": [
+      "https://www.cpaalberta.ca/Become-a-CPA/Practical-Experience/PE-Policies",
+      "https://www.cpaalberta.ca/Become-a-CPA/Practical-Experience/Employers/Understand-the-Requirements"
+    ]
+  },
+  "chemistry-degree": {
+    "id": "oct21-route-chemistry",
+    "provider": "University of Calgary",
+    "name": "Chemistry (BSc)",
+    "routeType": "Degree",
+    "location": "Calgary",
+    "learns": "Matter, reactions, experimental methods and research through laboratory and classroom work.",
+    "url": "https://www.ucalgary.ca/future-students/undergraduate/explore-programs/chemistry",
+    "sourceCheckedOn": "2026-10-21",
+    "kind": "interpreted",
+    "entryNote": "A related preparation route, not a verified employer requirement or hiring partnership. Check the provider for current admissions and intake details. Specialized work may require further training or professional registration.",
+    "decision": "pending for these new company links"
+  }
+}

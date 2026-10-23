@@ -1,0 +1,110 @@
+{
+  "date": "2026-10-21",
+  "instruction": "Okay, let's approve those so we can start working on final illustrations and the work to get them into the platform.",
+  "approvedDrafts": [
+    {
+      "id": "CGY-141-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-142-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-143-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-144-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-145-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-149-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-150-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-155-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-156-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-157-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-163-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-164-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-165-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-166-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-168-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-169-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-170-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-171-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-173-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-174-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-175-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-177-FULL",
+      "version": 1
+    },
+    {
+      "id": "CGY-178-FULL",
+      "version": 1
+    }
+  ],
+  "sharedRoleAmendments": [
+    "OCT21-ROLE-software-data",
+    "OCT21-ROLE-conservation-research",
+    "OCT21-ROLE-process-engineering"
+  ],
+  "newDiscoverCards": [
+    "OCT21-DISCOVER-work-pipeline-inspection",
+    "OCT21-DISCOVER-work-business-advisory",
+    "OCT21-DISCOVER-work-accounting-assurance"
+  ],
+  "scope": "Final illustrations and local app implementation; publication not requested",
+  "pathwayRefresh": "UCalgary Geology to Geoscience as reviewed"
+}

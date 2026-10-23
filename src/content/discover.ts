@@ -11,8 +11,9 @@ export interface DiscoverImage {
   pathwayId: string;
   jobId?: string;
   src: string;
-  width: 752;
-  height: 1344;
+  /** Actual asset dimensions; preserve each illustration's aspect ratio. */
+  width: number;
+  height: number;
 }
 
 type CardSelection = Omit<DiscoverImage, "src" | "width" | "height">;

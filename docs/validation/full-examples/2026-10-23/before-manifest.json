@@ -1,0 +1,11 @@
+{
+  "src/content/example-records/index.ts": "82b61477184a7298e39fb8272564679651177d468990780fa18a70bec349baed",
+  "src/content/example-images.ts": "137253b18d2ce2b8315a55ef53b12fa4640f406cfe6f6dfa494d3b32c47e93ea",
+  "src/content/discover-expansion.ts": "dff2fbf5ee4468b90d9be35ed8c18b369ff1f6e8684c49a2c38ae6060a8d7096",
+  "src/content/roles.ts": "57712711d0c128ebb970334be486bf10d0814b5b3a30d297a206a3f07be7d932",
+  "src/content/pathways.ts": "a7f4f5cc98a8ebda8e5ced3eae7789c9fb10e261526ecee0aca0e123b8f1ecfb",
+  "src/content/role-searches.ts": "ddb61719a92f2f9a5bcf536ac1d6f0337dd91d727ff173baf96ba123bb5f91fb",
+  "src/content/sources.ts": "9569e9bf26585e46be0ce2d6fd99837fb8d6244e6b8e8c2c5f762f0b4a1831a6",
+  "docs/validation/job-reviews/company-discovery.json": "e182bdbecf8ce95ecfec56e8f09951264387f244ea3d895e23178d283c7a5853",
+  "docs/validation/job-reviews/company-discovery/2026-10-22/candidates.json": "01a81b2a10c94339f575e24a704ec4816566c920e657186f9f99267465a96bc3"
+}

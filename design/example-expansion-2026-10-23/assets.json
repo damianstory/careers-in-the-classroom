@@ -1,0 +1,393 @@
+[
+  {
+    "slug": "bioaro-checking-genomic-results",
+    "kind": "story",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-0c743bed-cea1-457c-8cb3-4ee641cf8107.png",
+    "copy": "design/example-expansion-2026-10-23/bioaro-checking-genomic-results-story.png",
+    "src": "/images/examples/bioaro-checking-genomic-results-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 273364
+  },
+  {
+    "slug": "nanostech-catalyst-pathways",
+    "kind": "teaching",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-c8c3dc47-bf1c-488d-a1fa-24068ba8c8af.png",
+    "copy": "design/example-expansion-2026-10-23/nanostech-catalyst-pathways-teaching.png",
+    "src": "/images/story-diagrams/nanostech-catalyst-pathways-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 218098
+  },
+  {
+    "slug": "bioaro-checking-genomic-results",
+    "kind": "teaching",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-0c54c98a-24aa-469b-94bc-a26c3206871f.png",
+    "copy": "design/example-expansion-2026-10-23/bioaro-checking-genomic-results-teaching.png",
+    "src": "/images/story-diagrams/bioaro-checking-genomic-results-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 249200
+  },
+  {
+    "slug": "nanostech-catalyst-pathways",
+    "kind": "story",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-75017c49-f311-4718-b4ac-1a900470fd7f.png",
+    "copy": "design/example-expansion-2026-10-23/nanostech-catalyst-pathways-story.png",
+    "src": "/images/examples/nanostech-catalyst-pathways-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 317616
+  },
+  {
+    "slug": "ept-oil-condition-evidence",
+    "kind": "story",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-aeb0d4d6-cbe1-4816-b633-4707737cf76b.png",
+    "copy": "design/example-expansion-2026-10-23/ept-oil-condition-evidence-story.png",
+    "src": "/images/examples/ept-oil-condition-evidence-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 322050
+  },
+  {
+    "slug": "optiseis-survey-tradeoffs",
+    "kind": "story",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-fb33309e-38af-4599-a6f7-f3c58f759aec.png",
+    "copy": "design/example-expansion-2026-10-23/optiseis-survey-tradeoffs-story.png",
+    "src": "/images/examples/optiseis-survey-tradeoffs-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 386492
+  },
+  {
+    "slug": "ept-oil-condition-evidence",
+    "kind": "teaching",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-21e05cc4-8bad-41b6-8e83-ba5eedec3fd6.png",
+    "copy": "design/example-expansion-2026-10-23/ept-oil-condition-evidence-teaching.png",
+    "src": "/images/story-diagrams/ept-oil-condition-evidence-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 246432
+  },
+  {
+    "slug": "absolute-imaging-signal-and-noise",
+    "kind": "teaching",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-03413894-de95-4963-ae87-0f4e499e3b0a.png",
+    "copy": "design/example-expansion-2026-10-23/absolute-imaging-signal-and-noise-teaching.png",
+    "src": "/images/story-diagrams/absolute-imaging-signal-and-noise-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 305098
+  },
+  {
+    "slug": "allnorth-sensor-to-control",
+    "kind": "story",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-13fb6fc9-715e-44af-854d-9ea45534d64b.png",
+    "copy": "design/example-expansion-2026-10-23/allnorth-sensor-to-control-story.png",
+    "src": "/images/examples/allnorth-sensor-to-control-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 284486
+  },
+  {
+    "slug": "absolute-imaging-signal-and-noise",
+    "kind": "story",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-20c20e71-65b3-428b-bf8b-9767bf469122.png",
+    "copy": "design/example-expansion-2026-10-23/absolute-imaging-signal-and-noise-story.png",
+    "src": "/images/examples/absolute-imaging-signal-and-noise-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 365562
+  },
+  {
+    "slug": "spark-programming-motion",
+    "kind": "story",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-56a77bfa-27cb-4bf7-bf82-7ffeecc28f7f.png",
+    "copy": "design/example-expansion-2026-10-23/spark-programming-motion-story.png",
+    "src": "/images/examples/spark-programming-motion-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 316176
+  },
+  {
+    "slug": "spark-programming-motion",
+    "kind": "teaching",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-5da5ab2a-6cb2-4c23-b933-37d08f4d2dbc.png",
+    "copy": "design/example-expansion-2026-10-23/spark-programming-motion-teaching.png",
+    "src": "/images/story-diagrams/spark-programming-motion-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 225522
+  },
+  {
+    "slug": "ozonebio-wood-to-materials",
+    "kind": "teaching",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-fee9a9eb-e2ad-422e-bbb8-3390d503db70.png",
+    "copy": "design/example-expansion-2026-10-23/ozonebio-wood-to-materials-teaching.png",
+    "src": "/images/story-diagrams/ozonebio-wood-to-materials-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 218144
+  },
+  {
+    "slug": "allnorth-sensor-to-control",
+    "kind": "teaching",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-f1af23dc-5b4f-44cb-9490-99c1d931ddc3.png",
+    "copy": "design/example-expansion-2026-10-23/allnorth-sensor-to-control-teaching.png",
+    "src": "/images/story-diagrams/allnorth-sensor-to-control-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 257536
+  },
+  {
+    "slug": "ozonebio-wood-to-materials",
+    "kind": "story",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-77a273ab-30ff-4fc0-8e2c-63e497ddf12b.png",
+    "copy": "design/example-expansion-2026-10-23/ozonebio-wood-to-materials-story.png",
+    "src": "/images/examples/ozonebio-wood-to-materials-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 347444
+  },
+  {
+    "slug": "launchcode-scheduling-rules",
+    "kind": "story",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-6ec74e9f-66be-4873-927c-b6e29b883137.png",
+    "copy": "design/example-expansion-2026-10-23/launchcode-scheduling-rules-story.png",
+    "src": "/images/examples/launchcode-scheduling-rules-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 270742
+  },
+  {
+    "slug": "launchcode-scheduling-rules",
+    "kind": "teaching",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-42f9f6d1-8978-4786-85cf-b323cbadc929.png",
+    "copy": "design/example-expansion-2026-10-23/launchcode-scheduling-rules-teaching.png",
+    "src": "/images/story-diagrams/launchcode-scheduling-rules-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 221994
+  },
+  {
+    "slug": "dakota-checking-data-joins",
+    "kind": "story",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-4de67f5e-dd12-4918-b39e-ebcdc77a7eb8.png",
+    "copy": "design/example-expansion-2026-10-23/dakota-checking-data-joins-story.png",
+    "src": "/images/examples/dakota-checking-data-joins-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 336704
+  },
+  {
+    "slug": "vistavu-order-records",
+    "kind": "story",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-bfe4088f-6314-4769-b7b9-111e7abbb49e.png",
+    "copy": "design/example-expansion-2026-10-23/vistavu-order-records-story.png",
+    "src": "/images/examples/vistavu-order-records-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 296698
+  },
+  {
+    "slug": "dakota-checking-data-joins",
+    "kind": "teaching",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-bc2015ad-3b71-4588-9676-1cd148fd1621.png",
+    "copy": "design/example-expansion-2026-10-23/dakota-checking-data-joins-teaching.png",
+    "src": "/images/story-diagrams/dakota-checking-data-joins-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 165416
+  },
+  {
+    "slug": "vistavu-order-records",
+    "kind": "teaching",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-425decbf-01c1-4ff1-a79a-5bca0544984a.png",
+    "copy": "design/example-expansion-2026-10-23/vistavu-order-records-teaching.png",
+    "src": "/images/story-diagrams/vistavu-order-records-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 140146
+  },
+  {
+    "slug": "robots-pencils-testing-user-needs",
+    "kind": "story",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-b72dd238-bf44-4827-aac1-967f2d1c2ce2.png",
+    "copy": "design/example-expansion-2026-10-23/robots-pencils-testing-user-needs-story.png",
+    "src": "/images/examples/robots-pencils-testing-user-needs-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 380112
+  },
+  {
+    "slug": "robots-pencils-testing-user-needs",
+    "kind": "teaching",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-32eaf489-ec58-42c0-8e07-428b95dfb6a5.png",
+    "copy": "design/example-expansion-2026-10-23/robots-pencils-testing-user-needs-teaching.png",
+    "src": "/images/story-diagrams/robots-pencils-testing-user-needs-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 176716
+  },
+  {
+    "slug": "vog-event-app-decisions",
+    "kind": "story",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-451c8d75-91c6-42e5-884d-01cd69a39153.png",
+    "copy": "design/example-expansion-2026-10-23/vog-event-app-decisions-story.png",
+    "src": "/images/examples/vog-event-app-decisions-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 362862
+  },
+  {
+    "slug": "vog-event-app-decisions",
+    "kind": "teaching",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-47e77b48-6ffc-4552-9acd-407c244834ac.png",
+    "copy": "design/example-expansion-2026-10-23/vog-event-app-decisions-teaching.png",
+    "src": "/images/story-diagrams/vog-event-app-decisions-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 284970
+  },
+  {
+    "slug": "stellaralgo-fan-records",
+    "kind": "story",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-6defa76f-dd62-401e-8a52-a30b6782bc4a.png",
+    "copy": "design/example-expansion-2026-10-23/stellaralgo-fan-records-story.png",
+    "src": "/images/examples/stellaralgo-fan-records-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 299124
+  },
+  {
+    "slug": "stellaralgo-fan-records",
+    "kind": "teaching",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-dae25c9f-e0af-42de-81f7-a2d2b4950b5a.png",
+    "copy": "design/example-expansion-2026-10-23/stellaralgo-fan-records-teaching.png",
+    "src": "/images/story-diagrams/stellaralgo-fan-records-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 197968
+  },
+  {
+    "slug": "calgary-market-vendor-mix",
+    "kind": "story",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-0a7bb201-b940-44a5-9e1f-13a1e17c7923.png",
+    "copy": "design/example-expansion-2026-10-23/calgary-market-vendor-mix-story.png",
+    "src": "/images/examples/calgary-market-vendor-mix-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 353024
+  },
+  {
+    "slug": "calgary-market-vendor-mix",
+    "kind": "teaching",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-2b20384f-7ca0-439a-8328-16c597d53db0.png",
+    "copy": "design/example-expansion-2026-10-23/calgary-market-vendor-mix-teaching.png",
+    "src": "/images/story-diagrams/calgary-market-vendor-mix-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 392522
+  },
+  {
+    "slug": "crave-cafe-customer-value",
+    "kind": "story",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-70033944-b35d-4a1d-8834-6dfda8bc4ac9.png",
+    "copy": "design/example-expansion-2026-10-23/crave-cafe-customer-value-story.png",
+    "src": "/images/examples/crave-cafe-customer-value-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 337426
+  },
+  {
+    "slug": "crave-cafe-customer-value",
+    "kind": "teaching",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-41a3e137-a3ec-4025-9309-809a199cc405.png",
+    "copy": "design/example-expansion-2026-10-23/crave-cafe-customer-value-teaching.png",
+    "src": "/images/story-diagrams/crave-cafe-customer-value-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 278158
+  },
+  {
+    "slug": "fyidoctors-service-coordination",
+    "kind": "story",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-53b725af-6ec6-4df5-bfee-dc6aeec6fa38.png",
+    "copy": "design/example-expansion-2026-10-23/fyidoctors-service-coordination-story.png",
+    "src": "/images/examples/fyidoctors-service-coordination-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 319634
+  },
+  {
+    "slug": "fyidoctors-service-coordination",
+    "kind": "teaching",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-4ea8a4e1-5565-48f1-a908-43a658c3be30.png",
+    "copy": "design/example-expansion-2026-10-23/fyidoctors-service-coordination-teaching.png",
+    "src": "/images/story-diagrams/fyidoctors-service-coordination-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 218716
+  },
+  {
+    "slug": "pba-office-to-hotel",
+    "kind": "story",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-a458030a-b204-41df-9a0a-4ec30ded956b.png",
+    "copy": "design/example-expansion-2026-10-23/pba-office-to-hotel-story.png",
+    "src": "/images/examples/pba-office-to-hotel-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 278618,
+    "revision": 2
+  },
+  {
+    "slug": "pba-office-to-hotel",
+    "kind": "teaching",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-882c0d02-2a47-4ef8-bbdf-457e4d3757c4.png",
+    "copy": "design/example-expansion-2026-10-23/pba-office-to-hotel-teaching.png",
+    "src": "/images/story-diagrams/pba-office-to-hotel-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 215466
+  },
+  {
+    "slug": "work-geophysics",
+    "kind": "discover",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-bc0c91c2-3438-4c67-bf93-590be35f9343.png",
+    "copy": "design/example-expansion-2026-10-23/work-geophysics-discover.png",
+    "src": "/images/discover/work-geophysics.webp",
+    "width": 752,
+    "height": 1336,
+    "bytes": 300314
+  },
+  {
+    "slug": "made-by-marcus-seasonal-value",
+    "kind": "story",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-d8f599e1-f0cb-4225-98c0-ecb5e0167ee1.png",
+    "copy": "design/example-expansion-2026-10-23/made-by-marcus-seasonal-value-story.png",
+    "src": "/images/examples/made-by-marcus-seasonal-value-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 323952
+  },
+  {
+    "slug": "made-by-marcus-seasonal-value",
+    "kind": "teaching",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-df480b17-da7b-47ab-b9e5-6690e4fc1d56.png",
+    "copy": "design/example-expansion-2026-10-23/made-by-marcus-seasonal-value-teaching.png",
+    "src": "/images/story-diagrams/made-by-marcus-seasonal-value-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 322814
+  },
+  {
+    "slug": "optiseis-survey-tradeoffs",
+    "kind": "teaching",
+    "original": "/Users/damianmatheson/.codex/generated_images/01a16839-aa1e-71c3-9f6b-b20cc08a31c1/exec-18e8d3b1-fc0c-489c-8eb7-4e5519d47ab2.png",
+    "copy": "design/example-expansion-2026-10-23/optiseis-survey-tradeoffs-teaching.png",
+    "src": "/images/story-diagrams/optiseis-survey-tradeoffs-graphic-novel.webp",
+    "width": 1360,
+    "height": 765,
+    "bytes": 357474
+  }
+]

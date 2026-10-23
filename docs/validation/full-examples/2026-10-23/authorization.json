@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-23",
+  "instruction": "All right, let's start the process of adding them to the site. Assume that they're all approved.",
+  "scope": "19 candidates scoring >=8 from 2026-10-22; full research and local integration authorized in this conversation",
+  "approvedCandidateIds": [
+    "CGY-185",
+    "CGY-186",
+    "CGY-188",
+    "CGY-189",
+    "CGY-190",
+    "CGY-194",
+    "CGY-198",
+    "CGY-199",
+    "CGY-201",
+    "CGY-202",
+    "CGY-203",
+    "CGY-204",
+    "CGY-205",
+    "CGY-208",
+    "CGY-211",
+    "CGY-213",
+    "CGY-215",
+    "CGY-217",
+    "CGY-218"
+  ],
+  "publication": "Local integration; deployment not performed",
+  "excluded": "21 held candidates, unrelated pending amendments, and prior uncommitted work"
+}

@@ -1,3 +1,45 @@
+import october23Example0 from "./bioaro-checking-genomic-results";
+import october23Example1 from "./nanostech-catalyst-pathways";
+import october23Example2 from "./ept-oil-condition-evidence";
+import october23Example3 from "./optiseis-survey-tradeoffs";
+import october23Example4 from "./absolute-imaging-signal-and-noise";
+import october23Example5 from "./allnorth-sensor-to-control";
+import october23Example6 from "./spark-programming-motion";
+import october23Example7 from "./ozonebio-wood-to-materials";
+import october23Example8 from "./launchcode-scheduling-rules";
+import october23Example9 from "./dakota-checking-data-joins";
+import october23Example10 from "./vistavu-order-records";
+import october23Example11 from "./robots-pencils-testing-user-needs";
+import october23Example12 from "./vog-event-app-decisions";
+import october23Example13 from "./stellaralgo-fan-records";
+import october23Example14 from "./made-by-marcus-seasonal-value";
+import october23Example15 from "./calgary-market-vendor-mix";
+import october23Example16 from "./crave-cafe-customer-value";
+import october23Example17 from "./fyidoctors-service-coordination";
+import october23Example18 from "./pba-office-to-hotel";
+import october21Example0 from "./earthmaster-roadside-restoration";
+import october21Example1 from "./thurber-testing-the-ground";
+import october21Example2 from "./bgc-landfill-water-pathways";
+import october21Example3 from "./mcelhanney-measuring-landscapes";
+import october21Example4 from "./als-checking-trace-chemicals";
+import october21Example5 from "./innotech-identifying-carbon-materials";
+import october21Example6 from "./pure-technologies-listening-for-leaks";
+import october21Example7 from "./calfrac-fluid-test-conditions";
+import october21Example8 from "./trican-cement-barrier-testing";
+import october21Example9 from "./ces-fluid-formulation-evidence";
+import october21Example10 from "./chata-questions-to-queries";
+import october21Example11 from "./aimsio-field-ticket-to-invoice";
+import october21Example12 from "./atvenu-concert-inventory";
+import october21Example13 from "./trufla-client-record-rules";
+import october21Example14 from "./convverge-clinic-reporting-workflow";
+import october21Example15 from "./validere-measurement-records";
+import october21Example16 from "./amazon-yyc4-robot-decisions";
+import october21Example17 from "./atb-testing-business-ideas";
+import october21Example18 from "./prairiesky-royalty-revenue";
+import october21Example19 from "./trail-appliances-customer-value";
+import october21Example20 from "./mnp-financial-evidence";
+import october21Example21 from "./atco-segment-comparisons";
+import october21Example22 from "./precision-utilization-and-revenue";
 import october20Example0 from "./providence-rna-delivery";
 import october20Example1 from "./nimble-small-intestine-sampling";
 import october20Example2 from "./aggene-crop-traits";
@@ -90,6 +132,49 @@ import type { ExampleRecord, StoryDiagramImage } from "../types";
 
 // One file per researched example. Library order follows this list.
 export const exampleRecords: ExampleRecord[] = [
+  october23Example0,
+  october23Example1,
+  october23Example2,
+  october23Example3,
+  october23Example4,
+  october23Example5,
+  october23Example6,
+  october23Example7,
+  october23Example8,
+  october23Example9,
+  october23Example10,
+  october23Example11,
+  october23Example12,
+  october23Example13,
+  october23Example14,
+  october23Example15,
+  october23Example16,
+  october23Example17,
+  october23Example18,
+
+  october21Example0,
+  october21Example1,
+  october21Example2,
+  october21Example3,
+  october21Example4,
+  october21Example5,
+  october21Example6,
+  october21Example7,
+  october21Example8,
+  october21Example9,
+  october21Example10,
+  october21Example11,
+  october21Example12,
+  october21Example13,
+  october21Example14,
+  october21Example15,
+  october21Example16,
+  october21Example17,
+  october21Example18,
+  october21Example19,
+  october21Example20,
+  october21Example21,
+  october21Example22,
   october20Example0,
   october20Example1,
   october20Example2,

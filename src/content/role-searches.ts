@@ -1,6 +1,10 @@
 // Job titles a student could type into a job board for each kind of work. Editorial: these are
 // common posting titles for the work, not titles any one organization uses. The first title leads.
 export const roleSearchTitles: Record<string, string[]> = {
+  "work-geophysics": ["Geophysicist", "Processing geophysicist"],
+  "work-pipeline-inspection": ["Pipeline inspection technician", "Water pipeline technician"],
+  "work-business-advisory": ["Business adviser", "Small business consultant"],
+  "work-accounting-assurance": ["Assurance accountant", "Audit associate"],
   "work-plant-biotechnology": ["Plant biotechnology scientist"],
   "work-science-education": ["Science educator"],
   "work-sport-physiology": ["Sport physiologist"],

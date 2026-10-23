@@ -1,0 +1,269 @@
+{
+  "examples": 133,
+  "roles": 86,
+  "pathways": 81,
+  "discover": 83,
+  "batchCoverage": [
+    {
+      "slug": "bioaro-checking-genomic-results",
+      "company": "BioAro",
+      "discipline": "Biology",
+      "cards": [
+        {
+          "number": "16",
+          "title": "Laboratory technician",
+          "roleId": "work-lab"
+        }
+      ]
+    },
+    {
+      "slug": "nanostech-catalyst-pathways",
+      "company": "NanosTech",
+      "discipline": "Chemistry",
+      "cards": [
+        {
+          "number": "07",
+          "title": "Process Engineer",
+          "roleId": "process-engineering"
+        },
+        {
+          "number": "16",
+          "title": "Laboratory technician",
+          "roleId": "work-lab"
+        }
+      ]
+    },
+    {
+      "slug": "ept-oil-condition-evidence",
+      "company": "EPT Clean Oil",
+      "discipline": "Chemistry",
+      "cards": [
+        {
+          "number": "16",
+          "title": "Laboratory technician",
+          "roleId": "work-lab"
+        }
+      ]
+    },
+    {
+      "slug": "optiseis-survey-tradeoffs",
+      "company": "OptiSeis Solutions",
+      "discipline": "Physics",
+      "cards": [
+        {
+          "number": "83",
+          "title": "Geophysicist",
+          "roleId": "work-geophysics"
+        }
+      ]
+    },
+    {
+      "slug": "absolute-imaging-signal-and-noise",
+      "company": "Absolute Imaging",
+      "discipline": "Physics",
+      "cards": [
+        {
+          "number": "03",
+          "title": "Software Developer",
+          "roleId": "software-data"
+        },
+        {
+          "number": "83",
+          "title": "Geophysicist",
+          "roleId": "work-geophysics"
+        }
+      ]
+    },
+    {
+      "slug": "allnorth-sensor-to-control",
+      "company": "Allnorth — Calgary operations",
+      "discipline": "Physics",
+      "cards": [
+        {
+          "number": "13",
+          "title": "Instrumentation technician",
+          "roleId": "work-controls"
+        }
+      ]
+    },
+    {
+      "slug": "spark-programming-motion",
+      "company": "TELUS Spark Science Centre",
+      "discipline": "Technology",
+      "cards": [
+        {
+          "number": "72",
+          "title": "Science educator",
+          "roleId": "work-science-education"
+        }
+      ]
+    },
+    {
+      "slug": "ozonebio-wood-to-materials",
+      "company": "OzoneBio",
+      "discipline": "Chemistry",
+      "cards": [
+        {
+          "number": "07",
+          "title": "Process Engineer",
+          "roleId": "process-engineering"
+        },
+        {
+          "number": "16",
+          "title": "Laboratory technician",
+          "roleId": "work-lab"
+        }
+      ]
+    },
+    {
+      "slug": "launchcode-scheduling-rules",
+      "company": "Launchcode",
+      "discipline": "Technology",
+      "cards": [
+        {
+          "number": "03",
+          "title": "Software Developer",
+          "roleId": "software-data"
+        }
+      ]
+    },
+    {
+      "slug": "dakota-checking-data-joins",
+      "company": "Dakota Analytics",
+      "discipline": "Technology",
+      "cards": [
+        {
+          "number": "03",
+          "title": "Software Developer",
+          "roleId": "software-data"
+        }
+      ]
+    },
+    {
+      "slug": "vistavu-order-records",
+      "company": "VistaVu Solutions",
+      "discipline": "Technology",
+      "cards": [
+        {
+          "number": "03",
+          "title": "Software Developer",
+          "roleId": "software-data"
+        },
+        {
+          "number": "14",
+          "title": "Technical support specialist",
+          "roleId": "work-technical-support"
+        }
+      ]
+    },
+    {
+      "slug": "robots-pencils-testing-user-needs",
+      "company": "Robots & Pencils",
+      "discipline": "Technology",
+      "cards": [
+        {
+          "number": "03",
+          "title": "Software Developer",
+          "roleId": "software-data"
+        }
+      ]
+    },
+    {
+      "slug": "vog-event-app-decisions",
+      "company": "Vog by Novus Tech Group",
+      "discipline": "Technology",
+      "cards": [
+        {
+          "number": "03",
+          "title": "Software Developer",
+          "roleId": "software-data"
+        }
+      ]
+    },
+    {
+      "slug": "stellaralgo-fan-records",
+      "company": "StellarAlgo",
+      "discipline": "Technology",
+      "cards": [
+        {
+          "number": "03",
+          "title": "Software Developer",
+          "roleId": "software-data"
+        }
+      ]
+    },
+    {
+      "slug": "made-by-marcus-seasonal-value",
+      "company": "Made by Marcus",
+      "discipline": "Business",
+      "cards": [
+        {
+          "number": "74",
+          "title": "Retail operations coordinator",
+          "roleId": "work-retail-operations"
+        }
+      ]
+    },
+    {
+      "slug": "calgary-market-vendor-mix",
+      "company": "Calgary Farmers' Market",
+      "discipline": "Business",
+      "cards": [
+        {
+          "number": "74",
+          "title": "Retail operations coordinator",
+          "roleId": "work-retail-operations"
+        }
+      ]
+    },
+    {
+      "slug": "crave-cafe-customer-value",
+      "company": "Crave Cupcakes",
+      "discipline": "Business",
+      "cards": [
+        {
+          "number": "41",
+          "title": "Production baker",
+          "roleId": "work-commercial-baking"
+        },
+        {
+          "number": "74",
+          "title": "Retail operations coordinator",
+          "roleId": "work-retail-operations"
+        }
+      ]
+    },
+    {
+      "slug": "fyidoctors-service-coordination",
+      "company": "FYidoctors — Calgary clinics",
+      "discipline": "Business",
+      "cards": [
+        {
+          "number": "19",
+          "title": "Medical office assistant",
+          "roleId": "work-clinic-administration"
+        }
+      ]
+    },
+    {
+      "slug": "pba-office-to-hotel",
+      "company": "PBA Group",
+      "discipline": "Business",
+      "cards": [
+        {
+          "number": "81",
+          "title": "Business adviser",
+          "roleId": "work-business-advisory"
+        }
+      ]
+    }
+  ],
+  "subjectCardCounts": {
+    "biology": 26,
+    "chemistry": 20,
+    "physics": 53,
+    "science": 0,
+    "technology": 7,
+    "business": 12
+  }
+}

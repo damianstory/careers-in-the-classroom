@@ -1,3 +1,5 @@
+import { october23Pathways } from "./october23";
+import { october21Pathways, october21PathwayLinks, october21PathwayUpdates } from "./october21";
 import { october20Pathways, october20PathwayLinks } from "./october20";
 import type { LearningPathway } from "./types";
 
@@ -1891,7 +1893,7 @@ const existingLearningPathways: LearningPathway[] = [
 ];
 
 // Connect approved new examples to existing provider routes without replacing their history.
-export const learningPathways: LearningPathway[] = [
+const previousLearningPathways: LearningPathway[] = [
   ...existingLearningPathways.map((pathway) => ({
     ...pathway,
     roleRationale: [
@@ -1902,4 +1904,20 @@ export const learningPathways: LearningPathway[] = [
     ],
   })),
   ...october20Pathways,
+];
+
+// Approved additional role connections; preserve existing routes and rationale history.
+export const learningPathways: LearningPathway[] = [
+  ...previousLearningPathways.map((pathway) => ({
+    ...pathway,
+    ...october21PathwayUpdates[pathway.id],
+    roleRationale: [
+      ...pathway.roleRationale,
+      ...(october21PathwayLinks[pathway.id] ?? []).filter(
+        (link) => !pathway.roleRationale.some((existing) => existing.roleId === link.roleId),
+      ),
+    ],
+  })),
+  ...october21Pathways,
+  ...october23Pathways,
 ];

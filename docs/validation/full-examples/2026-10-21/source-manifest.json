@@ -1,0 +1,1080 @@
+[
+  {
+    "id": "oct21-source-001",
+    "url": "https://www.calgary.ca/planning/parks-rec/naturalization-projects.html",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/science-0.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/science-0.txt": "8d225db663e50edf2268901518d9c9302fce20357c1deb5e1dc7d2a9a75f56f7"
+    }
+  },
+  {
+    "id": "oct21-source-002",
+    "url": "https://www.earthmaster.ca/projects",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/science-0.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/open-sci.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21search1.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/science-0.txt": "8d225db663e50edf2268901518d9c9302fce20357c1deb5e1dc7d2a9a75f56f7",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/open-sci.txt": "272437d6b66c36adbb597b7ea07eaea11810ec23416471293d3079cf087a0e6c",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21search1.txt": "6481e5808d15422da88553313b6ca4c2a8f4d9c2652fc319b30cd657381da08d"
+    }
+  },
+  {
+    "id": "oct21-source-003",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/environmental-technology",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/pathways.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/open-programs.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/pathways.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/pathways.txt": "d5bb2032aec1f48e352d52c1ec218b756da285b8e5b684e50a98037fb832cf7f",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/open-programs.txt": "a180eefb79680c4ebda8050d2366f1ad0ff82c72d6f7cd0f2a6f015535378be4",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/pathways.txt": "5f0984f5fa7fbdab23477e9ecc663cdf334c39be67cda66b38f8db32ad0dbaa9"
+    }
+  },
+  {
+    "id": "oct21-source-004",
+    "url": "https://www.ucalgary.ca/future-students/undergraduate/explore-programs/biological-sciences",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/degree-programmes.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/degree-programmes.txt": "752c3c23a4dace01a7f03a206d18315f76c74e4408fedf7ea04234f26b9859c9"
+    }
+  },
+  {
+    "id": "oct21-source-005",
+    "url": "https://thurber.ca/Calgary-Office",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/looot-thurber.json",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/open-sci.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21search1.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/looot-thurber.json": "618634aa187cafdfc5e32f73a431e60ae17756e492c7e6dd7c1eb5a464ee8d95",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/open-sci.txt": "272437d6b66c36adbb597b7ea07eaea11810ec23416471293d3079cf087a0e6c",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21search1.txt": "6481e5808d15422da88553313b6ca4c2a8f4d9c2652fc319b30cd657381da08d"
+    }
+  },
+  {
+    "id": "oct21-source-006",
+    "url": "https://thurber.ca/Advanced-Laboratory",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/depth-3.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/depth-3.txt": "b8b5ab67134994138ef8ed5fa16b58a51e927c5302e1dc5dd15a7667d2782b34"
+    }
+  },
+  {
+    "id": "oct21-source-007",
+    "url": "https://thurber.ca/Construction-Materials-Engineering-and-Testing",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/depth-3.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/depth-3.txt": "b8b5ab67134994138ef8ed5fa16b58a51e927c5302e1dc5dd15a7667d2782b34"
+    }
+  },
+  {
+    "id": "oct21-source-008",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/civil-engineering-technology-municipal",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/pathways.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/pathways.txt": "d5bb2032aec1f48e352d52c1ec218b756da285b8e5b684e50a98037fb832cf7f"
+    }
+  },
+  {
+    "id": "oct21-source-009",
+    "url": "https://www.bgcengineering.ca/portfolio/environmental-management-of-nose-creek-inactive-landfill/",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/science-0.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/open-sci.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/s-bgc.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/science-0.txt": "8d225db663e50edf2268901518d9c9302fce20357c1deb5e1dc7d2a9a75f56f7",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/open-sci.txt": "272437d6b66c36adbb597b7ea07eaea11810ec23416471293d3079cf087a0e6c",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/s-bgc.txt": "c100a631fac4fb7ad2f9232abfaacf66da2e87471c12d76a3e8349457590a1ea"
+    }
+  },
+  {
+    "id": "oct21-source-010",
+    "url": "https://www.bgcengineering.ca/expertise/groundwater/",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/science-0.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/science-0.txt": "8d225db663e50edf2268901518d9c9302fce20357c1deb5e1dc7d2a9a75f56f7"
+    }
+  },
+  {
+    "id": "oct21-source-011",
+    "url": "https://www.bgcengineering.ca/contact/",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/s-bgc.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/s-bgc.txt": "c100a631fac4fb7ad2f9232abfaacf66da2e87471c12d76a3e8349457590a1ea"
+    }
+  },
+  {
+    "id": "oct21-source-012",
+    "url": "https://www.ucalgary.ca/future-students/undergraduate/explore-programs/geoscience",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/degree-programmes.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/degree-programmes.txt": "752c3c23a4dace01a7f03a206d18315f76c74e4408fedf7ea04234f26b9859c9"
+    }
+  },
+  {
+    "id": "oct21-source-013",
+    "url": "https://www.mcelhanney.com/locations/calgary-alberta/",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/science-0.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21b3.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/science-0.txt": "8d225db663e50edf2268901518d9c9302fce20357c1deb5e1dc7d2a9a75f56f7",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21b3.txt": "4e690e95a343791ee54fe8a1dfb9b541b3e7fef8379a630939f662ae0ddfd44e"
+    }
+  },
+  {
+    "id": "oct21-source-014",
+    "url": "https://www.mcelhanney.com/services/geomatics/",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/science-0.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21b3.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/science-0.txt": "8d225db663e50edf2268901518d9c9302fce20357c1deb5e1dc7d2a9a75f56f7",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21b3.txt": "4e690e95a343791ee54fe8a1dfb9b541b3e7fef8379a630939f662ae0ddfd44e"
+    }
+  },
+  {
+    "id": "oct21-source-015",
+    "url": "https://www.mcelhanney.com/lidar/",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/science-0.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/science-0.txt": "8d225db663e50edf2268901518d9c9302fce20357c1deb5e1dc7d2a9a75f56f7"
+    }
+  },
+  {
+    "id": "oct21-source-016",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/geomatics-engineering-technology",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/pathways.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/pathways.txt": "d5bb2032aec1f48e352d52c1ec218b756da285b8e5b684e50a98037fb832cf7f"
+    }
+  },
+  {
+    "id": "oct21-source-017",
+    "url": "https://www.alsglobal.com/en/News-and-publications/2025/05/Fast-Accurate-Testing-of-Alkanolamines-and-Sulfolane-in-Water-by-LCMS",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/depth-3.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21batch1.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/depth-3.txt": "b8b5ab67134994138ef8ed5fa16b58a51e927c5302e1dc5dd15a7667d2782b34",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21batch1.txt": "41d17e07bc3d74bfb2eca5741a17f5d02d1f7cbda7bfad73558e465f6c82ad93"
+    }
+  },
+  {
+    "id": "oct21-source-018",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/chemical-laboratory-technology",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/pathways.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/open-programs.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/pathways.txt": "d5bb2032aec1f48e352d52c1ec218b756da285b8e5b684e50a98037fb832cf7f",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/open-programs.txt": "a180eefb79680c4ebda8050d2366f1ad0ff82c72d6f7cd0f2a6f015535378be4"
+    }
+  },
+  {
+    "id": "oct21-source-019",
+    "url": "https://innotechalberta.ca/facilities/catalyst-sorbent-and-carbon-materials-characterization-lab/",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/targeted-text.txt",
+      "docs/validation/full-examples/2026-10-21/evidence/final-gaps.txt",
+      "docs/validation/full-examples/2026-10-21/evidence/role-and-carbon-gaps.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/targeted-text.txt": "8ae5371e2a5641ebff9cb824d009a41c062bdb9dc5d6e1752f7191d8eaebde54",
+      "docs/validation/full-examples/2026-10-21/evidence/final-gaps.txt": "623d96403a275c1bf29357be3377cf37cc169012c16bb9260ef15b11c818d613",
+      "docs/validation/full-examples/2026-10-21/evidence/role-and-carbon-gaps.txt": "743d606f06c2cb1c47da049b3a9f17f0fd252c8a52caab1b91aaa299b531ce83"
+    }
+  },
+  {
+    "id": "oct21-source-020",
+    "url": "https://innotechalberta.ca/news/innotech-to-host-turquoise-hydrogen-production-course/",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/original-gaps.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21b3.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/original-gaps.txt": "f97177d6de49758680e29b2ab7bc64893a1ca058571a730d4c9ece82497ae391",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21b3.txt": "4e690e95a343791ee54fe8a1dfb9b541b3e7fef8379a630939f662ae0ddfd44e"
+    }
+  },
+  {
+    "id": "oct21-source-021",
+    "url": "https://www.ucalgary.ca/future-students/undergraduate/explore-programs/chemistry",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/degree-programmes.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/degree-programmes.txt": "752c3c23a4dace01a7f03a206d18315f76c74e4408fedf7ea04234f26b9859c9"
+    }
+  },
+  {
+    "id": "oct21-source-022",
+    "url": "https://www.xylem.com/siteassets/support/case-studies/case-studies-pdf/cs-city-of-calgary-smartball.pdf",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/science-1.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21b3.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/highlight-details.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/open-highlight.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/science-1.txt": "48a896f24f14c6bdc251187d545c00104fe53a1eaa46e9da835b827faafda533",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21b3.txt": "4e690e95a343791ee54fe8a1dfb9b541b3e7fef8379a630939f662ae0ddfd44e",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/highlight-details.txt": "798b5f8bf3a86c9e8d1077b26a971b6c49f7e7fbde89bd22c6f7a19844351af5",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/open-highlight.txt": "098358b016e3071f86548ee2d6963d864daf75b31fe2c56cd78b364091353a98"
+    }
+  },
+  {
+    "id": "oct21-source-023",
+    "url": "https://www.xylem.com/siteassets/brand/pure-technologies/resources/brochure/pure-technologies-smartball-brochure-q3-2022.pdf",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/science-1.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/science-1.txt": "48a896f24f14c6bdc251187d545c00104fe53a1eaa46e9da835b827faafda533"
+    }
+  },
+  {
+    "id": "oct21-source-024",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/instrumentation-engineering-technology",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/pathway-followup.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/pathway-followup.txt": "3e75ff5106156392fa7401ba98b9b82390b4cb049e1af1591e195de46e49c430"
+    }
+  },
+  {
+    "id": "oct21-source-025",
+    "url": "https://calfrac.com/about-us/technology/",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/science-1.txt",
+      "docs/validation/full-examples/2026-10-21/evidence/core-originals-1.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/s-calfrac.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/science-1.txt": "48a896f24f14c6bdc251187d545c00104fe53a1eaa46e9da835b827faafda533",
+      "docs/validation/full-examples/2026-10-21/evidence/core-originals-1.txt": "cac8d4e7c491c6d48eed8d8cc5a2793fcf5cd839a6851921204fe463828cdb5f",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/s-calfrac.txt": "f02ee05effc12f8ab260bf99f56e609217499dbab556b2d87431653af8802eda"
+    }
+  },
+  {
+    "id": "oct21-source-026",
+    "url": "https://calfrac.com/contact/calgary-technology-center/",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/s-calfrac.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/s-calfrac.txt": "f02ee05effc12f8ab260bf99f56e609217499dbab556b2d87431653af8802eda"
+    }
+  },
+  {
+    "id": "oct21-source-027",
+    "url": "https://investors.calfrac.com/static-files/1abebef1-c6d4-4873-af2b-4efe98eb662f",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/s-calfrac.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/s-calfrac.txt": "f02ee05effc12f8ab260bf99f56e609217499dbab556b2d87431653af8802eda"
+    }
+  },
+  {
+    "id": "oct21-source-028",
+    "url": "https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-chemical-engineering",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/final-degree-sources.txt",
+      "docs/validation/full-examples/2026-10-21/evidence/degree-details.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/final-degree-sources.txt": "694c7a00fab7b004634d1a0a267859a3290e1eec37a1befa7bd594f485f03e02",
+      "docs/validation/full-examples/2026-10-21/evidence/degree-details.txt": "9c79057cf18845a9d46559c644b10ce14032f4962112b7818c4989c0a0e9fc98"
+    }
+  },
+  {
+    "id": "oct21-source-029",
+    "url": "https://tricanwellservice.com/technical-solutions/",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/science-1.txt",
+      "docs/validation/full-examples/2026-10-21/evidence/core-originals-1.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/s-trican2.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/science-1.txt": "48a896f24f14c6bdc251187d545c00104fe53a1eaa46e9da835b827faafda533",
+      "docs/validation/full-examples/2026-10-21/evidence/core-originals-1.txt": "cac8d4e7c491c6d48eed8d8cc5a2793fcf5cd839a6851921204fe463828cdb5f",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/s-trican2.txt": "44fda36651426b74efcd7a4c6ce8cfe4ab80fb136eff5b7d31bf0d400ee1e9e1"
+    }
+  },
+  {
+    "id": "oct21-source-030",
+    "url": "https://tricanwellservice.com/cementing/",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/final-gaps.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/s-trican2.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/final-gaps.txt": "623d96403a275c1bf29357be3377cf37cc169012c16bb9260ef15b11c818d613",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/s-trican2.txt": "44fda36651426b74efcd7a4c6ce8cfe4ab80fb136eff5b7d31bf0d400ee1e9e1"
+    }
+  },
+  {
+    "id": "oct21-source-031",
+    "url": "https://canadianenergyservices.com/laboratories/",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/science-1.txt",
+      "docs/validation/full-examples/2026-10-21/evidence/core-originals-1.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/science-1.txt": "48a896f24f14c6bdc251187d545c00104fe53a1eaa46e9da835b827faafda533",
+      "docs/validation/full-examples/2026-10-21/evidence/core-originals-1.txt": "cac8d4e7c491c6d48eed8d8cc5a2793fcf5cd839a6851921204fe463828cdb5f"
+    }
+  },
+  {
+    "id": "oct21-source-032",
+    "url": "https://www.cesenergysolutions.com/operations/",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/science-1.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/s-ces.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/science-1.txt": "48a896f24f14c6bdc251187d545c00104fe53a1eaa46e9da835b827faafda533",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/s-ces.txt": "78231d6b8598525e14e1e3aa1dffda7bb02a97cecf9d39be7d9da8df62fa4b5c"
+    }
+  },
+  {
+    "id": "oct21-source-033",
+    "url": "https://canadianenergyservices.com/wp-content/uploads/2022/03/CalgaryCESLab_2022_Spread.pdf",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/science-1.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/science-1.txt": "48a896f24f14c6bdc251187d545c00104fe53a1eaa46e9da835b827faafda533"
+    }
+  },
+  {
+    "id": "oct21-source-034",
+    "url": "https://chata.ai/company/about-us",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/open-tech.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/open-tech.txt": "5f81108df1ef86bbb674cfc7a1f5230865048ec0c89a25154f060fc26a3bf3f0"
+    }
+  },
+  {
+    "id": "oct21-source-035",
+    "url": "https://chata.ai/security",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/depth-0.txt",
+      "docs/validation/full-examples/2026-10-21/evidence/core-originals-0.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/depth-0.txt": "ef4b6b925e202f215bef292e68088a0ee1c8cd27548912bc5a01caff43a75835",
+      "docs/validation/full-examples/2026-10-21/evidence/core-originals-0.txt": "7ed625bae28b9975b7b46d4a01c622e5b2b6c10dc9f3df1b0cff94bb3e4fc0d8"
+    }
+  },
+  {
+    "id": "oct21-source-036",
+    "url": "https://chata.ai/platform/implementation/build-with-autoql",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21b4.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21b4.txt": "ccd9e4146f34e4f0b8c4714497a5882496107ad0b3b2d66e416f617cc5dab75f"
+    }
+  },
+  {
+    "id": "oct21-source-037",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/software-development",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/final-gaps.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/open-programs.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/final-gaps.txt": "623d96403a275c1bf29357be3377cf37cc169012c16bb9260ef15b11c818d613",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/open-programs.txt": "a180eefb79680c4ebda8050d2366f1ad0ff82c72d6f7cd0f2a6f015535378be4"
+    }
+  },
+  {
+    "id": "oct21-source-038",
+    "url": "https://aimsio.com/features/tickets/",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/depth-0.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/depth-0.txt": "ef4b6b925e202f215bef292e68088a0ee1c8cd27548912bc5a01caff43a75835"
+    }
+  },
+  {
+    "id": "oct21-source-039",
+    "url": "https://aimsio.com/careers/",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/original-gaps.txt",
+      "docs/validation/full-examples/2026-10-21/evidence/depth-0.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21batch0.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/original-gaps.txt": "f97177d6de49758680e29b2ab7bc64893a1ca058571a730d4c9ece82497ae391",
+      "docs/validation/full-examples/2026-10-21/evidence/depth-0.txt": "ef4b6b925e202f215bef292e68088a0ee1c8cd27548912bc5a01caff43a75835",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21batch0.txt": "9ed8c29a120d20b996ac4273c5776fc12986bb9007742f394dde4c24a268f737"
+    }
+  },
+  {
+    "id": "oct21-source-040",
+    "url": "https://aimsio.com/",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/original-gaps.txt",
+      "docs/validation/full-examples/2026-10-21/evidence/depth-0.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21batch0.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/open-highlight.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/original-gaps.txt": "f97177d6de49758680e29b2ab7bc64893a1ca058571a730d4c9ece82497ae391",
+      "docs/validation/full-examples/2026-10-21/evidence/depth-0.txt": "ef4b6b925e202f215bef292e68088a0ee1c8cd27548912bc5a01caff43a75835",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21batch0.txt": "9ed8c29a120d20b996ac4273c5776fc12986bb9007742f394dde4c24a268f737",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/open-highlight.txt": "098358b016e3071f86548ee2d6963d864daf75b31fe2c56cd78b364091353a98"
+    }
+  },
+  {
+    "id": "oct21-source-041",
+    "url": "https://www.atvenu.com/merchandise",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/core-originals-0.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21batch2.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/core-originals-0.txt": "7ed625bae28b9975b7b46d4a01c622e5b2b6c10dc9f3df1b0cff94bb3e4fc0d8",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21batch2.txt": "e3749a3b12f8576a32aa55a731e7265f1130020e47f16e4d9ec6c1ade24e4dd9"
+    }
+  },
+  {
+    "id": "oct21-source-042",
+    "url": "https://atvenu.applytojob.com/apply/MhGv1daAzW/Potential-Opportunities",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/original-gaps.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/t-atvenu-ats.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/original-gaps.txt": "f97177d6de49758680e29b2ab7bc64893a1ca058571a730d4c9ece82497ae391",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/t-atvenu-ats.txt": "268910c8c979249feafa3c3e4cc7b69430308101b4c3e13bb231356a51a71050"
+    }
+  },
+  {
+    "id": "oct21-source-043",
+    "url": "https://www.trufla.com/products/trumobile",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/depth-0.txt",
+      "docs/validation/full-examples/2026-10-21/evidence/core-originals-0.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21batch2.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/depth-0.txt": "ef4b6b925e202f215bef292e68088a0ee1c8cd27548912bc5a01caff43a75835",
+      "docs/validation/full-examples/2026-10-21/evidence/core-originals-0.txt": "7ed625bae28b9975b7b46d4a01c622e5b2b6c10dc9f3df1b0cff94bb3e4fc0d8",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21batch2.txt": "e3749a3b12f8576a32aa55a731e7265f1130020e47f16e4d9ec6c1ade24e4dd9"
+    }
+  },
+  {
+    "id": "oct21-source-044",
+    "url": "https://www.trufla.com/careers/",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/depth-0.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21batch2.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/depth-0.txt": "ef4b6b925e202f215bef292e68088a0ee1c8cd27548912bc5a01caff43a75835",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21batch2.txt": "e3749a3b12f8576a32aa55a731e7265f1130020e47f16e4d9ec6c1ade24e4dd9"
+    }
+  },
+  {
+    "id": "oct21-source-045",
+    "url": "https://www.trufla.com/blog/5-tips-to-drive-retention-and-new-customers/",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21batch2.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21batch2.txt": "e3749a3b12f8576a32aa55a731e7265f1130020e47f16e4d9ec6c1ade24e4dd9"
+    }
+  },
+  {
+    "id": "oct21-source-046",
+    "url": "https://convverge.com/case-studies/healthcare-power-pages-portal/",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/targeted-text.txt",
+      "docs/validation/full-examples/2026-10-21/evidence/business-originals.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/targeted-text.txt": "8ae5371e2a5641ebff9cb824d009a41c062bdb9dc5d6e1752f7191d8eaebde54",
+      "docs/validation/full-examples/2026-10-21/evidence/business-originals.txt": "e634d9b9ac4986c4592f152103be039cda85009c712457d461be5ca7ae2e3bbe"
+    }
+  },
+  {
+    "id": "oct21-source-047",
+    "url": "https://convverge.com/about-us/",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/open-tech.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/open-tech.txt": "5f81108df1ef86bbb674cfc7a1f5230865048ec0c89a25154f060fc26a3bf3f0"
+    }
+  },
+  {
+    "id": "oct21-source-048",
+    "url": "https://convverge.com/calgary/",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/depth-1.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/depth-1.txt": "3750b17d69a5f681ad7a4461b09db32f16cdfb23fdb89b3ab460bdd9bec9e54c"
+    }
+  },
+  {
+    "id": "oct21-source-049",
+    "url": "https://www.validere.com/contact",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/original-gaps.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/t-validere.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/original-gaps.txt": "f97177d6de49758680e29b2ab7bc64893a1ca058571a730d4c9ece82497ae391",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/t-validere.txt": "6a706d29606de7052a4d66a9f5004f39e452944d8542f12980cfba8e8025b4de"
+    }
+  },
+  {
+    "id": "oct21-source-050",
+    "url": "https://blog.validere.com/mobile-app-smart-alerting-features",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/t-validere.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/t-validere.txt": "6a706d29606de7052a4d66a9f5004f39e452944d8542f12980cfba8e8025b4de"
+    }
+  },
+  {
+    "id": "oct21-source-051",
+    "url": "https://www.validere.com/webinars/show-emissions-progress",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/t-validere.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/t-validere.txt": "6a706d29606de7052a4d66a9f5004f39e452944d8542f12980cfba8e8025b4de"
+    }
+  },
+  {
+    "id": "oct21-source-052",
+    "url": "https://www.aboutamazon.ca/news/workplace/unveiling-calgarys-newest-amazon-robotics-fulfillment-centre-a-focus-on-collaboration",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/depth-1.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21batch0.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/highlight-details.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/open-highlight.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/depth-1.txt": "3750b17d69a5f681ad7a4461b09db32f16cdfb23fdb89b3ab460bdd9bec9e54c",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21batch0.txt": "9ed8c29a120d20b996ac4273c5776fc12986bb9007742f394dde4c24a268f737",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/highlight-details.txt": "798b5f8bf3a86c9e8d1077b26a971b6c49f7e7fbde89bd22c6f7a19844351af5",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/open-highlight.txt": "098358b016e3071f86548ee2d6963d864daf75b31fe2c56cd78b364091353a98"
+    }
+  },
+  {
+    "id": "oct21-source-053",
+    "url": "https://amazon.jobs/content/en/teams/fulfillment-and-operations/central-rme",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/depth-1.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/depth-1.txt": "3750b17d69a5f681ad7a4461b09db32f16cdfb23fdb89b3ab460bdd9bec9e54c"
+    }
+  },
+  {
+    "id": "oct21-source-054",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/business-administration-supply-chain-management",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/pathways.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/pathways.txt": "d5bb2032aec1f48e352d52c1ec218b756da285b8e5b684e50a98037fb832cf7f"
+    }
+  },
+  {
+    "id": "oct21-source-055",
+    "url": "https://www.atb.com/resources/find-a-location/calgary-uptown-17th-avenue-branch/",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21b5.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21b5.txt": "aa2ff0a2833c2e47432756f3d0c6b5d74ca91a6e656d68cbd0d0fab7e85d203b"
+    }
+  },
+  {
+    "id": "oct21-source-056",
+    "url": "https://www.atb.com/business/good-advice/business-resources/",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/depth-2.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/depth-2.txt": "8a6e023c49b99afed60ba5d11e7b3dcc65056eade004daa6f8fb7ae1ce1e144d"
+    }
+  },
+  {
+    "id": "oct21-source-057",
+    "url": "https://www.atb.com/business/good-advice/start-up-business/starting-business-in-alberta-a-complete-guide/",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/depth-2.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/depth-2.txt": "8a6e023c49b99afed60ba5d11e7b3dcc65056eade004daa6f8fb7ae1ce1e144d"
+    }
+  },
+  {
+    "id": "oct21-source-058",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/business-administration-management",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/pathways.txt",
+      "docs/validation/full-examples/2026-10-21/evidence/pathway-followup.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/pathways.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/pathways.txt": "d5bb2032aec1f48e352d52c1ec218b756da285b8e5b684e50a98037fb832cf7f",
+      "docs/validation/full-examples/2026-10-21/evidence/pathway-followup.txt": "3e75ff5106156392fa7401ba98b9b82390b4cb049e1af1591e195de46e49c430",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/pathways.txt": "5f0984f5fa7fbdab23477e9ecc663cdf334c39be67cda66b38f8db32ad0dbaa9"
+    }
+  },
+  {
+    "id": "oct21-source-059",
+    "url": "https://www.prairiesky.com/investors/",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/targeted-text.txt",
+      "docs/validation/full-examples/2026-10-21/evidence/depth-2.txt",
+      "docs/validation/full-examples/2026-10-21/evidence/business-originals.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21b5.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/highlight-details.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/open-highlight.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/targeted-text.txt": "8ae5371e2a5641ebff9cb824d009a41c062bdb9dc5d6e1752f7191d8eaebde54",
+      "docs/validation/full-examples/2026-10-21/evidence/depth-2.txt": "8a6e023c49b99afed60ba5d11e7b3dcc65056eade004daa6f8fb7ae1ce1e144d",
+      "docs/validation/full-examples/2026-10-21/evidence/business-originals.txt": "e634d9b9ac4986c4592f152103be039cda85009c712457d461be5ca7ae2e3bbe",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21b5.txt": "aa2ff0a2833c2e47432756f3d0c6b5d74ca91a6e656d68cbd0d0fab7e85d203b",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/highlight-details.txt": "798b5f8bf3a86c9e8d1077b26a971b6c49f7e7fbde89bd22c6f7a19844351af5",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/open-highlight.txt": "098358b016e3071f86548ee2d6963d864daf75b31fe2c56cd78b364091353a98"
+    }
+  },
+  {
+    "id": "oct21-source-060",
+    "url": "https://www.prairiesky.com/leadership/",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/role-and-carbon-gaps.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21b5.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/role-and-carbon-gaps.txt": "743d606f06c2cb1c47da049b3a9f17f0fd252c8a52caab1b91aaa299b531ce83",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/daily21b5.txt": "aa2ff0a2833c2e47432756f3d0c6b5d74ca91a6e656d68cbd0d0fab7e85d203b"
+    }
+  },
+  {
+    "id": "oct21-source-061",
+    "url": "https://www.sait.ca/programs-and-courses/diplomas/business-administration-accounting",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/pathway-followup.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/p-business.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/pathway-followup.txt": "3e75ff5106156392fa7401ba98b9b82390b4cb049e1af1591e195de46e49c430",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/p-business.txt": "3f850c20dd187b10ec080dd1a9c75f5104b8f7db5276c032f0046d5327c149b8"
+    }
+  },
+  {
+    "id": "oct21-source-062",
+    "url": "https://www.cpaalberta.ca/Become-a-CPA/Practical-Experience/PE-Policies",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/pathways.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/pathways.txt": "d5bb2032aec1f48e352d52c1ec218b756da285b8e5b684e50a98037fb832cf7f"
+    }
+  },
+  {
+    "id": "oct21-source-063",
+    "url": "https://www.cpaalberta.ca/Become-a-CPA/Practical-Experience/Employers/Understand-the-Requirements",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/pathways.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/pathways.txt": "d5bb2032aec1f48e352d52c1ec218b756da285b8e5b684e50a98037fb832cf7f"
+    }
+  },
+  {
+    "id": "oct21-source-064",
+    "url": "https://www.trailappliances.com/ab/p/location/calgary-south",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/targeted-text.txt",
+      "docs/validation/full-examples/2026-10-21/evidence/business-originals.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/b-trail.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/targeted-text.txt": "8ae5371e2a5641ebff9cb824d009a41c062bdb9dc5d6e1752f7191d8eaebde54",
+      "docs/validation/full-examples/2026-10-21/evidence/business-originals.txt": "e634d9b9ac4986c4592f152103be039cda85009c712457d461be5ca7ae2e3bbe",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/b-trail.txt": "46c5ddac14445085245c1295685ac0f5d7653bdd3e06acd278494c16c9384f8d"
+    }
+  },
+  {
+    "id": "oct21-source-065",
+    "url": "https://www.trailappliances.com/ab/p/contact-us",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/b-trail.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/b-trail.txt": "46c5ddac14445085245c1295685ac0f5d7653bdd3e06acd278494c16c9384f8d"
+    }
+  },
+  {
+    "id": "oct21-source-066",
+    "url": "https://www.mnp.ca/en/offices/calgary-downtown",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/depth-2.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/b-mnp.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/depth-2.txt": "8a6e023c49b99afed60ba5d11e7b3dcc65056eade004daa6f8fb7ae1ce1e144d",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/b-mnp.txt": "e63e0fb6647aaa992d0ef3e26c960d85e80da289d6a4c5c1a30b8fc510721b0b"
+    }
+  },
+  {
+    "id": "oct21-source-067",
+    "url": "https://www.mnp.ca/en/personnel/phil-reisinger",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/depth-2.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/depth-2.txt": "8a6e023c49b99afed60ba5d11e7b3dcc65056eade004daa6f8fb7ae1ce1e144d"
+    }
+  },
+  {
+    "id": "oct21-source-068",
+    "url": "https://www.mnp.ca/careers",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/depth-2.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/depth-2.txt": "8a6e023c49b99afed60ba5d11e7b3dcc65056eade004daa6f8fb7ae1ce1e144d"
+    }
+  },
+  {
+    "id": "oct21-source-069",
+    "url": "https://www.atco.com/content/dam/atco-website/en-ca/web/assets/investors/atco-annual-report-2025.pdf",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/depth-3.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/b-atco.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/depth-3.txt": "b8b5ab67134994138ef8ed5fa16b58a51e927c5302e1dc5dd15a7667d2782b34",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/b-atco.txt": "17ae054e50c2a0e19d850949a10285501bc50269f7013d11b717f298560d6fbe"
+    }
+  },
+  {
+    "id": "oct21-source-070",
+    "url": "https://www.atco.com/content/dam/atco-website/en-ca/web/assets/investors/atco_2025_q1.pdf",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/b-atco.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/b-atco.txt": "17ae054e50c2a0e19d850949a10285501bc50269f7013d11b717f298560d6fbe"
+    }
+  },
+  {
+    "id": "oct21-source-071",
+    "url": "https://careers.atco.com/global/en",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/depth-3.txt",
+      "docs/validation/full-examples/2026-10-21/evidence/business-originals.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/depth-3.txt": "b8b5ab67134994138ef8ed5fa16b58a51e927c5302e1dc5dd15a7667d2782b34",
+      "docs/validation/full-examples/2026-10-21/evidence/business-originals.txt": "e634d9b9ac4986c4592f152103be039cda85009c712457d461be5ca7ae2e3bbe"
+    }
+  },
+  {
+    "id": "oct21-source-072",
+    "url": "https://www.precisiondrilling.com/press-release/precision-drilling-announces-2025-fourth-quarter-and-year-end-unaudited-financial-results/",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/depth-3.txt",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/b-precision.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/depth-3.txt": "b8b5ab67134994138ef8ed5fa16b58a51e927c5302e1dc5dd15a7667d2782b34",
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/b-precision.txt": "c95d155af9441aabb561d15170e05f7f2d263fc7e2908b67c0fe9e9bb998ff52"
+    }
+  },
+  {
+    "id": "oct21-source-073",
+    "url": "https://www.precisiondrilling.com/wp-content/uploads/2026/03/2025-Modern-Salvery-Report-1.pdf",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/b-precision.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/job-reviews/company-discovery/2026-10-21/evidence/b-precision.txt": "c95d155af9441aabb561d15170e05f7f2d263fc7e2908b67c0fe9e9bb998ff52"
+    }
+  },
+  {
+    "id": "oct21-source-074",
+    "url": "https://jobs.precisiondrilling.com/go/View-All-Jobs/8968600/",
+    "checkedOn": "2026-10-21",
+    "captures": [
+      "docs/validation/full-examples/2026-10-21/evidence/role-and-carbon-gaps.txt"
+    ],
+    "sourceType": "Original organization/provider source",
+    "note": "Use the source for the specific claim described in the draft; source existence is not vacancy, adoption or outcome evidence.",
+    "captureSha256": {
+      "docs/validation/full-examples/2026-10-21/evidence/role-and-carbon-gaps.txt": "743d606f06c2cb1c47da049b3a9f17f0fd252c8a52caab1b91aaa299b531ce83"
+    }
+  }
+]
