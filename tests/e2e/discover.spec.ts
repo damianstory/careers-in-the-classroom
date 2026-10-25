@@ -78,7 +78,7 @@ test.describe("Discover classroom flow", () => {
     await page.getByRole("navigation", { name: "Main", exact: true }).getByRole("link", { name: "Discover", exact: true }).click();
     await expect(page).toHaveURL(/\/discover$/);
     await expect(page.getByRole("region", { name: "Discover", exact: true })).toHaveAttribute("data-phase", "start");
-    await expect(page.getByRole("heading", { name: "Snap a job.", exact: true })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "How do we pick the next job?", exact: true })).toBeVisible();
   });
 
   test("one Space press stops without advancing when the key is released", async ({ page, requests }) => {
@@ -102,7 +102,7 @@ test.describe("Discover classroom flow", () => {
   test("Chemistry does not repeat and resets the exhausted set", async ({ page, requests }) => {
     void requests;
     await page.goto("/discover");
-    await page.getByLabel("JOBS", { exact: true }).selectOption("chemistry");
+    await page.getByLabel("Jobs", { exact: true }).selectOption("chemistry");
     await page.getByRole("button", { name: "Start Space" }).click();
     await page.getByRole("button", { name: "STOP", exact: true }).click();
     const first = await page.locator('[data-visible="true"]').getAttribute("data-role");
@@ -157,7 +157,7 @@ test.describe("Discover classroom flow", () => {
     await page.getByRole("navigation", { name: "Main", exact: true }).getByRole("link", { name: "Connections", exact: true }).focus();
     await page.keyboard.press("Space");
     await expect(page.locator('[data-phase="start"]')).toBeVisible();
-    await page.getByLabel("JOBS", { exact: true }).focus();
+    await page.getByLabel("Jobs", { exact: true }).focus();
     await page.keyboard.press("s");
     await expect(page.locator('[data-phase="start"]')).toBeVisible();
   });
@@ -178,7 +178,7 @@ test.describe("Discover classroom flow", () => {
       await expect(page.getByRole("button", { name: /Loading pictures/ })).toBeDisabled();
       const focused = target === "header"
         ? page.getByRole("navigation", { name: "Main", exact: true }).getByRole("link", { name: "Connections", exact: true })
-        : page.getByLabel("JOBS", { exact: true });
+        : page.getByLabel("Jobs", { exact: true });
       if (target === "body") await page.evaluate(() => (document.activeElement as HTMLElement)?.blur());
       else await focused.focus();
       await page.evaluate(() => window.dispatchEvent(new Event("discover-test:decode")));
@@ -270,8 +270,9 @@ test.describe("Discover classroom flow", () => {
     await page.keyboard.press("Space");
     await expect(page.locator("#discover-title")).toBeFocused();
     await expect(page.locator("#discover-title")).toHaveCSS("outline-style", "none");
-    await expect(page.getByRole("navigation", { name: "Round controls" })).toBeHidden();
-    await expect(page.getByRole("button", { name: "Next round", exact: true })).toBeVisible();
+    // The bottom dock stays in place after reveal, with a direct route to the next round.
+    await expect(page.getByRole("navigation", { name: "Round controls" })).toBeVisible();
+    await expect(page.getByRole("navigation", { name: "Round controls" }).getByRole("button", { name: "Next round", exact: true })).toBeVisible();
     await page.keyboard.press("Space");
     await expect(page.getByRole("region", { name: "Discover", exact: true })).toHaveAttribute("data-step", "2");
     await page.keyboard.press("Tab");
@@ -432,6 +433,8 @@ test("desktop guessing balances picture and clues without an empty column", asyn
   expect(Math.abs(leftMargin - rightMargin)).toBeLessThan(20);
   const restart = (await page.getByRole("button", { name: "Restart", exact: true }).boundingBox())!;
   const reveal = (await page.getByRole("button", { name: "Reveal the job", exact: true }).boundingBox())!;
-  expect(restart.y).toBe(reveal.y);
-  expect(reveal.x - (restart.x + restart.width)).toBeCloseTo(12, 0);
+  // Restart and Reveal share the bottom dock: back on the left, next on the right.
+  expect(restart.y + restart.height / 2).toBeCloseTo(reveal.y + reveal.height / 2, 0);
+  expect(restart.x).toBeLessThan(picture.x);
+  expect(reveal.x + reveal.width).toBeGreaterThan(clues.x + clues.width - 1);
 });
