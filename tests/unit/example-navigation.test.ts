@@ -1,7 +1,7 @@
 import { runInNewContext } from "node:vm";
 import { describe, expect, it } from "vitest";
 import { getDetails, getExample, getJob } from "@/content";
-import { exploreHref, landingSection, layoutBootstrap, selectionQuery } from "@/lib/example-navigation";
+import { adjacentCard, cardsFor, cardFragment, landingCard, exploreHref, landingSection, layoutBootstrap, selectionQuery } from "@/lib/example-navigation";
 import { availableViews, parseExplore } from "@/lib/example-views";
 import { checkedRange } from "@/lib/job-status";
 import { exampleContext, parseContext } from "@/lib/search";
@@ -166,7 +166,7 @@ describe("parts landing and pre-paint", () => {
       const { root, context } = bootstrapDOM(preference, hash, "?view=pathways");
       runInNewContext(layoutBootstrap(views, { role: roleA }), context);
       const layout = preference === "all" ? "all" : "parts";
-      expect(root.dataset).toEqual({ layout, part: landingSection(views, hash, "pathways", { role: roleA }, layout) });
+      expect(root.dataset).toEqual({ layout, part: landingSection(views, hash, "pathways", { role: roleA }, layout), card: "1" });
     }
   });
 
@@ -263,12 +263,45 @@ describe("navigation without hydration", () => {
     expect(dom.root.dataset.part).toBe("ways-in");
     dom.location.hash = "#about";
     dom.listeners.get("hashchange")!();
-    expect(dom.root.dataset).toEqual({ part: "about" });
+    expect(dom.root.dataset).toEqual({ part: "about", card: "1" });
   });
 
   it("fails open if the pre-hydration bridge cannot initialize", () => {
     const dom = bootstrapDOM("parts", "");
     runInNewContext(layoutBootstrap(views, {}), { ...dom.context, MutationObserver: undefined });
     expect(dom.root.dataset).toEqual({});
+  });
+});
+
+
+describe("card deck", () => {
+  it("orders teaching and reference cards, with and without a story or About", () => {
+    for (const hasStory of [false, true]) for (const about of [false, true]) {
+      const parts = views.filter((part) => about || part !== "about");
+      const cards = cardsFor(parts, hasStory);
+      expect(cards.map((item) => item.part)).toEqual(parts.flatMap((part) => part === "how-it-works" && hasStory ? [part, part] : [part]));
+      for (let i = 0; i < cards.length; i++) {
+        expect(adjacentCard(cards, cards[i], -1)).toEqual(cards[i - 1]);
+        expect(adjacentCard(cards, cards[i], 1)).toEqual(cards[i + 1]);
+        expect(landingCard(parts, cardFragment(cards[i]), null, {}, "parts", hasStory)).toEqual({ part: cards[i].part, card: cards[i].card });
+      }
+    }
+  });
+  it("falls back to the first card for out-of-range suffixes and preserves legacy destinations", () => {
+    for (const hash of ["#how-it-works-0", "#how-it-works-3", "#how-it-works-999"]) {
+      expect(landingCard(views, hash, null, {}, "parts", true)).toEqual({ part: "how-it-works", card: 1 });
+    }
+    expect(landingCard(views, "#how-it-works-2", null, {}, "parts", false)).toEqual({ part: "how-it-works", card: 1 });
+    expect(landingCard(views, "#roles-2", null, {}, "parts", true)).toEqual({ part: "who", card: 1 });
+    expect(landingCard(views, "", "company", {}, "all", true)).toEqual({ part: "about", card: 1 });
+  });
+  it("runs the identical card parser before hydration, including stored all layout", () => {
+    for (const preference of ["parts", "all", "denied"]) for (const hash of ["#how-it-works-2", "#how-it-works-90", "#jobs", "#company"]) {
+      const dom = bootstrapDOM(preference, hash);
+      runInNewContext(layoutBootstrap(views, {}, true), dom.context);
+      const target = landingCard(views, hash, null, {}, preference === "all" ? "all" : "parts", true)!;
+      expect(dom.root.dataset.part).toBe(target.part);
+      expect(dom.root.dataset.card).toBe(String(target.card));
+    }
   });
 });

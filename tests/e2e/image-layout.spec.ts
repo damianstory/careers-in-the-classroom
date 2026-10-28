@@ -9,6 +9,10 @@ for (const slug of ["ghgsat", "wilder-institute", "e3-lithium", "broken-pencil-s
     await page.route("**/_next/image?**", async (route) => { await images; await route.continue(); });
     try {
       await page.goto(`/examples/${slug}`, { waitUntil: "domcontentloaded" });
+      // The progressive fallback exposes every role panel until hydration. Wait for that
+      // enhancement before isolating layout changes caused by decoding the blocked images.
+      await expect(page.locator("[data-example-root]")).toHaveAttribute("data-navigation-ready", "");
+      await expect.poll(() => page.locator("[data-role-tabs]").evaluateAll(tabs => tabs.every(el => el.hasAttribute("data-tabs-ready")))).toBe(true);
       const illustrations = page.locator("#question figure img, #how-it-works figure img");
       await expect(illustrations).toHaveCount(2);
       // Trigger lazy loading before comparing the reserved space with the decoded image.

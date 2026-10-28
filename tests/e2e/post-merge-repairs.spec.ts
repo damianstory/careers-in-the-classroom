@@ -22,6 +22,8 @@ test("home role links select the intended role through reload and history", asyn
   await role.getByRole("link", { name: "GHGSat" }).click();
   await expect(page).toHaveURL(/\/examples\/ghgsat\?role=satellite-engineering#who$/);
   await expect(page.getByRole("heading", { name: "Satellite and instrument engineering", exact: true })).toBeVisible();
+  // Job postings sit in the role's Job searches tab (rail/T1 plan D.4).
+  await page.locator('[data-role-detail="satellite-engineering"] [data-tab="jobs"]').click();
   await expect(page.getByRole("heading", { name: "Related job postings", exact: true })).toBeVisible();
   await page.reload();
   await expect(page.locator("[data-example-root]")).toHaveAttribute("data-part", "who");

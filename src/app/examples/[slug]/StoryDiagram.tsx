@@ -4,6 +4,7 @@ import type { ClassroomStory } from "@/content";
 import methane from "../../../../public/images/story-diagrams/methane-graphic-novel.webp";
 import owls from "../../../../public/images/story-diagrams/owl-recovery-graphic-novel.webp";
 import lithium from "../../../../public/images/story-diagrams/lithium-separation-graphic-novel.webp";
+import { PagedPanel } from "./PagedPanel";
 import styles from "./story-diagram.module.css";
 
 // Numbered keys stay live and readable on phones.
@@ -44,7 +45,7 @@ export const diagrams = {
   },
 };
 
-// The page and the projector draw the same diagram: a hand-built one, or an approved research diagram.
+// A hand-built diagram or an approved research diagram, with the same live explanations.
 export function storyDiagram(story: ClassroomStory) {
   return story.diagramKind === "research"
     ? storyDiagrams[story.illustrationSlug ?? ""]
@@ -59,11 +60,17 @@ export function StoryDiagram({ story, headingId }: { story: ClassroomStory; head
   return (
     <section className={styles.band} aria-labelledby={headingId}>
       <div className={styles.content}>
+        <header className={styles.intro}>
         <p className={styles.eyebrow}>Schematic · not to scale</p>
         <h3 id={headingId} className={styles.heading}>{diagram.heading}</h3>
+        </header>
+        <div className={styles.visual}>
         <figure className={styles.figure}>
           <Image src={diagram.image} width={width} height={height} alt={story.diagramAlt} sizes="(max-width: 720px) 100vw, 680px" className={styles.image} style={{ aspectRatio: `${width} / ${height}`, objectFit: "contain" }} />
         </figure>
+        </div>
+        <div className={styles.explanation}>
+        <PagedPanel label="Diagram key" inline>
         <ol className={styles.key}>
           {diagram.steps.map((step, index) => (
             <li key={step}>
@@ -74,6 +81,8 @@ export function StoryDiagram({ story, headingId }: { story: ClassroomStory; head
         </ol>
         <p className={styles.note}>{diagram.note}</p>
         {"detail" in diagram && typeof diagram.detail === "string" && <p className={styles.detail}>{diagram.detail}</p>}
+        </PagedPanel>
+        </div>
       </div>
     </section>
   );

@@ -1,4 +1,5 @@
-import { examples, news, registry } from "../../src/content";
+import { examples, getNews, news, registry, roleProfiles } from "../../src/content";
+import { liveSearches } from "../../src/lib/job-search";
 import { PROBE, expect, expectNoRequests, test } from "./fixtures";
 
 const GHGSAT_Q = "How can you find an invisible gas from space?";
@@ -271,7 +272,7 @@ test("get involved and the digest sample are honest demos", async ({ page, reque
 test("Wilder pathways distinguish introductory care from veterinary medicine", async ({ page, requests }) => {
   void requests;
   await page.goto("/examples/wilder-institute?view=pathways");
-  await expect(page.getByText("Veterinary Technical Assistant", { exact: true })).toBeVisible();
+  await expect(page.locator("#ways-in").getByText("Veterinary Technical Assistant", { exact: true })).toBeVisible();
   await expect(page.getByText(/Not direct entry from high school/)).toBeVisible();
   await expect(page.getByText(/does not provide direct entry to a DVM/)).toBeVisible();
   await expect(page.getByRole("link", { name: "All connections" }).first()).toHaveAttribute("href", "/connections");
@@ -280,14 +281,21 @@ test("Wilder pathways distinguish introductory care from veterinary medicine", a
 
 test("source links open safely and match the content data", async ({ page, requests }) => {
   void requests;
-  // It visits every example page (32 now, each with its logo), which takes most of the default 30s alone.
+  // Visit the whole collection; wait for the required UI state, not unrelated asset/prefetch idleness.
   test.setTimeout(90_000);
-  const known = new Set([...examples.flatMap((e) => e.sources), ...news.flatMap((n) => n.sources), ...registry].map((s) => s.url));
+  // Every role's details stay mounted (rail/T1 plan D.4), so each role's live job searches are on the page too.
+  const searchUrls = roleProfiles.flatMap((role) => liveSearches(role.id).flatMap((search) => search.links.map((link) => link.url)));
+  const known = new Set([...[...examples.flatMap((e) => e.sources), ...news.flatMap((n) => n.sources), ...registry].map((s) => s.url), ...searchUrls]);
   await page.addInitScript(() => sessionStorage.setItem("citc.signedUp", "1"));
-  const pages = [...examples.map((e) => `/examples/${e.slug}`), "/connections?course=physics-30&unit=p30c", "/digest"];
-  for (const path of pages) {
-    // The signed-up state is read after hydration, so wait for it before counting source links.
-    await page.goto(path, { waitUntil: "networkidle" });
+  const pages = [...examples.map((e) => ({ path: `/examples/${e.slug}`, newsItem: e.newsId ? getNews(e.newsId) : undefined })),
+    { path: "/connections?course=physics-30&unit=p30c", newsItem: getNews("ghgsat-second-generation") },
+    { path: "/digest", newsItem: undefined }];
+  for (const { path, newsItem } of pages) {
+    await page.goto(path, { waitUntil: "domcontentloaded" });
+    await expect(page.getByRole("banner").getByText("Signed up", { exact: true })).toBeAttached();
+    if (path.startsWith("/examples/")) await expect(page.locator("[data-example-root]")).toHaveAttribute("data-navigation-ready", "");
+    // Wait for unlocked copy itself, including news on a currently hidden About card.
+    if (newsItem) await expect(page.getByText(newsItem.summary, { exact: true }).first()).toBeAttached();
     // Read each page's links together: the expanded collection produces thousands of
     // attribute round trips when queried one at a time, exceeding the test budget.
     const links = await page.locator('a[target="_blank"]').evaluateAll((anchors) => anchors.map((a) => ({
@@ -296,13 +304,16 @@ test("source links open safely and match the content data", async ({ page, reque
       referrerPolicy: a.getAttribute("referrerpolicy"),
     })));
     expect(links.length, `${path} has source links`).toBeGreaterThan(0);
-    for (const { href, rel, referrerPolicy } of links) {
-      expect(href).toMatch(/^https:\/\//);
-      expect(known.has(href!), `${href} comes from content data`).toBe(true);
-      expect(rel).toContain("noopener");
-      expect(rel).toContain("noreferrer");
-      expect(referrerPolicy).toBe("no-referrer");
-    }
+    // Check every attribute, but report one batch per page. Thousands of individual matcher
+    // steps for the now-mounted role links can exhaust the whole-catalog test's time budget.
+    const invalid = links.flatMap(({ href, rel, referrerPolicy }) => [
+      ...(!href?.startsWith("https://") ? [{ href, issue: "not HTTPS" }] : []),
+      ...(!known.has(href!) ? [{ href, issue: "not in content data" }] : []),
+      ...(!rel?.includes("noopener") ? [{ href, issue: "missing noopener" }] : []),
+      ...(!rel?.includes("noreferrer") ? [{ href, issue: "missing noreferrer" }] : []),
+      ...(referrerPolicy !== "no-referrer" ? [{ href, issue: "wrong referrer policy" }] : []),
+    ]);
+    expect(invalid, `${path}: every source link retains its destination and privacy attributes`).toEqual([]);
   }
 });
 
