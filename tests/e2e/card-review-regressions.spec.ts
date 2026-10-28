@@ -47,6 +47,8 @@ test("the last partial About page remains visible after scroll settles", async (
 test("resizing keeps the focused citation on its visible page", async ({ page }) => {
   await page.setViewportSize({ width: 1920, height: 1080 });
   await page.goto("/examples/ghgsat#about");
+  // Let the initial fragment landing finish before moving focus to a citation.
+  await expect(page.locator("#about-title")).toBeFocused();
   await page.evaluate(() => document.fonts.ready);
   const citation = page.locator("#about [data-sources-button] button").nth(3);
   await citation.focus();
