@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'unsafe-inline'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Atom · Home Wi-Fi setup</title>
+<style>
+*{box-sizing:border-box}body{background:#f5f1e7;color:#163d35;font:17px/1.5 system-ui,sans-serif;margin:0;padding:40px 20px}main{max-width:680px;margin:auto}small,.subtle{color:#52695f}h1{font-size:clamp(32px,6vw,48px);letter-spacing:-.04em;line-height:1.1;margin:12px 0 20px}.eyebrow{font-size:12px;letter-spacing:.15em;font-weight:700}section{background:#fffdf8;padding:24px;border:1px solid #c5cec1;border-radius:10px;margin:24px 0}h2{margin:0 0 14px;font-size:21px}label{display:block;font-weight:650;margin:18px 0 6px}input,select,button{font:inherit;border:1px solid #83978b;border-radius:6px;min-height:46px}input,select{padding:10px;width:100%;background:#fff;color:#163d35}button{padding:10px 18px;background:#163d35;color:white;cursor:pointer}button.secondary{background:transparent;color:#163d35}button:disabled{opacity:.45;cursor:default}.row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #c1802e;outline-offset:3px}.status{padding:14px;border-left:4px solid #83978b;background:#edf1e8;margin:20px 0;white-space:pre-line}.status[data-success=true]{border-color:#238447;background:#e4f3e3}.status[data-error=true]{border-color:#a8472c}#submit{margin-top:24px}#saved{font-weight:600}p{margin:12px 0}.hidden{display:none}
+</style></head><body><main>
+<p class="eyebrow">DISCOVER · ATOM MATRIX · STEP 1</p><h1>Connect your Atom to Wi-Fi.</h1>
+<p>Keep the device plugged into USB. Connect below, then choose your home network and enter its password.</p>
+<section><h2>1. Connect the device</h2><div class="row"><button id="connect">Connect Atom</button><button id="disconnect" class="secondary" disabled>Disconnect USB</button></div><p id="usb" class="subtle" role="status">Use desktop Chrome or Edge. Choose the M5Stack USB serial device.</p></section>
+<section><h2>2. Join your home network</h2><form id="setup" autocomplete="off"><fieldset id="fields" disabled style="border:0;padding:0;margin:0">
+<div class="row"><button id="scan" class="secondary" type="button">Find 2.4 GHz networks</button></div><label for="networks" id="networks-label" class="hidden">Available networks</label><select id="networks" class="hidden"><option value="">Choose a network…</option></select>
+<label for="ssid">Wi-Fi network name</label><input id="ssid" name="network" autocomplete="off" autocapitalize="off" spellcheck="false" required placeholder="Your home Wi-Fi name">
+<label for="password">Wi-Fi password</label><input id="password" name="network-key" type="password" autocomplete="off" autocapitalize="off" spellcheck="false" required maxlength="64">
+<p><small>The password goes directly to the Atom over USB. This page does not send it to the local web server or save it in browser storage.</small></p>
+<button id="submit" type="submit">Connect and save on Atom</button></fieldset></form>
+<div id="status" class="status" role="status" aria-live="polite">Connect the Atom to begin.</div><p id="saved"></p><button id="retry" class="secondary hidden" type="button">Reconnect to saved network</button></section>
+<p class="subtle">Success means the Atom has joined Wi-Fi and saved its network details. Wireless motion and the Mac relay are the next step.</p>
+<script type="module" src="./setup.mjs"></script></main></body></html>
