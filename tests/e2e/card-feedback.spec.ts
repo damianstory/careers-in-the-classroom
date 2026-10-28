@@ -1,5 +1,10 @@
 import { expect, test } from "./fixtures";
 
+// These checks measure the desktop frame composition; phone flow has separate coverage.
+test.beforeEach(async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+});
+
 test("arrow navigation focuses headings quietly and controls retain a visible focus ring", async ({ page }) => {
   await page.goto("/examples/aggene-crop-traits");
   await expect(page.locator("[data-example-root]")).toHaveAttribute("data-frame", "");
