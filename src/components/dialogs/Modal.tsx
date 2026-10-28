@@ -85,7 +85,9 @@ export function Modal({
         setTimeout(() => {
           const active = document.activeElement;
           if (active && active !== document.body && active.isConnected) return;
-          const target = document.querySelector<HTMLElement>("main h1") ?? document.querySelector<HTMLElement>("main");
+          const target = [...document.querySelectorAll<HTMLElement>("main [data-dialog-focus]")]
+            .find((element) => element.getClientRects().length > 0 && getComputedStyle(element).visibility !== "hidden")
+            ?? document.querySelector<HTMLElement>("main h1") ?? document.querySelector<HTMLElement>("main");
           if (!target) return;
           target.setAttribute("tabindex", "-1");
           target.focus();

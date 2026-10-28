@@ -48,9 +48,9 @@ test("each part is a history entry; Back and Forward restore focus", async ({ pa
   expect(await page.evaluate(() => history.length)).toBe(entries + 6);
   await page.goBack(); await expectPart(page, "about");
   await page.goForward(); await expectPart(page, "sources");
-  await page.locator("#sources").getByRole("link", { name: "Back to: The question" }).click();
+  await choosePart(page, "The question");
   await expectPart(page, "question");
-  await page.locator("#question").getByRole("link", { name: "Next: How it works" }).click();
+  await page.locator("[data-deck-next]").click();
   await expectPart(page, "how-it-works");
 });
 
@@ -93,33 +93,51 @@ test("role overview exposes classroom connections; About links to it without rol
   void requests;
   await page.goto(`${GHGSAT}?course=physics-30&unit=p30c#who`);
   await expect(page.locator("#who").getByText("Physics 30", { exact: true })).toHaveCount(4);
+  // Roles show one at a time beside the role list (rail/T1 plan D.4): open the role whose connection this is.
+  await page.locator('#who [data-role-link="satellite-engineering"]').click();
   await expect(page.getByText("Interference, wavelength and the behaviour of light are what make a spectrometer work.")).toBeVisible();
+  await page.goBack(); await expectPart(page, "who");
   await choosePart(page, "About GHGSat");
-  await expect(page.locator("#about [data-logo]")).toBeVisible();
-  await expect(page.locator("#question [data-logo]")).toHaveCount(0);
+  // The identification logo moved from About to the card's top row (rail/T1 plan B.3).
+  await expect(page.getByRole("img", { name: "GHGSat logo" })).toBeVisible();
+  await expect(page.locator("#about [data-logo], #question [data-logo]")).toHaveCount(0);
   await expect(page.locator("#about a[href*='role=']")).toHaveCount(0);
   await page.locator("#about").getByRole("link", { name: "Who does this work", exact: true }).click();
   await expectPart(page, "who");
   await expect(page).toHaveURL(/course=physics-30&unit=p30c#who$/);
 });
 
-test("selection, posting-row focus and pathways preserve course context", async ({ page, requests }) => {
+// Replaces the in-place posting-row toggle (rail/T1 plan, section 4 step 11): a saved posting is its own
+// view, entered from its row and left by its Back link or browser Back, keeping the course context.
+test("selection, posting focus and pathways preserve course context", async ({ page, requests }) => {
   void requests;
   await page.goto(`${GHGSAT}?course=physics-30&unit=p30c#who`);
   await page.locator("#who").getByRole("link", { name: "Atmospheric science and remote sensing", exact: true }).click();
   await expectPart(page, "who");
+  const jobsTab = page.locator('[data-role-detail="atmospheric-science"] [data-tab="jobs"]');
+  await jobsTab.click();
   const posting = page.locator("#who").getByRole("link", { name: /Remote Emissions Scientist/ });
-  await posting.click(); await expect(posting).toBeFocused();
-  await expect(posting).toHaveAttribute("aria-expanded", "true");
-  await posting.click(); await expect(posting).toBeFocused();
-  await expect(posting).toHaveAttribute("aria-expanded", "false");
-  await page.goBack(); await expectPart(page, "who");
-  await expect(posting).toHaveAttribute("aria-expanded", "true");
+  await posting.focus(); await page.keyboard.press("Enter");
+  await expect(page).toHaveURL(/course=physics-30&unit=p30c&role=atmospheric-science&job=ghgsat-emissions-scientist#who$/);
+  const heading = page.locator("#job-title-ghgsat-emissions-scientist");
+  await expect(heading).toBeFocused();
+  await page.locator("[data-job-view]").getByRole("link", { name: "Back to Atmospheric science and remote sensing" }).click();
+  await expect(page).toHaveURL(/course=physics-30&unit=p30c&role=atmospheric-science#who$/);
+  await expect(jobsTab).toHaveAttribute("aria-selected", "true");
+  await expect(posting).toBeFocused();
+  await page.goBack(); await expect(heading).toBeFocused();
+  // History back from the posting to its role: Job searches with the posting's row focused.
+  await page.goBack();
+  await expect(page).toHaveURL(/role=atmospheric-science#who$/);
+  await expect(jobsTab).toHaveAttribute("aria-selected", "true");
+  await expect(posting).toBeFocused();
+  await page.goForward(); await expect(heading).toBeFocused();
+  await page.locator("[data-job-view]").getByRole("link", { name: "Back to Atmospheric science and remote sensing" }).click();
+  await page.locator('[data-role-detail="atmospheric-science"] [data-tab="prepare"]').click();
   await page.getByRole("link", { name: "See all pathways", exact: true }).click();
   await expectPart(page, "ways-in");
   await expect(page).toHaveURL(/course=physics-30&unit=p30c#ways-in$/);
   await page.goBack(); await expectPart(page, "who");
-  await expect(posting).toHaveAttribute("aria-expanded", "true");
 });
 
 test("a role link outside its posting row lands on the part heading", async ({ page, requests }) => {
@@ -129,7 +147,7 @@ test("a role link outside its posting row lands on the part heading", async ({ p
   await page.locator("#ways-in").getByRole("link", { name: "Atmospheric science and remote sensing", exact: true }).first().click();
   await expectPart(page, "who");
   await expect(page).toHaveURL(/\?role=atmospheric-science#who$/);
-  await expect(page.locator("#who [aria-expanded=true]")).toHaveCount(0);
+  await expect(page.locator("[data-job-view]")).toHaveCount(0);
 });
 
 test("invalid job removal is still a navigation and traverses correctly", async ({ page, requests }) => {
@@ -172,55 +190,26 @@ test("phone Contents contains focus, closes by Escape or button, and navigates",
   await page.keyboard.press("Escape"); await expect(contents).toBeFocused();
   await contents.click(); await sheet.getByRole("button", { name: "Close", exact: true }).click(); await expect(contents).toBeFocused();
   await choosePart(page, "How it works"); await expectPart(page, "how-it-works");
-  await expect(page.getByText("Show your class · 2 of 5", { exact: true })).toBeVisible();
+  // The "Show your class" group label was deleted (rail/T1 plan, section 1 item 5).
+  await expect(page.locator('[data-location-part="how-it-works"]').getByText("2 of 5", { exact: true })).toBeVisible();
   await expect(page.getByRole("button", { name: "Show full screen" })).toHaveCount(0);
   expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBe(0);
 });
 
 for (const slug of ["ghgsat", "e3-lithium", "wilder-institute"]) {
-  test(`${slug}: projector sequence fits, keeps qualifications and returns focus to last part`, async ({ page, requests }, info) => {
+  test(`${slug}: deck keeps teaching diagram and pathway qualifications visible`, async ({ page, requests }) => {
     void requests;
-    test.skip(info.project.name !== "desktop", "desktop projection");
-    // Exercise the required fallback without depending on the host's fullscreen permission.
-    await page.addInitScript(() => { Element.prototype.requestFullscreen = () => Promise.reject(new Error("refused")); });
-    await page.goto(`/examples/${slug}`);
-    await page.locator('[data-present="question"]').click();
-    const dialog = page.getByRole("dialog", { name: /The question|How it works|Who does this work|Ways in|Ask the class/ });
-    await expect(dialog).toBeVisible();
-    const url = page.url();
-    const seen: string[] = [];
-    for (let i = 0; i < 20; i++) {
-      const frame = dialog.locator("[data-frame-part]");
-      const part = (await frame.getAttribute("data-frame-part"))!;
-      seen.push(part);
-      expect(await frame.evaluate((el) => el.scrollHeight <= el.clientHeight), `${slug} ${part} fits`).toBe(true);
-      if (part === "how-it-works") {
-        await expect(frame.getByText("Schematic · not to scale")).toBeVisible();
-        expect(await frame.locator("img").evaluate((el) => getComputedStyle(el).objectFit)).toBe("contain");
-      }
-      if (part === "ways-in" && slug === "wilder-institute") {
-        const text = await frame.innerText();
-        if (text.includes("Doctor of Veterinary Medicine")) expect(text).toContain("Not direct entry from high school");
-      }
-      if (await dialog.getByRole("button", { name: "Next", exact: true }).isDisabled()) break;
-      await page.keyboard.press("ArrowRight");
+    await page.goto(`/examples/${slug}#how-it-works`);
+    await expect(page.getByText("Schematic · not to scale")).toBeVisible();
+    expect(await page.locator("#how-it-works img").evaluate((el) => getComputedStyle(el).objectFit)).toBe("contain");
+    await choosePart(page, "Ways in");
+    if (slug === "wilder-institute") {
+      const route = page.locator("#ways-in li").filter({ has: page.getByRole("heading", { name: "Doctor of Veterinary Medicine (DVM)", exact: true }) });
+      await expect(route).toBeVisible();
+      await expect(route).toContainText("Doctor of Veterinary Medicine");
+      await expect(route).toContainText("Not direct entry from high school");
     }
-    expect([...new Set(seen)]).toEqual(partIds.slice(0, 5));
-    expect(seen.filter((part) => part === "ways-in").length).toBeGreaterThan(1);
-    expect(page.url()).toBe(url);
-    await page.keyboard.press("ArrowLeft"); // Last Ways in frame, including Wilder's DVM note.
-    await page.keyboard.press("Escape");
-    await expectPart(page, "ways-in", false);
-    await expect(page.locator('[data-present="ways-in"]')).toBeFocused();
-    await expect(page).toHaveURL(/#ways-in$/);
-    // Each opener starts at the matching frame, including direct entry to Ask after pagination.
-    for (const part of partIds.slice(0, 5)) {
-      await choosePart(page, labels[partIds.indexOf(part)]);
-      await page.locator(`[data-present="${part}"]`).click();
-      await expect(dialog.locator("[data-frame-part]")).toHaveAttribute("data-frame-part", part);
-      await page.keyboard.press("Escape");
-      await expect(page.locator(`[data-present="${part}"]`)).toBeFocused();
-    }
+    await expect(page.locator("[data-present]")).toHaveCount(0);
   });
 }
 
@@ -369,18 +358,19 @@ test("reduced-motion navigation keeps the heading in a short viewport", async ({
 });
 
 
-test("compact question stays below the site header when navigating parts", async ({ page, requests }, info) => {
+test("section headings stay below both pinned headers while the h1 remains accessible", async ({ page, requests }) => {
   void requests;
-  test.skip(info.project.name !== "desktop", "desktop compact title");
   await page.emulateMedia({ reducedMotion: "reduce" });
   await page.goto(GHGSAT);
   for (const label of labels.slice(1)) {
     await choosePart(page, label);
+    await expect(page.getByRole("heading", { level: 1 })).toHaveCount(1);
     await expect.poll(() => page.evaluate(() => {
-      const title = document.querySelector("h1")!.getBoundingClientRect();
       const heading = document.activeElement!.getBoundingClientRect();
-      const pinned = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--header-h"));
-      return title.top >= pinned && heading.top > title.bottom && heading.bottom <= innerHeight;
+      // Desktop: the section heading sits in the card's top row, below the site header (rail/T1 plan B.3).
+      const pinned = innerWidth > 960 ? document.querySelector("body > header")!.getBoundingClientRect().bottom
+        : document.querySelector<HTMLElement>("[data-rail-sticky]")!.getBoundingClientRect().bottom;
+      return heading.top >= pinned && heading.bottom <= innerHeight;
     })).toBe(true);
   }
 });
@@ -394,11 +384,11 @@ for (const [slug, org, scope] of [
     void requests;
     await page.goto(`/examples/${slug}#who`);
     await expectPart(page, "who");
-    await expect(page.locator("#who p[data-role-scope]")).toHaveText(scope);
+    void scope; // "Roles documented/connected" lines replaced by one scope line (rail/T1 plan D.4)
+    await expect(page.locator("#who").getByText("Work connected to this example. Not current job openings.", { exact: true })).toBeVisible();
     await expect(page.locator("#who").getByText("For your students", { exact: true })).toHaveCount(0);
-    if (slug === "e3-lithium") {
-      await expect(page.locator("#who").getByText("Related work at another employer", { exact: true }).first()).toBeVisible();
-    }
+    // Role evidence labels were deleted by the user's decision (rail/T1 plan, section 1 item 5).
+    await expect(page.locator("#who").getByText("Related work at another employer", { exact: true })).toHaveCount(0);
     await choosePart(page, `About ${org}`);
     await expect(page.locator("#about").getByRole("heading", { name: org, exact: true })).toHaveCount(0);
     await expect(page.locator("#about").getByRole("heading", { name: "People behind the work", exact: true })).toHaveCount(0);
@@ -450,28 +440,23 @@ for (const layout of ["parts", "all"]) {
   });
 }
 
-test("filtered Ways in projection keeps the role qualification", async ({ page, requests }, info) => {
+test("filtered Ways in card keeps the role qualification", async ({ page, requests }) => {
   void requests;
-  test.skip(info.project.name !== "desktop", "desktop projection");
-  await page.addInitScript(() => { Element.prototype.requestFullscreen = () => Promise.reject(new Error("refused")); });
   await page.goto(`${GHGSAT}?role=satellite-engineering#ways-in`);
   await expectPart(page, "ways-in");
-  await page.locator('[data-present="ways-in"]').click();
-  const frame = page.locator('dialog[open] [data-frame-part="ways-in"]');
-  await expect(frame.getByText("Showing routes for satellite and instrument engineering.", { exact: true })).toBeVisible();
-  await expect(frame.getByText("Programs that teach skills this work uses. Each is one route in, not a requirement, and no program has endorsed this page.", { exact: true })).toBeVisible();
-  await expect(frame.getByRole("link", { name: "Show all" })).toHaveCount(0);
-  expect(await frame.evaluate((element) => element.scrollHeight <= element.clientHeight)).toBe(true);
+  const card = page.locator("#ways-in");
+  await expect(card.locator("[data-pathway-filter]")).toContainText("Showing routes for satellite and instrument engineering.");
+  await expect(card.getByText("Programs that teach skills this work uses. Each is one route in, not a requirement, and no program has endorsed this page.", { exact: true })).toBeVisible();
+  await expect(card.getByRole("link", { name: "Show all" })).toBeVisible();
 });
 
-test("For you dividers have no orphaned numbering or dot", async ({ page, requests }) => {
+test("For you tabs are unnumbered and keep full accessible names", async ({ page, requests }) => {
   void requests;
-  await page.addInitScript(() => localStorage.setItem("example-layout", "all"));
   await page.goto(GHGSAT);
-  for (const [part, label] of [["about", "About GHGSat"], ["sources", "Sources"]]) {
-    await expect(page.locator(`#${part} > div[aria-hidden="true"]`).first()).toHaveText(label);
+  for (const label of ["About GHGSat", "Sources"]) {
+    const link = lessonNav(page).getByRole("link", { name: label, exact: true });
+    await expect(link.locator('[aria-hidden="true"]')).toHaveCount(0);
   }
-  await expect(page.locator('#who > div[aria-hidden="true"]').first()).toHaveText("03·Who does this work");
 });
 
 test("a fragment link clicked before hydration lands on its part", async ({ page, requests }) => {
@@ -512,7 +497,7 @@ test("pressing the view toggle during a section scroll preserves its destination
     }) as typeof window.scrollTo;
     try {
       document.getElementById("nav-ways-in")!.click();
-      const toggle = document.querySelector<HTMLButtonElement>('nav[aria-label="Explore this example"] button[aria-pressed]')!;
+      const toggle = document.querySelector<HTMLButtonElement>('[data-deck-footer] button[data-view-toggle]')!;
       toggle.dispatchEvent(new PointerEvent("pointerdown", { bubbles: true }));
       await new Promise<void>((resolve) => requestAnimationFrame(() => requestAnimationFrame(() => resolve())));
       const part = document.querySelector<HTMLElement>("[data-example-root]")!.dataset.part;

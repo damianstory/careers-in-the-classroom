@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { EvidenceTag } from "@/components/EvidenceTag";
 import { ExampleIllustration } from "@/components/ExampleIllustration";
 import { Icon } from "@/components/Icon";
 import { SourceLink } from "@/components/SourceLink";
@@ -16,24 +15,27 @@ import {
   type ExampleDetails,
   type JobExample,
   type NewsItem,
+  type Organization,
   type OrganizationLogo,
   type RoleProfile,
 } from "@/content";
-import { exploreHref, landingSection, layoutBootstrap, PART_LABELS, SHOW_PARTS, type ExploreState, type Selection, type View } from "@/lib/example-navigation";
+import { cardsFor, exploreHref, landingSection, layoutBootstrap, PART_LABELS, SHOW_PARTS, type ExploreState, type Selection, type View } from "@/lib/example-navigation";
 import { checkedRange, formatDate, jobStatusLabel } from "@/lib/job-status";
 import { liveSearches, SEARCH_LOCATION, searchTitles } from "@/lib/job-search";
 import type { ExampleContext } from "@/lib/search";
+import { courseFitTopic } from "@/lib/course-fit";
 import { browseOriginQuery, browseReturnHref, type BrowseOrigin } from "@/lib/doors";
 import { GatedNews, SaveExample, SpeakerButton } from "./ExampleParts";
 import { ExploreFocus } from "./ExploreFocus";
 import { SourcesAndFit } from "./ExampleSections";
-import { RailField } from "./RailField";
 import { RailNav, type RailItem } from "./RailNav";
-import { SectionDivider } from "./SectionDivider";
 import { SectionLink, SelectionLink } from "./SectionLink";
-import { Presentation, PresentButton } from "./Presentation";
-import { buildFrames } from "./PresentationFrames";
+import { DeckControls } from "./DeckControls";
 import { StoryDiagram } from "./StoryDiagram";
+import { PagedPanel } from "./PagedPanel";
+import { RoleTabs } from "./RoleTabs";
+import { SourcesButton } from "./SourcesButton";
+import { tksHeading, tksText } from "./fonts";
 import base from "./example.module.css";
 import styles from "./explore.module.css";
 
@@ -52,22 +54,12 @@ interface Props {
   today: string;
 }
 
-function Cite({ ids, className }: { ids: string[]; className?: string }) {
-  if (!ids.length) return null;
-  return (
-    <span className={className ?? styles.cite}>
-      Source:{" "}
-      {ids.map((id, i) => {
-        const s = getRegistrySource(id);
-        return (
-          <span key={id}>
-            {i > 0 && "; "}
-            {s ? <SourceLink href={s.url}>{s.label}</SourceLink> : id}
-          </span>
-        );
-      })}
-    </span>
-  );
+// A citation: a compact Sources button whose popover lists each source (same labels and links as before).
+function Cite({ ids }: { ids: string[]; className?: string }) {
+  return <SourcesButton sources={ids.map((id) => {
+    const s = getRegistrySource(id);
+    return s ? { label: s.label, url: s.url } : { label: id };
+  })} />;
 }
 
 // The page's one freshness date: every record it draws on, as a single date or a range.
@@ -92,119 +84,105 @@ export function ExampleExplorer({ e, details, views, ctx, origin, state, navKey,
   const selection: Selection = { role: state.role, job: state.job };
   const label = (v: View) => v === "about" ? `About ${e.org}` : PART_LABELS[v];
   const items: RailItem[] = views.map((section) => ({ section, href: href({ section, ...selection }), label: label(section) }));
-  const show = views.filter((v) => SHOW_PARTS.includes(v));
-  const end = (part: View) => {
-    const index = show.indexOf(part);
-    const link = (target: View, prefix: string) => <SectionLink section={target} href={href({ section: target, ...selection })}>{prefix}{label(target)}</SectionLink>;
-    return <nav className={styles.partSteps} aria-label={`${label(part)} navigation`}>
-      {index < 0 ? link("question", "Back to: ") : <>
-        {index > 0 && link(show[index - 1], "Previous: ")}
-        {index < show.length - 1 && link(show[index + 1], "Next: ")}
-      </>}
-    </nav>;
-  };
-  const partHeader = (part: View) => <>
-    <SectionDivider num={show.includes(part) ? String(show.indexOf(part) + 1).padStart(2, "0") : ""} label={label(part)} />
-    <header className={styles.partHeader}>
-      <Heading id={`${part}-title`}>{label(part)}</Heading>
-      {show.includes(part) && <PresentButton part={part} />}
-    </header>
-  </>;
+  const cards = cardsFor(views, !!details?.story);
+  const teaching = views.filter((v) => SHOW_PARTS.includes(v));
+  const logo = details ? getOrganization(details.organizationId)?.logo : undefined;
+  const partHeader = (part: View) => <header className={styles.partHeader} data-part-header="">
+    <Heading id={`${part}-title`}>{label(part)}</Heading>
+  </header>;
 
   return (
     <>
-      <ExploreFocus views={views} role={state.role} job={state.job} navKey={navKey} />
+      <ExploreFocus hasStory={!!details?.story} views={views} role={state.role} job={state.job} navKey={navKey} />
 
-      <div className={styles.shell} data-example-root="" suppressHydrationWarning>
-        <script id={`example-layout-${e.slug}`} dangerouslySetInnerHTML={{ __html: layoutBootstrap(views, selection) }} />
-        <Presentation key={`${e.slug}:${state.role ?? "all"}`} frames={buildFrames(e, details, views, selection)} />
-        <div className={styles.railColumn} data-rail-column="">
-          <div className={styles.railFx} aria-hidden="true">
-            <RailField />
+      <div className={`${styles.shell} ${tksHeading.variable} ${tksText.variable}`} data-example-root="" suppressHydrationWarning>
+        <script id={`example-layout-${e.slug}`} dangerouslySetInnerHTML={{ __html: layoutBootstrap(views, selection, !!details?.story) }} />
+        <div className={styles.deck}>
+          <div className={styles.rail}>
+            <Link href={ctx?.backHref ?? browseReturnHref(origin)} className={styles.back}>
+              <Icon name="arrowLeft" small />
+              {ctx ? "Back to results" : origin ? `Back to ${origin.door === "company" ? "companies" : origin.door === "challenge" ? "challenges" : "kinds of work"}` : "All connections"}
+            </Link>
+            <RailNav items={items} hasStory={!!details?.story} contextLabel={ctx?.label}
+              initial={landingSection(views, "", state.view, selection) ?? "question"} />
           </div>
-          <Link href={ctx?.backHref ?? browseReturnHref(origin)} className={styles.back}>
-            <Icon name="arrowLeft" small />
-            {ctx ? "Back to results" : origin ? `Back to ${origin.door === "company" ? "companies" : origin.door === "challenge" ? "challenges" : "kinds of work"}` : "All connections"}
-          </Link>
-          <div className={styles.railSticky} id="explore-strip" data-rail-sticky="">
-            <p className={styles.stripLabel} data-context={ctx ? "" : undefined}>
-              {ctx ? (
-                <>
-                  <span className={styles.stripEyebrow}>Your lesson</span> <strong>{ctx.label}</strong>
-                </>
-              ) : (
-                <>
-                  <span className={styles.stripEyebrow}>Classroom example</span> <strong>{e.org}</strong>
-                </>
-              )}
-            </p>
-            <RailNav items={items} initial={landingSection(views, "", state.view, selection) ?? "question"} />
-          </div>
-        </div>
-
-        <div className={styles.content}>
-          <div className={`${base.band} ${base.hero} ${styles.pageTitle}`} data-example-title="">
-            <Heading id="question-title" level={1}>{e.question}</Heading>
-          </div>
-          <section id="question" data-part="" className={styles.section} aria-labelledby="question-title">
-            <header className={styles.questionControls}><PresentButton part="question" /></header>
-            <QuestionView e={e} ctx={ctx} />
-            {end("question")}
-          </section>
-          <section id="how-it-works" data-part="" className={styles.section} aria-labelledby="how-it-works-title">
-            {partHeader("how-it-works")}
-            <HowView e={e} details={details} />
-            {end("how-it-works")}
-          </section>
-          {views.includes("who") && <section id="who" data-part="" className={styles.section} aria-labelledby="who-title">
-            {partHeader("who")}
-            <RolesView e={e} details={details} roles={roles} selection={selection} href={href} today={today} ctx={ctx} />
-            {end("who")}
-          </section>}
-          {views.includes("ways-in") && <section id="ways-in" data-part="" className={styles.section} aria-labelledby="ways-in-title">
-            {partHeader("ways-in")}
-            <PathwaysView e={e} details={details} selection={selection} href={href} />
-            {end("ways-in")}
-          </section>}
-          <section id="ask" data-part="" className={styles.section} aria-labelledby="ask-title">
-            {partHeader("ask")}
-            <AskView e={e} details={details} />
-            {end("ask")}
-          </section>
-          {views.includes("about") && details && <section id="about" data-part="" className={styles.section} aria-labelledby="about-title">
-            {partHeader("about")}
-            <CompanyView e={e} details={details} href={href} selection={selection} />
-            {news && <div className={base.band}><GatedNews contextLabel={ctx?.label ?? `${e.org} example`} headingId="news-title"
-              news={{ title: news.title, published: news.published, status: news.status, statusShort: news.statusShort, summary: news.summary, ask: news.ask, source: news.sources[0] }} /></div>}
-          <aside className={`${base.band} ${base.flush} ${base.last}`} aria-label="Bring this work into class">
-            <div className={`${base.darkPanel} ${styles.cta}`}>
-              <Corners />
-              <div>
-                <h3 className={styles.ctaTitle}>Bring this work into class</h3>
-                <p className={styles.ctaText}>
-                  Ask for a practitioner conversation. We check who might be suitable before anything is arranged.
-                </p>
-                <div className={styles.ctaActions}>
-                  <SpeakerButton topic={speakerTopic} org={e.org} variant="signal" />
-                </div>
-                <SaveExample contextLabel={ctx?.label ?? `${e.org} example`} className={styles.ctaSave} />
-              </div>
-              <div className={styles.ctaQuestion}>
-                <p className={styles.ctaQuestionLabel}>A question to ask</p>
-                <p className={styles.ctaQuestionText}>“{e.conversation}”</p>
-              </div>
+          <div className={styles.main}>
+            <div className={styles.topRow} data-deck-header="">
+              <p className={styles.topLabel}>
+                {views.map((v) => <span key={v} data-top-part={v}>{SHOW_PARTS.includes(v) ? `${teaching.indexOf(v) + 1} · ${PART_LABELS[v]}` : label(v)}</span>)}
+              </p>
+              <OrgMark org={e.org} logo={logo} />
             </div>
-          </aside>
-            {end("about")}
-          </section>}
-          <section id="sources" data-part="" className={styles.section} aria-labelledby="sources-title">
-            <SectionDivider num="" label="Sources" />
-            <SourcesAndFit e={e} checked={pageChecked(e, details)} />
-            {end("sources")}
-          </section>
+            <div className={styles.content} data-deck-body="">
+              <div className={styles.pageTitle} data-example-title="">
+                <Heading id="question-title" level={1}>{e.question}</Heading>
+                <p className={styles.orgLine}><strong>{e.org}</strong> · {e.localShort}</p>
+              </div>
+              <section id="question" data-part="" className={`${styles.section} ${styles.question}`} aria-labelledby="question-title">
+                <QuestionView e={e} ctx={ctx} />
+              </section>
+              <section id="how-it-works" data-part="" className={styles.section} aria-labelledby="how-it-works-title">
+                {partHeader("how-it-works")}
+                <HowView e={e} details={details} />
+              </section>
+              {views.includes("who") && <section id="who" data-part="" className={styles.section} aria-labelledby="who-title">
+                {partHeader("who")}
+                <RolesView e={e} details={details} roles={roles} selection={selection} href={href} today={today} ctx={ctx} />
+              </section>}
+              {views.includes("ways-in") && <section id="ways-in" data-part="" className={styles.section} aria-labelledby="ways-in-title">
+                {partHeader("ways-in")}
+                <PathwaysView e={e} details={details} selection={selection} href={href} />
+              </section>}
+              <section id="ask" data-part="" className={styles.section} aria-labelledby="ask-title">
+                {partHeader("ask")}
+                <AskView e={e} details={details} />
+              </section>
+              {views.includes("about") && details && <section id="about" data-part="" className={styles.section} aria-labelledby="about-title">
+                {partHeader("about")}
+                <PagedPanel label={`About ${e.org}`} className={styles.stagePanel}>
+                  <CompanyView e={e} details={details} href={href} selection={selection} />
+                  {news && <div className={base.band}><GatedNews contextLabel={ctx?.label ?? `${e.org} example`} headingId="news-title"
+                    news={{ title: news.title, published: news.published, status: news.status, statusShort: news.statusShort, summary: news.summary, ask: news.ask, source: news.sources[0] }} /></div>}
+                  <aside className={`${base.band} ${base.flush} ${base.last}`} aria-label="Bring this work into class">
+                    <div className={`${base.darkPanel} ${styles.cta}`}>
+                      <Corners />
+                      <div>
+                        <h3 className={styles.ctaTitle}>Bring this work into class</h3>
+                        <p className={styles.ctaText}>
+                          Ask for a practitioner conversation. We check who might be suitable before anything is arranged.
+                        </p>
+                        <div className={styles.ctaActions}>
+                          <SpeakerButton topic={speakerTopic} org={e.org} variant="signal" />
+                        </div>
+                        <SaveExample contextLabel={ctx?.label ?? `${e.org} example`} className={styles.ctaSave} />
+                      </div>
+                      <div className={styles.ctaQuestion}>
+                        <p className={styles.ctaQuestionLabel}>A question to ask</p>
+                        <p className={styles.ctaQuestionText}>“{e.conversation}”</p>
+                      </div>
+                    </div>
+                  </aside>
+                </PagedPanel>
+              </section>}
+              <section id="sources" data-part="" className={styles.section} aria-labelledby="sources-title">
+                <SourcesAndFit e={e} checked={pageChecked(e, details)} />
+              </section>
+            </div>
+            <DeckControls cards={cards} org={e.org} />
+          </div>
         </div>
       </div>
     </>
+  );
+}
+
+// The organization's identification logo, top right of the card; its name where there is none.
+function OrgMark({ org, logo }: { org: string; logo?: OrganizationLogo }) {
+  if (!logo) return <p className={styles.orgName}>{org}</p>;
+  return (
+    <span className={styles.orgMark} data-plate={logo.onDark ? "dark" : "light"}>
+      <Image src={logo.src} alt={`${org} logo`} width={logo.width} height={logo.height} unoptimized loading="eager" className={styles.orgMarkImg} />
+    </span>
   );
 }
 
@@ -227,26 +205,9 @@ function Corners() {
 function Heading({ id, level = 2, children }: { id: string; level?: 1 | 2 | 3; children: React.ReactNode }) {
   const Tag = level === 1 ? "h1" : level === 2 ? "h2" : "h3";
   return (
-    <Tag id={id} tabIndex={-1} className={`display ${base.title} ${styles.heading}`}>
+    <Tag id={id} data-dialog-focus={level === 2 ? "" : undefined} tabIndex={-1} className={`display ${base.title} ${styles.heading}`}>
       {children}
     </Tag>
-  );
-}
-
-function Eyebrow({ children }: { children: React.ReactNode }) {
-  return <p className={`eyebrow ${base.marked}`}>{children}</p>;
-}
-
-// The organization's own identification logo in About. A white
-// logo sits on the dark plate; a coloured one on a white plate with a hairline.
-function OrgLogo({ logo }: { logo: OrganizationLogo }) {
-  return (
-    <figure className={styles.logo} data-logo="">
-      <div className={styles.logoPlate} data-plate={logo.onDark ? "dark" : "light"}>
-        <Image src={logo.src} alt={logo.alt} width={logo.width} height={logo.height} unoptimized loading="eager" className={styles.logoImg} />
-      </div>
-      <figcaption className={styles.logoCaption}>Logo shown for identification only</figcaption>
-    </figure>
   );
 }
 
@@ -277,7 +238,7 @@ function FitsPanel({ e, ctx }: { e: Example; ctx: ExampleContext | null }) {
             <strong>{c.course}</strong>
             <span>
               <span className="sr-only"> · </span>
-              {c.topic}
+              {courseFitTopic(e, c)}
             </span>
           </li>
         ))}
@@ -288,78 +249,38 @@ function FitsPanel({ e, ctx }: { e: Example; ctx: ExampleContext | null }) {
 
 function QuestionView({ e, ctx }: { e: Example; ctx: ExampleContext | null }) {
   return <>
-      <header className={`${base.band} ${base.hero} ${styles.storyHero}`}>
-        <div className={styles.storyIntro}>
-          <div>
-            <p className={styles.orgLine}>
-              <strong>{e.org}</strong> · {e.localShort}
-            </p>
-            <ExampleIllustration slug={e.slug} variant="story" />
-          </div>
-          <div className={styles.storyDetails}>
-            <FitsPanel e={e} ctx={ctx} />
-          </div>
-        </div>
-      </header>
-
-</>;
+    <div className={styles.questionFits}><FitsPanel e={e} ctx={ctx} /></div>
+    <div className={styles.questionArt}><ExampleIllustration slug={e.slug} variant="story" /></div>
+  </>;
 }
 
 function AskView({ e, details }: { e: Example; details?: ExampleDetails }) {
-  const instrument = details?.story?.diagramKind === "methane";
   const askText = details?.story?.discussion ?? e.prompt;
-  return <>
-      {instrument ? (
-        <section className={`${base.band} ${base.tint} ${base.rule}`} aria-labelledby="use-title">
-          <h3 id="use-title" className={`display ${base.h2}`}>
-            Use it in class
-          </h3>
-          <div className={styles.useCard}>
-            <p className={`eyebrow ${base.marked}`}>Ask the class</p>
-            <p className={styles.askText}>{askText}</p>
-            <div className={styles.useGrid}>
-              <p className={styles.explain}>{e.explain}</p>
-              <Mindset text={e.mindset} />
-            </div>
-          </div>
-        </section>
-      ) : (
-        <section className={`${base.band} ${base.flush}`} aria-labelledby="use-title">
-          <div className={styles.useSplit}>
-            <div className={`${base.darkPanel} ${styles.askPanel}`}>
-              <span className={`${base.corner} ${base.cornerTl}`} aria-hidden="true" />
-              <span className={`${base.corner} ${base.cornerBr}`} aria-hidden="true" />
-              <h3 id="use-title" className={styles.askPanelTitle}>
-                Use it in class
-              </h3>
-              <p className={`eyebrow ${base.marked} ${styles.askPanelLabel}`}>Ask the class</p>
-              <p className={styles.askPanelText}>{askText}</p>
-            </div>
-            <div className={styles.useSide}>
-              <p className={styles.explain}>{e.explain}</p>
-              <Mindset text={e.mindset} />
-            </div>
-          </div>
-        </section>
-      )}
-
-</>;
+  // The question is the focal point; the activity sits beside it.
+  return (
+    <div className={styles.askSplit}>
+      <div className={`${base.darkPanel} ${styles.askPanel}`}>
+        <span className={`${base.corner} ${base.cornerTl}`} aria-hidden="true" />
+        <span className={`${base.corner} ${base.cornerBr}`} aria-hidden="true" />
+        <p className={styles.askPanelText}>{askText}</p>
+      </div>
+      <div className={styles.askSide}>
+        <p className={styles.explain}>{e.explain}</p>
+      </div>
+    </div>
+  );
 }
 
 function HowView({ e, details }: { e: Example; details?: ExampleDetails }) {
   const story = details?.story;
-  const instrument = story?.diagramKind === "methane";
   return <>
-      {story && <StoryDiagram story={story} headingId="schematic-title" />}
+      {story && <div data-card="1" className={styles.howCard}><StoryDiagram story={story} headingId="schematic-title" /></div>}
 
       {story ? (
-        <section
-          className={`${base.band} ${instrument ? `${base.rule} ${styles.lessonGap}` : base.tint}`}
-          aria-labelledby="steps-title"
-        >
-          <div className={instrument ? styles.lessonSplit : undefined}>
+        <section data-card="2" className={`${styles.howCard} ${styles.lessonCard}`} aria-labelledby="steps-title">
+          <div className={styles.lessonSplit}>
             <div>
-              <h3 id="steps-title" className={`display ${base.h2}`}>
+              <h3 id="steps-title" className={styles.lessonTitle}>
                 The lesson, in the real world
               </h3>
               <p className={styles.lessonLede}>{story.subtitle}</p>
@@ -369,25 +290,24 @@ function HowView({ e, details }: { e: Example; details?: ExampleDetails }) {
                 </p>
               )}
             </div>
-            <div>
-              <ol className={instrument ? styles.stepList : styles.stepRow}>
+            <PagedPanel label="Steps" inline className={styles.stepsPanel}>
+              <ol className={styles.stepList}>
                 {story.steps.map((s, i) => (
                   <li key={i}>
                     <span className={styles.stepNum}>{i + 1}</span>
                     <div className={styles.stepText}>
                       <p>{s.text}</p>
-                      {s.kind === "interpreted" && <EvidenceTag kind="interpreted">Our explanation</EvidenceTag>}
                     </div>
                   </li>
                 ))}
               </ol>
-              <Cite ids={[...new Set(story.steps.flatMap((s) => s.sourceIds))]} className={styles.stepCite} />
-            </div>
+              <div className={styles.stepCite}><Cite ids={[...new Set(story.steps.flatMap((s) => s.sourceIds))]} /></div>
+            </PagedPanel>
           </div>
         </section>
       ) : (
-        <section className={`${base.band} ${base.rule}`} aria-labelledby="work-title">
-          <h3 id="work-title" className={`display ${base.h2}`}>
+        <section className={styles.howCard} aria-labelledby="work-title">
+          <h3 id="work-title" className={styles.lessonTitle}>
             The work
           </h3>
           <p className={styles.lessonLede}>{e.work}</p>
@@ -400,15 +320,6 @@ function HowView({ e, details }: { e: Example; details?: ExampleDetails }) {
       )}
 
 </>;
-}
-
-function Mindset({ text }: { text: string }) {
-  return (
-    <div className={styles.mindset}>
-      <p className={styles.mindsetLabel}>Mindset it shows</p>
-      <p className={styles.mindsetText}>{text}</p>
-    </div>
-  );
 }
 
 // A claim split for a fact row: the statement, then where it comes from.
@@ -430,30 +341,20 @@ function CompanyView({ e, details, href, selection }: { e: Example; details: Exa
   return (
     <>
       <header className={`${base.band} ${base.hero}`}>
-        {org.logo && <OrgLogo logo={org.logo} />}
         <p className={base.lede}>{org.tagline}</p>
       </header>
 
       <div className={`${base.band} ${base.flush}`}>
-        <div className={`${base.darkPanel} ${styles.factsPanel}`}>
-          <span className={`${base.corner} ${base.cornerTl}`} aria-hidden="true" />
-          <span className={`${base.corner} ${base.cornerBr}`} aria-hidden="true" />
-          <dl className={styles.facts} aria-label={charity ? "Organization facts" : "Company facts"}>
-            <div>
+        <div className={styles.factsPanel}>
+          <dl className={`${styles.facts} ${styles.factsPair}`} aria-label={charity ? "Organization facts" : "Company facts"}>
+            <div className={base.darkPanel}>
               <dt>Headquarters</dt>
               <dd className={styles.factValue}>{org.headquarters.text}</dd>
               <dd className={styles.factSource}>
                 <Cite ids={org.headquarters.sourceIds} className={styles.claimCite} />
               </dd>
             </div>
-            <div>
-              <dt>Local connection</dt>
-              <dd className={styles.factValue}>{org.localConnection.text}</dd>
-              <dd className={styles.factSource}>
-                <Cite ids={org.localConnection.sourceIds} className={styles.claimCite} />
-              </dd>
-            </div>
-            <div>
+            <div className={base.darkPanel}>
               <dt>Team size</dt>
               {org.size ? (
                 <>
@@ -465,6 +366,13 @@ function CompanyView({ e, details, href, selection }: { e: Example; details: Exa
               ) : (
                 <dd className={styles.factValue}>Not verified. We have not found a dated, sourced figure.</dd>
               )}
+            </div>
+          </dl>
+          <dl className={`${styles.facts} ${styles.factsLocal}`}>
+            <div className={base.darkPanel}>
+              <dt>Local connection</dt>
+              <dd className={styles.factValue}>{org.localConnection.text}</dd>
+              <dd className={styles.factSource}><Cite ids={org.localConnection.sourceIds} className={styles.claimCite} /></dd>
             </div>
           </dl>
         </div>
@@ -525,177 +433,162 @@ function RolesView({
   // Not yet enriched: the sourced role list only, framed for students. No role pages.
   if (!details) {
     return (
-      <>
-        <header className={`${base.band} ${base.hero}`}>
+      <PagedPanel label="People doing this work" className={styles.stagePanel}>
+        <header className={styles.stageIntro}>
           <p className={base.lede}>People doing this work</p>
           <p className={base.lede}>Kinds of work behind this example, and how we know about them.</p>
         </header>
-        <div className={`${base.band} ${base.tint} ${base.rule}`}>
-          <ul className={styles.cardGrid}>
-            {e.roles.map((r) => (
-              <li key={r.title} className={styles.card}>
-                <div className={styles.cardStrip}>
-                  <EvidenceTag kind={r.kind}>{r.evidence}</EvidenceTag>
-                </div>
-                <div className={styles.cardBody}>
-                  <h3 className={styles.cardTitle}>{r.title}</h3>
-                  <p className={styles.cardText}>{r.note}</p>
-                </div>
-              </li>
-            ))}
-          </ul>
-          <p className={`${styles.markedNote} ${base.marked}`}>{e.rolesNote}</p>
-        </div>
-      </>
-    );
-  }
-  const org = getOrganization(details.organizationId)!;
-  const role = selection.role ? getRoleProfile(selection.role) : undefined;
-
-  // No role selected: the role list. A selected role opens here, in place of the list.
-  if (!role) {
-    return (
-      <>
-        <header className={`${base.band} ${base.hero}`}>
-          <p className={base.lede} data-role-scope="">{roles.some((r) => !getOrganizationRole(org.id, r.id) || getOrganizationRole(org.id, r.id)?.establishes === "related-work") ? `Roles connected to this example` : `Roles documented at ${org.name}`}</p>
-          <p className={base.lede}>What each kind of work involves, the job titles to look for, and where to find postings in Calgary.</p>
-        </header>
-        <div className={`${base.band} ${base.tint} ${base.rule}`}>
-          <ul className={styles.cardGrid}>
-            {roles.map((r) => {
-              const link = getOrganizationRole(org.id, r.id);
-              return (
-                <li key={r.id} className={styles.card}>
-                  <div className={styles.cardBody}>
-                    <h3 className={`${styles.cardTitle} ${styles.cardTitleLg}`}>
-                      <SelectionLink section="who" href={href({ section: "who", role: r.id })} className={styles.cardLink}>
-                        {r.title}
-                        <Icon name="arrowRight" />
-                      </SelectionLink>
-                    </h3>
-                    <p className={styles.cardText}>{r.summary}</p>
-                    <p className={styles.cardText}><strong>{ctx ? ctx.label.split(" · ")[0] : "Classroom connection"}</strong><br />{r.classroomConnection}</p>
-                    {searchTitles(r.id).length > 0 && (
-                      <p className={styles.cardText}><strong>Job titles to search</strong><br />{searchTitles(r.id).join(" · ")}</p>
-                    )}
-                  </div>
-                  {/* Evidence stays on every card, after the content a teacher reads first. */}
-                  <div className={`${styles.cardStrip} ${styles.cardFoot}`}>
-                    {link ? <EvidenceTag kind={link.kind}>{link.label}</EvidenceTag> : <EvidenceTag kind="interpreted">Related work at another employer</EvidenceTag>}
-                  </div>
-                </li>
-              );
-            })}
-          </ul>
-          <p className={`${styles.markedNote} ${base.marked}`}>
-            Cards distinguish work documented at {e.org} from related work at other employers. Dated accounts and postings are not a current staff roster or a promise of a vacancy.
-          </p>
-        </div>
-      </>
-    );
-  }
-
-  const link = getOrganizationRole(org.id, role.id);
-  const pathways = details.pathwayIds.map((id) => getPathway(id)!).filter((p) => p.roleRationale.some((r) => r.roleId === role.id));
-  const others = details.roleIds.filter((id) => id !== role.id);
-  return (
-    <>
-      <header className={`${base.band} ${base.hero}`}>
-        <SelectionLink section="who" href={href({ section: "who" })} className={styles.upLink}>
-          <Icon name="arrowLeft" small />
-          All roles in this example
-        </SelectionLink>
-        <Eyebrow>Role</Eyebrow>
-        <Heading id="roles-title" level={3}>{role.title}</Heading>
-        <p className={base.lede}>{role.summary}</p>
-        <div className={styles.roleTags}>
-          {link ? <EvidenceTag kind={link.kind}>{link.label}</EvidenceTag> : <EvidenceTag kind="interpreted">Related work at another employer</EvidenceTag>}
-          <EvidenceTag kind="interpreted">General explanation, written by us</EvidenceTag>
-          {link && <Cite ids={link.sourceIds} className={styles.claimCite} />}
-        </div>
-        {role.explanation.trim() !== role.summary.trim() && <p className={styles.explanation}>{role.explanation}</p>}
-      </header>
-
-      <section className={`${base.band} ${base.tint} ${base.rule}`} aria-labelledby="tasks-title">
-        <h3 id="tasks-title" className={`display ${base.h2}`}>
-          What might you actually do?
-        </h3>
-        <ul className={`${base.darkPanel} ${styles.tasks}`}>
-          {role.tasks.map((t) => (
-            <li key={t.title}>
-              <h4 className={styles.taskTitle}>{t.title}</h4>
-              <p className={styles.taskText}>{t.detail}</p>
+        <ul className={styles.cardGrid}>
+          {e.roles.map((r) => (
+            <li key={r.title} className={styles.card}>
+              <div className={styles.cardBody}>
+                <h3 className={styles.cardTitle}>{r.title}</h3>
+                <p className={styles.cardText}>{r.note}</p>
+              </div>
             </li>
           ))}
         </ul>
-        <p className={styles.bandNote}>Typical of this kind of work in general. Not a description of any one person’s job at {org.name}.</p>
-      </section>
-
-      <div className={`${base.band} ${base.rule}`}>
-        <dl className={styles.context} aria-label="Context">
-          <div className={styles.contextRow}>
-            <dt>Often works with</dt>
-            <dd className={styles.chips}>
-              {role.collaborators.map((c) => (
-                <span key={c}>{c}</span>
-              ))}
-            </dd>
-          </div>
-          <div className={styles.contextRow}>
-            <dt>Classroom connection</dt>
-            <dd>{role.classroomConnection}</dd>
-          </div>
-        </dl>
-      </div>
-
-      <RoleJobs role={role} roles={roles} details={details} selection={selection} href={href} today={today} />
-
-      <div className={`${base.band} ${base.tint} ${base.rule}`}>
-        <div className={styles.nextSteps}>
-          <section aria-labelledby="prepare-title">
-            <h3 id="prepare-title" className={`display ${base.h2}`}>
-              How to prepare
-            </h3>
-            {pathways.length ? (
-              <ul className={styles.prepareList}>
-                {pathways.map((p) => (
-                  <li key={p.id}>
-                    <p className={styles.prepareName}>{p.name}</p>
-                    <p className={styles.prepareProvider}>{p.provider}</p>
-                  </li>
-                ))}
-              </ul>
-            ) : (
-              <p className={styles.bandNote}>No checked pathways for this role yet.</p>
-            )}
-            <p className={styles.teaserAction}>
-              {/* Promises every program: it clears the role (and job) and lands on Pathways. */}
-              <SelectionLink section="ways-in" href={href({ section: "ways-in" })} className={styles.arrowLink}>
-                See all pathways
-                <Icon name="arrowRight" small />
-              </SelectionLink>
-            </p>
-          </section>
-          {others.length > 0 && (
-            <nav aria-labelledby="others-title">
-              <h3 id="others-title" className={`display ${base.h2}`}>
-                Other roles
-              </h3>
-              <ul className={styles.otherRoles}>
-                {others.map((id) => (
-                  <li key={id}>
-                    <SelectionLink section="who" href={href({ section: "who", role: id })}>
-                      {getRoleProfile(id)!.title}
-                      <Icon name="arrowRight" small />
-                    </SelectionLink>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          )}
+        <p className={styles.markedNote}>{e.rolesNote}</p>
+      </PagedPanel>
+    );
+  }
+  const org = getOrganization(details.organizationId)!;
+  // A selected role shows; otherwise the first. Every role's details stay mounted (hidden when not
+  // shown), so each page keeps every role's words and links.
+  const shown = selection.role && roles.some((r) => r.id === selection.role) ? selection.role : roles[0]?.id;
+  return (
+    <>
+      <div className={styles.roleSplit}>
+        <div className={styles.roleAside}>
+        <PagedPanel label="Roles" className={styles.roleListPanel}>
+          <ul className={styles.roleList}>
+            {roles.map((r) => (
+              <li key={r.id}>
+                <SelectionLink section="who" href={href({ section: "who", role: r.id })} className={styles.roleItem}
+                  aria-current={r.id === shown ? "true" : undefined} data-role-link={r.id}>
+                  {r.title}
+                  <Icon name="arrowRight" small />
+                </SelectionLink>
+              </li>
+            ))}
+          </ul>
+        </PagedPanel>
+        <p className={styles.rolesIntro}>Work connected to this example. Not current job openings.</p>
+        </div>
+        <div className={styles.roleDetails}>
+          {roles.map((r) => (
+            <RoleDetail key={r.id} role={r} roles={roles} org={org} details={details} shown={r.id === shown}
+              selection={selection} href={href} today={today} ctx={ctx} />
+          ))}
         </div>
       </div>
     </>
+  );
+}
+
+function RoleDetail({ role, roles, org, details, shown, selection, href, today, ctx }: {
+  role: RoleProfile; roles: RoleProfile[]; org: Organization; details: ExampleDetails; shown: boolean;
+  selection: Selection; href: Href; today: string; ctx: ExampleContext | null;
+}) {
+  const pathways = details.pathwayIds.map((id) => getPathway(id)!).filter((p) => p.roleRationale.some((r) => r.roleId === role.id));
+  const jobs = details.jobIds.map((id) => getJob(id)!).filter((j) => j.roleIds.includes(role.id));
+  const openJob = shown && selection.role === role.id && selection.job ? jobs.find((j) => j.id === selection.job) : undefined;
+  const titles = searchTitles(role.id);
+  const link = getOrganizationRole(org.id, role.id);
+  return (
+    <div role="group" className={styles.roleDetail} hidden={!shown} data-role-detail={role.id} aria-labelledby={`role-title-${role.id}`}>
+      <header className={styles.roleHead}>
+        <p className={`eyebrow ${base.marked}`}>Role</p>
+        <h3 id={`role-title-${role.id}`} className={styles.roleTitle}>{role.title}</h3>
+        <p className={styles.roleSummary}>{role.summary}</p>
+        {link && <Cite ids={link.sourceIds} />}
+      </header>
+      {openJob && (
+        <div className={styles.jobView} data-job-view="">
+          {/* `row`: closing the posting returns to its row in Job searches (ExploreFocus). */}
+          <SelectionLink section="who" href={href({ section: "who", role: role.id })} row className={styles.upLink}>
+            <Icon name="arrowLeft" small />
+            Back to {role.title}
+          </SelectionLink>
+          <PagedPanel label="Job posting" className={styles.tabPaged}>
+            <article aria-labelledby={`job-title-${openJob.id}`}>
+              <JobBody job={openJob} roles={roles} today={today} titleId={`job-title-${openJob.id}`} />
+            </article>
+          </PagedPanel>
+        </div>
+      )}
+      <RoleTabs roleId={role.id} shown={shown} jobOpen={!!openJob} tabs={[
+        {
+          id: "what", label: "What they do", content: (
+            <PagedPanel label={`What ${role.title} involves`} className={styles.tabPaged}>
+              {role.explanation.trim() !== role.summary.trim() && <p className={styles.explanation}>{role.explanation}</p>}
+              <section aria-labelledby={`tasks-title-${role.id}`}>
+                <h4 id={`tasks-title-${role.id}`} className={styles.miniTitle}>What might you actually do?</h4>
+                <ul className={styles.tasks}>
+                  {role.tasks.map((t) => (
+                    <li key={t.title}>
+                      <h5 className={styles.taskTitle}>{t.title}</h5>
+                      <p className={styles.taskText}>{t.detail}</p>
+                    </li>
+                  ))}
+                </ul>
+                <p className={styles.bandNote}>Typical of this kind of work in general. Not a description of any one person’s job at {org.name}.</p>
+              </section>
+              <dl className={styles.context} aria-label="Context">
+                <div className={styles.contextRow}>
+                  <dt>Often works with</dt>
+                  <dd className={styles.chips}>
+                    {role.collaborators.map((c) => (
+                      <span key={c}>{c}</span>
+                    ))}
+                  </dd>
+                </div>
+                <div className={styles.contextRow}>
+                  <dt>{ctx ? ctx.label.split(" · ")[0] : "Classroom connection"}</dt>
+                  <dd>{role.classroomConnection}</dd>
+                </div>
+              </dl>
+            </PagedPanel>
+          ),
+        },
+        {
+          id: "jobs", label: "Job searches", content: (
+            <PagedPanel label={`Job searches for ${role.title}`} className={styles.tabPaged}>
+              {titles.length > 0 && <p className={styles.cardText}><strong>Job titles to search</strong><br />{titles.join(" · ")}</p>}
+              <RoleJobs role={role} jobs={jobs} org={org} selection={selection} href={href} today={today} />
+            </PagedPanel>
+          ),
+        },
+        {
+          id: "prepare", label: "Prepare", content: (
+            <PagedPanel label={`How to prepare for ${role.title}`} className={styles.tabPaged}>
+              <section aria-labelledby={`prepare-title-${role.id}`}>
+                <h4 id={`prepare-title-${role.id}`} className={styles.miniTitle}>How to prepare</h4>
+                {pathways.length ? (
+                  <ul className={styles.prepareList}>
+                    {pathways.map((p) => (
+                      <li key={p.id}>
+                        <p className={styles.prepareName}>{p.name}</p>
+                        <p className={styles.prepareProvider}>{p.provider}</p>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className={styles.bandNote}>No checked pathways for this role yet.</p>
+                )}
+                <p className={styles.teaserAction}>
+                  {/* Promises every program: it clears the role (and job) and lands on Pathways. */}
+                  <SelectionLink section="ways-in" href={href({ section: "ways-in" })} className={styles.arrowLink}>
+                    See all pathways
+                    <Icon name="arrowRight" small />
+                  </SelectionLink>
+                </p>
+              </section>
+            </PagedPanel>
+          ),
+        },
+      ]} />
+    </div>
   );
 }
 
@@ -705,32 +598,17 @@ function StatusTag({ job, today }: { job: JobExample; today: string }) {
   return isOpen(job, today) ? <span className="tag">Accepting applications</span> : <span className="tag tag-neutral">Historical example</span>;
 }
 
-// Job examples are cards that open in place; the open card's row keeps focus and its URL survives reload.
-function RoleJobs({
-  role,
-  roles,
-  details,
-  selection,
-  href,
-  today,
-}: {
-  role: RoleProfile;
-  roles: RoleProfile[];
-  details: ExampleDetails;
-  selection: Selection;
-  href: Href;
-  today: string;
+// Live searches and saved job examples. A saved example opens as its own view (?job=); its row link
+// takes focus again when the teacher comes back.
+function RoleJobs({ role, jobs, org, href, today }: {
+  role: RoleProfile; jobs: JobExample[]; org: Organization; selection: Selection; href: Href; today: string;
 }) {
-  const jobs = details.jobIds.map((id) => getJob(id)!).filter((j) => j.roleIds.includes(role.id));
   const searches = liveSearches(role.id);
-  const org = getOrganization(details.organizationId)!;
-  const jobHref = (id?: string) => href({ section: "who", role: role.id, job: id });
-
   return (
-    <section className={`${base.band} ${base.rule}`} aria-labelledby="jobs-title">
-      <h3 id="jobs-title" className={`display ${base.h2}`}>
+    <section aria-labelledby={`jobs-title-${role.id}`}>
+      <h4 id={`jobs-title-${role.id}`} className={styles.miniTitle}>
         Related job postings
-      </h3>
+      </h4>
       {searches.length > 0 && (
         <>
           <p className={styles.jobsIntro}>
@@ -762,42 +640,27 @@ function RoleJobs({
           </div>
         )
       ) : (
-        <section aria-labelledby="saved-jobs-title">
-          <h4 id="saved-jobs-title" className={styles.savedTitle}>Saved job examples</h4>
+        <section aria-labelledby={`saved-jobs-title-${role.id}`}>
+          <h5 id={`saved-jobs-title-${role.id}`} className={styles.savedTitle}>Saved job examples</h5>
           <p className={styles.jobsIntro}>
             How employers have described this kind of work, saved on the date shown. Employers have not reviewed or endorsed this page.
           </p>
           <ul className={styles.jobList}>
-            {jobs.map((j) => {
-              const open = selection.job === j.id;
-              return (
-                <li key={j.id} className={`${styles.jobItem} ${open ? styles.jobOpen : ""}`}>
-                  <SelectionLink
-                    section="who"
-                    href={jobHref(open ? undefined : j.id)}
-                    row
-                    className={styles.jobRow}
-                    aria-expanded={open}
-                    data-job-detail={open ? "" : undefined}
-                  >
-                    <span className={styles.jobRowMain}>
-                      <span className={styles.jobTitle}>{j.title}</span>
-                      <span className={styles.jobMetaLine}>
-                        {j.employer}
-                        {j.location ? ` · ${j.location}` : ""}
-                      </span>
+            {jobs.map((j) => (
+              <li key={j.id} className={styles.jobItem}>
+                <SelectionLink section="who" href={href({ section: "who", role: role.id, job: j.id })} row className={styles.jobRow} data-job-row={j.id}>
+                  <span className={styles.jobRowMain}>
+                    <span className={styles.jobTitle}>{j.title}</span>
+                    <span className={styles.jobMetaLine}>
+                      {j.employer}
+                      {j.location ? ` · ${j.location}` : ""}
                     </span>
-                    <StatusTag job={j} today={today} />
-                    <Icon name="chevronDown" className={styles.chevron} />
-                  </SelectionLink>
-                  {open && (
-                    <article className={styles.rowBody} aria-labelledby={`job-title-${j.id}`}>
-                      <JobBody job={j} roles={roles} today={today} titleId={`job-title-${j.id}`} />
-                    </article>
-                  )}
-                </li>
-              );
-            })}
+                  </span>
+                  <StatusTag job={j} today={today} />
+                  <Icon name="arrowRight" small />
+                </SelectionLink>
+              </li>
+            ))}
           </ul>
         </section>
       )}
@@ -812,10 +675,8 @@ function PathwaysView({ e, details, selection, href }: { e: Example; details?: E
   // requirements and one person's route, so their intro says so and each card carries its own label.
   const role = details && selection.role ? getRoleProfile(selection.role) : undefined;
   const header = (
-    <header className={`${base.band} ${base.hero}`}>
-      <Eyebrow>For your students</Eyebrow>
-      <Heading id="pathways-title" level={3}>Ways to prepare for this work</Heading>
-      <p className={base.lede}>
+    <header className={styles.stageIntro}>
+      <p className={styles.pathIntro}>
         {details
           ? "Programs that teach skills this work uses. Each is one route in, not a requirement, and no program has endorsed this page."
           : "Study directions, what an employer asked for, and routes people have taken. Each card says which it is."}
@@ -835,13 +696,11 @@ function PathwaysView({ e, details, selection, href }: { e: Example; details?: E
     return (
       <>
         {header}
-        <div className={`${base.band} ${base.tint} ${base.rule}`}>
+        <PagedPanel label="Ways in" className={styles.stagePanel}>
           <ul className={styles.pathList}>
             {e.pathways.map((p) => (
               <li key={p.label} className={styles.card}>
-                <div className={styles.cardStrip}>
-                  <EvidenceTag kind={p.kind}>{p.kindLabel}</EvidenceTag>
-                </div>
+                <p className={styles.pathKind}>{p.kindLabel}</p>
                 <div className={styles.cardBody}>
                   <h3 className={`${styles.cardTitle} ${styles.cardTitleLg}`}>{p.label}</h3>
                   <p className={styles.cardText}>{p.note}</p>
@@ -849,7 +708,7 @@ function PathwaysView({ e, details, selection, href }: { e: Example; details?: E
               </li>
             ))}
           </ul>
-        </div>
+        </PagedPanel>
       </>
     );
   }
@@ -858,7 +717,7 @@ function PathwaysView({ e, details, selection, href }: { e: Example; details?: E
   return (
     <>
       {header}
-      <div className={`${base.band} ${base.tint} ${base.rule}`}>
+      <PagedPanel label="Ways in" className={styles.stagePanel}>
         {shown.length ? (
           <ul className={styles.pathList}>
             {shown.map((p) => {
@@ -886,7 +745,7 @@ function PathwaysView({ e, details, selection, href }: { e: Example; details?: E
                       {extra.length > 0 && <Cite ids={extra} className={styles.claimCite} />}
                     </div>
                     <div className={styles.why}>
-                      <p className={styles.whyLabel}>Why it connects to the work · our interpretation</p>
+                      <p className={styles.whyLabel}>Why it connects to the work</p>
                       {p.roleRationale
                         .filter((w) => details.roleIds.includes(w.roleId) && (!role || w.roleId === role.id))
                         .map((w) => (
@@ -910,7 +769,7 @@ function PathwaysView({ e, details, selection, href }: { e: Example; details?: E
             <p className={styles.bandNote}>We only list routes we have checked on an official program page.</p>
           </div>
         )}
-      </div>
+      </PagedPanel>
     </>
   );
 }
@@ -921,7 +780,7 @@ function JobBody({ job, roles, today, titleId }: { job: JobExample; roles: RoleP
   return (
     <div className={styles.jobBody}>
       <span>
-        <EvidenceTag kind={job.kind}>Employer posting · saved {formatDate(job.capturedOn)}</EvidenceTag>
+        <span className={styles.savedOn}>Saved {formatDate(job.capturedOn)}</span>
       </span>
       <h4 id={titleId} data-job-detail="" tabIndex={-1} className={`display ${styles.heading}`}>
         {job.title}

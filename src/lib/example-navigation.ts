@@ -9,6 +9,23 @@ export const PART_LABELS: Record<View, string> = {
   "ways-in": "Ways in", ask: "Ask the class", about: "About", sources: "Sources",
 };
 
+export interface ExampleCard { part: View; card: number; title: string }
+
+export function cardsFor(views: readonly View[], hasStory: boolean): ExampleCard[] {
+  return views.flatMap((part) => part === "how-it-works" && hasStory
+    ? [{ part, card: 1, title: "What happens" }, { part, card: 2, title: "The lesson, in the real world" }]
+    : [{ part, card: 1, title: PART_LABELS[part] }]);
+}
+
+export function cardFragment({ part, card }: Pick<ExampleCard, "part" | "card">): string {
+  return `#${part}${card > 1 ? `-${card}` : ""}`;
+}
+
+export function adjacentCard(cards: readonly ExampleCard[], current: Pick<ExampleCard, "part" | "card">, direction: -1 | 1) {
+  const index = cards.findIndex((item) => item.part === current.part && item.card === current.card);
+  return index < 0 ? undefined : cards[index + direction];
+}
+
 export interface Selection {
   role?: string;
   job?: string;
@@ -31,27 +48,39 @@ export function landingSection(
   views: readonly View[], hash: string, legacyView: string | null | undefined,
   selection: Selection, layout: Layout = "parts",
 ): View | null {
+  return landingCard(views, hash, legacyView, selection, layout)?.part ?? null;
+}
+
+// Self-contained: this exact parser is serialized into the pre-paint bootstrap.
+export function landingCard(
+  views: readonly View[], hash: string, legacyView: string | null | undefined,
+  selection: Selection, layout: Layout = "parts", hasStory = false,
+): Pick<ExampleCard, "part" | "card"> | null {
   const legacy: Record<string, string> = { story: "question", company: "about", roles: "who", pathways: "ways-in", jobs: "who" };
   const valid = (value: string) => {
-    const part = legacy[value] ?? value;
-    return views.includes(part as View) ? part as View : undefined;
+    const match = value.match(/^(.*?)-(\d+)$/);
+    const name = match ? match[1] : value;
+    const part = (legacy[name] ?? name) as View;
+    if (!views.includes(part)) return undefined;
+    const requested = match ? Number(match[2]) : 1;
+    return { part, card: part === "how-it-works" && hasStory && requested === 2 ? 2 : 1 };
   };
   return valid(hash.replace(/^#/, "")) ?? valid(legacyView?.trim() ?? "") ??
-    (selection.role || selection.job ? valid("who") : undefined) ?? (layout === "parts" ? "question" : null);
+    (selection.role || selection.job ? valid("who") : undefined) ?? (layout === "parts" ? { part: "question", card: 1 } : null);
 }
 
 // A blocking native script: next/script afterInteractive is too late, and beforeInteractive
 // belongs in the root layout (installed Next.js docs: app/api-reference/components/script).
 // Escape '<' so serialized content cannot terminate the script element.
-export function layoutBootstrap(views: readonly View[], selection: Selection): string {
-  const data = JSON.stringify({ views, selection, key: LAYOUT_KEY }).replace(/</g, "\\u003c");
-  return `(()=>{const root=document.currentScript.parentElement;let observer;const fail=()=>{delete root.dataset.layout;delete root.dataset.part};try{
-const data=${data},land=${landingSection.toString()};let layout="parts";try{if(localStorage.getItem(data.key)==="all")layout="all"}catch{}
-root.dataset.part=land(data.views,location.hash,new URLSearchParams(location.search).get("view"),data.selection,layout)||"question";root.dataset.layout=layout;
+export function layoutBootstrap(views: readonly View[], selection: Selection, hasStory = false): string {
+  const data = JSON.stringify({ views, selection, hasStory, key: LAYOUT_KEY }).replace(/</g, "\\u003c");
+  return `(()=>{const root=document.currentScript.parentElement;let observer;const fail=()=>{delete root.dataset.layout;delete root.dataset.part;delete root.dataset.card};try{
+const data=${data},land=${landingCard.toString()};let layout="parts";try{if(localStorage.getItem(data.key)==="all")layout="all"}catch{}
+const initial=land(data.views,location.hash,new URLSearchParams(location.search).get("view"),data.selection,layout,data.hasStory);root.dataset.part=initial?.part||"question";root.dataset.card=String(initial?.card||1);root.dataset.layout=layout;
 const sync=()=>{for(const link of root.querySelectorAll("[data-part-link]")){if(link.dataset.partLink===root.dataset.part)link.setAttribute("aria-current","location");else link.removeAttribute("aria-current")}for(const button of root.querySelectorAll("[data-view-toggle]"))button.setAttribute("aria-pressed",String(root.dataset.layout==="all"))};
 const hash=()=>{try{const empty=location.hash===""||location.hash==="#",layout=root.dataset.layout==="parts"?"parts":"all";
-const part=empty?land(data.views,"",new URLSearchParams(location.search).get("view"),data.selection,layout):land(data.views,location.hash,null,{},"all");
-if(!part){if(empty)window.scrollTo(0,0);return}root.dataset.part=part;sync();const section=document.getElementById(part);section?.scrollIntoView({block:"start"});document.getElementById(section?.getAttribute("aria-labelledby"))?.focus({preventScroll:true})}catch{fail()}};
+const target=empty?land(data.views,"",new URLSearchParams(location.search).get("view"),data.selection,layout,data.hasStory):land(data.views,location.hash,null,{},"all",data.hasStory);
+if(!target){if(empty)window.scrollTo(0,0);return}root.dataset.part=target.part;root.dataset.card=String(target.card);sync();const section=document.getElementById(target.part);section?.scrollIntoView({block:"start"});document.getElementById(section?.getAttribute("aria-labelledby"))?.focus({preventScroll:true})}catch{fail()}};
 const click=(event)=>{const button=event.target.closest("[data-contents],[data-view-toggle]");if(!button||event.button||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;event.preventDefault();event.stopPropagation();try{if(button.hasAttribute("data-contents")){delete root.dataset.layout}else{root.dataset.layout=root.dataset.layout==="all"?"parts":"all";try{localStorage.setItem(data.key,root.dataset.layout)}catch{}}sync()}catch{fail()}};
 const ready=()=>{observer?.disconnect();window.removeEventListener("hashchange",hash);root.removeEventListener("click",click,true)};
 observer=new MutationObserver(()=>{try{sync();if(root.querySelector("[data-navigation-end]"))observer.disconnect()}catch{fail();observer.disconnect()}});observer.observe(root,{childList:true,subtree:true});

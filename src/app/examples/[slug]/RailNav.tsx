@@ -8,8 +8,9 @@ import styles from "./explore.module.css";
 
 export interface RailItem { section: View; href: string; label: string }
 
-export function RailNav({ items, initial }: { items: RailItem[]; initial: View }) {
+export function RailNav({ items, initial, hasStory, contextLabel }: { items: RailItem[]; initial: View; hasStory: boolean; contextLabel?: string }) {
   const [active, setActive] = useState(initial);
+  const [card, setCard] = useState(1);
   const [all, setAll] = useState(false);
   const [open, setOpen] = useState(false);
   const ids = items.map((i) => i.section).join(" ");
@@ -22,6 +23,7 @@ export function RailNav({ items, initial }: { items: RailItem[]; initial: View }
     const sections = ids.split(" ").map((id) => document.getElementById(id)!);
     const sync = () => {
       setAll(root?.dataset.layout === "all");
+      setCard(Number(root?.dataset.card) || 1);
       setActive((root?.dataset.part ?? "question") as View);
     };
     const visiblePart = () => {
@@ -34,7 +36,13 @@ export function RailNav({ items, initial }: { items: RailItem[]; initial: View }
       if (root?.dataset.layout !== "all" || Date.now() < heldUntil) return;
       const current = visiblePart();
       root.dataset.part = current;
+      const line = stickyOffset() + (window.innerHeight - stickyOffset()) * .3;
+      const shownCards = document.getElementById(current)?.querySelectorAll<HTMLElement>("[data-card]") ?? [];
+      let position = 1;
+      for (const card of shownCards) if (card.getBoundingClientRect().top <= line) position = Number(card.dataset.card);
+      root.dataset.card = String(position);
       setActive(current);
+      setCard(position);
     };
     const onScroll = () => { cancelAnimationFrame(frame); frame = requestAnimationFrame(spy); };
     const move = () => {
@@ -99,32 +107,38 @@ export function RailNav({ items, initial }: { items: RailItem[]; initial: View }
 
   return <>
     <nav aria-label="Explore this example" className={styles.nav}>
-      <RailGroups items={items} active={active} onChoose={choose} />{toggle}
+      <RailGroups items={items} active={active} card={card} hasStory={hasStory} onChoose={choose} />
     </nav>
-    <div className={styles.locationBar}>
+    <div className={styles.locationBar} data-rail-sticky="">
+      {contextLabel && <p className={styles.locationContext}>Your lesson <strong>{contextLabel}</strong></p>}
       {items.map((item) => <div key={item.section} data-location-part={item.section}>
-        <p>{SHOW_PARTS.includes(item.section) ? `Show your class · ${show.findIndex((i) => i.section === item.section) + 1} of ${show.length}` : "For you"}</p>
+        {SHOW_PARTS.includes(item.section) && <p>{`${show.findIndex((i) => i.section === item.section) + 1} of ${show.length}`}</p>}
         <strong>{item.label}</strong>
       </div>)}
       <button type="button" className="btn btn-light" data-contents="" onClick={() => setOpen(true)} aria-haspopup="dialog" aria-expanded={open}>Contents</button>
     </div>
     <Modal containFocus open={open} onClose={() => setOpen(false)} titleId="contents-title" title="Contents">
-      <nav aria-label="Example contents" className={styles.sheetNav}><RailGroups items={items} active={active} onChoose={choose} sheet />{toggle}</nav>
+      <nav aria-label="Example contents" className={styles.sheetNav}><RailGroups items={items} active={active} card={card} hasStory={hasStory} onChoose={choose} sheet />{toggle}</nav>
     </Modal>
     <span hidden data-navigation-end="" />
   </>;
 }
 
-function RailGroups({ items, active, sheet = false, onChoose }: {
-  items: RailItem[]; active: View; sheet?: boolean;
+function RailGroups({ items, active, card, hasStory, sheet = false, onChoose }: {
+  items: RailItem[]; active: View; card: number; hasStory: boolean; sheet?: boolean;
   onChoose: (event: React.MouseEvent<HTMLAnchorElement>, part: View) => void;
 }) {
+  const teachingItems = items.filter((i) => SHOW_PARTS.includes(i.section));
+  const activeIndex = teachingItems.findIndex((i) => i.section === active);
   return [true, false].map((teaching) => (
-    <div key={String(teaching)}>
-      <p className={styles.groupLabel}>{teaching ? "Show your class" : "For you"}</p>
+    <div key={String(teaching)} className={styles.navGroup} data-teaching={teaching}>
       {items.filter((i) => SHOW_PARTS.includes(i.section) === teaching).map((item, index) => {
-        const children = <>{teaching && <span className={styles.navNum} aria-hidden="true">{index + 1}</span>}<span>{item.label}</span></>;
-        const props = { className: styles.navItem, suppressHydrationWarning: true, "data-part-link": item.section, "aria-label": item.label, "aria-current": active === item.section ? "location" as const : undefined };
+        const story = hasStory && item.section === "how-it-works";
+        const children = <>
+          {teaching && <span className={styles.navNum} aria-hidden="true">{index < activeIndex && !sheet ? "✓" : index + 1}</span>}
+          <span className={styles.navLabel}>{item.label}{story && <span className={styles.cardPosition} aria-hidden="true">{active === item.section ? `${card} of 2` : "2 parts"}</span>}</span>
+        </>;
+        const props = { className: styles.navItem, suppressHydrationWarning: true, "data-part-link": item.section, "data-done": teaching && index < activeIndex ? "" : undefined, "aria-label": item.label, "aria-current": active === item.section ? "location" as const : undefined };
         return sheet ? <a key={item.section} {...props} href={item.href} onClick={(event) => onChoose(event, item.section)}>{children}</a> : <SectionLink key={item.section} {...props} id={`nav-${item.section}`} section={item.section} href={item.href}>{children}</SectionLink>;
       })}
     </div>

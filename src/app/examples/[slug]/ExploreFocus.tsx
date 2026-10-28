@@ -1,22 +1,58 @@
 "use client";
 
 import { useEffect, useLayoutEffect, useRef } from "react";
-import { asView, landingSection, selectionQuery, type Selection, type View } from "@/lib/example-navigation";
+import { asView, landingCard, selectionQuery, type Selection, type View } from "@/lib/example-navigation";
 import { clearSelection, pendingSelection, takeSelection } from "@/lib/example-selection";
-import { exampleRoot, goToSection, LAYOUT_EVENT, storedLayout, stopScrolling } from "./SectionLink";
+import { exampleRoot, goToSection, LAYOUT_EVENT, stickyOffset, storedLayout, stopScrolling } from "./SectionLink";
+import { framed, ROLE_TAB_EVENT } from "./frame";
 
 // Load, selection navigation and history share the same landing rule as the pre-paint script.
-function landHere(views: View[], selection: Selection, { top, initial = false }: { top: boolean; initial?: boolean }) {
+// Returns the card it landed on, if any.
+function landHere(views: View[], selection: Selection, hasStory: boolean, { top, initial = false }: { top: boolean; initial?: boolean }): View | undefined {
   // Non-part anchors belong to the browser, not to the parts landing fallback.
   if (window.location.hash && !asView(window.location.hash, views)) return;
   const params = new URLSearchParams(window.location.search);
   // A bare visit has no requested destination. Layout initializes Question, but
   // the header/skip link remain the start of the keyboard and screen-reader flow.
   if (initial && !window.location.hash && !["view", "role", "job"].some((key) => params.has(key))) return;
-  const target = landingSection(views, window.location.hash, params.get("view"), selection, exampleRoot()?.dataset.layout === "all" ? "all" : "parts");
-  if (target) goToSection(target, { smooth: false, writeHash: false });
+  const target = landingCard(views, window.location.hash, params.get("view"), selection, exampleRoot()?.dataset.layout === "all" ? "all" : "parts", hasStory);
+  if (target) goToSection(target.part, { card: target.card, smooth: false, writeHash: false });
   else if (top) window.scrollTo({ top: 0, behavior: "instant" });
+  return target?.part;
 }
+
+// After a landing on Who (and only Who: the destination is resolved first), a selected job's posting
+// heading takes focus. A return from a posting to its role (its Back link, or browser Back/Forward)
+// opens the role's Job searches tab and focuses that posting's row link. Focus waits a frame for the
+// tab to render.
+function focusJob(part: View | undefined, selection: Selection, returnFrom?: string) {
+  if (part !== "who" || !selection.role || (!selection.job && !returnFrom)) return;
+  if (!selection.job) window.dispatchEvent(new CustomEvent(ROLE_TAB_EVENT, { detail: { role: selection.role, tab: "jobs" } }));
+  requestAnimationFrame(() => {
+    const target = selection.job
+      ? [...document.querySelectorAll<HTMLElement>("[data-job-view] [data-job-detail]")].find((el) => el.getClientRects().length > 0)
+      : document.querySelector<HTMLElement>(`[data-role-detail="${CSS.escape(selection.role!)}"] [data-job-row="${CSS.escape(returnFrom!)}"]`);
+    if (target && target.getClientRects().length) {
+      target.focus({ preventScroll: true });
+      if (!framed(exampleRoot())) {
+        // Section navigation has settled by this frame. Reveal the final job focus target,
+        // rather than leaving it beneath the phone's sticky controls or off the screen.
+        stopScrolling();
+        const box = target.getBoundingClientRect();
+        const top = stickyOffset() + 8;
+        const footer = document.querySelector<HTMLElement>("[data-deck-footer]")?.getBoundingClientRect();
+        const bottom = Math.min(window.innerHeight, footer?.top ?? window.innerHeight) - 8;
+        const delta = box.top < top || box.height > bottom - top ? box.top - top
+          : box.bottom > bottom ? box.bottom - bottom : 0;
+        if (delta) window.scrollBy({ top: delta, behavior: "instant" });
+      }
+    }
+  });
+}
+
+// The posting a selection change returns from: the same role, with the job dropped.
+const returnedFrom = (selection: Selection, before: Selection) =>
+  selection.role && !selection.job && before.role === selection.role && before.job ? before.job : undefined;
 
 // A load that may not start at the top: a reload or a history traversal, or an unsupported fragment
 // the browser has already jumped to.
@@ -29,7 +65,7 @@ function mayBeScrolled() {
 // must leave the next page's scroll to the browser and the router: every deferred step checks the path.
 const onPath = (path: string) => window.location.pathname === path;
 
-export function ExploreFocus({ views, role, job, navKey }: { views: View[]; navKey: string } & Selection) {
+export function ExploreFocus({ views, role, job, navKey, hasStory }: { views: View[]; navKey: string; hasStory: boolean } & Selection) {
   const rendered = useRef<{ navKey: string; selection: Selection }>(null);
   const popped = useRef(false);
   const viewsKey = views.join(" ");
@@ -39,10 +75,12 @@ export function ExploreFocus({ views, role, job, navKey }: { views: View[]; navK
     if (!root) return;
     root.dataset.layout ??= storedLayout();
     const navigation = pendingSelection(window.location.pathname, navKey);
-    root.dataset.part = navigation?.part ?? landingSection(viewsKey.split(" ") as View[], window.location.hash,
-      new URLSearchParams(window.location.search).get("view"), { role, job }, root.dataset.layout === "all" ? "all" : "parts") ?? "question";
+    const target = landingCard(viewsKey.split(" ") as View[], window.location.hash,
+      new URLSearchParams(window.location.search).get("view"), { role, job }, root.dataset.layout === "all" ? "all" : "parts", hasStory);
+    root.dataset.part = navigation?.part ?? target?.part ?? "question";
+    root.dataset.card = String(navigation ? 1 : target?.card ?? 1);
     window.dispatchEvent(new Event(LAYOUT_EVENT));
-  }, [viewsKey, navKey, role, job]);
+  }, [viewsKey, navKey, role, job, hasStory]);
 
   // The landing rule decides where this page starts, so the browser must not restore an old scroll
   // position on reload or Back/Forward here. Other pages get their own setting back on leave.
@@ -63,6 +101,7 @@ export function ExploreFocus({ views, role, job, navKey }: { views: View[]; navK
     rendered.current = { navKey, selection };
     if (!before && navigation) {
       goToSection(navigation.part, { smooth: false, history: "replace" });
+      focusJob(navigation.part, selection);
       return;
     }
     if (!before) {
@@ -73,7 +112,7 @@ export function ExploreFocus({ views, role, job, navKey }: { views: View[]; navK
       const land = () => {
         frame = requestAnimationFrame(() => {
           landed = true;
-          if (onPath(path)) landHere(sections, selection, { top: mayBeScrolled(), initial: true });
+          if (onPath(path)) focusJob(landHere(sections, selection, hasStory, { top: mayBeScrolled(), initial: true }), selection);
         });
       };
       if (document.readyState === "complete") land();
@@ -87,25 +126,15 @@ export function ExploreFocus({ views, role, job, navKey }: { views: View[]; navK
     }
     if (before.navKey === navKey) return;
 
-    const row = navigation?.row;
     if (popped.current) {
       popped.current = false;
-      return landHere(sections, selection, { top: true });
+      focusJob(landHere(sections, selection, hasStory, { top: true }), selection, returnedFrom(selection, before.selection));
+      return;
     }
-    if (row && role && role === before.selection.role) {
-      if (!job) return; // the row closed its posting: focus stays on the row
-      // The open posting's row (or its title, where shown) takes focus.
-      const detail = [...document.querySelectorAll<HTMLElement>("[data-job-detail]")].find((el) => el.offsetParent !== null);
-      if (detail) {
-        detail.focus({ preventScroll: true });
-        const top = detail.getBoundingClientRect().top;
-        if (top < 0 || top > window.innerHeight * 0.6) detail.scrollIntoView({ block: "start" });
-        return;
-      }
-    }
-    const target = navigation?.part ?? landingSection(sections, window.location.hash, null, selection, exampleRoot()?.dataset.layout === "all" ? "all" : "parts");
-    if (target) goToSection(target, { writeHash: !!navigation, history: "replace" });
-  }, [navKey, role, job, viewsKey]);
+    const target = navigation ? { part: navigation.part, card: 1 } : landingCard(sections, window.location.hash, null, selection, exampleRoot()?.dataset.layout === "all" ? "all" : "parts", hasStory);
+    if (target) goToSection(target.part, { card: target.card, writeHash: !!navigation, history: "replace" });
+    focusJob(target?.part, selection, navigation?.row ? returnedFrom(selection, before.selection) : undefined);
+  }, [navKey, role, job, viewsKey, hasStory]);
 
   // Back/Forward within this example. When the restored URL holds another query, the effect above
   // lands once it has rendered. When it holds the same one (only the fragment differs), nothing
@@ -127,7 +156,7 @@ export function ExploreFocus({ views, role, job, navKey }: { views: View[]; navK
       popped.current = !same;
       if (current && same) {
         frame = requestAnimationFrame(() => {
-          if (onPath(path)) landHere(sections, current.selection, { top: true });
+          if (onPath(path)) focusJob(landHere(sections, current.selection, hasStory, { top: true }), current.selection);
         });
       }
     };
@@ -138,7 +167,7 @@ export function ExploreFocus({ views, role, job, navKey }: { views: View[]; navK
       window.removeEventListener("hashchange", onPop);
       cancelAnimationFrame(frame);
     };
-  }, [viewsKey]);
+  }, [viewsKey, hasStory]);
 
   useEffect(() => {
     const main = document.getElementById("main");

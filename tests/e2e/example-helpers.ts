@@ -24,7 +24,7 @@ export async function toggleLayout(page: Page) {
     const sheet = page.getByRole("dialog", { name: "Contents", exact: true });
     await sheet.getByRole("button", { name: "View as one page" }).click();
     await sheet.getByRole("button", { name: "Close", exact: true }).click();
-  } else await lessonNav(page).getByRole("button", { name: "View as one page" }).click();
+  } else await page.locator("[data-deck-footer]").getByRole("button", { name: "View as one page" }).click();
 }
 
 export async function expectPart(page: Page, part: string, focus = true) {

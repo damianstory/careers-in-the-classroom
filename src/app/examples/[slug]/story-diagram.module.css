@@ -22,7 +22,7 @@
 
 .figure {
   margin: 20px 0 0;
-  overflow: hidden;
+
   border-radius: var(--radius-panel);
 }
 
@@ -45,7 +45,7 @@
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 23px;
   color: var(--text-body);
 }
@@ -64,7 +64,7 @@
 
 .note {
   margin-top: 20px;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 24px;
   color: var(--text-body);
 }
@@ -86,4 +86,34 @@
     font-size: 24px;
     line-height: 30px;
   }
+}
+
+/* The diagram and its live key share one teaching card. */
+.visual, .explanation { min-width: 0; }
+.intro { min-width: 0; }
+@media (min-width: 961px) {
+  .band { padding-block: 8px 16px; }
+  .content { max-width: none; display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 28px; align-items: center; }
+  .intro { grid-column: 1 / -1; }
+  .heading { font-size: 26px; line-height: 32px; }
+  .figure { margin-top: 0; max-width: 680px; }
+  .visual { display: flex; flex-direction: column; }
+  .eyebrow, .heading { flex-shrink: 0; }
+  .figure { flex: 1; min-height: 0; display: grid; grid-template: minmax(0, 1fr) / minmax(0, 1fr); place-items: center; }
+  /* The image box fills the reserved figure, so its size never depends on decoding;
+     object-fit keeps the whole diagram at its own aspect ratio inside that box. */
+  .image { width: 100%; height: auto; object-fit: contain; }
+
+  .key { grid-template-columns: minmax(0, 1fr); margin: 0; gap: 12px; }
+  .key li { line-height: 23px; }
+  .note { margin-top: 12px; font-size: 16px; line-height: 23px; }
+  .detail { font-size: 13px; line-height: 19px; }
+}
+/* Frame mode: the card fits the window; the key pages beside the diagram if it is long. */
+@media (min-width: 1024px) and (min-height: 640px) {
+  :global([data-example-root][data-frame][data-layout="parts"]:not([data-fit="flow"])) .band { padding-block: 0; height: 100%; }
+  :global([data-example-root][data-frame][data-layout="parts"]:not([data-fit="flow"])) .content { height: 100%; grid-template-rows: auto minmax(0, 1fr); row-gap: 20px; align-items: stretch; }
+  :global([data-example-root][data-frame][data-layout="parts"]:not([data-fit="flow"])) .visual { height: 100%; min-height: 0; justify-content: center; }
+  :global([data-example-root][data-frame][data-layout="parts"]:not([data-fit="flow"])) .image { height: 100%; }
+  :global([data-example-root][data-frame][data-layout="parts"]:not([data-fit="flow"])) .explanation { min-height: 0; display: flex; flex-direction: column; justify-content: center; }
 }

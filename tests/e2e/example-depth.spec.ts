@@ -30,6 +30,8 @@ for (const example of [
     await page.locator("#who").getByRole("link", { name: example.role, exact: true }).click();
     await expect(page.getByRole("heading", { name: "What might you actually do?" })).toBeVisible();
     await expect(page.locator("#who-title")).toBeFocused();
+    // Saved postings and "See all pathways" sit in the role's tabs (rail/T1 plan D.4).
+    await page.locator('[data-role-detail] [data-tab="jobs"]').filter({ visible: true }).click();
     await page.getByRole("region", { name: "Saved job examples" }).getByRole("link", { name: new RegExp(example.job.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")) }).click();
     const article = page.getByRole("article", { name: example.job });
     await expect(article).toBeVisible();
@@ -39,6 +41,8 @@ for (const example of [
       await expect(article.locator("p").filter({ hasText: /^Application deadline:/ })).toContainText("9 Oct 2026");
       await expect(article.getByText(/does not identify burrowing owls/)).toBeVisible();
     }
+    await page.locator("[data-job-view]").getByRole("link", { name: `Back to ${example.role}` }).click();
+    await page.locator('[data-role-detail] [data-tab="prepare"]').filter({ visible: true }).click();
     await page.getByRole("link", { name: "See all pathways", exact: true }).click();
     await expect(page).toHaveURL(new RegExp(`/examples/${example.slug}#ways-in$`));
     await expect(page.getByRole("region", { name: "Ways in" }).getByText(example.program, { exact: true })).toBeVisible();
@@ -54,7 +58,9 @@ test("GHGSat's approved government posting has a commercial role and a preparati
   void requests;
   await page.goto("/examples/ghgsat?view=roles&role=commercial-partnerships&job=ghgsat-government-business");
   await expect(page.getByRole("article", { name: "Business Development Manager (Government)" })).toBeVisible();
-  // The role's own preparation route, in its "How to prepare", and in the Pathways section it filters.
+  // The role's own preparation route, in its "How to prepare" (the role's Prepare tab), and in the Pathways section it filters.
+  await page.goto("/examples/ghgsat?view=roles&role=commercial-partnerships");
+  await page.locator('[data-role-detail="commercial-partnerships"] [data-tab="prepare"]').click();
   await expect(page.getByRole("region", { name: "How to prepare" }).getByText("Business Administration – Marketing", { exact: true })).toBeVisible();
   await choosePart(page, "Ways in");
   await expect(page.getByRole("region", { name: "Ways in" }).getByText("Business Administration – Marketing", { exact: true })).toBeVisible();

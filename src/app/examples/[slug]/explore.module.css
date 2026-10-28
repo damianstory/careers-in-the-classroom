@@ -1,408 +1,3 @@
-/* Connected exploration: the rail, the view bands and their parts. Builds on example.module.css
-   (bands, type, dark panel) and the shared classes in globals.css.
-
-   Sticky rule: nothing from .shell up to the page scroller may set overflow hidden, auto or scroll,
-   or the rail's sticky block pins to nothing. Only .railFx clips (overflow: clip), and it is not an
-   ancestor of .railSticky. */
-
-.shell {
-  --rail-w: 280px;
-  --measure: 1032px;
-  --band-y: 56px;
-  --band-l: max(64px, (100% - var(--measure)) / 2);
-  --band-r: var(--band-l);
-  --rule-dotted: #bdb9ba;
-  --hair-dark: #ffffff1f;
-  min-width: 0;
-}
-
-.content {
-  min-width: 0;
-  background: var(--bg);
-}
-
-/* ---- Rail (desktop): a full-height dark green column ---- */
-
-.railColumn {
-  position: relative;
-  isolation: isolate;
-  padding: 32px 0 48px;
-  background: var(--surface-dark);
-  color: var(--on-dark);
-}
-
-/* The instrument ruler down the rail's right edge. */
-.railColumn::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 12px;
-  border-left: 1px solid var(--hair-dark);
-  background-image:
-    repeating-linear-gradient(180deg, #ffffff59 0 1px, transparent 1px 40px),
-    repeating-linear-gradient(180deg, #ffffff26 0 1px, transparent 1px 8px);
-  background-size: 12px 100%, 6px 100%;
-  background-repeat: no-repeat;
-  pointer-events: none;
-}
-
-/* Out of flow: reserves no height, so the field can never move the links. */
-.railFx {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  overflow: clip;
-  pointer-events: none;
-}
-
-/* Sticky inside the clipped overlay: always the viewport's slice of the rail. */
-.railCanvas {
-  position: sticky;
-  top: var(--header-h);
-  display: block;
-  width: 100%;
-  height: calc(100vh - var(--header-h));
-  opacity: 0;
-  transition: opacity 200ms linear;
-}
-
-.railCanvas[data-ready] {
-  opacity: 0.6;
-}
-
-.back {
-  position: relative;
-  z-index: 1;
-  width: fit-content;
-  min-height: 32px;
-  margin: 0 32px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font: 500 14px/20px var(--font-ui);
-  color: var(--on-dark-muted);
-  text-decoration: none;
-}
-
-.back:hover {
-  color: var(--on-dark);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.railSticky {
-  position: sticky;
-  top: calc(var(--header-h) + 24px);
-  z-index: 1;
-  margin-top: 28px;
-}
-
-/* Solid behind the label too, so small text never sits over a dense band of the field. */
-.stripLabel {
-  margin-right: 13px;
-  padding: 12px 19px 12px 32px;
-  background: var(--surface-dark);
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.stripEyebrow {
-  font: 500 12px/16px var(--font-mono);
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--on-dark-2);
-}
-
-.stripLabel strong {
-  font-size: 28px;
-  line-height: 32px;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-}
-
-.stripLabel[data-context] strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-/* Solid behind the links, so the field never sits under text. */
-.nav {
-  margin: 20px 13px 0 0;
-  display: flex;
-  flex-direction: column;
-  border-top: 1px solid var(--hair-dark);
-  background: var(--surface-dark);
-}
-
-.navItem {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  min-height: 52px;
-  padding: 0 32px;
-  border-bottom: 1px solid var(--hair-dark);
-  font: 500 15px/20px var(--font-ui);
-  color: var(--on-dark-muted);
-  text-decoration: none;
-  transition: color var(--duration-fast) var(--ease-standard), background var(--duration-fast) var(--ease-standard);
-}
-
-.navItem:hover {
-  color: var(--on-dark);
-  background: #ffffff0a;
-}
-
-.navItem:focus-visible {
-  outline-offset: -3px;
-}
-
-.navItem[aria-current="location"] {
-  padding-left: 30px;
-  border-left: 2px solid var(--signal);
-  background: #ffffff0f;
-  font-weight: 600;
-  color: var(--on-dark);
-}
-
-.navNum {
-  font: 400 12px/16px var(--font-mono);
-  letter-spacing: 0.04em;
-  color: #ffffff99;
-}
-
-.navItem[aria-current="location"] .navNum {
-  color: var(--signal);
-}
-
-.short {
-  display: none;
-}
-
-@media (min-width: 961px) {
-  .shell {
-    display: grid;
-    grid-template-columns: var(--rail-w) minmax(0, 1fr);
-    align-items: stretch;
-  }
-}
-
-@media (min-width: 961px) and (max-width: 1199px) {
-  .shell {
-    --rail-w: 248px;
-    --band-y: 48px;
-    --band-l: 40px;
-  }
-
-  .back,
-  .stripLabel {
-    margin-inline: 0;
-    padding-inline: 24px;
-  }
-
-  .back {
-    margin-left: 24px;
-    padding: 0;
-  }
-
-  .navItem {
-    padding: 0 24px;
-  }
-
-  .navItem[aria-current="location"] {
-    padding-left: 22px;
-  }
-}
-
-/* ---- Phones and tablets: the rail becomes a plain sticky tab bar ---- */
-
-@media (max-width: 960px) {
-  .shell {
-    --band-y: 40px;
-    --band-l: var(--gutter);
-  }
-
-  /* The column dissolves so the tab bar sticks against the whole page, not a short box. */
-  .railColumn {
-    display: contents;
-  }
-
-  .railColumn::after,
-  .railFx {
-    display: none;
-  }
-
-  .back {
-    margin: 12px var(--gutter) 4px;
-    min-height: 44px;
-    font-size: 15px;
-    color: var(--ink);
-  }
-
-  .back:hover {
-    color: var(--text-accent);
-  }
-
-  .railSticky {
-    top: var(--header-h);
-    z-index: 10;
-    margin: 0;
-    padding-top: 10px;
-    background: var(--surface-dark);
-    color: var(--on-dark);
-    border-bottom: 1px solid var(--hair-dark);
-  }
-
-  .stripLabel,
-  .stripLabel[data-context] {
-    padding: 0 var(--gutter);
-    display: block;
-    font-size: 13px;
-    line-height: 18px;
-  }
-
-  .stripLabel strong,
-  .stripLabel[data-context] strong {
-    font-size: 13px;
-    line-height: 18px;
-  }
-
-  .stripEyebrow {
-    font-size: 11px;
-  }
-
-  .nav {
-    margin: 6px 0 0;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    border-top: 0;
-    padding: 0 calc(var(--gutter) - 8px);
-  }
-
-  .navItem,
-  .navItem[aria-current="location"] {
-    flex-direction: column;
-    justify-content: center;
-    gap: 2px;
-    min-height: 52px;
-    padding: 0 6px;
-    border: 0;
-    border-bottom: 2px solid transparent;
-    background: transparent;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-  }
-
-  .navItem[aria-current="location"] {
-    border-bottom-color: var(--signal);
-  }
-
-  .navNum {
-    font-size: 11px;
-    line-height: 14px;
-  }
-}
-
-@media (max-width: 640px) {
-  .nav {
-    padding: 0 4px;
-  }
-
-  .navItem,
-  .navItem[aria-current="location"] {
-    padding: 0 2px;
-    font-size: 13px;
-  }
-
-  .long {
-    display: none;
-  }
-
-  .short {
-    display: inline;
-  }
-}
-
-/* ---- Headings and focus ---- */
-
-.heading {
-  scroll-margin-top: calc(var(--header-h) + 24px);
-}
-
-@media (max-width: 960px) {
-  .heading {
-    scroll-margin-top: calc(var(--header-h) + 140px);
-  }
-}
-
-.heading:focus {
-  outline: none;
-}
-
-.heading:focus-visible {
-  outline: 3px solid var(--green);
-  outline-offset: 4px;
-}
-
-/* ---- One page: sections and the bands between them ---- */
-
-/* Section moves scroll in JS (SectionLink); this offset serves no-JS and copied #links. */
-.section {
-  min-width: 0;
-  scroll-margin-top: var(--header-h);
-}
-
-@media (max-width: 960px) {
-  .section {
-    scroll-margin-top: calc(var(--header-h) + 88px);
-  }
-}
-
-/* "02 · Company": a quiet dark band that marks where the next section starts. */
-.divider {
-  min-height: 48px;
-  padding: 0 var(--band-r) 0 var(--band-l);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: var(--surface-dark);
-  color: var(--on-dark-2);
-  font: 500 12px/16px var(--font-mono);
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.dividerNum {
-  color: var(--signal);
-}
-
-.dividerDot {
-  color: var(--on-dark-muted);
-}
-
-/* The one moving thing: drawn left to right once, when the band first comes into view (SectionDivider).
-   Without JS, above the fold, or with reduced motion, it is simply drawn. */
-.dividerLine {
-  flex: 1;
-  height: 1px;
-  margin-left: 12px;
-  background: var(--signal);
-  opacity: 0.55;
-  transform-origin: left center;
-}
-
-.divider[data-armed] .dividerLine {
-  transform: scaleX(0);
-}
-
-.divider[data-armed][data-drawn] .dividerLine {
-  transform: scaleX(1);
-  transition: transform 900ms var(--ease-standard);
-}
-
 .cite {
   display: block;
   margin-top: 6px;
@@ -1013,7 +608,13 @@
 /* ---- Company ---- */
 
 .factsPanel {
-  overflow: hidden;
+}
+
+.facts.factsPair { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.facts.factsLocal { grid-template-columns: minmax(0, 1fr); margin-top: 20px; }
+.factsPanel .facts > div { border: 0; border-radius: 12px; padding: 20px 24px; }
+@media (max-width: 640px) {
+  .facts.factsPair { grid-template-columns: minmax(0, 1fr); }
 }
 
 .facts {
@@ -1150,7 +751,6 @@
 .card {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   background: var(--bg);
   border: 1px solid var(--border);
   border-radius: var(--radius-panel);
@@ -1262,7 +862,6 @@
   list-style: none;
   margin-top: 24px;
   padding: 0;
-  overflow: hidden;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
@@ -1459,7 +1058,6 @@
   padding: 0;
   border: 1px solid var(--border);
   border-radius: var(--radius-panel);
-  overflow: hidden;
 }
 
 .searchRow {
@@ -1498,7 +1096,6 @@
 }
 
 .jobItem {
-  overflow: hidden;
   border: 1px solid var(--border);
   border-radius: var(--radius-panel);
   background: var(--bg);
@@ -2170,7 +1767,154 @@
   }
 }
 
-/* Option D: all content is server rendered. Without these attributes it stays visible. */
+/* Card deck, layout B (side rail) in TKS colour set T1. The T1 tokens and TKS fonts are scoped to
+   the example root; the rest of the site keeps its own. Frame mode (laptops and desktops, cards
+   layout): the card fits the window and nothing scrolls; long content is paged (PagedPanel).
+   Elsewhere the page scrolls as before. Plan: CitC/docs/design/example-card-rail-2026-10-23/PLAN.md */
+.shell {
+  --t1-stage: #1b3b19;      /* TKS Green 900 */
+  --t1-dots: #295826;       /* TKS Green 800 */
+  --t1-card: #fdfcfb;       /* TKS White 50 */
+  --t1-rail: #f4f1ed;       /* TKS White 200 */
+  --t1-panel: #ffffff;
+  --t1-line: #f0eae4;       /* TKS White 300 */
+  --t1-outline: #d3ccc4;    /* TKS White 600 */
+  --t1-ink: #231f20;        /* Soft Black */
+  --t1-muted: #615e5a;      /* TKS White 900 */
+  --t1-green: #51b04c;      /* TKS Green */
+  --t1-mark: #44933f;       /* TKS Green 600 */
+  --t1-label: #367533;      /* TKS Green 700 */
+  /* Site tokens, remapped to T1 inside the card. */
+  --ink: var(--t1-ink);
+  --text: var(--t1-ink);
+  --text-body: var(--t1-muted);
+  --text-accent: var(--t1-label);
+  --bg: var(--t1-panel);
+  --bg-warm: var(--t1-card);
+  --bg-subtle: var(--t1-rail);
+  --bg-accent: var(--t1-rail);
+  --bg-accent-strong: var(--t1-rail);
+  --border: var(--t1-line);
+  --border-green: var(--t1-outline);
+  --dot-grid-dark: radial-gradient(var(--t1-dots) 1px, transparent 1px) 0 0 / 24px 24px;
+  --font-display: var(--font-tks-heading), Georgia, serif;
+  --font-ui: var(--font-tks-text), "Helvetica Neue", Arial, sans-serif;
+  --font-mono: var(--font-tks-text), "Helvetica Neue", Arial, sans-serif;
+  --band-y: 16px;
+  --band-l: 0px;
+  --band-r: 0px;
+  --rule-dotted: var(--t1-outline);
+  --example-pinned-top: var(--header-h);
+  --deck-header-height: 64px;
+  --deck-footer-height: 80px;
+  --rail-w: 256px;
+  min-width: 0;
+  padding: 16px 32px;
+  background: var(--dot-grid-dark), var(--t1-stage);
+  font-family: var(--font-ui);
+  color: var(--t1-ink);
+  font-synthesis: none;
+}
+.shell h1, .shell h2, .shell h3, .shell :global(.display) {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+.shell strong, .shell b, .shell dt { font-weight: 500; }
+.shell :global(.eyebrow) { font: 500 13px/18px var(--font-ui); letter-spacing: 0; text-transform: none; color: var(--t1-muted); }
+.shell :is(a, button, summary, [tabindex]:not([tabindex="-1"])):focus-visible { outline: 3px solid var(--t1-mark); outline-offset: 3px; }
+
+.deck {
+  position: relative;
+  min-width: 0;
+  min-height: calc(100dvh - var(--header-h) - 32px);
+  display: grid;
+  grid-template-columns: var(--rail-w) minmax(0, 1fr);
+  border-radius: 24px;
+  background: var(--t1-card);
+  box-shadow: 0 18px 40px rgba(35, 31, 32, 0.45);
+}
+
+/* Rail: back control, the five sections, then About and Sources. */
+.rail {
+  position: sticky;
+  top: calc(var(--header-h) + 16px);
+  align-self: start;
+  height: calc(100dvh - var(--header-h) - 32px);
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 18px;
+  background: var(--t1-rail);
+  border-right: 1px solid var(--t1-outline);
+  border-radius: 24px 0 0 24px;
+}
+.back {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  min-height: 48px; padding: 0 16px;
+  border: 1.5px solid var(--t1-stage); border-radius: 999px; background: var(--t1-panel);
+  color: var(--t1-stage); font: 500 15px/20px var(--font-ui); text-decoration: none; text-align: center;
+}
+.back:hover { background: var(--t1-card); }
+.nav { flex: 1; min-height: 0; display: flex; flex-direction: column; margin-top: 24px; }
+.navGroup { display: flex; flex-direction: column; gap: 4px; }
+.navGroup[data-teaching="false"] { margin-top: auto; padding-top: 12px; border-top: 1px solid var(--t1-outline); gap: 0; }
+.navItem {
+  display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 12px; align-items: center;
+  min-height: 44px; padding: 8px 12px; border-radius: 12px;
+  color: var(--t1-ink); text-decoration: none; font: 500 15px/20px var(--font-ui);
+}
+.navItem:hover { background: var(--t1-card); }
+.navItem[aria-current="location"] { background: var(--t1-panel); box-shadow: inset 3px 0 0 var(--t1-mark); }
+.navNum {
+  display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%;
+  background: var(--t1-panel); border: 1px solid var(--t1-outline); color: var(--t1-stage); font: 500 13px/1 var(--font-ui);
+}
+.navItem[data-done] .navNum { background: var(--t1-stage); border-color: var(--t1-stage); color: var(--t1-panel); }
+.navItem[aria-current="location"] .navNum { background: var(--t1-green); border-color: var(--t1-green); color: var(--t1-ink); }
+.navLabel { min-width: 0; }
+.cardPosition { display: block; margin-top: 2px; font: 400 12px/16px var(--font-ui); color: var(--t1-muted); }
+.navGroup[data-teaching="false"] .navItem { grid-template-columns: minmax(0, 1fr); min-height: 40px; font: 400 14px/18px var(--font-ui); color: var(--t1-muted); }
+.navGroup[data-teaching="false"] .navItem[aria-current="location"] { color: var(--t1-ink); font-weight: 500; }
+.locationBar { display: none; }
+@media (min-width: 961px) {
+  .locationBar:has(.locationContext) { display: block; margin-top: 12px; }
+  .locationBar [data-location-part], .locationBar button { display: none; }
+  .locationContext { font-size: 13px; line-height: 18px; color: var(--t1-muted); }
+}
+.sheetNav .navGroup { display: flex; }
+.sheetNav .navGroup[data-teaching="false"] { margin-top: 16px; }
+.sheetNav .viewToggle { margin-top: 16px; }
+
+/* Content column: top row, stage, bottom row. */
+.main { min-width: 0; display: flex; flex-direction: column; }
+.topRow {
+  flex: none; min-height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 24px;
+  padding: 8px 32px; border-bottom: 1px solid var(--t1-line);
+}
+.topLabel { font: 500 14px/20px var(--font-ui); color: var(--t1-muted); }
+.topLabel [data-top-part] { display: none; }
+.shell[data-layout="parts"][data-part="question"] [data-top-part="question"],
+.shell[data-layout="parts"][data-part="how-it-works"] [data-top-part="how-it-works"],
+.shell[data-layout="parts"][data-part="who"] [data-top-part="who"],
+.shell[data-layout="parts"][data-part="ways-in"] [data-top-part="ways-in"],
+.shell[data-layout="parts"][data-part="ask"] [data-top-part="ask"],
+.shell[data-layout="parts"][data-part="about"] [data-top-part="about"],
+.shell[data-layout="parts"][data-part="sources"] [data-top-part="sources"] { display: inline; }
+.orgMark { flex: none; display: inline-flex; align-items: center; height: 56px; padding: 0 16px; border-radius: 12px; }
+.orgMark[data-plate="dark"] { background: var(--t1-stage); }
+.orgMark[data-plate="light"] { background: var(--t1-panel); border: 1px solid var(--t1-outline); }
+.orgMarkImg { display: block; width: auto; height: 46px; max-width: 190px; object-fit: contain; }
+.orgName { font: 400 20px/24px var(--font-display); color: var(--t1-ink); text-align: right; }
+
+.content { flex: 1 0 auto; min-width: 0; padding: 24px 40px; }
+.section, .heading, .content [id] { scroll-margin-top: calc(var(--example-pinned-top) + 8px); scroll-margin-bottom: 96px; }
+.section { min-width: 0; }
+.partHeader { padding: 0 0 12px; }
+.partHeader .heading { margin: 0; font-size: 26px; line-height: 30px; }
+.content h2 { width: fit-content; max-width: 100%; }
+.heading:focus { outline: none; }
+.shell :is(h1, h2, h3, h4)[tabindex="-1"]:focus-visible { outline: none; }
 .shell[data-layout="parts"][data-part="question"] .content > [data-part]:not([id="question"]),
 .shell[data-layout="parts"][data-part="how-it-works"] .content > [data-part]:not([id="how-it-works"]),
 .shell[data-layout="parts"][data-part="who"] .content > [data-part]:not([id="who"]),
@@ -2178,109 +1922,301 @@
 .shell[data-layout="parts"][data-part="ask"] .content > [data-part]:not([id="ask"]),
 .shell[data-layout="parts"][data-part="about"] .content > [data-part]:not([id="about"]),
 .shell[data-layout="parts"][data-part="sources"] .content > [data-part]:not([id="sources"]) { display: none; }
+.shell[data-layout="parts"][data-card="1"] .section [data-card="2"],
+.shell[data-layout="parts"][data-card="2"] .section [data-card="1"] { display: none; }
+/* The sole h1 stays in the accessibility tree on every card. */
+.shell[data-layout="parts"]:not([data-part="question"]) .pageTitle {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: clip; clip-path: inset(50%); white-space: nowrap;
+}
+.shell[data-layout="all"] .section:not(.question) { margin-top: 40px; padding-top: 32px; border-top: 1px solid var(--t1-line); }
 
-.shell .pageTitle { padding-bottom: 0; }
-.shell[data-layout="parts"]:not([data-part="question"]) .pageTitle { padding-block: 24px; border-bottom: 1px solid var(--border); }
-.shell[data-layout="parts"]:not([data-part="question"]) .pageTitle h1 { font-size: 22px; line-height: 30px; letter-spacing: -.015em; }
-.partHeader { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 32px var(--band-r) 0 var(--band-l); }
-.partHeader h2 { font-size: 36px; line-height: 42px; }
-.questionControls { padding: 20px var(--band-r) 0 var(--band-l); }
-.partSteps { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; padding: 32px var(--band-r) 40px var(--band-l); border-top: 1px solid var(--border); }
-.section[id="question"] .partSteps { justify-content: flex-end; }
-.partSteps a { min-height: 44px; display: inline-flex; align-items: center; font-weight: 500; }
-.shell:not([data-layout="parts"]) .partSteps, .shell[data-layout="parts"] .divider { display: none; }
-.presentButton { flex-shrink: 0; }
-.shell:not([data-layout]) .presentButton { display: none; }
-.groupLabel { padding: 16px 32px 8px; color: var(--on-dark-2); font: 500 12px/16px var(--font-mono); }
-.nav { margin-top: 8px; }
-.navItem { padding-block: 8px; min-height: 44px; }
-.viewToggle { margin: 24px 24px 12px; padding: 12px; border: 1px solid currentColor; border-radius: var(--radius-control); background: transparent; color: inherit; font: 500 15px/22px var(--font-ui); cursor: pointer; }
-.viewToggle[aria-pressed="true"] { box-shadow: inset 4px 0 currentColor; text-decoration: underline; text-underline-offset: 4px; }
-.locationBar { display: none; }
-.shell:not([data-layout]) .viewToggle { display: none; }
-.locationBar [data-location-part] { display: none; }
-.shell[data-part="question"] .locationBar [data-location-part="question"],
-.shell[data-part="how-it-works"] .locationBar [data-location-part="how-it-works"],
-.shell[data-part="who"] .locationBar [data-location-part="who"],
-.shell[data-part="ways-in"] .locationBar [data-location-part="ways-in"],
-.shell[data-part="ask"] .locationBar [data-location-part="ask"],
-.shell[data-part="about"] .locationBar [data-location-part="about"],
-.shell[data-part="sources"] .locationBar [data-location-part="sources"] { display: block; }
-.sheetNav { color: var(--ink); }
-.sheetNav .groupLabel, .sheetNav .navNum { color: var(--text-body); }
-.sheetNav .navItem { color: var(--ink); border-color: var(--border); }
-.sheetNav .navItem[aria-current="location"] { border-left: 3px solid var(--green); background: var(--bg-subtle); }
-.sheetNav .viewToggle { margin-inline: 32px; }
+/* Question */
+.pageTitle { display: flex; flex-direction: column; gap: 14px; }
+.pageTitle h1 { margin: 0; font-size: clamp(34px, 3.4vw, 46px); line-height: 1.1; }
+.orgLine { font-size: 15px; line-height: 22px; color: var(--t1-muted); }
+.orgLine strong { color: var(--t1-ink); }
+.questionFits, .questionArt { min-width: 0; }
+.questionFits { margin-top: 24px; }
+.questionArt { margin-top: 24px; }
+.questionArt figure { margin: 0; }
+.questionArt img { max-height: 380px; object-fit: contain; border-radius: 14px; }
+.fits { border: 1px solid var(--t1-line); border-radius: 14px; background: var(--t1-panel); padding: 14px 18px; }
+.fitsRows li, .fitsWhy { font-size: 16px; line-height: 22px; padding-block: 8px; }
+
+/* How it works */
+.lessonSplit { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 5fr); gap: 40px; align-items: center; }
+.lessonTitle { font-size: 30px; line-height: 34px; }
+.lessonLede { margin-top: 12px; font-size: 18px; line-height: 27px; }
+.stage { margin-top: 12px; font-size: 16px; }
+.stepList li { padding: 10px 0; gap: 16px; }
+.stepText { font-size: 16px; line-height: 24px; padding-top: 2px; }
+.stepList li:not(:last-child)::before { top: 46px; bottom: -10px; }
+.stepCite { margin-top: 8px; }
+
+/* Ask the class */
+.askSplit { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 40px; align-items: center; }
+.askPanel { padding: 36px; background: var(--t1-stage); color: var(--t1-panel); border-radius: 18px; }
+.askPanelText { font: 400 32px/38px var(--font-display); letter-spacing: -0.01em; color: var(--t1-panel); }
+.askSide { min-width: 0; }
+.explain { font-size: 18px; line-height: 28px; color: var(--t1-ink); }
+
+/* Who does this work */
+.roleAside { min-width: 0; display: flex; flex-direction: column; gap: 12px; }
+.rolesIntro { font-size: 14px; line-height: 20px; color: var(--t1-muted); }
+.roleSplit { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 24px; min-height: 0; }
+.roleList { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.roleList li { break-inside: avoid; }
+.roleItem {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 14px 16px; border: 1px solid var(--t1-outline); border-radius: 12px; background: var(--t1-card);
+  color: var(--t1-ink); font: 500 16px/21px var(--font-ui); text-decoration: none;
+}
+.roleItem :global(.icon) { flex: none; color: var(--t1-muted); }
+.roleItem:hover { background: var(--t1-panel); }
+.roleItem[aria-current="true"] { background: var(--t1-panel); border: 2px solid var(--t1-stage); padding: 13px 15px; }
+.roleDetails { min-width: 0; min-height: 0; display: flex; flex-direction: column; }
+.roleDetail {
+  flex: 1; min-height: 0; display: flex; flex-direction: column;
+  padding: 18px 24px 12px; border: 1px solid var(--t1-line); border-radius: 16px; background: var(--t1-panel);
+}
+.roleDetail[hidden] { display: none; }
+.roleHead { flex: none; display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 16px; row-gap: 2px; align-items: end; }
+.roleHead > :global(.eyebrow) { grid-column: 1; font-size: 12px; line-height: 16px; }
+.roleTitle { grid-column: 1; font-size: 26px; line-height: 30px; }
+.roleSummary { grid-column: 1 / -1; margin-top: 4px; font-size: 15px; line-height: 22px; color: var(--t1-muted); }
+.roleHead [data-sources-button] { grid-column: 2; grid-row: 1 / span 2; align-self: center; }
+.roleTabs { flex: 1; min-height: 0; display: flex; flex-direction: column; margin-top: 10px; }
+.roleTabs[hidden] { display: none; }
+.tabList[hidden] { display: none; }
+.tabList { flex: none; display: flex; flex-wrap: wrap; gap: 4px; border-bottom: 1px solid var(--t1-line); }
+.tab {
+  padding: 10px 12px; margin-bottom: -1px; border: 0; border-bottom: 2px solid transparent; background: none;
+  color: var(--t1-muted); font: 500 14px/18px var(--font-ui); cursor: pointer; white-space: nowrap;
+}
+.tab[aria-selected="true"] { color: var(--t1-ink); border-bottom-color: var(--t1-mark); }
+.tabPanel { flex: 1; min-height: 0; display: flex; flex-direction: column; padding-top: 12px; }
+.tabPanel[hidden] { display: none; }
+/* Before enhancement all three panels are exposed. Size them by their contents so the
+   following panel cannot paint over the job links in its predecessor. */
+.roleTabs:not([data-tabs-ready]):not([hidden]) { display: block; flex: none; min-height: auto; }
+.roleTabs:not([data-tabs-ready]) .tabPanel { display: block; flex: none; min-height: auto; }
+.miniTitle { font: 500 15px/20px var(--font-ui); color: var(--t1-ink); }
+.shell .tasks { list-style: none; display: block; margin: 8px 0 0; padding: 0; background: none; color: var(--t1-ink); }
+.shell .tasks li { padding: 0 0 12px; box-shadow: none; break-inside: avoid; }
+.shell .tasks li::before { display: none; }
+.taskTitle { margin: 0; font: 500 15px/20px var(--font-ui); color: var(--t1-ink); }
+.shell .taskText { margin-top: 2px; font-size: 15px; line-height: 22px; color: var(--t1-muted); }
+.explanation { font-size: 15px; line-height: 22px; margin-bottom: 10px; break-inside: avoid; }
+.jobView { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 8px; margin-top: 10px; }
+.savedOn { font: 500 13px/18px var(--font-ui); color: var(--t1-label); }
+.upLink { align-self: flex-start; }
+
+/* Ways in */
+.stageIntro { margin-bottom: 12px; }
+.pathIntro { font-size: 15px; line-height: 22px; color: var(--t1-muted); }
+.pathKind { padding: 12px 24px 0; font: 500 13px/18px var(--font-ui); color: var(--t1-label); }
+
+/* Sources buttons: a citation is one small button; its list is a popover in the top layer. */
+.sourcesCite { display: inline-flex; vertical-align: middle; }
+.sourcesToggle {
+  display: inline-flex; align-items: center; min-height: 28px; padding: 3px 12px;
+  border: 1px solid var(--t1-outline); border-radius: 999px; background: var(--t1-panel);
+  color: var(--t1-label); font: 500 13px/18px var(--font-ui); cursor: pointer; white-space: nowrap;
+}
+.sourcesToggle:hover { border-color: var(--t1-mark); }
+.sourcesPopover {
+  inset: auto;
+  position-area: bottom span-right;
+  position-try-fallbacks: flip-block, flip-inline;
+  margin: 6px 0;
+  width: max-content; max-width: min(380px, 90vw);
+  padding: 14px 16px; border: 1px solid var(--t1-outline); border-radius: 12px;
+  background: var(--t1-panel); color: var(--t1-ink); box-shadow: 0 12px 32px rgba(35, 31, 32, 0.18);
+  font: 400 14px/20px var(--font-ui); text-align: left;
+}
+.sourcesPopover:popover-open { display: flex; flex-direction: column; gap: 8px; }
+.sourcesPopoverTitle { font: 500 13px/18px var(--font-ui); color: var(--t1-muted); }
+.sourcesPopoverList { display: flex; flex-direction: column; gap: 8px; }
+.sourcesPopoverList a { color: var(--t1-label); }
+
+/* Paged panels: plain flow outside frame mode. */
+.paged { min-width: 0; }
+/* The window contains its absolutely positioned descendants (sr-only text, panel corners), so
+   content on other pages can never widen the document. */
+.pagedWindow { position: relative; }
+.pager { display: flex; align-items: center; justify-content: flex-end; gap: 8px; padding-top: 8px; }
+.pager[hidden] { display: none; }
+.pagerButton {
+  display: grid; place-items: center; width: 36px; height: 36px; padding: 0;
+  border: 1.5px solid var(--t1-stage); border-radius: 50%; background: var(--t1-panel); color: var(--t1-stage); cursor: pointer;
+}
+.pagerButton:disabled { border-color: var(--t1-outline); color: var(--t1-outline); cursor: default; }
+.pagerText { min-width: 92px; text-align: center; font: 500 13px/18px var(--font-ui); color: var(--t1-muted); }
+
+/* Bottom row */
+.deckFooter {
+  position: sticky; bottom: 0; z-index: 13;
+  flex: none; min-height: 80px; display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 12px 32px; border-top: 1px solid var(--t1-line); border-radius: 0 0 24px 0; background: var(--t1-card);
+}
+.deckButtons { display: flex; align-items: center; gap: 12px; }
+.deckBack, .deckNext { display: flex; align-items: center; gap: 10px; border-radius: 999px; font: 500 15px/18px var(--font-ui); cursor: pointer; }
+.deckBack { justify-content: center; width: 124px; height: 48px; border: 1.5px solid var(--t1-stage); background: var(--t1-panel); color: var(--t1-stage); }
+.deckNext { justify-content: space-between; width: 268px; height: 56px; padding: 0 22px; border: 0; background: var(--t1-green); color: var(--t1-ink); text-align: left; }
+.deckNext span { min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+.deckNext small { font: 400 12px/14px var(--font-ui); color: var(--t1-ink); }
+.deckNext strong { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; font: 500 15px/18px var(--font-ui); }
+.deckNext :global(.icon) { flex: none; }
+.deckBack:disabled, .deckNext:disabled { opacity: 0.5; cursor: default; }
+.viewToggle { padding: 8px 0; border: 0; background: transparent; color: var(--t1-muted); text-decoration: underline; text-underline-offset: 3px; font: 500 13px/20px var(--font-ui); cursor: pointer; }
+.shell[data-layout="all"] .deckButtons { display: none; }
+.shell:not([data-layout]) .deckFooter { display: none; }
+
+/* Desktop, not framed (short windows, "View as one page"): the card grows and the page scrolls. */
 @media (min-width: 961px) {
-  .railSticky { max-height: calc(100dvh - var(--header-h) - 32px); overflow-y: auto; }
+  .shell[data-part="question"] .content, .shell:not([data-layout="parts"]) .content {
+    display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); column-gap: 48px; align-content: start;
+  }
+  .shell .question { display: contents; }
+  .pageTitle { grid-column: 1; grid-row: 1; align-self: end; }
+  .questionFits { grid-column: 1; grid-row: 2; align-self: start; }
+  .questionArt { grid-column: 2; grid-row: 1 / span 2; align-self: center; margin-top: 0; }
+  .shell:not([data-layout="parts"]) .section:not(.question) { grid-column: 1 / -1; }
 }
+
+/* Frame mode. Matches FRAME_QUERY in frame.ts. */
+@media (min-width: 1024px) and (min-height: 640px) {
+  :global(body:has([data-example-root][data-frame][data-layout="parts"]:not([data-fit="flow"])) > footer) { display: none; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) {
+    height: calc(100dvh - var(--header-h));
+  }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .deck { height: 100%; min-height: 0; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .rail { position: static; height: auto; align-self: stretch; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .main { min-height: 0; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .topRow { height: 64px; padding-block: 0; }
+  /* The section heading sits in the top row (it would repeat the top label); the stage keeps the content. */
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .deck { position: relative; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .partHeader {
+    position: absolute; top: 0; left: calc(var(--rail-w) + 32px); right: 240px; height: 64px;
+    display: flex; align-items: center; padding: 0; pointer-events: none;
+  }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .partHeader .heading { font-size: 24px; line-height: 28px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; pointer-events: auto; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]):not([data-part="question"], [data-part="sources"]) .topLabel { visibility: hidden; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .deckFooter { position: static; height: 80px; min-height: 0; padding-block: 0; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .content {
+    flex: 1 1 0; min-height: 0; display: flex; flex-direction: column; justify-content: center; padding: 20px 40px;
+  }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .content > [data-part] { min-height: 0; display: flex; flex-direction: column; }
+  /* Sections with long content fill the stage; their panels page. */
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .content > :is([id="who"], [id="ways-in"], [id="about"], [id="sources"]) { flex: 1 1 0; }
+  /* Every wrapper between a section and its paged panel passes the stage height down. */
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .content > :is([id="who"], [id="ways-in"], [id="about"], [id="sources"]) :is(div, section, article):has(.paged):not(.roleSplit, .paged, .paged *, [hidden]) {
+    flex: 1 1 0; min-height: 0; display: flex; flex-direction: column;
+  }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .roleSplit { flex: 1 1 0; grid-template-rows: minmax(0, 1fr); }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .roleDetail[hidden], .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .roleTabs[hidden], .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .tabPanel[hidden] { display: none; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .paged { flex: 1 1 0; min-height: 0; display: flex; flex-direction: column; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .pagedWindow {
+    /* A minimum height: a zero-height column box would fragment content into endless empty columns. */
+    flex: 1 1 0; min-height: 160px; overflow: hidden;
+    column-count: var(--page-columns, 2); column-gap: 32px; column-fill: auto;
+  }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .pager { flex: none; height: 44px; padding-top: 8px; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .pager[hidden] { display: flex; visibility: hidden; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) :is(.roleListPanel, .tabPaged, .pagedInline) { --page-columns: 1; }
+  /* Inline panels take the height they need, up to the space available, and show a pager only when paged. */
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .pagedInline { flex: 1 1 0; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .pagedInline[data-single] { flex: 0 1 auto; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .pagedInline[data-single] .pagedWindow { flex: 0 1 auto; column-count: auto; overflow: visible; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .pagedInline .pager[hidden] { display: none; }
+  /* Lesson card: steps page beside the title. */
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .lessonCard { flex: 1 1 0; min-height: 0; display: flex; flex-direction: column; justify-content: center; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .lessonSplit { flex: 1 1 0; min-height: 0; grid-template-rows: minmax(0, 1fr); align-items: center; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .lessonSplit > div:first-child { align-self: center; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .stepsPanel { min-height: 0; height: 100%; display: flex; flex-direction: column; justify-content: center; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .stepsPanel[data-single] { height: auto; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .content > [data-part][id="how-it-works"] { flex: 1 1 0; justify-content: center; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .howCard { flex: 1 1 0; min-height: 0; display: flex; flex-direction: column; justify-content: center; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .howCard > section { flex: 1 1 0; min-height: 0; }
+  /* Job rows wrap in a narrow page. */
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .pagedWindow .jobRow { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; padding: 12px 16px; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .pagedWindow .jobRowMain { flex: 1 1 240px; min-width: 0; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .pagedWindow .jobTitle { font-size: 17px; line-height: 22px; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .pagedWindow .searchRow { padding: 10px 16px; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) :is([id="ways-in"], [id="sources"], [id="about"]) .pagedWindow { --page-columns: 1; }
+  /* Blocks that page as a whole. */
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .pagedWindow :is(li, .stepCite, .card, .claimRow, .facts > div, .contextRow, .searchRow, .jobItem, .fits, .routeNote, .why, .whyItem, figure, p, tr, h3, h4, h5, header) { break-inside: avoid; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .pagedWindow :is(h3, h4, h5, .miniTitle, .savedTitle, dt, thead) { break-after: avoid; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .pagedWindow :is(.cardGrid, .pathList, .claims, .facts, .nextSteps) { display: block; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .pagedWindow :is(.cardGrid, .pathList) > li { margin-bottom: 12px; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .pagedWindow img { max-height: 100%; }
+  /* The Sources ledger pages row by row: an overflow clip would make it one unbreakable block. */
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .pagedWindow details { overflow: visible; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .pagedWindow details[open]::details-content { overflow: visible; display: contents; }
+  .shell .pagedWindow details:not([open]) > :not(summary) { display: none; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .pagedWindow .factsPair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; break-inside: avoid; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .pagedWindow .factsLocal { display: block; margin-top: 20px; }
+  /* Wide side-by-side panels stack inside a column. */
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .pagedWindow :is(.newsLocked, .cta) { grid-template-columns: minmax(0, 1fr); gap: 16px; padding: 24px; }
+  /* Question: question and fit on the left, illustration on the right, centred in the stage. */
+  .shell:where([data-frame])[data-layout="parts"][data-part="question"]:not([data-fit="flow"]) .content {
+    display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); grid-template-rows: auto auto;
+    align-content: center; column-gap: 48px;
+  }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .content > .question { display: contents; }
+  /* Question: the question on the left; the illustration with its course fit underneath on the right. */
+  .shell:where([data-frame])[data-layout="parts"][data-part="question"]:not([data-fit="flow"]) .content { grid-template-rows: minmax(0, 1fr) auto; row-gap: 16px; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .pageTitle { grid-column: 1; grid-row: 1 / span 2; align-self: center; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .questionArt { grid-column: 2; grid-row: 1; align-self: end; min-height: 0; height: 100%; display: flex; align-items: flex-end; justify-content: center; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .questionArt figure { height: 100%; max-height: 100%; display: flex; align-items: flex-end; justify-content: center; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .questionArt img { width: auto; max-width: 100%; height: auto; max-height: 100%; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .questionFits { grid-column: 2; grid-row: 2; margin-top: 0; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .fits { padding: 10px 16px; }
+  .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .fitsRows li, .shell:where([data-frame])[data-layout="parts"]:not([data-fit="flow"]) .fitsWhy { font-size: 15px; line-height: 21px; padding-block: 6px; }
+}
+
 @media (max-width: 960px) {
-  .railSticky { padding-top: 0; }
-  .stripLabel, .stripLabel[data-context] { display: block; margin: 0; padding: 10px var(--gutter) 0; }
-  .nav { display: flex; padding: 12px 0; margin: 0; }
-  .navItem, .navItem[aria-current="location"] { flex-direction: row; justify-content: flex-start; gap: 12px; padding: 10px 24px; text-align: left; font-size: 15px; border-bottom: 1px solid var(--hair-dark); }
-  .navItem[aria-current="location"] { border-left: 3px solid var(--signal); }
+  .shell { padding: 0; }
+  .deck { display: block; min-height: 0; border-radius: 8px; box-shadow: none; }
+  .rail { display: contents; }
+  .back { display: inline-flex; min-height: 44px; margin: 12px var(--gutter) 0; width: auto; }
   .shell[data-layout] .nav { display: none; }
+  .shell:not([data-layout]) .nav { padding: 12px var(--gutter); }
   .shell:not([data-layout]) .locationBar { display: none; }
-  .locationBar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px var(--gutter); }
-  .locationBar p { font: 400 11px/16px var(--font-mono); color: var(--on-dark-2); }
+  .locationBar { position: sticky; top: var(--header-h); z-index: 12; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 12px; padding: 10px var(--gutter); margin-top: 12px; background: var(--t1-stage); color: var(--t1-panel); }
+  .locationContext { flex-basis: 100%; }
+  .locationBar p { font: 400 12px/16px var(--font-ui); color: #c5e5c3; }
   .locationBar strong { font-size: 16px; line-height: 22px; }
+  .locationContext strong { font-size: 13px; line-height: 18px; }
   .locationBar button { flex-shrink: 0; }
-  /* Outrank global .btn display regardless of production stylesheet order. */
-  .shell .presentButton, .questionControls { display: none; }
-  .partHeader { padding-top: 24px; }
-  .partHeader h2 { font-size: 28px; line-height: 34px; }
+  .locationBar [data-location-part] { display: none; }
+  .shell[data-part="question"] [data-location-part="question"], .shell[data-part="how-it-works"] [data-location-part="how-it-works"], .shell[data-part="who"] [data-location-part="who"], .shell[data-part="ways-in"] [data-location-part="ways-in"], .shell[data-part="ask"] [data-location-part="ask"], .shell[data-part="about"] [data-location-part="about"], .shell[data-part="sources"] [data-location-part="sources"] { display: block; }
+  .topRow { padding: 12px var(--gutter); border-bottom: 0; }
+  .topLabel { display: none; }
+  .content { padding: 16px var(--gutter) 24px; }
+  .pageTitle h1 { font-size: 34px; }
+  .lessonSplit, .askSplit, .roleSplit { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .deckFooter { padding: 10px 12px 14px; gap: 10px; border-radius: 0; }
+  .deckButtons { flex: 1; min-width: 0; justify-content: flex-end; }
+  .deckBack { width: 48px; flex: none; }
+  .deckBack span { display: none; }
+  .deckNext { flex: 1 1 auto; width: auto; max-width: 268px; min-width: 0; padding: 0 16px; }
+  .deckNext strong { font-size: 14px; line-height: 18px; }
+  .deckNext small { font-size: 11px; line-height: 14px; }
+  .shell[data-layout="parts"] .deckFooter .viewToggle { display: none; }
+  .shell[data-layout="all"] .deckFooter .viewToggle { display: block; }
 }
-
-/* Projector: a 1600 × 900 design frame, scaled as a whole. All body copy is 26px
-   in that frame. Pathway rows are measured at this size before pagination. */
-.presentation { position: fixed; inset: 0; width: 100vw; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; background: var(--surface-dark); color: var(--on-dark); overflow: hidden; }
-.presentation::backdrop { background: var(--surface-dark); }
-.projectControls { min-height: 80px; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 12px 24px; }
-.projectControls > div { display: flex; gap: 12px; }
-.projectControls p { font: 500 16px/24px var(--font-mono); }
-.projectControls button:disabled { opacity: .5; cursor: default; }
-.projectStage { position: relative; width: min(100vw, calc((100dvh - 88px) * 16 / 9)); aspect-ratio: 16 / 9; margin: auto; }
-.projectFrame { width: 1600px; height: 900px; padding: 56px; display: flex; flex-direction: column; gap: 24px; transform: scale(var(--frame-scale, .5)); transform-origin: top left; font: 400 26px/1.35 var(--font-ui); background: var(--surface-dark); color: var(--on-dark); }
-.projectFrame h2 { font-size: 48px; line-height: 1.1; font-weight: 600; letter-spacing: -.025em; }
-.projectFrame h3 { font-size: 32px; line-height: 1.2; font-weight: 600; }
-.projectFrame p { margin: 0; }
-.projectFrame img { object-fit: contain; }
-.projectGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
-.projectGrid > div { display: flex; flex-direction: column; gap: 14px; padding: 24px; border: 1px solid var(--hairline-dark); }
-.projectEvidence { color: var(--on-dark-2); }
-.projectQuestion { display: grid; grid-template-columns: 1.2fr 1fr; align-items: center; gap: 56px; flex: 1; }
-.projectQuestion > p { font-size: 56px; line-height: 1.15; font-weight: 500; }
-.projectQuestion figure { width: 100%; margin: 0; }
-.projectQuestion img { width: 100%; height: auto; }
-.projectDiagram { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 48px; min-height: 0; flex: 1; }
-.projectDiagram img { width: 100%; height: 100%; min-height: 0; }
-.projectDiagram ol { padding-left: 36px; display: flex; flex-direction: column; justify-content: center; gap: 24px; }
-.projectAsk { display: flex; flex-direction: column; justify-content: center; gap: 64px; flex: 1; }
-.projectAsk > p { font-size: 48px; line-height: 1.25; }
-.projectAsk h3 { margin-bottom: 20px; }
-.projectMeasure { position: fixed; left: -20000px; top: 0; height: auto; min-height: 900px; transform: none; visibility: hidden; pointer-events: none; }
-@media (prefers-reduced-motion: reduce) {
-  .shell *, .presentation * { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+@media (max-width: 360px) {
+  .deckFooter { padding-inline: 8px; }
+  .deckNext { padding: 0 12px; }
 }
+@media (prefers-reduced-motion: reduce) { .shell * { transition: none !important; animation: none !important; scroll-behavior: auto !important; } }
 @media print {
-  .shell { display: block; }
-  .shell .content > [data-part] { display: block !important; }
-  .railColumn, .railSticky, .locationBar, .nav, .viewToggle, .partSteps, .presentButton, .questionControls, .presentation { display: none !important; }
-  .shell .pageTitle { padding-block: 24px !important; }
-  .shell .pageTitle h1 { font-size: 36px !important; line-height: 1.15 !important; }
-  .shell .divider { display: flex !important; }
-  .content { width: 100%; }
+  .shell { padding: 0; background: white; height: auto !important; overflow: visible !important; }
+  .deck { box-shadow: none; display: block; height: auto !important; }
+  .rail, .topRow, .deckFooter, .locationBar, .nav, .pager { display: none !important; }
+  .shell .content, .shell .content > [data-part], .shell .section [data-card], .shell [hidden] { display: block !important; }
+  .shell .pagedWindow { column-count: auto !important; overflow: visible !important; height: auto !important; }
+  .shell .pageTitle { position: static !important; width: auto !important; height: auto !important; clip-path: none !important; white-space: normal !important; margin: 0 !important; padding: 24px !important; }
 }
-
-.presentationLayer { width: 100%; height: 100%; background: var(--surface-dark); color: var(--on-dark); }
-.projectRoles > div { padding: 16px; gap: 12px; }
-.projectFrame[data-frame-part="who"] { gap: 20px; }
-@media (max-width: 960px) {
-  /* The ordinary no-JS contents list must not cover fragment destinations. */
-  .shell:not([data-layout]) .railSticky { position: static; }
-}
-
-.shell .storyHero { padding-top: 24px; }
-.storyHero .storyIntro { margin-top: 0; }
-.partHeader h2 { margin-top: 0; }

@@ -85,11 +85,9 @@ for (const slug of ["ghgsat", "wilder-institute", "e3-lithium"]) {
   }
 }
 
-test("projector passes axe", async ({ page, requests }, info) => {
+test("deck panels pass axe", async ({ page, requests }) => {
   void requests;
-  test.skip(info.project.name !== "desktop", "desktop projection");
   await page.goto("/examples/wilder-institute#ways-in");
-  await page.locator('[data-present="ways-in"]').click();
-  const results = await new AxeBuilder({ page }).include("dialog[open]").analyze();
+  const results = await new AxeBuilder({ page }).include("[data-example-root]").analyze();
   expect(results.violations.filter((v) => v.impact === "serious" || v.impact === "critical")).toEqual([]);
 });

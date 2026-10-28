@@ -1,7 +1,10 @@
 import { EvidenceTag, evidenceLegend } from "@/components/EvidenceTag";
 import { SourceLink } from "@/components/SourceLink";
 import type { Example } from "@/content";
+import { courseFitTopic } from "@/lib/course-fit";
+import { PagedPanel } from "./PagedPanel";
 import styles from "./example.module.css";
+import explore from "./explore.module.css";
 
 // The Sources part: course fit, the page's one checked date and a closed evidence disclosure.
 export function SourcesAndFit({ e, checked }: { e: Example; checked: string }) {
@@ -9,13 +12,14 @@ export function SourcesAndFit({ e, checked }: { e: Example; checked: string }) {
   return (
     <div className={`${styles.band} ${styles.rule} ${styles.sources}`}>
       <div className={styles.sourcesHead}>
-        <h2 id="sources-title" tabIndex={-1} className={`display ${styles.h2}`}>
+        <h2 id="sources-title" data-dialog-focus="" tabIndex={-1} className={`display ${styles.h2}`}>
           Sources and course fit
         </h2>
         <p className={`${styles.checked} ${styles.marked}`} data-checked="">
           Sources checked {checked}
         </p>
       </div>
+      <PagedPanel label="Sources and course fit" className={explore.stagePanel}>
       <div className={styles.twoCols}>
         <div>
           <p className={styles.colLabel}>Where it fits</p>
@@ -25,7 +29,7 @@ export function SourcesAndFit({ e, checked }: { e: Example; checked: string }) {
                 <strong>{c.course}</strong>
                 <span>
                   <span className="sr-only"> · </span>
-                  {c.topic}
+                  {courseFitTopic(e, c)}
                 </span>
               </li>
             ))}
@@ -51,6 +55,7 @@ export function SourcesAndFit({ e, checked }: { e: Example; checked: string }) {
 
       <details className={styles.evidence}>
         <summary>What we know, and how</summary>
+        <p className={styles.legend}>{evidenceLegend}</p>
         <table className={styles.ledger}>
           <thead>
             <tr>
@@ -64,6 +69,7 @@ export function SourcesAndFit({ e, checked }: { e: Example; checked: string }) {
               <tr key={i}>
                 <td className="mono">{row.type}</td>
                 <td>
+                  {row.type === "course fit" && <p>{e.courses.map((fit) => `${fit.course}: ${courseFitTopic(e, fit)}`).join("; ")}</p>}
                   {row.claim}
                   <span className={styles.cites}>Source: {row.sourceIds.map(sourceLabel).join("; ")}</span>
                 </td>
@@ -74,8 +80,8 @@ export function SourcesAndFit({ e, checked }: { e: Example; checked: string }) {
             ))}
           </tbody>
         </table>
-        <p className={styles.legend}>{evidenceLegend}</p>
       </details>
+      </PagedPanel>
     </div>
   );
 }
